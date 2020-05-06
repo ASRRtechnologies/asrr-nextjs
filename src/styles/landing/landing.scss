@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  @include flex(center, center, column);
+  @include flex(center, flex-start, column);
 
   &:after {
     content: "";
@@ -15,15 +15,22 @@
     z-index: -1;
   }
 
-  .landing-caption-overlay {
+  .landing-text {
     display: inline-block;
     width: auto;
     margin: 20px 0 0 20px;
     padding: 10px;
   }
 
+  .landing-overflow{
+    display: block;
+    overflow: hidden;
+    height: auto;
+    width: auto;
+  }
+
   h1 {
-    max-width: 500px;
+    max-width: 900px;
     margin: 0 0 0 20px;
   }
 
