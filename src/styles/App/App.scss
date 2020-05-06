@@ -1,0 +1,123 @@
+@import "../collections/collections";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  height: auto;
+  width:100vw;
+  max-width: 100vw;
+  overflow-x: hidden !important;
+}
+
+body {
+  //font-family: 'Gilroy Light', 'Source Sans Pro', serif !important;
+  font-family: 'Poppins', 'Source Sans Pro', serif !important;
+  min-height: 100%;
+  height: auto;
+  width:100%;
+  overflow-x: hidden !important;
+  overflow-y: hidden!important;
+}
+
+a, p{
+  //font-family: "Gilroy Light", serif;
+  font-family: "Poppins Light", serif;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+ h1, h2{
+  font-family: "Poppins SemiBold", serif;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+#__next{
+  height: inherit;
+  overflow-x: hidden !important;
+}
+
+.app{
+  position:relative;
+  min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+.content-wrapper{
+  position:relative;
+  min-height: 100vh;
+  height: 100%;
+  //padding-top: 70px;
+  max-width: $max-width;
+}
+
+h1{
+  font-size: 80px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 40px;
+  margin: 0 0 25px 0;
+  font-weight: bold;
+}
+
+h3{
+  font-size: 35px;
+  margin: 0 0 30px 0;
+}
+
+h4{
+  font-size: 25px;
+  margin: 0 0 20px 0;
+}
+
+p{
+  margin: 0 0 20px 0;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+a{
+  color: #1a1a1a;
+}
+
+
+@media screen and (max-width: 600px) {
+  h1{
+    font-size: 40px;
+    margin: 0 0 30px 0;
+    font-weight: bold;
+  }
+
+  h2{
+    font-size: 30px;
+    margin: 0 0 25px 0;
+    font-weight: bold;
+  }
+
+  h3{
+    font-size: 25px;
+    margin: 0 0 30px 0;
+  }
+
+  h4{
+    font-size: 20px;
+  }
+
+  p{
+    margin: 0 0 20px 0;
+    line-height: 30px;
+    font-size: 14px;
+  }
+
+}
+
+

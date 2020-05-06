@@ -1,0 +1,176 @@
+.header-container{
+  width: 100%;
+  height: 70px;
+  //background-color: #f0f0f0;
+  position: fixed;
+  left:0;
+  top:0;
+  z-index: 100000;
+  @include flex(center, center, column);
+  transition: 300ms ease-in-out background-color;
+
+  .form-letter-discipline{
+    transition: 300ms ease-in-out all;
+
+    &.it{
+      fill:#00A86B;
+    }
+
+    &.engineering{
+      fill:#C72C41;
+    }
+
+    &.architecture{
+      fill:#F77F00;
+    }
+  }
+
+  //This is for the logo
+  svg{
+    width: 80px;
+    height: auto;
+  }
+
+  &:hover{
+    .form-letter{
+      transition: 300ms ease-in-out all;
+      fill: #1a1a1a;
+    }
+    .form-letter-discipline{
+      transition: 300ms ease-in-out all;
+      &.regular{
+        fill:#1a1a1a;
+      }
+    }
+  }
+}
+
+.header-wrapper{
+  @include size(100%, 100%);
+  max-width: $max-width;
+  @include flex(space-between, center, row);
+  position: relative;
+
+  #mobile-logo{
+    display: none;
+  }
+
+}
+
+.header-logo{
+  @include flex(center, flex-end, column);
+  width:auto;
+  height: 100%;
+  li{
+    list-style: none;
+  }
+}
+
+.header-menu{
+  @include size(100%, 100%);
+  @include flex(space-between, center, row);
+
+
+  li{
+    display: block;
+    list-style: none;
+    padding: 20px 20px;
+  }
+
+  a{
+    text-decoration: none;
+  }
+}
+
+//hamburger menu
+.hamburger-wrapper {
+  z-index: 100;
+  width: 25px;
+  height: 25px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 330ms ease-out;
+}
+
+.hamburger-wrapper {
+  &.open{
+    transform: rotate(-45deg);
+  }
+}
+
+.line-menu {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  height: 3px;
+}
+
+.line-menu.half {
+  width: 50%;
+}
+
+.line-menu.start {
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transform-origin: right;
+}
+
+.open .line-menu.start {
+  transform: rotate(-90deg) translateX(3px);
+}
+
+.line-menu.end {
+  align-self: flex-end;
+  transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transform-origin: left;
+}
+
+.open .line-menu.end {
+  transform: rotate(-90deg) translateX(-3px);
+}
+
+
+@media screen and (max-width: 1200px) {
+
+  .hamburger-wrapper{
+    display: flex;
+  }
+
+  .header-wrapper{
+    padding:0 25px;
+
+    #mobile-logo{
+      display: flex;
+      z-index: 100;
+    }
+
+    #pc-logo{
+      display: none;
+    }
+
+  }
+
+  .header-menu{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    @include flex(center, center, column);
+    background-color: #f0f0f0;
+    transform: translateX(-100vw);
+    transition: 300ms ease-in-out all;
+
+    &.open{
+      transform: translateX(0);
+      transition: 300ms ease-in-out all;
+    }
+
+    a{
+      color: #1a1a1a !important;
+    }
+
+  }
+
+}
