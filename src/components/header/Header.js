@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import Link from "next/link";
 import logo from "../../../public/assets/images/logo/asrr.svg";
 import{motion} from "framer-motion";
@@ -6,10 +6,18 @@ import {AnimationContext} from "../../context/AnimationContext";
 
 
 function Header(props) {
-    const value = useContext(AnimationContext);
+
+    const animate = useContext(AnimationContext);
+
+    useEffect(() => {
+
+        animate.home.method();
+
+    }, []);
+
     return (
         <nav className="header-container">
-            <motion.div  variants={value.container} initial="hidden" animate="show"  className="header-wrapper">
+            <motion.div animate={animate.home.animate} className="header-wrapper">
                 <img  src={logo} alt="asrr-logo"/>
                 <Link href="/"><a>Home</a></Link>
                 <Link href="/"><a>Projects</a></Link>

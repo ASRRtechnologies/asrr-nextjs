@@ -1,7 +1,8 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useContext} from 'react'
 import {motion, useAnimation} from 'framer-motion'
 import image from '../../../public/assets/images/drone.jpg'
 import Link from 'next/link'
+import {AnimationContext} from "../../context/AnimationContext";
 
 const easing = "anticipate";
 
@@ -41,22 +42,11 @@ const animation = {
 function Landing(props) {
 
     const controls = useAnimation();
-    const landing = useAnimation();
+    const animate = useContext(AnimationContext);
 
     useEffect(() => {
-        // landing.start({
-        //     x:"100%",
-        //     transition: {
-        //         delay:3,
-        //         duration: 1,
-        //     },
-        // }).then(() => {
-        //     controls.start({
-        //         x: "100%",
-        //         backgroundColor: "#f00",
-        //         transition: {duration: 3},
-        //     }).then(r => alert(23))
-        // });
+
+
 
     }, []);
 
@@ -70,8 +60,7 @@ function Landing(props) {
 
             <div className="landing-text">
 				<span className="landing-overflow">
-					{/*<motion.h1 variants={reveal} animate={"animate"} custom={1}*/}
-                    {/*           initial={"initial"}>Redefining innovative</motion.h1>*/}
+					<motion.h1 animate={animate.home.landing} >Redefining innovative</motion.h1>
                     <motion.h1 initial={false} animate={controls}>Redefining innovative</motion.h1>
 				</span>
                 <span className="landing-overflow">
