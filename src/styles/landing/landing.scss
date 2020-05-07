@@ -30,13 +30,14 @@
   }
 
   h1 {
+    color: $font-color-light;
     max-width: 900px;
-    margin: 0 0 0 20px;
+    margin: 0;
   }
 
   p {
     max-width: 500px;
-    color: #ffffff;
+    color: $font-color-light;
     margin: 0;
   }
 

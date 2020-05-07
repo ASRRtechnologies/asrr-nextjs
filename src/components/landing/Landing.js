@@ -1,47 +1,97 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, {useEffect} from 'react'
+import {motion, useAnimation} from 'framer-motion'
 import image from '../../../public/assets/images/drone.jpg'
 import Link from 'next/link'
 
-const easing = [.6, -0.5, 0.01, 0.99]
-
-const stagger={
-	animate:{
-		transition: {
-			staggerChildren:3
-		}
-	}
-}
+const easing = "anticipate";
 
 //End point of animation
-const animate = {
-	translateY: 0,
-	transition: {
-		duration: 1,
-		ease: easing,
-	},
-}
+const reveal = {
 
-//Begin point of animation, animates from here to animate object
-const initial = {
-	translateY: '100%',
-}
+    initial: {
+        translateY: '100%',
+    },
 
-function Landing (props) {
-	return (
-		<motion.div exit={{ opacity: 0 }} className="landing-container">
-			<motion.div variants={stagger} className="landing-text">
+    animate: i => ({
+        translateY: 0,
+        transition: {
+            delay: i,
+            duration: 1.5,
+            ease: easing,
+        }
+    })
+};
+
+const animation = {
+
+    initial: {
+        x:0,
+
+    },
+    animate: {
+        x:"100%",
+        transition: {
+            delay:3,
+            duration: 1,
+        },
+    }
+};
+
+
+function Landing(props) {
+
+    const controls = useAnimation();
+    const landing = useAnimation();
+
+    useEffect(() => {
+        // landing.start({
+        //     x:"100%",
+        //     transition: {
+        //         delay:3,
+        //         duration: 1,
+        //     },
+        // }).then(() => {
+        //     controls.start({
+        //         x: "100%",
+        //         backgroundColor: "#f00",
+        //         transition: {duration: 3},
+        //     }).then(r => alert(23))
+        // });
+
+    }, []);
+
+
+    return (
+        <motion.div exit={{opacity: 0}} className="landing-container">
+
+            {/*<motion.div initial={false} animate={landing} className="transition-animation">*/}
+            {/*    <img src={logo} alt="asrr"/>*/}
+            {/*</motion.div>*/}
+
+            <div className="landing-text">
 				<span className="landing-overflow">
-					<motion.h1 animate={animate} initial={initial}>Redefining innovative</motion.h1>
+					{/*<motion.h1 variants={reveal} animate={"animate"} custom={1}*/}
+                    {/*           initial={"initial"}>Redefining innovative</motion.h1>*/}
+                    <motion.h1 initial={false} animate={controls}>Redefining innovative</motion.h1>
 				</span>
-				<span className="landing-overflow">
-					<motion.p animate={animate} initial={initial}>See what ASRR can do for your company today</motion.p>
+                <span className="landing-overflow">
+					<motion.p
+                        variants={reveal} animate={"animate"} custom={1.5}
+                        initial={"initial"}>See what ASRR can do for your company today</motion.p>
 				</span>
-			</motion.div>
-			<Link href="test"><a>Test</a></Link>
-			<img src={image} alt="drone"/>
-		</motion.div>
-	)
+
+                <span className="landing-overflow">
+                    <Link href="projects">
+                        <motion.a
+                            variants={reveal} animate={"animate"} custom={2}
+                            initial={"initial"}>Read More</motion.a>
+                    </Link>
+				</span>
+            </div>
+            <Link href="test"><a>Test</a></Link>
+            <img src={image} alt="drone"/>
+        </motion.div>
+    )
 }
 
 export default Landing

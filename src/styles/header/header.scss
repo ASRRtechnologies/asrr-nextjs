@@ -5,45 +5,10 @@
   position: fixed;
   left:0;
   top:0;
+  @include flex(center, center, row);
   z-index: 100000;
-  @include flex(center, center, column);
-  transition: 300ms ease-in-out background-color;
-
-  .form-letter-discipline{
-    transition: 300ms ease-in-out all;
-
-    &.it{
-      fill:#00A86B;
-    }
-
-    &.engineering{
-      fill:#C72C41;
-    }
-
-    &.architecture{
-      fill:#F77F00;
-    }
   }
 
-  //This is for the logo
-  svg{
-    width: 80px;
-    height: auto;
-  }
-
-  &:hover{
-    .form-letter{
-      transition: 300ms ease-in-out all;
-      fill: #1a1a1a;
-    }
-    .form-letter-discipline{
-      transition: 300ms ease-in-out all;
-      &.regular{
-        fill:#1a1a1a;
-      }
-    }
-  }
-}
 
 .header-wrapper{
   @include size(100%, 100%);
@@ -51,8 +16,38 @@
   @include flex(space-between, center, row);
   position: relative;
 
-  #mobile-logo{
-    display: none;
+  img{
+    width: 80px;
+    height: auto;
+  }
+
+  a{
+    height: 100%;
+    width: auto;
+    position: relative;
+    text-decoration: none;
+    @include flex(space-between, center, row);
+    cursor: pointer;
+
+    &:after{
+      content:"";
+      position: absolute;
+      bottom:10px;
+      left:0;
+      transform: scaleX(0);
+      transform-origin: left;
+      width:100%;
+      height: 3px;
+      background-color: $primary-color;
+      transition: cubic-bezier(.51,.92,.24,1.15) all 300ms;
+    }
+
+    &:hover{
+      &:after {
+        transform: scaleX(1);
+        transition: cubic-bezier(.51,.92,.24,1.15) all 300ms;
+      }
+    }
   }
 
 }
