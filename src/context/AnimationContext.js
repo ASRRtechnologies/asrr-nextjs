@@ -1,12 +1,15 @@
 import React, {useState, createContext} from "react";
-
 export const AnimationContext = createContext();
 import {useAnimation} from "framer-motion";
-
+import {homepage} from "../components/animation/home";
 
 const container = {
     hidden: {
-        y: "-100%"
+        y: "-100%",
+        transition:{
+            duration:1,
+            ease:"linear"
+        }
     },
 
     show: {
@@ -28,22 +31,9 @@ const provider = ({children}) => {
 
         home: {
             landing: landingAnimation,
-            animate: homeAnimation,
-            method: async () => {
-                await homeAnimation.start({
-                    x: "100%",
-                    backgroundColor: "#f00",
-                    transition: {duration: 3},
-                }).then(
-                    () => {
-                        landingAnimation.start({
-                            x: "100%",
-                            backgroundColor: "#f00",
-                            transition: {duration: 3},
-                        })
-                    }
-                )
-            },
+            animate: homepage().animate,
+            variant: homepage().variant,
+            method: homepage().method(),
         }
     });
 
