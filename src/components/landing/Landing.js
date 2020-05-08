@@ -58,26 +58,26 @@ function Landing(props) {
             {/*    <img src={logo} alt="asrr"/>*/}
             {/*</motion.div>*/}
 
-            <div className="landing-text">
-				<span className="landing-overflow">
-					<motion.h1 animate={animate.home.landing} >Redefining innovative</motion.h1>
-                    <motion.h1 initial={false} animate={controls}>Redefining innovative</motion.h1>
-				</span>
-                <span className="landing-overflow">
-					<motion.p
-                        variants={reveal} animate={"animate"} custom={1.5}
-                        initial={"initial"}>See what ASRR can do for your company today</motion.p>
-				</span>
+            {/*<div className="landing-text">*/}
+			{/*	<span className="landing-overflow">*/}
+			{/*		<motion.h1 animate={animate.home.landing} >Redefining innovative</motion.h1>*/}
+            {/*        <motion.h1 initial={false} animate={controls}>Redefining innovative</motion.h1>*/}
+			{/*	</span>*/}
+            {/*    <span className="landing-overflow">*/}
+			{/*		<motion.p*/}
+            {/*            variants={reveal} animate={"animate"} custom={1.5}*/}
+            {/*            initial={"initial"}>See what ASRR can do for your company today</motion.p>*/}
+			{/*	</span>*/}
 
-                <span className="landing-overflow">
-                    <Link href="projects">
-                        <motion.a
-                            variants={reveal} animate={"animate"} custom={2}
-                            initial={"initial"}>Read More</motion.a>
-                    </Link>
-				</span>
-            </div>
-            <Link href="test"><a>Test</a></Link>
+            {/*    <span className="landing-overflow">*/}
+            {/*        <Link href="projects">*/}
+            {/*            <motion.a*/}
+            {/*                variants={reveal} animate={"animate"} custom={2}*/}
+            {/*                initial={"initial"}>Read More</motion.a>*/}
+            {/*        </Link>*/}
+			{/*	</span>*/}
+            {/*</div>*/}
+            {/*<Link href="test"><a>Test</a></Link>*/}
             <img src={image} alt="drone"/>
         </motion.div>
     )

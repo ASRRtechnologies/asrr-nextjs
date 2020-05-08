@@ -1,39 +1,29 @@
 import React, {useState, createContext} from "react";
 export const AnimationContext = createContext();
 import {useAnimation} from "framer-motion";
-import {homepage} from "../components/animation/home";
-
-const container = {
-    hidden: {
-        y: "-100%",
-        transition:{
-            duration:1,
-            ease:"linear"
-        }
-    },
-
-    show: {
-        y: 0,
-        transition: {
-            duration: 0.4,
-            ease: "linear",
-        }
-    }
-};
-
+import {header, overlay} from "../components/animation/animations";
 
 const provider = ({children}) => {
-    const homeAnimation = useAnimation();
-    const landingAnimation = useAnimation();
 
+    const headerAnimation = useAnimation();
+    const overlayAnimation = useAnimation();
+
+    async function homePageAnimation() {
+        overlayAnimation.start("show").then(() =>
+        headerAnimation.start("show") )
+    };
 
     const [state, setState] = useState({
-
         home: {
-            landing: landingAnimation,
-            animate: homepage().animate,
-            variant: homepage().variant,
-            method: homepage().method(),
+            header:{
+                animate:headerAnimation,
+                variant:header.variant
+            },
+            overlay:{
+                animate:overlayAnimation,
+                variant:overlay.variant
+            },
+            method: homePageAnimation,
         }
     });
 
@@ -45,5 +35,6 @@ const provider = ({children}) => {
 };
 
 export default provider;
+
 
 

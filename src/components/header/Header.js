@@ -6,18 +6,11 @@ import {AnimationContext} from "../../context/AnimationContext";
 
 
 function Header(props) {
-
     const animate = useContext(AnimationContext);
-
-    useEffect(() => {
-        console.log(animate.home.method);
-        animate.home.method;
-
-    }, []);
-
     return (
         <nav className="header-container">
-            <motion.div variants={animate.home.variant} animate={animate.home.animate} initial={"hidden"}  className="header-wrapper">
+            <motion.div variants={animate.home.header.variant} animate={animate.home.header.animate} initial={"hidden"}
+                        className="header-wrapper">
                 <img  src={logo} alt="asrr-logo"/>
                 <Link href="/"><a>Home</a></Link>
                 <Link href="/"><a>Projects</a></Link>
