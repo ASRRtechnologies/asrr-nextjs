@@ -26,7 +26,7 @@ export const header = {
 
 //Black ASRR overlay
 export const overlay = {
-    variant: {
+    background: {
         hidden: {
             scaleY: 1,
             easing:[.51,.92,.24,1.15]
@@ -34,10 +34,28 @@ export const overlay = {
         show: {
             scaleY: 0,
             transition: {
-                delay: 3,
                 duration: 1,
+                easing:[.51,.92,.24,1.15]
+            },
+        }
+    },
+     logo: {
+        hidden: {
+            translateX:"0%",
+            transition:{
+                easing:[.51,.92,.24,1.15],
+            }
+        },
+
+        show: {
+            translateX: "100%",
+            transition: {
+                delay:1,
+                duration: 0.5,
                 easing:[.51,.92,.24,1.15]
             },
         }
     }
 };
+
+

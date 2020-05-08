@@ -5,10 +5,25 @@
   @include flex(center, center, row);
   transform-origin: top;
   position: fixed;
-
-
   img{
     width: 200px;
     height: auto;
   }
+}
+
+.element-overflow{
+  display: block;
+  overflow: hidden;
+  height: auto;
+  width: auto;
+  position: relative;
+}
+
+.element-overflow-background{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: $primary-color;
+  position: absolute;
+  left:0;
 }

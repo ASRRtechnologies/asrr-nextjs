@@ -1,6 +1,6 @@
 import React, {useContext, useEffect, useState} from 'react'
 import Landing from '../components/landing/Landing'
-import Animation from "../components/landing/Animation";
+import Overlay from "../components/landing/Overlay";
 import {AnimationContext} from "../context/AnimationContext";
 
 function Index(props) {
@@ -13,7 +13,7 @@ function Index(props) {
 
     return (
         <div className="content-wrapper">
-            <Animation/>
+            <Overlay/>
             <Landing/>
         </div>
     )
