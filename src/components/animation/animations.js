@@ -34,7 +34,7 @@ export const overlay = {
         show: {
             scaleY: 0,
             transition: {
-                duration: 1,
+                duration: 100,
                 easing:[.51,.92,.24,1.15]
             },
         }
