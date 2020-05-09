@@ -2,6 +2,7 @@ import React from 'react';
 import {useAnimation} from "framer-motion";
 
 //Here the animations are defined for the pages
+const easing = [.17,.67,.82,.1];
 
 
 // Homepage animations
@@ -11,14 +12,14 @@ export const header = {
             y: "-100%",
             transition: {
                 duration: 0.4,
-                ease: "linear"
+                easing: easing
             }
         },
         show: {
             y: 0,
             transition: {
                 duration: 0.4,
-                ease: "linear",
+                easing: easing
             }
         }
     }
@@ -28,34 +29,31 @@ export const header = {
 export const overlay = {
     background: {
         hidden: {
-            scaleY: 1,
-            easing:[.51,.92,.24,1.15]
+            scaleX: 1,
+            easing:easing
         },
         show: {
-            scaleY: 0,
+            transformOrigin:"right",
+            scaleX: 0,
             transition: {
-                duration: 100,
-                easing:[.51,.92,.24,1.15]
+                duration: 1,
+                easing:easing
             },
         }
     },
-     logo: {
+    box: {
         hidden: {
-            translateX:"0%",
-            transition:{
-                easing:[.51,.92,.24,1.15],
-            }
+            scaleX: 0,
+            easing:easing
         },
-
         show: {
-            translateX: "100%",
+            scaleX: 1,
             transition: {
-                delay:1,
                 duration: 0.5,
-                easing:[.51,.92,.24,1.15]
+                easing:easing
             },
         }
-    }
+    },
 };
 
 
