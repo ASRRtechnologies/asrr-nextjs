@@ -1,84 +1,68 @@
 import React, {useEffect, useContext} from 'react'
 import {motion, useAnimation} from 'framer-motion'
 import image from '../../../public/assets/images/drone.jpg'
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 import {AnimationContext} from "../../context/AnimationContext";
-
-const easing = "anticipate";
-
-//End point of animation
-const reveal = {
-
-    initial: {
-        translateY: '100%',
-    },
-
-    animate: i => ({
-        translateY: 0,
-        transition: {
-            delay: i,
-            duration: 1.5,
-            ease: easing,
-        }
-    })
-};
-
-const animation = {
-
-    initial: {
-        x:0,
-
-    },
-    animate: {
-        x:"100%",
-        transition: {
-            delay:3,
-            duration: 1,
-        },
-    }
-};
-
 
 function Landing(props) {
 
-    const controls = useAnimation();
     const animate = useContext(AnimationContext);
+    const animation = animate.animation.landing;
+    const router = useRouter();
 
-    useEffect(() => {
-
-
-
-    }, []);
-
+    const navigate = (url) => {
+        router.push(url).then(null)
+    };
 
     return (
         <motion.div exit={{opacity: 0}} className="landing-container">
-
-            {/*<motion.div initial={false} animate={landing} className="transition-animation">*/}
-            {/*    <img src={logo} alt="asrr"/>*/}
-            {/*</motion.div>*/}
-
-            {/*<div className="landing-text">*/}
-			{/*	<span className="landing-overflow">*/}
-			{/*		<motion.h1 animate={animate.home.landing} >Redefining innovative</motion.h1>*/}
-            {/*        <motion.h1 initial={false} animate={controls}>Redefining innovative</motion.h1>*/}
-			{/*	</span>*/}
-            {/*    <span className="landing-overflow">*/}
-			{/*		<motion.p*/}
-            {/*            variants={reveal} animate={"animate"} custom={1.5}*/}
-            {/*            initial={"initial"}>See what ASRR can do for your company today</motion.p>*/}
-			{/*	</span>*/}
-
-            {/*    <span className="landing-overflow">*/}
-            {/*        <Link href="projects">*/}
-            {/*            <motion.a*/}
-            {/*                variants={reveal} animate={"animate"} custom={2}*/}
-            {/*                initial={"initial"}>Read More</motion.a>*/}
-            {/*        </Link>*/}
-			{/*	</span>*/}
-            {/*</div>*/}
-            {/*<Link href="test"><a>Test</a></Link>*/}
             <img src={image} alt="drone"/>
+
+            <div className="landing-text">
+				<span className="landing-overflow">
+                    <motion.h1 initial={animation.landingText.initial} animate={animation.landingText.animate}>Redefining innovative</motion.h1>
+				</span>
+
+                <span className="landing-overflow">
+					<motion.p initial={animation.landingText.initial} animate={animation.landingText.animate}
+                              custom={1}>
+                        See what ASRR can do for your company today
+					</motion.p>
+				</span>
+
+                <span className="landing-overflow">
+                        <motion.p onClick={() => navigate("projects")} initial={animation.landingText.initial} animate={animation.landingText.animate}
+                                  custom={1.5}>
+                            See all projects
+                        </motion.p>
+				</span>
+
+            </div>
+
+            <motion.div  initial={animation.landingCards.initial} animate={animation.landingCards.animate} className="landing-box-container">
+                <div className="landing-box-wrapper">
+                    <div className="landing-box" onClick={() => navigate("projects")}>
+                        <h4>Building</h4>
+                        <h3>Building</h3>
+                    </div>
+
+                    <div className="landing-box">
+                        <h4>Building</h4>
+                        <h3>Building</h3>
+                    </div>
+
+                    <div className="landing-box">
+                        <h4>Building</h4>
+                        <h3>Building</h3>
+                    </div>
+
+                    <div className="landing-box">
+                        <h4>Building</h4>
+                        <h3>Building</h3>
+                    </div>
+
+                </div>
+            </motion.div>
         </motion.div>
     )
 }

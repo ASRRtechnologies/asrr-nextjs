@@ -5,23 +5,15 @@ import {AnimationContext} from "../../context/AnimationContext";
 
 function Overlay() {
     const animate = useContext(AnimationContext);
-    const animation = animate.home.overlay;
-
-    const initialLogo = {
-        y: "200%",
-    };
-
-    const initialBox = {
-        scaleX: 0,
-    };
+    const animation = animate.animation.overlay;
 
     return (
-        <motion.div variants={animation.background.variant} animate={animation.background.animate} initial={"hidden"}
+        <motion.div animate={animation.background.animate} initial={animation.background.initial}
                     className="transition-animation">
                 <span className="element-overflow">
-                    <motion.div animate={animation.box.animate} initial={initialBox}
+                    <motion.div animate={animation.box.animate} initial={animation.box.initial}
                                 className="element-overflow-background"> </motion.div>
-                    <motion.img animate={animation.logo.animate} initial={initialLogo} src={logo} alt="asrr"/>
+                    <motion.img animate={animation.logo.animate} initial={animation.logo.initial} src={logo} alt="asrr"/>
             	</span>
         </motion.div>
     );

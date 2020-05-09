@@ -8,7 +8,7 @@ function Index(props) {
     const animate = useContext(AnimationContext);
 
     useEffect(() => {
-        animate.home.method();
+        animate.animation.method();
     }, []);
 
     return (

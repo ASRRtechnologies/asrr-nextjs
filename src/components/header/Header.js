@@ -4,12 +4,14 @@ import logo from "../../../public/assets/images/logo/asrr.svg";
 import{motion} from "framer-motion";
 import {AnimationContext} from "../../context/AnimationContext";
 
-
 function Header(props) {
+
     const animate = useContext(AnimationContext);
+    const animation = animate.animation.header;
+
     return (
         <nav className="header-container">
-            <motion.div variants={animate.home.header.variant} animate={animate.home.header.animate} initial={"hidden"}
+            <motion.div animate={animation.animate} initial={animation.initial}
                         className="header-wrapper">
                 <img  src={logo} alt="asrr-logo"/>
                 <Link href="/"><a>Home</a></Link>
