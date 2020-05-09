@@ -1,4 +1,5 @@
 import React, {useState, createContext} from "react";
+
 export const AnimationContext = createContext();
 import {useAnimation} from "framer-motion";
 
@@ -9,14 +10,14 @@ const provider = ({children}) => {
         background: useAnimation(),
         logo: useAnimation(),
         box: useAnimation(),
-        header:useAnimation(),
-        landingText:useAnimation(),
-        landingCards:useAnimation()
+        header: useAnimation(),
+        landingText: useAnimation(),
+        landingCards: useAnimation()
     };
 
     //Bezier easing curve of animations
     const easing = [.17, .67, .82, .1];
-    const textEasing = [.42,0,.58,1];
+    const textEasing = [.42, 0, .58, 1];
 
     //Initial state of overlay animation
     const initialOverlay = {
@@ -103,7 +104,7 @@ const provider = ({children}) => {
 
 //Add delay prop i which is set with custom prop in the component
     async function showText() {
-        await useAnimationHook.landingText.start( i => ({
+        await useAnimationHook.landingText.start(i => ({
             translateY: "0%",
             transition: {
                 delay: 0.5 * i,
@@ -114,14 +115,20 @@ const provider = ({children}) => {
     }
 
     const initialLandingCards = {
-        // translateY: '100%',
         scaleY: 0,
     };
 
+    const exitLandingCards = {
+        scaleY: 0,
+        transition: {
+            duration: 0.2
+        }
+    };
+
     async function showLandingCards() {
-        await useAnimationHook.landingCards.start( {
-            scaleY:1,
-            transformOrigin:"bottom",
+        await useAnimationHook.landingCards.start({
+            scaleY: 1,
+            transformOrigin: "bottom",
             transition: {
                 duration: 0.2,
                 ease: textEasing,
@@ -130,18 +137,25 @@ const provider = ({children}) => {
     }
 
     //Main function that triggers all animations
-    async function mainAnimation() {
+    async function firstLoad() {
         showLogo()
             .then(() => showBox()
                 .then(() => hideLogo()
                     .then(() => hideBox()
-                    .then(() => hideOverlay()
-                        .then(() => showHeader()
-                            .then(() => showText())
+                        .then(() => hideOverlay()
+                            .then(() => showHeader()
+                                .then(() => showText())
                                 .then(() => showLandingCards())
+                            ))
                     ))
-            ))
-        )
+            )
+    }
+
+    //Main function that triggers all animations
+    async function secondLoad() {
+        showHeader()
+            .then(() => showText())
+                .then(() => showLandingCards())
     }
 
     const [state, setState] = useState({
@@ -165,17 +179,19 @@ const provider = ({children}) => {
                 }
             },
 
-            landing:{
+            landing: {
                 landingText: {
                     animate: useAnimationHook.landingText,
                     initial: initialText
                 },
-                landingCards:{
+                landingCards: {
                     animate: useAnimationHook.landingCards,
-                    initial: initialLandingCards
+                    initial: initialLandingCards,
+                    exit: exitLandingCards
                 }
             },
-            method: mainAnimation,
+            firstLoad: firstLoad,
+            secondLoad:secondLoad
         }
     });
 

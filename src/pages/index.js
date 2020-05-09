@@ -8,12 +8,11 @@ function Index(props) {
     const animate = useContext(AnimationContext);
 
     useEffect(() => {
-        animate.animation.method();
+        animate.animation.secondLoad();
     }, []);
 
     return (
         <div className="content-wrapper">
-            <Overlay/>
             <Landing/>
         </div>
     )

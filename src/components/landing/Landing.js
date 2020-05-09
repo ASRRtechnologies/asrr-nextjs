@@ -15,7 +15,7 @@ function Landing(props) {
     };
 
     return (
-        <motion.div exit={{opacity: 0}} className="landing-container">
+        <motion.div className="landing-container">
             <img src={image} alt="drone"/>
 
             <div className="landing-text">
@@ -39,7 +39,7 @@ function Landing(props) {
 
             </div>
 
-            <motion.div  initial={animation.landingCards.initial} animate={animation.landingCards.animate} className="landing-box-container">
+            <motion.div  initial={animation.landingCards.initial} animate={animation.landingCards.animate} exit={ animation.landingCards.exit} className="landing-box-container">
                 <div className="landing-box-wrapper">
                     <div className="landing-box" onClick={() => navigate("projects")}>
                         <h4>Building</h4>

@@ -7,6 +7,10 @@ function Overlay() {
     const animate = useContext(AnimationContext);
     const animation = animate.animation.overlay;
 
+    useEffect(() => {
+        animate.animation.firstLoad();
+    }, []);
+
     return (
         <motion.div animate={animation.background.animate} initial={animation.background.initial}
                     className="transition-animation">

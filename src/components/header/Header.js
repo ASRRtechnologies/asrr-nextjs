@@ -15,7 +15,7 @@ function Header(props) {
                         className="header-wrapper">
                 <img  src={logo} alt="asrr-logo"/>
                 <Link href="/"><a>Home</a></Link>
-                <Link href="/"><a>Projects</a></Link>
+                <Link href="/portfolio"><a>Portfolio</a></Link>
                 <Link href="/"><a>Services</a></Link>
                 <Link href="/"><a>Hire a Developer</a></Link>
                 <Link href="/"><a>Contact us</a></Link>
