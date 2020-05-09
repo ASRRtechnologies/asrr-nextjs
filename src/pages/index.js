@@ -8,12 +8,41 @@ function Index(props) {
     const animate = useContext(AnimationContext);
 
     useEffect(() => {
-        animate.animation.secondLoad();
+        //Load animation only if app has loaded once
+         (animate.appLoaded) ? animate.animation.secondLoad() : null
     }, []);
 
     return (
         <div className="content-wrapper">
             <Landing/>
+            <h1>
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+                Test
+            </h1>
         </div>
     )
 }

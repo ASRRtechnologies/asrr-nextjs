@@ -3,7 +3,7 @@
   height: 100vh;
   background-color: #1a1a1a;
   @include flex(center, center, row);
-  transform-origin: top;
+  transform-origin: right;
   position: fixed;
   z-index: $overlay-zIndex;
 
@@ -11,6 +11,7 @@
     width:auto;
     height: auto;
     z-index: $overlay-text-zIndex;
+    color:$font-color-light;
   }
 
   img{

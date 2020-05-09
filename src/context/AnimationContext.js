@@ -27,7 +27,6 @@ const provider = ({children}) => {
     //Sequence function for chained animations
     async function hideOverlay() {
         await useAnimationHook.background.start({
-            transformOrigin: "right",
             scaleX: 0,
             transition: {
                 duration: 1,
@@ -64,7 +63,6 @@ const provider = ({children}) => {
 
     async function showBox() {
         await useAnimationHook.box.start({
-            transformOrigin: "left",
             scaleX: 1,
             transition: {
                 duration: 0.5,
@@ -75,12 +73,12 @@ const provider = ({children}) => {
 
     async function hideBox() {
         await useAnimationHook.box.start({
-            transformOrigin: "right",
             scaleX: 0,
             transition: {
                 duration: 0.5,
                 easing: easing
             },
+            transformOrigin: "right",
         });
     }
 
@@ -102,6 +100,16 @@ const provider = ({children}) => {
         translateY: '100%',
     };
 
+    //Add delay prop i which is set with custom prop in the component
+    const exitText = (i) => ({
+        translateY: "100%",
+        transition: {
+            delay: i * 0.2,
+            duration: 0.3,
+            ease: textEasing,
+        }
+    });
+
 //Add delay prop i which is set with custom prop in the component
     async function showText() {
         await useAnimationHook.landingText.start(i => ({
@@ -121,6 +129,7 @@ const provider = ({children}) => {
     const exitLandingCards = {
         scaleY: 0,
         transition: {
+            delay:0.4,
             duration: 0.2
         }
     };
@@ -128,7 +137,6 @@ const provider = ({children}) => {
     async function showLandingCards() {
         await useAnimationHook.landingCards.start({
             scaleY: 1,
-            transformOrigin: "bottom",
             transition: {
                 duration: 0.2,
                 ease: textEasing,
@@ -137,6 +145,8 @@ const provider = ({children}) => {
     }
 
     //Main function that triggers all animations
+    //The setFirstload hook sets the firstTime that the app is loaded, to make sure only the firstLoad animation is load.
+    //The firstLoad value is conditionally checked inside each page component to see if it is allowed to load the secondLoad Animation
     async function firstLoad() {
         showLogo()
             .then(() => showBox()
@@ -146,10 +156,16 @@ const provider = ({children}) => {
                             .then(() => showHeader()
                                 .then(() => showText())
                                 .then(() => showLandingCards())
+                                .then(() => setState(prevState => ({
+                                    ...prevState,
+                                    appLoaded: true,
+                                })))
                             ))
                     ))
             )
     }
+
+
 
     //Main function that triggers all animations
     async function secondLoad() {
@@ -159,6 +175,7 @@ const provider = ({children}) => {
     }
 
     const [state, setState] = useState({
+        appLoaded:false,
         animation: {
             header: {
                 animate: useAnimationHook.header,
@@ -182,7 +199,8 @@ const provider = ({children}) => {
             landing: {
                 landingText: {
                     animate: useAnimationHook.landingText,
-                    initial: initialText
+                    initial: initialText,
+                    exit:exitText
                 },
                 landingCards: {
                     animate: useAnimationHook.landingCards,
@@ -195,6 +213,7 @@ const provider = ({children}) => {
         }
     });
 
+    const [firstAppLoad, setFirstLoad] = useState(true);
     return (
         <AnimationContext.Provider value={{...state}}>
             {children}

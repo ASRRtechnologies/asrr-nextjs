@@ -61,6 +61,7 @@
   height: 100%;
   @include flex (center, flex-end, row);
   flex:1;
+  transform-origin: bottom;
 }
 
 .landing-box-wrapper{
@@ -88,6 +89,16 @@
   border-right:none;
   border-bottom: none;
   cursor: pointer;
+  transition: 300ms ease-in-out all;
+
+  &.blur{
+    filter: blur(1.4px);
+  }
+
+  &:hover{
+    transition: 300ms ease-in-out all;
+    background-color: rgba(61,58,65, 1);
+  }
 
 }
 
