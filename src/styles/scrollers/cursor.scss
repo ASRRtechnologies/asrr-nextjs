@@ -14,7 +14,7 @@ body {
   transform: scale(1) rotate(45deg);
 
   &.active{
-    transform: scale(1.3);
+    transform: scale(2);
     transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
   }
 }

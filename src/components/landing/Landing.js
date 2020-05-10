@@ -86,11 +86,11 @@ function Landing(props) {
                         initial={animation.landingCards.initial} animate={animation.landingCards.animate}
                         exit={animation.landingCards.exit} className="landing-box-container">
                 <div  onMouseEnter={hoverCardArea} onMouseLeave={leaveCardArea} className="landing-box-wrapper">
-                    {cards.map((i) => {
+                    {cards.map((i, data) => {
                         return (<div onMouseEnter={() => hoverSpecificCard(i)}
                                      onMouseLeave={leaveSpecificCard}
                                      className={`landing-box ${activeCard.index !== i && hover && "blur"}`}
-                                     onClick={() => navigate("/portfolio")}>
+                                     onClick={() => navigate(data.url)}>
                             <h4>Building</h4>
                             <h3>Building</h3>
                         </div>)

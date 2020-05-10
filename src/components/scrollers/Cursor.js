@@ -1,35 +1,39 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {Component} from 'react';
 
-function Cursor(props) {
+class Cursor extends Component {
+    constructor(props){
+        super(props);
+        this.mouseRef = React.createRef();
+        this.state = {
+            cursor:"cursor"
+        }
+    }
 
-    const [cursor, useCursor ] = useState("cursor");
-    const [left, useLeft] = useState(50);
-    const [top, useTop] = useState(50);
-
-    const mouseRef = useRef(null);
-
-    useEffect(() => {
+    componentDidMount(){
         document.addEventListener('mousemove', e => {
-            mouseRef.current.style.left = `${e.pageX}px`;
-            mouseRef.current.style.top = `${e.pageY}px`;
+            //Change style via ref instead of setting style property with state to limit rerender otherwise it will be laggy.
+            this.mouseRef.current.style.left = `${e.clientX}px`;
+            this.mouseRef.current.style.top = `${e.clientY}px`;
         });
 
         document.addEventListener('mousedown', e => {
-           useCursor("cursor active")
+            this.setState({cursor:"cursor active"})
         });
 
         document.addEventListener('mouseup', e => {
-            useCursor("cursor")
+            this.setState({cursor:"cursor"})
         });
 
-    },);
-
-    return (
-        <div ref={mouseRef} className={cursor}>
+    }
 
 
-        </div>
-    );
+    render() {
+        return (
+            <div ref={this.mouseRef} className={this.state.cursor}>
+
+            </div>
+        );
+    }
 }
 
 export default Cursor;

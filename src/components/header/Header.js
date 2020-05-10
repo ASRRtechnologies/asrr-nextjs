@@ -5,7 +5,6 @@ import{motion} from "framer-motion";
 import {AnimationContext} from "../../context/AnimationContext";
 
 function Header(props) {
-
     const [visible, setVisible] = useState(false);
     const animate = useContext(AnimationContext);
     const animation = animate.animation.header;
