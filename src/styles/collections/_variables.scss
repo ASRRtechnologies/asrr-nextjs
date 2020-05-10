@@ -1,17 +1,14 @@
-$primary-color:#F78DA7;
-$black: #1a1a1a;
-$max-width:1100px;
-$section-padding-pc: 150px 0;
+$font-color-light: white;
+$primary-color:#ff6961;
+$max-width:1200px;
+
+$overlay-zIndex: 10000;
+$overlay-text-zIndex: 10000;
+$cursor-zIndex: 100000;
+$header-zIndex: 1000;
 
 
-
-$button-positive:#02C03C;
-$button-decline:#BEBEC0;
-$button-regular: #F78DA7;
-$button-disabled:#c3c3c3;
-$button-negative:#FF0000;
-
-$section-padding: (
-        pc: 150px 0 100px 0,
-        mobile: 80px 0 100px 0,
-);
+//Dark colors
+$tint-1-dark:#181719;
+$tint-2-dark:#27242C;
+$tint-3-dark: #3D3A41;

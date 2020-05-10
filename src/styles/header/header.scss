@@ -1,83 +1,98 @@
-.header-container{
+.header-container {
   width: 100%;
   height: 70px;
   //background-color: #f0f0f0;
   position: fixed;
-  left:0;
-  top:0;
-  z-index: 100000;
-  @include flex(center, center, column);
-  transition: 300ms ease-in-out background-color;
+  left: 0;
+  top: 0;
+  @include flex(center, center, row);
+  //z-index: -100;
+  //opacity: 0;
+  transition: 300ms ease-in-out all;
+  color:white !important;
+  z-index: $header-zIndex;
 
-  .form-letter-discipline{
-    transition: 300ms ease-in-out all;
-
-    &.it{
-      fill:#00A86B;
-    }
-
-    &.engineering{
-      fill:#C72C41;
-    }
-
-    &.architecture{
-      fill:#F77F00;
-    }
+  //Header used on landing page
+  &.landing {
+    opacity: 1;
+    z-index: $header-zIndex;
+    position: absolute;
+    top: 0;
   }
 
-  //This is for the logo
-  svg{
-    width: 80px;
-    height: auto;
-  }
-
-  &:hover{
-    .form-letter{
-      transition: 300ms ease-in-out all;
-      fill: #1a1a1a;
-    }
-    .form-letter-discipline{
-      transition: 300ms ease-in-out all;
-      &.regular{
-        fill:#1a1a1a;
-      }
-    }
+  &.visible{
+    background-color: white;
+    opacity: 1;
+    z-index: $header-zIndex;
   }
 }
 
-.header-wrapper{
+
+.header-wrapper {
   @include size(100%, 100%);
   max-width: $max-width;
   @include flex(space-between, center, row);
   position: relative;
 
-  #mobile-logo{
-    display: none;
+  img {
+    width: 80px;
+    height: auto;
+    z-index: $header-zIndex;
+  }
+
+  a {
+    height: 100%;
+    width: auto;
+    position: relative;
+    text-decoration: none;
+    @include flex(space-between, center, row);
+    cursor: pointer;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      transform: scaleX(0);
+      transform-origin: left;
+      width: 100%;
+      height: 3px;
+      background-color: $primary-color;
+      transition: cubic-bezier(.51, .92, .24, 1.15) all 300ms;
+    }
+
+    &:hover {
+      &:after {
+        transform: scaleX(1);
+        transition: cubic-bezier(.51, .92, .24, 1.15) all 300ms;
+      }
+    }
   }
 
 }
 
-.header-logo{
+.header-logo {
   @include flex(center, flex-end, column);
-  width:auto;
+  width: auto;
   height: 100%;
-  li{
+
+  li {
     list-style: none;
   }
 }
 
-.header-menu{
+.header-menu {
   @include size(100%, 100%);
   @include flex(space-between, center, row);
 
 
-  li{
+  li {
     display: block;
     list-style: none;
     padding: 20px 20px;
   }
 
-  a{
+  a {
     text-decoration: none;
   }
 }
@@ -95,7 +110,7 @@
 }
 
 .hamburger-wrapper {
-  &.open{
+  &.open {
     transform: rotate(-45deg);
   }
 }
@@ -133,28 +148,28 @@
 
 @media screen and (max-width: 1200px) {
 
-  .hamburger-wrapper{
+  .hamburger-wrapper {
     display: flex;
   }
 
-  .header-wrapper{
-    padding:0 25px;
+  .header-wrapper {
+    padding: 0 25px;
 
-    #mobile-logo{
+    #mobile-logo {
       display: flex;
       z-index: 100;
     }
 
-    #pc-logo{
+    #pc-logo {
       display: none;
     }
 
   }
 
-  .header-menu{
+  .header-menu {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100vw;
     @include flex(center, center, column);
@@ -162,12 +177,12 @@
     transform: translateX(-100vw);
     transition: 300ms ease-in-out all;
 
-    &.open{
+    &.open {
       transform: translateX(0);
       transition: 300ms ease-in-out all;
     }
 
-    a{
+    a {
       color: #1a1a1a !important;
     }
 
