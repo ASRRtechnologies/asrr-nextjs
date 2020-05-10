@@ -3,6 +3,7 @@ import {motion, useAnimation} from 'framer-motion'
 import image from '../../../public/assets/images/drone.jpg'
 import {useRouter} from 'next/router'
 import {AnimationContext} from "../../context/AnimationContext";
+import LandingHeader from "../header/LandingHeader";
 
 const cards = [
     {sector: "Construction", title: "Construction", url: "/construction"},
@@ -54,7 +55,8 @@ function Landing(props) {
 
     return (
         <motion.div className="landing-container">
-            <img src={image} alt="drone"/>
+            {/*<LandingHeader/>*/}
+            <img className="background" src={image} alt="drone"/>
 
             <div className="landing-text">
 				<span className="landing-overflow">

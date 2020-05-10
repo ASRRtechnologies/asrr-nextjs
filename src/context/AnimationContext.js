@@ -83,12 +83,20 @@ const provider = ({children}) => {
     }
 
     const initialHeader = {
-        y: "-100%",
+        translateY: "-100%",
+    };
+
+    const exitHeader = {
+        translateY: "-400%",
+        transition: {
+            duration: 0.4,
+            easing: easing
+        }
     };
 
     async function showHeader() {
         await useAnimationHook.header.start({
-            y: 0,
+            translateY: "0%",
             transition: {
                 duration: 0.4,
                 easing: easing
@@ -165,8 +173,6 @@ const provider = ({children}) => {
             )
     }
 
-
-
     //Main function that triggers all animations
     async function secondLoad() {
         showHeader()
@@ -179,7 +185,8 @@ const provider = ({children}) => {
         animation: {
             header: {
                 animate: useAnimationHook.header,
-                initial: initialHeader
+                initial: initialHeader,
+                exit:exitHeader
             },
             overlay: {
                 background: {

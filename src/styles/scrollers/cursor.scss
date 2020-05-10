@@ -1,0 +1,21 @@
+body {
+  cursor: none;
+}
+
+.cursor {
+  position: fixed;
+  border:solid 2px $primary-color;
+  width: 15px;
+  height: 15px;
+  z-index: $cursor-zIndex;
+  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
+  user-select: none;
+  pointer-events: none;
+  transform: scale(1) rotate(45deg);
+
+  &.active{
+    transform: scale(1.3);
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
+  }
+}
+
