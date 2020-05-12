@@ -2,6 +2,7 @@
 @import "mixins";
 @import "variables";
 @import "../header/header";
+@import "../header/hamburger";
 @import "../landing/landing";
 @import "../layout/layout";
 @import "../animation/transition-animation";
@@ -12,3 +13,7 @@
 //Portfolio
 @import "../portfolio/portfolio";
 @import "../portfolio/cards";
+
+
+//Hamburgers
+@import "../../../node_modules/hamburgers/_sass/hamburgers/hamburgers";

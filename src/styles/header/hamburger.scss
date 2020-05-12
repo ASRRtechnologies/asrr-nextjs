@@ -1,0 +1,56 @@
+$primary: (
+        100: #cfd8dc,
+        500: #607d8b,
+        700: #455a64
+);
+
+$accent: (
+        700: #d50000
+);
+
+$colors: (
+        body-bg: map-get($primary, 500),
+        body-color: #fff,
+        icon-bg: #fff
+);
+
+
+
+.toggle {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  width: em(100px);
+
+  .text {
+    font-size: em(18px);
+    transform: translate3d(0,0,0);
+  }
+}
+
+.icon {
+  display: block;
+  height: em(25px);
+  position: relative;
+  width: em(35px);
+  transform: rotateZ(0);
+
+  div {
+    background-color: color(icon-bg);
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+
+    &.middle {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &.bottom {
+      bottom: 0;
+    }
+  }
+}
