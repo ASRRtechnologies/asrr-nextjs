@@ -1,0 +1,17 @@
+//Of paes without the header
+.layout{
+  height: 100%;
+  width: 100%;
+  @include flex(center, center, column);
+  background-color: white;
+}
+
+
+//General layout of seciton components
+.section{
+  @include flex(flex-start, flex-start, column);
+  padding: 100px 0;
+  width: 100%;
+  height: auto;
+  max-width: $max-width;
+}

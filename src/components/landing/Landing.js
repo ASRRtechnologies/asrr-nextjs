@@ -1,6 +1,6 @@
 import React, {useEffect, useContext, useState} from 'react'
 import {motion, useAnimation} from 'framer-motion'
-import image from '../../../public/assets/images/drone.jpg'
+import image from '../../../public/assets/images/landing/colorful-earth-hq.jpg'
 import {useRouter} from 'next/router'
 import {AnimationContext} from "../../context/AnimationContext";
 import LandingHeader from "../header/LandingHeader";
