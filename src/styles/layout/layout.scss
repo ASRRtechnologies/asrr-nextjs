@@ -3,6 +3,7 @@
   height: 100%;
   width: 100%;
   @include flex(center, center, column);
+  padding: 0 $pc-padding;
 }
 
 
@@ -13,4 +14,16 @@
   width: 100%;
   height: auto;
   max-width: $max-width;
+}
+
+@media screen and (max-width:1200px) {
+  .layout{
+    padding: 0 $tablet-padding;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .layout{
+    padding: 0 $mob-padding;
+  }
 }

@@ -10,6 +10,7 @@ import Moon from "./Moon";
 
 const Wrapper = styled('nav')`
         background-color: ${props => props.visible ? props.theme.header.background : "none"};
+        box-shadow: ${props => props.visible ? props.theme.header.shadow : "none"};
         
         svg{
             path{
@@ -34,9 +35,9 @@ function Header(props) {
 
     const headerPosition = () => {
         let currentScrollPos = window.pageYOffset;
-        if (currentScrollPos < (1 / 3 * window.innerHeight)) {
+        if (currentScrollPos < (1 / 16 * window.innerHeight)) {
             setVisible(false);
-        } else if (currentScrollPos > (1 / 3 * window.innerHeight)) {
+        } else if (currentScrollPos > (1 / 16 * window.innerHeight)) {
             setVisible(true);
         }
     };
@@ -45,9 +46,7 @@ function Header(props) {
         window.addEventListener("scroll", headerPosition)
     });
 
-    {/*<motion.div animate={animation.animate} initial={animation.initial} exit={animation.exit}*/
-    }
-
+    {/*<motion.div animate={animation.animate} initial={animation.initial} exit={animation.exit}*/}
 
     return (
         <Wrapper visible={visible} className={`header`}>
@@ -60,7 +59,7 @@ function Header(props) {
                 <Link href="/"><a>Hire a Developer</a></Link>
                 <Link href="/"><a>Contact us</a></Link>
                 <Link href="/"><a>About us</a></Link>
-                <span  className="icon"  onClick={toggle} onMouseEnter={toggle} onMouseLeave={toggle}>
+                <span  className="icon"  onClick={toggle}>
                     {themeState.dark ? <Moon/> : <Sun/>}
                 </span>
             </motion.div>

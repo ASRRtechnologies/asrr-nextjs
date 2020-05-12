@@ -1,0 +1,48 @@
+//To keep consistent name usage throughout the website nesting of this card in
+
+.portfolio {
+  .card {
+    width: 45%;
+    height: 100%;
+
+    h3{
+      margin-bottom: 0;
+    }
+  }
+
+  .image {
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    img{
+      top:0;
+      left:0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      transition: all 0.7s ease 0s;
+
+      &:hover{
+        transform: scale(1.2);
+        transition: all 0.7s ease 0s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:800px) {
+  .portfolio {
+    .card {
+      width: 100%;
+      max-width: 500px;
+      height: 100%;
+      @include flex(center, center, column);
+      margin-bottom: 50px;
+    }
+  }
+}
