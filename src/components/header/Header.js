@@ -1,19 +1,42 @@
 import React, {useContext, useEffect, useState} from 'react';
 import Link from "next/link";
-import logo from "../../../public/assets/images/logo/asrr.svg";
-import{motion} from "framer-motion";
-import {AnimationContext} from "../../context/AnimationContext";
+import {motion} from "framer-motion";
+import {AnimationContext} from "../../context/animations/AnimationContext";
+import {useTheme} from "../../context/theme/ThemeContext";
+import styled from "@emotion/styled";
+import Logo from "./Logo";
+import Sun from "./Sun";
+import Moon from "./Moon";
+
+const Wrapper = styled('nav')`
+        background-color: ${props => props.visible ? props.theme.header.background : "none"};
+        
+        svg{
+            path{
+            fill:${props => props.visible ? props.theme.header.font : "white"}
+            }
+        }
+       
+        p, a {
+          color:  ${props => props.visible ? props.theme.header.font : "white"}
+        }
+        
+`;
 
 function Header(props) {
+
+    const themeState = useTheme();
+    const toggle = () => themeState.toggle();
+
     const [visible, setVisible] = useState(false);
     const animate = useContext(AnimationContext);
     const animation = animate.animation.header;
 
     const headerPosition = () => {
         let currentScrollPos = window.pageYOffset;
-        if (currentScrollPos < window.innerHeight) {
+        if (currentScrollPos < (1 / 3 * window.innerHeight)) {
             setVisible(false);
-        } else if (currentScrollPos > window.innerHeight) {
+        } else if (currentScrollPos > (1 / 3 * window.innerHeight)) {
             setVisible(true);
         }
     };
@@ -22,19 +45,26 @@ function Header(props) {
         window.addEventListener("scroll", headerPosition)
     });
 
+    {/*<motion.div animate={animation.animate} initial={animation.initial} exit={animation.exit}*/
+    }
+
+
     return (
-        <nav className={`header-container`}>
-            <motion.div animate={animation.animate} initial={animation.initial} exit={animation.exit}
+        <Wrapper visible={visible} className={`header`}>
+            <motion.div animate={animation.animate} exit={animation.exit}
                         className="header-wrapper">
-                <img  src={logo} alt="asrr-logo"/>
+                <Link href="/"><Logo/></Link>
                 <Link href="/"><a>Home</a></Link>
                 <Link href="/portfolio"><a>Portfolio</a></Link>
                 <Link href="/"><a>Services</a></Link>
                 <Link href="/"><a>Hire a Developer</a></Link>
                 <Link href="/"><a>Contact us</a></Link>
                 <Link href="/"><a>About us</a></Link>
+                <span  className="icon"  onClick={toggle} onMouseEnter={toggle} onMouseLeave={toggle}>
+                    {themeState.dark ? <Moon/> : <Sun/>}
+                </span>
             </motion.div>
-        </nav>
+        </Wrapper>
     );
 }
 
