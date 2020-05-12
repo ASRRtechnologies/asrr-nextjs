@@ -28,6 +28,7 @@ const Wrapper = styled('nav')`
 function Header(props) {
 
     const [menuOpen, setMenuOpen] = useState(false);
+    const [active, setActive] = useState(false);
     const [visible, setVisible] = useState(false);
 
     const themeState = useTheme();
@@ -59,14 +60,16 @@ function Header(props) {
     return (
         <Wrapper visible={visible} className={`header`}>
             <motion.div animate={animation.animate} exit={animation.exit} className="header-wrapper">
-
                 <Link href="/"><Logo/></Link>
-                <Link href="/"><a>Home</a></Link>
+                <div  className={`header-menu ${menuOpen && "open"}`}>
+                <Link href="/"><a onMouseEnter={event => console.log(event)}>Home</a></Link>
                 <Link href="/portfolio"><a>Portfolio</a></Link>
+                    <h1>{active}</h1>
                 <Link href="/"><a>Services</a></Link>
                 <Link href="/"><a>Hire a Developer</a></Link>
                 <Link href="/"><a>Contact us</a></Link>
                 <Link href="/"><a>About us</a></Link>
+                </div>
                 <span className="icon" onClick={toggle}>
                     {themeState.dark ? <Moon/> : <Sun/>}
                 </span>
