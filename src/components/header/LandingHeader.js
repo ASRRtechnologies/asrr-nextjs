@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useState} from 'react';
 import Link from "next/link";
 import logo from "../../../public/assets/images/logo/asrr.svg";
 import{motion} from "framer-motion";
-import {AnimationContext} from "../../context/AnimationContext";
+import {AnimationContext} from "../../context/animations/AnimationContext";
 
 function LandingHeader(props) {
     const animate = useContext(AnimationContext);

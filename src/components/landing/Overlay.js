@@ -1,7 +1,7 @@
 import React, {useContext, useEffect} from 'react';
 import {motion, useAnimation} from "framer-motion";
 import logo from "../../../public/assets/images/logo/asrr.svg"
-import {AnimationContext} from "../../context/AnimationContext";
+import {AnimationContext} from "../../context/animations/AnimationContext";
 import {useRouter} from "next/router";
 
 function Overlay() {
