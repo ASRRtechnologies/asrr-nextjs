@@ -23,6 +23,10 @@ const Wrapper = styled('nav')`
           color:  ${props => props.visible ? props.theme.header.font : "white"}
         }
         
+        .header-menu{
+                background-color: ${props => props.theme.header.background};
+        }
+        
 `;
 
 function Header(props) {
@@ -59,34 +63,40 @@ function Header(props) {
 
     return (
         <Wrapper visible={visible} className={`header`}>
-            <motion.div animate={animation.animate} exit={animation.exit} className="header-wrapper">
-                <Link href="/"><Logo/></Link>
-                <div  className={`header-menu ${menuOpen && "open"}`}>
-                <Link href="/"><a onMouseEnter={event => console.log(event)}>Home</a></Link>
-                <Link href="/portfolio"><a>Portfolio</a></Link>
-                    <h1>{active}</h1>
-                <Link href="/"><a>Services</a></Link>
-                <Link href="/"><a>Hire a Developer</a></Link>
-                <Link href="/"><a>Contact us</a></Link>
-                <Link href="/"><a>About us</a></Link>
-                </div>
-                <span className="icon" onClick={toggle}>
+            <div style={{width:"100vw", height:"100%", position:"relative"}}>
+                <motion.div animate={animation.animate} exit={animation.exit} className="header-wrapper">
+                    <Link href="/"><Logo/></Link>
+                    <div className={`header-menu ${menuOpen && "open"}`}>
+                        <Link href="/"><a onMouseEnter={event => console.log(event)}>Home</a></Link>
+                        <Link href="/portfolio"><a>Portfolio</a></Link>
+                        <h1>{active}</h1>
+                        <Link href="/"><a>Services</a></Link>
+                        <Link href="/"><a>Hire a Developer</a></Link>
+                        <Link href="/"><a>Contact us</a></Link>
+                        <Link href="/"><a>About us</a></Link>
+                    </div>
+
+                    {/*<div onClick={()=>{setMenuOpen(!menuOpen)}} className={menuOpen ? "btn-menu-open" : "bt-menu-trigger"}>*/}
+                    {/*    <span></span>*/}
+                    {/*</div>*/}
+
+                    <div className="header-actions">
+                      <span className="icon" onClick={toggle}>
                     {themeState.dark ? <Moon/> : <Sun/>}
                 </span>
 
-                {/*<div onClick={()=>{setMenuOpen(!menuOpen)}} className={menuOpen ? "btn-menu-open" : "bt-menu-trigger"}>*/}
-                {/*    <span></span>*/}
-                {/*</div>*/}
-
-                <button  onClick={()=>{setMenuOpen(!menuOpen)}} className={`hamburger hamburger--arrow ${menuOpen && "is-active"}`} type="button"
-                        aria-label="Menu" aria-controls="navigation">
+                        <button onClick={() => {
+                            setMenuOpen(!menuOpen)
+                        }} className={`hamburger hamburger--arrow ${menuOpen && "is-active"}`} type="button"
+                                aria-label="Menu" aria-controls="navigation">
                   <span className="hamburger-box">
                     <span className="hamburger-inner"></span>
                   </span>
-                </button>
+                        </button>
 
-
-            </motion.div>
+                    </div>
+                </motion.div>
+            </div>
         </Wrapper>
     );
 }
