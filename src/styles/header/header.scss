@@ -19,7 +19,7 @@
 }
 
 //For menu to use as relative parent
-header-relative{
+.header-relative{
   width: 100vw;
   height: 100%;
   @include flex(center, center, row);
@@ -32,17 +32,19 @@ header-relative{
   @include flex(space-between, center, row);
 
   a {
-    height: 100%;
+    height: auto;
     width: auto;
+    margin: 20px 0;
     position: relative;
     color:$font-color-light;
     text-decoration: none;
+    cursor: none;
     @include flex(space-between, center, row);
 
     &:after {
       content: "";
       position: absolute;
-      bottom: 10px;
+      bottom: 0;
       left: 0;
       transform: scaleX(0);
       transform-origin: left;
@@ -76,20 +78,32 @@ header-relative{
 .header-menu{
   position: fixed;
   left:0;
-  transform: translateX(0);
+  transform: translateX(100vw);
   top:0;
   @include flex(center, center, column);
   width:100vw;
   height: 100vh;
-  //transform: translateX(90vw);
   z-index: 100;
   transition: all ease-in-out 500ms;
 
   &.open{
-    transform: translateX(100vw);
+    transform: translateX(0);
     transition: all ease-in-out 500ms;
-
   }
+
+}
+
+.header-background-text{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  font-size: 40vw;
+  max-font-size: 100px;
+  z-index: -1;
+  opacity: 0.05;
+  text-align: center;
+  transition: 400ms ease-in all;
 
 }
 

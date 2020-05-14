@@ -10,7 +10,6 @@ class Cursor extends Component {
     }
 
     componentDidMount(){
-
         document.addEventListener('mousemove', e => {
             //Change style via ref instead of setting style property with state to limit rerender otherwise it will be laggy.
             this.mouseRef.current.style.left = `${e.clientX}px`;
@@ -26,7 +25,6 @@ class Cursor extends Component {
         });
 
     }
-
 
     render() {
         return (

@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useEffect, useRef, useState} from 'react';
 import Link from "next/link";
 import {motion} from "framer-motion";
 import {AnimationContext} from "../../context/animations/AnimationContext";
@@ -32,7 +32,7 @@ const Wrapper = styled('nav')`
 function Header(props) {
 
     const [menuOpen, setMenuOpen] = useState(false);
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState("");
     const [visible, setVisible] = useState(false);
 
     const themeState = useTheme();
@@ -50,30 +50,34 @@ function Header(props) {
         }
     };
 
-    useEffect(() => {
-        window.addEventListener("scroll", headerPosition)
-    });
+    useEffect(() => window.addEventListener("scroll", headerPosition));
+    const openMenu = () => setMenuOpen(!menuOpen);
+    const setActiveHeader = (input) => setActive(input);
+    const clearActiveHeader = () => setActive(null);
 
-    const openMenu = () => {
-        setMenuOpen(!menuOpen)
-    };
 
     {/*<motion.div animate={animation.animate} initial={animation.initial} exit={animation.exit}*/
     }
 
     return (
         <Wrapper visible={visible} className={`header`}>
-            <div style={{width:"100vw", height:"100%", position:"relative"}}>
+            <div className="header-relative">
                 <motion.div animate={animation.animate} exit={animation.exit} className="header-wrapper">
                     <Link href="/"><Logo/></Link>
                     <div className={`header-menu ${menuOpen && "open"}`}>
-                        <Link href="/"><a onMouseEnter={event => console.log(event)}>Home</a></Link>
-                        <Link href="/portfolio"><a>Portfolio</a></Link>
-                        <h1>{active}</h1>
-                        <Link href="/"><a>Services</a></Link>
-                        <Link href="/"><a>Hire a Developer</a></Link>
-                        <Link href="/"><a>Contact us</a></Link>
-                        <Link href="/"><a>About us</a></Link>
+                        <Link href="/"><a onMouseEnter={() => setActive("Home")}
+                                          onMouseLeave={clearActiveHeader}>Home</a></Link>
+                        <Link href="/portfolio"><a onMouseEnter={() => setActive("Portfolio")}
+                                                   onMouseLeave={clearActiveHeader}>Portfolio</a></Link>
+                        <Link href="/"><a onMouseEnter={() => setActive("Services")}
+                                          onMouseLeave={clearActiveHeader}>Services</a></Link>
+                        <Link href="/"><a onMouseEnter={() => setActive("Hire")}
+                                          onMouseLeave={clearActiveHeader}>Hire a Developer</a></Link>
+                        <Link href="/"><a onMouseEnter={() => setActive("Contact")} onMouseLeave={clearActiveHeader}>Contact
+                            us</a></Link>
+                        <Link href="/"><a onMouseEnter={() => setActive("About")} onMouseLeave={clearActiveHeader}>About
+                            us</a></Link>
+                        <h1 className="header-background-text">{active}</h1>
                     </div>
 
                     {/*<div onClick={()=>{setMenuOpen(!menuOpen)}} className={menuOpen ? "btn-menu-open" : "bt-menu-trigger"}>*/}
@@ -81,18 +85,25 @@ function Header(props) {
                     {/*</div>*/}
 
                     <div className="header-actions">
-                      <span className="icon" onClick={toggle}>
-                    {themeState.dark ? <Moon/> : <Sun/>}
-                </span>
+                        <span className="icon" onClick={toggle}>
+                            {themeState.dark ? <Moon/> : <Sun/>}
+                        </span>
 
-                        <button onClick={() => {
-                            setMenuOpen(!menuOpen)
-                        }} className={`hamburger hamburger--arrow ${menuOpen && "is-active"}`} type="button"
-                                aria-label="Menu" aria-controls="navigation">
-                  <span className="hamburger-box">
-                    <span className="hamburger-inner"></span>
-                  </span>
-                        </button>
+                        {/*<button style={{zIndex: 100000}} onClick={() => {*/}
+                        {/*    setMenuOpen(!menuOpen)*/}
+                        {/*}}*/}
+                        {/*        className={`hamburger hamburger--collapse ${menuOpen && "is-active"}`} type="button"*/}
+                        {/*        aria-label="Menu" aria-controls="navigation">*/}
+                        {/*    <span className="hamburger-box">*/}
+                        {/*    <span className="hamburger-inner"></span>*/}
+                        {/*    </span>*/}
+                        {/*</button>*/}
+
+                        <div className="hamburger-container">
+                            <div className="bar1"></div>
+                            <div className="bar2"></div>
+                            <div className="bar3"></div>
+                        </div>
 
                     </div>
                 </motion.div>
