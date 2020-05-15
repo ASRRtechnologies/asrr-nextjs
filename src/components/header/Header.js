@@ -74,7 +74,7 @@ function Header(props) {
         <motion.div  animate={animation.animate} initial={animation.initial} exit={animation.exit} className={`header`}>
             <Wrapper visible={visible} menuOpen={menuOpen}  className="header-relative">
                 <div className="header-wrapper">
-                    <Link href="/"><Logo/></Link>
+                    <Link href="/"><a><Logo/></a></Link>
                     <div className={`header-menu ${menuOpen && "open"}`}>
                         <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("Home")}
                                           onMouseLeave={clearActiveHeader}>Home</a></Link>

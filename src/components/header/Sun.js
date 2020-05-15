@@ -2,7 +2,7 @@ import React from 'react'
 
 function Sun() {
     return (
-        <svg id="Layer_1" enable-background="new 0 0 511.333 511.333" height="512" viewBox="0 0 511.333 511.333" width="512"
+        <svg id="Layer_1" enableBackground="new 0 0 511.333 511.333" height="512" viewBox="0 0 511.333 511.333" width="512"
              xmlns="http://www.w3.org/2000/svg">
             <path d="m255.667 404.667c-82.159 0-149-66.841-149-149s66.841-149 149-149 149 66.841 149 149-66.842 149-149 149z"/>
             <path d="m255.667 74c-11.598 0-21-9.402-21-21v-32c0-11.598 9.402-21 21-21s21 9.402 21 21v32c0 11.598-9.402 21-21 21z"/>

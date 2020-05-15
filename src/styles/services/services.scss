@@ -1,0 +1,19 @@
+.services {
+  width: 100%;
+  height: auto;
+  @include flex (space-between, flex-start, row);
+  flex-wrap: wrap;
+
+  div {
+    //margin-bottom: 100px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 700px) {
+  .services {
+    @include flex (center, center, column);
+  }
+}
