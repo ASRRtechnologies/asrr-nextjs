@@ -12,6 +12,7 @@
 
 //Rea dmore
 .read-more{
+  display: inline-block;
   position: relative;
   color:inherit;
   height: 30px;
@@ -35,7 +36,6 @@
     &:after{
       bottom:4px;
       transition: all 0.3s ease 0s;
-
     }
   }
 }

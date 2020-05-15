@@ -1,16 +1,12 @@
 import React from 'react';
 
-function Title({text, title}) {
+function Title({text, title, big}) {
     return (
         <div className="title">
-            <h2>
-                {title}
-            </h2>
-
+            {big ? (<h1>{title}</h1>) : (<h2>{title}</h2>)}
             <p>
                 {text}
             </p>
-
         </div>
     );
 }

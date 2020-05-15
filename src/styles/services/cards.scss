@@ -1,0 +1,29 @@
+//To keep consistent name usage throughout the website nesting of this card in
+
+.services {
+  .card {
+    width: 30.333%;
+    height: auto;
+    //overflow: hidden;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .services {
+    .card {
+      width: 45%;
+    }
+  }
+}
+
+@media screen and (max-width:700px) {
+  .services {
+    .card {
+      width: 100%;
+      //max-width: 500px;
+      height: 100%;
+      //@include flex(center, center, column);
+      margin-bottom: 50px;
+    }
+  }
+}

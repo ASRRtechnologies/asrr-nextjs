@@ -86,8 +86,8 @@ function Landing(props) {
                         initial={animation.landingCards.initial} animate={animation.landingCards.animate}
                         exit={animation.landingCards.exit} className="landing-box-container">
                 <div  onMouseEnter={hoverCardArea} onMouseLeave={leaveCardArea} className="landing-box-wrapper">
-                    {cards.map((i, data) => {
-                        return (<div onMouseEnter={() => hoverSpecificCard(i)}
+                    {cards.map((data, i) => {
+                        return (<div key={i} onMouseEnter={() => hoverSpecificCard(i)}
                                      onMouseLeave={leaveSpecificCard}
                                      className={`landing-box ${activeCard.index !== i && hover && "blur"}`}
                                      onClick={() => navigate(data.url)}>
