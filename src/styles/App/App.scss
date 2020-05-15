@@ -14,6 +14,7 @@ html{
 }
 
 body {
+  position: relative;
   //font-family: 'Gilroy Light', 'Source Sans Pro', serif !important;
   font-family: 'Poppins', 'Source Sans Pro', serif !important;
   min-height: 100%;
@@ -23,16 +24,19 @@ body {
   overflow-y: hidden!important;
 }
 
-a, p, h4, h5 {
-  //font-family: "Gilroy Light", serif;
+ h4, h5 {
   font-family: "Poppins Light", serif;
-  text-decoration: none;
 }
 
  h1, h2, h3{
   font-family: "Poppins SemiBold", serif;
   text-decoration: none;
   color: #1a1a1a;
+}
+
+a, p {
+  font-family: "Montserrat Light", serif;
+  text-decoration: none;
 }
 
 #__next{

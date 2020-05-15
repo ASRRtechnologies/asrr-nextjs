@@ -8,7 +8,6 @@
   transition: 300ms ease-in-out all;
   color:white !important;
   z-index: $header-zIndex;
-  padding: 0 $pc-padding;
   //Header used on landing page
 }
 
@@ -24,12 +23,15 @@
   height: 100%;
   @include flex(center, center, row);
   position: relative;
+  padding: 0 $pc-padding;
+
 }
 
 .header-wrapper {
   @include size(100%, 100%);
   max-width: $max-width;
   @include flex(space-between, center, row);
+  position: static;
 
   a {
     height: auto;
@@ -39,6 +41,7 @@
     color:$font-color-light;
     text-decoration: none;
     cursor: none;
+    font-size: 34px;
     @include flex(space-between, center, row);
 
     &:after {
@@ -62,36 +65,37 @@
     }
   }
 
+  .header-menu{
+    position: fixed;
+    left:0;
+    transform: translateX(100vw);
+    top:0;
+    @include flex(center, center, column);
+    width:100vw;
+    height: 100vh;
+    z-index: 100;
+    transition: all ease-in-out 500ms;
+
+    &.open{
+      transform: translateX(0);
+      transition: all ease-in-out 500ms;
+    }
+  }
+
 //Moon / sun icon
   .icon{
     width:25px;
     height: 25px;
     margin-right: 25px;
+    z-index: 10000000;
     svg{
       width:100%;
       height: auto;
     }
   }
-
 }
 
-.header-menu{
-  position: fixed;
-  left:0;
-  transform: translateX(100vw);
-  top:0;
-  @include flex(center, center, column);
-  width:100vw;
-  height: 100vh;
-  z-index: 100;
-  transition: all ease-in-out 500ms;
 
-  &.open{
-    transform: translateX(0);
-    transition: all ease-in-out 500ms;
-  }
-
-}
 
 .header-background-text{
   position: absolute;
@@ -115,13 +119,13 @@
 
 
 @media screen and (max-width:1200px) {
-  .header{
+  .header-relative{
     padding: 0 $tablet-padding;
   }
 }
 
 @media screen and (max-width:500px) {
-  .header{
+  .header-relative{
     padding: 0 $mob-padding;
   }
 }

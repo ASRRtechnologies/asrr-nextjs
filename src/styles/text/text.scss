@@ -41,8 +41,8 @@
 }
 
 @media screen and (max-width:800px) {
-  .title{
-    @include flex(center, center, column)
-  }
+  //.title{
+  //  @include flex(center, center, column)
+  //}
 
 }

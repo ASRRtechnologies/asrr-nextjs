@@ -1,6 +1,6 @@
 import React, {useContext, useEffect} from 'react';
 import {motion, useAnimation} from "framer-motion";
-import logo from "../../../public/assets/images/logo/asrr.svg"
+import logo from "../../../public/assets/images/logo/asrr-logo-spacing.svg"
 import {AnimationContext} from "../../context/animations/AnimationContext";
 import {useRouter} from "next/router";
 
@@ -14,8 +14,8 @@ function Overlay() {
     }, []);
 
     return (
-        <motion.div animate={animation.background.animate} initial={animation.background.initial}
-                    className="transition-animation">
+        <motion.div animate={animation.background.animate} initial={animation.background.initial} className="transition-animation">
+
                 <span className="element-overflow">
                     <motion.div animate={animation.box.animate} initial={animation.box.initial}
                                 className="element-overflow-background"> </motion.div>

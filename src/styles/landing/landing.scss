@@ -34,11 +34,9 @@
     margin: 0;
   }
 
-  h3{
+  h3 {
     font-weight: normal;
   }
-
-
 
   .background {
     position: absolute;
@@ -53,11 +51,11 @@
   display: inline-block;
   @include flex (center, center, column);
   width: 100%;
-  padding: 10px;
-  flex:2;
+  flex: 2;
+  padding: $pc-padding;
 }
 
-.landing-overflow{
+.landing-overflow {
   display: block;
   overflow: hidden;
   height: auto;
@@ -65,28 +63,31 @@
   max-width: $max-width;
 }
 
-.landing-box-container{
-  width:100%;
+.landing-box-container {
+  width: 100%;
   height: 100%;
-  @include flex (flex-end, flex-end, row);
-  flex:1;
+  @include flex (flex-start, flex-end, row);
+  flex: 1;
   transform-origin: bottom;
 }
 
-.landing-box-wrapper{
+.landing-box-wrapper {
   @include flex (flex-start, flex-start, row);
   width: 100%;
-  max-width: 1200px;
+  margin-left: calc((100vw - #{$max-width}) / 2);
+  //max-width: $max-width;
+
+  //max-width: calc(1200px * (1 / (100vw * 0.25)));
   //max-width: calc(100% - (100% - #{$max-width}));
   height: auto;
 
-  div:last-child{
-    border-right:solid 2px $tint-1-dark !important;
+  div:last-child {
+    border-right: solid 2px $tint-1-dark !important;
   }
 
 }
 
-.landing-box{
+.landing-box {
   @include flex (center, flex-start, column);
   padding: 10px 30px;
   height: 150px;
@@ -95,17 +96,17 @@
   //Tint-3-color-dark
   background-color: rgba(61, 58, 65, 0.6);
   //background-color: rgba(252, 252, 252, 0.90);
-  border-left :solid 3px $tint-1-dark !important;
-  border-top:solid 3px $tint-1-dark;
-  border-right:none;
+  border-left: solid 3px $tint-1-dark !important;
+  border-top: solid 3px $tint-1-dark;
+  border-right: none;
   border-bottom: none;
   transition: 300ms ease-in-out all;
 
-  &.blur{
+  &.blur {
     filter: blur(1.4px);
   }
 
-  &:hover{
+  &:hover {
     transition: 300ms ease-in-out all;
     background-color: rgba(61, 58, 65, 1);
     //background-color: rgba(252, 252, 252, 1);
@@ -113,4 +114,24 @@
 
 }
 
+
+//Make boxes full-screen
+@media screen and (max-width: 1400px) {
+  .landing-box-wrapper {
+    margin-left:0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .landing-text {
+    padding: $tablet-padding;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .landing-text {
+    padding: $mob-padding;
+  }
+}
 

@@ -35,13 +35,13 @@
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:700px) {
   .portfolio {
     .card {
       width: 100%;
-      max-width: 500px;
+      //max-width: 500px;
       height: 100%;
-      @include flex(center, center, column);
+      //@include flex(center, center, column);
       margin-bottom: 50px;
     }
   }

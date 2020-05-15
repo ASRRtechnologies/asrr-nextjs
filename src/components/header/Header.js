@@ -15,17 +15,26 @@ const Wrapper = styled('nav')`
         
         svg{
             path{
-            fill:${props => props.visible ? props.theme.header.font : "white"}
+            fill: ${props => props.visible ? props.theme.header.font : props.menuOpen ? props.theme.header.font : "white"};
             }
         }
        
         p, a {
-          color:  ${props => props.visible ? props.theme.header.font : "white"}
+          color:  ${props => props.visible ? props.theme.header.font : props.menuOpen ? props.theme.header.font : "white"};
+        }
+        
+        .header-background-text{
+            color: ${props => props.theme.header.font};
+        }
+        
+        .bar1, .bar2, .bar3 {
+          background-color:  ${props => props.visible ? props.theme.header.font : props.menuOpen ? props.theme.header.font : "white"};
         }
         
         .header-menu{
                 background-color: ${props => props.theme.header.background};
         }
+        
         
 `;
 
@@ -51,64 +60,53 @@ function Header(props) {
     };
 
     useEffect(() => window.addEventListener("scroll", headerPosition));
-    const openMenu = () => setMenuOpen(!menuOpen);
-    const setActiveHeader = (input) => setActive(input);
+    const closeMenu = () => setMenuOpen(false);
     const clearActiveHeader = () => setActive(null);
-
 
     {/*<motion.div animate={animation.animate} initial={animation.initial} exit={animation.exit}*/
     }
 
+    //The Wrapper does not accept motion.div so the sliding down of the header wouldn't be visible if it was top-layer.
+    //Thats why the second div has the wrapper styled comp. Further if a parent has transform on (motion.div)
+    //Then fixed elements will be fixed to the parent not to the window body / obj.
+
     return (
-        <Wrapper visible={visible} className={`header`}>
-            <div className="header-relative">
-                <motion.div animate={animation.animate} exit={animation.exit} className="header-wrapper">
+        <motion.div  animate={animation.animate} initial={animation.initial} exit={animation.exit} className={`header`}>
+            <Wrapper visible={visible} menuOpen={menuOpen}  className="header-relative">
+                <div className="header-wrapper">
                     <Link href="/"><Logo/></Link>
                     <div className={`header-menu ${menuOpen && "open"}`}>
-                        <Link href="/"><a onMouseEnter={() => setActive("Home")}
+                        <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("Home")}
                                           onMouseLeave={clearActiveHeader}>Home</a></Link>
-                        <Link href="/portfolio"><a onMouseEnter={() => setActive("Portfolio")}
+                        <Link href="/portfolio"><a onClick={closeMenu} onMouseEnter={() => setActive("Portfolio")}
                                                    onMouseLeave={clearActiveHeader}>Portfolio</a></Link>
-                        <Link href="/"><a onMouseEnter={() => setActive("Services")}
+                        <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("Services")}
                                           onMouseLeave={clearActiveHeader}>Services</a></Link>
-                        <Link href="/"><a onMouseEnter={() => setActive("Hire")}
+                        <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("Hire")}
                                           onMouseLeave={clearActiveHeader}>Hire a Developer</a></Link>
-                        <Link href="/"><a onMouseEnter={() => setActive("Contact")} onMouseLeave={clearActiveHeader}>Contact
+                        <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("Contact")} onMouseLeave={clearActiveHeader}>Contact
                             us</a></Link>
-                        <Link href="/"><a onMouseEnter={() => setActive("About")} onMouseLeave={clearActiveHeader}>About
+                        <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("About")} onMouseLeave={clearActiveHeader}>About
                             us</a></Link>
                         <h1 className="header-background-text">{active}</h1>
-                    </div>
 
-                    {/*<div onClick={()=>{setMenuOpen(!menuOpen)}} className={menuOpen ? "btn-menu-open" : "bt-menu-trigger"}>*/}
-                    {/*    <span></span>*/}
-                    {/*</div>*/}
+                    </div>
 
                     <div className="header-actions">
                         <span className="icon" onClick={toggle}>
                             {themeState.dark ? <Moon/> : <Sun/>}
                         </span>
 
-                        {/*<button style={{zIndex: 100000}} onClick={() => {*/}
-                        {/*    setMenuOpen(!menuOpen)*/}
-                        {/*}}*/}
-                        {/*        className={`hamburger hamburger--collapse ${menuOpen && "is-active"}`} type="button"*/}
-                        {/*        aria-label="Menu" aria-controls="navigation">*/}
-                        {/*    <span className="hamburger-box">*/}
-                        {/*    <span className="hamburger-inner"></span>*/}
-                        {/*    </span>*/}
-                        {/*</button>*/}
-
-                        <div className="hamburger-container">
+                        <div onClick={() => {setMenuOpen(!menuOpen)}} className={`hamburger ${menuOpen ? "open" : " "}`}>
                             <div className="bar1"></div>
                             <div className="bar2"></div>
                             <div className="bar3"></div>
                         </div>
 
                     </div>
-                </motion.div>
-            </div>
-        </Wrapper>
+                </div>
+            </Wrapper>
+        </motion.div>
     );
 }
 
