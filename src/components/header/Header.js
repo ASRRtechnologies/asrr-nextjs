@@ -31,11 +31,14 @@ const Wrapper = styled('nav')`
           background-color:  ${props => props.visible ? props.theme.header.font : props.menuOpen ? props.theme.header.font : "white"};
         }
         
-        .header-menu{
-                background-color: ${props => props.theme.header.background};
+        @media screen and (max-width:1200px) {
+            .header-menu{
+                    background-color: ${props => props.theme.header.background};
+            }
         }
         
         
+      
 `;
 
 function Header(props) {
@@ -71,8 +74,8 @@ function Header(props) {
     //Then fixed elements will be fixed to the parent not to the window body / obj.
 
     return (
-        <motion.div  animate={animation.animate} initial={animation.initial} exit={animation.exit} className={`header`}>
-            <Wrapper visible={visible} menuOpen={menuOpen}  className="header-relative">
+        <motion.div animate={animation.animate} initial={animation.initial} exit={animation.exit} className={`header`}>
+            <Wrapper visible={visible} menuOpen={menuOpen} className="header-relative">
                 <div className="header-wrapper">
                     <Link href="/"><a><Logo/></a></Link>
                     <div className={`header-menu ${menuOpen && "open"}`}>
@@ -84,9 +87,11 @@ function Header(props) {
                                           onMouseLeave={clearActiveHeader}>Services</a></Link>
                         <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("Hire")}
                                           onMouseLeave={clearActiveHeader}>Hire a Developer</a></Link>
-                        <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("Contact")} onMouseLeave={clearActiveHeader}>Contact
+                        <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("Contact")}
+                                          onMouseLeave={clearActiveHeader}>Contact
                             us</a></Link>
-                        <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("About")} onMouseLeave={clearActiveHeader}>About
+                        <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("About")}
+                                          onMouseLeave={clearActiveHeader}>About
                             us</a></Link>
                         <h1 className="header-background-text">{active}</h1>
 
@@ -97,7 +102,9 @@ function Header(props) {
                             {themeState.dark ? <Moon/> : <Sun/>}
                         </span>
 
-                        <div onClick={() => {setMenuOpen(!menuOpen)}} className={`hamburger ${menuOpen ? "open" : " "}`}>
+                        <div onClick={() => {
+                            setMenuOpen(!menuOpen)
+                        }} className={`hamburger ${menuOpen ? "open" : " "}`}>
                             <div className="bar1"></div>
                             <div className="bar2"></div>
                             <div className="bar3"></div>

@@ -1,9 +1,9 @@
 .hamburger {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  margin: 5px 0;
+  padding: 15px 0 15px 20px;
   z-index: 1000000000;
 
   .bar1, .bar3 {
@@ -15,26 +15,26 @@
     border-radius: 10px;
   }
 
-  .bar2{
+  .bar2 {
     width: 20px;
     height: 3px;
     background-color: #333;
     margin: 3px 0;
     transition: 0.4s;
     border-radius: 10px;
-    right:0;
+    right: 0;
   }
 
-  &:hover{
-    .bar2{
+  &:hover {
+    .bar2 {
       width: 35px;
       transition: 300ms ease-in-out all;
     }
 
   }
 
-  &.open{
-     .bar1 {
+  &.open {
+    .bar1 {
       //-webkit-transform: rotate(-45deg) translate(-9px, 6px);
       transform: rotate(-45deg) translate(-5px, 6px);
     }
@@ -45,7 +45,7 @@
     }
 
     /* Rotate last bar */
-     .bar3 {
+    .bar3 {
       -webkit-transform: rotate(45deg) translate(-8px, -8px);
       transform: rotate(45deg) translate(-7px, -8px);
     }
@@ -56,4 +56,10 @@
   /* Rotate first bar */
 
 
+}
+
+@media screen and (max-width: 1200px) {
+  .hamburger {
+    display: flex;
+  }
 }

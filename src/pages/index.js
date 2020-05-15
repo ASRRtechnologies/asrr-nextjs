@@ -4,6 +4,7 @@ import Overlay from "../components/landing/Overlay";
 import {AnimationContext} from "../context/animations/AnimationContext";
 import Layout from "../components/layout/Layout";
 import Portfolio from "../components/portfolio/Portfolio";
+import Fonts from "../components/font/Fonts";
 
 function Index(props) {
 
@@ -11,7 +12,8 @@ function Index(props) {
 
     useEffect(() => {
         //Load animation only if app has loaded once
-         (animate.appLoaded) ? animate.animation.secondLoad() : null
+        //  (animate.appLoaded) ? animate.animation.secondLoad() : null
+        Fonts()
     }, []);
 
     return (

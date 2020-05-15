@@ -9,17 +9,17 @@ import { useTheme } from '../../context/theme/ThemeContext'
 const Wrapper = styled('nav')`
         background-color: ${props => props.theme.header.background};
         color: ${props => props.theme.header.font};
-`
+`;
 
 function Overlay () {
-	const darkTheme = useTheme()
-	const animate = useContext(AnimationContext)
-	const animation = animate.animation.overlay
-	const router = useRouter()
+	const darkTheme = useTheme();
+	const animate = useContext(AnimationContext);
+	const animation = animate.animation.overlay;
+	const router = useRouter();
 
 	useEffect(() => {
 		animate.animation.firstLoad()
-	}, [])
+	}, []);
 
 	return (
 		<motion.div animate={animation.background.animate} initial={animation.background.initial}
