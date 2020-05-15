@@ -7,14 +7,18 @@ import Title from "../text/Title";
 function Services(props) {
     return (
         <Section>
-            <Title title={"Services"} text="lorem ipsum hahahahaha"/>
+            <Title big title={"Services"} text="lorem ipsum hahahahaha"/>
             <div className="services">
                 <Card/>
                 <Card/>
                 <Card/>
                 <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
             </div>
-           <ReadMore to="/" text="Read more"/>
         </Section>
     );
 }

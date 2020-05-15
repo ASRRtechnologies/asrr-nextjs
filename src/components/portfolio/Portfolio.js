@@ -7,7 +7,7 @@ import Title from "../text/Title";
 function Portfolio(props) {
     return (
         <Section>
-            <Title title={"Portfolio"} text="lorem ipsum hahahahaha"/>
+            <Title big title={"Portfolio"} text="lorem ipsum hahahahaha"/>
             <div className="portfolio">
                 <Card/>
                 <Card/>
