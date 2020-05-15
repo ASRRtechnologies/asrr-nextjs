@@ -1,0 +1,17 @@
+.portfolio{
+  width: 100%;
+  height: auto;
+  @include flex (space-between, flex-start, row);
+  flex-wrap: wrap;
+
+  div:nth-child(even){
+    margin-top: 50px;
+  }
+
+}
+
+@media screen and (max-width:700px) {
+  .portfolio{
+    @include flex (center, center, column);
+  }
+}
