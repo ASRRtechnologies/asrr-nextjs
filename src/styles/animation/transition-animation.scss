@@ -1,17 +1,16 @@
 .transition-animation{
   width: 100vw;
   height: 100vh;
-  background-color: #1a1a1a;
   @include flex(center, center, row);
-  transform-origin: right;
   position: fixed;
   z-index: $overlay-zIndex;
+  transform-origin: right;
 
   h1{
     width:auto;
     height: auto;
     z-index: $overlay-text-zIndex;
-    color:$font-color-light;
+    color:inherit;
   }
 
   img{
@@ -39,3 +38,4 @@
   z-index: 1000;
   transform-origin: left;
 }
+

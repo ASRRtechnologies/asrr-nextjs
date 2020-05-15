@@ -75,6 +75,7 @@
     height: 100vh;
     z-index: 100;
     transition: all ease-in-out 500ms;
+    overflow: hidden;
 
     &.open{
       transform: translateX(0);
