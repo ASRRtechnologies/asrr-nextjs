@@ -1,9 +1,7 @@
 import React, {useEffect, useContext, useState} from 'react'
 import {motion, useAnimation} from 'framer-motion'
-import image from '../../../public/assets/images/landing/colorful-earth-hq.jpg'
 import {useRouter} from 'next/router'
 import {AnimationContext} from "../../context/animations/AnimationContext";
-import LandingHeader from "../header/LandingHeader";
 
 const cards = [
     {sector: "Construction", title: "Construction", url: "/construction"},
@@ -12,14 +10,14 @@ const cards = [
     {sector: "Construction", title: "Construction", url: "/construction"},
 ];
 
-function Landing(props) {
+function Landing({title, text, image, boxes, projects}) {
 
     const animate = useContext(AnimationContext);
     const animation = animate.animation.landing;
     const [hover, setHover] = useState(false);
     const [activeCard, setActiveCard] = useState({
-        active:false,
-        index:0
+        active: false,
+        index: 0
     });
     const router = useRouter();
 
@@ -41,62 +39,68 @@ function Landing(props) {
     const hoverSpecificCard = (i) => {
         setActiveCard({
             active: true,
-            index:i
+            index: i
         })
     };
 
     //Reset current hovered card to null
     const leaveSpecificCard = () => {
-            setActiveCard({
-                active: true,
-                index:null
-            })
+        setActiveCard({
+            active: true,
+            index: null
+        })
     };
 
     return (
         <motion.div className="landing-container">
             {/*<LandingHeader/>*/}
-            <img className="background" src={image} alt="drone"/>
+            <motion.img initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.3}}}
+                        exit={{opacity: 0, transition: {duration: 0.4}}} className="background" src={image}
+                        alt="drone"/>
 
             <div className="landing-text">
 				<span className="landing-overflow">
                     <motion.h1 initial={animation.landingText.initial} exit={animation.landingText.exit}
-                               animate={animation.landingText.animate}>Redefining innovative</motion.h1>
+                               animate={animation.landingText.animate}>{title}</motion.h1>
 				</span>
 
                 <span className="landing-overflow">
 					<motion.p initial={animation.landingText.initial} animate={animation.landingText.animate}
                               exit={animation.landingText.exit}
                               custom={0.5}>
-                        See what ASRR can do for your company today
+                        {text}
 					</motion.p>
 				</span>
 
                 <span className="landing-overflow">
-                        <motion.p onClick={() => navigate("projects")} initial={animation.landingText.initial}
+                    {projects ? (
+                        <motion.p onClick={() => navigate("portfolio")} initial={animation.landingText.initial}
                                   exit={animation.landingText.exit}
                                   animate={animation.landingText.animate}
                                   custom={1}>
                             See all projects
                         </motion.p>
+                    ) : null}
 				</span>
             </div>
 
-            <motion.div
-                        initial={animation.landingCards.initial} animate={animation.landingCards.animate}
-                        exit={animation.landingCards.exit} className="landing-box-container">
-                <div  onMouseEnter={hoverCardArea} onMouseLeave={leaveCardArea} className="landing-box-wrapper">
-                    {cards.map((data, i) => {
-                        return (<div key={i} onMouseEnter={() => hoverSpecificCard(i)}
-                                     onMouseLeave={leaveSpecificCard}
-                                     className={`landing-box ${activeCard.index !== i && hover && "blur"}`}
-                                     onClick={() => navigate(data.url)}>
-                            <h4>Building</h4>
-                            <h3>Building</h3>
-                        </div>)
-                    })}
-                </div>
-            </motion.div>
+            {boxes ? (
+                <motion.div
+                    initial={animation.landingCards.initial} animate={animation.landingCards.animate}
+                    exit={animation.landingCards.exit} className="landing-box-container">
+                    <div onMouseEnter={hoverCardArea} onMouseLeave={leaveCardArea} className="landing-box-wrapper">
+                        {cards.map((data, i) => {
+                            return (<div key={i} onMouseEnter={() => hoverSpecificCard(i)}
+                                         onMouseLeave={leaveSpecificCard}
+                                         className={`landing-box ${activeCard.index !== i && hover && "blur"}`}
+                                         onClick={() => navigate(data.url)}>
+                                <h4>Building</h4>
+                                <h3>Building</h3>
+                            </div>)
+                        })}
+                    </div>
+                </motion.div>
+            ) : null}
         </motion.div>
     )
 }

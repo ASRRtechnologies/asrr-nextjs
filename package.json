@@ -21,7 +21,7 @@
     "framer-motion": "^1.10.3",
     "interweave": "^12.5.0",
     "isomorphic-fetch": "^2.2.1",
-    "next": "9.3.6",
+    "next": "9.4.0",
     "next-images": "^1.4.0",
     "node-sass": "^4.14.0",
     "react": "^16.13.1",

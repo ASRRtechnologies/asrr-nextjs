@@ -83,7 +83,7 @@ function Header(props) {
                                           onMouseLeave={clearActiveHeader}>Home</a></Link>
                         <Link href="/portfolio"><a onClick={closeMenu} onMouseEnter={() => setActive("Portfolio")}
                                                    onMouseLeave={clearActiveHeader}>Portfolio</a></Link>
-                        <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("Services")}
+                        <Link href="/services"><a onClick={closeMenu} onMouseEnter={() => setActive("Services")}
                                           onMouseLeave={clearActiveHeader}>Services</a></Link>
                         <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("Hire")}
                                           onMouseLeave={clearActiveHeader}>Hire a Developer</a></Link>
@@ -93,7 +93,7 @@ function Header(props) {
                         <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("About")}
                                           onMouseLeave={clearActiveHeader}>About
                             us</a></Link>
-                        <h1 className="header-background-text">{active}</h1>
+                        {/*<h1 className="header-background-text">{active}</h1>*/}
 
                     </div>
 
