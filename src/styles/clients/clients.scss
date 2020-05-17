@@ -1,0 +1,11 @@
+.clients{
+  @include flex(space-evenly, center, row);
+  height: 200px;
+  width: 100vw;
+  background: #F4F4F4;
+
+  img{
+    width: 150px;
+    height: auto;
+  }
+}

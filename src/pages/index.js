@@ -7,6 +7,7 @@ import ServicePreview from "../components/services/Preview";
 import Fonts from "../components/font/Fonts";
 import image from '../../public/assets/images/landing/colorful-earth-hq.jpg'
 import Display from "../components/display/Display";
+import Clients from "../components/clients/Clients";
 
 function Index(props) {
 
@@ -25,6 +26,7 @@ function Index(props) {
                 <Display/>
                 <PortfolioPreview/>
                 <ServicePreview/>
+                <Clients/>
             </Layout>
         </div>
     )
