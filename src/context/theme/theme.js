@@ -14,6 +14,13 @@ const headerDark = "#0a0a0a";
 const dropShadowDark = " 0 3px 6px rgba(43,42,43,1)";
 const dropShadowLight = " 0 3px 6px rgba(0,0,0,0.23)";
 
+const landing = {
+    cards:{
+        dark:"#1e1e1e",
+        light:"#ffffff"
+    }
+}
+
 const layout = {
     background: {
         dark: "#1e1e1e",
@@ -68,10 +75,12 @@ const lightTheme = {
     },
 
     fonts: {
-        fonts: {
-            title: fonts.title.light,
-            text: fonts.text.light
-        }
+            title: fonts.title.dark,
+            text: fonts.text.dark
+    },
+
+    landing:{
+        cards:landing.cards.light
     },
 
     layout: layout.background.light
@@ -93,9 +102,11 @@ const darkTheme = {
         text: fonts.text.light
     },
 
+    landing:{
+        cards:landing.cards.dark
+    },
+
     layout: layout.background.dark
-
-
 
 };
 

@@ -16,20 +16,18 @@
   }
 
   h1 {
-    color: $font-color-light;
+    color: $font-color-light !important;
     max-width: 900px;
     margin: 0;
   }
 
   p {
     max-width: 500px;
-    color: $font-color-light;
+    color: $font-color-light !important;
     margin: 0;
   }
 
   h3, h4 {
-    color: $font-color-light;
-    //color: $font-color-dark;
     max-width: 900px;
     margin: 0;
   }
@@ -75,10 +73,6 @@
   @include flex (flex-start, flex-start, row);
   width: 100%;
   margin-left: calc((100vw - #{$max-width}) / 2);
-  //max-width: $max-width;
-
-  //max-width: calc(1200px * (1 / (100vw * 0.25)));
-  //max-width: calc(100% - (100% - #{$max-width}));
   height: auto;
 
   div:last-child {
@@ -94,10 +88,8 @@
   width: 25%;
 
   //Tint-3-color-dark
-  background-color: rgba(61, 58, 65, 0.6);
-  //background-color: rgba(252, 252, 252, 0.90);
-  border-left: solid 3px $tint-1-dark !important;
-  border-top: solid 3px $tint-1-dark;
+  //border-left: solid 3px white !important;
+  //border-top: solid 3px white;
   border-right: none;
   border-bottom: none;
   transition: 300ms ease-in-out all;
@@ -105,13 +97,6 @@
   &.blur {
     filter: blur(1.4px);
   }
-
-  &:hover {
-    transition: 300ms ease-in-out all;
-    background-color: rgba(61, 58, 65, 1);
-    //background-color: rgba(252, 252, 252, 1);
-  }
-
 }
 
 

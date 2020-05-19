@@ -2,6 +2,21 @@ import React, {useEffect, useContext, useState} from 'react'
 import {motion, useAnimation} from 'framer-motion'
 import {useRouter} from 'next/router'
 import {AnimationContext} from "../../context/animations/AnimationContext";
+import styled from "@emotion/styled";
+
+const Wrapper = styled('div')`
+        background-color: ${props => props.theme.header.background};
+        border-color: ${props => props.theme.header.background};
+        border-style: solid;
+        border-width: 2px; 
+        `;
+
+const Cards = styled('div')`
+        background-color: ${props => props.theme.header.background};
+        border-color: ${props => props.theme.header.background};
+        border-style: solid;
+        border-width: 2px; 
+        `;
 
 const cards = [
     {sector: "Construction", title: "Construction", url: "/construction"},
@@ -90,13 +105,14 @@ function Landing({title, text, image, boxes, projects}) {
                     exit={animation.landingCards.exit} className="landing-box-container">
                     <div onMouseEnter={hoverCardArea} onMouseLeave={leaveCardArea} className="landing-box-wrapper">
                         {cards.map((data, i) => {
-                            return (<div key={i} onMouseEnter={() => hoverSpecificCard(i)}
+                            return (<Cards key={i} onMouseEnter={() => hoverSpecificCard(i)}
                                          onMouseLeave={leaveSpecificCard}
                                          className={`landing-box ${activeCard.index !== i && hover && "blur"}`}
                                          onClick={() => navigate(data.url)}>
+                                <h5>0{i+1}</h5>
                                 <h4>Building</h4>
                                 <h3>Building</h3>
-                            </div>)
+                            </Cards>)
                         })}
                     </div>
                 </motion.div>
