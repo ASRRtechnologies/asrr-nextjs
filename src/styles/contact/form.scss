@@ -1,0 +1,7 @@
+.contact{
+  .form{
+    @include flex(flex-start, flex-start, column);
+    @include size(100%, 100%);
+  }
+
+}
