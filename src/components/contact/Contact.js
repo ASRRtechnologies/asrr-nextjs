@@ -3,6 +3,20 @@ import Section from "../layout/Section";
 
 import Title from "../text/Title";
 import TextField from "@material-ui/core/TextField/TextField";
+import withStyles from "@material-ui/core/styles/withStyles";
+
+const StyledInput = withStyles({
+    root: {
+        width:"100%",
+        margin:"30px 0",
+    },
+    input:{
+        color:"red"
+    },
+    label: {
+        textTransform: 'capitalize',
+    },
+})(TextField);
 
 function Contact(props) {
     return (
@@ -10,7 +24,7 @@ function Contact(props) {
             <Title big title={"Services"} text="lorem ipsum hahahahaha"/>
             <div className="contact">
                 <form className="form">
-                    <TextField id="standard-basic" label="Name"/>
+                    <StyledInput id="standard-basic" label="Name"/>
                     <TextField id="standard-basic" label="Email"/>
                     <TextField id="standard-basic" label="Organization Name"/>
                     <TextField id="standard-basic" label="Message"/>

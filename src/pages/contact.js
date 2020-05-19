@@ -13,7 +13,6 @@ function Contact(props) {
     useEffect(() => {
         //Load animation only if app has loaded once
          (animate.appLoaded) ? animate.animation.secondLoad() : null;
-        Fonts()
     }, []);
 
     return (

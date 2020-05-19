@@ -18,10 +18,7 @@ function Input(props) {
     });
 
     return (
-        <form>
             <TextField id="standard-basic" label="Standard" />
-
-        </form>
     );
 }
 

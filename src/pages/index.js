@@ -8,6 +8,7 @@ import Fonts from "../components/font/Fonts";
 import image from '../../public/assets/images/landing/colorful-earth-hq.jpg'
 import Display from "../components/display/Display";
 import Clients from "../components/clients/Clients";
+import Input from "@/text/Input";
 
 function Index(props) {
 
@@ -16,7 +17,7 @@ function Index(props) {
     useEffect(() => {
         //Load animation only if app has loaded once
          (animate.appLoaded) ? animate.animation.secondLoad() : null;
-        Fonts()
+        // Fonts()
     }, []);
 
     return (
@@ -27,6 +28,7 @@ function Index(props) {
                 <PortfolioPreview/>
                 <ServicePreview/>
                 <Clients/>
+                <Input/>
             </Layout>
         </div>
     )
