@@ -1,5 +1,32 @@
-.contact{
-  @include flex(flex-start, flex-start, column);
+.contact {
+  //@include flex(flex-start, flex-start, row);
   @include size(100%, 100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+
+  .image {
+    @include flex(flex-start, flex-start, column);
+    flex: 1;
+    @include size(100%, 100%);
+    position: relative;
+    overflow:hidden;
+
+    img {
+      position: absolute;
+      left: 0;
+      top: -25%;
+      object-fit: cover;
+      @include size(100%, 140%);
+      object-position: 50% 50%;
+      transition: all 0.7s ease 0s;
+
+      &:hover {
+        transform: scale(1.2);
+        transition: all 0.7s ease 0s;
+      }
+    }
+  }
 
 }

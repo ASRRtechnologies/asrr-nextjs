@@ -1,36 +1,26 @@
 import React from 'react';
 import Section from "../layout/Section";
-
+import spaceman from "public/assets/images/contact/spaceman.jpg";
 import Title from "../text/Title";
-import TextField from "@material-ui/core/TextField/TextField";
-import withStyles from "@material-ui/core/styles/withStyles";
-
-const StyledInput = withStyles({
-    root: {
-        width:"100%",
-        margin:"30px 0",
-    },
-    input:{
-        color:"red"
-    },
-    label: {
-        textTransform: 'capitalize',
-    },
-})(TextField);
+import ReadMore from "@/text/ReadMore";
+import Input from "@/text/Input";
 
 function Contact(props) {
     return (
         <Section>
-            <Title big title={"Services"} text="lorem ipsum hahahahaha"/>
+            <Title big title={"Contact"} text="lorem ipsum hahahahaha"/>
             <div className="contact">
                 <form className="form">
-                    <StyledInput id="standard-basic" label="Name"/>
-                    <TextField id="standard-basic" label="Email"/>
-                    <TextField id="standard-basic" label="Organization Name"/>
-                    <TextField id="standard-basic" label="Message"/>
+                    <Input name="name" text label="Name *" type="text" required={true} placeholder="Name"/>
+                    <Input name="organization" text label="Organization Name" type="text" required={true} placeholder="Organization"/>
+                    <Input name="email" text label="Email *" type="email"  placeholder="Email"/>
+                    <Input name="message"  label="Message *" type="text" required={true} placeholder="Name"/>
+                    <ReadMore action text="Send Message"/>
                 </form>
 
-                <div className="contact-image">
+                <div className="image">
+                    <h2>Get in touch!</h2>
+                    <img src={spaceman} alt="spaceman"/>
 
                 </div>
             </div>

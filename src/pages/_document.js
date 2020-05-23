@@ -10,10 +10,7 @@ class MyDocument extends Document {
     render() {
         return (
             <Html>
-                <Head >
-                    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="preload"
-                          as="font"
-                          crossOrigin="" />
+                <Head>
                 </Head>
                 <body>
                 <Main />
