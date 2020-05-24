@@ -1,4 +1,10 @@
 const withImages = require('next-images');
-module.exports = withImages();
+const withPWA = require('next-pwa')
+
+module.exports = withImages(withPWA({
+	pwa:{
+		dest:"public"
+	}
+}));
 
 
