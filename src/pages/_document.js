@@ -6,10 +6,9 @@ class MyDocument extends Document {
             <Html lang="en">
             <Head>
                 <link
-                    rel="preload"
-                    href="/fonts/Poppins-Bold.ttf"
-                    as="font"
-                    crossOrigin=""
+                    rel="stylesheet"
+                    href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap"
+
                 />
             </Head>
             <body>
