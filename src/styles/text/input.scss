@@ -12,8 +12,8 @@ $input-field: (
         'disabled-foreground':  #ccc,
         'disabled-background':  #f0f0f0,
         'padding':              12px 16px,
-        'font-size-input':      18px,
-        'font-size-label':      18px,
+        'font-size-input':      20px,
+        'font-size-label':      20px,
         'border-width':         1px,
         'border-radius':        .25rem,
         'shadow':               unquote('0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)'),
@@ -26,6 +26,11 @@ $input-field: (
   width: 100%;
   transition: all 200ms;
   margin:20px 0;
+
+  &.no-margin{
+    margin:0 0 20px 0 !important;
+  }
+
 
   &.hidden{
     height: 1px;
@@ -48,7 +53,7 @@ $input-field: (
     padding: 8px 12px;
     outline: 0;
     text-align: inherit;
-    font-family: "Gilroy Light", serif;
+    font-family: "Poppins Light", serif;
     border: 1px solid map-get($input-field, 'border-color');
     border-radius: 4px;
     //box-shadow: map-get($input-field, 'shadow');
@@ -110,6 +115,8 @@ $input-field: (
 
 .asrr-input-label{
   margin-bottom:10px;
+  font-size: 18px;
+  font-family: "Poppins Medium", serif;
 
   &.success{
     color:map-get($input-field, 'success-color');

@@ -4,7 +4,7 @@ import Link from "next/link";
 function ReadMore({to, text, action, ...rest}) {
     return (
 
-        action ? (<p {...rest} className="read-more link">
+        action ? (<p {...rest} className="read-more no-margin">
                 {text}
             </p>)
             :

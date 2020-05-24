@@ -4,6 +4,7 @@ import {AnimationContext} from "../context/animations/AnimationContext";
 import Layout from "../components/layout/Layout";
 import ServicePage from "../components/services/Services";
 import image from '../../public/assets/images/landing/laptop.jpg'
+import ContactPreview from "../components/contact/Preview";
 
 function Services(props) {
 
@@ -20,6 +21,7 @@ function Services(props) {
             <Landing title={"Top Services"} text={"Services that will blow your mind"} image={image}/>
             <Layout>
                 <ServicePage/>
+                <ContactPreview/>
             </Layout>
         </div>
     );

@@ -1,40 +1,73 @@
 .contact {
-  @include flex(flex-start, flex-start, column);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
   @include size(100%, 100%);
-  //display: grid;
-  //grid-template-columns: 1fr 1fr;
-  //grid-template-rows: 1fr;
-  //grid-column-gap: 20px;
 
-  .image {
-    @include flex(flex-start, flex-start, column);
-    flex: 1;
+  h3{
+    margin-bottom: 50px;
+  }
+
+  .form{
+    flex:1;
+    @include flex(space-between, flex-start, column);
     @include size(100%, 100%);
-    position: relative;
-    overflow:hidden;
+    max-width: 600px;
+  }
 
-    img {
+  .map-container{
+    flex:1;
+    @include flex(space-between, flex-end, column);
+    @include size(100%, 100%);
+    //The map has an outer div which doesn't allow for justify-content space between because there are 3 divs then.
+    div:first-child{
       position: absolute;
-      left: 0;
-      top: -25%;
-      object-fit: cover;
-      @include size(100%, 140%);
-      object-position: 50% 50%;
-      transition: all 0.7s ease 0s;
-
-      &:hover {
-        transform: scale(1.2);
-        transition: all 0.7s ease 0s;
+    }
+    .text{
+      @include flex(flex-end, flex-end, column);
+      p{
+        text-align: right;
       }
     }
   }
 
   .map{
-    @include size(80vw, 80vw);
-    max-width: 500px;
-    max-height: 500px;
-    margin: 100px 0 50px 0;
-
+    width: calc(100vw - 100px);
+    height: calc(100vw - 100px);
+    max-width: 450px;
+    max-height: 450px;
   }
 
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    @include flex(flex-start, flex-start, column);
+
+    .map-container{
+      @include flex(flex-start, flex-start, column);
+
+      .text{
+        @include flex(flex-start, flex-start, column);
+        p, a{
+          text-align: left;
+        }
+      }
+    }
+
+    .map{
+      max-width: 600px;
+      max-height: 600px;
+      margin: 100px 0 50px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    .map{
+      width: calc(100vw - 50px);
+      height: calc(100vw - 50px);
+    }
+  }
 }

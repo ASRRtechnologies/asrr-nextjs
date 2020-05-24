@@ -14,11 +14,11 @@
 .read-more{
   display: inline-block;
   position: relative;
-
   height: 30px;
   overflow: hidden;
   cursor: none;
   font-size: 20px;
+  font-family: "Poppins Medium", serif;
 
   &:after{
     content:"";
@@ -41,8 +41,13 @@
 }
 
 .link{
+  font-size: 18px;
   margin-bottom: 15px;
-  font-weight: bold;
+  text-decoration: underline;
+}
+
+.no-margin{
+  margin:0;
 }
 
 @media screen and (max-width:800px) {
