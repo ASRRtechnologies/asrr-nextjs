@@ -1,10 +1,10 @@
 .contact {
-  //@include flex(flex-start, flex-start, row);
+  @include flex(flex-start, flex-start, column);
   @include size(100%, 100%);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 20px;
+  //display: grid;
+  //grid-template-columns: 1fr 1fr;
+  //grid-template-rows: 1fr;
+  //grid-column-gap: 20px;
 
   .image {
     @include flex(flex-start, flex-start, column);
@@ -27,6 +27,14 @@
         transition: all 0.7s ease 0s;
       }
     }
+  }
+
+  .map{
+    @include size(80vw, 80vw);
+    max-width: 500px;
+    max-height: 500px;
+    margin: 100px 0 50px 0;
+
   }
 
 }

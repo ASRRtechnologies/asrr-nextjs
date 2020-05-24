@@ -4,6 +4,7 @@ import spaceman from "public/assets/images/contact/spaceman.jpg";
 import Title from "../text/Title";
 import ReadMore from "@/text/ReadMore";
 import Input from "@/text/Input";
+import Map from "@/contact/Map";
 
 function Contact(props) {
     return (
@@ -17,12 +18,13 @@ function Contact(props) {
                     <Input name="message"  label="Message *" type="text" required={true} placeholder="Name"/>
                     <ReadMore action text="Send Message"/>
                 </form>
+                <Map/>
 
-                <div className="image">
-                    <h2>Get in touch!</h2>
-                    <img src={spaceman} alt="spaceman"/>
+                {/*<div className="image">*/}
+                {/*    <h2>Get in touch!</h2>*/}
+                {/*    <img src={spaceman} alt="spaceman"/>*/}
 
-                </div>
+                {/*</div>*/}
             </div>
 
         </Section>

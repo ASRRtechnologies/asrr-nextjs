@@ -14,7 +14,7 @@
 .read-more{
   display: inline-block;
   position: relative;
-  color:inherit;
+
   height: 30px;
   overflow: hidden;
   cursor: none;
@@ -30,15 +30,18 @@
     height: 3px;
     color:inherit;
     transition: all 0.5s ease 0s;
-
   }
 
   &:hover{
     &:after{
-      bottom:4px;
+      bottom:1.5px;
       transition: all 0.3s ease 0s;
     }
   }
+}
+
+.link{
+  font-weight: bold;
 }
 
 @media screen and (max-width:800px) {

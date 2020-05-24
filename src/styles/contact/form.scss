@@ -3,12 +3,6 @@
     flex:1;
     @include flex(flex-start, flex-start, column);
     @include size(100%, 100%);
-    padding: 0 50px 0 0;
-
-    p{
-      font-weight: bold;
-
-    }
+    max-width: 600px;
   }
-
 }

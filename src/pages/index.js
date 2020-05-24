@@ -8,7 +8,7 @@ import Fonts from "../components/font/Fonts";
 import image from '../../public/assets/images/landing/colorful-earth-hq.jpg'
 import Display from "../components/display/Display";
 import Clients from "../components/clients/Clients";
-import Input from "@/text/Input";
+import Contact from "../components/contact/Contact";
 
 function Index(props) {
 
@@ -27,8 +27,8 @@ function Index(props) {
                 <Display/>
                 <PortfolioPreview/>
                 <ServicePreview/>
+                <Contact/>
                 <Clients/>
-                <Input/>
             </Layout>
         </div>
     )

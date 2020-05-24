@@ -1175,6 +1175,25 @@
     style-value-types "^3.1.7"
     tslib "^1.10.0"
 
+"@react-google-maps/api@^1.9.2":
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/@react-google-maps/api/-/api-1.9.2.tgz#3d5e8648d4be891d65b32439673b9e28bb363b7c"
+  integrity sha512-Uz0qljv/tPh8P1oih6rqcVmgizXxYC4OKq9IzXFteCTJk0EZRQ7TB89QFMhKGOYn5OGZaDMMfF+8UliWQPLnfg==
+  dependencies:
+    "@react-google-maps/infobox" "1.9.2"
+    "@react-google-maps/marker-clusterer" "1.9.2"
+    invariant "2.2.4"
+
+"@react-google-maps/infobox@1.9.2":
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/@react-google-maps/infobox/-/infobox-1.9.2.tgz#d1418bf23139295c27dc63545ad8e89f03064fb3"
+  integrity sha512-KrAEJQPVSXQZZJOE2YW0DMk5wCpY7b5orhzuy754GKYEw6M8jxupyHNVezP4osNTLA8q1OD4ERXZmbeuhtQPXQ==
+
+"@react-google-maps/marker-clusterer@1.9.2":
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/@react-google-maps/marker-clusterer/-/marker-clusterer-1.9.2.tgz#0231b8635993cbf43256a86e13961145785febb8"
+  integrity sha512-6I+eZ4cmaTzRdOQhIYLiBrI5crpUFdpV94gvCAhAuiO9JuUsUJIJumBxRup2UWEOkMGmAOLOXFQ9ieKxu9u47g==
+
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
@@ -3728,7 +3747,7 @@ interweave@^12.5.0:
     escape-html "^1.0.3"
     prop-types "^15.7.2"
 
-invariant@^2.2.2, invariant@^2.2.4:
+invariant@2.2.4, invariant@^2.2.2, invariant@^2.2.4:
   version "2.2.4"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.4.tgz#610f3c92c9359ce1db616e538008d23ff35158e6"
   integrity sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==
