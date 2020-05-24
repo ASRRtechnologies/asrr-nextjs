@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import logo from '../../../public/assets/images/logo/asrr-logo-spacing.svg'
 import logoWhite from '../../../public/assets/images/logo/asrr-logo-spacing.svg'
@@ -11,13 +11,19 @@ function Overlay () {
 	const animate = useContext(AnimationContext);
 	const animation = animate.animation.overlay;
 	const router = useRouter();
+	const overlay = useRef();
+
+	const setOverlayHeight = () => {
+		overlay.current.style.height = `${window.innerHeight}px`;
+	};
 
 	useEffect(() => {
-		animate.animation.firstLoad()
+		animate.animation.firstLoad();
+		setOverlayHeight();
 	}, []);
 
 	return (
-		<motion.div animate={animation.background.animate} initial={animation.background.initial}
+		<motion.div ref={overlay} animate={animation.background.animate} initial={animation.background.initial}
 					className="transition-animation"
 					style={{
 						backgroundColor: darkTheme.dark ? '#0a0a0a' : '#ffffff',
