@@ -16,7 +16,7 @@ const Text = styled('p')`
 
 
 
-function ReadMore({to, text, action, ...rest}) {
+function ReadMore({to, text, action, margin, ...rest}) {
     return (
 
         action ? (<Text {...rest} className="read-more no-margin">
@@ -25,7 +25,7 @@ function ReadMore({to, text, action, ...rest}) {
             :
             (
                 <Link href={to}>
-                    <LinkText className="read-more">
+                    <LinkText className={`read-more ${margin && "margin"}`}>
                         {text}
                     </LinkText>
                 </Link>)

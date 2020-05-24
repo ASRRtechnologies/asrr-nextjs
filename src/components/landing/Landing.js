@@ -1,8 +1,8 @@
-import React, { useEffect, useContext, useState, useRef } from 'react'
-import {motion, useAnimation} from 'framer-motion'
-import {useRouter} from 'next/router'
-import {AnimationContext} from "../../context/animations/AnimationContext";
-import styled from "@emotion/styled";
+import React, { useContext, useEffect, useRef, useState } from 'react'
+import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
+import { AnimationContext } from '../../context/animations/AnimationContext'
+import styled from '@emotion/styled'
 
 const Wrapper = styled('div')`
         background-color: ${props => props.theme.header.background};
@@ -68,7 +68,7 @@ function Landing({title, text, image, boxes, projects}) {
     };
 
     const setLandingHeight = () => {
-        landing.current.style.height = "100vh"
+        landing.current.style.height = `${window.innerHeight}px`;
     };
 
     useEffect(() => setLandingHeight() , [])

@@ -1,15 +1,10 @@
 import React, { useContext, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import logo from '../../../public/assets/images/logo/asrr-logo-spacing.svg'
+import logoWhite from '../../../public/assets/images/logo/asrr-logo-spacing.svg'
 import { AnimationContext } from '../../context/animations/AnimationContext'
 import { useRouter } from 'next/router'
-import styled from '@emotion/styled'
 import { useTheme } from '../../context/theme/ThemeContext'
-
-const Wrapper = styled('nav')`
-        background-color: ${props => props.theme.header.background};
-        color: ${props => props.theme.header.font};
-`;
 
 function Overlay () {
 	const darkTheme = useTheme();
@@ -35,7 +30,7 @@ function Overlay () {
 						{router.pathname === '/' ?
 							(
 								<motion.img animate={animation.logo.animate} initial={animation.logo.initial}
-											src={logo} alt="asrr"/>
+											src={darkTheme.dark ? logo : logoWhite } alt="asrr"/>
 							)
 							: (
 								<motion.h1 className="animation-text" animate={animation.logo.animate}

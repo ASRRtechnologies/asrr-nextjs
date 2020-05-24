@@ -1,5 +1,4 @@
 //To keep consistent name usage throughout the website nesting of this card in
-
 .portfolio {
   .card {
     width: 45%;
@@ -39,10 +38,8 @@
   .portfolio {
     .card {
       width: 100%;
-      //max-width: 500px;
       height: 100%;
-      //@include flex(center, center, column);
-      margin-bottom: 50px;
+      margin-bottom: 75px;
     }
   }
 }

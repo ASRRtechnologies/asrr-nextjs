@@ -9,7 +9,7 @@
   }
 
   div:last-child {
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
 }
@@ -71,4 +71,13 @@
   .portfolio {
     @include flex(center, center, column);
   }
+
+  .portfolio-links{
+    justify-content: flex-start;
+
+    p:first-child{
+      padding: 0 30px 0 0;
+    }
+  }
+
 }

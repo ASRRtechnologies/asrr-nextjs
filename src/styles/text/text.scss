@@ -5,8 +5,7 @@
   p{
     margin-bottom: 0;
   }
-
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 
@@ -14,12 +13,13 @@
 .read-more{
   display: inline-block;
   position: relative;
-  margin-top: 50px;
-  //height: 30px;
-  //overflow: hidden;
-  //cursor: none;
-  //font-size: 20px;
-  font-family: "Poppins Medium", serif;
+  font-size: 20px;
+  font-weight: bold;
+
+  &.margin{
+    margin-top: 50px;
+  }
+
   &:after{
     content:"";
     position: absolute;
@@ -29,25 +29,6 @@
     height: 2px;
     color:inherit;
    }
-  //
-  //&:after{
-  //  content:"";
-  //  position: absolute;
-  //  bottom:-20px;
-  //  left:0;
-  //  background-color: black;
-  //  width: 100%;
-  //  height: 3px;
-  //  color:inherit;
-  //  transition: all 0.5s ease 0s;
-  //}
-  //
-  //&:hover{
-  //  &:after{
-  //    bottom:1.5px;
-  //    transition: all 0.3s ease 0s;
-  //  }
-  //}
 }
 
 .link{
@@ -60,9 +41,15 @@
   margin:0;
 }
 
-@media screen and (max-width:800px) {
-  //.title{
-  //  @include flex(center, center, column)
-  //}
+//Single column breaking point portfolio and servicess
+@media screen and (max-width: 700px){
+  .title{
+    margin-bottom: 50px;
+  }
 
+  .read-more{
+    &.margin{
+      margin-top: 100px;
+    }
+  }
 }
