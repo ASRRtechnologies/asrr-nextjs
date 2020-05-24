@@ -1,13 +1,20 @@
 import React from 'react';
 import Link from "next/link";
 
-function ReadMore({to, text}) {
+function ReadMore({to, text, action, ...rest}) {
     return (
-        <Link href={to}>
-            <a className="read-more">
+
+        action ? (<p {...rest} className="read-more no-margin">
                 {text}
-            </a>
-        </Link>
+            </p>)
+            :
+            (
+                <Link href={to}>
+                    <a className="read-more">
+                        {text}
+                    </a>
+                </Link>)
+
     );
 }
 

@@ -1,10 +1,14 @@
 import React, {useContext, useEffect, useState} from 'react'
 import Landing from '../components/landing/Landing'
-import Overlay from "../components/landing/Overlay";
 import {AnimationContext} from "../context/animations/AnimationContext";
 import Layout from "../components/layout/Layout";
-import Portfolio from "../components/portfolio/Portfolio";
+import PortfolioPreview from "../components/portfolio/Preview";
+import ServicePreview from "../components/services/Preview";
 import Fonts from "../components/font/Fonts";
+import image from '../../public/assets/images/landing/colorful-earth-hq.jpg'
+import Display from "../components/display/Display";
+import Clients from "../components/clients/Clients";
+import Contact from "../components/contact/Contact";
 
 function Index(props) {
 
@@ -12,17 +16,20 @@ function Index(props) {
 
     useEffect(() => {
         //Load animation only if app has loaded once
-        //  (animate.appLoaded) ? animate.animation.secondLoad() : null
-        Fonts()
+         (animate.appLoaded) ? animate.animation.secondLoad() : null;
+        // Fonts()
     }, []);
 
     return (
         <div className="content-wrapper">
-            <Landing/>
+            <Landing title={"Redefining Innovative"} text={"See what ASRR can do for your company today"} image={image} boxes projects/>
             <Layout>
-                <Portfolio/>
+                <Display/>
+                <PortfolioPreview/>
+                <ServicePreview/>
+                <Contact/>
+                <Clients/>
             </Layout>
-
         </div>
     )
 }

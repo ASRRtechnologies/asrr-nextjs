@@ -1,17 +1,74 @@
-.portfolio{
+.portfolio {
   width: 100%;
   height: auto;
-  @include flex (space-between, flex-start, row);
+  @include flex(space-between, flex-start, row);
   flex-wrap: wrap;
 
-  div:nth-child(even){
+  div:nth-child(even) {
     margin-top: 50px;
+  }
+
+  div:last-child {
+    margin-bottom: 50px;
   }
 
 }
 
-@media screen and (max-width:700px) {
-  .portfolio{
-    @include flex (center, center, column);
+.portfolio-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  margin: 50px 0;
+
+  p {
+    display: inline-block;
+    margin: 0;
+    font-size: 24px;
+    position: relative;
+    padding: 0 30px;
+
+    &.active{
+      font-weight: bold;
+      color: $primary-color;
+    }
+
+    &:hover{
+      font-weight: bold;
+      color: $primary-color;
+    }
+  }
+
+  p:nth-child(even){
+    &:before{
+      position: absolute;
+      left:0;
+      top:50%;
+      transform: translateY(-50%);
+      content:"";
+      height:40px;
+      width: 2px;
+      background-color: $primary-color;
+    }
+
+    &:after{
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+      right: 0;
+      content:"";
+      height:40px;
+      width: 2px;
+      background-color: $primary-color;
+    }
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .portfolio {
+    @include flex(center, center, column);
   }
 }

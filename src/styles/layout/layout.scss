@@ -3,14 +3,14 @@
   height: 100%;
   width: 100%;
   @include flex(center, center, column);
-  padding: 0 $pc-padding;
+  padding: $pc-padding;
 }
 
 
 //General layout of seciton components
 .section{
   @include flex(flex-start, flex-start, column);
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   width: 100%;
   height: auto;
   max-width: $max-width;
@@ -18,12 +18,21 @@
 
 @media screen and (max-width:1200px) {
   .layout{
-    padding: 0 $tablet-padding;
+    padding: $tablet-padding;
   }
 }
 
 @media screen and (max-width:500px) {
   .layout{
-    padding: 0 $mob-padding;
+    padding: $mob-padding;
   }
+
+  .section{
+    @include flex(flex-start, flex-start, column);
+    padding: 100px 0 0 0;
+    width: 100%;
+    height: auto;
+    max-width: $max-width;
+  }
+
 }

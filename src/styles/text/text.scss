@@ -10,14 +10,15 @@
 }
 
 
-//Rea dmore
+//Readmore
 .read-more{
   display: inline-block;
   position: relative;
-  color:inherit;
   height: 30px;
   overflow: hidden;
   cursor: none;
+  font-size: 20px;
+  font-family: "Poppins Medium", serif;
 
   &:after{
     content:"";
@@ -29,15 +30,24 @@
     height: 3px;
     color:inherit;
     transition: all 0.5s ease 0s;
-
   }
 
   &:hover{
     &:after{
-      bottom:4px;
+      bottom:1.5px;
       transition: all 0.3s ease 0s;
     }
   }
+}
+
+.link{
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+.no-margin{
+  margin:0;
 }
 
 @media screen and (max-width:800px) {

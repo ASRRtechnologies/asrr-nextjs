@@ -1,0 +1,77 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  @include size(100%, 100%);
+
+  &.preview{
+    @include flex(flex-start, flex-start, column);
+  }
+
+  h3{
+    margin-bottom: 50px;
+  }
+
+  .form{
+    flex:1;
+    @include flex(space-between, flex-start, column);
+    @include size(100%, 100%);
+    max-width: 600px;
+  }
+
+  .map-container{
+    flex:1;
+    @include flex(space-between, flex-end, column);
+    @include size(100%, 100%);
+    //The map has an outer div which doesn't allow for justify-content space between because there are 3 divs then.
+    div:first-child{
+      position: absolute;
+    }
+    .text{
+      @include flex(flex-end, flex-end, column);
+      p{
+        text-align: right;
+      }
+    }
+  }
+
+  .map{
+    width: calc(100vw - 100px);
+    height: calc(100vw - 100px);
+    max-width: 450px;
+    max-height: 450px;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+  .contact {
+    @include flex(flex-start, flex-start, column);
+
+    .map-container{
+      @include flex(flex-start, flex-start, column);
+
+      .text{
+        @include flex(flex-start, flex-start, column);
+        p, a{
+          text-align: left;
+        }
+      }
+    }
+
+    .map{
+      max-width: 600px;
+      max-height: 600px;
+      margin: 100px 0 50px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    .map{
+      width: calc(100vw - 50px);
+      height: calc(100vw - 50px);
+    }
+  }
+}
