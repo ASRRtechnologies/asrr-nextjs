@@ -24,21 +24,16 @@ function Map (props) {
 	return (
 		<>
 			<LoadScript googleMapsApiKey="AIzaSyCSfB3HhJXkskqLOKlqaiSY3NK4VxlSjQQ">
-				<GoogleMap center={center} zoom={10} mapContainerClassName="map">
+				<GoogleMap center={center} zoom={15} mapContainerClassName="map">
 					<>
 						<Marker icon={logo} position={position}/>
-						{/*<InfoWindow anchor={position} position={position}>*/}
-						{/*    <div>*/}
-						{/*        <h3>Get Directions</h3>*/}
-						{/*    </div>*/}
-						{/*</InfoWindow>*/}
 					</>
 				</GoogleMap>
 			</LoadScript>
 			<div className="text">
 				<p>Adress: Veraartlaan 12 <br/> 2288 GM Rijswijk, The Netherlands</p>
-				<a href="mailto:asrr@contact.nl" className="link">Email: contact@asrr.nl</a>
-				<a href="https://goo.gl/maps/fZqhC9FUVTpiEiCb7" className="link no-margin">Get Directions</a>
+				<a href="mailto:asrr@contact.nl" target="_blank" rel="noopener noreferrer" className="link">Email: contact@asrr.nl</a>
+				<a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/fZqhC9FUVTpiEiCb7" className="link no-margin">Get Directions</a>
 			</div>
 		</>
 	)
