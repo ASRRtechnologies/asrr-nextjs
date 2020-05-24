@@ -15,7 +15,7 @@ function Preview(props) {
             <div className="portfolio">
                 {cases.map(({image, tag, title}) => <Card img={image} tag={tag} title={title}/>)}
             </div>
-            <ReadMore to="/portfolio" text="See all Projects"/>
+            <ReadMore margin={true} to="/portfolio" text="See all Projects"/>
         </Section>
     );
 }

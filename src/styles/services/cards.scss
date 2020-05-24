@@ -1,11 +1,16 @@
 //To keep consistent name usage throughout the website nesting of this card in
 
 .services {
+  width: 100%;
+  height: auto;
+  @include flex (space-between, flex-start, row);
+  flex-wrap: wrap;
+
   .card {
     width: 30.333%;
     height: auto;
     min-height: 300px;
-    //overflow: hidden;
+    margin-bottom: 70px;
   }
 }
 
@@ -19,12 +24,14 @@
 
 @media screen and (max-width:700px) {
   .services {
+    div:last-child{
+      margin-bottom: 0;
+    }
     .card {
       width: 100%;
-      //max-width: 500px;
-      height: 100%;
-      //@include flex(center, center, column);
-      margin-bottom: 50px;
+      height: auto;
+      margin-bottom: 75px;
+      min-height: auto;
     }
   }
 }

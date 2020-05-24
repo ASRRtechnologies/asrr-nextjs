@@ -16,7 +16,7 @@ function Services(props) {
                 <Card/>
                 <Card/>
             </div>
-            <ReadMore to="/services" text="See all Services"/>
+            <ReadMore margin={true} to="/services" text="See all Services"/>
         </Section>
     );
 }
