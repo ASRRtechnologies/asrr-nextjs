@@ -9,7 +9,7 @@ import Map from "@/contact/Map";
 function Contact(props) {
     return (
         <Section>
-            <div className="contact">
+            <div className="contact preview">
                 <h3>Want to know what ASRR can mean for you company? <br/> Get in touch!</h3>
                 <form className="form">
                     <Input name="name" text label="Name *" type="text" required={true} placeholder="Name"/>

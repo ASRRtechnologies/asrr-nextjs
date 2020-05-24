@@ -4,6 +4,10 @@
   grid-template-rows: 1fr;
   @include size(100%, 100%);
 
+  &.preview{
+    @include flex(flex-start, flex-start, column);
+  }
+
   h3{
     margin-bottom: 50px;
   }
