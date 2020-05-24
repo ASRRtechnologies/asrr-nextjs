@@ -29,11 +29,11 @@ class Input extends Component {
     };
 
     render() {
-        const {hidden, placeholder, label, className, ...rest} = this.props;
+        const {hidden, textArea, placeholder, label, className, ...rest} = this.props;
         return (
             // <div style={{width:"100%"}}data-aos={animation} data-aos-once="true" data-aos-delay={delay}>
                 <Wrapper key={this.props.key} className={`asrr-input-container ${className}`}>
-                    {this.props.text ?
+                    {!textArea?
                         (<React.Fragment>
                                 <label  className={`asrr-input-label ${this.renderState(this.props)}`}>{label}</label>
                                 <input ref={this.placeholder} className={`asrr-input ${this.renderState(this.props)}`}

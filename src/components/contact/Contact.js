@@ -11,24 +11,17 @@ function Contact ({ big }) {
 			<Title big={big} title={'Contact'} text="lorem ipsum hahahahaha"/>
 			<div className="contact">
 				<form className="form">
-					<Input className="no-margin" name="name" text label="Name *" type="text" required={true} placeholder="Name"/>
-					<Input name="organization" text label="Organization Name" type="text" required={true}
+					<Input className="no-margin" name="name" label="Name *" type="text" required={true} placeholder="Name"/>
+					<Input name="organization" label="Organization Name" type="text" required={true}
 						   placeholder="Organization"/>
-					<Input name="email" text label="Email *" type="email" placeholder="Email"/>
-					<Input name="message" label="Message *" type="text" required={true} placeholder="Name"/>
+					<Input name="email" label="Email *" type="email" placeholder="Email"/>
+					<Input name="message" textArea={true} label="Message *" type="text" required={true} placeholder="Name"/>
 					<ReadMore action text="Send Message"/>
 				</form>
 				<div className="map-container">
 					<Map/>
 				</div>
-
-				{/*<div className="image">*/}
-				{/*    <h2>Get in touch!</h2>*/}
-				{/*    <img src={spaceman} alt="spaceman"/>*/}
-
-				{/*</div>*/}
 			</div>
-
 		</Section>
 	)
 }

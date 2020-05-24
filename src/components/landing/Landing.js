@@ -1,4 +1,4 @@
-import React, {useEffect, useContext, useState} from 'react'
+import React, { useEffect, useContext, useState, useRef } from 'react'
 import {motion, useAnimation} from 'framer-motion'
 import {useRouter} from 'next/router'
 import {AnimationContext} from "../../context/animations/AnimationContext";
@@ -19,8 +19,8 @@ const Cards = styled('div')`
         `;
 
 const cards = [
-    {sector: "Construction", title: "Construction", url: "/construction"},
-    {sector: "Construction", title: "Construction", url: "/construction"},
+    {sector: "BIM", title: "Revit Apps", url: "/construction"},
+    {sector: "General", title: "Server", url: "/construction"},
     {sector: "Construction", title: "Construction", url: "/construction"},
     {sector: "Construction", title: "Construction", url: "/construction"},
 ];
@@ -35,6 +35,7 @@ function Landing({title, text, image, boxes, projects}) {
         index: 0
     });
     const router = useRouter();
+    const landing = useRef(null)
 
     const navigate = (url) => {
         router.push(url).then(null)
@@ -66,8 +67,14 @@ function Landing({title, text, image, boxes, projects}) {
         })
     };
 
+    const setLandingHeight = () => {
+        landing.current.style.height = "100vh"
+    };
+
+    useEffect(() => setLandingHeight() , [])
+
     return (
-        <motion.div className="landing-container">
+        <motion.div ref={landing} className="landing-container">
             {/*<LandingHeader/>*/}
             <motion.img initial={{opacity: 0}} animate={{opacity: 1, transition: {duration: 0.3}}}
                         exit={{opacity: 0, transition: {duration: 0.4}}} className="background" src={image}
@@ -99,10 +106,9 @@ function Landing({title, text, image, boxes, projects}) {
 				</span>
             </div>
 
-            {boxes ? (
                 <motion.div
                     initial={animation.landingCards.initial} animate={animation.landingCards.animate}
-                    exit={animation.landingCards.exit} className="landing-box-container">
+                    exit={animation.landingCards.exit} className={`landing-box-container ${projects && "show"}`}>
                     <div onMouseEnter={hoverCardArea} onMouseLeave={leaveCardArea} className="landing-box-wrapper">
                         {cards.map((data, i) => {
                             return (<Cards key={i} onMouseEnter={() => hoverSpecificCard(i)}
@@ -110,13 +116,12 @@ function Landing({title, text, image, boxes, projects}) {
                                          className={`landing-box ${activeCard.index !== i && hover && "blur"}`}
                                          onClick={() => navigate(data.url)}>
                                 <h5>0{i+1}</h5>
-                                <h4>Building</h4>
-                                <h3>Building</h3>
+                                <h4>{data.sector}</h4>
+                                <h3>{data.title}</h3>
                             </Cards>)
                         })}
                     </div>
                 </motion.div>
-            ) : null}
         </motion.div>
     )
 }

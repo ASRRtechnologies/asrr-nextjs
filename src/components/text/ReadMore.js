@@ -1,18 +1,33 @@
 import React from 'react';
 import Link from "next/link";
+import styled from '@emotion/styled'
+
+const LinkText = styled('a')`
+        &:after{
+          background-color: ${props => props.theme.fonts.text} ;
+        }
+`;
+
+const Text = styled('p')`
+        &:after{
+          background-color: ${props => props.theme.fonts.text} ;
+        }
+`;
+
+
 
 function ReadMore({to, text, action, ...rest}) {
     return (
 
-        action ? (<p {...rest} className="read-more no-margin">
+        action ? (<Text {...rest} className="read-more no-margin">
                 {text}
-            </p>)
+            </Text>)
             :
             (
                 <Link href={to}>
-                    <a className="read-more">
+                    <LinkText className="read-more">
                         {text}
-                    </a>
+                    </LinkText>
                 </Link>)
 
     );
