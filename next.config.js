@@ -2,12 +2,11 @@
 // module.exports = withImages();
 
 const withImages = require('next-images');
-const withFonts = require('nextjs-fonts');
+const withFonts = require('next-fonts');
 
-module.exports = withFonts(withImages({
-		enableSvg: true,
-		webpack(config, options) {
-			return config;
-		}
+module.exports = withImages(withFonts({
+	enableSvg: true,
+	webpack(config, options) {
+		return config;
 	}
-));
+}));
