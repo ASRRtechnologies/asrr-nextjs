@@ -39,8 +39,8 @@ function Map(props) {
                     </>
                 </GoogleMap>
             </LoadScript>
-            <p>Adress: Veraartlaan 12</p>
-            <p>Email: contact@asrr.nl</p>
+            <a className="link" href="https://goo.gl/maps/fZqhC9FUVTpiEiCb7">Adress: Veraartlaan 12 <br/> 2288 GM Rijswijk, The Netherlands</a>
+            <a className="link">Email: contact@asrr.nl</a>
             <a className="link">Get Directions</a>
         </>
     );

@@ -4,6 +4,7 @@ import {AnimationContext} from "../context/animations/AnimationContext";
 import Layout from "../components/layout/Layout";
 import Fonts from "../components/font/Fonts";
 import image from '../../public/assets/images/landing/colorful-earth-hq.jpg'
+import display from '../../public/assets/images/contact/display.jpg'
 import Display from "../components/display/Display";
 import ContactPage from "../components/contact/Contact";
 function Contact(props) {
@@ -19,7 +20,7 @@ function Contact(props) {
         <div className="content-wrapper">
             <Landing title={"Redefining Innovative"} text={"See what ASRR can do for your company today"} image={image} boxes projects/>
             <Layout>
-                <Display/>
+                <Display image={display}/>
                 <ContactPage/>
             </Layout>
         </div>
