@@ -1,6 +1,5 @@
 .landing-container {
   width: 100vw;
-  height: 100vh;
   position: relative;
   @include flex(center, flex-start, column);
 
@@ -64,9 +63,13 @@
 .landing-box-container {
   width: 100%;
   height: 100%;
-  @include flex (flex-start, flex-end, row);
   flex: 1;
   transform-origin: bottom;
+  @include flex (flex-start, flex-end, row);
+  visibility: hidden;
+  &.show{
+    visibility: visible;
+  }
 }
 
 .landing-box-wrapper {
@@ -111,8 +114,42 @@
   .landing-text {
     padding: $tablet-padding;
   }
+}
+
+@media screen and (max-width: 1000px) {
+  .landing-container{
+    h3{
+      font-size: 18px;
+    }
+
+    h4{
+      display: none;
+    }
+
+    h5{
+      margin:0;
+    }
+
+    h3,h5{
+      line-height: 1;
+      margin-right: 10px;
+    }
+  }
+  .landing-box-wrapper {
+    @include flex (flex-start, flex-start, column);
+    transform-origin: bottom;
+  }
+
+  .landing-box{
+    @include flex (flex-start, center, row);
+    height: auto;
+    width:100%;
+  }
+
 
 }
+
+
 
 @media screen and (max-width: 500px) {
   .landing-text {

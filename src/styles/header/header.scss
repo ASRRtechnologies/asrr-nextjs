@@ -111,6 +111,14 @@
 
 @media screen and (max-width:1200px) {
 
+  .header{
+    height: 80px;
+  }
+
+  .asrr-logo {
+    width: 60px;
+  }
+
   .header-relative{
     padding: 0 $tablet-padding;
   }
@@ -138,10 +146,6 @@
       transform: translateX(0);
       transition: all ease-in-out 500ms;
     }
-  }
-
-  .icon{
-    margin-right: 25px;
   }
 
 }

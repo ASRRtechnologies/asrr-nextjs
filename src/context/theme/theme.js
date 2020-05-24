@@ -21,6 +21,13 @@ const landing = {
     }
 }
 
+const clients = {
+    background:{
+        dark:"#0a0a0a",
+        light:"#F4F4F4"
+    }
+}
+
 const layout = {
     background: {
         dark: "#1e1e1e",
@@ -83,7 +90,10 @@ const lightTheme = {
         cards:landing.cards.light
     },
 
-    layout: layout.background.light
+    layout: layout.background.light,
+
+    clients: clients.background.light
+
 
 
 };
@@ -106,7 +116,9 @@ const darkTheme = {
         cards:landing.cards.dark
     },
 
-    layout: layout.background.dark
+    layout: layout.background.dark,
+
+    clients: clients.background.dark
 
 };
 

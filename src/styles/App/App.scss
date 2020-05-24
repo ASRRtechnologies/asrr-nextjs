@@ -6,6 +6,14 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Test';
+  src: url('../../../public/assets/fonts/Poppins-Light.ttf');
+  src: url('../../../public/assets/fonts/Poppins-Bold.ttf');
+  src: url('../../../public/assets/fonts/Poppins-Medium.ttf');
+  src: url('../../../public/assets/fonts/Poppins-Regular.ttf');
+}
+
 ::-webkit-scrollbar-track
 {
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
@@ -33,7 +41,7 @@ html{
 
 body {
   position: relative;
-  font-family: 'Poppins', 'Source Sans Pro', serif !important;
+  font-family: 'Poppins Regular', 'Source Sans Pro', serif !important;
   //font-family: "Gilroy Light", serif;
   min-height: 100%;
   height: auto;
