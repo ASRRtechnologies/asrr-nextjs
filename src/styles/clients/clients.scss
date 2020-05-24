@@ -6,7 +6,9 @@
   margin-top: 100px;
 
   img{
-    width: 150px;
+    max-width: 150px;
+    width: 20vw;
     height: auto;
+    min-width: 30px;
   }
 }

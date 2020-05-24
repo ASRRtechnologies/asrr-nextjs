@@ -3,6 +3,7 @@ import Section from "../layout/Section";
 import Card from "./Card";
 import ReadMore from "../text/ReadMore";
 import Title from "../text/Title";
+import {cases} from '../data/cases'
 
 function Preview(props) {
 
@@ -12,9 +13,7 @@ function Preview(props) {
         <Section>
             <Title title={"Portfolio"} text="lorem ipsum hahahahaha"/>
             <div className="portfolio">
-                <Card/>
-                <Card/>
-                <Card/>
+                {cases.map(({image, tag, title}) => <Card img={image} tag={tag} title={title}/>)}
             </div>
             <ReadMore to="/portfolio" text="See all Projects"/>
         </Section>

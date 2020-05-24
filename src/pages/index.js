@@ -5,7 +5,8 @@ import Layout from "../components/layout/Layout";
 import PortfolioPreview from "../components/portfolio/Preview";
 import ServicePreview from "../components/services/Preview";
 import Fonts from "../components/font/Fonts";
-import image from '../../public/assets/images/landing/colorful-earth-hq.jpg'
+import image from '../../public/assets/images/landing/drone-2.jpg'
+import display from '../../public/assets/images/landing/oldschool.jpg'
 import Display from "../components/display/Display";
 import Clients from "../components/clients/Clients";
 import Contact from "../components/contact/Contact";
@@ -24,7 +25,7 @@ function Index(props) {
         <div className="content-wrapper">
             <Landing title={"Redefining Innovative"} text={"See what ASRR can do for your company today"} image={image} boxes projects/>
             <Layout>
-                <Display/>
+                <Display image={display}/>
                 <PortfolioPreview/>
                 <ServicePreview/>
                 <Contact/>

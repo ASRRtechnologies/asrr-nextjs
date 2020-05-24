@@ -1,42 +1,48 @@
-import React, {useState} from 'react';
-import Section from "../layout/Section";
-import Card from "./Card";
-import ReadMore from "../text/ReadMore";
-import Title from "../text/Title";
+import React, { useEffect, useState } from 'react'
+import Section from '../layout/Section'
+import Card from './Card'
+import ReadMore from '../text/ReadMore'
+import Title from '../text/Title'
+import { cases } from '../data/cases'
 
 const links = [
-    {name: "ALL"},
-    {name: "BIM"},
-    {name: "GENERAL"}
-];
+	{ name: 'ALL' },
+	{ name: 'BIM' },
+	{ name: 'GENERAL' },
+]
 
-const post = [
-    {type: "all", title: "xtra"},
-    {type: "bim", title: "ert"},
-    {type: "general", title: "x"}
-];
+function Portfolio (props) {
 
-function Portfolio(props) {
+	const [active, setActive] = useState(0)
+	const [data, setData] = useState([])
 
-    const [active, setActive] = useState(0);
+	useEffect(() => {
+		setData(cases)
+		console.log(23);
+	}, [])
 
-    return (
-        <Section>
-            <div className="portfolio-links">
-                {links.map((d, i) => <p key={`portfolio-link${i}`}
-                                        onClick={() => setActive(i)}
-                                        className={`${i === active && "active"}`}>{d.name}</p>)}
-            </div>
-            <Title big title={"Portfolio"} text="lorem ipsum hahahahaha"/>
-            <div className="portfolio">
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
-            </div>
-            <ReadMore to="/" text="See all Projects"/>
-        </Section>
-    );
+	const toggle = (tag, activeIndex) => {
+		setActive(activeIndex)
+		if (tag === 'all') {setData(cases)} else {
+			const currentData = data.filter((obj) => obj.tag === tag)
+			setData(currentData)
+		}
+	}
+
+	return (
+		<Section>
+			<div className="portfolio-links">
+				{links.map((d, i) => <p key={`portfolio-link${i}`}
+										onClick={() => toggle(d.name.toLowerCase(), i)}
+										className={`${i === active && 'active'}`}>{d.name}</p>)}
+			</div>
+			<Title big title={'Portfolio'} text="lorem ipsum hahahahaha"/>
+			<div className="portfolio">
+				{data.map(({ image, tag, title }, i) => <Card key={title + i} img={image} tag={tag} title={title}/>)}
+			</div>
+			<ReadMore to="/" text="See all Projects"/>
+		</Section>
+	)
 }
 
-export default Portfolio;
+export default Portfolio
