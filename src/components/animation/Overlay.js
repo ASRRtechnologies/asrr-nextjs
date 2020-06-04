@@ -14,7 +14,9 @@ function Overlay () {
 	const overlay = useRef();
 
 	const setOverlayHeight = () => {
-		overlay.current.style.height = `${window.innerHeight}px`;
+		if (window.matchMedia("(max-width: 1200px)").matches) {
+			overlay.current.style.height = `${window.innerHeight}px`;
+		}
 	};
 
 	useEffect(() => {
