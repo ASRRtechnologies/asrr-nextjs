@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import logo from '../../../public/assets/images/logo/asrr-logo-spacing.svg'
+import logoWhite from '../../../public/assets/images/logo/asrr-logo-spacing-white.svg'
 import { AnimationContext } from '../../context/animations/AnimationContext'
 import { useRouter } from 'next/router'
 import { useTheme } from '../../context/theme/ThemeContext'
