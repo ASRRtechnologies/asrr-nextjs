@@ -1,62 +1,34 @@
-import React, {Component} from 'react';
-import styled from "@emotion/styled";
-// import AOS from "aos";
+import React, {useRef} from 'react';
 
-const Wrapper = styled("div")`
-	h2{color:${props => props.theme.fonts.text};}
-	label{color:${props => props.theme.fonts.text};}
-`;
+function Input(props) {
 
-class Input extends Component {
-    constructor(props) {
-        super(props);
-        this.placeholder = React.createRef();
-    }
+    const placeholderRef = useRef(null);
+    const {hidden, textArea, placeholder, label, className, ...rest} = props;
 
-    renderState = (props) => {
-        //Check if the state props exist and return it as string for className
-        for (let prop in props) {
-            switch (Object.prototype.hasOwnProperty.call(props, prop)) {
-                case props.success:
-                    return "success";
-                case props.error :
-                    return "error";
-                case props.disabled :
-                    return "disabled";
-                default: return "asrr-input-label";
+    return (
+        <div className={`input-container`}>
+            {textArea ?
+                (
+                    <React.Fragment>
+                        <label className={`input-label`}>{label}</label>
+                        <textarea {...rest} ref={placeholderRef} className={`input`}
+                                  onFocus={() => placeholderRef.current.placeholder = " "}
+                                  onBlur={() => placeholderRef.current.placeholder = placeholder}
+                                  placeholder={placeholder}/>
+                    </React.Fragment>
+                ) :
+                (
+                    <React.Fragment>
+                        <label className={`input-label`}>{label}</label>
+                        <input {...rest} ref={placeholderRef} className={`input`}
+                               onFocus={() => placeholderRef.current.placeholder = " "}
+                               placeholder={placeholder}
+                               onBlur={() => placeholderRef.current.placeholder = placeholder}/>
+                    </React.Fragment>
+                )
             }
-        }
-    };
-
-    render() {
-        const {hidden, textArea, placeholder, label, className, ...rest} = this.props;
-        return (
-            // <div style={{width:"100%"}}data-aos={animation} data-aos-once="true" data-aos-delay={delay}>
-                <Wrapper key={this.props.key} className={`asrr-input-container ${className}`}>
-                    {!textArea?
-                        (<React.Fragment>
-                                <label  className={`asrr-input-label ${this.renderState(this.props)}`}>{label}</label>
-                                <input ref={this.placeholder} className={`asrr-input ${this.renderState(this.props)}`}
-                                       {...rest}
-                                       onFocus={() => {this.placeholder.current.placeholder = " "}}
-                                       onBlur={() => {this.placeholder.current.placeholder = placeholder}}/>
-                            </React.Fragment>
-                        ) :
-                        (
-                            <React.Fragment>
-                                <label className={`asrr-input-label ${this.renderState(this.props)}`}>{label}</label>
-                                <textarea ref={this.placeholder} className={`asrr-input ${this.renderState(this.props)}`}
-                                          {...rest}
-                                          onFocus={() => {this.placeholder.current.placeholder = " "}}
-                                          onBlur={() => {this.placeholder.current.placeholder = placeholder}}
-                                          placeholder={placeholder}/>
-                            </React.Fragment>
-                        )
-                    }
-                </Wrapper>
-            // </div>
-        );
-    }
+        </div>
+    );
 }
 
 export default Input;

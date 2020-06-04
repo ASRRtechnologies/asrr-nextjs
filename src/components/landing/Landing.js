@@ -68,10 +68,12 @@ function Landing({title, text, image, boxes, projects}) {
     };
 
     const setLandingHeight = () => {
-        landing.current.style.height = `${window.innerHeight}px`;
+        if (window.matchMedia("(max-width: 1100px)").matches) {
+            landing.current.style.height = `${window.innerHeight}px`;
+        }
     };
 
-    useEffect(() => setLandingHeight() , [])
+    useEffect(() => setLandingHeight() , []);
 
     return (
         <motion.div ref={landing} className="landing-container">
