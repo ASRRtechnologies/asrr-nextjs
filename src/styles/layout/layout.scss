@@ -4,6 +4,11 @@
   width: 100%;
   @include flex(center, center, column);
   padding: $pc-padding;
+
+  &.footer-container{
+    padding: 100px 100px 50px 100px
+  }
+
 }
 
 
@@ -19,12 +24,20 @@
 @media screen and (max-width:1200px) {
   .layout{
     padding: $tablet-padding;
+
+    &.footer-container{
+      padding: 50px
+    }
   }
 }
 
 @media screen and (max-width:500px) {
   .layout{
     padding: $mob-padding;
+
+    &.footer-container{
+      padding: 70px 25px 30px 25px;
+    }
   }
 
   .section{

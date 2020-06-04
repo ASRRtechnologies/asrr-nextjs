@@ -51,12 +51,12 @@ body {
   overflow-y: hidden!important;
 }
 
- h4, h5, a ,p {
+ h5, a ,p {
    font-weight: lighter;
    text-decoration: none;
 }
 
- h1, h2, h3{
+ h1, h2, h3, h4{
  font-weight: bolder;
 }
 
@@ -97,6 +97,11 @@ h3{
 }
 
 h4{
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+h5{
   font-size: 16px;
   margin: 0 0 10px 0;
 }
@@ -104,7 +109,7 @@ h4{
 p{
   margin: 0 0 20px 0;
   line-height: 30px;
-  font-size: 15px;
+  font-size: 16px;
   text-align: justify;
 }
 

@@ -15,6 +15,7 @@
   width: 80px;
   height: auto;
   z-index: $header-zIndex;
+  margin: 0;
 }
 
 //For menu to use as relative parent
@@ -23,7 +24,7 @@
   height: 100%;
   @include flex(center, center, row);
   position: relative;
-  padding: 0 $pc-padding;
+  padding: $pc-padding-header;
 
 }
 
@@ -32,6 +33,14 @@
   max-width: $max-width;
   @include flex(space-between, center, row);
   position: static;
+}
+
+
+.header-menu{
+  position: relative;
+  @include flex(center, center, row);
+  width:100%;
+  overflow: hidden;
 
   a {
     height: auto;
@@ -63,14 +72,6 @@
       }
     }
   }
-}
-
-
-.header-menu{
-  position: relative;
-  @include flex(center, center, row);
-  width:100%;
-  overflow: hidden;
 
   &.open{
     transform: translateX(0);
@@ -120,7 +121,7 @@
   }
 
   .header-relative{
-    padding: 0 $tablet-padding;
+    padding: $tablet-padding-header;
   }
 
   .header-wrapper{
@@ -152,7 +153,7 @@
 
 @media screen and (max-width:500px) {
   .header-relative{
-    padding: 0 $mob-padding;
+    padding: $mob-padding-header;
   }
 }
 

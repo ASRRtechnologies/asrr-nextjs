@@ -1,0 +1,136 @@
+.footer {
+  @include size(100%, auto);
+  @include flex(space-between, center, column);
+  max-width: $max-width;
+
+  img{
+    width: 80px;
+    height: auto;
+    margin-bottom: 50px;
+    margin-right: auto;
+  }
+
+  .container {
+    @include size(100%, auto);
+    @include flex(space-between, flex-start, row);
+  }
+
+  .grid {
+    width: 25%;
+    @include flex(flex-start, flex-start, column);
+    margin-bottom: 50px;
+
+    a {
+      margin: 10px 0;
+    }
+
+    &.newsletter {
+      width: 25%;
+      @include flex(flex-start, flex-end, column);
+
+      h4 {
+        text-align: right;
+      }
+
+      form {
+        width: 100%;
+        max-width: 400px;
+        @include flex(flex-start, flex-end, column);
+      }
+    }
+
+    &.address {
+      width: 25%;
+      @include flex(flex-start, flex-start, column);
+
+      p {
+        font-weight: lighter;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .bottom {
+    @include size(100%, auto);
+    @include flex(space-between, center, row);
+
+    p {
+      font-weight: bold;
+      margin:0;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    .container {
+      @include size(100%, auto);
+      @include flex(space-between, flex-start, row);
+      flex-wrap: wrap;
+    }
+
+    .grid {
+      width: 30.333%;
+
+      &.newsletter {
+        width: 45%;
+        @include flex(flex-start, flex-start, column);
+        form{
+          @include flex(flex-start, flex-start, column);
+        }
+        h4 {
+          text-align: left;
+        }
+      }
+
+      &.address {
+        @include flex(flex-start, flex-start, column);
+        text-align: left;
+        width: 30.333%;
+        //margin: 0 0 100px 0;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    .grid {
+      width: 45%;
+      margin-bottom: 50px;
+
+      &.newsletter {
+        width: 100%;
+      }
+
+      &.address {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    .grid {
+      width: 55%;
+    }
+
+    .bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      p{
+        font-size: 14px;
+      }
+      p:first-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
