@@ -68,7 +68,7 @@ function Landing({title, text, image, boxes, projects}) {
     };
 
     const setLandingHeight = () => {
-        if (window.matchMedia("(max-width: 1100px)").matches) {
+        if (window.matchMedia("(max-width: 1200px)").matches) {
             landing.current.style.height = `${window.innerHeight}px`;
         }
     };
