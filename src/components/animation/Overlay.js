@@ -5,7 +5,6 @@ import logoWhite from '../../../public/assets/images/logo/asrr-logo-spacing-whit
 import { AnimationContext } from '../../context/animations/AnimationContext'
 import { useRouter } from 'next/router'
 import { useTheme } from '../../context/theme/ThemeContext'
-import logoWhite from '../../../public/assets/images/logo/asrr-logo-spacing-white.svg'
 
 function Overlay () {
 	const darkTheme = useTheme();
