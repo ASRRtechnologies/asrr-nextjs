@@ -1,7 +1,7 @@
 import React from 'react'
 import ReadMore from '@/text/ReadMore'
 import Input from '@/text/Input'
-import logo from "#/logo/asrr-logo-spacing.svg"
+import logo from "#/logo/asrr-logo-spacing-white.svg"
 import styled from "@emotion/styled";
 
 
@@ -18,18 +18,18 @@ function Footer (props) {
 
                     <div className="grid">
                         <h4>Navigation</h4>
-                        <ReadMore small to="/">Home</ReadMore>
-                        <ReadMore small to="/">Services</ReadMore>
-                        <ReadMore small to="/">Projects</ReadMore>
-                        <ReadMore small to="/">About us</ReadMore>
-                        <ReadMore small to="/">Contact</ReadMore>
+                        <ReadMore inverted small to="/">Home</ReadMore>
+                        <ReadMore inverted small to="/">Services</ReadMore>
+                        <ReadMore inverted small to="/">Projects</ReadMore>
+                        <ReadMore inverted small to="/">About us</ReadMore>
+                        <ReadMore inverted small to="/">Contact</ReadMore>
                     </div>
 
                     <div className="grid">
                         <h4>Information</h4>
-                        <ReadMore small to="/">FAQ</ReadMore>
-                        <ReadMore small to="/">Privacy</ReadMore>
-                        <ReadMore small to="/">Policy</ReadMore>
+                        <ReadMore inverted small to="/">FAQ</ReadMore>
+                        <ReadMore inverted small to="/">Privacy</ReadMore>
+                        <ReadMore inverted small to="/">Policy</ReadMore>
                     </div>
 
                     <div className="grid address">

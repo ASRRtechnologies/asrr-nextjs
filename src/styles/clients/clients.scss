@@ -3,7 +3,6 @@
   height: 200px;
   width: 100vw;
   background: #F4F4F4;
-  margin-top: 100px;
 
   img{
     max-width: 150px;
@@ -11,4 +10,11 @@
     height: auto;
     min-width: 30px;
   }
+}
+
+@media screen and (max-width: 1200px) {
+  .clients{
+    margin-top: 50px;
+  }
+
 }

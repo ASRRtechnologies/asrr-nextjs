@@ -10,6 +10,10 @@
     margin-right: auto;
   }
 
+  h3, h4, p, a {
+    color:white !important;
+  }
+
   .container {
     @include size(100%, auto);
     @include flex(space-between, flex-start, row);

@@ -3,31 +3,31 @@ import Link from "next/link";
 import styled from '@emotion/styled'
 
 const LinkText = styled('a')`
+          color: ${props => props.inverted ? props.theme.fonts.white : props.theme.fonts.title} ;
         &:after{
-          background-color: ${props => props.theme.fonts.title} ;
+          background-color: ${props => props.inverted ? props.theme.fonts.white : props.theme.fonts.title} ;
         }
 `;
 
 const Text = styled('p')`
-          color: ${props => props.theme.fonts.title}!important;
+          color: ${props => props.inverted ? props.theme.fonts.white : props.theme.fonts.title} ;
         &:after{
-          background-color: ${props => props.theme.fonts.title} ;
+          background-color: ${props => props.inverted ? props.theme.fonts.white : props.theme.fonts.title} ;
         }
 `;
 
 
-
-function ReadMore({to, text, action, margin, children, small, ...rest}) {
+function ReadMore({to, inverted, text, action, margin, children, small, ...rest}) {
     return (
 
-        action ? (<Text {...rest} className={`read-more no-margin ${small && "small"}`}>
+        action ? (<Text inverted={inverted} {...rest} className={`read-more no-margin ${small && "small"}`}>
                 {text}
                 {children}
             </Text>)
             :
             (
                 <Link href={to}>
-                    <LinkText className={`read-more ${margin && "margin"} ${small && "small"}`}>
+                    <LinkText inverted={inverted} className={`read-more ${margin && "margin"} ${small && "small"}`}>
                         {text}
                         {children}
                     </LinkText>

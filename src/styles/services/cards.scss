@@ -3,39 +3,57 @@
 .services {
   width: 100%;
   height: auto;
-  @include flex (space-between, flex-start, row);
+  @include flex(space-between, flex-start, row);
   flex-wrap: wrap;
 
   .card {
     width: 30.333%;
     height: auto;
-    min-height: 300px;
+    //min-height: 300px;
     margin-bottom: 70px;
-    p{
+
+    p {
       max-width: 80%;
     }
   }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1000px) {
   .services {
     .card {
       width: 45%;
+
+      p{
+        max-width: 100%;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:nth-last-child(2) {
+        margin-bottom: 0;
+      }
     }
   }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
   .services {
-    div:last-child{
+    div:last-child {
       margin-bottom: 0;
     }
+
     .card {
       width: 100%;
       height: auto;
-      margin-bottom: 75px;
-      min-height: auto;
-      p{
+      margin-bottom: 50px;
+
+      &:nth-last-child(2) {
+        margin-bottom: 75px;
+      }
+
+      p {
         max-width: 100%;
       }
     }

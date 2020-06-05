@@ -6,16 +6,16 @@
   padding: $pc-padding;
 
   &.footer-container{
-    padding: 100px 100px 50px 100px
+    background-color: #0a0a0a;
+    padding: 100px 100px 50px 100px;
   }
-
 }
 
 
 //General layout of seciton components
 .section{
   @include flex(flex-start, flex-start, column);
-  padding: 150px 0 0 0;
+  padding: 75px 0;
   width: 100%;
   height: auto;
   max-width: $max-width;
@@ -29,9 +29,14 @@
       padding: 50px
     }
   }
+
+  .section{
+    padding: 75px 0;
+  }
+
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
   .layout{
     padding: $mob-padding;
 
@@ -41,11 +46,7 @@
   }
 
   .section{
-    @include flex(flex-start, flex-start, column);
-    padding: 100px 0 0 0;
-    width: 100%;
-    height: auto;
-    max-width: $max-width;
+    padding: 50px 0;
   }
 
 }

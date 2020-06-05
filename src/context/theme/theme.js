@@ -30,11 +30,11 @@ const clients = {
         dark:"#1a1a1a",
         light:"#F4F4F4"
     }
-}
+};
 
 const layout = {
     background: {
-        dark: "#0c0c0c",
+        dark: "#292929",
         light: "#ffffff"
     },
 };
@@ -74,16 +74,6 @@ const header = {
 
 };
 
-const footer = {
-
-    background: {
-        dark: footerDark,
-        light: footerLight
-    },
-
-};
-
-
 const lightTheme = {
 
     header: {
@@ -95,7 +85,8 @@ const lightTheme = {
 
     fonts: {
             title: fonts.title.dark,
-            text: fonts.text.dark
+            text: fonts.text.dark,
+            white:fonts.title.light
     },
 
     landing:{
@@ -105,10 +96,6 @@ const lightTheme = {
     layout: layout.background.light,
 
     clients: clients.background.light,
-
-    footer: footer.background.light
-
-
 
 };
 
@@ -123,7 +110,8 @@ const darkTheme = {
 
     fonts: {
         title: fonts.title.light,
-        text: fonts.text.light
+        text: fonts.text.light,
+        white:fonts.title.light
     },
 
     landing:{
@@ -133,9 +121,6 @@ const darkTheme = {
     layout: layout.background.dark,
 
     clients: clients.background.dark,
-
-    footer: footer.background.dark
-
 
 };
 
