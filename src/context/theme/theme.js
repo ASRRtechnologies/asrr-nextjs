@@ -136,7 +136,6 @@ const darkTheme = {
 
     footer: footer.background.dark
 
-
 };
 
 const theme = mode => (mode === "dark" ? darkTheme : lightTheme);
