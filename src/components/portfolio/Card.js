@@ -7,7 +7,7 @@ function Card({img, title, tag}) {
                 <img src={img} alt="image"/>
             </div>
 
-            <h4>{tag}</h4>
+            <h5>{tag}</h5>
             <h3>{title}</h3>
 
         </div>

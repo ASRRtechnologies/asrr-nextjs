@@ -11,6 +11,10 @@ const logoDark = "#000000";
 const headerLight = "#ffffff";
 const headerDark = "#0a0a0a";
 
+//Footer colors
+const footerLight = "#ffffff";
+const footerDark = "#0a0a0a";
+
 const dropShadowDark = " 0 3px 6px rgba(43,42,43,1)";
 const dropShadowLight = " 0 3px 6px rgba(0,0,0,0.23)";
 
@@ -23,14 +27,14 @@ const landing = {
 
 const clients = {
     background:{
-        dark:"#0a0a0a",
+        dark:"#1a1a1a",
         light:"#F4F4F4"
     }
 }
 
 const layout = {
     background: {
-        dark: "#1e1e1e",
+        dark: "#0c0c0c",
         light: "#ffffff"
     },
 };
@@ -68,6 +72,14 @@ const header = {
         dark: logoDark
     }
 
+};
+
+const footer = {
+
+    background: {
+        dark: footerDark,
+        light: footerLight
+    },
 
 };
 
@@ -92,7 +104,9 @@ const lightTheme = {
 
     layout: layout.background.light,
 
-    clients: clients.background.light
+    clients: clients.background.light,
+
+    footer: footer.background.light
 
 
 
@@ -118,7 +132,10 @@ const darkTheme = {
 
     layout: layout.background.dark,
 
-    clients: clients.background.dark
+    clients: clients.background.dark,
+
+    footer: footer.background.dark
+
 
 };
 
