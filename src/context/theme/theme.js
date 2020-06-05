@@ -23,18 +23,18 @@ const landing = {
         dark:"#1e1e1e",
         light:"#ffffff"
     }
-}
+};
 
 const clients = {
     background:{
-        dark:"#0a0a0a",
+        dark:"#1a1a1a",
         light:"#F4F4F4"
     }
 }
 
 const layout = {
     background: {
-        dark: "#1e1e1e",
+        dark: "#0c0c0c",
         light: "#ffffff"
     },
 };
@@ -134,8 +134,7 @@ const darkTheme = {
 
     clients: clients.background.dark,
 
-    footer: footer.background.light
-
+    footer: footer.background.dark
 
 };
 
