@@ -121,8 +121,7 @@ const darkTheme = {
     layout: layout.background.dark,
 
     clients: clients.background.dark,
-
-};
+}
 
 const theme = mode => (mode === "dark" ? darkTheme : lightTheme);
 
