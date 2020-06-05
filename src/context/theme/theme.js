@@ -23,7 +23,7 @@ const landing = {
         dark:"#1e1e1e",
         light:"#ffffff"
     }
-}
+};
 
 const clients = {
     background:{
