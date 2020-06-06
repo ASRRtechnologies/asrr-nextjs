@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import { AnimationContext } from '../../context/animations/AnimationContext'
 import styled from '@emotion/styled'
+import throttle from "lodash";
 
 const Wrapper = styled('div')`
         background-color: ${props => props.theme.header.background};
@@ -71,9 +72,12 @@ function Landing({title, text, image, boxes, projects}) {
         if (window.matchMedia("(max-width: 1200px)").matches) {
             landing.current.style.height = `${window.innerHeight}px`;
         }
+        console.log(23)
     };
 
-    useEffect(() => setLandingHeight() , []);
+    const throttledLandingHeight = throttle(setLandingHeight, 500);
+
+    useEffect(() => window.addEventListener("resize", throttledLandingHeight) , []);
 
     return (
         <motion.div ref={landing} className="landing-container">

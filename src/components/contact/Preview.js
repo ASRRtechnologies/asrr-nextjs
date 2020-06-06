@@ -16,7 +16,7 @@ function Contact(props) {
                     <Input name="organization" text label="Organization Name" type="text" required={true} placeholder="Organization"/>
                     <Input name="email" text label="Email *" type="email"  placeholder="Email"/>
                     <Input name="message"  label="Message *" type="text" required={true} placeholder="Name"/>
-                    <ReadMore action text="Send Message"/>
+                    <ReadMore margin={true} action text="Send Message"/>
                 </form>
             </div>
         </Section>

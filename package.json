@@ -23,15 +23,16 @@
     "framer-motion": "^1.10.3",
     "interweave": "^12.5.0",
     "isomorphic-fetch": "^2.2.1",
+    "lodash": "^4.17.15",
     "next": "9.4.0",
     "next-fonts": "^1.1.0",
     "next-images": "^1.4.0",
     "nextjs-fonts": "^0.22.0",
     "node-sass": "^4.14.0",
+    "prop-types": "latest",
     "react": "^16.13.1",
     "react-dom": "16.13.1",
     "react-intersection-observer": "^8.26.2",
-    "react-use": "15.1.0",
-    "prop-types": "latest"
+    "react-use": "15.1.0"
   }
 }

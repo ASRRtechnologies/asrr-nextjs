@@ -16,7 +16,7 @@ function Contact ({ big }) {
 						   placeholder="Organization"/>
 					<Input name="email" label="Email *" type="email" placeholder="Email"/>
 					<Input name="message" textArea={true} label="Message *" type="text" required={true} placeholder="Name"/>
-					<ReadMore action text="Send Message"/>
+					<ReadMore margin action text="Send Message"/>
 				</form>
 				<div className="map-container">
 					<Map/>

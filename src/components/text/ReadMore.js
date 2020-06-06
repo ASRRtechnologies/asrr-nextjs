@@ -10,7 +10,7 @@ const LinkText = styled('a')`
 `;
 
 const Text = styled('p')`
-          color: ${props => props.inverted ? props.theme.fonts.white : props.theme.fonts.title} ;
+          color: ${props => props.inverted ? props.theme.fonts.white : props.theme.fonts.title} !important;
         &:after{
           background-color: ${props => props.inverted ? props.theme.fonts.white : props.theme.fonts.title} ;
         }
@@ -20,7 +20,7 @@ const Text = styled('p')`
 function ReadMore({to, inverted, text, action, margin, children, small, ...rest}) {
     return (
 
-        action ? (<Text inverted={inverted} {...rest} className={`read-more no-margin ${small && "small"}`}>
+        action ? (<Text inverted={inverted} {...rest} className={`read-more ${margin ? "margin": "no-margin"} ${small && "small"}`}>
                 {text}
                 {children}
             </Text>)
