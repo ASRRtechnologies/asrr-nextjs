@@ -36,20 +36,31 @@ function ReadMore ({ to, inverted, text, action, margin, children, small, ...res
 	return (
 
 		action ? (
-				<Text inverted={inverted} {...rest} onMouseOver={() => {hoverText()}} onMouseLeave={() => {leaveText()}}
-					  className={`read-more ${margin ? 'margin' : 'no-margin'} ${small && 'small'} ${textBorder &&
-					  'border'}`}>
-					{children}
-				</Text>)
+				<div onMouseOver={() => {hoverText()}} onMouseLeave={() => {leaveText()}}
+					 className={`read-more-wrapper ${margin ? 'margin' : 'no-margin'}`}>
+					<Text inverted={inverted} {...rest}
+						  className={`read-more ${small && 'small'}`}>
+						{children}
+					</Text>
+					<span className="line-left"></span>
+					<span className="line-right"></span>
+				</div>
+			)
 			:
 			(
-				<Link href={to}>
-					<LinkText inverted={inverted}  onMouseOver={() => {hoverText()}} onMouseLeave={() => {leaveText()}}
-							  className={`read-more ${margin && 'margin'} ${small && 'small'} ${textBorder &&
-							  'border'}`}>
-						{children}
-					</LinkText>
-				</Link>)
+				<div onMouseOver={() => {hoverText()}} onMouseLeave={() => {leaveText()}}
+					 className={`read-more-wrapper ${margin ? 'margin' : 'no-margin'}`}>
+					<Link href={to}>
+						<LinkText inverted={inverted} onMouseOver={() => {hoverText()}}
+								  onMouseLeave={() => {leaveText()}}
+								  className={`read-more ${small && 'small'}`}>
+							{children}
+						</LinkText>
+					</Link>
+					<span className="line-left"></span>
+					<span className="line-right"></span>
+				</div>
+			)
 
 	)
 }

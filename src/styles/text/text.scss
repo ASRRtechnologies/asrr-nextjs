@@ -9,51 +9,94 @@
 }
 
 //Readmore
-.read-more{
+
+.read-more-wrapper{
   display: inline-block;
   position: relative;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 0;
+  width: auto;
+  height: auto;
+  margin-top:50px;
 
-  &.margin{
-    margin-top: 50px;
+  &:before{
+    content:"";
+    position: absolute;
+    left:-6%;
+    transform: scaleX(0);
+    width: 110%;
+    height: 2px;
+    color:inherit;
+    background-color: #0a0a0a;
+    top:0;
+    transform-origin: left;
+    transition: 200ms ease-in-out transform;
+    transition-delay: 200ms;
   }
 
   &:after{
     content:"";
     position: absolute;
-    bottom: 0px;
-    left:0;
-    width: 100%;
+    bottom:0;
+    left:50%;
+    transform: translate(-50%, 0);
+    width: 110%;
     height: 2px;
     color:inherit;
-   }
+    background-color: #0a0a0a;
+  }
 
+  .line-left{
+    position: absolute;
+    height: 100%;
+    left:-6%;
+    top:0;
+    border: solid 1px black;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: 200ms ease-in-out transform;
+    transition-delay: 400ms;
+  }
 
+  .line-right{
+    position: absolute;
+    height: 100%;
+    right:-6%;
+    top:0;
+    border: solid 1px black;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 200ms ease-in-out transform;
 
+  }
+
+  &:hover{
+    .line-left{
+      transform: scaleY(1);
+      transition: 200ms ease-in-out transform;
+    }
+
+    &:before{
+      transform: scaleX(1);
+      transition: 200ms ease-in-out transform;
+      transition-delay: 200ms;
+      transform-origin: left;
+    }
+    .line-right{
+      transform: scaleY(1);
+      transition: 200ms ease-in-out transform;
+      transition-delay: 400ms;
+    }
+  }
+
+}
+
+.read-more{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
   &.small{
     font-size: 16px;
   }
-
-  &.border{
-    &:before{
-      content:"";
-      width: 120%;
-      height: 110%;
-      border: 3px solid black;
-      position: absolute;
-      left:0;
-      top:0;
-      transform: translate(-10%, -10%);
-      transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) all;
-    }
-
-    &:after{
-      display: none;
-    }
-  }
-
 }
 
 .link{

@@ -25,11 +25,11 @@ class Cursor extends Component {
 		})
 
 		document.addEventListener('mousedown', e => {
-			this.setState({ cursor: 'cursor-follow active' })
+			this.setState({ cursorFollow: 'cursor-follow active' })
 		})
 
 		document.addEventListener('mouseup', e => {
-			this.setState({ cursor: 'cursor-follow' })
+			this.setState({ cursorFollow: 'cursor-follow' })
 		})
 	}
 

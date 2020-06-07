@@ -71,6 +71,11 @@
     transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
   }
 
+  &.active{
+    transform: scale(0.5);
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
+  }
+
   &.disabled{
     display: none;
   }
