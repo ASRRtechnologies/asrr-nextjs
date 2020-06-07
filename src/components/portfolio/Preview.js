@@ -15,7 +15,7 @@ function Preview (props) {
 	const i18n = useI18n()
 	const [active, setActive] = useState(0)
 	return (
-		<Wrapper className="center-content">
+		<Wrapper className="section-wrapper">
 			<Section>
 				<Title title={i18n.t('portfolio.preview.title.header')} text={i18n.t('portfolio.preview.title.text')}/>
 				<div className="portfolio">

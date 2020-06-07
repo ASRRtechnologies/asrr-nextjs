@@ -10,33 +10,29 @@
   }
 }
 
+.section-wrapper{
+  width:100vw;
+  @include flex(center, center, column);
+  padding: $pc-padding;
 
-//General layout of seciton components
+}
+
 .section{
-  @include flex(flex-start, flex-start, column);
-  padding: 75px $pc-padding;
-  width: 100%;
-  height: auto;
+  width:100%;
   max-width: $max-width;
 }
 
-.center-content{
-  width:100vw;
-  @include flex(center, center, column)
-}
 
 @media screen and (max-width:1200px) {
   .layout{
-
     &.footer-container{
       padding: 50px
     }
   }
 
-  .section{
+  .section-wrapper{
     padding: $tablet-padding;
   }
-
 }
 
 @media screen and (max-width:600px) {
@@ -48,7 +44,7 @@
     }
   }
 
-  .section{
+  .section-wrapper{
     padding: $mob-padding;
   }
 

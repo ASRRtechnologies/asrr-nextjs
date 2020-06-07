@@ -1,21 +1,25 @@
-import React from 'react';
-import Title from "../text/Title";
-import img from "../../../public/assets/images/landing/laptop.jpg"
-import Section from "../layout/Section";
+import React from 'react'
+import img from '../../../public/assets/images/landing/laptop.jpg'
+import Section from '../layout/Section'
+import styled from '@emotion/styled'
 
-function Display({image}) {
-    return (
-        <Section>
-            <div className="display">
-                {/*<Title title={"Connecting everyone"} text="breath-taking"/>*/}
-                <div className="image" style={{backgroundImage:`url(${image})`}}>
-                    <img className="image" src={image}/>
+const Wrapper = styled('div')`
+`
 
-                </div>
-            </div>
-        </Section>
+function Display ({ image }) {
+	return (
+		<Wrapper className="section-wrapper display-wrapper">
+			<Section>
+				<div className="display">
+					{/*<Title title={"Connecting everyone"} text="breath-taking"/>*/}
+					<div className="image" style={{ backgroundImage: `url(${image})` }}>
+						<img className="image" src={image}/>
 
-    );
+					</div>
+				</div>
+			</Section>
+		</Wrapper>
+	)
 }
 
-export default Display;
+export default Display

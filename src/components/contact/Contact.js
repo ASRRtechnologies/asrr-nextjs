@@ -5,10 +5,16 @@ import ReadMore from '@/text/ReadMore'
 import Input from '@/text/Input'
 import Map from '@/contact/Map'
 import useI18n from '../../hooks/use-i18n'
+import styled from '@emotion/styled'
+
+const Wrapper = styled('div')`
+      background-color: ${props => props.theme.section.contact};
+`
 
 function Contact ({ big }) {
 	const i18n = useI18n()
 	return (
+		<Wrapper className="section-wrapper">
 			<Section>
 				<Title big={big} title={i18n.t('contact.title.header')} text={i18n.t('contact.title.text')}/>
 				<div className="contact">
@@ -20,7 +26,8 @@ function Contact ({ big }) {
 							   placeholder={i18n.t('contact.form.organization.placeholder')}/>
 						<Input name="email" label={i18n.t('contact.form.email.label')} type="email"
 							   placeholder={i18n.t('contact.form.email.placeholder')}/>
-						<Input name="message" textArea={true} label={i18n.t('contact.form.message.label')} type="text"
+						<Input name="message" last textArea={true} label={i18n.t('contact.form.message.label')}
+							   type="text"
 							   required={true} placeholder={i18n.t('contact.form.message.placeholder')}/>
 						<ReadMore margin action>{i18n.t('buttons.submit')}</ReadMore>
 					</form>
@@ -29,6 +36,7 @@ function Contact ({ big }) {
 					</div>
 				</div>
 			</Section>
+		</Wrapper>
 	)
 }
 

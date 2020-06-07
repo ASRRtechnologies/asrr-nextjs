@@ -31,6 +31,10 @@ $input-field: (
     width: 100%;
   }
 
+  &.last{
+    margin: 20px 0 0 0;
+  }
+
   .input {
     max-width: 100%;
     overflow-x: hidden;

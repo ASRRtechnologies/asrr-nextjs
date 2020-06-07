@@ -50,6 +50,11 @@ const section = {
         light: "#eaebec"
     },
 
+    contactPreview:{
+        dark: "#292929",
+        light: "#f4f4f4"
+    }
+
 };
 
 
@@ -113,6 +118,7 @@ const lightTheme = {
     section: {
         portfolio: section.portfolio.light,
         services: section.services.light,
+        contactPreview: section.contactPreview.light,
     }
 
 
@@ -144,6 +150,7 @@ const darkTheme = {
     section: {
         portfolio: section.portfolio.dark,
         services: section.services.dark,
+        contactPreview: section.contactPreview.dark,
     }
 
 };
