@@ -11,11 +11,9 @@ const Wrapper = styled('div')`
 `
 
 function Services (props) {
-
 	const i18n = useI18n()
-
 	return (
-		<Wrapper style={{ width: '100vw' }}>
+		<Wrapper className="center-content">
 			<Section>
 				<Title title={'Services'} text="lorem ipsum hahahahaha"/>
 				<div className="services">
