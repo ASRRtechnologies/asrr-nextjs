@@ -47,47 +47,48 @@
         "title": "Portfolio",
         "text": "Super nice projects"
       }
+    }
+  },
+  "services": {
+    "title": {
+      "header": "Our Services",
+      "text": "Lorem ipsum much longer text enter here"
     },
-    "services": {
+    "preview": {
       "title": {
-        "header": "Our Services",
-        "text": "Lorem ipsum much longer text enter here"
+        "header": "Services",
+        "text": "Lorem ipsum much shorter text enter here"
       },
-      "preview": {
-        "title": {
-          "header": "Services",
-          "text": "Lorem ipsum much shorter text enter here"
-        },
-        "landing": {
-          "title": "Services",
-          "text": "Super nice services"
-        }
+      "landing": {
+        "title": "Services",
+        "text": "Super nice services"
+      }
+    }
+  },
+  "contact": {
+    "landing": {
+      "title": "Lets get in touch"
+    },
+    "title": {
+      "header": "Our Contact",
+      "text": "Lorem ipsum much longer text enter here"
+    },
+    "preview": {
+      "title": {
+        "header": "Contact",
+        "text": "Lorem ipsum much shorter text enter here"
       },
-      "contact": {
-        "title": {
-          "header": "Our Contact",
-          "text": "Lorem ipsum much longer text enter here"
-        },
-        "preview": {
-          "title": {
-            "header": "Contact",
-            "text": "Lorem ipsum much shorter text enter here"
-          },
-          "landing": {
-            "title": "Lets get in touch"
-          },
-          "form": {
-            "email": "Email *",
-            "name": "Name *",
-            "organization": "Organization",
-            "message": "Message *"
-          },
-          "cta": {
-            "curious": "Want to know what ASRR can mean for you company?",
-            "touch": "Get in Touch!"
-          }
-        }
+      "form": {
+        "email": "Email *",
+        "name": "Name *",
+        "organization": "Organization",
+        "message": "Message *"
+      },
+      "cta": {
+        "curious": "Want to know what ASRR can mean for you company?",
+        "touch": "Get in Touch!"
       }
     }
   }
 }
+

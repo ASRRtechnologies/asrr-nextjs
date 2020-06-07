@@ -80,9 +80,7 @@ function Header(props) {
                     <Link href="/"><a><Logo/></a></Link>
                     <div className={`header-menu ${menuOpen && "open"}`}>
                         <Link href="/"><a onClick={closeMenu}>{i18n.t("header.home")}</a></Link>
-                        <Link href="/"><a onClick={closeMenu}>Home</a></Link>
                         <Link href="/portfolio"><a>{i18n.t("header.portfolio")}</a></Link>
-                        <Link href="/portfolio"><a>port</a></Link>
                         <Link href="/services"><a>{i18n.t("header.services")}</a></Link>
                         <Link href="/"><a onClick={closeMenu}>{i18n.t("header.hire")}</a></Link>
                         <Link href="/contact"><a>{i18n.t("header.contact")}</a></Link>
@@ -90,7 +88,7 @@ function Header(props) {
                     </div>
 
                     <div className="header-actions">
-                        {/*<Language/>*/}
+                        <Language/>
                         <span className="icon" onClick={toggle}>
                             {themeState.dark ? <Moon/> : <Sun/>}
                         </span>

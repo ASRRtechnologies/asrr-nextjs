@@ -1,9 +1,9 @@
 .language{
   height: 100%;
-  width:100px;
+  width:auto;
   @include flex (center, center, row);
   position: relative;
-  margin-right: 50px;
+  margin-right: 20px;
 
   .menu{
     position: absolute;
@@ -22,7 +22,7 @@
       height: 50px;
       opacity:1;
       pointer-events: auto;
-      transition: all 0.3s ease-in-out;
+      transition: height 0.3s ease-in-out;
     }
   }
 }
@@ -42,9 +42,7 @@
   display: block;
   float:left;
   border-radius: 4px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  transition: width, height, margin, 0.3s ease-in-out ;
 }
 
 .chev-down .line, .chev-up .line {

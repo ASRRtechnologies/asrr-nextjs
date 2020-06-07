@@ -47,46 +47,49 @@
         "title": "Portfolio",
         "text": "Super mooie projecten"
       }
+    }
+  },
+  "services": {
+    "title": {
+      "header": "Onze Diensten",
+      "text": "Lorem ipsum much longer text enter here"
     },
-    "services": {
+    "preview": {
       "title": {
-        "header": "Onze Diensten",
-        "text": "Lorem ipsum much longer text enter here"
+        "header": "Diensten",
+        "text": "Lorem ipsum much shorter text enter here"
       },
-      "preview": {
-        "title": {
-          "header": "Diensten",
-          "text": "Lorem ipsum much shorter text enter here"
-        },
-        "landing": {
-          "title": "Diensten",
-          "text": "Super mooie Diensten"
-        }
+      "landing": {
+        "title": "Diensten",
+        "text": "Super mooie Diensten"
+      }
+    }
+  },
+  "contact": {
+    "landing": {
+      "title": "Kom in contact!"
+    },
+    "title": {
+      "header": "Onze Contact",
+      "text": "Lorem ipsum much longer text enter here"
+    },
+    "preview": {
+      "title": {
+        "header": "Contact",
+        "text": "Lorem ipsum much shorter text enter here"
       },
-      "contact": {
-        "title": {
-          "header": "Onze Contact",
-          "text": "Lorem ipsum much longer text enter here"
+      "form": {
+        "email":{
+          "label": "Email*",
+          "text": "email"
         },
-        "preview": {
-          "title": {
-            "header": "Contact",
-            "text": "Lorem ipsum much shorter text enter here"
-          },
-          "landing": {
-            "title": "Kom in contact!"
-          },
-          "form": {
-            "email": "Email *",
-            "name": "Naam *",
-            "organization": "Organisatie",
-            "message": "Bericht *"
-          },
-          "cta": {
-            "curious": "Meer weten wat ASRR voor je kan betekenen?",
-            "touch": "Kom in contact"
-          }
-        }
+        "name": "Naam *",
+        "organization": "Organisatie",
+        "message": "Bericht *"
+      },
+      "cta": {
+        "curious": "Meer weten wat ASRR voor je kan betekenen?",
+        "touch": "Kom in contact"
       }
     }
   }

@@ -9,15 +9,15 @@ import ContactPage from "../components/contact/Contact";
 import useI18n from "../hooks/use-i18n";
 
 function Contact() {
-    // const i18n = useI18n();
+    const i18n = useI18n();
     const animate = useContext(AnimationContext);
     useEffect(() => {(animate.appLoaded) ? animate.animation.secondLoad() : null;}, []);
     return (
         <div className="content-wrapper">
-            {/*<Landing title="contact.landing.title" text="contact.landing.text" image={image}/>*/}
+            <Landing title={i18n.t("contact.landing.title")} text={i18n.t("contact.landing.text")} image={image}/>
             <Layout>
                 <Display image={display}/>
-                {/*<ContactPage big={true}/>*/}
+                <ContactPage big={true}/>
             </Layout>
         </div>
     )
