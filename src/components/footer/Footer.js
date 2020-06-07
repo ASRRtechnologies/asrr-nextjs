@@ -46,7 +46,7 @@ function Footer (props) {
                         <form>
                             <Input className="full-width" label={i18n.t("contact.form.email.label")}
                                    placeholder={i18n.t("contact.form.email.placeholder")}/>
-                            <ReadMore small action>{i18n.t("button.submit")}</ReadMore>
+                            <ReadMore small action>{i18n.t("buttons.submit")}</ReadMore>
                         </form>
                     </div>
                 </div>

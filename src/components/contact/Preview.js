@@ -3,11 +3,17 @@ import Section from "../layout/Section";
 import ReadMore from "@/text/ReadMore";
 import Input from "@/text/Input";
 import useI18n from "../../hooks/use-i18n";
+import styled from '@emotion/styled'
+
+const Wrapper = styled(<Section/>)`
+          background-color: red;
+`
 
 function Contact(props) {
+
     const i18n = useI18n();
     return (
-        <Section>
+        <Wrapper>
             <div className="contact preview">
                 <h3>{i18n.t("contact.cta.curious")}<br/>{i18n.t("contact.cta.touch")}</h3>
                 <form className="form">
@@ -22,7 +28,7 @@ function Contact(props) {
                     <ReadMore margin action>{i18n.t("buttons.submit")}</ReadMore>
                 </form>
             </div>
-        </Section>
+        </Wrapper>
     );
 }
 export default Contact;
