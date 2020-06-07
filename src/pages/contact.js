@@ -16,7 +16,7 @@ function Contact() {
         <div className="content-wrapper">
             <Landing title={i18n.t("contact.landing.title")} text={i18n.t("contact.landing.text")} image={image}/>
             <Layout>
-                <Display image={display}/>
+                {/*<Display image={display}/>*/}
                 <ContactPage big={true}/>
             </Layout>
         </div>

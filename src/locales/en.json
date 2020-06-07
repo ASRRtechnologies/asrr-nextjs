@@ -138,6 +138,56 @@
       "title": "Configurator Dashboard",
       "text": "Lorem ipsum fr"
     }
+  },
+  "service-cards": {
+    "web-applications": {
+      "title": "Web Applications",
+      "text": "Lorem ipsum nog langere lorem ipsum",
+      "preview": {
+        "title": "Web Application",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "data-analytics": {
+      "title": "Data Analytics",
+      "text": "Lorem ipsum nog langere lorem ipsum",
+      "preview": {
+        "title": "Data Analytics",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "servers": {
+      "title": "Servers",
+      "text": "Lorem ipsum nog langere lorem ipsum",
+      "preview": {
+        "title": "Servers",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "consultancy": {
+      "title": "Consultancy",
+      "text": "Lorem ipsum nog langere lorem ipsum",
+      "preview": {
+        "title": "Consultancy",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "back-end": {
+      "title": "Back-end Applications",
+      "text": "Lorem ipsum nog langere lorem ipsum",
+      "preview": {
+        "title": "Consultancy",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "power-bi": {
+      "title": "Power Bi",
+      "text": "Lorem ipsum nog langere lorem ipsum",
+      "preview": {
+        "title": "Power Bi",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    }
   }
 }
 
