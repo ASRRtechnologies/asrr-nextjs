@@ -1,38 +1,31 @@
-import React, {Component} from 'react';
+import React, { useContext, useEffect, useState } from 'react'
+import { MouseContext } from '../../context/animations/MouseContext'
 
-class Cursor extends Component {
-    constructor(props){
-        super(props);
-        this.mouseRef = React.createRef();
-        this.state = {
-            cursor:"cursor"
-        }
-    }
+function Cursor () {
+	const mouseRef = React.useRef()
+	const [cursor, setCursor] = useState('cursor');
+	const mouse = useContext(MouseContext);
 
-    componentDidMount(){
-        document.addEventListener('mousemove', e => {
-            //Change style via ref instead of setting style property with state to limit rerender otherwise it will be laggy.
-            this.mouseRef.current.style.left = `${e.clientX}px`;
-            this.mouseRef.current.style.top = `${e.clientY}px`;
-        });
+	useEffect(() => {
+		console.log(mouse);
+		document.addEventListener('mousemove', e => {
+				//Change style via ref instead of setting style property with state to limit rerender otherwise it will be laggy.
+				mouseRef.current.style.left = `${e.clientX}px`
+				mouseRef.current.style.top = `${e.clientY}px`
+			})
+			document.addEventListener('mousedown', e => {
+				setCursor({ cursor: 'cursor active' })
+			})
+			document.addEventListener('mouseup', e => {
+				setCursor({ cursor: 'cursor' })
+			})
+		},
+	)
+	return (
+		<div ref={mouseRef} className={`${cursor} ${mouse.mouse}`}>
 
-        document.addEventListener('mousedown', e => {
-            this.setState({cursor:"cursor active"})
-        });
-
-        document.addEventListener('mouseup', e => {
-            this.setState({cursor:"cursor"})
-        });
-
-    }
-
-    render() {
-        return (
-            <div ref={this.mouseRef} className={this.state.cursor}>
-
-            </div>
-        );
-    }
+		</div>
+	)
 }
 
-export default Cursor;
+export default Cursor
