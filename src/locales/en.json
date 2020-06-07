@@ -34,6 +34,10 @@
     "description": "Das Beispiel zeigt, wie man die Sprache für SSG und SSG optimierte Seiten wechselt."
   },
   "portfolio": {
+    "landing": {
+      "title": "Portfolio",
+      "text": "Super nice projects"
+    },
     "title": {
       "header": "Our Portfolio",
       "text": "Lorem ipsum much longer text enter here"
@@ -42,14 +46,14 @@
       "title": {
         "header": "Portfolio",
         "text": "Lorem ipsum much shorter text enter here"
-      },
-      "landing": {
-        "title": "Portfolio",
-        "text": "Super nice projects"
       }
     }
   },
   "services": {
+    "landing": {
+      "title": "Services",
+      "text": "Super nice services"
+    },
     "title": {
       "header": "Our Services",
       "text": "Lorem ipsum much longer text enter here"
@@ -58,10 +62,6 @@
       "title": {
         "header": "Services",
         "text": "Lorem ipsum much shorter text enter here"
-      },
-      "landing": {
-        "title": "Services",
-        "text": "Super nice services"
       }
     }
   },
