@@ -9,6 +9,7 @@ import Sun from "./Sun";
 import Moon from "./Moon";
 import Hamburger from "./Hamburger";
 import Language from "@/header/Language";
+import useI18n from "../../hooks/use-i18n";
 
 const Wrapper = styled('nav')`
         background-color: ${props => props.visible ? props.theme.header.background : "none"};
@@ -43,9 +44,8 @@ const Wrapper = styled('nav')`
 `;
 
 function Header(props) {
-
+    const i18n = useI18n();
     const [menuOpen, setMenuOpen] = useState(false);
-    const [active, setActive] = useState("");
     const [visible, setVisible] = useState(false);
 
     const themeState = useTheme();
@@ -65,7 +65,6 @@ function Header(props) {
 
     useEffect(() => window.addEventListener("scroll", headerPosition));
     const closeMenu = () => setMenuOpen(false);
-    const clearActiveHeader = () => setActive(null);
 
     {/*<motion.div animate={animation.animate} initial={animation.initial} exit={animation.exit}*/
     }
@@ -80,40 +79,27 @@ function Header(props) {
                 <div className="header-wrapper">
                     <Link href="/"><a><Logo/></a></Link>
                     <div className={`header-menu ${menuOpen && "open"}`}>
-                        <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("Home")}
-                                          onMouseLeave={clearActiveHeader}>Home</a></Link>
-                        <Link href="/portfolio"><a onClick={closeMenu} onMouseEnter={() => setActive("Portfolio")}
-                                                   onMouseLeave={clearActiveHeader}>Portfolio</a></Link>
-                        <Link href="/services"><a onClick={closeMenu} onMouseEnter={() => setActive("Services")}
-                                          onMouseLeave={clearActiveHeader}>Services</a></Link>
-                        <Link href="/"><a onClick={closeMenu} onMouseEnter={() => setActive("Hire")}
-                                          onMouseLeave={clearActiveHeader}>Hire a Developer</a></Link>
-                        <Link href="/contact"><a onClick={closeMenu} onMouseEnter={() => setActive("Contact")}
-                                          onMouseLeave={clearActiveHeader}>Contact
-                            us</a></Link>
-                        <Link href="/about"><a onClick={closeMenu} onMouseEnter={() => setActive("About")}
-                                          onMouseLeave={clearActiveHeader}>About
-                            us</a></Link>
-                        {/*<h1 className="header-background-text">{active}</h1>*/}
-
+                        <Link href="/"><a onClick={closeMenu}>{i18n.t("header.home")}</a></Link>
+                        <Link href="/"><a onClick={closeMenu}>Home</a></Link>
+                        <Link href="/portfolio"><a>{i18n.t("header.portfolio")}</a></Link>
+                        <Link href="/portfolio"><a>port</a></Link>
+                        <Link href="/services"><a>{i18n.t("header.services")}</a></Link>
+                        <Link href="/"><a onClick={closeMenu}>{i18n.t("header.hire")}</a></Link>
+                        <Link href="/contact"><a>{i18n.t("header.contact")}</a></Link>
+                        <Link href="/about"><a onClick={closeMenu}>{i18n.t("header.about")}</a></Link>
                     </div>
 
                     <div className="header-actions">
-
-                        <Language/>
-
+                        {/*<Language/>*/}
                         <span className="icon" onClick={toggle}>
                             {themeState.dark ? <Moon/> : <Sun/>}
                         </span>
 
-                        <div onClick={() => {
-                            setMenuOpen(!menuOpen)
-                        }} className={`hamburger ${menuOpen ? "open" : " "}`}>
+                        <div onClick={() => {setMenuOpen(!menuOpen)}} className={`${menuOpen ? "hamburger open" : "hamburger"}`}>
                             <div className="bar1"></div>
                             <div className="bar2"></div>
                             <div className="bar3"></div>
                         </div>
-
                     </div>
                 </div>
             </Wrapper>

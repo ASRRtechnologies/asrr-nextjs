@@ -6,10 +6,8 @@ function Card({img, title, tag}) {
             <div className="image">
                 <img src={img} alt="image"/>
             </div>
-
             <h5>{tag}</h5>
             <h3>{title}</h3>
-
         </div>
     );
 }

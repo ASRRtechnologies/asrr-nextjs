@@ -20,15 +20,14 @@ const Text = styled('p')`
 function ReadMore({to, inverted, text, action, margin, children, small, ...rest}) {
     return (
 
-        action ? (<Text inverted={inverted} {...rest} className={`read-more ${margin ? "margin": "no-margin"} ${small && "small"}`}>
-                {text}
+        action ? (<Text inverted={inverted} {...rest}
+                        className={`read-more ${margin ? "margin" : "no-margin"} ${small && "small"}`}>
                 {children}
             </Text>)
             :
             (
                 <Link href={to}>
                     <LinkText inverted={inverted} className={`read-more ${margin && "margin"} ${small && "small"}`}>
-                        {text}
                         {children}
                     </LinkText>
                 </Link>)

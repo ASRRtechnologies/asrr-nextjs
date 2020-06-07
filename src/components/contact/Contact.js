@@ -4,26 +4,31 @@ import Title from '../text/Title'
 import ReadMore from '@/text/ReadMore'
 import Input from '@/text/Input'
 import Map from '@/contact/Map'
+import useI18n from "../../hooks/use-i18n";
 
-function Contact ({ big }) {
-	return (
-		<Section>
-			<Title big={big} title={'Contact'} text="lorem ipsum hahahahaha"/>
-			<div className="contact">
-				<form className="form">
-					<Input className="no-margin" name="name" label="Name *" type="text" required={true} placeholder="Name"/>
-					<Input name="organization" label="Organization Name" type="text" required={true}
-						   placeholder="Organization"/>
-					<Input name="email" label="Email *" type="email" placeholder="Email"/>
-					<Input name="message" textArea={true} label="Message *" type="text" required={true} placeholder="Name"/>
-					<ReadMore margin action text="Send Message"/>
-				</form>
-				<div className="map-container">
-					<Map/>
-				</div>
-			</div>
-		</Section>
-	)
+function Contact({big}) {
+    const i18n = useI18n();
+    return (
+        <Section>
+            <Title big={big} title={i18n.t("contact.title.header")} text={i18n.t("contact.title.text")}/>
+            <div className="contact">
+                <form className="form">
+                    <Input className="no-margin" name="name" label={i18n.t("contact.form.name")} type="text"
+                           required={true} placeholder={i18n.t("contact.form.email")}/>
+                    <Input name="organization" label={i18n.t("contact.form.organization")} type="text" required={true}
+                           placeholder={i18n.t("contact.form.organization")}/>
+                    <Input name="email" label={i18n.t("contact.form.email")} type="email"
+                           placeholder={i18n.t("contact.form.email")}/>
+                    <Input name="message" textArea={true} label={i18n.t("contact.form.message")} type="text"
+                           required={true} placeholder={i18n.t("contact.form.message")}/>
+                    <ReadMore margin action>{i18n.t("buttons.submit")}</ReadMore>
+                </form>
+                <div className="map-container">
+                    <Map/>
+                </div>
+            </div>
+        </Section>
+    )
 }
 
 export default Contact

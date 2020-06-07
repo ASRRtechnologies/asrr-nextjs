@@ -4,6 +4,7 @@ import Card from './Card'
 import ReadMore from '../text/ReadMore'
 import Title from '../text/Title'
 import { cases } from '../../data/cases'
+import useI18n from "../../hooks/use-i18n";
 
 const links = [
 	{ name: 'ALL' },
@@ -12,14 +13,13 @@ const links = [
 ];
 
 function Portfolio (props) {
-
+	const i18n = useI18n();
 	const [active, setActive] = useState(0);
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
 		setData(cases);
-		console.log(23);
-	}, []);
+ 	}, []);
 
 	const toggle = (tag, activeIndex) => {
 		setActive(activeIndex);
@@ -40,7 +40,7 @@ function Portfolio (props) {
 			<div className="portfolio">
 				{data.map(({ image, tag, title }, i) => <Card key={title + i} img={image} tag={tag} title={title}/>)}
 			</div>
-			<ReadMore to="/" text="See all Projects"/>
+			<ReadMore to="/">{i18n.t("buttons.see.portfolio")}</ReadMore>
 		</Section>
 	)
 }

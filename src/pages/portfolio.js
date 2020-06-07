@@ -5,20 +5,15 @@ import Layout from "../components/layout/Layout";
 import PortfolioPage from "../components/portfolio/Portfolio";
 import image from '../../public/assets/images/landing/camera.jpg'
 import ContactPreview from "../components/contact/Preview";
+import useI18n from "../hooks/use-i18n";
 
-function Portfolio(props) {
-
+function Portfolio() {
+    const i18n = useI18n();
     const animate = useContext(AnimationContext);
-
-    useEffect(() => {
-        //Load animation only if app has loaded once
-        (animate.appLoaded) ? animate.animation.secondLoad() : null;
-    }, []);
-
-
+    useEffect(() => {(animate.appLoaded) ? animate.animation.secondLoad() : null;}, []);
     return (
         <div className="content-wrapper">
-            <Landing title={"Portfolio"} text={"Portfolio that will blow your mind"} image={image}/>
+            <Landing title={i18n.t("portfolio.landing.title")} text={i18n.t("portfolio.landing.text")} image={image}/>
             <Layout>
                 <PortfolioPage/>
                 <ContactPreview/>
@@ -26,5 +21,4 @@ function Portfolio(props) {
         </div>
     );
 }
-
 export default Portfolio;
