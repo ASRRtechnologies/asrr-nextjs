@@ -77,17 +77,29 @@
       "title": {
         "header": "Contact",
         "text": "Lorem ipsum much shorter text enter here"
-      },
-      "form": {
-        "email": "Email *",
-        "name": "Name *",
-        "organization": "Organization",
-        "message": "Message *"
-      },
-      "cta": {
-        "curious": "Want to know what ASRR can mean for you company?",
-        "touch": "Get in Touch!"
       }
+    },
+    "form": {
+      "email": {
+        "label": "Email*",
+        "placeholder": "email"
+      },
+      "name": {
+        "label": "Name*",
+        "placeholder": "name"
+      },
+      "organization": {
+        "label": "Organization",
+        "placeholder": "organization"
+      },
+      "message": {
+        "label": "Message*",
+        "placeholder": "message"
+      }
+    },
+    "cta": {
+      "curious": "Want to know what ASRR can mean for you company?",
+      "touch": "Get in Touch!"
     }
   }
 }

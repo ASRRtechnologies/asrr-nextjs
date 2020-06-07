@@ -3,7 +3,7 @@
   width:auto;
   @include flex (center, center, row);
   position: relative;
-  margin-right: 20px;
+  margin-right: 50px;
 
   .menu{
     position: absolute;
@@ -30,12 +30,12 @@
 .chev {
   display:block;
   position: absolute;
-  right:0;
+  left:0;
   top:50%;
   width:20px;
   height: 20px;
   margin: 0 0 0 1px;
-  transform: scale(0.8) translate(-65%, -65%);
+  transform: scale(0.8) translate(65%, -60%);
 }
 .chev .line {
   background-color: inherit;

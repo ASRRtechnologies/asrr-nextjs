@@ -13,14 +13,6 @@ function Contact({big}) {
             <Title big={big} title={i18n.t("contact.title.header")} text={i18n.t("contact.title.text")}/>
             <div className="contact">
                 <form className="form">
-                    {/*<Input className="no-margin" name="name" label={i18n.t("contact.form.name")} type="text"*/}
-                           {/*required={true} placeholder={i18n.t("contact.form.email")}/>*/}
-                    {/*<Input name="organization" label={i18n.t("contact.form.organization")} type="text" required={true}*/}
-                           {/*placeholder={i18n.t("contact.form.organization")}/>*/}
-                    {/*<Input name="email" label={i18n.t("contact.form.email")} type="email"*/}
-                           {/*placeholder={i18n.t("contact.form.email")}/>*/}
-                    {/*<Input name="message" textArea={true} label={i18n.t("contact.form.message")} type="text"*/}
-                           {/*required={true} placeholder={i18n.t("contact.form.message")}/>*/}
                     <Input className="no-margin" name="name" label={i18n.t("contact.form.name.label")} type="text"
                            required={true} placeholder={i18n.t("contact.form.email.placeholder")}/>
                     <Input name="organization" label={i18n.t("contact.form.organization.label")} type="text" required={true}

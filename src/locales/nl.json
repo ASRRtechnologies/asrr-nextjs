@@ -77,20 +77,29 @@
       "title": {
         "header": "Contact",
         "text": "Lorem ipsum much shorter text enter here"
-      },
-      "form": {
-        "email":{
-          "label": "Email*",
-          "text": "email"
-        },
-        "name": "Naam *",
-        "organization": "Organisatie",
-        "message": "Bericht *"
-      },
-      "cta": {
-        "curious": "Meer weten wat ASRR voor je kan betekenen?",
-        "touch": "Kom in contact"
       }
+    },
+    "form": {
+      "email": {
+        "label": "Email*",
+        "placeholder": "email"
+      },
+      "name": {
+        "label": "Naam*",
+        "placeholder": "naam"
+      },
+      "organization": {
+        "label": "Organisatie",
+        "placeholder": "organisatie"
+      },
+      "message": {
+        "label": "Bericht*",
+        "placeholder": "bericht"
+      }
+    },
+    "cta": {
+      "curious": "Meer weten wat ASRR voor je kan betekenen?",
+      "touch": "Kom in contact"
     }
   }
 }

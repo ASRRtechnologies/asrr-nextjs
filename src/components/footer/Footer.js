@@ -44,8 +44,8 @@ function Footer (props) {
                     <div className="grid newsletter">
                         <h4>{i18n.t("footer.letter")}</h4>
                         <form>
-                            <Input className="full-width" label={i18n.t("contact.form.email")}
-                                   placeholder={i18n.t("contact.form.email")}/>
+                            <Input className="full-width" label={i18n.t("contact.form.email.label")}
+                                   placeholder={i18n.t("contact.form.email.placeholder")}/>
                             <ReadMore small action>{i18n.t("button.submit")}</ReadMore>
                         </form>
                     </div>

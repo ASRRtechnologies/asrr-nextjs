@@ -1,8 +1,8 @@
 $input-field: (
         'placeholder-color': inherit,
         'background-color': white,
-        'border-color': #646464,
-        'border-color-focus': #1a1a1a,
+        'border-color': #b3b3b3,
+        'border-color-focus': #6d6d6d,
         'error-color': #f56565,
         'success-color': #48AD2C,
         'border-color-success': #48AD2C,
@@ -45,7 +45,7 @@ $input-field: (
     font-weight: bold;
     border: 1px solid map-get($input-field, 'border-color');
     border-radius: 4px;
-    color: #1a1a1a;
+    color: #646464;
 
     &:focus {
       border: 1px solid map-get($input-field, 'border-color-focus');
