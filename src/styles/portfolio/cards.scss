@@ -8,9 +8,15 @@
     }
   }
 
-  //.card:nth-child(even) {
-  //  margin-top: 50px;
-  //}
+  &.off-balance{
+    .card{
+      margin-top: 0;
+    }
+
+    .card:nth-child(even) {
+      margin-top: 50px;
+    }
+  }
 
   .card {
     margin-top: 50px;

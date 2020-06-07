@@ -4,6 +4,7 @@ import Card from './Card'
 import Title from '../text/Title'
 import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
+import {services } from '../../data/services'
 
 const Wrapper = styled('div')`
       background-color: ${props => props.theme.section.services}; 
@@ -16,15 +17,7 @@ function Services (props) {
 			<Section>
 				<Title big title={i18n.t('contact.title.header')} text={i18n.t('contact.title.text')}/>
 				<div className="services">
-					<Card/>
-					<Card/>
-					<Card/>
-					<Card/>
-					<Card/>
-					<Card/>
-					<Card/>
-					<Card/>
-					<Card/>
+					{services.map((d) => <Card title={d.title} text={d.text}/>)}
 				</div>
 			</Section>
 		</Wrapper>

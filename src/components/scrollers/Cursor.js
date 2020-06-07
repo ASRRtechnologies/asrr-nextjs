@@ -21,7 +21,7 @@ class Cursor extends Component {
 				//Change style via ref instead of setting style property with state to limit rerender otherwise it will be laggy.
 				this.mouseFollowRef.current.style.left = `${e.clientX}px`
 				this.mouseFollowRef.current.style.top = `${e.clientY}px`
-			}, 100)
+			}, 10)
 		})
 
 		document.addEventListener('mousedown', e => {
