@@ -1,5 +1,4 @@
 import React, {useState, createContext} from "react";
-
 export const AnimationContext = createContext();
 import {useAnimation} from "framer-motion";
 

@@ -1,20 +1,21 @@
 import React, {useState, createContext} from "react";
-export const MouseContext = createContext();
+// const ThemeContext = createContext(defaultContextData);
+
 
 const provider = ({children}) => {
 
 	const onHover = (name) => {
-		setState(name);
+		setState({...state, mouse:name})
 	}
 
 	const onLeave = () => {
-		setState("");
+		setState({...state, mouse:""})
 	}
 
 	const [state, setState] = useState({
-		mouse:"active",
-		onHover: onHover,
-		onLeave:onLeave
+		mouse:"",
+		onHover:(name) => {onHover(name)},
+		onLeave: () => {onLeave()},
 	});
 
 	return (
@@ -24,6 +25,5 @@ const provider = ({children}) => {
 	);
 };
 export default provider;
-
-
+export const MouseContext = createContext();
 

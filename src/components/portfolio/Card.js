@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {MouseContext} from '../../context/animations/MouseContext'
 
 function Card({img, title, tag}) {
+
+    const mouse = useContext(MouseContext);
+
     return (
-        <div className="card">
+        <div onMouseOver={()=> {mouse.onHover("projects")}} onMouseLeave={()=> {mouse.onLeave()}} className="card">
             <div className="image">
                 <img src={img} alt="image"/>
             </div>
