@@ -8,14 +8,14 @@ import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
 
 const Wrapper = styled('div')`
-      background-color: ${props => props.theme.section.portfolio}; 
+      background-color: ${props => props.theme.section.portfolio};
 `
 
 function Preview (props) {
 	const i18n = useI18n()
 	const [active, setActive] = useState(0)
 	return (
-		<Wrapper style={{width:"100vw"}}>
+		<Wrapper className="center-content">
 			<Section>
 				<Title title={i18n.t('portfolio.preview.title.header')} text={i18n.t('portfolio.preview.title.text')}/>
 				<div className="portfolio">
