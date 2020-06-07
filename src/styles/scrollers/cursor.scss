@@ -44,6 +44,10 @@
     transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
   }
 
+  &.disabled{
+    display: none;
+  }
+
   &.active{
     transform: scale(2);
     transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
@@ -62,9 +66,13 @@
   pointer-events: none;
   transform: scale(1) translate(-30%, -30%);
 
-
   &.projects{
     transform: scale(0);
     transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
   }
+
+  &.disabled{
+    display: none;
+  }
+
 }
