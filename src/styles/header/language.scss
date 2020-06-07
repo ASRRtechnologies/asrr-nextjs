@@ -82,6 +82,19 @@
   transform: translateX(-4px) rotate(-45deg);
 }
 
+.language-mobile{
+  height:auto;
+  width:auto;
+  @include flex (center, center, row);
+  position: relative;
+  display: none;
+
+  a{
+    padding: 10px;
+  }
+
+}
+
 @media screen and (max-width: 1200px) {
   .language{
     display: none;
@@ -89,4 +102,9 @@
       display: none;
     }
   }
+
+  .language-mobile{
+    display: flex;
+  }
+
 }
