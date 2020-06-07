@@ -38,7 +38,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid #1a1a1a;
+  background-color: #b3b3b3;
   z-index: $cursor-follow-zIndex;
   transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
   user-select: none;
