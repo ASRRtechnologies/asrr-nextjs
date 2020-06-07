@@ -13,7 +13,7 @@ const Wrapper = styled('div')`
 function Services (props) {
 	const i18n = useI18n()
 	return (
-		<Wrapper className="center-content">
+		<Wrapper className="section-wrapper">
 			<Section>
 				<Title title={'Services'} text="lorem ipsum hahahahaha"/>
 				<div className="services">
