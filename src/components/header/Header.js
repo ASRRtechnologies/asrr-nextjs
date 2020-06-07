@@ -9,6 +9,7 @@ import Sun from "./Sun";
 import Moon from "./Moon";
 import Hamburger from "./Hamburger";
 import Language from "@/header/Language";
+import LanguageMobile from "@/header/LanguageMobile";
 import useI18n from "../../hooks/use-i18n";
 
 const Wrapper = styled('nav')`
@@ -85,6 +86,7 @@ function Header(props) {
                         <Link href="/"><a onClick={closeMenu}>{i18n.t("header.hire")}</a></Link>
                         <Link href="/contact"><a onClick={closeMenu}>{i18n.t("header.contact")}</a></Link>
                         <Link href="/about"><a onClick={closeMenu}>{i18n.t("header.about")}</a></Link>
+                        <LanguageMobile/>
                     </div>
 
                     <div className="header-actions">

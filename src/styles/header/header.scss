@@ -141,10 +141,15 @@
     padding: $mob-padding-header;
   }
 
+  .header-menu{
+    padding-top: 20vh;
+    justify-content: flex-start;
+  }
+
   .header-wrapper{
     a{
       margin: 10px 0;
-      font-size: 16px;
+      font-size: 24px;
     }
   }
 
