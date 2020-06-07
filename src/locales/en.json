@@ -1,0 +1,106 @@
+{
+  "header": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "hire": "Hire a Developer",
+    "contact": "Contact Us",
+    "about": "About Us"
+  },
+  "footer": {
+    "navigation": "Navigation",
+    "information": "Information",
+    "address": "Address",
+    "design": "Designed By ASRR",
+    "letter": "Sign up for our newsletter",
+    "faq": "FAQ",
+    "privacy": "Privacy",
+    "policy": "Terms and Services"
+  },
+  "buttons": {
+    "read": "Read More",
+    "see": {
+      "services": "See all Services",
+      "portfolio": "See all Projects"
+    },
+    "submit": "Submit"
+  },
+  "home": {
+    "landing": {
+      "title": "Redefining languages"
+    },
+    "welcome": "Welkom thuis {{username}}!",
+    "text": "Ich hoffe, du findest das nützlich.",
+    "description": "Das Beispiel zeigt, wie man die Sprache für SSG und SSG optimierte Seiten wechselt."
+  },
+  "portfolio": {
+    "landing": {
+      "title": "Portfolio",
+      "text": "Super nice projects"
+    },
+    "title": {
+      "header": "Our Portfolio",
+      "text": "Lorem ipsum much longer text enter here"
+    },
+    "preview": {
+      "title": {
+        "header": "Portfolio",
+        "text": "Lorem ipsum much shorter text enter here"
+      }
+    }
+  },
+  "services": {
+    "landing": {
+      "title": "Services",
+      "text": "Super nice services"
+    },
+    "title": {
+      "header": "Our Services",
+      "text": "Lorem ipsum much longer text enter here"
+    },
+    "preview": {
+      "title": {
+        "header": "Services",
+        "text": "Lorem ipsum much shorter text enter here"
+      }
+    }
+  },
+  "contact": {
+    "landing": {
+      "title": "Lets get in touch"
+    },
+    "title": {
+      "header": "Our Contact",
+      "text": "Lorem ipsum much longer text enter here"
+    },
+    "preview": {
+      "title": {
+        "header": "Contact",
+        "text": "Lorem ipsum much shorter text enter here"
+      }
+    },
+    "form": {
+      "email": {
+        "label": "Email*",
+        "placeholder": "email"
+      },
+      "name": {
+        "label": "Name*",
+        "placeholder": "name"
+      },
+      "organization": {
+        "label": "Organization",
+        "placeholder": "organization"
+      },
+      "message": {
+        "label": "Message*",
+        "placeholder": "message"
+      }
+    },
+    "cta": {
+      "curious": "Want to know what ASRR can mean for you company?",
+      "touch": "Get in Touch!"
+    }
+  }
+}
+

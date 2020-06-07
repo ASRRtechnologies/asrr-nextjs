@@ -27,14 +27,14 @@ const landing = {
 
 const clients = {
     background:{
-        dark:"#1a1a1a",
+        dark:"#292929",
         light:"#F4F4F4"
     }
 };
 
 const layout = {
     background: {
-        dark: "#292929",
+        dark: "#1a1a1a",
         light: "#ffffff"
     },
 };

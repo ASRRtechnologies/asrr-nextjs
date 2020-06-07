@@ -1,0 +1,105 @@
+{
+  "header": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "services": "Diensten",
+    "hire": "Huur een Developer",
+    "contact": "Contact Ons",
+    "about": "Over Ons"
+  },
+  "footer": {
+    "navigation": "Navigatie",
+    "information": "Informatie",
+    "address": "Adres",
+    "design": "Ontworpen door ASRR",
+    "letter": "Meld je aan voor onze nieuwsbrief",
+    "faq": "FAQ",
+    "privacy": "Privacy",
+    "policy": "Algemene Voorwaarden"
+  },
+  "buttons": {
+    "read": "Lees Meer",
+    "see": {
+      "services": "Bekijk al onze Diensten",
+      "portfolio": "Bekijk al onze Projecten"
+    },
+    "submit": "Verzenden"
+  },
+  "home": {
+    "landing": {
+      "title": "Redefining languages"
+    },
+    "welcome": "Welkom thuis {{username}}!",
+    "text": "Ich hoffe, du findest das nützlich.",
+    "description": "Das Beispiel zeigt, wie man die Sprache für SSG und SSG optimierte Seiten wechselt."
+  },
+  "portfolio": {
+    "landing": {
+      "title": "Portfolio",
+      "text": "Super mooie projecten"
+    },
+    "title": {
+      "header": "Onze Portfolio",
+      "text": "Lorem ipsum much longer text enter here"
+    },
+    "preview": {
+      "title": {
+        "header": "Portfolio",
+        "text": "Lorem ipsum much shorter text enter here"
+      }
+    }
+  },
+  "services": {
+    "landing": {
+      "title": "Diensten",
+      "text": "Super mooie Diensten"
+    },
+    "title": {
+      "header": "Onze Diensten",
+      "text": "Lorem ipsum much longer text enter here"
+    },
+    "preview": {
+      "title": {
+        "header": "Diensten",
+        "text": "Lorem ipsum much shorter text enter here"
+      }
+    }
+  },
+  "contact": {
+    "landing": {
+      "title": "Kom in contact!"
+    },
+    "title": {
+      "header": "Onze Contact",
+      "text": "Lorem ipsum much longer text enter here"
+    },
+    "preview": {
+      "title": {
+        "header": "Contact",
+        "text": "Lorem ipsum much shorter text enter here"
+      }
+    },
+    "form": {
+      "email": {
+        "label": "Email*",
+        "placeholder": "email"
+      },
+      "name": {
+        "label": "Naam*",
+        "placeholder": "naam"
+      },
+      "organization": {
+        "label": "Organisatie",
+        "placeholder": "organisatie"
+      },
+      "message": {
+        "label": "Bericht*",
+        "placeholder": "bericht"
+      }
+    },
+    "cta": {
+      "curious": "Meer weten wat ASRR voor je kan betekenen?",
+      "touch": "Kom in contact"
+    }
+  }
+}

@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import { AnimationContext } from '../../context/animations/AnimationContext'
 import styled from '@emotion/styled'
+import throttle from "lodash";
+import useI18n from "../../hooks/use-i18n";
 
 const Wrapper = styled('div')`
         background-color: ${props => props.theme.header.background};
@@ -26,7 +28,7 @@ const cards = [
 ];
 
 function Landing({title, text, image, boxes, projects}) {
-
+    const i18n = useI18n();
     const animate = useContext(AnimationContext);
     const animation = animate.animation.landing;
     const [hover, setHover] = useState(false);
@@ -35,7 +37,7 @@ function Landing({title, text, image, boxes, projects}) {
         index: 0
     });
     const router = useRouter();
-    const landing = useRef(null)
+    const landing = useRef(null);
 
     const navigate = (url) => {
         router.push(url).then(null)
@@ -71,9 +73,12 @@ function Landing({title, text, image, boxes, projects}) {
         if (window.matchMedia("(max-width: 1200px)").matches) {
             landing.current.style.height = `${window.innerHeight}px`;
         }
+        console.log(23)
     };
 
-    useEffect(() => setLandingHeight() , []);
+    const throttledLandingHeight = throttle(setLandingHeight, 500);
+
+    useEffect(() => window.addEventListener("resize", throttledLandingHeight) , []);
 
     return (
         <motion.div ref={landing} className="landing-container">
@@ -102,7 +107,7 @@ function Landing({title, text, image, boxes, projects}) {
                                   exit={animation.landingText.exit}
                                   animate={animation.landingText.animate}
                                   custom={1}>
-                            See all projects
+                            {i18n.t("buttons.see.portfolio")}
                         </motion.p>
                     ) : null}
 				</span>

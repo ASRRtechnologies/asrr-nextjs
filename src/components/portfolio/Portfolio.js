@@ -3,31 +3,31 @@ import Section from '../layout/Section'
 import Card from './Card'
 import ReadMore from '../text/ReadMore'
 import Title from '../text/Title'
-import { cases } from '../data/cases'
+import { cases } from '../../data/cases'
+import useI18n from "../../hooks/use-i18n";
 
 const links = [
 	{ name: 'ALL' },
 	{ name: 'BIM' },
 	{ name: 'GENERAL' },
-]
+];
 
 function Portfolio (props) {
-
-	const [active, setActive] = useState(0)
-	const [data, setData] = useState([])
+	const i18n = useI18n();
+	const [active, setActive] = useState(0);
+	const [data, setData] = useState([]);
 
 	useEffect(() => {
-		setData(cases)
-		console.log(23);
-	}, [])
+		setData(cases);
+ 	}, []);
 
 	const toggle = (tag, activeIndex) => {
-		setActive(activeIndex)
+		setActive(activeIndex);
 		if (tag === 'all') {setData(cases)} else {
-			const currentData = data.filter((obj) => obj.tag === tag)
+			const currentData = data.filter((obj) => obj.tag === tag);
 			setData(currentData)
 		}
-	}
+	};
 
 	return (
 		<Section>
@@ -40,7 +40,7 @@ function Portfolio (props) {
 			<div className="portfolio">
 				{data.map(({ image, tag, title }, i) => <Card key={title + i} img={image} tag={tag} title={title}/>)}
 			</div>
-			<ReadMore to="/" text="See all Projects"/>
+			<ReadMore to="/">{i18n.t("buttons.see.portfolio")}</ReadMore>
 		</Section>
 	)
 }
