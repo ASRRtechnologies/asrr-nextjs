@@ -23,7 +23,7 @@ function Portfolio () {
 		setActive(activeIndex)
 		if (discipline === 'all') {setData(cases)} else {
 			//Check if discipline is equal to tag
-			const currentData = data.filter((obj) => i18n.t(obj.discipline).toLowerCase() === discipline)
+			const currentData = cases.filter((obj) => i18n.t(obj.discipline).toLowerCase() === discipline)
 			setData(currentData)
 		}
 	}
