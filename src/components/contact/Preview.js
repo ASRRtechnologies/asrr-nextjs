@@ -1,13 +1,11 @@
-import React from 'react';
-import Section from "../layout/Section";
-import ReadMore from "@/text/ReadMore";
-import Input from "@/text/Input";
-import useI18n from "../../hooks/use-i18n";
+import React from 'react'
+import ReadMore from '@/text/ReadMore'
+import Input from '@/text/Input'
+import useI18n from '../../hooks/use-i18n'
 
 function Contact(props) {
     const i18n = useI18n();
     return (
-        <Section>
             <div className="contact preview">
                 <h3>{i18n.t("contact.cta.curious")}<br/>{i18n.t("contact.cta.touch")}</h3>
                 <form className="form">
@@ -22,7 +20,6 @@ function Contact(props) {
                     <ReadMore margin action>{i18n.t("buttons.submit")}</ReadMore>
                 </form>
             </div>
-        </Section>
     );
 }
 export default Contact;

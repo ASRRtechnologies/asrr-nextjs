@@ -39,6 +39,19 @@ const layout = {
     },
 };
 
+const section = {
+    portfolio:{
+        dark: "#292929",
+        light: "#f4f4f4"
+    },
+
+    services:{
+        dark: "#131313",
+        light: "#eaebec"
+    },
+
+};
+
 
 const fonts = {
 
@@ -97,6 +110,12 @@ const lightTheme = {
 
     clients: clients.background.light,
 
+    section: {
+        portfolio: section.portfolio.light,
+        services: section.services.light,
+    }
+
+
 };
 
 const darkTheme = {
@@ -121,6 +140,11 @@ const darkTheme = {
     layout: layout.background.dark,
 
     clients: clients.background.dark,
+
+    section: {
+        portfolio: section.portfolio.dark,
+        services: section.services.dark,
+    }
 
 };
 

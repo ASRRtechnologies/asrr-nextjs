@@ -4,13 +4,13 @@
   @include flex(space-between, flex-start, row);
   flex-wrap: wrap;
 
-  div:nth-child(even) {
-    margin-top: 50px;
-  }
-
-  div:last-child {
-    margin-bottom: 0;
-  }
+  //div:nth-child(even) {
+  //  margin-top: 50px;
+  //}
+  //
+  //div:last-child {
+  //  margin-bottom: 0;
+  //}
 
 }
 
