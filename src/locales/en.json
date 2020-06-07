@@ -1,11 +1,25 @@
 {
-  "intro": {
-    "welcome": "Welcome, {{username}}!",
-    "text": "I hope you find this useful.",
-    "description": "This example demonstrate how to change the language for SSG and SSR optimized pages."
+  "header": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "hire": "Hire a Developer",
+    "contact": "Contact Us",
+    "about": "About Us"
   },
 
-  "dashboard": {
-    "description": "This example demonstrate how to change the language on client side only. Useful for dashboards because they don't require SEO."
+  "buttons": {
+    "read": "Read More",
+    "see": "See all {{discipline}}",
+    "submit": "Submit"
+  },
+
+  "home": {
+    "landing": {
+      "title": "Redefining languages"
+    },
+    "welcome": "Welkom thuis {{username}}!",
+    "text": "Ich hoffe, du findest das nützlich.",
+    "description": "Das Beispiel zeigt, wie man die Sprache für SSG und SSG optimierte Seiten wechselt."
   }
 }

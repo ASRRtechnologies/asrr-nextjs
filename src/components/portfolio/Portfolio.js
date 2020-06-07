@@ -3,31 +3,31 @@ import Section from '../layout/Section'
 import Card from './Card'
 import ReadMore from '../text/ReadMore'
 import Title from '../text/Title'
-import { cases } from '../data/cases'
+import { cases } from '../../data/cases'
 
 const links = [
 	{ name: 'ALL' },
 	{ name: 'BIM' },
 	{ name: 'GENERAL' },
-]
+];
 
 function Portfolio (props) {
 
-	const [active, setActive] = useState(0)
-	const [data, setData] = useState([])
+	const [active, setActive] = useState(0);
+	const [data, setData] = useState([]);
 
 	useEffect(() => {
-		setData(cases)
+		setData(cases);
 		console.log(23);
-	}, [])
+	}, []);
 
 	const toggle = (tag, activeIndex) => {
-		setActive(activeIndex)
+		setActive(activeIndex);
 		if (tag === 'all') {setData(cases)} else {
-			const currentData = data.filter((obj) => obj.tag === tag)
+			const currentData = data.filter((obj) => obj.tag === tag);
 			setData(currentData)
 		}
-	}
+	};
 
 	return (
 		<Section>

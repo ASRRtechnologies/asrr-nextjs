@@ -1,8 +1,11 @@
 //@import "fonts";
 @import "mixins";
 @import "variables";
+
 @import "../header/header";
 @import "../header/hamburger";
+@import "../header/language";
+
 @import "../landing/landing";
 @import "../layout/layout";
 @import "../animation/transition-animation";

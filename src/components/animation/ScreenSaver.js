@@ -7,28 +7,28 @@ import { usePageLeave } from 'react-use'
 
 function ScreenSaver () {
 
-	const [visible, setVisible] = useState(false)
+	const [visible, setVisible] = useState(false);
 
-	const darkTheme = useTheme()
-	const router = useRouter()
-	const overlay = useRef()
+	const darkTheme = useTheme();
+	const router = useRouter();
+	const overlay = useRef();
 
 	const setOverlayHeight = () => {
 		overlay.current.style.height = `${window.innerHeight}px`
-	}
+	};
 
-	const delayScreenSaver = () => window.setTimeout(() => setVisible(true), 8000)
+	const delayScreenSaver = () => window.setTimeout(() => setVisible(true), 8000);
 
 	const Demo = () => {
-		usePageLeave(() => delayScreenSaver())
+		usePageLeave(() => delayScreenSaver());
 		return null
-	}
+	};
 
-	Demo()
+	Demo();
 
 	useEffect(() => {
 		setOverlayHeight()
-	}, [])
+	}, []);
 
 	return (
 		<div onMouseEnter={() => setVisible(false)} ref={overlay} className={`screen-saver ${visible && 'visible'}`}>

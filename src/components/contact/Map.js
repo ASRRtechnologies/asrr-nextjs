@@ -7,19 +7,19 @@ import { useTheme } from '../../context/theme/ThemeContext'
 const containerStyle = {
 	width: '100%',
 	height: '100%',
-}
+};
 
 const center = {
 	lat: 52.040703, lng: 4.336644,
-}
+};
 
 const position = {
 	lat: 52.040703, lng: 4.336644,
-}
+};
 
 const icon = {
 	lat: 52.038003, lng: 4.336644,
-}
+};
 
 function Map (props) {
 	const darkTheme = useTheme();

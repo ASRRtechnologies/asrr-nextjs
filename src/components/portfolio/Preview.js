@@ -3,7 +3,7 @@ import Section from "../layout/Section";
 import Card from "./Card";
 import ReadMore from "../text/ReadMore";
 import Title from "../text/Title";
-import {cases} from '../data/cases'
+import {cases} from '../../data/cases'
 
 function Preview(props) {
 

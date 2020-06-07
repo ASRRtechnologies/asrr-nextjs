@@ -1,6 +1,6 @@
 import React from 'react';
 import Landing from "@/landing/Landing"
-import {clients} from "@/data/clients";
+import {clients} from "../../data/clients";
 import styled from '@emotion/styled'
 
 const Wrapper = styled('section')`

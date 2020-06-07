@@ -36,7 +36,7 @@ function Landing({title, text, image, boxes, projects}) {
         index: 0
     });
     const router = useRouter();
-    const landing = useRef(null)
+    const landing = useRef(null);
 
     const navigate = (url) => {
         router.push(url).then(null)
