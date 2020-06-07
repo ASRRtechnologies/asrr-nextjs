@@ -3,7 +3,7 @@ import Section from '../layout/Section'
 import Card from './Card'
 import ReadMore from '../text/ReadMore'
 import Title from '../text/Title'
-import { cases } from '../../data/cases'
+import { previewCases } from '../../data/cases'
 import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
 
@@ -17,9 +17,9 @@ function Preview (props) {
 	return (
 		<Wrapper className="section-wrapper">
 			<Section>
-				<Title title={i18n.t('portfolio.preview.title.header')} text={i18n.t('portfolio.preview.title.text')}/>
+				<Title title={'portfolio.preview.title.header'} text={'portfolio.preview.title.text'}/>
 				<div className="portfolio">
-					{cases.map(({ image, tag, title }) => <Card img={image} tag={tag} title={title}/>)}
+					{previewCases.map(({ image, discipline, title, client }) => <Card client={client} img={image} discipline={discipline} title={title}/>)}
 				</div>
 				<ReadMore margin={true} to="/portfolio">{i18n.t('buttons.see.portfolio')}</ReadMore>
 			</Section>

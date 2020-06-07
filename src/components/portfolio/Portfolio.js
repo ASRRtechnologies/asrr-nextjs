@@ -1,23 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import Section from '../layout/Section'
 import Card from './Card'
-import ReadMore from '../text/ReadMore'
 import Title from '../text/Title'
-import { cases } from '../../data/cases'
+import { cases, disciplines } from '../../data/cases'
 import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
-
-const links = [
-	{ name: 'ALL' },
-	{ name: 'BIM' },
-	{ name: 'GENERAL' },
-]
 
 const Wrapper = styled('div')`
       background-color: ${props => props.theme.section.contact};
 `
 
-function Portfolio (props) {
+function Portfolio () {
 	const i18n = useI18n()
 	const [active, setActive] = useState(0)
 	const [data, setData] = useState([])
@@ -26,10 +19,11 @@ function Portfolio (props) {
 		setData(cases)
 	}, [])
 
-	const toggle = (tag, activeIndex) => {
+	const toggle = (discipline, activeIndex) => {
 		setActive(activeIndex)
-		if (tag === 'all') {setData(cases)} else {
-			const currentData = data.filter((obj) => obj.tag === tag)
+		if (discipline === 'all') {setData(cases)} else {
+			//Check if discipline is equal to tag
+			const currentData = data.filter((obj) => i18n.t(obj.discipline).toLowerCase() === discipline)
 			setData(currentData)
 		}
 	}
@@ -38,16 +32,16 @@ function Portfolio (props) {
 		<Wrapper className="section-wrapper">
 			<Section>
 				<div className="portfolio-links">
-					{links.map((d, i) => <p key={`portfolio-link${i}`}
-											onClick={() => toggle(d.name.toLowerCase(), i)}
-											className={`${i === active && 'active'}`}>{d.name}</p>)}
+					{disciplines.map((d, i) => <p key={`portfolio-link${i}`}
+												  onClick={() => toggle(i18n.t(d.title).toLowerCase(), i)}
+												  className={`${i === active && 'active'}`}>{i18n.t(d.title)}</p>)}
 				</div>
-				<Title big title={'Portfolio'} text="lorem ipsum hahahahaha"/>
-				<div className="portfolio">
+				<Title big title={'portfolio.title.header'} text="portfolio.title.text"/>
+				<div className="portfolio off-balance">
 					{data.map(
-						({ image, tag, title }, i) => <Card key={title + i} img={image} tag={tag} title={title}/>)}
+						({ image, discipline, title, client }, i) => <Card client={client} key={title + i} img={image}
+																		   discipline={discipline} title={title}/>)}
 				</div>
-				<ReadMore to="/">{i18n.t('buttons.see.portfolio')}</ReadMore>
 			</Section>
 		</Wrapper>
 	)

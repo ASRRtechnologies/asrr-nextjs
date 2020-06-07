@@ -101,6 +101,43 @@
       "curious": "Want to know what ASRR can mean for you company?",
       "touch": "Get in Touch!"
     }
+  },
+  "projects":{
+    "disciplines": {
+      "all": "All",
+      "bim": "Bim",
+      "web": "Web Application"
+    },
+    "nwo": {
+      "client": "NWO",
+      "discipline": "Web Application",
+      "title": "Remote Desktop Server",
+      "text": "Lorem ipsum"
+    },
+    "hes": {
+      "client": "Hes International",
+      "discipline": "Web Application",
+      "title": "Steel Tracker",
+      "text": "Lorem ipsum"
+    },
+    "protonise": {
+      "client": "Protonise",
+      "discipline": "Web Application",
+      "title": "React Webapplication",
+      "text": "Lorem ipsum ipsum"
+    },
+    "form": {
+      "client": "Form",
+      "discipline": "Bim",
+      "title": "Housing configurators",
+      "text": "Lorem ipsum form"
+    },
+    "form-dashboard": {
+      "client": "Form",
+      "discipline": "Web Application",
+      "title": "Configurator Dashboard",
+      "text": "Lorem ipsum fr"
+    }
   }
 }
 
