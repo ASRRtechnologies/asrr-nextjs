@@ -1,47 +1,49 @@
 import React, { useEffect, useState } from 'react'
 import Section from '../layout/Section'
 import Card from './Card'
-import ReadMore from '../text/ReadMore'
 import Title from '../text/Title'
-import { cases } from '../../data/cases'
-import useI18n from "../../hooks/use-i18n";
+import { cases, disciplines } from '../../data/cases'
+import useI18n from '../../hooks/use-i18n'
+import styled from '@emotion/styled'
 
-const links = [
-	{ name: 'ALL' },
-	{ name: 'BIM' },
-	{ name: 'GENERAL' },
-];
+const Wrapper = styled('div')`
+      background-color: ${props => props.theme.section.contact};
+`
 
-function Portfolio (props) {
-	const i18n = useI18n();
-	const [active, setActive] = useState(0);
-	const [data, setData] = useState([]);
+function Portfolio () {
+	const i18n = useI18n()
+	const [active, setActive] = useState(0)
+	const [data, setData] = useState([])
 
 	useEffect(() => {
-		setData(cases);
- 	}, []);
+		setData(cases)
+	}, [])
 
-	const toggle = (tag, activeIndex) => {
-		setActive(activeIndex);
-		if (tag === 'all') {setData(cases)} else {
-			const currentData = data.filter((obj) => obj.tag === tag);
+	const toggle = (discipline, activeIndex) => {
+		setActive(activeIndex)
+		if (discipline === 'all') {setData(cases)} else {
+			//Check if discipline is equal to tag
+			const currentData = cases.filter((obj) => i18n.t(obj.discipline).toLowerCase() === discipline)
 			setData(currentData)
 		}
-	};
+	}
 
 	return (
-		<Section>
-			<div className="portfolio-links">
-				{links.map((d, i) => <p key={`portfolio-link${i}`}
-										onClick={() => toggle(d.name.toLowerCase(), i)}
-										className={`${i === active && 'active'}`}>{d.name}</p>)}
-			</div>
-			<Title big title={'Portfolio'} text="lorem ipsum hahahahaha"/>
-			<div className="portfolio">
-				{data.map(({ image, tag, title }, i) => <Card key={title + i} img={image} tag={tag} title={title}/>)}
-			</div>
-			<ReadMore to="/">{i18n.t("buttons.see.portfolio")}</ReadMore>
-		</Section>
+		<Wrapper className="section-wrapper">
+			<Section>
+				<div className="portfolio-links">
+					{disciplines.map((d, i) => <p key={`portfolio-link${i}`}
+												  onClick={() => toggle(i18n.t(d.title).toLowerCase(), i)}
+												  className={`${i === active && 'active'}`}>{i18n.t(d.title)}</p>)}
+				</div>
+				<Title big title={'portfolio.title.header'} text="portfolio.title.text"/>
+				<div className="portfolio off-balance">
+					{data.map(
+						({ image, discipline, title, client }, i) => <Card client={client} key={title + i} img={image}
+																		   discipline={discipline} title={title}/>)}
+				</div>
+			</Section>
+		</Wrapper>
 	)
 }
 

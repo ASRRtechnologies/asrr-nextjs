@@ -4,14 +4,14 @@ import styled from "@emotion/styled";
 function Input(props) {
 
     const placeholderRef = useRef(null);
-    const {hidden, textArea, placeholder, label, className, ...rest} = props;
+    const {hidden, textArea, placeholder, label, className, last, ...rest} = props;
 
     const Wrapper = styled('section')`
         color: ${props => props.theme.fonts.title};
         `;
 
     return (
-        <Wrapper className={`input-container`}>
+        <Wrapper className={`input-container ${last && "last"}`}>
             {textArea ?
                 (
                     <React.Fragment>

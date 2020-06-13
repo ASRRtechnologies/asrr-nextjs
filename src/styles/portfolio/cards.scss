@@ -3,10 +3,23 @@
   .card {
     width: 45%;
     height: 100%;
-
     h3{
       margin-bottom: 0;
     }
+  }
+
+  &.off-balance{
+    .card{
+      margin-top: 0;
+    }
+
+    .card:nth-child(even) {
+      margin-top: 50px;
+    }
+  }
+
+  .card {
+    margin-top: 50px;
   }
 
   .image {
@@ -39,7 +52,15 @@
     .card {
       width: 100%;
       height: 100%;
-      margin-bottom: 75px;
+      margin-bottom: 50px;
     }
+    .card:nth-child(even) {
+      margin-top: 0;
+    }
+
+    .card:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+
   }
 }

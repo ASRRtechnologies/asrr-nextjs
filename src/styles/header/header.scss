@@ -136,9 +136,22 @@
 
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
   .header-relative{
     padding: $mob-padding-header;
   }
+
+  .header-menu{
+    padding-top: 20vh;
+    justify-content: flex-start;
+  }
+
+  .header-wrapper{
+    a{
+      margin: 10px 0;
+      font-size: 24px;
+    }
+  }
+
 }
 

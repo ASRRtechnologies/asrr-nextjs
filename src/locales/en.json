@@ -101,6 +101,93 @@
       "curious": "Want to know what ASRR can mean for you company?",
       "touch": "Get in Touch!"
     }
+  },
+  "projects":{
+    "disciplines": {
+      "all": "All",
+      "bim": "Bim",
+      "web": "Web Application"
+    },
+    "nwo": {
+      "client": "NWO",
+      "discipline": "Web Application",
+      "title": "Remote Desktop Server",
+      "text": "Lorem ipsum"
+    },
+    "hes": {
+      "client": "Hes International",
+      "discipline": "Web Application",
+      "title": "Steel Tracker",
+      "text": "Lorem ipsum"
+    },
+    "protonise": {
+      "client": "Protonise",
+      "discipline": "Web Application",
+      "title": "React Webapplication",
+      "text": "Lorem ipsum ipsum"
+    },
+    "form": {
+      "client": "Form",
+      "discipline": "Bim",
+      "title": "Housing configurators",
+      "text": "Lorem ipsum form"
+    },
+    "form-dashboard": {
+      "client": "Form",
+      "discipline": "Web Application",
+      "title": "Configurator Dashboard",
+      "text": "Lorem ipsum fr"
+    }
+  },
+  "service-cards": {
+    "web-applications": {
+      "title": "Web Applications",
+      "text": "Lorem ipsum nog langere lorem ipsum",
+      "preview": {
+        "title": "Web Application",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "data-analytics": {
+      "title": "Data Analytics",
+      "text": "Lorem ipsum nog langere lorem ipsum",
+      "preview": {
+        "title": "Data Analytics",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "servers": {
+      "title": "Servers",
+      "text": "Lorem ipsum nog langere lorem ipsum",
+      "preview": {
+        "title": "Servers",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "consultancy": {
+      "title": "Consultancy",
+      "text": "Lorem ipsum nog langere lorem ipsum",
+      "preview": {
+        "title": "Consultancy",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "back-end": {
+      "title": "Back-end Applications",
+      "text": "Lorem ipsum nog langere lorem ipsum",
+      "preview": {
+        "title": "Consultancy",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "power-bi": {
+      "title": "Power Bi",
+      "text": "Lorem ipsum nog langere lorem ipsum",
+      "preview": {
+        "title": "Power Bi",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    }
   }
 }
 

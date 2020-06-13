@@ -101,8 +101,7 @@
 
 .link{
   font-size: 16px;
-  margin-bottom: 15px;
-  text-decoration: underline;
+   text-decoration: underline;
 }
 
 .no-margin{
@@ -121,4 +120,9 @@
       font-size: 14px;
     }
   }
+
+  .link{
+    font-size: 14px;
+  }
+
 }

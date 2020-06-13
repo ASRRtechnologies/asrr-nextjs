@@ -3,7 +3,6 @@
   height: 100%;
   width: 100%;
   @include flex(center, center, column);
-  padding: $pc-padding;
 
   &.footer-container{
     background-color: #0a0a0a;
@@ -11,43 +10,42 @@
   }
 }
 
+.section-wrapper{
+  width:100vw;
+  @include flex(center, center, column);
+  padding: $pc-padding;
 
-//General layout of seciton components
+}
+
 .section{
-  @include flex(flex-start, flex-start, column);
-  padding: 75px 0;
-  width: 100%;
-  height: auto;
+  width:100%;
   max-width: $max-width;
 }
 
+
 @media screen and (max-width:1200px) {
   .layout{
-    padding: $tablet-padding;
-
     &.footer-container{
       padding: 50px
     }
   }
 
-  .section{
-    padding: 75px 0;
+  .section-wrapper{
+    padding: $tablet-padding;
   }
-
 }
 
 @media screen and (max-width:600px) {
 
   .layout{
-    padding: $mob-padding;
 
     &.footer-container{
       padding: 70px 25px 30px 25px;
     }
   }
 
-  .section{
-    padding: 50px 0;
+  .section-wrapper{
+    padding: $mob-padding;
   }
 
 }

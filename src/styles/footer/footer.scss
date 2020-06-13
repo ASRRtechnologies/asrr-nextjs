@@ -10,6 +10,11 @@
     margin-right: auto;
   }
 
+  //Make label white in footer of email
+  .input-label{
+    color:white !important;
+  }
+
   h3, h4, p, a {
     color:white !important;
   }
@@ -122,7 +127,7 @@
 @media screen and (max-width: 500px) {
   .footer {
     .grid {
-      width: 55%;
+      width: 100%;
     }
 
     .bottom {
