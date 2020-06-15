@@ -1,0 +1,93 @@
+.portfolio-page{
+  @include size(100vw, auto);
+
+  text{
+    height: 100%;
+    @include flex(center, flex-start, column);
+    text-align: left;
+    width:100%;
+    p{
+      width: 100%;
+      min-width: 300px;
+      max-width: 600px;
+    }
+  }
+
+}
+
+.portfolio-page-back{
+  width: 100%;
+  height: 50px;
+  background-color: red;
+}
+
+.portfolio-page-landing{
+  @include size(100vw, auto);
+  @include flex(center, center, column);
+  padding: $pc-padding;
+  min-height: 100vh;
+}
+
+.portfolio-page-landing-wrapper{
+  @include size(100%, auto);
+  max-width: $max-width;
+  @include flex(space-between, center, row);
+  img{
+    width: 350px;
+    height: auto;
+  }
+}
+
+.portfolio-page-work{
+  @include size(100%, auto);
+  @include flex(center, center, column);
+  padding: $pc-padding;
+  text{
+    margin-bottom: 100px;
+  }
+
+}
+
+.portfolio-page-slider-card{
+  width: 100%;
+  height: auto;
+  padding: 0 50px 0 0;
+
+  &.no-margin{
+     margin: 0;
+  }
+
+  img{
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+//Remove outline from empty wrapper div
+.slick-slide{
+  div {
+    outline: none !important;
+  }
+}
+
+.portfolio-page-result{
+  @include size(100%, auto);
+  @include flex(center, center, column);
+  padding: $pc-padding;
+  text{
+    @include flex(center, center, column);
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  img{
+    display: block;
+    margin: auto;
+    max-width: 1200px;
+    min-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+
+}

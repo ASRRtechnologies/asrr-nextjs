@@ -6,6 +6,7 @@ import PortfolioPage from "../components/portfolio/Portfolio";
 import image from '../../public/assets/images/landing/camera.jpg'
 import ContactPreview from "../components/contact/Preview";
 import useI18n from "../hooks/use-i18n";
+import Page from '../components/portfolio/Page'
 
 function Portfolio() {
     const i18n = useI18n();
@@ -13,10 +14,11 @@ function Portfolio() {
     useEffect(() => {(animate.appLoaded) ? animate.animation.secondLoad() : null;}, []);
     return (
         <div className="content-wrapper">
-            <Landing title={i18n.t("portfolio.landing.title")} text={i18n.t("portfolio.landing.text")} image={image}/>
+            {/*<Landing title={i18n.t("portfolio.landing.title")} text={i18n.t("portfolio.landing.text")} image={image}/>*/}
             <Layout>
-                <PortfolioPage/>
-                <ContactPreview/>
+                {/*<PortfolioPage/>*/}
+                {/*<ContactPreview/>*/}
+                <Page/>
             </Layout>
         </div>
     );

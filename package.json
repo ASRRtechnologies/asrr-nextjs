@@ -22,7 +22,10 @@
     "react": "^16.13.1",
     "react-dom": "16.13.1",
     "react-intersection-observer": "^8.26.2",
+    "react-slick": "^0.26.1",
     "react-use": "15.1.0",
-    "rosetta": "1.0.0"
+    "rosetta": "1.0.0",
+    "slick-carousel": "^1.8.1",
+    "aos": "^2.3.4"
   }
 }

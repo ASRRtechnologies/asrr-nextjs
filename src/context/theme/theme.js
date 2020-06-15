@@ -57,6 +57,24 @@ const section = {
 
 };
 
+const portfolio = {
+    landing:{
+        dark: "#292929",
+        light: "#f4f4f4"
+    },
+
+    showcase:{
+        dark: "#131313",
+        light: "#eaebec"
+    },
+
+    contactPreview:{
+        dark: "#292929",
+        light: "#f4f4f4"
+    }
+
+};
+
 
 const fonts = {
 
@@ -119,6 +137,11 @@ const lightTheme = {
         portfolio: section.portfolio.light,
         services: section.services.light,
         contactPreview: section.contactPreview.light,
+    },
+
+    portfolio:{
+        landing: portfolio.landing.light,
+        showcase: portfolio.showcase.light,
     }
 
 
@@ -151,6 +174,12 @@ const darkTheme = {
         portfolio: section.portfolio.dark,
         services: section.services.dark,
         contactPreview: section.contactPreview.dark,
+    },
+
+    portfolio:{
+        landing: portfolio.landing.dark,
+        showcase: portfolio.showcase.dark,
+
     }
 
 };
