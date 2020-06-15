@@ -27,7 +27,16 @@
   },
   "home": {
     "landing": {
-      "title": "Redefining languages"
+      "title": "Redefining innovation",
+      "card-1": {
+        "type": "Flexible",
+        "title": "Full-Stack Development"
+      },
+      "card-2": {
+        "type": "BIM",
+        "title": "Revit API Automation"
+      }
+
     },
     "welcome": "Welkom thuis {{username}}!",
     "text": "Ich hoffe, du findest das nützlich.",
