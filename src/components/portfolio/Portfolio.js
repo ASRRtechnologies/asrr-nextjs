@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Section from '../layout/Section'
 import Card from './Card'
 import Title from '../text/Title'
-import { cases, disciplines } from '../../data/cases'
+import { portfolio, disciplines } from '../../data/portfolio'
 import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
 
@@ -16,14 +16,14 @@ function Portfolio () {
 	const [data, setData] = useState([])
 
 	useEffect(() => {
-		setData(cases)
+		setData(portfolio)
 	}, [])
 
 	const toggle = (discipline, activeIndex) => {
 		setActive(activeIndex)
-		if (discipline === 'all') {setData(cases)} else {
+		if (discipline === 'all') {setData(portfolio)} else {
 			//Check if discipline is equal to tag
-			const currentData = cases.filter((obj) => i18n.t(obj.discipline).toLowerCase() === discipline)
+			const currentData = portfolio.filter((obj) => i18n.t(obj.discipline).toLowerCase() === discipline)
 			setData(currentData)
 		}
 	}

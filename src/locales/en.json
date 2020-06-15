@@ -118,7 +118,18 @@
       "client": "Hes International",
       "discipline": "Web Application",
       "title": "Steel Tracker",
-      "text": "Lorem ipsum"
+      "text": "Lorem ipsum",
+      "case": {
+        "title_1": "Hes International",
+        "text_1": "Hes blablabla",
+        "title_2": "The process",
+        "text_2": "Trupo is a bold new way for people who work for themselves to get insurance benefits. Their experts are committed to providing each of their customers with a better sense of security and control by recommending the best insurance products for their individual needs. No upselling, no loopholes, just solution",
+        "title_3": "The Result",
+        "text_3": "A very very very pretty design of these components It would make me jealous having something this pretty",
+        "demo": "Click here to preview demo",
+        "goto": "Click here to visit the demo site",
+        "title_4": "Other Cases"
+      }
     },
     "protonise": {
       "client": "Protonise",

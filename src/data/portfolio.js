@@ -44,7 +44,7 @@ export const previewCases = [
 	},
 ]
 
-export const cases = [
+export const portfolio = [
 	{
 		image: form,
 		client: 'projects.form.client',
