@@ -4,7 +4,7 @@ import {clients} from "../../data/clients";
 import styled from '@emotion/styled'
 
 const Wrapper = styled('section')`
-        background-color: ${props => props.theme.clients}; `;
+        background-color: ${props => props.theme.section.clients}; `;
 
 
 function Clients(props) {

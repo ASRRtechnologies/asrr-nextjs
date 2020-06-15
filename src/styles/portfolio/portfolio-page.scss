@@ -84,10 +84,90 @@
   img{
     display: block;
     margin: auto;
-    //max-width: 1200px;
-    //min-width: 300px;
-    //width: 100%;
-    //height: auto;
+    max-width: $max-width;
+    width: 100%;
+    height: auto;
+    min-width: 250px;
+  }
+
+}
+
+.portfolio-page-link{
+  text-align: center;
+  display: block;
+  padding-top: 50px;
+  margin: auto;
+}
+
+.portfolio-page-other-cases{
+  @include size(100%, auto);
+  @include flex(center, center, column);
+  padding: $pc-padding;
+  text{
+    @include flex(center, center, column);
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1550px){
+
+  .portfolio-page-landing-wrapper{
+    img{
+      width: 250px;
+      height: auto;
+    }
+  }
+
+  .portfolio-page-result{
+    img{
+      max-width: 800px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1200px){
+  .portfolio-page {
+   text{
+     margin-bottom: 50px;
+     @include flex(center, center, column);
+     text-align: center;
+   }
+  }
+  .portfolio-page-landing-wrapper{
+    @include flex(center, center, column);
+  }
+
+  .portfolio-page-result .portfolio-page-work, .portfolio-page-other-cases{
+    min-height: 100vh;
+    @include flex(center, center, column);
+  }
+
+  .portfolio-page-landing, .portfolio-page-work, .portfolio-page-result {
+    padding: $tablet-padding;
+  }
+
+  .portfolio-page-landing{
+    padding-top: 150px;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+  .portfolio-page-landing-wrapper{
+    @include flex(center, center, column);
+  }
+
+  .portfolio-page-landing, .portfolio-page-work, .portfolio-page-result, .portfolio-page-other-cases {
+    padding: $mob-padding;
+  }
+
+  .portfolio-page-slider-card{
+    padding: 0;
+  }
+
+  .portfolio-page-landing{
+    padding-top: 100px;
   }
 
 }

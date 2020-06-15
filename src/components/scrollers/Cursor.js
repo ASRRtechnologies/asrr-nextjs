@@ -57,7 +57,7 @@ class Cursor extends Component {
 	}
 
 	componentDidMount () {
-		this.moveFollowMouse()
+		// this.moveFollowMouse()
 		this.moveMouse()
 	}
 
@@ -69,7 +69,7 @@ class Cursor extends Component {
 						<div ref={this.mouseRef} className={`${this.state.cursor} ${props.mouse}`}>
 							{this.renderText(props.mouse)}
 						</div>
-						<div ref={this.mouseFollowRef} className={`${this.state.cursorFollow} ${props.mouse}`}></div>
+						{/*<div ref={this.mouseFollowRef} className={`${this.state.cursorFollow} ${props.mouse}`}></div>*/}
 					</>
 				}}
 			</MouseContext>

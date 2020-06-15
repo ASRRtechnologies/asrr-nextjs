@@ -11,24 +11,13 @@ const logoDark = "#000000";
 const headerLight = "#ffffff";
 const headerDark = "#0a0a0a";
 
-//Footer colors
-const footerLight = "#ffffff";
-const footerDark = "#0a0a0a";
-
 const dropShadowDark = " 0 3px 6px rgba(43,42,43,1)";
 const dropShadowLight = " 0 3px 6px rgba(0,0,0,0.23)";
 
 const landing = {
     cards:{
-        dark:"#1e1e1e",
-        light:"#ffffff"
-    }
-};
-
-const clients = {
-    background:{
-        dark:"#292929",
-        light:"#F4F4F4"
+        dark:"#131313",
+        light:"#fbfbfb"
     }
 };
 
@@ -41,37 +30,47 @@ const layout = {
 
 const section = {
     portfolio:{
-        dark: "#292929",
-        light: "#f4f4f4"
+        dark: "#1a1a1a",
+        light: "#ffffff"
     },
 
     services:{
         dark: "#131313",
-        light: "#eaebec"
+        light: "#fbfbfb"
     },
 
     contactPreview:{
-        dark: "#292929",
-        light: "#f4f4f4"
-    }
+        dark: "#1a1a1a",
+        light: "#ffffff"
+    },
+
+    clients:{
+        dark:"#131313",
+        light:"#fbfbfb"
+    },
 
 };
 
 const portfolio = {
     landing:{
-        dark: "#292929",
-        light: "#f4f4f4"
+        dark: "#1a1a1a",
+        light: "#ffffff"
+    },
+
+    process:{
+        dark: "#131313",
+        light: "#fbfbfb"
     },
 
     showcase:{
-        dark: "#131313",
-        light: "#eaebec"
+        dark: "#1a1a1a",
+        light: "#ffffff"
     },
 
-    contactPreview:{
-        dark: "#292929",
-        light: "#f4f4f4"
-    }
+    otherCases:{
+        dark: "#131313",
+        light: "#fbfbfb"
+    },
 
 };
 
@@ -131,17 +130,20 @@ const lightTheme = {
 
     layout: layout.background.light,
 
-    clients: clients.background.light,
 
     section: {
         portfolio: section.portfolio.light,
         services: section.services.light,
         contactPreview: section.contactPreview.light,
+        clients: section.clients.light,
+
     },
 
     portfolio:{
         landing: portfolio.landing.light,
+        process: portfolio.process.light,
         showcase: portfolio.showcase.light,
+        otherCases: portfolio.otherCases.light,
     }
 
 
@@ -168,17 +170,19 @@ const darkTheme = {
 
     layout: layout.background.dark,
 
-    clients: clients.background.dark,
-
     section: {
         portfolio: section.portfolio.dark,
         services: section.services.dark,
         contactPreview: section.contactPreview.dark,
+        clients: section.clients.dark,
+
     },
 
     portfolio:{
         landing: portfolio.landing.dark,
+        process: portfolio.process.dark,
         showcase: portfolio.showcase.dark,
+        otherCases: portfolio.otherCases.dark,
 
     }
 

@@ -11,7 +11,7 @@ function Animation ({delay, animation, children}) {
 			delay: 100,
 		});
 
-	})
+	});
 
 	return (
 		<div data-aos={animation} data-aos-delay={delay} data-aos-anchor-placement="top-center">
