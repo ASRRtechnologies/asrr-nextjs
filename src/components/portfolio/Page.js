@@ -7,6 +7,7 @@ import Section from '../layout/Section'
 import Slider from 'react-slick'
 import styled from '@emotion/styled'
 import Animation from '../animation/Animation'
+import Demo from './Demo'
 
 const Landing = styled('div')`
       background-color: ${props => props.theme.portfolio.landing};
@@ -88,7 +89,8 @@ function Page (props) {
 						</Animation>
 					</text>
 					<Animation animation="fade-up" delay="500">
-						<img src={laptop}/>
+						{/*<img src={laptop}/>*/}
+						<Demo url="https://kind-aryabhata-bca490.netlify.com"/>
 					</Animation>
 				</Section>
 			</section>

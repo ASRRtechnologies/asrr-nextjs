@@ -1,0 +1,105 @@
+@mixin embeddedProject($zoom, $image-width, $image-min-width, $x, $y) {
+
+  .embedded-wrapper {
+    padding: 0;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+
+  .embedded-message{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    opacity: 0.9;
+    background-color: #232323;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    &.inactive{
+      display: none;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+    h3{
+      color: white !important;
+      text-align: center;
+    }
+  }
+
+  .embedded-image {
+    width: $image-width;
+    min-width: $image-min-width;
+    height: auto;
+    max-width: 1200px;
+    //min-width: 300px;
+    //width: 100%;
+  }
+
+  #scaled-frame {
+    z-index: 100;
+    position: absolute;
+    top: 6%;
+    left: 14.5%;
+    width: calc(#{$image-width} * #{$x});
+    min-width: calc(#{$image-min-width} * #{$x});
+    height: calc(#{$image-width} * #{$y});
+    min-height: calc(#{$image-min-width} * #{$y});
+    border: 0;
+  }
+
+  #scaled-frame {
+    zoom: $zoom;
+    -moz-transform: scale($zoom);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale($zoom);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale($zoom);
+    -webkit-transform-origin: 0 0;
+  }
+}
+
+//Very zoomed out
+//@include embeddedProject(0.48, 100%, 300px, 1.5, 1.66);
+
+@include embeddedProject(0.78, 100%, 300px, 0.92, 1.01);
+
+//
+//@media screen and (max-width: 1400px) {
+//  @include embeddedProject(0.40, 30vw, 500px, 5.93, 3.7);
+//}
+//
+//@media screen and (max-width: 1200px) {
+//  .embedded-wrapper {
+//    width: 500px;
+//  }
+//}
+
+//@media screen and (max-width: 600px) {
+//  @include embeddedProject(0.22, 85vw, 200px, 19.53, 12.1);
+//  .embedded-wrapper {
+//    width: 85vw;
+//
+//    h3{
+//      font-size: 16px !important;
+//    }
+//  }
+//}
+
+
+
+//@media screen and (max-width: 600px) {
+//  .embedded-wrapper {
+//    width: 100%;
+//  }
+//
+//  .embedded-image {
+//    min-width: 200px;
+//    width: 100%;
+//  }
+//}
