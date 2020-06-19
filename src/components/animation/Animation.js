@@ -9,12 +9,13 @@ function Animation ({delay, animation, children}) {
 			duration: 600,
 			easing: 'ease-in-sine',
 			delay: 100,
+			once:true
 		});
 
 	});
 
 	return (
-		<div data-aos={animation} data-aos-delay={delay} data-aos-anchor-placement="top-center">
+		<div data-aos={animation} data-aos-delay={delay} data-aos-anchor-placement="top-bottom">
 			{children}
 		</div>
 	)

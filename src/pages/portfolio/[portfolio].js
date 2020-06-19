@@ -1,13 +1,14 @@
 import React from 'react'
-import phone from '#/clients/hes/landing.png'
+import {cases} from "../../data/clients";
+import phone from '../../../public/assets/images/clients/hes/landing.png'
 import laptop from '#/clients/hes/result.png'
 import laptop2 from '#/clients/hes/slider/image1.png'
 import laptop3 from '#/clients/hes/slider/image2.png'
-import Section from '../layout/Section'
+import Section from '@/layout/Section'
 import Slider from 'react-slick'
 import styled from '@emotion/styled'
-import Animation from '../animation/Animation'
-import Demo from './Demo'
+import Animation from '@/animation/Animation'
+import Demo from '@/portfolio/Demo'
 import Preview from "@/contact/Preview";
 import ReadMore from "@/text/ReadMore";
 import useI18n from "../../hooks/use-i18n";
@@ -28,8 +29,7 @@ const OtherCases = styled('div')`
       background-color: ${props => props.theme.portfolio.otherCases};
 `
 
-function Page({demo}) {
-
+export default function Page({data}) {
     const i18n = useI18n();
 
     const settings = {
@@ -50,6 +50,7 @@ function Page({demo}) {
         ]
     };
 
+
     return (
         <div className="portfolio-page">
             <Landing className="portfolio-page-landing">
@@ -57,19 +58,12 @@ function Page({demo}) {
                 <div className="portfolio-page-landing-wrapper">
                     <text>
                         <Animation animation="fade-up" delay="300">
-                            <h2>{i18n.t('projects.hes.case.title_1')}</h2>
-                            <p>Trupo is a bold new way for people who work for themselves to get insurance benefits.
-                                Their
-                                experts are committed to providing each of their customers with a better sense of
-                                security
-                                and
-                                control by recommending the best insurance products for their individual needs. No
-                                upselling, no
-                                loopholes, just solutions.</p>
+                            <h2>{i18n.t(data.title_1)}</h2>
+                            <p>{i18n.t(data.text_1)}</p>
                         </Animation>
                     </text>
                     <Animation animation="fade-up" delay="500">
-                        <img alt="image" src={phone}/>
+                        <img alt="image" src={data.landing}/>
                     </Animation>.
                 </div>
             </Landing>
@@ -78,28 +72,19 @@ function Page({demo}) {
                 <Section>
                     <text>
                         <Animation animation="fade-up" delay="300">
-                            <h2>The process</h2>
-                            <p>Trupo is a bold new way for people who work for themselves to get insurance benefits.
-                                Their
-                                experts are committed to providing each of their customers with a better sense of
-                                security
-                                and
-                                control by recommending the best insurance products for their individual needs. No
-                                upselling, no
-                                loopholes, just solutions.</p>
+                            <h2>{i18n.t(data.title_2)}</h2>
+                            <p>{i18n.t(data.text_2)}</p>
                         </Animation>
                     </text>
                     <Animation animation="fade-up" delay="500">
                         <Slider {...settings}>
-                            <div className="portfolio-page-slider-card no-margin">
-                                <img src={laptop2}/>
-                            </div>
-                            <div className="portfolio-page-slider-card">
-                                <img src={laptop3}/>
-                            </div>
-                            <div className="portfolio-page-slider-card">
-                                <img src={laptop2}/>
-                            </div>
+                            {data.slider.map((d, i) => {
+                                return (
+                                    <div key={d} className={`portfolio-page-slider-card ${i===0 && "no-margin"}`}>
+                                        <img src={d}/>
+                                    </div>
+                                )
+                            })}
                         </Slider>
                     </Animation>
                 </Section>
@@ -109,19 +94,18 @@ function Page({demo}) {
                 <Section>
                     <text>
                         <Animation animation="fade-up" delay="300">
-                            <h2>The Result</h2>
-                            <p>A very very very pretty design of these components It would make me jealous having
-                                something this pretty</p>
+                            <h2>{i18n.t(data.title_3)}</h2>
+                            <p>{i18n.t(data.text_3)}</p>
                         </Animation>
                     </text>
                     <Animation animation="fade-up" delay="500">
-                        {demo ? (<>
-                                <Demo url="https://kind-aryabhata-bca490.netlify.com"/>
-                                <a className="portfolio-page-link link" url="https://kind-aryabhata-bca490.netlify.com">Or
+                        {data.demo ? (<>
+                                <Demo url={data.url}/>
+                                <a className="portfolio-page-link link" url={data.url}>Or
                                     visit the site</a>
                             </>
 
-                        ) : (<img src={laptop}/>
+                        ) : (<img src={data.result}/>
                         )}
                     </Animation>
                 </Section>
@@ -147,4 +131,20 @@ function Page({demo}) {
     )
 }
 
-export default Page
+export async function getStaticProps(context) {
+
+    return {
+        props: {
+            data: cases.filter((data => cases.id === context.params.name))[0]
+        }, // will be passed to the page component as props
+    }
+}
+
+export async function getStaticPaths() {
+    return {
+        paths: [
+            {params: {portfolio: "hes"}} // See the "paths" section below
+        ],
+        fallback: false // See the "fallback" section below
+    };
+}
