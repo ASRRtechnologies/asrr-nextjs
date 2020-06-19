@@ -3,6 +3,7 @@ import Section from '../layout/Section'
 import Card from './Card'
 import Title from '../text/Title'
 import { portfolio, disciplines } from '../../data/portfolio'
+import { cases } from '../../data/cases'
 import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
 
@@ -16,7 +17,7 @@ function Portfolio () {
 	const [data, setData] = useState([])
 
 	useEffect(() => {
-		setData(portfolio)
+		setData(cases)
 	}, [])
 
 	const toggle = (discipline, activeIndex) => {
@@ -39,8 +40,8 @@ function Portfolio () {
 				<Title big title={'portfolio.title.header'} text="portfolio.title.text"/>
 				<div className="portfolio off-balance">
 					{data.map(
-						({ image, discipline, title, client }, i) => <Card client={client} key={title + i} img={image}
-																		   discipline={discipline} title={title}/>)}
+						( {card} , i) => <Card client={card.client} key={card.title + i} img={card.image}
+																		   discipline={card.discipline} title={card.title}/>)}
 				</div>
 			</Section>
 		</Wrapper>

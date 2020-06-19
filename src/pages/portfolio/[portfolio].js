@@ -1,16 +1,11 @@
 import React from 'react'
-import {cases} from "../../data/clients";
-import phone from '../../../public/assets/images/clients/hes/landing.png'
-import laptop from '#/clients/hes/result.png'
-import laptop2 from '#/clients/hes/slider/image1.png'
-import laptop3 from '#/clients/hes/slider/image2.png'
+import {cases} from "../../data/cases";
 import Section from '@/layout/Section'
 import Slider from 'react-slick'
 import styled from '@emotion/styled'
 import Animation from '@/animation/Animation'
 import Demo from '@/portfolio/Demo'
 import Preview from "@/contact/Preview";
-import ReadMore from "@/text/ReadMore";
 import useI18n from "../../hooks/use-i18n";
 
 const Landing = styled('div')`

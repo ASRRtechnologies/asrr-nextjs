@@ -77,4 +77,4 @@ export const portfolio = [
 		discipline: 'projects.nwo.discipline',
 		text: 'projects.nwo.text',
 	},
-]
+];
