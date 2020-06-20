@@ -35,6 +35,24 @@
       "card-2": {
         "type": "BIM",
         "title": "Revit API Automation"
+      },
+      "cards": {
+        "teams": {
+          "sector": "Scaleable",
+          "title": "IT Teams"
+        },
+        "hardware": {
+          "sector": "Hardware",
+          "title": "Custom Servers"
+        },
+        "full-stack": {
+          "sector": "Full-Stack Software",
+          "title": "Development"
+        },
+        "adaptive": {
+          "sector": "Adaptive",
+          "title": "Add-Ons"
+        }
       }
 
     },
