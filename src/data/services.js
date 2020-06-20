@@ -11,29 +11,29 @@ export const disciplines = [
 
 export const previewServices = [
 	{
+		title: 'service-cards.power-bi.title',
+		text: 'service-cards.power-bi.text',
+	},
+	{
 		title: 'service-cards.web-applications.title',
 		text: 'service-cards.web-applications.text',
-	},
-	{
-		title: 'service-cards.data-analytics.title',
-		text: 'service-cards.data-analytics.text',
-	},
-	{
-		title: 'service-cards.servers.title',
-		text: 'service-cards.servers.text',
-	},
-	{
-		title: 'service-cards.consultancy.title',
-		text: 'service-cards.consultancy.text',
 	},
 	{
 		title: 'service-cards.back-end.title',
 		text: 'service-cards.back-end.text',
 	},
 	{
-		title: 'service-cards.power-bi.title',
-		text: 'service-cards.power-bi.text',
-	}
+		title: 'service-cards.consultancy.title',
+		text: 'service-cards.consultancy.text',
+	},
+	{
+		title: 'service-cards.servers.title',
+		text: 'service-cards.servers.text',
+	},
+	{
+		title: 'service-cards.data-analytics.title',
+		text: 'service-cards.data-analytics.text',
+	},
 ]
 
 export const services = [
@@ -42,6 +42,10 @@ export const services = [
 		text: 'service-cards.web-applications.text',
 	},
 	{
+		title: 'service-cards.back-end.title',
+		text: 'service-cards.back-end.text',
+	},
+	{
 		title: 'service-cards.data-analytics.title',
 		text: 'service-cards.data-analytics.text',
 	},
@@ -52,10 +56,6 @@ export const services = [
 	{
 		title: 'service-cards.consultancy.title',
 		text: 'service-cards.consultancy.text',
-	},
-	{
-		title: 'service-cards.back-end.title',
-		text: 'service-cards.back-end.text',
 	},
 	{
 		title: 'service-cards.power-bi.title',
