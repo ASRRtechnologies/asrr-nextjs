@@ -34,7 +34,7 @@ export const cases = [
         "preview_link": "projects.hes.case.preview_link",
         "title_4": "Other Cases",
         "demo": true,
-        "url": "https://www.google.com",
+        "url": "https://kind-aryabhata-bca490.netlify.com",
         "card":{
             "image": hesCase,
             "client": 'projects.hes.client',
