@@ -1,6 +1,6 @@
 import React from 'react';
 import Landing from "@/landing/Landing"
-import {cases} from "../../data/cases";
+import {cases, clients} from "../../data/cases";
 import styled from '@emotion/styled'
 
 const Wrapper = styled('section')`
@@ -10,7 +10,7 @@ const Wrapper = styled('section')`
 function Clients(props) {
     return (
             <Wrapper className="clients">
-                {cases.map((d, i) => <img key={d.alt + i} src={d.image} alt={d.alt}/>)}
+                {clients.map((d, i) => <img key={d.alt + i} src={d.image} alt={d.alt}/>)}
             </Wrapper>
     );
 }

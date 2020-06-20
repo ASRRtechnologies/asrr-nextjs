@@ -33,7 +33,7 @@ export const previewServices = [
 	{
 		title: 'service-cards.data-analytics.title',
 		text: 'service-cards.data-analytics.text',
-	},
+	}
 ]
 
 export const services = [
