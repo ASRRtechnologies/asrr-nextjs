@@ -70,7 +70,7 @@ export const cases = [
         }
     },
     {
-        "id": "form",
+        "id": "nwo",
         "landing": hesLanding,
         "slider": [hesImage, hesImage2],
         "result": hesResult,

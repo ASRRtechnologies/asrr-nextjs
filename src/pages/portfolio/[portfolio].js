@@ -137,7 +137,9 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
     return {
         paths: [
-            {params: {portfolio: "hes"}} // See the "paths" section below
+            {params: {portfolio: "hes"}}, // See the "paths" section below
+            {params: {portfolio: "form"}}, // See the "paths" section below
+            {params: {portfolio: "nwo"}}, // See the "paths" section below
         ],
         fallback: false // See the "fallback" section below
     };
