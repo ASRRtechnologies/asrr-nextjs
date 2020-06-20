@@ -25,11 +25,11 @@ class Cursor extends Component {
 		})
 
 		document.addEventListener('mousedown', e => {
-			this.setState({ cursor: 'cursor-follow active' })
+			this.setState({ cursorFollow: 'cursor-follow active' })
 		})
 
 		document.addEventListener('mouseup', e => {
-			this.setState({ cursor: 'cursor-follow' })
+			this.setState({ cursorFollow: 'cursor-follow' })
 		})
 	}
 
@@ -57,7 +57,7 @@ class Cursor extends Component {
 	}
 
 	componentDidMount () {
-		this.moveFollowMouse()
+		// this.moveFollowMouse()
 		this.moveMouse()
 	}
 
@@ -69,7 +69,7 @@ class Cursor extends Component {
 						<div ref={this.mouseRef} className={`${this.state.cursor} ${props.mouse}`}>
 							{this.renderText(props.mouse)}
 						</div>
-						<div ref={this.mouseFollowRef} className={`${this.state.cursorFollow} ${props.mouse}`}></div>
+						{/*<div ref={this.mouseFollowRef} className={`${this.state.cursorFollow} ${props.mouse}`}></div>*/}
 					</>
 				}}
 			</MouseContext>

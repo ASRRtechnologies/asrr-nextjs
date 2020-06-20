@@ -14,8 +14,8 @@ const Wrapper = styled('div')`
         `;
 
 const Cards = styled('div')`
-        background-color: ${props => props.theme.header.background};
-        border-color: ${props => props.theme.header.background};
+        background-color: ${props => props.theme.landing.cards};
+        border-color: ${props => props.theme.landing.cards};
         border-style: solid;
         border-width: 2px; 
         `;
