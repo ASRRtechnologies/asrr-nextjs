@@ -100,7 +100,7 @@ export default function Page({data}) {
                                     visit the site</a>
                             </>
 
-                        ) : (<img src={data.result}/>
+                        ) : (<img className="portfolio-result-image" src={data.result}/>
                         )}
                     </Animation>
                 </Section>
@@ -116,7 +116,6 @@ export default function Page({data}) {
                     <Animation animation="fade-up" delay="500">
                         <div className="portfolio-page-cases">
                             <div></div>
-
                         </div>
                     </Animation>
                 </Section>

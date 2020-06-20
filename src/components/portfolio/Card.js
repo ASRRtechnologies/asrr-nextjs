@@ -5,7 +5,6 @@ import useI18n from '../../hooks/use-i18n'
 function Card ({ img, title, discipline, client }) {
 	const i18n = useI18n()
 	const mouse = useContext(MouseContext)
-
 	return (
 		<div onMouseOver={() => {mouse.onHover('projects')}} onMouseLeave={() => {mouse.onLeave()}} className="card">
 			<div className="image">

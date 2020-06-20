@@ -85,7 +85,7 @@
     text-align: center;
   }
 
-  img{
+  .portfolio-result-image{
     display: block;
     margin: auto;
     max-width: $max-width;
@@ -123,7 +123,7 @@
   }
 
   .portfolio-page-result{
-    img{
+    .portfolio-result-image{
       max-width: 800px;
     }
   }

@@ -5,7 +5,7 @@
     overflow: hidden;
     width: auto;
     height: auto;
-    position: relative;
+    @include flex(center, center, row);
   }
 
   .embedded-message {
@@ -14,8 +14,9 @@
     width: 72.2%;
     height: 79.2%;
     top: 5.9%;
-    left: 14.3%;
+    left: 11%;
     opacity: 0.95;
+    opacity: 0;
     background-color: #232323;
     justify-content: center;
     align-items: center;
@@ -42,17 +43,20 @@
     max-width: 1200px;
     //min-width: 300px;
     //width: 100%;
+    position: relative;
+
   }
 
   #scaled-frame {
     z-index: 100;
     position: absolute;
-    top: 6%;
+    top: 5.3%;
     left: 14.5%;
     width: calc(#{$image-width} * #{$x});
     min-width: calc(#{$image-min-width} * #{$x});
-    height: calc(#{$image-width} * #{$y});
-    min-height: calc(#{$image-min-width} * #{$y});
+    //height: calc(#{$image-width} * #{$y});
+    //min-height: calc(#{$image-min-width} * #{$y});
+    height:91.5%;
     border: 0;
   }
 
@@ -70,43 +74,29 @@
 //Very zoomed out
 //@include embeddedProject(0.48, 100%, 300px, 1.5, 1.66);
 
-@include embeddedProject(0.78, 100%, 300px, 0.92, 1.01);
+@include embeddedProject(0.78, 100%, 300px, 0.925, 0.915);
 
-@media screen and (max-width: 1550px) {
-  @include embeddedProject(0.78, 70%, 200px, 1.0, 1.45);
-  #scaled-frame {
-    left:23%;
-  }
-
-  .embedded-message{
-    width: 55%;
-    height: 80%;
-    top: 5.5%;
-    left: 22.8%;
-  }
-
+@media screen and (max-width: 1500px) {
+  @include embeddedProject(0.58, 90%, 300px, 1.35, 1.35);
+  #scaled-frame{
+    left: 15.4%;
+    height: 121%;
+   }
 }
-//
-//@media screen and (max-width: 800px) {
-//  @include embeddedProject(0.78, 70%, 200px, 1.0, 1.45);
-//  #scaled-frame {
-//    left:23%;
-//  }
-//}
 
-@media screen and (max-width: 600px) {
-  //@include embeddedProject(0.78, 100%, 200px, 0.99, 1.0);
-  //#scaled-frame {
-  //  left:12%;
-  //}
+@media screen and (max-width: 1200px) {
+  @include embeddedProject(0.48, 90%, 300px, 1.625, 1.33);
+  #scaled-frame{
+    height: 144%;
+  }
 }
+
 
 @media screen and (max-width: 600px) {
   @include embeddedProject(0.35, 100%, 200px, 2.25, 2.25);
   #scaled-frame {
     left:11.5%;
   }
-
   .embedded-message{
     width: 78.8%;
     height: 80%;
