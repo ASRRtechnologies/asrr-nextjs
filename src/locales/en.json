@@ -72,7 +72,7 @@
     "preview": {
       "title": {
         "header": "Portfolio",
-        "text": "Lorem ipsum much shorter text enter here"
+        "text": "Take a look at some of our past projects"
       }
     }
   },
@@ -137,14 +137,14 @@
     },
     "nwo": {
       "client": "NWO",
-      "discipline": "Web Application",
-      "title": "Remote Desktop Server",
+      "discipline": "Custom Server | Process optimization ",
+      "title": "Secure Remote Desktop Environment",
       "text": "Lorem ipsum"
     },
     "hes": {
       "client": "Hes International",
-      "discipline": "Web Application",
-      "title": "Steel Tracker",
+      "discipline": "Web Application | BI",
+      "title": "Real Time Steel Tracker",
       "text": "Lorem ipsum",
       "case": {
         "title_1": "Hes International",
@@ -161,18 +161,18 @@
     "protonise": {
       "client": "Protonise",
       "discipline": "Web Application",
-      "title": "React Webapplication",
-      "text": "Lorem ipsum ipsum"
+      "title": "A stunning new website",
+      "text": "A stunning new website"
     },
     "form": {
-      "client": "Form",
-      "discipline": "Bim",
-      "title": "Housing configurators",
+      "client": "FORM Architecture & Engineering",
+      "discipline": "Automated BIM Configurator | Full-Stack",
+      "title": "Reinventing the housing industry",
       "text": "Lorem ipsum form"
     },
     "form-dashboard": {
       "client": "Form",
-      "discipline": "Web Application",
+      "discipline": "Progressive Web App",
       "title": "Configurator Dashboard",
       "text": "Lorem ipsum fr"
     }
@@ -180,23 +180,23 @@
   "service-cards": {
     "web-applications": {
       "title": "Web Applications",
-      "text": "Lorem ipsum nog langere lorem ipsum",
+      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
       "preview": {
         "title": "Web Application",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+        "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
       }
     },
     "data-analytics": {
-      "title": "Data Analytics",
-      "text": "Lorem ipsum nog langere lorem ipsum",
+      "title": "Data Analytics | BI",
+      "text": "Analysing data correctly can save any company from excess costs and inefficiency. Using our BI analytics on one of your existing or a new database, ASRR will provide insights into key aspects of your data.",
       "preview": {
         "title": "Data Analytics",
         "text": "Lorem ipsum dit is de preview aar wat uitlegen"
       }
     },
     "servers": {
-      "title": "Servers",
-      "text": "Lorem ipsum nog langere lorem ipsum",
+      "title": "Servers | Hardware",
+      "text": "Slow and old systems can cause serious hinder in both security and efficiency. That's why we build our servers from scratch, selecting the right parts for the job at hand. Using this we can create remote desktop environments, data storage servers and machines optimized for heavy rendering.",
       "preview": {
         "title": "Servers",
         "text": "Lorem ipsum dit is de preview aar wat uitlegen"
@@ -204,7 +204,7 @@
     },
     "consultancy": {
       "title": "Consultancy",
-      "text": "Lorem ipsum nog langere lorem ipsum",
+      "text": "Not sure what you need? ASRR can send an expert to analyse your company processes and propose a solution and fitting advice. The proposed solution can then be picke dup by ",
       "preview": {
         "title": "Consultancy",
         "text": "Lorem ipsum dit is de preview aar wat uitlegen"
@@ -212,15 +212,15 @@
     },
     "back-end": {
       "title": "Back-end Applications",
-      "text": "Lorem ipsum nog langere lorem ipsum",
+      "text": "Using our microservice architecture, we can quickly create robust applications. We have an extensive library of over-engineered microservices that form a good basis for any complex application.",
       "preview": {
         "title": "Consultancy",
         "text": "Lorem ipsum dit is de preview aar wat uitlegen"
       }
     },
     "power-bi": {
-      "title": "Power Bi",
-      "text": "Lorem ipsum nog langere lorem ipsum",
+      "title": "Scalable Teams",
+      "text": "ASRR offers dynamic, multi-disciplinary IT teams that can be hired at short notice. The team will adapt to your needs, ensuring you have the right person at the right place, every time.",
       "preview": {
         "title": "Power Bi",
         "text": "Lorem ipsum dit is de preview aar wat uitlegen"
