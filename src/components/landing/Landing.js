@@ -14,17 +14,17 @@ const Wrapper = styled('div')`
         `;
 
 const Cards = styled('div')`
-        background-color: ${props => props.theme.header.background};
-        border-color: ${props => props.theme.header.background};
+        background-color: ${props => props.theme.landing.cards};
+        border-color: ${props => props.theme.landing.cards};
         border-style: solid;
         border-width: 2px; 
         `;
 
 const cards = [
-    {sector: "BIM", title: "Revit Apps", url: "/construction"},
-    {sector: "General", title: "Server", url: "/construction"},
-    {sector: "Construction", title: "Construction", url: "/construction"},
-    {sector: "Construction", title: "Construction", url: "/construction"},
+    {sector: "BIM", title: "teams", url: "/construction"},
+    {sector: "General", title: "hardware", url: "/construction"},
+    {sector: "Construction", title: "full-stack", url: "/construction"},
+    {sector: "Construction", title: "adaptive", url: "/construction"},
 ];
 
 function Landing({title, text, image, boxes, projects}) {
@@ -121,8 +121,8 @@ function Landing({title, text, image, boxes, projects}) {
                                          className={`landing-box ${activeCard.index !== i && hover && "blur"}`}
                                          onClick={() => navigate(data.url)}>
                                 <h5>0{i+1}</h5>
-                                <h4>{data.sector}</h4>
-                                <h3>{data.title}</h3>
+                                <h4>{i18n.t('home.landing.cards.' + data.title + '.sector')}</h4>
+                                <h3>{i18n.t('home.landing.cards.' + data.title + '.title')}</h3>
                             </Cards>)
                         })}
                     </div>

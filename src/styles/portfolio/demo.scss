@@ -1,0 +1,106 @@
+@mixin embeddedProject($zoom, $image-width, $image-min-width, $x, $y) {
+
+  .embedded-wrapper {
+    padding: 0;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    @include flex(center, center, row);
+  }
+
+  .embedded-message {
+    position: absolute;
+    z-index: 1000;
+    width: 72.2%;
+    height: 79.2%;
+    top: 5.9%;
+    left: 11%;
+    opacity: 0.95;
+    opacity: 0;
+    background-color: #232323;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    &.inactive {
+      display: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    h3 {
+      color: white !important;
+      text-align: center;
+    }
+  }
+
+  .embedded-image {
+    width: $image-width;
+    min-width: $image-min-width;
+    height: auto;
+    max-width: 1200px;
+    //min-width: 300px;
+    //width: 100%;
+    position: relative;
+
+  }
+
+  #scaled-frame {
+    z-index: 100;
+    position: absolute;
+    top: 5.3%;
+    left: 14.5%;
+    width: calc(#{$image-width} * #{$x});
+    min-width: calc(#{$image-min-width} * #{$x});
+    //height: calc(#{$image-width} * #{$y});
+    //min-height: calc(#{$image-min-width} * #{$y});
+    height:91.5%;
+    border: 0;
+  }
+
+  #scaled-frame {
+    zoom: $zoom;
+    -moz-transform: scale($zoom);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale($zoom);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale($zoom);
+    -webkit-transform-origin: 0 0;
+  }
+}
+
+//Very zoomed out
+//@include embeddedProject(0.48, 100%, 300px, 1.5, 1.66);
+
+@include embeddedProject(0.78, 100%, 300px, 0.925, 0.915);
+
+@media screen and (max-width: 1500px) {
+  @include embeddedProject(0.58, 90%, 300px, 1.35, 1.35);
+  #scaled-frame{
+    left: 15.4%;
+    height: 121%;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+  @include embeddedProject(0.48, 90%, 300px, 1.625, 1.33);
+  #scaled-frame{
+    height: 144%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  @include embeddedProject(0.35, 100%, 200px, 2.25, 2.25);
+  #scaled-frame {
+    left:11.5%;
+  }
+  .embedded-message{
+    width: 78.8%;
+    height: 80%;
+    left: 11.5%;
+  }
+
+}

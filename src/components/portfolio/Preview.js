@@ -3,7 +3,7 @@ import Section from '../layout/Section'
 import Card from './Card'
 import ReadMore from '../text/ReadMore'
 import Title from '../text/Title'
-import { previewCases } from '../../data/cases'
+import { previewCases } from '../../data/portfolio'
 import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
 

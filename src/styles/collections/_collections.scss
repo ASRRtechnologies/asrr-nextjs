@@ -1,6 +1,9 @@
 //@import "fonts";
 @import "mixins";
 @import "variables";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "~aos/dist/aos.css";
 
 @import "../header/header";
 @import "../header/hamburger";
@@ -9,6 +12,7 @@
 @import "../landing/landing";
 @import "../layout/layout";
 @import "../animation/transition-animation";
+@import "../animation/link-animation";
 @import "../scrollers/cursor";
 
 @import "../text/text";
@@ -17,6 +21,8 @@
 //Portfolio
 @import "../portfolio/portfolio";
 @import "../portfolio/cards";
+@import "../portfolio/demo";
+@import "../portfolio/portfolio-page";
 
 //Services
 @import "../services/cards";

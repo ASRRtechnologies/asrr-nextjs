@@ -1,7 +1,7 @@
 .cursor {
   position: fixed;
-  width: 15px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: $primary-color;
   z-index: $cursor-zIndex;
@@ -13,14 +13,20 @@
 
   p{
     margin-bottom: 2px;
-    transform: scale(0.15);
+    transform: scale(0.30);
     text-align: center;
     color:white !important;
   }
 
   &.projects{
-    transform: scale(6);
+    transform: scale(4);
     transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
+  }
+
+  &.big{
+    transform: scale(2);
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
+    opacity: 0.8;
   }
 
   &.disabled{
@@ -48,6 +54,11 @@
   &.projects{
     transform: scale(0);
     transition: 0.4s ease-in-out transform;
+  }
+
+  &.active{
+    transform: scale(0.5);
+    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
   }
 
   &.disabled{

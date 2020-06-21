@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Section from '../layout/Section'
 import Card from './Card'
 import Title from '../text/Title'
-import { cases, disciplines } from '../../data/cases'
+import { portfolio, disciplines } from '../../data/portfolio'
+import { cases } from '../../data/cases'
 import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
 
@@ -21,9 +22,9 @@ function Portfolio () {
 
 	const toggle = (discipline, activeIndex) => {
 		setActive(activeIndex)
-		if (discipline === 'all') {setData(cases)} else {
+		if (discipline === 'all') {setData(portfolio)} else {
 			//Check if discipline is equal to tag
-			const currentData = cases.filter((obj) => i18n.t(obj.discipline).toLowerCase() === discipline)
+			const currentData = portfolio.filter((obj) => i18n.t(obj.discipline).toLowerCase() === discipline)
 			setData(currentData)
 		}
 	}
@@ -39,8 +40,8 @@ function Portfolio () {
 				<Title big title={'portfolio.title.header'} text="portfolio.title.text"/>
 				<div className="portfolio off-balance">
 					{data.map(
-						({ image, discipline, title, client }, i) => <Card client={client} key={title + i} img={image}
-																		   discipline={discipline} title={title}/>)}
+						( {card} , i) => <Card client={card.client} key={card.title + i} img={card.image}
+																		   discipline={card.discipline} title={card.title}/>)}
 				</div>
 			</Section>
 		</Wrapper>

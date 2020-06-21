@@ -6,11 +6,11 @@ const provider = ({children}) => {
 
 	const onHover = (name) => {
 		setState({...state, mouse:name})
-	}
+	};
 
 	const onLeave = () => {
 		setState({...state, mouse:""})
-	}
+	};
 
 	const [state, setState] = useState({
 		mouse:"",

@@ -43,6 +43,7 @@ function Overlay () {
 							: (
 								<motion.h1 className="animation-text" animate={animation.logo.animate}
 										   initial={animation.logo.initial}>
+									{console.log(router.pathname)}
 									{router.pathname.split('/')}
 								</motion.h1>
 							)}
