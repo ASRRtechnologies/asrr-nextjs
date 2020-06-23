@@ -36,6 +36,7 @@ export const cases = [
         "demo": true,
         "url": "https://kind-aryabhata-bca490.netlify.com",
         "card":{
+            "route":"hes",
             "image": hesCase,
             "client": 'projects.hes.client',
             "title": 'projects.hes.title',
@@ -61,6 +62,7 @@ export const cases = [
         "demo": true,
         "url": "https://www.google.com",
         "card":{
+            "route":"form",
             "image": hesCase,
             "client": 'projects.form.client',
             "title": 'projects.form.title',
@@ -86,6 +88,7 @@ export const cases = [
         "demo": false,
         "url": "https://www.google.com",
         "card":{
+            "route":"nwo",
             "image": hesCase,
             "client": 'projects.nwo.client',
             "title": 'projects.nwo.title',
@@ -111,6 +114,7 @@ export const cases = [
         "demo": false,
         "url": "https://www.google.com",
         "card":{
+            "route":"esp",
             "image": hesCase,
             "client": 'projects.esp.client',
             "title": 'projects.esp.title',
@@ -136,6 +140,7 @@ export const cases = [
         "demo": false,
         "url": "https://www.google.com",
         "card":{
+            "route":"protonise",
             "image": hesCase,
             "client": 'projects.protonise.client',
             "title": 'projects.protonise.title',
@@ -161,6 +166,7 @@ export const cases = [
         "demo": false,
         "url": "https://www.google.com",
         "card":{
+            "route":"aapjes",
             "image": hesCase,
             "client": 'projects.aapjes.client',
             "title": 'projects.aapjes.title',

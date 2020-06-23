@@ -125,8 +125,8 @@
       }
     },
     "cta": {
-      "curious": "Want to know what ASRR can mean for you company?",
-      "touch": "Get in Touch!"
+      "curious": "Interested in our services?",
+      "touch": "Lets get in touch!"
     }
   },
   "projects":{
@@ -142,13 +142,13 @@
       "text": "Lorem ipsum"
     },
     "hes": {
-      "client": "Hes International",
+      "client": "HES International",
       "discipline": "Web Application | BI",
       "title": "Real Time Steel Tracker",
       "text": "Lorem ipsum",
       "case": {
-        "title_1": "Hes International",
-        "text_1": "Hes blablabla",
+        "title_1": "HES International",
+        "text_1": "HES blablabla",
         "title_2": "The process",
         "text_2": "Trupo is a bold new way for people who work for themselves to get insurance benefits. Their experts are committed to providing each of their customers with a better sense of security and control by recommending the best insurance products for their individual needs. No upselling, no loopholes, just solution",
         "title_3": "The Result",

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import {cases} from "../../data/cases";
 import Section from '@/layout/Section'
 import Slider from 'react-slick'
@@ -7,6 +7,7 @@ import Animation from '@/animation/Animation'
 import Demo from '@/portfolio/Demo'
 import Preview from "@/contact/Preview";
 import useI18n from "../../hooks/use-i18n";
+import { AnimationContext } from '../../context/animations/AnimationContext'
 
 const Landing = styled('div')`
       background-color: ${props => props.theme.portfolio.landing};
@@ -26,6 +27,8 @@ const OtherCases = styled('div')`
 
 export default function Page({data}) {
     const i18n = useI18n();
+    const animate = useContext(AnimationContext);
+    useEffect(() => {(animate.appLoaded) ? animate.animation.secondLoad() : null;}, []);
 
     const settings = {
         dots: false,
@@ -49,6 +52,8 @@ export default function Page({data}) {
     return (
         <div className="portfolio-page">
             <Landing className="portfolio-page-landing">
+                <h1>{i18n.t(data.title_1)}</h1>
+                <h1>{i18n.t(data.title_1)}</h1>
                 {/*<div className="portfolio-page-back"></div>*/}
                 <div className="portfolio-page-landing-wrapper">
                     <text>
@@ -111,6 +116,7 @@ export default function Page({data}) {
                     <text>
                         <Animation animation="fade-up" delay="300">
                             <h2>Other Cases</h2>
+                            <p>Take a look at other cases we have worked on.</p>
                         </Animation>
                     </text>
                     <Animation animation="fade-up" delay="500">

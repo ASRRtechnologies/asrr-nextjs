@@ -31,7 +31,7 @@ function Portfolio2 () {
 	return (
 				<div className="portfolio row" ref={container}>
 					{data.map(
-						({ image, discipline, title, client }, i) => <Card client={client} key={title + i} img={image}
+						({ image, discipline, title, client }, i) => <Card  client={client} key={title + i} img={image}
 																		   discipline={discipline} title={title}/>)}
 				</div>
 	)

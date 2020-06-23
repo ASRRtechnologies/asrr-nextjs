@@ -26,6 +26,17 @@
   @include flex(center, center, column);
   padding: $pc-padding;
   min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  h1{
+    position: absolute;
+    font-size: 200px;
+    //line-height: 600px;
+    opacity: 0.05;
+    left:50%;
+    transform: translateX(-50%);
+  }
 }
 
 .portfolio-page-landing-wrapper{
