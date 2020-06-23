@@ -11,9 +11,17 @@
   }
 
   //Make label white in footer of email
-  .input-label{
+  //Make label white in footer of email
+  input{
     color:white !important;
+    border-bottom: solid 3px white;
+    margin-bottom: 0;
   }
+
+  .input-container{
+    margin: 0;
+  }
+
 
   h3, h4, p, a {
     color:white !important;

@@ -1,136 +1,182 @@
-$input-field: (
-        'placeholder-color': inherit,
-        'background-color': white,
-        'border-color': #b3b3b3,
-        'border-color-focus': #6d6d6d,
-        'error-color': #f56565,
-        'success-color': #48AD2C,
-        'border-color-success': #48AD2C,
-        'label-color': inherit,
-        'disabled-foreground': #ccc,
-        'disabled-background': #f0f0f0,
-        'padding': 12px 16px,
-        'font-size-input': 20px,
-        'font-size-label': 20px,
-        'border-width': 1px,
-        'border-radius': .25rem,
-        'shadow': unquote('0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)'),
-);
+//$input-field: (
+//        'placeholder-color': #1a1a1a,
+//        'background-color': white,
+//        'border-color': #e2e8f0,
+//        'border-color-focus': #a0aec0,
+//        'error-color': #f56565,
+//        'success-color': #48AD2C,
+//        'border-color-success': #48AD2C,
+//        'label-color': black,
+//        'disabled-foreground': #ccc,
+//        'disabled-background': #f0f0f0,
+//        'padding': 12px 16px,
+//        'font-size-input': 20px,
+//        'font-size-label': 20px,
+//        'border-width': 1px,
+//        'border-radius': .25rem,
+//        'shadow': unquote('0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06)'),
+//);
+//
+//.input-container {
+//  display: inline-flex;
+//  flex-wrap: wrap;
+//  position: relative;
+//  width: 100%;
+//  transition: all 200ms;
+//  margin: 20px 0;
+//
+//  textarea {
+//    min-height: 160px;
+//    resize: none;
+//    width: 100%;
+//  }
+//
+//  .input {
+//    max-width: 100%;
+//    overflow-x: hidden;
+//    width: 100%;
+//    height: 50px;
+//    transition: all 200ms ease-in-out;
+//    box-sizing: border-box;
+//    padding: 8px 12px;
+//    box-shadow: none;
+//    outline: 0;
+//    text-align: inherit;
+//    font-family: inherit;
+//    font-weight: bold;
+//    border-bottom: 4px solid white;
+//    background-color: transparent;
+//    color: #1a1a1a;
+//    outline: none;
+//
+//    &:focus {
+//      //border: 2px solid map-get($input-field, 'border-color-focus');
+//      transition: all 200ms ease-in-out;
+//    }
+//
+//    &::placeholder {
+//      overflow: hidden;
+//      white-space: nowrap;
+//      text-overflow: ellipsis;
+//      color: #1a1a1a;
+//    }
+//
+//    &.success {
+//      color: map-get($input-field, 'success-color');
+//      border-color: lighten(map-get($input-field, 'success-color'), 30%);
+//      background-color: lighten(map-get($input-field, 'success-color'), 50%);
+//
+//      &:focus {
+//        border-color: lighten(map-get($input-field, 'success-color'), 10%);
+//      }
+//
+//      &::placeholder {
+//        color: map-get($input-field, 'success-color');
+//      }
+//    }
+//
+//    &.error {
+//      color: map-get($input-field, 'error-color');
+//      border-color: lighten(map-get($input-field, 'error-color'), 20%);
+//      background-color: lighten(map-get($input-field, 'error-color'), 28%);
+//
+//      &:focus {
+//        border-color: lighten(map-get($input-field, 'error-color'), 5%);
+//      }
+//
+//
+//      &::placeholder {
+//        color: map-get($input-field, 'error-color');
+//      }
+//    }
+//
+//    &.disabled {
+//      color: map-get($input-field, 'disabled-foreground');
+//      border-color: map-get($input-field, 'disabled-background');
+//      background-color: map-get($input-field, 'disabled-background');
+//      pointer-events: none;
+//      box-shadow: none;
+//
+//
+//      &::placeholder {
+//        color: map-get($input-field, 'disabled-foreground');
+//      }
+//    }
+//  }
+//}
+//
+//.input-label {
+//  margin-bottom: 10px;
+//  font-size: 18px;
+//  font-family: inherit;
+//  font-weight: bold;
+//
+//  &.success {
+//    color: map-get($input-field, 'success-color');
+//  }
+//
+//  &.error {
+//    color: map-get($input-field, 'error-color');
+//  }
+//
+//  &.disabled {
+//    color: map-get($input-field, 'disabled-foreground');
+//  }
+//}
+//
+//.no-fill {
+//  input,
+//  textarea {
+//    background-color: white;
+//  }
+//}
 
-.input-container {
-  display: inline-flex;
-  flex-wrap: wrap;
+.input-container{
+  @include size(100%, auto);
   position: relative;
+  margin-bottom: 50px;
+  font-size: inherit;
+}
+
+.input-button{
+  position: absolute;
+  top:-0;
+  right: 0;
+  font-size: inherit;
+  cursor: pointer;
+  z-index: 100;
+}
+
+input, textarea {
   width: 100%;
-  transition: all 200ms;
-  margin: 20px 0;
+  max-width: 400px;
+  height: 30px;
+  display: block;
+  border: none;
+  transition: all 0.3s cubic-bezier(.64, .09, .08, 1);
+  background-color: transparent;
+  position: relative;
 
-  textarea {
-    min-height: 160px;
-    resize: none;
-    width: 100%;
+  &.input-button-padding{
+    padding: 0 75px 0 0;
   }
 
-  &.last{
-    margin: 20px 0 0 0;
+
+  p{
+    margin-bottom: 0;
   }
 
-  .input {
-    max-width: 100%;
-    overflow-x: hidden;
-    width: 100%;
-    height: 50px;
-    transition: all 200ms ease-in-out;
-    box-sizing: border-box;
-    padding: 8px 12px;
-    outline: 0;
-    text-align: inherit;
-    font-family: inherit;
-    font-weight: bold;
-    border: 1px solid map-get($input-field, 'border-color');
-    border-radius: 4px;
-    color: #646464;
+  &::-webkit-input-placeholder {
+    transform: translateY(-5px);
+    font-size: 16px;
+    font-family: Poppins, serif;
+    visibility: visible !important;
+    color:inherit;
+  }
 
-    &:focus {
-      border: 1px solid map-get($input-field, 'border-color-focus');
-      transition: all 200ms ease-in-out;
-    }
-
-    &::placeholder {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      color: inherit;
-    }
-
-    &.success {
-      color: map-get($input-field, 'success-color');
-      border-color: lighten(map-get($input-field, 'success-color'), 30%);
-      background-color: lighten(map-get($input-field, 'success-color'), 50%);
-
-      &:focus {
-        border-color: lighten(map-get($input-field, 'success-color'), 10%);
-      }
-
-      &::placeholder {
-        color: map-get($input-field, 'success-color');
-      }
-    }
-
-    &.error {
-      color: map-get($input-field, 'error-color');
-      border-color: lighten(map-get($input-field, 'error-color'), 20%);
-      background-color: lighten(map-get($input-field, 'error-color'), 28%);
-
-      &:focus {
-        border-color: lighten(map-get($input-field, 'error-color'), 5%);
-      }
-
-
-      &::placeholder {
-        color: map-get($input-field, 'error-color');
-      }
-    }
-
-    &.disabled {
-      color: map-get($input-field, 'disabled-foreground');
-      border-color: map-get($input-field, 'disabled-background');
-      background-color: map-get($input-field, 'disabled-background');
-      pointer-events: none;
-      box-shadow: none;
-
-
-      &::placeholder {
-        color: map-get($input-field, 'disabled-foreground');
-      }
-    }
+  &:focus, &:valid {
+    box-shadow: none;
+    outline: none;
+    background-position: 0 0;
   }
 }
-
-.input-label {
-  margin-bottom: 10px;
-  font-size: 18px;
-  font-family: inherit;
-  font-weight: bold;
-  color:inherit;
-
-  &.success {
-    color: map-get($input-field, 'success-color');
-  }
-
-  &.error {
-    color: map-get($input-field, 'error-color');
-  }
-
-  &.disabled {
-    color: map-get($input-field, 'disabled-foreground');
-  }
-}
-
-.no-fill {
-  input,
-  textarea {
-    background-color: white;
-  }
-}
-

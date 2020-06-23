@@ -98,8 +98,8 @@
   border-bottom: none;
   transition: 300ms ease-in-out all;
 
-  &.blur {
-    filter: blur(1.4px);
+  &.fade {
+    opacity: 0.4;
   }
 }
 

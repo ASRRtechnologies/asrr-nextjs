@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, useRef} from 'react';
 import useI18n from "../../hooks/use-i18n";
 import EN from "../../locales/en";
 import NL from "../../locales/nl";
@@ -8,17 +8,15 @@ const Wrapper = styled('div')`
     box-shadow: ${props => props.theme.header.shadow};
     a{color: ${props => props.theme.fonts.title}!important;};
     background-color: ${props => props.theme.header.background};
-
 `
-
 function Language(props) {
     const i18n = useI18n();
     const [languages, setLanguage] = useState([]);
     const [menuOpen, setMenuOpen ] = useState(false);
+    const node = useRef()
 
     //Set languages to the ones which arent equal to the locale
     // const filterLanguages = () => filterLanguage(languages.filter((x) => x !== i18n.activeLocale));;
-
     const setSelectedLanguage = (language) => {
         console.log(window.localStorage.getItem("language"));
         if (window.localStorage.getItem("language") === "en" || window.localStorage.getItem("language")=== false) {
@@ -44,15 +42,28 @@ function Language(props) {
             window.localStorage.setItem("language", "en");
             setLanguage(["nl"])
         }
-
     };
+
+
+    const handleClick = e => {
+        if (node.current.contains(e.target)) {
+            return
+        }
+        // outside click
+        setMenuOpen(false)
+    }
 
     useEffect(() => {
         setSelectedLanguage();
+        document.addEventListener('mousedown', handleClick)
+
+        return () => {
+            document.removeEventListener('mousedown', handleClick)
+        }
     }, []);
 
     return (
-        <div className="language">
+        <div ref={node} className="language">
             <a onClick={() => setMenuOpen(!menuOpen)}>{i18n.activeLocale.toUpperCase()}</a>
 
             <div onClick={() => setMenuOpen(!menuOpen)} className={`${menuOpen ? "chev is-active" : "chev"}`}>
