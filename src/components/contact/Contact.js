@@ -16,18 +16,16 @@ function Contact ({ big }) {
 	return (
 		<Wrapper className="section-wrapper">
 			<Section>
-				<Title big={big} title={i18n.t('contact.title.header')} text={i18n.t('contact.title.text')}/>
+				<Title big={big} title={'contact.title.header'} text={'contact.title.text'}/>
 				<div className="contact">
 					<form className="form">
-						<Input className="no-margin" name="name" label={i18n.t('contact.form.name.label')} type="text"
-							   required={true} placeholder={i18n.t('contact.form.email.placeholder')}/>
-						<Input name="organization" label={i18n.t('contact.form.organization.label')} type="text"
-							   required={true}
+						<Input className="no-margin" name="name" type="text"
+							   required={true} placeholder={i18n.t('contact.form.name.placeholder')}/>
+						<Input name="organization" type="text" required={true}
 							   placeholder={i18n.t('contact.form.organization.placeholder')}/>
-						<Input name="email" label={i18n.t('contact.form.email.label')} type="email"
+						<Input name="email" type="email"
 							   placeholder={i18n.t('contact.form.email.placeholder')}/>
-						<Input name="message" last textArea={true} label={i18n.t('contact.form.message.label')}
-							   type="text"
+						<Input name="message" last textArea={true} type="text"
 							   required={true} placeholder={i18n.t('contact.form.message.placeholder')}/>
 						<ReadMore margin action>{i18n.t('buttons.submit')}</ReadMore>
 					</form>

@@ -97,8 +97,8 @@
       "title": "Lets get in touch"
     },
     "title": {
-      "header": "Our Contact",
-      "text": "Lorem ipsum much longer text enter here"
+      "header": "Contact",
+      "text": "Let's get in touch and see what asrr has to offer"
     },
     "preview": {
       "title": {
@@ -109,19 +109,19 @@
     "form": {
       "email": {
         "label": "Email*",
-        "placeholder": "email"
+        "placeholder": "Email*"
       },
       "name": {
         "label": "Name*",
-        "placeholder": "name"
+        "placeholder": "Name*"
       },
       "organization": {
         "label": "Organization",
-        "placeholder": "organization"
+        "placeholder": "Organization"
       },
       "message": {
         "label": "Message*",
-        "placeholder": "message"
+        "placeholder": "Message*"
       }
     },
     "cta": {

@@ -118,7 +118,7 @@ function Landing({title, text, image, boxes, projects}) {
                         {cards.map((data, i) => {
                             return (<Cards key={i} onMouseEnter={() => hoverSpecificCard(i)}
                                          onMouseLeave={leaveSpecificCard}
-                                         className={`landing-box ${activeCard.index !== i && hover && "blur"}`}
+                                         className={`landing-box ${activeCard.index !== i && hover && "fade"}`}
                                          onClick={() => navigate(data.url)}>
                                 <h5>0{i+1}</h5>
                                 <h4>{i18n.t('home.landing.cards.' + data.title + '.sector')}</h4>

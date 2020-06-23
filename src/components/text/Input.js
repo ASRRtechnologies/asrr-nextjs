@@ -1,22 +1,27 @@
 import React, {useRef} from 'react';
-import styled from "@emotion/styled";
+import styled from '@emotion/styled'
+
+const InputWrapper = styled(`input`)`
+          color:${props => props.theme.fonts.title}; 
+          border-bottom: solid 3px ${props => props.theme.fonts.title};
+`;
+
+const TextArea = styled(`textarea`)`
+          color:${props => props.theme.fonts.title}; 
+          border-bottom: solid 3px ${props => props.theme.fonts.title};
+`;
 
 function Input(props) {
-
     const placeholderRef = useRef(null);
-    const {hidden, textArea, placeholder, label, className, last, ...rest} = props;
-
-    const Wrapper = styled('section')`
-        color: ${props => props.theme.fonts.title};
-        `;
-
+    const {hidden, textArea, placeholder, label, className, button, action, ...rest} = props;
     return (
-        <Wrapper className={`input-container ${last && "last"}`}>
+        <div className={`input-container`}>
+            {button ? (<p className="input-button" onClick={action}>{button}</p>) : null}
             {textArea ?
                 (
                     <React.Fragment>
                         <label className={`input-label`}>{label}</label>
-                        <textarea {...rest} ref={placeholderRef} className={`input`}
+                        <TextArea {...rest} ref={placeholderRef} className={`${button && "input-button-padding"}`}
                                   onFocus={() => placeholderRef.current.placeholder = " "}
                                   onBlur={() => placeholderRef.current.placeholder = placeholder}
                                   placeholder={placeholder}/>
@@ -25,15 +30,16 @@ function Input(props) {
                 (
                     <React.Fragment>
                         <label className={`input-label`}>{label}</label>
-                        <input {...rest} ref={placeholderRef} className={`input`}
-                               onFocus={() => placeholderRef.current.placeholder = " "}
-                               placeholder={placeholder}
-                               onBlur={() => placeholderRef.current.placeholder = placeholder}/>
+                        <InputWrapper {...rest} ref={placeholderRef} className={`${button && "input-button-padding"}`}
+                                      onFocus={() => placeholderRef.current.placeholder = " "}
+                                      placeholder={placeholder}
+                                      onBlur={() => placeholderRef.current.placeholder = placeholder}/>
                     </React.Fragment>
                 )
             }
-        </Wrapper>
+        </div>
     );
 }
 
 export default Input;
+

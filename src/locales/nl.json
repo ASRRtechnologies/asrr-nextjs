@@ -23,7 +23,7 @@
       "services": "See all Services",
       "portfolio": "See all Projects"
     },
-    "submit": "Submit"
+    "submit": "Verstuur"
   },
   "home": {
     "landing": {
@@ -109,19 +109,19 @@
     "form": {
       "email": {
         "label": "Email*",
-        "placeholder": "email"
+        "placeholder": "Email*"
       },
       "name": {
         "label": "Name*",
-        "placeholder": "name"
+        "placeholder": "Name*"
       },
       "organization": {
         "label": "Organization",
-        "placeholder": "organization"
+        "placeholder": "Organization"
       },
       "message": {
         "label": "Message*",
-        "placeholder": "message"
+        "placeholder": "Message*"
       }
     },
     "cta": {

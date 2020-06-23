@@ -18,8 +18,12 @@
     @include size(100%, 100%);
     max-width: 600px;
 
-    section{
-      &:nth-last-child(1){
+    .input-container:last-of-type {
+      margin: 0;
+    }
+
+    section {
+      &:nth-last-child(1) {
         margin-bottom: 200px;
       }
     }
@@ -49,6 +53,7 @@
     height: calc(100vw - 100px);
     max-width: 450px;
     max-height: 450px;
+    margin-bottom: 50px;
   }
 
 }
@@ -83,7 +88,8 @@
       width: calc(100vw - 50px);
       height: calc(100vw - 50px);
     }
-    p{
+
+    p {
       margin-bottom: 10px;
     }
   }
