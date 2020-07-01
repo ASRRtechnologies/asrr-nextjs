@@ -1,9 +1,13 @@
+//FORM
 import formLogo from "#/clients/form/form-gray.svg"
-import form from '#/clients/form/case-image.jpg'
+import formCase from '#/clients/form/case-image.jpg'
 import protonise from '#/clients/protonise/case-image.jpg'
+
+//NWO
 import nwoCase from '#/clients/nwo/case-image.jpg'
 import nwoLogo from "#/clients/nwo/nwo-gray.svg"
 
+//HES
 import hesLogo from "#/clients/hes/hes-gray.svg"
 import hesLanding from "#/clients/hes/landing.png"
 import hesImage from "#/clients/hes/slider/image1.png"
@@ -36,6 +40,7 @@ export const cases = [
         "demo": true,
         "url": "https://kind-aryabhata-bca490.netlify.com",
         "card":{
+            "route":"hes",
             "image": hesCase,
             "client": 'projects.hes.client',
             "title": 'projects.hes.title',
@@ -61,7 +66,8 @@ export const cases = [
         "demo": true,
         "url": "https://www.google.com",
         "card":{
-            "image": hesCase,
+            "route":"form",
+            "image": formCase,
             "client": 'projects.form.client',
             "title": 'projects.form.title',
             "alt": 'form',
@@ -86,7 +92,8 @@ export const cases = [
         "demo": false,
         "url": "https://www.google.com",
         "card":{
-            "image": hesCase,
+            "route":"nwo",
+            "image": nwoCase,
             "client": 'projects.nwo.client',
             "title": 'projects.nwo.title',
             "alt": 'nwo',
@@ -111,6 +118,7 @@ export const cases = [
         "demo": false,
         "url": "https://www.google.com",
         "card":{
+            "route":"esp",
             "image": hesCase,
             "client": 'projects.esp.client',
             "title": 'projects.esp.title',
@@ -136,6 +144,7 @@ export const cases = [
         "demo": false,
         "url": "https://www.google.com",
         "card":{
+            "route":"protonise",
             "image": hesCase,
             "client": 'projects.protonise.client',
             "title": 'projects.protonise.title',
@@ -161,6 +170,7 @@ export const cases = [
         "demo": false,
         "url": "https://www.google.com",
         "card":{
+            "route":"aapjes",
             "image": hesCase,
             "client": 'projects.aapjes.client',
             "title": 'projects.aapjes.title',

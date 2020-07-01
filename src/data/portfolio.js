@@ -17,6 +17,8 @@ export const previewCases = [
 		alt: 'form',
 		discipline: 'projects.form.discipline',
 		text: 'projects.form.text',
+		id:"form"
+
 	},
 	{
 		image: protonise,
@@ -25,6 +27,7 @@ export const previewCases = [
 		alt: 'form',
 		discipline: 'projects.protonise.discipline',
 		text: 'projects.protonise.text',
+		id:"protonise"
 	},
 	{
 		image: hes,
@@ -33,6 +36,7 @@ export const previewCases = [
 		alt: 'hes',
 		discipline: 'projects.hes.discipline',
 		text: 'projects.hes.text',
+		id:"hes"
 	},
 	{
 		image: nwo,
@@ -41,6 +45,7 @@ export const previewCases = [
 		alt: 'nwo',
 		discipline: 'projects.nwo.discipline',
 		text: 'projects.nwo.text',
+		id:"nwo"
 	},
 ]
 

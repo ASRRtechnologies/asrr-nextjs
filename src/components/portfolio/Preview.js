@@ -19,7 +19,7 @@ function Preview (props) {
 			<Section>
 				<Title title={'portfolio.preview.title.header'} text={'portfolio.preview.title.text'}/>
 				<div className="portfolio">
-					{previewCases.map(({ image, discipline, title, client }) => <Card client={client} img={image} discipline={discipline} title={title}/>)}
+					{previewCases.map(({ image, discipline, title, client, id }) => <Card route={id} client={client} img={image} discipline={discipline} title={title}/>)}
 				</div>
 				<ReadMore margin={true} to="/portfolio">{i18n.t('buttons.see.portfolio')}</ReadMore>
 			</Section>

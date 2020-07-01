@@ -20,7 +20,6 @@ function Language (props) {
 	// const filterLanguages = () => filterLanguage(languages.filter((x) => x !== i18n.activeLocale));;
 
 	const setSelectedLanguage = (language) => {
-		console.log(window.localStorage.getItem('language'))
 		if (window.localStorage.getItem('language') === 'en' || window.localStorage.getItem('language') === false) {
 			i18n.locale('en', EN)
 			setLanguage(['nl'])
