@@ -1,9 +1,13 @@
+//FORM
 import formLogo from "#/clients/form/form-gray.svg"
-import form from '#/clients/form/case-image.jpg'
+import formCase from '#/clients/form/case-image.jpg'
 import protonise from '#/clients/protonise/case-image.jpg'
+
+//NWO
 import nwoCase from '#/clients/nwo/case-image.jpg'
 import nwoLogo from "#/clients/nwo/nwo-gray.svg"
 
+//HES
 import hesLogo from "#/clients/hes/hes-gray.svg"
 import hesLanding from "#/clients/hes/landing.png"
 import hesImage from "#/clients/hes/slider/image1.png"
@@ -63,7 +67,7 @@ export const cases = [
         "url": "https://www.google.com",
         "card":{
             "route":"form",
-            "image": hesCase,
+            "image": formCase,
             "client": 'projects.form.client',
             "title": 'projects.form.title',
             "alt": 'form',
@@ -89,7 +93,7 @@ export const cases = [
         "url": "https://www.google.com",
         "card":{
             "route":"nwo",
-            "image": hesCase,
+            "image": nwoCase,
             "client": 'projects.nwo.client',
             "title": 'projects.nwo.title',
             "alt": 'nwo',
