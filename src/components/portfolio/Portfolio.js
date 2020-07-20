@@ -12,13 +12,13 @@ const Wrapper = styled('div')`
 `
 
 function Portfolio () {
-	const i18n = useI18n()
-	const [active, setActive] = useState(0)
-	const [data, setData] = useState([])
+	const i18n = useI18n();
+	const [active, setActive] = useState(0);
+	const [data, setData] = useState([]);
 
 	useEffect(() => {
 		setData(cases)
-	}, [])
+	}, []);
 
 	const toggle = (discipline, activeIndex) => {
 		setActive(activeIndex)

@@ -1,9 +1,6 @@
 .animated-link {
     position: relative;
     display: inline-block;
-    font-size: 2em;
-    font-weight: 800;
-    color: black;
     overflow: hidden;
     background: linear-gradient(to right, $primary-color, $primary-color 50%, black 50%);
     background-clip: text;

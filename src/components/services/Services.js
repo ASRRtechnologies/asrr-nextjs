@@ -11,11 +11,11 @@ const Wrapper = styled('div')`
 `
 
 function Services (props) {
-	const i18n = useI18n()
+	const i18n = useI18n();
 	return (
 		<Wrapper className="section-wrapper">
 			<Section>
-				<Title big title={i18n.t('contact.title.header')} text={i18n.t('contact.title.text')}/>
+				<Title title={'services.header.title'} text="services.header.text"/>
 				<div className="services">
 					{services.map((d) => <Card title={d.title} text={d.text}/>)}
 				</div>
