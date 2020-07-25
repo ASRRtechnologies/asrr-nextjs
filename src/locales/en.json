@@ -27,7 +27,7 @@
   },
   "home": {
     "landing": {
-      "title": "Redefining innovation",
+      "title": "Innovative Software Development",
       "card-1": {
         "type": "Flexible",
         "title": "Full-Stack Development"
@@ -103,7 +103,7 @@
     "preview": {
       "title": {
         "header": "Contact",
-        "text": "Lorem ipsum much shorter text enter here"
+        "text": "Interested in what we can offer? Lets get in touch"
       }
     },
     "form": {
@@ -230,7 +230,7 @@
 
   "clients": {
     "title": {
-      "header": "Clients",
+      "header": "Trusted by",
       "text": "These clients went ahead of you"
     }
   },

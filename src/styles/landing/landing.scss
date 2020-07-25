@@ -15,10 +15,9 @@
     z-index: -1;
   }
 
-  h1 {
+  h2 {
     color: $font-color-light !important;
     max-width: 900px;
-    margin: 0;
   }
 
   p {
@@ -86,10 +85,11 @@
 }
 
 .landing-box {
-  @include flex (center, flex-start, column);
+  @include flex (space-between, center, row);
   padding: 10px 30px;
   height: 150px;
   width: 25%;
+  cursor: pointer;
 
   //Tint-3-color-dark
   //border-left: solid 3px white !important;
@@ -100,6 +100,25 @@
 
   &.fade {
     opacity: 0.4;
+  }
+
+  span{
+    @include flex (center, flex-start, column);
+  }
+
+  .arrow-right{
+    width: 20px;
+    height: auto;
+    margin-right: 20px;
+    transition: ease-in-out 200ms;
+
+  }
+
+  &:hover{
+    .arrow-right{
+      margin-right: 0;
+      transition: ease-in-out 200ms;
+    }
   }
 }
 
@@ -142,7 +161,6 @@
   }
 
   .landing-box{
-    @include flex (flex-start, center, row);
     height: auto;
     width:100%;
   }
@@ -156,5 +174,12 @@
   .landing-text {
     padding: $mob-padding;
   }
+
+  .landing-box{
+    .arrow-right{
+      margin-right: 0;
+    }
+  }
+
 }
 

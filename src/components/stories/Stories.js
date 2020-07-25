@@ -7,7 +7,7 @@ import Card from "@/stories/Card";
 import {previewCases} from "../../data/portfolio";
 
 const Wrapper = styled('div')`
-      background-color: ${props => props.theme.section.portfolio};
+      background-color: ${props => props.theme.section.services};
 `
 
 function Stories (props) {

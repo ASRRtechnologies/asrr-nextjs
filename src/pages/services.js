@@ -19,6 +19,7 @@ function Services (props) {
 			<Landing title={i18n.t('services.landing.title')} text={i18n.t('services.landing.text')} image={image}/>
 			<Layout>
 				<ServicePage/>
+				<ContactPreview className="section-contact-preview"/>
 			</Layout>
 		</div>
 	)
