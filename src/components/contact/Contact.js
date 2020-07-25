@@ -36,8 +36,8 @@ function Contact ({ big }) {
 						<div className="contact-adress">
 							<p>Adress: Veraartlaan 12</p>
 							<p>2288 GM Rijswijk, The Netherlands</p>
-							<a href="mailto:asrr@contact.nl" target="_blank" rel="noopener noreferrer" className="link">Email: contact@asrr.nl</a>
 							<a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/fZqhC9FUVTpiEiCb7" className="link">Get Directions</a>
+							<a href="mailto:asrr@contact.nl" target="_blank" rel="noopener noreferrer" className="link">Email: contact@asrr.nl</a>
 						</div>
 
 						<div className="map-container">
