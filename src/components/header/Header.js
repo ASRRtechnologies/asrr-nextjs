@@ -15,7 +15,7 @@ import {MouseContext} from '../../context/animations/MouseContext'
 const Wrapper = styled('nav')`
         background-color: ${props => props.visible ? props.theme.header.background : 'none'};
         box-shadow: ${props => props.visible ? props.theme.header.shadow : 'none'};
-        
+       
         svg{
             path{
             fill: ${props => props.visible ? props.theme.header.font : props.menuOpen
@@ -45,7 +45,7 @@ const Wrapper = styled('nav')`
                     background-color: ${props => props.theme.header.background};
             }
         }
-`
+`;
 
 function Header(props) {
     const i18n = useI18n()
@@ -84,42 +84,42 @@ function Header(props) {
                 <div className="header-wrapper">
                     <Link href="/"><a><Logo/></a></Link>
                     <div className={`header-menu ${menuOpen && 'open'}`}>
-                        <Link href="/"><a className="animated-link" onMouseOver={() => {
+                        <Link href="/"><a onMouseOver={() => {
                             mouse.onHover('disabled')
                         }}
                                           onMouseLeave={() => {
                                               mouse.onLeave()
                                           }}
                                           onClick={closeMenu}>{i18n.t('header.home')}</a></Link>
-                        <Link href="/portfolio"><a className="animated-link" onMouseOver={() => {
+                        <Link href="/portfolio"><a onMouseOver={() => {
                             mouse.onHover('disabled')
                         }}
                                                    onMouseLeave={() => {
                                                        mouse.onLeave()
                                                    }}
                                                    onClick={closeMenu}>{i18n.t('header.portfolio')}</a></Link>
-                        <Link href="/services"><a className="animated-link" onMouseOver={() => {
+                        <Link href="/services"><a onMouseOver={() => {
                             mouse.onHover('disabled')
                         }}
                                                   onMouseLeave={() => {
                                                       mouse.onLeave()
                                                   }}
                                                   onClick={closeMenu}>{i18n.t('header.services')}</a></Link>
-                        <Link href="/"><a className="animated-link" onMouseOver={() => {
+                        <Link href="/"><a onMouseOver={() => {
                             mouse.onHover('disabled')
                         }}
                                           onMouseLeave={() => {
                                               mouse.onLeave()
                                           }}
                                           onClick={closeMenu}>{i18n.t('header.hire')}</a></Link>
-                        <Link href="/contact"><a className="animated-link" onMouseOver={() => {
+                        <Link href="/contact"><a onMouseOver={() => {
                             mouse.onHover('disabled')
                         }}
                                                  onMouseLeave={() => {
                                                      mouse.onLeave()
                                                  }}
                                                  onClick={closeMenu}>{i18n.t('header.contact')}</a></Link>
-                        <Link href="/about"><a className="animated-link" onMouseOver={() => {
+                        <Link href="/about"><a onMouseOver={() => {
                             mouse.onHover('disabled')
                         }}
                                                onMouseLeave={() => {

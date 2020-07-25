@@ -17,11 +17,11 @@ function Card ({ img, title, discipline, client, route }) {
 			 onMouseLeave={() => {mouse.onLeave()}} className="card">
 			<div className="image">
 				<img src={img} alt="image"/>
-				<Chevron/>
 				<div className="card-text">
-					<h5>{i18n.t(discipline)}</h5>
-					<h4>{i18n.t(client)}</h4>
-					<h3>{i18n.t(title)}</h3>
+					<h3>{i18n.t(client)}</h3>
+					<h4>{i18n.t(title)}</h4>
+					{/*<h5>{i18n.t(discipline)}</h5>*/}
+
 				</div>
 			</div>
 			{/*<div className="card-text">*/}

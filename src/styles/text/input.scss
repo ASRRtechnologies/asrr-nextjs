@@ -149,16 +149,33 @@
 
 input, textarea {
   width: 100%;
-  max-width: 400px;
+  //max-width: 400px;
   height: 30px;
   display: block;
   border: none;
-  transition: all 0.3s cubic-bezier(.64, .09, .08, 1);
-  background-color: transparent;
+  transition: 200ms ease-in-out border-bottom-color;
+  background-color: transparent !important;
   position: relative;
+  font-size: 16px;
+  font-family: Poppins, sans-serif;
+  outline: none;
+
+  &:focus{
+    outline: none;
+    border-bottom-color: $primary-color;
+    transition: 200ms ease-in-out border-bottom-color;
+  }
+
+
 
   &.input-button-padding{
     padding: 0 75px 0 0;
+
+    &:focus{
+      outline: none;
+      border-bottom-color: $primary-color;
+      transition: 200ms ease-in-out border-bottom-color;
+    }
   }
 
 
@@ -178,5 +195,19 @@ input, textarea {
     box-shadow: none;
     outline: none;
     background-position: 0 0;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+  //Remove chrome autofill
+  //box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0), inset 0 0 0 100px red;
+}
+
+@media screen and (max-width: 600px) {
+  input, textarea {
+    font-size: 14px;
   }
 }

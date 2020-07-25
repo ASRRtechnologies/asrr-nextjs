@@ -21,15 +21,6 @@ export const previewCases = [
 
 	},
 	{
-		image: protonise,
-		client: 'projects.protonise.client',
-		title: 'projects.protonise.title',
-		alt: 'form',
-		discipline: 'projects.protonise.discipline',
-		text: 'projects.protonise.text',
-		id:"protonise"
-	},
-	{
 		image: hes,
 		client: 'projects.hes.client',
 		title: 'projects.hes.title',

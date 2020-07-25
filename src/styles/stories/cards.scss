@@ -1,0 +1,78 @@
+//To keep consistent name usage throughout the website nesting of this card in
+
+.stories {
+  width: 100%;
+  height: auto;
+  @include flex(space-between, flex-start, row);
+  flex-wrap: wrap;
+
+  .card {
+    width: 30.333%;
+    height: auto;
+    margin-bottom: 70px;
+    @include flex(center, center, column);
+    text-align: center;
+    //background-color: black;
+
+    .avatar{
+      position: relative;
+      width: 120px;
+      height: 120px;
+      @include flex(center, center, row);
+      margin-bottom: 15px;
+
+      img{
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        object-position: 50% 50%;
+        border-radius: 50%;
+
+      }
+    }
+
+    p {
+      //margin-bottom: 0;
+      max-width: 600px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .stories {
+    .card {
+      width: 45%;
+      margin-bottom: 75px;
+
+      p{
+        max-width: 100%;
+      }
+      &:nth-last-child(3) {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .stories {
+    .card {
+      width: 100%;
+      height: auto;
+      @include flex(center, center, column);
+
+      &:nth-last-child(2) {
+        margin-bottom: 50px;
+      }
+
+      p {
+        max-width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -23,6 +23,13 @@
 
   }
 
+  //Three cards next to each other no margin so the read more is closer to the cards
+  &.portfolio-preview{
+    .card{
+      margin-bottom: 0;
+    }
+  }
+
   .image {
     width: 100%;
     padding-bottom: 100%;
@@ -48,14 +55,15 @@
   }
 
   .card-text{
-    //box-shadow: 0 3px 6px rgba(0,0,0,0.23);
-    @include size(100%, auto);
+    @include size(100%, 100%);
     padding: 20px;
     position: absolute;
     bottom:0;
-    background-color: rgba(0,0,0, 0.8);
-    transform: translateY(100%);
+    background-color: rgba(9, 9, 9, 0.2);
+    transform: translateY(0);
     transition: 400ms ease-in-out transform;
+    @include flex(flex-end, flex-start, column);
+
 
     h3, h4, h5 {
       color: white;
@@ -71,27 +79,34 @@
     }
 
     h3{
-      font-size: 18px;
+      font-size: 20px;
+      margin-bottom: 10px;
       font-weight: normal;
     }
   }
 
-  .card{
-    &:hover{
-      .card-text{
-        transform: translateY(0);
-        transition: 400ms ease-in-out transform;
-      }
-
-      svg{
-        opacity: 0;
-
-      }
-
-    }
-  }
-
 }
+
+@media screen and (max-width:1000px) {
+  .portfolio {
+    .card {
+      width: 45%;
+    }
+
+    .card:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+
+    //Two cards next to each other no margin so the read more is closer to the cards
+    &.portfolio-preview{
+      .card{
+        margin-bottom: 100px;
+      }
+    }
+
+  }
+}
+
 
 @media screen and (max-width:700px) {
   .portfolio {
@@ -106,6 +121,11 @@
 
     .card:nth-last-child(1) {
       margin-bottom: 0;
+    }
+
+    .read-more{
+      margin-right: auto;
+      margin-left: auto;
     }
 
   }

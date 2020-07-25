@@ -1,15 +1,6 @@
 .cursor {
-  position: fixed;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: $primary-color;
-  z-index: $cursor-zIndex;
-  transition: 0.5s ease-in-out transform;
-  user-select: none;
-  pointer-events: none;
-  transform: scale(1);
-  @include flex(center, center, column);
+  cursor: pointer;
+  transition: 0.2s ease-in-out transform;
 
   p{
     margin-bottom: 2px;
@@ -20,7 +11,17 @@
 
   &.projects{
     transform: scale(4);
-    transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    z-index: $cursor-zIndex;
+    transition: 0.2s ease-in-out transform;
+    user-select: none;
+    pointer-events: none;
+     @include flex(center, center, column);
+    cursor: none;
   }
 
   &.big{

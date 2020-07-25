@@ -6,7 +6,7 @@
   top: 0;
   @include flex(center, center, row);
   transition: 300ms ease-in-out all;
-  color:white !important;
+  color: white !important;
   z-index: $header-zIndex;
   //Header used on landing page
 }
@@ -19,7 +19,7 @@
 }
 
 //For menu to use as relative parent
-.header-relative{
+.header-relative {
   width: 100vw;
   height: 100%;
   @include flex(center, center, row);
@@ -36,53 +36,57 @@
 }
 
 
-.header-menu{
+.header-menu {
   position: relative;
   @include flex(center, center, row);
-  width:100%;
+  width: 100%;
   overflow: hidden;
 
   a {
     height: auto;
     width: auto;
-    margin: 20px 20px;
+    margin: 0 20px;
     position: relative;
-    color:$font-color-light;
+    color: $font-color-light;
     text-decoration: none;
     cursor: none;
     @include flex(space-between, center, row);
 
-    &.active-link{
-      -webkit-text-fill-color:$primary-color;
-      background:transparent;
+    &:hover{
+      color: $primary-color;
+    }
+
+    &.active-link {
+      color: $primary-color;
     }
   }
 
-  &.open{
+  &.open {
     transform: translateX(0);
     transition: all ease-in-out 500ms;
   }
 }
 
 //Moon / sun icon
-.icon{
-  width:25px;
+.icon {
+  width: 25px;
   height: 25px;
   z-index: 10000000;
-  svg{
-    width:100%;
+
+  svg {
+    width: 100%;
     height: auto;
   }
 }
 
-.header-actions{
+.header-actions {
   @include size(auto, 100%);
   @include flex(flex-end, center, row)
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
 
-  .header{
+  .header {
     height: 80px;
   }
 
@@ -90,30 +94,30 @@
     width: 60px;
   }
 
-  .header-relative{
+  .header-relative {
     padding: $tablet-padding-header;
   }
 
-  .header-wrapper{
-    a{
+  .header-wrapper {
+    a {
       margin: 20px 0;
       font-size: 32px;
     }
   }
 
-  .header-menu{
+  .header-menu {
     position: fixed;
-    left:0;
+    left: 0;
     transform: translateX(100vw);
-    top:0;
+    top: 0;
     @include flex(center, center, column);
-    width:100vw;
+    width: 100vw;
     height: 100vh;
     z-index: 100;
     transition: all ease-in-out 500ms;
     overflow: hidden;
 
-    &.open{
+    &.open {
       transform: translateX(0);
       transition: all ease-in-out 500ms;
     }
@@ -121,18 +125,18 @@
 
 }
 
-@media screen and (max-width:600px) {
-  .header-relative{
+@media screen and (max-width: 600px) {
+  .header-relative {
     padding: $mob-padding-header;
   }
 
-  .header-menu{
+  .header-menu {
     padding-top: 20vh;
     justify-content: flex-start;
   }
 
-  .header-wrapper{
-    a{
+  .header-wrapper {
+    a {
       margin: 10px 0;
       font-size: 24px;
     }
