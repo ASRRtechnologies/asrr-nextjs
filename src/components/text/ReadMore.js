@@ -1,7 +1,7 @@
-import React, {useContext, useState} from 'react'
+import React from 'react'
 import Link from 'next/link'
 import styled from '@emotion/styled'
-import {MouseContext} from '../../context/animations/MouseContext'
+import {useTheme} from "../../context/theme/ThemeContext";
 
 const LinkText = styled('a')`
           color: ${props => props.inverted ? props.theme.fonts.white : props.theme.fonts.title} ;
@@ -17,34 +17,14 @@ const Text = styled('p')`
         }
 `;
 
-function ReadMore({to, inverted, text, action, margin, children, small, ...rest}) {
-
-    const mouse = useContext(MouseContext)
-
-    const hoverText = () => {
-        setTextBorder(true)
-        mouse.onHover('big')
-    };
-
-    const leaveText = () => {
-        setTextBorder(false);
-        mouse.onLeave()
-    };
-
-    const [textBorder, setTextBorder] = useState(false)
-
+function ReadMore({to, inverted, text, action, margin, children, small, center, className, ...rest}) {
+    const darkmode = useTheme().dark;
     return (
 
         action ? (
                 <>
-                    <Text inverted={inverted} {...rest}
-                          onMouseOver={() => {
-                              hoverText()
-                          }}
-                          onMouseLeave={() => {
-                              leaveText()
-                          }}
-                          className={`read-more ${small && 'small'} ${margin ? 'margin' : 'no-margin'}`}>
+                    <Text center={center} inverted={inverted} {...rest}
+                          className={`${className} ${!darkmode ? "animated-link-dark" : "animated-link-light"} read-more ${small && 'small'} ${center  && "center"} ${margin ? 'margin' : 'no-margin'}`}>
                         {children}
                     </Text>
                 </>
@@ -53,19 +33,11 @@ function ReadMore({to, inverted, text, action, margin, children, small, ...rest}
             (
                 <>
                     <Link href={to}>
-                        <LinkText inverted={inverted}
-                                  onMouseOver={() => {
-                                      hoverText()
-                                  }}
-                                  onMouseLeave={() => {
-                                      leaveText()
-                                  }}
-                                  className={`read-more ${small && 'small'} ${margin ? 'margin' : 'no-margin'}`}>
+                        <LinkText center={center} inverted={inverted}
+                                  className={`${className} ${inverted ? "animated-link-light" : (darkmode ? "animated-link-light" : "animated-link-dark")} ${center  && "center"}  read-more ${small && 'small'} ${margin ? 'margin' : 'no-margin'}`}>
                             {children}
                         </LinkText>
                     </Link>
-                    {/*<span className="line-left"></span>*/}
-                    {/*<span className="line-right"></span>*/}
                 </>
             )
 

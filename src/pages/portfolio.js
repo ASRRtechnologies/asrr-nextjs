@@ -16,7 +16,7 @@ function Portfolio() {
             <Landing title={i18n.t("portfolio.landing.title")} text={i18n.t("portfolio.landing.text")} image={image}/>
             <Layout>
                 <PortfolioPage/>
-                <ContactPreview/>
+                <ContactPreview className="section-contact-preview"/>
             </Layout>
         </div>
     );

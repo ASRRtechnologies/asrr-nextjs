@@ -8,8 +8,9 @@ import image from '../../public/assets/images/landing/drone-2.jpg'
 import display from '../../public/assets/images/landing/oldschool.jpg'
 import Display from '../components/display/Display'
 import Clients from '../components/clients/Clients'
-import Contact from '../components/contact/Contact'
+import Contact from '../components/contact/Preview'
 import useI18n from '../hooks/use-i18n'
+import Stories from "@/stories/Stories";
 
 function Index(props) {
 
@@ -26,8 +27,9 @@ function Index(props) {
             <Landing title={i18n.t('home.landing.title')} text={i18n.t('home.landing.text')} image={image} boxes projects/>
             <Layout>
                 <Display image={display}/>
-                <PortfolioPreview/>
                 <ServicePreview/>
+                <PortfolioPreview/>
+                <Stories/>
                 <Contact/>
                 <Clients/>
             </Layout>

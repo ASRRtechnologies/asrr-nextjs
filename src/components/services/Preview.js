@@ -16,11 +16,11 @@ function Services () {
 	return (
 		<Wrapper className="section-wrapper">
 			<Section>
-				<Title title={'Services'} text="lorem ipsum hahahahaha"/>
+				<Title big title={'services.preview.title.header'} text={'services.preview.title.text'}/>
 				<div className="services">
 					{previewServices.map((d) => <Card title={d.title} text={d.text}/>)}
 				</div>
-				<ReadMore margin={true} to="/services">{i18n.t('buttons.see.services')}</ReadMore>
+				<ReadMore className="read-more-portfolio" to="/services">{i18n.t('buttons.see.services')}</ReadMore>
 			</Section>
 		</Wrapper>
 	)

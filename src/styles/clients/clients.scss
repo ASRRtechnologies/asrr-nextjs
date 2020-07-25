@@ -1,8 +1,13 @@
+.clients-wrapper{
+
+
+
+}
+
 .clients{
   @include flex(space-evenly, center, row);
   height: 200px;
   width: 100vw;
-  background: #F4F4F4;
 
   img{
     max-width: 150px;
@@ -12,9 +17,17 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 600px) {
   .clients{
-    margin-top: 50px;
+    @include flex(flex-start, center, column);
+    height: auto;
+    img{
+      max-width: 150px;
+      width: 100vw;
+      height: auto;
+      min-width: 80px;
+      margin-bottom: 50px;
+    }
   }
 
 }

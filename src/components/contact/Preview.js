@@ -1,34 +1,36 @@
 import React from 'react'
-import ReadMore from '@/text/ReadMore'
-import Input from '@/text/Input'
 import useI18n from '../../hooks/use-i18n'
-import styled from '@emotion/styled'
+import Link from 'next/link'
+import Section from "@/layout/Section";
+import styled from "@emotion/styled";
+import {useTheme} from "../../context/theme/ThemeContext";
+import ReadMore from "@/text/ReadMore";
+import Title from "@/text/Title";
+import {previewCases} from "../../data/portfolio";
+import Card from "@/portfolio/Card";
 
 const Wrapper = styled('div')`
       background-color: ${props => props.theme.section.contactPreview};
-`
+`;
 
-function Contact (props) {
-	const i18n = useI18n()
-	return (
-		<Wrapper className="section-wrapper">
-			<div className="contact preview section">
-				<h3>{i18n.t('contact.cta.curious')}<br/>{i18n.t('contact.cta.touch')}</h3>
-				<form className="form">
-					<Input className="no-margin" name="name" type="text"
-						   required={true} placeholder={i18n.t('contact.form.name.label')}/>
-					<Input name="organization" type="text"
-						   required={true}
-						   placeholder={i18n.t('contact.form.organization.placeholder')}/>
-					<Input name="email" type="email"
-						   placeholder={i18n.t('contact.form.email.placeholder')}/>
-					<Input name="message" textArea={true} last type="text"
-						   required={true} placeholder={i18n.t('contact.form.message.placeholder')}/>
-					<ReadMore margin action>{i18n.t('buttons.submit')}</ReadMore>
-				</form>
-			</div>
-		</Wrapper>
-	)
+function Contact({className}) {
+
+    const darkmode = useTheme().dark;
+
+    const i18n = useI18n();
+    return (
+        <Wrapper className={`section-wrapper ${className}`}>
+            <Section>
+                <div className="contact preview">
+                    <h2>Contact</h2>
+                    <p>Wilt u weten wat wij voor u kunnen betekenen? <br/> Neem vrijblijvend contact met ons op <br/> Ons team staat u graag te woord!</p>
+                    <ReadMore className="read-more" to="/contact">Lets get in touch</ReadMore>
+                </div>
+            </Section>
+        </Wrapper>
+    )
 }
 
 export default Contact
+
+

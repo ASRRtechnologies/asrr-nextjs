@@ -1,12 +1,13 @@
 import React from 'react'
+import useI18n from "../../hooks/use-i18n";
 
-function test (props) {
+export default function Page({data}) {
+	const i18n = useI18n();
+
 	return (
-		<div>
+		<div className="portfolio-page">
 
 		</div>
 	)
-
 }
 
-export default test

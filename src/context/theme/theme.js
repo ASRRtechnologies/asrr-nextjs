@@ -22,8 +22,11 @@ const logoLight = white
 const logoDark = black
 
 //Header colors
-const headerLight = '#ffffff'
-const headerDark = '#0a0a0a'
+const headerLight = '#ffffff';
+const headerDark = '#0a0a0a';
+
+const hoverLinkDark = "linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)";
+const hoverLinkLight = "linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)";
 
 
 const landing = {
@@ -98,6 +101,11 @@ const fonts = {
 		dark: lightFont,
 	},
 
+	link:{
+		light:hoverLinkLight,
+		dark:hoverLinkDark,
+	}
+
 }
 
 const header = {
@@ -133,6 +141,7 @@ const lightTheme = {
 		text: fonts.text.dark,
 		white: fonts.title.light,
 		inverse: fonts.title.dark,
+		link: fonts.link.dark
 
 	},
 
@@ -157,7 +166,7 @@ const lightTheme = {
 		otherCases: portfolio.otherCases.light,
 	},
 
-}
+};
 
 const darkTheme = {
 
@@ -173,6 +182,7 @@ const darkTheme = {
 		text: fonts.text.light,
 		white: fonts.title.light,
 		inverse:fonts.title.light,
+		link: fonts.link.light
 	},
 
 	landing: {

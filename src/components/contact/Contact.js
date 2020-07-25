@@ -9,6 +9,10 @@ import styled from '@emotion/styled'
 
 const Wrapper = styled('div')`
       background-color: ${props => props.theme.section.contact};
+      
+      a{
+      	color: ${props => props.theme.fonts.text}
+      }
 `
 
 function Contact ({ big }) {
@@ -28,10 +32,21 @@ function Contact ({ big }) {
 						<Input name="message" last textArea={true} type="text"
 							   required={true} placeholder={i18n.t('contact.form.message.placeholder')}/>
 						<ReadMore margin action>{i18n.t('buttons.submit')}</ReadMore>
+
+						<div className="contact-adress">
+							<p>Adress: Veraartlaan 12</p>
+							<p>2288 GM Rijswijk, The Netherlands</p>
+							<a href="mailto:asrr@contact.nl" target="_blank" rel="noopener noreferrer" className="link">Email: contact@asrr.nl</a>
+							<a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/fZqhC9FUVTpiEiCb7" className="link">Get Directions</a>
+						</div>
+
+						<div className="map-container">
+							<Map/>
+						</div>
+
 					</form>
-					<div className="map-container">
-						<Map/>
-					</div>
+
+
 				</div>
 			</Section>
 		</Wrapper>

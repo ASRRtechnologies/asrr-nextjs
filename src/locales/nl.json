@@ -27,7 +27,7 @@
   },
   "home": {
     "landing": {
-      "title": "Redefining innovation",
+      "title": "Innovative Software Development",
       "card-1": {
         "type": "Flexible",
         "title": "Full-Stack Development"
@@ -65,8 +65,8 @@
       "title": "Portfolio",
       "text": "Super nice projects"
     },
-    "title": {
-      "header": "Our Portfolio",
+    "header": {
+      "title": "Our Services",
       "text": "Lorem ipsum much longer text enter here"
     },
     "preview": {
@@ -226,6 +226,21 @@
         "text": "Lorem ipsum dit is de preview aar wat uitlegen"
       }
     }
+  },
+
+  "clients": {
+    "title": {
+      "header": "Clienten",
+      "text": "Zij gingen u voor"
+    }
+  },
+
+  "stories": {
+    "title": {
+      "header": "Stories",
+      "text": "What others have to say"
+    }
   }
+
 }
 

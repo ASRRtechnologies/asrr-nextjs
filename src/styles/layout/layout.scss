@@ -15,11 +15,23 @@
   @include flex(center, center, column);
   padding: $pc-padding;
 
+  &.clients-section{
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &.section-contact-preview{
+    padding-top: 0;
+  }
+
 }
 
 .section{
   width:100%;
   max-width: $max-width;
+  @include flex(center, center, column);
+
 }
 
 
@@ -38,7 +50,6 @@
 @media screen and (max-width:600px) {
 
   .layout{
-
     &.footer-container{
       padding: 70px 25px 30px 25px;
     }

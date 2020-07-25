@@ -1,17 +1,31 @@
-.animated-link {
+.animated-link-dark {
     position: relative;
     display: inline-block;
-    font-size: 2em;
-    font-weight: 800;
-    color: black;
     overflow: hidden;
-    background: linear-gradient(to right, $primary-color, $primary-color 50%, black 50%);
+    background: linear-gradient(to right, $primary-color, $primary-color 50%, #1a1a1a 50%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 200% 100%;
     background-position: 100%;
-    transition: background-position 275ms ease;
+    transition: background-position 300ms ease;
+    text-decoration: none; // text decorations are clipped in WebKit browsers
+    &:hover {
+        background-position: 0 100%;
+    }
+}
+
+.animated-link-light {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    background: linear-gradient(to right, $primary-color, $primary-color 50%, white 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 300ms ease;
     text-decoration: none; // text decorations are clipped in WebKit browsers
     &:hover {
         background-position: 0 100%;

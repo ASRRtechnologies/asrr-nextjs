@@ -7,7 +7,7 @@ function Card({title, text}) {
     const i18n = useI18n();
     return (
         <div className="card">
-            <h3 className="animated-link">{i18n.t(title)}</h3>
+            <h3>{i18n.t(title)}</h3>
             <p>{i18n.t(text)}</p>
             <ReadMore  small to="/">{i18n.t("buttons.read")}</ReadMore>
         </div>

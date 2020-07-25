@@ -4,6 +4,11 @@
   @include flex (center, center, row);
   position: relative;
   margin-right: 50px;
+  cursor: pointer;
+
+  a{
+    margin: 0;
+  }
 
   .menu{
     position: absolute;

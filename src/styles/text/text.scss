@@ -1,73 +1,124 @@
 //Title
-.title{
+.title {
   width: 100%;
   height: auto;
-  p{
+  @include flex(center, center, column);
+  margin-bottom: 100px;
+
+  p {
+    text-align: center;
     margin-bottom: 0;
   }
-  margin-bottom: 50px;
 }
 
 //Readmore
 
-.read-more-wrapper{
+.read-more-wrapper {
   display: inline-block;
   position: relative;
   width: auto;
   height: auto;
-  margin-top:50px;
-
+  margin-top: 50px;
 }
 
-.read-more{
+.read-more {
   display: inline-block;
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 0;
   position: relative;
+  cursor: pointer;
 
-  &:before{
-    content:"";
-    bottom:0;
+  &:before {
+    content: "";
+    bottom: 0;
     position: absolute;
     width: 100%;
     height: 2px;
-    left:0;
+    left: 0;
   }
 
-  &.small{
+  &:after {
+    content: "";
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms ease;
+    background-color: $primary-color;
+  }
+
+  &:hover {
+    &:after {
+      transform: scaleX(1);
+      transition: transform 300ms ease;
+      transform-origin: left;
+    }
+  }
+
+  &.small {
     font-size: 16px;
   }
 
-  &.margin{
+  &.margin {
     margin-top: 50px;
   }
+
+  &.read-more-portfolio {
+    margin-top: 100px;
+  }
+
+  &.read-more-services {
+    margin-top: 100px;
+  }
+
 }
 
-.link{
+.link {
   font-size: 16px;
-   text-decoration: underline;
+  text-decoration: underline;
 }
 
-.no-margin{
-  margin:0;
+.no-margin {
+  margin: 0;
 }
 
 @media screen and (max-width: 1200px) {
   .title {
-    margin-bottom: 30px;
+    margin-bottom: 75px;
+  }
+
+  .read-more {
+    &.read-more-portfolio {
+      margin-top: 75px;
+    }
+
+    &.read-more-services {
+      margin-top: 75px;
+    }
+
   }
 }
 
-@media screen and (max-width: 600px){
-  .read-more{
-    &.small{
-      font-size: 14px;
+@media screen and (max-width: 600px) {
+  .title {
+    margin-bottom: 50px;
+    h2{
+      margin-bottom: 5px;
     }
   }
 
-  .link{
-    font-size: 14px;
-  }
+  .read-more {
+    &.read-more-portfolio {
+      margin-bottom: 50px;
+    }
 
+    &.read-more-services {
+      margin-bottom: 50px;
+    }
+
+  }
 }

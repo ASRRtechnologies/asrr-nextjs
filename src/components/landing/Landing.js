@@ -5,6 +5,8 @@ import { AnimationContext } from '../../context/animations/AnimationContext'
 import styled from '@emotion/styled'
 import throttle from "lodash";
 import useI18n from "../../hooks/use-i18n";
+import Arrow from "@/icons/Arrow";
+import ArrowRight from "@/icons/ArrowRight";
 
 const Wrapper = styled('div')`
         background-color: ${props => props.theme.header.background};
@@ -87,8 +89,8 @@ function Landing({title, text, image, boxes, projects}) {
 
             <div className="landing-text">
 				<span className="landing-overflow">
-                    <motion.h1 initial={animation.landingText.initial} exit={animation.landingText.exit}
-                               animate={animation.landingText.animate}>{title}</motion.h1>
+                    <motion.h2 initial={animation.landingText.initial} exit={animation.landingText.exit}
+                               animate={animation.landingText.animate}>{title}</motion.h2>
 				</span>
 
                 <span className="landing-overflow">
@@ -101,12 +103,12 @@ function Landing({title, text, image, boxes, projects}) {
 
                 <span className="landing-overflow">
                     {projects ? (
-                        <motion.p onClick={() => navigate("portfolio")} initial={animation.landingText.initial}
+                        <motion.a className="read-more inverted animated-link-light" onClick={() => navigate("portfolio")} initial={animation.landingText.initial}
                                   exit={animation.landingText.exit}
                                   animate={animation.landingText.animate}
                                   custom={1}>
                             {i18n.t("buttons.see.portfolio")}
-                        </motion.p>
+                        </motion.a>
                     ) : null}
 				</span>
             </div>
@@ -120,9 +122,12 @@ function Landing({title, text, image, boxes, projects}) {
                                          onMouseLeave={leaveSpecificCard}
                                          className={`landing-box ${activeCard.index !== i && hover && "fade"}`}
                                          onClick={() => navigate(data.url)}>
-                                <h5>0{i+1}</h5>
+                                <span>
+                                     <h5>0{i+1}</h5>
                                 <h4>{i18n.t('home.landing.cards.' + data.title + '.sector')}</h4>
                                 <h3>{i18n.t('home.landing.cards.' + data.title + '.title')}</h3>
+                                </span>
+                                <ArrowRight/>
                             </Cards>)
                         })}
                     </div>
