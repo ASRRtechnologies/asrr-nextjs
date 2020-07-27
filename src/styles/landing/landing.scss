@@ -18,6 +18,8 @@
   h2 {
     color: $font-color-light !important;
     max-width: 900px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
   }
 
   p {
@@ -91,9 +93,6 @@
   width: 25%;
   cursor: pointer;
 
-  //Tint-3-color-dark
-  //border-left: solid 3px white !important;
-  //border-top: solid 3px white;
   border-right: none;
   border-bottom: none;
   transition: 300ms ease-in-out all;

@@ -26,7 +26,6 @@ function Index(props) {
         <div className="content-wrapper">
             <Landing title={i18n.t('home.landing.title')} text={i18n.t('home.landing.text')} image={image} boxes projects/>
             <Layout>
-                <Display image={display}/>
                 <ServicePreview/>
                 <PortfolioPreview/>
                 <Stories/>

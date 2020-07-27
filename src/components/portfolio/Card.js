@@ -18,10 +18,11 @@ function Card ({ img, title, discipline, client, route }) {
 			<div className="image">
 				<img src={img} alt="image"/>
 				<div className="card-text">
-					<h3>{i18n.t(client)}</h3>
-					<h4>{i18n.t(title)}</h4>
-					{/*<h5>{i18n.t(discipline)}</h5>*/}
-
+					<h5>{i18n.t(discipline)}</h5>
+					<div>
+						<h4>{i18n.t(client)}</h4>
+						<p>{i18n.t(title)}</p>
+					</div>
 				</div>
 			</div>
 			{/*<div className="card-text">*/}

@@ -22,19 +22,7 @@ export const previewServices = [
 		title: 'service-cards.back-end.title',
 		text: 'service-cards.back-end.text',
 	},
-	{
-		title: 'service-cards.consultancy.title',
-		text: 'service-cards.consultancy.text',
-	},
-	{
-		title: 'service-cards.servers.title',
-		text: 'service-cards.servers.text',
-	},
-	{
-		title: 'service-cards.data-analytics.title',
-		text: 'service-cards.data-analytics.text',
-	}
-]
+];
 
 export const services = [
 	{

@@ -68,12 +68,19 @@
 
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1200px) {
   .cursor{
     display: none;
+
+
+    &.projects{
+      display: none;
+    }
   }
 
   .cursor-follow{
     display: none;
   }
+
+
 }

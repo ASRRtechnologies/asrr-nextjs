@@ -97,7 +97,7 @@ const fonts = {
 	},
 
 	text: {
-		light: whiteFont,
+		light: "#ededed",
 		dark: lightFont,
 	},
 

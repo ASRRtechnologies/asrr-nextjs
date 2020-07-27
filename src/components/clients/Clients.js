@@ -15,7 +15,7 @@ const Wrapper = styled('section')`
 function Clients(props) {
     return (
 
-        <Wrapper className="section-wrapper clients-section">
+        <Wrapper className="section-wrapper">
                 <Title big title={'clients.title.header'} text={'clients.title.text'}/>
                 <div className="clients">
                     {clients.map((d, i) => <img key={d.alt + i} src={d.image} alt={d.alt}/>)}

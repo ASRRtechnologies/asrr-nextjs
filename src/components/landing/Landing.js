@@ -113,25 +113,25 @@ function Landing({title, text, image, boxes, projects}) {
 				</span>
             </div>
 
-                <motion.div
-                    initial={animation.landingCards.initial} animate={animation.landingCards.animate}
-                    exit={animation.landingCards.exit} className={`landing-box-container ${projects && "show"}`}>
-                    <div onMouseEnter={hoverCardArea} onMouseLeave={leaveCardArea} className="landing-box-wrapper">
-                        {cards.map((data, i) => {
-                            return (<Cards key={i} onMouseEnter={() => hoverSpecificCard(i)}
-                                         onMouseLeave={leaveSpecificCard}
-                                         className={`landing-box ${activeCard.index !== i && hover && "fade"}`}
-                                         onClick={() => navigate(data.url)}>
-                                <span>
-                                     <h5>0{i+1}</h5>
-                                <h4>{i18n.t('home.landing.cards.' + data.title + '.sector')}</h4>
-                                <h3>{i18n.t('home.landing.cards.' + data.title + '.title')}</h3>
-                                </span>
-                                <ArrowRight/>
-                            </Cards>)
-                        })}
-                    </div>
-                </motion.div>
+                {/*<motion.div*/}
+                {/*    initial={animation.landingCards.initial} animate={animation.landingCards.animate}*/}
+                {/*    exit={animation.landingCards.exit} className={`landing-box-container ${projects && "show"}`}>*/}
+                {/*    <div onMouseEnter={hoverCardArea} onMouseLeave={leaveCardArea} className="landing-box-wrapper">*/}
+                {/*        {cards.map((data, i) => {*/}
+                {/*            return (<Cards key={i} onMouseEnter={() => hoverSpecificCard(i)}*/}
+                {/*                         onMouseLeave={leaveSpecificCard}*/}
+                {/*                         className={`landing-box ${activeCard.index !== i && hover && "fade"}`}*/}
+                {/*                         onClick={() => navigate(data.url)}>*/}
+                {/*                <span>*/}
+                {/*                     <h5>0{i+1}</h5>*/}
+                {/*                <h4>{i18n.t('home.landing.cards.' + data.title + '.sector')}</h4>*/}
+                {/*                <h3>{i18n.t('home.landing.cards.' + data.title + '.title')}</h3>*/}
+                {/*                </span>*/}
+                {/*                <ArrowRight/>*/}
+                {/*            </Cards>)*/}
+                {/*        })}*/}
+                {/*    </div>*/}
+                {/*</motion.div>*/}
         </motion.div>
     )
 }
