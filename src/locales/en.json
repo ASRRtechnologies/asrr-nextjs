@@ -210,6 +210,14 @@
         "text": "Lorem ipsum dit is de preview aar wat uitlegen"
       }
     },
+    "development": {
+      "title": "Full-Stack Software Development",
+      "text": "Full-Stack Software Development text",
+      "preview": {
+        "title": "Full-Stack Software Development",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
     "back-end": {
       "title": "Back-end Applications",
       "text": "Using our microservice architecture, we can quickly create robust applications. We have an extensive library of over-engineered microservices that form a good basis for any complex application.",
@@ -221,6 +229,14 @@
     "power-bi": {
       "title": "Scalable Teams",
       "text": "ASRR offers dynamic, multi-disciplinary IT teams that can be hired at short notice. The team will adapt to your needs, ensuring you have the right person at the right place, every time.",
+      "preview": {
+        "title": "Power Bi",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "hardware": {
+      "title": "Hardware",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
       "preview": {
         "title": "Power Bi",
         "text": "Lorem ipsum dit is de preview aar wat uitlegen"

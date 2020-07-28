@@ -11,7 +11,14 @@
     height: auto;
     margin-bottom: 70px;
     text-align: center;
-    @include flex(center, center, column);
+    @include flex(flex-start, center, column);
+
+    svg{
+      display: block;
+      margin-bottom: 25px;
+      width: 30px;
+      height: auto;
+    }
 
     p {
       //margin-bottom: 0;

@@ -19,7 +19,16 @@ function Services () {
 			<Section>
 				<Title icon={<Chevron/>} title={'services.preview.title.header'} text={'services.preview.title.text'}/>
 				<div className="services service-preview">
-					{previewServices.map((d) => <Card title={d.title} text={d.text}/>)}
+					{previewServices.map((d) => {
+						{console.log(d)}
+						return(
+								<Card title={d.title} text={d.text} icon={d.icon}/>
+							)
+
+
+
+
+					})}
 				</div>
 				<ReadMore className="read-more-portfolio" to="/services">{i18n.t('buttons.see.services')}</ReadMore>
 			</Section>
