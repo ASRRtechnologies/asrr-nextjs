@@ -100,3 +100,12 @@
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+  .services {
+    &.services-preview{
+      margin-top: -400px;
+    }
+  }
+}
+
