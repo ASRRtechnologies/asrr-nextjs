@@ -6,13 +6,34 @@
   @include flex(space-between, flex-start, row);
   flex-wrap: wrap;
 
+  &.services-preview{
+    margin-top: -300px;
+    justify-content: center;
+    .card{
+      background-color: white;
+      padding: 30px 40px;
+      box-shadow: 0 1px 9px rgba(0,0,0,0.13);
+      min-height: 400px;
+      border-radius: 5px;
+      margin: 0 5px;
+      transition: 300ms ease-in;
+      z-index: 80;
+      user-select: none;
+
+      &:hover{
+        transform: scale(1.03);
+        transition: 300ms ease-in-out;
+      }
+
+    }
+  }
+
   .card {
     width: 30.333%;
     height: auto;
     margin-bottom: 70px;
     text-align: center;
     @include flex(flex-start, center, column);
-    background-color: white;
 
     svg{
       display: block;

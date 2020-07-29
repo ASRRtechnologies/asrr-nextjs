@@ -15,10 +15,6 @@
   @include flex(center, center, column);
   padding: $pc-padding;
 
-  &.margin-top{
-    margin-top: -300px;
-  }
-
   &.clients-section{
     padding-bottom: 0;
     padding-right: 0;

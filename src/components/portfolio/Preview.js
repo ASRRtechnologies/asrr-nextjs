@@ -8,7 +8,8 @@ import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
 
 const Wrapper = styled('div')`
-      background-color: ${props => props.theme.section.portfolio};
+      background-color: #eeeeee;
+      //background-color: ${props => props.theme.section.portfolio};
 `
 
 function Preview (props) {

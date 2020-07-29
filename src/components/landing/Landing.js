@@ -101,16 +101,16 @@ function Landing({title, text, image, boxes, projects}) {
 					</motion.p>
 				</span>
 
-                <span className="landing-overflow">
-                    {projects ? (
-                        <motion.a className="read-more inverted animated-link-light" onClick={() => navigate("portfolio")} initial={animation.landingText.initial}
-                                  exit={animation.landingText.exit}
-                                  animate={animation.landingText.animate}
-                                  custom={1}>
-                            {i18n.t("buttons.see.portfolio")}
-                        </motion.a>
-                    ) : null}
-				</span>
+                {/*<span className="landing-overflow">*/}
+                {/*    {projects ? (*/}
+                {/*        <motion.a className="read-more inverted animated-link-light" onClick={() => navigate("portfolio")} initial={animation.landingText.initial}*/}
+                {/*                  exit={animation.landingText.exit}*/}
+                {/*                  animate={animation.landingText.animate}*/}
+                {/*                  custom={1}>*/}
+                {/*            {i18n.t("buttons.see.portfolio")}*/}
+                {/*        </motion.a>*/}
+                {/*    ) : null}*/}
+				{/*</span>*/}
             </div>
 
                 {/*<motion.div*/}

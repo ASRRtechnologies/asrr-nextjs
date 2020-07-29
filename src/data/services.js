@@ -11,14 +11,14 @@ export const disciplines = [
 
 export const previewServices = [
     {
-        title: 'service-cards.development.title',
-        text: 'service-cards.development.text',
-		icon:<Coding/>
-    },
-    {
         title: 'service-cards.consultancy.title',
         text: 'service-cards.consultancy.text',
         icon: <Consultancy/>
+    },
+    {
+        title: 'service-cards.development.title',
+        text: 'service-cards.development.text',
+		icon:<Coding/>
     },
     {
         title: 'service-cards.hardware.title',
