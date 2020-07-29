@@ -1,6 +1,6 @@
 import React from 'react';
 import Landing from "@/landing/Landing"
-import {cases, clients} from "../../data/cases";
+import {clients} from "../../data/clients";
 import styled from '@emotion/styled'
 import Title from "@/text/Title";
 import Section from "@/layout/Section";
@@ -9,17 +9,23 @@ import Card from "@/services/Card";
 import ReadMore from "@/text/ReadMore";
 
 const Wrapper = styled('section')`
-        background-color: ${props => props.theme.section.clients}; `;
+        background-color: ${props => props.theme.section.clients}; 
+        svg{
+          path{
+            fill:  ${props => props.theme.fonts.title}
+          }
+        }
+`;
 
 
 function Clients(props) {
     return (
 
         <Wrapper className="section-wrapper">
-                <Title big title={'clients.title.header'} text={'clients.title.text'}/>
-                <div className="clients">
-                    {clients.map((d, i) => <img key={d.alt + i} src={d.image} alt={d.alt}/>)}
-                </div>
+            <Title big title={'clients.title.header'}/>
+            <div className="clients">
+                {clients.map((d, i) => d.logo )}
+            </div>
         </Wrapper>
     );
 }

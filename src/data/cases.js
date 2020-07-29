@@ -1,26 +1,15 @@
 //FORM
-import formLogo from "#/clients/form/form-gray.svg"
 import formCase from '#/clients/form/case-image.jpg'
 import protonise from '#/clients/protonise/case-image.jpg'
-
 //NWO
 import nwoCase from '#/clients/nwo/case-image.jpg'
-import nwoLogo from "#/clients/nwo/nwo-gray.svg"
-
 //HES
-import hesLogo from "#/clients/hes/hes-gray.svg"
 import hesLanding from "#/clients/hes/landing.png"
 import hesImage from "#/clients/hes/slider/image1.png"
 import hesImage2 from "#/clients/hes/slider/image2.png"
 import hesResult from "#/clients/hes/result.png"
 import hesCase from '#/clients/hes/case-image.jpg'
-
-
-export const clients = [
-    {image:formLogo, alt:"form"},
-    {image:nwoLogo, alt:"nwo"},
-    {image:hesLogo, alt:"hes"}
-];
+import React from "react";
 
 export const cases = [
     {

@@ -5,9 +5,11 @@ function Title({text, title}) {
     const i18n = useI18n();
     return (
         <div className="title">
-            <h2>{i18n.t(title)}</h2>
+            <h2>
+                {title ? i18n.t(title) : null}
+            </h2>
             <p>
-                {i18n.t(text)}
+                {text ? i18n.t(text) : null}
             </p>
         </div>
     );

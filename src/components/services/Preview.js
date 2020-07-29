@@ -9,15 +9,15 @@ import { previewServices } from '../../data/services'
 import Chevron from "@/icons/Chevron";
 
 const Wrapper = styled('div')`
-      background-color: ${props => props.theme.section.services}; 
+      // background-color: ${props => props.theme.section.services}; 
+      background-color: transparent;
 `
 
 function Services () {
-	const i18n = useI18n()
+	const i18n = useI18n();
 	return (
-		<Wrapper className="section-wrapper">
-			<Section>
-				<Title icon={<Chevron/>} title={'services.preview.title.header'} text={'services.preview.title.text'}/>
+		<Wrapper className="section-wrapper margin-top">
+			{/*<Section>*/}
 				<div className="services service-preview">
 					{previewServices.map((d) => {
 						{console.log(d)}
@@ -31,7 +31,7 @@ function Services () {
 					})}
 				</div>
 				<ReadMore className="read-more-portfolio" to="/services">{i18n.t('buttons.see.services')}</ReadMore>
-			</Section>
+			{/*</Section>*/}
 		</Wrapper>
 	)
 }

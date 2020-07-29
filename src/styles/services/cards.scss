@@ -12,6 +12,7 @@
     margin-bottom: 70px;
     text-align: center;
     @include flex(flex-start, center, column);
+    background-color: white;
 
     svg{
       display: block;
