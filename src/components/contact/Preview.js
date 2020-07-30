@@ -8,7 +8,7 @@ import Title from "@/text/Title";
 import Email from "@/icons/Email";
 
 const Wrapper = styled('div')`
-      background-color: ${props => props.theme.section.contactPreview};
+      background-color: ${props => props.theme.home.contact};
 `;
 
 function Contact({className}) {
@@ -20,7 +20,7 @@ function Contact({className}) {
         <Wrapper className={`section-wrapper ${className}`}>
             <Section>
                 <div className="contact preview">
-                    <Title icon={<Email/>} title={'services.preview.title.header'} text={'services.preview.title.text'}/>
+                    <Title title={'services.preview.title.header'} text={'services.preview.title.text'}/>
                     {/*<h2>Contact</h2>*/}
                     {/*<p>Wilt u weten wat wij voor u kunnen betekenen? <br/> Neem vrijblijvend contact met ons op.</p>*/}
                     <ReadMore className="read-more" to="/contact">Lets get in touch</ReadMore>

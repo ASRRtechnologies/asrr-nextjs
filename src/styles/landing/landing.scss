@@ -172,8 +172,10 @@
 @media screen and (max-width: 600px) {
   .landing-text {
     justify-content: flex-start;
-    margin-top: 150px;
-    padding: $mob-padding;
+    align-items: center;
+    text-align: center;
+    margin-top: 30vh;
+    padding: 0 25px;
   }
 
   .landing-box{

@@ -1,15 +1,10 @@
 import React from 'react';
-import Landing from "@/landing/Landing"
 import {clients} from "../../data/clients";
 import styled from '@emotion/styled'
 import Title from "@/text/Title";
-import Section from "@/layout/Section";
-import {previewServices} from "../../data/services";
-import Card from "@/services/Card";
-import ReadMore from "@/text/ReadMore";
 
 const Wrapper = styled('section')`
-        background-color: ${props => props.theme.section.clients}; 
+        background-color: ${props => props.theme.home.clients}; 
         svg{
           path{
             fill:  ${props => props.theme.fonts.title}

@@ -4,8 +4,8 @@ const darkFont = '#1a1a1a'
 const lightFont = '#646464'
 
 
-const dropShadowDark = ' 0 3px 6px rgba(43,42,43,1)'
-const dropShadowLight = ' 0 3px 6px rgba(0,0,0,0.23)'
+const dropShadowDark = ' 0 3px 6px rgba(43,42,43,0.5)'
+const dropShadowLight = '0 1px 9px rgba(0,0,0,0.13)'
 
 const white = "#fff";
 const white2 = "#fbfbfb";
@@ -29,6 +29,7 @@ const hoverLinkDark = "linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 5
 const hoverLinkLight = "linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)";
 
 
+
 const landing = {
 	cards: {
 		dark: black,
@@ -43,20 +44,26 @@ const layout = {
 	},
 }
 
-const section = {
+const home = {
+
+	services: {
+		dark: black3,
+		light: white,
+	},
+	
 	portfolio: {
 		dark: black3,
 		light: white,
 	},
 
-	services: {
-		dark: black2,
-		light: white2,
-	},
-
-	contactPreview: {
+	contact: {
 		dark: black3,
 		light: white,
+	},
+
+	stories: {
+		dark: black2,
+		light: white2,
 	},
 
 	clients: {
@@ -64,7 +71,7 @@ const section = {
 		light: white2,
 	},
 
-}
+};
 
 const portfolio = {
 	landing: {
@@ -127,6 +134,18 @@ const header = {
 
 }
 
+const cards = {
+	background:{
+		dark:"#1a1a1a",
+		light:"#ffffff"
+	},
+
+	shadow:{
+		dark:dropShadowDark,
+		light:dropShadowLight
+	}
+};
+
 const lightTheme = {
 
 	header: {
@@ -151,11 +170,12 @@ const lightTheme = {
 
 	layout: layout.background.light,
 
-	section: {
-		portfolio: section.portfolio.light,
-		services: section.services.light,
-		contactPreview: section.contactPreview.light,
-		clients: section.clients.light,
+	home: {
+		portfolio: home.portfolio.light,
+		services: home.services.light,
+		contact: home.contact.light,
+		clients: home.clients.light,
+		stories: home.stories.light,
 
 	},
 
@@ -165,6 +185,11 @@ const lightTheme = {
 		showcase: portfolio.showcase.light,
 		otherCases: portfolio.otherCases.light,
 	},
+
+	card: {
+		background:cards.background.light,
+		shadow:cards.shadow.dark
+	}
 
 };
 
@@ -191,12 +216,12 @@ const darkTheme = {
 
 	layout: layout.background.dark,
 
-	section: {
-		portfolio: section.portfolio.dark,
-		services: section.services.dark,
-		contactPreview: section.contactPreview.dark,
-		clients: section.clients.dark,
-
+	home: {
+		portfolio: home.portfolio.dark,
+		services: home.services.dark,
+		contact: home.contact.dark,
+		clients: home.clients.dark,
+		stories: home.stories.dark,
 	},
 
 	portfolio: {
@@ -206,6 +231,11 @@ const darkTheme = {
 		otherCases: portfolio.otherCases.dark,
 
 	},
+
+	card: {
+		background:cards.background.dark,
+		shadow:cards.shadow.dark
+	}
 
 }
 

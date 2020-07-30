@@ -4,10 +4,9 @@ import Title from '../text/Title'
 import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
 import Card from "@/stories/Card";
-import {previewCases} from "../../data/portfolio";
 
 const Wrapper = styled('div')`
-      background-color: ${props => props.theme.section.services};
+      background-color: ${props => props.theme.home.stories};
 `
 
 function Stories (props) {
