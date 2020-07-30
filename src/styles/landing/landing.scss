@@ -132,6 +132,9 @@
 @media screen and (max-width: 1200px) {
   .landing-text {
     padding: $tablet-padding;
+    h2{
+      text-align: center;
+    }
   }
 }
 
