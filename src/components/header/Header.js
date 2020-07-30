@@ -5,8 +5,8 @@ import {AnimationContext} from '../../context/animations/AnimationContext'
 import {useTheme} from '../../context/theme/ThemeContext'
 import styled from '@emotion/styled'
 import Logo from './Logo'
-import Sun from './Sun'
-import Moon from './Moon'
+import Sun from '../icons/Sun'
+import Moon from '../icons/Moon'
 import Language from '@/header/Language'
 import LanguageMobile from '@/header/LanguageMobile'
 import useI18n from '../../hooks/use-i18n'
@@ -82,50 +82,14 @@ function Header(props) {
         <motion.div animate={animation.animate} initial={animation.initial} exit={animation.exit} className={`header`}>
             <Wrapper visible={visible} menuOpen={menuOpen} className="header-relative">
                 <div className="header-wrapper">
-                    <Link href="/"><a><Logo/></a></Link>
+                    <Link href="/"><a className="header-logo"><Logo/></a></Link>
                     <div className={`header-menu ${menuOpen && 'open'}`}>
-                        <Link href="/"><a onMouseOver={() => {
-                            mouse.onHover('disabled')
-                        }}
-                                          onMouseLeave={() => {
-                                              mouse.onLeave()
-                                          }}
-                                          onClick={closeMenu}>{i18n.t('header.home')}</a></Link>
-                        <Link href="/portfolio"><a onMouseOver={() => {
-                            mouse.onHover('disabled')
-                        }}
-                                                   onMouseLeave={() => {
-                                                       mouse.onLeave()
-                                                   }}
-                                                   onClick={closeMenu}>{i18n.t('header.portfolio')}</a></Link>
-                        <Link href="/services"><a onMouseOver={() => {
-                            mouse.onHover('disabled')
-                        }}
-                                                  onMouseLeave={() => {
-                                                      mouse.onLeave()
-                                                  }}
-                                                  onClick={closeMenu}>{i18n.t('header.services')}</a></Link>
-                        <Link href="/"><a onMouseOver={() => {
-                            mouse.onHover('disabled')
-                        }}
-                                          onMouseLeave={() => {
-                                              mouse.onLeave()
-                                          }}
-                                          onClick={closeMenu}>{i18n.t('header.hire')}</a></Link>
-                        <Link href="/contact"><a onMouseOver={() => {
-                            mouse.onHover('disabled')
-                        }}
-                                                 onMouseLeave={() => {
-                                                     mouse.onLeave()
-                                                 }}
-                                                 onClick={closeMenu}>{i18n.t('header.contact')}</a></Link>
-                        <Link href="/about"><a onMouseOver={() => {
-                            mouse.onHover('disabled')
-                        }}
-                                               onMouseLeave={() => {
-                                                   mouse.onLeave()
-                                               }}
-                                               onClick={closeMenu}>{i18n.t('header.about')}</a></Link>
+                         <Link href="/"><a onClick={closeMenu}>{i18n.t('header.home')}</a></Link>
+                        <Link href="/portfolio"><a onClick={closeMenu}>{i18n.t('header.portfolio')}</a></Link>
+                        <Link href="/services"><a onClick={closeMenu}>{i18n.t('header.services')}</a></Link>
+                        <Link href="/hire"><a onClick={closeMenu}>{i18n.t('header.hire')}</a></Link>
+                        <Link href="/contact"><a onClick={closeMenu}>{i18n.t('header.contact')}</a></Link>
+                        <Link href="/about"><a onClick={closeMenu}>{i18n.t('header.about')}</a></Link>
                         <LanguageMobile/>
                     </div>
 

@@ -71,7 +71,7 @@
     },
     "preview": {
       "title": {
-        "header": "Portfolio",
+        "header": "Some of our previous work",
         "text": "Take a look at some of our past projects"
       }
     }
@@ -87,8 +87,8 @@
     },
     "preview": {
       "title": {
-        "header": "Services",
-        "text": "Lorem ipsum much shorter text enter here"
+        "header": "About ASRR",
+        "text": "We like to blablabla some of the services we provide are"
       }
     }
   },
@@ -210,6 +210,14 @@
         "text": "Lorem ipsum dit is de preview aar wat uitlegen"
       }
     },
+    "development": {
+      "title": "Full-Stack Software Development",
+      "text": "Full-Stack Software Development text",
+      "preview": {
+        "title": "Full-Stack Software Development",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
     "back-end": {
       "title": "Back-end Applications",
       "text": "Using our microservice architecture, we can quickly create robust applications. We have an extensive library of over-engineered microservices that form a good basis for any complex application.",
@@ -225,12 +233,20 @@
         "title": "Power Bi",
         "text": "Lorem ipsum dit is de preview aar wat uitlegen"
       }
+    },
+    "hardware": {
+      "title": "Hardware",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      "preview": {
+        "title": "Power Bi",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
     }
   },
 
   "clients": {
     "title": {
-      "header": "Trusted by",
+      "header": "These clients went ahead of you",
       "text": "These clients went ahead of you"
     }
   },

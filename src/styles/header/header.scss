@@ -18,6 +18,10 @@
   margin: 0;
 }
 
+.header-logo{
+  margin: 0;
+}
+
 //For menu to use as relative parent
 .header-relative {
   width: 100vw;
@@ -49,7 +53,7 @@
     position: relative;
     color: $font-color-light;
     text-decoration: none;
-    cursor: none;
+    cursor: pointer;
     @include flex(space-between, center, row);
 
     &:hover{

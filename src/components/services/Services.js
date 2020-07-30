@@ -8,8 +8,8 @@ import {services } from '../../data/services'
 import Preview from "@/contact/Preview";
 
 const Wrapper = styled('div')`
-      background-color: ${props => props.theme.section.services}; 
-`
+      background-color: ${props => props.theme.layout};
+`;
 
 function Services (props) {
 	const i18n = useI18n();

@@ -67,30 +67,23 @@
     padding: 20px;
     position: absolute;
     bottom:0;
-    background-color: rgba(9, 9, 9, 0.2);
+    background-color: rgba(9, 9, 9, 0.3);
     transform: translateY(0);
     transition: 400ms ease-in-out transform;
-    @include flex(flex-end, flex-start, column);
+    @include flex(space-between, flex-start, column);
 
-
-    h3, h4, h5 {
+    p, h4, h5 {
       color: white;
+    }
+
+    p{
+      margin-bottom: 0;
     }
 
     h5{
       font-size: 14px;
     }
 
-    h4{
-      font-size: 16px;
-      font-weight: normal;
-    }
-
-    h3{
-      font-size: 20px;
-      margin-bottom: 10px;
-      font-weight: normal;
-    }
   }
 
 }
