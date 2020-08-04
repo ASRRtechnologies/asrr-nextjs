@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import {cases} from "../../data/cases";
 import Section from '@/layout/Section'
 import Slider from 'react-slick'
@@ -25,10 +25,20 @@ const OtherCases = styled('div')`
       background-color: ${props => props.theme.portfolio.otherCases};
 `
 
-export default function Page({data}) {
+function Page({data}) {
     const i18n = useI18n();
     const animate = useContext(AnimationContext);
-    useEffect(() => {(animate.appLoaded) ? animate.animation.secondLoad() : null;}, []);
+    const [bullets, setBulletPoints] = useState("")
+
+    useEffect(() => {
+        (animate.appLoaded) ? animate.animation.secondLoad() : null;
+
+
+        setBulletPoints(i18n.t(data.bullets))
+        console.log(bullets)
+
+
+    }, []);
 
     const settings = {
         dots: false,
@@ -74,6 +84,11 @@ export default function Page({data}) {
                         <Animation animation="fade-up" delay="300">
                             <h2>{i18n.t(data.title_2)}</h2>
                             <p>{i18n.t(data.text_2)}</p>
+                            <h2>{i18n.t(data.title_3)}</h2>
+                            {/*{console.log(i18n.t(data.bullets))}*/}
+                            {/*{i18n.t(data.bullets).map((d) => {*/}
+                                {/*return <p>{d}</p>*/}
+                            {/*})}*/}
                         </Animation>
                     </text>
                     <Animation animation="fade-up" delay="500">
@@ -131,22 +146,14 @@ export default function Page({data}) {
     )
 }
 
-export async function getStaticProps(context) {
 
+Page.getInitialProps = ({ query }) => {
+    let data = cases.find(data => data.id === query.portfolio);
+    console.log(data)
     return {
-        props: {
-            data: cases.filter((data => cases.id === context.params.name))[0]
-        }, // will be passed to the page component as props
-    }
-}
-
-export async function getStaticPaths() {
-    return {
-        paths: [
-            {params: {portfolio: "hes"}}, // See the "paths" section below
-            {params: {portfolio: "form"}}, // See the "paths" section below
-            {params: {portfolio: "nwo"}}, // See the "paths" section below
-        ],
-        fallback: false // See the "fallback" section below
+        data
     };
-}
+};
+
+export default Page;
+

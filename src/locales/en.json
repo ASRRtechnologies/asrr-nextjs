@@ -147,12 +147,12 @@
       "title": "Real Time Steel Tracker",
       "text": "Lorem ipsum",
       "case": {
-        "title_1": "HES International",
-        "text_1": "HES blablabla",
-        "title_2": "The process",
-        "text_2": "Trupo is a bold new way for people who work for themselves to get insurance benefits. Their experts are committed to providing each of their customers with a better sense of security and control by recommending the best insurance products for their individual needs. No upselling, no loopholes, just solution",
-        "title_3": "The Result",
-        "text_3": "A very very very pretty design of these components It would make me jealous having something this pretty",
+        "title_1": "HES Steel Tracker",
+        "text_1": "HES and ASRR came into contact due to a connection with their head planner. The planner had noticed how all of the current logistics information about the locations of the steel parts, needed for construction of big oil tanks, was tracked in a single excel file, spanning over 30 thousand lines. Needless to say, this was both a security issue and an efficiency bottleneck. This is where we provided a solution. ",
+        "title_2": "The goal",
+        "text_2": "Create an intuitive, cross-platform application to manage the vast amount of logistics data needed for a 500-million-dollar project. Create valuable insights for management to track the overall progress. ",
+        "title_3": "What was needed",
+        "bullets": ["A Custom excel parser that allowed us to read the data into an enterprise grade SQL database", "A Spring Boot (Java) back-end system to lay down business rules for every action connected to a piece", "A ReactJS Web Application to be used on mobile by the workers, and on desktop by managers to check the input", "A PowerBI dashboard to give insight to management about the overall process "],
         "preview": "Click here to preview demo",
         "preview_link": "Click here to visit the demo site",
         "title_4": "Other Cases"

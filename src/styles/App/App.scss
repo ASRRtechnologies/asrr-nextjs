@@ -57,7 +57,7 @@ body {
 }
 
  h1, h2, h3, h4{
- font-weight: bolder;
+ font-weight: bold;
 }
 
 #__next{
@@ -81,28 +81,28 @@ body {
 }
 
 h1{
-  font-size: 60px;
+  font-size: 50px;
   margin: 0 0 40px 0;
 }
 
 h2{
-  font-size: 50px;
+  font-size: 30px;
   margin: 0 0 30px 0;
   line-height: 50px;
 }
 
 h3{
-  font-size: 24px;
-  margin: 0 0 10px 0;
-}
-
-h4{
   font-size: 20px;
   margin: 0 0 10px 0;
 }
 
+h4{
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
 h5{
-  font-size: 16px;
+  font-size: 14px;
   margin: 0 0 10px 0;
 }
 
