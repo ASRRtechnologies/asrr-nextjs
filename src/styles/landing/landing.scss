@@ -121,17 +121,12 @@
 
 @media screen and (max-width: 600px) {
   .landing-container {
-    height: 80vh;
+    height: 100vh;
     padding: 0 25px;
-
-    p{
-      font-size: 14px;
-    }
-
   }
 
   .landing-text-wrapper{
-    margin-top: 100px;
+    margin-top: 20vh;
    }
 
   .landing-bullets{

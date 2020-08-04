@@ -101,7 +101,10 @@ function Landing ({ title, text, image, boxes, projects }) {
 						</motion.p>
 					</span>
 
-					<Button custom to="/" title="See All Projects"/>
+					<span className="landing-overflow">
+						<Button custom to="/" title="See All Projects"/>
+					</span>
+
 				</div>
 
 				<div className="landing-bullets">
