@@ -3,8 +3,11 @@ import styled from '@emotion/styled'
 import Link from "next/link";
 
 const Wrapper = styled('div')`
-        background-color: white;
+        background-color: ${props => props.theme.button.background};
         box-shadow: ${props => props.theme.card.shadow};
+        p{
+        	color: ${props => props.theme.button.font}
+        }
         `
 
 function Button ({ children, className, title, to, navigation, custom, ...props }) {

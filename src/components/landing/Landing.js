@@ -7,12 +7,11 @@ import useI18n from '../../hooks/use-i18n'
 import Chevron from '../icons/Chevron'
 import Button from '../Button'
 import Link from 'next/link'
+import Wave from 'react-wavify'
+import {useTheme} from '../../context/theme/ThemeContext'
 
 const Wrapper = styled('div')`
-        background-color: ${props => props.theme.header.background};
-        border-color: ${props => props.theme.header.background};
-        border-style: solid;
-        border-width: 2px; 
+        background-color: ${props => props.theme.landing.background};
         `
 
 const Cards = styled('div')`
@@ -40,7 +39,7 @@ function Landing ({ title, text, image, boxes, projects }) {
 	})
 	const router = useRouter()
 	const landing = useRef(null)
-
+	const darkmode = useTheme().dark ;
 	const navigate = (url) => {
 		router.push(url).then(null)
 	}
@@ -72,15 +71,15 @@ function Landing ({ title, text, image, boxes, projects }) {
 	}
 
 	const setLandingHeight = () => {
-		if (window.matchMedia('(max-width: 1200px)').matches) {
-			landing.current.style.height = `${window.innerHeight}px`
-		}
+		// if (window.matchMedia('(max-width: 1200px)').matches) {
+		// 	landing.current.style.height = `${window.innerHeight}px`
+		// }
 	}
 
 	useEffect(() => setLandingHeight())
 
 	return (
-		<div className="landing-container">
+		<Wrapper className="landing-container">
 			{/*<LandingHeader/>*/}
 			{/*<motion.img initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 0.3 } }}*/}
 						{/*exit={{ opacity: 0, transition: { duration: 0.4 } }} className="background" src={image}*/}
@@ -94,7 +93,7 @@ function Landing ({ title, text, image, boxes, projects }) {
 					</span>
 
 					<span className="landing-overflow">
-						<motion.p initial={animation.landingText.initial} animate={animation.landingText.animate}
+						<motion.p className="bold" initial={animation.landingText.initial} animate={animation.landingText.animate}
 								  exit={animation.landingText.exit}
 								  custom={0.5}>
 							Responsible for creating innovative and fast cutting
@@ -103,12 +102,11 @@ function Landing ({ title, text, image, boxes, projects }) {
 					</span>
 
 					<Button custom to="/" title="See All Projects"/>
-
 				</div>
 
 				<div className="landing-bullets">
 					<span className="landing-overflow margin-bottom">
-						<motion.p initial={animation.landingText.initial} exit={animation.landingText.exit}
+						<motion.p className="bold" onClick={() => navigate("/services")} initial={animation.landingText.initial} exit={animation.landingText.exit}
 								  animate={animation.landingText.animate}>Full-Stack Software Development <Chevron/> </motion.p>
 						<motion.h4 initial={animation.landingText.initial} animate={animation.landingText.animate}
 								   exit={animation.landingText.exit}
@@ -118,8 +116,8 @@ function Landing ({ title, text, image, boxes, projects }) {
 					</span>
 
 					<span className="landing-overflow margin-bottom">
-						<motion.p initial={animation.landingText.initial} exit={animation.landingText.exit}
-								  animate={animation.landingText.animate}>Full-Stack Software Development</motion.p>
+						<motion.p className="bold" onClick={() => navigate("/services")} initial={animation.landingText.initial} exit={animation.landingText.exit}
+								  animate={animation.landingText.animate}>Full-Stack Software Development <Chevron/> </motion.p>
 						<motion.h4 initial={animation.landingText.initial} animate={animation.landingText.animate}
 								   exit={animation.landingText.exit}
 								   custom={0.5}>
@@ -128,8 +126,8 @@ function Landing ({ title, text, image, boxes, projects }) {
 					</span>
 
 					<span className="landing-overflow">
-						<motion.p initial={animation.landingText.initial} exit={animation.landingText.exit}
-								  animate={animation.landingText.animate}>Full-Stack Software Development</motion.p>
+						<motion.p className="bold" onClick={() => navigate("/services")} initial={animation.landingText.initial} exit={animation.landingText.exit}
+								  animate={animation.landingText.animate}>Full-Stack Software Development <Chevron/> </motion.p>
 						<motion.h4 initial={animation.landingText.initial} animate={animation.landingText.animate}
 								   exit={animation.landingText.exit}
 								   custom={0.5}>
@@ -140,7 +138,32 @@ function Landing ({ title, text, image, boxes, projects }) {
 				</div>
 			</div>
 
-		</div>
+			<div className="landing-wave">
+				{console.log(darkmode)}
+				<Wave fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}
+					  paused={false}
+					  options={{
+						  height: 50,
+						  amplitude: 50,
+						  speed: 0.25,
+						  points: 7
+					  }}
+				/>
+				<div className="position-absolute-wave">
+					<Wave
+						fill={`${darkmode ? "#131313" : "#FBFBFB"}`}
+						paused={false}
+						options={{
+							height: 15,
+							amplitude: 15,
+							speed: 0.35,
+							points: 6
+						}}
+					/>
+				</div>
+			</div>
+
+		</Wrapper>
 	)
 }
 

@@ -2,11 +2,11 @@
 const whiteFont = '#ffffff'
 const darkFont = '#1a1a1a'
 const lightFont = '#41474E'
-const subFontDark = '#8B98A9'
+const subFontDark = '#41474E'
 const subFontLight = '#d4e4f9'
 
-const dropShadowDark = ' 0 10px 15px rgba(43,42,43,0.3)'
-const dropShadowLight = '0 10px 15px rgba(0,0,0,0.13)'
+const dropShadowDark = ' 0 6px 10px rgba(235, 235, 235, 0.2)'
+const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)'
 
 const white = '#fff'
 const white2 = '#fbfbfb'
@@ -29,17 +29,30 @@ const hoverLinkDark = 'linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 5
 const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)'
 
 const landing = {
-	cards: {
+	background: {
 		dark: black,
-		light: white2,
+		light: white,
 	},
 }
 
 const layout = {
 	background: {
-		dark: black3,
-		light: white,
+		dark: "linear-gradient(120deg, #131313 45%, #0a0a0a 100%);",
+		light: "linear-gradient(120deg, #FBFBFB 45%, #ebedee 100%);",
 	},
+}
+
+const button = {
+	background:{
+		dark:white,
+		light:black,
+	},
+
+	font:{
+		dark:darkFont,
+		light:whiteFont,
+	}
+
 }
 
 const home = {
@@ -169,7 +182,7 @@ const lightTheme = {
 	},
 
 	landing: {
-		cards: landing.cards.light,
+		background: landing.background.light,
 	},
 
 	layout: layout.background.light,
@@ -192,8 +205,13 @@ const lightTheme = {
 
 	card: {
 		background: cards.background.light,
-		shadow: cards.shadow.dark,
+		shadow: cards.shadow.light,
 	},
+
+	button:{
+		background: button.background.light,
+		font: button.font.light
+	}
 
 }
 
@@ -216,7 +234,7 @@ const darkTheme = {
 	},
 
 	landing: {
-		cards: landing.cards.dark,
+		background: landing.background.dark,
 	},
 
 	layout: layout.background.dark,
@@ -241,6 +259,11 @@ const darkTheme = {
 		background: cards.background.dark,
 		shadow: cards.shadow.dark,
 	},
+
+	button:{
+		background: button.background.dark,
+		font: button.font.dark
+	}
 
 }
 

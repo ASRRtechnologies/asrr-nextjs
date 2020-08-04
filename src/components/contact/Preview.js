@@ -8,7 +8,7 @@ import Title from "@/text/Title";
 import Email from "@/icons/Email";
 
 const Wrapper = styled('div')`
-      background-color: ${props => props.theme.home.contact};
+      // background-color: ${props => props.theme.home.contact};
 `;
 
 function Contact({className}) {

@@ -6,7 +6,7 @@ import styled from '@emotion/styled'
 import Card from "@/stories/Card";
 
 const Wrapper = styled('div')`
-      background-color: ${props => props.theme.home.stories};
+      // background-color: ${props => props.theme.home.stories};
 `
 
 function Stories (props) {

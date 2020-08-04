@@ -18,16 +18,12 @@ const Wrapper = styled('nav')`
        
         svg{
             path{
-            fill: ${props => props.visible ? props.theme.header.font : props.menuOpen
-    ? props.theme.header.font
-    : 'white'};
+            fill: ${props => props.theme.header.font};
             }
         }
        
         p, a {
-          color:  ${props => props.visible ? props.theme.header.font : props.menuOpen
-    ? props.theme.header.font
-    : 'white'};
+          color: ${props => props.theme.header.font };
         }
         
         .header-background-text{

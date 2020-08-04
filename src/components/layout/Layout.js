@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "@emotion/styled";
 
 const Wrapper = styled('section')`
-        background-color:  ${props => props.theme.layout};
+        background-image:  ${props => props.theme.layout};
 `;
 
 function Layout({children}) {
