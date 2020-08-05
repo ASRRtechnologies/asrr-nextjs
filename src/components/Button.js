@@ -5,7 +5,7 @@ import Link from "next/link";
 const Wrapper = styled('div')`
         background-color: ${props => props.theme.button.background};
         box-shadow: ${props => props.theme.card.shadow};
-        p{
+        p, a{
         	color: ${props => props.theme.button.font}
         }
         `
@@ -15,7 +15,7 @@ function Button ({ children, className, title, to, navigation, custom, ...props 
 		<>
 			{custom ? (
 				<Wrapper className={`button ${className}`} {...props}>
-					{navigation ? (<Link href={to}><a>{title}</a></Link>) : (
+					{to ? (<Link href={to}><a>{title}</a></Link>) : (
 						<p>{title}</p>
 					)}
 				</Wrapper>)

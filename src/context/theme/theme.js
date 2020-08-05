@@ -3,9 +3,9 @@ const whiteFont = '#ffffff'
 const darkFont = '#1a1a1a'
 const lightFont = '#41474E'
 const subFontDark = '#41474E'
-const subFontLight = '#d4e4f9'
+const subFontLight = '#c4c4c4'
 
-const dropShadowDark = ' 0 6px 10px rgba(235, 235, 235, 0.2)'
+const dropShadowDark = ' 0 3px 3px rgba(235, 235, 235, 0.1)'
 const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)'
 
 const white = '#fff'
@@ -162,7 +162,7 @@ const cards = {
 	},
 
 	border: {
-		dark: "2px solid #f0f0f",
+		dark: "2px solid #f0f0f0",
 		light: "2px solid #eee",
 	},
 

@@ -1,0 +1,81 @@
+.why-asrr {
+  @include flex(center, flex-start, row);
+  width: 100%;
+  height: auto;
+  min-width: 300px;
+  max-width: 600px;
+
+
+}
+
+.why-asrr-points {
+
+  span {
+    height: 80px;
+    @include flex(flex-end, center, row);
+    border-right: 2px solid #eee;
+    padding-right: 50px;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+
+    &:hover {
+      border-right: 2px solid $primary-color;
+      transition: 300ms ease-in-out;
+    }
+
+    &.selected-line {
+      border-right: 2px solid $primary-color;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+}
+
+.why-asrr-text {
+  height: 100%;
+  width: auto;
+  @include flex(center, center, column);
+  margin-left: 25px;
+
+}
+
+@media screen and (max-width:700px) {
+  .why-asrr {
+    flex-direction: column;
+    min-width: 0;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .why-asrr-points {
+    @include flex(center, center, row);
+    margin-bottom: 50px;
+
+    span {
+      border-right: none;
+      border-bottom: 2px solid #eee;
+      padding: 25px;
+
+      &:hover {
+        border-bottom: 2px solid $primary-color;
+        border-right: none;
+        transition: 300ms ease-in-out;
+      }
+
+      &.selected-line {
+        border-bottom: 2px solid $primary-color;
+        border-right: none;      }
+    }
+
+  }
+
+  .why-asrr-text {
+    margin-left: 0;
+    text-align: center;
+
+  }
+
+}

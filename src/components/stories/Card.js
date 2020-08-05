@@ -9,12 +9,9 @@ function Card(props) {
                 <img src={image}/>
             </span>
 
-            <h4>Person x</h4>
-            <h4>Form Architecture </h4>
-
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s.</p>
-
+            <h3>-John Doe-</h3>
+            <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</p>
+            <h4>Form Architecture</h4>
         </div>
     );
 }

@@ -244,6 +244,13 @@
     }
   },
 
+  "why": {
+    "title": {
+      "header": "Why choose ASRR",
+      "text": ""
+    }
+  },
+
   "clients": {
     "title": {
       "header": "These clients went ahead of you",
