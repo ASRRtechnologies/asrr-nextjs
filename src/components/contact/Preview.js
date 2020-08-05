@@ -6,6 +6,7 @@ import {useTheme} from "../../context/theme/ThemeContext";
 import ReadMore from "@/text/ReadMore";
 import Title from "@/text/Title";
 import Email from "@/icons/Email";
+import Button from "@/Button";
 
 const Wrapper = styled('div')`
       // background-color: ${props => props.theme.home.contact};
@@ -21,9 +22,7 @@ function Contact({className}) {
             <Section>
                 <div className="contact preview">
                     <Title title={'services.preview.title.header'} text={'services.preview.title.text'}/>
-                    {/*<h2>Contact</h2>*/}
-                    {/*<p>Wilt u weten wat wij voor u kunnen betekenen? <br/> Neem vrijblijvend contact met ons op.</p>*/}
-                    <ReadMore className="read-more" to="/contact">Lets get in touch</ReadMore>
+                    <Button custom to="/contact" title="Let's Get In Touch"/>
                 </div>
             </Section>
         </Wrapper>

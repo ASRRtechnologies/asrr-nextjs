@@ -160,6 +160,12 @@ const cards = {
 		dark: dropShadowDark,
 		light: dropShadowLight,
 	},
+
+	border: {
+		dark: "2px solid #f0f0f",
+		light: "2px solid #eee",
+	},
+
 }
 
 const lightTheme = {
@@ -206,6 +212,7 @@ const lightTheme = {
 	card: {
 		background: cards.background.light,
 		shadow: cards.shadow.light,
+		border: cards.border.light,
 	},
 
 	button:{
@@ -258,6 +265,8 @@ const darkTheme = {
 	card: {
 		background: cards.background.dark,
 		shadow: cards.shadow.dark,
+		border: cards.border.dark,
+
 	},
 
 	button:{

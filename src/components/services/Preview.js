@@ -6,7 +6,7 @@ import styled from '@emotion/styled'
 import {previewServices} from '../../data/services'
 
 const Wrapper = styled('div')`
-      background-color: ${props => props.theme.home.services}; 
+      // background-color: ${props => props.theme.home.services}; 
 `;
 
 function Services() {
@@ -17,7 +17,7 @@ function Services() {
                 <div className="services services-preview ">
                     {previewServices.map((d) => {
                         return (
-                            <Card className="card-preview" title={d.title} text={d.text} icon={d.icon}/>
+                            <Card  title={d.title} text={d.text} icon={d.icon}/>
                         )
                     })}
                 </div>
