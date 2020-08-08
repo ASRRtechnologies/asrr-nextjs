@@ -111,7 +111,8 @@ function Landing({title, text, image, boxes, projects}) {
 
             <div className="landing-wave">
                 {console.log(darkmode)}
-                <Wave fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}
+                <Wave fill="#ff6961"
+					  // fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}
                       paused={false}
                       options={{
                           height: 50,
