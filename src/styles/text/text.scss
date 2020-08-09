@@ -17,6 +17,10 @@
 
   &.left-title{
     @include flex(center, flex-start, column);
+    p{
+      text-align: justify;
+      max-width: 800px;
+    }
   }
 
 }

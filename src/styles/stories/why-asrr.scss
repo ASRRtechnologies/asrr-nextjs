@@ -2,14 +2,26 @@
   @include flex(center, flex-start, row);
   width: 100%;
   height: auto;
+
+  &.margin-bottom {
+    margin-bottom: 100px;
+  }
+}
+
+.why-asrr-left {
+  justify-content: flex-start !important;
+}
+
+.why-asrr-wrapper {
+  width: 100%;
+  height: auto;
   min-width: 300px;
   max-width: 900px;
-
-
+  @include flex(flex-start, flex-start, row);
 }
 
 .why-asrr-points {
-  width: 40%;
+
   span {
     //height: 80px;
     height: auto;
@@ -29,6 +41,11 @@
 
     &.selected-line {
       border-right: 2px solid $primary-color;
+
+      p {
+        font-weight: bold;
+      }
+
     }
   }
 
@@ -37,6 +54,12 @@
     width: auto;
     max-width: 200px;
     margin-bottom: 0;
+    text-align: left;
+
+    &:hover {
+      font-weight: bold;
+    }
+
   }
 
 }
@@ -44,12 +67,19 @@
 .why-asrr-text {
   height: 100%;
   width: 60%;
-  @include flex(center, center, column);
+  @include flex(center, flex-start, column);
   margin-left: 25px;
+
+
+  ul{
+    list-style-position:inside;
+
+  }
+
 
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width: 700px) {
   .why-asrr {
     flex-direction: column;
     min-width: 0;
@@ -74,7 +104,8 @@
 
       &.selected-line {
         border-bottom: 2px solid $primary-color;
-        border-right: none;      }
+        border-right: none;
+      }
     }
 
   }

@@ -20,7 +20,7 @@ function Why() {
         <Wrapper className={`section-wrapper`}>
             <Section>
                 <Title title={'why.title.header'}/>
-                <div className="why-asrr">
+                <div className="why-asrr why-asrr-center">
                     <div className="why-asrr-points">
                         {values.map((d, i) => <span onClick={() => setCard(i)} className={`${i === card && "selected-line"}`}><p>{d}</p></span>)}
                     </div>

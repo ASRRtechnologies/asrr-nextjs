@@ -6,7 +6,10 @@ import useI18n from '../../hooks/use-i18n'
 import { AnimationContext } from '../../context/animations/AnimationContext'
 import Landing from '../../components/landing/Landing'
 import Title from '../../components/text/Title'
-import Interweave from "interweave";
+import Interweave, { Markup } from 'interweave'
+import Animation from '../../components/animation/Animation'
+import Slider from "react-slick";
+
 
 const Wrapper = styled('div')`
       background-image: ${props => props.theme.layout};
@@ -15,13 +18,13 @@ const Wrapper = styled('div')`
 function Page ({ data }) {
 	const i18n = useI18n()
 	const animate = useContext(AnimationContext)
-	const [bullets, setBulletPoints] = useState([]);
-	const [card, setCard] = useState(0);
+	const [bullets, setBulletPoints] = useState([])
+	const [card, setCard] = useState(0)
 
 	useEffect(() => {
-		(animate.appLoaded) ? animate.animation.secondLoad() : null
+		// (animate.appLoaded) ? animate.animation.secondLoad() : null
 		setBulletPoints(i18n.t(data.bullets))
-	}, [] );
+	}, [])
 
 	const settings = {
 		dots: false,
@@ -46,36 +49,40 @@ function Page ({ data }) {
 			<Landing/>
 			<Wrapper className="section-wrapper">
 				<Section>
-					<Title title={data.introduction.title} text={data.introduction.text}/>
+					<Title className="left-title" title={data.introduction.title} text={data.introduction.text}/>
 
-					<div className="why-asrr">
-						<div className="why-asrr-points">
-							{/*{bullets.map((d, i) => <span onClick={() => setCard(i)} className={`${i === card && "selected-line"}`}><p>{d.key}</p></span>)}*/}
-							{bullets.map((d, i) => <span onClick={() => setCard(i)} className={`${i === card && "selected-line"}`}>{<Interweave content={d.key}/>
-							}</span>)}
-						</div>
-						{/*{console.log(data.bullets)}*/}
-
-						<div className="why-asrr-text">
-							{card === 0 ? <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,</p> : null}
-							{card === 1 ? <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. o ligula eget dolor. Aenean massa. Cum sociis natoque penatibus e Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,</p> : null}
-							{card === 2 ? <p>Lorem ipsum dolor sit amet, consectetupenatibus et magnis dultricies nec, pellentesque eu,</p> : null}
+					<div className="why-asrr margin-bottom why-asrr-left">
+						<div className="why-asrr-wrapper">
+							<div className="why-asrr-points">
+								{bullets.map((d, i) => {
+									return (
+										<span onClick={() => setCard(i)}
+											  className={`${i === card && 'selected-line'} why-asrr-left`}>
+											<Interweave tagName="div" content={d.key} onClick={() => setCard(i)}
+														className={`${i === card && 'selected-line'}`}/>
+										</span>
+									)
+								})}
+							</div>
+							{bullets.map((d, i) => card === i
+								? <Markup attributes={{ className: 'why-asrr-text' }} containerTagName="div"
+										  content={d.value}/>
+								: null)}
 						</div>
 					</div>
 
+					<Title className="left-title" title={data.result.title} text={data.result.text}/>
 
 					{/*<Animation animation="fade-up" delay="500">*/}
-					{/*<Slider {...settings}>*/}
-					{/*{data.slider.map((d, i) => {*/}
-					{/*return (*/}
-					{/*<div key={d} className={`portfolio-page-slider-card ${i===0 && "no-margin"}`}>*/}
-					{/*<img src={d}/>*/}
-					{/*</div>*/}
-					{/*)*/}
-					{/*})}*/}
-					{/*</Slider>*/}
+
 					{/*</Animation>*/}
 
+					<Title className="left-title" title={data.conclusion.title} text={data.conclusion.text}/>
+					<Slider {...settings}>
+						<div>
+							<h1>1</h1>
+						</div>
+					</Slider>
 				</Section>
 			</Wrapper>
 		</>

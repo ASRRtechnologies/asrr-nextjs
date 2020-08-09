@@ -267,12 +267,16 @@
         },
         "bullets": [
           {
-            "key": "The old process <br/> (in a generic BIM/Architecture firm)",
-            "value": "An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount\n of files involved. "
+            "key": "<p>The old process <br/> (in a generic BIM/Architecture firm)</p>",
+            "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
           },
           {
-            "key": "The goal",
-            "value": "Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties."
+            "key": "<p>The goal</p>",
+            "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
+          },
+          {
+            "key": "<p>What was needed</p>",
+            "value": "<ul><li>Complex interface with the existing program</li> <li>Spring Boot Rest API hosted in kubernetes </li> <li>Front-end Web App in ReactJS</li> <li>A custom server</li> <li>Cloud storage</li>  </ul>"
           }
         ],
         "result": {

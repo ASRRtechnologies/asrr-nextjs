@@ -53,12 +53,15 @@ export const cases = [
         },
         bullets: "projects.form.case.bullets",
         result:{
-            title:"projects.form.case.introduction.title",
-            text:"projects.form.case.introduction.text",
+            title:"projects.form.case.result.title",
+            text:"projects.form.case.result.text",
         },
+        images:[
+            hesCase, hesImage, hesLanding
+        ],
         conclusion:{
-            title:"projects.form.case.introduction.title",
-            text:"projects.form.case.introduction.text",
+            title:"projects.form.case.conclusion.title",
+            text:"projects.form.case.conclusion.text",
         },
     },
     {
