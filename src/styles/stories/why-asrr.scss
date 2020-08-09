@@ -3,15 +3,19 @@
   width: 100%;
   height: auto;
   min-width: 300px;
-  max-width: 600px;
+  max-width: 900px;
 
 
 }
 
 .why-asrr-points {
-
+  width: 40%;
   span {
-    height: 80px;
+    //height: 80px;
+    height: auto;
+    min-height: 80px;
+    width: auto;
+    max-width: 300px;
     @include flex(flex-end, center, row);
     border-right: 2px solid #eee;
     padding-right: 50px;
@@ -29,6 +33,9 @@
   }
 
   p {
+    display: inline-block;
+    width: auto;
+    max-width: 200px;
     margin-bottom: 0;
   }
 
@@ -36,7 +43,7 @@
 
 .why-asrr-text {
   height: 100%;
-  width: auto;
+  width: 60%;
   @include flex(center, center, column);
   margin-left: 25px;
 

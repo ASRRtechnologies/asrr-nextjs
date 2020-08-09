@@ -13,12 +13,9 @@ const Wrapper = styled('div')`
 `;
 
 function Why() {
-
-    const darkmode = useTheme().dark;
     const [card, setCard] = useState(0);
     const i18n = useI18n();
     const values = ["Cheap", "Fast", "Agile"];
-
     return (
         <Wrapper className={`section-wrapper`}>
             <Section>

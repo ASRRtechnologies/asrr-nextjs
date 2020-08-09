@@ -12,7 +12,13 @@
   p {
     text-align: center;
     margin-bottom: 0;
+    max-width: 600px;
   }
+
+  &.left-title{
+    @include flex(center, flex-start, column);
+  }
+
 }
 
 .bold{

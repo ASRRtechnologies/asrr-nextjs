@@ -42,8 +42,24 @@ export const cases = [
     {
         "id": "form",
         landing: {
-            client:"projects.form.case.landing"
-        }
+            client:"projects.form.client",
+            discipline:"projects.form.case.landing.discipline",
+            title:"projects.form.case.landing.title",
+            text:"projects.form.case.landing.text",
+        },
+        introduction:{
+            title:"projects.form.case.introduction.title",
+            text:"projects.form.case.introduction.text",
+        },
+        bullets: "projects.form.case.bullets",
+        result:{
+            title:"projects.form.case.introduction.title",
+            text:"projects.form.case.introduction.text",
+        },
+        conclusion:{
+            title:"projects.form.case.introduction.title",
+            text:"projects.form.case.introduction.text",
+        },
     },
     {
         "id": "nwo",

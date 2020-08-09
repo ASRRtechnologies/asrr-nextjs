@@ -6,23 +6,22 @@ import useI18n from '../../hooks/use-i18n'
 import { AnimationContext } from '../../context/animations/AnimationContext'
 import Landing from '../../components/landing/Landing'
 import Title from '../../components/text/Title'
+import Interweave from "interweave";
 
 const Wrapper = styled('div')`
-      background-color: ${props => props.theme.layout};
+      background-image: ${props => props.theme.layout};
 `
 
 function Page ({ data }) {
 	const i18n = useI18n()
 	const animate = useContext(AnimationContext)
-	const [bullets, setBulletPoints] = useState('')
+	const [bullets, setBulletPoints] = useState([]);
+	const [card, setCard] = useState(0);
 
 	useEffect(() => {
 		(animate.appLoaded) ? animate.animation.secondLoad() : null
-
 		setBulletPoints(i18n.t(data.bullets))
-		console.log(bullets)
-
-	}, [])
+	}, [] );
 
 	const settings = {
 		dots: false,
@@ -47,8 +46,22 @@ function Page ({ data }) {
 			<Landing/>
 			<Wrapper className="section-wrapper">
 				<Section>
+					<Title title={data.introduction.title} text={data.introduction.text}/>
 
-					<Title title={data.title_1}/>
+					<div className="why-asrr">
+						<div className="why-asrr-points">
+							{/*{bullets.map((d, i) => <span onClick={() => setCard(i)} className={`${i === card && "selected-line"}`}><p>{d.key}</p></span>)}*/}
+							{bullets.map((d, i) => <span onClick={() => setCard(i)} className={`${i === card && "selected-line"}`}>{<Interweave content={d.key}/>
+							}</span>)}
+						</div>
+						{/*{console.log(data.bullets)}*/}
+
+						<div className="why-asrr-text">
+							{card === 0 ? <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,</p> : null}
+							{card === 1 ? <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. o ligula eget dolor. Aenean massa. Cum sociis natoque penatibus e Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,</p> : null}
+							{card === 2 ? <p>Lorem ipsum dolor sit amet, consectetupenatibus et magnis dultricies nec, pellentesque eu,</p> : null}
+						</div>
+					</div>
 
 
 					{/*<Animation animation="fade-up" delay="500">*/}

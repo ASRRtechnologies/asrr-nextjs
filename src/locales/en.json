@@ -257,13 +257,7 @@
 
       "case": {
         "landing": {
-          "client": [
-            "Client"
-          ],
-          "discipline": [
-            "Discipline",
-            "Automated BIM Configurator | Full-Stack"
-          ],
+          "discipline": "Automated BIM Configurator | Full-Stack",
           "title": "Reinventing the housing industry",
           "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
         },
@@ -273,8 +267,12 @@
         },
         "bullets": [
           {
-            "key": "The old process \n(in a generic BIM/Architecture firm)",
+            "key": "The old process <br/> (in a generic BIM/Architecture firm)",
             "value": "An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount\n of files involved. "
+          },
+          {
+            "key": "The goal",
+            "value": "Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties."
           }
         ],
         "result": {

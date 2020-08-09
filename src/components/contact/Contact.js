@@ -16,7 +16,7 @@ const Wrapper = styled('div')`
 `
 
 function Contact ({ big }) {
-	const i18n = useI18n()
+	const i18n = useI18n();
 	return (
 		<Wrapper className="section-wrapper">
 			<Section>
