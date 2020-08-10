@@ -35,14 +35,14 @@ function NextArrow(props) {
 function Page({data, query}) {
     const i18n = useI18n()
     const animate = useContext(AnimationContext)
-    const [bullets, setBulletPoints] = useState(i18n.t(data.bullets))
+    const [bullets, setBulletPoints] = useState([])
     const [card, setCard] = useState(0)
     const darkmode = useTheme().dark;
 
     useEffect(() => {
-        (animate.appLoaded) ? animate.animation.secondLoad() : null
-        console.log(bullets)
-    }, [])
+        (animate.appLoaded) ? animate.animation.secondLoad() : null;
+        setBulletPoints(i18n.t(data.bullets));
+    }, []);
 
     const settings = {
         dots: false,
