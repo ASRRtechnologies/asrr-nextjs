@@ -12,6 +12,7 @@ import Slider from "react-slick";
 import Chevron from "@/icons/Chevron";
 import Contact from "@/contact/Preview";
 import {useTheme} from "../../context/theme/ThemeContext";
+import {languages} from "../../context/lib/i18n";
 
 const Wrapper = styled('div')`
       background-image: ${props => props.theme.layout};
@@ -34,14 +35,14 @@ function NextArrow(props) {
 function Page({data, query}) {
     const i18n = useI18n()
     const animate = useContext(AnimationContext)
-    const [bullets, setBulletPoints] = useState([])
+    const [bullets, setBulletPoints] = useState(["1"])
+    // const [bullets, setBulletPoints] = useState(i18n.t(data.bullets))
     const [card, setCard] = useState(0)
     const darkmode = useTheme().dark;
 
     useEffect(() => {
         (animate.appLoaded) ? animate.animation.secondLoad() : null
-        setBulletPoints(i18n.t(data.bullets))
-        console.log(query)
+        console.log(bullets)
     }, [])
 
     const settings = {
@@ -131,9 +132,26 @@ function Page({data, query}) {
     )
 }
 
+// export async function getStaticProps({ params }) {
+//     const { default: lngDict = {} } = await import(
+//         `../../locales/${params.lng}.json`
+//         );
+//
+//     return {
+//         props: { lng: params.lng, lngDict },
+//     }
+// }
+//
+// export async function getStaticPaths() {
+//     return {
+//         paths: languages.map((l) => ({ params: { lng: l } })),
+//         fallback: false,
+//     }
+// }
+
 Page.getInitialProps = ({query}) => {
     let data = cases.find(data => data.id === query.cases);
-
+    console.log(query)
     return {
         data,
         query
