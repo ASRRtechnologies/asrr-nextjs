@@ -39,11 +39,20 @@
       transition: 300ms ease-in-out;
     }
 
+    p{
+      &:hover{
+        font-weight: bold;
+        transition:100ms ease-in-out all;
+      }
+    }
+
     &.selected-line {
       border-right: 2px solid $primary-color;
 
       p {
         font-weight: bold;
+        background-position: 0 100%;
+        transition:500ms ease-in-out all;
       }
 
     }
@@ -55,11 +64,6 @@
     max-width: 200px;
     margin-bottom: 0;
     text-align: left;
-
-    &:hover {
-      font-weight: bold;
-    }
-
   }
 
 }
@@ -70,12 +74,13 @@
   @include flex(center, flex-start, column);
   margin-left: 25px;
 
+  ul {
+    list-style-position: inside;
 
-  ul{
-    list-style-position:inside;
-
+    li {
+      min-height: 30px;
+    }
   }
-
 
 }
 
@@ -96,39 +101,38 @@
 
   .why-asrr-points {
     display: grid;
-    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
     margin-bottom: 50px;
-    overflow-x: auto;
     width: 100%;
 
     span {
       border-right: none;
-      border-bottom: 2px solid #eee;
-      padding: 25px 25px 0 25px;
+      border-left: 2px solid #eee;
       width: 100%;
       min-height: 100%;
       height: 100%;
+      justify-content: flex-start;
+      padding-left: 25px;
 
-      &:first-of-type{
-        padding: 25px 25px 0 0;
+      &:last-of-type {
+        margin-bottom: 0;
       }
 
-      p{
+      p {
         width: auto;
         display: flex;
         max-width: 100%;
-        white-space: nowrap;
-
       }
 
       &:hover {
-        border-bottom: 2px solid $primary-color;
+        border-left: 2px solid $primary-color;
         border-right: none;
         transition: 300ms ease-in-out;
       }
 
       &.selected-line {
-        border-bottom: 2px solid $primary-color;
+        border-left: 2px solid $primary-color;
         border-right: none;
       }
     }
@@ -140,11 +144,27 @@
     text-align: center;
     width: 100%;
 
-    p{
+    p {
       max-width: 100%;
       text-align: justify;
     }
 
+    ul {
+      list-style-position: outside;
+      text-align: left;
+      width: calc(100% - 50px);
+      margin-left: 25px;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .why-asrr {
+    &.margin-bottom{
+      margin-bottom: 50px;
+    }
   }
 
 }

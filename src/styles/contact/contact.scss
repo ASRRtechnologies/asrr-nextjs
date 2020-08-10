@@ -6,6 +6,10 @@
     text-align: center;
   }
 
+  &.left-title{
+    @include flex(flex-start, flex-start, column);
+  }
+
   .form {
     @include flex(space-between, flex-start, column);
     @include size(100%, 100%);

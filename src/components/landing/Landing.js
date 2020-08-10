@@ -46,6 +46,7 @@ function Landing({title, text, image, boxes, projects}) {
             {/*exit={{ opacity: 0, transition: { duration: 0.4 } }} className="background" src={image}*/}
             {/*alt="drone"/>*/}
 
+            <div className="landing-text-container">
             <div className="landing-text-wrapper">
                 <div className="landing-text">
 					<span className="landing-overflow">
@@ -66,7 +67,6 @@ function Landing({title, text, image, boxes, projects}) {
                     <span className="landing-overflow">
 						<Button custom to="/services" title="See All Projects"/>
 					</span>
-
                 </div>
 
                 <div className="landing-bullets">
@@ -107,6 +107,7 @@ function Landing({title, text, image, boxes, projects}) {
 					</span>
 
                 </div>
+            </div>
             </div>
 
             <div className="landing-wave">

@@ -16,13 +16,15 @@ function Why() {
     const [card, setCard] = useState(0);
     const i18n = useI18n();
     const values = ["Cheap", "Fast", "Agile"];
+    const darkmode = useTheme().dark;
+
     return (
         <Wrapper className={`section-wrapper`}>
             <Section>
                 <Title title={'why.title.header'}/>
                 <div className="why-asrr why-asrr-center">
                     <div className="why-asrr-points">
-                        {values.map((d, i) => <span onClick={() => setCard(i)} className={`${i === card && "selected-line"}`}><p>{d}</p></span>)}
+                        {values.map((d, i) => <span onClick={() => setCard(i)} className={`${i === card && "selected-line"}`}><p className={`${!darkmode ? "animated-link-dark" : "animated-link-light"}`}>{d}</p></span>)}
                     </div>
 
                     <div className="why-asrr-text">

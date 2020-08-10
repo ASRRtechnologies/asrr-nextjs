@@ -2,8 +2,12 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  @include flex(space-between, center, column);
-  padding: 0 100px;
+  //@include flex(space-between, center, column);
+  //padding: 0 100px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 200px;
+  justify-items: center;
 
   h1, h4, p {
     display: inline-block;
@@ -11,12 +15,20 @@
 
 }
 
-.landing-text-wrapper {
-  @include flex (space-between, flex-start, row);
-  width: 100%;
-  margin-top: 200px;
+.landing-text-container{
+  @include flex (center, center, row);
+  width: 100vw;
   height: auto;
-  max-width: $max-width
+  padding: 0 100px;
+}
+
+.landing-text-wrapper {
+  @include flex (space-between, center, row);
+  width: 100%;
+  height: auto;
+  max-width: $max-width;
+  padding-top: 100px;
+
 }
 
 .landing-text {
@@ -88,19 +100,16 @@
   }
 }
 
-
-//Make boxes full-screen
-
 @media screen and (max-width: 1200px) {
-  .landing-container {
+  .landing-text-container {
     padding: 0 50px;
   }
 
-  .landing-text-wrapper{
-    flex-direction: column;
-    height: calc(100vh - 200px - 200px);
-    margin-top: 200px;
-  }
+}
+
+//Make boxes full-screen
+
+@media screen and (max-width: 800px) {
 
   .landing-text{
     max-width: 80vw;
@@ -113,8 +122,9 @@
 
   }
 
+
   .landing-bullets{
-    width: 100%;
+    display: none;
   }
 
 }
@@ -122,16 +132,10 @@
 @media screen and (max-width: 600px) {
   .landing-container {
     height: 100vh;
+  }
+
+  .landing-text-container{
     padding: 0 25px;
   }
-
-  .landing-text-wrapper{
-    margin-top: 20vh;
-   }
-
-  .landing-bullets{
-    display: none;
-  }
-
 }
 

@@ -15,12 +15,20 @@
     max-width: 600px;
   }
 
+  &.title-button{
+    margin-bottom: 30px;
+  }
+
   &.left-title{
     @include flex(center, flex-start, column);
     p{
       text-align: justify;
       max-width: 800px;
     }
+  }
+
+  &.no-margin{
+    margin-bottom: 0;
   }
 
 }

@@ -12,7 +12,7 @@ const Wrapper = styled('div')`
       // background-color: ${props => props.theme.home.contact};
 `;
 
-function Contact({className}) {
+function Contact({className, title}) {
 
     const darkmode = useTheme().dark;
 
@@ -20,8 +20,8 @@ function Contact({className}) {
     return (
         <Wrapper className={`section-wrapper ${className}`}>
             <Section>
-                <div className="contact preview">
-                    <Title title={'services.preview.title.header'} text={'services.preview.title.text'}/>
+                <div className={`contact preview ${title}`}>
+                    <Title className={`${title} title-button`} title={'services.preview.title.header'} text={'services.preview.title.text'}/>
                     <Button custom to="/contact" title="Let's Get In Touch"/>
                 </div>
             </Section>
