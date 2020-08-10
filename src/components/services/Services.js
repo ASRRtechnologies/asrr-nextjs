@@ -18,7 +18,9 @@ function Services (props) {
 			<Section>
 				<Title title={'services.header.title'} text="services.header.text"/>
 				<div className="services">
-					{services.map((d) => <Card title={d.title} text={d.text}/>)}
+					{
+						services.map((d) => <Card title={d.preview_title} text={d.preview_text} icon={d.icon} to={`services/${d.title}`}/>
+					)}
 				</div>
 				<Preview/>
 			</Section>

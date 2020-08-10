@@ -1,7 +1,13 @@
 import Consultancy from "@/icons/Consultancy";
 import Coding from "@/icons/Coding";
+import Analytics from "@/icons/Analytics";
 import React from "react";
 import Hardware from "@/icons/Hardware";
+import Team from '../components/icons/Team'
+import Workspace from '../components/icons/Workspace'
+import CustomMade from '../components/icons/CustomMade'
+import CustomMade2 from '../components/icons/CustomMade2'
+import WebApplications from '../components/icons/WebApplications'
 
 export const previewServices = [
     {
@@ -29,7 +35,7 @@ export const services = [
         text: 'service-cards.teams.text',
         preview_title: 'service-cards.teams.preview.title',
         preview_text: 'service-cards.teams.preview.text',
-        icon: <Consultancy/>
+        icon: <Team/>
     },
     {
         id:"full-stack",
@@ -38,7 +44,7 @@ export const services = [
         text: 'service-cards.full-stack.text',
         preview_title: 'service-cards.full-stack.preview.title',
         preview_text: 'service-cards.full-stack.preview.text',
-        icon: <Consultancy/>
+        icon: <Coding/>
     },
     {
         id:"workspace",
@@ -47,7 +53,7 @@ export const services = [
         text: 'service-cards.workspace.text',
         preview_title: 'service-cards.workspace.preview.title',
         preview_text: 'service-cards.workspace.preview.text',
-        icon: <Consultancy/>
+        icon: <Workspace/>
     },
     {
         id:"custom-work",
@@ -56,7 +62,7 @@ export const services = [
         text: 'service-cards.custom-work.text',
         preview_title: 'service-cards.custom-work.preview.title',
         preview_text: 'service-cards.custom-work.preview.text',
-        icon: <Consultancy/>
+        icon: <CustomMade2/>
     },
     {
         id:"web-applications",
@@ -65,7 +71,7 @@ export const services = [
         text: 'service-cards.web-applications.text',
         preview_title: 'service-cards.web-applications.preview.title',
         preview_text: 'service-cards.web-applications.preview.text',
-        icon: <Consultancy/>
+        icon: <WebApplications/>
     },
     {
         id:"data-analytics",
@@ -74,7 +80,7 @@ export const services = [
         text: 'service-cards.data-analytics.text',
         preview_title: 'service-cards.data-analytics.preview.title',
         preview_text: 'service-cards.data-analytics.preview.text',
-        icon: <Consultancy/>
+        icon: <Analytics/>
     },
     {
         id:"consultancy",

@@ -14,6 +14,80 @@ import React from "react";
 export const projects = [
     {
         id: "form",
+        card:{
+            image:hesImage2,
+            client:"projects.form.client",
+            title:"projects.form.case.landing.title",
+            text:"projects.form.case.landing.text",
+            discipline:"projects.form.case.landing.discipline",
+            route:"/projects/form"
+        },
+        landing: {
+            client:"projects.form.client",
+            discipline:"projects.form.case.landing.discipline",
+            title:"projects.form.case.landing.title",
+            text:"projects.form.case.landing.text",
+        },
+        introduction:{
+            title:"projects.form.case.introduction.title",
+            text:"projects.form.case.introduction.text",
+        },
+        bullets: "projects.form.case.bullets",
+        result:{
+            title:"projects.form.case.result.title",
+            text:"projects.form.case.result.text",
+        },
+        images:[
+            hesImage, hesImage2,
+        ],
+        conclusion:{
+            title:"projects.form.case.conclusion.title",
+            text:"projects.form.case.conclusion.text",
+        },
+    },
+    {
+        id: "form",
+        card:{
+            image:hesImage2,
+            client:"projects.form.client",
+            title:"projects.form.case.landing.title",
+            text:"projects.form.case.landing.text",
+            discipline:"projects.form.case.landing.discipline",
+            route:"/projects/form"
+        },
+        landing: {
+            client:"projects.form.client",
+            discipline:"projects.form.case.landing.discipline",
+            title:"projects.form.case.landing.title",
+            text:"projects.form.case.landing.text",
+        },
+        introduction:{
+            title:"projects.form.case.introduction.title",
+            text:"projects.form.case.introduction.text",
+        },
+        bullets: "projects.form.case.bullets",
+        result:{
+            title:"projects.form.case.result.title",
+            text:"projects.form.case.result.text",
+        },
+        images:[
+            hesImage, hesImage2,
+        ],
+        conclusion:{
+            title:"projects.form.case.conclusion.title",
+            text:"projects.form.case.conclusion.text",
+        },
+    },
+    {
+        id: "form",
+        card:{
+            image:hesImage2,
+            client:"projects.form.client",
+            title:"projects.form.case.landing.title",
+            text:"projects.form.case.landing.text",
+            discipline:"projects.form.case.landing.discipline",
+            route:"/projects/form"
+        },
         landing: {
             client:"projects.form.client",
             discipline:"projects.form.case.landing.discipline",

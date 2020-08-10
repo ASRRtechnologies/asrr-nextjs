@@ -37,10 +37,10 @@ function Portfolio () {
 												  {/*onClick={() => toggle(i18n.t(d.title).toLowerCase(), i)}*/}
 												  {/*className={`${i === active && 'active'}`}>{i18n.t(d.title)}</p>)}*/}
 				{/*</div>*/}
-				<Title title={'case.title.header'} text="portfolio.title.text"/>
+				<Title title={'portfolio.title.header'} text="portfolio.title.text"/>
 				<div className="portfolio off-balance">
 					{data.map(
-						( {card} , i) => <Card route={card.route} client={card.client} key={card.title + i} img={card.image}
+						( {card} , i) => <Card route={card.id} client={card.client} key={card.title + i} img={card.image}
 																		   discipline={card.discipline} title={card.title}/>)}
 				</div>
 			</Section>

@@ -16,7 +16,7 @@ function Services() {
                     {previewServices.map((d) => {
                         {console.log(d.title)}
                         return (
-                            <Card  title={d.title} text={d.text} icon={d.icon}/>
+                            <Card  title={d.title} text={d.text} icon={d.icon} to={`services/${d.title}`}/>
                         )
                     })}
                 </div>
