@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import Title from "@/text/Title";
 
 const Wrapper = styled('section')`
-        background-color: ${props => props.theme.home.clients}; 
+        // background-color: ${props => props.theme.home.clients}; 
         svg{
           path{
             fill:  ${props => props.theme.fonts.title}

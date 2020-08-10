@@ -1,47 +1,58 @@
 //Font colors
 const whiteFont = '#ffffff'
 const darkFont = '#1a1a1a'
-const lightFont = '#646464'
+const lightFont = '#41474E'
+const subFontDark = '#41474E'
+const subFontLight = '#c4c4c4'
 
+const dropShadowDark = ' 0 3px 3px rgba(235, 235, 235, 0.1)'
+const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)'
 
-const dropShadowDark = ' 0 3px 6px rgba(43,42,43,0.5)'
-const dropShadowLight = '0 1px 9px rgba(0,0,0,0.13)'
+const white = '#fff'
+const white2 = '#fbfbfb'
+const white3 = '#ebebeb'
 
-const white = "#fff";
-const white2 = "#fbfbfb";
-const white3 = "#ebebeb";
-
-const black = "#0a0a0a";
-const black2 = "#131313";
-const black3 = "#1a1a1a";
-const black4 = "#3c3c3c";
-
+const black = '#0a0a0a'
+const black2 = '#131313'
+const black3 = '#1a1a1a'
+const black4 = '#3c3c3c'
 
 //Logo colors
 const logoLight = white
 const logoDark = black
 
 //Header colors
-const headerLight = '#ffffff';
-const headerDark = '#0a0a0a';
+const headerLight = '#ffffff'
+const headerDark = '#0a0a0a'
 
-const hoverLinkDark = "linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)";
-const hoverLinkLight = "linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)";
-
-
+const hoverLinkDark = 'linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)'
+const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)'
 
 const landing = {
-	cards: {
+	background: {
 		dark: black,
-		light: white2,
+		light: white,
 	},
 }
 
 const layout = {
 	background: {
-		dark: black3,
-		light: white,
+		dark: "linear-gradient(120deg, #131313 45%, #0a0a0a 100%);",
+		light: "linear-gradient(120deg, #FBFBFB 45%, #ebedee 100%);",
 	},
+}
+
+const button = {
+	background:{
+		dark:white,
+		light:black,
+	},
+
+	font:{
+		dark:darkFont,
+		light:whiteFont,
+	}
+
 }
 
 const home = {
@@ -50,7 +61,7 @@ const home = {
 		dark: black3,
 		light: white,
 	},
-	
+
 	portfolio: {
 		dark: black3,
 		light: white,
@@ -71,7 +82,7 @@ const home = {
 		light: white2,
 	},
 
-};
+}
 
 const portfolio = {
 	landing: {
@@ -104,14 +115,19 @@ const fonts = {
 	},
 
 	text: {
-		light: "#ededed",
+		light: '#ededed',
 		dark: lightFont,
 	},
 
-	link:{
-		light:hoverLinkLight,
-		dark:hoverLinkDark,
-	}
+	subFont: {
+		light: subFontLight,
+		dark: subFontDark,
+	},
+
+	link: {
+		light: hoverLinkLight,
+		dark: hoverLinkDark,
+	},
 
 }
 
@@ -135,16 +151,22 @@ const header = {
 }
 
 const cards = {
-	background:{
-		dark:"#1a1a1a",
-		light:"#ffffff"
+	background: {
+		dark: '#1a1a1a',
+		light: '#ffffff',
 	},
 
-	shadow:{
-		dark:dropShadowDark,
-		light:dropShadowLight
-	}
-};
+	shadow: {
+		dark: dropShadowDark,
+		light: dropShadowLight,
+	},
+
+	border: {
+		dark: "2px solid #f0f0f0",
+		light: "2px solid #eee",
+	},
+
+}
 
 const lightTheme = {
 
@@ -160,12 +182,13 @@ const lightTheme = {
 		text: fonts.text.dark,
 		white: fonts.title.light,
 		inverse: fonts.title.dark,
-		link: fonts.link.dark
+		subFont: fonts.subFont.dark,
+		link: fonts.link.dark,
 
 	},
 
 	landing: {
-		cards: landing.cards.light,
+		background: landing.background.light,
 	},
 
 	layout: layout.background.light,
@@ -187,11 +210,17 @@ const lightTheme = {
 	},
 
 	card: {
-		background:cards.background.light,
-		shadow:cards.shadow.dark
+		background: cards.background.light,
+		shadow: cards.shadow.light,
+		border: cards.border.light,
+	},
+
+	button:{
+		background: button.background.light,
+		font: button.font.light
 	}
 
-};
+}
 
 const darkTheme = {
 
@@ -206,12 +235,13 @@ const darkTheme = {
 		title: fonts.title.light,
 		text: fonts.text.light,
 		white: fonts.title.light,
-		inverse:fonts.title.light,
-		link: fonts.link.light
+		subFont: fonts.subFont.light,
+		inverse: fonts.title.light,
+		link: fonts.link.light,
 	},
 
 	landing: {
-		cards: landing.cards.dark,
+		background: landing.background.dark,
 	},
 
 	layout: layout.background.dark,
@@ -233,8 +263,15 @@ const darkTheme = {
 	},
 
 	card: {
-		background:cards.background.dark,
-		shadow:cards.shadow.dark
+		background: cards.background.dark,
+		shadow: cards.shadow.dark,
+		border: cards.border.dark,
+
+	},
+
+	button:{
+		background: button.background.dark,
+		font: button.font.dark
 	}
 
 }

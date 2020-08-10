@@ -21,6 +21,7 @@ export const cases = [
         "text_1": "projects.hes.case.text_1",
         "title_2": "projects.hes.case.title_2",
         "text_2": "projects.hes.case.text_2",
+        "bullets":"projects.hes.case.bullets",
         "title_3": "projects.hes.case.title_3",
         "text_3": "projects.hes.case.text_3",
         "preview": "projects.hes.case.preview",
@@ -40,29 +41,28 @@ export const cases = [
     },
     {
         "id": "form",
-        "landing": hesLanding,
-        "slider": [hesImage, hesImage2],
-        "result": hesResult,
-        "title_1": "projects.form.case.title_1",
-        "text_1": "projects.form.case.text_1",
-        "title_2": "projects.form.case.title_2",
-        "text_2": "projects.form.case.text_2",
-        "title_3": "projects.form.case.title_3",
-        "text_3": "projects.form.case.text_3",
-        "preview": "projects.form.case.preview",
-        "preview_link": "projects.form.case.preview_link",
-        "title_4": "Other Cases",
-        "demo": true,
-        "url": "https://www.google.com",
-        "card":{
-            "route":"form",
-            "image": formCase,
-            "client": 'projects.form.client',
-            "title": 'projects.form.title',
-            "alt": 'form',
-            "discipline": 'projects.form.discipline',
-            "text": 'projects.form.text',
-        }
+        landing: {
+            client:"projects.form.client",
+            discipline:"projects.form.case.landing.discipline",
+            title:"projects.form.case.landing.title",
+            text:"projects.form.case.landing.text",
+        },
+        introduction:{
+            title:"projects.form.case.introduction.title",
+            text:"projects.form.case.introduction.text",
+        },
+        bullets: "projects.form.case.bullets",
+        result:{
+            title:"projects.form.case.result.title",
+            text:"projects.form.case.result.text",
+        },
+        images:[
+            hesResult, hesImage, hesImage2
+        ],
+        conclusion:{
+            title:"projects.form.case.conclusion.title",
+            text:"projects.form.case.conclusion.text",
+        },
     },
     {
         "id": "nwo",

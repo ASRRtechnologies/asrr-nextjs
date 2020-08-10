@@ -51,13 +51,13 @@ body {
   overflow-y: hidden!important;
 }
 
- h5, a ,p {
+ h4, h5, a ,p {
    font-weight: normal;
    text-decoration: none;
 }
 
- h1, h2, h3, h4{
- font-weight: bolder;
+ h1, h2, h3{
+ font-weight: bold;
 }
 
 #__next{
@@ -81,33 +81,33 @@ body {
 }
 
 h1{
-  font-size: 60px;
-  margin: 0 0 40px 0;
+  font-size: 50px;
+  margin: 0 0 30px 0;
 }
 
 h2{
-  font-size: 50px;
+  font-size: 30px;
   margin: 0 0 30px 0;
   line-height: 50px;
 }
 
 h3{
-  font-size: 24px;
-  margin: 0 0 10px 0;
-}
-
-h4{
   font-size: 20px;
   margin: 0 0 10px 0;
 }
 
+h4{
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
 h5{
-  font-size: 16px;
+  font-size: 14px;
   margin: 0 0 10px 0;
 }
 
 p{
-  margin: 0 0 20px 0;
+  margin: 0 0 5px 0;
   line-height: 30px;
   font-size: 16px;
 }
@@ -119,6 +119,10 @@ a{
 }
 
 @media screen and (max-width: 1200px) {
+
+  h1{
+    font-size: 35px;
+  }
 
   h2{
     font-size: 35px;
@@ -133,16 +137,14 @@ a{
 
 @media screen and (max-width: 600px) {
   h1{
-    font-size: 40px;
-    margin: 0 0 30px 0;
-    font-weight: bold;
+    font-size: 25px;
+    margin: 0 0 20px 0;
   }
 
   h2{
     font-size: 30px;
     margin: 0 0 25px 0;
-    font-weight: bold;
-  }
+   }
 
   h3{
     font-size: 20px;
@@ -150,7 +152,7 @@ a{
   }
 
   h4{
-    font-size: 18px;
+    font-size: 14px;
   }
 
   p{
@@ -164,3 +166,26 @@ a{
 }
 
 
+
+
+@media screen and (max-width: 1000px) {
+  ::-webkit-scrollbar-track
+  {
+    border-radius: 5px;
+    width: 1px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar
+  {
+    height: 7px;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb
+  {
+    border-radius: 5px;
+    -webkit-box-shadow: none;
+    background-color: #555;
+  }
+}

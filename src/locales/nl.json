@@ -251,6 +251,13 @@
     }
   },
 
+  "why": {
+    "title": {
+      "header": "Waarom ASRR kiezen",
+      "text": ""
+    }
+  },
+
   "stories": {
     "title": {
       "header": "Stories",

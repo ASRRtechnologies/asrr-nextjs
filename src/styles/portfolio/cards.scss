@@ -3,6 +3,7 @@
   .card {
     width: 30.333%;
     height: 100%;
+    border-radius: 10px;
     h3{
       margin-bottom: 0;
     }
@@ -44,6 +45,7 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 10px;
+    border-radius: 5px;
 
     img{
       top:0;
@@ -64,17 +66,9 @@
 
   .card-text{
     @include size(100%, 100%);
-    padding: 20px;
-    position: absolute;
-    bottom:0;
-    background-color: rgba(9, 9, 9, 0.3);
-    transform: translateY(0);
-    transition: 400ms ease-in-out transform;
+    padding: 20px 10px;
+    position: relative;
     @include flex(space-between, flex-start, column);
-
-    p, h4, h5 {
-      color: white;
-    }
 
     p{
       margin-bottom: 0;

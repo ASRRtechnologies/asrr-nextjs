@@ -1,9 +1,16 @@
 import React from 'react'
+import styled from "@emotion/styled";
 
-function Chevron (props) {
+const Arrow = styled('svg')`
+        	path{
+        		fill:${props => props.theme.fonts.title};
+        	}
+`;
+
+function Chevron ({className, onClick}) {
 	return (
 		<>
-			<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+			<Arrow onClick={onClick} className={`arrow ${className}`} version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 				 width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847"
 				 style={{enableBackground:"new 0 0 451.847 451.847"}}
 			>
@@ -42,7 +49,7 @@ function Chevron (props) {
 </g>
 				<g>
 </g>
-</svg>
+</Arrow>
 
 		</>
 	)

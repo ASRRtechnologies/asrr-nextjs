@@ -18,16 +18,12 @@ const Wrapper = styled('nav')`
        
         svg{
             path{
-            fill: ${props => props.visible ? props.theme.header.font : props.menuOpen
-    ? props.theme.header.font
-    : 'white'};
+            fill: ${props => props.theme.header.font};
             }
         }
        
         p, a {
-          color:  ${props => props.visible ? props.theme.header.font : props.menuOpen
-    ? props.theme.header.font
-    : 'white'};
+          color: ${props => props.theme.header.font };
         }
         
         .header-background-text{
@@ -35,9 +31,7 @@ const Wrapper = styled('nav')`
         }
         
         .bar1, .bar2, .bar3, .chev > .line {
-          background-color:  ${props => props.visible ? props.theme.header.font : props.menuOpen
-    ? props.theme.header.font
-    : 'white'};
+          background-color:  ${props =>props.theme.header.font}
         }
         
         @media screen and (max-width:1200px) {

@@ -1,6 +1,6 @@
-import React, { useContext, useEffect } from 'react'
+import React, {useContext, useEffect} from 'react'
 import Landing from '../components/landing/Landing'
-import { AnimationContext } from '../context/animations/AnimationContext'
+import {AnimationContext} from '../context/animations/AnimationContext'
 import Layout from '../components/layout/Layout'
 import PortfolioPreview from '../components/portfolio/Preview'
 import ServicePreview from '../components/services/Preview'
@@ -11,6 +11,7 @@ import Clients from '../components/clients/Clients'
 import Contact from '../components/contact/Preview'
 import useI18n from '../hooks/use-i18n'
 import Stories from "@/stories/Stories";
+import Why from "@/why-asrr/Why";
 
 function Index(props) {
 
@@ -19,16 +20,18 @@ function Index(props) {
 
     useEffect(() => {
         //Load animation only if app has loaded once
-         (animate.appLoaded) ? animate.animation.secondLoad() : null;
+        (animate.appLoaded) ? animate.animation.secondLoad() : null;
     }, []);
 
     return (
         <div className="content-wrapper">
-            <Landing title={i18n.t('home.landing.title')} text={i18n.t('home.landing.text')} image={image} boxes projects/>
+            <Landing title={i18n.t('home.landing.title')} text={i18n.t('home.landing.text')} image={image} boxes
+                     projects/>
             <Layout>
                 <ServicePreview/>
                 <PortfolioPreview/>
                 <Stories/>
+                <Why/>
                 <Contact/>
                 <Clients/>
             </Layout>

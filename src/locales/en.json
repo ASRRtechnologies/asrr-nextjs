@@ -54,7 +54,6 @@
           "title": "Add-Ons"
         }
       }
-
     },
     "welcome": "Welkom thuis {{username}}!",
     "text": "Ich hoffe, du findest das nützlich.",
@@ -129,54 +128,6 @@
       "touch": "Lets get in touch!"
     }
   },
-  "projects":{
-    "disciplines": {
-      "all": "All",
-      "bim": "Bim",
-      "web": "Web Application"
-    },
-    "nwo": {
-      "client": "NWO",
-      "discipline": "Custom Server | Process optimization ",
-      "title": "Secure Remote Desktop Environment",
-      "text": "Lorem ipsum"
-    },
-    "hes": {
-      "client": "HES International",
-      "discipline": "Web Application | BI",
-      "title": "Real Time Steel Tracker",
-      "text": "Lorem ipsum",
-      "case": {
-        "title_1": "HES International",
-        "text_1": "HES blablabla",
-        "title_2": "The process",
-        "text_2": "Trupo is a bold new way for people who work for themselves to get insurance benefits. Their experts are committed to providing each of their customers with a better sense of security and control by recommending the best insurance products for their individual needs. No upselling, no loopholes, just solution",
-        "title_3": "The Result",
-        "text_3": "A very very very pretty design of these components It would make me jealous having something this pretty",
-        "preview": "Click here to preview demo",
-        "preview_link": "Click here to visit the demo site",
-        "title_4": "Other Cases"
-      }
-    },
-    "protonise": {
-      "client": "Protonise",
-      "discipline": "Web Application",
-      "title": "A stunning new website",
-      "text": "A stunning new website"
-    },
-    "form": {
-      "client": "FORM Architecture & Engineering",
-      "discipline": "Automated BIM Configurator | Full-Stack",
-      "title": "Reinventing the housing industry",
-      "text": "Lorem ipsum form"
-    },
-    "form-dashboard": {
-      "client": "Form",
-      "discipline": "Progressive Web App",
-      "title": "Configurator Dashboard",
-      "text": "Lorem ipsum fr"
-    }
-  },
   "service-cards": {
     "web-applications": {
       "title": "Web Applications",
@@ -243,21 +194,107 @@
       }
     }
   },
-
+  "why": {
+    "title": {
+      "header": "Why choose ASRR",
+      "text": ""
+    }
+  },
   "clients": {
     "title": {
       "header": "These clients went ahead of you",
       "text": "These clients went ahead of you"
     }
   },
-
-
   "stories": {
     "title": {
       "header": "Stories",
       "text": "What others have to say"
     }
-  }
+  },
+  "projects": {
+    "disciplines": {
+      "all": "All",
+      "bim": "Bim",
+      "web": "Web Application"
+    },
+    "nwo": {
+      "client": "NWO",
+      "discipline": "Custom Server | Process optimization ",
+      "title": "Secure Remote Desktop Environment",
+      "text": "Lorem ipsum"
+    },
+    "hes": {
+      "client": "HES International",
+      "discipline": "Web Application | BI",
+      "title": "Real Time Steel Tracker",
+      "text": "Lorem ipsum",
+      "case": {
+        "title_1": "HES Steel Tracker",
+        "text_1": "HES and ASRR came into contact due to a connection with their head planner. The planner had noticed how all of the current logistics information about the locations of the steel parts, needed for construction of big oil tanks, was tracked in a single excel file, spanning over 30 thousand lines. Needless to say, this was both a security issue and an efficiency bottleneck. This is where we provided a solution. ",
+        "title_2": "The goal",
+        "text_2": "Create an intuitive, cross-platform application to manage the vast amount of logistics data needed for a 500-million-dollar project. Create valuable insights for management to track the overall progress. ",
+        "title_3": "What was needed",
+        "bullets": [
+          "A Custom excel parser that allowed us to read the data into an enterprise grade SQL database",
+          "A Spring Boot (Java) back-end system to lay down business rules for every action connected to a piece",
+          "A ReactJS Web Application to be used on mobile by the workers, and on desktop by managers to check the input",
+          "A PowerBI dashboard to give insight to management about the overall process "
+        ],
+        "preview": "Click here to preview demo",
+        "preview_link": "Click here to visit the demo site",
+        "title_4": "Other Cases"
+      }
+    },
+    "protonise": {
+      "client": "Protonise",
+      "discipline": "Web Application",
+      "title": "A stunning new website",
+      "text": "A stunning new website"
+    },
+    "form": {
+      "client": "FORM Architecture & Engineering",
 
+      "case": {
+        "landing": {
+          "discipline": "Automated BIM Configurator | Full-Stack",
+          "title": "Reinventing the housing industry",
+          "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
+        },
+        "introduction": {
+          "title": "The Problem",
+          "text": "One of our oldest clients, FORM, has hired ASRR and its developers for years to provide for their IT needs. \nTogether with FORM we think about how we can realize the vision they\n have had for nearly a decade on how to revolutionize the housing industry"
+        },
+        "bullets": [
+          {
+            "key": "<p class=\"animated-link\"> The old process <br/> (in a generic BIM/Architecture firm)</p>",
+             "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
+          },
+          {
+            "key": "<p class=\"animated-link\">The goal</p>",
+            "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
+          },
+          {
+            "key": "<p class=\"animated-link\">What was needed</p>",
+            "value": "<ul><li>Complex interface with the existing program</li> <li>Spring Boot Rest API hosted in kubernetes </li> <li>Front-end Web App in ReactJS</li> <li>A custom server</li> <li>Cloud storage</li>  </ul>"
+          }
+        ],
+        "result": {
+          "title": "What We Did",
+          "text": "FORM uses complex BIM models to combine smart parametric designs with a structured way of working to create the \n3D models needed to build a house. This is a perfect example of something that can be automated.\nThe program FORM uses to engineer and model houses is called Autodesk Revit. Revit can be a bit unreliable at times,\n which posed a threat to ensuring we can go from a manual process to a fully automated cloud version.\nWe wrote a program that plugs into the existing application, enabling us to imitate user interactions with code. \nThis allows us to automate complex actions flawlessly. \nUsing the program, we create an output within Revit, for example a PDF with the building plans.\n This pdf is then uploaded to the cloud, and its location is passed to the central server.     "
+        },
+        "conclusion": {
+          "title": "Conclusion",
+          "text": "In short, we were able to adapt to the current process by writing code that integrates with the used programs. \nWe then pushed it all to the next level by using enterprise grade methods to ensure reliability,\n speed and a good overall user experience. \nTo put this into numbers, this can save hundreds of euros per house, making FORM’s Automation a cutting-edge competitor \nto big time firms while delivering consistent and reliable outputs. "
+        }
+      }
+    },
+    "form-dashboard": {
+      "client": "Form",
+      "discipline": "Progressive Web App",
+      "title": "Configurator Dashboard",
+      "text": "Lorem ipsum fr"
+    }
+  }
 }
 

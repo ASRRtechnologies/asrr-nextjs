@@ -8,7 +8,7 @@ import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
 
 const Wrapper = styled('div')`
-      background-color: ${props => props.theme.section.contact};
+      background-color: ${props => props.theme.layout};
       
       a{
       	color: ${props => props.theme.fonts.text}
@@ -16,7 +16,7 @@ const Wrapper = styled('div')`
 `
 
 function Contact ({ big }) {
-	const i18n = useI18n()
+	const i18n = useI18n();
 	return (
 		<Wrapper className="section-wrapper">
 			<Section>

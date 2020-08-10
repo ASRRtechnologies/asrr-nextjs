@@ -1,41 +1,56 @@
-import React, { useContext, useEffect } from 'react'
-import {cases} from "../../data/cases";
+import React, {useContext, useEffect, useState} from 'react'
+import {cases} from '../../data/cases'
 import Section from '@/layout/Section'
-import Slider from 'react-slick'
 import styled from '@emotion/styled'
-import Animation from '@/animation/Animation'
-import Demo from '@/portfolio/Demo'
-import Preview from "@/contact/Preview";
-import useI18n from "../../hooks/use-i18n";
-import { AnimationContext } from '../../context/animations/AnimationContext'
+import useI18n from '../../hooks/use-i18n'
+import {AnimationContext} from '../../context/animations/AnimationContext'
+import Landing from '../../components/landing/Landing'
+import Title from '../../components/text/Title'
+import Interweave, {Markup} from 'interweave'
+import Animation from '../../components/animation/Animation'
+import Slider from "react-slick";
+import Chevron from "@/icons/Chevron";
+import Contact from "@/contact/Preview";
+import {useTheme} from "../../context/theme/ThemeContext";
 
-const Landing = styled('div')`
-      background-color: ${props => props.theme.portfolio.landing};
-`
+const Wrapper = styled('div')`
+      background-image: ${props => props.theme.layout};
+`;
 
-const Process = styled('div')`
-      background-color: ${props => props.theme.portfolio.process};
-`
+const Card = styled('div')`
+        box-shadow: ${props => props.theme.card.shadow};
+`;
 
-const ShowCase = styled('div')`
-      background-color: ${props => props.theme.portfolio.showcase};
-`
+function PrevArrow(props) {
+    const {className, onClick} = props;
+    return (<Chevron onClick={onClick} className={className}/>);
+}
 
-const OtherCases = styled('div')`
-      background-color: ${props => props.theme.portfolio.otherCases};
-`
+function NextArrow(props) {
+    const {className, onClick} = props;
+    return (<Chevron onClick={onClick} className={className}/>);
+}
 
-export default function Page({data}) {
-    const i18n = useI18n();
-    const animate = useContext(AnimationContext);
-    useEffect(() => {(animate.appLoaded) ? animate.animation.secondLoad() : null;}, []);
+function Page({data}) {
+    const i18n = useI18n()
+    const animate = useContext(AnimationContext)
+    const [bullets, setBulletPoints] = useState([])
+    const [card, setCard] = useState(0)
+    const darkmode = useTheme().dark;
+
+    useEffect(() => {
+        (animate.appLoaded) ? animate.animation.secondLoad() : null
+        setBulletPoints(i18n.t(data.bullets))
+    }, [])
 
     const settings = {
         dots: false,
         infinite: false,
         speed: 500,
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
+        nextArrow: <NextArrow/>,
+        prevArrow: <PrevArrow/>,
         responsive: [
             {
                 breakpoint: 600,
@@ -43,110 +58,85 @@ export default function Page({data}) {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
-                }
+                },
             },
-        ]
-    };
-
+        ],
+    }
 
     return (
-        <div className="portfolio-page">
-            <Landing className="portfolio-page-landing">
-                <h1>{i18n.t(data.title_1)}</h1>
-                <h1>{i18n.t(data.title_1)}</h1>
-                {/*<div className="portfolio-page-back"></div>*/}
-                <div className="portfolio-page-landing-wrapper">
-                    <text>
-                        <Animation animation="fade-up" delay="300">
-                            <h2>{i18n.t(data.title_1)}</h2>
-                            <p>{i18n.t(data.text_1)}</p>
-                        </Animation>
-                    </text>
-                    <Animation animation="fade-up" delay="500">
-                        <img alt="image" src={data.landing}/>
-                    </Animation>.
-                </div>
-            </Landing>
-
-            <Process className="portfolio-page-work">
+        <>
+            <Landing/>
+            <Wrapper className="section-wrapper">
                 <Section>
-                    <text>
-                        <Animation animation="fade-up" delay="300">
-                            <h2>{i18n.t(data.title_2)}</h2>
-                            <p>{i18n.t(data.text_2)}</p>
-                        </Animation>
-                    </text>
-                    <Animation animation="fade-up" delay="500">
-                        <Slider {...settings}>
-                            {data.slider.map((d, i) => {
-                                return (
-                                    <div key={d} className={`portfolio-page-slider-card ${i===0 && "no-margin"}`}>
-                                        <img src={d}/>
-                                    </div>
-                                )
-                            })}
-                        </Slider>
+                    <Animation animation="fade-up" delay="300">
+                        <Title className="left-title" title={data.introduction.title} text={data.introduction.text}/>
                     </Animation>
-                </Section>
-            </Process>
 
-            <ShowCase className="portfolio-page-result">
-                <Section>
-                    <text>
-                        <Animation animation="fade-up" delay="300">
-                            <h2>{i18n.t(data.title_3)}</h2>
-                            <p>{i18n.t(data.text_3)}</p>
-                        </Animation>
-                    </text>
-                    <Animation animation="fade-up" delay="500">
-                        {data.demo ? (<>
-                                <Demo url={data.url}/>
-                                <a className="portfolio-page-link link" url={data.url}>Or
-                                    visit the site</a>
-                            </>
-
-                        ) : (<img className="portfolio-result-image" src={data.result}/>
-                        )}
-                    </Animation>
-                </Section>
-            </ShowCase>
-
-            <OtherCases className="portfolio-page-other-cases">
-                <Section>
-                    <text>
-                        <Animation animation="fade-up" delay="300">
-                            <h2>Other Cases</h2>
-                            <p>Take a look at other cases we have worked on.</p>
-                        </Animation>
-                    </text>
-                    <Animation animation="fade-up" delay="500">
-                        <div className="portfolio-page-cases">
-                            <div></div>
+                    <Animation animation="fade" delay="500">
+                        <div className="why-asrr margin-bottom why-asrr-left">
+                            <div className="why-asrr-wrapper">
+                                <div className="why-asrr-points">
+                                    {bullets.map((d, i) => {
+                                        return (
+                                            <span onClick={() => setCard(i)}
+                                                  className={`${i === card && 'selected-line'} why-asrr-left`}>
+											<Interweave tagName="div"
+                                                        attributes={{className: `${!darkmode ? "animated-link-dark-wrapper" : "animated-link-light-wrapper"}`}}
+                                                        content={d.key} onClick={() => setCard(i)}/>
+										</span>
+                                        )
+                                    })}
+                                </div>
+                                {bullets.map((d, i) => card === i
+                                    ? <Markup attributes={{className: 'why-asrr-text'}} containerTagName="div"
+                                              content={d.value}/>
+                                    : null)}
+                            </div>
                         </div>
                     </Animation>
+
+                    <Animation animation="fade-up" delay="500">
+                        <Title className="left-title" title={data.result.title} text={data.result.text}/>
+                    </Animation>
+
+                    <Animation className="project-carousel-wrapper" animation="fade-up" delay="500">
+                        <Slider {...settings}>
+                            {
+                                data.images.map((img, i) => {
+                                    return (
+                                        <Card className="project-image">
+                                            <img src={img} alt="img"/>
+                                        </Card>
+                                    )
+                                })
+                            }
+                        </Slider>
+                        <div className="project-carousel-indicator">
+
+                        </div>
+                    </Animation>
+
+                    <Animation animation="fade-up" delay="500">
+                        <Title className="left-title no-margin" title={data.conclusion.title}
+                               text={data.conclusion.text}/>
+                    </Animation>
+
+                    <Animation animation="fade-up" delay="500">
+                        <Contact title="left-title"/>
+                    </Animation>
                 </Section>
-            </OtherCases>
-            <Preview/>
-        </div>
+            </Wrapper>
+        </>
     )
 }
 
-export async function getStaticProps(context) {
-
+Page.getInitialProps = ({query}) => {
+    let data = cases.find(data => data.id === query.portfolio)
+    console.log(data)
     return {
-        props: {
-            data: cases.filter((data => cases.id === context.params.name))[0]
-        }, // will be passed to the page component as props
+        data,
     }
 }
 
-export async function getStaticPaths() {
-    return {
-        paths: [
-            {params: {portfolio: "hes"}}, // See the "paths" section below
-            {params: {portfolio: "form"}}, // See the "paths" section below
-            {params: {portfolio: "nwo"}}, // See the "paths" section below
-        ],
-        fallback: false // See the "fallback" section below
-    };
-}
+export default Page
+

@@ -17,7 +17,7 @@ function Footer (props) {
 
                 <div className="container">
                     <div className="grid">
-                        <h4>{i18n.t("footer.navigation")}</h4>
+                        <h3>{i18n.t("footer.navigation")}</h3>
                         <ReadMore inverted small to="/">{i18n.t("header.home")}</ReadMore>
                         <ReadMore inverted small to="/portfolio">{i18n.t("header.portfolio")}</ReadMore>
                         <ReadMore inverted small to="/services">{i18n.t("header.services")}</ReadMore>
@@ -27,14 +27,14 @@ function Footer (props) {
                     </div>
 
                     <div className="grid">
-                        <h4>Information</h4>
+                        <h3>Information</h3>
                         <ReadMore inverted small to="/">{i18n.t("footer.faq")}</ReadMore>
                         <ReadMore inverted small to="/">{i18n.t("footer.privacy")}</ReadMore>
                         <ReadMore inverted small to="/">{i18n.t("footer.policy")}</ReadMore>
                     </div>
 
                     <div className="grid address">
-                        <h4>{i18n.t("footer.address")}</h4>
+                        <h3>{i18n.t("footer.address")}</h3>
                         <p>ASRR Tech</p>
                         <p>Veraartlaan 12 - 2248 PE Rijswijk</p>
                         <p>contact@asrr.nl</p>
@@ -42,7 +42,7 @@ function Footer (props) {
                     </div>
 
                     <div className="grid newsletter">
-                        <h4>{i18n.t("footer.letter")}</h4>
+                        <h3>{i18n.t("footer.letter")}</h3>
                         <form>
                             <Input className="full-width"  button={i18n.t("buttons.submit")} placeholder={i18n.t("contact.form.email.placeholder")}/>
                             {/*<ReadMore small action>{i18n.t("buttons.submit")}</ReadMore>*/}
