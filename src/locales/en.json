@@ -1,4 +1,9 @@
 {
+  "general_words": {
+    "client": "Client",
+    "discipline": "Discipline"
+  },
+
   "header": {
     "home": "Home",
     "portfolio": "Portfolio",
@@ -28,37 +33,24 @@
   "home": {
     "landing": {
       "title": "Innovative Software Development",
-      "card-1": {
-        "type": "Flexible",
-        "title": "Full-Stack Development"
-      },
-      "card-2": {
-        "type": "BIM",
-        "title": "Revit API Automation"
-      },
-      "cards": {
-        "teams": {
-          "sector": "Scaleable",
-          "title": "IT Teams"
+      "text": "Responsible for creating innovative and fast cutting software development while being cheap and cost friendly\n",
+      "services": [
+        {
+          "discipline": "Full-Stack Development",
+          "text": "Front and Back development 24-7"
         },
-        "hardware": {
-          "sector": "Hardware",
-          "title": "Custom Servers"
+        {
+          "discipline": "Custom Built Hardware",
+          "text": "Best servers you can imagine"
         },
-        "full-stack": {
-          "sector": "Full-Stack Software",
-          "title": "Development"
-        },
-        "adaptive": {
-          "sector": "Adaptive",
-          "title": "Add-Ons"
+        {
+          "discipline": "IT Consultancy",
+          "text": "Best possible help you can imagine"
         }
-      }
-    },
-    "welcome": "Welkom thuis {{username}}!",
-    "text": "Ich hoffe, du findest das nützlich.",
-    "description": "Das Beispiel zeigt, wie man die Sprache für SSG und SSG optimierte Seiten wechselt."
+      ]
+    }
   },
+
   "portfolio": {
     "landing": {
       "title": "Portfolio",

@@ -1,5 +1,5 @@
 import React, {useContext, useEffect} from 'react';
-import Landing from "../components/landing/Landing";
+import HomeLanding from "@/landing/HomeLanding";
 import {AnimationContext} from "../context/animations/AnimationContext";
 import Layout from "../components/layout/Layout";
 import PortfolioPage from "../components/portfolio/Portfolio";
@@ -13,7 +13,7 @@ function Portfolio() {
     useEffect(() => {(animate.appLoaded) ? animate.animation.secondLoad() : null;}, []);
     return (
         <div className="content-wrapper">
-            <Landing title={i18n.t("case.landing.title")} text={i18n.t("case.landing.text")} image={image}/>
+            <HomeLanding title={i18n.t("case.landing.title")} text={i18n.t("case.landing.text")} image={image}/>
             <Layout>
                 <PortfolioPage/>
                 <ContactPreview className="section-contact-preview"/>

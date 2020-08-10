@@ -4,11 +4,16 @@ import Link from "next/link";
 
 const Wrapper = styled('div')`
         background-color: ${props => props.theme.button.background};
-        box-shadow: ${props => props.theme.card.shadow};
+        box-shadow: ${props => props.theme.button.shadow};
         p, a{
         	color: ${props => props.theme.button.font}
         }
-        `
+        
+        &:hover{
+                background-color: ${props => props.theme.button.hover};
+        }
+        
+        `;
 
 function Button ({ children, className, title, to, navigation, custom, ...props }) {
 	return (

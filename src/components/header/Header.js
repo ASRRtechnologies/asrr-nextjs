@@ -79,7 +79,7 @@ function Header(props) {
                     <Link href="/"><a className="header-logo"><Logo/></a></Link>
                     <div className={`header-menu ${menuOpen && 'open'}`}>
                          <Link href="/"><a onClick={closeMenu}>{i18n.t('header.home')}</a></Link>
-                        <Link href="/portfolio"><a onClick={closeMenu}>{i18n.t('header.case')}</a></Link>
+                        <Link href="/portfolio"><a onClick={closeMenu}>{i18n.t('header.portfolio')}</a></Link>
                         <Link href="/services"><a onClick={closeMenu}>{i18n.t('header.services')}</a></Link>
                         <Link href="/hire"><a onClick={closeMenu}>{i18n.t('header.hire')}</a></Link>
                         <Link href="/contact"><a onClick={closeMenu}>{i18n.t('header.contact')}</a></Link>

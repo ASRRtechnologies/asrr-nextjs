@@ -10,7 +10,7 @@
   justify-items: center;
 
   h1, h4, p {
-    display: inline-block;
+    //display: inline-block;
   }
 
 }
@@ -23,7 +23,7 @@
 }
 
 .landing-text-wrapper {
-  @include flex (space-between, center, row);
+  @include flex (space-between, flex-start, row);
   width: 100%;
   height: auto;
   max-width: $max-width;
@@ -40,25 +40,33 @@
 
 .landing-bullets {
   height: auto;
-  width: 50%;
-  @include flex (flex-start, flex-end, column);
+  width: auto;
+  @include flex (flex-start, flex-start, column);
   max-width: 300px;
 
   svg {
-    display: inline-block;
+    display: block;
     width: 10px;
     height: auto;
     transform: rotate(-90deg);
     transition: ease-in-out 200ms;
+
   }
 
   p {
     cursor: pointer;
+    @include flex (flex-start, center, row);
 
     &:hover {
       svg {
         transform: translateX(10px) rotate(-90deg);
         transition: ease-in-out 200ms;
+        g{
+          path{
+            fill: $primary-color;
+            transition: ease-in-out 100ms all;
+          }
+        }
       }
     }
   }
@@ -66,14 +74,26 @@
   h4 {
     user-select: none;
   }
+
+  &.landing-client-bullets{
+    p{
+      cursor: auto;
+      display: block !important;
+    }
+  }
+
 }
 
 .landing-overflow {
-  display: block;
+  @include flex (flex-start, flex-start, column);
   overflow: hidden;
   height: auto;
   width: auto;
   max-width: $max-width;
+
+  &.button-overflow{
+    height: 105%;
+  }
 
   &.margin-bottom {
     margin-bottom: 25px;
@@ -111,20 +131,27 @@
 
 @media screen and (max-width: 800px) {
 
+  .landing-text-wrapper{
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
   .landing-text{
-    max-width: 80vw;
+    max-width: 100%;
     width:100%;
 
     h1, p {
       width:100%;
       display: block;
     }
-
   }
-
 
   .landing-bullets{
     display: none;
+    &.landing-client-bullets{
+     display: flex;
+      margin-bottom: 30px;
+    }
   }
 
 }

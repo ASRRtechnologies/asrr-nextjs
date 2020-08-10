@@ -1,5 +1,5 @@
 import React, {useContext, useEffect} from 'react'
-import Landing from '../components/landing/Landing'
+import HomeLanding from '@/landing/HomeLanding'
 import {AnimationContext} from "../context/animations/AnimationContext";
 import Layout from "../components/layout/Layout";
 import image from '../../public/assets/images/landing/contact.jpg'
@@ -14,7 +14,7 @@ function Contact() {
     useEffect(() => {(animate.appLoaded) ? animate.animation.secondLoad() : null;}, []);
     return (
         <div className="content-wrapper">
-            <Landing title={i18n.t("contact.landing.title")} text={i18n.t("contact.landing.text")} image={image}/>
+            <HomeLanding title={i18n.t("contact.landing.title")} text={i18n.t("contact.landing.text")} image={image}/>
             <Layout>
                 {/*<Display image={display}/>*/}
                 <ContactPage big={true}/>

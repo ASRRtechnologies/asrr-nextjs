@@ -30,7 +30,7 @@ export const cases = [
             text:"projects.form.case.result.text",
         },
         images:[
-            hesResult, hesImage, hesImage2
+            hesImage, hesImage2,
         ],
         conclusion:{
             title:"projects.form.case.conclusion.title",

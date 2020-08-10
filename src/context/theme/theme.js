@@ -5,7 +5,7 @@ const lightFont = '#41474E'
 const subFontDark = '#41474E'
 const subFontLight = '#c4c4c4'
 
-const dropShadowDark = ' 0 3px 3px rgba(235, 235, 235, 0.1)'
+const dropShadowDark = ' 0 8px 10px rgba(235, 235, 235, 0.15)'
 const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)'
 
 const white = '#fff'
@@ -43,17 +43,28 @@ const layout = {
 }
 
 const button = {
+
 	background:{
 		dark:white,
 		light:black,
 	},
 
+	hover:{
+		dark:"#d7d7d7",
+		light:"#4a4a4a",
+	},
+
 	font:{
 		dark:darkFont,
 		light:whiteFont,
+	},
+
+	shadow:{
+		dark:"0px 10px 15px rgba(235, 235, 235, 0.2)",
+		light:"0px 10px 15px rgba(0,0,0,0.23)"
 	}
 
-}
+};
 
 const home = {
 
@@ -217,7 +228,9 @@ const lightTheme = {
 
 	button:{
 		background: button.background.light,
-		font: button.font.light
+		font: button.font.light,
+		hover: button.hover.light,
+		shadow: button.shadow.light,
 	}
 
 }
@@ -271,7 +284,9 @@ const darkTheme = {
 
 	button:{
 		background: button.background.dark,
-		font: button.font.dark
+		font: button.font.dark,
+		hover: button.hover.dark,
+		shadow: button.shadow.dark,
 	}
 
 }
