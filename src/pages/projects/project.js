@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react'
-import {cases} from '../../data/cases'
+import {projects} from '../../data/projects'
 import Section from '@/layout/Section'
 import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
@@ -34,7 +34,7 @@ function NextArrow(props) {
 function Contact({className, title}) {
     return (
                 <div className={`contact preview ${title}`}>
-                    <Title className={`${title} title-button`} title={'services.preview.title.header'} text={'services.preview.title.text'}/>
+                    <Title className={`${title} title-button`} title={'contact.preview.title.header'} text={'contact.preview.title.text'}/>
                     <Button custom to="/contact" title="Let's Get In Touch"/>
                 </div>
     )
@@ -150,7 +150,7 @@ function Page({data, query}) {
 // }
 
 Page.getInitialProps = ({query}) => {
-    let data = cases.find(data => data.id === query.cases);
+    let data = projects.find(data => data.id === query.cases);
     console.log(query)
     return {
         data,

@@ -79,7 +79,7 @@
     "preview": {
       "title": {
         "header": "About ASRR",
-        "text": "We like to blablabla some of the services we provide are"
+        "text": "Some of the services we provide are"
       }
     }
   },
@@ -121,11 +121,43 @@
     }
   },
   "service-cards": {
+    "teams": {
+      "title": "Scaleable IT-teams",
+      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
+      "preview": {
+        "title": "Scaleable IT-teams",
+        "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
+      }
+    },
+    "full-stack": {
+      "title": "Full-Stack Development",
+      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
+      "preview": {
+        "title": "Full-Stack Development",
+        "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
+      }
+    },
+    "workspace": {
+      "title": "Personalised Workspace",
+      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
+      "preview": {
+        "title": "Personalised Workspace",
+        "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
+      }
+    },
+    "custom-work": {
+      "title": "Custom Work",
+      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
+      "preview": {
+        "title": "Custom Work",
+        "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
+      }
+    },
     "web-applications": {
       "title": "Web Applications",
       "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
       "preview": {
-        "title": "Web Application",
+        "title": "Web Applications",
         "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
       }
     },
@@ -133,15 +165,7 @@
       "title": "Data Analytics | BI",
       "text": "Analysing data correctly can save any company from excess costs and inefficiency. Using our BI analytics on one of your existing or a new database, ASRR will provide insights into key aspects of your data.",
       "preview": {
-        "title": "Data Analytics",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
-      }
-    },
-    "servers": {
-      "title": "Servers | Hardware",
-      "text": "Slow and old systems can cause serious hinder in both security and efficiency. That's why we build our servers from scratch, selecting the right parts for the job at hand. Using this we can create remote desktop environments, data storage servers and machines optimized for heavy rendering.",
-      "preview": {
-        "title": "Servers",
+        "title": "Data Analytics | BI",
         "text": "Lorem ipsum dit is de preview aar wat uitlegen"
       }
     },
@@ -150,6 +174,24 @@
       "text": "Not sure what you need? ASRR can send an expert to analyse your company processes and propose a solution and fitting advice. ASRR can then provide the required developing skills.",
       "preview": {
         "title": "Consultancy",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "hardware": {
+      "title": "Hardware",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      "preview": {
+        "title": "Hardware",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+
+
+    "servers": {
+      "title": "Servers | Hardware",
+      "text": "Slow and old systems can cause serious hinder in both security and efficiency. That's why we build our servers from scratch, selecting the right parts for the job at hand. Using this we can create remote desktop environments, data storage servers and machines optimized for heavy rendering.",
+      "preview": {
+        "title": "Servers",
         "text": "Lorem ipsum dit is de preview aar wat uitlegen"
       }
     },
@@ -172,14 +214,6 @@
     "power-bi": {
       "title": "Scalable Teams",
       "text": "ASRR offers dynamic, multi-disciplinary IT teams that can be hired at short notice. The team will adapt to your needs, ensuring you have the right person at the right place, every time.",
-      "preview": {
-        "title": "Power Bi",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
-      }
-    },
-    "hardware": {
-      "title": "Hardware",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
       "preview": {
         "title": "Power Bi",
         "text": "Lorem ipsum dit is de preview aar wat uitlegen"

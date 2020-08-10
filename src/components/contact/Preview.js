@@ -21,7 +21,7 @@ function Contact({className, title}) {
         <Wrapper className={`section-wrapper ${className}`}>
             <Section>
                 <div className={`contact preview ${title}`}>
-                    <Title className={`${title} title-button`} title={'services.preview.title.header'} text={'services.preview.title.text'}/>
+                    <Title className={`${title} title-button`} title={'contact.preview.title.header'} text={'contact.preview.title.text'}/>
                     <Button custom to="/contact" title="Let's Get In Touch"/>
                 </div>
             </Section>

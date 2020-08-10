@@ -11,7 +11,7 @@ import hesResult from "#/clients/hes/result.png"
 import hesCase from '#/clients/hes/case-image.jpg'
 import React from "react";
 
-export const cases = [
+export const projects = [
     {
         id: "form",
         landing: {

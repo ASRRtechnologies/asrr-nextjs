@@ -3,7 +3,7 @@ import Section from '../layout/Section'
 import Card from './Card'
 import Title from '../text/Title'
 import { portfolio, disciplines } from '../../data/portfolio'
-import { cases } from '../../data/cases'
+import { projects } from '../../data/projects'
 import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
 
@@ -17,7 +17,7 @@ function Portfolio () {
 	const [data, setData] = useState([]);
 
 	useEffect(() => {
-		setData(cases)
+		setData(projects)
 	}, []);
 
 	const toggle = (discipline, activeIndex) => {
