@@ -32,12 +32,12 @@ function Portfolio () {
 	return (
 		<Wrapper className="section-wrapper">
 			<Section>
-				{/*<div className="portfolio-links">*/}
-					{/*{disciplines.map((d, i) => <p key={`portfolio-link${i}`}*/}
+				{/*<div className="case-links">*/}
+					{/*{disciplines.map((d, i) => <p key={`case-link${i}`}*/}
 												  {/*onClick={() => toggle(i18n.t(d.title).toLowerCase(), i)}*/}
 												  {/*className={`${i === active && 'active'}`}>{i18n.t(d.title)}</p>)}*/}
 				{/*</div>*/}
-				<Title title={'portfolio.title.header'} text="portfolio.title.text"/>
+				<Title title={'case.title.header'} text="portfolio.title.text"/>
 				<div className="portfolio off-balance">
 					{data.map(
 						( {card} , i) => <Card route={card.route} client={card.client} key={card.title + i} img={card.image}

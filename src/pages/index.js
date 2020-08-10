@@ -1,5 +1,5 @@
 import React, {useContext, useEffect} from 'react'
-import Landing from '../components/landing/Landing'
+import HomeLanding from '@/landing/HomeLanding'
 import {AnimationContext} from '../context/animations/AnimationContext'
 import Layout from '../components/layout/Layout'
 import PortfolioPreview from '../components/portfolio/Preview'
@@ -25,8 +25,8 @@ function Index(props) {
 
     return (
         <div className="content-wrapper">
-            <Landing title={i18n.t('home.landing.title')} text={i18n.t('home.landing.text')} image={image} boxes
-                     projects/>
+            <HomeLanding title={'home.landing.title'} text={'home.landing.text'} image={image} boxes
+                         projects/>
             <Layout>
                 <ServicePreview/>
                 <PortfolioPreview/>

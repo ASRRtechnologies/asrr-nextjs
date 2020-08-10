@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react'
-import Landing from '../components/landing/Landing'
+import HomeLanding from '@/landing/HomeLanding'
 import { AnimationContext } from '../context/animations/AnimationContext'
 import Layout from '../components/layout/Layout'
 import ServicePage from '../components/services/Services'
@@ -16,7 +16,7 @@ function Services (props) {
 
 	return (
 		<div className="content-wrapper">
-			<Landing title={i18n.t('services.landing.title')} text={i18n.t('services.landing.text')} image={image}/>
+			<HomeLanding title={i18n.t('services.landing.title')} text={i18n.t('services.landing.text')} image={image}/>
 			<Layout>
 				<ServicePage/>
 				<ContactPreview className="section-contact-preview"/>

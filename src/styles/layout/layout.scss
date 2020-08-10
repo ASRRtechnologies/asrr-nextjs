@@ -32,6 +32,10 @@
   max-width: $max-width;
   @include flex(center, center, column);
 
+  &.project-page{
+    @include flex(center, flex-start, column);
+  }
+
 }
 
 

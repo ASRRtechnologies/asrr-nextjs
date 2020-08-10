@@ -4,14 +4,14 @@ import Section from '@/layout/Section'
 import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
 import {AnimationContext} from '../../context/animations/AnimationContext'
-import Landing from '../../components/landing/Landing'
+import Landing from '@/landing/ClientLanding'
 import Title from '../../components/text/Title'
 import Interweave, {Markup} from 'interweave'
 import Animation from '../../components/animation/Animation'
 import Slider from "react-slick";
 import Chevron from "@/icons/Chevron";
-import Contact from "@/contact/Preview";
 import {useTheme} from "../../context/theme/ThemeContext";
+import Button from "@/Button";
 
 const Wrapper = styled('div')`
       background-image: ${props => props.theme.layout};
@@ -31,43 +31,45 @@ function NextArrow(props) {
     return (<Chevron onClick={onClick} className={className}/>);
 }
 
-function Page({data}) {
+function Contact({className, title}) {
+    return (
+                <div className={`contact preview ${title}`}>
+                    <Title className={`${title} title-button`} title={'services.preview.title.header'} text={'services.preview.title.text'}/>
+                    <Button custom to="/contact" title="Let's Get In Touch"/>
+                </div>
+    )
+}
+
+function Page({data, query}) {
     const i18n = useI18n()
     const animate = useContext(AnimationContext)
     const [bullets, setBulletPoints] = useState([])
+    const [slide, setActiveSlide] = useState(0)
     const [card, setCard] = useState(0)
     const darkmode = useTheme().dark;
 
     useEffect(() => {
-        (animate.appLoaded) ? animate.animation.secondLoad() : null
-        setBulletPoints(i18n.t(data.bullets))
-    }, [])
+        (animate.appLoaded) ? animate.animation.secondLoad() : null;
+        setBulletPoints(i18n.t(data.bullets));
+    }, []);
 
     const settings = {
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
         nextArrow: <NextArrow/>,
         prevArrow: <PrevArrow/>,
-        responsive: [
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                },
-            },
-        ],
+        // beforeChange: (current, next) => setActiveSlide(next),
+        afterChange: current => setActiveSlide(current)
     }
 
     return (
         <>
-            <Landing/>
+            <Landing title={data.landing.title} text={data.landing.text} client={data.landing.client} discipline={data.landing.discipline}/>
             <Wrapper className="section-wrapper">
-                <Section>
+                <Section className="project-page">
                     <Animation animation="fade-up" delay="300">
                         <Title className="left-title" title={data.introduction.title} text={data.introduction.text}/>
                     </Animation>
@@ -112,12 +114,12 @@ function Page({data}) {
                             }
                         </Slider>
                         <div className="project-carousel-indicator">
-
+                            {data.images.map((d, i ) => <div className={`${i === slide ? "active-indicator": null}`}> </div>)}
                         </div>
                     </Animation>
 
                     <Animation animation="fade-up" delay="500">
-                        <Title className="left-title no-margin" title={data.conclusion.title}
+                        <Title className="left-title" title={data.conclusion.title}
                                text={data.conclusion.text}/>
                     </Animation>
 
@@ -130,13 +132,31 @@ function Page({data}) {
     )
 }
 
+// export async function getStaticProps({ params }) {
+//     const { default: lngDict = {} } = await import(
+//         `../../locales/${params.lng}.json`
+//         );
+//
+//     return {
+//         props: { lng: params.lng, lngDict },
+//     }
+// }
+//
+// export async function getStaticPaths() {
+//     return {
+//         paths: languages.map((l) => ({ params: { lng: l } })),
+//         fallback: false,
+//     }
+// }
+
 Page.getInitialProps = ({query}) => {
-    let data = cases.find(data => data.id === query.portfolio)
-    console.log(data)
+    let data = cases.find(data => data.id === query.cases);
+    console.log(query)
     return {
         data,
+        query
     }
-}
+};
 
 export default Page
 

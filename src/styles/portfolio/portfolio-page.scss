@@ -1,6 +1,6 @@
 .project-carousel-wrapper{
   width: 100%;
-  @include flex(flex-start, flex-start, row);
+  @include flex(flex-start, flex-start, column);
   margin-bottom: 100px;
 }
 
@@ -34,6 +34,28 @@
   width: 100%;
   height: auto;
   max-width: 600px;
+}
+
+.project-carousel-indicator{
+  width: 100%;
+  max-width: 600px;
+  @include flex(center, center, row);
+  margin-top: 50px;
+  height: auto;
+
+  & > div {
+    height: 3px;
+    width: 20%;
+    background-color: #ededed;
+    max-width: 40px;
+    margin: 0 5px;
+  }
+
+
+  .active-indicator{
+    background-color: $primary-color;
+  }
+
 }
 
 .project-image{

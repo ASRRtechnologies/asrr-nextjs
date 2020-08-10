@@ -20,13 +20,14 @@ const Wrapper = styled('div')`
         }
         `;
 
-function Landing({title, text, image, boxes, projects}) {
+function HomeLanding({title, text, image, boxes, projects}) {
     const i18n = useI18n()
     const animate = useContext(AnimationContext)
     const animation = animate.animation.landing
     const router = useRouter()
     const landing = useRef(null)
     const darkmode = useTheme().dark;
+    const [services, setServices] = useState([]);
     const navigate = (url) => {
         router.push(url).then(null)
     }
@@ -37,83 +38,59 @@ function Landing({title, text, image, boxes, projects}) {
         // }
     }
 
-    useEffect(() => setLandingHeight())
+    useEffect(() => {
+        setLandingHeight();
+        setServices(i18n.t("home.landing.services"))
+    });
 
     return (
         <Wrapper className="landing-container">
-            {/*<LandingHeader/>*/}
-            {/*<motion.img initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { duration: 0.3 } }}*/}
-            {/*exit={{ opacity: 0, transition: { duration: 0.4 } }} className="background" src={image}*/}
-            {/*alt="drone"/>*/}
-
             <div className="landing-text-container">
-            <div className="landing-text-wrapper">
-                <div className="landing-text">
+                <div className="landing-text-wrapper">
+                    <div className="landing-text">
 					<span className="landing-overflow">
 						<motion.h1 initial={animation.landingText.initial} exit={animation.landingText.exit}
-                                   animate={animation.landingText.animate}>Innovative Software Development</motion.h1>
+                                   animate={animation.landingText.animate}>{i18n.t(title)}</motion.h1>
 					</span>
 
-                    <span className="landing-overflow">
-						<motion.p   initial={animation.landingText.initial}
+                        <span className="landing-overflow">
+						<motion.p initial={animation.landingText.initial}
                                   animate={animation.landingText.animate}
                                   exit={animation.landingText.exit}
                                   custom={0.5}>
-							Responsible for creating innovative and fast cutting
-							software development while being cheap and cost friendly
+                            {i18n.t(text)}
 						</motion.p>
 					</span>
+						    <Button custom to="/case/form" title="See All Projects"/>
+                    </div>
 
-                    <span className="landing-overflow">
-						<Button custom to="/services" title="See All Projects"/>
+                    <div className="landing-bullets">
+                        {
+                            services.map((d, i) => {
+                                return (
+                                    <span className="landing-overflow margin-bottom">
+						<motion.p className={`${!darkmode ? "animated-link-dark" : "animated-link-light"} bold`}
+                                  onClick={() => navigate(`services/${d.discipline}`)}
+                                  initial={animation.landingText.initial}
+                                  exit={animation.landingText.exit}
+                                  animate={animation.landingText.animate}>{d.discipline}<Chevron/></motion.p>
+						<motion.h4 initial={animation.landingText.initial} animate={animation.landingText.animate}
+                                   exit={animation.landingText.exit}
+                                   custom={0.5}>
+							{d.text}
+						</motion.h4>
 					</span>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
-
-                <div className="landing-bullets">
-					<span className="landing-overflow margin-bottom">
-						<motion.p className={`${!darkmode ? "animated-link-dark" : "animated-link-light"} bold`}
-                                  onClick={() => navigate("/services")} initial={animation.landingText.initial}
-                                  exit={animation.landingText.exit}
-                                  animate={animation.landingText.animate}>Full-Stack Software Development <Chevron/> </motion.p>
-						<motion.h4 initial={animation.landingText.initial} animate={animation.landingText.animate}
-                                   exit={animation.landingText.exit}
-                                   custom={0.5}>
-							Full fledged scalable and response IT teams ready when you want.
-						</motion.h4>
-					</span>
-
-                    <span className="landing-overflow margin-bottom">
-						<motion.p className={`${!darkmode ? "animated-link-dark" : "animated-link-light"} bold`}
-                                  onClick={() => navigate("/services")} initial={animation.landingText.initial}
-                                  exit={animation.landingText.exit}
-                                  animate={animation.landingText.animate}>Full-Stack Software Development <Chevron/> </motion.p>
-						<motion.h4 initial={animation.landingText.initial} animate={animation.landingText.animate}
-                                   exit={animation.landingText.exit}
-                                   custom={0.5}>
-							Full fledged scalable and response IT.
-						</motion.h4>
-					</span>
-
-                    <span className="landing-overflow">
-						<motion.p className={`${!darkmode ? "animated-link-dark" : "animated-link-light"} bold`}
-                                  onClick={() => navigate("/services")} initial={animation.landingText.initial}
-                                  exit={animation.landingText.exit}
-                                  animate={animation.landingText.animate}>Full-Stack Software Development <Chevron/> </motion.p>
-						<motion.h4 initial={animation.landingText.initial} animate={animation.landingText.animate}
-                                   exit={animation.landingText.exit}
-                                   custom={0.5}>
-							Full fledged scalable and.
-						</motion.h4>
-					</span>
-
-                </div>
-            </div>
             </div>
 
             <div className="landing-wave">
                 {console.log(darkmode)}
                 <Wave fill="#ff6961"
-					  // fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}
+                    // fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}
                       paused={false}
                       options={{
                           height: 50,
@@ -140,4 +117,4 @@ function Landing({title, text, image, boxes, projects}) {
     )
 }
 
-export default Landing
+export default HomeLanding
