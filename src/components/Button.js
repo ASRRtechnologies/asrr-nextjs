@@ -15,7 +15,7 @@ function Button ({ children, className, title, to, navigation, custom, ...props 
 		<>
 			{custom ? (
 				<Wrapper className={`button ${className}`} {...props}>
-					{to ? (<Link href={to}><a>{title}</a></Link>) : (
+					{to.length > 0 ? (<Link href={to}><a>{title}</a></Link>) : (
 						<p>{title}</p>
 					)}
 				</Wrapper>)

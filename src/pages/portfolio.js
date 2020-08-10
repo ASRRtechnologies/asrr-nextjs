@@ -13,7 +13,7 @@ function Portfolio() {
     useEffect(() => {(animate.appLoaded) ? animate.animation.secondLoad() : null;}, []);
     return (
         <div className="content-wrapper">
-            <Landing title={i18n.t("portfolio.landing.title")} text={i18n.t("portfolio.landing.text")} image={image}/>
+            <Landing title={i18n.t("case.landing.title")} text={i18n.t("case.landing.text")} image={image}/>
             <Layout>
                 <PortfolioPage/>
                 <ContactPreview className="section-contact-preview"/>

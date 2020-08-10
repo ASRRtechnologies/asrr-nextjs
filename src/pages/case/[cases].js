@@ -31,7 +31,7 @@ function NextArrow(props) {
     return (<Chevron onClick={onClick} className={className}/>);
 }
 
-function Page({data}) {
+function Page({data, query}) {
     const i18n = useI18n()
     const animate = useContext(AnimationContext)
     const [bullets, setBulletPoints] = useState([])
@@ -41,6 +41,7 @@ function Page({data}) {
     useEffect(() => {
         (animate.appLoaded) ? animate.animation.secondLoad() : null
         setBulletPoints(i18n.t(data.bullets))
+        console.log(query)
     }, [])
 
     const settings = {
@@ -131,12 +132,13 @@ function Page({data}) {
 }
 
 Page.getInitialProps = ({query}) => {
-    let data = cases.find(data => data.id === query.portfolio)
-    console.log(data)
+    let data = cases.find(data => data.id === query.cases);
+
     return {
         data,
+        query
     }
-}
+};
 
 export default Page
 

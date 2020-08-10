@@ -53,7 +53,7 @@ function Page({demo}) {
     return (
         <div className="portfolio-page">
             <Landing className="portfolio-page-landing">
-                {/*<div className="portfolio-page-back"></div>*/}
+                {/*<div className="case-page-back"></div>*/}
                 <div className="portfolio-page-landing-wrapper">
                     <text>
                         <Animation animation="fade-up" delay="300">

@@ -65,7 +65,7 @@ function Landing({title, text, image, boxes, projects}) {
 					</span>
 
                     <span className="landing-overflow">
-						<Button custom to="/services" title="See All Projects"/>
+						<Button custom to="/case/form" title="See All Projects"/>
 					</span>
                 </div>
 
