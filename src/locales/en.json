@@ -268,7 +268,7 @@
         "bullets": [
           {
             "key": "<p>The old process <br/> (in a generic BIM/Architecture firm)</p>",
-            "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
+             "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
           },
           {
             "key": "<p>The goal</p>",

@@ -166,3 +166,26 @@ a{
 }
 
 
+
+
+@media screen and (max-width: 1000px) {
+  ::-webkit-scrollbar-track
+  {
+    border-radius: 5px;
+    width: 1px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar
+  {
+    height: 7px;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb
+  {
+    border-radius: 5px;
+    -webkit-box-shadow: none;
+    background-color: #555;
+  }
+}
