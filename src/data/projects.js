@@ -91,20 +91,20 @@ export const projects = [
         landing: {
             client:"projects.form.client",
             discipline:"projects.form.case.landing.discipline",
-            title:"projects.form.case.landing.title",
-            text:"projects.form.case.landing.text",
-        },
-        introduction:{
-            title:"projects.form.case.introduction.title",
-            text:"projects.form.case.introduction.text",
-        },
-        bullets: "projects.form.case.bullets",
-        result:{
-            title:"projects.form.case.result.title",
-            text:"projects.form.case.result.text",
-        },
-        images:[
-            hesImage, hesImage2,
+            title:"projects.form.case.landing.title", 
+            text:"projects.form.case.landing.text", 
+        }, 
+        introduction:{ 
+            title:"projects.form.case.introduction.title", 
+            text:"projects.form.case.introduction.text", 
+        }, 
+        bullets: "projects.form.case.bullets", 
+        result:{ 
+            title:"projects.form.case.result.title", 
+            text:"projects.form.case.result.text", 
+        }, 
+        images:[ 
+            hesImage, hesImage2, 
         ],
         conclusion:{
             title:"projects.form.case.conclusion.title",
