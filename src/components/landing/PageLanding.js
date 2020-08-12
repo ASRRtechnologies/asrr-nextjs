@@ -10,7 +10,7 @@ import Wave from 'react-wavify'
 import {useTheme} from '../../context/theme/ThemeContext'
 
 const Wrapper = styled('div')`
-        background-color: ${props => props.theme.landing.background};
+        background: ${props => props.theme.landing.background};
         .landing-bullets{
         	svg{
         		path{
@@ -20,7 +20,7 @@ const Wrapper = styled('div')`
         }
         `;
 
-function Landing({title, text, image, discipline}) {
+function Landing({title, text, image, imageClass}) {
     const i18n = useI18n()
     const animate = useContext(AnimationContext)
     const animation = animate.animation.landing
@@ -40,11 +40,13 @@ function Landing({title, text, image, discipline}) {
     useEffect(() => setLandingHeight());
 
     return (
-        <Wrapper className="landing-container">
+        <Wrapper className="landing-container page">
+            {
+                image.length > 0 ? <img className={imageClass} src={image}/> : null
+            }
+
             <div className="landing-text-container">
-                {
-                    image.length > 0 ? <img src={image}/> : null
-                }
+
                 <div className="landing-text-wrapper">
                     <div className="landing-text">
 					<span className="landing-overflow">
@@ -91,31 +93,31 @@ function Landing({title, text, image, discipline}) {
                 </div>
             </div>
 
-            <div className="landing-wave">
-                {console.log(darkmode)}
-                <Wave fill="#ff6961"
-                    // fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}
-                      paused={false}
-                      options={{
-                          height: 50,
-                          amplitude: 50,
-                          speed: 0.25,
-                          points: 7
-                      }}
-                />
-                <div className="position-absolute-wave">
-                    <Wave
-                        fill={`${darkmode ? "#131313" : "#FBFBFB"}`}
-                        paused={false}
-                        options={{
-                            height: 15,
-                            amplitude: 15,
-                            speed: 0.35,
-                            points: 6
-                        }}
-                    />
-                </div>
-            </div>
+            {/*<div className="landing-wave">*/}
+                {/*{console.log(darkmode)}*/}
+                {/*<Wave fill="#ff6961"*/}
+                    {/*// fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}*/}
+                      {/*paused={false}*/}
+                      {/*options={{*/}
+                          {/*height: 50,*/}
+                          {/*amplitude: 50,*/}
+                          {/*speed: 0.25,*/}
+                          {/*points: 7*/}
+                      {/*}}*/}
+                {/*/>*/}
+                {/*<div className="position-absolute-wave">*/}
+                    {/*<Wave*/}
+                        {/*fill={`${darkmode ? "#131313" : "#FBFBFB"}`}*/}
+                        {/*paused={false}*/}
+                        {/*options={{*/}
+                            {/*height: 15,*/}
+                            {/*amplitude: 15,*/}
+                            {/*speed: 0.35,*/}
+                            {/*points: 6*/}
+                        {/*}}*/}
+                    {/*/>*/}
+                {/*</div>*/}
+            {/*</div>*/}
 
         </Wrapper>
     )

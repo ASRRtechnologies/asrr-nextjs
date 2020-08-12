@@ -31,7 +31,7 @@ const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 
 const landing = {
 	background: {
 		dark: black,
-		light: white,
+		light: "linear-gradient(120deg, #eeeff1 45%, #e9e9e9 100%);",
 	},
 }
 

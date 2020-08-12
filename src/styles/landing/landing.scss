@@ -9,10 +9,22 @@
   grid-template-rows: 1fr 200px;
   justify-items: center;
 
+  &.page{
+    @include flex (center, center, column);
+
+  }
+
   h1, h4, p {
     //display: inline-block;
   }
 
+}
+
+img{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .landing-text-container{
@@ -131,6 +143,20 @@
 
 @media screen and (max-width: 800px) {
 
+  .landing-container{
+    &.page{
+
+      .landing-text-wrapper{
+        padding-top: 0;
+      }
+
+      h1{
+        padding: 20px 0;
+        background-color: rgba(252, 252, 252, 0.8);
+      }
+    }
+  }
+
   .landing-text-wrapper{
     flex-direction: column-reverse;
     width: 100%;
@@ -159,6 +185,11 @@
 @media screen and (max-width: 600px) {
   .landing-container {
     height: 100vh;
+
+    &.page{
+      height: 70vh;
+    }
+
   }
 
   .landing-text-container{
@@ -166,3 +197,28 @@
   }
 }
 
+
+.floating-mobile{
+  width: 50vw;
+  height: auto;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 700px;
+  min-width: 300px;
+  animation: float 6s ease-in-out infinite;
+
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(-55%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}

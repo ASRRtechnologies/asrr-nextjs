@@ -1,6 +1,7 @@
 import Consultancy from "@/icons/Consultancy";
 import Coding from "@/icons/Coding";
 import Analytics from "@/icons/Analytics";
+import Analytics2 from "@/icons/Analytics2";
 import React from "react";
 import Hardware from "@/icons/Hardware";
 import Team from '../components/icons/Team'
@@ -80,7 +81,7 @@ export const services = [
         text: 'service-cards.data-analytics.text',
         preview_title: 'service-cards.data-analytics.preview.title',
         preview_text: 'service-cards.data-analytics.preview.text',
-        icon: <Analytics/>
+        icon: <Analytics2/>
     },
     {
         id:"consultancy",
