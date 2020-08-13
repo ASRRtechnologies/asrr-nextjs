@@ -14,6 +14,8 @@ function Card(props) {
             </span>
 
             <h3>{i18n.t("home.stories." + props.client + ".contact")}</h3>
+            <h4>{i18n.t("home.stories." + props.client + ".function")}</h4>
+
             <p>"{i18n.t("home.stories." + props.client + ".story")}"</p>
             <h4>{i18n.t("home.stories." + props.client + ".name")}</h4>
         </div>
