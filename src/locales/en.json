@@ -33,23 +33,36 @@
   "home": {
     "landing": {
       "title": "Innovative Software Development",
-      "text": "Responsible for creating innovative and fast cutting software development while being cheap and cost friendly\n",
+      "text": "Responsible for creating innovative and fast cutting edge software quickly and efficiently\n",
       "services": [
         {
           "discipline": "Full-Stack Development",
-          "text": "Front and Back development 24-7"
+          "text": "Front- and Backend development in one team"
         },
         {
           "discipline": "Custom Built Hardware",
-          "text": "Best servers you can imagine"
+          "text": "Servers that fit your needs exactly"
         },
         {
           "discipline": "IT Consultancy",
-          "text": "Best possible help you can imagine"
+          "text": "Tailored advice from an expert in the field"
         }
       ]
+    },
+    "stories": {
+      "form": {
+        "contact": "Jorgen Haring",
+        "story": "ASRR denkt pro-actief mee in de projecten en komt met goede en efficiënte oplossingen.\nZe begeleiden het project vakkundig, zijn heel flexibel en kunnen snel schakelen indien nodig.\nHet is erg plezierig om met ze samen te werken!",
+        "name": "FORM Architecture & Engineering"
+      },
+      "esp": {
+        "contact": "Ravi Badal",
+        "story": "",
+        "name": "ESP Consultancy"
+      }
     }
   },
+
 
   "portfolio": {
     "landing": {
@@ -62,8 +75,8 @@
     },
     "preview": {
       "title": {
-        "header": "Some of our previous work",
-        "text": "Take a look at some of our past projects"
+        "header": "What we've done",
+        "text": "Take a look at some of our projects"
       }
     }
   },
@@ -78,8 +91,8 @@
     },
     "preview": {
       "title": {
-        "header": "About ASRR",
-        "text": "Some of the services we provide are"
+        "header": "What we do",
+        "text": "The services we provide can be categorized under the following three groups"
       }
     }
   },
@@ -234,8 +247,8 @@
   },
   "stories": {
     "title": {
-      "header": "Stories",
-      "text": "What others have to say"
+      "header": "Client experiences",
+      "text": "Customer satisfaction is our number one priority at ASRR"
     }
   },
   "projects": {

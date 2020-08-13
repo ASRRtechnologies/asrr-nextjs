@@ -1,7 +1,11 @@
 import React from 'react';
-import image from "#/clients/avatar/avatar.jpg"
+import image from "#/clients/avatar/avatar.jpg";
+import useI18n from '../../hooks/use-i18n';
+
 
 function Card(props) {
+    const i18n = useI18n();
+
     return (
         <div className="card">
 
@@ -9,9 +13,9 @@ function Card(props) {
                 <img src={image}/>
             </span>
 
-            <h3>-John Doe-</h3>
-            <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry."</p>
-            <h4>Form Architecture</h4>
+            <h3>{i18n.t("home.stories." + props.client + ".contact")}</h3>
+            <p>"{i18n.t("home.stories." + props.client + ".story")}"</p>
+            <h4>{i18n.t("home.stories." + props.client + ".name")}</h4>
         </div>
     );
 }
