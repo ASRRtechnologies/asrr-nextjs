@@ -2,30 +2,25 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-  //@include flex(space-between, center, column);
-  //padding: 0 100px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 200px;
   justify-items: center;
 
   &.page{
-    @include flex (center, center, column);
-
-  }
-
-  h1, h4, p {
-    //display: inline-block;
+    @include flex(center, center, column);
   }
 
 }
 
-img{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
+
+//
+//img{
+//  position: absolute;
+//  height: 100%;
+//  width: 100%;
+//  object-fit: cover;
+//}
 
 .landing-text-container{
   @include flex (center, center, row);
@@ -40,7 +35,6 @@ img{
   height: auto;
   max-width: $max-width;
   padding-top: 100px;
-
 }
 
 .landing-text {
@@ -62,7 +56,6 @@ img{
     height: auto;
     transform: rotate(-90deg);
     transition: ease-in-out 200ms;
-
   }
 
   p {
@@ -139,23 +132,7 @@ img{
 
 }
 
-//Make boxes full-screen
-
 @media screen and (max-width: 800px) {
-
-  .landing-container{
-    &.page{
-
-      .landing-text-wrapper{
-        padding-top: 0;
-      }
-
-      h1{
-        padding: 20px 0;
-        background-color: rgba(252, 252, 252, 0.8);
-      }
-    }
-  }
 
   .landing-text-wrapper{
     flex-direction: column-reverse;
@@ -185,11 +162,6 @@ img{
 @media screen and (max-width: 600px) {
   .landing-container {
     height: 100vh;
-
-    &.page{
-      height: 70vh;
-    }
-
   }
 
   .landing-text-container{
@@ -198,27 +170,65 @@ img{
 }
 
 
+//Extra classes
+.landing-floating-image-wrapper{
+  width:100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.landing-floating-image{
+  width:100%;
+  height: 100%;
+  @include flex(center, center, column);
+}
+
+.landing-floating-image-text{
+  width:100%;
+  height: 100%;
+  @include flex(center, center, column);
+
+}
+
 .floating-mobile{
-  width: 50vw;
+  width: 100%;
   height: auto;
-  position: absolute;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
+  display: block;
   max-width: 700px;
   min-width: 300px;
   animation: float 6s ease-in-out infinite;
-
 }
 
 @keyframes float {
   0% {
-    transform: translateY(-50%);
+    transform: translateY(0);
   }
   50% {
-    transform: translateY(-55%);
+    transform: translateY(100px);
   }
   100% {
-    transform: translateY(-50%);
+    transform: translateY(0);
+  }
+}
+
+
+@media screen and (max-width: 1600px) {
+  .floating-mobile{
+    max-width:500px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .landing-floating-image-wrapper{
+    @include flex(center, center, column);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .floating-mobile{
+    width: 90%;
+    top:60vh;
   }
 }

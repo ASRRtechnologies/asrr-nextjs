@@ -18,7 +18,6 @@ function Contact() {
         <div className="content-wrapper">
             <Landing title="contact.landing.title" text="contact.landing.text" image={darkmode ? imageDark : imageLight} imageClass="floating-mobile"/>
             <Layout>
-                {/*<Display image={display}/>*/}
                 <ContactPage big={true}/>
             </Layout>
         </div>
