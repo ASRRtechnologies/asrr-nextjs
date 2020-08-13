@@ -18,10 +18,10 @@ function Preview (props) {
 		<Wrapper className="section-wrapper">
 			<Section>
 				<Title title={'portfolio.preview.title.header'} text={'portfolio.preview.title.text'}/>
-				<div className="portfolio portfolio-preview">
+				<div className="portfolio portfolio-center portfolio-preview">
 					{previewCases.map(({ image, discipline, title, client, id }) => <Card route={id} client={client} img={image} discipline={discipline} title={title}/>)}
 				</div>
-				<ReadMore className="read-more-portfolio" to="/portfolio">{i18n.t('buttons.see.case')}</ReadMore>
+				<ReadMore className="read-more-portfolio" to="/portfolio">{i18n.t('general_words.see_portfolio')}</ReadMore>
 			</Section>
 		</Wrapper>
 	)

@@ -2,9 +2,9 @@ import React from 'react';
 
 function Section({children, className}) {
     return (
-        <section className={`section ${className}`}>
+        <div className={`section ${className}`}>
                 {children}
-        </section>
+        </div>
     );
 }
 

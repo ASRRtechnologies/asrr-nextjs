@@ -1,7 +1,10 @@
 {
   "general_words": {
     "client": "Client",
-    "discipline": "Discipline"
+    "discipline": "Discipline",
+    "see_services": "See All Services",
+    "see_portfolio": "Go To Portfolio"
+
   },
 
   "header": {

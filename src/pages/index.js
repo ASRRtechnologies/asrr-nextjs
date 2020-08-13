@@ -12,6 +12,11 @@ import Contact from '../components/contact/Preview'
 import useI18n from '../hooks/use-i18n'
 import Stories from "@/stories/Stories";
 import Why from "@/why-asrr/Why";
+import styled from "@emotion/styled";
+
+const Wrapper = styled('div')`
+        background: ${props => props.theme.layout.background};
+        `;
 
 function Index(props) {
 
@@ -24,18 +29,15 @@ function Index(props) {
     }, []);
 
     return (
-        <div className="content-wrapper">
-            <HomeLanding title={'home.landing.title'} text={'home.landing.text'} image={image} boxes
-                         projects/>
-            <Layout>
-                <ServicePreview/>
-                <PortfolioPreview/>
-                <Stories/>
-                <Why/>
-                <Contact/>
-                <Clients/>
-            </Layout>
-        </div>
+        <Wrapper className="content-wrapper">
+            <HomeLanding title={'home.landing.title'} text={'home.landing.text'} image={image} projects/>
+            <ServicePreview/>
+            <PortfolioPreview/>
+            <Stories/>
+            <Why/>
+            <Contact/>
+            <Clients/>
+        </Wrapper>
     )
 }
 

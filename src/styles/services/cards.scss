@@ -16,6 +16,12 @@
         flex-direction: row-reverse;
       }
 
+      &:nth-last-of-type(1){
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+
       .icon{
         @include size(100px, 100px);
         border-radius: 5px;
@@ -34,7 +40,6 @@
       .text{
         width:70%;
         height: auto;
-        display: block;
       }
 
     }
@@ -70,6 +75,14 @@
       }
 
     }
+
+    &.services-center{
+      .card{
+        @include flex(flex-start, center, column);
+        text-align: center;
+      }
+    }
+
   }
 
 
