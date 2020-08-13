@@ -1,9 +1,15 @@
 //To keep consistent name usage throughout the website nesting of this card in
 .portfolio {
-  .card {
+
+  .card-animatable{
     width: 30.333%;
     height: 100%;
     border-radius: 10px;
+  }
+
+  .card {
+    height: 100%;
+    width: 100%;
 
     svg{
       width: 30px;
@@ -64,12 +70,14 @@
 
 @media screen and (max-width:1000px) {
   .portfolio {
-    .card {
+    .card-animatable {
       width: 45%;
       margin-bottom: 100px;
-    }
-    .card:nth-last-child(1) {
-      margin-bottom: 0;
+
+      &:nth-last-of-type(1){
+        margin-bottom: 0;
+      }
+
     }
   }
 }
@@ -77,19 +85,12 @@
 
 @media screen and (max-width:700px) {
   .portfolio {
-    .card {
+    .card-animatable {
       width: 100%;
+      max-width: 400px;
       height: 100%;
       margin-bottom: 50px;
     }
-    //.card:nth-child(even) {
-    //  margin-top: 0;
-    //}
-    //
-    //.card:nth-last-child(1) {
-    //  margin-bottom: 0;
-    //}
-
     .read-more{
       margin-right: auto;
       margin-left: auto;
