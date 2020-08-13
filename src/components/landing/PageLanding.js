@@ -42,23 +42,24 @@ function Landing({title, text, image, imageClass}) {
 
     return (
         <Wrapper ref={landing} className="landing-container page">
-            <div className="landing-floating-image-wrapper">
+            <div className="landing-text-wrapper">
+                <div className="landing-floating-image-wrapper">
 
-                <div className="landing-floating-image-text">
+                    <div className="landing-floating-image-text">
                      <span className="landing-overflow">
 						<motion.h1 initial={animation.landingText.initial} exit={animation.landingText.exit}
                                    animate={animation.landingText.animate}>{i18n.t(title)}
 						</motion.h1>
                      </span>
+                    </div>
+
+
+                    <div className="landing-floating-image">
+                        {image.length > 0 ? <img className={imageClass} src={image}/> : null}
+                    </div>
                 </div>
-
-
-                <div className="landing-floating-image">
-                    {image.length > 0 ? <img className={imageClass} src={image}/> : null}
-                </div>
-
-
             </div>
+
         </Wrapper>
     )
 }
