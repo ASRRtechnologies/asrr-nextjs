@@ -1,6 +1,12 @@
 //To keep consistent name usage throughout the website nesting of this card in
 .portfolio {
 
+  &.portfolio-center{
+    .card-text{
+      @include flex(flex-start, center, column);
+      text-align: center;
+    }
+  }
   .card-animatable{
     width: 30.333%;
     height: 100%;
@@ -96,13 +102,6 @@
       margin-left: auto;
     }
 
-  }
-
-  &.portfolio-center{
-    .card-text{
-      @include flex(flex-start, center, column);
-      text-align: center;
-    }
   }
 
 }
