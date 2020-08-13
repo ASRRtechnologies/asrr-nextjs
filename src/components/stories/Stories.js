@@ -17,9 +17,9 @@ function Stories (props) {
             <Section>
                 <Title title={'stories.title.header'} text={'stories.title.text'}/>
                 <div className="stories">
-                    <Card/>
-                    <Card/>
-                    <Card/>
+                    <Card client={"form"}/>
+                    <Card client={"esp"}/>
+                    <Card client={"nwo"}/>
 
                 </div>
             </Section>
