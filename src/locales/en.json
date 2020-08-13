@@ -190,11 +190,11 @@
       }
     },
     "consultancy": {
-      "title": "Consultancy",
+      "title": "IT Consultancy",
       "text": "Not sure what you need? ASRR can send an expert to analyse your company processes and propose a solution and fitting advice. ASRR can then provide the required developing skills.",
       "preview": {
-        "title": "Consultancy",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+        "title": "IT Consultancy",
+        "text": "ASRR delivers tailored advice from an expert in the subject for anything IT related. We can lead projects from the ground up, or adapt existing ones to fit your current needs. The solutions we prescribe can then be put into action by our development team"
       }
     },
     "hardware": {
@@ -202,7 +202,7 @@
       "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
       "preview": {
         "title": "Hardware",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+        "text": "If cloud is not what you need, we can also provide you with custom built servers, with far superior power to cost ratios. They can be used as strong workstations, remote desktop environments or even to host your API's on a kubernetes cluster."
       }
     },
 
