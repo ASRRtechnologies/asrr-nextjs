@@ -194,7 +194,7 @@
       "text": "Not sure what you need? ASRR can send an expert to analyse your company processes and propose a solution and fitting advice. ASRR can then provide the required developing skills.",
       "preview": {
         "title": "IT Consultancy",
-        "text": "ASRR delivers tailored advice from an expert in the subject for anything IT related. We can lead projects from the ground up, or adapt existing ones to fit your current needs. The solutions we prescribe can then be put into action by our development team"
+        "text": "ASRR delivers tailored advice from an expert in the subject for anything IT related, be it websites, applications, servers, AI/machine learning and much more. We can lead projects from the ground up, or adapt existing ones to fit your current needs. These solutions can then be carried out perfectly by our development team."
       }
     },
     "hardware": {
@@ -300,6 +300,8 @@
     },
     "form": {
       "client": "FORM Architecture & Engineering",
+      "discipline": "Automated BIM Configurator | Full-Stack",
+      "title": "Reinventing the housing industry",
       "case": {
         "landing": {
           "discipline": "Automated BIM Configurator | Full-Stack",
