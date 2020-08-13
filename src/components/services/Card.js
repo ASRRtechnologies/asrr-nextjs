@@ -21,7 +21,7 @@ const Icon = styled('div')`
 function Card({title, text, icon, className, to}) {
     const i18n = useI18n();
     return (
-        <Wrapper className={`card ${className}`}>
+        <Wrapper className={`card`}>
             <Icon className="icon">
                 {icon}
             </Icon>
