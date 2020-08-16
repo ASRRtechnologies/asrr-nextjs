@@ -15,7 +15,6 @@ function Why() {
     const darkmode = useTheme().dark;
 
     return (
-        <div className={`section-wrapper`}>
             <Section>
                 <Title title={'why.title.header'}/>
                 <div className="why-asrr">
@@ -30,7 +29,6 @@ function Why() {
                     </div>
                 </div>
             </Section>
-        </div>
     )
 }
 

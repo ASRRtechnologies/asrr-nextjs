@@ -1,9 +1,7 @@
-import React, { useContext } from 'react'
-import { MouseContext } from '../../context/animations/MouseContext'
+import React, {useContext} from 'react'
+import {MouseContext} from '../../context/animations/MouseContext'
 import useI18n from '../../hooks/use-i18n'
-import { useRouter } from 'next/router'
-import Chevron from '../icons/Chevron'
-import ReadMore from '../text/ReadMore'
+import {useRouter} from 'next/router'
 import styled from '@emotion/styled'
 
 const Wrapper = styled('div')`
@@ -14,10 +12,10 @@ function Card ({ img, title, discipline, client, route }) {
 	const i18n = useI18n()
 	const mouse = useContext(MouseContext)
 	const router = useRouter()
-
 	const navigateTo = (route) => {
-		router.push(`/portfolio/${route}`)
-	}
+		router.push(`/projects/${route}`)
+	};
+
 	return (
 		<div onClick={() => navigateTo(route)} onMouseOver={() => {mouse.onHover('projects')}}
 			 onMouseLeave={() => {mouse.onLeave()}} className="card">
@@ -28,9 +26,6 @@ function Card ({ img, title, discipline, client, route }) {
 				<h4>{i18n.t(discipline)}</h4>
 					<h3>{i18n.t(client)}</h3>
 					<p>{i18n.t(title)}</p>
-				{/*<ReadMore to="/">*/}
-					{/*<p>Read more</p>*/}
-				{/*</ReadMore>*/}
 			</div>
 		</div>
 	)

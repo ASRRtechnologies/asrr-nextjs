@@ -6,7 +6,7 @@ import useI18n from '../../hooks/use-i18n'
 import { AnimationContext } from '../../context/animations/AnimationContext'
 import Title from '../../components/text/Title'
 import Button from '@/Button'
-import Animation from '../projects/project'
+import Animation from '../projects/case'
 
 const Wrapper = styled('div')`
       background-image: ${props => props.theme.layout};

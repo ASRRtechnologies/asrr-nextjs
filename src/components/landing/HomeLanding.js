@@ -61,7 +61,7 @@ function HomeLanding({title, text, image, boxes, projects}) {
                             {i18n.t(text)}
 						</motion.p>
 					</span>
-						    <Button custom to="/portfolio" title="See All Projects"/>
+						    <Button custom to="/portfolio" title="buttons.projects"/>
                     </div>
 
                     <div className="landing-bullets">

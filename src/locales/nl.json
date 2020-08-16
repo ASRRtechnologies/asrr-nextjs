@@ -1,10 +1,17 @@
 {
+
   "general_words": {
     "client": "Client",
-    "discipline": "Discipline",
-    "see_services": "See All Services",
-    "see_portfolio": "Go To Portfolio"
+    "discipline": "Discipline"
+  },
 
+  "buttons": {
+    "read": "Read More",
+    "services": "See all Services",
+    "cases": "See all Cases",
+    "portfolio": "Go To Portfolio",
+    "contact": "Let's get in touch",
+    "submit": "Submit"
   },
 
   "header": {
@@ -24,14 +31,6 @@
     "faq": "FAQ",
     "privacy": "Privacy",
     "policy": "Terms and Services"
-  },
-  "buttons": {
-    "read": "Read More",
-    "see": {
-      "services": "See all Services",
-      "portfolio": "See all Projects"
-    },
-    "submit": "Submit"
   },
   "home": {
     "landing": {
@@ -241,7 +240,7 @@
       "text": "What others have to say"
     }
   },
-  "projects": {
+  "cases": {
     "disciplines": {
       "all": "All",
       "bim": "Bim",

@@ -57,7 +57,7 @@ function Page({demo}) {
                 <div className="portfolio-page-landing-wrapper">
                     <text>
                         <Animation animation="fade-up" delay="300">
-                            <h2>{i18n.t('projects.hes.case.title_1')}</h2>
+                            <h2>{i18n.t('cases.hes.case.title_1')}</h2>
                             <p>Trupo is a bold new way for people who work for themselves to get insurance benefits.
                                 Their
                                 experts are committed to providing each of their customers with a better sense of

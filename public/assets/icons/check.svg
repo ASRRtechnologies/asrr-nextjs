@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <style>
+      .a {
+        fill: #47D764;
+      }
+    </style>
+  </defs>
+  <title>22 Check</title>
+  <path class="a" d="M24,0A24,24,0,1,0,48,24,24,24,0,0,0,24,0ZM34.91,19.41l-12,12a2,2,0,0,1-2.82,0l-7-7a2,2,0,0,1,2.82-2.82l5.59,5.58L32.09,16.59a2,2,0,0,1,2.82,2.82Z"/>
+</svg>

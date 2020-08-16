@@ -1,16 +1,16 @@
 import React, {useContext, useEffect, useState} from 'react'
-import {projects} from '../../data/projects'
+import {cases} from '../../../data/cases'
 import Section from '@/layout/Section'
 import styled from '@emotion/styled'
-import useI18n from '../../hooks/use-i18n'
-import {AnimationContext} from '../../context/animations/AnimationContext'
+import useI18n from '../../../hooks/use-i18n'
+import {AnimationContext} from '../../../context/animations/AnimationContext'
 import Landing from '@/landing/ClientLanding'
-import Title from '../../components/text/Title'
+import Title from '@/text/Title'
 import Interweave, {Markup} from 'interweave'
-import Animation from '../../components/animation/Animation'
+import Animation from '@/animation/Animation'
 import Slider from "react-slick";
 import Chevron from "@/icons/Chevron";
-import {useTheme} from "../../context/theme/ThemeContext";
+import {useTheme} from "../../../context/theme/ThemeContext";
 import Button from "@/Button";
 
 const Wrapper = styled('div')`
@@ -35,7 +35,7 @@ function Contact({className, title}) {
     return (
                 <div className={`contact preview ${title}`}>
                     <Title className={`${title} title-button`} title={'contact.preview.title.header'} text={'contact.preview.title.text'}/>
-                    <Button custom to="/contact" title="Let's Get In Touch"/>
+                    <Button custom to="/contact" title="buttons.contact"/>
                 </div>
     )
 }
@@ -68,7 +68,6 @@ function Page({data, query}) {
     return (
         <>
             <Landing title={data.landing.title} text={data.landing.text} client={data.landing.client} discipline={data.landing.discipline}/>
-            <Wrapper className="section-wrapper">
                 <Section className="project-page">
                     <Animation animation="fade-up" delay="300">
                         <Title className="left-title" title={data.introduction.title} text={data.introduction.text}/>
@@ -127,31 +126,12 @@ function Page({data, query}) {
                         <Contact title="left-title"/>
                     </Animation>
                 </Section>
-            </Wrapper>
         </>
     )
 }
 
-// export async function getStaticProps({ params }) {
-//     const { default: lngDict = {} } = await import(
-//         `../../locales/${params.lng}.json`
-//         );
-//
-//     return {
-//         props: { lng: params.lng, lngDict },
-//     }
-// }
-//
-// export async function getStaticPaths() {
-//     return {
-//         paths: languages.map((l) => ({ params: { lng: l } })),
-//         fallback: false,
-//     }
-// }
-
 Page.getInitialProps = ({query}) => {
-    let data = projects.find(data => data.id === query.cases);
-    console.log(query)
+    let data = cases.find(data => data.id === query.case);
     return {
         data,
         query

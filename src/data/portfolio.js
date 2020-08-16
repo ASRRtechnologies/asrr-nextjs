@@ -4,73 +4,77 @@ import hes from '#/clients/hes/case-image.jpg'
 import nwo from '#/clients/nwo/case-image.jpg'
 
 export const disciplines = [
-	{title:'projects.disciplines.all'},
-	{title:'projects.disciplines.bim'},
-	{title:'projects.disciplines.web'},
+	{title:'cases.disciplines.all'},
+	{title:'cases.disciplines.bim'},
+	{title:'cases.disciplines.web'},
 ]
 
 export const previewCases = [
 	{
 		image: form,
-		client: 'projects.form.client',
-		title: 'projects.form.title',
+		client: 'cases.form.client',
+		title: 'cases.form.title',
 		alt: 'form',
-		discipline: 'projects.form.discipline',
-		text: 'projects.form.text',
+		discipline: 'cases.form.discipline',
+		text: 'cases.form.text',
 		id:"form"
 
 	},
 	{
 		image: hes,
-		client: 'projects.hes.client',
-		title: 'projects.hes.title',
+		client: 'cases.hes.client',
+		title: 'cases.hes.title',
 		alt: 'hes',
-		discipline: 'projects.hes.discipline',
-		text: 'projects.hes.text',
+		discipline: 'cases.hes.discipline',
+		text: 'cases.hes.text',
 		id:"hes"
 	},
 	{
 		image: nwo,
-		client: 'projects.nwo.client',
-		title: 'projects.nwo.title',
+		client: 'cases.nwo.client',
+		title: 'cases.nwo.title',
 		alt: 'nwo',
-		discipline: 'projects.nwo.discipline',
-		text: 'projects.nwo.text',
+		discipline: 'cases.nwo.discipline',
+		text: 'cases.nwo.text',
 		id:"nwo"
 	},
 ]
 
 export const portfolio = [
 	{
+		id:"form",
 		image: form,
-		client: 'projects.form.client',
-		title: 'projects.form.title',
+		client: 'cases.form.client',
+		title: 'cases.form.title',
 		alt: 'form',
-		discipline: 'projects.form.discipline',
-		text: 'projects.form.text',
+		discipline: 'cases.form.discipline',
+		text: 'cases.form.text',
 	},
 	{
+		id:"protonise",
 		image: protonise,
-		client: 'projects.protonise.client',
-		title: 'projects.protonise.title',
-		alt: 'form',
-		discipline: 'projects.protonise.discipline',
-		text: 'projects.protonise.text',
+		client: 'cases.protonise.client',
+		title: 'cases.protonise.title',
+		alt: 'protonise',
+		discipline: 'cases.protonise.discipline',
+		text: 'cases.protonise.text',
 	},
 	{
+		id:"hes",
 		image: hes,
-		client: 'projects.hes.client',
-		title: 'projects.hes.title',
+		client: 'cases.hes.client',
+		title: 'cases.hes.title',
 		alt: 'hes',
-		discipline: 'projects.hes.discipline',
-		text: 'projects.hes.text',
+		discipline: 'cases.hes.discipline',
+		text: 'cases.hes.text',
 	},
 	{
+		id:"now",
 		image: nwo,
-		client: 'projects.nwo.client',
-		title: 'projects.nwo.title',
+		client: 'cases.nwo.client',
+		title: 'cases.nwo.title',
 		alt: 'nwo',
-		discipline: 'projects.nwo.discipline',
-		text: 'projects.nwo.text',
+		discipline: 'cases.nwo.discipline',
+		text: 'cases.nwo.text',
 	},
 ];

@@ -1,9 +1,16 @@
 {
   "general_words": {
     "client": "Client",
-    "discipline": "Discipline",
-    "see_services": "See All Services",
-    "see_portfolio": "Go To Portfolio"
+    "discipline": "Discipline"
+  },
+
+  "buttons": {
+    "read": "Read More",
+    "services": "See all Services",
+    "cases": "See all Cases",
+    "portfolio": "Go To Portfolio",
+    "contact": "Let's get in touch",
+    "submit": "Submit"
   },
 
   "header": {
@@ -14,6 +21,7 @@
     "contact": "Contact Us",
     "about": "About Us"
   },
+
   "footer": {
     "navigation": "Navigation",
     "information": "Information",
@@ -24,14 +32,6 @@
     "privacy": "Privacy",
     "policy": "Terms and Services",
     "social_media": "Follow us"
-  },
-  "buttons": {
-    "read": "Read More",
-    "see": {
-      "services": "See all Services",
-      "portfolio": "See all Projects"
-    },
-    "submit": "Submit"
   },
   "home": {
     "landing": {
@@ -261,7 +261,7 @@
       "text": "Customer satisfaction is our number one priority at ASRR"
     }
   },
-  "projects": {
+  "cases": {
     "disciplines": {
       "all": "All",
       "bim": "Bim",
