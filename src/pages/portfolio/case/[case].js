@@ -68,19 +68,19 @@ function Page({data, query}) {
     return (
         <>
             <Landing title={data.landing.title} text={data.landing.text} client={data.landing.client} discipline={data.landing.discipline}/>
-                <Section className="project-page">
+                <Section className="">
                     <Animation animation="fade-up" delay="300">
-                        <Title className="left-title" title={data.introduction.title} text={data.introduction.text}/>
+                        <Title className="justify" title={data.introduction.title} text={data.introduction.text}/>
                     </Animation>
 
                     <Animation animation="fade" delay="500">
-                        <div className="why-asrr margin-bottom why-asrr-left">
+                        <div className="why-asrr margin-bottom ">
                             <div className="why-asrr-wrapper">
                                 <div className="why-asrr-points">
                                     {bullets.map((d, i) => {
                                         return (
                                             <span onClick={() => setCard(i)}
-                                                  className={`${i === card && 'selected-line'} why-asrr-left`}>
+                                                  className={`${i === card && 'selected-line'} `}>
 											<Interweave tagName="div"
                                                         attributes={{className: `${!darkmode ? "animated-link-dark-wrapper" : "animated-link-light-wrapper"}`}}
                                                         content={d.key} onClick={() => setCard(i)}/>
@@ -97,7 +97,7 @@ function Page({data, query}) {
                     </Animation>
 
                     <Animation animation="fade-up" delay="500">
-                        <Title className="left-title" title={data.result.title} text={data.result.text}/>
+                        <Title className="justify" title={data.result.title} text={data.result.text}/>
                     </Animation>
 
                     <Animation className="project-carousel-wrapper" animation="fade-up" delay="500">
@@ -118,12 +118,12 @@ function Page({data, query}) {
                     </Animation>
 
                     <Animation animation="fade-up" delay="500">
-                        <Title className="left-title" title={data.conclusion.title}
+                        <Title className="" title={data.conclusion.title}
                                text={data.conclusion.text}/>
                     </Animation>
 
                     <Animation animation="fade-up" delay="500">
-                        <Contact title="left-title"/>
+                        <Contact title=""/>
                     </Animation>
                 </Section>
         </>

@@ -37,8 +37,7 @@
   }
 
   &.service-page{
-    padding-top: 100px;
-    @include flex(center, flex-start, column);
+    padding-top: 50px;
   }
 
 }

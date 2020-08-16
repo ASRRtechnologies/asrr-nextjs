@@ -30,7 +30,6 @@ function Card({title, text, icon, className, to}) {
                 <p>{i18n.t(text)}</p>
                 <ReadMore small to={to}>{i18n.t("buttons.read")}</ReadMore>
             </div>
-
         </Wrapper>
     );
 }

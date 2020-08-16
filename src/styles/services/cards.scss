@@ -37,8 +37,8 @@
       @include size(100px, 100px);
       border-radius: 5px;
       @include flex(center, center, row);
-      cursor: pointer;
       z-index: 1;
+      cursor: auto;
 
       svg {
         width: 60px;

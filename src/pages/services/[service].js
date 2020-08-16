@@ -4,20 +4,20 @@ import Section from '@/layout/Section'
 import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
 import { AnimationContext } from '../../context/animations/AnimationContext'
-import Title from '../../components/text/Title'
+import Title from '@/text/Title'
 import Button from '@/Button'
-import Animation from '../projects/case'
+import Animation from '@/animation/Animation'
 
 const Wrapper = styled('div')`
       background-image: ${props => props.theme.layout};
-`
+`;
 
 function Contact ({ className, title }) {
 	return (
 		<div className={`contact preview ${title}`}>
 			<Title className={`${title} title-button`} title={'contact.preview.title.header'}
 				   text={'contact.preview.title.text'}/>
-			<Button custom to="/contact" title="Let's Get In Touch"/>
+			<Button custom to="/contact" title="buttons.contact"/>
 		</div>
 	)
 }
@@ -32,17 +32,15 @@ function Page ({ data, query }) {
 
 	return (
 		<>
-			<Wrapper className="section-wrapper">
 				<Section className="service-page">
 					<Animation animation="fade-up" delay="300">
-						<Title title={data.title} text={data.text} className="left-title"/>
+						<Title title={data.title} text={data.text}/>
 					</Animation>
 					<Animation animation="fade-up" delay="300">
-						<Contact title="left-title"/>
+						<Contact/>
 					</Animation>
 					{console.log(data)}
 				</Section>
-			</Wrapper>
 		</>
 	)
 }

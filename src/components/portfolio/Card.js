@@ -13,7 +13,7 @@ function Card ({ img, title, discipline, client, route }) {
 	const mouse = useContext(MouseContext)
 	const router = useRouter()
 	const navigateTo = (route) => {
-		router.push(`/projects/${route}`)
+		router.push(`/portfolio/case/${route}`)
 	};
 
 	return (
