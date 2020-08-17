@@ -131,7 +131,7 @@
     "preview": {
       "title": {
         "header": "Contact",
-        "text": "Interested in what we can offer?"
+        "text": "Interested in what ASRR can do for you?"
       }
     },
     "form": {
@@ -160,10 +160,10 @@
   "service-cards": {
     "teams": {
       "title": "Scaleable IT-teams",
-      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
+      "text": "With current technology, an IT project usually takes the hard work and expertise of multiple developers. Not every company afford this, and even if they can it's hard to create an efficient team. This is where ASRR delivers full-stack scalable IT teams that can seamlessly integrate with your current process.",
       "preview": {
         "title": "Scaleable IT-teams",
-        "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
+        "text": "With current technology, an IT project usually takes the hard work and expertise of multiple developers. Not every company afford this, and even if they can it's hard to create an efficient team. This is where ASRR delivers full-stack scalable IT teams that can seamlessly integrate with your current process."
       }
     },
     "full-stack": {
@@ -171,7 +171,7 @@
       "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
       "preview": {
         "title": "Full-Stack Development",
-        "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
+        "text": "ASRR has both front and backend developers, as wel as an create anytures and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
       }
     },
     "workspace": {
@@ -268,8 +268,8 @@
   },
   "clients": {
     "title": {
-      "header": "These clients went ahead of you",
-      "text": "These clients went ahead of you"
+      "header": "Trusted by",
+      "text": "Trusted by"
     }
   },
   "stories": {
