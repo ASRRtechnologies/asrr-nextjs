@@ -34,6 +34,20 @@
     "social_media": "Follow us"
   },
   "home": {
+    "why": {
+      "0": {
+        "title": "Expertise",
+        "text": "ASRR has a diverse team of talented professionals. Combining these areas we have a wide coverage of expertise for anything IT related. We have specialists in websites, apps, desktop applications, hardware, BI, data anlytics, and much more!"
+      },
+      "1": {
+        "title": "Efficiency",
+        "text": "Using our microservice approach to coding, we don't have to reinvent the wheel for every project. We have a custom built collection of over-engineered components that can be combined to create a robust foundation for your project. We can then focus our efforts on the areas that are unique so that we can ensure the best product possible."
+      },
+      "2":{
+        "title": "Elastic",
+        "text": "From the beginning, ASRR has always adapted to the needs and restrictions laid out by our clients. As we have a very robust base, we can easily adapt to any given situation, while still keeping our applications very reliable."
+      }
+    },
     "landing": {
       "title": "Innovative Software Development",
       "text": "Responsible for creating innovative and fast cutting edge software quickly and efficiently\n",
@@ -247,6 +261,9 @@
     "title": {
       "header": "Why choose ASRR",
       "text": ""
+    },
+    "wtf": {
+      "title": "Value"
     }
   },
   "clients": {
