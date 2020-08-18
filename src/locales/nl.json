@@ -160,7 +160,7 @@
   "service-cards": {
     "teams": {
       "title": "Flexteams",
-      "text": "Flexteams zijn teams van full-stack developers die thuis zijn in alle expertises.\nFlexteams zorgen ervoor dat er niet voor elk probleem in een aparte IT-afdeling een expert ingehuurd hoeft te worden. Dit maakt flexteams een krachtige werkmethode.<br/>\n\nDe teams zijn opgebouwd uit verschillende soorten developers: junior, medior en senior. Elk van deze soort developers is geschikt voor een andere rol op de werkvloer. ASRR stelt een geschikt team voor u samen gebaseerd op uw eisen. <br/>\n\nWat een flexteam nog meer efficiënt maakt, is het kunnen schalen van het team. Het team kan worden bijgesteld aan de huidige eisen, dus het team kan op elk moment worden aangepast. Dit maakt het flexteam flexibel en uitzonderlijk breed, waardoor er altijd de juiste persoon beschikbaar is.  \n <br/> Voordelen <ul><li>Een expert in elke IT afdeling </li> <li>Keuze uit verschillende soorten developers </li> <li>Een expert in elke IT afdeling </li>Een team wat wordt aangepast op de huidige eisen. </ul>",
+      "text": "Flexteams zijn teams van full-stack developers die thuis zijn in alle expertises.\nFlexteams zorgen ervoor dat er niet voor elk probleem van een aparte IT-afdeling een expert aangenomen hoeft te worden. Dit maakt flexteams een krachtige werkmethode.<br/><br/>\n\nDe teams zijn opgebouwd uit verschillende soorten developers: junior, medior en senior. Elk van deze soort developers is geschikt voor een andere rol op de werkvloer. ASRR stelt een geschikt team voor u samen gebaseerd op uw eisen. <br/><br/>\n\nWat een flexteam nog meer efficiënt maakt, is het kunnen schalen van het team. Het team kan worden bijgesteld aan de huidige eisen, dus het team kan op elk moment worden aangepast. Dit maakt het flexteam flexibel en uitzonderlijk breed, waardoor er altijd de juiste persoon voor u beschikbaar is.  \n <br/><br/> Voordelen <ul><li>Een expert in elke IT afdeling </li> <li>Keuze uit verschillende soorten developers </li> <li>Een team wat wordt aangepast op de huidige eisen </li>. </ul>",
       "preview": {
         "title": "Flexteams",
         "text": "Flexteams zijn teams van full-stack developers die thuis zijn in alle expertises.\nFlexteams zorgen ervoor dat er niet voor elk probleem in een aparte IT-afdeling een expert ingehuurd hoeft te worden. Dit maakt flexteams een krachtige werkmethode.\n " }
@@ -178,7 +178,7 @@
       "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
       "preview": {
         "title": "Gepersonaliseerde werkplek",
-        "text": "De werkvloer is een plek van samenhorigheid. Tegenwoordig is het niet slechts van belang dat uw werknemers een goed team vormen. Het is cruciaal dat hun apparaten ook een goed team vormen. ASRR past uw werkplek compleet aan op uw eisen en wensen. Wij zijn in staat te analyseren wat uw bedrijf nodig heeft en het te implementeren."
+        "text": "De werkvloer is een plek van samenhorigheid. Tegenwoordig is het niet slechts van belang dat uw werknemers een goed team vormen. Het is cruciaal dat hun apparaten ook een goed team vormen. ASRR past uw werkplek compleet aan op uw eisen en wensen. Wij analyseren wat uw bedrijf nodig heeft en hoe we dat moeten implementeren."
       }
     },
     "custom-work": {
