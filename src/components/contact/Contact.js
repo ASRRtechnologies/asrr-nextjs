@@ -19,34 +19,23 @@ const emailRegex = "/^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@
 
 function Contact ({ big }) {
 	const i18n = useI18n();
-	const [formData, setFormData] = useState({});
+	const [email, setEmail] = useState({body:"", recipient:"reangelo7@gmail.com", subject:"ASRR", userEmail:"", organization:"" });
 
 	const handleChange = ({name, value}) => {
-		// this.setState({formData: Object.assign({}, this.state.formData, {[name]: value})})
-		setFormData({...formData, [name]:value})
+		setEmail({...email, [name]:value})
 	};
 
 	const handleSubmit = () => {
-		let formData = new FormData();
-		formData.append("subject", "ASRR contact form: " +this.props.page + "/" + this.props.name);
-		formData.append("recipient", "reangelo7@gmail.com");
-		let body = "Form contents: \n";
-		//
-		for (const key in formData) {
-			body = body.concat(`[${key} = ${formData[key]}]`);
-			// console.log(body)
-			// handleChange(key, "");
-		}
 
-		console.log(body);
-		console.log(JSON.stringify(body));
-		formData.append("body", body);
-
-		console.log(formData);
+		let emailObject = {
+			body: `from: ${email.userEmail}, organization: ${email.organization} ${email.body}`,
+			subject: email.subject,
+			recipient: email.recipient
+		};
 
 		fetch(process.env.NEXT_PUBLIC_API_BASE_URL, {
 			method: 'POST',
-			body: formData,
+			body: JSON.stringify(emailObject),
 		}).then(function (response) {
 			if (!response.ok) {
 				response.json().then(function (object) {
@@ -56,12 +45,9 @@ function Contact ({ big }) {
 				});
 				throw new Error(response.statusText);
 			}
-			// self.setState({success: true});
-			document.getElementById("contact-form").reset();
 			console.log(response)
 		}).catch(error => console.log(error));
 	};
-
 
 	return (
 			<Section>
@@ -70,15 +56,18 @@ function Contact ({ big }) {
 					<form id="contact-form" className="form">
 						<Input onChange={(e)=> handleChange(e.target)} className="no-margin" name="name" type="text"
 							   required={true} placeholder={i18n.t('contact.form.name.placeholder')}/>
+						<Input onChange={(e)=> handleChange(e.target)} className="no-margin" name="subject" type="text"
+							   required={true} placeholder={i18n.t('contact.form.subject.placeholder')}/>
 						<Input onChange={(e)=> handleChange(e.target)} name="organization" type="text" required={true}
 							   placeholder={i18n.t('contact.form.organization.placeholder')}/>
-						<Input required={true} pattern={emailRegex} onChange={(e)=> handleChange(e.target)} name="email" type="email"
+						<Input required={true} pattern={emailRegex} onChange={(e)=> handleChange(e.target)} name="userEmail" type="email"
 							   placeholder={i18n.t('contact.form.email.placeholder')}/>
-						<Input onChange={(e)=> handleChange(e.target)} name="message" last textArea={true} type="text"
+						<Input onChange={(e)=> handleChange(e.target)} name="body" last textArea={true} type="text"
 							   required={true} placeholder={i18n.t('contact.form.message.placeholder')}/>
-						<Button custom to="/portfolio" title="See All Projects"/>
-						<ReadMore margin action>{i18n.t('buttons.submit')}</ReadMore>
-						<ScaleLoader/>
+						{/*<Button title="buttons.submit" onClick={handleSubmit}/>*/}
+						<div onClick={handleSubmit}>button</div>
+
+						{/*<ScaleLoader/>*/}
 
 						<div className="contact-adress">
 							<p>Adress: Veraartlaan 12</p>
