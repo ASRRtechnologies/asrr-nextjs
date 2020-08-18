@@ -36,6 +36,10 @@
     @include flex(center, flex-start, column);
   }
 
+  &.service-page{
+    padding-top: 50px;
+  }
+
 }
 
 

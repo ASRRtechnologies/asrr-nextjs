@@ -1,26 +1,24 @@
-import React, { useContext, useEffect } from 'react'
-import HomeLanding from '@/landing/HomeLanding'
-import { AnimationContext } from '../context/animations/AnimationContext'
-import Layout from '../components/layout/Layout'
+import React, {useContext, useEffect} from 'react'
+import {AnimationContext} from '../context/animations/AnimationContext'
 import ServicePage from '../components/services/Services'
-import image from '../../public/assets/images/landing/laptop.jpg'
-import ContactPreview from '../components/contact/Preview'
 import useI18n from '../hooks/use-i18n'
-import Title from "@/text/Title";
+import Landing from '@/landing/PageLanding'
+import imageDark from '../../public/assets/images/landing/contact/phone-dark.png'
+import imageLight from '../../public/assets/images/landing/contact/phone-light.png'
+import {useTheme} from "../context/theme/ThemeContext";
 
-function Services (props) {
-
-	const i18n = useI18n();
+function Services(props) {
+	const darkmode = useTheme().dark
 	const animate = useContext(AnimationContext);
-	useEffect(() => {(animate.appLoaded) ? animate.animation.secondLoad() : null}, []);
+	useEffect(() => {
+		(animate.appLoaded) ? animate.animation.secondLoad() : null
+	}, []);
 
 	return (
 		<div className="content-wrapper">
-			<HomeLanding title={i18n.t('services.landing.title')} text={i18n.t('services.landing.text')} image={image}/>
-			<Layout>
-				<ServicePage/>
-				<ContactPreview className="section-contact-preview"/>
-			</Layout>
+			<Landing title="services.landing.title" text="services.landing.text"
+			         image={darkmode ? imageDark : imageLight} imageClass="floating-mobile"/>
+			<ServicePage/>
 		</div>
 	)
 }

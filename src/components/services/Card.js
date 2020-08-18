@@ -18,19 +18,18 @@ const Icon = styled('div')`
       } 
 `;
 
-function Card({title, text, icon, className}) {
+function Card({title, text, icon, className, to}) {
     const i18n = useI18n();
     return (
-        <Wrapper className={`card ${className}`}>
+        <Wrapper className={`card`}>
             <Icon className="icon">
                 {icon}
             </Icon>
             <div className="text">
                 <h3>{i18n.t(title)}</h3>
                 <p>{i18n.t(text)}</p>
-                <ReadMore small to="/">{i18n.t("buttons.read")}</ReadMore>
+                <ReadMore small to={to}>{i18n.t("buttons.read")}</ReadMore>
             </div>
-
         </Wrapper>
     );
 }

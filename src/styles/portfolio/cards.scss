@@ -1,21 +1,26 @@
 //To keep consistent name usage throughout the website nesting of this card in
 .portfolio {
-  .card {
+
+  &.portfolio-center{
+    .card-text{
+      @include flex(flex-start, center, column);
+      text-align: center;
+    }
+  }
+  .card-animatable{
     width: 30.333%;
     height: 100%;
     border-radius: 10px;
-    h3{
-      margin-bottom: 0;
-    }
     margin-bottom: 100px;
 
-    &:nth-last-of-type(1){
-      margin-bottom: 0;
-    } &:nth-last-of-type(2){
-      margin-bottom: 0;
-    } &:nth-last-of-type(3){
+    &.preview-portfolio{
       margin-bottom: 0;
     }
+  }
+
+  .card {
+    height: 100%;
+    width: 100%;
 
     svg{
       width: 30px;
@@ -26,16 +31,8 @@
       bottom:0;
       left:50%;
       path{
-        fill:white;
+        fill:$primary-color !important;
       }
-    }
-
-  }
-
-  //Three cards next to each other no margin so the read more is closer to the cards
-  &.portfolio-preview{
-    .card{
-      margin-bottom: 0;
     }
   }
 
@@ -84,45 +81,33 @@
 
 @media screen and (max-width:1000px) {
   .portfolio {
-    .card {
+    .card-animatable {
       width: 45%;
-    }
+      margin-bottom: 100px;
 
-    .card:nth-last-child(1) {
-      margin-bottom: 0;
-    }
-
-    //Two cards next to each other no margin so the read more is closer to the cards
-    &.portfolio-preview{
-      .card{
-        margin-bottom: 100px;
+      &:nth-last-of-type(1){
+        margin-bottom: 0;
       }
-    }
 
+    }
   }
 }
 
 
 @media screen and (max-width:700px) {
   .portfolio {
-    .card {
+    .card-animatable {
       width: 100%;
+      max-width: 400px;
       height: 100%;
       margin-bottom: 50px;
     }
-    .card:nth-child(even) {
-      margin-top: 0;
-    }
-
-    .card:nth-last-child(1) {
-      margin-bottom: 0;
-    }
-
     .read-more{
       margin-right: auto;
       margin-left: auto;
     }
 
   }
+
 }
 

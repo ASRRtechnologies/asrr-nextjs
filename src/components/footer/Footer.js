@@ -4,6 +4,8 @@ import Input from '@/text/Input'
 import logo from "#/logo/asrr-logo-spacing-white.svg"
 import styled from "@emotion/styled";
 import useI18n from "../../hooks/use-i18n";
+import LinkedIn from "@/icons/LinkedIn";
+import Facebook from "@/icons/Facebook";
 
 const Wrapper = styled('section')`background-color: ${props => props.theme.footer};`;
 
@@ -15,7 +17,7 @@ function Footer (props) {
             <div className="footer">
                 <img src={logo}/>
 
-                <div className="container">
+                <div className="footer-navigation">
                     <div className="grid">
                         <h3>{i18n.t("footer.navigation")}</h3>
                         <ReadMore inverted small to="/">{i18n.t("header.home")}</ReadMore>
@@ -33,21 +35,30 @@ function Footer (props) {
                         <ReadMore inverted small to="/">{i18n.t("footer.policy")}</ReadMore>
                     </div>
 
-                    <div className="grid address">
+                    <div className="grid">
                         <h3>{i18n.t("footer.address")}</h3>
                         <p>ASRR Tech</p>
-                        <p>Veraartlaan 12 - 2248 PE Rijswijk</p>
-                        <p>contact@asrr.nl</p>
-                        <p>Volg ons op</p>
+                        <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/fZqhC9FUVTpiEiCb7" className="animated-link-light">2288 GM Rijswijk, The Netherlands</a>
+                        <a href="mailto:asrr@contact.nl" target="_blank" rel="noopener noreferrer" className="animated-link-light">contact@asrr.nl</a>
                     </div>
 
-                    <div className="grid newsletter">
-                        <h3>{i18n.t("footer.letter")}</h3>
-                        <form>
-                            <Input className="full-width"  button={i18n.t("buttons.submit")} placeholder={i18n.t("contact.form.email.placeholder")}/>
-                            {/*<ReadMore small action>{i18n.t("buttons.submit")}</ReadMore>*/}
-                        </form>
+                    <div className="grid">
+                        <h3>{i18n.t("footer.social_media")}</h3>
+                        <div className="footer-social-media">
+                            <a><LinkedIn/></a>
+                            <a><Facebook/></a>
+                        </div>
                     </div>
+
+
+                </div>
+
+                <div className="footer-newsletter">
+                    <h3>{i18n.t("footer.letter")}</h3>
+                    <form>
+                        <Input className="full-width"  button={i18n.t("buttons.submit")} placeholder={i18n.t("contact.form.email.placeholder")}/>
+                        {/*<ReadMore small action>{i18n.t("buttons.submit")}</ReadMore>*/}
+                    </form>
                 </div>
 
                 <div className="bottom">

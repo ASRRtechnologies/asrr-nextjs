@@ -5,67 +5,97 @@
   @include flex(flex-start, center, column);
   flex-wrap: wrap;
 
-    .card {
-      width:100%;
-      @include flex(space-between, flex-start, row);
-      height: auto;
-      margin-bottom: 100px;
-      padding-bottom: 100px;
+  .card-animatable {
+    width: 100%;
+    height: auto;
 
-      &:nth-child(even){
+    &:nth-child(even) {
+      .card {
         flex-direction: row-reverse;
       }
-
-      .icon{
-        @include size(100px, 100px);
-        border-radius: 5px;
-        @include flex(center, center, row);
-        cursor: pointer;
-        z-index: 1;
-        svg{
-          width: 60px;
-        }
-      }
-
-      .text{
-        width:70%;
-        height: auto;
-        display: block;
-      }
-
     }
+
+
+    &:nth-last-of-type(1) {
+      .card {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+
+  }
+
+  .card {
+    width: 100%;
+    @include flex(space-between, flex-start, row);
+    height: auto;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+
+    .icon {
+      @include size(100px, 100px);
+      border-radius: 5px;
+      @include flex(center, center, row);
+      z-index: 1;
+      cursor: auto;
+
+      svg {
+        width: 60px;
+
+        path {
+          fill: $primary-color;
+        }
+
+      }
+    }
+
+    .text {
+      width: 70%;
+      height: auto;
+    }
+
+  }
 }
 
 @media screen and (max-width: 700px) {
   .services {
+
+    .card-animatable {
+      &:nth-of-type(even) {
+        .card{
+          flex-direction: column;
+         }
+      }
+    }
+
     .card {
       @include flex(space-between, flex-start, column);
       margin-bottom: 50px;
       padding-bottom: 50px;
 
-      &:nth-child(even){
-        flex-direction: column;
-      }
-
-      &:nth-last-of-type(1){
-        margin-bottom: 0;
-        padding-bottom: 0;
-        border-bottom: none;
-      }
-
-      .icon{
+      .icon {
         @include size(70px, 70px);
         margin-bottom: 25px;
-        svg{
+
+        svg {
           width: 30px;
         }
       }
 
-      .text{
-        width:100%;
+      .text {
+        width: 100%;
       }
 
     }
+
+    &.services-center {
+      .card {
+        @include flex(flex-start, center, column);
+        text-align: center;
+      }
+    }
+
   }
 
 

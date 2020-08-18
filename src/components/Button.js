@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import Link from "next/link";
+import useI18n from "../hooks/use-i18n";
 
 const Wrapper = styled('div')`
         background-color: ${props => props.theme.button.background};
@@ -15,17 +16,19 @@ const Wrapper = styled('div')`
         
         `;
 
-function Button ({ children, className, title, to, navigation, custom, ...props }) {
+function Button ({className, title, to, custom, ...props }) {
+	const i18n = useI18n();
+
 	return (
 		<>
 			{custom ? (
-				<Wrapper className={`button ${className}`} {...props}>
-					{to.length > 0 ? (<Link href={to}><a>{title}</a></Link>) : (
-						<p>{title}</p>
+				<Wrapper {...props} className={`button ${className}`} >
+					{to.length > 0 ? (<Link href={to}><a>{i18n.t(title)}</a></Link>) : (
+						<p>{i18n.t(title)}</p>
 					)}
 				</Wrapper>)
 				:
-				(<button {...props}>{title}</button>)
+				(<button {...props}>{i18n.t(title)}</button>)
 			}
 		</>
 	)

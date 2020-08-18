@@ -1,16 +1,16 @@
 import React, {useContext, useEffect, useState} from 'react'
-import {cases} from '../../data/cases'
+import {cases} from '../../../data/cases'
 import Section from '@/layout/Section'
 import styled from '@emotion/styled'
-import useI18n from '../../hooks/use-i18n'
-import {AnimationContext} from '../../context/animations/AnimationContext'
+import useI18n from '../../../hooks/use-i18n'
+import {AnimationContext} from '../../../context/animations/AnimationContext'
 import Landing from '@/landing/ClientLanding'
-import Title from '../../components/text/Title'
+import Title from '@/text/Title'
 import Interweave, {Markup} from 'interweave'
-import Animation from '../../components/animation/Animation'
+import Animation from '@/animation/Animation'
 import Slider from "react-slick";
 import Chevron from "@/icons/Chevron";
-import {useTheme} from "../../context/theme/ThemeContext";
+import {useTheme} from "../../../context/theme/ThemeContext";
 import Button from "@/Button";
 
 const Wrapper = styled('div')`
@@ -34,8 +34,8 @@ function NextArrow(props) {
 function Contact({className, title}) {
     return (
                 <div className={`contact preview ${title}`}>
-                    <Title className={`${title} title-button`} title={'services.preview.title.header'} text={'services.preview.title.text'}/>
-                    <Button custom to="/contact" title="Let's Get In Touch"/>
+                    <Title className={`${title} title-button`} title={'contact.preview.title.header'} text={'contact.preview.title.text'}/>
+                    <Button custom to="/contact" title="buttons.contact"/>
                 </div>
     )
 }
@@ -68,20 +68,19 @@ function Page({data, query}) {
     return (
         <>
             <Landing title={data.landing.title} text={data.landing.text} client={data.landing.client} discipline={data.landing.discipline}/>
-            <Wrapper className="section-wrapper">
-                <Section className="project-page">
+                <Section className="">
                     <Animation animation="fade-up" delay="300">
-                        <Title className="left-title" title={data.introduction.title} text={data.introduction.text}/>
+                        <Title className="justify" title={data.introduction.title} text={data.introduction.text}/>
                     </Animation>
 
                     <Animation animation="fade" delay="500">
-                        <div className="why-asrr margin-bottom why-asrr-left">
+                        <div className="why-asrr margin-bottom ">
                             <div className="why-asrr-wrapper">
                                 <div className="why-asrr-points">
                                     {bullets.map((d, i) => {
                                         return (
                                             <span onClick={() => setCard(i)}
-                                                  className={`${i === card && 'selected-line'} why-asrr-left`}>
+                                                  className={`${i === card && 'selected-line'} `}>
 											<Interweave tagName="div"
                                                         attributes={{className: `${!darkmode ? "animated-link-dark-wrapper" : "animated-link-light-wrapper"}`}}
                                                         content={d.key} onClick={() => setCard(i)}/>
@@ -98,7 +97,7 @@ function Page({data, query}) {
                     </Animation>
 
                     <Animation animation="fade-up" delay="500">
-                        <Title className="left-title" title={data.result.title} text={data.result.text}/>
+                        <Title className="justify" title={data.result.title} text={data.result.text}/>
                     </Animation>
 
                     <Animation className="project-carousel-wrapper" animation="fade-up" delay="500">
@@ -119,39 +118,20 @@ function Page({data, query}) {
                     </Animation>
 
                     <Animation animation="fade-up" delay="500">
-                        <Title className="left-title" title={data.conclusion.title}
+                        <Title className="" title={data.conclusion.title}
                                text={data.conclusion.text}/>
                     </Animation>
 
                     <Animation animation="fade-up" delay="500">
-                        <Contact title="left-title"/>
+                        <Contact title=""/>
                     </Animation>
                 </Section>
-            </Wrapper>
         </>
     )
 }
 
-// export async function getStaticProps({ params }) {
-//     const { default: lngDict = {} } = await import(
-//         `../../locales/${params.lng}.json`
-//         );
-//
-//     return {
-//         props: { lng: params.lng, lngDict },
-//     }
-// }
-//
-// export async function getStaticPaths() {
-//     return {
-//         paths: languages.map((l) => ({ params: { lng: l } })),
-//         fallback: false,
-//     }
-// }
-
 Page.getInitialProps = ({query}) => {
-    let data = cases.find(data => data.id === query.cases);
-    console.log(query)
+    let data = cases.find(data => data.id === query.case);
     return {
         data,
         query

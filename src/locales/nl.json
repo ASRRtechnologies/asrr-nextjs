@@ -3,6 +3,16 @@
     "client": "Client",
     "discipline": "Discipline"
   },
+
+  "buttons": {
+    "read": "Read More",
+    "services": "See all Services",
+    "cases": "See all Cases",
+    "portfolio": "Go To Portfolio",
+    "contact": "Let's get in touch",
+    "submit": "Submit"
+  },
+
   "header": {
     "home": "Home",
     "portfolio": "Portfolio",
@@ -11,6 +21,7 @@
     "contact": "Contact Us",
     "about": "About Us"
   },
+
   "footer": {
     "navigation": "Navigation",
     "information": "Information",
@@ -19,51 +30,77 @@
     "letter": "Sign up for our newsletter",
     "faq": "FAQ",
     "privacy": "Privacy",
-    "policy": "Terms and Services"
+    "policy": "Terms and Services",
+    "social_media": "Follow us"
   },
-  "buttons": {
-    "read": "Read More",
-    "see": {
-      "services": "See all Services",
-      "portfolio": "See all Projects"
-    },
-    "submit": "Verstuur"
-  },
-
   "home": {
+    "why": {
+      "0": {
+        "title": "Expertise",
+        "text": "ASRR has a diverse team of talented professionals. Combining these areas we have a wide coverage of expertise for anything IT related. We have specialists in websites, apps, desktop applications, hardware, BI, data anlytics, and much more!"
+      },
+      "1": {
+        "title": "Efficiency",
+        "text": "Using our microservice approach to coding, we don't have to reinvent the wheel for every project. We have a custom built collection of over-engineered components that can be combined to create a robust foundation for your project. We can then focus our efforts on the areas that are unique so that we can ensure the best product possible."
+      },
+      "2":{
+        "title": "Elastic",
+        "text": "From the beginning, ASRR has always adapted to the needs and restrictions laid out by our clients. As we have a very robust base, we can easily adapt to any given situation, while still keeping our applications very reliable."
+      }
+    },
     "landing": {
       "title": "Innovative Software Development",
-      "text": "Responsible for creating innovative and fast cutting software development while being cheap and cost friendly\n",
+      "text": "Responsible for creating innovative and fast cutting edge software quickly and efficiently\n",
       "services": [
         {
           "discipline": "Full-Stack Development",
-          "text": "Front and Back development 24-7"
+          "text": "Front- and Backend development in one team"
         },
         {
           "discipline": "Custom Built Hardware",
-          "text": "Best servers you can imagine"
+          "text": "Servers that fit your needs exactly"
         },
         {
           "discipline": "IT Consultancy",
-          "text": "Best possible help you can imagine"
+          "text": "Tailored advice from an expert in the field"
         }
       ]
+    },
+    "stories": {
+      "form": {
+        "contact": "Jorgen Haring",
+        "story": "ASRR denkt pro-actief mee in de projecten en komt met goede en efficiënte oplossingen.\nZe begeleiden het project vakkundig, zijn heel flexibel en kunnen snel schakelen indien nodig.\nHet is erg plezierig om met ze samen te werken!",
+        "name": "FORM Architecture & Engineering B.V.",
+        "function": "Architect Partner"
+      },
+      "esp": {
+        "contact": "Ravi Badal",
+        "story": "Door mijn buurman kwam ik in aanraking met ASRR. In het begin had ik een afwachtende houding over dit clubje.\nIk dacht laat ze maar bewijzen wat ze vertellen. “What you see is what you get” werd mij verteld. Voor ESP Consultancy hebben ze het allemaal waar kunnen maken.\nZe denken met je mee in alles, als je met een voorstel komt geven ze zonder te vragen hun contructieve feedback. Ze zijn proactief, zeer vakkundig en heel felxibel.\nAls je een issue/vraag/verzoek hebt wordt het direct opgepakt, geen wachtrijen. Het is een erg jong, professioneel en dynamisch bedrijf met een flat management structuur, dit zorgt voor een vlotte communicatie zowel intern als met de klanten, waardoor er veel aandacht en zorg is voor de klant.\nIk heb erg goede ervaringen opgedaan met ASRR. Voor mij was het  “what you see is what you get, and even more!”\nMijn volgende grote project komt ook bij hun te liggen, en ik ben er sterk van overtuigd dat ze het allemaal aan kunnen.\nEen echte aanrader als je op zoek bent naar een professionele partner die met je meedenkt en waar de klant op nummer 1 staat!  .....Thumbs up!",
+        "name": "ESP Consultancy B.V.",
+        "function":"Manager Operations"
+      },
+      "nwo": {
+        "contact": "Peter Lassche",
+        "story": "ASRR is om op te bouwen",
+        "name": "NWO"
+      }
     }
   },
+
 
   "portfolio": {
     "landing": {
       "title": "Portfolio",
       "text": "Super nice projects"
     },
-    "header": {
-      "title": "Our Services",
+    "title": {
+      "header": "Our Portfolio",
       "text": "Lorem ipsum much longer text enter here"
     },
     "preview": {
       "title": {
-        "header": "Some of our previous work",
-        "text": "Take a look at some of our past projects"
+        "header": "What we've done",
+        "text": "Take a look at some of our projects"
       }
     }
   },
@@ -72,14 +109,14 @@
       "title": "Services",
       "text": "Super nice services"
     },
-    "title": {
-      "header": "Our Services",
+    "header": {
+      "title": "Our Services",
       "text": "Lorem ipsum much longer text enter here"
     },
     "preview": {
       "title": {
-        "header": "About ASRR",
-        "text": "We like to blablabla some of the services we provide are"
+        "header": "What we do",
+        "text": "The services we provide can be categorized under the following three groups"
       }
     }
   },
@@ -88,13 +125,13 @@
       "title": "Lets get in touch"
     },
     "title": {
-      "header": "Our Contact",
-      "text": "Lorem ipsum much longer text enter here"
+      "header": "Contact",
+      "text": "Let's get in touch and see what ASRR has to offer"
     },
     "preview": {
       "title": {
         "header": "Contact",
-        "text": "Lorem ipsum much shorter text enter here"
+        "text": "Interested in what ASRR can do for you?"
       }
     },
     "form": {
@@ -116,11 +153,132 @@
       }
     },
     "cta": {
-      "curious": "Want to know what ASRR can mean for you company?",
-      "touch": "Get in Touch!"
+      "curious": "Interested in our services?",
+      "touch": "Lets get in touch!"
     }
   },
-  "projects":{
+  "service-cards": {
+    "teams": {
+      "title": "Scaleable IT-teams",
+      "text": "With current technology, an IT project usually takes the hard work and expertise of multiple developers. Not every company afford this, and even if they can it's hard to create an efficient team. This is where ASRR delivers full-stack scalable IT teams that can seamlessly integrate with your current process.",
+      "preview": {
+        "title": "Scaleable IT-teams",
+        "text": "With current technology, an IT project usually takes the hard work and expertise of multiple developers. Not every company afford this, and even if they can it's hard to create an efficient team. This is where ASRR delivers full-stack scalable IT teams that can seamlessly integrate with your current process."
+      }
+    },
+    "full-stack": {
+      "title": "Full-Stack Development",
+      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
+      "preview": {
+        "title": "Full-Stack Development",
+        "text": "ASRR has both front and backend developers, as wel as an create anytures and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
+      }
+    },
+    "workspace": {
+      "title": "Personalised Workspace",
+      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
+      "preview": {
+        "title": "Personalised Workspace",
+        "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
+      }
+    },
+    "custom-work": {
+      "title": "Custom Work",
+      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
+      "preview": {
+        "title": "Custom Work",
+        "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
+      }
+    },
+    "web-applications": {
+      "title": "Web Applications",
+      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
+      "preview": {
+        "title": "Web Applications",
+        "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
+      }
+    },
+    "data-analytics": {
+      "title": "Data Analytics | BI",
+      "text": "Analysing data correctly can save any company from excess costs and inefficiency. Using our BI analytics on one of your existing or a new database, ASRR will provide insights into key aspects of your data.",
+      "preview": {
+        "title": "Data Analytics | BI",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "consultancy": {
+      "title": "IT Consultancy",
+      "text": "Not sure what you need? ASRR can send an expert to analyse your company processes and propose a solution and fitting advice. ASRR can then provide the required developing skills.",
+      "preview": {
+        "title": "IT Consultancy",
+        "text": "ASRR delivers tailored advice from an expert in the subject for anything IT related, be it websites, applications, servers, AI/machine learning and much more. We can lead projects from the ground up, or adapt existing ones to fit your current needs. These solutions can then be carried out perfectly by our development team."
+      }
+    },
+    "hardware": {
+      "title": "Hardware",
+      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
+      "preview": {
+        "title": "Hardware",
+        "text": "If cloud is not what you need, we can also provide you with custom built servers, with far superior power to cost ratios. They can be used as strong workstations, remote desktop environments or even to host your API's on a kubernetes cluster."
+      }
+    },
+
+
+    "servers": {
+      "title": "Servers | Hardware",
+      "text": "Slow and old systems can cause serious hinder in both security and efficiency. That's why we build our servers from scratch, selecting the right parts for the job at hand. Using this we can create remote desktop environments, data storage servers and machines optimized for heavy rendering.",
+      "preview": {
+        "title": "Servers",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "development": {
+      "title": "Full-Stack Software Development",
+      "text": "Full-Stack Software Development text",
+      "preview": {
+        "title": "Full-Stack Software Development",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "back-end": {
+      "title": "Back-end Applications",
+      "text": "Using our microservice architecture, we can quickly create robust applications. We have an extensive library of over-engineered microservices that form a good basis for any complex application.",
+      "preview": {
+        "title": "Consultancy",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    },
+    "power-bi": {
+      "title": "Scalable Teams",
+      "text": "ASRR offers dynamic, multi-disciplinary IT teams that can be hired at short notice. The team will adapt to your needs, ensuring you have the right person at the right place, every time.",
+      "preview": {
+        "title": "Power Bi",
+        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+      }
+    }
+  },
+  "why": {
+    "title": {
+      "header": "Why choose ASRR",
+      "text": ""
+    },
+    "wtf": {
+      "title": "Value"
+    }
+  },
+  "clients": {
+    "title": {
+      "header": "Trusted by",
+      "text": "Trusted by"
+    }
+  },
+  "stories": {
+    "title": {
+      "header": "Client experiences",
+      "text": "Customer satisfaction is our number one priority at ASRR"
+    }
+  },
+  "cases": {
     "disciplines": {
       "all": "All",
       "bim": "Bim",
@@ -133,17 +291,22 @@
       "text": "Lorem ipsum"
     },
     "hes": {
-      "client": "Hes International",
+      "client": "HES International",
       "discipline": "Web Application | BI",
       "title": "Real Time Steel Tracker",
       "text": "Lorem ipsum",
       "case": {
-        "title_1": "Hes International",
-        "text_1": "Hes blablabla",
-        "title_2": "The process",
-        "text_2": "Trupo is a bold new way for people who work for themselves to get insurance benefits. Their experts are committed to providing each of their customers with a better sense of security and control by recommending the best insurance products for their individual needs. No upselling, no loopholes, just solution",
-        "title_3": "The Result",
-        "text_3": "A very very very pretty design of these components It would make me jealous having something this pretty",
+        "title_1": "HES Steel Tracker",
+        "text_1": "HES and ASRR came into contact due to a connection with their head planner. The planner had noticed how all of the current logistics information about the locations of the steel parts, needed for construction of big oil tanks, was tracked in a single excel file, spanning over 30 thousand lines. Needless to say, this was both a security issue and an efficiency bottleneck. This is where we provided a solution. ",
+        "title_2": "The goal",
+        "text_2": "Create an intuitive, cross-platform application to manage the vast amount of logistics data needed for a 500-million-dollar project. Create valuable insights for management to track the overall progress. ",
+        "title_3": "What was needed",
+        "bullets": [
+          "A Custom excel parser that allowed us to read the data into an enterprise grade SQL database",
+          "A Spring Boot (Java) back-end system to lay down business rules for every action connected to a piece",
+          "A ReactJS Web Application to be used on mobile by the workers, and on desktop by managers to check the input",
+          "A PowerBI dashboard to give insight to management about the overall process "
+        ],
         "preview": "Click here to preview demo",
         "preview_link": "Click here to visit the demo site",
         "title_4": "Other Cases"
@@ -157,6 +320,8 @@
     },
     "form": {
       "client": "FORM Architecture & Engineering",
+      "discipline": "Automated BIM Configurator | Full-Stack",
+      "title": "Reinventing the housing industry",
       "case": {
         "landing": {
           "discipline": "Automated BIM Configurator | Full-Stack",
@@ -197,94 +362,6 @@
       "title": "Configurator Dashboard",
       "text": "Lorem ipsum fr"
     }
-  },
-  "service-cards": {
-    "web-applications": {
-      "title": "Web Applications",
-      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
-      "preview": {
-        "title": "Web Application",
-        "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
-      }
-    },
-    "data-analytics": {
-      "title": "Data Analytics | BI",
-      "text": "Analysing data correctly can save any company from excess costs and inefficiency. Using our BI analytics on one of your existing or a new database, ASRR will provide insights into key aspects of your data.",
-      "preview": {
-        "title": "Data Analytics",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
-      }
-    },
-    "servers": {
-      "title": "Servers | Hardware",
-      "text": "Slow and old systems can cause serious hinder in both security and efficiency. That's why we build our servers from scratch, selecting the right parts for the job at hand. Using this we can create remote desktop environments, data storage servers and machines optimized for heavy rendering.",
-      "preview": {
-        "title": "Servers",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
-      }
-    },
-    "consultancy": {
-      "title": "Consultancy",
-      "text": "Not sure what you need? ASRR can send an expert to analyse your company processes and propose a solution and fitting advice. ASRR can then provide the required developing skills.",
-      "preview": {
-        "title": "Consultancy",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
-      }
-    },
-    "development": {
-      "title": "Full-Stack Software Development",
-      "text": "Full-Stack Software Development text",
-      "preview": {
-        "title": "Full-Stack Software Development",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
-      }
-    },
-    "back-end": {
-      "title": "Back-end Applications",
-      "text": "Using our microservice architecture, we can quickly create robust applications. We have an extensive library of over-engineered microservices that form a good basis for any complex application.",
-      "preview": {
-        "title": "Consultancy",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
-      }
-    },
-    "power-bi": {
-      "title": "Scalable Teams",
-      "text": "ASRR offers dynamic, multi-disciplinary IT teams that can be hired at short notice. The team will adapt to your needs, ensuring you have the right person at the right place, every time.",
-      "preview": {
-        "title": "Power Bi",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
-      }
-    },
-    "hardware": {
-      "title": "Hardware",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
-      "preview": {
-        "title": "Power Bi",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
-      }
-    }
-  },
-
-  "clients": {
-    "title": {
-      "header": "Zij gingen u voor",
-      "text": "Zij gingen u voor"
-    }
-  },
-
-  "why": {
-    "title": {
-      "header": "Waarom ASRR kiezen",
-      "text": ""
-    }
-  },
-
-  "stories": {
-    "title": {
-      "header": "Stories",
-      "text": "What others have to say"
-    }
   }
-
 }
 

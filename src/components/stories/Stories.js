@@ -1,29 +1,27 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Section from '../layout/Section'
 import Title from '../text/Title'
-import useI18n from '../../hooks/use-i18n'
-import styled from '@emotion/styled'
 import Card from "@/stories/Card";
+import Animation from "@/animation/Animation";
 
-const Wrapper = styled('div')`
-      // background-color: ${props => props.theme.home.stories};
-`
+const clients = ["form", "esp", "nwo"];
 
-function Stories (props) {
-    const i18n = useI18n();
-    const [active, setActive] = useState(0);
+function Stories(props) {
     return (
-        <Wrapper className="section-wrapper">
+        <Animation animation="fade-up" delay={200}>
             <Section>
                 <Title title={'stories.title.header'} text={'stories.title.text'}/>
                 <div className="stories">
-                    <Card/>
-                    <Card/>
-                    <Card/>
-
+                    {clients.map((client, i) => {
+                        return (
+                            <Animation className="card-animatable" animation="fade-up" delay={i * 200}>
+                                <Card client={client}/>
+                            </Animation>
+                        )
+                    })}
                 </div>
             </Section>
-        </Wrapper>
+        </Animation>
     )
 }
 

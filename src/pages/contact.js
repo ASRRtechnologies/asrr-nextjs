@@ -1,24 +1,20 @@
-import React, {useContext, useEffect} from 'react'
-import HomeLanding from '@/landing/HomeLanding'
-import {AnimationContext} from "../context/animations/AnimationContext";
-import Layout from "../components/layout/Layout";
-import image from '../../public/assets/images/landing/contact.jpg'
-import display from '../../public/assets/images/contact/display.jpg'
-import Display from "../components/display/Display";
-import ContactPage from "../components/contact/Contact";
-import useI18n from "../hooks/use-i18n";
+import React, { useContext, useEffect } from 'react'
+import { AnimationContext } from '../context/animations/AnimationContext'
+import Landing from '@/landing/PageLanding'
+import ContactPage from '../components/contact/Contact'
+import imageDark  from '../../public/assets/images/landing/contact/phone-dark.png'
+import imageLight from '../../public/assets/images/landing/contact/phone-light.png'
+import { useTheme } from '../context/theme/ThemeContext'
 
 function Contact() {
-    const i18n = useI18n();
     const animate = useContext(AnimationContext);
+    const darkmode = useTheme().dark
+
     useEffect(() => {(animate.appLoaded) ? animate.animation.secondLoad() : null;}, []);
     return (
         <div className="content-wrapper">
-            <HomeLanding title={i18n.t("contact.landing.title")} text={i18n.t("contact.landing.text")} image={image}/>
-            <Layout>
-                {/*<Display image={display}/>*/}
-                <ContactPage big={true}/>
-            </Layout>
+            <Landing title="contact.landing.title" text="contact.landing.text" image={darkmode ? imageDark : imageLight} imageClass="floating-mobile"/>
+                <ContactPage/>
         </div>
     )
 }

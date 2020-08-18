@@ -1,24 +1,25 @@
-import React, {useContext, useEffect} from 'react';
-import HomeLanding from "@/landing/HomeLanding";
-import {AnimationContext} from "../context/animations/AnimationContext";
-import Layout from "../components/layout/Layout";
-import PortfolioPage from "../components/portfolio/Portfolio";
-import image from '../../public/assets/images/landing/camera.jpg'
-import ContactPreview from "../components/contact/Preview";
-import useI18n from "../hooks/use-i18n";
+import React, {useContext, useEffect} from 'react'
+import Landing from '@/landing/PageLanding'
+import {AnimationContext} from '../context/animations/AnimationContext'
+import imageDark from '../../public/assets/images/landing/contact/phone-dark.png'
+import imageLight from '../../public/assets/images/landing/contact/phone-light.png'
+import useI18n from '../hooks/use-i18n'
+import {useTheme} from '../context/theme/ThemeContext'
+import PortfolioPage from "@/portfolio/Portfolio"
 
 function Portfolio() {
-    const i18n = useI18n();
     const animate = useContext(AnimationContext);
-    useEffect(() => {(animate.appLoaded) ? animate.animation.secondLoad() : null;}, []);
+    const darkmode = useTheme().dark
+    useEffect(() => {
+        (animate.appLoaded) ? animate.animation.secondLoad() : null;
+    }, []);
     return (
         <div className="content-wrapper">
-            <HomeLanding title={i18n.t("case.landing.title")} text={i18n.t("case.landing.text")} image={image}/>
-            <Layout>
-                <PortfolioPage/>
-                <ContactPreview className="section-contact-preview"/>
-            </Layout>
+            <Landing title="portfolio.landing.title" text="portfolio.landing.text"
+                     image={darkmode ? imageDark : imageLight} imageClass="floating-mobile"/>
+                     <PortfolioPage/>
         </div>
     );
 }
+
 export default Portfolio;
