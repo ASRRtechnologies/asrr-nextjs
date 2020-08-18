@@ -8,19 +8,19 @@ import imageLight from '../../public/assets/images/landing/contact/phone-light.p
 import {useTheme} from "../context/theme/ThemeContext";
 
 function Services(props) {
-    const darkmode = useTheme().dark
-    const animate = useContext(AnimationContext);
-    useEffect(() => {
-        (animate.appLoaded) ? animate.animation.secondLoad() : null
-    }, []);
+	const darkmode = useTheme().dark
+	const animate = useContext(AnimationContext);
+	useEffect(() => {
+		(animate.appLoaded) ? animate.animation.secondLoad() : null
+	}, []);
 
-    return (
-        <div className="content-wrapper">
-            <Landing title="portfolio.landing.title" text="portfolio.landing.text"
-                     image={darkmode ? imageDark : imageLight} imageClass="floating-mobile"/>
-                     <ServicePage/>
-        </div>
-    )
+	return (
+		<div className="content-wrapper">
+			<Landing title="services.landing.title" text="services.landing.text"
+			         image={darkmode ? imageDark : imageLight} imageClass="floating-mobile"/>
+			<ServicePage/>
+		</div>
+	)
 }
 
 export default Services
