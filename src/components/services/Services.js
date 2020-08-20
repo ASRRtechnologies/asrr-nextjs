@@ -18,7 +18,7 @@ function Services(props) {
     return (
         <Animation animation="fade-up" delay="200">
             <Section>
-                <Title title={'services.header.title'} text="services.header.text"/>
+                <Title title={'services.header.title'}/>
                 <div className="services">
                     {
                         services.map((d) => {

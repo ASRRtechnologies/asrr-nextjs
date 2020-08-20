@@ -104,7 +104,7 @@ const provider = ({children}) => {
     }
 
     const initialText = {
-        translateY: '100%',
+        translateY: '125%',
     };
 
     //Add delay prop i which is set with custom prop in the component
