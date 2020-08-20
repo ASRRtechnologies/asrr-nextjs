@@ -8,21 +8,25 @@ import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
 import {ScaleLoader} from "react-spinners";
 import {toast} from 'react-toastify';
-import Messages from "@/alerts/Messages";
+import Alert from "@/alerts/Alert";
 import Button from "@/Button";
 
 const Card = styled('div')`
       box-shadow: ${props => props.theme.card.shadow};
 `;
 
-const emailRegex = "/^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$/"
+const emailRegex = "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\\])"
 
 function Contact ({ big }) {
 	const i18n = useI18n();
-	const [email, setEmail] = useState({body:"", recipient:"reangelo7@gmail.com", subject:"ASRR", userEmail:"", organization:"" });
+	const [email, setEmail] = useState({body:"", recipient:"asrr@contact.nl", subject:"", userEmail:"", organization:"" });
 
 	const handleChange = ({name, value}) => {
 		setEmail({...email, [name]:value})
+	};
+
+	const notify = (title, text, type) => {
+		toast(<Alert title={title} text={text} {...type}/>, {position: toast.POSITION.TOP_CENTER})
 	};
 
 	const handleSubmit = () => {
@@ -33,11 +37,17 @@ function Contact ({ big }) {
 			recipient: email.recipient
 		};
 
+		console.log(JSON.stringify(emailObject));
+
 		fetch(process.env.NEXT_PUBLIC_API_BASE_URL, {
 			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
 			body: JSON.stringify(emailObject),
 		}).then(function (response) {
-			if (!response.ok) {
+			if (response.ok) {
+				notify()
 				response.json().then(function (object) {
 					console.log(object);
 					console.log(object.propertyErrors);
