@@ -8,77 +8,83 @@ import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
 import {ScaleLoader} from "react-spinners";
 import {toast} from 'react-toastify';
-import Messages from "@/alerts/Messages";
+import Alert from "@/alerts/Alert";
 import Button from "@/Button";
 
 const Card = styled('div')`
       box-shadow: ${props => props.theme.card.shadow};
 `;
 
-const emailRegex = "/^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$/"
+const emailRegex = "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\\])"
 
 function Contact ({ big }) {
 	const i18n = useI18n();
-	const [formData, setFormData] = useState({});
+	const recipient = "contact@asrr.nl";
+	const [email, setEmail] = useState({body:"", subject:"", userEmail:"", organization:"", name:"" });
 
 	const handleChange = ({name, value}) => {
-		// this.setState({formData: Object.assign({}, this.state.formData, {[name]: value})})
-		setFormData({...formData, [name]:value})
+		setEmail({...email, [name]:value})
 	};
 
-	const handleSubmit = () => {
-		let formData = new FormData();
-		formData.append("subject", "ASRR contact form: " +this.props.page + "/" + this.props.name);
-		formData.append("recipient", "reangelo7@gmail.com");
-		let body = "Form contents: \n";
-		//
-		for (const key in formData) {
-			body = body.concat(`[${key} = ${formData[key]}]`);
-			// console.log(body)
-			// handleChange(key, "");
-		}
+	const notify = (title, text, type) => {
+		toast(<Alert title={title} text={text} {...type}/>, {position: toast.POSITION.TOP_CENTER})
+	};
 
-		console.log(body);
-		console.log(JSON.stringify(body));
-		formData.append("body", body);
+	const handleSubmit = (event) => {
 
-		console.log(formData);
+		let emailObject = {
+			body: `from: ${email.userEmail}, name:${email.name}, subject:${email.subject}, organization: ${email.organization}, message: ${email.body}`,
+			subject: email.subject,
+			recipient: recipient
+		};
 
 		fetch(process.env.NEXT_PUBLIC_API_BASE_URL, {
 			method: 'POST',
-			body: formData,
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify(emailObject),
 		}).then(function (response) {
-			if (!response.ok) {
+			if (response.ok) {
+				notify("user_notifications.contact.success.title", "user_notifications.contact.success.text", {success:true});
+				console.log("notified");
+				//Clear input when successfully sent
+				setEmail({})
+			}
+			else{
+				notify("user_notifications.contact.error.title", "user_notifications.contact.error.text", {error:true});
 				response.json().then(function (object) {
 					console.log(object);
 					console.log(object.propertyErrors);
-					// self.setState({formError: object.propertyErrors})
+					console.log(response)
 				});
 				throw new Error(response.statusText);
 			}
-			// self.setState({success: true});
-			document.getElementById("contact-form").reset();
-			console.log(response)
 		}).catch(error => console.log(error));
-	};
 
+		event.preventDefault();
+
+		console.log(email, 23)
+
+	};
 
 	return (
 			<Section>
 				<Title title={'contact.title.header'} text={'contact.title.text'}/>
 				<div className="contact">
-					<form id="contact-form" className="form">
-						<Input onChange={(e)=> handleChange(e.target)} className="no-margin" name="name" type="text"
+					<form onSubmit={handleSubmit} id="contact-form" className="form">
+						<Input onChange={(e)=> handleChange(e.target)} value={email.name} className="no-margin" name="name" type="text"
 							   required={true} placeholder={i18n.t('contact.form.name.placeholder')}/>
-						<Input onChange={(e)=> handleChange(e.target)} name="organization" type="text" required={true}
+						<Input onChange={(e)=> handleChange(e.target)} value={email.subject} className="no-margin" name="subject" type="text"
+							   required={true} placeholder={i18n.t('contact.form.subject.placeholder')}/>
+						<Input onChange={(e)=> handleChange(e.target)} value={email.organization} name="organization" type="text"
 							   placeholder={i18n.t('contact.form.organization.placeholder')}/>
-						<Input required={true} pattern={emailRegex} onChange={(e)=> handleChange(e.target)} name="email" type="email"
-							   placeholder={i18n.t('contact.form.email.placeholder')}/>
-						<Input onChange={(e)=> handleChange(e.target)} name="message" last textArea={true} type="text"
+						<Input required={true} pattern={emailRegex} onChange={(e)=> handleChange(e.target)} value={email.userEmail}
+							   name="userEmail" type="email" placeholder={i18n.t('contact.form.email.placeholder')}/>
+						<Input onChange={(e)=> handleChange(e.target)} value={email.body}
+							   name="body" last textArea={true} type="text"
 							   required={true} placeholder={i18n.t('contact.form.message.placeholder')}/>
-						<Button custom to="/portfolio" title="See All Projects"/>
-						<ReadMore margin action>{i18n.t('buttons.submit')}</ReadMore>
-						<ScaleLoader/>
+						<Button className="auto" title="buttons.contact"/>
 
 						<div className="contact-adress">
 							<p>Adress: Veraartlaan 12</p>

@@ -143,6 +143,10 @@
         "label": "Name*",
         "placeholder": "Name*"
       },
+      "subject": {
+        "label": "Subject*",
+        "placeholder": "Subject*"
+      },
       "organization": {
         "label": "Organization",
         "placeholder": "Organization"

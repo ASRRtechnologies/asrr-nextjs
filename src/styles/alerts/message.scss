@@ -1,81 +1,90 @@
-.message-container{
-  width:100%;
-  height:auto;
-  min-height:50px;
+.message-container {
+  width: 100%;
+  height: auto;
+  min-height: 80px;
   @include flex(flex-start, center, row);
   position: relative;
-  padding:10px;
-  p{
+  padding: 10px;
+
+  p {
     margin-bottom: 0;
   }
 
-  &:before{
-    content:"";
-    position:absolute;
-    left:0;
-    top:0;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
     @include size(3px, 100%);
   }
 
-  .icon{
+  .icon {
     @include size(20%, 100%);
     @include flex(center, center, row);
 
-    img{
+    img {
       width: 30px;
       height: auto;
     }
   }
 
-  .message{
+  .message {
     @include size(70%, 100%);
     @include flex(center, flex-start, column);
-    h3, p{
-      font-size:14px
+    font-family: Poppins, serif;
+
+    p {
+      font-family: inherit;
+      font-size: 14px
     }
 
-    h3{
+    h4 {
       font-weight: bold;
+      font-family: inherit;
       margin-bottom: 5px;
     }
 
   }
 
-  .close-button{
+  .close-button {
     @include size(10%, 100%);
     @include flex(center, center, row);
   }
 
-  &.success{
-    &:before{
+  &.success {
+    &:before {
       background-color: #47D764;
     }
   }
 
-  &.error{
-    &:before{
+  &.error {
+    &:before {
       background-color: #FF0000;
     }
   }
 
-  &.info{
-    &:before{
+  &.info {
+    &:before {
       background-color: #1c76ee;
     }
   }
 
 }
 
-.Toastify__toast-container{
+.Toastify__toast-container {
   width: 100%;
   max-width: 500px;
 }
 
-.Toastify__toast--default{
+.Toastify__toast-body {
+
+}
+
+.Toastify__toast--default {
   background-color: transparent;
 }
 
 .Toastify__toast {
-  padding:0;
+  padding: 0;
 }
 

@@ -3,14 +3,17 @@ import styled from "@emotion/styled";
 import info from "../../../public/assets/icons/info.svg";
 import success from "../../../public/assets/icons/check.svg";
 import error from "../../../public/assets/icons/failed.svg";
-
+import useI18n from "../../hooks/use-i18n";
 
 const Wrapper = styled('div')`
-        background-color: ${props => props.theme.table.background};
-        box-shadow:  ${props => props.theme.table.shadow};
-        `;
+        background-color: ${props => props.theme.alert.background};
+        h4 {color: ${props => props.theme.fonts.title}}
+        p{color:${props => props.theme.fonts.text}}
+         `;
 
-function Messages(props) {
+function Alert(props) {
+
+    const i18n = useI18n();
 
     const showIcon = () => {
         for (let prop in props) {
@@ -29,12 +32,13 @@ function Messages(props) {
         <Wrapper className="message-container">
             <div className="icon">
                 {showIcon()}
-                {console.log(props.success)}
             </div>
 
+            {console.log(i18n)}
+
             <div className="message">
-                <h3>{props.title}</h3>
-                <p>{props.text}</p>
+                <h4>{i18n.t(props.title)}</h4>
+                <p>{i18n.t(props.text)}</p>
             </div>
 
             <span className="close-button">
@@ -45,4 +49,4 @@ function Messages(props) {
     );
 }
 
-export default Messages;
+export default Alert;
