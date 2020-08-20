@@ -16,7 +16,21 @@ const Wrapper = styled('div')`
         
         `;
 
+const FormButton = styled('button')`
+        background-color: ${props => props.theme.button.background};
+        box-shadow: ${props => props.theme.button.shadow};
+        p, a{
+        	color: ${props => props.theme.button.font}
+        }
+        
+        &:hover{
+                background-color: ${props => props.theme.button.hover};
+        }
+        
+        `;
+
 function Button ({className, title, to, custom, ...props }) {
+
 	const i18n = useI18n();
 
 	return (
@@ -28,7 +42,7 @@ function Button ({className, title, to, custom, ...props }) {
 					)}
 				</Wrapper>)
 				:
-				(<button {...props}>{i18n.t(title)}</button>)
+				(<FormButton {...props}>{i18n.t(title)}</FormButton>)
 			}
 		</>
 	)

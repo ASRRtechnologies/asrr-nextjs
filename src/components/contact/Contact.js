@@ -19,7 +19,8 @@ const emailRegex = "(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|
 
 function Contact ({ big }) {
 	const i18n = useI18n();
-	const [email, setEmail] = useState({body:"", recipient:"asrr@contact.nl", subject:"", userEmail:"", organization:"" });
+	const recipient = "contact@asrr.nl";
+	const [email, setEmail] = useState({body:"", subject:"", userEmail:"", organization:"", name:"" });
 
 	const handleChange = ({name, value}) => {
 		setEmail({...email, [name]:value})
@@ -29,15 +30,13 @@ function Contact ({ big }) {
 		toast(<Alert title={title} text={text} {...type}/>, {position: toast.POSITION.TOP_CENTER})
 	};
 
-	const handleSubmit = () => {
+	const handleSubmit = (event) => {
 
 		let emailObject = {
-			body: `from: ${email.userEmail}, organization: ${email.organization} ${email.body}`,
+			body: `from: ${email.userEmail}, name:${email.name}, subject:${email.subject}, organization: ${email.organization}, message: ${email.body}`,
 			subject: email.subject,
-			recipient: email.recipient
+			recipient: recipient
 		};
-
-		console.log(JSON.stringify(emailObject));
 
 		fetch(process.env.NEXT_PUBLIC_API_BASE_URL, {
 			method: 'POST',
@@ -47,37 +46,45 @@ function Contact ({ big }) {
 			body: JSON.stringify(emailObject),
 		}).then(function (response) {
 			if (response.ok) {
-				notify()
+				notify("user_notifications.contact.success.title", "user_notifications.contact.success.text", {success:true});
+				console.log("notified");
+				//Clear input when successfully sent
+				setEmail({})
+			}
+			else{
+				notify("user_notifications.contact.error.title", "user_notifications.contact.error.text", {error:true});
 				response.json().then(function (object) {
 					console.log(object);
 					console.log(object.propertyErrors);
-					// self.setState({formError: object.propertyErrors})
+					console.log(response)
 				});
 				throw new Error(response.statusText);
 			}
-			console.log(response)
 		}).catch(error => console.log(error));
+
+		event.preventDefault();
+
+		console.log(email, 23)
+
 	};
 
 	return (
 			<Section>
 				<Title title={'contact.title.header'} text={'contact.title.text'}/>
 				<div className="contact">
-					<form id="contact-form" className="form">
-						<Input onChange={(e)=> handleChange(e.target)} className="no-margin" name="name" type="text"
+					<form onSubmit={handleSubmit} id="contact-form" className="form">
+						<Input onChange={(e)=> handleChange(e.target)} value={email.name} className="no-margin" name="name" type="text"
 							   required={true} placeholder={i18n.t('contact.form.name.placeholder')}/>
-						<Input onChange={(e)=> handleChange(e.target)} className="no-margin" name="subject" type="text"
+						<Input onChange={(e)=> handleChange(e.target)} value={email.subject} className="no-margin" name="subject" type="text"
 							   required={true} placeholder={i18n.t('contact.form.subject.placeholder')}/>
-						<Input onChange={(e)=> handleChange(e.target)} name="organization" type="text" required={true}
+						<Input onChange={(e)=> handleChange(e.target)} value={email.organization} name="organization" type="text"
 							   placeholder={i18n.t('contact.form.organization.placeholder')}/>
-						<Input required={true} pattern={emailRegex} onChange={(e)=> handleChange(e.target)} name="userEmail" type="email"
-							   placeholder={i18n.t('contact.form.email.placeholder')}/>
-						<Input onChange={(e)=> handleChange(e.target)} name="body" last textArea={true} type="text"
+						<Input required={true} pattern={emailRegex} onChange={(e)=> handleChange(e.target)} value={email.userEmail}
+							   name="userEmail" type="email" placeholder={i18n.t('contact.form.email.placeholder')}/>
+						<Input onChange={(e)=> handleChange(e.target)} value={email.body}
+							   name="body" last textArea={true} type="text"
 							   required={true} placeholder={i18n.t('contact.form.message.placeholder')}/>
-						{/*<Button title="buttons.submit" onClick={handleSubmit}/>*/}
-						<div onClick={handleSubmit}>button</div>
-
-						{/*<ScaleLoader/>*/}
+						<Button className="auto" title="buttons.contact"/>
 
 						<div className="contact-adress">
 							<p>Adress: Veraartlaan 12</p>

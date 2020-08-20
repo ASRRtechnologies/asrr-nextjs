@@ -3,6 +3,18 @@
     "client": "Client",
     "discipline": "Discipline"
   },
+  "user_notifications": {
+    "contact": {
+      "success": {
+        "title": "Message sent successfully",
+        "text": "Thank you for your message. ASRR will get back to you shortly."
+      },
+      "error": {
+        "title": "The message could not be sent",
+        "text": "There was an error trying to send the message. Please try again or send us an email at asrr@contact.nl"
+      }
+    }
+  },
 
   "buttons": {
     "read": "Read More",

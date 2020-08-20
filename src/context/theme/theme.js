@@ -177,6 +177,13 @@ const cards = {
 		light: "2px solid #eee",
 	},
 
+};
+
+const alert = {
+	background:{
+		dark:cards.background.dark,
+		light:cards.background.light
+	}
 }
 
 const lightTheme = {
@@ -231,6 +238,10 @@ const lightTheme = {
 		font: button.font.light,
 		hover: button.hover.light,
 		shadow: button.shadow.light,
+	},
+
+	alert:{
+		background:alert.background.light
 	}
 
 }
@@ -287,6 +298,10 @@ const darkTheme = {
 		font: button.font.dark,
 		hover: button.hover.dark,
 		shadow: button.shadow.dark,
+	},
+
+	alert:{
+		background:alert.background.light
 	}
 
 }
