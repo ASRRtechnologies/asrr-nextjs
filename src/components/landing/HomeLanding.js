@@ -19,7 +19,6 @@ const Wrapper = styled('div')`
         }
         `;
 
-const easing = [.17, .67, .82, .1];
 const textEasing = [.42, 0, .58, 1];
 
 const textVariant = {
@@ -87,16 +86,25 @@ function HomeLanding({title, text, image, boxes, projects}) {
                         {
                             services.map((d, i) => {
                                 return (
+                                    <>
                                     <span className="landing-overflow margin-bottom">
-                        	<motion.p className={`${!darkmode ? "animated-link-dark" : "animated-link-light"} bold`}
-                                      onClick={() => navigate(`services/${d.discipline}`)}
-                                      initial="hidden" animate="show" exit="hidden"
-                                      variants={textVariant}>{d.discipline}<Chevron/></motion.p>
-                        	<motion.h4 initial="hidden" animate="show" exit="hidden"
-                                       variants={textVariant}>
-                        		{d.text}
-                        	</motion.h4>
-                        </span>
+                                        <motion.p
+                                            className={`${!darkmode ? "animated-link-dark" : "animated-link-light"} bold`}
+                                            onClick={() => navigate(`services/${d.discipline}`)}
+                                            initial="hidden" animate="show" exit="hidden"
+                                            variants={textVariant}>
+                                            {d.discipline}
+                                            <Chevron/>
+                                        </motion.p>
+                                    </span>
+                                        <span className="landing-overflow">
+                        	                <motion.h4 initial="hidden" animate="show" exit="hidden"
+                                                       variants={textVariant}>
+                        		                            {d.text}
+                        	                 </motion.h4>
+                                        </span>
+                                    </>
+
                                 )
                             })
                         }

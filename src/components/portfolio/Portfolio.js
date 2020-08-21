@@ -15,10 +15,10 @@ function Portfolio() {
             <Section>
                 <Title title={'portfolio.preview.title.header'} text={'portfolio.preview.title.text'}/>
                 {/*<div className="portfolio portfolio-preview">*/}
-                <IntersectionObserver className="portfolio portfolio-preview" key={"port"}>
+                <IntersectionObserver className="portfolio" key={"port"}>
                         {portfolio.map(({image, discipline, title, client, id}, i) => {
                             return (
-                                <FadeUp delay={i * 0.2}>
+                                <FadeUp className="card-animatable" delay={i * 0.2}>
                                     <Card route={id} client={client}
                                           img={image}
                                           discipline={discipline}

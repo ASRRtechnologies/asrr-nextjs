@@ -20,10 +20,29 @@ const Wrapper = styled('div')`
         }
         `;
 
+const textEasing = [.42, 0, .58, 1];
+
+const textVariant = {
+    show: {
+        translateY: "0%",
+        transition: {
+            delay: 0.5,
+            duration: 0.6,
+            ease: textEasing,
+        }
+    },
+    hidden: {
+        translateY: "125%",
+        transition: {
+            delay: 0.2,
+            duration: 0.3,
+            ease: textEasing,
+        }
+    }
+}
+
 function Landing({title, text, image, imageClass}) {
     const i18n = useI18n()
-    const animate = useContext(AnimationContext)
-    const animation = animate.animation.landing
     const router = useRouter()
     const landing = useRef(null)
     const darkmode = useTheme().dark;
@@ -39,7 +58,6 @@ function Landing({title, text, image, imageClass}) {
 
     useEffect(() => setLandingHeight());
 
-
     return (
         <Wrapper ref={landing} className="landing-container page">
             <div className="landing-text-wrapper">
@@ -47,8 +65,8 @@ function Landing({title, text, image, imageClass}) {
 
                     <div className="landing-floating-image-text">
                      <span className="landing-overflow">
-						<motion.h1 initial={animation.landingText.initial} exit={animation.landingText.exit}
-                                   animate={animation.landingText.animate}>{i18n.t(title)}
+						<motion.h1 initial="hidden" animate="show" exit="hidden"
+                                   variants={textVariant}>{i18n.t(title)}
 						</motion.h1>
                      </span>
                     </div>

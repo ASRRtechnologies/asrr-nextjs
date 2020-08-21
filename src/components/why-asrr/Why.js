@@ -7,6 +7,7 @@ import ReadMore from "@/text/ReadMore";
 import Title from "@/text/Title";
 import Email from "@/icons/Email";
 import Button from "@/Button";
+import Animation from "@/animation/Animation";
 
 function Why() {
 	const [card, setCard] = useState(0);
@@ -16,6 +17,7 @@ function Why() {
 
 	return (
 		<Section>
+			<Animation animation="fade-up">
 			<Title title={'why.title.header'}/>
 			<div className="why-asrr">
 				<div className="why-asrr-points why-asrr-center">
@@ -28,6 +30,7 @@ function Why() {
 					<p>{i18n.t('home.why.' + card + '.text')}</p>
 				</div>
 			</div>
+			</Animation>
 		</Section>
 	)
 }

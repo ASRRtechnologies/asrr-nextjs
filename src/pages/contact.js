@@ -7,35 +7,35 @@ import imageLight from '../../public/assets/images/landing/contact/phone-light.p
 import { useTheme } from '../context/theme/ThemeContext'
 import {motion} from "framer-motion";
 
-function Contact() {
-    const animate = useContext(AnimationContext);
-    const darkmode = useTheme().dark
-
-
-    const textEasing = [.42, 0, .58, 1];
-    const fadeOut = {
-        show: {
-            opacity:1,
-            transition: {
-                delay: 0.5,
-                ease: textEasing,
-            }
-        },
-        hidden: {
-            translateY: "125%",
-            opacity:0,
-            transition: {
-                delay: 0.2,
-                duration: 0.3,
-                ease: textEasing,
-            }
+const textEasing = [.42, 0, .58, 1];
+const fadeOut = {
+    show: {
+        opacity:1,
+        transition: {
+            ease: textEasing,
+            duration:1
+        }
+    },
+    hidden: {
+        translateY: "100px",
+        opacity:0,
+        transition: {
+            duration: 1,
+            ease: textEasing,
         }
     }
+}
+
+function Contact() {
+    const darkmode = useTheme().dark
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
 
-    // useEffect(() => {(animate.appLoaded) ? animate.animation.secondLoad() : null;}, []);
     return (
-        <motion.div initial={"show"} exit="hidden" variants={fadeOut} className="content-wrapper">
+        <motion.div initial={"show"} exit="hidden" animate="show" variants={fadeOut} className="content-wrapper">
             <Landing title="contact.landing.title" text="contact.landing.text" image={darkmode ? imageDark : imageLight} imageClass="floating-mobile"/>
                 <ContactPage/>
         </motion.div>

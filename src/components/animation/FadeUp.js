@@ -2,7 +2,7 @@ import React, {useMemo, useContext} from "react";
 import {IntersectionContext} from "./IntersectionObserver";
 import {motion} from 'framer-motion';
 
-export const FadeUp = ({children, delayOrder, delay, stagger, duration = 0.4, easing = [0.42, 0, 0.58, 1]}) => {
+export const FadeUp = ({children, delayOrder, delay, className, stagger, duration = 0.4, easing = [0.42, 0, 0.58, 1]}) => {
     const {inView} = useContext(IntersectionContext);
 
     // const transition = useMemo(
@@ -34,7 +34,7 @@ export const FadeUp = ({children, delayOrder, delay, stagger, duration = 0.4, ea
 
     return (
         <>
-            <motion.div initial="hidden" animate={inView ? "show" : "hidden"} exit="hidden" variants={regVariant}>
+            <motion.div initial="hidden" className={className} animate={inView ? "show" : "hidden"} exit="hidden" variants={regVariant}>
                 {children}
             </motion.div>
         </>

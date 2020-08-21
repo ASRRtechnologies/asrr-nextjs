@@ -1,11 +1,8 @@
-import React, {useContext, useEffect, useRef, useState} from 'react'
+import React, {useEffect, useRef} from 'react'
 import {motion} from 'framer-motion'
 import {useRouter} from 'next/router'
-import {AnimationContext} from '../../context/animations/AnimationContext'
 import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
-import Chevron from '../icons/Chevron'
-import Button from '../Button'
 import Wave from 'react-wavify'
 import {useTheme} from '../../context/theme/ThemeContext'
 
@@ -20,10 +17,29 @@ const Wrapper = styled('div')`
         }
         `;
 
+const textEasing = [.42, 0, .58, 1];
+
+const textVariant = {
+    show: {
+        translateY: "0%",
+        transition: {
+            delay: 0.5,
+            duration: 0.6,
+            ease: textEasing,
+        }
+    },
+    hidden: {
+        translateY: "125%",
+        transition: {
+            delay: 0.2,
+            duration: 0.3,
+            ease: textEasing,
+        }
+    }
+}
+
 function Landing({title, text, client, discipline}) {
     const i18n = useI18n()
-    const animate = useContext(AnimationContext)
-    const animation = animate.animation.landing
     const router = useRouter()
     const landing = useRef(null)
     const darkmode = useTheme().dark;
@@ -45,14 +61,13 @@ function Landing({title, text, client, discipline}) {
             <div className="landing-text-wrapper">
                 <div className="landing-text">
 					<span className="landing-overflow">
-						<motion.h1 initial={animation.landingText.initial} exit={animation.landingText.exit}
-                                   animate={animation.landingText.animate}>{i18n.t(title)}</motion.h1>
+						<motion.h1 initial="hidden" animate="show" exit="hidden"
+                                   variants={textVariant}>{i18n.t(title)}</motion.h1>
 					</span>
 
                     <span className="landing-overflow">
-						<motion.p   initial={animation.landingText.initial}
-                                  animate={animation.landingText.animate}
-                                  exit={animation.landingText.exit}
+						<motion.p initial="hidden" animate="show" exit="hidden"
+                                  variants={textVariant}
                                   custom={0.5}>
                             {i18n.t(text)}
 						</motion.p>
@@ -62,11 +77,10 @@ function Landing({title, text, client, discipline}) {
                 <div className="landing-bullets landing-client-bullets">
 					<span className="landing-overflow margin-bottom ">
 						<motion.h3 className={`bold`}
-                                 initial={animation.landingText.initial}
-                                  exit={animation.landingText.exit}
-                                  animate={animation.landingText.animate}>{i18n.t("general_words.client")}</motion.h3>
-						<motion.h4 initial={animation.landingText.initial} animate={animation.landingText.animate}
-                                   exit={animation.landingText.exit}
+                                   initial="hidden" animate="show" exit="hidden"
+                                   variants={textVariant}>{i18n.t("general_words.client")}</motion.h3>
+						<motion.h4 initial="hidden" animate="show" exit="hidden"
+                                   variants={textVariant}
                                    custom={0.5}>
 							{i18n.t(client)}
 						</motion.h4>
@@ -74,11 +88,10 @@ function Landing({title, text, client, discipline}) {
 
                     <span className="landing-overflow">
 						<motion.h3 className={`bold`}
-                                  initial={animation.landingText.initial}
-                                  exit={animation.landingText.exit}
-                                  animate={animation.landingText.animate}>{i18n.t("general_words.discipline")}</motion.h3>
-						<motion.h4 initial={animation.landingText.initial} animate={animation.landingText.animate}
-                                   exit={animation.landingText.exit}
+                                   initial="hidden" animate="show" exit="hidden"
+                                   variants={textVariant}>{i18n.t("general_words.discipline")}</motion.h3>
+						<motion.h4 initial="hidden" animate="show" exit="hidden"
+                                   variants={textVariant}
                                    custom={0.5}>
 							{i18n.t(discipline)}
 						</motion.h4>
