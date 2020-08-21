@@ -24,11 +24,8 @@ function Contact ({ className, title }) {
 
 function Page ({ data, query }) {
 	const i18n = useI18n()
-	const animate = useContext(AnimationContext)
 
-	useEffect(() => {
-		(animate.appLoaded) ? animate.animation.secondLoad() : null
-	}, [])
+ 
 
 	return (
 		<>
