@@ -8,29 +8,43 @@ import Clients from '../components/clients/Clients'
 import Contact from '../components/contact/Preview'
 import Stories from "@/stories/Stories";
 import Why from "@/why-asrr/Why";
-import styled from "@emotion/styled";
+import {motion} from 'framer-motion'
 
-const Wrapper = styled('div')`
-        background: ${props => props.theme.layout.background};
-        `;
+const textEasing = [.42, 0, .58, 1];
+const fadeOut = {
+    show: {
+        opacity:1,
+        transition: {
+            ease: textEasing,
+            duration:1
+        }
+    },
+    hidden: {
+        translateY: "100px",
+        opacity:0,
+        transition: {
+            duration: 1,
+            ease: textEasing,
+        }
+    }
+}
 
 function Index(props) {
-    const animate = useContext(AnimationContext);
+
     useEffect(() => {
-        //Load animation only if app has loaded once
-        (animate.appLoaded) ? animate.animation.secondLoad() : null;
+        window.scrollTo(0, 0);
     }, []);
 
     return (
-        <div className="content-wrapper">
-            <HomeLanding title={'home.landing.title'} text={'home.landing.text'} image={image} projects/>
+        <motion.div initial={"show"} exit="hidden" animate="show" variants={fadeOut} className="content-wrapper">
+            <HomeLanding title={'home.landing.title'} text={'home.landing.text'} image={image}/>
             <ServicePreview/>
             <PortfolioPreview/>
             <Stories/>
             <Why/>
             <Contact/>
             <Clients/>
-        </div>
+        </motion.div>
     )
 }
 

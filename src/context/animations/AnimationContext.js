@@ -162,7 +162,6 @@ const provider = ({children}) => {
                         .then(() => hideOverlay()
                             .then(() => showHeader()
                                 .then(() => showText())
-                                .then(() => showLandingCards())
                                 .then(() => setState(prevState => ({
                                     ...prevState,
                                     appLoaded: true,
@@ -214,8 +213,8 @@ const provider = ({children}) => {
                     exit: exitLandingCards
                 }
             },
-            firstLoad: firstLoad,
-            secondLoad:secondLoad
+            firstLoad,
+            secondLoad
         }
     });
 

@@ -1,7 +1,6 @@
-import React, {useContext, useEffect, useRef, useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import {motion} from 'framer-motion'
 import {useRouter} from 'next/router'
-import {AnimationContext} from '../../context/animations/AnimationContext'
 import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
 import Chevron from '../icons/Chevron'
@@ -20,12 +19,30 @@ const Wrapper = styled('div')`
         }
         `;
 
+const textEasing = [.42, 0, .58, 1];
+
+const textVariant = {
+    show: {
+        translateY: "0%",
+        transition: {
+            delay: 0.5,
+            duration: 0.6,
+            ease: textEasing,
+        }
+    },
+    hidden: {
+        translateY: "125%",
+        transition: {
+            delay: 0.2,
+            duration: 0.3,
+            ease: textEasing,
+        }
+    }
+}
+
 function HomeLanding({title, text, image, boxes, projects}) {
     const i18n = useI18n()
-    const animate = useContext(AnimationContext)
-    const animation = animate.animation.landing
     const router = useRouter()
-    const landing = useRef(null)
     const darkmode = useTheme().dark;
     const [services, setServices] = useState([]);
     const navigate = (url) => {
@@ -43,43 +60,51 @@ function HomeLanding({title, text, image, boxes, projects}) {
         setServices(i18n.t("home.landing.services"))
     });
 
+
     return (
         <Wrapper className="landing-container">
             <div className="landing-text-container">
                 <div className="landing-text-wrapper">
                     <div className="landing-text">
 					<span className="landing-overflow">
-						<motion.h1 initial={animation.landingText.initial} exit={animation.landingText.exit}
-                                   animate={animation.landingText.animate}>{i18n.t(title)}</motion.h1>
+						<motion.h1 initial="hidden" animate="show" exit="hidden"
+                                   variants={textVariant}>{i18n.t(title)}</motion.h1>
 					</span>
 
                         <span className="landing-overflow">
-						<motion.p initial={animation.landingText.initial}
-                                  animate={animation.landingText.animate}
-                                  exit={animation.landingText.exit}
-                                  custom={0.5}>
+						<motion.p initial="hidden" animate="show" exit="hidden"
+                                  variants={textVariant}>
                             {i18n.t(text)}
 						</motion.p>
 					</span>
-						    <Button custom to="/portfolio" title="buttons.cases"/>
+                        <span className="landing-overflow">
+                                <Button custom to="/portfolio" title="buttons.cases"/>
+                        </span>
                     </div>
 
                     <div className="landing-bullets">
                         {
                             services.map((d, i) => {
                                 return (
+                                    <>
                                     <span className="landing-overflow margin-bottom">
-						<motion.p className={`${!darkmode ? "animated-link-dark" : "animated-link-light"} bold`}
-                                  onClick={() => navigate(`services/${d.discipline}`)}
-                                  initial={animation.landingText.initial}
-                                  exit={animation.landingText.exit}
-                                  animate={animation.landingText.animate}>{d.discipline}<Chevron/></motion.p>
-						<motion.h4 initial={animation.landingText.initial} animate={animation.landingText.animate}
-                                   exit={animation.landingText.exit}
-                                   custom={0.5}>
-							{d.text}
-						</motion.h4>
-					</span>
+                                        <motion.p
+                                            className={`${!darkmode ? "animated-link-dark" : "animated-link-light"} bold`}
+                                            onClick={() => navigate(`services/${d.discipline}`)}
+                                            initial="hidden" animate="show" exit="hidden"
+                                            variants={textVariant}>
+                                            {d.discipline}
+                                            <Chevron/>
+                                        </motion.p>
+                                    </span>
+                                        <span className="landing-overflow">
+                        	                <motion.h4 initial="hidden" animate="show" exit="hidden"
+                                                       variants={textVariant}>
+                        		                            {d.text}
+                        	                 </motion.h4>
+                                        </span>
+                                    </>
+
                                 )
                             })
                         }

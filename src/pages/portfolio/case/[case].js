@@ -12,10 +12,7 @@ import Slider from "react-slick";
 import Chevron from "@/icons/Chevron";
 import {useTheme} from "../../../context/theme/ThemeContext";
 import Button from "@/Button";
-
-const Wrapper = styled('div')`
-      background-image: ${props => props.theme.layout};
-`;
+import {motion} from "framer-motion";
 
 const Card = styled('div')`
         box-shadow: ${props => props.theme.card.shadow};
@@ -31,12 +28,33 @@ function NextArrow(props) {
     return (<Chevron onClick={onClick} className={className}/>);
 }
 
+const textEasing = [.42, 0, .58, 1];
+const fadeOut = {
+
+    show: {
+        opacity:1,
+        transition: {
+            ease: textEasing,
+            duration:1
+        }
+    },
+    hidden: {
+        translateY: "100px",
+        opacity:0,
+        transition: {
+            duration: 1,
+            ease: textEasing,
+        }
+    }
+}
+
 function Contact({className, title}) {
     return (
-                <div className={`contact preview ${title}`}>
-                    <Title className={`${title} title-button`} title={'contact.preview.title.header'} text={'contact.preview.title.text'}/>
-                    <Button custom to="/contact" title="buttons.contact"/>
-                </div>
+        <div className={`contact preview ${title}`}>
+            <Title className={`${title} title-button`} title={'contact.preview.title.header'}
+                   text={'contact.preview.title.text'}/>
+            <Button custom to="/contact" title="buttons.contact"/>
+        </div>
     )
 }
 
@@ -51,6 +69,8 @@ function Page({data, query}) {
     useEffect(() => {
         (animate.appLoaded) ? animate.animation.secondLoad() : null;
         setBulletPoints(i18n.t(data.bullets));
+        window.scrollTo(0, 0);
+
     }, []);
 
     const settings = {
@@ -67,7 +87,9 @@ function Page({data, query}) {
 
     return (
         <>
-            <Landing title={data.landing.title} text={data.landing.text} client={data.landing.client} discipline={data.landing.discipline}/>
+            <motion.div initial={"show"} exit="hidden" animate="show" variants={fadeOut} className="content-wrapper">
+                <Landing title={data.landing.title} text={data.landing.text} client={data.landing.client}
+                         discipline={data.landing.discipline}/>
                 <Section className="">
                     <Animation animation="fade-up" delay="300">
                         <Title className="justify" title={data.introduction.title} text={data.introduction.text}/>
@@ -113,7 +135,8 @@ function Page({data, query}) {
                             }
                         </Slider>
                         <div className="project-carousel-indicator">
-                            {data.images.map((d, i ) => <div className={`${i === slide ? "active-indicator": null}`}> </div>)}
+                            {data.images.map((d, i) => <div
+                                className={`${i === slide ? "active-indicator" : null}`}></div>)}
                         </div>
                     </Animation>
 
@@ -126,6 +149,7 @@ function Page({data, query}) {
                         <Contact title=""/>
                     </Animation>
                 </Section>
+            </motion.div>
         </>
     )
 }

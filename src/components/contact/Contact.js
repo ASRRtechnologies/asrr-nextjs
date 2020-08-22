@@ -52,15 +52,18 @@ function Contact ({ big }) {
 				setEmail({})
 			}
 			else{
-				notify("user_notifications.contact.error.title", "user_notifications.contact.error.text", {error:true});
 				response.json().then(function (object) {
 					console.log(object);
 					console.log(object.propertyErrors);
 					console.log(response)
+					notify("user_notifications.contact.error.title", "user_notifications.contact.error.text", {error:true});
+
 				});
 				throw new Error(response.statusText);
 			}
-		}).catch(error => console.log(error));
+		}).catch(error => {
+			notify("user_notifications.contact.error.title", "user_notifications.contact.error.text", {error:true});
+		});
 
 		event.preventDefault();
 
