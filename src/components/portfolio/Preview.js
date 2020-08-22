@@ -9,8 +9,8 @@ import styled from '@emotion/styled'
 import Animation from "@/animation/Animation";
 
 function Preview(props) {
-    const i18n = useI18n()
-    const [active, setActive] = useState(0)
+    const i18n = useI18n();
+    const [active, setActive] = useState(0);
     return (
         <Animation animation="fade-up" delay="200">
             <Section>

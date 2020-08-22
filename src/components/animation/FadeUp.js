@@ -27,7 +27,7 @@ export const FadeUp = ({children, delayOrder, delay, className, stagger, duratio
                 delay
             }
         }
-    }
+    };
 
     {console.log(inView)}
 

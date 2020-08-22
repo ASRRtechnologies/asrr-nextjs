@@ -25,10 +25,10 @@ const fadeOut = {
 			ease: textEasing,
 		}
 	}
-}
+};
 
 function Services(props) {
-    const darkmode = useTheme().dark
+    const darkmode = useTheme().dark;
 
 	useEffect(() => {
 		window.scrollTo(0, 0);

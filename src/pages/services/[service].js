@@ -31,7 +31,7 @@ const fadeOut = {
 			ease: textEasing,
 		}
 	}
-}
+};
 
 function Contact({className, title}) {
     return (
@@ -44,7 +44,7 @@ function Contact({className, title}) {
 }
 
 function Page({data, query}) {
-    const i18n = useI18n()
+    const i18n = useI18n();
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -67,11 +67,11 @@ function Page({data, query}) {
 }
 
 Page.getInitialProps = ({query}) => {
-    let data = services.find(data => data.id || data.id_nl === query.services)
+    let data = services.find(data => data.id || data.id_nl === query.services);
     return {
         data,
     }
-}
+};
 
 export default Page
 

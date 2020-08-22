@@ -41,27 +41,31 @@ const Wrapper = styled('nav')`
         }
 `;
 
+const Line1 = styled('div')`background: ${props => props.theme.header.line1};`;
+const Line2 = styled('div')`background: ${props => props.theme.header.line2};`;
+const Line3 = styled('div')`background: ${props => props.theme.header.line3};`;
+
 function Header2(props) {
 
-    const i18n = useI18n()
-    const [menuOpen, setMenuOpen] = useState(false)
-    const [visible, setVisible] = useState(false)
+    const i18n = useI18n();
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [visible, setVisible] = useState(false);
 
-    const themeState = useTheme()
-    const toggle = () => themeState.toggle()
+    const themeState = useTheme();
+    const toggle = () => themeState.toggle();
 
     const headerPosition = () => {
-        let currentScrollPos = window.pageYOffset
+        let currentScrollPos = window.pageYOffset;
         if (currentScrollPos < (1 / 16 * window.innerHeight)) {
             setVisible(false)
         } else if (currentScrollPos > (1 / 16 * window.innerHeight)) {
             setVisible(true)
         }
-    }
+    };
 
-    useEffect(() => window.addEventListener('scroll', headerPosition))
-    const closeMenu = () => setMenuOpen(false)
-    const mouse = useContext(MouseContext)
+    useEffect(() => window.addEventListener('scroll', headerPosition));
+    const closeMenu = () => setMenuOpen(false);
+    const mouse = useContext(MouseContext);
 
     {/*<motion.div animate={animation.animate} initial={animation.initial} exit={animation.exit}*/
     }
@@ -76,7 +80,7 @@ function Header2(props) {
                 <div className="header-wrapper">
                     <Link href="/"><a className="header-logo"><Logo/></a></Link>
                     <div className={`header-menu ${menuOpen && 'open'}`}>
-                         <Link scroll={false} href="/"><a onClick={closeMenu}>{i18n.t('header.home')}</a></Link>
+                        <Link scroll={false} href="/"><a onClick={closeMenu}>{i18n.t('header.home')}</a></Link>
                         <Link scroll={false} href="/portfolio"><a onClick={closeMenu}>{i18n.t('header.portfolio')}</a></Link>
                         <Link scroll={false} href="/services"><a onClick={closeMenu}>{i18n.t('header.services')}</a></Link>
                         <Link scroll={false} href="/contact"><a onClick={closeMenu}>{i18n.t('header.contact')}</a></Link>
@@ -99,6 +103,13 @@ function Header2(props) {
                             <div className="bar3"></div>
                         </div>
                     </div>
+
+                    <Line1 className={`menu-overlay top ${menuOpen && "menu-open"}`}> </Line1>
+                    <Line2 className={`menu-overlay middle ${menuOpen && "menu-open"}`}> </Line2>
+                    <Line3 className={`menu-overlay bottom ${menuOpen && "menu-open"}`}> </Line3>
+
+                    <div className="test-bar"></div>
+
                 </div>
             </Wrapper>
         </div>

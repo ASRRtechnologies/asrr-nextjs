@@ -26,7 +26,7 @@ export const previewServices = [
         text: 'service-cards.hardware.preview.text',
         icon: <Hardware/>
     },
-]
+];
 
 export const services = [
     {

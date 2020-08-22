@@ -1,46 +1,46 @@
 //Font colors
-const whiteFont = '#ffffff'
-const darkFont = '#1a1a1a'
-const lightFont = '#41474E'
-const subFontDark = '#41474E'
-const subFontLight = '#c4c4c4'
+const whiteFont = '#ffffff';
+const darkFont = '#1a1a1a';
+const lightFont = '#41474E';
+const subFontDark = '#41474E';
+const subFontLight = '#c4c4c4';
 
-const dropShadowDark = ' 0 8px 10px rgba(235, 235, 235, 0.15)'
-const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)'
+const dropShadowDark = ' 0 8px 10px rgba(235, 235, 235, 0.15)';
+const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)';
 
-const white = '#fff'
-const white2 = '#fbfbfb'
-const white3 = '#ebebeb'
+const white = '#fff';
+const white2 = '#fbfbfb';
+const white3 = '#ebebeb';
 
-const black = '#0a0a0a'
-const black2 = '#131313'
-const black3 = '#1a1a1a'
-const black4 = '#3c3c3c'
+const black = '#0a0a0a';
+const black2 = '#131313';
+const black3 = '#1a1a1a';
+const black4 = '#3c3c3c';
 
 //Logo colors
-const logoLight = white
-const logoDark = black
+const logoLight = white;
+const logoDark = black;
 
 //Header colors
-const headerLight = '#ffffff'
-const headerDark = '#0a0a0a'
+const headerLight = '#ffffff';
+const headerDark = '#0a0a0a';
 
-const hoverLinkDark = 'linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)'
-const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)'
+const hoverLinkDark = 'linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)';
+const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)';
 
 const landing = {
 	background: {
 		dark: black,
 		light: "linear-gradient(120deg, #eeeff1 45%, #e9e9e9 100%);",
 	},
-}
+};
 
 const layout = {
 	background: {
 		dark: "linear-gradient(120deg, #131313 45%, #0a0a0a 100%);",
 		light: "linear-gradient(120deg, #FBFBFB 45%, #ebedee 100%);",
 	},
-}
+};
 
 const button = {
 
@@ -93,7 +93,7 @@ const home = {
 		light: white2,
 	},
 
-}
+};
 
 const portfolio = {
 	landing: {
@@ -116,7 +116,7 @@ const portfolio = {
 		light: white2,
 	},
 
-}
+};
 
 const fonts = {
 
@@ -140,7 +140,7 @@ const fonts = {
 		dark: hoverLinkDark,
 	},
 
-}
+};
 
 const header = {
 
@@ -159,7 +159,19 @@ const header = {
 		dark: logoDark,
 	},
 
-}
+	line_1:{
+		dark:"linear-gradient(to top, #E4324C 50%, #1A1A1A 50%)",
+		light:"linear-gradient(to top, #E4324C 50%, #ffffff 50%)",
+	},
+	line_2:{
+		dark:"linear-gradient(to top, #E4324C 50%, #1A1A1A 50%)",
+		light:"linear-gradient(to top, #E4324C 50%, #ffffff 50%)",
+	},
+	line_3:{
+		dark:"linear-gradient(to bottom, #E4324C 50%, #1A1A1A 50%) 0 -100%",
+		light:"linear-gradient(to bottom, #E4324C 50%, #ffffff 50%) 0 -100%",
+	}
+};
 
 const cards = {
 	background: {
@@ -184,7 +196,7 @@ const alert = {
 		dark:cards.background.dark,
 		light:cards.background.light
 	}
-}
+};
 
 const lightTheme = {
 
@@ -193,6 +205,9 @@ const lightTheme = {
 		logo: header.logo.dark,
 		font: darkFont,
 		shadow: header.shadow.light,
+		line_1:header.line_1.light,
+		line_2:header.line_2.light,
+		line_3:header.line_3.light,
 	},
 
 	fonts: {
@@ -244,7 +259,7 @@ const lightTheme = {
 		background:alert.background.light
 	}
 
-}
+};
 
 const darkTheme = {
 
@@ -253,6 +268,9 @@ const darkTheme = {
 		logo: header.logo.light,
 		font: whiteFont,
 		shadow: header.shadow.dark,
+		line_1:header.line_1.dark,
+		line_2:header.line_2.dark,
+		line_3:header.line_3.dark,
 	},
 
 	fonts: {
@@ -304,8 +322,8 @@ const darkTheme = {
 		background:alert.background.light
 	}
 
-}
+};
 
-const theme = mode => (mode === 'dark' ? darkTheme : lightTheme)
+const theme = mode => (mode === 'dark' ? darkTheme : lightTheme);
 
 export default theme

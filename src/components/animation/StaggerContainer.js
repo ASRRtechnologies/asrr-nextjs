@@ -18,7 +18,7 @@ function StaggerContainer({children, className, delayOrder, stagger, duration = 
             }
 
         }
-    }
+    };
 
     return (
         <motion.div initial="hidden" className={className} animate={"show"} exit="hidden" variants={variant}>

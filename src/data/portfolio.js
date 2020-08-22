@@ -7,7 +7,7 @@ export const disciplines = [
 	{title:'cases.disciplines.all'},
 	{title:'cases.disciplines.bim'},
 	{title:'cases.disciplines.web'},
-]
+];
 
 export const previewCases = [
 	{
@@ -38,7 +38,7 @@ export const previewCases = [
 		text: 'cases.nwo.text',
 		id:"nwo"
 	},
-]
+];
 
 export const portfolio = [
 	{

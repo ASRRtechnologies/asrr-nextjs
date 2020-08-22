@@ -24,10 +24,10 @@ const fadeOut = {
             ease: textEasing,
         }
     }
-}
+};
 
 function Contact() {
-    const darkmode = useTheme().dark
+    const darkmode = useTheme().dark;
 
     useEffect(() => {
         window.scrollTo(0, 0);

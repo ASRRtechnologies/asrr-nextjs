@@ -42,28 +42,28 @@ const Wrapper = styled('nav')`
 `;
 
 function Header(props) {
-    const i18n = useI18n()
-    const [menuOpen, setMenuOpen] = useState(false)
-    const [visible, setVisible] = useState(false)
+    const i18n = useI18n();
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [visible, setVisible] = useState(false);
 
-    const themeState = useTheme()
-    const toggle = () => themeState.toggle()
+    const themeState = useTheme();
+    const toggle = () => themeState.toggle();
 
-    const animate = useContext(AnimationContext)
-    const animation = animate.animation.header
+    const animate = useContext(AnimationContext);
+    const animation = animate.animation.header;
 
     const headerPosition = () => {
-        let currentScrollPos = window.pageYOffset
+        let currentScrollPos = window.pageYOffset;
         if (currentScrollPos < (1 / 16 * window.innerHeight)) {
             setVisible(false)
         } else if (currentScrollPos > (1 / 16 * window.innerHeight)) {
             setVisible(true)
         }
-    }
+    };
 
-    useEffect(() => window.addEventListener('scroll', headerPosition))
-    const closeMenu = () => setMenuOpen(false)
-    const mouse = useContext(MouseContext)
+    useEffect(() => window.addEventListener('scroll', headerPosition));
+    const closeMenu = () => setMenuOpen(false);
+    const mouse = useContext(MouseContext);
 
     {/*<motion.div animate={animation.animate} initial={animation.initial} exit={animation.exit}*/
     }
