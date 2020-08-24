@@ -41,9 +41,9 @@ const Wrapper = styled('nav')`
         }
 `;
 
-const Line1 = styled('div')`background: ${props => props.theme.header.line1};`;
-const Line2 = styled('div')`background: ${props => props.theme.header.line2};`;
-const Line3 = styled('div')`background: ${props => props.theme.header.line3};`;
+const Line1 = styled('div')`background: ${props => props.theme.header.line_1};`;
+const Line2 = styled('div')`background: ${props => props.theme.header.line_2};`;
+const Line3 = styled('div')`background: ${props => props.theme.header.line_3};`;
 
 function Header2(props) {
 
@@ -79,14 +79,14 @@ function Header2(props) {
             <Wrapper visible={visible} menuOpen={menuOpen} className="header-relative">
                 <div className="header-wrapper">
                     <Link href="/"><a className="header-logo"><Logo/></a></Link>
-                    <div className={`header-menu ${menuOpen && 'open'}`}>
-                        <Link scroll={false} href="/"><a onClick={closeMenu}>{i18n.t('header.home')}</a></Link>
-                        <Link scroll={false} href="/portfolio"><a onClick={closeMenu}>{i18n.t('header.portfolio')}</a></Link>
-                        <Link scroll={false} href="/services"><a onClick={closeMenu}>{i18n.t('header.services')}</a></Link>
-                        <Link scroll={false} href="/contact"><a onClick={closeMenu}>{i18n.t('header.contact')}</a></Link>
-                        {/*<Link href="/about"><a onClick={closeMenu}>{i18n.t('header.about')}</a></Link>*/}
-                        <LanguageMobile/>
-                    </div>
+                    {/*<div className={`header-menu ${menuOpen && 'open'}`}>*/}
+                    {/*    <Link scroll={false} href="/"><a onClick={closeMenu}>{i18n.t('header.home')}</a></Link>*/}
+                    {/*    <Link scroll={false} href="/portfolio"><a onClick={closeMenu}>{i18n.t('header.portfolio')}</a></Link>*/}
+                    {/*    <Link scroll={false} href="/services"><a onClick={closeMenu}>{i18n.t('header.services')}</a></Link>*/}
+                    {/*    <Link scroll={false} href="/contact"><a onClick={closeMenu}>{i18n.t('header.contact')}</a></Link>*/}
+                    {/*    /!*<Link href="/about"><a onClick={closeMenu}>{i18n.t('header.about')}</a></Link>*!/*/}
+                    {/*    <LanguageMobile/>*/}
+                    {/*</div>*/}
 
                     <div className="header-actions">
                         <Language/>
@@ -104,11 +104,13 @@ function Header2(props) {
                         </div>
                     </div>
 
-                    <Line1 className={`menu-overlay top ${menuOpen && "menu-open"}`}> </Line1>
-                    <Line2 className={`menu-overlay middle ${menuOpen && "menu-open"}`}> </Line2>
-                    <Line3 className={`menu-overlay bottom ${menuOpen && "menu-open"}`}> </Line3>
+                    <Line1 className={`menu-background top ${menuOpen ? "menu-open" : null}`}> </Line1>
+                    <Line2 className={`menu-background middle ${menuOpen ? "menu-open" : null}`}> </Line2>
+                    <Line3 className={`menu-background bottom ${menuOpen ? "menu-open" : null}`}> </Line3>
 
-                    <div className="test-bar"></div>
+                    {/*<i className={`menu-background top ${menuOpen ? "menu-open" : null}`}/>*/}
+                    {/*<i className={`menu-background middle ${menuOpen ? "menu-open" : null}`}/>*/}
+                    {/*<i className={`menu-background bottom ${menuOpen ? "menu-open" : null}`}/>*/}
 
                 </div>
             </Wrapper>
