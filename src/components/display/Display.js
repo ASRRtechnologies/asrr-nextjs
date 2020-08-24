@@ -4,7 +4,7 @@ import Section from '../layout/Section'
 import styled from '@emotion/styled'
 
 const Wrapper = styled('div')`
-`
+`;
 
 function Display ({ image }) {
 	return (

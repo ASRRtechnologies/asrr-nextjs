@@ -31,7 +31,7 @@ const fadeOut = {
 			ease: textEasing,
 		}
 	}
-}
+};
 
 function Contact({className, title}) {
     return (
@@ -44,7 +44,7 @@ function Contact({className, title}) {
 }
 
 function Page({data, query}) {
-    const i18n = useI18n()
+    const i18n = useI18n();
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -55,7 +55,7 @@ function Page({data, query}) {
             <motion.div initial={"show"} exit="hidden" animate="show" variants={fadeOut} className="content-wrapper">
                 <Section className="service-page">
                     <Animation animation="fade-up" delay="300">
-                        <Title title={data.title} text={data.text}/>
+                        <Title title={data.title} className="justify" text={data.text}/>
                     </Animation>
                     <Animation animation="fade-up" delay="300">
                         <Contact/>
@@ -67,11 +67,11 @@ function Page({data, query}) {
 }
 
 Page.getInitialProps = ({query}) => {
-    let data = services.find(data => data.id || data.id_nl === query.services)
+    let data = services.find(data => data.id || data.id_nl === query.services);
     return {
         data,
     }
-}
+};
 
 export default Page
 

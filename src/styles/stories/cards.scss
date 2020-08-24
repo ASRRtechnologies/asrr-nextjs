@@ -51,10 +51,9 @@
 
 @media screen and (max-width: 1000px) {
   .stories {
-    .card {
+    .card-animatable{
       width: 45%;
       margin-bottom: 75px;
-
       p{
         max-width: 100%;
       }
@@ -65,9 +64,11 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .stories {
-    .card {
+    @include flex(flex-start, center, column);
+
+    .card-animatable {
       width: 100%;
       height: auto;
       @include flex(center, center, column);
@@ -76,9 +77,11 @@
         margin-bottom: 50px;
       }
 
-      p {
-        max-width: 100%;
-        text-align: center;
+      .card{
+        p {
+          max-width: 100%;
+          text-align: center;
+        }
       }
     }
   }

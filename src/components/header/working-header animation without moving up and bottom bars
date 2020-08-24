@@ -1,0 +1,50 @@
+  .menu-background {
+    //visibility: hidden;
+    width: 300%;
+    height: 35vh;
+    position: fixed;
+    left: -130%;
+    transition: background-position 0.5s, transform 0.5s 0.5s, visibility 0.5s 1s;
+    .menu-open & {
+      visibility: visible;
+      transition: background-position 0.5s, transform 0.5s 0.5s;
+    }
+    &.top {
+      transform: rotate(-45deg) translateY(22%);
+      //background: linear-gradient(to top, transparent 50%, red 50%);
+      background-size: 100% 200%;
+      background-position: -100% 100%;
+      z-index: -1;
+      &.menu-open {
+        transform: rotate(-45deg) translateY(22%);
+        background-position: 0 0;
+      }
+    }
+    &.middle {
+      transform: rotate(-45deg) translateY(120%)  translateX(-20%) scaleY(0);
+      //background: linear-gradient(to bottom, red 50%, $danube 50%);
+      transition: transform 0.5s 0.3s;
+      z-index: -1;
+      transform-origin: center;
+
+      &.menu-open {
+        transform: rotate(-45deg) translateY(120%) translateX(-20%) scaleY(1);
+        transition: transform 0.5s;
+        transform-origin: center;
+      }
+
+    }
+    &.bottom {
+      transform: rotate(-45deg) translateY(218%) translateX(-30%);
+      //background: linear-gradient(to bottom, $danube 50%, transparent 50%);
+      background-size: 100% 200%;
+      background-position: 0 -100%;
+      z-index: -1;
+      &.menu-open  {
+        transform: rotate(-45deg) translateY(218%) translateX(-35%);
+        background-position: 0 0;
+      }
+    }
+  }
+
+}

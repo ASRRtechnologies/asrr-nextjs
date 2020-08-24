@@ -41,27 +41,31 @@ const Wrapper = styled('nav')`
         }
 `;
 
+const Line1 = styled('div')`background: ${props => props.theme.header.line_1};`;
+const Line2 = styled('div')`background: ${props => props.theme.header.line_2};`;
+const Line3 = styled('div')`background: ${props => props.theme.header.line_3};`;
+
 function Header2(props) {
 
-    const i18n = useI18n()
-    const [menuOpen, setMenuOpen] = useState(false)
-    const [visible, setVisible] = useState(false)
+    const i18n = useI18n();
+    const [menuOpen, setMenuOpen] = useState(false);
+    const [visible, setVisible] = useState(false);
 
-    const themeState = useTheme()
-    const toggle = () => themeState.toggle()
+    const themeState = useTheme();
+    const toggle = () => themeState.toggle();
 
     const headerPosition = () => {
-        let currentScrollPos = window.pageYOffset
+        let currentScrollPos = window.pageYOffset;
         if (currentScrollPos < (1 / 16 * window.innerHeight)) {
             setVisible(false)
         } else if (currentScrollPos > (1 / 16 * window.innerHeight)) {
             setVisible(true)
         }
-    }
+    };
 
-    useEffect(() => window.addEventListener('scroll', headerPosition))
-    const closeMenu = () => setMenuOpen(false)
-    const mouse = useContext(MouseContext)
+    useEffect(() => window.addEventListener('scroll', headerPosition));
+    const closeMenu = () => setMenuOpen(false);
+    const mouse = useContext(MouseContext);
 
     {/*<motion.div animate={animation.animate} initial={animation.initial} exit={animation.exit}*/
     }
@@ -71,12 +75,13 @@ function Header2(props) {
     //Then fixed elements will be fixed to the parent not to the window body / obj.
 
     return (
-        <div className={`header`}>
-            <Wrapper visible={visible} menuOpen={menuOpen} className="header-relative">
+        <div className={`header ${menuOpen ? "menu-open" : null}`}>
+            <Wrapper visible={visible} menuOpen={menuOpen} className={`header-relative ${menuOpen ? "menu-open" : null}`}>
                 <div className="header-wrapper">
                     <Link href="/"><a className="header-logo"><Logo/></a></Link>
-                    <div className={`header-menu ${menuOpen && 'open'}`}>
-                         <Link scroll={false} href="/"><a onClick={closeMenu}>{i18n.t('header.home')}</a></Link>
+
+                    <div className={`header-menu ${menuOpen ? "menu-open" : null}`}>
+                        <Link scroll={false} href="/"><a onClick={closeMenu}>{i18n.t('header.home')}</a></Link>
                         <Link scroll={false} href="/portfolio"><a onClick={closeMenu}>{i18n.t('header.portfolio')}</a></Link>
                         <Link scroll={false} href="/services"><a onClick={closeMenu}>{i18n.t('header.services')}</a></Link>
                         <Link scroll={false} href="/contact"><a onClick={closeMenu}>{i18n.t('header.contact')}</a></Link>
@@ -99,6 +104,15 @@ function Header2(props) {
                             <div className="bar3"></div>
                         </div>
                     </div>
+
+                    <Line1 className={`menu-background top ${menuOpen ? "menu-open" : null}`}> </Line1>
+                    <Line2 className={`menu-background middle ${menuOpen ? "menu-open" : null}`}> </Line2>
+                    <Line3 className={`menu-background bottom ${menuOpen ? "menu-open" : null}`}> </Line3>
+
+                    {/*<i className={`menu-background top ${menuOpen ? "menu-open" : null}`}/>*/}
+                    {/*<i className={`menu-background middle ${menuOpen ? "menu-open" : null}`}/>*/}
+                    {/*<i className={`menu-background bottom ${menuOpen ? "menu-open" : null}`}/>*/}
+
                 </div>
             </Wrapper>
         </div>

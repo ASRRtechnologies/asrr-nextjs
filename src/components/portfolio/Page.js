@@ -14,19 +14,19 @@ import useI18n from "../../hooks/use-i18n";
 
 const Landing = styled('div')`
       background-color: ${props => props.theme.portfolio.landing};
-`
+`;
 
 const Process = styled('div')`
       background-color: ${props => props.theme.portfolio.process};
-`
+`;
 
 const ShowCase = styled('div')`
       background-color: ${props => props.theme.portfolio.showcase};
-`
+`;
 
 const OtherCases = styled('div')`
       background-color: ${props => props.theme.portfolio.otherCases};
-`
+`;
 
 function Page({demo}) {
 

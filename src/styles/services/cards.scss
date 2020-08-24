@@ -70,9 +70,9 @@
     }
 
     .card {
-      @include flex(space-between, flex-start, column);
-      margin-bottom: 50px;
-      padding-bottom: 50px;
+      @include flex(space-between, center, column);
+      margin-bottom: 75px;
+      padding-bottom: 75px;
 
       .icon {
         @include size(70px, 70px);
@@ -85,6 +85,8 @@
 
       .text {
         width: 100%;
+        @include flex(space-between, center, column);
+        text-align: center;
       }
 
     }

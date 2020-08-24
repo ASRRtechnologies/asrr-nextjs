@@ -38,22 +38,22 @@ const textVariant = {
             ease: textEasing,
         }
     }
-}
+};
 
 function HomeLanding({title, text, image, boxes, projects}) {
-    const i18n = useI18n()
-    const router = useRouter()
+    const i18n = useI18n();
+    const router = useRouter();
     const darkmode = useTheme().dark;
     const [services, setServices] = useState([]);
     const navigate = (url) => {
         router.push(url).then(null)
-    }
+    };
 
     const setLandingHeight = () => {
         // if (window.matchMedia('(max-width: 1200px)').matches) {
         // 	landing.current.style.height = `${window.innerHeight}px`
         // }
-    }
+    };
 
     useEffect(() => {
         setLandingHeight();

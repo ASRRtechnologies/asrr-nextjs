@@ -9,9 +9,9 @@ const Wrapper = styled('div')`
 `;
 
 function Card ({ img, title, discipline, client, route }) {
-	const i18n = useI18n()
-	const mouse = useContext(MouseContext)
-	const router = useRouter()
+	const i18n = useI18n();
+	const mouse = useContext(MouseContext);
+	const router = useRouter();
 	const navigateTo = (route) => {
 		router.push(`/portfolio/case/${route}`)
 	};

@@ -92,7 +92,17 @@
       &:nth-last-of-type(1){
         margin-bottom: 0;
       }
+    }
 
+    &.portfolio-preview{
+      .card-animatable {
+        width: 45%;
+        margin-bottom: 100px;
+
+        &:nth-last-of-type(1){
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
@@ -104,13 +114,25 @@
       width: 100%;
       max-width: 400px;
       height: 100%;
-      margin-bottom: 50px;
+      margin-bottom: 75px;
     }
     .read-more{
       margin-right: auto;
       margin-left: auto;
     }
 
+    &.portfolio-preview{
+      .card-animatable {
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        margin-bottom: 75px;
+      }
+      .read-more{
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
   }
 
 }

@@ -46,7 +46,7 @@ const fadeOut = {
             ease: textEasing,
         }
     }
-}
+};
 
 function Contact({className, title}) {
     return (
@@ -59,11 +59,11 @@ function Contact({className, title}) {
 }
 
 function Page({data, query}) {
-    const i18n = useI18n()
-    const animate = useContext(AnimationContext)
-    const [bullets, setBulletPoints] = useState([])
-    const [slide, setActiveSlide] = useState(0)
-    const [card, setCard] = useState(0)
+    const i18n = useI18n();
+    const animate = useContext(AnimationContext);
+    const [bullets, setBulletPoints] = useState([]);
+    const [slide, setActiveSlide] = useState(0);
+    const [card, setCard] = useState(0);
     const darkmode = useTheme().dark;
 
     useEffect(() => {
@@ -83,7 +83,7 @@ function Page({data, query}) {
         prevArrow: <PrevArrow/>,
         // beforeChange: (current, next) => setActiveSlide(next),
         afterChange: current => setActiveSlide(current)
-    }
+    };
 
     return (
         <>

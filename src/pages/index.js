@@ -27,7 +27,7 @@ const fadeOut = {
             ease: textEasing,
         }
     }
-}
+};
 
 function Index(props) {
 

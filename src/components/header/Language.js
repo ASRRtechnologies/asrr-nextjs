@@ -8,12 +8,12 @@ const Wrapper = styled('div')`
     box-shadow: ${props => props.theme.header.shadow};
     a{color: ${props => props.theme.fonts.title}!important;};
     background-color: ${props => props.theme.header.background};
-`
+`;
 function Language(props) {
     const i18n = useI18n();
     const [languages, setLanguage] = useState([]);
     const [menuOpen, setMenuOpen ] = useState(false);
-    const node = useRef()
+    const node = useRef();
 
     //Set languages to the ones which arent equal to the locale
     // const filterLanguages = () => filterLanguage(languages.filter((x) => x !== i18n.activeLocale));;
@@ -29,15 +29,15 @@ function Language(props) {
 
     const setUnselectedLanguages = (language) => {
         if (language === "nl") {
-            i18n.locale('nl', NL)
+            i18n.locale('nl', NL);
             window.localStorage.setItem("language", "nl");
             setLanguage(["en"])
         } else if (language === "en") {
-            i18n.locale('en', EN)
+            i18n.locale('en', EN);
             window.localStorage.setItem("language", "en");
             setLanguage(["nl"])
         } else {
-            i18n.locale('en', EN)
+            i18n.locale('en', EN);
             window.localStorage.setItem("language", "en");
             setLanguage(["nl"])
         }
@@ -50,11 +50,11 @@ function Language(props) {
         }
         // outside click
         setMenuOpen(false)
-    }
+    };
 
     useEffect(() => {
         setSelectedLanguage();
-        document.addEventListener('mousedown', handleClick)
+        document.addEventListener('mousedown', handleClick);
 
         return () => {
             document.removeEventListener('mousedown', handleClick)
