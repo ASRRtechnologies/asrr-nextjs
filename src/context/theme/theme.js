@@ -160,16 +160,16 @@ const header = {
 	},
 
 	line_1:{
-		dark:"linear-gradient(to top, #E4324C 50%, #1A1A1A 50%)",
-		light:"linear-gradient(to top, #E4324C 50%, #ffffff 50%)",
+		dark:"linear-gradient(to top, #ff6961 50%, #0a0a0a 50%)",
+		light:"linear-gradient(to top, #ff6961 50%, #ffffff 50%)",
 	},
 	line_2:{
-		dark:"linear-gradient(to top, #E4324C 50%, #1A1A1A 50%)",
-		light:"linear-gradient(to top, #E4324C 50%, #ffffff 50%)",
+		dark:"linear-gradient(to top, #ff6961 50%, #0a0a0a 50%)",
+		light:"linear-gradient(to top, #ff6961 50%, #ffffff 50%)",
 	},
 	line_3:{
-		dark:"linear-gradient(to bottom, #E4324C 50%, #1A1A1A 50%) 0 -100%",
-		light:"linear-gradient(to bottom, #E4324C 50%, #ffffff 50%) 0 -100%",
+		dark:"linear-gradient(to bottom, #ff6961 50%, #0a0a0a 50%) 0 -100%",
+		light:"linear-gradient(to bottom, #ff6961 50%, #ffffff 50%) 0 -100%",
 	}
 };
 

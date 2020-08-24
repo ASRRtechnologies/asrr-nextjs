@@ -15,7 +15,7 @@ function Portfolio() {
             <Section>
                 <Title title={'portfolio.preview.title.header'} text={'portfolio.preview.title.text'}/>
                 {/*<div className="portfolio portfolio-preview">*/}
-                <IntersectionObserver className="portfolio" key={"port"}>
+                <IntersectionObserver className="portfolio portfolio-center" key={"port"}>
                         {portfolio.map(({image, discipline, title, client, id}, i) => {
                             return (
                                 <FadeUp className="card-animatable" delay={i * 0.2}>

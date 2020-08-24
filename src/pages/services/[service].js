@@ -55,7 +55,7 @@ function Page({data, query}) {
             <motion.div initial={"show"} exit="hidden" animate="show" variants={fadeOut} className="content-wrapper">
                 <Section className="service-page">
                     <Animation animation="fade-up" delay="300">
-                        <Title title={data.title} text={data.text}/>
+                        <Title title={data.title} className="justify" text={data.text}/>
                     </Animation>
                     <Animation animation="fade-up" delay="300">
                         <Contact/>
