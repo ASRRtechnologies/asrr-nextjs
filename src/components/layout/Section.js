@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Section({children, className}) {
+function Section({children, className, containerClassName}) {
     return (
-        <section className="section-wrapper">
+        <section className={`section-wrapper ${containerClassName}`}>
             <div className={`section ${className}`}>
                 {children}
             </div>

@@ -37,7 +37,7 @@ function Button ({className, title, to, custom, ...props }) {
 		<>
 			{custom ? (
 				<Wrapper {...props} className={`button ${className}`} >
-					{to.length > 0 ? (<Link href={to}><a>{i18n.t(title)}</a></Link>) : (
+					{to.length > 1 ? (<Link href={to}><a>{i18n.t(title)}</a></Link>) : (
 						<p>{i18n.t(title)}</p>
 					)}
 				</Wrapper>)
