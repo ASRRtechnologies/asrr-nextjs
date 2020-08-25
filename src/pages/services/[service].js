@@ -67,7 +67,7 @@ function Page({data, query}) {
 }
 
 Page.getInitialProps = ({query}) => {
-    let data = services.find(data => data.id || data.id_nl === query.services);
+    let data = services.find(data => data.id === query.service);
     return {
         data,
     }
