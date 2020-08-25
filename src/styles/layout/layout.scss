@@ -25,7 +25,11 @@
     padding-top: 0;
   }
 
-}
+  &.error-page {
+    padding-bottom: 0;
+  }
+
+  }
 
 .section{
   width:100%;
@@ -38,6 +42,29 @@
 
   &.service-page{
     padding-top: 50px;
+  }
+
+  &.error-page{
+    min-height: 500px;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+
+
+    & > div{
+      height: 100%;
+      width: 85%;
+      @include flex(center, center, column);
+    }
+
+    //@include flex(flex-start, center, column);
+    .landing-wave{
+      height: 100%;
+    }
+
   }
 
 }

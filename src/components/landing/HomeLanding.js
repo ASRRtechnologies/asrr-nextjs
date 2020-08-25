@@ -45,9 +45,7 @@ function HomeLanding({title, text, image, boxes, projects}) {
     const router = useRouter();
     const darkmode = useTheme().dark;
     const [services, setServices] = useState([]);
-    const navigate = (url) => {
-        router.push(url).then(null)
-    };
+    const navigate = (url) => router.push(url).then(null);
 
     const setLandingHeight = () => {
         // if (window.matchMedia('(max-width: 1200px)').matches) {

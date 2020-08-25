@@ -378,6 +378,13 @@
       "title": "Configurator Dashboard",
       "text": "Lorem ipsum fr"
     }
+  },
+
+  "error": {
+    "title": "404 error",
+    "text": "The page you're looking for could not be found.",
+    "button": "Go Back"
   }
+
 }
 

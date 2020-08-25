@@ -365,6 +365,13 @@
       "title": "Configurator Dashboard",
       "text": "Lorem ipsum fr"
     }
+  },
+
+  "error": {
+    "title": "404 error",
+    "text": "De pagina die u zoekt kan niet gevonden worden.",
+    "button": "Ga Terug"
   }
+
 }
 

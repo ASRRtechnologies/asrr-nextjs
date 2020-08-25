@@ -1,12 +1,10 @@
 import React, {useState} from 'react'
 import Section from '../layout/Section'
 import Title from '../text/Title'
-import ReadMore from '@/text/ReadMore'
 import Input from '@/text/Input'
 import Map from '@/contact/Map'
 import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
-import {ScaleLoader} from "react-spinners";
 import {toast} from 'react-toastify';
 import Alert from "@/alerts/Alert";
 import Button from "@/Button";
@@ -64,11 +62,7 @@ function Contact ({ big }) {
 		}).catch(error => {
 			notify("user_notifications.contact.error.title", "user_notifications.contact.error.text", {error:true});
 		});
-
 		event.preventDefault();
-
-		console.log(email, 23)
-
 	};
 
 	return (
