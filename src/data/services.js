@@ -39,7 +39,7 @@ export const services = [
         icon: <Team/>
     },
     {
-        id:"full-stack",
+        id:"Full-Stack-Development",
         id_nl:"full-stack",
         title: 'service-cards.full-stack.title',
         text: 'service-cards.full-stack.text',
