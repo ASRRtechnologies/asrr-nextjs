@@ -54,7 +54,7 @@ function Language(props) {
     }, []);
 
     return (
-        <div className="language-mobile">
+        <div className="language-mobile fade-in-header">
             <a style={{color: "#ff6961"}} className="bold" onClick={() => setMenuOpen(!menuOpen)}>{i18n.activeLocale.toUpperCase()}</a>
             {languages.map((d) => <a className={`${!darkmode ? "animated-link-dark" : "animated-link-light"}`}
 

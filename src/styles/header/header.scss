@@ -148,22 +148,35 @@ $bermuda: #77D7B9;
 
   .header-menu{
     transform: translateX(0);
-    opacity: 0;
     pointer-events: none;
     transition: 0.4s ease-in opacity;
     background-color: transparent !important;
+    padding-top: 15vh;
+    justify-content: flex-start;
+
+    @for $i from 1 through 6 {
+      .fade-in-header:nth-last-child(#{$i}) {
+        opacity: 0;
+        transition: opacity ease-in 300ms;
+        transition-delay: calc(#{$i} * 100ms);
+      }
+    }
 
     &.menu-open{
       opacity: 1;
       pointer-events: auto;
       background-color: transparent !important;
       transition: 0.4s 0.4s ease-in opacity;
-    }
-  }
 
-  .header-menu {
-    padding-top: 20vh;
-    justify-content: flex-start;
+      @for $i from 1 through 6 {
+        .fade-in-header:nth-child(#{$i}) {
+          opacity: 1;
+          transition: opacity ease-in 50ms;
+          transition-delay: calc(900ms + #{$i * 50ms} );
+        }
+      }
+
+    }
   }
 
   .header-wrapper {
@@ -186,41 +199,42 @@ $bermuda: #77D7B9;
     }
 
     &.top {
+      height: 40vh;
       transform: rotate(-45deg) translateY(-100%);
       background-size: 100% 200%;
       background-position: -100% 100%;
       z-index: -1;
-      transition: background-position 0.5s, transform 0.5s 0.5s;
+      transition: background-position 0.5s 0.8s, transform 0.5s 1.3s;
 
       &.menu-open {
-        transform: rotate(-45deg) translateY(22%);
+        transform: rotate(-45deg) translateY(42%);
         background-position: 0 0;
         transition: background-position 0.5s, transform 0.5s 0.5s;
 
       }
     }
     &.middle {
-      transform: rotate(-45deg) translateY(120%)  translateX(-20%) scaleY(0);
-      transition: transform 0.5s 0.5s;
+      transform: rotate(-45deg) translateY(150%)  translateX(-20%) scaleY(0);
+      transition: transform 0.5s 0.8s;
       z-index: -1;
       transform-origin: center;
 
       &.menu-open {
-        transform: rotate(-45deg) translateY(120%) translateX(-20%) scaleY(1);
+        transform: rotate(-45deg) translateY(150%) translateX(-20%) scaleY(1);
         transition: transform 0.5s 0.5s;
         transform-origin: center;
       }
 
     }
     &.bottom {
-      transform: rotate(-45deg) translateY(320%) translateX(-30%);
+      transform: rotate(-45deg) translateY(350%) translateX(-30%);
       background-size: 100% 200%;
       background-position: 0 -100%;
       z-index: -1;
-      transition: background-position 0.5s, transform 0.5s 0.5s;
+      transition: background-position 0.5s 0.8s, transform 0.5s 1.3s;
 
       &.menu-open  {
-        transform: rotate(-45deg) translateY(218%) translateX(-35%);
+        transform: rotate(-45deg) translateY(248%) translateX(-35%);
         background-position: 0 0;
         transition: background-position 0.5s, transform 0.5s 0.5s;
 
