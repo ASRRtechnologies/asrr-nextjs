@@ -81,7 +81,7 @@ function Contact ({ big }) {
 						<Input onChange={(e)=> handleChange(e.target)} value={email.body}
 							   name="body" last textArea={true} type="text"
 							   required={true} placeholder={i18n.t('contact.form.message.placeholder')}/>
-						<Button className="auto" title="buttons.contact"/>
+						<Button className="auto" title="buttons.submit"/>
 
 						<div className="contact-adress">
 							<p>Adress: Veraartlaan 12</p>

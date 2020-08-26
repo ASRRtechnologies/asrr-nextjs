@@ -65,16 +65,16 @@
       "text": "Responsible for creating innovative and fast cutting edge software quickly and efficiently\n",
       "services": [
         {
+          "discipline": "IT Consultancy",
+          "text": "Tailored advice from an expert in the field"
+        },
+        {
           "discipline": "Full-Stack Development",
           "text": "Front- and Backend development in one team"
         },
         {
           "discipline": "Custom Built Hardware",
           "text": "Servers that fit your needs exactly"
-        },
-        {
-          "discipline": "IT Consultancy",
-          "text": "Tailored advice from an expert in the field"
         }
       ]
     },
@@ -183,14 +183,17 @@
       }
     },
     "full-stack": {
+      "route": "full-stack-development",
       "title": "Full-Stack Development",
       "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
       "preview": {
         "title": "Full-Stack Development",
-        "text": "ASRR has both front and backend developers, as wel as an create anytures and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
+        "text": "ASRR has both front and backend developers, as wel as an create anytures and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
+        "landingText": "Front- and Backend development in one team"
       }
     },
     "workspace": {
+      "route": "workspace",
       "title": "Personalised Workspace",
       "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
       "preview": {
@@ -199,6 +202,7 @@
       }
     },
     "custom-work": {
+      "route": "custom-work",
       "title": "Custom Work",
       "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
       "preview": {
@@ -207,6 +211,7 @@
       }
     },
     "web-applications": {
+      "route": "web-applications",
       "title": "Web Applications",
       "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
       "preview": {
@@ -215,6 +220,7 @@
       }
     },
     "data-analytics": {
+      "route": "data-analytics",
       "title": "Data Analytics | BI",
       "text": "Analysing data correctly can save any company from excess costs and inefficiency. Using our BI analytics on one of your existing or a new database, ASRR will provide insights into key aspects of your data.",
       "preview": {
@@ -223,23 +229,25 @@
       }
     },
     "consultancy": {
+      "route": "it-consultancy",
       "title": "IT Consultancy",
       "text": "Not sure what you need? ASRR can send an expert to analyse your company processes and propose a solution and fitting advice. ASRR can then provide the required developing skills.",
       "preview": {
         "title": "IT Consultancy",
-        "text": "ASRR delivers tailored advice from an expert in the subject for anything IT related, be it websites, applications, servers, AI/machine learning and much more. We can lead projects from the ground up, or adapt existing ones to fit your current needs. These solutions can then be carried out perfectly by our development team."
+        "text": "ASRR delivers tailored advice from an expert in the subject for anything IT related, be it websites, applications, servers, AI/machine learning and much more. We can lead projects from the ground up, or adapt existing ones to fit your current needs. These solutions can then be carried out perfectly by our development team.",
+        "landingText": "Tailored advice from an expert in the field"
       }
     },
     "hardware": {
-      "title": "Hardware",
+      "route": "custom-hardware",
+      "title": "Custom Built Hardware",
       "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
       "preview": {
-        "title": "Hardware",
-        "text": "If cloud is not what you need, we can also provide you with custom built servers, with far superior power to cost ratios. They can be used as strong workstations, remote desktop environments or even to host your API's on a kubernetes cluster."
+        "title": "Custom Built Hardware",
+        "text": "If cloud is not what you need, we can also provide you with custom built servers, with far superior power to cost ratios. They can be used as strong workstations, remote desktop environments or even to host your API's on a kubernetes cluster.",
+        "landingText": "Servers that fit your needs exactly"
       }
     },
-
-
     "servers": {
       "title": "Servers | Hardware",
       "text": "Slow and old systems can cause serious hinder in both security and efficiency. That's why we build our servers from scratch, selecting the right parts for the job at hand. Using this we can create remote desktop environments, data storage servers and machines optimized for heavy rendering.",
@@ -257,6 +265,7 @@
       }
     },
     "back-end": {
+      "route": "backend-applications",
       "title": "Back-end Applications",
       "text": "Using our microservice architecture, we can quickly create robust applications. We have an extensive library of over-engineered microservices that form a good basis for any complex application.",
       "preview": {

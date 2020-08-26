@@ -17,7 +17,8 @@ function Services() {
                     {previewServices.map((d, i) => {
                         return (
                             <Animation className="card-animatable" animation="fade-up" delay={i * 50}>
-                                <Card title={d.title} text={d.text} icon={d.icon} to={`services/${i18n.t(d.title).replace(/\s/g , "-")}`}/>
+                                <Card title={d.title} text={d.text} icon={d.icon} to={`services/${i18n.t(d.route)}`}/>
+
                             </Animation>
                         )
                     })}

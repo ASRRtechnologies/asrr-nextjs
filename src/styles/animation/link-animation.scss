@@ -1,7 +1,7 @@
 .animated-link-dark {
     position: relative;
     display: inline-block;
-    overflow: hidden;
+    //overflow: hidden;
     background: linear-gradient(to right, $primary-color, $primary-color 50%, #1a1a1a 50%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -19,7 +19,7 @@
 .animated-link-light {
     position: relative;
     display: inline-block;
-    overflow: hidden;
+    //overflow: hidden;
     background: linear-gradient(to right, $primary-color, $primary-color 50%, white 50%);
     background-clip: text;
     -webkit-background-clip: text;
@@ -38,7 +38,7 @@
     .animated-link{
         position: relative;
         display: inline-block;
-        overflow: hidden;
+        //overflow: hidden;
         background: linear-gradient(to right, $primary-color, $primary-color 50%, #1a1a1a 50%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -58,7 +58,7 @@
     .animated-link{
         position: relative;
         display: inline-block;
-        overflow: hidden;
+        //overflow: hidden;
         background: linear-gradient(to right, $primary-color, $primary-color 50%, white 50%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

@@ -12,7 +12,6 @@ const Wrapper = styled('div')`
       background-image: ${props => props.theme.layout};
 `;
 
-
 const textEasing = [.42, 0, .58, 1];
 const fadeOut = {
 
@@ -57,6 +56,7 @@ function Page({data, query}) {
                     <Animation animation="fade-up" delay="300">
                         <Title title={data.title} className="justify" text={data.text}/>
                     </Animation>
+                    {console.log(query, data)}
                     <Animation animation="fade-up" delay="300">
                         <Contact/>
                     </Animation>
@@ -68,8 +68,10 @@ function Page({data, query}) {
 
 Page.getInitialProps = ({query}) => {
     let data = services.find(data => data.id === query.service);
+
     return {
         data,
+        query
     }
 };
 
