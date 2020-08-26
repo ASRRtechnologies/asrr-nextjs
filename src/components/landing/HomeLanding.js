@@ -7,6 +7,7 @@ import Chevron from '../icons/Chevron'
 import Button from '../Button'
 import Wave from 'react-wavify'
 import {useTheme} from '../../context/theme/ThemeContext'
+import {previewServices} from "../../data/services";
 
 const Wrapper = styled('div')`
         background-color: ${props => props.theme.landing.background};
@@ -44,7 +45,7 @@ function HomeLanding({title, text, image, boxes, projects}) {
     const i18n = useI18n();
     const router = useRouter();
     const darkmode = useTheme().dark;
-    const [services, setServices] = useState([]);
+    // const [services, setServices] = useState([]);
     const navigate = (url) => router.push(url).then(null);
 
     const setLandingHeight = () => {
@@ -55,9 +56,7 @@ function HomeLanding({title, text, image, boxes, projects}) {
 
     useEffect(() => {
         setLandingHeight();
-        setServices(i18n.t("home.landing.services"))
     });
-
 
     return (
         <Wrapper className="landing-container">
@@ -82,23 +81,23 @@ function HomeLanding({title, text, image, boxes, projects}) {
 
                     <div className="landing-bullets">
                         {
-                            services.map((d, i) => {
+                            previewServices.map((d, i) => {
                                 return (
                                     <>
                                     <span className="landing-overflow margin-bottom">
                                         <motion.p
                                             className={`${!darkmode ? "animated-link-dark" : "animated-link-light"} bold`}
-                                            onClick={() => navigate(`services/${d.discipline}`)}
+                                            onClick={() => navigate(`/services/${i18n.t(d.route)}`)}
                                             initial="hidden" animate="show" exit="hidden"
                                             variants={textVariant}>
-                                            {d.discipline}
+                                            {i18n.t(d.title)}
                                             <Chevron/>
                                         </motion.p>
                                     </span>
                                         <span className="landing-overflow">
                         	                <motion.h4 initial="hidden" animate="show" exit="hidden"
                                                        variants={textVariant}>
-                        		                            {d.text}
+                                                       {i18n.t(d.landingText)}
                         	                 </motion.h4>
                                         </span>
                                     </>

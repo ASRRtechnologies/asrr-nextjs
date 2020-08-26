@@ -25,7 +25,7 @@ function Services(props) {
                                 return (
                                     <Animation className="card-animatable" animation="fade-up" delay="150">
                                         <Card title={d.preview_title} text={d.preview_text} icon={d.icon}
-                                              to={`services/${i18n.t(d.title)}`}/>
+                                              to={`services/${d.id}`}/>
                                     </Animation>
                                 )
                             }
