@@ -1,24 +1,12 @@
-import React, {useContext, useEffect, useRef, useState} from 'react'
+import React, {useEffect, useRef} from 'react'
 import {motion} from 'framer-motion'
 import {useRouter} from 'next/router'
-import {AnimationContext} from '../../context/animations/AnimationContext'
 import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
-import Chevron from '../icons/Chevron'
-import Button from '../Button'
-import Wave from 'react-wavify'
 import {useTheme} from '../../context/theme/ThemeContext'
-import Arrow from "@/icons/Arrow";
 
 const Wrapper = styled('div')`
         background: ${props => props.theme.landing.background};
-        .landing-bullets{
-        	svg{
-        		path{
-        			fill: ${props => props.theme.fonts.title}
-        		}
-        	}
-        }
         `;
 
 const textEasing = [.42, 0, .58, 1];
@@ -37,6 +25,25 @@ const textVariant = {
         transition: {
             delay: 0.2,
             duration: 0.3,
+            ease: textEasing,
+        }
+    }
+};
+
+const mouseVariant = {
+    show: {
+        opacity:1,
+        transition: {
+            delay: 0.8,
+            duration: 0.6,
+            ease: textEasing,
+        }
+    },
+    hidden: {
+        opacity:0,
+        transition: {
+            delay: 0.4,
+            duration: 0.5,
             ease: textEasing,
         }
     }
@@ -61,11 +68,16 @@ function Landing({title, text, image, className, scrollToID}) {
 
     return (
         <Wrapper ref={landing} className={`landing-image-container ${className}`}>
-            <img className="landing-image" src={image}/>
-            <h1>{i18n.t(title)}</h1>
-            <section id="scroll-mouse">
-                <a href={scrollToID}><span className={`${darkmode? "scroll-down-dark" : "scroll-down-light"}`}></span>Scroll</a>
-            </section>
+            {/*<img className="landing-image" src={image}/>*/}
+            <span className="landing-overflow">
+                <motion.h1 initial="hidden" animate="show" exit="hidden" variants={textVariant}>{i18n.t(title)}</motion.h1>
+            </span>
+            <div id="scroll-mouse">
+                <a href={scrollToID}>
+                    <motion.span initial="hidden" animate="show" exit="hidden" variants={mouseVariant}
+                        className={`${darkmode ? "scroll-down-dark" : "scroll-down-light"}`}/>
+                </a>
+            </div>
         </Wrapper>
     )
 }

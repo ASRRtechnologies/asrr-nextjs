@@ -41,6 +41,25 @@ const textVariant = {
     }
 };
 
+const mouseVariant = {
+    show: {
+        opacity: 1,
+        transition: {
+            delay: 0.8,
+            duration: 0.6,
+            ease: textEasing,
+        }
+    },
+    hidden: {
+        opacity: 0,
+        transition: {
+            delay: 0.4,
+            duration: 0.5,
+            ease: textEasing,
+        }
+    }
+};
+
 function HomeLanding({title, text, image, boxes, projects}) {
     const i18n = useI18n();
     const router = useRouter();
@@ -136,7 +155,10 @@ function HomeLanding({title, text, image, boxes, projects}) {
             </div>
 
             <section id="scroll-mouse">
-                <a href={"#home-page-services"}><span className={`home-landing ${darkmode? "scroll-down-dark" : "scroll-down-light"}`}></span>Scroll</a>
+                <a href="#home-page-services">
+                    <motion.span initial="hidden" animate="show" exit="hidden" variants={mouseVariant}
+                                 className={`home-landing ${darkmode ? "scroll-down-dark" : "scroll-down-light"}`}/>
+                </a>
             </section>
         </Wrapper>
     )
