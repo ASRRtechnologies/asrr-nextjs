@@ -1,7 +1,6 @@
 .landing-container {
   width: 100vw;
   height: 100vh;
-  min-height: 1000px;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
@@ -42,7 +41,7 @@
   height: auto;
   width: 50%;
   @include flex (flex-start, flex-start, column);
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .landing-bullets {
@@ -153,7 +152,7 @@
   .landing-bullets{
     display: none;
     &.landing-client-bullets{
-     display: flex;
+      display: flex;
       margin-bottom: 30px;
     }
   }
@@ -163,17 +162,11 @@
 @media screen and (max-width: 600px) {
   .landing-container {
     height: 100vh;
-    min-height: 500px;
   }
 
   .landing-text-container{
     padding: 0 25px;
   }
-
-  .landing-text-wrapper{
-    padding-top: 50px;
-  }
-
 }
 
 
@@ -222,7 +215,6 @@
 }
 
 
-
 @media screen and (max-width: 1600px) {
   .floating-mobile{
     max-width:500px;
@@ -252,24 +244,6 @@
 @media screen and (max-width: 600px) {
   .floating-mobile{
     width: 90%;
-    top:0;
+    top:60vh;
   }
-
-  .landing-text-wrapper{
-    height: 100%;
-    padding-top: 100px;
-  }
-
-  .landing-floating-image-wrapper{
-    @include flex(flex-start, center, column);
-  }
-
-  .landing-floating-image-text{
-    height: auto;
-  }
-
-  .landing-floating-image{
-    justify-content: flex-start;
-  }
-
 }

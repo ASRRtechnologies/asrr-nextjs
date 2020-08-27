@@ -135,6 +135,9 @@ function HomeLanding({title, text, image, boxes, projects}) {
                 </div>
             </div>
 
+            <section id="scroll-mouse">
+                <a href={"#home-page-services"}><span className={`home-landing ${darkmode? "scroll-down-dark" : "scroll-down-light"}`}></span>Scroll</a>
+            </section>
         </Wrapper>
     )
 }

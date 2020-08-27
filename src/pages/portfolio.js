@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react'
-import Landing from '@/landing/PageLanding'
+import Landing from '@/landing/ImageLanding'
 import imageDark from '../../public/assets/images/landing/contact/phone-dark.png'
 import imageLight from '../../public/assets/images/landing/contact/phone-light.png'
+import image from '../../public/assets/images/landing/portfolio/brandi-redd-aJTiW00qqtI-unsplash.jpg'
 import {useTheme} from '../context/theme/ThemeContext'
 import PortfolioPage from "@/portfolio/Portfolio"
 import {motion} from "framer-motion";
@@ -35,8 +36,9 @@ function Portfolio() {
 
     return (
         <motion.div initial={"show"} exit="hidden" animate="show" variants={fadeOut} className="content-wrapper">
-            <Landing title="portfolio.landing.title" text="portfolio.landing.text"
-                     image={darkmode ? imageDark : imageLight} imageClass="floating-mobile"/>
+            <Landing title="portfolio.landing.title" text="portfolio.landing.text" className={`${darkmode? "landing-overlay-dark" : "landing-overlay-light"}`}
+                     image={image} scrollToID="#portfolio-page"/>
+                     {/*image={darkmode ? imageDark : imageLight} imageClass="floating-mobile"/>*/}
             <PortfolioPage/>
         </motion.div>
     );

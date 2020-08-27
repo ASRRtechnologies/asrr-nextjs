@@ -11,7 +11,7 @@ function Services() {
     const i18n = useI18n();
     return (
         <Animation animation="fade-up" delay="200">
-            <Section>
+            <Section id="home-page-services">
                 <Title title={'services.preview.title.header'} text={'services.preview.title.text'}/>
                 <div className="services services-center">
                     {previewServices.map((d, i) => {

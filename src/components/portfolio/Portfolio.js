@@ -12,7 +12,7 @@ import StaggerContainer from "@/animation/StaggerContainer";
 function Portfolio() {
     return (
         <Animation animation="fade-up" delay="200">
-            <Section>
+            <Section id="portfolio-page">
                 <Title title={'portfolio.preview.title.header'} text={'portfolio.preview.title.text'}/>
                 {/*<div className="portfolio portfolio-preview">*/}
                 <IntersectionObserver className="portfolio portfolio-center" key={"port"}>
