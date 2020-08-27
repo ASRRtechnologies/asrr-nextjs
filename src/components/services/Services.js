@@ -17,7 +17,7 @@ function Services(props) {
 
     return (
         <Animation animation="fade-up" delay="200">
-            <Section>
+            <Section id="services-page">
                 <Title title={'services.header.title'}/>
                 <div className="services">
                     {
