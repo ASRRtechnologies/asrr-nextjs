@@ -1,12 +1,9 @@
 import React, {useEffect} from 'react'
 import Landing from '@/landing/ImageLanding'
-import imageDark from '../../public/assets/images/landing/contact/phone-dark.png'
-import imageLight from '../../public/assets/images/landing/contact/phone-light.png'
 import image from '../../public/assets/images/landing/portfolio/brandi-redd-aJTiW00qqtI-unsplash.jpg'
 import {useTheme} from '../context/theme/ThemeContext'
 import PortfolioPage from "@/portfolio/Portfolio"
 import {motion} from "framer-motion";
-import HomeLanding from "@/landing/HomeLanding";
 
 const textEasing = [.42, 0, .58, 1];
 const fadeOut = {

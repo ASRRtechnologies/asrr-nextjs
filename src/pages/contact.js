@@ -1,9 +1,6 @@
-import React, {useContext, useEffect} from 'react'
-import {AnimationContext} from '../context/animations/AnimationContext'
+import React, {useEffect} from 'react'
 import Landing from '@/landing/ImageLanding'
 import ContactPage from '../components/contact/Contact'
-import imageDark from '../../public/assets/images/landing/contact/phone-dark.png'
-import imageLight from '../../public/assets/images/landing/contact/phone-light.png'
 import {useTheme} from '../context/theme/ThemeContext'
 import {motion} from "framer-motion";
 import image from "#/landing/portfolio/brandi-redd-aJTiW00qqtI-unsplash.jpg";

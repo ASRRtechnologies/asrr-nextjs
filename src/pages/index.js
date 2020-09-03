@@ -1,6 +1,5 @@
-import React, {useContext, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import HomeLanding from '@/landing/HomeLanding'
-import {AnimationContext} from '../context/animations/AnimationContext'
 import PortfolioPreview from '../components/portfolio/Preview'
 import ServicePreview from '../components/services/Preview'
 import image from '../../public/assets/images/landing/drone-2.jpg'
