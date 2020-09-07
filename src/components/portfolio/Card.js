@@ -1,18 +1,34 @@
-import React from 'react';
-import img from "../../../public/assets/images/landing/colorful-earth-hq.jpg";
+import React, {useContext} from 'react'
+import {MouseContext} from '../../context/animations/MouseContext'
+import useI18n from '../../hooks/use-i18n'
+import {useRouter} from 'next/router'
+import styled from '@emotion/styled'
 
-function Card(props) {
-    return (
-        <div className="card">
-            <div className="image">
-                <img src={img} alt="image"/>
-            </div>
+const Wrapper = styled('div')`
+        box-shadow: ${props => props.theme.card.shadow};;
+`;
 
-            <h4>Bouw</h4>
-            <h3>Text lorem ipsum dex</h3>
+function Card ({ img, title, discipline, client, route }) {
+	const i18n = useI18n();
+	const mouse = useContext(MouseContext);
+	const router = useRouter();
+	const navigateTo = (route) => {
+		router.push(`/portfolio/case/${route}`)
+	};
 
-        </div>
-    );
+	return (
+		<div onClick={() => navigateTo(route)} onMouseOver={() => {mouse.onHover('projects')}}
+			 onMouseLeave={() => {mouse.onLeave()}} className="card">
+			<Wrapper className="image">
+				<img src={img} alt="image"/>
+			</Wrapper>
+			<div className="card-text">
+				<h4>{i18n.t(discipline)}</h4>
+					<h3>{i18n.t(client)}</h3>
+					<p>{i18n.t(title)}</p>
+			</div>
+		</div>
+	)
 }
 
-export default Card;
+export default Card

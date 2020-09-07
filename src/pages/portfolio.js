@@ -1,24 +1,46 @@
-import React, {useContext, useEffect} from 'react';
-import Landing from "../components/landing/Landing";
-import {AnimationContext} from "../context/animations/AnimationContext";
-import Layout from "../components/layout/Layout";
-import PortfolioPage from "../components/portfolio/Portfolio";
-function Portfolio(props) {
+import React, {useEffect} from 'react'
+import Landing from '@/landing/ImageLanding'
+import imageDark from '../../public/assets/images/landing/contact/phone-dark.png'
+import imageLight from '../../public/assets/images/landing/contact/phone-light.png'
+import image from '../../public/assets/images/landing/portfolio/brandi-redd-aJTiW00qqtI-unsplash.jpg'
+import {useTheme} from '../context/theme/ThemeContext'
+import PortfolioPage from "@/portfolio/Portfolio"
+import {motion} from "framer-motion";
+import HomeLanding from "@/landing/HomeLanding";
 
-    const animate = useContext(AnimationContext);
+const textEasing = [.42, 0, .58, 1];
+const fadeOut = {
+    show: {
+        opacity:1,
+        transition: {
+            ease: textEasing,
+            duration:1
+        }
+    },
+    hidden: {
+        translateY: "100px",
+        opacity:0,
+        transition: {
+            duration: 1,
+            ease: textEasing,
+        }
+    }
+};
+
+function Portfolio() {
+    const darkmode = useTheme().dark;
 
     useEffect(() => {
-        animate.animation.secondLoad();
+        window.scrollTo(0, 0);
     }, []);
 
-
     return (
-        <div className="content-wrapper">
-            <Landing/>
-            <Layout>
-                <PortfolioPage/>
-            </Layout>
-        </div>
+        <motion.div initial={"show"} exit="hidden" animate="show" variants={fadeOut} className="content-wrapper">
+            <Landing title="portfolio.landing.title" text="portfolio.landing.text" className={`${darkmode? "landing-overlay-dark" : "landing-overlay-light"}`}
+                     image={image} scrollToID="#portfolio-page"/>
+                     {/*image={darkmode ? imageDark : imageLight} imageClass="floating-mobile"/>*/}
+            <PortfolioPage/>
+        </motion.div>
     );
 }
 

@@ -1,10 +1,12 @@
 import React from 'react';
 
-function Section({children, className}) {
+function Section({children, className, containerClassName, id}) {
     return (
-        <div className="section">
+        <section id={id} className={`section-wrapper ${containerClassName}`}>
+            <div className={`section ${className}`}>
                 {children}
-        </div>
+            </div>
+        </section>
     );
 }
 

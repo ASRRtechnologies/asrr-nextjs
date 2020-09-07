@@ -1,16 +1,48 @@
 //@import "fonts";
 @import "mixins";
 @import "variables";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "~aos/dist/aos.css";
+@import "../../../node_modules/react-toastify/dist/ReactToastify.css";
+
+@import "../alerts/message";
 @import "../header/header";
 @import "../header/hamburger";
+@import "../header/language";
+
 @import "../landing/landing";
+@import "../landing/landing-image";
+@import "../landing/scroll-down";
 @import "../layout/layout";
 @import "../animation/transition-animation";
+@import "../animation/link-animation";
 @import "../scrollers/cursor";
 
 @import "../text/text";
+@import "../text/input";
 
 //Portfolio
 @import "../portfolio/portfolio";
 @import "../portfolio/cards";
+@import "../portfolio/demo";
+@import "../portfolio/portfolio-page";
+
+//Services
+@import "../services/cards";
+
+//Contact
+@import "../contact/contact";
+
+@import "../display/display";
+
+@import "../clients/clients";
+
+@import "../footer/footer";
+
+@import "../stories/cards";
+@import "../stories/why-asrr";
+
+@import "../buttons/buttons";
+
 

@@ -1,5 +1,4 @@
 import React, {useState, createContext} from "react";
-
 export const AnimationContext = createContext();
 import {useAnimation} from "framer-motion";
 
@@ -105,7 +104,7 @@ const provider = ({children}) => {
     }
 
     const initialText = {
-        translateY: '100%',
+        translateY: '125%',
     };
 
     //Add delay prop i which is set with custom prop in the component
@@ -163,7 +162,6 @@ const provider = ({children}) => {
                         .then(() => hideOverlay()
                             .then(() => showHeader()
                                 .then(() => showText())
-                                .then(() => showLandingCards())
                                 .then(() => setState(prevState => ({
                                     ...prevState,
                                     appLoaded: true,
@@ -215,8 +213,8 @@ const provider = ({children}) => {
                     exit: exitLandingCards
                 }
             },
-            firstLoad: firstLoad,
-            secondLoad:secondLoad
+            firstLoad,
+            secondLoad
         }
     });
 

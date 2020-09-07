@@ -1,0 +1,90 @@
+.message-container {
+  width: 100%;
+  height: auto;
+  min-height: 80px;
+  @include flex(flex-start, center, row);
+  position: relative;
+  padding: 10px;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    @include size(3px, 100%);
+  }
+
+  .icon {
+    @include size(20%, 100%);
+    @include flex(center, center, row);
+
+    img {
+      width: 30px;
+      height: auto;
+    }
+  }
+
+  .message {
+    @include size(70%, 100%);
+    @include flex(center, flex-start, column);
+    font-family: Poppins, serif;
+
+    p {
+      font-family: inherit;
+      font-size: 14px
+    }
+
+    h4 {
+      font-weight: bold;
+      font-family: inherit;
+      margin-bottom: 5px;
+    }
+
+  }
+
+  .close-button {
+    @include size(10%, 100%);
+    @include flex(center, center, row);
+  }
+
+  &.success {
+    &:before {
+      background-color: #47D764;
+    }
+  }
+
+  &.error {
+    &:before {
+      background-color: #FF0000;
+    }
+  }
+
+  &.info {
+    &:before {
+      background-color: #1c76ee;
+    }
+  }
+
+}
+
+.Toastify__toast-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.Toastify__toast-body {
+
+}
+
+.Toastify__toast--default {
+  background-color: transparent;
+}
+
+.Toastify__toast {
+  padding: 0;
+}
+

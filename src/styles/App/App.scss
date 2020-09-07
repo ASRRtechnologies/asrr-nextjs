@@ -5,6 +5,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+//
+//@font-face {
+//  font-family: 'Poppins';
+//  font-display: auto;
+//  font-style: normal;
+//  src: url('../../../public/fonts/Poppins-Light.ttf');
+//  src: url('../../../public/fonts/Poppins-Bold.ttf');
+//  src: url('../../../public/fonts/Poppins-Medium.ttf');
+//  src: url('../../../public/fonts/Poppins-Regular.ttf');
+//}
 
 ::-webkit-scrollbar-track
 {
@@ -29,11 +39,12 @@ html{
   width:100vw;
   max-width: 100vw;
   overflow-x: hidden !important;
+  scroll-behavior: smooth;
+
 }
 
 body {
   position: relative;
-  //font-family: 'Gilroy Light', 'Source Sans Pro', serif !important;
   font-family: 'Poppins', 'Source Sans Pro', serif !important;
   min-height: 100%;
   height: auto;
@@ -42,19 +53,13 @@ body {
   overflow-y: hidden!important;
 }
 
- h4, h5 {
-  font-family: "Poppins Light", serif;
+ h4, h5, a ,p {
+   font-weight: normal;
+   text-decoration: none;
 }
 
  h1, h2, h3{
-  font-family: "Poppins SemiBold", serif;
-  text-decoration: none;
-  color: #1a1a1a;
-}
-
-a, p {
-  font-family: "Montserrat Light", serif;
-  text-decoration: none;
+ font-weight: bold;
 }
 
 #__next{
@@ -78,65 +83,112 @@ a, p {
 }
 
 h1{
-  font-size: 80px;
-  margin: 15px 0;
-}
-
-h2{
-  font-size: 40px;
-  margin: 0 0 20px 0;
-  line-height: 35px;
-}
-
-h3{
-  font-size: 30px;
+  font-size: 50px;
   margin: 0 0 30px 0;
 }
 
+h2{
+  font-size: 30px;
+  margin: 0 0 30px 0;
+  line-height: 50px;
+}
+
+h3{
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
 h4{
-  font-size: 16px;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+}
+
+h5{
+  font-size: 14px;
   margin: 0 0 10px 0;
 }
 
 p{
-  margin: 0 0 20px 0;
+  margin: 0 0 5px 0;
   line-height: 30px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 a{
-  color: #1a1a1a;
+  margin: 0 0 20px 0;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+
+  h1{
+    font-size: 35px;
+  }
+
+  h2{
+    font-size: 35px;
+  }
+
+  h3{
+    font-size: 22px;
+  }
+
 }
 
 
 @media screen and (max-width: 600px) {
   h1{
-    font-size: 40px;
-    margin: 0 0 30px 0;
-    font-weight: bold;
+    font-size: 25px;
+    margin: 0 0 20px 0;
   }
 
   h2{
     font-size: 30px;
     margin: 0 0 25px 0;
-    font-weight: bold;
-  }
+   }
 
   h3{
-    font-size: 25px;
-    margin: 0 0 30px 0;
+    font-size: 20px;
+    margin: 0 0 15px 0;
   }
 
   h4{
-    font-size: 20px;
+    font-size: 14px;
+    margin: 0 0 8px 0;
   }
 
   p{
-    margin: 0 0 20px 0;
-    line-height: 30px;
-    font-size: 14px;
+    margin: 0 0 10px 0;
+  }
+
+  a{
+    margin: 0 0 10px 0;
   }
 
 }
 
 
+
+
+@media screen and (max-width: 1000px) {
+  ::-webkit-scrollbar-track
+  {
+    border-radius: 5px;
+    width: 1px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar
+  {
+    height: 7px;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb
+  {
+    border-radius: 5px;
+    -webkit-box-shadow: none;
+    background-color: #555;
+  }
+}

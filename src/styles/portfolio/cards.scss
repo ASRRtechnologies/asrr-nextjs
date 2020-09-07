@@ -1,12 +1,42 @@
 //To keep consistent name usage throughout the website nesting of this card in
-
 .portfolio {
-  .card {
-    width: 45%;
-    height: 100%;
 
-    h3{
+  &.portfolio-center{
+    .card-text{
+      @include flex(flex-start, center, column);
+      text-align: center;
+    }
+  }
+
+
+  &.portfolio-preview{
+    .card-animatable{
       margin-bottom: 0;
+    }
+  }
+
+  .card-animatable{
+    width: 30.333%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 100px;
+  }
+
+  .card {
+    height: 100%;
+    width: 100%;
+
+    svg{
+      width: 30px;
+      height: auto;
+      display: flex;
+      position: absolute;
+      transform: rotate(180deg) translateX(50%);
+      bottom:0;
+      left:50%;
+      path{
+        fill:$primary-color !important;
+      }
     }
   }
 
@@ -16,6 +46,7 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 10px;
+    border-radius: 5px;
 
     img{
       top:0;
@@ -33,16 +64,76 @@
       }
     }
   }
+
+  .card-text{
+    @include size(100%, 100%);
+    padding: 20px 10px;
+    position: relative;
+    @include flex(space-between, flex-start, column);
+
+    p{
+      margin-bottom: 0;
+    }
+
+    h5{
+      font-size: 14px;
+    }
+
+  }
+
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:1000px) {
   .portfolio {
-    .card {
-      width: 100%;
-      //max-width: 500px;
-      height: 100%;
-      //@include flex(center, center, column);
-      margin-bottom: 50px;
+    .card-animatable {
+      width: 45%;
+      margin-bottom: 100px;
+
+      &:nth-last-of-type(1){
+        margin-bottom: 0;
+      }
+    }
+
+    &.portfolio-preview{
+      .card-animatable {
+        width: 45%;
+        margin-bottom: 100px;
+
+        &:nth-last-of-type(1){
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
+
+
+@media screen and (max-width:700px) {
+  .portfolio {
+    .card-animatable {
+      width: 100%;
+      max-width: 400px;
+      height: 100%;
+      margin-bottom: 75px;
+    }
+    .read-more{
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &.portfolio-preview{
+      .card-animatable {
+        width: 100%;
+        max-width: 400px;
+        height: 100%;
+        margin-bottom: 75px;
+      }
+      .read-more{
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+  }
+
+}
+

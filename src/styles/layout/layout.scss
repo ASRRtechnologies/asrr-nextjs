@@ -3,27 +3,95 @@
   height: 100%;
   width: 100%;
   @include flex(center, center, column);
-  padding: 0 $pc-padding;
+
+  &.footer-container{
+    background-color: #0a0a0a;
+    padding: 100px 100px 50px 100px;
+  }
 }
 
+.section-wrapper{
+  width:100vw;
+  @include flex(center, center, column);
+  padding: $pc-padding;
 
-//General layout of seciton components
+  &.clients-section{
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &.section-contact-preview{
+    padding-top: 0;
+  }
+
+  &.error-page {
+    padding-bottom: 0;
+  }
+
+  }
+
 .section{
-  @include flex(flex-start, flex-start, column);
-  padding: 100px 0;
-  width: 100%;
-  height: auto;
+  width:100%;
   max-width: $max-width;
+  @include flex(center, center, column);
+
+  &.project-page{
+    @include flex(center, flex-start, column);
+  }
+
+  &.service-page{
+    padding-top: 50px;
+  }
+
+  &.error-page{
+    min-height: 500px;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+
+
+    & > div{
+      height: 100%;
+      width: 85%;
+      @include flex(center, center, column);
+    }
+
+    //@include flex(flex-start, center, column);
+    .landing-wave{
+      height: 100%;
+    }
+
+  }
+
 }
+
 
 @media screen and (max-width:1200px) {
   .layout{
-    padding: 0 $tablet-padding;
+    &.footer-container{
+      padding: 50px
+    }
+  }
+
+  .section-wrapper{
+    padding: $tablet-padding;
   }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:600px) {
+
   .layout{
-    padding: 0 $mob-padding;
+    &.footer-container{
+      padding: 70px 25px 30px 25px;
+    }
   }
+
+  .section-wrapper{
+    padding: $mob-padding;
+  }
+
 }
