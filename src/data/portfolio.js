@@ -1,6 +1,6 @@
 import form from '#/clients/form/case-image.jpg'
 import protonise from '#/clients/protonise/case-image.jpg'
-import hes from '#/clients/hes/case-image.jpg'
+import hes from '#/clients/hes/case-image.png'
 import nwo from '#/clients/nwo/case-image.jpg'
 
 export const disciplines = [

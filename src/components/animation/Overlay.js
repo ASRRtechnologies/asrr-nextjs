@@ -6,7 +6,7 @@ import { AnimationContext } from '../../context/animations/AnimationContext'
 import { useRouter } from 'next/router'
 import { useTheme } from '../../context/theme/ThemeContext'
 
-function Overlay () {
+function Overlay ({loadAnimation}) {
 	const darkTheme = useTheme();
 	const animate = useContext(AnimationContext);
 	const animation = animate.animation.overlay;
@@ -19,8 +19,12 @@ function Overlay () {
 		}
 	};
 
+
+
 	useEffect(() => {
-		animate.animation.firstLoad();
+		if(loadAnimation) {
+			animate.animation.firstLoad();
+		}
 		setOverlayHeight();
 	}, []);
 
@@ -54,3 +58,4 @@ function Overlay () {
 }
 
 export default Overlay
+
