@@ -8,7 +8,7 @@ import hesLanding from "#/clients/hes/landing.png"
 import hesImage from "#/clients/hes/slider/image1.png"
 import hesImage2 from "#/clients/hes/slider/image2.png"
 import hesResult from "#/clients/hes/result.png"
-import hesCase from '#/clients/hes/case-image.jpg'
+import hesCase from '#/clients/hes/case-image.png'
 import React from "react";
 
 export const cases = [
@@ -93,18 +93,18 @@ export const cases = [
             discipline:"cases.form.case.landing.discipline",
             title:"cases.form.case.landing.title",
             text:"cases.form.case.landing.text",
-        }, 
-        introduction:{ 
+        },
+        introduction:{
             title:"cases.form.case.introduction.title",
             text:"cases.form.case.introduction.text",
-        }, 
+        },
         bullets: "cases.form.case.bullets",
-        result:{ 
+        result:{
             title:"cases.form.case.result.title",
             text:"cases.form.case.result.text",
-        }, 
-        images:[ 
-            hesImage, hesImage2, 
+        },
+        images:[
+            hesImage, hesImage2,
         ],
         conclusion:{
             title:"cases.form.case.conclusion.title",
