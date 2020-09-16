@@ -1,15 +1,9 @@
 //FORM
-import formCase from '#/clients/form/case-image.jpg'
-import protonise from '#/clients/protonise/case-image.jpg'
 //NWO
-import nwoCase from '#/clients/nwo/case-image.jpg'
 //HES
-import hesLanding from "#/clients/hes/landing.png"
-import hesImage from "#/clients/hes/slider/image1.png"
-import hesImage2 from "#/clients/hes/slider/image2.png"
-import hesResult from "#/clients/hes/result.png"
-import hesCase from '#/clients/hes/case-image.png'
-import React from "react";
+import hesImage from '#/clients/hes/slider/image1.png'
+import hesImage2 from '#/clients/hes/slider/image2.png'
+import React from 'react'
 
 export const cases = [
     {
