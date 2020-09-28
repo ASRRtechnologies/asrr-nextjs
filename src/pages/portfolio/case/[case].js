@@ -141,7 +141,7 @@ function Page({data, query}) {
                     </Animation>
 
                     <Animation animation="fade-up" delay="500">
-                        <Title className="" title={data.conclusion.title}
+                        <Title  className="regular" title={data.conclusion.title}
                                text={data.conclusion.text}/>
                     </Animation>
 
