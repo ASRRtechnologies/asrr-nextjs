@@ -23,7 +23,7 @@ function Footer (props) {
                         <ReadMore inverted small to="/">{i18n.t("header.home")}</ReadMore>
                         <ReadMore inverted small to="/portfolio">{i18n.t("header.case")}</ReadMore>
                         <ReadMore inverted small to="/services">{i18n.t("header.services")}</ReadMore>
-                        <ReadMore inverted small to="/hire">{i18n.t("header.hire")}</ReadMore>
+                        {/*<ReadMore inverted small to="/hire">{i18n.t("header.hire")}</ReadMore>*/}
                         <ReadMore inverted small to="/about">{i18n.t("header.about")}</ReadMore>
                         <ReadMore inverted small to="/contact">{i18n.t("header.contact")}</ReadMore>
                     </div>
