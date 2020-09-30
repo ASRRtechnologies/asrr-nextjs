@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from "@emotion/styled";
+import React from 'react'
+import styled from '@emotion/styled'
 
 const Wrapper = styled('section')`
         background-image:  ${props => props.theme.layout};

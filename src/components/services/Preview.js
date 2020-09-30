@@ -11,14 +11,13 @@ function Services() {
     const i18n = useI18n();
     return (
         <Animation animation="fade-up" delay="200">
-            <Section id="home-page-services">
+            <Section containerClassName="services-preview-section" id="home-page-services">
                 <Title title={'services.preview.title.header'} text={'services.preview.title.text'}/>
                 <div className="services services-center">
                     {previewServices.map((d, i) => {
                         return (
                             <Animation className="card-animatable" animation="fade-up" delay={i * 50}>
                                 <Card title={d.title} text={d.text} icon={d.icon} to={`services/${i18n.t(d.route)}`}/>
-
                             </Animation>
                         )
                     })}
