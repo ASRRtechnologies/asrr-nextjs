@@ -168,6 +168,12 @@
         "placeholder": "Message*"
       }
     },
+    "address": {
+      "street": "'s Gravenzandseweg 2 unit A",
+      "zipcode": "2291 PE Wateringen",
+      "country": "The Netherlands",
+      "route": "Get directions"
+    },
     "cta": {
       "curious": "Interested in our services?",
       "touch": "Lets get in touch!"
@@ -434,6 +440,5 @@
     "text": "The page you're looking for could not be found.",
     "button": "Go Back"
   }
-
 }
 

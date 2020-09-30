@@ -1,0 +1,50 @@
+.section {
+  width: 100%;
+  max-width: $max-width;
+  @include flex(flex-start, center, column);
+  padding: 200px 0 0 0;
+
+  &.padding-bottom{
+    padding: 200px 0;
+  }
+
+  &.last-section-padding{
+    padding: 200px 0;
+  }
+
+  &.project-page {
+    @include flex(center, flex-start, column);
+  }
+
+  &.service-page {
+    padding-top: 50px;
+  }
+
+  &.error-page {
+    min-height: 500px;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+
+    & > div {
+      height: 100%;
+      width: 85%;
+      @include flex(center, center, column);
+    }
+
+    .landing-wave {
+      height: 100%;
+    }
+  }
+}
+
+.section-animation {
+  @include size(100%, auto);
+  @include flex(flex-start, center, column);
+}
+
+
+

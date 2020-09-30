@@ -142,6 +142,8 @@
   .landing-text{
     max-width: 100%;
     width:100%;
+    text-align: center;
+    @include flex(flex-start, center, column);
 
     h1, p {
       width:100%;
