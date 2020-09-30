@@ -4,11 +4,11 @@
   @include flex(flex-start, center, column);
   padding: 200px 0 0 0;
 
-  .portfolio-preview-section, .why-asrr-section, .contact-invitation-section {
-
+  &.padding-bottom{
+    padding: 200px 0;
   }
 
-  &.client-section{
+  &.last-section-padding{
     padding: 200px 0;
   }
 

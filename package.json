@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@axetroy/react-download": "^1.1.1",
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
     "@react-google-maps/api": "^1.9.2",

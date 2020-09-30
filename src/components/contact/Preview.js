@@ -4,9 +4,9 @@ import Title from '@/text/Title'
 import Button from '@/Button'
 import Animation from '@/animation/Animation'
 
-function Contact ({ title }) {
+function Contact ({ title, className }) {
 	return (
-		<Section container="contact-invitation-section">
+		<Section className={`contact-invitation-section ${className ? className : ""}`}>
 			<Animation animation="fade-up" delay="200">
 				<div className={`contact preview ${title}`}>
 					<Title className={`${title} title-button`} title={'contact.preview.title.header'}

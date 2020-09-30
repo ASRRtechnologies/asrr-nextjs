@@ -45,6 +45,11 @@
   dependencies:
     cross-fetch "3.0.4"
 
+"@axetroy/react-download@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@axetroy/react-download/-/react-download-1.1.1.tgz#7203cbb23a6e9d5f01a9787aae13c2229598c289"
+  integrity sha512-fbzQxO5VIwbPF1EzPHJNaXU5Vcf49QUBG6ijVmmOU+UqzcZJgcSTLhJqDOF7ydSYt15Tg6UbpId7YoeVbC6oYg==
+
 "@babel/code-frame@7.8.3", "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.8.3":
   version "7.8.3"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
