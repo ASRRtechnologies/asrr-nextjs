@@ -3,6 +3,7 @@
   height: 100%;
   width: 100%;
   @include flex(center, center, column);
+  padding: 0 100px;
 
   &.footer-container{
     background-color: #0a0a0a;
@@ -10,8 +11,11 @@
   }
 }
 
+
 @media screen and (max-width:1200px) {
   .layout{
+    padding: 0 50px;
+
     &.footer-container{
       padding: 50px
     }
@@ -22,6 +26,8 @@
 @media screen and (max-width:600px) {
 
   .layout{
+    padding: 0 25px;
+
     &.footer-container{
       padding: 70px 25px 30px 25px;
     }

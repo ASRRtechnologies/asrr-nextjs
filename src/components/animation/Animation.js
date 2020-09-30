@@ -15,7 +15,7 @@ function Animation ({delay, animation, children, className}) {
 	});
 
 	return (
-		<div data-aos={animation} className={className} data-aos-delay={delay} data-aos-anchor-placement="top-bottom">
+		<div data-aos={animation} className={`section-animation ${className}`} data-aos-delay={delay} data-aos-anchor-placement="top-bottom">
 			{children}
 		</div>
 	)
