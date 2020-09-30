@@ -7,7 +7,7 @@ import Animation from "@/animation/Animation";
 function Contact({title}) {
     return (
         <Animation animation="fade-up" delay="200">
-            <Section>
+            <Section containerClassName="contact-invitation-section">
                 <div className={`contact preview ${title}`}>
                     <Title className={`${title} title-button`} title={'contact.preview.title.header'} text={'contact.preview.title.text'}/>
                     <Button custom to="/contact" title="buttons.contact"/>

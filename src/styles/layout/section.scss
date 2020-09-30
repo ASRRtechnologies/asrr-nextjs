@@ -1,0 +1,79 @@
+.section{
+  width:100%;
+  max-width: $max-width;
+  @include flex(center, center, column);
+
+  &.project-page{
+    @include flex(center, flex-start, column);
+  }
+
+  &.service-page{
+    padding-top: 50px;
+  }
+
+  &.error-page{
+    min-height: 500px;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+
+
+    & > div{
+      height: 100%;
+      width: 85%;
+      @include flex(center, center, column);
+    }
+
+    //@include flex(flex-start, center, column);
+    .landing-wave{
+      height: 100%;
+    }
+
+  }
+
+}
+
+
+.section-wrapper{
+  width:100vw;
+  @include flex(center, center, column);
+  padding: $pc-padding;
+
+  &.clients-section{
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  &.section-contact-preview{
+    padding-top: 0;
+  }
+
+  &.error-page {
+    padding-bottom: 0;
+  }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+
+  .section-wrapper{
+    padding: $tablet-padding;
+  }
+}
+
+@media screen and (max-width:600px) {
+
+  .section-wrapper{
+    padding: $mob-padding;
+  }
+
+}

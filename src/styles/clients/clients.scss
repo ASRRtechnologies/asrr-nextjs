@@ -11,6 +11,21 @@
   }
 }
 
+.client-card{
+  @include size(auto, auto);
+  display: inline-block;
+  margin: 0 100px;
+}
+
+.ticker{
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 100px;
+  width: 100vw;
+  position: relative;
+ }
+
+
 @media screen and (max-width: 600px) {
   .clients{
     @include flex(flex-start, center, column);
