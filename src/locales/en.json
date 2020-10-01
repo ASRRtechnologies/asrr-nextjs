@@ -80,21 +80,24 @@
     },
     "stories": {
       "form": {
+        "picture": "https://media-exp1.licdn.com/dms/image/C4E03AQHNiqG4rGPvzA/profile-displayphoto-shrink_100_100/0?e=1606953600&v=beta&t=2iNZcXPam6kXiFhtCfLtCUksTmXmOWJd6B5nneVknyM",
         "contact": "Jorgen Haring",
         "story": "ASRR denkt pro-actief mee in de projecten en komt met goede en efficiënte oplossingen.\nZe begeleiden het project vakkundig, zijn heel flexibel en kunnen snel schakelen indien nodig.\nHet is erg plezierig om met ze samen te werken!",
         "name": "FORM Architecture & Engineering B.V.",
         "function": "Architect Partner"
       },
       "esp": {
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRU-7CwUIHgMgRZAwQMpnko27oXGH1wKS75-A&usqp=CAU",
         "contact": "Ravi Badal",
         "story": "Het is een erg jong, professioneel en dynamisch bedrijf met een flat management structuur, dit zorgt voor een vlotte communicatie zowel intern als met de klanten, waardoor er veel aandacht en zorg is voor de klant. Ik heb erg goede ervaringen opgedaan met ASRR. Een echte aanrader als je op zoek bent naar een professionele partner die met je meedenkt en waar de klant op nummer 1 staat!",
         "name": "ESP Consultancy B.V.",
         "function":"Manager Operations"
       },
       "nwo": {
-        "contact": "Peter Lassche",
-        "story": "ASRR is om op te bouwen",
-        "name": "NWO"
+        "contact": "Robby Makka",
+        "story": "-",
+        "name": "-",
+        "function": "-"
       }
     }
   },
@@ -231,7 +234,7 @@
       "text": "Analysing data correctly can save any company from excess costs and inefficiency. Using our BI analytics on one of your existing or a new database, ASRR will provide insights into key aspects of your data.",
       "preview": {
         "title": "Data Analytics | BI",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+        "text": "Analysing data correctly can save any company from excess costs and inefficiency. Using our BI analytics on one of your existing or a new database, ASRR will provide insights into key aspects of your data."
       }
     },
     "consultancy": {
@@ -327,41 +330,61 @@
       "title": "Real Time Steel Tracker",
       "text": "Lorem ipsum",
       "case": {
-        "title_1": "HES Steel Tracker",
-        "text_1": "HES and ASRR came into contact due to a connection with their head planner. The planner had noticed how all of the current logistics information about the locations of the steel parts, needed for construction of big oil tanks, was tracked in a single excel file, spanning over 30 thousand lines. Needless to say, this was both a security issue and an efficiency bottleneck. This is where we provided a solution. ",
-        "title_2": "The goal",
-        "text_2": "Create an intuitive, cross-platform application to manage the vast amount of logistics data needed for a 500-million-dollar project. Create valuable insights for management to track the overall progress. ",
-        "title_3": "What was needed",
-        "bullets": [
-          "A Custom excel parser that allowed us to read the data into an enterprise grade SQL database",
-          "A Spring Boot (Java) back-end system to lay down business rules for every action connected to a piece",
-          "A ReactJS Web Application to be used on mobile by the workers, and on desktop by managers to check the input",
-          "A PowerBI dashboard to give insight to management about the overall process "
-        ],
-        "preview": "Click here to preview demo",
-        "preview_link": "Click here to visit the demo site",
-        "title_4": "Other Cases"
-      }
-    },
-    "formhes": {
-      "client": "HES International",
-      "discipline": "Web Application | BI",
-      "title": "Real Time Steel Tracker",
-      "case": {
         "landing": {
-          "discipline": "Web Application | BI",
-          "title": "Real Time Steel Tracker",
-          "text": "Lorem ipsum"
+          "discipline": "Automated BIM Configurator | Full-Stack",
+          "title": "Reinventing the housing industry",
+          "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
         },
         "introduction": {
           "title": "The Problem",
-          "text": "HES and ASRR came into contact due to a connection with their head planner. The planner had noticed how all of the current logistics information about the locations of the steel parts, needed for construction of big oil tanks, was tracked in a single excel file, spanning over 30 thousand lines. Needless to say, this was both a security issue and an efficiency bottleneck. This is where we provided a solution. "
+          "text": "HES International is one of Europe's largest independent bulk handling companies. One of their projects, a large scale steel tank came to our attention due to one of the planners."
         },
         "bullets": [
           {
             "key": "<p class=\"animated-link\"> The old process</p>",
-            "value": "<p>A Custom excel parser that allowed us to read the data into an enterprise grade SQL database</p>"
+            "value": "<p>The initial dataset containing all the information about each steel part in this project was based on an excel file. This is a risk in data security and makes updating the dataset a hassle. The amount of data in this excel sheet also made it hard to manage such a big set of data securely.</p>"
           },
+
+
+          {
+            "key": "<p class=\"animated-link\">The goal</p>",
+            "value": "Create an application that moves the responsibility to the workers that are on the workfloor, while creating deeper insights for management."        },
+          {
+            "key": "<p class=\"animated-link\">What was needed</p>",
+            "value": "A custom Excel parser, a SQL DB, a Spring Boot Java Application, a ReactJS front end and a PowerBI Dashboard for Business analygics"
+          }
+        ],
+        "result": {
+          "title": "What We Did",
+          "text": "First off, we parsed the Excel sheet, containing over 30k rows, using a Spring Boot Java application and stored it in one of our databses. This makes it possible to back-up frequently, and manage such a big dataset with ease. We then wrote various API calls that can manipulate the data. This then was linked with mobile/desktop web-application, where workers on the ground can check-in the progress of each steel part. This then all is sent to the database, where we use data analytics to create business insights for management.     "
+        },
+        "conclusion": {
+          "title": "Conclusion",
+          "text": "By converting the old data solution to a more elegant one, we achieved two main things. For one, the data is stored more securely while allowing more than one person to edit it. Secondly, it allows the workers in the steel workshops to directly sign off on steel parts, creating a more up to date viewing of the total status of the project. Thirdly, we created deep meaningful insights for management, showing KPI's, planned vs actuals and much more, which wasn't possible before."     }
+      }
+    },
+    "protonise": {
+      "client": "Protonise",
+      "discipline": "Web Application",
+      "title": "A stunning new website",
+      "text": "A stunning new website",
+      "case": {
+        "landing": {
+          "discipline": "Automated BIM Configurator | Full-Stack",
+          "title": "Reinventing the housing industry",
+          "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
+        },
+        "introduction": {
+          "title": "The Problem",
+          "text": "One of our oldest clients, FORM, has hired ASRR and its developers for years to provide for their IT needs. \nTogether with FORM we think about how we can realize the vision they\n have had for nearly a decade on how to revolutionize the housing industry"
+        },
+        "bullets": [
+          {
+            "key": "<p class=\"animated-link\"> The old process <br/> (in a generic BIM/Architecture firm)</p>",
+            "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
+          },
+
+
           {
             "key": "<p class=\"animated-link\">The goal</p>",
             "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
@@ -380,12 +403,6 @@
           "text": "In short, we were able to adapt to the current process by writing code that integrates with the used programs. \nWe then pushed it all to the next level by using enterprise grade methods to ensure reliability,\n speed and a good overall user experience. \nTo put this into numbers, this can save hundreds of euros per house, making FORM’s Automation a cutting-edge competitor \nto big time firms while delivering consistent and reliable outputs. "
         }
       }
-    },
-    "protonise": {
-      "client": "Protonise",
-      "discipline": "Web Application",
-      "title": "A stunning new website",
-      "text": "A stunning new website"
     },
     "form": {
       "client": "FORM Architecture & Engineering",

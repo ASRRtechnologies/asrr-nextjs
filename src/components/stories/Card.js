@@ -9,7 +9,7 @@ function Card(props) {
     return (
         <div className="card">
             <span className="avatar">
-                <img src={image}/>
+                <img src={i18n.t("home.stories." + props.client + ".picture")}/>
             </span>
             <h3>{i18n.t("home.stories." + props.client + ".contact")}</h3>
             <h4>{i18n.t("home.stories." + props.client + ".function")}</h4>
