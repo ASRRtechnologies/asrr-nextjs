@@ -30,7 +30,6 @@ function Layout({children}) {
 
     return (
         <motion.div initial={"show"} exit="hidden" animate="show" variants={fadeOut} className="application">
-            <Header/>
             {children}
             <Footer/>
         </motion.div>

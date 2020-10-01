@@ -7,6 +7,8 @@ import Title from '@/text/Title'
 import Button from '@/Button'
 import Animation from '@/animation/Animation'
 import {motion} from "framer-motion";
+import Application from "@/layout/Application";
+import Layout from "@/layout/Layout";
 
 const Wrapper = styled('div')`
       background-image: ${props => props.theme.layout};
@@ -15,21 +17,21 @@ const Wrapper = styled('div')`
 const textEasing = [.42, 0, .58, 1];
 const fadeOut = {
 
-	show: {
-		opacity:1,
-		transition: {
-			ease: textEasing,
-			duration:1
-		}
-	},
-	hidden: {
-		translateY: "100px",
-		opacity:0,
-		transition: {
-			duration: 1,
-			ease: textEasing,
-		}
-	}
+    show: {
+        opacity: 1,
+        transition: {
+            ease: textEasing,
+            duration: 1
+        }
+    },
+    hidden: {
+        translateY: "100px",
+        opacity: 0,
+        transition: {
+            duration: 1,
+            ease: textEasing,
+        }
+    }
 };
 
 function Contact({className, title}) {
@@ -50,9 +52,9 @@ function Page({data, query}) {
     }, []);
 
     return (
-        <>
-            <motion.div initial={"show"} exit="hidden" animate="show" variants={fadeOut} className="content-wrapper">
-                <Section className="service-page">
+        <Application>
+            <Layout>
+                <Section className="service-page individual-service-section">
                     <Animation animation="fade-up" delay="300">
                         <Title title={data.title} className="justify" text={data.text}/>
                     </Animation>
@@ -61,8 +63,8 @@ function Page({data, query}) {
                         <Contact/>
                     </Animation>
                 </Section>
-            </motion.div>
-        </>
+            </Layout>
+        </Application>
     )
 }
 

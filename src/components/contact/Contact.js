@@ -64,7 +64,7 @@ function Contact ({ big }) {
 	}
 
 	return (
-		<Section className="padding-bottom">
+		<Section id="contact-page" className="padding-bottom">
 			<Animation animation="fade-up" delay="200">
 				<Title title={'contact.title.header'} text={'contact.title.text'}/>
 				<div className="contact">
