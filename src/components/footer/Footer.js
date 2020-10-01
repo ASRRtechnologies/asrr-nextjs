@@ -8,9 +8,6 @@ import LinkedIn from '@/icons/LinkedIn'
 import Facebook from '@/icons/Facebook'
 import {toast} from 'react-toastify'
 import Alert from '../alerts/Alert'
-// import Download from '@axetroy/react-download';
-
-// import file from "../../../public/assets/documents/file.pdf";
 
 const Wrapper = styled('section')`background-color: ${props => props.theme.footer};`
 
