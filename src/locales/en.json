@@ -15,7 +15,6 @@
       }
     }
   },
-
   "buttons": {
     "read": "Read More",
     "services": "See all Services",
@@ -24,7 +23,6 @@
     "contact": "Let's get in touch",
     "submit": "Submit"
   },
-
   "header": {
     "home": "Home",
     "portfolio": "Portfolio",
@@ -33,7 +31,6 @@
     "contact": "Contact Us",
     "about": "About Us"
   },
-
   "footer": {
     "navigation": "Navigation",
     "information": "Information",
@@ -55,7 +52,7 @@
         "title": "Efficiency",
         "text": "Using our microservice approach to coding, we don't have to reinvent the wheel for every project. We have a custom built collection of over-engineered components that can be combined to create a robust foundation for your project. We can then focus our efforts on the areas that are unique so that we can ensure the best product possible."
       },
-      "2":{
+      "2": {
         "title": "Elastic",
         "text": "From the beginning, ASRR has always adapted to the needs and restrictions laid out by our clients. As we have a very robust base, we can easily adapt to any given situation, while still keeping our applications very reliable."
       }
@@ -65,11 +62,11 @@
       "text": "Responsible for creating innovative and fast cutting edge software quickly and efficiently\n",
       "services": [
         {
-          "discipline": "IT Consultancy",
+          "discipline": "IT Teams As A Service",
           "text": "Tailored advice from an expert in the field"
         },
         {
-          "discipline": "Full-Stack Development",
+          "discipline": "Full-Stack Software Development",
           "text": "Front- and Backend development in one team"
         },
         {
@@ -80,26 +77,27 @@
     },
     "stories": {
       "form": {
+        "picture": "https://media-exp1.licdn.com/dms/image/C4E03AQHNiqG4rGPvzA/profile-displayphoto-shrink_100_100/0?e=1606953600&v=beta&t=2iNZcXPam6kXiFhtCfLtCUksTmXmOWJd6B5nneVknyM",
         "contact": "Jorgen Haring",
         "story": "ASRR denkt pro-actief mee in de projecten en komt met goede en efficiënte oplossingen.\nZe begeleiden het project vakkundig, zijn heel flexibel en kunnen snel schakelen indien nodig.\nHet is erg plezierig om met ze samen te werken!",
         "name": "FORM Architecture & Engineering B.V.",
         "function": "Architect Partner"
       },
       "esp": {
+        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRU-7CwUIHgMgRZAwQMpnko27oXGH1wKS75-A&usqp=CAU",
         "contact": "Ravi Badal",
         "story": "Het is een erg jong, professioneel en dynamisch bedrijf met een flat management structuur, dit zorgt voor een vlotte communicatie zowel intern als met de klanten, waardoor er veel aandacht en zorg is voor de klant. Ik heb erg goede ervaringen opgedaan met ASRR. Een echte aanrader als je op zoek bent naar een professionele partner die met je meedenkt en waar de klant op nummer 1 staat!",
         "name": "ESP Consultancy B.V.",
-        "function":"Manager Operations"
+        "function": "Manager Operations"
       },
       "nwo": {
-        "contact": "Peter Lassche",
-        "story": "ASRR is om op te bouwen",
-        "name": "NWO"
+        "contact": "Robby Makka",
+        "story": "-",
+        "name": "-",
+        "function": "-"
       }
     }
   },
-
-
   "portfolio": {
     "landing": {
       "title": "Portfolio",
@@ -190,10 +188,10 @@
     },
     "full-stack": {
       "route": "full-stack-development",
-      "title": "Full-Stack Development",
+      "title": "Full-Stack Software Development",
       "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
       "preview": {
-        "title": "Full-Stack Development",
+        "title": "Full-Stack Software Development",
         "text": "ASRR has both front and backend developers, as wel as an create anytures and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
         "landingText": "Front- and Backend development in one team"
       }
@@ -231,7 +229,7 @@
       "text": "Analysing data correctly can save any company from excess costs and inefficiency. Using our BI analytics on one of your existing or a new database, ASRR will provide insights into key aspects of your data.",
       "preview": {
         "title": "Data Analytics | BI",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+        "text": "Analysing data correctly can save any company from excess costs and inefficiency. Using our BI analytics on one of your existing or a new database, ASRR will provide insights into key aspects of your data."
       }
     },
     "consultancy": {
@@ -239,7 +237,7 @@
       "title": "IT Consultancy",
       "text": "Not sure what you need? ASRR can send an expert to analyse your company processes and propose a solution and fitting advice. ASRR can then provide the required developing skills.",
       "preview": {
-        "title": "IT Consultancy",
+        "title": "IT Teams As A Service",
         "text": "ASRR delivers tailored advice from an expert in the subject for anything IT related, be it websites, applications, servers, AI/machine learning and much more. We can lead projects from the ground up, or adapt existing ones to fit your current needs. These solutions can then be carried out perfectly by our development team.",
         "landingText": "Tailored advice from an expert in the field"
       }
@@ -319,7 +317,40 @@
       "client": "NWO",
       "discipline": "Custom Server | Process optimization ",
       "title": "Secure Remote Desktop Environment",
-      "text": "Lorem ipsum"
+      "text": "Lorem ipsum",
+      "case": {
+        "landing": {
+          "discipline": "Remote Desktop Server | Custom Hardware",
+          "title": "The power of a supercomputer on your own laptop",
+          "text": "An ultra secure and robust work environment for a complete team, improving the workflow and efficiency."
+        },
+        "introduction": {
+          "title": "The Problem",
+          "text": "Due to security limitations in their IT infrastructure, a specialized team in NWO needed a secure server to work on. The main requirements: 2FA, powerful computing and reliability."
+        },
+        "bullets": [
+          {
+            "key": "<p class=\"animated-link\"> The old process</p>",
+            "value": "Users would either use their own (slow) computer to handle and download secure company files when working remotely. Their user experience was inconsistent and there was no good way to communicate with the rest of the team."
+          },
+          {
+            "key": "<p class=\"animated-link\">The goal</p>",
+            "value": "Create a powerful central server, accessible to the whole team, with a deeply connected chat interface allowing for smooth teamwork."
+          },
+          {
+            "key": "<p class=\"animated-link\">What was needed</p>",
+            "value": "128 gigs of ram, a 64 core cpu, a custom web-app for 2FA login and a office 365/teams organization set up from scratch."
+          }
+        ],
+        "result": {
+          "title": "What We Did",
+          "text": "First off, we built a powerful server from scratch. Using the newest technologies, we were able to offer a server twice as capable as the competition for about half the price. Secondly, we built a back-end system that could manage the user passwords securely. This back-end system resets the password every hour or so and communicates this with the secure 2FA server. This server is then connected to our custom front end to allow for a seemless login to the remote desktop environment."
+        },
+        "conclusion": {
+          "title": "Conclusion",
+          "text": "We provided a specialized team with the hardware, software and tips/tricks to allow for the best internal teamwork possible."
+        }
+      }
     },
     "hes": {
       "client": "HES International",
@@ -327,40 +358,57 @@
       "title": "Real Time Steel Tracker",
       "text": "Lorem ipsum",
       "case": {
-        "title_1": "HES Steel Tracker",
-        "text_1": "HES and ASRR came into contact due to a connection with their head planner. The planner had noticed how all of the current logistics information about the locations of the steel parts, needed for construction of big oil tanks, was tracked in a single excel file, spanning over 30 thousand lines. Needless to say, this was both a security issue and an efficiency bottleneck. This is where we provided a solution. ",
-        "title_2": "The goal",
-        "text_2": "Create an intuitive, cross-platform application to manage the vast amount of logistics data needed for a 500-million-dollar project. Create valuable insights for management to track the overall progress. ",
-        "title_3": "What was needed",
-        "bullets": [
-          "A Custom excel parser that allowed us to read the data into an enterprise grade SQL database",
-          "A Spring Boot (Java) back-end system to lay down business rules for every action connected to a piece",
-          "A ReactJS Web Application to be used on mobile by the workers, and on desktop by managers to check the input",
-          "A PowerBI dashboard to give insight to management about the overall process "
-        ],
-        "preview": "Click here to preview demo",
-        "preview_link": "Click here to visit the demo site",
-        "title_4": "Other Cases"
-      }
-    },
-    "formhes": {
-      "client": "HES International",
-      "discipline": "Web Application | BI",
-      "title": "Real Time Steel Tracker",
-      "case": {
         "landing": {
-          "discipline": "Web Application | BI",
-          "title": "Real Time Steel Tracker",
-          "text": "Lorem ipsum"
+          "discipline": "Automated BIM Configurator | Full-Stack",
+          "title": "Reinventing the housing industry",
+          "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
         },
         "introduction": {
           "title": "The Problem",
-          "text": "HES and ASRR came into contact due to a connection with their head planner. The planner had noticed how all of the current logistics information about the locations of the steel parts, needed for construction of big oil tanks, was tracked in a single excel file, spanning over 30 thousand lines. Needless to say, this was both a security issue and an efficiency bottleneck. This is where we provided a solution. "
+          "text": "HES International is one of Europe's largest independent bulk handling companies. One of their projects, a large scale steel tank came to our attention due to one of the planners."
         },
         "bullets": [
           {
             "key": "<p class=\"animated-link\"> The old process</p>",
-            "value": "<p>A Custom excel parser that allowed us to read the data into an enterprise grade SQL database</p>"
+            "value": "<p>The initial dataset containing all the information about each steel part in this project was based on an excel file. This is a risk in data security and makes updating the dataset a hassle. The amount of data in this excel sheet also made it hard to manage such a big set of data securely.</p>"
+          },
+          {
+            "key": "<p class=\"animated-link\">The goal</p>",
+            "value": "Create an application that moves the responsibility to the workers that are on the workfloor, while creating deeper insights for management."
+          },
+          {
+            "key": "<p class=\"animated-link\">What was needed</p>",
+            "value": "A custom Excel parser, a SQL DB, a Spring Boot Java Application, a ReactJS front end and a PowerBI Dashboard for Business analygics"
+          }
+        ],
+        "result": {
+          "title": "What We Did",
+          "text": "First off, we parsed the Excel sheet, containing over 30k rows, using a Spring Boot Java application and stored it in one of our databses. This makes it possible to back-up frequently, and manage such a big dataset with ease. We then wrote various API calls that can manipulate the data. This then was linked with mobile/desktop web-application, where workers on the ground can check-in the progress of each steel part. This then all is sent to the database, where we use data analytics to create business insights for management.     "
+        },
+        "conclusion": {
+          "title": "Conclusion",
+          "text": "By converting the old data solution to a more elegant one, we achieved two main things. For one, the data is stored more securely while allowing more than one person to edit it. Secondly, it allows the workers in the steel workshops to directly sign off on steel parts, creating a more up to date viewing of the total status of the project. Thirdly, we created deep meaningful insights for management, showing KPI's, planned vs actuals and much more, which wasn't possible before."
+        }
+      }
+    },
+    "protonise": {
+      "client": "Protonise",
+      "discipline": "Web Application",
+      "title": "A stunning new website",
+      "text": "A stunning new website",
+      "case": {
+        "landing": {
+          "discipline": "Design | Web development",
+          "title": "Reinventing the housing industry",
+          "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
+        },
+        "introduction": {
+          "title": "The Problem",
+          "text": "We live in a digital age, with a website being our digital advertising board. However, there is much to say for the way we present ourselves online. A client of ours recognized the added wow factor with a progressive web application opposed to a classic wordpress website."       },
+        "bullets": [
+          {
+            "key": "<p class=\"animated-link\"> The old process</p>",
+            "value": "The customer"
           },
           {
             "key": "<p class=\"animated-link\">The goal</p>",
@@ -381,12 +429,6 @@
         }
       }
     },
-    "protonise": {
-      "client": "Protonise",
-      "discipline": "Web Application",
-      "title": "A stunning new website",
-      "text": "A stunning new website"
-    },
     "form": {
       "client": "FORM Architecture & Engineering",
       "discipline": "Automated BIM Configurator | Full-Stack",
@@ -404,10 +446,8 @@
         "bullets": [
           {
             "key": "<p class=\"animated-link\"> The old process <br/> (in a generic BIM/Architecture firm)</p>",
-             "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
+            "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
           },
-
-
           {
             "key": "<p class=\"animated-link\">The goal</p>",
             "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
@@ -434,7 +474,6 @@
       "text": "Lorem ipsum fr"
     }
   },
-
   "error": {
     "title": "404 error",
     "text": "The page you're looking for could not be found.",

@@ -106,4 +106,37 @@ export const cases = [
             text:"cases.nwo.case.conclusion.text",
         },
     },
+    {
+        id: "protonise",
+        card:{
+            image:hesImage2,
+            client:"cases.hes.client",
+            title:"cases.hes.case.landing.title",
+            text:"cases.hes.case.landing.text",
+            discipline:"cases.hes.case.landing.discipline",
+            route:"/cases/hes"
+        },
+        landing: {
+            client:"cases.heshes.client",
+            discipline:"cases.heshes.case.landing.discipline",
+            title:"cases.heshes.case.landing.title",
+            text:"cases.heshes.case.landing.text",
+        },
+        introduction:{
+            title:"cases.hes.case.introduction.title",
+            text:"cases.hes.case.introduction.text",
+        },
+        bullets: "cases.hes.case.bullets",
+        result:{
+            title:"cases.hes.case.result.title",
+            text:"cases.hes.case.result.text",
+        },
+        images:[
+            hesImage, hesImage2,
+        ],
+        conclusion:{
+            title:"cases.hes.case.conclusion.title",
+            text:"cases.hes.case.conclusion.text",
+        },
+    },
 ];
