@@ -5,16 +5,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-//
-//@font-face {
-//  font-family: 'Poppins';
-//  font-display: auto;
-//  font-style: normal;
-//  src: url('../../../public/fonts/Poppins-Light.ttf');
-//  src: url('../../../public/fonts/Poppins-Bold.ttf');
-//  src: url('../../../public/fonts/Poppins-Medium.ttf');
-//  src: url('../../../public/fonts/Poppins-Regular.ttf');
-//}
 
 ::-webkit-scrollbar-track
 {
@@ -67,19 +57,12 @@ body {
   overflow-x: hidden !important;
 }
 
-.app{
-  position:relative;
-  min-height: 100vh;
-  height: 100%;
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
-}
-
-.content-wrapper{
+.application{
   position:relative;
   min-height: 100vh;
   width: 100vw;
   height: 100%;
+  overflow-x: hidden;
 }
 
 h1{
@@ -167,9 +150,6 @@ a{
   }
 
 }
-
-
-
 
 @media screen and (max-width: 1000px) {
   ::-webkit-scrollbar-track
