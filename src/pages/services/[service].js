@@ -60,7 +60,7 @@ function Page({data, query}) {
                     </Animation>
                     {console.log(query, data)}
                     <Animation animation="fade-up" delay="300">
-                        <Contact/>
+                        <Contact className="last-section-padding"/>
                     </Animation>
                 </Section>
             </Layout>

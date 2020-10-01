@@ -13,6 +13,9 @@ import Chevron from "@/icons/Chevron";
 import {useTheme} from "../../../context/theme/ThemeContext";
 import Button from "@/Button";
 import {motion} from "framer-motion";
+import Application from "@/layout/Application";
+import Layout from "@/layout/Layout";
+import Contact from '@/contact/Preview'
 
 const Card = styled('div')`
         box-shadow: ${props => props.theme.card.shadow};
@@ -26,36 +29,6 @@ function PrevArrow(props) {
 function NextArrow(props) {
     const {className, onClick} = props;
     return (<Chevron onClick={onClick} className={className}/>);
-}
-
-const textEasing = [.42, 0, .58, 1];
-const fadeOut = {
-
-    show: {
-        opacity:1,
-        transition: {
-            ease: textEasing,
-            duration:1
-        }
-    },
-    hidden: {
-        translateY: "100px",
-        opacity:0,
-        transition: {
-            duration: 1,
-            ease: textEasing,
-        }
-    }
-};
-
-function Contact({className, title}) {
-    return (
-        <div className={`contact preview ${title}`}>
-            <Title className={`${title} title-button`} title={'contact.preview.title.header'}
-                   text={'contact.preview.title.text'}/>
-            <Button custom to="/contact" title="buttons.contact"/>
-        </div>
-    )
 }
 
 function Page({data, query}) {
@@ -87,69 +60,71 @@ function Page({data, query}) {
 
     return (
         <>
-            <motion.div initial={"show"} exit="hidden" animate="show" variants={fadeOut} className="content-wrapper">
-                <Landing title={data.landing.title} text={data.landing.text} client={data.landing.client}
-                         discipline={data.landing.discipline}/>
-                <Section className="">
-                    <Animation animation="fade-up" delay="300">
-                        <Title className="justify" title={data.introduction.title} text={data.introduction.text}/>
-                    </Animation>
+            <Application>
+                <Layout>
+                    <Landing title={data.landing.title} text={data.landing.text} client={data.landing.client}
+                             discipline={data.landing.discipline}/>
+                    <Section className="case-section">
+                        <Animation animation="fade-up" delay="300">
+                            <Title className="justify" title={data.introduction.title} text={data.introduction.text}/>
+                        </Animation>
 
-                    <Animation animation="fade" delay="500">
-                        <div className="why-asrr margin-bottom ">
-                            <div className="why-asrr-wrapper">
-                                <div className="why-asrr-points">
-                                    {bullets.map((d, i) => {
-                                        return (
-                                            <span onClick={() => setCard(i)}
-                                                  className={`${i === card && 'selected-line'} `}>
+                        <Animation animation="fade" delay="500">
+                            <div className="why-asrr margin-bottom ">
+                                <div className="why-asrr-wrapper">
+                                    <div className="why-asrr-points">
+                                        {bullets.map((d, i) => {
+                                            return (
+                                                <span onClick={() => setCard(i)}
+                                                      className={`${i === card && 'selected-line'} `}>
 											<Interweave tagName="div"
                                                         attributes={{className: `${!darkmode ? "animated-link-dark-wrapper" : "animated-link-light-wrapper"}`}}
                                                         content={d.key} onClick={() => setCard(i)}/>
 										</span>
-                                        )
-                                    })}
+                                            )
+                                        })}
+                                    </div>
+                                    {bullets.map((d, i) => card === i
+                                        ? <Markup attributes={{className: 'why-asrr-text'}} containerTagName="div"
+                                                  content={d.value}/>
+                                        : null)}
                                 </div>
-                                {bullets.map((d, i) => card === i
-                                    ? <Markup attributes={{className: 'why-asrr-text'}} containerTagName="div"
-                                              content={d.value}/>
-                                    : null)}
                             </div>
-                        </div>
-                    </Animation>
+                        </Animation>
 
-                    <Animation animation="fade-up" delay="500">
-                        <Title className="justify" title={data.result.title} text={data.result.text}/>
-                    </Animation>
+                        <Animation animation="fade-up" delay="500">
+                            <Title className="justify" title={data.result.title} text={data.result.text}/>
+                        </Animation>
 
-                    <Animation className="project-carousel-wrapper" animation="fade-up" delay="500">
-                        <Slider {...settings}>
-                            {
-                                data.images.map((img, i) => {
-                                    return (
-                                        <Card className="project-image">
-                                            <img src={img} alt="img"/>
-                                        </Card>
-                                    )
-                                })
-                            }
-                        </Slider>
-                        <div className="project-carousel-indicator">
-                            {data.images.map((d, i) => <div
-                                className={`${i === slide ? "active-indicator" : null}`}></div>)}
-                        </div>
-                    </Animation>
+                        <Animation className="project-carousel-wrapper" animation="fade-up" delay="500">
+                            <Slider {...settings}>
+                                {
+                                    data.images.map((img, i) => {
+                                        return (
+                                            <Card className="project-image">
+                                                <img src={img} alt="img"/>
+                                            </Card>
+                                        )
+                                    })
+                                }
+                            </Slider>
+                            <div className="project-carousel-indicator">
+                                {data.images.map((d, i) => <div
+                                    className={`${i === slide ? "active-indicator" : null}`}></div>)}
+                            </div>
+                        </Animation>
 
-                    <Animation animation="fade-up" delay="500">
-                        <Title  className="regular" title={data.conclusion.title}
-                               text={data.conclusion.text}/>
-                    </Animation>
+                        <Animation animation="fade-up" delay="500">
+                            <Title className="regular" title={data.conclusion.title}
+                                   text={data.conclusion.text}/>
+                        </Animation>
 
-                    <Animation animation="fade-up" delay="500">
-                        <Contact title=""/>
-                    </Animation>
-                </Section>
-            </motion.div>
+                        <Animation animation="fade-up" delay="500">
+                            <Contact className="last-section-padding"/>
+                        </Animation>
+                    </Section>
+                </Layout>
+            </Application>
         </>
     )
 }
