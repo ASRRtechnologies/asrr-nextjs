@@ -4,6 +4,10 @@
   @include flex(flex-start, center, column);
   padding: 200px 0 0 0;
 
+  &.individual-service-section{
+    padding: 200px 0;
+  }
+
   &.padding-bottom{
     padding: 200px 0;
   }
@@ -14,10 +18,6 @@
 
   &.project-page {
     @include flex(center, flex-start, column);
-  }
-
-  &.service-page {
-    padding-top: 50px;
   }
 
   &.error-page {
@@ -44,6 +44,42 @@
 .section-animation {
   @include size(100%, auto);
   @include flex(flex-start, center, column);
+}
+
+@media screen and (max-width: 1200px) {
+  .section {
+    padding: 100px 0 0 0;
+
+    &.individual-service-section{
+      padding: 100px 0;
+    }
+
+    &.padding-bottom{
+      padding: 100px 0;
+    }
+
+    &.last-section-padding{
+      padding: 100px 0;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    padding: 75px 0 0 0;
+
+    &.individual-service-section{
+      padding: 75px 0;
+    }
+
+    &.padding-bottom{
+      padding: 75px 0;
+    }
+
+    &.last-section-padding{
+      padding: 75px 0;
+    }
+  }
 }
 
 

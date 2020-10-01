@@ -13,7 +13,7 @@ function Contact () {
 		<Application>
 			<Landing title="contact.landing.title" text="contact.landing.text"
 					 className={`${darkmode ? 'landing-overlay-dark' : 'landing-overlay-light'}`}
-					 image={image} scrollToID="#portfolio-page"/>
+					 image={image} scrollToID="#contact-page"/>
 			<Layout>
 				<ContactPage/>
 			</Layout>
