@@ -15,7 +15,6 @@
       }
     }
   },
-
   "buttons": {
     "read": "Read More",
     "services": "See all Services",
@@ -24,7 +23,6 @@
     "contact": "Let's get in touch",
     "submit": "Submit"
   },
-
   "header": {
     "home": "Home",
     "portfolio": "Portfolio",
@@ -33,7 +31,6 @@
     "contact": "Contact Us",
     "about": "About Us"
   },
-
   "footer": {
     "navigation": "Navigation",
     "information": "Information",
@@ -55,7 +52,7 @@
         "title": "Efficiency",
         "text": "Using our microservice approach to coding, we don't have to reinvent the wheel for every project. We have a custom built collection of over-engineered components that can be combined to create a robust foundation for your project. We can then focus our efforts on the areas that are unique so that we can ensure the best product possible."
       },
-      "2":{
+      "2": {
         "title": "Elastic",
         "text": "From the beginning, ASRR has always adapted to the needs and restrictions laid out by our clients. As we have a very robust base, we can easily adapt to any given situation, while still keeping our applications very reliable."
       }
@@ -91,7 +88,7 @@
         "contact": "Ravi Badal",
         "story": "Het is een erg jong, professioneel en dynamisch bedrijf met een flat management structuur, dit zorgt voor een vlotte communicatie zowel intern als met de klanten, waardoor er veel aandacht en zorg is voor de klant. Ik heb erg goede ervaringen opgedaan met ASRR. Een echte aanrader als je op zoek bent naar een professionele partner die met je meedenkt en waar de klant op nummer 1 staat!",
         "name": "ESP Consultancy B.V.",
-        "function":"Manager Operations"
+        "function": "Manager Operations"
       },
       "nwo": {
         "contact": "Robby Makka",
@@ -101,8 +98,6 @@
       }
     }
   },
-
-
   "portfolio": {
     "landing": {
       "title": "Portfolio",
@@ -322,7 +317,40 @@
       "client": "NWO",
       "discipline": "Custom Server | Process optimization ",
       "title": "Secure Remote Desktop Environment",
-      "text": "Lorem ipsum"
+      "text": "Lorem ipsum",
+      "case": {
+        "landing": {
+          "discipline": "Remote Desktop Server | Custom Hardware",
+          "title": "The power of a supercomputer on your own laptop",
+          "text": "An ultra secure and robust work environment for a complete team, improving the workflow and efficiency."
+        },
+        "introduction": {
+          "title": "The Problem",
+          "text": "Due to security limitations in their IT infrastructure, a specialized team in NWO needed a secure server to work on. The main requirements: 2FA, powerful computing and reliability."
+        },
+        "bullets": [
+          {
+            "key": "<p class=\"animated-link\"> The old process</p>",
+            "value": "Users would either use their own (slow) computer to handle and download secure company files when working remotely. Their user experience was inconsistent and there was no good way to communicate with the rest of the team."
+          },
+          {
+            "key": "<p class=\"animated-link\">The goal</p>",
+            "value": "Create a powerful central server, accessible to the whole team, with a deeply connected chat interface allowing for smooth teamwork."
+          },
+          {
+            "key": "<p class=\"animated-link\">What was needed</p>",
+            "value": "128 gigs of ram, a 64 core cpu, a custom web-app for 2FA login and a office 365/teams organization set up from scratch."
+          }
+        ],
+        "result": {
+          "title": "What We Did",
+          "text": "First off, we built a powerful server from scratch. Using the newest technologies, we were able to offer a server twice as capable as the competition for about half the price. Secondly, we built a back-end system that could manage the user passwords securely. This back-end system resets the password every hour or so and communicates this with the secure 2FA server. This server is then connected to our custom front end to allow for a seemless login to the remote desktop environment."
+        },
+        "conclusion": {
+          "title": "Conclusion",
+          "text": "We provided a specialized team with the hardware, software and tips/tricks to allow for the best internal teamwork possible."
+        }
+      }
     },
     "hes": {
       "client": "HES International",
@@ -344,11 +372,10 @@
             "key": "<p class=\"animated-link\"> The old process</p>",
             "value": "<p>The initial dataset containing all the information about each steel part in this project was based on an excel file. This is a risk in data security and makes updating the dataset a hassle. The amount of data in this excel sheet also made it hard to manage such a big set of data securely.</p>"
           },
-
-
           {
             "key": "<p class=\"animated-link\">The goal</p>",
-            "value": "Create an application that moves the responsibility to the workers that are on the workfloor, while creating deeper insights for management."        },
+            "value": "Create an application that moves the responsibility to the workers that are on the workfloor, while creating deeper insights for management."
+          },
           {
             "key": "<p class=\"animated-link\">What was needed</p>",
             "value": "A custom Excel parser, a SQL DB, a Spring Boot Java Application, a ReactJS front end and a PowerBI Dashboard for Business analygics"
@@ -360,7 +387,8 @@
         },
         "conclusion": {
           "title": "Conclusion",
-          "text": "By converting the old data solution to a more elegant one, we achieved two main things. For one, the data is stored more securely while allowing more than one person to edit it. Secondly, it allows the workers in the steel workshops to directly sign off on steel parts, creating a more up to date viewing of the total status of the project. Thirdly, we created deep meaningful insights for management, showing KPI's, planned vs actuals and much more, which wasn't possible before."     }
+          "text": "By converting the old data solution to a more elegant one, we achieved two main things. For one, the data is stored more securely while allowing more than one person to edit it. Secondly, it allows the workers in the steel workshops to directly sign off on steel parts, creating a more up to date viewing of the total status of the project. Thirdly, we created deep meaningful insights for management, showing KPI's, planned vs actuals and much more, which wasn't possible before."
+        }
       }
     },
     "protonise": {
@@ -370,21 +398,18 @@
       "text": "A stunning new website",
       "case": {
         "landing": {
-          "discipline": "Automated BIM Configurator | Full-Stack",
+          "discipline": "Design | Web development",
           "title": "Reinventing the housing industry",
           "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
         },
         "introduction": {
           "title": "The Problem",
-          "text": "One of our oldest clients, FORM, has hired ASRR and its developers for years to provide for their IT needs. \nTogether with FORM we think about how we can realize the vision they\n have had for nearly a decade on how to revolutionize the housing industry"
-        },
+          "text": "We live in a digital age, with a website being our digital advertising board. However, there is much to say for the way we present ourselves online. A client of ours recognized the added wow factor with a progressive web application opposed to a classic wordpress website."       },
         "bullets": [
           {
-            "key": "<p class=\"animated-link\"> The old process <br/> (in a generic BIM/Architecture firm)</p>",
-            "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
+            "key": "<p class=\"animated-link\"> The old process</p>",
+            "value": "The customer"
           },
-
-
           {
             "key": "<p class=\"animated-link\">The goal</p>",
             "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
@@ -421,10 +446,8 @@
         "bullets": [
           {
             "key": "<p class=\"animated-link\"> The old process <br/> (in a generic BIM/Architecture firm)</p>",
-             "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
+            "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
           },
-
-
           {
             "key": "<p class=\"animated-link\">The goal</p>",
             "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
@@ -451,7 +474,6 @@
       "text": "Lorem ipsum fr"
     }
   },
-
   "error": {
     "title": "404 error",
     "text": "The page you're looking for could not be found.",
