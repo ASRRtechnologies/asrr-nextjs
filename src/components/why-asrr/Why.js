@@ -1,13 +1,9 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import useI18n from '../../hooks/use-i18n'
-import Section from "@/layout/Section";
-import styled from "@emotion/styled";
-import {useTheme} from "../../context/theme/ThemeContext";
-import ReadMore from "@/text/ReadMore";
-import Title from "@/text/Title";
-import Email from "@/icons/Email";
-import Button from "@/Button";
-import Animation from "@/animation/Animation";
+import Section from '@/layout/Section'
+import { useTheme } from '../../context/theme/ThemeContext'
+import Title from '@/text/Title'
+import Animation from '@/animation/Animation'
 
 function Why() {
 	const [card, setCard] = useState(0);
@@ -16,7 +12,7 @@ function Why() {
 	const darkmode = useTheme().dark;
 
 	return (
-		<Section>
+		<Section className="why-asrr-section">
 			<Animation animation="fade-up">
 			<Title title={'why.title.header'}/>
 			<div className="why-asrr">
@@ -25,7 +21,6 @@ function Why() {
 					                            className={`${i === card && "selected-line"}`}><p
 						className={`${!darkmode ? "animated-link-dark" : "animated-link-light"}`}>{i18n.t('home.why.' + i + '.title')}</p></span>)}
 				</div>
-
 				<div className="why-asrr-text why-asrr-center">
 					<p>{i18n.t('home.why.' + card + '.text')}</p>
 				</div>

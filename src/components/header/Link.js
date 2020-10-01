@@ -9,5 +9,5 @@ export default ({href, children, special, ...props}) => {
         className = `${className} active-link`
     }
 
-    return <Link {...props} href={href}>{React.cloneElement(children, {className})}</Link>
+    return <Link {...props} href={href}>{React.cloneElement(children, {className, ariaLabel:"active-link"})}</Link>
 }

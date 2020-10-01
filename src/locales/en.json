@@ -168,6 +168,12 @@
         "placeholder": "Message*"
       }
     },
+    "address": {
+      "street": "'s Gravenzandseweg 2 unit A",
+      "zipcode": "2291 PE Wateringen",
+      "country": "The Netherlands",
+      "route": "Get directions"
+    },
     "cta": {
       "curious": "Interested in our services?",
       "touch": "Lets get in touch!"
@@ -337,6 +343,44 @@
         "title_4": "Other Cases"
       }
     },
+    "formhes": {
+      "client": "HES International",
+      "discipline": "Web Application | BI",
+      "title": "Real Time Steel Tracker",
+      "case": {
+        "landing": {
+          "discipline": "Web Application | BI",
+          "title": "Real Time Steel Tracker",
+          "text": "Lorem ipsum"
+        },
+        "introduction": {
+          "title": "The Problem",
+          "text": "HES and ASRR came into contact due to a connection with their head planner. The planner had noticed how all of the current logistics information about the locations of the steel parts, needed for construction of big oil tanks, was tracked in a single excel file, spanning over 30 thousand lines. Needless to say, this was both a security issue and an efficiency bottleneck. This is where we provided a solution. "
+        },
+        "bullets": [
+          {
+            "key": "<p class=\"animated-link\"> The old process</p>",
+            "value": "<p>A Custom excel parser that allowed us to read the data into an enterprise grade SQL database</p>"
+          },
+          {
+            "key": "<p class=\"animated-link\">The goal</p>",
+            "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
+          },
+          {
+            "key": "<p class=\"animated-link\">What was needed</p>",
+            "value": "<ul><li>Complex interface with the existing program</li> <li>Spring Boot Rest API hosted in kubernetes </li> <li>Front-end Web App in ReactJS</li> <li>A custom server</li> <li>Cloud storage</li>  </ul>"
+          }
+        ],
+        "result": {
+          "title": "What We Did",
+          "text": "FORM uses complex BIM models to combine smart parametric designs with a structured way of working to create the \n3D models needed to build a house. This is a perfect example of something that can be automated.\nThe program FORM uses to engineer and model houses is called Autodesk Revit. Revit can be a bit unreliable at times,\n which posed a threat to ensuring we can go from a manual process to a fully automated cloud version.\nWe wrote a program that plugs into the existing application, enabling us to imitate user interactions with code. \nThis allows us to automate complex actions flawlessly. \nUsing the program, we create an output within Revit, for example a PDF with the building plans.\n This pdf is then uploaded to the cloud, and its location is passed to the central server.     "
+        },
+        "conclusion": {
+          "title": "Conclusion",
+          "text": "In short, we were able to adapt to the current process by writing code that integrates with the used programs. \nWe then pushed it all to the next level by using enterprise grade methods to ensure reliability,\n speed and a good overall user experience. \nTo put this into numbers, this can save hundreds of euros per house, making FORM’s Automation a cutting-edge competitor \nto big time firms while delivering consistent and reliable outputs. "
+        }
+      }
+    },
     "protonise": {
       "client": "Protonise",
       "discipline": "Web Application",
@@ -362,6 +406,8 @@
             "key": "<p class=\"animated-link\"> The old process <br/> (in a generic BIM/Architecture firm)</p>",
              "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
           },
+
+
           {
             "key": "<p class=\"animated-link\">The goal</p>",
             "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
@@ -394,6 +440,5 @@
     "text": "The page you're looking for could not be found.",
     "button": "Go Back"
   }
-
 }
 
