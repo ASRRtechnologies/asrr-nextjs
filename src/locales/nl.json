@@ -16,62 +16,62 @@
     }
   },
   "buttons": {
-    "read": "Read More",
-    "services": "See all Services",
-    "cases": "See all Cases",
-    "portfolio": "Go To Portfolio",
+    "read": "Lees Meer",
+    "services": "Bekijk al onze services",
+    "cases": "Bekijk al onze cases",
+    "portfolio": "Ga Naar Portfolio",
     "contact": "Let's get in touch",
-    "submit": "Submit"
+    "submit": "Verzenden"
   },
   "header": {
     "home": "Home",
     "portfolio": "Portfolio",
     "services": "Services",
     "hire": "Hire a Developer",
-    "contact": "Contact Us",
-    "about": "About Us"
+    "contact": "Contact",
+    "about": "Over ons"
   },
   "footer": {
-    "navigation": "Navigation",
-    "information": "Information",
-    "address": "Address",
-    "design": "Designed By ASRR",
-    "letter": "Sign up for our newsletter",
+    "navigation": "Navigatie",
+    "information": "Informatie",
+    "address": "Adres",
+    "design": "Design By ASRR",
+    "letter": "Schrijf je in voor onze nieuwsbrief",
     "faq": "FAQ",
     "privacy": "Privacy",
-    "policy": "Terms and Services",
-    "social_media": "Follow us"
+    "policy": "Algemene Voorwaarden",
+    "social_media": "Volg Ons"
   },
   "home": {
     "why": {
       "0": {
         "title": "Expertise",
-        "text": "ASRR has a diverse team of talented professionals. Combining these areas we have a wide coverage of expertise for anything IT related. We have specialists in websites, apps, desktop applications, hardware, BI, data anlytics, and much more!"
+        "text": "ASRR heeft een divers team van getalenteerde professionals. Gezamenlijk vormen we een team met een brede kennis in alles wat met IT te maken heeft. We hebben specialisten in websites, apps, databases, hardware, desktop aplpicaties, BI, Data analytics en veel meer!"
       },
       "1": {
-        "title": "Efficiency",
-        "text": "Using our microservice approach to coding, we don't have to reinvent the wheel for every project. We have a custom built collection of over-engineered components that can be combined to create a robust foundation for your project. We can then focus our efforts on the areas that are unique so that we can ensure the best product possible."
+        "title": "Effectiviteit",
+        "text": "Met onze microservices hoeven we niet elke keer het wiel opnieuw uit te vinden bij elke opdracht. Dit zorgt ervoor dat we ons kunnen focussen op het maatwerk, en daarmee de arbeidsuren relatief laag kunnen houden. We hebben een scala aan over-engineered componenten die we kunnen gebruiken om uw volgende project een robuuste basis te geven."
       },
       "2": {
-        "title": "Elastic",
-        "text": "From the beginning, ASRR has always adapted to the needs and restrictions laid out by our clients. As we have a very robust base, we can easily adapt to any given situation, while still keeping our applications very reliable."
+        "title": "Elasticiteit",
+        "text": "ASRR is een jong, dynamisch bedrijf dat zich aanpast op de klant. Door onze robuuste basis kunnen we maatwerk leveren dat naadloos aansluit op uw huidige systeem of werkproces, terwijl de applicatie nog steeds stabiel en schaalbaar blijft."
       }
     },
     "landing": {
       "title": "Innovative Software Development",
-      "text": "Responsible for creating innovative and fast cutting edge software quickly and efficiently\n",
+      "text": "Verantwoordelijk voor het bouwen van next-level software - snel en efficient.",
       "services": [
         {
-          "discipline": "IT Consultancy",
-          "text": "Tailored advice from an expert in the field"
+          "discipline": "IT Teams As A Service",
+          "text": "De flexibele kracht van een heel ingewerkt team"
         },
         {
-          "discipline": "Full-Stack Development",
-          "text": "Front- and Backend development in one team"
+          "discipline": "Full-Stack Software Development",
+          "text": "Front- and Backend development in een team"
         },
         {
-          "discipline": "Custom Built Hardware",
-          "text": "Servers that fit your needs exactly"
+          "discipline": "Custom Hardware",
+          "text": "Servers en werkstations afgestemd op uw wensen"
         }
       ]
     },
@@ -101,32 +101,32 @@
   "portfolio": {
     "landing": {
       "title": "Portfolio",
-      "text": "Super nice projects"
+      "text": "Onze projecten"
     },
     "title": {
-      "header": "Our Portfolio",
+      "header": "Onze Portfolio",
       "text": "Lorem ipsum much longer text enter here"
     },
     "preview": {
       "title": {
-        "header": "What we've done",
-        "text": "Take a look at some of our projects"
+        "header": "What we hebben gedaan",
+        "text": "Neem een kijkje bij onze projecten"
       }
     }
   },
   "services": {
     "landing": {
       "title": "Services",
-      "text": "Super nice services"
+      "text": "Onze services"
     },
     "header": {
-      "title": "Our Services",
+      "title": "Onze Services",
       "text": "Lorem ipsum much longer text enter here"
     },
     "preview": {
       "title": {
-        "header": "What we do",
-        "text": "The services we provide can be categorized under the following three groups"
+        "header": "Wat we doen",
+        "text": ""
       }
     }
   },
@@ -136,12 +136,12 @@
     },
     "title": {
       "header": "Contact",
-      "text": "Let's get in touch and see what ASRR has to offer"
+      "text": "Meer weten over wat ASRR voor u kan betekenen? Een van onze collega's staat u graag te woord!"
     },
     "preview": {
       "title": {
         "header": "Contact",
-        "text": "Interested in what ASRR can do for you?"
+        "text": "Meer weten over wat ASRR voor u kan betekenen?"
       }
     },
     "form": {
@@ -150,55 +150,55 @@
         "placeholder": "Email*"
       },
       "name": {
-        "label": "Name*",
-        "placeholder": "Name*"
+        "label": "Naam*",
+        "placeholder": "Naam*"
       },
       "subject": {
-        "label": "Subject*",
-        "placeholder": "Subject*"
+        "label": "Onderwerp*",
+        "placeholder": "Onderwerp*"
       },
       "organization": {
-        "label": "Organization",
-        "placeholder": "Organization"
+        "label": "Bedrijfsnaam (optioneel)",
+        "placeholder": "Bedrijfsnaam (optioneel)"
       },
       "message": {
-        "label": "Message*",
-        "placeholder": "Message*"
+        "label": "Bericht*",
+        "placeholder": "Bericht*"
       }
     },
     "address": {
       "street": "'s Gravenzandseweg 2 unit A",
       "zipcode": "2291 PE Wateringen",
-      "country": "The Netherlands",
+      "country": "Nederland",
       "route": "Get directions"
     },
     "cta": {
-      "curious": "Interested in our services?",
+      "curious": "Geinteresseerd in onze services?",
       "touch": "Lets get in touch!"
     }
   },
   "service-cards": {
     "teams": {
-      "title": "Scaleable IT-teams",
+      "title": "Schaalbare IT-teams",
       "text": "With current technology, an IT project usually takes the hard work and expertise of multiple developers. Not every company can afford this, and even if they can it's hard to create an efficient team. This is where ASRR delivers full-stack scalable IT teams that can seamlessly integrate with your current process.",
       "preview": {
-        "title": "Scaleable IT-teams",
+        "title": "Schaalbare IT-teams",
         "text": "With current technology, an IT project usually takes the hard work and expertise of multiple developers. Not every company afford this, and even if they can it's hard to create an efficient team. This is where ASRR delivers full-stack scalable IT teams that can seamlessly integrate with your current process."
       }
     },
     "full-stack": {
       "route": "full-stack-development",
-      "title": "Full-Stack Development",
+      "title": "Full-Stack Software Ontwikkeling",
       "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
       "preview": {
-        "title": "Full-Stack Development",
+        "title": "Full-Stack Software Development",
         "text": "ASRR has both front and backend developers, as wel as an create anytures and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
         "landingText": "Front- and Backend development in one team"
       }
     },
     "workspace": {
       "route": "workspace",
-      "title": "Personalised Workspace",
+      "title": "Gepersonaliseerde Werkplekken",
       "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
       "preview": {
         "title": "Personalised Workspace",
@@ -216,7 +216,7 @@
     },
     "web-applications": {
       "route": "web-applications",
-      "title": "Web Applications",
+      "title": "Progressieve Webapplicaties",
       "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
       "preview": {
         "title": "Web Applications",
@@ -237,7 +237,7 @@
       "title": "IT Consultancy",
       "text": "Not sure what you need? ASRR can send an expert to analyse your company processes and propose a solution and fitting advice. ASRR can then provide the required developing skills.",
       "preview": {
-        "title": "IT Consultancy",
+        "title": "IT Teams As A Service",
         "text": "ASRR delivers tailored advice from an expert in the subject for anything IT related, be it websites, applications, servers, AI/machine learning and much more. We can lead projects from the ground up, or adapt existing ones to fit your current needs. These solutions can then be carried out perfectly by our development team.",
         "landingText": "Tailored advice from an expert in the field"
       }
@@ -262,15 +262,15 @@
     },
     "development": {
       "title": "Full-Stack Software Development",
-      "text": "Full-Stack Software Development text",
+      "text": "Full-Stack Software Development",
       "preview": {
         "title": "Full-Stack Software Development",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
+        "text": "Full stack"
       }
     },
     "back-end": {
       "route": "backend-applications",
-      "title": "Back-end Applications",
+      "title": "Back-end Applicaties",
       "text": "Using our microservice architecture, we can quickly create robust applications. We have an extensive library of over-engineered microservices that form a good basis for any complex application.",
       "preview": {
         "title": "Consultancy",
@@ -288,7 +288,7 @@
   },
   "why": {
     "title": {
-      "header": "Why choose ASRR",
+      "header": "Waarom ASRR?",
       "text": ""
     },
     "wtf": {
@@ -297,14 +297,14 @@
   },
   "clients": {
     "title": {
-      "header": "Trusted by",
-      "text": "Trusted by"
+      "header": "Vertrouwd door",
+      "text": "Vertrouwd door"
     }
   },
   "stories": {
     "title": {
-      "header": "Client experiences",
-      "text": "Customer satisfaction is our number one priority at ASRR"
+      "header": "Klantervaringen",
+      "text": "De klant is koning(in) bij ASRR"
     }
   },
   "cases": {
@@ -316,7 +316,7 @@
     "nwo": {
       "client": "NWO",
       "discipline": "Custom Server | Process optimization ",
-      "title": "Secure Remote Desktop Environment",
+      "title": "Veilige Remote Desktop Environment",
       "text": "Lorem ipsum",
       "case": {
         "landing": {
@@ -476,8 +476,8 @@
   },
   "error": {
     "title": "404 error",
-    "text": "The page you're looking for could not be found.",
-    "button": "Go Back"
+    "text": "De pagina waar u op bent beland is niet gevonden.",
+    "button": "Ga terug"
   }
 }
 
