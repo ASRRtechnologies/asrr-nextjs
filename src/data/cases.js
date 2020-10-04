@@ -1,4 +1,7 @@
 //FORM
+import formLogin from '#/clients/form/image2.png';
+import formDash from '#/clients/form/image1.png';
+import formRevit from '#/clients/form/image3.png';
 //NWO
 import nwoCase from "#/clients/nwo/case-image.webp";
 //HES
@@ -10,7 +13,7 @@ export const cases = [
     {
         id: "form",
         card:{
-            image:hesImage2,
+            image: hesImage2,
             client:"cases.form.client",
             title:"cases.form.case.landing.title",
             text:"cases.form.case.landing.text",
@@ -32,8 +35,8 @@ export const cases = [
             title:"cases.form.case.result.title",
             text:"cases.form.case.result.text",
         },
-        images:[
-            hesImage, hesImage2,
+        images: [
+            formLogin, formDash, formRevit
         ],
         conclusion:{
             title:"cases.form.case.conclusion.title",
