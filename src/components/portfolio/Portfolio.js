@@ -20,7 +20,7 @@ function Portfolio () {
 					{portfolio.map(({ image, id, type, href }, i) => {
 						return (
 							<FadeUp className="card-animatable" delay={i * 0.2}>
-								<Card route={type === "website" ? id : href} client={`cases.${id}.client`}
+								<Card redirect={href} route={id} client={`cases.${id}.client`}
 									  img={image}
 									  discipline={`cases.${id}.discipline`}
 									  title={`cases.${id}.title`}/>

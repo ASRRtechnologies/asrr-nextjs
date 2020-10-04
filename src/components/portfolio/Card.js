@@ -8,12 +8,16 @@ const Wrapper = styled('div')`
         box-shadow: ${props => props.theme.card.shadow};;
 `;
 
-function Card ({ img, title, discipline, client, route }) {
+function Card ({ img, title, discipline, client, route, redirect}) {
 	const i18n = useI18n();
 	const mouse = useContext(MouseContext);
 	const router = useRouter();
 	const navigateTo = (route) => {
-		router.push(`/portfolio/case/${route}`)
+		if(redirect){
+			window.location.href = redirect
+		} else {
+			router.push(`/portfolio/case/${route}`)
+		}
 	};
 
 	return (
