@@ -3,6 +3,7 @@ import protonise from '#/clients/protonise/case-image.jpg'
 import hes from '#/clients/hes/case-image.png'
 import nwo from '#/clients/nwo/case-image.webp'
 import esp from '#/clients/esp/esp-cover.jpg'
+import aapjes from '#/clients/aapjes/case-image.jpg'
 
 export const disciplines = [
 	{ title: 'cases.disciplines.all' },
@@ -44,44 +45,28 @@ export const previewCases = [
 export const portfolio = [
 	{
 		id: 'form',
-		image: form,
-		client: 'cases.form.client',
-		title: 'cases.form.title',
-		alt: 'form',
-		discipline: 'cases.form.discipline',
-		text: 'cases.form.text',
+		image: form
 	},
 	{
 		id: 'protonise',
-		image: protonise,
-		client: 'cases.protonise.client',
-		title: 'cases.protonise.title',
-		alt: 'protonise',
-		discipline: 'cases.protonise.discipline',
-		text: 'cases.protonise.text',
+		image: protonise
 	},
 	{
 		id: 'hes',
-		image: hes,
-		client: 'cases.hes.client',
-		title: 'cases.hes.title',
-		alt: 'hes',
-		discipline: 'cases.hes.discipline',
-		text: 'cases.hes.text',
+		image: hes
 	},
 	{
 		id: 'nwo',
-		image: nwo,
-		client: 'cases.nwo.client',
-		title: 'cases.nwo.title',
-		alt: 'nwo',
-		discipline: 'cases.nwo.discipline',
-		text: 'cases.nwo.text',
+		image: nwo
 	},
 	{
 		id: 'esp',
 		image: esp,
-		type: "website",
 		href: "https://espconsultancy.nl"
+	},
+	{
+		id: 'aapjes',
+		image: aapjes,
+		href: "https://de-kleine-aapjes.vercel.app/"
 	}
 ]
