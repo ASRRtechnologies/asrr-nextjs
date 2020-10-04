@@ -2,6 +2,7 @@ import form from '#/clients/form/case-image.jpg'
 import protonise from '#/clients/protonise/case-image.jpg'
 import hes from '#/clients/hes/case-image.png'
 import nwo from '#/clients/nwo/case-image.webp'
+import esp from '#/clients/esp/esp-cover.jpg'
 
 export const disciplines = [
 	{ title: 'cases.disciplines.all' },
@@ -77,4 +78,10 @@ export const portfolio = [
 		discipline: 'cases.nwo.discipline',
 		text: 'cases.nwo.text',
 	},
+	{
+		id: 'esp',
+		image: esp,
+		type: "website",
+		href: "https://espconsultancy.nl"
+	}
 ]
