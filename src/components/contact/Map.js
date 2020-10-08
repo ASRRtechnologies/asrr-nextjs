@@ -10,15 +10,15 @@ const containerStyle = {
 };
 
 const center = {
-	lat: 52.040703, lng: 4.336644,
+	lat: 52.011250, lng: 4.286770,
 };
 
 const position = {
-	lat: 52.040703, lng: 4.336644,
+	lat: 52.011250, lng: 4.336644,
 };
 
 const icon = {
-	lat: 52.038003, lng: 4.336644,
+	lat:52.011250, lng: 4.336644,
 };
 
 function Map (props) {
@@ -29,7 +29,7 @@ function Map (props) {
 			<LoadScript googleMapsApiKey="AIzaSyCSfB3HhJXkskqLOKlqaiSY3NK4VxlSjQQ">
 				<GoogleMap center={center} zoom={15} mapContainerClassName="map">
 					<>
-						<Marker icon={darkTheme.dark ? logoWhite : logo} position={position}/>
+						<Marker icon={darkTheme.dark ? logoWhite : logo} position={center}/>
 					</>
 				</GoogleMap>
 			</LoadScript>
