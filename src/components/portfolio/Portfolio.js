@@ -14,7 +14,7 @@ function Portfolio () {
 	return (
 		<Section id="portfolio-page">
 			<Animation animation="fade-up" delay="200">
-				<Title title={'portfolio.preview.title.header'} text={'portfolio.preview.title.text'}/>
+				<Title title={'portfolio.title.header'} text={'portfolio.preview.title.text'}/>
 				{/*<div className="portfolio portfolio-preview">*/}
 				<IntersectionObserver className="portfolio portfolio-center" key={'port'}>
 					{portfolio.map(({ image, id, type, href }, i) => {

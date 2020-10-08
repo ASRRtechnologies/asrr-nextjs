@@ -11,9 +11,9 @@ function Services (props) {
 
 	return (
 		<Application>
-			<Landing title="services.landing.title" text="portfolio.landing.text"
-					 className={`${darkmode ? 'landing-overlay-dark' : 'landing-overlay-light'}`}
-					 image={image} scrollToID="#services-page"/>
+			{/*<Landing title="services.landing.title" text="portfolio.landing.text"*/}
+			{/*		 className={`${darkmode ? 'landing-overlay-dark' : 'landing-overlay-light'}`}*/}
+			{/*		 image={image} scrollToID="#services-page"/>*/}
 			<Layout>
 				<ServicePage/>
 			</Layout>
