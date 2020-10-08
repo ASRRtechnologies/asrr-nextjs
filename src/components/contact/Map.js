@@ -13,14 +13,6 @@ const center = {
 	lat: 52.011250, lng: 4.286770,
 };
 
-const position = {
-	lat: 52.011250, lng: 4.336644,
-};
-
-const icon = {
-	lat:52.011250, lng: 4.336644,
-};
-
 function Map (props) {
 	const darkTheme = useTheme();
 
