@@ -468,11 +468,15 @@
         }
       }
     },
-    "form-dashboard": {
-      "client": "Form",
-      "discipline": "Progressive Web App",
-      "title": "Configurator Dashboard",
-      "text": "Lorem ipsum fr"
+    "aapjes": {
+      "client": "De Kleine Aapjes",
+      "discipline": "Web Development",
+      "title": "Een nette online presence"
+    },
+    "esp": {
+      "client": "ESP Consultancy",
+      "discipline": "Web Development",
+      "title": "Een frisse site voor de gevestigde orde"
     }
   },
   "error": {
