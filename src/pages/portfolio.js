@@ -15,9 +15,9 @@ function Portfolio () {
 
 	return (
 		<Application>
-			<Landing title="portfolio.landing.title" text="portfolio.landing.text"
-					 className={`${darkmode ? 'landing-overlay-dark' : 'landing-overlay-light'}`}
-					 image={image} scrollToID="#portfolio-page"/>
+			{/*<Landing title="portfolio.landing.title" text="portfolio.landing.text"*/}
+			{/*		 className={`${darkmode ? 'landing-overlay-dark' : 'landing-overlay-light'}`}*/}
+			{/*		 image={image} scrollToID="#portfolio-page"/>*/}
 			<Layout>
 				<PortfolioPage/>
 			</Layout>

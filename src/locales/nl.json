@@ -84,7 +84,7 @@
         "function": "Architect Partner"
       },
       "esp": {
-        "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRU-7CwUIHgMgRZAwQMpnko27oXGH1wKS75-A&usqp=CAU",
+        "picture": "https://content.consensys.net/wp-content/uploads/identity.jpg",
         "contact": "Ravi Badal",
         "story": "Het is een erg jong, professioneel en dynamisch bedrijf met een flat management structuur, dit zorgt voor een vlotte communicatie zowel intern als met de klanten, waardoor er veel aandacht en zorg is voor de klant. Ik heb erg goede ervaringen opgedaan met ASRR. Een echte aanrader als je op zoek bent naar een professionele partner die met je meedenkt en waar de klant op nummer 1 staat!",
         "name": "ESP Consultancy B.V.",
@@ -92,9 +92,10 @@
       },
       "nwo": {
         "contact": "Robby Makka",
-        "story": "-",
-        "name": "-",
-        "function": "-"
+        "picture": "https://www.srherald.com/wp-content/uploads/2017/03/Robby-Makka.png",
+        "story": "Work in progress",
+        "name": "Ministerie van Financiën c.q. Belastingdienst/Douane Nederland",
+        "function": "Manager"
       }
     }
   },

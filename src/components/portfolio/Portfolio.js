@@ -14,16 +14,16 @@ function Portfolio () {
 	return (
 		<Section id="portfolio-page">
 			<Animation animation="fade-up" delay="200">
-				<Title title={'portfolio.preview.title.header'} text={'portfolio.preview.title.text'}/>
+				<Title title={'portfolio.title.header'} text={'portfolio.preview.title.text'}/>
 				{/*<div className="portfolio portfolio-preview">*/}
 				<IntersectionObserver className="portfolio portfolio-center" key={'port'}>
-					{portfolio.map(({ image, discipline, title, client, id }, i) => {
+					{portfolio.map(({ image, id, type, href }, i) => {
 						return (
 							<FadeUp className="card-animatable" delay={i * 0.2}>
-								<Card route={id} client={client}
+								<Card redirect={href} route={id} client={`cases.${id}.client`}
 									  img={image}
-									  discipline={discipline}
-									  title={title}/>
+									  discipline={`cases.${id}.discipline`}
+									  title={`cases.${id}.title`}/>
 							</FadeUp>
 						)
 					})}
