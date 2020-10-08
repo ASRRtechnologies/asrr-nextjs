@@ -33,7 +33,9 @@ function Contact ({ big }) {
 			recipient: recipient,
 		}
 
-		fetch(process.env.NEXT_PUBLIC_API_BASE_URL, {
+		// console.log(JSON.stringify(emailObject))
+
+		fetch("https://mail.api.asrr-tech.com/mail/send/simple", {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json',
@@ -93,7 +95,7 @@ function Contact ({ big }) {
 
 							<a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/fZqhC9FUVTpiEiCb7"
 							   className="link">{i18n.t("contact.address.route")}</a>
-							<a href="mailto:asrr@contact.nl" target="_blank" rel="noopener noreferrer" className="link">Email:
+							<a href="mailto:contact@asrr.nl" target="_blank" rel="noopener noreferrer" className="link">Email:
 								contact@asrr.nl</a>
 						</div>
 

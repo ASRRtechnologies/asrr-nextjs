@@ -120,7 +120,7 @@ export const cases = [
         id: "protonise",
         card: {
             image: hesImage2,
-            client: "cases.hes.cßlient",
+            client: "cases.hes.client",
             title: "cases.hes.case.landing.title",
             text: "cases.hes.case.landing.text",
             discipline: "cases.hes.case.landing.discipline",
