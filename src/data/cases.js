@@ -4,6 +4,13 @@ import formDash from '#/clients/form/image1.png';
 import formRevit from '#/clients/form/image3.png';
 //NWO
 import nwoCase from "#/clients/nwo/case-image.webp";
+import login from "#/clients/nwo/image1.png";
+import nwoScreens from "#/clients/nwo/nwo-screns.jpg";
+import cpu from "#/clients/nwo/cpu.jpg";
+import cpuSlot from "#/clients/nwo/cpu-slot.jpg";
+import ram from "#/clients/nwo/nwo-ram.jpg";
+import threadripper from "#/clients/nwo/threadripper.jpg";
+
 //HES
 import hesImage from '#/clients/hes/slider/image1.png'
 import hesImage2 from '#/clients/hes/slider/image2.png'
@@ -102,7 +109,7 @@ export const cases = [
             text:"cases.nwo.case.result.text",
         },
         images:[
-            hesImage, hesImage2,
+            login, nwoScreens, ram, cpu,  threadripper, cpuSlot,
         ],
         conclusion:{
             title:"cases.nwo.case.conclusion.title",
