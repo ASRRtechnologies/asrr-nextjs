@@ -13,15 +13,6 @@
 
 }
 
-
-//
-//img{
-//  position: absolute;
-//  height: 100%;
-//  width: 100%;
-//  object-fit: cover;
-//}
-
 .landing-text-container{
   @include flex (center, center, row);
   width: 100vw;
@@ -49,6 +40,7 @@
   width: auto;
   @include flex (flex-start, flex-start, column);
   max-width: 300px;
+  white-space: nowrap;
 
   svg {
     display: block;
@@ -58,7 +50,7 @@
     transition: ease-in-out 200ms;
   }
 
-  p {
+  h3 {
     cursor: pointer;
     @include flex (flex-start, center, row);
 
@@ -76,7 +68,7 @@
     }
   }
 
-  h4 {
+  h3 {
     user-select: none;
   }
 
@@ -90,11 +82,15 @@
 }
 
 .landing-overflow {
-  @include flex (flex-start, flex-start, column);
+  @include flex (flex-start, flex-start, row);
   overflow: hidden;
   height: auto;
   width: auto;
   max-width: $max-width;
+
+  svg{
+    margin: auto 0;
+  }
 
   &.button-overflow{
     height: 105%;

@@ -3,6 +3,8 @@ import {MouseContext} from '../../context/animations/MouseContext'
 import useI18n from '../../hooks/use-i18n'
 import {useRouter} from 'next/router'
 import styled from '@emotion/styled'
+import ReadMore from '@/text/ReadMore'
+import Animation from '@/animation/Animation'
 
 const Wrapper = styled('div')`
         box-shadow: ${props => props.theme.card.shadow};;

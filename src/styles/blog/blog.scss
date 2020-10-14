@@ -1,0 +1,14 @@
+.blog{
+  @include size(100%, auto);
+  @include flex(space-between, flex-start, row);
+  flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: $blog-card-second-breakpoint) {
+  .blog{
+    @include size(100%, auto);
+    @include flex(flex-start, center, column);
+    flex-wrap: wrap;
+  }
+}

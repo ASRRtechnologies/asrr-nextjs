@@ -9,6 +9,7 @@ import Stories from '@/stories/Stories'
 import Why from '@/why-asrr/Why'
 import Layout from '../components/layout/Layout'
 import Application from '../components/layout/Application'
+import Blog from '@/blog/Blog'
 
 function Index(props) {
 
@@ -20,6 +21,7 @@ function Index(props) {
                 <PortfolioPreview/>
                 <Stories/>
                 <Why/>
+                <Blog/>
                 <Contact/>
                 <Clients/>
             </Layout>

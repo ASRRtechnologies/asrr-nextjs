@@ -33,7 +33,7 @@ $bermuda: #77D7B9;
   height: 100%;
   @include flex(center, center, row);
   position: relative;
-  padding: $pc-padding-header;
+  padding: 0 $padding-pc;
 }
 
 .header-wrapper {
@@ -109,6 +109,13 @@ $bermuda: #77D7B9;
   width: 0%;
 }
 
+@media screen and (max-width: $tablet-padding-breakpoint) {
+  .header-relative{
+    padding: 0 $padding-tablet;
+  }
+
+}
+
 @media screen and (max-width: 1200px) {
 
   .header {
@@ -120,7 +127,7 @@ $bermuda: #77D7B9;
   }
 
   .header-relative {
-    padding: $tablet-padding-header;
+    padding: 0 $padding-tablet;
     &.menu-open{
       box-shadow: none !important;
     }
@@ -157,9 +164,9 @@ $bermuda: #77D7B9;
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $mobile-breakpoint) {
   .header-relative {
-    padding: $mob-padding-header;
+    padding: 0 $padding-mobile;
   }
 
   .header-menu{

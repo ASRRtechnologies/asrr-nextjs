@@ -3,7 +3,7 @@
   height: 100%;
   width: 100%;
   @include flex(center, center, column);
-  padding: 0 100px;
+  padding: 0 $padding-pc;
 
   &.footer-container{
     background-color: #0a0a0a;
@@ -12,9 +12,10 @@
 }
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:$tablet-padding-breakpoint) {
   .layout{
-    padding: 0 50px;
+    padding: 0 $padding-tablet;
+
 
     &.footer-container{
       padding: 50px

@@ -104,14 +104,15 @@ function HomeLanding({title, text, image, boxes, projects}) {
                                 return (
                                     <>
                                     <span className="landing-overflow margin-bottom">
-                                        <motion.p
+                                        <motion.h3
                                             className={`${!darkmode ? "animated-link-dark" : "animated-link-light"} bold`}
                                             onClick={() => navigate(`/services/${i18n.t(d.route)}`)}
                                             initial="hidden" animate="show" exit="hidden"
                                             variants={textVariant}>
                                             {i18n.t(d.title)}
-                                            <Chevron/>
-                                        </motion.p>
+                                        </motion.h3>
+                                        <Chevron/>
+
                                     </span>
                                         <span className="landing-overflow">
                         	                <motion.h4 initial="hidden" animate="show" exit="hidden"

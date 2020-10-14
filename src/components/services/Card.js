@@ -26,7 +26,7 @@ function Card({title, text, icon, className, to}) {
                 {icon}
             </Icon>
             <div className="text">
-                <h3>{i18n.t(title)}</h3>
+                <h2>{i18n.t(title)}</h2>
                 <p>{i18n.t(text)}</p>
                 <ReadMore small to={to}>{i18n.t("buttons.read")}</ReadMore>
             </div>
