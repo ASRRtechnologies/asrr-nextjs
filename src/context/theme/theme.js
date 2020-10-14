@@ -10,35 +10,42 @@ const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)';
 
 const white = '#fff';
 const white2 = '#fbfbfb';
-const white3 = '#ebebeb';
 
 const black = '#0a0a0a';
 const black2 = '#131313';
 const black3 = '#1a1a1a';
-const black4 = '#3c3c3c';
 
 //Logo colors
 const logoLight = white;
 const logoDark = black;
 
 //Header colors
-const headerLight = '#ffffff';
-const headerDark = '#0a0a0a';
+const headerLight = 'rgba(252, 252, 252, 0.80)';
+const headerDark = 'rgba(10, 10, 10, 0.9)';
 
 const hoverLinkDark = 'linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)';
 const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)';
+
+const borderColorDark = "2px solid #f0f0f0";
+const borderColorLight = "2px solid #ababab";
 
 const landing = {
 	background: {
 		dark: black,
 		light: "linear-gradient(120deg, #eeeff1 45%, #e9e9e9 100%);",
 	},
+
+	listItem:{
+		dark: borderColorDark,
+		light: borderColorLight,
+	}
+
 };
 
 const layout = {
 	background: {
 		dark: "linear-gradient(120deg, #131313 45%, #0a0a0a 100%);",
-		light: "linear-gradient(120deg, #FBFBFB 45%, #ebedee 100%);",
+		light: "linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);",
 	},
 };
 
@@ -185,8 +192,8 @@ const cards = {
 	},
 
 	border: {
-		dark: "2px solid #f0f0f0",
-		light: "2px solid #eee",
+		dark: borderColorDark,
+		light: borderColorLight,
 	},
 
 };
@@ -222,6 +229,7 @@ const lightTheme = {
 
 	landing: {
 		background: landing.background.light,
+		listItem: landing.listItem.light,
 	},
 
 	layout: layout.background.light,
@@ -284,6 +292,7 @@ const darkTheme = {
 
 	landing: {
 		background: landing.background.dark,
+		listItem: landing.listItem.light,
 	},
 
 	layout: layout.background.dark,

@@ -13,6 +13,8 @@ $bermuda: #77D7B9;
   transition: 300ms ease-in-out all;
   color: white !important;
   z-index: $header-zIndex;
+
+
   //Header used on landing page
 }
 
@@ -34,7 +36,8 @@ $bermuda: #77D7B9;
   @include flex(center, center, row);
   position: relative;
   padding: 0 $padding-pc;
-}
+  backdrop-filter: blur(12px);
+ }
 
 .header-wrapper {
   @include size(100%, 100%);

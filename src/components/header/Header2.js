@@ -13,7 +13,7 @@ import useI18n from '../../hooks/use-i18n'
 import {MouseContext} from '../../context/animations/MouseContext'
 
 const Wrapper = styled('nav')`
-        background-color: ${props => props.visible ? props.theme.header.background : 'none'};
+        background-color: ${props => props.visible ? props.theme.header.background : props.theme.landing.background};
         box-shadow: ${props => props.visible ? props.theme.header.shadow : 'none'};
        
         svg{

@@ -364,7 +364,7 @@
 
   .landing{
     padding: 0;
-    height: calc(100vh - 80px);
+    min-height: calc(100vh - 80px);
     justify-content: space-between;
   }
 
@@ -396,11 +396,6 @@
       padding: 15px $padding-mobile;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid #0a0a0a;
-
-      &:first-of-type{
-        border-top: 1px solid #0a0a0a;
-      }
 
       h3, svg{
         margin-bottom: 0;

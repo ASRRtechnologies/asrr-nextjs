@@ -12,14 +12,27 @@ import useWindowWidth from '../../hooks/helper-functions'
 
 const Wrapper = styled('div')`
         background-color: ${props => props.theme.landing.background};
-        .landing-bullets{
+        .landing-information{
         	svg{
         		path{
         			fill: ${props => props.theme.fonts.title}
         		}
         	}
+        }  .landing-overflow{
+
+        &.list-point{
+          padding: 15px $padding-mobile;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: ${props => props.theme.landing.listItem};;
+
+          &:first-of-type{
+             border-top: ${props => props.theme.landing.listItem};;
+          }
         }
+  }
         `;
+
 
 const textEasing = [.42, 0, .58, 1];
 
@@ -69,7 +82,7 @@ function HomeLanding({title, text}) {
     const navigate = (url) => router.push(url).then(null);
 
     return (
-        <Wrapper  className="landing">
+        <Wrapper className="landing">
             <div className="landing-description">
                 <div className="landing-title">
 
