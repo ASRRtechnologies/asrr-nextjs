@@ -367,13 +367,14 @@
   }
 
   .landing-description{
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .landing-title{
-    @include flex(center, flex-start, column);
+    @include flex(flex-start, flex-start, column);
     padding: 0 $padding-mobile;
-    flex: 1;
+    margin-bottom: 50px;
+    //flex: 1;
    }
 
   .landing-information{
