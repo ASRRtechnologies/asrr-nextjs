@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useRouter } from 'next/router'
 import styled from '@emotion/styled'
@@ -8,7 +8,7 @@ import Button from '../Button'
 import Wave from 'react-wavify'
 import { useTheme } from '../../context/theme/ThemeContext'
 import { previewServices } from '../../data/services'
-import useWindowWidth from '../../hooks/helper-functions'
+import useScreenHeight from '../../hooks/helper-functions'
 
 const Wrapper = styled('div')`
         background-color: ${props => props.theme.landing.background};
@@ -78,11 +78,15 @@ function HomeLanding({title, text}) {
     const i18n = useI18n();
     const router = useRouter();
     const darkmode = useTheme().dark;
-    const fullHeight = useWindowWidth();
+    const screenHeight = useScreenHeight();
     const navigate = (url) => router.push(url).then(null);
 
+    useEffect(() => {
+        console.log(screenHeight)
+    })
+
     return (
-        <Wrapper className="landing">
+        <Wrapper style={{minHeight: `${screenHeight - 80}px`, height:"100vh"}} className="landing">
             <div className="landing-description">
                 <div className="landing-title">
 

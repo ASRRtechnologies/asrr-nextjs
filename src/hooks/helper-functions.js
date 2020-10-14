@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 
-const useWindowsWidth = () => {
-	const [isScreenSmall, setIsScreenSmall] = useState(false);
+const useScreenHeight = () => {
+	const [screenSize, setScreenSize] = useState(0);
 
 	let checkScreenSize = () => {
-		setIsScreenSmall(window.innerWidth < 600);
+		setScreenSize(window.innerWidth);
 	};
+
 	useEffect(() => {
 		checkScreenSize();
 		window.addEventListener("resize", checkScreenSize);
@@ -13,7 +14,7 @@ const useWindowsWidth = () => {
 		return () => window.removeEventListener("resize", checkScreenSize);
 	}, []);
 
-	return isScreenSmall;
+	return screenSize;
 };
 
-export default useWindowsWidth;
+export default useScreenHeight;
