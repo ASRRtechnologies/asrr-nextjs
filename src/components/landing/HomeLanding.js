@@ -69,7 +69,7 @@ function HomeLanding({title, text}) {
     const navigate = (url) => router.push(url).then(null);
 
     return (
-        <Wrapper style={{minHeight:fullHeight}} className="landing">
+        <Wrapper  className="landing">
             <div className="landing-description">
                 <div className="landing-title">
 
