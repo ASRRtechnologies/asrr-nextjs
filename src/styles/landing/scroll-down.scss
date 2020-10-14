@@ -1,9 +1,23 @@
+#scroll-mouse{
+    width: 70px;
+    height: 7px;
+    position: absolute;
+    bottom:-70px;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 1000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #scroll-mouse a {
     cursor: pointer;
 }
+
 #scroll-mouse a span {
     position: absolute;
-    bottom: 10vh;
+    bottom: 0;
     left: 50%;
     width: 30px;
     height: 50px;
@@ -11,10 +25,6 @@
     border-radius: 50px;
     box-sizing: border-box;
     z-index: 10;
-
-    &.home-landing{
-        bottom:20vh;
-    }
 
     &.scroll-down-light{
         border: 2px solid #1a1a1a;

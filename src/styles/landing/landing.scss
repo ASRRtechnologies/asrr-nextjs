@@ -8,6 +8,7 @@
 .landing-description {
   @include flex(space-between, center, row);
   @include size(100%, 100%);
+  position: relative;
   width: 100%;
   max-width: $max-width;
   flex: 1;
@@ -79,6 +80,7 @@
     }
   }
 }
+
 
 @media screen and (max-width: $tablet-padding-breakpoint) {
   .landing {

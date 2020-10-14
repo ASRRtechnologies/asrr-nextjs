@@ -93,6 +93,7 @@ function HomeLanding({title, text}) {
 
     return (
             <Wrapper style={{minHeight: `${screenHeight - headerHeight}px`, height:`${screenHeight - headerHeight}px`}} className="landing">
+
                 <div className="landing-description">
                     <div className="landing-title">
 
@@ -146,9 +147,15 @@ function HomeLanding({title, text}) {
                                 </>
                             )
                         })}
+
                     </div>
 
-
+                    <section id="scroll-mouse">
+                        <a href="#home-page-services">
+                            <motion.span initial="hidden" animate="show" exit="hidden" variants={mouseVariant}
+                                         className={`home-landing ${darkmode ? "scroll-down-dark" : "scroll-down-light"}`}/>
+                        </a>
+                    </section>
 
                 </div>
 
@@ -179,13 +186,6 @@ function HomeLanding({title, text}) {
                         />
                     </div>
                 </div>
-
-                <section id="scroll-mouse">
-                    <a href="#home-page-services">
-                        <motion.span initial="hidden" animate="show" exit="hidden" variants={mouseVariant}
-                                     className={`home-landing ${darkmode ? "scroll-down-dark" : "scroll-down-light"}`}/>
-                    </a>
-                </section>
 
             </Wrapper>
      )
