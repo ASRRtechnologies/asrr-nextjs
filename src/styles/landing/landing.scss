@@ -127,10 +127,10 @@
   }
 
   .landing-title{
-    @include flex(flex-start, flex-start, column);
+    @include flex(center, flex-start, column);
     padding: 0 $padding-mobile;
     margin-bottom: 20px;
-    //flex: 1;
+    flex: 1;
    }
 
   .landing-information{
