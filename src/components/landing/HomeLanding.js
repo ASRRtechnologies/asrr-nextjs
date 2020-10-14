@@ -1,13 +1,14 @@
-import React, {useEffect, useState} from 'react'
-import {motion} from 'framer-motion'
-import {useRouter} from 'next/router'
+import React from 'react'
+import { motion } from 'framer-motion'
+import { useRouter } from 'next/router'
 import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
 import Chevron from '../icons/Chevron'
 import Button from '../Button'
 import Wave from 'react-wavify'
-import {useTheme} from '../../context/theme/ThemeContext'
-import {previewServices} from "../../data/services";
+import { useTheme } from '../../context/theme/ThemeContext'
+import { previewServices } from '../../data/services'
+import useWindowWidth from '../../hooks/helper-functions'
 
 const Wrapper = styled('div')`
         background-color: ${props => props.theme.landing.background};
@@ -60,73 +61,72 @@ const mouseVariant = {
     }
 };
 
-function HomeLanding({title, text, image, boxes, projects}) {
+function HomeLanding({title, text}) {
     const i18n = useI18n();
     const router = useRouter();
     const darkmode = useTheme().dark;
-    // const [services, setServices] = useState([]);
+    const fullHeight = useWindowWidth();
     const navigate = (url) => router.push(url).then(null);
 
-    const setLandingHeight = () => {
-        // if (window.matchMedia('(max-width: 1200px)').matches) {
-        // 	landing.current.style.height = `${window.innerHeight}px`
-        // }
-    };
-
-    useEffect(() => {
-        setLandingHeight();
-    });
-
     return (
-        <Wrapper className="landing-container">
-            <div className="landing-text-container">
-                <div className="landing-text-wrapper">
-                    <div className="landing-text">
+        <Wrapper style={{minHeight:fullHeight}} className="landing">
+            <div className="landing-description">
+                <div className="landing-title">
+
 					<span className="landing-overflow">
 						<motion.h1 initial="hidden" animate="show" exit="hidden"
                                    variants={textVariant}>{i18n.t(title)}</motion.h1>
 					</span>
 
-                        <span className="landing-overflow">
+                    <span className="landing-overflow">
 						<motion.p initial="hidden" animate="show" exit="hidden"
                                   variants={textVariant}>
                             {i18n.t(text)}
 						</motion.p>
 					</span>
-                        <span className="landing-overflow">
-                                <Button custom to="/portfolio" title="buttons.cases"/>
-                        </span>
-                    </div>
 
-                    <div className="landing-bullets">
-                        {
-                            previewServices.map((d, i) => {
-                                return (
-                                    <>
-                                    <span className="landing-overflow margin-bottom">
-                                        <motion.h3
-                                            className={`${!darkmode ? "animated-link-dark" : "animated-link-light"} bold`}
-                                            onClick={() => navigate(`/services/${i18n.t(d.route)}`)}
-                                            initial="hidden" animate="show" exit="hidden"
-                                            variants={textVariant}>
-                                            {i18n.t(d.title)}
-                                        </motion.h3>
-                                        <Chevron/>
+                    <span className="landing-overflow">
+                        	<motion.div initial="hidden" animate="show" exit="hidden" variants={textVariant}>
+                                 <Button custom to="/portfolio" title="buttons.cases"/>
+						</motion.div>
 
-                                    </span>
-                                        <span className="landing-overflow">
-                        	                <motion.h4 initial="hidden" animate="show" exit="hidden"
-                                                       variants={textVariant}>
-                                                       {i18n.t(d.landingText)}
-                        	                 </motion.h4>
-                                        </span>
-                                    </>
+                     </span>
 
-                                )
-                            })
-                        }
-                    </div>
                 </div>
+
+                <div className="landing-information">
+
+                    {previewServices.map((data, i) => {
+                        return(
+                            <>
+                                <span className="landing-overflow list-point">
+
+                                   <motion.h3
+                                       className={`${!darkmode ? "animated-link-dark" : "animated-link-light"} bold small-h3`}
+                                       onClick={() => navigate(`/services/${i18n.t(d.route)}`)}
+                                       initial="hidden" animate="show" exit="hidden"
+                                       variants={textVariant}>
+                                        {i18n.t(data.title)}
+                                   </motion.h3>
+
+                                    <motion.div initial="hidden" animate="show" exit="hidden" variants={textVariant}>
+                                        <Chevron/>
+                                    </motion.div>
+
+                                </span>
+
+                                <span className="landing-overflow mobile-disabled">
+                                    <motion.h4 initial="hidden" animate="show" exit="hidden" variants={textVariant}>
+                                        {i18n.t(data.landingText)}
+                                    </motion.h4>
+                                </span>
+                            </>
+                        )
+                    })}
+                </div>
+
+
+
             </div>
 
             <div className="landing-wave">
@@ -161,6 +161,7 @@ function HomeLanding({title, text, image, boxes, projects}) {
                                  className={`home-landing ${darkmode ? "scroll-down-dark" : "scroll-down-light"}`}/>
                 </a>
             </section>
+
         </Wrapper>
     )
 }
