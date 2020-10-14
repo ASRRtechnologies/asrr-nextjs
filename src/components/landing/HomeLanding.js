@@ -131,17 +131,19 @@ function HomeLanding({title, text}) {
 
             <div className="landing-wave">
                 {console.log(darkmode)}
-                <Wave fill="#ff6961"
-                    // fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}
-                      paused={false}
-                      options={{
-                          height: 50,
-                          amplitude: 50,
-                          speed: 0.25,
-                          points: 7
-                      }}
-                />
-                <div className="position-absolute-wave">
+                <div className="wave wave-top">
+                    <Wave fill="#ff6961"
+                        // fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}
+                          paused={false}
+                          options={{
+                              height: 50,
+                              amplitude: 50,
+                              speed: 0.25,
+                              points: 7
+                          }}
+                    />
+                </div>
+                <div className="wave wave-bottom">
                     <Wave
                         fill={`${darkmode ? "#131313" : "#FBFBFB"}`}
                         paused={false}
@@ -149,7 +151,7 @@ function HomeLanding({title, text}) {
                             height: 15,
                             amplitude: 15,
                             speed: 0.35,
-                            points: 6
+                            points: 9
                         }}
                     />
                 </div>
