@@ -117,7 +117,7 @@ a{
 
 }
 
-@media screen and (max-width: $tablet-breakpoint) {
+@media screen and (max-width: $mobile-breakpoint) {
   h1{
     font-size: 22px;
     margin-bottom: 5px;
@@ -126,7 +126,7 @@ a{
   h3{
     font-size: 18px;
     &.small-h3{
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 

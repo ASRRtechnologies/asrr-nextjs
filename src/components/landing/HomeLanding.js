@@ -103,7 +103,7 @@ function HomeLanding({title, text}) {
 
                                    <motion.h3
                                        className={`${!darkmode ? "animated-link-dark" : "animated-link-light"} bold small-h3`}
-                                       onClick={() => navigate(`/services/${i18n.t(d.route)}`)}
+                                       onClick={() => navigate(`/services/${i18n.t(data.route)}`)}
                                        initial="hidden" animate="show" exit="hidden"
                                        variants={textVariant}>
                                         {i18n.t(data.title)}

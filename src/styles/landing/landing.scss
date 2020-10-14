@@ -371,14 +371,24 @@
   }
 
   .landing-title{
+    @include flex(center, flex-start, column);
     padding: 0 $padding-mobile;
-    margin-bottom: 30px;
+    flex: 1;
+   }
+
+  .landing-information{
+    width: 100vw;
+    height: auto;
+
+    .mobile-disabled{
+      display: none;
+    }
   }
 
   .landing-overflow{
 
     &.list-point{
-      padding: 5px $padding-mobile;
+      padding: 15px $padding-mobile;
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #0a0a0a;
@@ -394,16 +404,5 @@
     }
 
   }
-
-  .landing-information{
-    width: 100vw;
-
-    .mobile-disabled{
-      display: none;
-    }
-  }
-
-
-
 
 }
