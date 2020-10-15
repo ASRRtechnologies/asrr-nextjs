@@ -4,7 +4,7 @@ import Section from '@/layout/Section'
 import styled from '@emotion/styled'
 import useI18n from '../../../hooks/use-i18n'
 import {AnimationContext} from '../../../context/animations/AnimationContext'
-import Landing from '@/landing/ClientLanding'
+import Landing from '@/landing/Landing'
 import Title from '@/text/Title'
 import Interweave, {Markup} from 'interweave'
 import Animation from '@/animation/Animation'
@@ -62,6 +62,7 @@ function Page({data, query}) {
         <>
             <Application>
                 <Layout>
+
                     <Landing title={data.landing.title} text={data.landing.text} client={data.landing.client}
                              discipline={data.landing.discipline}/>
                     <Section className="case-section">

@@ -1,10 +1,10 @@
 //Font colors
-const whiteFont = '#ffffff';
-const darkFont = '#1a1a1a';
-const lightFont = '#41474E';
-const subFontDark = '#41474E';
-const subFontLight = '#c4c4c4';
-
+const headerLight= '#ffffff';
+const headerDark= '#1a1a1a';
+const paragraphLight = '#41474E';
+const paragraphDark = '#ededed';
+const subHeaderDark = '#e9e9e9';
+const subHeaderLight = '#41474E';
 
 const dropShadowDark = ' 0 8px 10px rgba(235, 235, 235, 0.15)';
 const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)';
@@ -19,18 +19,56 @@ const black2 = '#131313';
 const black3 = '#1a1a1a';
 
 //Logo colors
-const logoLight = white;
-const logoDark = black;
+const logoLight = black;
+const logoDark = white;
 
 //Header colors
-const headerLight = 'rgba(252, 252, 252, 0.80)';
-const headerDark = 'rgba(10, 10, 10, 0.9)';
+const navigationLight = 'rgba(252, 252, 252, 0.80)';
+const navigationDark = 'rgba(10, 10, 10, 0.9)';
 
 const hoverLinkDark = 'linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)';
 const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)';
 
 const borderColorDark = "2px solid #f0f0f0";
 const borderColorLight = "2px solid #ababab";
+
+
+const fonts = {
+
+	header: {
+		light: headerDark,
+		dark: headerLight,
+	},
+
+	paragraph: {
+		light: paragraphLight,
+		dark: paragraphDark,
+	},
+
+	subHeader: {
+		light: subHeaderLight,
+		dark: subHeaderDark,
+	},
+
+	link: {
+		light: hoverLinkLight,
+		dark: hoverLinkDark,
+	},
+
+
+	inverse: {
+		light: headerLight ,
+		dark: headerDark,
+	},
+
+};
+
+const layout = {
+	background: {
+		dark: "linear-gradient(120deg, #131313 45%, #0a0a0a 100%);",
+		light: "linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);",
+	},
+};
 
 const landing = {
 	background: {
@@ -43,13 +81,6 @@ const landing = {
 		light: borderColorLight,
 	}
 
-};
-
-const layout = {
-	background: {
-		dark: "linear-gradient(120deg, #131313 45%, #0a0a0a 100%);",
-		light: "linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);",
-	},
 };
 
 const button = {
@@ -65,8 +96,8 @@ const button = {
 	},
 
 	font:{
-		dark:darkFont,
-		light:whiteFont,
+		dark:fonts.inverse.dark,
+		light:fonts.inverse.light,
 	},
 
 	shadow:{
@@ -128,40 +159,21 @@ const portfolio = {
 
 };
 
-const fonts = {
-
-	title: {
-		light: whiteFont,
-		dark: darkFont,
-	},
-
-	text: {
-		light: '#ededed',
-		dark: lightFont,
-	},
-
-	subFont: {
-		light: subFontLight,
-		dark: subFontDark,
-	},
-
-	link: {
-		light: hoverLinkLight,
-		dark: hoverLinkDark,
-	},
-
-};
-
 const header = {
 
 	background: {
-		dark: headerDark,
-		light: headerLight,
+		dark: navigationDark,
+		light: navigationLight,
 	},
 
 	shadow: {
 		dark: dropShadowDark,
 		light: dropShadowLight,
+	},
+
+	fonts:{
+		light: fonts.paragraph.light,
+		dark: fonts.paragraph.dark,
 	},
 
 	logo: {
@@ -222,8 +234,8 @@ const lightTheme = {
 
 	header: {
 		background: header.background.light,
-		logo: header.logo.dark,
-		font: darkFont,
+		logo: header.logo.light,
+		font: header.fonts.light,
 		shadow: header.shadow.light,
 		line_1:header.line_1.light,
 		line_2:header.line_2.light,
@@ -231,13 +243,12 @@ const lightTheme = {
 	},
 
 	fonts: {
-		title: fonts.title.dark,
-		text: fonts.text.dark,
-		white: fonts.title.light,
-		inverse: fonts.title.dark,
-		subFont: fonts.subFont.dark,
-		link: fonts.link.dark,
-
+		title: fonts.header.light,
+		paragraph: fonts.paragraph.light,
+		whiteFont: fonts.paragraph.light,
+		inverse: fonts.inverse.light,
+		subHeader: fonts.subHeader.light,
+		link: fonts.link.light,
 	},
 
 	landing: {
@@ -289,8 +300,8 @@ const darkTheme = {
 
 	header: {
 		background: header.background.dark,
-		logo: header.logo.light,
-		font: whiteFont,
+		logo: header.logo.dark,
+		font: header.fonts.dark,
 		shadow: header.shadow.dark,
 		line_1:header.line_1.dark,
 		line_2:header.line_2.dark,
@@ -298,12 +309,12 @@ const darkTheme = {
 	},
 
 	fonts: {
-		title: fonts.title.light,
-		text: fonts.text.light,
-		white: fonts.title.light,
-		subFont: fonts.subFont.light,
-		inverse: fonts.title.light,
-		link: fonts.link.light,
+		header: fonts.header.dark,
+		paragraph: fonts.paragraph.dark,
+		whiteFont: fonts.paragraph.dark,
+		inverse: fonts.inverse.dark,
+		subHeader: fonts.subHeader.dark,
+		link: fonts.link.dark,
 	},
 
 	landing: {

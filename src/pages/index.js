@@ -17,7 +17,7 @@ function Index(props) {
         <Application>
             <HomeLanding title={'home.landing.title'} text={'home.landing.text'} image={image}/>
             <Layout>
-                <Services preview={true}/>
+                <Services id="services" preview={true}/>
                 <Portfolio preview={true}/>
                 <Stories/>
                 <Why/>

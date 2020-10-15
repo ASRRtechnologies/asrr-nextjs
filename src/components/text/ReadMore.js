@@ -18,7 +18,7 @@ function ReadMore({to, inverted, text, action, margin, children, small, center, 
         <Link href={to}>
             <LinkText center={center} inverted={inverted}
                       className={`read-more ${className} ${inverted ? "animated-link-light" : (darkmode ? "animated-link-light" : "animated-link-dark")} ${center  && "center"}`}>
-                <a>{i18n.t(text)}</a>
+               {i18n.t(text)}
             </LinkText>
         </Link>
     )

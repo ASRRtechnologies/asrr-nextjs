@@ -45,10 +45,6 @@
 
 }
 
-.bold{
-  font-weight: bold;
-}
-
 //Readmore
 .read-more {
   display: inline-block;
@@ -56,6 +52,11 @@
   margin-bottom: 0;
   position: relative;
   cursor: pointer;
+
+  &.read-more-big{
+    font-size:22px;
+  }
+
 }
 
 .no-margin {

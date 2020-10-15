@@ -14,31 +14,21 @@ function Card({img, title, discipline, client, route, redirect}) {
     const i18n = useI18n();
     const mouse = useContext(MouseContext);
     const router = useRouter();
-    const navigateTo = (route) => {
-        if (redirect) {
-            window.location.href = redirect
-        } else {
-            router.push(`/portfolio/case/${route}`)
-        }
-    };
 
     return (
-        <Animation onMouseOver={() => {
-            mouse.onHover('projects')
-        }} onMouseLeave={() => {
-            mouse.onLeave()
-        }}
-                   className="portfolio-card">
+        <Animation className="portfolio-card">
             <Link href={route}>
-                <a className="portfolio-card-inner">
+                <a className="portfolio-card-inner" onMouseOver={() => {mouse.onHover('projects')}}
+                   onMouseLeave={() => {mouse.onLeave()}}>
+
                     <Wrapper className="portfolio-card-image-wrapper">
                         <div className="portfolio-card-image">
                             <img src={img} alt="image"/>
                         </div>
                     </Wrapper>
-                    <div className="card-text">
+                    <div className="portfolio-card-text">
                         <h4>{i18n.t(discipline)}</h4>
-                        <h3>{i18n.t(client)}</h3>
+                        <h2>{i18n.t(client)}</h2>
                         <p>{i18n.t(title)}</p>
                     </div>
                 </a>

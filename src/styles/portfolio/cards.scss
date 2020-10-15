@@ -53,7 +53,6 @@ $portfolio-card-third-breakpoint: 500px;
 .portfolio-card-text {
   @include flex(flex-start, flex-start, column);
   @include size(100%, 100%);
-  padding: 30px;
   text-align: left;
 }
 
@@ -68,7 +67,7 @@ $portfolio-card-third-breakpoint: 500px;
   .portfolio-card {
     min-width: 200px;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     &:last-of-type{
       margin-bottom: 0;
     }

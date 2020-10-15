@@ -1,0 +1,55 @@
+.wide-image {
+  @include flex(flex-start, center, column);
+  @include size(100%, auto);
+  max-width: $max-width-article;
+
+  h4{
+    margin-top: 30px;
+  }
+}
+
+.square-image {
+  @include flex(flex-start, center, column);
+  @include size(100%, auto);
+  max-width: 600px;
+  h4{
+    margin-top: 30px;
+  }
+}
+
+.wide-text {
+  width: 100%;
+  max-width: $max-width-article;
+  text-align: justify;
+}
+
+.key-words{
+  width: 100%;
+  max-width: $max-width-article;
+  margin-bottom: 30px;
+
+  & > span {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+  }
+
+  p{
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .wide-text {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .wide-image, .wide-text, .square-image {
+    margin-bottom: 50px;
+  }
+}

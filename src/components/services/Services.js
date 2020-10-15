@@ -15,7 +15,7 @@ function Services ({preview}) {
 	}, [preview]);
 
 	return (
-		<Section id="services-page">
+		<Section id="services">
 				<Title title={'services.header.title'}/>
 				<div className={`services ${preview ? "margin-bottom" : ""}`}>
 					{
@@ -28,9 +28,8 @@ function Services ({preview}) {
 						)}
 				</div>
 
- 			{preview && <ReadMore className="read-more-services" to="/services" text="buttons.services"/>}
+ 			{preview && <ReadMore className="read-more-big" to="/services" text="buttons.services"/>}
 			{preview ? null : <Contact className="last-section-padding"/>}
-
 		</Section>
 	)
 }

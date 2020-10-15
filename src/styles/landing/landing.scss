@@ -3,6 +3,8 @@
   @include size(100vw, 100vh);
   margin-top: 60px;
   padding: 0 $padding-pc;
+  min-height: 600px;
+  max-height: 1600px;
 }
 
 .landing-description {
@@ -86,6 +88,8 @@
   .landing {
     padding: 0 $padding-tablet;
     margin-top: 80px;
+    max-height: 1200px;
+
   }
 }
 
@@ -98,7 +102,7 @@
   }
 
   .landing-title{
-    margin-bottom: 25px;
+    margin-bottom: 50px;
     padding-right: 0;
   }
 
@@ -118,8 +122,9 @@
 
   .landing{
     padding: 0;
-    min-height: calc(100vh - 80px);
+    //min-height: calc(100vh - 80px);
     justify-content: space-between;
+    max-height: 900px;
   }
 
   .landing-description{

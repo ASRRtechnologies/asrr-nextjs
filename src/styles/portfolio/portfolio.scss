@@ -10,6 +10,14 @@
   .portfolio{
     @include flex(flex-start, center, column);
     &.margin-bottom{
+      margin-bottom: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: $portfolio-card-third-breakpoint) {
+  .portfolio{
+    &.margin-bottom{
       margin-bottom: 50px;
     }
   }
