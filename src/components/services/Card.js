@@ -22,8 +22,7 @@ const Icon = styled('div')`
 function Card({title, text, icon, className, to}) {
     const i18n = useI18n();
     return (
-        <Wrapper className="service-card">
-            {/*<Wrapper className={`card`}>*/}
+        <Wrapper animation="fade-up" className="service-card">
                 <Icon className="service-card-icon">
                     {icon}
                 </Icon>
@@ -32,7 +31,6 @@ function Card({title, text, icon, className, to}) {
                     <p>{i18n.t(text)}</p>
                     <ReadMore small to={to} text="buttons.read"/>
                 </div>
-            {/*</Wrapper>*/}
         </Wrapper>
     );
 }

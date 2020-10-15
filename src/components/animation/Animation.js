@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import AOS from 'aos';
 
-function Animation ({delay, animation, children, className}) {
+function Animation ({delay, animation, children, className, ...props}) {
 
 	useEffect(() => {
 		AOS.init({
@@ -15,7 +15,7 @@ function Animation ({delay, animation, children, className}) {
 	});
 
 	return (
-		<div data-aos={animation} className={`${className}`} data-aos-delay={delay} data-aos-anchor-placement="top-bottom">
+		<div  data-aos={animation} className={`${className}`} data-aos-delay={delay} data-aos-anchor-placement="top-bottom" {...props}>
 			{children}
 		</div>
 	)

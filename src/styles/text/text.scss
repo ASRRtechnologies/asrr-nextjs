@@ -56,6 +56,11 @@
   margin-bottom: 0;
   position: relative;
   cursor: pointer;
+
+  &.read-more-big{
+    font-size:22px;
+  }
+
 }
 
 .no-margin {

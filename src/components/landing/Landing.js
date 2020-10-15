@@ -1,15 +1,14 @@
-import React, { useEffect } from 'react'
-import { motion } from 'framer-motion'
-import { useRouter } from 'next/router'
+import React, {useEffect} from 'react'
+import {motion} from 'framer-motion'
+import {useRouter} from 'next/router'
 import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
 import Chevron from '../icons/Chevron'
 import Button from '../Button'
 import Wave from 'react-wavify'
-import { useTheme } from '../../context/theme/ThemeContext'
-import { previewServices } from '../../data/services'
+import {useTheme} from '../../context/theme/ThemeContext'
+import {previewServices} from '../../data/services'
 import useScreenHeight from '../../hooks/helper-functions'
-import { OverflowDetector } from 'react-overflow';
 
 const Wrapper = styled('div')`
         background-color: ${props => props.theme.landing.background};
@@ -22,9 +21,6 @@ const Wrapper = styled('div')`
         }  .landing-overflow{
 
         &.list-point{
-          padding: 15px $padding-mobile;
-          justify-content: space-between;
-          align-items: center;
           border-bottom: ${props => props.theme.landing.listItem};;
 
           &:first-of-type{
@@ -75,7 +71,7 @@ const mouseVariant = {
     }
 };
 
-function HomeLanding({title, text}) {
+function Landing({title, text}) {
     const i18n = useI18n();
     const router = useRouter();
     const darkmode = useTheme().dark;
@@ -191,4 +187,4 @@ function HomeLanding({title, text}) {
      )
 }
 
-export default HomeLanding
+export default Landing

@@ -30,7 +30,7 @@ function Portfolio({preview}) {
                 })}
             </div>
 
-            {preview && <ReadMore className="read-more-portfolio" to="/portfolio" text="buttons.portfolio"/>}
+            {preview && <ReadMore className="read-more-big" to="/portfolio" text="buttons.portfolio"/>}
             {preview ? null : <Contact className="last-section-padding"/>}
 
         </Section>
