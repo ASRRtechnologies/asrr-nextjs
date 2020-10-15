@@ -13,10 +13,9 @@ const Wrapper = styled('div')`
 function Card({img, title, discipline, client, route, redirect}) {
     const i18n = useI18n();
     const mouse = useContext(MouseContext);
-    const router = useRouter();
 
     return (
-        <Animation className="portfolio-card">
+        <Animation animation="fade-up" className="portfolio-card">
             <Link href={route}>
                 <a className="portfolio-card-inner" onMouseOver={() => {mouse.onHover('projects')}}
                    onMouseLeave={() => {mouse.onLeave()}}>

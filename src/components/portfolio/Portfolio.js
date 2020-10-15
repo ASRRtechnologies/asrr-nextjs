@@ -16,7 +16,7 @@ function Portfolio({preview}) {
     }, [preview]);
 
     return (
-        <Section id="portfolio-page">
+        <Section className={`${preview ? "" : "section-page-contact-form"}`} id="portfolio-page">
             <Title title={'portfolio.title.header'} text={'portfolio.preview.title.text'}/>
             <div className={`portfolio ${preview ? "margin-bottom" : ""}`}>
                 {cases.map(({image, id, type, href}, i) => {
@@ -28,7 +28,7 @@ function Portfolio({preview}) {
             </div>
 
             {preview && <ReadMore className="read-more-big" to="/portfolio" text="buttons.portfolio"/>}
-            {preview ? null : <Contact className="last-section-padding"/>}
+            {preview ? null : <Contact className="section-contact-form"/>}
         </Section>
     )
 }

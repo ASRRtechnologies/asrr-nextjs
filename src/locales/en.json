@@ -20,6 +20,7 @@
     "services": "See all Services",
     "cases": "See all Cases",
     "portfolio": "Go To Portfolio",
+    "blog": "Go to Blog",
     "contact": "Let's get in touch",
     "submit": "Submit"
   },
@@ -29,6 +30,7 @@
     "services": "Services",
     "hire": "Hire a Developer",
     "contact": "Contact Us",
+    "blog": "Blog",
     "about": "About Us"
   },
   "footer": {

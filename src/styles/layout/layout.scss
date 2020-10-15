@@ -3,12 +3,19 @@
   height: 100%;
   width: 100%;
   @include flex(center, center, column);
-  padding: 0 $padding-pc;
+  padding: 180px $padding-pc;
+
+  section:last-child{
+    padding-bottom: 0;
+  }
 
   &.footer-container{
     background-color: #0a0a0a;
     padding: 100px 100px 50px 100px;
   }
+
+
+
 }
 
 

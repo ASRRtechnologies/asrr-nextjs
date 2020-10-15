@@ -15,7 +15,8 @@ function Animation ({delay, animation, children, className, ...props}) {
 	});
 
 	return (
-		<div  data-aos={animation} className={`${className}`} data-aos-delay={delay} data-aos-anchor-placement="top-bottom" {...props}>
+		<div data-aos={animation ? animation : ""} className={`${className ? className : ""}`} data-aos-delay={delay ? delay : "100"}
+			 data-aos-anchor-placement="top-bottom" {...props}>
 			{children}
 		</div>
 	)

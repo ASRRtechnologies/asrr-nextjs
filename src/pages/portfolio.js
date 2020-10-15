@@ -9,10 +9,6 @@ import Layout from '@/layout/Layout'
 function Portfolio () {
 	const darkmode = useTheme().dark
 
-	useEffect(() => {
-		window.scrollTo(0, 0)
-	}, [])
-
 	return (
 		<Application>
 			{/*<Landing title="portfolio.landing.title" text="portfolio.landing.text"*/}

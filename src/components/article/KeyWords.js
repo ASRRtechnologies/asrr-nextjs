@@ -1,16 +1,20 @@
 import React from 'react';
+import Animation from "@/animation/Animation";
 
 function KeyWords(props) {
     return (
-        <div className="key-words">
+        <Animation animation="fade" className="key-words">
             <span>
-                <p className="bold">Topics: </p>
+                <p className="bold">Keywords: </p>
             </span>
 
-            <p className="nextjs">NextJS</p>
+            <div className="key-words-wrapper">
+                <p className="nextjs">NextJS</p>
+                <p className="nextjs">Kubernetes</p>
+                <p className="nextjs">Spring</p>
+            </div>
 
-
-        </div>
+        </Animation>
     );
 }
 

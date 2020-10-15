@@ -48,7 +48,7 @@ function ImageSlider({square}) {
     const data = [{}, {}];
 
     return (
-        <div className={`${square ? "slider-square-image" : "slider-wide-image"} slider margin-bottom-article-section`}>
+        <Animation animation="fade" className={`${square ? "slider-square-image" : "slider-wide-image"} slider margin-bottom-article-section`}>
             <Slider ref={slider => (sliderRef.current = slider)}  {...settings}>
                 {
                     data.map((img, i) => {
@@ -69,7 +69,7 @@ function ImageSlider({square}) {
                                          className={`slider-indicator ${i === activeSlide ? "active-indicator" : null}`}/>)}
             </div>
 
-        </div>
+        </Animation>
     );
 }
 

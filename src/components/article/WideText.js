@@ -1,8 +1,9 @@
 import React from 'react';
+import Animation from "@/animation/Animation";
 
 function WideText(props) {
     return (
-        <div className="wide-text margin-bottom-article-section">
+        <Animation animation="fade" className="wide-text margin-bottom-article-section">
 
             <h2>Title with a very long name</h2>
 
@@ -14,7 +15,7 @@ function WideText(props) {
                 publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 
-        </div>
+        </Animation>
     );
 }
 

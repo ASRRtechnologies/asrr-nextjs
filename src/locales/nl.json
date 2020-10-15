@@ -6,12 +6,12 @@
   "user_notifications": {
     "contact": {
       "success": {
-        "title": "Message sent successfully",
-        "text": "Thank you for your message. ASRR will get back to you shortly."
+        "title": "Bericht successvol verstuurd",
+        "text": "Bedankt voor uw bericht. ASRR komt zo snel mogelijk bij u terug."
       },
       "error": {
-        "title": "The message could not be sent",
-        "text": "There was an error trying to send the message. Please try again or send us an email at contact@asrr.nl"
+        "title": "Bericht kon niet verstuurd worden",
+        "text": "Er was een probleem bij het versturen van het bericht. Probeer het nog een keer of email ASRR op contact@asrr.nl"
       }
     }
   },
@@ -20,7 +20,8 @@
     "services": "Bekijk al onze services",
     "cases": "Bekijk al onze cases",
     "portfolio": "Ga Naar Portfolio",
-    "contact": "Let's get in touch",
+    "blog": "Ga Naar Blog",
+    "contact": "Kom in contact!",
     "submit": "Verzenden"
   },
   "header": {
@@ -29,13 +30,14 @@
     "services": "Services",
     "hire": "Hire a Developer",
     "contact": "Contact",
-    "about": "Over ons"
+    "about": "Over ons",
+    "blog": "Blog"
   },
   "footer": {
     "navigation": "Navigatie",
     "information": "Informatie",
     "address": "Adres",
-    "design": "Design By ASRR",
+    "design": "Ontworpen door ASRR",
     "letter": "Schrijf je in voor onze nieuwsbrief",
     "faq": "FAQ",
     "privacy": "Privacy",
@@ -110,7 +112,7 @@
     },
     "preview": {
       "title": {
-        "header": "What we hebben gedaan",
+        "header": "Wat we hebben gedaan",
         "text": "Neem een kijkje bij onze projecten"
       }
     }

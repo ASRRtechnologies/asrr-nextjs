@@ -65,18 +65,18 @@ function Footer(props) {
                 <div className="footer-navigation">
                     <div className="grid">
                         <h3>{i18n.t('footer.navigation')}</h3>
-                        <ReadMore inverted small text="header.home" to="/"/>
-                        <ReadMore inverted small text="header.case" to="/portfolio"/>
-                        <ReadMore inverted small text="header.services" to="/services"/>
-                        <ReadMore inverted small text="header.hire" to="/hire"/>
-                        <ReadMore inverted small text="header.about" to="/about"/>
-                        <ReadMore inverted small text="header.contact" to="/contact"/>
+                        <ReadMore noAnimation inverted text="header.home" to="/"/>
+                        <ReadMore noAnimation inverted text="header.portfolio" to="/portfolio"/>
+                        <ReadMore noAnimation inverted text="header.services" to="/services"/>
+                        <ReadMore noAnimation inverted text="header.hire" to="/hire"/>
+                        <ReadMore noAnimation inverted text="header.about" to="/about"/>
+                        <ReadMore noAnimation inverted text="header.contact" to="/contact"/>
                     </div>
 
                     <div className="grid">
                         <h3>Information</h3>
-                        <ReadMore inverted small text="footer.faq" to="/"/>
-                        <ReadMore inverted small text="footer.privacy" to="/"/>
+                        <ReadMore noAnimation inverted text="footer.faq" to="/"/>
+                        <ReadMore noAnimation inverted text="footer.privacy" to="/"/>
                         <a href="/assets/documents/file.pdf" target="_blank" rel="noopener noreferrer"
                            className="animated-link-light">{i18n.t('footer.policy')}
                         </a>

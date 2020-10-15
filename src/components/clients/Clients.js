@@ -20,11 +20,11 @@ const ClientCard = ({ children }) => {
 			{children}
 		</div>
 	)
-}
+};
 
 function Clients (props) {
 	return (
-		<Section className="client-section last-section-padding">
+		<Section>
 			<Animation animation="fade-up" delay="200">
 				<Title title={'clients.title.header'}/>
 				<Wrapper className="clients">
