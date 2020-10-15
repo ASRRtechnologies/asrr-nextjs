@@ -24,7 +24,12 @@ button {
   width: auto;
   font-family: inherit;
   color: white;
-  margin-top: 20px;
+  //margin-top: 20px;
+  transition: 50ms ease-in box-shadow;
+  &:hover{
+    box-shadow: none;
+    transition: 50ms ease-in box-shadow;
+  }
 
   p, a{
     margin-bottom: 0;

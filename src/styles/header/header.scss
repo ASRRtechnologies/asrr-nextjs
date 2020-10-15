@@ -5,7 +5,7 @@ $bermuda: #77D7B9;
 
 .header {
   width: 100%;
-  height: 60px;
+  height: 80px;
   position: fixed;
   left: 0;
   top: 0;
@@ -13,6 +13,8 @@ $bermuda: #77D7B9;
   transition: 300ms ease-in-out all;
   color: white !important;
   z-index: $header-zIndex;
+
+
   //Header used on landing page
 }
 
@@ -33,8 +35,9 @@ $bermuda: #77D7B9;
   height: 100%;
   @include flex(center, center, row);
   position: relative;
-  padding: $pc-padding-header;
-}
+  padding: 0 $padding-pc;
+  backdrop-filter: blur(12px);
+ }
 
 .header-wrapper {
   @include size(100%, 100%);
@@ -109,18 +112,21 @@ $bermuda: #77D7B9;
   width: 0%;
 }
 
-@media screen and (max-width: 1200px) {
-
-  .header {
-    height: 80px;
+@media screen and (max-width: $tablet-padding-breakpoint) {
+  .header-relative{
+    padding: 0 $padding-tablet;
   }
+
+}
+
+@media screen and (max-width: 1200px) {
 
   .asrr-logo {
     width: 60px;
   }
 
   .header-relative {
-    padding: $tablet-padding-header;
+    padding: 0 $padding-tablet;
     &.menu-open{
       box-shadow: none !important;
     }
@@ -157,9 +163,9 @@ $bermuda: #77D7B9;
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $mobile-breakpoint) {
   .header-relative {
-    padding: $mob-padding-header;
+    padding: 0 $padding-mobile;
   }
 
   .header-menu{

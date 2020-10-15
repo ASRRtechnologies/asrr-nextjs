@@ -50,44 +50,12 @@
 }
 
 //Readmore
-
-.read-more-wrapper {
-  display: inline-block;
-  position: relative;
-  width: auto;
-  height: auto;
-  margin-top: 50px;
-}
-
 .read-more {
   display: inline-block;
-  font-size: 20px;
   font-weight: bolder;
   margin-bottom: 0;
   position: relative;
   cursor: pointer;
-
-  &.small {
-    font-size: 16px;
-  }
-
-  &.margin {
-    margin-top: 50px;
-  }
-
-  &.read-more-portfolio {
-    margin-top: 100px;
-  }
-
-  &.read-more-services {
-    margin-top: 100px;
-  }
-
-}
-
-.link {
-  font-size: 16px;
-  text-decoration: underline;
 }
 
 .no-margin {
@@ -98,17 +66,6 @@
   .title {
     margin-bottom: 75px;
   }
-
-  .read-more {
-    &.read-more-portfolio {
-      margin-top: 75px;
-    }
-
-    &.read-more-services {
-      margin-top: 75px;
-    }
-
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -117,16 +74,5 @@
     h2{
       margin-bottom: 5px;
     }
-  }
-
-  .read-more {
-    &.read-more-portfolio {
-      margin-top: 50px;
-    }
-
-    &.read-more-services {
-      margin-top: 50px;
-    }
-
   }
 }

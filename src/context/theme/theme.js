@@ -5,40 +5,50 @@ const lightFont = '#41474E';
 const subFontDark = '#41474E';
 const subFontLight = '#c4c4c4';
 
+
 const dropShadowDark = ' 0 8px 10px rgba(235, 235, 235, 0.15)';
 const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)';
+const dropShadowDarkMedium = ' 0 0px 10px rgba(235, 235, 235, 0.15)';
+const dropShadowLightMedium = '0 10px 15px rgba(0,0,0,0.23)';
 
 const white = '#fff';
 const white2 = '#fbfbfb';
-const white3 = '#ebebeb';
 
 const black = '#0a0a0a';
 const black2 = '#131313';
 const black3 = '#1a1a1a';
-const black4 = '#3c3c3c';
 
 //Logo colors
 const logoLight = white;
 const logoDark = black;
 
 //Header colors
-const headerLight = '#ffffff';
-const headerDark = '#0a0a0a';
+const headerLight = 'rgba(252, 252, 252, 0.80)';
+const headerDark = 'rgba(10, 10, 10, 0.9)';
 
 const hoverLinkDark = 'linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)';
 const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)';
+
+const borderColorDark = "2px solid #f0f0f0";
+const borderColorLight = "2px solid #ababab";
 
 const landing = {
 	background: {
 		dark: black,
 		light: "linear-gradient(120deg, #eeeff1 45%, #e9e9e9 100%);",
 	},
+
+	listItem:{
+		dark: borderColorDark,
+		light: borderColorLight,
+	}
+
 };
 
 const layout = {
 	background: {
 		dark: "linear-gradient(120deg, #131313 45%, #0a0a0a 100%);",
-		light: "linear-gradient(120deg, #FBFBFB 45%, #ebedee 100%);",
+		light: "linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);",
 	},
 };
 
@@ -180,16 +190,26 @@ const cards = {
 	},
 
 	shadow: {
-		dark: dropShadowDark,
-		light: dropShadowLight,
+		services:{
+			dark:dropShadowDarkMedium,
+			light:dropShadowLightMedium,
+		},
+		portfolio:{
+			dark: dropShadowDark,
+			light: dropShadowLight,
+		},
+
+
 	},
 
 	border: {
-		dark: "2px solid #f0f0f0",
-		light: "2px solid #eee",
+		dark: borderColorDark,
+		light: borderColorLight,
 	},
 
 };
+
+
 
 const alert = {
 	background:{
@@ -222,6 +242,7 @@ const lightTheme = {
 
 	landing: {
 		background: landing.background.light,
+		listItem: landing.listItem.light,
 	},
 
 	layout: layout.background.light,
@@ -244,7 +265,10 @@ const lightTheme = {
 
 	card: {
 		background: cards.background.light,
-		shadow: cards.shadow.light,
+		shadow: {
+			portfolio:cards.shadow.portfolio.light,
+			services:cards.shadow.services.light
+		},
 		border: cards.border.light,
 	},
 
@@ -284,6 +308,7 @@ const darkTheme = {
 
 	landing: {
 		background: landing.background.dark,
+		listItem: landing.listItem.light,
 	},
 
 	layout: layout.background.dark,
@@ -306,7 +331,10 @@ const darkTheme = {
 
 	card: {
 		background: cards.background.dark,
-		shadow: cards.shadow.dark,
+		shadow: {
+			portfolio:cards.shadow.portfolio.dark,
+			services:cards.shadow.services.dark
+		},
 		border: cards.border.dark,
 
 	},

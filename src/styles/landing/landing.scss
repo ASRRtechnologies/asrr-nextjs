@@ -1,251 +1,180 @@
-.landing-container {
-  width: 100vw;
-  height: 100vh;
+.landing {
+  @include flex(flex-start, center, column);
+  @include size(100vw, 100vh);
+  margin-top: 60px;
+  padding: 0 $padding-pc;
+}
+
+.landing-description {
+  @include flex(space-between, center, row);
+  @include size(100%, 100%);
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 200px;
-  justify-items: center;
-
-  &.page{
-    @include flex(center, center, column);
-  }
-
-}
-
-
-//
-//img{
-//  position: absolute;
-//  height: 100%;
-//  width: 100%;
-//  object-fit: cover;
-//}
-
-.landing-text-container{
-  @include flex (center, center, row);
-  width: 100vw;
-  height: auto;
-  padding: 0 100px;
-}
-
-.landing-text-wrapper {
-  @include flex (space-between, flex-start, row);
   width: 100%;
-  height: auto;
   max-width: $max-width;
-  padding-top: 100px;
+  flex: 1;
 }
 
-.landing-text {
-  height: auto;
-  width: 50%;
-  @include flex (flex-start, flex-start, column);
+.landing-title{
+  @include size(100%, auto);
   max-width: 600px;
+  padding-right: 20px;
 }
 
-.landing-bullets {
+.landing-information{
+  @include size(auto, auto);
+}
+
+
+.landing-overflow {
+  display: inline-block;
+  overflow: hidden;
   height: auto;
   width: auto;
-  @include flex (flex-start, flex-start, column);
-  max-width: 300px;
 
-  svg {
-    display: block;
-    width: 10px;
-    height: auto;
-    transform: rotate(-90deg);
-    transition: ease-in-out 200ms;
-  }
-
-  p {
+  &.list-point{
+    display: flex;
+    align-items: center;
     cursor: pointer;
-    @include flex (flex-start, center, row);
+    border: none !important;
 
-    &:hover {
-      svg {
+    svg{
+      @include size(12px, auto);
+      margin-left: 10px;
+      margin-bottom: 5px;
+      transform: rotate(-90deg);
+      transition: 200ms ease-in all;
+
+    }
+
+    &:hover{
+      svg{
         transform: translateX(10px) rotate(-90deg);
-        transition: ease-in-out 200ms;
+        transition: 200ms ease-in all;
         g{
-          path{
+          path {
             fill: $primary-color;
-            transition: ease-in-out 100ms all;
+            transition: all ease-in-out 100ms;
           }
         }
       }
     }
+
   }
-
-  h4 {
-    user-select: none;
-  }
-
-  &.landing-client-bullets{
-    p{
-      cursor: auto;
-      display: block !important;
-    }
-  }
-
-}
-
-.landing-overflow {
-  @include flex (flex-start, flex-start, column);
-  overflow: hidden;
-  height: auto;
-  width: auto;
-  max-width: $max-width;
-
-  &.button-overflow{
-    height: 105%;
-  }
-
-  &.margin-bottom {
-    margin-bottom: 0;
-  }
-
 }
 
 .landing-wave {
   width: 100vw;
   height: 200px;
-  @include flex (flex-end, flex-end, column);
+  @include flex(flex-start, flex-end, column);
   position: relative;
 
-  .position-absolute-wave {
+  .wave {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 150px;
 
-    & > div {
-      height: auto;
+    &.wave-top{
+      bottom:50px;
     }
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .landing-text-container {
-    padding: 0 50px;
+
+@media screen and (max-width: $tablet-padding-breakpoint) {
+  .landing {
+    padding: 0 $padding-tablet;
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .landing-description{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .landing-title{
+    margin-bottom: 25px;
+    padding-right: 0;
+  }
+
+  .landing-information{
   }
 
 }
 
-@media screen and (max-width: 800px) {
-
-  .landing-text-wrapper{
-    flex-direction: column-reverse;
-    width: 100%;
+@media screen and (max-width: $mobile-padding-breakpoint) {
+  .landing {
+    padding: 0 $padding-mobile;
   }
 
-  .landing-text{
-    max-width: 100%;
-    width:100%;
-    text-align: center;
-    @include flex(flex-start, center, column);
+}
 
-    h1, p {
-      width:100%;
-      display: block;
+@media screen and (max-width: $mobile-breakpoint) {
+
+  .landing{
+    padding: 0;
+    min-height: calc(100vh - 80px);
+    justify-content: space-between;
+  }
+
+  .landing-description{
+    //justify-content: flex-start;
+    justify-content: space-between;
+    flex:1;
+  }
+
+  .landing-title{
+    @include flex(center, flex-start, column);
+    padding: 0 $padding-mobile;
+    margin-bottom: 20px;
+    flex: 1;
+   }
+
+  .landing-information{
+    width: 100vw;
+    height: auto;
+
+    .mobile-disabled{
+      display: none;
     }
   }
 
-  .landing-bullets{
-    display: none;
-    &.landing-client-bullets{
-      display: flex;
-      margin-bottom: 30px;
+  .landing-overflow{
+
+    &.list-point{
+      padding: 15px $padding-mobile;
+      justify-content: space-between;
+      align-items: center;
+
+      h3, svg{
+        margin-bottom: 0;
+      }
+
+    }
+  }
+
+  .landing-wave {
+     height: 100px;
+
+    .wave {
+      height: 50px;
+
+      &.wave-top{
+        bottom:50px;
+      }
     }
   }
 
 }
 
-@media screen and (max-width: 600px) {
-  .landing-container {
-    height: 100vh;
+@media screen and (max-width: 330px) {
+  .landing{
+    height: 100vh !important;
   }
 
-  .landing-text-container{
-    padding: 0 25px;
-  }
-}
-
-
-//Extra classes
-.landing-floating-image-wrapper{
-  width:100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-}
-
-.landing-floating-image{
-  width:100%;
-  height: 100%;
-  @include flex(center, center, column);
-}
-
-.landing-floating-image-text{
-  width:100%;
-  height: 100%;
-  @include flex(flex-start, flex-start, column);
-  padding-top: 100px;
-
-}
-
-.floating-mobile{
-  width: 100%;
-  height: auto;
-  display: block;
-  max-width: 700px;
-  min-width: 300px;
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
-@media screen and (max-width: 1600px) {
-  .floating-mobile{
-    max-width:500px;
-  }
-}
-
-
-@media screen and (max-width: 1200px) {
-  .landing-floating-image-wrapper{
-    //@include flex(center, center, column);
-    grid-template-columns: 1fr;
-    grid-template-rows: 30vh 70vh;
-  }
-
-  .landing-floating-image-text{
-    @include flex(flex-end, center, column);
-    padding-top: 0;
-
-  }
-
-  .floating-mobile{
-    width: 100%;
-  }
-
-}
-
-@media screen and (max-width: 600px) {
-  .floating-mobile{
-    width: 90%;
-    top:60vh;
-  }
 }

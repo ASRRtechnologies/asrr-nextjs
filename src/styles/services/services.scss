@@ -1,0 +1,15 @@
+.services{
+  @include size(100%, auto);
+  @include flex(flex-start, center, column);
+  &.margin-bottom{
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: $service-card-first-breakpoint) {
+  .service-card{
+    &:nth-of-type(even) {
+      flex-direction: column !important;
+    }
+  }
+}

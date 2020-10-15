@@ -1,8 +1,0 @@
-.vertical-scroll{
-  height: 100vh;
-  min-width: 100vw;
-  width: auto;
-  overflow-y: hidden;
-  overflow-x: visible;
-  @include flex(flex-start, center, row)
-}

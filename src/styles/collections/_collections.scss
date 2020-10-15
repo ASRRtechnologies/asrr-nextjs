@@ -13,7 +13,8 @@
 
 @import "../landing/landing";
 @import "../landing/landing-image";
-@import "../landing/scroll-down";
+@import "../scrollers/scroll-down";
+@import "../scrollers/scroll-up";
 @import "../layout/layout";
 @import "../layout/section";
 @import "../animation/transition-animation";
@@ -24,13 +25,16 @@
 @import "../text/input";
 
 //Portfolio
-@import "../portfolio/portfolio";
 @import "../portfolio/cards";
-@import "../portfolio/demo";
+
+@import "../portfolio/portfolio";
 @import "../portfolio/portfolio-page";
 
 //Services
 @import "../services/cards";
+@import "../services/services";
+@import "../blog/card";
+@import "../blog/blog";
 
 //Contact
 @import "../contact/contact";

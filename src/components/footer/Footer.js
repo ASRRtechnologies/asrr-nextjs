@@ -24,7 +24,7 @@ function Footer(props) {
             body: `from: ${email.userEmail}, name:${email.name}, subject:${email.subject}, organization: ${email.organization}, message: ${email.body}`,
             subject: email.subject,
             recipient: recipient,
-        }
+        };
 
         fetch(process.env.NEXT_PUBLIC_API_BASE_URL, {
             method: 'POST',
@@ -65,18 +65,18 @@ function Footer(props) {
                 <div className="footer-navigation">
                     <div className="grid">
                         <h3>{i18n.t('footer.navigation')}</h3>
-                        <ReadMore inverted small to="/">{i18n.t('header.home')}</ReadMore>
-                        <ReadMore inverted small to="/portfolio">{i18n.t('header.case')}</ReadMore>
-                        <ReadMore inverted small to="/services">{i18n.t('header.services')}</ReadMore>
-                        <ReadMore inverted small to="/hire">{i18n.t('header.hire')}</ReadMore>
-                        <ReadMore inverted small to="/about">{i18n.t('header.about')}</ReadMore>
-                        <ReadMore inverted small to="/contact">{i18n.t('header.contact')}</ReadMore>
+                        <ReadMore inverted small text="header.home" to="/"/>
+                        <ReadMore inverted small text="header.case" to="/portfolio"/>
+                        <ReadMore inverted small text="header.services" to="/services"/>
+                        <ReadMore inverted small text="header.hire" to="/hire"/>
+                        <ReadMore inverted small text="header.about" to="/about"/>
+                        <ReadMore inverted small text="header.contact" to="/contact"/>
                     </div>
 
                     <div className="grid">
                         <h3>Information</h3>
-                        <ReadMore inverted small to="/">{i18n.t('footer.faq')}</ReadMore>
-                        <ReadMore inverted small to="/">{i18n.t('footer.privacy')}</ReadMore>
+                        <ReadMore inverted small text="footer.faq" to="/"/>
+                        <ReadMore inverted small text="footer.privacy" to="/"/>
                         <a href="/assets/documents/file.pdf" target="_blank" rel="noopener noreferrer"
                            className="animated-link-light">{i18n.t('footer.policy')}
                         </a>
