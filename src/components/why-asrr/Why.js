@@ -12,7 +12,7 @@ function Why() {
 	const darkmode = useTheme().dark;
 
 	return (
-		<Section className="why-asrr-section">
+		<Section>
 			<Animation animation="fade-up">
 			<Title title={'why.title.header'}/>
 			<div className="why-asrr">

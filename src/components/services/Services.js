@@ -30,7 +30,6 @@ function Services ({preview}) {
 
  			{preview && <ReadMore className="read-more-big" to="/services" text="buttons.services"/>}
 			{preview ? null : <Contact className="last-section-padding"/>}
-
 		</Section>
 	)
 }

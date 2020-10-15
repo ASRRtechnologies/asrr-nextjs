@@ -1,9 +1,8 @@
-$max-width-1: 800px;
-
 .wide-image {
   @include flex(flex-start, center, column);
   @include size(100%, auto);
-  max-width: $max-width-1;
+  max-width: $max-width-article;
+
   h4{
     margin-top: 30px;
   }
@@ -20,13 +19,32 @@ $max-width-1: 800px;
 
 .wide-text {
   width: 100%;
-  max-width: $max-width-1;
+  max-width: $max-width-article;
   text-align: justify;
 }
 
+.key-words{
+  width: 100%;
+  max-width: $max-width-article;
+  margin-bottom: 30px;
+
+  & > span {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+  }
+
+  p{
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+
+}
+
 @media screen and (max-width: $tablet-breakpoint) {
-  .wide-image {
-    max-width: $max-width-1;
+  .wide-text {
+    text-align: left;
   }
 }
 
@@ -34,9 +52,4 @@ $max-width-1: 800px;
   .wide-image, .wide-text, .square-image {
     margin-bottom: 50px;
   }
-
-  .wide-text {
-    text-align: left;
-  }
-
 }

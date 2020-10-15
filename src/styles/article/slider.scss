@@ -7,29 +7,30 @@
   }
 
   &.slider-wide-image{
-    max-width: $max-width-1;
+    max-width: $max-width-article;
   }
 
-  .slider-indicator {
+  .slider-indicator-wrapper {
     width: 100%;
     @include flex(center, center, row);
     margin-top: 50px;
     height: auto;
 
-    & > div {
-      height: 3px;
+    .slider-indicator {
+      height: 4px;
       width: 20%;
-      background-color: #ededed;
+      border-radius: 2px;
       max-width: 40px;
       margin: 0 5px;
-    }
+      cursor: pointer;
 
-    .active-indicator {
-      background-color: $primary-color;
+      &.active-indicator {
+        background-color: $primary-color;
+      }
+
     }
 
   }
-
 }
 
 .slick-slider{
@@ -40,28 +41,11 @@
 .arrow .slick-arrow{
   width: 50px;
   height: auto;
-
-  &:hover{
-    svg{
-      path{
-        fill: $primary-color;
-      }
-    }
-  }
-
 }
 
 .slick-prev{
   top:50%;
   transform: translateY(-50%) rotate(90deg) scale(1.2);
-  &:hover{
-    svg{
-      path{
-        fill: $primary-color;
-      }
-    }
-  }
-
 }
 
 .slick-next{

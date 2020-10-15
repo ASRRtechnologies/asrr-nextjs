@@ -3,8 +3,15 @@ import styled from "@emotion/styled";
 
 const Arrow = styled('svg')`
         	path{
-        		fill:${props => props.theme.fonts.title};
+        		fill:${props => props.theme.fonts.header};
         	}
+        	
+        	&:hover{
+				path{
+					fill:#ff6961;
+				}
+        	}
+        	
 `;
 
 function Chevron({className, onClick}) {

@@ -83,16 +83,8 @@ function HomeLanding({title, text}) {
     const navigate = (url) => router.push(url).then(null);
     const headerHeight = 80;
 
-    useEffect(() => {
-        console.log(screenHeight)
-    })
-
-    const handleOverflowChange = () => {
-        alert(true);
-    }
-
     return (
-            <Wrapper style={{minHeight: `${screenHeight - headerHeight}px`, height:`${screenHeight - headerHeight}px`}} className="landing">
+            <Wrapper style={{height:`${screenHeight - headerHeight}px`}} className="landing">
 
                 <div className="landing-description">
                     <div className="landing-title">

@@ -2,7 +2,7 @@ import React from 'react';
 
 function WideText(props) {
     return (
-        <div className="wide-text margin-bottom-text-section">
+        <div className="wide-text margin-bottom-article-section">
 
             <h2>Title with a very long name</h2>
 

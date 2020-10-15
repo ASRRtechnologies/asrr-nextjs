@@ -5,6 +5,7 @@ import Layout from "@/layout/Layout";
 import WideText from "@/article/WideText";
 import ArticleImage from "@/article/ArticleImage";
 import ImageSlider from "@/article/ImageSlider";
+import KeyWords from "@/article/KeyWords";
 
 
 function Page({data, query}) {
@@ -14,7 +15,8 @@ function Page({data, query}) {
         <>
             <Application>
                 <Layout>
-                    <Section>
+                    <Section className="section-article">
+                        <KeyWords/>
                         <WideText/>
                         <ArticleImage/>
                         <WideText/>

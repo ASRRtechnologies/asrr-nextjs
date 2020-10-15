@@ -34,10 +34,13 @@
     }
 
   }
-
 }
 
-.margin-bottom-text-section{
+.bold{
+  font-weight: bold;
+}
+
+.margin-bottom-article-section{
   margin-bottom: 100px;
 
   @media screen and (max-width: $tablet-breakpoint) {

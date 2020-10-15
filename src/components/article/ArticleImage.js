@@ -3,7 +3,7 @@ import image from "../../../public/assets/images/erik-mclean-ZRns2R5azu0-unsplas
 
 function ArticleImage({square}) {
     return (
-        <div className={`${square ? "square-image" : "wide-image"} aspect-ratio-container margin-bottom-text-section`}>
+        <div className={`${square ? "square-image" : "wide-image"} aspect-ratio-container margin-bottom-article-section`}>
             <div className={`aspect-ratio-wrapper ${square ? "square-width-aspect-ratio" : "full-width-aspect-ratio"}`}>
                 <img src={image}/>
             </div>
