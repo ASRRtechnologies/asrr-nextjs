@@ -67,6 +67,10 @@ h1, h2, h3{
   overflow-x: hidden;
 }
 
+.no-transitions{
+  transition: none !important;
+}
+
 h1{
   font-size: 50px;
   margin: 0 0 30px 0;

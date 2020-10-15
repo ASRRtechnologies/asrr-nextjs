@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Header from '../header/Header2'
+import Header from '../header/Header'
 import Footer from '../footer/Footer'
 import { motion } from 'framer-motion'
 

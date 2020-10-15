@@ -152,7 +152,7 @@ function HomeLanding({title, text}) {
                 </div>
 
                 <div className="landing-wave">
-                    {console.log(darkmode)}
+
                     <div className="wave wave-top">
                         <Wave fill="#ff6961"
                             // fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}

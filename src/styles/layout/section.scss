@@ -2,66 +2,30 @@
   @include size (100%, auto);
   @include flex(flex-start, center, column);
   max-width: $max-width;
-  padding: 200px 0 0 0;
-
-  &.padding-bottom{
-    padding: 200px 0;
-  }
-
-  &.last-section-padding{
-    padding: 200px 0;
-  }
+  padding:  0 0 200px 0;
 
   &.section-article{
-    padding: 125px 0;
-
+    padding: 0;
     :last-child {
       margin-bottom: 0;
     }
+  }
 
+  &.section-contact-form{
+    padding-top: 100px;
   }
 
 }
 
 @media screen and (max-width: $tablet-breakpoint) {
   .section {
-    padding: 100px 0 0 0;
-
-    &.padding-bottom{
-      padding: 100px 0;
-    }
-
-    &.last-section-padding{
-      padding: 100px 0;
-    }
-
-    &.section-article{
-      padding: 150px 0;
-    }
-
+    padding: 0 0 100px 0;
   }
 }
 
 @media screen and (max-width: $mobile-breakpoint) {
   .section {
-    padding: 120px 0 0 0;
-
-    &.individual-service-section{
-      padding: 75px 0;
-    }
-
-    &.padding-bottom{
-      padding: 75px 0;
-    }
-
-    &.last-section-padding{
-      padding: 75px 0;
-    }
-
-    &.section-article{
-      padding: 100px 0;
-    }
-
+    padding:  0 0 120px 0;
   }
 }
 

@@ -21,7 +21,7 @@ function Index(props) {
                 <Portfolio preview={true}/>
                 <Stories/>
                 <Why/>
-                <Blog/>
+                <Blog preview={true}/>
                 <Contact/>
                 <Clients/>
             </Layout>

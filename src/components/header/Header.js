@@ -45,7 +45,7 @@ const Line1 = styled('div')`background: ${props => props.theme.header.line_1};`;
 const Line2 = styled('div')`background: ${props => props.theme.header.line_2};`;
 const Line3 = styled('div')`background: ${props => props.theme.header.line_3};`;
 
-function Header2(props) {
+function Header({className}) {
 
     const i18n = useI18n();
     const [menuOpen, setMenuOpen] = useState(false);
@@ -75,17 +75,9 @@ function Header2(props) {
         window.addEventListener('scroll', headerProgress)
     });
     const closeMenu = () => setMenuOpen(false);
-    const mouse = useContext(MouseContext);
-
-    {/*<motion.div animate={animation.animate} initial={animation.initial} exit={animation.exit}*/
-    }
-
-    //The Wrapper does not accept motion.div so the sliding down of the header wouldn't be visible if it was top-layer.
-    //Thats why the second div has the wrapper styled comp. Further if a parent has transform on (motion.div)
-    //Then fixed elements will be fixed to the parent not to the window body / obj.
 
     return (
-        <div className={`header ${menuOpen ? "menu-open" : null}`}>
+        <div className={`header ${menuOpen ? "menu-open" : null} ${className}`}>
             <Wrapper visible={visible} menuOpen={menuOpen}
                      className={`header-relative ${menuOpen ? "menu-open" : null}`}>
                 <div className={`header-wrapper ${menuOpen ? "menu-open" : null}`}>
@@ -98,6 +90,8 @@ function Header2(props) {
                                                                   onClick={closeMenu}>{i18n.t('header.portfolio')}</a></Link>
                         <Link scroll={false} href="/services"><a className="fade-in-header"
                                                                  onClick={closeMenu}>{i18n.t('header.services')}</a></Link>
+                        <Link scroll={false} href="/blog"><a className="fade-in-header"
+                                                                onClick={closeMenu}>{i18n.t('header.blog')}</a></Link>
                         <Link scroll={false} href="/contact"><a className="fade-in-header"
                                                                 onClick={closeMenu}>{i18n.t('header.contact')}</a></Link>
                         {/*<Link href="/about"><a onClick={closeMenu}>{i18n.t('header.about')}</a></Link>*/}
@@ -124,10 +118,6 @@ function Header2(props) {
                     <Line2 className={`menu-background middle ${menuOpen ? "menu-open" : null}`}> </Line2>
                     <Line3 className={`menu-background bottom ${menuOpen ? "menu-open" : null}`}> </Line3>
 
-                    {/*<i className={`menu-background top ${menuOpen ? "menu-open" : null}`}/>*/}
-                    {/*<i className={`menu-background middle ${menuOpen ? "menu-open" : null}`}/>*/}
-                    {/*<i className={`menu-background bottom ${menuOpen ? "menu-open" : null}`}/>*/}
-
                 </div>
                 <div className="progress-container">
                     <div className="progress-bar" id="myBar"></div>
@@ -137,4 +127,4 @@ function Header2(props) {
     )
 }
 
-export default Header2
+export default Header

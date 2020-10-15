@@ -29,7 +29,7 @@ function Services ({preview}) {
 				</div>
 
  			{preview && <ReadMore className="read-more-big" to="/services" text="buttons.services"/>}
-			{preview ? null : <Contact className="last-section-padding"/>}
+			{preview ? null : <Contact className="section-contact-form"/>}
 		</Section>
 	)
 }
