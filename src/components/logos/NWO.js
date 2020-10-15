@@ -1,6 +1,7 @@
 import React from 'react';
+import styled from "@emotion/styled";
 
-function Form(props) {
+function NWO() {
     return (
         <>
             <svg id="svg" xmlns="http://www.w3.org/2000/svg" width="400"
@@ -15,4 +16,4 @@ function Form(props) {
     );
 }
 
-export default Form;
+export default NWO;
