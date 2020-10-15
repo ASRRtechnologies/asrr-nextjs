@@ -1,0 +1,42 @@
+$max-width-1: 800px;
+
+.wide-image {
+  @include flex(flex-start, center, column);
+  @include size(100%, auto);
+  max-width: $max-width-1;
+  h4{
+    margin-top: 30px;
+  }
+}
+
+.square-image {
+  @include flex(flex-start, center, column);
+  @include size(100%, auto);
+  max-width: 600px;
+  h4{
+    margin-top: 30px;
+  }
+}
+
+.wide-text {
+  width: 100%;
+  max-width: $max-width-1;
+  text-align: justify;
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .wide-image {
+    max-width: $max-width-1;
+  }
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .wide-image, .wide-text, .square-image {
+    margin-bottom: 50px;
+  }
+
+  .wide-text {
+    text-align: left;
+  }
+
+}

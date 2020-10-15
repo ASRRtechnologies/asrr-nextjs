@@ -43,14 +43,16 @@ body {
   overflow-y: hidden!important;
 }
 
+
+h1, h2, h3{
+  font-weight: bold;
+}
+
  h4, h5, a ,p {
    font-weight: normal;
    text-decoration: none;
 }
 
- h1, h2, h3{
- font-weight: bold;
-}
 
 #__next{
   height: inherit;
@@ -133,6 +135,7 @@ a{
   p, a {
     font-size: 16px;
     margin-bottom: 15px;
+    word-spacing: 5px;
   }
 
 }

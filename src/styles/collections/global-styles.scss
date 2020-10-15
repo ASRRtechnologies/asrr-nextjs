@@ -1,0 +1,51 @@
+.aspect-ratio-container{
+  @include flex(flex-start, center, column);
+  @include size(100%, auto);
+
+  .aspect-ratio-wrapper{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+
+    &.full-width-aspect-ratio{
+      width: 100%;
+      padding-bottom: 56.25%;
+    }
+
+    &.square-width-aspect-ratio{
+      width: 100%;
+      padding-bottom: 100%;
+    }
+
+    img {
+      @include size(100%, 100%);
+      object-fit: cover;
+      position: absolute;
+      object-position: 50% 50%;
+      transition: all 0.7s ease 0s;
+      left: 0;
+      top: 0;
+
+      &:hover {
+        transform: scale(1.2);
+        transition: all 0.7s ease 0s;
+      }
+    }
+
+  }
+
+}
+
+.margin-bottom-text-section{
+  margin-bottom: 100px;
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    margin-bottom: 75px;
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    margin-bottom: 50px;
+  }
+
+}
