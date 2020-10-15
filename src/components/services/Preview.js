@@ -23,7 +23,7 @@ function Services () {
 					})}
 				</div>
 				<Animation animation="fade-up" delay="400">
-					<ReadMore className="read-more-portfolio" to="/services">{i18n.t('buttons.services')}</ReadMore>
+					<ReadMore className="read-more-portfolio" text="buttons.services" to="/services"/>
 				</Animation>
 			</Animation>
 		</Section>

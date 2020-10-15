@@ -1,104 +1,78 @@
-.services {
-  width: 100%;
-  height: auto;
+$service-card-first-breakpoint: 800px;
+$service-card-second-breakpoint: 600px;
+
+.service-card {
+  @include size(100%, auto);
+  @include flex(space-between, flex-start, row);
+  margin-bottom: 100px;
   max-width: 700px;
-  @include flex(flex-start, center, column);
-  flex-wrap: wrap;
-
-  .card-animatable {
-    width: 100%;
-    height: auto;
-
-    &:nth-child(even) {
-      .card {
-        flex-direction: row-reverse;
-      }
-    }
-
-
-    &:nth-last-of-type(1) {
-      .card {
-        margin-bottom: 0;
-        padding-bottom: 0;
-        border-bottom: none;
-      }
-    }
-
+  padding-bottom: 100px;
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
   }
 
-  .card {
-    width: 100%;
-    @include flex(space-between, flex-start, row);
+  &:last-of-type {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+}
+
+.service-card-icon {
+  @include flex(center, center, row);
+  @include size(100px, 100px);
+  border-radius: 5px;
+  z-index: 1;
+
+  svg {
+    width: 50px;
     height: auto;
-    margin-bottom: 100px;
-    padding-bottom: 100px;
 
-    .icon {
-      @include size(100px, 100px);
-      border-radius: 5px;
-      @include flex(center, center, row);
-      z-index: 1;
-      cursor: auto;
-
-      svg {
-        width: 60px;
-
-        path {
-          fill: $primary-color;
-        }
-
-      }
-    }
-
-    .text {
-      width: 70%;
-      height: auto;
+    path {
+      fill: $primary-color !important;
     }
 
   }
 }
 
-@media screen and (max-width: 700px) {
-  .services {
 
-    .card-animatable {
-      &:nth-of-type(even) {
-        .card{
-          flex-direction: column;
-         }
-      }
-    }
+.service-card-text {
+  @include flex(flex-start, flex-start, column);
+  @include size(100%, 100%);
+  max-width: 500px;
+  text-align: left;
+}
 
-    .card {
-      @include flex(space-between, center, column);
-      margin-bottom: 75px;
-      padding-bottom: 75px;
+@media screen and (max-width: $service-card-first-breakpoint) {
+  .service-card {
+    flex-direction: column;
+    align-items: center;
 
-      .icon {
-        @include size(70px, 70px);
-        margin-bottom: 25px;
-
-        svg {
-          width: 30px;
-        }
-      }
-
-      .text {
-        width: 100%;
-        @include flex(space-between, center, column);
-        text-align: center;
-      }
-
-    }
-
-    &.services-center {
-      .card {
-        @include flex(flex-start, center, column);
-        text-align: center;
-      }
+    &:last-of-type{
+      margin-bottom: 0;
     }
 
   }
 
+  .service-card-icon{
+    margin-bottom: 50px;
+  }
+
+  .service-card-text{
+    text-align: center;
+    @include flex(flex-start, center, column);
+  }
 
 }
+
+@media screen and (max-width: $service-card-second-breakpoint) {
+  .service-card {
+    min-width: 200px;
+    width: 100%;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+

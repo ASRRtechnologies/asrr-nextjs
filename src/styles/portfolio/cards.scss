@@ -1,139 +1,76 @@
-//To keep consistent name usage throughout the website nesting of this card in
-.portfolio {
+$portfolio-card-first-breakpoint: 1400px;
+$portfolio-card-second-breakpoint: 1000px;
+$portfolio-card-third-breakpoint: 500px;
 
-  &.portfolio-center{
-    .card-text{
-      @include flex(flex-start, center, column);
-      text-align: center;
-    }
-  }
+.portfolio-card {
+  width: 30.33%; //ratio 9/16 => 700/ (9/16)
+  height: auto;
+  @include flex(flex-start, flex-start, column);
+  margin-bottom: 100px;
 
-  &.portfolio-preview{
-    .card-animatable{
-      margin-bottom: 0;
-    }
-  }
 
-  .card-animatable{
-    width: 30.333%;
-    height: 100%;
-    border-radius: 10px;
-    margin-bottom: 100px;
-  }
+}
 
-  .card {
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
+.portfolio-card-inner{
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}
 
-    svg{
-      width: 30px;
-      height: auto;
-      display: flex;
-      position: absolute;
-      transform: rotate(180deg) translateX(50%);
-      bottom:0;
-      left:50%;
-      path{
-        fill:$primary-color !important;
-      }
-    }
-  }
+.portfolio-card-image-wrapper{
+  width: 100%;
+  display: block;
+  margin-bottom: 25px;
+  border-radius: 5px;
+}
 
-  .image {
-    width: 100%;
-    padding-bottom: 100%;
-    position: relative;
-    overflow: hidden;
-    margin-bottom: 10px;
+.portfolio-card-image {
+  width: 100%;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+
+  img {
+    @include size(100%, 100%);
     border-radius: 5px;
 
-    img{
-      top:0;
-      left:0;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: 50% 50%;
-      transition: all 0.7s ease 0s;
+    object-fit: cover;
+    object-position: 50% 50%;
+    transition: all 0.7s ease 0s;
+    left: 0;
+    top: 0;
+    position: absolute;
 
-      &:hover{
-        transform: scale(1.2);
-        transition: all 0.7s ease 0s;
-      }
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.7s ease 0s;
     }
   }
 
-  .card-text{
-    @include size(100%, 100%);
-    padding: 20px 10px;
-    position: relative;
-    @include flex(space-between, flex-start, column);
+}
 
-    p{
+.portfolio-card-text {
+  @include flex(flex-start, flex-start, column);
+  @include size(100%, 100%);
+  padding: 30px;
+  text-align: left;
+}
+
+@media screen and (max-width: $portfolio-card-first-breakpoint) {
+  .portfolio-card {
+    width: 45%;
+  }
+
+}
+
+@media screen and (max-width: $portfolio-card-second-breakpoint) {
+  .portfolio-card {
+    min-width: 200px;
+    width: 100%;
+    max-width: 600px;
+    &:last-of-type{
       margin-bottom: 0;
     }
-
-    h5{
-      font-size: 14px;
-    }
-
-  }
-
-}
-
-@media screen and (max-width:1000px) {
-  .portfolio {
-    .card-animatable {
-      width: 45%;
-      margin-bottom: 100px;
-
-      &:nth-last-of-type(1){
-        margin-bottom: 0;
-      }
-    }
-
-    &.portfolio-preview{
-      .card-animatable {
-        width: 45%;
-        margin-bottom: 100px;
-
-        &:nth-last-of-type(1){
-          margin-bottom: 0;
-        }
-      }
-    }
   }
 }
-
-
-@media screen and (max-width:750px) {
-  .portfolio {
-    .card-animatable {
-      width: 100%;
-      max-width: 400px;
-      height: 100%;
-      margin-bottom: 75px;
-    }
-    .read-more{
-      margin-right: auto;
-      margin-left: auto;
-    }
-
-    &.portfolio-preview{
-      .card-animatable {
-        width: 100%;
-        max-width: 400px;
-        height: 100%;
-        margin-bottom: 75px;
-      }
-      .read-more{
-        margin-right: auto;
-        margin-left: auto;
-      }
-    }
-  }
-
-}
-

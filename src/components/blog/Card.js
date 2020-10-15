@@ -25,7 +25,7 @@ function Card (props) {
 					<p>Financial institutions are investing big in open banking, but what are the use cases
 						they’re most interested in? We surveyed 290 European bankers to find out what
 						immediate opportunities they have in sight. Here are the results.</p>
-					<ReadMore className="read-more-portfolio" to="/portfolio">{i18n.t('buttons.portfolio')}</ReadMore>
+					<ReadMore className="read-more-portfolio" text="buttons.portfolio" to="/portfolio"/>
 				</div>
 			</InnerWrapper>
 		</div>

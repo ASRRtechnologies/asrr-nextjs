@@ -5,12 +5,6 @@ import nwo from '#/clients/nwo/case-image.webp'
 import esp from '#/clients/esp/esp-cover.jpg'
 import aapjes from '#/clients/aapjes/case-image.jpg'
 
-export const disciplines = [
-	{ title: 'cases.disciplines.all' },
-	{ title: 'cases.disciplines.bim' },
-	{ title: 'cases.disciplines.web' },
-]
-
 export const previewCases = [
 	{
 		image: form,
