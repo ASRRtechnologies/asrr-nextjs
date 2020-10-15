@@ -10,7 +10,7 @@ const Wrapper = styled('div')`
 
 const Icon = styled('div')`
              background-color: ${props => props.theme.card.background}; 
-             box-shadow: ${props => props.theme.card.shadow}; 
+        box-shadow: ${props => props.theme.card.shadow.services};
       svg{
         path{
           fill:${props => props.theme.fonts.title}

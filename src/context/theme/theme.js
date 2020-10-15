@@ -5,8 +5,11 @@ const lightFont = '#41474E';
 const subFontDark = '#41474E';
 const subFontLight = '#c4c4c4';
 
+
 const dropShadowDark = ' 0 8px 10px rgba(235, 235, 235, 0.15)';
 const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)';
+const dropShadowDarkMedium = ' 0 0px 10px rgba(235, 235, 235, 0.15)';
+const dropShadowLightMedium = '0 10px 15px rgba(0,0,0,0.23)';
 
 const white = '#fff';
 const white2 = '#fbfbfb';
@@ -187,8 +190,16 @@ const cards = {
 	},
 
 	shadow: {
-		dark: dropShadowDark,
-		light: dropShadowLight,
+		services:{
+			dark:dropShadowDarkMedium,
+			light:dropShadowLightMedium,
+		},
+		portfolio:{
+			dark: dropShadowDark,
+			light: dropShadowLight,
+		},
+
+
 	},
 
 	border: {
@@ -197,6 +208,8 @@ const cards = {
 	},
 
 };
+
+
 
 const alert = {
 	background:{
@@ -252,7 +265,10 @@ const lightTheme = {
 
 	card: {
 		background: cards.background.light,
-		shadow: cards.shadow.light,
+		shadow: {
+			portfolio:cards.shadow.portfolio.light,
+			services:cards.shadow.services.light
+		},
 		border: cards.border.light,
 	},
 
@@ -315,7 +331,10 @@ const darkTheme = {
 
 	card: {
 		background: cards.background.dark,
-		shadow: cards.shadow.dark,
+		shadow: {
+			portfolio:cards.shadow.portfolio.dark,
+			services:cards.shadow.services.dark
+		},
 		border: cards.border.dark,
 
 	},

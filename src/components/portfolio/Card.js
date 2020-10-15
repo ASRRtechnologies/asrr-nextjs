@@ -7,7 +7,7 @@ import ReadMore from '@/text/ReadMore'
 import Animation from '@/animation/Animation'
 
 const Wrapper = styled('div')`
-        box-shadow: ${props => props.theme.card.shadow};;
+        box-shadow: ${props => props.theme.card.shadow.portfolio};
 `;
 
 function Card ({ img, title, discipline, client, route, redirect}) {
