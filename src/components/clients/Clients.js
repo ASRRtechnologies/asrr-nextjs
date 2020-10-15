@@ -7,14 +7,10 @@ import Animation from '@/animation/Animation'
 import Ticker from 'react-ticker'
 
 const Wrapper = styled('section')`
-         svg{
-          path{
-            fill:  ${props => props.theme.fonts.title}
-          }
-        }
-`
+         svg{fill: ${props => props.theme.fonts.header} !important;}
+`;
 
-const ClientCard = ({ children }) => {
+const Card = ({ children }) => {
 	return (
 		<div className="client-card">
 			{children}
@@ -30,7 +26,7 @@ function Clients (props) {
 				<Wrapper className="clients">
 					<Ticker speed={2} mode="chain">
 						{({ index }) => (
-							clients.map((d, i) => <ClientCard children={d.logo}/>)
+							clients.map((d, i) => <Card key={index + "client-logo"} children={d.logo}/>)
 						)}
 					</Ticker>
 				</Wrapper>

@@ -1,6 +1,6 @@
 //Font colors
-const headerLight= '#ffffff';
-const headerDark= '#1a1a1a';
+const headerDark= '#ffffff';
+const headerLight= '#1a1a1a';
 const paragraphLight = '#41474E';
 const paragraphDark = '#ededed';
 const subHeaderDark = '#e9e9e9';
@@ -22,9 +22,12 @@ const black3 = '#1a1a1a';
 const logoLight = black;
 const logoDark = white;
 
-//Header colors
-const navigationLight = 'rgba(252, 252, 252, 0.80)';
-const navigationDark = 'rgba(10, 10, 10, 0.9)';
+//Navigation colors
+const navigationBlurredLight = 'rgba(252, 252, 252, 0.80)';
+const navigationBlurredDark = 'rgba(10, 10, 10, 0.9)';
+
+const navigationLight = 'rgba(252, 252, 252, 1)';
+const navigationDark = 'rgba(10, 10, 10, 1)';
 
 const hoverLinkDark = 'linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)';
 const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)';
@@ -36,8 +39,8 @@ const borderColorLight = "2px solid #ababab";
 const fonts = {
 
 	header: {
-		light: headerDark,
-		dark: headerLight,
+		light: headerLight,
+		dark: headerDark,
 	},
 
 	paragraph: {
@@ -57,8 +60,8 @@ const fonts = {
 
 
 	inverse: {
-		light: headerLight ,
-		dark: headerDark,
+		light: headerDark ,
+		dark: headerLight,
 	},
 
 };
@@ -159,11 +162,16 @@ const portfolio = {
 
 };
 
-const header = {
+const navigation = {
 
-	background: {
-		dark: navigationDark,
+	backgroundBlurred: {
+		light: navigationBlurredLight,
+		dark: navigationBlurredDark,
+	},
+
+	background:{
 		light: navigationLight,
+		dark: navigationDark,
 	},
 
 	shadow: {
@@ -233,13 +241,14 @@ const alert = {
 const lightTheme = {
 
 	header: {
-		background: header.background.light,
-		logo: header.logo.light,
-		font: header.fonts.light,
-		shadow: header.shadow.light,
-		line_1:header.line_1.light,
-		line_2:header.line_2.light,
-		line_3:header.line_3.light,
+		backgroundBlurred: navigation.backgroundBlurred.light,
+		background: navigation.background.light,
+		logo: navigation.logo.light,
+		font: navigation.fonts.light,
+		shadow: navigation.shadow.light,
+		line_1:navigation.line_1.light,
+		line_2:navigation.line_2.light,
+		line_3:navigation.line_3.light,
 	},
 
 	fonts: {
@@ -299,13 +308,14 @@ const lightTheme = {
 const darkTheme = {
 
 	header: {
-		background: header.background.dark,
-		logo: header.logo.dark,
-		font: header.fonts.dark,
-		shadow: header.shadow.dark,
-		line_1:header.line_1.dark,
-		line_2:header.line_2.dark,
-		line_3:header.line_3.dark,
+		backgroundBlurred: navigation.backgroundBlurred.dark,
+		background: navigation.background.dark,
+		logo: navigation.logo.dark,
+		font: navigation.fonts.dark,
+		shadow: navigation.shadow.dark,
+		line_1:navigation.line_1.dark,
+		line_2:navigation.line_2.dark,
+		line_3:navigation.line_3.dark,
 	},
 
 	fonts: {

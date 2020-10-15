@@ -21,7 +21,7 @@ function Blog({preview}) {
                 <Card/>
                 <Card/>
             </div>
-            {preview && <ReadMore className="read-more-big" to="/portfolio" text="buttons.blog"/>}
+            {preview && <ReadMore className="read-more-big" to="/blog" text="buttons.blog"/>}
             {preview ? null : <Contact className="section-contact-form"/>}
         </Section>
     )

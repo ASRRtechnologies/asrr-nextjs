@@ -1,4 +1,3 @@
-//Of paes without the header
 .layout{
   height: 100%;
   width: 100%;
@@ -13,16 +12,12 @@
     background-color: #0a0a0a;
     padding: 100px 100px 50px 100px;
   }
-
-
-
 }
 
 
 @media screen and (max-width:$tablet-padding-breakpoint) {
   .layout{
-    padding: 0 $padding-tablet;
-
+    padding: 150px $padding-tablet;
 
     &.footer-container{
       padding: 50px
@@ -31,10 +26,10 @@
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: $mobile-padding-breakpoint) {
 
   .layout{
-    padding: 0 25px;
+    padding: 100px $padding-mobile;
 
     &.footer-container{
       padding: 70px 25px 30px 25px;
