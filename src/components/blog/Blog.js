@@ -15,16 +15,13 @@ function Blog({preview}) {
 
     return (
         <Section id="blog-page">
-            <Title title={'portfolio.title.header'} text={'portfolio.preview.title.text'}/>
+            <Title title={'blog.landing.title'} text={'blog.landing.subtitle'}/>
             <div className="blog">
                 {
                     blog.map((entry)=>{
-                        return <Card id={entry.name}/>
+                        return <Card blog={entry}/>
                     })
                 }
-                <Card/>
-                <Card/>
-                <Card/>
             </div>
             {preview && <ReadMore className="read-more-big" to="/blog" text="buttons.blog"/>}
             {preview ? null : <Contact className="section-contact-form"/>}

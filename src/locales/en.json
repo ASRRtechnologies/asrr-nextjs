@@ -491,6 +491,35 @@
     "title": "404 error",
     "text": "The page you're looking for could not be found.",
     "button": "Go Back"
+  },
+  "blog": {
+    "landing": {
+      "title": "The latest news",
+      "subtitle": "Keep up to date with ASRR's latest developments, both on- and offline!"
+    },
+    "types": {
+      "article": "Article"
+    },
+    "article": {
+      "microservices": {
+        "card": {
+          "title": "Why microservices can save you money",
+          "description": "Using microservice architecture in software can provide various advantages over traditional monolithic applications."
+        }
+      },
+      "kubernetes": {
+        "card": {
+          "title": "Kubernetes or Cloud? Kubernetes at ASRR.",
+          "description": "Kubernetes can be a useful addition to your IT infrastructure, allowing cheap, reliable and powerful solutions."
+        }
+      },
+      "nextjs": {
+        "card": {
+          "title": "NextJS vs. ReactJS vs. the rest",
+          "description": "Why should you choose for a NextJS application compared to a traditional ReactJS application?"
+        }
+      }
+    }
   }
 }
 
