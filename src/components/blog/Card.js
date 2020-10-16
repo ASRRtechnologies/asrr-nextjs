@@ -1,5 +1,5 @@
 import React from 'react'
-import fallback from '#/clients/form/case-image.jpg'
+import fallback from '#/logo/asrr-banner.jpg'
 import styled from '@emotion/styled'
 import ReadMore from '@/text/ReadMore'
 import useI18n from '../../hooks/use-i18n'
