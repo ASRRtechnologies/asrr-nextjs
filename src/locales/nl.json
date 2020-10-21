@@ -485,6 +485,36 @@
     "title": "404 error",
     "text": "De pagina waar u op bent beland is niet gevonden.",
     "button": "Ga terug"
+  },
+  "blog": {
+    "landing": {
+      "title": "Het laatste nieuws",
+      "subtitle": "Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on- als offline!"
+    },
+    "types": {
+      "article": "Artikel"
+    },
+    "article": {
+      "microservices": {
+        "card": {
+          "title": "Hoe microservices geld kunnen besparen",
+          "description": "Het gebruik van microservices software kan een hoop ."
+        }
+      },
+      "kubernetes": {
+        "card": {
+          "title": "Kubernetes or Cloud? Kubernetes at ASRR.",
+          "description": "Kubernetes can be a useful addition to your IT infrastructure, allowing cheap, reliable and powerful solutions."
+        }
+      },
+      "nextjs": {
+        "card": {
+          "title": "NextJS vs. ReactJS vs. the rest",
+          "description": "Why should you choose for a NextJS application compared to a traditional ReactJS application?"
+        }
+      }
+    }
   }
+
 }
 

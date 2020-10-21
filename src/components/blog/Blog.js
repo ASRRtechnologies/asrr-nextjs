@@ -4,7 +4,7 @@ import Section from '@/layout/Section'
 import Title from "@/text/Title";
 import ReadMore from "@/text/ReadMore";
 import Contact from "@/contact/Preview";
-import {portfolio} from "../../data/portfolio";
+import {blog} from "../../data/blog";
 
 function Blog({preview}) {
 
@@ -15,14 +15,17 @@ function Blog({preview}) {
 
     return (
         <Section id="blog-page">
-			<Title title={'portfolio.title.header'} text={'portfolio.preview.title.text'}/>
-			<div className="blog">
-                <Card/>
-                <Card/>
-                <Card/>
+            <Title title={'blog.landing.title'} text={'blog.landing.subtitle'}/>
+            <div className="blog">
+                {
+                    blog.map((entry)=>{
+                        return <Card blog={entry}/>
+                    })
+                }
             </div>
             {preview && <ReadMore className="read-more-big" to="/blog" text="buttons.blog"/>}
             {preview ? null : <Contact className="section-contact-form"/>}
+
         </Section>
     )
 }
