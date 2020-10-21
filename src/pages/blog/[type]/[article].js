@@ -22,6 +22,7 @@ function Page({breadCrumb, found, query}) {
                     <Section className="section-article">
                         <BreadCrumb crumbs={breadCrumb}/>
                         <KeyWords keyWords={found.tags}/>
+
                         <WideText/>
                         <ArticleImage/>
                         <WideText/>
