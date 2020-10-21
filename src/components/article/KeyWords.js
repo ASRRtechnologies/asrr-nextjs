@@ -2,6 +2,7 @@ import React from 'react';
 import Animation from "@/animation/Animation";
 
 function KeyWords(props) {
+    let {keyWords} = props;
     return (
         <Animation animation="fade" className="key-words">
             <span>
@@ -9,9 +10,12 @@ function KeyWords(props) {
             </span>
 
             <div className="key-words-wrapper">
-                <p className="nextjs">NextJS</p>
-                <p className="nextjs">Kubernetes</p>
-                <p className="nextjs">Spring</p>
+                {keyWords &&
+                keyWords.map(keyword => {
+                        return  <p className="nextjs">{keyword}</p>
+
+                    })
+                }
             </div>
 
         </Animation>

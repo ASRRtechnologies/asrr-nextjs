@@ -1,3 +1,8 @@
+//Theme color
+const accentColor = '#1EB7CC';
+const accentColorDark = '#260f85';
+
+
 //Font colors
 const headerDark= '#ffffff';
 const headerLight= '#1a1a1a';
