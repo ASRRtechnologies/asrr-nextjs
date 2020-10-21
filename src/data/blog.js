@@ -13,7 +13,17 @@ export const blog = [
         tags: [
             "Kubernetes", "Cloud", "Hosting"
         ],
-        image: "https://www.techiescorner.in/wp-content/uploads/2019/12/k8s-logo.png"
+        image: "https://www.techiescorner.in/wp-content/uploads/2019/12/k8s-logo.png",
+        content: [
+            "textWithTitle",
+            "text",
+            "text",
+            "text",
+            "text",
+            "image",
+            "paragraph"
+        ]
+
     },
     {
         type: "article",

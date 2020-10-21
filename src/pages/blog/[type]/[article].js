@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Section from '@/layout/Section'
 import Application from "@/layout/Application";
 import Layout from "@/layout/Layout";
@@ -10,10 +10,20 @@ import Video from "@/article/Video";
 import BreadCrumb from "@/blog/BreadCrumb";
 import {cases} from "../../../data/cases";
 import {blog} from "../../../data/blog";
+import Title from "@/text/Title";
+import Animation from "@/animation/Animation";
 
 
 function Page({breadCrumb, found, query}) {
     console.log(breadCrumb)
+    let indexes = {}
+
+    let updateIndex = (componentName) => {
+        if (indexes[componentName] == null) indexes[componentName] = 0;
+        let newIndex = indexes[componentName] + 1;
+        indexes[componentName] = newIndex;
+        return newIndex;
+    }
 
     return (
         <>
@@ -21,7 +31,30 @@ function Page({breadCrumb, found, query}) {
                 <Layout>
                     <Section className="section-article">
                         <BreadCrumb crumbs={breadCrumb}/>
+
+                        <Title title={`blog.${found.type}.${found.name}.content.title`}/>
+
                         <KeyWords keyWords={found.tags}/>
+
+                        {found.content && found.content.map((component) => {
+                            let i = updateIndex(component);
+
+                            console.log(i)
+
+                            if (component === "textWithTitle") {
+                                return <WideText title={`blog.${found.type}.${found.name}.content.${component}.${i}.title`} text={`blog.${found.type}.${found.name}.content.${component}.${i}.text`}/>
+                            }
+
+                            if (component === "text") {
+                                return <WideText text={`blog.${found.type}.${found.name}.content.${component}.${i}.text`}/>
+                            }
+
+                            if (component === "image") {
+                                return <ArticleImage image={`/public/assets/blog/${found.type}/${found.name}/image-${i}.png`}/>
+                            }
+
+                        })}
+
 
                         <WideText/>
                         <ArticleImage/>

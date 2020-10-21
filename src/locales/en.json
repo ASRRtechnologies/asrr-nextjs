@@ -511,6 +511,9 @@
         "card": {
           "title": "Kubernetes or Cloud? Kubernetes at ASRR.",
           "description": "Kubernetes can be a useful addition to your IT infrastructure, allowing cheap, reliable and powerful solutions."
+        },
+        "content": {
+          "title": "Kubernetes or Cloud? Kubernetes at ASRR."
         }
       },
       "nextjs": {
