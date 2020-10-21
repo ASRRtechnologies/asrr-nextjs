@@ -1,5 +1,8 @@
 const withImages = require('next-images');
-module.exports = withImages();
+const withVideos = require('next-videos')
+
+module.exports = withImages(withVideos());
+
 
 // module.exports = withImages({
 //     experimental: {

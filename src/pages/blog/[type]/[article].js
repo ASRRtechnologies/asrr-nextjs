@@ -6,6 +6,7 @@ import WideText from "@/article/WideText";
 import ArticleImage from "@/article/ArticleImage";
 import ImageSlider from "@/article/ImageSlider";
 import KeyWords from "@/article/KeyWords";
+import Video from "@/article/Video";
 
 
 function Page({data, query}) {
@@ -22,6 +23,9 @@ function Page({data, query}) {
                         <WideText/>
                         <ArticleImage square/>
                         <ImageSlider square/>
+
+                        <Video/>
+
                     </Section>
                 </Layout>
             </Application>
