@@ -407,7 +407,8 @@
         },
         "introduction": {
           "title": "The Problem",
-          "text": "We live in a digital age, with a website being our digital advertising board. However, there is much to say for the way we present ourselves online. A client of ours recognized the added wow factor with a progressive web application opposed to a classic wordpress website."       },
+          "text": "We live in a digital age, with a website being our digital advertising board. However, there is much to say for the way we present ourselves online. A client of ours recognized the added wow factor with a progressive web application opposed to a classic wordpress website."
+        },
         "bullets": [
           {
             "key": "<p class=\"animated-link\"> The old process</p>",
@@ -513,7 +514,16 @@
           "description": "Kubernetes can be a useful addition to your IT infrastructure, allowing cheap, reliable and powerful solutions."
         },
         "content": {
-          "title": "Kubernetes or Cloud? Kubernetes at ASRR."
+          "title": "Kubernetes or Cloud? Kubernetes at ASRR.",
+          "paragraph": {
+            "1": {
+              "title": "What is kubernetes?",
+              "text": "Kubernetes is an open-source container-orchestration system for automating computer application deployment, scaling, and management. It was originally designed by Google and is now maintained by the Cloud Native Computing Foundation. In short, this means that it can be used to quickly scale any application you may have."
+            },
+            "2":{
+              "text": "lorem ipsum"
+            }
+          }
         }
       },
       "nextjs": {

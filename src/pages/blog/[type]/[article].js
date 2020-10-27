@@ -32,26 +32,24 @@ function Page({breadCrumb, found, query}) {
                     <Section className="section-article">
                         <BreadCrumb crumbs={breadCrumb}/>
 
-                        <Title title={`blog.${found.type}.${found.name}.content.title`}/>
+                        {/*<Title title={`blog.${found.type}.${found.name}.content.title`}/>*/}
 
                         <KeyWords keyWords={found.tags}/>
 
                         {found.content && found.content.map((component) => {
-                            let i = updateIndex(component);
+                            let i = updateIndex(component.type);
 
                             console.log(i)
 
-                            if (component === "textWithTitle") {
-                                return <WideText title={`blog.${found.type}.${found.name}.content.${component}.${i}.title`} text={`blog.${found.type}.${found.name}.content.${component}.${i}.text`}/>
+                            if (component.type === "paragraph") {
+                                return <WideText title={component.title && `blog.${found.type}.${found.name}.content.${component.type}.${i}.title`} text={`blog.${found.type}.${found.name}.content.${component.type}.${i}.text`}/>
                             }
 
-                            if (component === "text") {
-                                return <WideText text={`blog.${found.type}.${found.name}.content.${component}.${i}.text`}/>
+                            if (component.type === "image") {
+                                return <ArticleImage image={`/assets/blog/${found.type}/${found.name}/image-${i}.${component.format}`}/>
                             }
 
-                            if (component === "image") {
-                                return <ArticleImage image={`/public/assets/blog/${found.type}/${found.name}/image-${i}.png`}/>
-                            }
+
 
                         })}
 

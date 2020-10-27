@@ -15,13 +15,23 @@ export const blog = [
         ],
         image: "https://www.techiescorner.in/wp-content/uploads/2019/12/k8s-logo.png",
         content: [
-            "textWithTitle",
-            "text",
-            "text",
-            "text",
-            "text",
-            "image",
-            "paragraph"
+            {
+                type: "paragraph",
+                title: true
+            },
+            {
+                type: "paragraph",
+                title: false
+            },
+            {
+                type: "image",
+                format: "png"
+            },
+            {
+                type: "image",
+                format: "jpg"
+            }
+
         ]
 
     },
