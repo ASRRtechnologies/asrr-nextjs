@@ -111,7 +111,7 @@ function Footer(props) {
                     <form onSubmit={handleSubmit}>
                         <Input onChange={(e) => handleChange(e.target)} value={email.name} className="full-width"
                                button={i18n.t('buttons.submit')}
-                               placeholder={i18n.t('contact.form.email.placeholder').slice(0, -1)}/>
+                               placeholder={i18n.t('contact.form.email.placeholder')}/>
                     </form>
                 </div>
 

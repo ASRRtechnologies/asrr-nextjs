@@ -1,19 +1,17 @@
 import React from 'react';
 import Animation from "@/animation/Animation";
+import i18n from "../../context/lib/i18n";
+import useI18n from "../../hooks/use-i18n";
 
 function WideText(props) {
+    let {title, text} = props
+    let i18n = useI18n();
     return (
         <Animation animation="fade" className="wide-text margin-bottom-article-section">
 
-            <h2>Title with a very long name</h2>
+            {title && <h2>{i18n.t(title) !== undefined ? i18n.t(title) : title}</h2>}
 
-            <p>Large text hereee Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also
-                the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
+            {text && <p>{i18n.t(text) !== undefined ? i18n.t(text) : text}</p>}
 
         </Animation>
     );

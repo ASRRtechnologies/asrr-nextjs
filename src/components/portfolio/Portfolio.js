@@ -21,7 +21,7 @@ function Portfolio({preview}) {
             <div className={`portfolio ${preview ? "margin-bottom" : ""}`}>
                 {cases.map(({image, id, type, href}, i) => {
                     return (
-                        <Card redirect={href} route={id} client={`cases.${id}.client`} img={image}
+                        <Card redirect={href} route={`/portfolio/case/${id}`} client={`cases.${id}.client`} img={image}
                               discipline={`cases.${id}.discipline`} title={`cases.${id}.title`}/>
                     )
                 })}

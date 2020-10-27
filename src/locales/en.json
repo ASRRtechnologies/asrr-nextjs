@@ -20,7 +20,11 @@
     "services": "See all Services",
     "cases": "See all Cases",
     "portfolio": "Go To Portfolio",
-    "blog": "Go to Blog",
+    "blog": {
+      "article": "Read article",
+      "news": "Read the news",
+      "code": "Follow the tutorial!"
+    },
     "contact": "Let's get in touch",
     "submit": "Submit"
   },
@@ -95,7 +99,7 @@
       "nwo": {
         "contact": "Robby Makka",
         "picture": "https://www.srherald.com/wp-content/uploads/2017/03/Robby-Makka.png",
-        "story": "Work in progress",
+        "story": "ASRR lead by Amar Ramdas\nrecently did some work for me, namely improving my internet connection, and he did it very well!\n\nHe also gave very good advise related to the purchase of a new PC \uD83D\uDC4D. I am very satisfied and would say that his service is top notch!\nI would certainly recommend him to others.\nKnowledge and experience!",
         "name": "Ministerie van Financiën c.q. Belastingdienst/Douane Nederland",
         "function": "Manager"
       }
@@ -407,7 +411,8 @@
         },
         "introduction": {
           "title": "The Problem",
-          "text": "We live in a digital age, with a website being our digital advertising board. However, there is much to say for the way we present ourselves online. A client of ours recognized the added wow factor with a progressive web application opposed to a classic wordpress website."       },
+          "text": "We live in a digital age, with a website being our digital advertising board. However, there is much to say for the way we present ourselves online. A client of ours recognized the added wow factor with a progressive web application opposed to a classic wordpress website."
+        },
         "bullets": [
           {
             "key": "<p class=\"animated-link\"> The old process</p>",
@@ -498,12 +503,67 @@
       "subtitle": "Keep up to date with ASRR's latest developments, both on- and offline!"
     },
     "types": {
-      "article": "Article"
+      "article": {
+        "name": "Article",
+        "readMore": "Read article"
+      },
+      "news": {
+        "name": "News",
+        "readMore": "Read news article"
+      },
+      "tutorial": {
+        "name": "Tutorial",
+        "readMore": "Follow the tutorial!"
+      }
+    },
+    "tutorial": {
+      "code-tutorial": {
+        "card": {
+          "title": "How to create a Hello World Revit Add-In.",
+          "description": "In this tutorial we will teach you how to create your own Revit Add-In! Coming soon."
+        },
+        "content": {
+          "paragraph": {
+            "1": {
+              "title": "Finally, a real world implementation of our 3D housing configurator!",
+              "text": "test"
+            },
+            "2": {
+              "text": "The result? A happy project leader and very excited customers!"
+            }
+          }
+        }
+      }
+    },
+    "news": {
+      "heijmans-configurator": {
+        "card": {
+          "title": "ASRR & FORM launch Heijmans Online 3D Configurator.",
+          "description": "Together with our partner FORM, we developed a online 3D House Configurator, based on a NextJS platform. This includes a dasbhoard to see customer configurations and a Spring Boot Back end to manage the data."
+        },
+        "content": {
+          "paragraph": {
+            "1": {
+              "title": "Finally, a real world implementation of our 3D housing configurator!",
+              "text": "test"
+            },
+            "2": {
+              "text": "The result? A happy project leader and very excited customers!"
+            }
+          }
+        }
+      },
+      "new-office": {
+        "card": {
+          "title": "ASRR moved to the Glass House in Wateringen",
+          "description": "We are now the proud tenants of Unit A, you're welcome for a cup of coffee (once corona passes)."
+        }
+      }
     },
     "article": {
       "microservices": {
         "card": {
-          "title": "Why microservices can save you money",
+          "title": "Can microservices save you money?",
           "description": "Using microservice architecture in software can provide various advantages over traditional monolithic applications."
         }
       },
@@ -511,6 +571,18 @@
         "card": {
           "title": "Kubernetes or Cloud? Kubernetes at ASRR.",
           "description": "Kubernetes can be a useful addition to your IT infrastructure, allowing cheap, reliable and powerful solutions."
+        },
+        "content": {
+          "title": "Kubernetes or Cloud? Kubernetes at ASRR.",
+          "paragraph": {
+            "1": {
+              "title": "What is kubernetes?",
+              "text": "Kubernetes is an open-source container-orchestration system for automating computer application deployment, scaling, and management. It was originally designed by Google and is now maintained by the Cloud Native Computing Foundation. In short, this means that it can be used to quickly scale any application you may have."
+            },
+            "2": {
+              "text": "lorem ipsum"
+            }
+          }
         }
       },
       "nextjs": {

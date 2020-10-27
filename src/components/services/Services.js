@@ -7,11 +7,11 @@ import Contact from '@/contact/Preview'
 import ReadMore from "@/text/ReadMore";
 
 function Services ({preview}) {
-	const [servicesPreview, setPortfolioPreview] = useState([]);
+	const [servicesPreview, setServicesPreview] = useState([]);
 
 	useEffect(() => {
-		if (preview) setPortfolioPreview(services.slice(0, 3));
-		else setPortfolioPreview(services);
+		if (preview) setServicesPreview(services.slice(0, 3));
+		else setServicesPreview(services);
 	}, [preview]);
 
 	return (
@@ -19,7 +19,7 @@ function Services ({preview}) {
 				<Title title={'services.header.title'}/>
 				<div className={`services ${preview ? "margin-bottom" : ""}`}>
 					{
-						services.map((d) => {
+						servicesPreview.map((d) => {
 								return (
 										<Card title={d.preview_title} text={d.preview_text} icon={d.icon}
 											  to={`services/${d.id}`}/>
