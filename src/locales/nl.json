@@ -494,28 +494,84 @@
     "types": {
       "article": {
         "name": "Artikel",
-        "readMore": "Lees artikel"
+        "readMore": "Lees artikel [Engels]"
       },
       "news": {
         "name": "Nieuws",
-        "readMore": "Bekijk het nieuws"
+        "readMore": "Bekijk het nieuws [Engels]"
       },
       "tutorial": {
         "name": "Tutorial",
-        "readMore": "Volg de tutorial!"
+        "readMore": "Volg de tutorial! [Engels]"
+      }
+    },
+    "tutorial": {
+      "code-tutorial": {
+        "card": {
+          "title": "How to create a Hello World Revit Add-In.",
+          "description": "In this tutorial we will teach you how to create your own Revit Add-In! Coming soon."
+        },
+        "content": {
+          "paragraph": {
+            "1": {
+              "title": "Finally, a real world implementation of our 3D housing configurator!",
+              "text": "test"
+            },
+            "2": {
+              "text": "The result? A happy project leader and very excited customers!"
+            }
+          }
+        }
+      }
+    },
+    "news": {
+      "heijmans-configurator": {
+        "card": {
+          "title": "ASRR & FORM launch Heijmans Online 3D Configurator.",
+          "description": "Together with our partner FORM, we developed a online 3D House Configurator, based on a NextJS platform. This includes a dasbhoard to see customer configurations and a Spring Boot Back end to manage the data."
+        },
+        "content": {
+          "paragraph": {
+            "1": {
+              "title": "Finally, a real world implementation of our 3D housing configurator!",
+              "text": "test"
+            },
+            "2": {
+              "text": "The result? A happy project leader and very excited customers!"
+            }
+          }
+        }
+      },
+      "new-office": {
+        "card": {
+          "title": "ASRR moved to the Glass House in Wateringen",
+          "description": "We are now the proud tenants of Unit A, you're welcome for a cup of coffee (once corona passes)."
+        }
       }
     },
     "article": {
       "microservices": {
         "card": {
-          "title": "Kunnen microservices u geld besparen?",
-          "description": "Het gebruik van microservices software kan een hoop ."
+          "title": "Can microservices save you money?",
+          "description": "Using microservice architecture in software can provide various advantages over traditional monolithic applications."
         }
       },
       "kubernetes": {
         "card": {
           "title": "Kubernetes or Cloud? Kubernetes at ASRR.",
           "description": "Kubernetes can be a useful addition to your IT infrastructure, allowing cheap, reliable and powerful solutions."
+        },
+        "content": {
+          "title": "Kubernetes or Cloud? Kubernetes at ASRR.",
+          "paragraph": {
+            "1": {
+              "title": "What is kubernetes?",
+              "text": "Kubernetes is an open-source container-orchestration system for automating computer application deployment, scaling, and management. It was originally designed by Google and is now maintained by the Cloud Native Computing Foundation. In short, this means that it can be used to quickly scale any application you may have."
+            },
+            "2": {
+              "text": "lorem ipsum"
+            }
+          }
         }
       },
       "nextjs": {
