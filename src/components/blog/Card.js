@@ -22,10 +22,10 @@ function Card (props) {
 				</div>
 
 				<div className="blog-card-text">
-					<h4>{i18n.t(`blog.types.${type}`)}</h4>
-					<h2>{i18n.t(`blog.${type}.${name}.card.title`)}</h2>
+					<h4>{i18n.t(`blog.types.${type}.name`)}</h4>
+					<h2>{i18n.t(`blog.${type}.${name}.card.title`, 'en')}</h2>
 					<p>{i18n.t(`blog.${type}.${name}.card.description`)}</p>
-					{readMore && <ReadMore noAnimation={true} className="read-more-portfolio" text="buttons.blog" to={`/blog/${type}/${name}`}/>}
+					{readMore && <ReadMore noAnimation={true} className="read-more-portfolio" text={`blog.types.${type}.readMore`} to={`/blog/${type}/${name}`}/>}
 				</div>
 			</InnerWrapper>
 		</div>

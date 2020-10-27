@@ -20,7 +20,11 @@
     "services": "See all Services",
     "cases": "See all Cases",
     "portfolio": "Go To Portfolio",
-    "blog": "Go to Blog",
+    "blog": {
+      "article": "Read article",
+      "news": "Read the news",
+      "code": "Follow the tutorial!"
+    },
     "contact": "Let's get in touch",
     "submit": "Submit"
   },
@@ -499,8 +503,37 @@
       "subtitle": "Keep up to date with ASRR's latest developments, both on- and offline!"
     },
     "types": {
-      "article": "Article",
-      "news": "News"
+      "article": {
+        "name": "Article",
+        "readMore": "Read article"
+      },
+      "news": {
+        "name": "News",
+        "readMore": "Read news article"
+      },
+      "tutorial": {
+        "name": "Tutorial",
+        "readMore": "Follow the tutorial!"
+      }
+    },
+    "tutorial": {
+      "code-tutorial": {
+        "card": {
+          "title": "How to create a Hello World Revit Add-In.",
+          "description": "In this tutorial we will teach you how to create your own Revit Add-In! Coming soon."
+        },
+        "content": {
+          "paragraph": {
+            "1": {
+              "title": "Finally, a real world implementation of our 3D housing configurator!",
+              "text": "test"
+            },
+            "2": {
+              "text": "The result? A happy project leader and very excited customers!"
+            }
+          }
+        }
+      }
     },
     "news": {
       "heijmans-configurator": {
@@ -519,12 +552,18 @@
             }
           }
         }
+      },
+      "new-office": {
+        "card": {
+          "title": "ASRR moved to the Glass House in Wateringen",
+          "description": "We are now the proud tenants of Unit A, you're welcome for a cup of coffee (once corona passes)."
+        }
       }
     },
     "article": {
       "microservices": {
         "card": {
-          "title": "Why microservices can save you money",
+          "title": "Can microservices save you money?",
           "description": "Using microservice architecture in software can provide various advantages over traditional monolithic applications."
         }
       },

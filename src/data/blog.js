@@ -55,11 +55,6 @@ export const blog = [
         url: "https://www.linkedin.com/posts/asrr_woningconfigurator-revit-bim-activity-6719622822328631296-6RQw",
         readMore: true,
         content: [
-            // {
-            //     type: "iframe",
-            //     iframeType: "linkedin-compact",
-            //     src:"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6719531516357091328?compact=1"
-            // },
             {
                 type: "paragraph",
                 title: true,
@@ -94,17 +89,25 @@ export const blog = [
                     "</iframe>"
             }
         ]
-
-
-    }
-    // {
-    //     type: "news",
-    //     name: "new-office",
-    //     tags: [
-    //         "front-end", "development"
-    //     ],
-    //     url: ""
-    // },
+    },
+    {
+        type: "news",
+        name: "new-office",
+        image: "https://media-exp1.licdn.com/dms/image/C4E22AQFAltbZ4auSUQ/feedshare-shrink_1280-alternative/0?e=1606953600&v=beta&t=7uENkv7zCd5IEyt5ew9CRta3_3MV-Xc9NUYYUiVTcig",
+        tags: [
+            "ASRR", "office"
+        ],
+        content: [
+            {
+                type: "code",
+                code: "<iframe\n" +
+                    "  src=\"https://carbon.now.sh/embed/\"\n" +
+                    "  style=\"width: 873px; height: 417px; border:0; transform: scale(1); overflow:hidden;\"\n" +
+                    "  sandbox=\"allow-scripts allow-same-origin\">\n" +
+                    "</iframe>"
+            }
+        ]
+    },
     // {
     //     type: "news",
     //     name: "asrr-bv",

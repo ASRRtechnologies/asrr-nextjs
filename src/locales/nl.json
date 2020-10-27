@@ -492,12 +492,23 @@
       "subtitle": "Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on- als offline!"
     },
     "types": {
-      "article": "Artikel"
+      "article": {
+        "name": "Artikel",
+        "readMore": "Lees artikel"
+      },
+      "news": {
+        "name": "Nieuws",
+        "readMore": "Bekijk het nieuws"
+      },
+      "tutorial": {
+        "name": "Tutorial",
+        "readMore": "Volg de tutorial!"
+      }
     },
     "article": {
       "microservices": {
         "card": {
-          "title": "Hoe microservices geld kunnen besparen",
+          "title": "Kunnen microservices u geld besparen?",
           "description": "Het gebruik van microservices software kan een hoop ."
         }
       },
