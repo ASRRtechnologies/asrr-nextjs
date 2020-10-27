@@ -46,21 +46,26 @@ function Page({breadCrumb, found, query}) {
                             }
 
                             if (component.type === "image") {
-                                return <ArticleImage image={`/assets/blog/${found.type}/${found.name}/image-${i}.${component.format}`}/>
+                                return <ArticleImage image={`/assets/blog/${found.type}/${found.name}/image-${i}.${component.format}`} square={component.square}/>
                             }
 
+                            if (component.type === "iframe") {
+                                return <iframe src={component.src} height="907" width="504" frameborder="0" allowfullscreen="" title="Ingevoegde bijdrage"/>
+                            }
 
+                            if (component.type === "code"){
+                                return  <div className="Container" dangerouslySetInnerHTML={{__html: component.code}}/>;
+                            }
 
                         })}
 
+                        {/*<WideText/>*/}
+                        {/*<ArticleImage/>*/}
+                        {/*<WideText/>*/}
+                        {/*<ArticleImage square/>*/}
+                        {/*<ImageSlider square/>*/}
 
-                        <WideText/>
-                        <ArticleImage/>
-                        <WideText/>
-                        <ArticleImage square/>
-                        <ImageSlider square/>
-
-                        <Video/>
+                        {/*<Video/>*/}
 
                     </Section>
                 </Layout>

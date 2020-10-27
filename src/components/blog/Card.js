@@ -11,7 +11,7 @@ const InnerWrapper = styled('div')`
 
 function Card (props) {
 	const i18n = useI18n();
-	let {type, name, image} = props.blog;
+	let {type, name, image, readMore} = props.blog;
 
 
 	return (
@@ -25,7 +25,7 @@ function Card (props) {
 					<h4>{i18n.t(`blog.types.${type}`)}</h4>
 					<h2>{i18n.t(`blog.${type}.${name}.card.title`)}</h2>
 					<p>{i18n.t(`blog.${type}.${name}.card.description`)}</p>
-					<ReadMore noAnimation={true} className="read-more-portfolio" text="buttons.blog" to={`/blog/${type}/${name}`}/>
+					{readMore && <ReadMore noAnimation={true} className="read-more-portfolio" text="buttons.blog" to={`/blog/${type}/${name}`}/>}
 				</div>
 			</InnerWrapper>
 		</div>

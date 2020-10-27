@@ -9,7 +9,7 @@ function Title({text, title, className}) {
     return (
         <Animation animation="fade-up" className={`title ${className}`}>
             <h1>
-                {title ? i18n.t(title) : null}
+                {title && i18n.t(title) !== undefined ? i18n.t(title) : title}
             </h1>
             <Interweave tagName="p"
                         content={text ? i18n.t(text) : null}/>

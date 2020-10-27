@@ -499,7 +499,27 @@
       "subtitle": "Keep up to date with ASRR's latest developments, both on- and offline!"
     },
     "types": {
-      "article": "Article"
+      "article": "Article",
+      "news": "News"
+    },
+    "news": {
+      "heijmans-configurator": {
+        "card": {
+          "title": "ASRR & FORM launch Heijmans Online 3D Configurator.",
+          "description": "Together with our partner FORM, we developed a online 3D House Configurator, based on a NextJS platform. This includes a dasbhoard to see customer configurations and a Spring Boot Back end to manage the data."
+        },
+        "content": {
+          "paragraph": {
+            "1": {
+              "title": "Finally, a real world implementation of our 3D housing configurator!",
+              "text": "test"
+            },
+            "2": {
+              "text": "The result? A happy project leader and very excited customers!"
+            }
+          }
+        }
+      }
     },
     "article": {
       "microservices": {
@@ -520,7 +540,7 @@
               "title": "What is kubernetes?",
               "text": "Kubernetes is an open-source container-orchestration system for automating computer application deployment, scaling, and management. It was originally designed by Google and is now maintained by the Cloud Native Computing Foundation. In short, this means that it can be used to quickly scale any application you may have."
             },
-            "2":{
+            "2": {
               "text": "lorem ipsum"
             }
           }
