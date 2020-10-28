@@ -6,6 +6,32 @@ export const blog = [
         tags: [
             "full-stack"
         ],
+        content: [
+            {
+                type: "paragraph",
+                title: true
+            },
+            {
+                type: "paragraph",
+                title: false
+            },
+            {
+                type: "image",
+                format: "png"
+            },
+            {
+                type: "paragraph",
+                title: true
+            },
+            {
+                type: "paragraph",
+                title: false
+            },
+            {
+                type: "paragraph",
+                title: false
+            }
+        ],
         image: "https://r2m.se/wp-content/uploads/2018/01/microservices-768x448.png"
     },
     {
@@ -24,6 +50,14 @@ export const blog = [
             {
                 type: "paragraph",
                 title: false
+            },
+            {
+                type: "paragraph",
+                title: false
+            },
+            {
+                type: "paragraph",
+                title: true
             },
             {
                 type: "image",
@@ -61,14 +95,14 @@ export const blog = [
             },
             {
                 type: "iframe",
-                src:"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6719531516357091328"
+                src: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6719531516357091328"
             },
             {
                 type: "paragraph"
             },
             {
                 type: "iframe",
-                src:"https://www.linkedin.com/embed/feed/update/urn:li:share:6716653648182591488"
+                src: "https://www.linkedin.com/embed/feed/update/urn:li:share:6716653648182591488"
             }
         ]
     },
