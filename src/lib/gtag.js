@@ -15,3 +15,5 @@ export const event = ({ action, category, label, value }) => {
         value: value,
     })
 }
+
+export const GTM_ID = 'GTM-MLCFDZD'
