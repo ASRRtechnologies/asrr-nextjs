@@ -20,11 +20,7 @@
     "services": "See all Services",
     "cases": "See all Cases",
     "portfolio": "Go To Portfolio",
-    "blog": {
-      "article": "Read article",
-      "news": "Read the news",
-      "code": "Follow the tutorial!"
-    },
+    "blog": "Go to Blog",
     "contact": "Let's get in touch",
     "submit": "Submit"
   },
