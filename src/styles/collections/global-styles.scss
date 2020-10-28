@@ -49,14 +49,14 @@
 }
 
 .margin-bottom-article-section{
-  margin-bottom: 100px;
+  margin-bottom: 40px;
 
   @media screen and (max-width: $tablet-breakpoint) {
-    margin-bottom: 75px;
+    margin-bottom: 40px;
   }
 
   @media screen and (max-width: $mobile-breakpoint) {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
 }
