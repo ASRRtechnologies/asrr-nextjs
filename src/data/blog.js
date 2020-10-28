@@ -4,7 +4,7 @@ export const blog = [
         name: "microservices",
         readMore: true,
         tags: [
-            "full-stack"
+            "development", "technology"
         ],
         content: [
             {

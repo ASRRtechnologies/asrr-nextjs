@@ -585,6 +585,11 @@
             "5": {
               "text": "In short, this results in lower costs while improving reliability."
             }
+          },
+          "image": {
+            "1": {
+              "subtitle": "Monolithic structure vs. microservice structure"
+            }
           }
         }
       },
