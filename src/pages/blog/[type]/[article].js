@@ -46,7 +46,7 @@ function Page({breadCrumb, found, query}) {
                             }
 
                             if (component.type === "image") {
-                                return <ArticleImage image={`/assets/blog/${found.type}/${found.name}/image-${i}.${component.format}`} square={component.square}/>
+                                return <ArticleImage image={`/assets/blog/${found.type}/${found.name}/${found.name}-${i}.${component.format}`} subtitle={`blog.${found.type}.${found.name}.content.${component.type}.${i}.subtitle`} square={component.square}/>
                             }
 
                             if (component.type === "iframe") {
