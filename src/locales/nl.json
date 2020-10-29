@@ -241,8 +241,8 @@
       "text": "Not sure what you need? ASRR can send an expert to analyse your company processes and propose a solution and fitting advice. ASRR can then provide the required developing skills.",
       "preview": {
         "title": "IT Teams As A Service",
-        "text": "ASRR delivers tailored advice from an expert in the subject for anything IT related, be it websites, applications, servers, AI/machine learning and much more. We can lead projects from the ground up, or adapt existing ones to fit your current needs. These solutions can then be carried out perfectly by our development team.",
-        "landingText": "Tailored advice from an expert in the field"
+        "text": "ASRR levert advies op maat for everything IT related, be it websites, applications, servers, AI/machine learning and much more. We can lead projects from the ground up, or adapt existing ones to fit your current needs. These solutions can then be carried out perfectly by our development team.",
+        "landingText": "Flexibele teams met de benodigde expertise"
       }
     },
     "hardware": {
@@ -250,9 +250,9 @@
       "title": "Custom Built Hardware",
       "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
       "preview": {
-        "title": "Custom Built Hardware",
+        "title": "Hardware op maat",
         "text": "If cloud is not what you need, we can also provide you with custom built servers, with far superior power to cost ratios. They can be used as strong workstations, remote desktop environments or even to host your API's on a kubernetes cluster.",
-        "landingText": "Servers that fit your needs exactly"
+        "landingText": "Servers afgesteld op uw bedrijf!"
       }
     },
     "servers": {

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import Card from '@/blog/Card'
 import Section from '@/layout/Section'
 import Title from "@/text/Title";
@@ -7,18 +7,18 @@ import Contact from "@/contact/Preview";
 import {blog} from "../../data/blog";
 
 function Blog({preview}) {
+    let [cases, setCases] = useState(blog);
 
-    // useEffect(() => {
-    //     if (preview) setCases(portfolio.slice(0, 3));
-    //     else setCases(portfolio);
-    // }, [preview]);
+    useEffect(() => {
+        if (preview) setCases(blog.slice(0, 3));
+    }, [preview]);
 
     return (
         <Section id="blog-page">
             <Title title={'blog.landing.title'} text={'blog.landing.subtitle'}/>
             <div className="blog">
                 {
-                    blog.map((entry)=>{
+                    cases.map((entry)=>{
                         return <Card blog={entry}/>
                     })
                 }
