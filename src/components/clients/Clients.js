@@ -1,7 +1,7 @@
 import React from 'react'
 import { clients } from '../../data/clients'
 import styled from '@emotion/styled'
-import Title from '@/text/Title'
+import Title from '@/titles/Title'
 import Section from '@/layout/Section'
 import Animation from '@/animation/Animation'
 import Ticker from 'react-ticker'

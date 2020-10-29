@@ -1,47 +1,23 @@
 //Title
 .title {
-  width: 100%;
-  height: auto;
-  @include flex(center, center, column);
-  margin-bottom: 100px;
+  @include size(100%, auto);
+  @include flex(flex-start, center, column);
+  max-width: 800px;
+
+  h1, h2, h4{
+    text-align: center;
+  }
 
   h1{
-    text-align: center;
+    margin-bottom: 70px;
   }
 
-  p {
-    text-align: center;
-    margin-bottom: 0;
-    max-width: 700px;
+  h4{
+    margin-bottom: 50px;
+    color: $primary-color !important;
   }
 
-  &.justify{
-    p{
-      text-align: justify;
-    }
-  }
-
-  &.regular{
-    p{
-      text-align: left;
-    }
-  }
-
-  &.title-button{
-    margin-bottom: 30px;
-  }
-
-  &.left-title{
-    @include flex(center, flex-start, column);
-    p{
-      text-align: justify;
-      max-width: 800px;
-    }
-  }
-
-  &.no-margin{
-    margin-bottom: 0;
-  }
+  margin-bottom: 150px;
 
 }
 
@@ -63,17 +39,29 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: $tablet-breakpoint) {
   .title {
-    margin-bottom: 75px;
+    h1{
+      font-size: 50px;
+      margin-bottom: 40px;
+    }
+
+    h4{
+      margin-bottom: 30px;
+      color: $primary-color !important;
+    }
+
+    margin-bottom: 100px;
+
   }
+
+
 }
 
 @media screen and (max-width: 600px) {
   .title {
-    margin-bottom: 50px;
-    h2{
-      margin-bottom: 5px;
+    h1{
+      font-size: 30px;
     }
   }
 }

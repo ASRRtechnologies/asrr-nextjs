@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import styled from "@emotion/styled";
 
 const Wrapper = styled("div")`
-	  background-color:${props => props.theme.header.background};
+	  background-color:${props => props.theme.navigation.background};
         box-shadow: ${props => props.theme.card.shadow.services};
 `;
 

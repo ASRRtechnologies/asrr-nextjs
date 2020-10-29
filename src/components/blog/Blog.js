@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import Card from '@/blog/Card'
 import Section from '@/layout/Section'
-import Title from "@/text/Title";
+import Title from "@/titles/Title";
 import ReadMore from "@/text/ReadMore";
 import Contact from "@/contact/Preview";
 import {blog} from "../../data/blog";

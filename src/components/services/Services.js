@@ -1,36 +1,53 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import Section from '../layout/Section'
-import Card from './Card'
-import Title from '../text/Title'
-import {services} from '../../data/services'
-import Contact from '@/contact/Preview'
-import ReadMore from "@/text/ReadMore";
+import Title from '../titles/Title'
+import automation from '#/services/automation/automation-square.jpg'
+import analytics from '#/services/data-analytics/data-analytics-square.jpg'
+import scale from '#/services/scaleable-software/scaleable-software-sqaure.jpg'
+import Fade from 'react-reveal/Fade';
 
-function Services ({preview}) {
-	const [servicesPreview, setServicesPreview] = useState([]);
+const Card = ({image, text, title, to}) => {
 
-	useEffect(() => {
-		if (preview) setServicesPreview(services.slice(0, 3));
-		else setServicesPreview(services);
-	}, [preview]);
+    return (
+        <Fade bottom>
+            <div className="service-card">
+                <div className="service-card-text">
+                    <div className="service-card-text-wrapper">
+					<span>
+						<h2>Scaleable Software </h2>
+						<p>This is a text for you to see how far the button can
+						actually render if i try and some more random text to display on this page</p>
+                        {/*<Button to="/"/>*/}
+					</span>
+                    </div>
+                </div>
 
-	return (
-		<Section id="services">
-				<Title title={'services.header.title'}/>
-				<div className={`services ${preview ? "margin-bottom" : ""}`}>
-					{
-						servicesPreview.map((d) => {
-								return (
-										<Card title={d.preview_title} text={d.preview_text} icon={d.icon}
-											  to={`services/${d.id}`}/>
-								)
-							},
-						)}
-				</div>
+                <div className="service-card-image">
+                    <div className="service-card-image-wrapper">
+                        <img src={image} alt="services-alt"/>
+                    </div>
+                </div>
+            </div>
+        </Fade>
+    )
 
- 			{preview && <ReadMore className="read-more-big" to="/services" text="buttons.services"/>}
-			{preview ? null : <Contact className="section-contact-form"/>}
-		</Section>
-	)
+
+};
+
+function Services() {
+
+
+    return (
+        <Section id="services">
+            <Title title={'services.header.title'}/>
+            <div className="services">
+                <Card image={automation}/>
+                <Card image={analytics}/>
+                <Card image={scale}/>
+            </div>
+
+        </Section>
+    )
 }
+
 export default Services

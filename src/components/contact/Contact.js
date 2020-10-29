@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import Section from '../layout/Section'
-import Title from '../text/Title'
+import Title from '../titles/Title'
 import Input from '@/text/Input'
 import Map from '@/contact/Map'
 import useI18n from '../../hooks/use-i18n'

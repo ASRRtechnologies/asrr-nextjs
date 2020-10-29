@@ -18,6 +18,7 @@
 @import "../scrollers/scroll-up";
 @import "../layout/layout";
 @import "../layout/section";
+@import "../layout/application";
 @import "../animation/transition-animation";
 @import "../animation/link-animation";
 @import "../scrollers/cursor";
@@ -36,6 +37,7 @@
 
 //Services
 @import "../services/cards";
+@import "../services/preview";
 @import "../services/services";
 @import "../blog/card";
 @import "../blog/blog";

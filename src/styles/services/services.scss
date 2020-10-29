@@ -1,15 +1,155 @@
-.services{
+.services {
   @include size(100%, auto);
   @include flex(flex-start, center, column);
-  &.margin-bottom{
-    margin-bottom: 100px;
-  }
+  max-width: $max-width;
 }
 
-@media screen and (max-width: $service-card-first-breakpoint) {
-  .service-card{
-    &:nth-of-type(even) {
-      flex-direction: column !important;
+
+.service-card {
+  @include size(100%, auto);
+  @include flex(flex-start, center, row);
+  margin-bottom: 150px;
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+
+    .service-card-image-wrapper {
+      border-radius: 5px 0 0 5px;
+
+      img {
+        border-radius: 5px 0 0 5px;
+      }
     }
   }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 1500px ) and (min-width: $tablet-breakpoint) {
+    h2 {
+      font-size: calc(4vw * 0.55);
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: calc(3vw * 0.45);
+    }
+  }
+
+}
+
+.service-card-text {
+  @include size(100%, auto);
+  flex: 1;
+
+
+}
+
+.service-card-text-wrapper {
+  height: 0;
+  width: 100%;
+  padding-bottom: 80%;
+  background-color: #eee;
+  position: relative;
+  box-sizing: border-box;
+
+  span {
+    @include size(100%, 100%);
+    @include flex(center, flex-start, column);
+    padding: 100px;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+  }
+
+}
+
+.service-card-image {
+  @include size(100%, auto);
+  flex: 1;
+}
+
+.service-card-image-wrapper {
+  @include flex(center, center, column);
+  width: 100%;
+  position: relative;
+  padding-bottom: 80%;
+  overflow: hidden;
+  border-radius: 0 5px 5px 0;
+
+  img {
+    @include size(100%, 100%);
+    object-fit: cover;
+    position: absolute;
+    object-position: 50% 50%;
+    transition: all 0.7s ease 0s;
+    left: 0;
+    top: 0;
+    border-radius: 0 5px 5px 0;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.7s ease 0s;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+
+  .service-card-text-wrapper {
+    span {
+      padding: 50px;
+    }
+  }
+
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+
+  .service-card {
+    @include flex(center, flex-start, column-reverse);
+    margin-bottom: 150px;
+    max-width: 600px;
+
+    &:nth-child(even) {
+      flex-direction: column-reverse;
+
+      .service-card-image-wrapper {
+        border-radius: 5px 0 0 5px;
+
+        img {
+          border-radius: 5px 0 0 5px;
+        }
+      }
+    }
+
+
+
+  }
+
+  .service-card-text-wrapper{
+    height: auto;
+    padding-bottom: 0;
+
+    span{
+      position: relative;
+      height: auto;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .service-card-text-wrapper{
+
+    span{
+      padding: 25px;
+    }
+
+  }
+
+
 }

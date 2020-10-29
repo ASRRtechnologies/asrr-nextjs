@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '../layout/Section'
-import Title from '../text/Title'
+import Title from '../titles/Title'
 import Card from '@/stories/Card'
 import Animation from '@/animation/Animation'
 

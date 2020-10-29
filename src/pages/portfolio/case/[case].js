@@ -5,7 +5,7 @@ import styled from '@emotion/styled'
 import useI18n from '../../../hooks/use-i18n'
 import {AnimationContext} from '../../../context/animations/AnimationContext'
 import Landing from '@/landing/Landing'
-import Title from '@/text/Title'
+import Title from '@/titles/Title'
 import Interweave, {Markup} from 'interweave'
 import Animation from '@/animation/Animation'
 import Slider from "react-slick";

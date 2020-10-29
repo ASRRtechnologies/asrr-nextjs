@@ -5,20 +5,25 @@ import Title from '../titles/Title'
 import {portfolio} from '../../data/portfolio'
 import Contact from '../../components/contact/Preview'
 import ReadMore from "@/text/ReadMore";
+import styled from "@emotion/styled";
+
+const Wrapper = styled(Section)`
+        background: ${props => props.theme.home.portfolio};
+ }`;
 
 function Portfolio({preview}) {
 
     const [cases, setCases] = useState([]);
 
     useEffect(() => {
-        if (preview) setCases(portfolio.slice(0, 3));
-        else setCases(portfolio);
-    }, [preview]);
+        setCases(portfolio.slice(0, 3));
+    }, []);
 
     return (
-        <Section className={`${preview ? "" : "section-page-contact-form"}`} id="portfolio-page">
+        <Wrapper className={`${preview ? "" : "section-page-contact-form"}`} id="portfolio-page">
             <Title title={'portfolio.title.header'} text={'portfolio.preview.title.text'}/>
-            <div className={`portfolio ${preview ? "margin-bottom" : ""}`}>
+
+            <div className="portfolio">
                 {cases.map(({image, id, type, href}, i) => {
                     return (
                         <Card redirect={href} route={`/portfolio/case/${id}`} client={`cases.${id}.client`} img={image}
@@ -29,7 +34,7 @@ function Portfolio({preview}) {
 
             {preview && <ReadMore className="read-more-big" to="/portfolio" text="buttons.portfolio"/>}
             {preview ? null : <Contact className="section-contact-form"/>}
-        </Section>
+        </Wrapper>
     )
 }
 

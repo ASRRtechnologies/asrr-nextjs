@@ -1,67 +1,35 @@
 .landing {
   @include flex(flex-start, center, column);
-  @include size(100vw, 100vh);
-  margin-top: 60px;
+  @include size(100vw, auto);
   padding: 0 $padding-pc;
-  min-height: 600px;
-  max-height: 1600px;
+  min-height: 100vh;
+  margin-left: -$padding-pc;
+  margin-right: -$padding-pc;
 }
 
-.landing-description {
-  @include flex(space-between, center, row);
+.landing-title-container{
+  @include flex(flex-start, center, column);
   @include size(100%, 100%);
-  position: relative;
-  width: 100%;
+  padding-top: 200px;
+  flex:1;
+}
+
+.landing-title {
+  @include size(100%, 100%);
+  @include flex(center, flex-start, column);
   max-width: $max-width;
-  flex: 1;
-}
+  min-height: auto;
+  box-sizing: content-box;
 
-.landing-title{
-  @include size(100%, auto);
-  max-width: 600px;
-  padding-right: 20px;
-}
-
-.landing-information{
-  @include size(auto, auto);
-}
-
-
-.landing-overflow {
-  display: inline-block;
-  overflow: hidden;
-  height: auto;
-  width: auto;
-
-  &.list-point{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    border: none !important;
-
-    svg{
-      @include size(12px, auto);
-      margin-left: 10px;
-      margin-bottom: 5px;
-      transform: rotate(-90deg);
-      transition: 200ms ease-in all;
-
-    }
-
-    &:hover{
-      svg{
-        transform: translateX(10px) rotate(-90deg);
-        transition: 200ms ease-in all;
-        g{
-          path {
-            fill: $primary-color;
-            transition: all ease-in-out 100ms;
-          }
-        }
-      }
-    }
-
+  h1 {
+    max-width: 800px;
   }
+
+  p{
+    max-width: 600px;
+    margin-bottom: 50px;
+  }
+
 }
 
 .landing-wave {
@@ -77,109 +45,79 @@
     width: 100%;
     height: 150px;
 
-    &.wave-top{
-      bottom:50px;
+    &.wave-top {
+      bottom: 50px;
     }
-  }
-}
-
-
-@media screen and (max-width: $tablet-padding-breakpoint) {
-  .landing {
-    padding: 0 $padding-tablet;
-    margin-top: 80px;
-    max-height: 1200px;
-
   }
 }
 
 @media screen and (max-width: $tablet-breakpoint) {
-  .landing-description{
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 20px;
+  .landing {
+    margin-left: -$padding-tablet;
+    margin-right: -$padding-tablet;
+    padding: 0 $padding-tablet;
   }
+}
 
-  .landing-title{
-    margin-bottom: 50px;
-    padding-right: 0;
+@media screen and (max-width: $mobile-breakpoint) {
+  .landing {
+    padding: 0 $padding-mobile;
+    margin-left: -$padding-mobile;
+    margin-right: -$padding-mobile;
   }
+}
 
-  .landing-information{
+//Small landing styles
+
+
+.landing-small {
+  @include flex(flex-start, center, column);
+  @include size(100vw, auto);
+  min-height: 50vh;
+  padding: 80px $padding-pc 0 $padding-pc;
+  margin-left: -$padding-pc;
+  margin-right: -$padding-pc;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    @include size(100%, 100%);
+    object-fit: cover;
+    position: absolute;
+    object-position: 50% 50%;
+    left: 0;
+    top: 0;
   }
 
 }
 
-@media screen and (max-width: $mobile-padding-breakpoint) {
-  .landing {
-    padding: 0 $padding-mobile;
+.landing-title-small {
+  @include size(100%, 100%);
+  @include flex(center, flex-start, column);
+  max-width: $max-width;
+  min-height: auto;
+
+  h1 {
+    max-width: 1000px;
   }
 
+}
+
+
+@media screen and (max-width: $tablet-breakpoint) {
+  .landing-small {
+    margin-left: -$padding-tablet;
+    margin-right: -$padding-tablet;
+    padding: 0 $padding-tablet;
+  }
 }
 
 @media screen and (max-width: $mobile-breakpoint) {
 
-  .landing{
-    padding: 0;
-    //min-height: calc(100vh - 80px);
-    justify-content: space-between;
-    max-height: 900px;
-  }
-
-  .landing-description{
-    //justify-content: flex-start;
-    justify-content: space-between;
-    flex:1;
-  }
-
-  .landing-title{
-    @include flex(center, flex-start, column);
+  .landing-small {
     padding: 0 $padding-mobile;
-    margin-bottom: 20px;
-    flex: 1;
-   }
-
-  .landing-information{
-    width: 100vw;
-    height: auto;
-
-    .mobile-disabled{
-      display: none;
-    }
+    margin-left: -$padding-mobile;
+    margin-right: -$padding-mobile;
   }
-
-  .landing-overflow{
-
-    &.list-point{
-      padding: 15px $padding-mobile;
-      justify-content: space-between;
-      align-items: center;
-
-      h3, svg{
-        margin-bottom: 0;
-      }
-
-    }
-  }
-
-  .landing-wave {
-     height: 100px;
-
-    .wave {
-      height: 50px;
-
-      &.wave-top{
-        bottom:50px;
-      }
-    }
-  }
-
 }
 
-@media screen and (max-width: 330px) {
-  .landing{
-    height: 100vh !important;
-  }
-
-}

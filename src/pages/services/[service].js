@@ -3,7 +3,7 @@ import {services} from '../../data/services'
 import Section from '@/layout/Section'
 import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
-import Title from '@/text/Title'
+import Title from '@/titles/Title'
 import Button from '@/Button'
 import Animation from '@/animation/Animation'
 import {motion} from "framer-motion";

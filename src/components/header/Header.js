@@ -13,37 +13,38 @@ import useI18n from '../../hooks/use-i18n'
 import {MouseContext} from '../../context/animations/MouseContext'
 
 const Wrapper = styled('nav')`
-        background-color: ${props => props.visible ? props.theme.header.backgroundBlurred : props.theme.landing.background};
-        box-shadow: ${props => props.visible ? props.theme.header.shadow : 'none'};
+        background: ${props => props.visible ? props.theme.navigation.background : "transparent"};
+        backdrop-filter: ${props => props.visible ? "blur(12px)" : "transparent"};
+        box-shadow: ${props => props.visible ? props.theme.navigation.shadow : 'none'};
        
         svg{
             path{
-            fill: ${props => props.theme.header.font};
+            fill: ${props => props.theme.navigation.font};
             }
         }
        
         p, a {
-          color: ${props => props.theme.header.font};
+          color: ${props => props.theme.navigation.font};
         }
         
         .header-background-text{
-            color: ${props => props.theme.header.font};
+            color: ${props => props.theme.navigation.font};
         }
         
         .bar1, .bar2, .bar3, .chev > .line {
-          background-color:  ${props => props.theme.header.font}
+          background-color:  ${props => props.theme.navigation.font}
         }
         
         @media screen and (max-width:1200px) {
             .header-menu{
-                    background-color: ${props => props.theme.header.background};
+                    background-color: ${props => props.theme.navigation.background};
             }
         }
 `;
 
-const Line1 = styled('div')`background: ${props => props.theme.header.line_1};`;
-const Line2 = styled('div')`background: ${props => props.theme.header.line_2};`;
-const Line3 = styled('div')`background: ${props => props.theme.header.line_3};`;
+const Line1 = styled('div')`background: ${props => props.theme.navigation.line_1};`;
+const Line2 = styled('div')`background: ${props => props.theme.navigation.line_2};`;
+const Line3 = styled('div')`background: ${props => props.theme.navigation.line_3};`;
 
 function Header({className}) {
 
@@ -56,9 +57,9 @@ function Header({className}) {
 
     const headerPosition = () => {
         let currentScrollPos = window.pageYOffset;
-        if (currentScrollPos < (1 / 16 * window.innerHeight)) {
+        if (currentScrollPos < (2 / 16 * window.innerHeight)) {
             setVisible(false)
-        } else if (currentScrollPos > (1 / 16 * window.innerHeight)) {
+        } else if (currentScrollPos > (2 / 16 * window.innerHeight)) {
             setVisible(true)
         }
     };
@@ -68,11 +69,11 @@ function Header({className}) {
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         const scrolled = (winScroll / height) * 100;
         document.getElementById("myBar").style.width = scrolled + "%";
-    }
+    };
 
     useEffect(() => {
-        window.addEventListener('scroll', headerPosition)
-        window.addEventListener('scroll', headerProgress)
+        window.addEventListener('scroll', headerPosition);
+        window.addEventListener('scroll', headerProgress);
     });
     const closeMenu = () => setMenuOpen(false);
 

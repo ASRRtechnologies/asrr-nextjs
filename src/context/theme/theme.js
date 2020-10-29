@@ -1,8 +1,3 @@
-//Theme color
-const accentColor = '#1EB7CC';
-const accentColorDark = '#260f85';
-
-
 //Font colors
 const headerDark= '#ffffff';
 const headerLight= '#1a1a1a';
@@ -23,23 +18,11 @@ const black = '#0a0a0a';
 const black2 = '#131313';
 const black3 = '#1a1a1a';
 
-//Logo colors
-const logoLight = black;
-const logoDark = white;
-
-//Navigation colors
-const navigationBlurredLight = 'rgba(252, 252, 252, 0.80)';
-const navigationBlurredDark = 'rgba(10, 10, 10, 0.9)';
-
-const navigationLight = 'rgba(252, 252, 252, 1)';
-const navigationDark = 'rgba(10, 10, 10, 1)';
-
 const hoverLinkDark = 'linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)';
 const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)';
 
 const borderColorDark = "2px solid #f0f0f0";
 const borderColorLight = "2px solid #ababab";
-
 
 const fonts = {
 
@@ -117,14 +100,18 @@ const button = {
 
 const home = {
 
-	services: {
-		dark: black3,
-		light: white,
+	services:{
+		background: {
+			dark: "linear-gradient(120deg, #131313 45%, #0a0a0a 100%);",
+			light: "linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);",
+		},
 	},
 
-	portfolio: {
-		dark: black3,
-		light: white,
+	portfolio:{
+		background: {
+			dark: "linear-gradient(120deg, #211D25 45%, #0a0a0a 100%);",
+			light: "linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);",
+		},
 	},
 
 	contact: {
@@ -169,14 +156,9 @@ const portfolio = {
 
 const navigation = {
 
-	backgroundBlurred: {
-		light: navigationBlurredLight,
-		dark: navigationBlurredDark,
-	},
-
-	background:{
-		light: navigationLight,
-		dark: navigationDark,
+	background: {
+		light: "rgba(252, 252, 252, 0.80)",
+		dark: "rgba(10, 10, 10, 0.9)",
 	},
 
 	shadow: {
@@ -190,8 +172,8 @@ const navigation = {
 	},
 
 	logo: {
-		light: logoLight,
-		dark: logoDark,
+		light: "#1a1a1a",
+		dark: "#fff",
 	},
 
 	line_1:{
@@ -245,8 +227,16 @@ const alert = {
 
 const lightTheme = {
 
-	header: {
-		backgroundBlurred: navigation.backgroundBlurred.light,
+	home: {
+		services: home.services.background.light,
+		portfolio: home.portfolio.background.light,
+		contact: home.contact.light,
+		clients: home.clients.light,
+		stories: home.stories.light,
+	},
+
+
+	navigation: {
 		background: navigation.background.light,
 		logo: navigation.logo.light,
 		font: navigation.fonts.light,
@@ -272,14 +262,7 @@ const lightTheme = {
 
 	layout: layout.background.light,
 
-	home: {
-		portfolio: home.portfolio.light,
-		services: home.services.light,
-		contact: home.contact.light,
-		clients: home.clients.light,
-		stories: home.stories.light,
 
-	},
 
 	portfolio: {
 		landing: portfolio.landing.light,
@@ -312,8 +295,7 @@ const lightTheme = {
 
 const darkTheme = {
 
-	header: {
-		backgroundBlurred: navigation.backgroundBlurred.dark,
+	navigation: {
 		background: navigation.background.dark,
 		logo: navigation.logo.dark,
 		font: navigation.fonts.dark,
@@ -340,8 +322,8 @@ const darkTheme = {
 	layout: layout.background.dark,
 
 	home: {
-		portfolio: home.portfolio.dark,
-		services: home.services.dark,
+		services: home.services.background.dark,
+		portfolio: home.portfolio.background.dark,
 		contact: home.contact.dark,
 		clients: home.clients.dark,
 		stories: home.stories.dark,

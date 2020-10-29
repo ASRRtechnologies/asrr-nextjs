@@ -10,7 +10,7 @@ import Video from "@/article/Video";
 import BreadCrumb from "@/blog/BreadCrumb";
 import {cases} from "../../../data/cases";
 import {blog} from "../../../data/blog";
-import Title from "@/text/Title";
+import Title from "@/titles/Title";
 import Animation from "@/animation/Animation";
 
 

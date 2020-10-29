@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import useI18n from '../../hooks/use-i18n'
 import Section from '@/layout/Section'
 import { useTheme } from '../../context/theme/ThemeContext'
-import Title from '@/text/Title'
+import Title from '@/titles/Title'
 import Animation from '@/animation/Animation'
 
 function Why() {

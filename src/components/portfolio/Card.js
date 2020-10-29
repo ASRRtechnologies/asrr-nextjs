@@ -15,7 +15,7 @@ function Card({img, title, discipline, client, route, redirect}) {
     const mouse = useContext(MouseContext);
 
     return (
-        <Animation animation="fade-up" className="portfolio-card">
+        <div className="portfolio-card">
             <Link href={route}>
                 <a className="portfolio-card-inner" onMouseOver={() => {mouse.onHover('projects')}}
                    onMouseLeave={() => {mouse.onLeave()}}>
@@ -32,7 +32,7 @@ function Card({img, title, discipline, client, route, redirect}) {
                     </div>
                 </a>
             </Link>
-        </Animation>
+        </div>
     )
 }
 

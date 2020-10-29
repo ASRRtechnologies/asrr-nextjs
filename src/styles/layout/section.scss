@@ -1,31 +1,23 @@
 .section {
   @include size (100%, auto);
   @include flex(flex-start, center, column);
-  max-width: $max-width;
-  padding:  0 0 200px 0;
+  padding: 150px $padding-pc;
 
-  &.section-article{
-    padding: 0;
-    :last-child {
-      margin-bottom: 0;
-    }
+  &.general{
+    max-width: $max-width;
   }
-
-  &.section-contact-form{
-    padding-top: 100px;
-  }
-
 }
 
-@media screen and (max-width: $tablet-breakpoint) {
+@media screen and (max-width:$tablet-breakpoint) {
   .section {
-    padding: 0 0 100px 0;
+    padding: 150px $padding-tablet;
   }
 }
+
 
 @media screen and (max-width: $mobile-breakpoint) {
   .section {
-    padding:  0 0 120px 0;
+    padding:  75px $padding-mobile;
   }
 }
 

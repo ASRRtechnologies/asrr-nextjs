@@ -3,7 +3,7 @@ import Animation from "@/animation/Animation";
 import Section from "@/layout/Section";
 import Button from "@/Button";
 import {useRouter} from "next/router";
-import Title from "@/text/Title";
+import Title from "@/titles/Title";
 import Wave from "react-wavify";
 import {useTheme} from "../../context/theme/ThemeContext";
 

@@ -36,7 +36,6 @@ $bermuda: #77D7B9;
   @include flex(center, center, row);
   position: relative;
   padding: 0 $padding-pc;
-  backdrop-filter: blur(12px);
  }
 
 .header-wrapper {

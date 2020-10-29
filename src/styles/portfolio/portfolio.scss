@@ -3,6 +3,7 @@
   @include size(100%, auto);
   @include flex(space-between, flex-start, row);
   flex-wrap: wrap;
+  max-width: $max-width;
 }
 
 
