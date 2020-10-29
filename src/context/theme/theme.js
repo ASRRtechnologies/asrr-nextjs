@@ -6,7 +6,7 @@ const paragraphDark = '#ededed';
 const subHeaderDark = '#e9e9e9';
 const subHeaderLight = '#41474E';
 
-const dropShadowDark = ' 0 8px 10px rgba(235, 235, 235, 0.15)';
+const dropShadowDark = ' 0 8px 10px rgba(1, 1, 1, 0.35)';
 const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)';
 const dropShadowDarkMedium = ' 0 0px 10px rgba(235, 235, 235, 0.15)';
 const dropShadowLightMedium = '0 10px 15px rgba(0,0,0,0.23)';
@@ -158,7 +158,7 @@ const navigation = {
 
 	background: {
 		light: "rgba(252, 252, 252, 0.80)",
-		dark: "rgba(10, 10, 10, 0.9)",
+		dark: "rgba(39, 39, 39, 0.9)",
 	},
 
 	shadow: {
