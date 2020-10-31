@@ -1,15 +1,20 @@
 import React from 'react';
 import useI18n from '../../hooks/use-i18n'
 import Fade from 'react-reveal/Fade';
+import Animation from "@/animation/Animation";
 
-function Title({text, title, className}) {
+function Title({basePath, id}) {
     const i18n = useI18n();
+    const title = `${basePath}.${id}.title`;
+    const smallTitle = `${basePath}.${id}.smallTitle`;
+    const text = `${basePath}.${id}.text`;
+
     return (
         <div className="title">
             <Fade>
-                <h1>Title</h1>
-                <h4>Small title</h4>
-                <h2>We provide the best services you can ever think of let me check when this text will brek</h2>
+                {title && <h1>{i18n.t(title) !== undefined ? i18n.t(title) : title}</h1>}
+                {smallTitle && <h4>{i18n.t(smallTitle) !== undefined ? i18n.t(smallTitle) : smallTitle}</h4>}
+                {text && <h2>{i18n.t(text) !== undefined ? i18n.t(text) : text}</h2>}
             </Fade>
         </div>
     );
