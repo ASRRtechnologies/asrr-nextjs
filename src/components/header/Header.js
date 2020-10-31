@@ -102,7 +102,7 @@ function Header({className}) {
                     <div className="header-actions">
                         <Language/>
                         <span className="icon" onClick={toggle}>
-                            {themeState.dark ? <Moon/> : <Sun/>}
+                            {!themeState.dark ? <Moon/> : <Sun/>}
                         </span>
 
                         <div onClick={() => {
