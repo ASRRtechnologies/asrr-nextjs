@@ -573,6 +573,9 @@
     },
     "article": {
       "microservices": {
+        "meta": {
+          "title": "Can microservices save you time and effort?"
+        },
         "card": {
           "title": "Can microservices save you time and effort?",
           "description": "Using microservice architecture in software can provide various advantages over traditional monolithic applications."

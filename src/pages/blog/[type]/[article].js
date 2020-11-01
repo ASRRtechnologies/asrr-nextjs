@@ -11,7 +11,11 @@ import BreadCrumb from "@/blog/BreadCrumb";
 import {cases} from "../../../data/cases";
 import {blog} from "../../../data/blog";
 import Title from "@/titles/Title";
-import Animation from "@/animation/Animation";
+import Head from 'next/head';
+
+import Facebook from "@/icons/Facebook";
+import i18n from "../../../context/lib/i18n";
+import useI18n from "../../../hooks/use-i18n";
 
 
 function Page({breadCrumb, found, query}) {
@@ -25,8 +29,15 @@ function Page({breadCrumb, found, query}) {
         return newIndex;
     }
 
+    let i18n = useI18n();
+
+    let pageTitle = i18n.t(`blog.${found.type}.${found.name}.meta.title`);
+
     return (
         <>
+            <Head>
+                <title>{pageTitle && pageTitle + " | "} ASRR Blog</title>
+            </Head>
             <Application>
                 <Layout>
                     <Section className="section-article">
@@ -42,19 +53,25 @@ function Page({breadCrumb, found, query}) {
                             console.log(i)
 
                             if (component.type === "paragraph") {
-                                return <WideText title={component.title && `blog.${found.type}.${found.name}.content.${component.type}.${i}.title`} text={`blog.${found.type}.${found.name}.content.${component.type}.${i}.text`}/>
+                                return <WideText
+                                    title={component.title && `blog.${found.type}.${found.name}.content.${component.type}.${i}.title`}
+                                    text={`blog.${found.type}.${found.name}.content.${component.type}.${i}.text`}/>
                             }
 
                             if (component.type === "image") {
-                                return <ArticleImage image={`/assets/blog/${found.type}/${found.name}/${found.name}-${i}.${component.format}`} subtitle={`blog.${found.type}.${found.name}.content.${component.type}.${i}.subtitle`} square={component.square}/>
+                                return <ArticleImage
+                                    image={`/assets/blog/${found.type}/${found.name}/${found.name}-${i}.${component.format}`}
+                                    subtitle={`blog.${found.type}.${found.name}.content.${component.type}.${i}.subtitle`}
+                                    square={component.square}/>
                             }
 
                             if (component.type === "iframe") {
-                                return <iframe src={component.src} height="907" width="504" frameborder="0" allowfullscreen="" title="Ingevoegde bijdrage"/>
+                                return <iframe src={component.src} height="907" width="504" frameborder="0"
+                                               allowfullscreen="" title="Ingevoegde bijdrage"/>
                             }
 
-                            if (component.type === "code"){
-                                return  <div className="Container" dangerouslySetInnerHTML={{__html: component.code}}/>;
+                            if (component.type === "code") {
+                                return <div className="Container" dangerouslySetInnerHTML={{__html: component.code}}/>;
                             }
 
                         })}
@@ -66,7 +83,7 @@ function Page({breadCrumb, found, query}) {
                         {/*<ImageSlider square/>*/}
 
                         {/*<Video/>*/}
-
+                        <div className="sharethis-inline-share-buttons"/>
                     </Section>
                 </Layout>
             </Application>
