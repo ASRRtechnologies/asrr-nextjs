@@ -23,7 +23,7 @@ function Clients (props) {
 	return (
 		<Section>
 			<Fade animation="fade-up" delay="200">
-				<Title title={'clients.title.header'}/>
+				<Title basePath={'clients.header'} compact noSection/>
 				<Wrapper className="clients">
 					<Ticker speed={2} mode="chain">
 						{({ index }) => (

@@ -159,8 +159,8 @@
       "text": "Let's get in touch and see what ASRR has to offer"
     },
     "preview": {
-      "title": {
-        "header": "Contact",
+      "header": {
+        "title": "Contact",
         "text": "Interested in what ASRR can do for you?"
       }
     },
@@ -312,8 +312,8 @@
     }
   },
   "clients": {
-    "title": {
-      "header": "Trusted by",
+    "header": {
+      "title": "Trusted by",
       "text": "Trusted by"
     }
   },
@@ -573,7 +573,10 @@
     },
     "article": {
       "itaas": {
-        "card": "IT Teams as a Service (ITaaS)",
+        "card": {
+          "title": "IT Teams as a Service (ITaaS)",
+          "description": "What are the advantages of a flexible team compared to a classic one-by-one recruitment strategy?"
+        },
         "content": {
           "paragraph": {
             "1": {
