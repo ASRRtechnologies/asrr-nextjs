@@ -10,12 +10,12 @@ const clients = ['form', 'esp', 'nwo']
 function Stories (props) {
 	return (
 		<Section className="testimonial-section">
-			<Fade animation="fade-up" delay={200}>
-				<Title basePath={'testimonials'} id="header" compact/>
+			<Fade bottom delay={200}>
+				<Title basePath={'testimonials.header'} compact noSection/>
 				<div className="stories">
 					{clients.map((client, i) => {
 						return (
-							<Fade  animation="fade-up" delay={i * 200}>
+							<Fade bottom delay={i * 400}>
 								<div className="card-animatable">
 									<Card client={client}/>
 								</div>

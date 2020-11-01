@@ -9,13 +9,13 @@ import Fade from "react-reveal";
 function Why() {
 	const [card, setCard] = useState(0);
 	const i18n = useI18n();
-	const values = ["Cheap", "Fast", "Agile"];
+	const values = ["modular", "flexible", "easy", "insights"];
 	const darkmode = useTheme().dark;
 
 	return (
 		<Section>
 			<Fade animation="fade-up">
-			<Title title={'why.title.header'}/>
+			<Title basePath={'why.header'} compact noSection/>
 			<div className="why-asrr">
 				<div className="why-asrr-points why-asrr-center">
 					{values.map((d, i) => <span onClick={() => setCard(i)}

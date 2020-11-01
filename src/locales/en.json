@@ -307,12 +307,8 @@
     }
   },
   "why": {
-    "title": {
-      "header": "Why choose ASRR",
-      "text": ""
-    },
-    "wtf": {
-      "title": "Value"
+    "header": {
+      "title": "Key features"
     }
   },
   "clients": {
@@ -514,7 +510,8 @@
   "blog": {
     "landing": {
       "title": "The latest news",
-      "subtitle": "Keep up to date with ASRR's latest developments, both on- and offline!"
+      "smallTitle": "Blog",
+      "text": "Keep up to date with ASRR's latest developments, both on- and offline!"
     },
     "types": {
       "article": {

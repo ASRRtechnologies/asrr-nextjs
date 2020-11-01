@@ -10,8 +10,8 @@ function Contact ({ title, className }) {
 		<Section className={`contact-invitation-section ${className ? className : ""}`}>
 			<Fade animation="fade-up" delay="200">
 				<div className={`contact preview ${title}`}>
-					<Title className={`${title} title-button`} title={'contact.preview.title.header'}
-						   text={'contact.preview.title.text'}/>
+					<Title className={`${title} title-button`} basePath={'contact.home.header'} compact noSection
+					/>
 					<Button custom to="/contact" title="buttons.contact"/>
 				</div>
 			</Fade>

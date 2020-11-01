@@ -42,7 +42,7 @@ function Preview(props) {
     let i18n = useI18n();
     return (
         <Section>
-            <Title basePath={basePath} id="headline"/>
+            <Title basePath={basePath + ".headline"}/>
             <div className="services-preview">
                 {services.map((service, i) => {
                     let {id} = service;

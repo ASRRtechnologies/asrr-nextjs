@@ -16,7 +16,7 @@ function Blog({preview}) {
 
     return (
         <Section id="blog-page">
-            <Title title={'blog.landing.title'} text={'blog.landing.subtitle'}/>
+            <Title basePath="blog.landing" noSection/>
             <div className="blog">
                 {
                     cases.map((entry, i)=>{

@@ -6,6 +6,7 @@ import {portfolio} from '../../data/portfolio'
 import Contact from '../../components/contact/Preview'
 import ReadMore from "@/text/ReadMore";
 import styled from "@emotion/styled";
+import Fade from "react-reveal";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.portfolio};
@@ -21,13 +22,13 @@ function Portfolio({preview}) {
 
     return (
         <Wrapper className={`${preview ? "" : "section-page-contact-form"}`} id="portfolio-page">
-            <Title basePath={'portfolio.preview'} id="header"/>
+            <Title basePath={'portfolio.preview.header'} compact noSection/>
 
             <div className="portfolio">
                 {cases.map(({image, id, type, href}, i) => {
                     return (
-                        <Card redirect={href} route={`/portfolio/case/${id}`} client={`cases.${id}.client`} img={image}
-                              discipline={`cases.${id}.discipline`} title={`cases.${id}.title`}/>
+                            <Card redirect={href} route={`/portfolio/case/${id}`} client={`cases.${id}.client`} img={image}
+                                  discipline={`cases.${id}.discipline`} title={`cases.${id}.title`}/>
                     )
                 })}
             </div>
