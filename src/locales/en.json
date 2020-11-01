@@ -155,7 +155,19 @@
           "text": "Our flexible development teams can scale up or down based on your needs. This removes unnecessary overhead and saves both recruitment and training costs, while ensuring you get the expertise at the correct place and time."
         }
       }
-
+    },
+    "cards": {
+      "bridge": {
+        "title": "Connecting IT & Business",
+        "paragraphs": {
+          "0": "Using an analytical approach, we assess the situation at hand. Using your vision as our input, we create robust and scalable IT solutions, custom built for your business.",
+          "1": "One of our IT consultants will be the bridge between your idea and the development process needed for its realisation."
+        }
+      },
+      "insights": {
+        "title": "Business Insights",
+        "text": ""
+      }
     }
   },
   "contact": {
