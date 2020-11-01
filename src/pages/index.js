@@ -6,7 +6,7 @@ import Contact from '../components/contact/Preview'
 import Stories from '@/stories/Stories'
 import Why from '@/why-asrr/Why'
 import Application from '../components/layout/Application'
-import Blog from '@/blog/Blog'
+import PreviewBlog from '@/blog/Preview'
 import PreviewServices from "@/services/Preview";
 import PreviewPortfolio from "@/portfolio/Preview";
 
@@ -16,10 +16,10 @@ function Index(props) {
         <Application>
             <BigLanding title={'home.landing.title'} text={'home.landing.text'} image={image}/>
             <PreviewServices/>
-            <PreviewPortfolio preview/>
+            <PreviewPortfolio />
             <Stories/>
             <Why/>
-            <Blog preview={true}/>
+            <PreviewBlog/>
             <Contact/>
             <Clients/>
         </Application>

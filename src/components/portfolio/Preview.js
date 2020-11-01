@@ -21,7 +21,7 @@ function Portfolio({preview}) {
     }, []);
 
     return (
-        <Wrapper className={`${preview ? "" : "section-page-contact-form"}`} id="portfolio-page">
+        <Wrapper>
             <Title basePath={'portfolio.preview.header'} compact noSection/>
 
             <div className="portfolio">
@@ -33,8 +33,7 @@ function Portfolio({preview}) {
                 })}
             </div>
 
-            {preview && <ReadMore className="read-more-big" to="/portfolio" text="buttons.portfolio"/>}
-            {preview ? null : <Contact className="section-contact-form"/>}
+            <ReadMore className="read-more-big" to="/portfolio" text="buttons.portfolio"/>
         </Wrapper>
     )
 }

@@ -15,16 +15,16 @@ function Card (props) {
 
 
 	return (
-		<div className="blog-card">
+		<div className="blog-card card-margin-bottom">
 			<InnerWrapper className="blog-card-inner">
 				<div className="blog-card-image">
 					<img src={image ? image : fallback} alt="image"/>
 				</div>
 
 				<div className="blog-card-text">
-					<h4>{i18n.t(`blog.types.${type}.name`)}</h4>
-					<h2>{i18n.t(`blog.${type}.${name}.card.title`, 'en')}</h2>
-					<p>{i18n.t(`blog.${type}.${name}.card.description`)}</p>
+					<h1 className="label">{i18n.t(`blog.types.${type}.name`)}</h1>
+					<h2 className="subheader">{i18n.t(`blog.${type}.${name}.card.title`, 'en')}</h2>
+					<p className="text">{i18n.t(`blog.${type}.${name}.card.description`)}</p>
 					{readMore && <ReadMore noAnimation={true} className="read-more-portfolio" text={`blog.types.${type}.readMore`} to={`/blog/${type}/${name}`}/>}
 				</div>
 			</InnerWrapper>

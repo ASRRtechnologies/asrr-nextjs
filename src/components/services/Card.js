@@ -27,8 +27,8 @@ function Card({title, text, icon, className, to}) {
                     {icon}
                 </Icon>
                 <div className="service-card-text">
-                    <h2>{i18n.t(title)}</h2>
-                    <p>{i18n.t(text)}</p>
+                    <h1 className="subheader">{i18n.t(title)}</h1>
+                    <p className="text">{i18n.t(text)}</p>
                     <ReadMore noAnimation={true} small to={to} text="buttons.read"/>
                 </div>
         </Wrapper>

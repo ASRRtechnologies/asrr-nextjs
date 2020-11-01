@@ -1,24 +1,18 @@
 //Title
-.title {
+.title-wrapper {
   @include size(100%, auto);
   @include flex(flex-start, center, column);
   max-width: 800px;
 
-  h1, h2, h4{
+  h1, h2, h3{
     text-align: center;
   }
 
-  h1{
-    margin-bottom: 70px;
-  }
-
-  h4{
-    margin-bottom: 50px;
+  h2{
     color: $primary-color !important;
   }
 
   margin-bottom: 150px;
-
 }
 
 //Readmore
@@ -35,33 +29,15 @@
 
 }
 
-.no-margin {
-  margin: 0;
-}
 
 @media screen and (max-width: $tablet-breakpoint) {
-  .title {
-    h1{
-      font-size: 50px;
-      margin-bottom: 40px;
-    }
-
-    h4{
-      margin-bottom: 30px;
-      color: $primary-color !important;
-    }
-
+  .title-wrapper {
     margin-bottom: 100px;
-
   }
-
-
 }
 
 @media screen and (max-width: 600px) {
-  .title {
-    h1{
-      font-size: 30px;
-    }
+  .title-wrapper {
+    margin-bottom: 50px;
   }
 }

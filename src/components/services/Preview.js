@@ -6,6 +6,7 @@ import scale from '#/services/scaleable-software/scaleable-software-sqaure.jpg'
 import Title from "@/titles/Title";
 import Fade from 'react-reveal/Fade';
 import useI18n from "../../hooks/use-i18n";
+import ReadMore from "@/text/ReadMore";
 
 const services = [
     {
@@ -35,7 +36,7 @@ const services = [
         alt: 'scaleable software',
     },
 
-]
+];
 
 function Preview(props) {
     const basePath = "services.preview";
@@ -52,14 +53,14 @@ function Preview(props) {
 							<span className="service-preview-card-image">
 								<img src={service.image} alt={service.alt}/>
 							</span>
-                                <h3 className="theme-font">{i18n.t(`${basePath}.services.${id}.title`)}</h3>
-                                <p>{i18n.t(`${basePath}.services.${id}.text`)}</p>
+                                <h1 className="theme-font subheader">{i18n.t(`${basePath}.services.${id}.title`)}</h1>
+                                <p className="text">{i18n.t(`${basePath}.services.${id}.text`)}</p>
                             </div>
                         </Fade>
                     )
                 })}
             </div>
-
+            <ReadMore noAnimation className="small-header" to="/services" text="buttons.services"/>
         </Section>
     );
 }

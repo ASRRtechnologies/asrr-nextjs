@@ -25,10 +25,10 @@ function BigLanding({title, text}) {
             <div className="landing-title-container">
                 <div className="landing-title">
                     <Fade bottom>
-                        <h1>{i18n.t(title)}</h1>
+                        <h1 className="slogan">{i18n.t(title)}</h1>
                     </Fade>
                     <Fade delay={200} bottom>
-                        <p>{i18n.t(text)}</p>
+                        <p className="text">{i18n.t(text)}</p>
                     </Fade>
                     <Fade delay={400} bottom>
                         <Button custom to="/portfolio" title="buttons.cases"/>
@@ -36,33 +36,33 @@ function BigLanding({title, text}) {
                 </div>
             </div>
 
-            <div className="landing-wave">
+            {/*<div className="landing-wave">*/}
 
-                <div className="wave wave-top">
-                    <Wave fill="#ff6961"
-                        // fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}
-                          paused={false}
-                          options={{
-                              height: 50,
-                              amplitude: 50,
-                              speed: 0.25,
-                              points: 7
-                          }}
-                    />
-                </div>
-                <div className="wave wave-bottom">
-                    <Wave
-                        fill={`${darkmode ? "#131313" : "#FBFBFB"}`}
-                        paused={false}
-                        options={{
-                            height: 15,
-                            amplitude: 15,
-                            speed: 0.35,
-                            points: 9
-                        }}
-                    />
-                </div>
-            </div>
+            {/*    <div className="wave wave-top">*/}
+            {/*        <Wave fill="#ff6961"*/}
+            {/*            // fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}*/}
+            {/*              paused={false}*/}
+            {/*              options={{*/}
+            {/*                  height: 50,*/}
+            {/*                  amplitude: 50,*/}
+            {/*                  speed: 0.25,*/}
+            {/*                  points: 7*/}
+            {/*              }}*/}
+            {/*        />*/}
+            {/*    </div>*/}
+            {/*    <div className="wave wave-bottom">*/}
+            {/*        <Wave*/}
+            {/*            fill={`${darkmode ? "#131313" : "#FBFBFB"}`}*/}
+            {/*            paused={false}*/}
+            {/*            options={{*/}
+            {/*                height: 15,*/}
+            {/*                amplitude: 15,*/}
+            {/*                speed: 0.35,*/}
+            {/*                points: 9*/}
+            {/*            }}*/}
+            {/*        />*/}
+            {/*    </div>*/}
+            {/*</div>*/}
 
         </Wrapper>
     )

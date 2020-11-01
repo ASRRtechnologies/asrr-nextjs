@@ -21,21 +21,17 @@
       }
     }
   }
-
-  h2 {
-    margin-bottom: 20px;
-  }
-
-  @media (max-width: 1500px ) and (min-width: $tablet-breakpoint) {
-    h2 {
-      font-size: calc(4vw * 0.55);
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: calc(3vw * 0.45);
-    }
-  }
+  //
+  //@media (max-width: 1500px ) and (min-width: $tablet-breakpoint) {
+  //  h2 {
+  //    font-size: calc(4vw * 0.55);
+  //    margin-bottom: 20px;
+  //  }
+  //
+  //  p {
+  //    font-size: calc(3vw * 0.45);
+  //  }
+  //}
 
 }
 

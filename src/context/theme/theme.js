@@ -8,8 +8,6 @@ const subHeaderLight = '#41474E';
 
 const dropShadowDark = ' 0 8px 10px rgba(1, 1, 1, 0.35)';
 const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)';
-const dropShadowDarkMedium = ' 0 0px 10px rgba(235, 235, 235, 0.15)';
-const dropShadowLightMedium = '0 10px 15px rgba(0,0,0,0.23)';
 
 const white = '#fff';
 const white2 = '#fbfbfb';
@@ -92,7 +90,7 @@ const button = {
 	},
 
 	shadow:{
-		dark:"0px 10px 15px rgba(235, 235, 235, 0.2)",
+		dark:"0 8px 10px rgba(1, 1, 1, 0.35)",
 		light:"0px 10px 15px rgba(0,0,0,0.23)"
 	}
 
@@ -120,6 +118,10 @@ const home = {
 	},
 
 	stories: {
+		dark: black2,
+		light: white2,
+	},
+	values: {
 		dark: black2,
 		light: white2,
 	},
@@ -191,22 +193,15 @@ const navigation = {
 };
 
 const cards = {
+
 	background: {
 		dark: '#1a1a1a',
 		light: '#ffffff',
 	},
 
 	shadow: {
-		services:{
-			dark:dropShadowDarkMedium,
-			light:dropShadowLightMedium,
-		},
-		portfolio:{
-			dark: dropShadowDark,
-			light: dropShadowLight,
-		},
-
-
+			dark:dropShadowDark,
+			light:dropShadowLight,
 	},
 
 	border: {
@@ -233,6 +228,8 @@ const lightTheme = {
 		contact: home.contact.light,
 		clients: home.clients.light,
 		stories: home.stories.light,
+		values: home.values.light,
+
 	},
 
 
@@ -273,10 +270,7 @@ const lightTheme = {
 
 	card: {
 		background: cards.background.light,
-		shadow: {
-			portfolio:cards.shadow.portfolio.light,
-			services:cards.shadow.services.light
-		},
+		shadow:cards.shadow.light,
 		border: cards.border.light,
 	},
 
@@ -327,6 +321,7 @@ const darkTheme = {
 		contact: home.contact.dark,
 		clients: home.clients.dark,
 		stories: home.stories.dark,
+		values: home.values.dark,
 	},
 
 	portfolio: {
@@ -339,12 +334,8 @@ const darkTheme = {
 
 	card: {
 		background: cards.background.dark,
-		shadow: {
-			portfolio:cards.shadow.portfolio.dark,
-			services:cards.shadow.services.dark
-		},
+		shadow:cards.shadow.dark,
 		border: cards.border.dark,
-
 	},
 
 	button:{

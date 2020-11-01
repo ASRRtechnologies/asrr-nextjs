@@ -8,7 +8,7 @@ import Application from '../components/layout/Application'
 import SmallLanding from "@/landing/SmallLanding";
 
 function Services(props) {
-    const darkmode = useTheme().dark
+    const darkmode = useTheme().dark;
 
     return (
         <Application>

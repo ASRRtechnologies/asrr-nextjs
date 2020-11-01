@@ -10,12 +10,12 @@ function Title({compact, noSection, basePath, id}) {
     const text = `${basePath}.text`;
 
     return (
-        <div className="title">
+        <div className="title-wrapper">
             <Fade>
                 <>
-                    {<h1>{i18n.t(title) !== undefined ? i18n.t(title) : title}</h1>}
-                    {!noSection && <h4>{i18n.t(smallTitle) !== undefined ? i18n.t(smallTitle) : smallTitle}</h4>}
-                    {!compact && <h2>{i18n.t(text) !== undefined ? i18n.t(text) : text}</h2>}
+                    {<h1 className="title">{i18n.t(title) !== undefined ? i18n.t(title) : title}</h1>}
+                    {!noSection && <h2 className="title-label">{i18n.t(smallTitle) !== undefined ? i18n.t(smallTitle) : smallTitle}</h2>}
+                    {!compact && <h3 className="subtitle">{i18n.t(text) !== undefined ? i18n.t(text) : text}</h3>}
                 </>
             </Fade>
         </div>

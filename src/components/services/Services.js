@@ -7,6 +7,12 @@ import scale from '#/services/scaleable-software/scaleable-software-sqaure.jpg'
 import itaas from '#/services/itaas/itaas.jpg'
 import Fade from 'react-reveal/Fade';
 import useI18n from "../../hooks/use-i18n";
+import styled from "@emotion/styled";
+
+const Wrapper = styled("div") `
+  
+
+`;
 
 const Card = ({image, basePath, paragraphs}) => {
     let title = `${basePath}.title`
@@ -16,7 +22,7 @@ const Card = ({image, basePath, paragraphs}) => {
         <Fade bottom>
             <div className="service-card">
                 <div className="service-card-text">
-                    <div className="service-card-text-wrapper">
+                    <Wrapper className="service-card-text-wrapper">
 					<span>
 						{title && <h2>{i18n.t(title) !== undefined ? i18n.t(title) : title}</h2>}
 
@@ -30,7 +36,7 @@ const Card = ({image, basePath, paragraphs}) => {
                         )}
 
 					</span>
-                    </div>
+                    </Wrapper>
                 </div>
 
                 <div className="service-card-image">

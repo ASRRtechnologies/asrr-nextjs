@@ -11,14 +11,13 @@ function Portfolio({preview}) {
     const [cases, setCases] = useState([]);
 
     useEffect(() => {
-        if (preview) setCases(portfolio.slice(0, 3));
-        else setCases(portfolio);
-    }, [preview]);
+
+    }, []);
 
     return (
-        <Section className={`${preview ? "" : "section-page-contact-form"}`} id="portfolio-page">
+        <Section id="portfolio-page">
             <Title basePath={'portfolio.preview.header'}/>
-            <div className={`portfolio ${preview ? "margin-bottom" : ""}`}>
+            <div className={`portfolio`}>
                 {cases.map(({image, id, type, href}, i) => {
                     return (
                         <Card redirect={href} route={`/portfolio/case/${id}`} client={`cases.${id}.client`} img={image}

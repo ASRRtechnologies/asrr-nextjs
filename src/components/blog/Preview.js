@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import Card from '@/blog/Card'
 import Section from '@/layout/Section'
 import Title from "@/titles/Title";
+import ReadMore from "@/text/ReadMore";
 import Contact from "@/contact/Preview";
 import {blog} from "../../data/blog";
 import Fade from "react-reveal";
@@ -17,12 +18,11 @@ function Preview({preview}) {
     useEffect(() => {
 
             setCases(blog.slice(0, 3));
-        }
+        }, []
     );
 
     return (
         <Wrapper>
-            <div id="blog-page">
                 <Title basePath="blog.landing" noSection/>
                 <div className="blog">
                     {
@@ -31,8 +31,7 @@ function Preview({preview}) {
                         })
                     }
                 </div>
-                <Contact className="section-contact-form"/>
-            </div>
+                <ReadMore noAnimation className="subtitle" to="/blog" text="buttons.blog"/>
         </Wrapper>
     )
 }

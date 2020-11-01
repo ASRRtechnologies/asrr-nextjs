@@ -5,9 +5,8 @@ $blog-card-third-breakpoint: 500px;
 .blog-card {
   width: 394px; //ratio 9/16 => 700/ (9/16)
   height: auto;
-  min-height: 700px;
-  margin-bottom: 100px;
-
+  min-height: 400px;
+  //margin-bottom: 100px;
 }
 
 .blog-card-inner {
@@ -18,7 +17,6 @@ $blog-card-third-breakpoint: 500px;
   grid-template-columns: 1fr;
   grid-template-rows: 222px 1fr; //ratio 16/9 => 394/ (16/9)
   border-radius: 10px;
-
 }
 
 .blog-card-image {

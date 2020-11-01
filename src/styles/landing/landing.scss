@@ -3,12 +3,11 @@
   @include size(100vw, auto);
   padding: 0 $padding-pc;
   min-height: 100vh;
-  margin-left: -$padding-pc;
-  margin-right: -$padding-pc;
+
 }
 
 .landing-title-container{
-  @include flex(flex-start, center, column);
+  @include flex(center, center, column);
   @include size(100%, 100%);
   padding-top: 200px;
   flex:1;
@@ -20,6 +19,7 @@
   max-width: $max-width;
   min-height: auto;
   box-sizing: content-box;
+  margin-bottom: 200px;
 
   h1 {
     max-width: 800px;
@@ -53,8 +53,8 @@
 
 @media screen and (max-width: $tablet-breakpoint) {
   .landing {
-    margin-left: -$padding-tablet;
-    margin-right: -$padding-tablet;
+    //margin-left: -$padding-tablet;
+    //margin-right: -$padding-tablet;
     padding: 0 $padding-tablet;
   }
 }
@@ -62,8 +62,8 @@
 @media screen and (max-width: $mobile-breakpoint) {
   .landing {
     padding: 0 $padding-mobile;
-    margin-left: -$padding-mobile;
-    margin-right: -$padding-mobile;
+    //margin-left: -$padding-mobile;
+    //margin-right: -$padding-mobile;
   }
 }
 
