@@ -4,6 +4,7 @@ import Title from '../titles/Title'
 import automation from '#/services/automation/automation-square.jpg'
 import analytics from '#/services/data-analytics/data-analytics-square.jpg'
 import scale from '#/services/scaleable-software/scaleable-software-sqaure.jpg'
+import itaas from '#/services/itaas/itaas.jpg'
 import Fade from 'react-reveal/Fade';
 
 const Card = ({image, text, title, to}) => {
@@ -41,9 +42,10 @@ function Services() {
         <Section id="services">
             <Title basePath={'services.preview.header'}/>
             <div className="services">
-                <Card image={automation}/>
-                <Card image={analytics}/>
-                <Card image={scale}/>
+                <Card basePath={`services.bridge`} image={automation}/>
+                <Card basePath={`services.itaas`} image={itaas}/>
+                <Card basePath={`services.microservice`} image={scale}/>
+                <Card basePath={`services.insights`} image={analytics}/>
             </div>
 
         </Section>
