@@ -194,14 +194,16 @@
     "landing": {
       "title": "Contact"
     },
-    "title": {
-      "header": "Contact",
+    "header": {
+      "title": "Let's get in touch!",
+      "smallTitle": "Contact",
       "text": "Let's get in touch and see what ASRR has to offer"
     },
     "preview": {
       "header": {
-        "title": "Contact",
-        "text": "Interested in what ASRR can do for you?"
+        "title": "Let's get in touch!",
+        "smallTitle": "Contact",
+        "text": "Interested in what ASRR can do for you? Leave your details and an expert will get in touch with you soon."
       }
     },
     "form": {

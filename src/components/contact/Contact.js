@@ -9,10 +9,11 @@ import {toast} from 'react-toastify'
 import Alert from '@/alerts/Alert'
 import Button from '@/Button'
 import Animation from '@/animation/Animation'
-
-const Card = styled(Animation)`
-      box-shadow: ${props => props.theme.card.shadow};
-`
+import Fade from "react-reveal";
+//
+// const Card = styled(div)`
+//       box-shadow: ${props => props.theme.card.shadow};
+// `
 
 const emailRegex = '(?:[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\\])'
 
@@ -68,44 +69,47 @@ function Contact({big}) {
     return (
         <Section id="contact-page" className="padding-bottom">
 
-            <Title title={'contact.title.header'} text={'contact.title.text'}/>
+            <Title basePath={'contact.header'} compact/>
+            <Fade bottom delay={200}>
+                <div className="contact">
+                    <form onSubmit={handleSubmit} id="contact-form" className="form">
+                        <Input onChange={(e) => handleChange(e.target)} value={email.name} className="no-margin"
+                               name="name" type="text"
+                               required={true} placeholder={i18n.t('contact.form.name.placeholder')}/>
+                        <Input onChange={(e) => handleChange(e.target)} value={email.subject} className="no-margin"
+                               name="subject" type="text"
+                               required={true} placeholder={i18n.t('contact.form.subject.placeholder')}/>
+                        <Input onChange={(e) => handleChange(e.target)} value={email.organization} name="organization"
+                               type="text"
+                               placeholder={i18n.t('contact.form.organization.placeholder')}/>
+                        <Input required={true} pattern={emailRegex} onChange={(e) => handleChange(e.target)}
+                               value={email.userEmail}
+                               name="userEmail" type="email" placeholder={i18n.t('contact.form.email.placeholder')}/>
+                        <Input onChange={(e) => handleChange(e.target)} value={email.body}
+                               name="body" last textArea={true} type="text"
+                               required={true} placeholder={i18n.t('contact.form.message.placeholder')}/>
+                        <Button className="auto" title="buttons.submit"/>
 
-            <Animation className="contact" animation="fade-up" delay="200">
-                <form onSubmit={handleSubmit} id="contact-form" className="form">
-                    <Input onChange={(e) => handleChange(e.target)} value={email.name} className="no-margin"
-                           name="name" type="text"
-                           required={true} placeholder={i18n.t('contact.form.name.placeholder')}/>
-                    <Input onChange={(e) => handleChange(e.target)} value={email.subject} className="no-margin"
-                           name="subject" type="text"
-                           required={true} placeholder={i18n.t('contact.form.subject.placeholder')}/>
-                    <Input onChange={(e) => handleChange(e.target)} value={email.organization} name="organization"
-                           type="text"
-                           placeholder={i18n.t('contact.form.organization.placeholder')}/>
-                    <Input required={true} pattern={emailRegex} onChange={(e) => handleChange(e.target)}
-                           value={email.userEmail}
-                           name="userEmail" type="email" placeholder={i18n.t('contact.form.email.placeholder')}/>
-                    <Input onChange={(e) => handleChange(e.target)} value={email.body}
-                           name="body" last textArea={true} type="text"
-                           required={true} placeholder={i18n.t('contact.form.message.placeholder')}/>
-                    <Button className="auto" title="buttons.submit"/>
+                        <div className="contact-adress">
+                            <p>{i18n.t("contact.address.street")}</p>
+                            <p>{i18n.t("contact.address.zipcode")}</p>
+                            <p>{i18n.t("contact.address.country")}</p>
 
-                    <div className="contact-adress">
-                        <p>{i18n.t("contact.address.street")}</p>
-                        <p>{i18n.t("contact.address.zipcode")}</p>
-                        <p>{i18n.t("contact.address.country")}</p>
+                            <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/fZqhC9FUVTpiEiCb7"
+                               className="link">{i18n.t("contact.address.route")}</a>
+                            <a href="mailto:contact@asrr.nl" target="_blank" rel="noopener noreferrer" className="link">Email:
+                                contact@asrr.nl</a>
+                        </div>
 
-                        <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/fZqhC9FUVTpiEiCb7"
-                           className="link">{i18n.t("contact.address.route")}</a>
-                        <a href="mailto:contact@asrr.nl" target="_blank" rel="noopener noreferrer" className="link">Email:
-                            contact@asrr.nl</a>
-                    </div>
+                        <Fade bottom delay={300}>
+                            <div className="map-container">
+                                <Map/>
+                            </div>
+                        </Fade>
 
-                    <Card animation="fade-up" className="map-container">
-                        <Map/>
-                    </Card>
-
-                </form>
-            </Animation>
+                    </form>
+                </div>
+            </Fade>
         </Section>
     )
 }

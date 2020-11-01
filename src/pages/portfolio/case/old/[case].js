@@ -1,21 +1,22 @@
 import React, {useContext, useEffect, useState} from 'react'
-import {cases} from '../../../data/cases'
+import {cases} from '../../../../data/cases'
 import Section from '@/layout/Section'
 import styled from '@emotion/styled'
-import useI18n from '../../../hooks/use-i18n'
-import {AnimationContext} from '../../../context/animations/AnimationContext'
+import useI18n from '../../../../hooks/use-i18n'
+import {AnimationContext} from '../../../../context/animations/AnimationContext'
 import Landing from '@/landing/Landing'
 import Title from '@/titles/Title'
 import Interweave, {Markup} from 'interweave'
 import Animation from '@/animation/Animation'
 import Slider from "react-slick";
 import Chevron from "@/icons/Chevron";
-import {useTheme} from "../../../context/theme/ThemeContext";
+import {useTheme} from "../../../../context/theme/ThemeContext";
 import Button from "@/Button";
 import {motion} from "framer-motion";
 import Application from "@/layout/Application";
 import Layout from "@/layout/Layout";
 import Contact from '@/contact/Preview'
+import Fade from "react-reveal";
 
 const Card = styled('div')`
         box-shadow: ${props => props.theme.card.shadow};
@@ -66,11 +67,11 @@ function Page({data, query}) {
                     <Landing title={data.landing.title} text={data.landing.text} client={data.landing.client}
                              discipline={data.landing.discipline}/>
                     <Section className="case-section">
-                        <Animation animation="fade-up" delay="300">
+                        <Fade bottom delay="300">
                             <Title className="justify" title={data.introduction.title} text={data.introduction.text}/>
-                        </Animation>
+                        </Fade>
 
-                        <Animation animation="fade" delay="500">
+                        <Fade bottom delay="500">
                             <div className="why-asrr margin-bottom ">
                                 <div className="why-asrr-wrapper">
                                     <div className="why-asrr-points">
@@ -91,13 +92,14 @@ function Page({data, query}) {
                                         : null)}
                                 </div>
                             </div>
-                        </Animation>
+                        </Fade>
 
-                        <Animation animation="fade-up" delay="500">
+                        <Fade animation="fade-up" delay="500">
                             <Title className="justify" title={data.result.title} text={data.result.text}/>
-                        </Animation>
+                        </Fade>
 
-                        <Animation className="project-carousel-wrapper" animation="fade-up" delay="500">
+                        <Fade>
+                        <div className="project-carousel-wrapper" animation="fade-up" delay="500">
                             <Slider {...settings}>
                                 {
                                     data.images.map((img, i) => {
@@ -113,16 +115,17 @@ function Page({data, query}) {
                                 {data.images.map((d, i) => <div
                                     className={`${i === slide ? "active-indicator" : null}`}></div>)}
                             </div>
-                        </Animation>
+                        </div>
+                        </Fade>
 
-                        <Animation animation="fade-up" delay="500">
+                        <Fade bottom animation="fade-up" delay="500">
                             <Title className="regular" title={data.conclusion.title}
                                    text={data.conclusion.text}/>
-                        </Animation>
+                        </Fade>
 
-                        <Animation animation="fade-up" delay="500">
+                        <Fade bottom animation="fade-up" delay="500">
                             <Contact className="last-section-padding"/>
-                        </Animation>
+                        </Fade>
                     </Section>
                 </Layout>
             </Application>

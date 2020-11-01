@@ -44,18 +44,18 @@ function Page({breadCrumb, found, query}) {
                 openGraph={{
                     title: {title},
                     description: {description},
-                    url: 'https://www.example.com/articles/article-title',
+                    // url: 'https://www.example.com/articles/article-title',
                     type: 'article',
                     article: {
-                        publishedTime: '2017-06-21T23:04:13Z',
-                        modifiedTime: '2018-01-21T18:04:43Z',
-                        expirationTime: '2022-12-21T22:04:11Z',
-                        section: 'Section II',
-                        authors: [
-                            'https://www.example.com/authors/@firstnameA-lastnameA',
-                            'https://www.example.com/authors/@firstnameB-lastnameB',
-                        ],
-                        tags: ['Tag A', 'Tag B', 'Tag C'],
+                        // publishedTime: '2017-06-21T23:04:13Z',
+                        // modifiedTime: '2018-01-21T18:04:43Z',
+                        // expirationTime: '2022-12-21T22:04:11Z',
+                        // section: 'Section II',
+                        // authors: [
+                        //     'https://www.example.com/authors/@firstnameA-lastnameA',
+                        //     'https://www.example.com/authors/@firstnameB-lastnameB',
+                        // ],
+                        tags: found.tags,
                     },
                     images: [
                         {
