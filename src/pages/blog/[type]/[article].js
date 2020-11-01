@@ -16,6 +16,7 @@ import Head from 'next/head';
 import Facebook from "@/icons/Facebook";
 import i18n from "../../../context/lib/i18n";
 import useI18n from "../../../hooks/use-i18n";
+import {NextSeo} from "next-seo";
 
 
 function Page({breadCrumb, found, query}) {
@@ -31,13 +32,41 @@ function Page({breadCrumb, found, query}) {
 
     let i18n = useI18n();
 
-    let pageTitle = i18n.t(`blog.${found.type}.${found.name}.meta.title`);
+    let title = i18n.t(`blog.${found.type}.${found.name}.meta.title`);
+    let description = i18n.t(`blog.${found.type}.${found.name}.meta.description`);
 
     return (
         <>
-            <Head>
-                <title>{pageTitle && pageTitle + " | "} ASRR Blog</title>
-            </Head>
+            <NextSeo
+                title={title}
+                titleTemplate = 'ASRR | %s'
+                description={description}
+                openGraph={{
+                    title: {title},
+                    description: {description},
+                    url: 'https://www.example.com/articles/article-title',
+                    type: 'article',
+                    article: {
+                        publishedTime: '2017-06-21T23:04:13Z',
+                        modifiedTime: '2018-01-21T18:04:43Z',
+                        expirationTime: '2022-12-21T22:04:11Z',
+                        section: 'Section II',
+                        authors: [
+                            'https://www.example.com/authors/@firstnameA-lastnameA',
+                            'https://www.example.com/authors/@firstnameB-lastnameB',
+                        ],
+                        tags: ['Tag A', 'Tag B', 'Tag C'],
+                    },
+                    images: [
+                        {
+                            url: 'https://www.asrr.nl/assets/images/asrr-banner.jpg',
+                            width: 850,
+                            height: 650,
+                            alt: 'ASRR Banner',
+                        },
+                    ],
+                }}
+            />
             <Application>
                 <Layout>
                     <Section className="section-article">
@@ -66,8 +95,8 @@ function Page({breadCrumb, found, query}) {
                             }
 
                             if (component.type === "iframe") {
-                                return <iframe src={component.src} height="907" width="504" frameborder="0"
-                                               allowfullscreen="" title="Ingevoegde bijdrage"/>
+                                return <iframe src={component.src} height="907" width="504" frameBorder="0"
+                                               allowFullScreen="" title="Ingevoegde bijdrage"/>
                             }
 
                             if (component.type === "code") {
