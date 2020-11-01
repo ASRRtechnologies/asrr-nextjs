@@ -16,7 +16,7 @@ function Card({img, title, discipline, client, route, redirect}) {
 
     return (
         <div className="portfolio-card">
-            <Link href={route}>
+            {/*<Link href={route}>*/}
                 <a className="portfolio-card-inner" onMouseOver={() => {mouse.onHover('projects')}}
                    onMouseLeave={() => {mouse.onLeave()}}>
 
@@ -31,7 +31,7 @@ function Card({img, title, discipline, client, route, redirect}) {
                         <p>{i18n.t(title)}</p>
                     </div>
                 </a>
-            </Link>
+            {/*</Link>*/}
         </div>
     )
 }
