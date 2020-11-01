@@ -111,11 +111,13 @@
       "text": "Lorem ipsum much longer text enter here"
     },
     "preview": {
-      "title": {
-        "header": "Wat we hebben gedaan",
-        "text": "Neem een kijkje bij onze projecten"
+      "header": {
+        "title": "Wat we al hebben gedaan",
+        "smallTitle": "Portfolio",
+        "text": "Take a look at our projects"
       }
     }
+
   },
   "services": {
     "landing": {
@@ -127,9 +129,24 @@
       "text": "Lorem ipsum much longer text enter here"
     },
     "preview": {
-      "title": {
-        "header": "Wat we doen",
-        "text": ""
+      "header": {
+        "title": "Wat we doen",
+        "smallTitle": "Onze Services",
+        "text": "ASRR vormt de brug tussen IT en business met flexibele, robuuste teams die meeschalen met wat u nodig heeft."
+      },
+      "services": {
+        "bridge": {
+          "title": "Connecting IT and Business",
+          "text": "We aim to remove the barrier between IT and business that plagues modern day development environments. We turn your vision into a robust and scaleable application. During the development process, we keep you well informed so you can still decide on key points in the process. "
+        },
+        "microservices": {
+          "title": "'Over Engineered' Building block foundation",
+          "text": "Using our wide range of microservice building blocks as a foundation, we can focus on what makes your product special. The code we create gets more powerful every iteration, making sure all our customers get the latest and greatest in tech."
+        },
+        "itaas": {
+          "title": "Expertise on demand (ITaaS)",
+          "text": "Our flexible development teams can scale up or down based on your needs. This removes unnecessary overhead and saves both recruitment and training costs, while ensuring you get the expertise at the correct place and time."
+        }
       }
     }
   },
@@ -606,6 +623,11 @@
           "description": "Why should you choose for a NextJS application compared to a traditional ReactJS application?"
         }
       }
+    }
+  },
+  "testimonials":{
+    "header": {
+      "title": "Wat onze klanten over ons zeggen"
     }
   }
 }
