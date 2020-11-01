@@ -39,7 +39,7 @@ function Services() {
 
     return (
         <Section id="services">
-            <Title title={'services.header.title'}/>
+            <Title basePath={'services.preview.header'}/>
             <div className="services">
                 <Card image={automation}/>
                 <Card image={analytics}/>

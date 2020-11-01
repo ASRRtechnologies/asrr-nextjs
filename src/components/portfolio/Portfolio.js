@@ -17,7 +17,7 @@ function Portfolio({preview}) {
 
     return (
         <Section className={`${preview ? "" : "section-page-contact-form"}`} id="portfolio-page">
-            <Title title={'portfolio.title.header'} text={'portfolio.preview.title.text'}/>
+            <Title basePath={'portfolio.preview.header'}/>
             <div className={`portfolio ${preview ? "margin-bottom" : ""}`}>
                 {cases.map(({image, id, type, href}, i) => {
                     return (

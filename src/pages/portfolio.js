@@ -7,7 +7,7 @@ import SmallLanding from "@/landing/SmallLanding";
 function Portfolio() {
     return (
         <Application>
-            <SmallLanding/>
+            {/*<SmallLanding/>*/}
             <PortfolioPage/>
         </Application>
     )

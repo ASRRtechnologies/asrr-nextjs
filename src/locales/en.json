@@ -55,8 +55,16 @@
         "text": "Using our microservice approach to coding, we don't have to reinvent the wheel for every project. We have a custom built collection of over-engineered components that can be combined to create a robust foundation for your project. We can then focus our efforts on the areas that are unique so that we can ensure the best product possible."
       },
       "2": {
-        "title": "Elastic",
+        "title": "Flexibility",
         "text": "From the beginning, ASRR has always adapted to the needs and restrictions laid out by our clients. As we have a very robust base, we can easily adapt to any given situation, while still keeping our applications very reliable."
+      },
+      "3": {
+        "title": "Compatibility",
+        "text": "As we create custom solutions for your specific environment, there is no need to migrate away from legacy systems all at once. Using the modular structure, you can choose to transition gradually, focussing on the most urgent parts first while maintaining the old functionality."
+      },
+      "4": {
+        "title": "Insights",
+        "text": "By analysing data you may have, possibly combining this with data we generate for you, we can create insights that can help your business in the long run."
       }
     },
     "landing": {
@@ -128,7 +136,7 @@
       "text": "Lorem ipsum much longer text enter here"
     },
     "preview": {
-      "headline": {
+      "header": {
         "title": "What we do",
         "smallTitle": "Our Services",
         "text": "We are the bridge between IT and Business, providing flexible and robust teams that scale with what you need."

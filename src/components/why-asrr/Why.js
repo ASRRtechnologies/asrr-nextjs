@@ -9,7 +9,7 @@ import Fade from "react-reveal";
 function Why() {
 	const [card, setCard] = useState(0);
 	const i18n = useI18n();
-	const values = ["modular", "flexible", "easy", "insights"];
+	const values = ["modular", "flexible", "easy", "compatibility", "insights"];
 	const darkmode = useTheme().dark;
 
 	return (
