@@ -3,24 +3,27 @@ import Section from '../layout/Section'
 import Title from '../titles/Title'
 import Card from '@/stories/Card'
 import Animation from '@/animation/Animation'
+import Fade from "react-reveal";
 
 const clients = ['form', 'esp', 'nwo']
 
 function Stories (props) {
 	return (
 		<Section className="testimonial-section">
-			<Animation animation="fade-up" delay={200}>
-				<Title title={'stories.title.header'} text={'stories.title.text'}/>
+			<Fade animation="fade-up" delay={200}>
+				<Title basePath={'testimonials'} id="header" compact/>
 				<div className="stories">
 					{clients.map((client, i) => {
 						return (
-							<Animation className="card-animatable" animation="fade-up" delay={i * 200}>
-								<Card client={client}/>
-							</Animation>
+							<Fade  animation="fade-up" delay={i * 200}>
+								<div className="card-animatable">
+									<Card client={client}/>
+								</div>
+							</Fade>
 						)
 					})}
 				</div>
-			</Animation>
+			</Fade>
 		</Section>
 	)
 }

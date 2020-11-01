@@ -5,6 +5,7 @@ import Title from "@/titles/Title";
 import ReadMore from "@/text/ReadMore";
 import Contact from "@/contact/Preview";
 import {blog} from "../../data/blog";
+import Fade from "react-reveal";
 
 function Blog({preview}) {
     let [cases, setCases] = useState(blog);
@@ -18,8 +19,8 @@ function Blog({preview}) {
             <Title title={'blog.landing.title'} text={'blog.landing.subtitle'}/>
             <div className="blog">
                 {
-                    cases.map((entry)=>{
-                        return <Card blog={entry}/>
+                    cases.map((entry, i)=>{
+                        return <Fade delay={i * 300}><Card blog={entry}/></Fade>
                     })
                 }
             </div>

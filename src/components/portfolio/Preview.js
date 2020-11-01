@@ -21,7 +21,7 @@ function Portfolio({preview}) {
 
     return (
         <Wrapper className={`${preview ? "" : "section-page-contact-form"}`} id="portfolio-page">
-            <Title title={'portfolio.title.header'} text={'portfolio.preview.title.text'}/>
+            <Title basePath={'portfolio.preview'} id="header"/>
 
             <div className="portfolio">
                 {cases.map(({image, id, type, href}, i) => {

@@ -4,6 +4,7 @@ import Section from '@/layout/Section'
 import { useTheme } from '../../context/theme/ThemeContext'
 import Title from '@/titles/Title'
 import Animation from '@/animation/Animation'
+import Fade from "react-reveal";
 
 function Why() {
 	const [card, setCard] = useState(0);
@@ -13,7 +14,7 @@ function Why() {
 
 	return (
 		<Section>
-			<Animation animation="fade-up">
+			<Fade animation="fade-up">
 			<Title title={'why.title.header'}/>
 			<div className="why-asrr">
 				<div className="why-asrr-points why-asrr-center">
@@ -25,7 +26,7 @@ function Why() {
 					<p>{i18n.t('home.why.' + card + '.text')}</p>
 				</div>
 			</div>
-			</Animation>
+			</Fade>
 		</Section>
 	)
 }

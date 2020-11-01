@@ -16,12 +16,12 @@ function Index(props) {
         <Application>
             <BigLanding title={'home.landing.title'} text={'home.landing.text'} image={image}/>
             <PreviewServices/>
-            <PreviewPortfolio/>
-            {/*<Stories/>*/}
-            {/*<Why/>*/}
-            {/*<Blog preview={true}/>*/}
-            {/*<Contact/>*/}
-            {/*<Clients/>*/}
+            <PreviewPortfolio preview/>
+            <Stories/>
+            <Why/>
+            <Blog preview={true}/>
+            <Contact/>
+            <Clients/>
         </Application>
 
     )

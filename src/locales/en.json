@@ -111,9 +111,10 @@
       "text": "Lorem ipsum much longer text enter here"
     },
     "preview": {
-      "title": {
-        "header": "What we've done",
-        "text": "Take a look at some of our projects"
+      "header": {
+        "title": "What we've done before",
+        "smallTitle": "Portfolio",
+        "text": "Take a look at our projects"
       }
     }
   },
@@ -320,10 +321,11 @@
       "text": "Trusted by"
     }
   },
-  "stories": {
-    "title": {
-      "header": "Client experiences",
-      "text": "Customer satisfaction is our number one priority at ASRR"
+  "testimonials": {
+    "header": {
+      "title": "Client experiences",
+      "smallTitle": "Customer satisfaction is the number one priority at ASRR",
+      "text": "Customer satisfaction is our number one priority."
     }
   },
   "cases": {
