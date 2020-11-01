@@ -53,9 +53,9 @@ function Services() {
             <Title basePath={'services.preview.header'}/>
             <div className="services">
                 <Card basePath={`services.cards.bridge`} paragraphs={2} image={automation}/>
-                <Card basePath={`services.cards.itaas`} image={itaas}/>
-                <Card basePath={`services.cards.microservice`} image={scale}/>
-                <Card basePath={`services.cards.insights`} image={analytics}/>
+                <Card basePath={`services.cards.itaas`} paragraphs={3} image={itaas}/>
+                <Card basePath={`services.cards.microservices`} paragraphs={3} image={scale}/>
+                <Card basePath={`services.cards.insights`} paragraphs={3} image={analytics}/>
             </div>
 
         </Section>

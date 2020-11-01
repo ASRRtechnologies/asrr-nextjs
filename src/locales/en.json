@@ -164,9 +164,29 @@
           "1": "One of our IT consultants will be the bridge between your idea and the development process needed for its realisation."
         }
       },
+      "itaas": {
+        "title": "Expertise on demand (ITaaS)",
+        "paragraphs": {
+          "0": "Most Software projects need more than one discipline. It's hard and expensive to find developers that can do full-stack development. A team of multiple developers usually needs time to work well together and can easily get very expensive if used exclusively for one project. ",
+          "1": "ASRR Delivers flexible, full-stack teams that scale up or down, based on what you need. This reduces recruitment and training costs drastically.",
+          "2": "This ensures you always get the latest and greatest in terms of tech, while making sure you don't pay too much for unnecessary overhead costs."
+       }
+      },
+      "microservices": {
+        "title": "'Over Engineered' Building Block Foundation",
+        "paragraphs": {
+          "0": "The applications we build consist of modular microservice building blocks. By iterating over these building blocks every time we do a new project, they get stronger and more robust over time.",
+          "1": "Using this foundation, we can put most of the focus on the unique and custom parts of your application.",
+          "2": "This results in quicker development times, even for completely new subjects, while maintaining quality, robustness and scalability. "
+        }
+      },
       "insights": {
         "title": "Business Insights",
-        "text": ""
+        "paragraphs": {
+          "0": "Many businesses don't make use of the valuable data they already gather, or even miss out on gathering data completely. ",
+          "1": "We can extract valuable key values from your data to give you deep business insights. This allows you to save money, become more efficient, or predict future actions.",
+          "2": "This can all be visualized in a dashboard, creating real-time insights in your data."
+        }
       }
     }
   },
