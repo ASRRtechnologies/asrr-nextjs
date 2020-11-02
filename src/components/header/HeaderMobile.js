@@ -17,7 +17,7 @@ const Wrapper = styled('nav')`
         backdrop-filter: ${props => props.visible ? "blur(12px)" : "transparent"};
         box-shadow: ${props => props.visible ? props.theme.navigation.shadow : 'none'};
         
-        .header-menu-mobile{
+        .header-menu-panel-mobile{
              background: ${props => props.theme.navigation.backgroundMobile};
         }
        
@@ -78,13 +78,18 @@ function HeaderMobile({className}) {
 
                 <Link href="/"><a className="header-logo"><Logo/></a></Link>
 
-                <div className={`header-menu-mobile ${menuOpen ? "menu-open" : ""}`}>
-                    <Link scroll={false} href="/"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.home')}</a></Link>
-                    <Link scroll={false} href="/portfolio"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.portfolio')}</a></Link>
-                    <Link scroll={false} href="/services"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.services')}</a></Link>
-                    <Link scroll={false} href="/blog"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.blog')}</a></Link>
-                    <Link scroll={false} href="/contact"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.contact')}</a></Link>
-                    <LanguageMobile/>
+                <div className={`header-menu-accordion-mobile ${menuOpen ? "menu-open" : ""}`}>
+
+                    <div className="header-menu-panel-mobile">
+                        <Link scroll={false} href="/"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.home')}</a></Link>
+                        <Link scroll={false} href="/portfolio"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.portfolio')}</a></Link>
+                        <Link scroll={false} href="/services"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.services')}</a></Link>
+                        <Link scroll={false} href="/blog"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.blog')}</a></Link>
+                        <Link scroll={false} href="/contact"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.contact')}</a></Link>
+                        <LanguageMobile/>
+                    </div>
+
+
                 </div>
 
                 <div className="header-actions-mobile">
