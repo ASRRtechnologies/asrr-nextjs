@@ -9,7 +9,7 @@ function Blog () {
 
 	return (
 		<Application>
-			<SmallLanding title="Blog"/>
+			{/*<SmallLanding title="Blog"/>*/}
 			<BlogPage/>
 			<Contact/>
 		</Application>
