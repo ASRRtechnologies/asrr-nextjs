@@ -29,9 +29,6 @@ function Portfolio({preview}) {
                     )
                 })}
             </div>
-
-            {preview && <ReadMore className="read-more-big" to="/portfolio" text="buttons.portfolio"/>}
-            {preview ? null : <Contact className="section-contact-form"/>}
         </Section>
     )
 }

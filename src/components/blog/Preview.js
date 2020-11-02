@@ -27,11 +27,15 @@ function Preview({preview}) {
                 <div className="blog">
                     {
                         cases.map((entry, i) => {
-                            return <Fade delay={i * 300}><Card blog={entry}/></Fade>
+                            return <Fade bottom delay={i * 300}><Card blog={entry}/></Fade>
                         })
                     }
                 </div>
-                <ReadMore noAnimation className="subtitle" to="/blog" text="buttons.blog"/>
+
+            <div className="read-more-wrapper">
+                <ReadMore className="subtitle" to="/blog" text="buttons.blog"/>
+            </div>
+
         </Wrapper>
     )
 }

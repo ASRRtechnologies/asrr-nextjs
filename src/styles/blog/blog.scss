@@ -3,6 +3,8 @@
   @include flex(space-between, flex-start, row);
   flex-wrap: wrap;
   max-width: $max-width;
+  @include margin-top(-150px);
+
 }
 
 @media screen and (max-width: $blog-card-second-breakpoint) {
@@ -10,5 +12,11 @@
     @include size(100%, auto);
     @include flex(flex-start, center, column);
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .blog{
+    @include margin-top(-100px);
   }
 }

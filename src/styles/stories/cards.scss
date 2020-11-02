@@ -1,6 +1,7 @@
 .testimonials{
   @include flex(space-between, flex-start, row);
   @include size(100%, auto);
+  @include margin-top(-150px);
   max-width: $max-width;
 
   *{
@@ -10,9 +11,6 @@
       }
     }
   }
-
-
-
 }
 
 .testimonial-card{
@@ -82,23 +80,12 @@
   .testimonial-card{
     width: 100%;
     max-width: 500px;
-    //&:nth-child(1), &:nth-child(2), &:nth-child(3){
-    //  margin: 0;
-    //  margin-bottom: calc(15.57143vw * 0.65);
-    //}
-    //&:nth-child(3){
-    //  margin-bottom: 0;
-    //}
   }
+
 }
 
-@media screen and (max-width: $tablet-small-breakpoint) {
-  .testimonial-card{
-    //&:nth-child(1), &:nth-child(2){
-    //  margin-bottom: calc(20.57143vw * 1.05);
-    //}
-    //&:nth-child(3){
-    //  margin-bottom: 0 !important;
-    //}
+@media screen and (max-width: $mobile-breakpoint) {
+  .testimonials{
+    @include margin-top(-100px);
   }
 }

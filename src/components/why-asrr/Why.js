@@ -18,7 +18,7 @@ function Why() {
 
 	return (
 		<Wrapper>
-			<Fade animation="fade-up">
+			<Fade bottom>
 			<Title basePath={'why.header'} compact noSection/>
 			<div className="why-asrr">
 				<div className="why-asrr-points why-asrr-center">
