@@ -6,9 +6,10 @@ import Map from '@/contact/Map'
 import useI18n from '../../hooks/use-i18n'
 import {toast} from 'react-toastify'
 import Alert from '@/alerts/Alert'
-import Button from '@/Button'
+import Button from '@/buttons/Button'
 import Fade from "react-reveal";
 import styled from "@emotion/styled";
+import FormButton from "@/buttons/FormButton";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.layout};
@@ -66,7 +67,7 @@ function Contact({big}) {
     }
 
     return (
-        <Wrapper>
+        <Wrapper className="no-landing">
 
             <Title basePath={'contact.header'} compact/>
             <Fade bottom delay={400}>
@@ -87,7 +88,8 @@ function Contact({big}) {
                         <Input onChange={(e) => handleChange(e.target)} value={email.body}
                                name="body" last textArea={true} type="text"
                                required={true} placeholder={i18n.t('contact.form.message.placeholder')}/>
-                        <Button className="auto" title="buttons.submit"/>
+
+                        <FormButton className="auto" title="buttons.submit"/>
 
                         <div className="contact-adress">
                             <p>{i18n.t("contact.address.street")}</p>

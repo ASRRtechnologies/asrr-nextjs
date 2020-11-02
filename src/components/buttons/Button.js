@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import Link from "next/link";
-import useI18n from "../hooks/use-i18n";
+import useI18n from "../../hooks/use-i18n";
 
 const Wrapper = styled('div')`
         background-color: ${props => props.theme.button.background};

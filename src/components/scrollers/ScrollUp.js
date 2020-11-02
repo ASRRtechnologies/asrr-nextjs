@@ -3,11 +3,11 @@ import styled from "@emotion/styled";
 
 const Wrapper = styled("div")`
 	  background-color:${props => props.theme.navigation.background};
-        box-shadow: ${props => props.theme.card.shadow.services};
+      box-shadow: ${props => props.theme.navigation.shadow};
 `;
 
 const Arrow = styled("polyline")`
-	  stroke:${props => props.theme.fonts.title};
+	  stroke:${props => props.theme.navigation.font};
 `;
 
 const ScrollUp = () => {

@@ -18,7 +18,7 @@ const Card = styled('div')`
 function Portfolio({preview}) {
     let i18n = useI18n();
     return (
-        <Wrapper id="portfolio-page">
+        <Wrapper className="no-landing">
             <Title basePath={'portfolio.preview.header'}/>
             <div className={`portfolio`}>
                 {portfolio.map(({image, id, type, href}, i) => {

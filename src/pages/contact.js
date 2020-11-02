@@ -9,7 +9,7 @@ function Contact() {
 
     return (
         <Application>
-            <SmallLanding title="Contact"/>
+            {/*<SmallLanding title="Contact"/>*/}
             <ContactPage/>
         </Application>
     )

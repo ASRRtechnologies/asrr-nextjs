@@ -11,7 +11,7 @@ import Animation from '@/animation/Animation'
 import Slider from "react-slick";
 import Chevron from "@/icons/Chevron";
 import {useTheme} from "../../../../context/theme/ThemeContext";
-import Button from "@/Button";
+import Button from "@/buttons/Button";
 import {motion} from "framer-motion";
 import Application from "@/layout/Application";
 import Layout from "@/layout/Layout";

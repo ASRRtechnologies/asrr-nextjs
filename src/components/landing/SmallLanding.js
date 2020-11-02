@@ -2,7 +2,7 @@ import React from 'react'
 import {useRouter} from 'next/router'
 import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
-import Button from '../Button'
+import Button from '../buttons/Button'
 import {useTheme} from '../../context/theme/ThemeContext'
 import useScreenHeight from '../../hooks/helper-functions'
 import Fade from 'react-reveal/Fade';

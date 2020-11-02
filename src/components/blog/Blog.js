@@ -12,7 +12,7 @@ const Wrapper = styled(Section)`
 
 function Preview({preview}) {
     return (
-        <Wrapper>
+        <Wrapper className="no-landing">
             <Title basePath="blog.landing" noSection/>
             <div className="blog">
                 {

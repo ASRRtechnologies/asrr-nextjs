@@ -6,11 +6,22 @@
   &.general{
     max-width: $max-width;
   }
+
+  //Use for pages without landing page
+  &.no-landing{
+    padding: 200px $padding-pc 150px $padding-pc;
+  }
+
 }
 
 @media screen and (max-width:$tablet-breakpoint) {
   .section {
     padding: 150px $padding-tablet;
+
+    &.no-landing{
+      padding: 200px $padding-tablet 150px $padding-tablet;
+    }
+
   }
 }
 
@@ -18,6 +29,11 @@
 @media screen and (max-width: $mobile-breakpoint) {
   .section {
     padding:  120px $padding-mobile;
+
+    &.no-landing{
+      padding: 150px $padding-mobile 150px $padding-mobile;
+    }
+
   }
 }
 

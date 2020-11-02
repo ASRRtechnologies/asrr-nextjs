@@ -93,6 +93,13 @@ const button = {
 	shadow:{
 		dark:"0 8px 10px rgba(1, 1, 1, 0.35)",
 		light:"0px 10px 15px rgba(0,0,0,0.23)"
+	},
+
+	darkButton:{
+		background:black,
+		font:"#fff",
+		shadow: "0px 10px 15px rgba(0,0,0,0.23)",
+		hover:"#4a4a4a",
 	}
 
 };
@@ -200,18 +207,6 @@ const navigation = {
 		dark: "#fff",
 	},
 
-	line_1:{
-		dark:"linear-gradient(to top, #ff6961 50%, #0a0a0a 50%)",
-		light:"linear-gradient(to top, #ff6961 50%, #ffffff 50%)",
-	},
-	line_2:{
-		dark:"linear-gradient(to top, #ff6961 50%, #0a0a0a 50%)",
-		light:"linear-gradient(to top, #ff6961 50%, #ffffff 50%)",
-	},
-	line_3:{
-		dark:"linear-gradient(to bottom, #ff6961 50%, #0a0a0a 50%) 0 -100%",
-		light:"linear-gradient(to bottom, #ff6961 50%, #ffffff 50%) 0 -100%",
-	}
 };
 
 const cards = {
@@ -261,9 +256,6 @@ const lightTheme = {
 		logo: navigation.logo.light,
 		font: navigation.fonts.light,
 		shadow: navigation.shadow.light,
-		line_1:navigation.line_1.light,
-		line_2:navigation.line_2.light,
-		line_3:navigation.line_3.light,
 	},
 
 	fonts: {
@@ -302,6 +294,12 @@ const lightTheme = {
 		font: button.font.light,
 		hover: button.hover.light,
 		shadow: button.shadow.light,
+		dark:{
+			font:button.darkButton.font,
+			background:button.darkButton.background,
+			shadow: button.darkButton.shadow,
+			hover: button.darkButton.hover,
+		}
 	},
 
 	alert:{
@@ -318,9 +316,6 @@ const darkTheme = {
 		logo: navigation.logo.dark,
 		font: navigation.fonts.dark,
 		shadow: navigation.shadow.dark,
-		line_1:navigation.line_1.dark,
-		line_2:navigation.line_2.dark,
-		line_3:navigation.line_3.dark,
 	},
 
 	fonts: {
@@ -368,6 +363,13 @@ const darkTheme = {
 		font: button.font.dark,
 		hover: button.hover.dark,
 		shadow: button.shadow.dark,
+
+		dark:{
+			font:button.darkButton.font,
+			background:button.darkButton.background,
+			shadow: button.darkButton.shadow,
+			hover: button.darkButton.hover,
+		}
 	},
 
 	alert:{

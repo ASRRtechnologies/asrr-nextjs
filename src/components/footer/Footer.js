@@ -104,14 +104,14 @@ function Footer(props) {
 
                 </div>
 
-                <div className="footer-newsletter">
-                    <h1 className="small-header">{i18n.t('footer.letter')}</h1>
-                    <form onSubmit={handleSubmit}>
-                        <Input onChange={(e) => handleChange(e.target)} value={email.name} className="full-width"
-                               button={i18n.t('buttons.submit')}
-                               placeholder={i18n.t('contact.form.email.placeholder')}/>
-                    </form>
-                </div>
+                {/*<div className="footer-newsletter">*/}
+                {/*    <h1 className="small-header">{i18n.t('footer.letter')}</h1>*/}
+                {/*    <form onSubmit={handleSubmit}>*/}
+                {/*        <Input onChange={(e) => handleChange(e.target)} value={email.name} className="full-width"*/}
+                {/*               button={i18n.t('buttons.submit')}*/}
+                {/*               placeholder={i18n.t('contact.form.email.placeholder')}/>*/}
+                {/*    </form>*/}
+                {/*</div>*/}
 
                 <div className="bottom">
                     <p className="label">Copyright ASRR</p>

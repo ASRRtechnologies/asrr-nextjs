@@ -18,7 +18,7 @@ const Wrapper = styled(Section)`
 
 function Services() {
     return (
-        <Wrapper id="services">
+        <Wrapper className="no-landing">
             <Title basePath={'services.preview.header'}/>
             <div className="services">
 
