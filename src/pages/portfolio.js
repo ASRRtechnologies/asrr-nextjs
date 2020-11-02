@@ -8,7 +8,7 @@ import Contact from "@/contact/Preview";
 function Portfolio() {
     return (
         <Application>
-            <SmallLanding title="Portfolio"/>
+            {/*<SmallLanding title="Portfolio"/>*/}
             <PortfolioPage/>
             <Contact/>
         </Application>

@@ -10,7 +10,7 @@ function Services(props) {
 
     return (
         <Application>
-            <SmallLanding title="Our Services"/>
+            {/*<SmallLanding title="Our Services"/>*/}
             <ServicePage/>
             <Contact/>
         </Application>
