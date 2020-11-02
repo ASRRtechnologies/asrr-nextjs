@@ -73,10 +73,8 @@
 .landing-small {
   @include flex(flex-start, center, column);
   @include size(100vw, auto);
-  min-height: 50vh;
+  min-height: 60vh;
   padding: 80px $padding-pc 0 $padding-pc;
-  margin-left: -$padding-pc;
-  margin-right: -$padding-pc;
   overflow: hidden;
   position: relative;
 
@@ -92,10 +90,13 @@
 }
 
 .landing-title-small {
-  @include size(100%, 100%);
+  @include size(100%, auto);
   @include flex(center, flex-start, column);
+  @include padding(100px 0);
   max-width: $max-width;
-  min-height: auto;
+  min-height: 60vh;
+  z-index: 100;
+
 
   h1 {
     max-width: 1000px;
@@ -106,8 +107,6 @@
 
 @media screen and (max-width: $tablet-breakpoint) {
   .landing-small {
-    margin-left: -$padding-tablet;
-    margin-right: -$padding-tablet;
     padding: 0 $padding-tablet;
   }
 }
@@ -116,8 +115,6 @@
 
   .landing-small {
     padding: 0 $padding-mobile;
-    margin-left: -$padding-mobile;
-    margin-right: -$padding-mobile;
   }
 }
 

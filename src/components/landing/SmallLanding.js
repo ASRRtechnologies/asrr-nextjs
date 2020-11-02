@@ -17,10 +17,10 @@ function SmallLanding({title, text}) {
 
             <div className="landing-title-small">
                 <Fade bottom>
-                    <h1>test</h1>
+                    <h1 className="slogan">{title}</h1>
                 </Fade>
                 <Fade delay={200} bottom>
-                    <p>test2</p>
+                    <p className="text">{text}</p>
                 </Fade>
             </div>
 

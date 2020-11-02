@@ -125,3 +125,20 @@ h1, h2, h3{
   @include rfs(14px);
   @include margin-bottom(16px)
 }
+
+
+
+.article-title{
+  @include rfs(48px);
+  @include margin-bottom(26px)
+}
+
+.article-subtitle{
+  @include rfs(26px);
+  @include margin-bottom(26px)
+}
+
+.article-title-label{
+  @include rfs(14px);
+  @include margin-bottom(16px)
+}

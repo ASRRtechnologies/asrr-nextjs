@@ -1,26 +1,28 @@
 import React from 'react';
-import Animation from "@/animation/Animation";
 import Fade from "react-reveal";
 
 function KeyWords(props) {
     let {keyWords} = props;
     return (
-        <Fade bottom>
-            <div className="key-words">
-            <span>
-                <p className="bold">Keywords: </p>
-            </span>
-
-                <div className="key-words-wrapper">
-                    {keyWords && keyWords.map(keyword => {
-                            return <p className="nextjs">{keyword}</p>
-                        }
-                    )}
+        <Fade>
+            <div className="article-keywords">
+                <div className="article-keywords-wrapper">
+                    <p className="label bold">Keywords:&nbsp;</p>
+                    {keyWords && keyWords.map((keyword, i) => {
+                        return(
+                            keyWords.length=== (i+1) ?
+                                (<p className="nextjs label">{`${keyword}`}&nbsp;</p>)
+                                :
+                                (<p className="nextjs label">{`${keyword}`}&nbsp; - &nbsp; </p>)
+                        )
+                    })}
                 </div>
-
             </div>
         </Fade>
     );
 }
 
 export default KeyWords;
+
+
+

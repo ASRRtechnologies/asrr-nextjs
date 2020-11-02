@@ -14,15 +14,8 @@ const Wrapper = styled(Section)`
 function Preview({preview}) {
     let [cases, setCases] = useState(blog);
 
-    useEffect(() => {
-
-            setCases(blog.slice(0, 3));
-        }
-    );
-
     return (
         <Wrapper>
-            <div id="blog-page">
                 <Title basePath="blog.landing" noSection/>
                 <div className="blog">
                     {
@@ -32,7 +25,6 @@ function Preview({preview}) {
                     }
                 </div>
                 <Contact className="section-contact-form"/>
-            </div>
         </Wrapper>
     )
 }
