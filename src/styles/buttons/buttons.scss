@@ -1,4 +1,4 @@
-.button, button {
+.button {
   border: none;
   text-align: center;
   height: 100%;
@@ -10,11 +10,15 @@
   border-radius: 5px;
   width: auto;
   font-family: inherit;
-  //margin-top: 20px;
+
   transition: 50ms ease-in box-shadow;
   &:hover{
     box-shadow: none;
     transition: 50ms ease-in box-shadow;
+  }
+
+  &.button-auto{
+    margin: auto;
   }
 
   p, a{
@@ -27,3 +31,22 @@
   }
 }
 
+button {
+  border: none;
+  text-align: center;
+  height: 100%;
+  box-sizing: content-box;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: auto;
+  font-family: inherit;
+  padding: 0.75em 1.25em;
+  transition: 50ms ease-in box-shadow;
+  &:hover{
+    box-shadow: none;
+    transition: 50ms ease-in box-shadow;
+  }
+}

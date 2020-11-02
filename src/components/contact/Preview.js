@@ -14,7 +14,7 @@ const Wrapper = styled(Section)`
         }
  }`;
 
-const DarkButton = styled('button')`
+const DarkButton = styled('div')`
         background-color: ${props => props.theme.button.dark.background};
         box-shadow: ${props => props.theme.button.dark.shadow};
         p, a{color: ${props => props.theme.button.dark.font}} !important;
@@ -26,11 +26,11 @@ function Contact({title, className}) {
 
     return (
         <Wrapper className={`contact-invitation-section ${className ? className : ""}`}>
-            <div className={`contact preview ${title}`}>
+            <div className={`contact-preview ${title}`}>
                 <Title className={`${title} title-button`} basePath={'contact.preview.header'}/>
 
                 <Fade bottom>
-                    <DarkButton className={`button ${className}`} >
+                    <DarkButton className={`button button-auto ${className}`} >
                         <Link href="/contact"><a>{i18n.t("buttons.contact")}</a></Link>
                     </DarkButton>
                 </Fade>

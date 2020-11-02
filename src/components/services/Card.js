@@ -1,9 +1,7 @@
 import React from 'react';
 import ReadMore from "../text/ReadMore";
-import Section from "@/layout/Section";
 import useI18n from "../../hooks/use-i18n";
 import styled from "@emotion/styled";
-import Animation from "@/animation/Animation";
 
 const Wrapper = styled("div")`
         background: ${props => props.theme.card.background};
@@ -14,10 +12,10 @@ const Card = ({image, basePath, paragraphs}) => {
     let title = `${basePath}.title`;
 
     const i18n = useI18n();
-        return (
-            <Wrapper className="service-card">
-                <div className="service-card-text">
-                    <div className="service-card-text-wrapper">
+    return (
+        <Wrapper className="service-card">
+            <div className="service-card-text">
+                <div className="service-card-text-wrapper">
 					<span>
 						{title && <h1 className="subheader">{i18n.t(title) !== undefined ? i18n.t(title) : title}</h1>}
 
@@ -28,16 +26,16 @@ const Card = ({image, basePath, paragraphs}) => {
                         )}
                         <ReadMore noAnimation className="text" to="/portfolio" text="buttons.portfolio"/>
 					</span>
-                    </div>
                 </div>
+            </div>
 
-                <div className="service-card-image">
-                    <div className="service-card-image-wrapper">
-                        <img src={image} alt="services-alt"/>
-                    </div>
+            <div className="service-card-image">
+                <div className="service-card-image-wrapper">
+                    <img src={image} alt="services-alt"/>
                 </div>
-            </Wrapper>
-        );
+            </div>
+        </Wrapper>
+    );
 };
 
 export default Card;

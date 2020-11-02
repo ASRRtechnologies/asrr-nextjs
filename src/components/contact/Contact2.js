@@ -33,9 +33,7 @@ function Contact({big}) {
             body: `from: ${email.userEmail}, name:${email.name}, subject:${email.subject}, organization: ${email.organization}, message: ${email.body}`,
             subject: email.subject,
             recipient: recipient,
-        }
-
-        // console.log(JSON.stringify(emailObject))
+        };
 
         fetch("https://mail.api.asrr-tech.com/mail/send/simple", {
             method: 'POST',
@@ -45,22 +43,25 @@ function Contact({big}) {
             body: JSON.stringify(emailObject),
         }).then(function (response) {
             if (response.ok) {
-                enqueueSnackbar('user_notifications.contact.success.title', {variant: "success"});
+                enqueueSnackbar(i18n.t("user_notifications.contact.success.title"), {variant: "success"});
                 setEmail({})
             } else {
                 response.json().then(function (object) {
                     console.log(object);
                     console.log(object.propertyErrors);
                     console.log(response);
-                    enqueueSnackbar('user_notifications.contact.error.title', {error: true})
+
+                    enqueueSnackbar(i18n.t("user_notifications.contact.error.title"), {error: true})
 
                 });
                 throw new Error(response.statusText)
             }
         }).catch(error => {
-            enqueueSnackbar('user_notifications.contact.error.title', {error: true})
+            enqueueSnackbar(i18n.t("user_notifications.contact.error.title"), {error: true})
         });
-        event.preventDefault()
+
+        event.preventDefault();
+
     };
 
     return (
@@ -89,6 +90,7 @@ function Contact({big}) {
 
                 <Fade bottom>
                     <h1 className="subheader"> Contact Us:</h1>
+
                     <form onSubmit={handleSubmit} id="contact-form" className="form">
 
                         <Input onChange={(e) => handleChange(e.target)} value={email.name} className="no-margin"
@@ -109,6 +111,7 @@ function Contact({big}) {
 
                         <FormButton title="buttons.submit"/>
                     </form>
+
                 </Fade>
 
 

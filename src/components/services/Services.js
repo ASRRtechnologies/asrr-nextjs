@@ -6,11 +6,8 @@ import analytics from '#/services/data-analytics/data-analytics-square.jpg'
 import scale from '#/services/scaleable-software/scaleable-software-sqaure.jpg'
 import itaas from '#/services/itaas/itaas.jpg'
 import Fade from 'react-reveal/Fade';
-import useI18n from "../../hooks/use-i18n";
 import styled from "@emotion/styled";
-import ReadMore from "@/text/ReadMore";
 import Card from "@/services/Card";
-import withReveal from "react-reveal/withReveal";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.layout};

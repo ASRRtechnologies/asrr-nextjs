@@ -3,10 +3,6 @@
   @include size(100%, 100%);
   max-width: 800px;
 
-  &.preview {
-    text-align: center;
-  }
-
   .form {
     @include flex(space-between, flex-start, column);
     @include size(100%, 100%);
@@ -20,6 +16,7 @@
     }
 
   }
+
 
   .map-container {
     flex: 1;
@@ -37,6 +34,12 @@
     height: 500px;
     border-radius: 5px;
   }
+}
+
+
+.contact-preview {
+  @include flex(flex-start, center, column);
+  text-align: center;
 }
 
 .contact-adress{
