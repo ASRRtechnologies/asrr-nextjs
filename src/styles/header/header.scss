@@ -4,18 +4,13 @@ $white: #fff;
 $bermuda: #77D7B9;
 
 .header {
-  width: 100%;
-  height: 80px;
+  @include size(100%, 80px);
+  @include flex(center, center, row);
   position: fixed;
   left: 0;
   top: 0;
-  @include flex(center, center, row);
-  transition: 300ms ease-in-out all;
-  color: white !important;
   z-index: $header-zIndex;
-
-
-  //Header used on landing page
+  padding: 0 $padding-pc;
 }
 
 .asrr-logo {
@@ -28,7 +23,6 @@ $bermuda: #77D7B9;
 .header-logo{
   margin: 0;
   z-index: 9999;
-
 }
 
 //For menu to use as relative parent
@@ -55,14 +49,12 @@ $bermuda: #77D7B9;
   overflow: hidden;
 
   a {
-    height: auto;
-    width: auto;
+    @include flex(space-between, center, row);
+    @include size(auto, auto);
     margin: 0 20px;
     position: relative;
-    color: $font-color-light;
     text-decoration: none;
     cursor: pointer;
-    @include flex(space-between, center, row);
 
     &:hover{
       color: $primary-color;
@@ -71,6 +63,7 @@ $bermuda: #77D7B9;
     &.active-link {
       color: $primary-color;
     }
+
   }
 
   &.open {
@@ -99,170 +92,24 @@ $bermuda: #77D7B9;
 
 /* The progress container (grey background) */
 .progress-container {
-  width: 100%;
+  width: 100vw;
   height: 2px;
-  position: absolute;
-  bottom: 1px;
+  position: fixed;
+  top: 76px;
   left:0;
 }
 
 /* The progress bar (scroll indicator) */
 .progress-bar {
   height: 4px;
+  z-index: 100000;
   background: $primary-color;
   width: 0%;
 }
 
-@media screen and (max-width: $tablet-padding-breakpoint) {
-  .header-relative{
-    padding: 0 $padding-tablet;
-  }
-
-}
-
-@media screen and (max-width: 1200px) {
-
-  .asrr-logo {
-    width: 60px;
-  }
-
-  .header-relative {
-    padding: 0 $padding-tablet;
-    &.menu-open{
-      box-shadow: none !important;
-    }
-  }
-
-  .header-wrapper {
-    a {
-      margin: 20px 0;
-      font-size: 32px;
-    }
-  }
-
-  .header-menu {
-    position: fixed;
-    left: 0;
-    transform: translateX(100vw);
-    top: 0;
-    @include flex(center, center, column);
-    width: 100vw;
-    height: 100vh;
-    z-index: 100;
-    transition: all ease-in-out 500ms;
-    overflow: hidden;
-
-    &.menu-open {
-      transform: translateX(0);
-      transition: all ease-in-out 500ms;
-    }
-  }
-
-  .header-actions{
-    margin-left: auto;
-  }
-
-}
-
-@media screen and (max-width: $mobile-breakpoint) {
-  .header-relative {
-    padding: 0 $padding-mobile;
-  }
-
-  .header-menu{
-    transform: translateX(0);
-    pointer-events: none;
-    transition: 0.4s ease-in opacity;
-    background-color: transparent !important;
-    padding-top: 15vh;
-    justify-content: flex-start;
-
-    @for $i from 1 through 6 {
-      .fade-in-header:nth-last-child(#{$i}) {
-        opacity: 0;
-        transition: opacity ease-in 300ms;
-        transition-delay: calc(#{$i} * 100ms);
-      }
-    }
-
-    &.menu-open{
-      opacity: 1;
-      pointer-events: auto;
-      background-color: transparent !important;
-      transition: 0.4s 0.4s ease-in opacity;
-
-      @for $i from 1 through 6 {
-        .fade-in-header:nth-child(#{$i}) {
-          opacity: 1;
-          transition: opacity ease-in 50ms;
-          transition-delay: calc(900ms + #{$i * 50ms} );
-        }
-      }
-
-    }
-  }
-
-  .header-wrapper {
-    a {
-      margin: 10px 0;
-      font-size: 24px;
-    }
-  }
-
-  .menu-background {
-    width: 300%;
-    height: 35vh;
-    position: fixed;
-    left: -130%;
-    //visibility: hidden;
-    //transition: visibillity 0.5s;
-
-    &.menu-open{
-      //visibility: visible;
-    }
-
-    &.top {
-      height: 40vh;
-      transform: rotate(-45deg) translateY(-100%);
-      background-size: 100% 200%;
-      background-position: -100% 100%;
-      z-index: -1;
-      transition: background-position 0.5s 0.8s, transform 0.5s 1.3s;
-
-      &.menu-open {
-        transform: rotate(-45deg) translateY(42%);
-        background-position: 0 0;
-        transition: background-position 0.5s, transform 0.5s 0.5s;
-
-      }
-    }
-    &.middle {
-      transform: rotate(-45deg) translateY(150%)  translateX(-20%) scaleY(0);
-      transition: transform 0.5s 0.8s;
-      z-index: -1;
-      transform-origin: center;
-
-      &.menu-open {
-        transform: rotate(-45deg) translateY(150%) translateX(-20%) scaleY(1);
-        transition: transform 0.5s 0.5s;
-        transform-origin: center;
-      }
-
-    }
-    &.bottom {
-      transform: rotate(-45deg) translateY(350%) translateX(-30%);
-      background-size: 100% 200%;
-      background-position: 0 -100%;
-      z-index: -1;
-      transition: background-position 0.5s 0.8s, transform 0.5s 1.3s;
-
-      &.menu-open  {
-        transform: rotate(-45deg) translateY(248%) translateX(-35%);
-        background-position: 0 0;
-        transition: background-position 0.5s, transform 0.5s 0.5s;
-
-      }
-    }
+@media screen and (max-width: $tablet-breakpoint) {
+  .header{
+    display: none;
   }
 
 }

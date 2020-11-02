@@ -62,7 +62,8 @@ const layout = {
 const landing = {
 	background: {
 		dark: black,
-		light: "linear-gradient(120deg, #eeeff1 45%, #e9e9e9 100%);",
+		// light: "linear-gradient(120deg, #eeeff1 45%, #e9e9e9 100%);",
+		light: "linear-gradient(120deg, #fff 45%, #fff 100%);",
 	},
 
 	listItem:{
@@ -101,34 +102,50 @@ const home = {
 	services:{
 		background: {
 			dark: "linear-gradient(120deg, #131313 45%, #0a0a0a 100%);",
-			light: "linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);",
+			light:"linear-gradient(120deg, #fff 75%, #efedec 100%);",
 		},
 	},
 
 	portfolio:{
 		background: {
-			dark: "linear-gradient(120deg, #211D25 45%, #0a0a0a 100%);",
-			light: "linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);",
+			dark: "linear-gradient(-120deg, #211D25 45%, #37333a 100%);",
+			light: "linear-gradient(-120deg, #efedec 65%, #f3f3f3 100%);",
 		},
 	},
 
-	contact: {
-		dark: black3,
-		light: white,
+	stories:{
+		background: {
+			dark: "linear-gradient(120deg, #131313 35%, rgba(39, 39, 39, 0.9) 100%);",
+			light: "linear-gradient(120deg, #f3f3f3 45%, #fff 100%);",
+		},
 	},
 
-	stories: {
-		dark: black2,
-		light: white2,
-	},
-	values: {
-		dark: black2,
-		light: white2,
+	values:{
+		background: {
+			dark: "linear-gradient(120deg, #29323c 45%, #191f25  100%);",
+			light:"linear-gradient(-120deg, #fff 65%, #fbfbfb 100%);",
+		},
 	},
 
-	clients: {
-		dark: black2,
-		light: white2,
+	blog:{
+		background: {
+			dark: "linear-gradient(120deg, #131313 35%, rgba(39, 39, 39, 0.9) 100%);",
+			light: "linear-gradient(120deg, #fbfbfb 45%, #efedec 100%);",
+		},
+	},
+
+	contact:{
+		background: {
+			dark: "linear-gradient(-120deg, #ff6961 45%, #ff392e  100%);",
+			light: "linear-gradient(-120deg, #ff6961 45%, #ff392e  100%);",
+		},
+	},
+
+	clients:{
+		background: {
+			dark: "linear-gradient(120deg, #1a1a1a 45%, #0a0a0a  100%);",
+			light: "linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);",
+		},
 	},
 
 };
@@ -230,11 +247,11 @@ const lightTheme = {
 	home: {
 		services: home.services.background.light,
 		portfolio: home.portfolio.background.light,
-		contact: home.contact.light,
-		clients: home.clients.light,
-		stories: home.stories.light,
-		values: home.values.light,
-
+		contact: home.contact.background.light,
+		clients: home.clients.background.light,
+		stories: home.stories.background.light,
+		values: home.values.background.light,
+		blog: home.blog.background.light,
 	},
 
 
@@ -325,10 +342,11 @@ const darkTheme = {
 	home: {
 		services: home.services.background.dark,
 		portfolio: home.portfolio.background.dark,
-		contact: home.contact.dark,
-		clients: home.clients.dark,
-		stories: home.stories.dark,
-		values: home.values.dark,
+		contact: home.contact.background.dark,
+		clients: home.clients.background.dark,
+		stories: home.stories.background.dark,
+		values: home.values.background.dark,
+		blog: home.blog.background.dark,
 	},
 
 	portfolio: {

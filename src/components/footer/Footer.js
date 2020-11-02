@@ -9,8 +9,6 @@ import Facebook from '@/icons/Facebook'
 import {toast} from 'react-toastify'
 import Alert from '../alerts/Alert'
 
-const Wrapper = styled('section')`background-color: ${props => props.theme.footer};`
-
 function Footer(props) {
     const [email, setEmail] = useState({body: '', subject: '', userEmail: '', organization: '', name: ''})
 
@@ -58,7 +56,7 @@ function Footer(props) {
 
     const i18n = useI18n()
     return (
-        <Wrapper className="layout footer-container">
+        <div className="layout footer-container">
 
             <div className="footer">
                 <img alt="asrr-logo" src={logo}/>
@@ -121,7 +119,7 @@ function Footer(props) {
                 </div>
 
             </div>
-        </Wrapper>
+        </div>
     )
 }
 

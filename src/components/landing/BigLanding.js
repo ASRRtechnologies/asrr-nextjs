@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade';
 import Wave from "react-wavify";
 
 const Wrapper = styled('div')`
-        background-color: ${props => props.theme.landing.background};
+        background: ${props => props.theme.landing.background};
  }`;
 
 function BigLanding({title, text}) {
@@ -36,33 +36,33 @@ function BigLanding({title, text}) {
                 </div>
             </div>
 
-            {/*<div className="landing-wave">*/}
+            <div className="landing-wave">
 
-            {/*    <div className="wave wave-top">*/}
-            {/*        <Wave fill="#ff6961"*/}
-            {/*            // fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}*/}
-            {/*              paused={false}*/}
-            {/*              options={{*/}
-            {/*                  height: 50,*/}
-            {/*                  amplitude: 50,*/}
-            {/*                  speed: 0.25,*/}
-            {/*                  points: 7*/}
-            {/*              }}*/}
-            {/*        />*/}
-            {/*    </div>*/}
-            {/*    <div className="wave wave-bottom">*/}
-            {/*        <Wave*/}
-            {/*            fill={`${darkmode ? "#131313" : "#FBFBFB"}`}*/}
-            {/*            paused={false}*/}
-            {/*            options={{*/}
-            {/*                height: 15,*/}
-            {/*                amplitude: 15,*/}
-            {/*                speed: 0.35,*/}
-            {/*                points: 9*/}
-            {/*            }}*/}
-            {/*        />*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+                <div className="wave wave-top">
+                    <Wave fill="#ff6961"
+                        // fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}
+                          paused={false}
+                          options={{
+                              height: 50,
+                              amplitude: 50,
+                              speed: 0.25,
+                              points: 7
+                          }}
+                    />
+                </div>
+                <div className="wave wave-bottom">
+                    <Wave
+                        fill={`${darkmode ? "#131313" : "#fff"}`}
+                        paused={false}
+                        options={{
+                            height: 15,
+                            amplitude: 15,
+                            speed: 0.35,
+                            points: 9
+                        }}
+                    />
+                </div>
+            </div>
 
         </Wrapper>
     )

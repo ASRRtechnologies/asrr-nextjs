@@ -9,7 +9,7 @@ import Fade from "react-reveal";
 import styled from "@emotion/styled";
 
 const Wrapper = styled(Section)`
-        background: ${props => props.theme.home.portfolio};
+        background: ${props => props.theme.home.blog};
  }`;
 
 function Preview({preview}) {

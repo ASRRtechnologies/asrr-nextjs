@@ -3,14 +3,19 @@ import Fade from 'react-reveal/Fade';
 import useI18n from "../../hooks/use-i18n";
 import Title from "@/titles/Title";
 import React from "react";
+import styled from "@emotion/styled";
 
 const clients = ['form', 'esp', 'nwo'];
+
+const Wrapper = styled(Section)`
+        background: ${props => props.theme.home.stories};
+ }`;
 
 function Preview(props) {
 	const basePath = "stories";
 	let i18n = useI18n();
 	return (
-		<Section>
+		<Wrapper>
 			<Title basePath={basePath + ".header"}/>
 			<div className="testimonials">
 				{clients.map((client, i) => {
@@ -31,7 +36,7 @@ function Preview(props) {
 				})}
 			</div>
 
-		</Section>
+		</Wrapper>
 	);
 }
 

@@ -4,16 +4,15 @@ import Title from '../titles/Title'
 import Input from '@/text/Input'
 import Map from '@/contact/Map'
 import useI18n from '../../hooks/use-i18n'
-import styled from '@emotion/styled'
 import {toast} from 'react-toastify'
 import Alert from '@/alerts/Alert'
 import Button from '@/Button'
-import Animation from '@/animation/Animation'
 import Fade from "react-reveal";
-//
-// const Card = styled(div)`
-//       box-shadow: ${props => props.theme.card.shadow};
-// `
+import styled from "@emotion/styled";
+
+const Wrapper = styled(Section)`
+        background: ${props => props.theme.layout};
+`;
 
 const emailRegex = '(?:[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\\])'
 
@@ -67,10 +66,10 @@ function Contact({big}) {
     }
 
     return (
-        <Section id="contact-page" className="padding-bottom">
+        <Wrapper>
 
             <Title basePath={'contact.header'} compact/>
-            <Fade bottom delay={200}>
+            <Fade bottom delay={400}>
                 <div className="contact">
                     <form onSubmit={handleSubmit} id="contact-form" className="form">
                         <Input onChange={(e) => handleChange(e.target)} value={email.name} className="no-margin"
@@ -110,7 +109,7 @@ function Contact({big}) {
                     </form>
                 </div>
             </Fade>
-        </Section>
+        </Wrapper>
     )
 }
 

@@ -25,6 +25,7 @@ function Page({data, query}) {
             <SmallLanding title="Exploring the future"/>
 
             <ArticleBody className="keywords">
+
                 <KeyWords keyWords={["Test", "2", "3"]}/>
 
                 <ArticleContent>

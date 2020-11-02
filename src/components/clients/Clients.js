@@ -7,7 +7,8 @@ import Animation from '@/animation/Animation'
 import Ticker from 'react-ticker'
 import Fade from "react-reveal";
 
-const Wrapper = styled('section')`
+const Wrapper = styled(Section)`
+        background: ${props => props.theme.home.clients};
          svg{fill: ${props => props.theme.fonts.header} !important;}
 `;
 
@@ -21,9 +22,9 @@ const Card = ({ children }) => {
 
 function Clients (props) {
 	return (
-		<Section>
+		<Wrapper>
 			<Fade animation="fade-up" delay="200">
-				<Title basePath={'clients.header'} compact noSection/>
+				<Title className="title-button" basePath={'clients.header'} compact noSection/>
 				<Wrapper className="clients">
 					<Ticker speed={2} mode="chain">
 						{({ index }) => (
@@ -32,7 +33,7 @@ function Clients (props) {
 					</Ticker>
 				</Wrapper>
 			</Fade>
-		</Section>
+		</Wrapper>
 
 	)
 }

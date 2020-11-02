@@ -5,34 +5,39 @@ import useI18n from "../../hooks/use-i18n";
 import styled from "@emotion/styled";
 import Animation from "@/animation/Animation";
 
-const Wrapper = styled(Animation)`
-             border-bottom: ${props => props.theme.card.border}; 
+const Wrapper = styled("div")`
+        background: ${props => props.theme.card.background};
+        box-shadow: ${props => props.theme.card.shadow};
 `;
 
-const Icon = styled('div')`
-             background-color: ${props => props.theme.card.background}; 
-        box-shadow: ${props => props.theme.card.shadow.services};
-      svg{
-        path{
-          fill:${props => props.theme.fonts.title}
-        }
-      } 
-`;
+const Card = ({image, basePath, paragraphs}) => {
+    let title = `${basePath}.title`;
 
-function Card({title, text, icon, className, to}) {
     const i18n = useI18n();
-    return (
-        <Wrapper animation="fade-up" className="service-card">
-                <Icon className="service-card-icon">
-                    {icon}
-                </Icon>
+        return (
+            <Wrapper className="service-card">
                 <div className="service-card-text">
-                    <h1 className="subheader">{i18n.t(title)}</h1>
-                    <p className="text">{i18n.t(text)}</p>
-                    <ReadMore noAnimation={true} small to={to} text="buttons.read"/>
+                    <div className="service-card-text-wrapper">
+					<span>
+						{title && <h1 className="subheader">{i18n.t(title) !== undefined ? i18n.t(title) : title}</h1>}
+
+                        {[...Array(paragraphs)].map((x, i) => {
+                                let text = `${basePath}.paragraphs.${i}`;
+                                return <p className="text">{i18n.t(text) !== undefined ? i18n.t(text) : text}</p>
+                            }
+                        )}
+                        <ReadMore noAnimation className="text" to="/portfolio" text="buttons.portfolio"/>
+					</span>
+                    </div>
                 </div>
-        </Wrapper>
-    );
-}
+
+                <div className="service-card-image">
+                    <div className="service-card-image-wrapper">
+                        <img src={image} alt="services-alt"/>
+                    </div>
+                </div>
+            </Wrapper>
+        );
+};
 
 export default Card;

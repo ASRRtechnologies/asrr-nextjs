@@ -2,15 +2,18 @@
   @include size(100%, auto);
   @include flex(flex-start, center, column);
   max-width: $max-width;
-
-
+  @include margin-top(-150px);
 }
 
+//Needed for react reveal because it messes up the component with encapsulation and its stylrd
+.service-card-wrapper{
+width:100%
+
+}
 
 .service-card {
   @include size(100%, auto);
   @include flex(flex-start, center, row);
-  margin-bottom: 150px;
 
   &:nth-child(even) {
     flex-direction: row-reverse;
@@ -23,42 +26,31 @@
       }
     }
   }
-  //
-  //@media (max-width: 1500px ) and (min-width: $tablet-breakpoint) {
-  //  h2 {
-  //    font-size: calc(4vw * 0.55);
-  //    margin-bottom: 20px;
-  //  }
-  //
-  //  p {
-  //    font-size: calc(3vw * 0.45);
-  //  }
-  //}
-
 }
 
 .service-card-text {
   @include size(100%, auto);
   flex: 1;
-
-
 }
 
 .service-card-text-wrapper {
-  height: 0;
   width: 100%;
   padding-bottom: 80%;
-  background-color: #eee;
   position: relative;
   box-sizing: border-box;
 
   span {
     @include size(100%, 100%);
     @include flex(center, flex-start, column);
-    padding: 100px;
+    @include padding(50px);
     left: 0;
     bottom: 0;
     position: absolute;
+    *{
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
   }
 
 }
@@ -94,21 +86,25 @@
 
 }
 
-@media screen and (max-width: 1300px) {
 
-  .service-card-text-wrapper {
-    span {
-      padding: 50px;
-    }
+//@media screen and (max-width: 1300px) {
+//
+//  .service-card-text-wrapper {
+//    span {
+//      @include padding(30px);
+//    }
+//  }
+//
+//}
+
+@media screen and (max-width: 1450px) {
+
+  .service-card-wrapper{
+    max-width: 600px;
   }
-
-}
-
-@media screen and (max-width: $tablet-breakpoint) {
 
   .service-card {
     @include flex(center, flex-start, column-reverse);
-    margin-bottom: 150px;
     max-width: 600px;
 
     &:nth-child(even) {
@@ -141,8 +137,12 @@
 }
 
 @media screen and (max-width: $mobile-breakpoint) {
-  .service-card-text-wrapper{
 
+  .services{
+    @include margin-top(-100px);
+  }
+
+  .service-card-text-wrapper{
     span{
       padding: 25px;
     }

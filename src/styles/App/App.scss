@@ -126,7 +126,9 @@ h1, h2, h3{
   @include margin-bottom(16px)
 }
 
-
+.header-mobile-text{
+  @include rfs(32px);
+}
 
 .article-title{
   @include rfs(48px);

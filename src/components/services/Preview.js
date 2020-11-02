@@ -7,6 +7,11 @@ import Title from "@/titles/Title";
 import Fade from 'react-reveal/Fade';
 import useI18n from "../../hooks/use-i18n";
 import ReadMore from "@/text/ReadMore";
+import styled from "@emotion/styled";
+
+const Wrapper = styled(Section)`
+        background: ${props => props.theme.home.services};
+ }`;
 
 const services = [
     {
@@ -42,7 +47,7 @@ function Preview(props) {
     const basePath = "services.preview";
     let i18n = useI18n();
     return (
-        <Section>
+        <Wrapper>
             <Title basePath={basePath + ".header"}/>
             <div className="services-preview">
                 {services.map((service, i) => {
@@ -65,7 +70,7 @@ function Preview(props) {
                 <ReadMore className="subheader" to="/services" text="buttons.services"/>
             </div>
 
-        </Section>
+        </Wrapper>
     );
 }
 

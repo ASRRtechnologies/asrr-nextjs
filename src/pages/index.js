@@ -20,8 +20,8 @@ function Index(props) {
             <Stories/>
             <Why/>
             <PreviewBlog/>
-            <Contact/>
             <Clients/>
+            <Contact/>
         </Application>
 
     )

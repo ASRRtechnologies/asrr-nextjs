@@ -9,60 +9,45 @@ import Fade from 'react-reveal/Fade';
 import useI18n from "../../hooks/use-i18n";
 import styled from "@emotion/styled";
 import ReadMore from "@/text/ReadMore";
+import Card from "@/services/Card";
+import withReveal from "react-reveal/withReveal";
 
-const Wrapper = styled("div") `
-  
-
+const Wrapper = styled(Section)`
+        background: ${props => props.theme.layout};
 `;
 
-const Card = ({image, basePath, paragraphs}) => {
-    let title = `${basePath}.title`
-
-    const i18n = useI18n();
-    return (
-        <Fade bottom>
-            <div className="service-card">
-                <div className="service-card-text">
-                    <Wrapper className="service-card-text-wrapper">
-					<span>
-						{title && <h2>{i18n.t(title) !== undefined ? i18n.t(title) : title}</h2>}
-
-                        {[...Array(paragraphs)].map((x, i) => {
-                                let text = `${basePath}.paragraphs.${i}`;
-                                return <p>{i18n.t(text) !== undefined ? i18n.t(text) : text}</p>
-                            }
-                        )}
-                        <ReadMore className="text" to="/portfolio" text="buttons.portfolio"/>
-					</span>
-                    </Wrapper>
-                </div>
-
-                <div className="service-card-image">
-                    <div className="service-card-image-wrapper">
-                        <img src={image} alt="services-alt"/>
-                    </div>
-                </div>
-            </div>
-        </Fade>
-    )
-
-
-};
-
 function Services() {
-
-
     return (
-        <Section id="services">
+        <Wrapper id="services">
             <Title basePath={'services.preview.header'}/>
             <div className="services">
-                <Card basePath={`services.cards.bridge`} paragraphs={2} image={automation}/>
-                <Card basePath={`services.cards.itaas`} paragraphs={3} image={itaas}/>
-                <Card basePath={`services.cards.microservices`} paragraphs={3} image={scale}/>
-                <Card basePath={`services.cards.insights`} paragraphs={3} image={analytics}/>
-            </div>
 
-        </Section>
+                <Fade delay={0} bottom>
+                    <div className="service-card-wrapper card-margin-bottom">
+                        <Card basePath={`services.cards.bridge`} paragraphs={2} image={automation}/>
+                    </div>
+                </Fade>
+
+                <Fade delay={200} bottom>
+                    <div className="service-card-wrapper card-margin-bottom">
+                        <Card basePath={`services.cards.itaas`} paragraphs={3} image={itaas}/>
+                    </div>
+                </Fade>
+
+                <Fade delay={300} bottom>
+                    <div className="service-card-wrapper card-margin-bottom">
+                        <Card basePath={`services.cards.microservices`} paragraphs={3} image={scale}/>
+                    </div>
+                </Fade>
+
+                <Fade delay={400} bottom>
+                    <div className="service-card-wrapper card-margin-bottom">
+                        <Card basePath={`services.cards.insights`} paragraphs={3} image={analytics}/>
+                    </div>
+                </Fade>
+
+            </div>
+        </Wrapper>
     )
 }
 
