@@ -52,4 +52,9 @@ export const cases = [
         ],
         image: "https://r2m.se/wp-content/uploads/2018/01/microservices-768x448.png"
     },
+    {
+        type: "case",
+        name: "hsfn",
+        readMore: true
+    }
 ];
