@@ -1,5 +1,4 @@
 import React from 'react';
-import Animation from "@/animation/Animation";
 import Section from "@/layout/Section";
 import Button from "@/buttons/Button";
 import {useRouter} from "next/router";
@@ -12,7 +11,6 @@ function GenericError(props) {
     const router = useRouter();
 
     return (
-        <Animation animation="fade-up" delay="200">
             <Section containerClassName="error-page" className="error-page">
                 <div>
                     <Title title="error.title" text="error.text"/>
@@ -46,7 +44,6 @@ function GenericError(props) {
                     </div>
                 </div>
             </Section>
-        </Animation>
     );
 }
 

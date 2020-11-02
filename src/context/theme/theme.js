@@ -319,6 +319,7 @@ const darkTheme = {
 	},
 
 	fonts: {
+		title: fonts.header.dark,
 		header: fonts.header.dark,
 		paragraph: fonts.paragraph.dark,
 		whiteFont: fonts.paragraph.dark,

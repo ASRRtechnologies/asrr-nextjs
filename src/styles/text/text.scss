@@ -12,6 +12,13 @@
     color: $primary-color !important;
   }
 
+  &.title-left{
+    @include flex(flex-start, flex-start, column);
+    h1, h2, h3{
+      text-align: left;
+    }
+  }
+
   *{
     &:last-child{
       margin-bottom: 0;

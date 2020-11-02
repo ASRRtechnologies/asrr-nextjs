@@ -1,23 +1,21 @@
 .contact {
-  @include flex(flex-start, center, column);
+  @include flex(flex-start, flex-start, column);
   @include size(100%, 100%);
+  max-width: 800px;
 
   &.preview {
     text-align: center;
   }
 
-  &.left-title{
-    @include flex(flex-start, flex-start, column);
-  }
-
   .form {
     @include flex(space-between, flex-start, column);
     @include size(100%, 100%);
+    margin-top: 25px;
     max-width: 600px;
 
     .input-container{
       &:nth-of-type(5){
-        margin-bottom: 25px;
+        margin-bottom: 50px;
       }
     }
 
@@ -27,6 +25,7 @@
     flex: 1;
     @include flex(center, center, column);
     @include size(100%, 100%);
+    margin-top: 100px;
     //The map has an outer div which doesn't allow for justify-content space between because there are 3 divs then.
     div:first-child {
       position: absolute;
@@ -37,12 +36,11 @@
     width: 100%;
     height: 500px;
     border-radius: 5px;
-
   }
 }
 
 .contact-adress{
-  margin: 50px 0 50px 0;
+  margin: 0 0 50px 0;
   a, p {
     display: block;
     margin-bottom: 5px;

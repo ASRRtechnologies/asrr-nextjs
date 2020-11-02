@@ -229,8 +229,8 @@
       }
     },
     "address": {
-      "street": "'s Gravenzandseweg 2 unit A",
-      "zipcode": "2291 PE Wateringen",
+      "street": "Adress: 's Gravenzandseweg 2 unit A",
+      "zipcode":"Zipcode: 2291 PE Wateringen",
       "country": "The Netherlands",
       "route": "Get directions"
     },

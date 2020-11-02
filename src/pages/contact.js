@@ -1,5 +1,5 @@
 import React from 'react'
-import ContactPage from '../components/contact/Contact'
+import ContactPage from '../components/contact/Contact2'
 import {useTheme} from '../context/theme/ThemeContext'
 import Application from '../components/layout/Application'
 import SmallLanding from "@/landing/SmallLanding";

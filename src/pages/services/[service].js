@@ -85,19 +85,6 @@ function Page({data, query}) {
 
             </ArticleBody>
 
-
-
-
-
-            {/*<Section className="service-page individual-service-section">*/}
-            {/*    <Animation animation="fade-up" delay="300">*/}
-            {/*        <Title title={data.title} className="justify" text={data.text}/>*/}
-            {/*    </Animation>*/}
-            {/*    {console.log(query, data)}*/}
-            {/*    <Animation animation="fade-up" delay="300">*/}
-            {/*        <Contact className="last-section-padding"/>*/}
-            {/*    </Animation>*/}
-            {/*</Section>*/}
         </Application>
     )
 }

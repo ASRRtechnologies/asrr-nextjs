@@ -15,7 +15,7 @@ function FormButton ({className, title, to, custom, ...props }) {
 	const i18n = useI18n();
 	return (
 		<>
-			<Wrapper {...props}>{i18n.t(title)}</Wrapper>
+			<Wrapper {...props}><a href="">{i18n.t(title)}</a></Wrapper>
 		</>
 	)
 }

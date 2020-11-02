@@ -12,6 +12,10 @@
     padding: 200px $padding-pc 150px $padding-pc;
   }
 
+  &.contact-section{
+    padding-bottom: 0;
+  }
+
 }
 
 @media screen and (max-width:$tablet-breakpoint) {
