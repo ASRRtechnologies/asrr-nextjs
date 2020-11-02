@@ -33,7 +33,10 @@ function Portfolio({preview}) {
                 })}
             </div>
 
-            <ReadMore className="read-more-big" to="/portfolio" text="buttons.portfolio"/>
+            <div className="read-more-wrapper">
+                <ReadMore className="subheader" to="/portfolio" text="buttons.portfolio"/>
+            </div>
+
         </Wrapper>
     )
 }

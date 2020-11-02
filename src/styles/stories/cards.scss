@@ -2,6 +2,17 @@
   @include flex(space-between, flex-start, row);
   @include size(100%, auto);
   max-width: $max-width;
+
+  *{
+    &:last-of-type{
+      .testimonial-card{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+
 }
 
 .testimonial-card{

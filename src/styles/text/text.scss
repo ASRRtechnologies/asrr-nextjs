@@ -15,6 +15,11 @@
   margin-bottom: 150px;
 }
 
+.read-more-wrapper{
+  @include margin-top(96px);
+
+}
+
 //Readmore
 .read-more {
   display: inline-block;

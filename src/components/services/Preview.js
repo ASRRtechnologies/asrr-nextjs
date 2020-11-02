@@ -60,7 +60,11 @@ function Preview(props) {
                     )
                 })}
             </div>
-            <ReadMore noAnimation className="small-header" to="/services" text="buttons.services"/>
+
+            <div className="read-more-wrapper">
+                <ReadMore noAnimation className="subheader" to="/services" text="buttons.services"/>
+            </div>
+
         </Section>
     );
 }
