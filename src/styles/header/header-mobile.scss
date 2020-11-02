@@ -26,30 +26,53 @@ $bermuda: #77D7B9;
 .header-menu-accordion-mobile{
   width:100vw;
   @include flex(flex-start, center, column);
+  transition: 0.4s;
   position: fixed;
-  top:0;
   left:0;
-  padding: 80px 0;
+  top:0;
+  height:0;
+  overflow: hidden;
+
 
   .header-menu-panel-mobile{
     @include flex(center, center, column);
     width: 100vw;
-    height: 0;
-    max-height: 0;
-    transition: max-height 0.9s ease-in-out;
-    overflow: hidden;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: height 1s cubic-bezier(.42,.97,.52,1.49);
+
+    a{
+      @include margin(32px 0);
+    }
+
+    @for $i from 1 through 6 {
+      a:nth-last-child(#{$i}) {
+        opacity: 0;
+        transition: opacity ease-in 300ms;
+        transition-delay: calc(#{$i} * 100ms);
+      }
+    }
+
   }
 
-  a{
-    //white-space: nowrap;
-    @include margin(32px 0);
-  }
 
   &.menu-open{
+    width:100vw;
+    height:100vh;
+    transition: height 1s cubic-bezier(.42,.97,.52,1.49);
+
     .header-menu-panel-mobile{
-      height: 100vh;
-      max-height: 100vh;
-      transition: max-height 0.9s ease-in-out;
+
+      @for $i from 1 through 6 {
+        a:nth-child(#{$i}) {
+          opacity: 1;
+          transition: opacity ease-in 50ms;
+          transition-delay: calc(100ms + #{$i * 50ms} );
+        }
+      }
+
     }
   }
 

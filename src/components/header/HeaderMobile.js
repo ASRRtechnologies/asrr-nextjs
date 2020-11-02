@@ -17,7 +17,7 @@ const Wrapper = styled('nav')`
         backdrop-filter: ${props => props.visible ? "blur(12px)" : "transparent"};
         box-shadow: ${props => props.visible ? props.theme.navigation.shadow : 'none'};
         
-        .header-menu-panel-mobile{
+         .header-menu-accordion-mobile{
              background: ${props => props.theme.navigation.backgroundMobile};
         }
        
