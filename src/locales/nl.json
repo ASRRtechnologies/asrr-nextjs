@@ -307,8 +307,9 @@
     }
   },
   "why": {
-    "title": {
-      "header": "Waarom ASRR?",
+    "header": {
+      "title": "Waarom ASRR?",
+      "subTitle": "Key Features",
       "text": ""
     },
     "wtf": {
