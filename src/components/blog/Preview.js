@@ -3,7 +3,6 @@ import Card from '@/blog/Card'
 import Section from '@/layout/Section'
 import Title from "@/titles/Title";
 import ReadMore from "@/text/ReadMore";
-import Contact from "@/contact/Preview";
 import {blog} from "../../data/blog";
 import Fade from "react-reveal";
 import styled from "@emotion/styled";

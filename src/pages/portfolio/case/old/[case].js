@@ -7,12 +7,9 @@ import {AnimationContext} from '../../../../context/animations/AnimationContext'
 import Landing from '@/landing/Landing'
 import Title from '@/titles/Title'
 import Interweave, {Markup} from 'interweave'
-import Animation from '@/animation/Animation'
 import Slider from "react-slick";
 import Chevron from "@/icons/Chevron";
 import {useTheme} from "../../../../context/theme/ThemeContext";
-import Button from "@/buttons/Button";
-import {motion} from "framer-motion";
 import Application from "@/layout/Application";
 import Layout from "@/layout/Layout";
 import Contact from '@/contact/Preview'
@@ -99,23 +96,23 @@ function Page({data, query}) {
                         </Fade>
 
                         <Fade>
-                        <div className="project-carousel-wrapper" animation="fade-up" delay="500">
-                            <Slider {...settings}>
-                                {
-                                    data.images.map((img, i) => {
-                                        return (
-                                            <Card className="project-image">
-                                                <img src={img} alt="img"/>
-                                            </Card>
-                                        )
-                                    })
-                                }
-                            </Slider>
-                            <div className="project-carousel-indicator">
-                                {data.images.map((d, i) => <div
-                                    className={`${i === slide ? "active-indicator" : null}`}></div>)}
+                            <div className="project-carousel-wrapper" animation="fade-up" delay="500">
+                                <Slider {...settings}>
+                                    {
+                                        data.images.map((img, i) => {
+                                            return (
+                                                <Card className="project-image">
+                                                    <img src={img} alt="img"/>
+                                                </Card>
+                                            )
+                                        })
+                                    }
+                                </Slider>
+                                <div className="project-carousel-indicator">
+                                    {data.images.map((d, i) => <div
+                                        className={`${i === slide ? "active-indicator" : null}`}></div>)}
+                                </div>
                             </div>
-                        </div>
                         </Fade>
 
                         <Fade bottom animation="fade-up" delay="500">

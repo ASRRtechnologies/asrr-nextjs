@@ -1,7 +1,6 @@
 import React from 'react';
 import useI18n from '../../hooks/use-i18n'
 import Fade from 'react-reveal/Fade';
-import Animation from "@/animation/Animation";
 
 function ArticleTitle({compact, noSection, basePath, id}) {
     const i18n = useI18n();

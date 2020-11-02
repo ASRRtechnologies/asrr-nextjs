@@ -1,6 +1,5 @@
 import React from 'react';
 import fallback from "../../../public/assets/images/erik-mclean-ZRns2R5azu0-unsplash.jpg"
-import Animation from "@/animation/Animation";
 import useI18n from "../../hooks/use-i18n";
 import Fade from "react-reveal";
 

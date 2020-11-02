@@ -1,6 +1,4 @@
 import React from 'react';
-import Animation from "@/animation/Animation";
-import i18n from "../../context/lib/i18n";
 import useI18n from "../../hooks/use-i18n";
 import Fade from "react-reveal";
 

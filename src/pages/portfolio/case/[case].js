@@ -1,20 +1,12 @@
-import React, {useState} from 'react'
+import React from 'react'
 import Section from '@/layout/Section'
 import Application from "@/layout/Application";
 import Layout from "@/layout/Layout";
 import WideText from "@/article/WideText";
 import ArticleImage from "@/article/ArticleImage";
-import ImageSlider from "@/article/ImageSlider";
 import KeyWords from "@/article/KeyWords";
-import Video from "@/article/Video";
 import BreadCrumb from "@/blog/BreadCrumb";
 import {cases} from "../../../data/cases";
-import {blog} from "../../../data/blog";
-import Title from "@/titles/Title";
-import Head from 'next/head';
-
-import Facebook from "@/icons/Facebook";
-import i18n from "../../../context/lib/i18n";
 import useI18n from "../../../hooks/use-i18n";
 import {NextSeo} from "next-seo";
 
@@ -39,7 +31,7 @@ function Page({breadCrumb, found, query}) {
         <>
             <NextSeo
                 title={title}
-                titleTemplate = 'ASRR | %s'
+                titleTemplate='ASRR | %s'
                 description={description}
                 openGraph={{
                     title: {title},
