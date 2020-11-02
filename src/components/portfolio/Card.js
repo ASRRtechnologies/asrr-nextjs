@@ -12,13 +12,11 @@ const Wrapper = styled('div')`
 
 function Card({img, title, discipline, client, route, redirect}) {
     const i18n = useI18n();
-    const mouse = useContext(MouseContext);
 
     return (
         <div className="portfolio-card card-margin-bottom">
-            {/*<Link href={route}>*/}
-                <a className="portfolio-card-inner" onMouseOver={() => {mouse.onHover('projects')}}
-                   onMouseLeave={() => {mouse.onLeave()}}>
+            <Link href={route}>
+                <a className="portfolio-card-inner">
 
                     <Wrapper className="portfolio-card-image-wrapper">
                         <div className="portfolio-card-image">
@@ -31,7 +29,7 @@ function Card({img, title, discipline, client, route, redirect}) {
                         <p className="text">{i18n.t(title)}</p>
                     </div>
                 </a>
-            {/*</Link>*/}
+            </Link>
         </div>
     )
 }
