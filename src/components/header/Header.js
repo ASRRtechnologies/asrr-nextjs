@@ -16,15 +16,16 @@ const Wrapper = styled('nav')`
         background: ${props => props.visible ? props.theme.navigation.background : "transparent"};
         backdrop-filter: ${props => props.visible ? "blur(12px)" : "transparent"};
         box-shadow: ${props => props.visible ? props.theme.navigation.shadow : 'none'};
+        
        
         svg{
             path{
-            fill: ${props => props.theme.navigation.font};
+            fill: ${props => props.menuOpen?  props.theme.navigation.font : props.visible ?  props.theme.navigation.font :  "white" };
             }
         }
        
         p, a {
-          color: ${props => props.theme.navigation.font};
+          color: ${props => props.menuOpen?  props.theme.navigation.font : props.visible ?  props.theme.navigation.font :  "white" };
         }
         
         .header-background-text{
@@ -37,7 +38,7 @@ const Wrapper = styled('nav')`
         
         @media screen and (max-width:1200px) {
             .header-menu{
-                    background-color: ${props => props.theme.navigation.background};
+                    background-color: ${props => props.theme.navigation.backgroundMobile};
             }
         }
 `;

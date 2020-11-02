@@ -5,6 +5,7 @@ import Title from '../titles/Title'
 import {portfolio} from '../../data/portfolio'
 import Contact from '../../components/contact/Preview'
 import ReadMore from "@/text/ReadMore";
+import Fade from "react-reveal/Fade";
 
 function Portfolio({preview}) {
 
@@ -18,10 +19,13 @@ function Portfolio({preview}) {
         <Section id="portfolio-page">
             <Title basePath={'portfolio.preview.header'}/>
             <div className={`portfolio`}>
-                {cases.map(({image, id, type, href}, i) => {
+                {portfolio.map(({image, id, type, href}, i) => {
                     return (
-                        <Card redirect={href} route={`/portfolio/case/${id}`} client={`cases.${id}.client`} img={image}
-                              discipline={`cases.${id}.discipline`} title={`cases.${id}.title`}/>
+                        // <Fade bottom>
+                            <Card redirect={href} route={`/portfolio/case/${id}`} client={`cases.${id}.client`}
+                                  img={image}
+                                  discipline={`cases.${id}.discipline`} title={`cases.${id}.title`}/>
+                        // </Fade>
                     )
                 })}
             </div>

@@ -15,7 +15,7 @@ function Card({img, title, discipline, client, route, redirect}) {
     const mouse = useContext(MouseContext);
 
     return (
-        <div className="portfolio-card">
+        <div className="portfolio-card card-margin-bottom">
             {/*<Link href={route}>*/}
                 <a className="portfolio-card-inner" onMouseOver={() => {mouse.onHover('projects')}}
                    onMouseLeave={() => {mouse.onLeave()}}>

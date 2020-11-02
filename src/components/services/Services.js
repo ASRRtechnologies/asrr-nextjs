@@ -8,6 +8,7 @@ import itaas from '#/services/itaas/itaas.jpg'
 import Fade from 'react-reveal/Fade';
 import useI18n from "../../hooks/use-i18n";
 import styled from "@emotion/styled";
+import ReadMore from "@/text/ReadMore";
 
 const Wrapper = styled("div") `
   
@@ -26,15 +27,12 @@ const Card = ({image, basePath, paragraphs}) => {
 					<span>
 						{title && <h2>{i18n.t(title) !== undefined ? i18n.t(title) : title}</h2>}
 
-
                         {[...Array(paragraphs)].map((x, i) => {
-
                                 let text = `${basePath}.paragraphs.${i}`;
-
                                 return <p>{i18n.t(text) !== undefined ? i18n.t(text) : text}</p>
                             }
                         )}
-
+                        <ReadMore className="text" to="/portfolio" text="buttons.portfolio"/>
 					</span>
                     </Wrapper>
                 </div>

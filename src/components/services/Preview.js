@@ -49,7 +49,7 @@ function Preview(props) {
                     let {id} = service;
                     return (
                         <Fade delay={i * 300} bottom>
-                            <div className="service-preview-card">
+                            <div className="service-preview-card card-margin-bottom">
 							<span className="service-preview-card-image">
 								<img src={service.image} alt={service.alt}/>
 							</span>
@@ -62,7 +62,7 @@ function Preview(props) {
             </div>
 
             <div className="read-more-wrapper">
-                <ReadMore noAnimation className="subheader" to="/services" text="buttons.services"/>
+                <ReadMore className="subheader" to="/services" text="buttons.services"/>
             </div>
 
         </Section>

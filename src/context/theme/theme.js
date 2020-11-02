@@ -163,6 +163,11 @@ const navigation = {
 		dark: "rgba(39, 39, 39, 0.9)",
 	},
 
+	backgroundMobile: {
+		light: "rgba(252, 252, 252, 1)",
+		dark: "rgba(39, 39, 39, 1)",
+	},
+
 	shadow: {
 		dark: dropShadowDark,
 		light: dropShadowLight,
@@ -235,6 +240,7 @@ const lightTheme = {
 
 	navigation: {
 		background: navigation.background.light,
+		backgroundMobile: navigation.backgroundMobile.light,
 		logo: navigation.logo.light,
 		font: navigation.fonts.light,
 		shadow: navigation.shadow.light,
@@ -291,6 +297,7 @@ const darkTheme = {
 
 	navigation: {
 		background: navigation.background.dark,
+		backgroundMobile: navigation.backgroundMobile.light,
 		logo: navigation.logo.dark,
 		font: navigation.fonts.dark,
 		shadow: navigation.shadow.dark,

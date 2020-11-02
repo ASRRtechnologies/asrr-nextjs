@@ -17,7 +17,7 @@ function Preview(props) {
 					let {id} = client;
 					return (
 						<Fade delay={i * 300} bottom>
-							<div className="testimonial-card">
+							<div className="testimonial-card card-margin-bottom">
 								<span className="testimonial-card-image">
                 					<img src={i18n.t("home.stories." + client + ".picture")}/>
             					</span>

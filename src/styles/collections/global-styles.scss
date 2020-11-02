@@ -67,6 +67,11 @@
 
 
 .card-margin-bottom{
-  @include margin-bottom(100px);
+  @include margin-bottom(150px);
+}
 
+@media screen and (max-width: $mobile-breakpoint) {
+  .card-margin-bottom{
+    margin-bottom: 100px;
+  }
 }
