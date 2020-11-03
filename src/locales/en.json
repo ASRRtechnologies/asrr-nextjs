@@ -428,39 +428,6 @@
             }
           }
         }
-      },
-      "case": {
-        "landing": {
-          "discipline": "Automated BIM Configurator | Full-Stack",
-          "title": "Reinventing the housing industry",
-          "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
-        },
-        "introduction": {
-          "title": "The Problem",
-          "text": "One of our oldest clients, FORM, has hired ASRR and its developers for years to provide for their IT needs. \nTogether with FORM we think about how we can realize the vision they\n have had for nearly a decade on how to revolutionize the housing industry"
-        },
-        "bullets": [
-          {
-            "key": "<p class=\"animated-link\"> The old process <br/> (in a generic BIM/Architecture firm)</p>",
-            "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
-          },
-          {
-            "key": "<p class=\"animated-link\">The goal</p>",
-            "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
-          },
-          {
-            "key": "<p class=\"animated-link\">What was needed</p>",
-            "value": "<ul><li>Complex interface with the existing program</li> <li>Spring Boot Rest API hosted in kubernetes </li> <li>Front-end Web App in ReactJS</li> <li>A custom server</li> <li>Cloud storage</li>  </ul>"
-          }
-        ],
-        "result": {
-          "title": "What We Did",
-          "text": "FORM uses complex BIM models to combine smart parametric designs with a structured way of working to create the \n3D models needed to build a house. This is a perfect example of something that can be automated.\nThe program FORM uses to engineer and model houses is called Autodesk Revit. Revit can be a bit unreliable at times,\n which posed a threat to ensuring we can go from a manual process to a fully automated cloud version.\nWe wrote a program that plugs into the existing application, enabling us to imitate user interactions with code. \nThis allows us to automate complex actions flawlessly. \nUsing the program, we create an output within Revit, for example a PDF with the building plans.\n This pdf is then uploaded to the cloud, and its location is passed to the central server.     "
-        },
-        "conclusion": {
-          "title": "Conclusion",
-          "text": "In short, we were able to adapt to the current process by writing code that integrates with the used programs. \nWe then pushed it all to the next level by using enterprise grade methods to ensure reliability,\n speed and a good overall user experience. \nTo put this into numbers, this can save hundreds of euros per house, making FORM’s Automation a cutting-edge competitor \nto big time firms while delivering consistent and reliable outputs. "
-        }
       }
     },
     "hes": {
@@ -511,39 +478,6 @@
             }
           }
         }
-      },
-      "case": {
-        "landing": {
-          "discipline": "Automated BIM Configurator | Full-Stack",
-          "title": "Reinventing the housing industry",
-          "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
-        },
-        "introduction": {
-          "title": "The Problem",
-          "text": "One of our oldest clients, FORM, has hired ASRR and its developers for years to provide for their IT needs. \nTogether with FORM we think about how we can realize the vision they\n have had for nearly a decade on how to revolutionize the housing industry"
-        },
-        "bullets": [
-          {
-            "key": "<p class=\"animated-link\"> The old process <br/> (in a generic BIM/Architecture firm)</p>",
-            "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
-          },
-          {
-            "key": "<p class=\"animated-link\">The goal</p>",
-            "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
-          },
-          {
-            "key": "<p class=\"animated-link\">What was needed</p>",
-            "value": "<ul><li>Complex interface with the existing program</li> <li>Spring Boot Rest API hosted in kubernetes </li> <li>Front-end Web App in ReactJS</li> <li>A custom server</li> <li>Cloud storage</li>  </ul>"
-          }
-        ],
-        "result": {
-          "title": "What We Did",
-          "text": "FORM uses complex BIM models to combine smart parametric designs with a structured way of working to create the \n3D models needed to build a house. This is a perfect example of something that can be automated.\nThe program FORM uses to engineer and model houses is called Autodesk Revit. Revit can be a bit unreliable at times,\n which posed a threat to ensuring we can go from a manual process to a fully automated cloud version.\nWe wrote a program that plugs into the existing application, enabling us to imitate user interactions with code. \nThis allows us to automate complex actions flawlessly. \nUsing the program, we create an output within Revit, for example a PDF with the building plans.\n This pdf is then uploaded to the cloud, and its location is passed to the central server.     "
-        },
-        "conclusion": {
-          "title": "Conclusion",
-          "text": "In short, we were able to adapt to the current process by writing code that integrates with the used programs. \nWe then pushed it all to the next level by using enterprise grade methods to ensure reliability,\n speed and a good overall user experience. \nTo put this into numbers, this can save hundreds of euros per house, making FORM’s Automation a cutting-edge competitor \nto big time firms while delivering consistent and reliable outputs. "
-        }
       }
     },
     "nwo": {
@@ -591,39 +525,6 @@
             }
           }
         }
-      },
-      "case": {
-        "landing": {
-          "discipline": "Automated BIM Configurator | Full-Stack",
-          "title": "Reinventing the housing industry",
-          "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
-        },
-        "introduction": {
-          "title": "The Problem",
-          "text": "One of our oldest clients, FORM, has hired ASRR and its developers for years to provide for their IT needs. \nTogether with FORM we think about how we can realize the vision they\n have had for nearly a decade on how to revolutionize the housing industry"
-        },
-        "bullets": [
-          {
-            "key": "<p class=\"animated-link\"> The old process <br/> (in a generic BIM/Architecture firm)</p>",
-            "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
-          },
-          {
-            "key": "<p class=\"animated-link\">The goal</p>",
-            "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
-          },
-          {
-            "key": "<p class=\"animated-link\">What was needed</p>",
-            "value": "<ul><li>Complex interface with the existing program</li> <li>Spring Boot Rest API hosted in kubernetes </li> <li>Front-end Web App in ReactJS</li> <li>A custom server</li> <li>Cloud storage</li>  </ul>"
-          }
-        ],
-        "result": {
-          "title": "What We Did",
-          "text": "FORM uses complex BIM models to combine smart parametric designs with a structured way of working to create the \n3D models needed to build a house. This is a perfect example of something that can be automated.\nThe program FORM uses to engineer and model houses is called Autodesk Revit. Revit can be a bit unreliable at times,\n which posed a threat to ensuring we can go from a manual process to a fully automated cloud version.\nWe wrote a program that plugs into the existing application, enabling us to imitate user interactions with code. \nThis allows us to automate complex actions flawlessly. \nUsing the program, we create an output within Revit, for example a PDF with the building plans.\n This pdf is then uploaded to the cloud, and its location is passed to the central server.     "
-        },
-        "conclusion": {
-          "title": "Conclusion",
-          "text": "In short, we were able to adapt to the current process by writing code that integrates with the used programs. \nWe then pushed it all to the next level by using enterprise grade methods to ensure reliability,\n speed and a good overall user experience. \nTo put this into numbers, this can save hundreds of euros per house, making FORM’s Automation a cutting-edge competitor \nto big time firms while delivering consistent and reliable outputs. "
-        }
       }
     },
     "esp": {
@@ -654,39 +555,6 @@
             "image": "The new website ranking first in Google (SEO optimized)"
           }
         }
-      },
-      "case": {
-        "landing": {
-          "discipline": "Automated BIM Configurator | Full-Stack",
-          "title": "Reinventing the housing industry",
-          "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
-        },
-        "introduction": {
-          "title": "The Problem",
-          "text": "One of our oldest clients, FORM, has hired ASRR and its developers for years to provide for their IT needs. \nTogether with FORM we think about how we can realize the vision they\n have had for nearly a decade on how to revolutionize the housing industry"
-        },
-        "bullets": [
-          {
-            "key": "<p class=\"animated-link\"> The old process <br/> (in a generic BIM/Architecture firm)</p>",
-            "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
-          },
-          {
-            "key": "<p class=\"animated-link\">The goal</p>",
-            "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
-          },
-          {
-            "key": "<p class=\"animated-link\">What was needed</p>",
-            "value": "<ul><li>Complex interface with the existing program</li> <li>Spring Boot Rest API hosted in kubernetes </li> <li>Front-end Web App in ReactJS</li> <li>A custom server</li> <li>Cloud storage</li>  </ul>"
-          }
-        ],
-        "result": {
-          "title": "What We Did",
-          "text": "FORM uses complex BIM models to combine smart parametric designs with a structured way of working to create the \n3D models needed to build a house. This is a perfect example of something that can be automated.\nThe program FORM uses to engineer and model houses is called Autodesk Revit. Revit can be a bit unreliable at times,\n which posed a threat to ensuring we can go from a manual process to a fully automated cloud version.\nWe wrote a program that plugs into the existing application, enabling us to imitate user interactions with code. \nThis allows us to automate complex actions flawlessly. \nUsing the program, we create an output within Revit, for example a PDF with the building plans.\n This pdf is then uploaded to the cloud, and its location is passed to the central server.     "
-        },
-        "conclusion": {
-          "title": "Conclusion",
-          "text": "In short, we were able to adapt to the current process by writing code that integrates with the used programs. \nWe then pushed it all to the next level by using enterprise grade methods to ensure reliability,\n speed and a good overall user experience. \nTo put this into numbers, this can save hundreds of euros per house, making FORM’s Automation a cutting-edge competitor \nto big time firms while delivering consistent and reliable outputs. "
-        }
       }
     },
     "aapjes": {
@@ -714,39 +582,6 @@
             "image": "The new website"
           }
         }
-      },
-      "case": {
-        "landing": {
-          "discipline": "Automated BIM Configurator | Full-Stack",
-          "title": "Reinventing the housing industry",
-          "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
-        },
-        "introduction": {
-          "title": "The Problem",
-          "text": "One of our oldest clients, FORM, has hired ASRR and its developers for years to provide for their IT needs. \nTogether with FORM we think about how we can realize the vision they\n have had for nearly a decade on how to revolutionize the housing industry"
-        },
-        "bullets": [
-          {
-            "key": "<p class=\"animated-link\"> The old process <br/> (in a generic BIM/Architecture firm)</p>",
-            "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
-          },
-          {
-            "key": "<p class=\"animated-link\">The goal</p>",
-            "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
-          },
-          {
-            "key": "<p class=\"animated-link\">What was needed</p>",
-            "value": "<ul><li>Complex interface with the existing program</li> <li>Spring Boot Rest API hosted in kubernetes </li> <li>Front-end Web App in ReactJS</li> <li>A custom server</li> <li>Cloud storage</li>  </ul>"
-          }
-        ],
-        "result": {
-          "title": "What We Did",
-          "text": "FORM uses complex BIM models to combine smart parametric designs with a structured way of working to create the \n3D models needed to build a house. This is a perfect example of something that can be automated.\nThe program FORM uses to engineer and model houses is called Autodesk Revit. Revit can be a bit unreliable at times,\n which posed a threat to ensuring we can go from a manual process to a fully automated cloud version.\nWe wrote a program that plugs into the existing application, enabling us to imitate user interactions with code. \nThis allows us to automate complex actions flawlessly. \nUsing the program, we create an output within Revit, for example a PDF with the building plans.\n This pdf is then uploaded to the cloud, and its location is passed to the central server.     "
-        },
-        "conclusion": {
-          "title": "Conclusion",
-          "text": "In short, we were able to adapt to the current process by writing code that integrates with the used programs. \nWe then pushed it all to the next level by using enterprise grade methods to ensure reliability,\n speed and a good overall user experience. \nTo put this into numbers, this can save hundreds of euros per house, making FORM’s Automation a cutting-edge competitor \nto big time firms while delivering consistent and reliable outputs. "
-        }
       }
     },
     "protonise": {
@@ -773,39 +608,6 @@
             },
             "image": "The new website"
           }
-        }
-      },
-      "case": {
-        "landing": {
-          "discipline": "Automated BIM Configurator | Full-Stack",
-          "title": "Reinventing the housing industry",
-          "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
-        },
-        "introduction": {
-          "title": "The Problem",
-          "text": "One of our oldest clients, FORM, has hired ASRR and its developers for years to provide for their IT needs. \nTogether with FORM we think about how we can realize the vision they\n have had for nearly a decade on how to revolutionize the housing industry"
-        },
-        "bullets": [
-          {
-            "key": "<p class=\"animated-link\"> The old process <br/> (in a generic BIM/Architecture firm)</p>",
-            "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
-          },
-          {
-            "key": "<p class=\"animated-link\">The goal</p>",
-            "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
-          },
-          {
-            "key": "<p class=\"animated-link\">What was needed</p>",
-            "value": "<ul><li>Complex interface with the existing program</li> <li>Spring Boot Rest API hosted in kubernetes </li> <li>Front-end Web App in ReactJS</li> <li>A custom server</li> <li>Cloud storage</li>  </ul>"
-          }
-        ],
-        "result": {
-          "title": "What We Did",
-          "text": "FORM uses complex BIM models to combine smart parametric designs with a structured way of working to create the \n3D models needed to build a house. This is a perfect example of something that can be automated.\nThe program FORM uses to engineer and model houses is called Autodesk Revit. Revit can be a bit unreliable at times,\n which posed a threat to ensuring we can go from a manual process to a fully automated cloud version.\nWe wrote a program that plugs into the existing application, enabling us to imitate user interactions with code. \nThis allows us to automate complex actions flawlessly. \nUsing the program, we create an output within Revit, for example a PDF with the building plans.\n This pdf is then uploaded to the cloud, and its location is passed to the central server.     "
-        },
-        "conclusion": {
-          "title": "Conclusion",
-          "text": "In short, we were able to adapt to the current process by writing code that integrates with the used programs. \nWe then pushed it all to the next level by using enterprise grade methods to ensure reliability,\n speed and a good overall user experience. \nTo put this into numbers, this can save hundreds of euros per house, making FORM’s Automation a cutting-edge competitor \nto big time firms while delivering consistent and reliable outputs. "
         }
       }
     }
@@ -886,38 +688,7 @@
           "description": "What are the advantages of a flexible team compared to a classic one-by-one recruitment strategy?"
         },
         "content": {
-          "paragraph": {
-            "1": {
-              "title": "IT Teams as a Service",
-              "text": "In de huidige markt voor externe IT-werkzaamheden wordt er vaak erg in hokjes gedacht. Een opdrachtgever klopt aan bij een recruitmentbureau en geeft aan wat voor competenties hij of zij denkt nodig te hebben voor de opdracht. De recruiter stelt dan op basis van deze input een opdrachtomschrijving op. Dit resulteert vaak in aparte eisen."
-            },
-            "2": {
-              "text": "Het probleem is hier tweevoudig. De opdrachtgever moet zelf bepalen wat voor expertise hij of zij nodig heeft, terwijl dit soms een erg inhoudelijke vraag is. Er wordt daardoor vaak op voorhand al gekozen voor een verkeerde aanpak. Weet u bijvoorbeeld al wat de beste aanpak is voor een webapplicatie? (link naar andere blogpost)"
-            },
-            "3": {
-              "text": "Ten tweede heeft IT recruitment vaak meer oog voor buzzwords, jaren ervaring en andere zaken. Deze factoren garanderen niet altijd in een goede match. Veel IT’ers worden juist afgeschrikt door opdrachten waarin de technische eisen niet kloppen. of waarin er veel termen worden rondgegooid die niets te maken hebben met de technologie of opdracht. Zo spreken opdrachtgevers en de inhuurkrachten vaak een andere taal."
-            },
-            "4": {
-              "text": "Al om al, het is van groot belang dat aan het begin van de zoektocht technische kennis wordt toegepast. Daarmee komen we bij wat in ons opzicht de oplossing is: IT Teams as a Service. "
-            },
-            "5": {
-              "title": "Allereerst, hoe ziet ASRR IT teams as a Service?",
-              "text": "De service begint met het aanspreekpunt. Dit is de brug tussen de Business en IT. Het aanspreekpunt moet inhoudelijke kennis hebben, maar moet ook kunnen relativeren en begrijpen wat belangrijk is voor de opdrachtgever. Communicatie, kennis en begrip zijn hierbij belangrijke karaktereigenschappen."
-            },
-            "6": {
-              "text": "Het aanspreekpunt gaat als consultant een gesprek aan met de opdrachtgever. Hierbij wordt geanalyseerd hoe het huidige proces in het bedrijf gaat, wat de knelpunten zijn en wat de technische oplossing hiervoor zou kunnen zijn.  "
-            },
-            "7": {
-              "text": "Het aanspreekpunt stuurt vervolgens het IT team aan en fungeert daarbij als product owner. Hierbij staat bewaking van de wensen van de klant centraal. Het IT team§ bestaat uit developers met verschillende expertises. De samenstelling van het team is dynamisch, op basis van de opdracht. De ene keer bestaat deze uit een volledig front end team, de andere keer ligt de focus meer op back-end, etcetera. Dit zorgt voor minder onnodige overhead en de juiste expertise op de juiste plek. "
-            },
-            "8": {
-              "title": "Wat zijn hiervan de voordelen?",
-              "text": "De klant haalt hiermee direct een ingewerkt team in huis, in plaats van een set aan losse spelers. Dit zorgt voor besparing op gebied van recruitment- en inwerkkosten. Het probleem wordt van begin af aan al begeleid door een specialist. Dit zorgt ervoor dat de visie van de klant goed vertaald kan worden tot een werkend eindproduct. Hierbij wordt de klant volledig ontzorgd. Daarbij is er een centraal aanspreekpunt dat de technische vraagstukken kan vertalen naar taal die de klant begrijpt, zodat er toch nog executive beslissingen kunnen worden gemaakt over belangrijke aspecten binnen het proces. Tot slot kan er worden meegelift op ervaring en oplossingen die opgedaan zijn tijdens processen voor andere klanten."
-            },
-            "9": {
-              "text": "Interesse in hoe teams as a service een oplossing kan zijn voor uw bedrijf? Neem contact op met een specialist!"
-            }
-          }
+
         }
       },
       "microservices": {

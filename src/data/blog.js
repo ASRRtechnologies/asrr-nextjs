@@ -8,6 +8,7 @@ export const blog = [
         type: "article",
         name: "itaas",
         description: "",
+        readMore: true,
         landing: {
             backgroundImage: {
                 extension: 'jpg'
