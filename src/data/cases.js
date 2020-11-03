@@ -88,17 +88,17 @@ export const cases = [
         sections: [
             {
                 title: true,
-                length: 1,
+                length: 2,
                 image: {
                     extension: 'jpg'
                 }
             },
             {
                 title: true,
-                length: 4,
+                length: 3,
                 image: {
                     square: true,
-                    extension: 'jpg'
+                    extension: 'webp'
                 }
             },
             {

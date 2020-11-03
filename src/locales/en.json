@@ -603,37 +603,34 @@
             "title": "The Problem",
             "paragraphs": {
               "1": {
-                "text": "Next, all actions that can result in a change in data were analysed and grouped in different business rules. For each of these rules, an API call was created, so that a construction worker can find a specific tank part by searching for terminal number, tank number and a list of available parts. The application tracks who makes the edits for safety purposes. The application can then be used to check-in a specific part at a checkpoint in the process. The application contains a overview of the status of all of the elements, relieving the administrative workers from a repetitive task, and shifts the responsibility for keeping the data up to date to the workers that are responsible for that specific part."
+                "text": "NWO, a subsidiary of BP and Shell, is a company that was built to create the first long-range crude oil line in Europe. Within this company an external specialized team, the Enlargement Project team, was set up. Due to security policies, the external employees could not get access to their current system for sharing files, programs and work environments. It was also noted that the current system was not up to the teams requirements to do their jobs properly."
+              },
+              "2": {
+                "text": "An environment had to be set up where documents, communication, applications and processing power could be shared with all of the project team members. The desktop environment had to be remotely accessible from anywhere in the world, and had to be secured with at least 2 factor authentication. Due to a recent leak with Citrix this could not be used to do the job at hand. The in house IT team did not consider this project within their scope, so the EP team had to find external help. They needed about 50 remote desktop environments, with enough processing power to run heavy CAD and modelling programs. Furthermore, the files had to be stored safely with a fitting back-up strategy."
               }
             },
-            "image": "Aerial view of the HES Hartel Tank Terminal (https://www.linkedin.com/company/hes-hartel-tank-terminal-b-v/)"
+            "image": "Aerial view of the Nord-West Oelleitung"
           },
           "2": {
             "title": "The solution",
             "paragraphs": {
               "1": {
-                "text": "The solution we provided consisted of three main parts:"
+                "text": "ASRR built a server from the ground up. It had a 64 Core Multi-threaded Processor, 128 Gigabytes of DDR4 RAM and a couple of SSD’s/HDD’s in a RAID configuration. This server also required a Remote Desktop Licensing/Managing System, that synchronized with our C# application to change the local user passwords on the server."
               },
               "2": {
-                "text": "The Database: Using code, we parsed the Excel sheet and structured the data using a model that separates the tank terminals. This all runs in a Spring Boot Java environment, with data storage in SQL."
+                "text": "The C# application connects to our cloud environment using an encrypted RabbitMQ connection. The cloud environment has a notion of the allowed users, with connected two factor authentication and a login system that users could use to generate a connection file. Users can then use this to open a secure connection with the server easily."
               },
               "3": {
-                "text": "The API: Next, all actions that can result in a change in data were analysed and grouped in different business rules. For each of these rules, an API call was created, so that a construction worker can find a specific tank part by searching for terminal number, tank number and a list of available parts. The application tracks who makes the edits for safety purposes. The application can then be used to check-in a specific part at a checkpoint in the process. The application contains a overview of the status of all of the elements, relieving the administrative workers from a repetitive task, and shifts the responsibility for keeping the data up to date to the workers that are responsible for that specific part."
-              },
-              "4": {
-                "text": "The Insights: Because the data set is so large, it is hard to see what the status of the whole project is at a glance. That is why our BI expert set up a PowerBI dashboard. This dashboard highlights all kinds of key values, aimed towards management. Management can see delays in Planned vs. Actuals, how much steel is at what point in the process and what the status is of each terminal. This all results in an automated process of rapporting, saving human hours. Management gets a real time insight of the status of the whole project."
+                "text": "Inside of the environment, we applied the complete Microsoft suite. The key element in this was the use of Microsoft Teams, which was then still quite new. Teams served as the team hub for all files (with a SharePoint connection), meetings, announcements, planning, etc. We provided workers with a briefing about the usage of Teams and provided remote support through the system for any IT and Microsoft Office support requests."
               }
             },
-            "image": "The PowerBI dashboard (left) and application (right) we delivered. "
+            "image": "A screenshot of the application. "
           },
           "3": {
             "title": "The Conclusion",
             "paragraphs": {
               "1": {
-                "text": "By investing in custom built software that is adapted to the current work flow, a tool was developed that saves the time of the company employees, improves data security, shifts responsibilities to the right people and has given management new insights in the status of the project."
-              },
-              "2": {
-                "text": "We are happy to have experienced writing software for such a big company, allowing our data experts to have a nice set of content to extract useful information from. (https://www.hesinternational.eu/terminals/hes-hartel-tank-terminal)"
+                "text": "Using a powerful server, a team spread through the Netherlands and Germany could work as if they were sitting in the same office. At moments that there are fewer people on the server, the remaining user have a powerful supercomputer at their disposal, allowing for fast calculations of tasks that would usually take overnight."
               }
             }
           }
