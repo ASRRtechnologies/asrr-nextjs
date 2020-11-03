@@ -5,6 +5,7 @@ import useI18n from '../../hooks/use-i18n'
 import LinkedIn from '@/icons/LinkedIn'
 import Facebook from '@/icons/Facebook'
 import {useSnackbar} from "notistack";
+import Section from "@/layout/Section";
 
 function Footer(props) {
     const [email, setEmail] = useState({body: '', subject: '', userEmail: '', organization: '', name: ''})
@@ -51,7 +52,7 @@ function Footer(props) {
 
     const i18n = useI18n()
     return (
-        <div className="layout footer-container">
+        <Section className="footer-section">
 
             <div className="footer">
                 <img alt="asrr-logo" src={logo}/>
@@ -114,7 +115,7 @@ function Footer(props) {
                 </div>
 
             </div>
-        </div>
+        </Section>
     )
 }
 

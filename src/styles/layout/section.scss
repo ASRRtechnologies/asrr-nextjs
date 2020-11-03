@@ -16,6 +16,11 @@
     padding-bottom: 0;
   }
 
+  &.footer-section{
+    padding: 100px $padding-pc 50px $padding-pc;
+    background-color: #000;
+  }
+
 }
 
 @media screen and (max-width:$tablet-breakpoint) {
@@ -36,6 +41,10 @@
 
     &.no-landing{
       padding: 150px $padding-mobile 150px $padding-mobile;
+    }
+
+    &.footer-section{
+      padding: 50px $padding-pc 25px $padding-pc;
     }
 
   }
