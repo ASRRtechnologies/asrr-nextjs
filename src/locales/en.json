@@ -490,6 +490,11 @@
       }
     },
     "form": {
+      "content": {
+        "landing": {
+          "title": "Reinventing the housing industry"
+        }
+      },
       "client": "FORM Architecture & Engineering",
       "discipline": "Automated BIM Configurator | Full-Stack",
       "title": "Reinventing the housing industry",

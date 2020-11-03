@@ -20,37 +20,33 @@ export const cases = [
     {
         type: "case",
         name: "form",
+        landing: {
+            backgroundImage: {
+                extension: 'jpg'
+            }
+        },
         readMore: true,
         tags: [
             "development", "technology"
         ],
-        content: [
+        sections: [
             {
+                line: true,
+                title: true,
                 type: "paragraph",
-                title: true
+                length: 3,
+                image: {
+                    square: true,
+                    extension: 'png',
+                }
             },
             {
+                title: false,
                 type: "paragraph",
-                title: false
+                length: 2,
             },
-            {
-                type: "image",
-                format: "png"
-            },
-            {
-                type: "paragraph",
-                title: true
-            },
-            {
-                type: "paragraph",
-                title: false
-            },
-            {
-                type: "paragraph",
-                title: false
-            }
+
         ],
-        image: "https://r2m.se/wp-content/uploads/2018/01/microservices-768x448.png"
     },
     {
         type: "case",

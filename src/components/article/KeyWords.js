@@ -2,12 +2,12 @@ import React from 'react';
 import Fade from "react-reveal";
 
 function KeyWords(props) {
-    let {keyWords} = props;
+    let {keyWords, compact} = props;
     return (
         <Fade>
             <div className="article-keywords">
                 <div className="article-keywords-wrapper">
-                    <p className="label bold">Keywords:&nbsp;</p>
+                    {!compact && <p className="label bold">Keywords:&nbsp;</p>}
                     {keyWords && keyWords.map((keyword, i) => {
                         return(
                             keyWords.length=== (i+1) ?

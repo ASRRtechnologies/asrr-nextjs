@@ -8,7 +8,7 @@ import useScreenHeight from '../../hooks/helper-functions'
 import Fade from 'react-reveal/Fade';
 import image from "#/landing/colorful-earth.jpg";
 
-function SmallLanding({title, text}) {
+function SmallLanding({title, text, background}) {
     const i18n = useI18n();
     const router = useRouter();
 
@@ -24,7 +24,7 @@ function SmallLanding({title, text}) {
                 </Fade>
             </div>
 
-            <img src={image} alt="image"/>
+            <img src={background ? background : image} alt={background}/>
 
         </div>
     )
