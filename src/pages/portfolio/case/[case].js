@@ -26,7 +26,6 @@ function Page({data, query}) {
     {console.log(data)}
     let sectionNumber = 0;
 
-
     return (
         <Application>
             <SmallLanding title={t(`${basePath}.landing.title`)} background={`/assets/images/clients/${data.name}/${data.name}-landing.${data.landing.backgroundImage.extension}`}/>
@@ -59,60 +58,10 @@ function Page({data, query}) {
                         </ArticleSection>
 
                     })}
-                    {/*<ArticleSection line >*/}
-
-                    {/*    <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user*/}
-                    {/*    work with you to keep you protected however you use your computer.Torus protects you while you hang out online.*/}
-                    {/*    A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you*/}
-                    {/*    wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus*/}
-                    {/*    leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">*/}
-                    {/*    </ArticleParagraph>*/}
-
-                    {/*    <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user*/}
-                    {/*    work with you to keep you protected however you use your computer.Torus protects you while you hang out online.*/}
-                    {/*    A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you*/}
-                    {/*    wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus*/}
-                    {/*    leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">*/}
-                    {/*    </ArticleParagraph>*/}
-
-                    {/*    <ArticleImage square subtitle="Test working toch"/>*/}
-
-                    {/*</ArticleSection>*/}
-
-                    {/*<ArticleSection>*/}
-
-                    {/*    <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user*/}
-                    {/*    work with you to keep you protected however you use your computer.Torus protects you while you hang out online.*/}
-                    {/*    A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you*/}
-                    {/*    wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus*/}
-                    {/*    leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">*/}
-                    {/*    </ArticleParagraph>*/}
-
-                    {/*    <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user*/}
-                    {/*    work with you to keep you protected however you use your computer.Torus protects you while you hang out online.*/}
-                    {/*    A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you*/}
-                    {/*    wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus*/}
-                    {/*    leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">*/}
-                    {/*    </ArticleParagraph>*/}
-
-                    {/*    <ArticleImage square subtitle="Test working toch"/>*/}
-
-                    {/*</ArticleSection>*/}
-
-                    {/*<NextArticleWrapper>*/}
-
-                    {/*    <NextArticleCard/>*/}
-                    {/*    <NextArticleCard/>*/}
-
-                    {/*</NextArticleWrapper>*/}
-
-
-
-
                 </ArticleContent>
 
             </ArticleBody>
-            <Contact></Contact>
+            <Contact/>
 
         </Application>
     )
