@@ -451,6 +451,11 @@
       }
     },
     "protonise": {
+      "content": {
+        "smallTitle": "Web Development",
+        "subtitle": "Protonise",
+        "title": "A stunning new website (WIP)"
+      },
       "client": "Protonise",
       "discipline": "Web Application",
       "title": "A stunning new website",

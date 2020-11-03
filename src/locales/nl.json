@@ -55,8 +55,16 @@
         "text": "Met onze microservices hoeven we niet elke keer het wiel opnieuw uit te vinden bij elke opdracht. Dit zorgt ervoor dat we ons kunnen focussen op het maatwerk, en daarmee de arbeidsuren relatief laag kunnen houden. We hebben een scala aan over-engineered componenten die we kunnen gebruiken om uw volgende project een robuuste basis te geven."
       },
       "2": {
-        "title": "Elasticiteit",
+        "title": "Flexibiliteit",
         "text": "ASRR is een jong, dynamisch bedrijf dat zich aanpast op de klant. Door onze robuuste basis kunnen we maatwerk leveren dat naadloos aansluit op uw huidige systeem of werkproces, terwijl de applicatie nog steeds stabiel en schaalbaar blijft."
+      },
+      "3": {
+        "title": "Compatibiliteit",
+        "text": "De software die wij schrijven kan aansluiten op uw (legacy) systemen, waardoor niet alles in een keer uitgefaseerd hoeft te worden. Door de modulaire opbouw van onze applicaties kunt u er zelf voor kiezen in hoeverre u overstapt op een snellere of betere service."
+      },
+      "4": {
+        "title": "Inzichten",
+        "text": "Wij zetten uw data aan het werk. Veel bedrijven hebben een hoop data waar veel toegevoegde waarde uit gehaald kan worden, mits het juist opgeschoond en ganalyseerd wordt. Wij geven u inzichten in uw data, en highlighten daarbij belangrijke aspecten zodat u de juiste conclusies kan trekken in real-time."
       }
     },
     "landing": {
@@ -159,9 +167,10 @@
       "text": "Meer weten over wat ASRR voor u kan betekenen? Een van onze collega's staat u graag te woord!"
     },
     "preview": {
-      "title": {
-        "header": "Contact",
-        "text": "Meer weten over wat ASRR voor u kan betekenen?"
+      "header": {
+        "title": "Neem contact met ons op",
+        "smallTitle": "Contact",
+        "text": "Meer weten over wat ASRR voor u kan betekenen? Een van onze experts staat u graag te woord."
       }
     },
     "form": {
@@ -323,8 +332,9 @@
     }
   },
   "stories": {
-    "title": {
-      "header": "Klantervaringen",
+    "header": {
+      "title": "Wat onze klanten over ons zeggen",
+      "smallTitle": "Klantervaringen",
       "text": "De klant is koning(in) bij ASRR"
     }
   },
@@ -507,7 +517,7 @@
   "blog": {
     "landing": {
       "title": "Het laatste nieuws",
-      "subtitle": "Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on- als offline!"
+      "text": "Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on- als offline!"
     },
     "types": {
       "article": {
