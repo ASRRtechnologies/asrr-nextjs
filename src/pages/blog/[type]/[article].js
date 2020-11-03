@@ -1,131 +1,77 @@
-import React, {useState} from 'react'
-import Section from '@/layout/Section'
+import React, {useEffect} from 'react'
 import Application from "@/layout/Application";
-import Layout from "@/layout/Layout";
-import WideText from "@/article/WideText";
-import ArticleImage from "@/article/ArticleImage";
-import ImageSlider from "@/article/ImageSlider";
+import SmallLanding from "@/landing/SmallLanding";
 import KeyWords from "@/article/KeyWords";
-import Video from "@/article/Video";
-import BreadCrumb from "@/blog/BreadCrumb";
+import ArticleBody from "@/article/ArticleBody";
+import ArticleParagraph from "@/article/ArticleParagraph";
+import ArticleTitle from "@/article/ArticleTitle";
+import ArticleContent from "@/article/ArticleContent";
+import ArticleSection from "@/article/ArticleSection";
+import ArticleImage from "@/article/ArticleImage";
 import {cases} from "../../../data/cases";
-import {blog} from "../../../data/blog";
-import Title from "@/titles/Title";
-import Head from 'next/head';
-
-import Facebook from "@/icons/Facebook";
-import i18n from "../../../context/lib/i18n";
 import useI18n from "../../../hooks/use-i18n";
-import {NextSeo} from "next-seo";
+import t from "../../../hooks/translator";
+import Contact from "../../../components/contact/Preview";
+import {blog} from "../../../data/blog";
 
+function Page({data, query}) {
+    const i18n = useI18n();
 
-function Page({breadCrumb, found, query}) {
-    console.log(breadCrumb)
-    let indexes = {}
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
-    let updateIndex = (componentName) => {
-        if (indexes[componentName] == null) indexes[componentName] = 0;
-        let newIndex = indexes[componentName] + 1;
-        indexes[componentName] = newIndex;
-        return newIndex;
-    }
-
-    let i18n = useI18n();
-
-    let title = i18n.t(`blog.${found.type}.${found.name}.meta.title`);
-    let description = i18n.t(`blog.${found.type}.${found.name}.meta.description`);
+    let basePath = `blog.${data.type}.${data.name}.content`;
+    {console.log(data)}
+    let sectionNumber = 0;
 
     return (
-        <>
-            <NextSeo
-                title={title}
-                titleTemplate = 'ASRR | %s'
-                description={description}
-                openGraph={{
-                    title: {title},
-                    description: {description},
-                    // url: 'https://www.example.com/articles/article-title',
-                    type: 'article',
-                    article: {
-                        // publishedTime: '2017-06-21T23:04:13Z',
-                        // modifiedTime: '2018-01-21T18:04:43Z',
-                        // expirationTime: '2022-12-21T22:04:11Z',
-                        // section: 'Section II',
-                        // authors: [
-                        //     'https://www.example.com/authors/@firstnameA-lastnameA',
-                        //     'https://www.example.com/authors/@firstnameB-lastnameB',
-                        // ],
-                        tags: found.tags,
-                    },
-                    images: [
-                        {
-                            url: 'https://www.asrr.nl/assets/images/asrr-banner.jpg',
-                            width: 850,
-                            height: 650,
-                            alt: 'ASRR Banner',
-                        },
-                    ],
-                }}
-            />
-            <Application>
-                <Layout>
-                    <Section className="section-article">
-                        <BreadCrumb crumbs={breadCrumb}/>
+        <Application>
+            <SmallLanding title={t(`${basePath}.landing.title`)} background={`/assets/images/blog/${data.type}/${data.name}/${data.name}-landing.${data.landing.backgroundImage.extension}`}/>
 
-                        {/*<Title title={`blog.${found.type}.${found.name}.content.title`}/>*/}
+            <ArticleBody className="keywords">
 
-                        <KeyWords keyWords={found.tags}/>
+                <KeyWords keyWords={["blog", data.type, data.name, data.title]} compact/>
 
-                        {found.content && found.content.map((component) => {
-                            let i = updateIndex(component.type);
+                <ArticleContent>
+                    <ArticleTitle smallTitle={t(`${basePath}.smallTitle`)} title={t(`${basePath}.title`)}  subtitle={t(`${basePath}.subtitle`)} />
 
-                            console.log(i)
+                    {data.sections.map(section => {
+                        sectionNumber++;
 
-                            if (component.type === "paragraph") {
-                                return <WideText
-                                    title={component.title && `blog.${found.type}.${found.name}.content.${component.type}.${i}.title`}
-                                    text={`blog.${found.type}.${found.name}.content.${component.type}.${i}.text`}/>
-                            }
+                        let paragraphNumber = 0;
+                        return <ArticleSection line={section.line}>
+                            {[...Array(section.length)].map((x, i) => {
 
-                            if (component.type === "image") {
-                                return <ArticleImage
-                                    image={`/assets/blog/${found.type}/${found.name}/${found.name}-${i}.${component.format}`}
-                                    subtitle={`blog.${found.type}.${found.name}.content.${component.type}.${i}.subtitle`}
-                                    square={component.square}/>
-                            }
+                                paragraphNumber++;
+                                let paragraphPath = `${basePath}.sections.${sectionNumber}.paragraphs.${paragraphNumber}`;
+                                return <ArticleParagraph
+                                    title={i === 0 && section.title && t(`${basePath}.sections.${sectionNumber}.title`)}
+                                    text={t(`${paragraphPath}.text`)}/>
+                            })}
+                            {section.image &&
+                            <ArticleImage square={section.image.square}
+                                          subtitle={`${basePath}.sections.${sectionNumber}.image`}
+                                          image={section.image.src ? section.image.src : `/assets/images/blog/${data.type}/${data.name}/${data.name}-${sectionNumber}.${section.image.extension}`}
+                            />}
+                        </ArticleSection>
 
-                            if (component.type === "iframe") {
-                                return <iframe src={component.src} height="907" width="504" frameBorder="0"
-                                               allowFullScreen="" title="Ingevoegde bijdrage"/>
-                            }
+                    })}
+                </ArticleContent>
 
-                            if (component.type === "code") {
-                                return <div className="Container" dangerouslySetInnerHTML={{__html: component.code}}/>;
-                            }
+            </ArticleBody>
+            <Contact/>
 
-                        })}
-
-                        {/*<WideText/>*/}
-                        {/*<ArticleImage/>*/}
-                        {/*<WideText/>*/}
-                        {/*<ArticleImage square/>*/}
-                        {/*<ImageSlider square/>*/}
-
-                        {/*<Video/>*/}
-                        <div className="sharethis-inline-share-buttons"/>
-                    </Section>
-                </Layout>
-            </Application>
-        </>
+        </Application>
     )
 }
 
 Page.getInitialProps = ({query}) => {
     let breadCrumb = ["blog", query.type, query.article];
 
-    let found = blog.find(b => (b.type === query.type) && (b.name === query.article))
-    console.log(found)
-    return {breadCrumb, found}
+    let data = blog.find(b => (b.type === query.type) && (b.name === query.article))
+    console.log(data)
+    return {breadCrumb, data}
 };
 
 export default Page

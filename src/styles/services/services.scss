@@ -6,16 +6,29 @@
 }
 
 //Needed for react reveal because it messes up the component with encapsulation and its stylrd
-.service-card-wrapper{
-width:100%
+.service-card-wrapper {
+  width: 100%
 
 }
+
 
 .service-card {
   @include size(100%, auto);
   @include flex(flex-start, center, row);
 
-  &:nth-child(even) {
+  &:nth-child(even) > div {
+    flex-direction: row-reverse;
+
+    .service-card-image-wrapper {
+      border-radius: 5px 0 0 5px;
+
+      img {
+        border-radius: 5px 0 0 5px;
+      }
+    }
+  }
+
+  .reverse {
     flex-direction: row-reverse;
 
     .service-card-image-wrapper {
@@ -46,8 +59,9 @@ width:100%
     left: 0;
     bottom: 0;
     position: absolute;
-    *{
-      &:last-child{
+
+    * {
+      &:last-child {
         margin-bottom: 0;
       }
     }
@@ -99,7 +113,7 @@ width:100%
 
 @media screen and (max-width: 1450px) {
 
-  .service-card-wrapper{
+  .service-card-wrapper {
     max-width: 600px;
   }
 
@@ -107,7 +121,19 @@ width:100%
     @include flex(center, flex-start, column-reverse);
     max-width: 600px;
 
-    &:nth-child(even) {
+    &:nth-child(even) > div {
+      flex-direction: column-reverse;
+
+      .service-card-image-wrapper {
+        border-radius: 5px 0 0 5px;
+
+        img {
+          border-radius: 5px 0 0 5px;
+        }
+      }
+    }
+
+    .reverse {
       flex-direction: column-reverse;
 
       .service-card-image-wrapper {
@@ -120,14 +146,13 @@ width:100%
     }
 
 
-
   }
 
-  .service-card-text-wrapper{
+  .service-card-text-wrapper {
     height: auto;
     padding-bottom: 0;
 
-    span{
+    span {
       position: relative;
       height: auto;
     }
@@ -138,12 +163,12 @@ width:100%
 
 @media screen and (max-width: $mobile-breakpoint) {
 
-  .services{
+  .services {
     @include margin-top(-100px);
   }
 
-  .service-card-text-wrapper{
-    span{
+  .service-card-text-wrapper {
+    span {
       padding: 25px;
     }
 

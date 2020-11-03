@@ -88,21 +88,21 @@ export const cases = [
         sections: [
             {
                 title: true,
-                length: 1,
+                length: 2,
                 image: {
                     extension: 'jpg'
                 }
             },
             {
                 title: true,
-                length: 4,
+                length: 3,
                 image: {
                     square: true,
-                    extension: 'jpg'
+                    extension: 'webp'
                 }
             },
             {
-                length: 2,
+                length: 1,
                 title: true
             }
         ]
@@ -111,5 +111,43 @@ export const cases = [
         type: "case",
         name: "hsfn",
         readMore: true
+    },
+    {
+        type: "case",
+        name: "esp",
+        description: "website",
+        landing: {
+            backgroundImage: {
+                extension: 'jpg'
+            }
+        },
+        sections: [
+            {
+                title: true,
+                length: 4,
+                image: {
+                    extension: 'png'
+                }
+            }
+        ]
+    },
+    {
+        type: "case",
+        name: "aapjes",
+        description: "website",
+        landing: {
+            backgroundImage: {
+                extension: 'jpg'
+            }
+        },
+        sections: [
+            {
+                title: true,
+                length: 3,
+                image: {
+                    extension: 'png'
+                }
+            }
+        ]
     }
 ];
