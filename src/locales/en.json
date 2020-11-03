@@ -170,7 +170,7 @@
           "0": "Most Software projects need more than one discipline. It's hard and expensive to find developers that can do full-stack development. A team of multiple developers usually needs time to work well together and can easily get very expensive if used exclusively for one project. ",
           "1": "ASRR Delivers flexible, full-stack teams that scale up or down, based on what you need. This reduces recruitment and training costs drastically.",
           "2": "This ensures you always get the latest and greatest in terms of tech, while making sure you don't pay too much for unnecessary overhead costs."
-       }
+        }
       },
       "microservices": {
         "title": "'Over Engineered' Building Block Foundation",
@@ -230,7 +230,7 @@
     },
     "address": {
       "street": "Adress: 's Gravenzandseweg 2 unit A",
-      "zipcode":"Zipcode: 2291 PE Wateringen",
+      "zipcode": "Zipcode: 2291 PE Wateringen",
       "country": "The Netherlands",
       "route": "Get directions"
     },
@@ -493,11 +493,57 @@
       "content": {
         "landing": {
           "title": "Reinventing the housing industry"
+        },
+        "smallTitle": "Expertise on demand | Full stack development",
+        "subtitle": "FORM Architecture & Engineering",
+        "title": "Building an automated BIM-Configurator",
+        "sections": {
+          "1": {
+            "title": "The problem",
+            "paragraphs": {
+              "1": {
+                "text": "Since 2011, FORM has had a vision about how the process of buying a new house could be automated. This is based on the principle of modelling the sub-components that make up the house in a modular and parametric fashion. This may sound complex and tedious, but doing this gives way to a scala of automations. With this vision in mind, we started a big new project at the beginning of 2018: the Configurator. More information about the latest version can be found in “this” article."
+              },
+              "2": {
+                "text": "The main idea behind the configurator is to translate a list of choices made by a consumer into official building plans, using Revit (an Autodesk 3D Modelling software package) models. This saves architects a lot of time, by automating repetitive tasks, as well as preventing any human errors."
+              }
+            },
+            "image": "A modular design buildup of the house (https://www.form.nl/form-configurator)"
+          },
+          "2": {
+            "title": "The solution",
+            "paragraphs": {
+              "1": {
+                "text": "This is all easier said than done. For all of this to work you need a custom Revit-Addin, a enterprise grade back-end API system, a complex database and web-application, to just name a few of the requirements. The setup included complex decision trees to translate the client choices into the business rules needed to get the correct models. "
+              },
+              "2": {
+                "text": "Next, a custom C# Revit Add-In was written, to control the Revit application using code. Based on the decision trees, the right 3D model is placed at the right coordinates. After a house has been constructed in Revit, building plans can be generated. These were then exported using our custom PDF printer, as there is none built into Revit."
+              },
+              "3": {
+                "text": "Using this Add-In, we were able to create local configurations using a list of choices from a client. However, for this to be used by actual consumers, the exports need to be served using an API. One of the big problems here is that Revit is too unstable to serve as a cog in a enterprise application. That is why we wrote a custom wrapper around Revit; a program that keeps Revit alive and communicates with our cloud system. This cloud system is the gateway to any web application that can then request actual building plans. "
+              },
+              "4": {
+                "text": "The crux in this story is the Cloud application. This is a Java Spring Boot application, hosted on our Kubernetes network. This application has to be available at any time, and has to be able to handle many requests at a time. It puts these requests in a queue, and feeds them to the Revit worker one at a time. The cloud application also makes sure everything ends up in an Azure datastore."
+              }
+            },
+            "image": "The authentication screen for the Configurator dashboard"
+          },
+          "3": {
+            "paragraphs": {
+              "1": {
+                "text": "Once the request has finished, the files can be downloaded very easily."
+              }
+            },
+            "image": "The (redacted) dashboard, with insighsts of user behavior."
+          },
+          "4": {
+            "title": "The Conclusion",
+            "paragraphs": {
+              "1": {"text": "FORM needed many different IT disciplines to achieve their complex goal. Over the years we’ve provided them with a dynamic team, consisting of Front-End, Back-End, Database, Hosting and Design experts. This has resulted in a fantastic collaboration with a stable end product, using the latest and greatest technologies."}
+            }
+          }
         }
       },
-      "client": "FORM Architecture & Engineering",
-      "discipline": "Automated BIM Configurator | Full-Stack",
-      "title": "Reinventing the housing industry",
       "case": {
         "landing": {
           "discipline": "Automated BIM Configurator | Full-Stack",

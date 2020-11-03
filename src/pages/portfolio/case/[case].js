@@ -13,6 +13,7 @@ import NextArticleCard from "@/article/NextArticleCard";
 import {cases} from "../../../data/cases";
 import useI18n from "../../../hooks/use-i18n";
 import t from "../../../hooks/translator";
+import Contact from "../../../components/contact/Preview";
 
 function Page({data, query}) {
     const i18n = useI18n();
@@ -47,63 +48,63 @@ function Page({data, query}) {
                                 paragraphNumber++;
                                 let paragraphPath = `${basePath}.sections.${sectionNumber}.paragraphs.${paragraphNumber}`;
                                 return <ArticleParagraph
-                                    title={i === 0 && t(`${paragraphPath}.title`)}
+                                    title={i === 0 && section.title && t(`${basePath}.sections.${sectionNumber}.title`)}
                                     text={t(`${paragraphPath}.text`)}/>
                             })}
                             {section.image &&
                             <ArticleImage square={section.image.square}
                                           subtitle={`${basePath}.sections.${sectionNumber}.image`}
-                                          image={`/case/${data.name}/${data.name}-${sectionNumber}.${section.image.extension}`}
+                                          image={`/assets/images/clients/${data.name}/${data.name}-${sectionNumber}.${section.image.extension}`}
                             />}
                         </ArticleSection>
 
                     })}
-                    <ArticleSection line >
+                    {/*<ArticleSection line >*/}
 
-                        <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user
-                        work with you to keep you protected however you use your computer.Torus protects you while you hang out online.
-                        A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you
-                        wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus
-                        leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">
-                        </ArticleParagraph>
+                    {/*    <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user*/}
+                    {/*    work with you to keep you protected however you use your computer.Torus protects you while you hang out online.*/}
+                    {/*    A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you*/}
+                    {/*    wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus*/}
+                    {/*    leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">*/}
+                    {/*    </ArticleParagraph>*/}
 
-                        <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user
-                        work with you to keep you protected however you use your computer.Torus protects you while you hang out online.
-                        A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you
-                        wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus
-                        leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">
-                        </ArticleParagraph>
+                    {/*    <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user*/}
+                    {/*    work with you to keep you protected however you use your computer.Torus protects you while you hang out online.*/}
+                    {/*    A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you*/}
+                    {/*    wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus*/}
+                    {/*    leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">*/}
+                    {/*    </ArticleParagraph>*/}
 
-                        <ArticleImage square subtitle="Test working toch"/>
+                    {/*    <ArticleImage square subtitle="Test working toch"/>*/}
 
-                    </ArticleSection>
+                    {/*</ArticleSection>*/}
 
-                    <ArticleSection>
+                    {/*<ArticleSection>*/}
 
-                        <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user
-                        work with you to keep you protected however you use your computer.Torus protects you while you hang out online.
-                        A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you
-                        wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus
-                        leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">
-                        </ArticleParagraph>
+                    {/*    <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user*/}
+                    {/*    work with you to keep you protected however you use your computer.Torus protects you while you hang out online.*/}
+                    {/*    A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you*/}
+                    {/*    wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus*/}
+                    {/*    leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">*/}
+                    {/*    </ArticleParagraph>*/}
 
-                        <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user
-                        work with you to keep you protected however you use your computer.Torus protects you while you hang out online.
-                        A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you
-                        wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus
-                        leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">
-                        </ArticleParagraph>
+                    {/*    <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user*/}
+                    {/*    work with you to keep you protected however you use your computer.Torus protects you while you hang out online.*/}
+                    {/*    A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you*/}
+                    {/*    wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus*/}
+                    {/*    leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">*/}
+                    {/*    </ArticleParagraph>*/}
 
-                        <ArticleImage square subtitle="Test working toch"/>
+                    {/*    <ArticleImage square subtitle="Test working toch"/>*/}
 
-                    </ArticleSection>
+                    {/*</ArticleSection>*/}
 
-                    <NextArticleWrapper>
+                    {/*<NextArticleWrapper>*/}
 
-                        <NextArticleCard/>
-                        <NextArticleCard/>
+                    {/*    <NextArticleCard/>*/}
+                    {/*    <NextArticleCard/>*/}
 
-                    </NextArticleWrapper>
+                    {/*</NextArticleWrapper>*/}
 
 
 
@@ -111,6 +112,7 @@ function Page({data, query}) {
                 </ArticleContent>
 
             </ArticleBody>
+            <Contact></Contact>
 
         </Application>
     )

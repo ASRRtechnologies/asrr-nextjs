@@ -1,20 +1,3 @@
-//FORM
-import formLogin from '#/clients/form/image2.png';
-import formDash from '#/clients/form/image1.png';
-import formRevit from '#/clients/form/image3.png';
-//NWO
-import nwoCase from "#/clients/nwo/case-image.webp";
-import login from "#/clients/nwo/image1.png";
-import nwoScreens from "#/clients/nwo/nwo-screns.jpg";
-import cpu from "#/clients/nwo/cpu.jpg";
-import cpuSlot from "#/clients/nwo/cpu-slot.jpg";
-import ram from "#/clients/nwo/nwo-ram.jpg";
-import threadripper from "#/clients/nwo/threadripper.jpg";
-
-//HES
-import hesImage from '#/clients/hes/slider/image1.png'
-import hesImage2 from '#/clients/hes/slider/image2.png'
-import React from 'react'
 
 export const cases = [
     {
@@ -31,20 +14,40 @@ export const cases = [
         ],
         sections: [
             {
-                line: true,
+                line: false,
                 title: true,
                 type: "paragraph",
-                length: 3,
+                length: 2,
                 image: {
-                    square: true,
+                    square: false,
+                    extension: 'jpg',
+                }
+            },
+            {
+                line: false,
+                title: true,
+                type: "paragraph",
+                length: 4,
+                image: {
+                    square: false,
                     extension: 'png',
                 }
             },
             {
-                title: false,
-                type: "paragraph",
-                length: 2,
+                line: false,
+                type: 'paragraph',
+                length: 1,
+                image: {
+                    square: false,
+                    extension: 'png'
+                }
             },
+            {
+                line: false,
+                length: 1,
+                title: true
+            }
+
 
         ],
     },
