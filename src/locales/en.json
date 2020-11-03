@@ -372,45 +372,6 @@
       "bim": "Bim",
       "web": "Web Application"
     },
-    "nwo": {
-      "client": "NWO",
-      "discipline": "Custom Server | Process optimization ",
-      "title": "Secure Remote Desktop Environment",
-      "text": "Lorem ipsum",
-      "case": {
-        "landing": {
-          "discipline": "Remote Desktop Server | Custom Hardware",
-          "title": "The power of a supercomputer on your own laptop",
-          "text": "An ultra secure and robust work environment for a complete team, improving the workflow and efficiency."
-        },
-        "introduction": {
-          "title": "The Problem",
-          "text": "Due to security limitations in their IT infrastructure, a specialized team in NWO needed a secure server to work on. The main requirements: 2FA, powerful computing and reliability."
-        },
-        "bullets": [
-          {
-            "key": "<p class=\"animated-link\"> The old process</p>",
-            "value": "Users would either use their own (slow) computer to handle and download secure company files when working remotely. Their user experience was inconsistent and there was no good way to communicate with the rest of the team."
-          },
-          {
-            "key": "<p class=\"animated-link\">The goal</p>",
-            "value": "Create a powerful central server, accessible to the whole team, with a deeply connected chat interface allowing for smooth teamwork."
-          },
-          {
-            "key": "<p class=\"animated-link\">What was needed</p>",
-            "value": "128 gigs of ram, a 64 core cpu, a custom web-app for 2FA login and a office 365/teams organization set up from scratch."
-          }
-        ],
-        "result": {
-          "title": "What We Did",
-          "text": "First off, we built a powerful server from scratch. Using the newest technologies, we were able to offer a server twice as capable as the competition for about half the price. Secondly, we built a back-end system that could manage the user passwords securely. This back-end system resets the password every hour or so and communicates this with the secure 2FA server. This server is then connected to our custom front end to allow for a seemless login to the remote desktop environment."
-        },
-        "conclusion": {
-          "title": "Conclusion",
-          "text": "We provided a specialized team with the hardware, software and tips/tricks to allow for the best internal teamwork possible."
-        }
-      }
-    },
     "protonise": {
       "content": {
         "smallTitle": "Web Development",
@@ -577,7 +538,91 @@
                 "text": "The API: Next, all actions that can result in a change in data were analysed and grouped in different business rules. For each of these rules, an API call was created, so that a construction worker can find a specific tank part by searching for terminal number, tank number and a list of available parts. The application tracks who makes the edits for safety purposes. The application can then be used to check-in a specific part at a checkpoint in the process. The application contains a overview of the status of all of the elements, relieving the administrative workers from a repetitive task, and shifts the responsibility for keeping the data up to date to the workers that are responsible for that specific part."
               },
               "4": {
-                "text": "The Insights: Because the data set is so large, it is hard to see what the status of the whole project is at a glance. That is why our BI expert set up a PowerBI dashboard. This dashboard highlights all kinds of key values, aimed towards management. Management can see delays in Planned vs. Actuals, how much steel is at what point in the process and what the status is of each terminal. This all results in an automated process of rapporting, saving human hours. Management gets a real time insight of the status of the whole project." }
+                "text": "The Insights: Because the data set is so large, it is hard to see what the status of the whole project is at a glance. That is why our BI expert set up a PowerBI dashboard. This dashboard highlights all kinds of key values, aimed towards management. Management can see delays in Planned vs. Actuals, how much steel is at what point in the process and what the status is of each terminal. This all results in an automated process of rapporting, saving human hours. Management gets a real time insight of the status of the whole project."
+              }
+            },
+            "image": "The PowerBI dashboard (left) and application (right) we delivered. "
+          },
+          "3": {
+            "title": "The Conclusion",
+            "paragraphs": {
+              "1": {
+                "text": "By investing in custom built software that is adapted to the current work flow, a tool was developed that saves the time of the company employees, improves data security, shifts responsibilities to the right people and has given management new insights in the status of the project."
+              },
+              "2": {
+                "text": "We are happy to have experienced writing software for such a big company, allowing our data experts to have a nice set of content to extract useful information from. (https://www.hesinternational.eu/terminals/hes-hartel-tank-terminal)"
+              }
+            }
+          }
+        }
+      },
+      "case": {
+        "landing": {
+          "discipline": "Automated BIM Configurator | Full-Stack",
+          "title": "Reinventing the housing industry",
+          "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
+        },
+        "introduction": {
+          "title": "The Problem",
+          "text": "One of our oldest clients, FORM, has hired ASRR and its developers for years to provide for their IT needs. \nTogether with FORM we think about how we can realize the vision they\n have had for nearly a decade on how to revolutionize the housing industry"
+        },
+        "bullets": [
+          {
+            "key": "<p class=\"animated-link\"> The old process <br/> (in a generic BIM/Architecture firm)</p>",
+            "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
+          },
+          {
+            "key": "<p class=\"animated-link\">The goal</p>",
+            "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
+          },
+          {
+            "key": "<p class=\"animated-link\">What was needed</p>",
+            "value": "<ul><li>Complex interface with the existing program</li> <li>Spring Boot Rest API hosted in kubernetes </li> <li>Front-end Web App in ReactJS</li> <li>A custom server</li> <li>Cloud storage</li>  </ul>"
+          }
+        ],
+        "result": {
+          "title": "What We Did",
+          "text": "FORM uses complex BIM models to combine smart parametric designs with a structured way of working to create the \n3D models needed to build a house. This is a perfect example of something that can be automated.\nThe program FORM uses to engineer and model houses is called Autodesk Revit. Revit can be a bit unreliable at times,\n which posed a threat to ensuring we can go from a manual process to a fully automated cloud version.\nWe wrote a program that plugs into the existing application, enabling us to imitate user interactions with code. \nThis allows us to automate complex actions flawlessly. \nUsing the program, we create an output within Revit, for example a PDF with the building plans.\n This pdf is then uploaded to the cloud, and its location is passed to the central server.     "
+        },
+        "conclusion": {
+          "title": "Conclusion",
+          "text": "In short, we were able to adapt to the current process by writing code that integrates with the used programs. \nWe then pushed it all to the next level by using enterprise grade methods to ensure reliability,\n speed and a good overall user experience. \nTo put this into numbers, this can save hundreds of euros per house, making FORM’s Automation a cutting-edge competitor \nto big time firms while delivering consistent and reliable outputs. "
+        }
+      }
+    },
+    "nwo": {
+      "content": {
+        "landing": {
+          "title": "A super computer accessible from anywhere in the world"
+        },
+        "smallTitle": "Custom Built Hardware | Application | Full stack development",
+        "subtitle": "Nord-West Oelleitung",
+        "title": "Creating a Secure, Powerful Remote Desktop Server",
+        "sections": {
+          "1": {
+            "title": "The Problem",
+            "paragraphs": {
+              "1": {
+                "text": "Next, all actions that can result in a change in data were analysed and grouped in different business rules. For each of these rules, an API call was created, so that a construction worker can find a specific tank part by searching for terminal number, tank number and a list of available parts. The application tracks who makes the edits for safety purposes. The application can then be used to check-in a specific part at a checkpoint in the process. The application contains a overview of the status of all of the elements, relieving the administrative workers from a repetitive task, and shifts the responsibility for keeping the data up to date to the workers that are responsible for that specific part."
+              }
+            },
+            "image": "Aerial view of the HES Hartel Tank Terminal (https://www.linkedin.com/company/hes-hartel-tank-terminal-b-v/)"
+          },
+          "2": {
+            "title": "The solution",
+            "paragraphs": {
+              "1": {
+                "text": "The solution we provided consisted of three main parts:"
+              },
+              "2": {
+                "text": "The Database: Using code, we parsed the Excel sheet and structured the data using a model that separates the tank terminals. This all runs in a Spring Boot Java environment, with data storage in SQL."
+              },
+              "3": {
+                "text": "The API: Next, all actions that can result in a change in data were analysed and grouped in different business rules. For each of these rules, an API call was created, so that a construction worker can find a specific tank part by searching for terminal number, tank number and a list of available parts. The application tracks who makes the edits for safety purposes. The application can then be used to check-in a specific part at a checkpoint in the process. The application contains a overview of the status of all of the elements, relieving the administrative workers from a repetitive task, and shifts the responsibility for keeping the data up to date to the workers that are responsible for that specific part."
+              },
+              "4": {
+                "text": "The Insights: Because the data set is so large, it is hard to see what the status of the whole project is at a glance. That is why our BI expert set up a PowerBI dashboard. This dashboard highlights all kinds of key values, aimed towards management. Management can see delays in Planned vs. Actuals, how much steel is at what point in the process and what the status is of each terminal. This all results in an automated process of rapporting, saving human hours. Management gets a real time insight of the status of the whole project."
+              }
             },
             "image": "The PowerBI dashboard (left) and application (right) we delivered. "
           },

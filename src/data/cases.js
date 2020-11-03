@@ -78,7 +78,34 @@ export const cases = [
     },
     {
         type: "case",
-        name: "protonise"
+        name: "nwo",
+        description: "rdp server",
+        landing: {
+            backgroundImage: {
+                extension: 'jpg'
+            }
+        },
+        sections: [
+            {
+                title: true,
+                length: 1,
+                image: {
+                    extension: 'jpg'
+                }
+            },
+            {
+                title: true,
+                length: 4,
+                image: {
+                    square: true,
+                    extension: 'jpg'
+                }
+            },
+            {
+                length: 2,
+                title: true
+            }
+        ]
     },
     {
         type: "case",
