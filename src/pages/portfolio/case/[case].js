@@ -1,117 +1,103 @@
-import React from 'react'
-import Section from '@/layout/Section'
+import React, {useEffect} from 'react'
 import Application from "@/layout/Application";
-import Layout from "@/layout/Layout";
-import WideText from "@/article/WideText";
-import ArticleImage from "@/article/ArticleImage";
+import SmallLanding from "@/landing/SmallLanding";
 import KeyWords from "@/article/KeyWords";
-import BreadCrumb from "@/blog/BreadCrumb";
+import ArticleBody from "@/article/ArticleBody";
+import ArticleParagraph from "@/article/ArticleParagraph";
+import ArticleTitle from "@/article/ArticleTitle";
+import ArticleContent from "@/article/ArticleContent";
+import ArticleSection from "@/article/ArticleSection";
+import ArticleImage from "@/article/ArticleImage";
+import NextArticleWrapper from "@/article/NextArticleWrapper";
+import NextArticleCard from "@/article/NextArticleCard";
 import {cases} from "../../../data/cases";
 import useI18n from "../../../hooks/use-i18n";
-import {NextSeo} from "next-seo";
 
+function Page({data, query}) {
+    const i18n = useI18n();
 
-function Page({breadCrumb, found, query}) {
-    console.log(breadCrumb)
-    let indexes = {}
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
-    let updateIndex = (componentName) => {
-        if (indexes[componentName] == null) indexes[componentName] = 0;
-        let newIndex = indexes[componentName] + 1;
-        indexes[componentName] = newIndex;
-        return newIndex;
-    }
-
-    let i18n = useI18n();
-
-    let title = i18n.t(`blog.${found.type}.${found.name}.meta.title`);
-    let description = i18n.t(`blog.${found.type}.${found.name}.meta.description`);
+    let basePath = `cases.${data.name}.content`;
 
     return (
-        <>
-            <NextSeo
-                title={title}
-                titleTemplate='ASRR | %s'
-                description={description}
-                openGraph={{
-                    title: {title},
-                    description: {description},
-                    // url: 'https://www.example.com/articles/article-title',
-                    type: 'article',
-                    article: {
-                        // publishedTime: '2017-06-21T23:04:13Z',
-                        // modifiedTime: '2018-01-21T18:04:43Z',
-                        // expirationTime: '2022-12-21T22:04:11Z',
-                        // section: 'Section II',
-                        // authors: [
-                        //     'https://www.example.com/authors/@firstnameA-lastnameA',
-                        //     'https://www.example.com/authors/@firstnameB-lastnameB',
-                        // ],
-                        tags: found.tags,
-                    },
-                    images: [
-                        {
-                            url: 'https://www.asrr.nl/assets/images/asrr-banner.jpg',
-                            width: 850,
-                            height: 650,
-                            alt: 'ASRR Banner',
-                        },
-                    ],
-                }}
-            />
-            <Application>
-                <Layout>
-                    <Section className="section-article">
-                        <BreadCrumb crumbs={breadCrumb}/>
+        <Application>
+            <SmallLanding title={i18n.t(`${basePath}.landing.title`)}/>
 
-                        {/*<Title title={`blog.${found.type}.${found.name}.content.title`}/>*/}
+            <ArticleBody className="keywords">
 
-                        <KeyWords keyWords={found.tags}/>
+                <KeyWords keyWords={["Test", "2", "3"]}/>
 
-                        {found.content && found.content.map((component) => {
-                            let i = updateIndex(component.type);
+                <ArticleContent>
+                    <ArticleTitle title="Configurator in the making"/>
 
-                            console.log(i)
+                    <ArticleSection line >
 
-                            if (component.type === "paragraph") {
-                                return <WideText
-                                    title={component.title && `blog.${found.type}.${found.name}.content.${component.type}.${i}.title`}
-                                    text={`blog.${found.type}.${found.name}.content.${component.type}.${i}.text`}/>
-                            }
+                        <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user
+                        work with you to keep you protected however you use your computer.Torus protects you while you hang out online.
+                        A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you
+                        wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus
+                        leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">
+                        </ArticleParagraph>
 
-                            if (component.type === "image") {
-                                return <ArticleImage
-                                    image={`/assets/blog/${found.type}/${found.name}/${found.name}-${i}.${component.format}`}
-                                    subtitle={`blog.${found.type}.${found.name}.content.${component.type}.${i}.subtitle`}
-                                    square={component.square}/>
-                            }
+                        <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user
+                        work with you to keep you protected however you use your computer.Torus protects you while you hang out online.
+                        A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you
+                        wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus
+                        leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">
+                        </ArticleParagraph>
 
-                            if (component.type === "iframe") {
-                                return <iframe src={component.src} height="907" width="504" frameBorder="0"
-                                               allowFullScreen="" title="Ingevoegde bijdrage"/>
-                            }
+                        <ArticleImage square subtitle="Test working toch"/>
 
-                            if (component.type === "code") {
-                                return <div className="Container" dangerouslySetInnerHTML={{__html: component.code}}/>;
-                            }
+                    </ArticleSection>
 
-                        })}
+                    <ArticleSection>
 
-                        <div className="sharethis-inline-share-buttons"/>
-                    </Section>
-                </Layout>
-            </Application>
-        </>
+                        <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user
+                        work with you to keep you protected however you use your computer.Torus protects you while you hang out online.
+                        A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you
+                        wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus
+                        leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">
+                        </ArticleParagraph>
+
+                        <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user
+                        work with you to keep you protected however you use your computer.Torus protects you while you hang out online.
+                        A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you
+                        wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus
+                        leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">
+                        </ArticleParagraph>
+
+                        <ArticleImage square subtitle="Test working toch"/>
+
+                    </ArticleSection>
+
+                    <NextArticleWrapper>
+
+                        <NextArticleCard/>
+                        <NextArticleCard/>
+
+                    </NextArticleWrapper>
+
+
+
+
+                </ArticleContent>
+
+            </ArticleBody>
+
+        </Application>
     )
 }
 
 Page.getInitialProps = ({query}) => {
-    let type = "case";
-    let breadCrumb = [type, query.case];
+    let data = cases.find(c => c.name === query.case);
 
-    let found = cases.find(b => (b.type === type) && (b.name === query.case))
-    console.log(found)
-    return {breadCrumb, found}
+    return {
+        data,
+        query
+    }
 };
 
 export default Page
