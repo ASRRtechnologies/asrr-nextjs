@@ -8,8 +8,6 @@ import ArticleTitle from "@/article/ArticleTitle";
 import ArticleContent from "@/article/ArticleContent";
 import ArticleSection from "@/article/ArticleSection";
 import ArticleImage from "@/article/ArticleImage";
-import NextArticleWrapper from "@/article/NextArticleWrapper";
-import NextArticleCard from "@/article/NextArticleCard";
 import {cases} from "../../../data/cases";
 import useI18n from "../../../hooks/use-i18n";
 import t from "../../../hooks/translator";
