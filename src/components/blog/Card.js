@@ -3,6 +3,7 @@ import fallback from '#/logo/asrr-banner.jpg'
 import styled from '@emotion/styled'
 import ReadMore from '@/text/ReadMore'
 import useI18n from '../../hooks/use-i18n'
+import t from '../../hooks/translator'
 
 const InnerWrapper = styled('div')`
         box-shadow: ${props => props.theme.card.shadow};
@@ -10,9 +11,7 @@ const InnerWrapper = styled('div')`
 `;
 
 function Card (props) {
-	const i18n = useI18n();
 	let {type, name, image, readMore} = props.blog;
-
 
 	return (
 		<div className="blog-card card-margin-bottom">
@@ -22,9 +21,9 @@ function Card (props) {
 				</div>
 
 				<div className="blog-card-text">
-					<h1 className="label">{i18n.t(`blog.types.${type}.name`)}</h1>
-					<h2 className="subheader">{i18n.t(`blog.${type}.${name}.card.title`, 'en')}</h2>
-					<p className="text">{i18n.t(`blog.${type}.${name}.card.description`)}</p>
+					<h1 className="label">{t(`blog.types.${type}.name`)}</h1>
+					<h2 className="subheader">{t(`blog.${type}.${name}.card.title`, 'en')}</h2>
+					<p className="text">{t(`blog.${type}.${name}.card.description`)}</p>
 					{readMore && <ReadMore noAnimation={true} className="read-more-portfolio" text={`blog.types.${type}.readMore`} to={`/blog/${type}/${name}`}/>}
 				</div>
 			</InnerWrapper>

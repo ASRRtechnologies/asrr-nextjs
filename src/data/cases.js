@@ -1,8 +1,8 @@
-
 export const cases = [
     {
         type: "case",
         name: "form",
+        description: "configurator",
         landing: {
             backgroundImage: {
                 extension: 'jpg'
@@ -14,17 +14,14 @@ export const cases = [
         ],
         sections: [
             {
-                line: false,
                 title: true,
                 type: "paragraph",
                 length: 2,
                 image: {
-                    square: false,
                     extension: 'jpg',
                 }
             },
             {
-                line: false,
                 title: true,
                 type: "paragraph",
                 length: 4,
@@ -34,22 +31,54 @@ export const cases = [
                 }
             },
             {
-                line: false,
                 type: 'paragraph',
                 length: 1,
                 image: {
-                    square: false,
                     extension: 'png'
                 }
             },
             {
-                line: false,
                 length: 1,
                 title: true
             }
 
 
         ],
+    },
+    {
+        type: "case",
+        name: "hes",
+        description: "steel tracker",
+        landing: {
+            backgroundImage: {
+                extension: 'webp'
+            }
+        },
+        sections: [
+            {
+                title: true,
+                length: 1,
+                image: {
+                    extension: 'webp'
+                }
+            },
+            {
+                title: true,
+                length: 4,
+                image: {
+                    square: true,
+                    extension: 'png'
+                }
+            },
+            {
+                length: 2,
+                title: true
+            }
+        ]
+    },
+    {
+        type: "case",
+        name: "protonise"
     },
     {
         type: "case",

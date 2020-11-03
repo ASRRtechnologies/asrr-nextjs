@@ -326,8 +326,8 @@
     }
   },
   "clients": {
-    "title": {
-      "header": "Vertrouwd door",
+    "header": {
+      "title": "Vertrouwd door",
       "text": "Vertrouwd door"
     }
   },
@@ -578,6 +578,12 @@
       }
     },
     "article": {
+      "itaas": {
+        "card": {
+          "title": "IT Teams as a Service (ITaas)",
+          "description": "Wat zijn de voordelen van dynamische externe IT teams?"
+        }
+      },
       "microservices": {
         "card": {
           "title": "Can microservices save you time and effort?",
