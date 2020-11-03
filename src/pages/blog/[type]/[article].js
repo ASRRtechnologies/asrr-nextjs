@@ -21,7 +21,7 @@ function Page({data, query}) {
         window.scrollTo(0, 0);
     }, []);
 
-    let basePath = `cases.${data.name}.content`;
+    let basePath = `blog.${data.type}.${data.name}.content`;
     {console.log(data)}
     let sectionNumber = 0;
 
@@ -52,7 +52,7 @@ function Page({data, query}) {
                             {section.image &&
                             <ArticleImage square={section.image.square}
                                           subtitle={`${basePath}.sections.${sectionNumber}.image`}
-                                          image={`/assets/images/clients/${data.name}/${data.name}-${sectionNumber}.${section.image.extension}`}
+                                          image={section.image.src ? section.image.src : `/assets/images/blog/${data.type}/${data.name}/${data.name}-${sectionNumber}.${section.image.extension}`}
                             />}
                         </ArticleSection>
 

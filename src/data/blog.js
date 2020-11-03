@@ -17,13 +17,23 @@ export const blog = [
         sections: [
             {
                 title: true,
+                length: 4,
+                image: {
+                    src: "https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,w_624,h_351,c_scale/v1393498157/2469.jpg"
+                }
+            },
+            {
+                title: true,
                 length: 3,
                 image: {
-                    extension: 'png'
+                    extension: 'jpg'
                 }
+            },
+            {
+                title: true,
+                length: 1
             }
         ],
-        image: "https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,w_624,h_351,c_scale/v1393498157/2469.jpg"
     },
     {
         type: "article",
