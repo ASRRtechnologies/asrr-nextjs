@@ -23,7 +23,7 @@ function Portfolio({preview}) {
             <div className={`portfolio`}>
                 {portfolio.map(({image, id, type, href}, i) => {
                     return (
-                        <Fade delay={i * 300} bottom>
+                        <Fade delay={i * 300 } bottom>
                             <div className="portfolio-card card-margin-bottom">
                                 <Link href={`/portfolio/case/${id}`}>
                                     <a className="portfolio-card-inner">
