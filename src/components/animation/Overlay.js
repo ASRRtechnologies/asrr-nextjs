@@ -21,9 +21,11 @@ function Overlay({loadAnimation}) {
 
 
     useEffect(() => {
+
         if (loadAnimation) {
             animate.animation.firstLoad();
         }
+
         setOverlayHeight();
     }, []);
 
@@ -39,11 +41,9 @@ function Overlay({loadAnimation}) {
                                     className="element-overflow-background"> </motion.div>
                         {/*If homepage is loaded show ASRR logo else show path name on loading*/}
 
-                        {router.pathname === '/' &&
-                        (
-                            <motion.img animate={animation.logo.animate} initial={animation.logo.initial}
-                                        src={darkTheme.dark ? logoWhite : logo} alt="asrr"/>
-                        )}
+                        <motion.img animate={animation.logo.animate} initial={animation.logo.initial}
+                                    src={darkTheme.dark ? logoWhite : logo} alt="asrr"/>
+
                     </span>
         </motion.div>
     )
