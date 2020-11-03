@@ -60,3 +60,18 @@
   }
 
 }
+
+.no-margin {
+  margin: 0;
+}
+
+
+.card-margin-bottom{
+  @include margin-top(150px);
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .card-margin-bottom{
+    margin-top: 100px;
+  }
+}

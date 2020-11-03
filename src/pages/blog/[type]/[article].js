@@ -1,85 +1,77 @@
-import React, {useState} from 'react'
-import Section from '@/layout/Section'
+import React, {useEffect} from 'react'
 import Application from "@/layout/Application";
-import Layout from "@/layout/Layout";
-import WideText from "@/article/WideText";
-import ArticleImage from "@/article/ArticleImage";
-import ImageSlider from "@/article/ImageSlider";
+import SmallLanding from "@/landing/SmallLanding";
 import KeyWords from "@/article/KeyWords";
-import Video from "@/article/Video";
-import BreadCrumb from "@/blog/BreadCrumb";
+import ArticleBody from "@/article/ArticleBody";
+import ArticleParagraph from "@/article/ArticleParagraph";
+import ArticleTitle from "@/article/ArticleTitle";
+import ArticleContent from "@/article/ArticleContent";
+import ArticleSection from "@/article/ArticleSection";
+import ArticleImage from "@/article/ArticleImage";
 import {cases} from "../../../data/cases";
+import useI18n from "../../../hooks/use-i18n";
+import t from "../../../hooks/translator";
+import Contact from "../../../components/contact/Preview";
 import {blog} from "../../../data/blog";
-import Title from "@/text/Title";
-import Animation from "@/animation/Animation";
 
+function Page({data, query}) {
+    const i18n = useI18n();
 
-function Page({breadCrumb, found, query}) {
-    console.log(breadCrumb)
-    let indexes = {}
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
-    let updateIndex = (componentName) => {
-        if (indexes[componentName] == null) indexes[componentName] = 0;
-        let newIndex = indexes[componentName] + 1;
-        indexes[componentName] = newIndex;
-        return newIndex;
-    }
+    let basePath = `blog.${data.type}.${data.name}.content`;
+    {console.log(data)}
+    let sectionNumber = 0;
 
     return (
-        <>
-            <Application>
-                <Layout>
-                    <Section className="section-article">
-                        <BreadCrumb crumbs={breadCrumb}/>
+        <Application>
+            <SmallLanding title={t(`${basePath}.landing.title`)} background={`/assets/images/blog/${data.type}/${data.name}/${data.name}-landing.${data.landing.backgroundImage.extension}`}/>
 
-                        {/*<Title title={`blog.${found.type}.${found.name}.content.title`}/>*/}
+            <ArticleBody className="keywords">
 
-                        <KeyWords keyWords={found.tags}/>
+                <KeyWords keyWords={["blog", data.type, data.name, data.title]} compact/>
 
-                        {found.content && found.content.map((component) => {
-                            let i = updateIndex(component.type);
+                <ArticleContent>
+                    <ArticleTitle smallTitle={t(`${basePath}.smallTitle`)} title={t(`${basePath}.title`)}  subtitle={t(`${basePath}.subtitle`)} />
 
-                            console.log(i)
+                    {data.sections.map(section => {
+                        sectionNumber++;
 
-                            if (component.type === "paragraph") {
-                                return <WideText title={component.title && `blog.${found.type}.${found.name}.content.${component.type}.${i}.title`} text={`blog.${found.type}.${found.name}.content.${component.type}.${i}.text`}/>
-                            }
+                        let paragraphNumber = 0;
+                        return <ArticleSection line={section.line}>
+                            {[...Array(section.length)].map((x, i) => {
 
-                            if (component.type === "image") {
-                                return <ArticleImage image={`/assets/blog/${found.type}/${found.name}/${found.name}-${i}.${component.format}`} subtitle={`blog.${found.type}.${found.name}.content.${component.type}.${i}.subtitle`} square={component.square}/>
-                            }
+                                paragraphNumber++;
+                                let paragraphPath = `${basePath}.sections.${sectionNumber}.paragraphs.${paragraphNumber}`;
+                                return <ArticleParagraph
+                                    title={i === 0 && section.title && t(`${basePath}.sections.${sectionNumber}.title`)}
+                                    text={t(`${paragraphPath}.text`)}/>
+                            })}
+                            {section.image &&
+                            <ArticleImage square={section.image.square}
+                                          subtitle={`${basePath}.sections.${sectionNumber}.image`}
+                                          image={section.image.src ? section.image.src : `/assets/images/blog/${data.type}/${data.name}/${data.name}-${sectionNumber}.${section.image.extension}`}
+                            />}
+                        </ArticleSection>
 
-                            if (component.type === "iframe") {
-                                return <iframe src={component.src} height="907" width="504" frameborder="0" allowfullscreen="" title="Ingevoegde bijdrage"/>
-                            }
+                    })}
+                </ArticleContent>
 
-                            if (component.type === "code"){
-                                return  <div className="Container" dangerouslySetInnerHTML={{__html: component.code}}/>;
-                            }
+            </ArticleBody>
+            <Contact/>
 
-                        })}
-
-                        {/*<WideText/>*/}
-                        {/*<ArticleImage/>*/}
-                        {/*<WideText/>*/}
-                        {/*<ArticleImage square/>*/}
-                        {/*<ImageSlider square/>*/}
-
-                        {/*<Video/>*/}
-
-                    </Section>
-                </Layout>
-            </Application>
-        </>
+        </Application>
     )
 }
 
 Page.getInitialProps = ({query}) => {
     let breadCrumb = ["blog", query.type, query.article];
 
-    let found = blog.find(b => (b.type === query.type) && (b.name === query.article))
-    console.log(found)
-    return {breadCrumb, found}
+    let data = blog.find(b => (b.type === query.type) && (b.name === query.article))
+    console.log(data)
+    return {breadCrumb, data}
 };
 
 export default Page

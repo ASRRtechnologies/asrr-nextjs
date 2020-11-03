@@ -1,5 +1,4 @@
 import {useState, useEffect} from "react";
-import {OverflowDetector} from 'react-overflow';
 
 const useScreenHeight = () => {
     const [screenSize, setScreenSize] = useState(0);

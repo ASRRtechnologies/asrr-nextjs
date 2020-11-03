@@ -1,4 +1,40 @@
 export const blog = [
+    // {
+    //     type: "article",
+    //     name: "working-from-home",
+    //     readMore: true,
+    // },
+    {
+        type: "article",
+        name: "itaas",
+        description: "",
+        readMore: true,
+        landing: {
+            backgroundImage: {
+                extension: 'jpg'
+            }
+        },
+        sections: [
+            {
+                title: true,
+                length: 4,
+                image: {
+                    src: "https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,w_624,h_351,c_scale/v1393498157/2469.jpg"
+                }
+            },
+            {
+                title: true,
+                length: 3,
+                image: {
+                    extension: 'jpg'
+                }
+            },
+            {
+                title: true,
+                length: 1
+            }
+        ],
+    },
     {
         type: "article",
         name: "microservices",

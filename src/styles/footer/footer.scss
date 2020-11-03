@@ -2,6 +2,7 @@
   @include size(100%, auto);
   @include flex(space-between, center, column);
   max-width: $max-width;
+  background-color: #000;
 
   a{
     font-weight: bolder!important;
@@ -26,7 +27,7 @@
     margin: 0;
   }
 
-  h3, h4, p, a {
+  h1, h4, p, a {
     color: white !important;
   }
 

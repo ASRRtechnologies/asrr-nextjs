@@ -1,48 +1,17 @@
-import React, {useContext, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import {services} from '../../data/services'
-import Section from '@/layout/Section'
-import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
-import Title from '@/text/Title'
-import Button from '@/Button'
-import Animation from '@/animation/Animation'
-import {motion} from "framer-motion";
 import Application from "@/layout/Application";
-import Layout from "@/layout/Layout";
-
-const Wrapper = styled('div')`
-      background-image: ${props => props.theme.layout};
-`;
-
-const textEasing = [.42, 0, .58, 1];
-const fadeOut = {
-
-    show: {
-        opacity: 1,
-        transition: {
-            ease: textEasing,
-            duration: 1
-        }
-    },
-    hidden: {
-        translateY: "100px",
-        opacity: 0,
-        transition: {
-            duration: 1,
-            ease: textEasing,
-        }
-    }
-};
-
-function Contact({className, title}) {
-    return (
-        <div className={`contact preview ${title}`}>
-            <Title className={`${title} title-button`} title={'contact.preview.title.header'}
-                   text={'contact.preview.title.text'}/>
-            <Button custom to="/contact" title="buttons.contact"/>
-        </div>
-    )
-}
+import SmallLanding from "@/landing/SmallLanding";
+import KeyWords from "@/article/KeyWords";
+import ArticleBody from "@/article/ArticleBody";
+import ArticleParagraph from "@/article/ArticleParagraph";
+import ArticleTitle from "@/article/ArticleTitle";
+import ArticleContent from "@/article/ArticleContent";
+import ArticleSection from "@/article/ArticleSection";
+import ArticleImage from "@/article/ArticleImage";
+import NextArticleWrapper from "@/article/NextArticleWrapper";
+import NextArticleCard from "@/article/NextArticleCard";
 
 function Page({data, query}) {
     const i18n = useI18n();
@@ -53,24 +22,76 @@ function Page({data, query}) {
 
     return (
         <Application>
-            <Layout>
-                <Section className="service-page individual-service-section">
-                    <Animation animation="fade-up" delay="300">
-                        <Title title={data.title} className="justify" text={data.text}/>
-                    </Animation>
-                    {console.log(query, data)}
-                    <Animation animation="fade-up" delay="300">
-                        <Contact className="last-section-padding"/>
-                    </Animation>
-                </Section>
-            </Layout>
+            <SmallLanding title="Exploring the future"/>
+
+            <ArticleBody className="keywords">
+
+                <KeyWords keyWords={["Test", "2", "3"]}/>
+
+                <ArticleContent>
+                    <ArticleTitle title="Configurator in the making"/>
+
+                    <ArticleSection line >
+
+                        <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user
+                        work with you to keep you protected however you use your computer.Torus protects you while you hang out online.
+                        A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you
+                        wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus
+                        leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">
+                        </ArticleParagraph>
+
+                        <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user
+                        work with you to keep you protected however you use your computer.Torus protects you while you hang out online.
+                        A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you
+                        wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus
+                        leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">
+                        </ArticleParagraph>
+
+                        <ArticleImage square subtitle="Test working toch"/>
+
+                    </ArticleSection>
+
+                    <ArticleSection>
+
+                        <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user
+                        work with you to keep you protected however you use your computer.Torus protects you while you hang out online.
+                        A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you
+                        wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus
+                        leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">
+                        </ArticleParagraph>
+
+                        <ArticleParagraph title="Exploring the open world" text=" OpenAVN’s solutions for the home user
+                        work with you to keep you protected however you use your computer.Torus protects you while you hang out online.
+                        A simple yet powerful browser extension, Torus is your eyes and ears on the internet, watching out for you
+                        wherever you browse. BrightScan, OpenAVN’s state-of-the-art malware threat detection software, picks up where Torus
+                        leaves off, protecting your computer from harmful downloads the way Torus protects you from internet attacks.">
+                        </ArticleParagraph>
+
+                        <ArticleImage square subtitle="Test working toch"/>
+
+                    </ArticleSection>
+
+                    <NextArticleWrapper>
+
+                        <NextArticleCard/>
+                        <NextArticleCard/>
+
+                    </NextArticleWrapper>
+
+
+
+
+                </ArticleContent>
+
+            </ArticleBody>
+
         </Application>
     )
 }
 
 Page.getInitialProps = ({query}) => {
     let data = services.find(data => data.id === query.service);
-
+    console.log(data)
     return {
         data,
         query

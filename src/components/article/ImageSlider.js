@@ -2,7 +2,6 @@ import React, {useRef, useState} from 'react';
 import Chevron from "@/icons/Chevron";
 import Slider from "react-slick";
 import image from "../../../public/assets/images/erik-mclean-ZRns2R5azu0-unsplash.jpg"
-import Animation from "@/animation/Animation";
 import styled from "@emotion/styled";
 
 const SliderIndicators = styled('div')`
@@ -48,7 +47,7 @@ function ImageSlider({square}) {
     const data = [{}, {}];
 
     return (
-        <Animation animation="fade" className={`${square ? "slider-square-image" : "slider-wide-image"} slider margin-bottom-article-section`}>
+        <div  className={`${square ? "slider-square-image" : "slider-wide-image"} slider margin-bottom-article-section`}>
             <Slider ref={slider => (sliderRef.current = slider)}  {...settings}>
                 {
                     data.map((img, i) => {
@@ -69,7 +68,7 @@ function ImageSlider({square}) {
                                          className={`slider-indicator ${i === activeSlide ? "active-indicator" : null}`}/>)}
             </div>
 
-        </Animation>
+        </div>
     );
 }
 

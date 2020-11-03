@@ -1,152 +1,153 @@
-//FORM
-import formLogin from '#/clients/form/image2.png';
-import formDash from '#/clients/form/image1.png';
-import formRevit from '#/clients/form/image3.png';
-//NWO
-import nwoCase from "#/clients/nwo/case-image.webp";
-import login from "#/clients/nwo/image1.png";
-import nwoScreens from "#/clients/nwo/nwo-screns.jpg";
-import cpu from "#/clients/nwo/cpu.jpg";
-import cpuSlot from "#/clients/nwo/cpu-slot.jpg";
-import ram from "#/clients/nwo/nwo-ram.jpg";
-import threadripper from "#/clients/nwo/threadripper.jpg";
-
-//HES
-import hesImage from '#/clients/hes/slider/image1.png'
-import hesImage2 from '#/clients/hes/slider/image2.png'
-import React from 'react'
-
 export const cases = [
     {
-        id: "form",
-        card: {
-            image: hesImage2,
-            client: "cases.form.client",
-            title: "cases.form.case.landing.title",
-            text: "cases.form.case.landing.text",
-            discipline: "cases.form.case.landing.discipline",
-            route: "/cases/form"
-        },
+        type: "case",
+        name: "form",
+        description: "configurator",
         landing: {
-            client: "cases.form.client",
-            discipline: "cases.form.case.landing.discipline",
-            title: "cases.form.case.landing.title",
-            text: "cases.form.case.landing.text",
+            backgroundImage: {
+                extension: 'jpg'
+            }
         },
-        introduction: {
-            title: "cases.form.case.introduction.title",
-            text: "cases.form.case.introduction.text",
-        },
-        bullets: "cases.form.case.bullets",
-        result: {
-            title: "cases.form.case.result.title",
-            text: "cases.form.case.result.text",
-        },
-        images: [
-            formLogin, formDash, formRevit
+        readMore: true,
+        tags: [
+            "development", "technology"
         ],
-        conclusion: {
-            title: "cases.form.case.conclusion.title",
-            text: "cases.form.case.conclusion.text",
-        },
+        sections: [
+            {
+                title: true,
+                type: "paragraph",
+                length: 2,
+                image: {
+                    extension: 'jpg',
+                }
+            },
+            {
+                title: true,
+                type: "paragraph",
+                length: 4,
+                image: {
+                    square: false,
+                    extension: 'png',
+                }
+            },
+            {
+                type: 'paragraph',
+                length: 1,
+                image: {
+                    extension: 'png'
+                }
+            },
+            {
+                length: 1,
+                title: true
+            }
+
+
+        ],
     },
     {
-        id: "hes",
-        card: {
-            image: hesImage2,
-            client: "cases.hes.client",
-            title: "cases.hes.case.landing.title",
-            text: "cases.hes.case.landing.text",
-            discipline: "cases.hes.case.landing.discipline",
-            route: "/cases/hes"
-        },
+        type: "case",
+        name: "hes",
+        description: "steel tracker",
         landing: {
-            client: "cases.heshes.client",
-            discipline: "cases.heshes.case.landing.discipline",
-            title: "cases.heshes.case.landing.title",
-            text: "cases.heshes.case.landing.text",
+            backgroundImage: {
+                extension: 'webp'
+            }
         },
-        introduction: {
-            title: "cases.hes.case.introduction.title",
-            text: "cases.hes.case.introduction.text",
-        },
-        bullets: "cases.hes.case.bullets",
-        result: {
-            title: "cases.hes.case.result.title",
-            text: "cases.hes.case.result.text",
-        },
-        images: [
-            hesImage, hesImage2,
-        ],
-        conclusion: {
-            title: "cases.hes.case.conclusion.title",
-            text: "cases.hes.case.conclusion.text",
-        },
+        sections: [
+            {
+                title: true,
+                length: 1,
+                image: {
+                    extension: 'webp'
+                }
+            },
+            {
+                title: true,
+                length: 4,
+                image: {
+                    square: true,
+                    extension: 'png'
+                }
+            },
+            {
+                length: 2,
+                title: true
+            }
+        ]
     },
     {
-        id: "nwo",
-        card: {
-            image: nwoCase,
-            client: "cases.nwo.client",
-            title: "cases.nwo.case.landing.title",
-            text: "cases.nwo.case.landing.text",
-            discipline: "cases.nwo.case.landing.discipline",
-            route: "/cases/nwo"
-        },
+        type: "case",
+        name: "nwo",
+        description: "rdp server",
         landing: {
-            client: "cases.nwo.client",
-            discipline: "cases.nwo.case.landing.discipline",
-            title: "cases.nwo.case.landing.title",
-            text: "cases.nwo.case.landing.text",
+            backgroundImage: {
+                extension: 'jpg'
+            }
         },
-        introduction: {
-            title: "cases.nwo.case.introduction.title",
-            text: "cases.nwo.case.introduction.text",
-        },
-        bullets: "cases.nwo.case.bullets",
-        result: {
-            title: "cases.nwo.case.result.title",
-            text: "cases.nwo.case.result.text",
-        },
-        images: [
-            login, ram, cpu, threadripper, cpuSlot,
-        ],
-        conclusion: {
-            title: "cases.nwo.case.conclusion.title",
-            text: "cases.nwo.case.conclusion.text",
-        },
+        sections: [
+            {
+                title: true,
+                length: 2,
+                image: {
+                    extension: 'jpg'
+                }
+            },
+            {
+                title: true,
+                length: 3,
+                image: {
+                    square: true,
+                    extension: 'webp'
+                }
+            },
+            {
+                length: 1,
+                title: true
+            }
+        ]
     },
     {
-        id: "protonise",
-        card: {
-            image: hesImage2,
-            client: "cases.hes.client",
-            title: "cases.hes.case.landing.title",
-            text: "cases.hes.case.landing.text",
-            discipline: "cases.hes.case.landing.discipline",
-            route: "/cases/hes"
-        },
-        landing: {
-            client: "cases.heshes.client",
-            discipline: "cases.heshes.case.landing.discipline",
-            title: "cases.heshes.case.landing.title",
-            text: "cases.heshes.case.landing.text",
-        },
-        introduction: {
-            title: "cases.hes.case.introduction.title",
-            text: "cases.hes.case.introduction.text",
-        },
-        bullets: "cases.hes.case.bullets",
-        result: {
-            title: "cases.hes.case.result.title",
-            text: "cases.hes.case.result.text",
-        },
-        images: [
-            hesImage, hesImage2,
-        ],
-        conclusion: {
-            title: "cases.hes.case.conclusion.title",
-            text: "cases.hes.case.conclusion.text",
-        },
+        type: "case",
+        name: "hsfn",
+        readMore: true
     },
+    {
+        type: "case",
+        name: "esp",
+        description: "website",
+        landing: {
+            backgroundImage: {
+                extension: 'jpg'
+            }
+        },
+        sections: [
+            {
+                title: true,
+                length: 4,
+                image: {
+                    extension: 'png'
+                }
+            }
+        ]
+    },
+    {
+        type: "case",
+        name: "aapjes",
+        description: "website",
+        landing: {
+            backgroundImage: {
+                extension: 'jpg'
+            }
+        },
+        sections: [
+            {
+                title: true,
+                length: 3,
+                image: {
+                    extension: 'png'
+                }
+            }
+        ]
+    }
 ];

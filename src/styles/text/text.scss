@@ -1,47 +1,39 @@
 //Title
-.title {
-  width: 100%;
-  height: auto;
-  @include flex(center, center, column);
-  margin-bottom: 100px;
+.title-wrapper {
+  @include size(100%, auto);
+  @include flex(flex-start, center, column);
+  max-width: 800px;
 
-  h1{
+  h1, h2, h3{
     text-align: center;
   }
 
-  p {
-    text-align: center;
-    margin-bottom: 0;
-    max-width: 700px;
+  h2{
+    color: $primary-color !important;
   }
 
-  &.justify{
-    p{
-      text-align: justify;
-    }
-  }
-
-  &.regular{
-    p{
+  &.title-left{
+    @include flex(flex-start, flex-start, column);
+    h1, h2, h3{
       text-align: left;
     }
   }
 
-  &.title-button{
-    margin-bottom: 30px;
-  }
-
-  &.left-title{
-    @include flex(center, flex-start, column);
-    p{
-      text-align: justify;
-      max-width: 800px;
+  *{
+    &:last-child{
+      margin-bottom: 0;
     }
   }
 
-  &.no-margin{
-    margin-bottom: 0;
+  &.title-button{
+    margin-bottom: 75px;
   }
+
+  margin-bottom: 150px;
+}
+
+.read-more-wrapper{
+  @include margin-top(120px);
 
 }
 
@@ -59,21 +51,15 @@
 
 }
 
-.no-margin {
-  margin: 0;
-}
 
-@media screen and (max-width: 1200px) {
-  .title {
-    margin-bottom: 75px;
+@media screen and (max-width: $tablet-breakpoint) {
+  .title-wrapper {
+    margin-bottom: 100px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .title {
-    margin-bottom: 50px;
-    h2{
-      margin-bottom: 5px;
-    }
+  .title-wrapper {
+    margin-bottom: 75px;
   }
 }

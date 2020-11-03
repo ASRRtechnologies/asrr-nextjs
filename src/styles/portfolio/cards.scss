@@ -6,9 +6,7 @@ $portfolio-card-third-breakpoint: 500px;
   width: 30.33%; //ratio 9/16 => 700/ (9/16)
   height: auto;
   @include flex(flex-start, flex-start, column);
-  margin-bottom: 100px;
-
-
+  //margin-bottom: 100px;
 }
 
 .portfolio-card-inner{

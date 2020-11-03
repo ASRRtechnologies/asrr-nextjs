@@ -5,7 +5,7 @@ import {AnimationContext} from '../../context/animations/AnimationContext'
 import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
 import Chevron from '../icons/Chevron'
-import Button from '../Button'
+import Button from '../buttons/Button'
 import Wave from 'react-wavify'
 import {useTheme} from '../../context/theme/ThemeContext'
 

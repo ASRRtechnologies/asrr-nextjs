@@ -1,63 +1,163 @@
 .wide-image {
-  @include flex(flex-start, center, column);
+  @include flex(flex-start, flex-start, column);
   @include size(100%, auto);
-  max-width: $max-width-article;
-
-  h4{
-    margin-top: 30px;
-  }
+  max-width: 650px;
 }
 
 .square-image {
-  @include flex(flex-start, center, column);
+  @include flex(flex-start, flex-start, column);
   @include size(100%, auto);
-  max-width: 600px;
-  h4{
-    margin-top: 30px;
-  }
+  max-width: 650px;
 }
 
-.wide-text {
-  width: 100%;
-  max-width: $max-width-article;
-  text-align: justify;
-}
 
-.key-words{
-  width: 100%;
-  max-width: $max-width-article;
-  margin-bottom: 30px;
 
-  & > span {
-    display: inline-block;
-    width: auto;
-    margin-right: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.article-body{
+  @include size (100%, auto);
+  @include flex(flex-start, center, column);
+  padding: 0 $padding-pc;
+  @include padding-top(64px);
+  @include padding-bottom(64px);
+
+  &.keywords{
+    @include padding-top(32px);
   }
 
+}
+
+.article-keywords{
+  @include size (100vw, auto);
+  @include margin-bottom(48px);
+  @include flex(center, center, row);
+  border-bottom: 1px solid white;
+  padding: 0 $padding-pc;
   p{
-    display: inline-block;
-    margin-bottom: 0;
+    @include margin-bottom(32px);
+  }
+}
+
+.article-keywords-wrapper{
+  @include size (100vw, auto);
+  @include flex(flex-start, center, row);
+  max-width: $max-width;
+}
+
+.article-content{
+  @include size (100%, auto);
+  @include flex(flex-start, center, column);
+  max-width: 650px;
+}
+
+.article-section{
+  @include size (100%, auto);
+  @include flex(flex-start, flex-start, column);
+  @include margin-bottom(80px);
+
+  hr{
+    width: 100%;
   }
 
-  .key-words-wrapper{
-    display: inline-block;
-    width: auto;
-    p{
-      margin: 0 5px;
+  *{
+    &:last-child{
+      margin-bottom: 0;
     }
   }
 
+}
+
+.article-title-wrapper{
+  @include size (100%, auto);
+  @include flex(center, flex-start, column);
+  @include margin-bottom(64px);
+
+  div {
+    //select all jids then the last  kid
+    * {
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+
+  }
+}
+
+.article-paragraph{
+  @include size (100%, auto);
+  @include flex(flex-start, flex-start, column);
+  @include margin-bottom(48px);
+
+  p{
+    margin-bottom: 0;
+  }
+}
+
+.article-image{
+  @include flex(flex-start, flex-start, column);
+  @include size(100%, auto);
+  @include margin-bottom(48px);
+  max-width: 650px;
+  h1{
+    @include margin-top(32px);
+  }
+
+}
+
+.next-article-wrapper{
+  @include flex(space-between, flex-start, row);
+  @include size(100vw, auto);
+}
+
+.next-article{
+  @include flex(space-between, flex-start, row);
+  @include size(100%, auto);
+  max-width: $max-width;
+
+}
+
+.next-article-card{
+  width: 45%;
+  height: 300px;
+  background-color: red;
 
 }
 
 @media screen and (max-width: $tablet-breakpoint) {
-  .wide-text {
-    text-align: left;
+  .article-body{
+    padding: 0 $padding-tablet;
   }
+
+  .article-keywords{
+    padding: 0 $padding-tablet;
+  }
+
 }
 
 @media screen and (max-width: $mobile-breakpoint) {
-  .wide-image, .wide-text, .square-image {
-    margin-bottom: 50px;
+  .article-body{
+    padding: 0 $padding-mobile;
   }
+
+  .article-keywords{
+    padding: 0 $padding-mobile;
+  }
+
 }
+
+

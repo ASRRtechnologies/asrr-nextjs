@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styled from '@emotion/styled'
 import {useTheme} from '../../context/theme/ThemeContext'
 import useI18n from "../../hooks/use-i18n";
-import Animation from "@/animation/Animation";
+import Fade from "react-reveal/Fade";
 
 const LinkText = styled('a')`
          color: ${props => props.inverted ? props.theme.fonts.white : props.theme.fonts.title} ;
@@ -16,15 +16,28 @@ function ReadMore({to, inverted, text, children, noAnimation, className, ...rest
     const i18n = useI18n();
     const darkmode = useTheme().dark;
 
+    const NoAnimation = (props) => {
+
+        return (
+            <>
+                {noAnimation ? (props.children) : (
+                    <Fade bottom>
+                        {props.children}
+                    </Fade>
+                )}
+            </>
+        )
+    };
+
     return (
-        <Animation animation={noAnimation ? null : "fade-up"}>
+        <NoAnimation>
             <Link href={to}>
                 <LinkText inverted={inverted}
                           className={`read-more ${className} ${inverted ? "animated-link-light" : (darkmode ? "animated-link-light" : "animated-link-dark")} `}>
                     {i18n.t(text)}
                 </LinkText>
             </Link>
-        </Animation>
+        </NoAnimation>
     )
 
 }

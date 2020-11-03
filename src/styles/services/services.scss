@@ -1,15 +1,178 @@
-.services{
+.services {
   @include size(100%, auto);
   @include flex(flex-start, center, column);
-  &.margin-bottom{
-    margin-bottom: 100px;
+  max-width: $max-width;
+  @include margin-top(-150px);
+}
+
+//Needed for react reveal because it messes up the component with encapsulation and its stylrd
+.service-card-wrapper {
+  width: 100%
+
+}
+
+
+.service-card {
+  @include size(100%, auto);
+  @include flex(flex-start, center, row);
+
+  &:nth-child(even) > div {
+    flex-direction: row-reverse;
+
+    .service-card-image-wrapper {
+      border-radius: 5px 0 0 5px;
+
+      img {
+        border-radius: 5px 0 0 5px;
+      }
+    }
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+
+    .service-card-image-wrapper {
+      border-radius: 5px 0 0 5px;
+
+      img {
+        border-radius: 5px 0 0 5px;
+      }
+    }
   }
 }
 
-@media screen and (max-width: $service-card-first-breakpoint) {
-  .service-card{
-    &:nth-of-type(even) {
-      flex-direction: column !important;
+.service-card-text {
+  @include size(100%, auto);
+  flex: 1;
+}
+
+.service-card-text-wrapper {
+  width: 100%;
+  padding-bottom: 80%;
+  position: relative;
+  box-sizing: border-box;
+
+  span {
+    @include size(100%, 100%);
+    @include flex(center, flex-start, column);
+    @include padding(50px);
+    left: 0;
+    bottom: 0;
+    position: absolute;
+
+    * {
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
+
+}
+
+.service-card-image {
+  @include size(100%, auto);
+  flex: 1;
+}
+
+.service-card-image-wrapper {
+  @include flex(center, center, column);
+  width: 100%;
+  position: relative;
+  padding-bottom: 80%;
+  overflow: hidden;
+  border-radius: 0 5px 5px 0;
+
+  img {
+    @include size(100%, 100%);
+    object-fit: cover;
+    position: absolute;
+    object-position: 50% 50%;
+    transition: all 0.7s ease 0s;
+    left: 0;
+    top: 0;
+    border-radius: 0 5px 5px 0;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.7s ease 0s;
+    }
+  }
+
+}
+
+
+//@media screen and (max-width: 1300px) {
+//
+//  .service-card-text-wrapper {
+//    span {
+//      @include padding(30px);
+//    }
+//  }
+//
+//}
+
+@media screen and (max-width: 1450px) {
+
+  .service-card-wrapper {
+    max-width: 600px;
+  }
+
+  .service-card {
+    @include flex(center, flex-start, column-reverse);
+    max-width: 600px;
+
+    &:nth-child(even) > div {
+      flex-direction: column-reverse;
+
+      .service-card-image-wrapper {
+        border-radius: 5px 0 0 5px;
+
+        img {
+          border-radius: 5px 0 0 5px;
+        }
+      }
+    }
+
+    .reverse {
+      flex-direction: column-reverse;
+
+      .service-card-image-wrapper {
+        border-radius: 5px 0 0 5px;
+
+        img {
+          border-radius: 5px 0 0 5px;
+        }
+      }
+    }
+
+
+  }
+
+  .service-card-text-wrapper {
+    height: auto;
+    padding-bottom: 0;
+
+    span {
+      position: relative;
+      height: auto;
+    }
+
+  }
+
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+
+  .services {
+    @include margin-top(-100px);
+  }
+
+  .service-card-text-wrapper {
+    span {
+      padding: 25px;
+    }
+
+  }
+
+
 }

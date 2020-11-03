@@ -1,33 +1,44 @@
 .section {
   @include size (100%, auto);
   @include flex(flex-start, center, column);
-  max-width: $max-width;
-  padding:  0 0 200px 0;
+  padding: 150px $padding-pc;
 
-  &.section-article{
-    padding: 0;
-    :last-child {
-      margin-bottom: 0;
-    }
+  &.general{
+    max-width: $max-width;
   }
 
-  &.section-contact-form{
-    padding-top: 100px;
+  //Use for pages without landing page
+  &.no-landing{
+    padding: 200px $padding-pc 150px $padding-pc;
+  }
+
+  &.contact-section{
+    padding-bottom: 0;
   }
 
 }
 
-@media screen and (max-width: $tablet-breakpoint) {
+@media screen and (max-width:$tablet-breakpoint) {
   .section {
-    padding: 0 0 100px 0;
+    padding: 150px $padding-tablet;
+
+    &.no-landing{
+      padding: 200px $padding-tablet 150px $padding-tablet;
+    }
+
   }
 }
+
 
 @media screen and (max-width: $mobile-breakpoint) {
   .section {
-    padding:  0 0 120px 0;
+    padding:  120px $padding-mobile;
+
+    &.no-landing{
+      padding: 150px $padding-mobile 150px $padding-mobile;
+    }
+
   }
 }
-
 
 

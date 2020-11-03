@@ -1,22 +1,17 @@
 import React, {useState} from 'react'
 import ReadMore from '@/text/ReadMore'
-import Input from '@/text/Input'
 import logo from '#/logo/asrr-logo-spacing-white.svg'
-import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
 import LinkedIn from '@/icons/LinkedIn'
 import Facebook from '@/icons/Facebook'
-import {toast} from 'react-toastify'
-import Alert from '../alerts/Alert'
-
-const Wrapper = styled('section')`background-color: ${props => props.theme.footer};`
+import {useSnackbar} from "notistack";
 
 function Footer(props) {
     const [email, setEmail] = useState({body: '', subject: '', userEmail: '', organization: '', name: ''})
 
     const handleChange = ({name, value}) => setEmail({...email, [name]: value})
-    const notify = (title, text, type) => toast(<Alert title={title} text={text} {...type}/>,
-        {position: toast.POSITION.TOP_CENTER})
+    const {enqueueSnackbar, closeSnackbar} = useSnackbar();
+
 
     const handleSubmit = (event) => {
 
@@ -24,9 +19,11 @@ function Footer(props) {
             body: `from: ${email.userEmail}, name:${email.name}, subject:${email.subject}, organization: ${email.organization}, message: ${email.body}`,
             subject: email.subject,
             recipient: recipient,
-        };
+        }
 
-        fetch(process.env.NEXT_PUBLIC_API_BASE_URL, {
+        // console.log(JSON.stringify(emailObject))
+
+        fetch("https://mail.api.asrr-tech.com/mail/send/simple", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -34,69 +31,65 @@ function Footer(props) {
             body: JSON.stringify(emailObject),
         }).then(function (response) {
             if (response.ok) {
-                notify('user_notifications.contact.success.title', 'user_notifications.contact.success.text',
-                    {success: true})
-                console.log('notified')
-                //Clear input when successfully sent
+                enqueueSnackbar('user_notifications.contact.success.title', {variant: "success"});
                 setEmail({})
             } else {
                 response.json().then(function (object) {
-                    console.log(object)
-                    console.log(object.propertyErrors)
-                    console.log(response)
-                    notify('user_notifications.contact.error.title', 'user_notifications.contact.error.text',
-                        {error: true})
+                    console.log(object);
+                    console.log(object.propertyErrors);
+                    console.log(response);
+                    enqueueSnackbar('user_notifications.contact.error.title', {error: true})
 
-                })
+                });
                 throw new Error(response.statusText)
             }
         }).catch(error => {
-            notify('user_notifications.contact.error.title', 'user_notifications.contact.error.text', {error: true})
-        })
+            enqueueSnackbar('user_notifications.contact.error.title', {error: true})
+        });
         event.preventDefault()
     }
 
     const i18n = useI18n()
     return (
-        <Wrapper className="layout footer-container">
+        <div className="layout footer-container">
 
             <div className="footer">
                 <img alt="asrr-logo" src={logo}/>
                 <div className="footer-navigation">
                     <div className="grid">
-                        <h3>{i18n.t('footer.navigation')}</h3>
-                        <ReadMore noAnimation inverted text="header.home" to="/"/>
-                        <ReadMore noAnimation inverted text="header.portfolio" to="/portfolio"/>
-                        <ReadMore noAnimation inverted text="header.services" to="/services"/>
-                        <ReadMore noAnimation inverted text="header.hire" to="/hire"/>
-                        <ReadMore noAnimation inverted text="header.about" to="/about"/>
-                        <ReadMore noAnimation inverted text="header.contact" to="/contact"/>
+                        <h1 className="small-header">{i18n.t('footer.navigation')}</h1>
+                        <ReadMore className="text" noAnimation inverted text="header.home" to="/"/>
+                        <ReadMore className="text" noAnimation inverted text="header.portfolio" to="/portfolio"/>
+                        <ReadMore className="text" noAnimation inverted text="header.services" to="/services"/>
+                        {/*<ReadMore className="text" noAnimation inverted text="header.hire" to="/hire"/>*/}
+                        {/*<ReadMore className="text" noAnimation inverted text="header.about" to="/about"/>*/}
+                        <ReadMore className="text" noAnimation inverted text="header.contact" to="/contact"/>
                     </div>
 
                     <div className="grid">
-                        <h3>Information</h3>
-                        <ReadMore noAnimation inverted text="footer.faq" to="/"/>
-                        <ReadMore noAnimation inverted text="footer.privacy" to="/"/>
+                        <h1 className="small-header">Information</h1>
+                        <ReadMore className="text" noAnimation inverted text="footer.faq" to="/"/>
+                        <ReadMore className="text" noAnimation inverted text="footer.privacy" to="/"/>
                         <a href="/assets/documents/file.pdf" target="_blank" rel="noopener noreferrer"
-                           className="animated-link-light">{i18n.t('footer.policy')}
+                           className="animated-link-light text">{i18n.t('footer.policy')}
                         </a>
                     </div>
 
                     <div className="grid">
-                        <h3>{i18n.t('footer.address')}</h3>
+                        <h1 className="small-header">{i18n.t('footer.address')}</h1>
                         <p>ASRR Tech</p>
                         <a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/fZqhC9FUVTpiEiCb7"
-                           className="animated-link-light">
+                           className="animated-link-light text">
                             {i18n.t('contact.address.street')} <br/>
                             {i18n.t('contact.address.zipcode')} <br/>
                             {i18n.t('contact.address.country')}
                         </a>
                         <a href="mailto:asrr@contact.nl" target="_blank" rel="noopener noreferrer"
-                           className="animated-link-light">contact@asrr.nl</a>
+                           className="animated-link-light text">contact@asrr.nl</a>
                     </div>
 
                     <div className="grid">
-                        <h3>{i18n.t('footer.social_media')}</h3>
+                        <h1 className="small-header">{i18n.t('footer.social_media')}</h1>
                         <div className="footer-social-media">
                             <a href="https://www.linkedin.com/company/asrr" target="_blank"
                                rel="noopener"><LinkedIn/></a>
@@ -106,22 +99,22 @@ function Footer(props) {
 
                 </div>
 
-                <div className="footer-newsletter">
-                    <h3>{i18n.t('footer.letter')}</h3>
-                    <form onSubmit={handleSubmit}>
-                        <Input onChange={(e) => handleChange(e.target)} value={email.name} className="full-width"
-                               button={i18n.t('buttons.submit')}
-                               placeholder={i18n.t('contact.form.email.placeholder')}/>
-                    </form>
-                </div>
+                {/*<div className="footer-newsletter">*/}
+                {/*    <h1 className="small-header">{i18n.t('footer.letter')}</h1>*/}
+                {/*    <form onSubmit={handleSubmit}>*/}
+                {/*        <Input onChange={(e) => handleChange(e.target)} value={email.name} className="full-width"*/}
+                {/*               button={i18n.t('buttons.submit')}*/}
+                {/*               placeholder={i18n.t('contact.form.email.placeholder')}/>*/}
+                {/*    </form>*/}
+                {/*</div>*/}
 
                 <div className="bottom">
-                    <p>Copyright ASRR</p>
-                    <p>{i18n.t('footer.design')}</p>
+                    <p className="label">Copyright ASRR</p>
+                    <p className="label">{i18n.t('footer.design')}</p>
                 </div>
 
             </div>
-        </Wrapper>
+        </div>
     )
 }
 

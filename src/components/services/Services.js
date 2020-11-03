@@ -1,36 +1,51 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import Section from '../layout/Section'
-import Card from './Card'
-import Title from '../text/Title'
-import {services} from '../../data/services'
-import Contact from '@/contact/Preview'
-import ReadMore from "@/text/ReadMore";
+import Title from '../titles/Title'
+import automation from '#/services/automation/automation-square.jpg'
+import analytics from '#/services/data-analytics/data-analytics-square.jpg'
+import scale from '#/services/scaleable-software/scaleable-software-sqaure.jpg'
+import itaas from '#/services/itaas/itaas.jpg'
+import Fade from 'react-reveal/Fade';
+import styled from "@emotion/styled";
+import Card from "@/services/Card";
 
-function Services ({preview}) {
-	const [servicesPreview, setServicesPreview] = useState([]);
+const Wrapper = styled(Section)`
+        background: ${props => props.theme.layout};
+`;
 
-	useEffect(() => {
-		if (preview) setServicesPreview(services.slice(0, 3));
-		else setServicesPreview(services);
-	}, [preview]);
+function Services() {
+    return (
+        <Wrapper className="no-landing">
+            <Title basePath={'services.preview.header'}/>
+            <div className="services">
 
-	return (
-		<Section id="services">
-				<Title title={'services.header.title'}/>
-				<div className={`services ${preview ? "margin-bottom" : ""}`}>
-					{
-						servicesPreview.map((d) => {
-								return (
-										<Card title={d.preview_title} text={d.preview_text} icon={d.icon}
-											  to={`services/${d.id}`}/>
-								)
-							},
-						)}
-				</div>
+                <Fade delay={0} bottom>
+                    <div className="service-card-wrapper card-margin-bottom">
+                        <Card basePath={`services.cards.bridge`} paragraphs={2} image={automation}/>
+                    </div>
+                </Fade>
 
- 			{preview && <ReadMore className="read-more-big" to="/services" text="buttons.services"/>}
-			{preview ? null : <Contact className="section-contact-form"/>}
-		</Section>
-	)
+                <Fade delay={200} bottom>
+                    <div className="service-card-wrapper card-margin-bottom">
+                        <Card basePath={`services.cards.itaas`} paragraphs={3} image={itaas}/>
+                    </div>
+                </Fade>
+
+                <Fade delay={300} bottom>
+                    <div className="service-card-wrapper card-margin-bottom">
+                        <Card basePath={`services.cards.microservices`} paragraphs={3} image={scale}/>
+                    </div>
+                </Fade>
+
+                <Fade delay={400} bottom>
+                    <div className="service-card-wrapper card-margin-bottom">
+                        <Card basePath={`services.cards.insights`} paragraphs={3} image={analytics}/>
+                    </div>
+                </Fade>
+
+            </div>
+        </Wrapper>
+    )
 }
+
 export default Services

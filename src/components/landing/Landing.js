@@ -4,14 +4,14 @@ import {useRouter} from 'next/router'
 import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
 import Chevron from '../icons/Chevron'
-import Button from '../Button'
+import Button from '../buttons/Button'
 import Wave from 'react-wavify'
 import {useTheme} from '../../context/theme/ThemeContext'
 import {previewServices} from '../../data/services'
 import useScreenHeight from '../../hooks/helper-functions'
 
 const Wrapper = styled('div')`
-        background-color: ${props => props.theme.landing.background};
+        background: ${props => props.theme.landing.background};
         .landing-information{
         	svg{
         		path{

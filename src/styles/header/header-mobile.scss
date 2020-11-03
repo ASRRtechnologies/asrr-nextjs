@@ -1,0 +1,103 @@
+$indigo: #536dc8;
+$danube: #6191d1;
+$white: #fff;
+$bermuda: #77D7B9;
+
+
+
+.header-mobile {
+  @include size(100%, 80px);
+  @include flex(center, center, row);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: $header-zIndex;
+  padding: 0 $padding-tablet;
+}
+
+.header-wrapper-mobile{
+  @include size(100%, 100%);
+  @include flex(space-between, center, row);
+  position: relative;
+  max-width: $max-width;
+  z-index: $header-zIndex;
+}
+
+.header-menu-accordion-mobile{
+  width:100vw;
+  @include flex(flex-start, center, column);
+  transition: 0.4s;
+  position: fixed;
+  left:0;
+  top:0;
+  height:0;
+  overflow: hidden;
+
+
+  .header-menu-panel-mobile{
+    @include flex(center, center, column);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: height 1s cubic-bezier(.42,.97,.52,1.49);
+
+    a{
+      @include margin(32px 0);
+    }
+
+    @for $i from 1 through 6 {
+      a:nth-last-child(#{$i}) {
+        opacity: 0;
+        transition: opacity ease-in 300ms;
+        transition-delay: calc(#{$i} * 100ms);
+      }
+    }
+
+  }
+
+
+  &.menu-open{
+    width:100vw;
+    height:100vh;
+    transition: height 1s cubic-bezier(.42,.97,.52,1.49);
+
+    .header-menu-panel-mobile{
+
+      @for $i from 1 through 6 {
+        a:nth-child(#{$i}) {
+          opacity: 1;
+          transition: opacity ease-in 50ms;
+          transition-delay: calc(100ms + #{$i * 50ms} );
+        }
+      }
+
+    }
+  }
+
+}
+
+.header-actions-mobile {
+  @include size(auto, 100%);
+  @include flex(flex-end, center, row)
+}
+
+.header-mobile-asrr-logo {
+  width: 80px;
+  height: auto;
+  z-index: 9999;
+  margin: 0;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .header-mobile{
+    display: none;
+  }
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .header-mobile{
+    padding: 0 $padding-mobile;
+  }
+}

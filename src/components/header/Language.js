@@ -5,9 +5,9 @@ import NL from "../../locales/nl";
 import styled from "@emotion/styled";
 
 const Wrapper = styled('div')`
-    box-shadow: ${props => props.theme.header.shadow};
+    box-shadow: ${props => props.theme.navigation.shadow};
     a{color: ${props => props.theme.fonts.title}!important;};
-    background-color: ${props => props.theme.header.background};
+    background-color: ${props => props.theme.navigation.background};
 `;
 function Language(props) {
     const i18n = useI18n();

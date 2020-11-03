@@ -1,28 +1,43 @@
-import React from 'react'
-import Section from '../layout/Section'
-import Title from '../text/Title'
-import Card from '@/stories/Card'
-import Animation from '@/animation/Animation'
+import Section from "@/layout/Section";
+import Fade from 'react-reveal/Fade';
+import useI18n from "../../hooks/use-i18n";
+import Title from "@/titles/Title";
+import React from "react";
+import styled from "@emotion/styled";
 
-const clients = ['form', 'esp', 'nwo']
+const clients = ['form', 'esp', 'nwo'];
 
-function Stories (props) {
+const Wrapper = styled(Section)`
+        background: ${props => props.theme.home.stories};
+ }`;
+
+function Preview(props) {
+	const basePath = "stories";
+	let i18n = useI18n();
 	return (
-		<Section className="testimonial-section">
-			<Animation animation="fade-up" delay={200}>
-				<Title title={'stories.title.header'} text={'stories.title.text'}/>
-				<div className="stories">
-					{clients.map((client, i) => {
-						return (
-							<Animation className="card-animatable" animation="fade-up" delay={i * 200}>
-								<Card client={client}/>
-							</Animation>
-						)
-					})}
-				</div>
-			</Animation>
-		</Section>
-	)
+		<Wrapper>
+			<Title basePath={basePath + ".header"}/>
+			<div className="testimonials">
+				{clients.map((client, i) => {
+					let {id} = client;
+					return (
+						<Fade delay={i * 300} bottom>
+							<div className="testimonial-card card-margin-bottom">
+								<span className="testimonial-card-image">
+                					<img src={i18n.t("home.stories." + client + ".picture")}/>
+            					</span>
+								<h1 className="small-header">{i18n.t("home.stories." + client + ".contact")}</h1>
+								<h2 className="label-small-margin">{i18n.t("home.stories." + client + ".function")}</h2>
+								<p className="text">"{i18n.t("home.stories." + client + ".story")}"</p>
+								<h3 className="label-small-margin no-margin">{i18n.t("home.stories." + client + ".name")}</h3>
+							</div>
+						</Fade>
+					)
+				})}
+			</div>
+
+		</Wrapper>
+	);
 }
 
-export default Stories
+export default Preview;

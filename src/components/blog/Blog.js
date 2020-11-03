@@ -1,33 +1,31 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import Card from '@/blog/Card'
 import Section from '@/layout/Section'
-import Title from "@/text/Title";
-import ReadMore from "@/text/ReadMore";
-import Contact from "@/contact/Preview";
+import Title from "@/titles/Title";
 import {blog} from "../../data/blog";
+import Fade from "react-reveal/Fade";
+import styled from "@emotion/styled";
 
-function Blog({preview}) {
-    let [cases, setCases] = useState(blog);
+const Wrapper = styled(Section)`
+        background: ${props => props.theme.layout};
+`;
 
-    useEffect(() => {
-        if (preview) setCases(blog.slice(0, 3));
-    }, [preview]);
+const every_nth = (arr, nth) => arr.filter((e, i) => i % nth === nth - 1);
+console.log(every_nth([1, 2, 3, 4, 5, 6], 1));
 
+function Preview({preview}) {
     return (
-        <Section id="blog-page">
-            <Title title={'blog.landing.title'} text={'blog.landing.subtitle'}/>
+        <Wrapper className="no-landing">
+            <Title basePath="blog.landing" noSection/>
             <div className="blog">
                 {
-                    cases.map((entry)=>{
-                        return <Card blog={entry}/>
+                    blog.map((entry, i) => {
+                        return <Fade bottom delay={i * 300}><Card blog={entry}/></Fade>
                     })
                 }
             </div>
-            {preview && <ReadMore className="read-more-big" to="/blog" text="buttons.blog"/>}
-            {preview ? null : <Contact className="section-contact-form"/>}
-
-        </Section>
+        </Wrapper>
     )
 }
 
-export default Blog
+export default Preview

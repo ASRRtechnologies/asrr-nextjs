@@ -1,137 +1,73 @@
-import React, {useContext, useEffect, useState} from 'react'
-import {cases} from '../../../data/cases'
-import Section from '@/layout/Section'
-import styled from '@emotion/styled'
-import useI18n from '../../../hooks/use-i18n'
-import {AnimationContext} from '../../../context/animations/AnimationContext'
-import Landing from '@/landing/Landing'
-import Title from '@/text/Title'
-import Interweave, {Markup} from 'interweave'
-import Animation from '@/animation/Animation'
-import Slider from "react-slick";
-import Chevron from "@/icons/Chevron";
-import {useTheme} from "../../../context/theme/ThemeContext";
-import Button from "@/Button";
-import {motion} from "framer-motion";
+import React, {useEffect} from 'react'
 import Application from "@/layout/Application";
-import Layout from "@/layout/Layout";
-import Contact from '@/contact/Preview'
-
-const Card = styled('div')`
-        box-shadow: ${props => props.theme.card.shadow};
-`;
-
-function PrevArrow(props) {
-    const {className, onClick} = props;
-    return (<Chevron onClick={onClick} className={className}/>);
-}
-
-function NextArrow(props) {
-    const {className, onClick} = props;
-    return (<Chevron onClick={onClick} className={className}/>);
-}
+import SmallLanding from "@/landing/SmallLanding";
+import KeyWords from "@/article/KeyWords";
+import ArticleBody from "@/article/ArticleBody";
+import ArticleParagraph from "@/article/ArticleParagraph";
+import ArticleTitle from "@/article/ArticleTitle";
+import ArticleContent from "@/article/ArticleContent";
+import ArticleSection from "@/article/ArticleSection";
+import ArticleImage from "@/article/ArticleImage";
+import {cases} from "../../../data/cases";
+import useI18n from "../../../hooks/use-i18n";
+import t from "../../../hooks/translator";
+import Contact from "../../../components/contact/Preview";
 
 function Page({data, query}) {
     const i18n = useI18n();
-    const animate = useContext(AnimationContext);
-    const [bullets, setBulletPoints] = useState([]);
-    const [slide, setActiveSlide] = useState(0);
-    const [card, setCard] = useState(0);
-    const darkmode = useTheme().dark;
 
     useEffect(() => {
-        (animate.appLoaded) ? animate.animation.secondLoad() : null;
-        setBulletPoints(i18n.t(data.bullets));
         window.scrollTo(0, 0);
-
     }, []);
 
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        nextArrow: <NextArrow/>,
-        prevArrow: <PrevArrow/>,
-        // beforeChange: (current, next) => setActiveSlide(next),
-        afterChange: current => setActiveSlide(current)
-    };
+    let basePath = `cases.${data.name}.content`;
+    {console.log(data)}
+    let sectionNumber = 0;
 
     return (
-        <>
-            <Application>
-                <Layout>
+        <Application>
+            <SmallLanding title={t(`${basePath}.landing.title`)} background={`/assets/images/clients/${data.name}/${data.name}-landing.${data.landing.backgroundImage.extension}`}/>
 
-                    <Landing title={data.landing.title} text={data.landing.text} client={data.landing.client}
-                             discipline={data.landing.discipline}/>
-                    <Section className="case-section">
-                        <Animation animation="fade-up" delay="300">
-                            <Title className="justify" title={data.introduction.title} text={data.introduction.text}/>
-                        </Animation>
+            <ArticleBody className="keywords">
 
-                        <Animation animation="fade" delay="500">
-                            <div className="why-asrr margin-bottom ">
-                                <div className="why-asrr-wrapper">
-                                    <div className="why-asrr-points">
-                                        {bullets.map((d, i) => {
-                                            return (
-                                                <span onClick={() => setCard(i)}
-                                                      className={`${i === card && 'selected-line'} `}>
-											<Interweave tagName="div"
-                                                        attributes={{className: `${!darkmode ? "animated-link-dark-wrapper" : "animated-link-light-wrapper"}`}}
-                                                        content={d.key} onClick={() => setCard(i)}/>
-										</span>
-                                            )
-                                        })}
-                                    </div>
-                                    {bullets.map((d, i) => card === i
-                                        ? <Markup attributes={{className: 'why-asrr-text'}} containerTagName="div"
-                                                  content={d.value}/>
-                                        : null)}
-                                </div>
-                            </div>
-                        </Animation>
+                <KeyWords keyWords={["case", data.name, data.description]} compact/>
 
-                        <Animation animation="fade-up" delay="500">
-                            <Title className="justify" title={data.result.title} text={data.result.text}/>
-                        </Animation>
+                <ArticleContent>
+                    <ArticleTitle smallTitle={t(`${basePath}.smallTitle`)} title={t(`${basePath}.title`)}  subtitle={t(`${basePath}.subtitle`)} />
 
-                        <Animation className="project-carousel-wrapper" animation="fade-up" delay="500">
-                            <Slider {...settings}>
-                                {
-                                    data.images.map((img, i) => {
-                                        return (
-                                            <Card className="project-image">
-                                                <img src={img} alt="img"/>
-                                            </Card>
-                                        )
-                                    })
-                                }
-                            </Slider>
-                            <div className="project-carousel-indicator">
-                                {data.images.map((d, i) => <div
-                                    className={`${i === slide ? "active-indicator" : null}`}></div>)}
-                            </div>
-                        </Animation>
+                    {data.sections.map(section => {
+                        sectionNumber++;
 
-                        <Animation animation="fade-up" delay="500">
-                            <Title className="regular" title={data.conclusion.title}
-                                   text={data.conclusion.text}/>
-                        </Animation>
+                        let paragraphNumber = 0;
+                        return <ArticleSection line={section.line}>
+                            {[...Array(section.length)].map((x, i) => {
 
-                        <Animation animation="fade-up" delay="500">
-                            <Contact className="last-section-padding"/>
-                        </Animation>
-                    </Section>
-                </Layout>
-            </Application>
-        </>
+                                paragraphNumber++;
+                                let paragraphPath = `${basePath}.sections.${sectionNumber}.paragraphs.${paragraphNumber}`;
+                                return <ArticleParagraph
+                                    title={i === 0 && section.title && t(`${basePath}.sections.${sectionNumber}.title`)}
+                                    text={t(`${paragraphPath}.text`)}/>
+                            })}
+                            {section.image &&
+                            <ArticleImage square={section.image.square}
+                                          subtitle={`${basePath}.sections.${sectionNumber}.image`}
+                                          image={`/assets/images/clients/${data.name}/${data.name}-${sectionNumber}.${section.image.extension}`}
+                            />}
+                        </ArticleSection>
+
+                    })}
+                </ArticleContent>
+
+            </ArticleBody>
+            <Contact/>
+
+        </Application>
     )
 }
 
 Page.getInitialProps = ({query}) => {
-    let data = cases.find(data => data.id === query.case);
+    let data = cases.find(c => c.name === query.case);
+    console.log(data)
     return {
         data,
         query

@@ -1,35 +1,51 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import Section from '../layout/Section'
-import Card from './Card'
-import Title from '../text/Title'
+import Title from '../titles/Title'
 import {portfolio} from '../../data/portfolio'
-import Contact from '../../components/contact/Preview'
-import ReadMore from "@/text/ReadMore";
+import Fade from "react-reveal/Fade";
+import Link from "next/link";
+import styled from "@emotion/styled";
+import useI18n from "../../hooks/use-i18n";
+import t from "../../hooks/translator";
+
+const Wrapper = styled(Section)`
+        background: ${props => props.theme.layout};
+`;
+
+const Card = styled('div')`
+        box-shadow: ${props => props.theme.card.portfolio};
+`;
 
 function Portfolio({preview}) {
-
-    const [cases, setCases] = useState([]);
-
-    useEffect(() => {
-        if (preview) setCases(portfolio.slice(0, 3));
-        else setCases(portfolio);
-    }, [preview]);
-
     return (
-        <Section className={`${preview ? "" : "section-page-contact-form"}`} id="portfolio-page">
-            <Title title={'portfolio.title.header'} text={'portfolio.preview.title.text'}/>
-            <div className={`portfolio ${preview ? "margin-bottom" : ""}`}>
-                {cases.map(({image, id, type, href}, i) => {
+        <Wrapper className="no-landing">
+            <Title basePath={'portfolio.preview.header'}/>
+            <div className={`portfolio`}>
+                {portfolio.map(({image, id, type, href}, i) => {
                     return (
-                        <Card redirect={href} route={`/portfolio/case/${id}`} client={`cases.${id}.client`} img={image}
-                              discipline={`cases.${id}.discipline`} title={`cases.${id}.title`}/>
+                        <Fade delay={i * 300 } bottom>
+                            <div className="portfolio-card card-margin-bottom">
+                                <Link href={`/portfolio/case/${id}`}>
+                                    <a className="portfolio-card-inner">
+
+                                        <Card className="portfolio-card-image-wrapper">
+                                            <div className="portfolio-card-image">
+                                                <img src={image} alt="image"/>
+                                            </div>
+                                        </Card>
+                                        <div className="portfolio-card-text">
+                                            <h1 className="label-small-margin">{t(`cases.${id}.content.smallTitle`)}</h1>
+                                            <h2 className="subheader">{t(`cases.${id}.content.title`)}</h2>
+                                            <p className="text">{t(`cases.${id}.content.subtitle`)}</p>
+                                        </div>
+                                    </a>
+                                </Link>
+                            </div>
+                        </Fade>
                     )
                 })}
             </div>
-
-            {preview && <ReadMore className="read-more-big" to="/portfolio" text="buttons.portfolio"/>}
-            {preview ? null : <Contact className="section-contact-form"/>}
-        </Section>
+        </Wrapper>
     )
 }
 

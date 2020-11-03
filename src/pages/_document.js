@@ -38,6 +38,7 @@ class MyDocument extends Document {
           `,
                         }}
                     />
+                    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5f9e0bb92a7af500195a76a7&product=inline-share-buttons" async="async"/>
                 </Head>
                 <body>
                 {/* Google Tag Manager (noscript) */}

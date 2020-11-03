@@ -7,18 +7,16 @@ import Animation from '@/animation/Animation'
 import Link from "next/link";
 
 const Wrapper = styled('div')`
-        box-shadow: ${props => props.theme.card.shadow.portfolio};
+        box-shadow: ${props => props.theme.card.portfolio};
 `;
 
 function Card({img, title, discipline, client, route, redirect}) {
     const i18n = useI18n();
-    const mouse = useContext(MouseContext);
 
     return (
-        <Animation animation="fade-up" className="portfolio-card">
+        <div className="portfolio-card card-margin-bottom">
             <Link href={route}>
-                <a className="portfolio-card-inner" onMouseOver={() => {mouse.onHover('projects')}}
-                   onMouseLeave={() => {mouse.onLeave()}}>
+                <a className="portfolio-card-inner">
 
                     <Wrapper className="portfolio-card-image-wrapper">
                         <div className="portfolio-card-image">
@@ -26,13 +24,13 @@ function Card({img, title, discipline, client, route, redirect}) {
                         </div>
                     </Wrapper>
                     <div className="portfolio-card-text">
-                        <h4>{i18n.t(discipline)}</h4>
-                        <h2>{i18n.t(client)}</h2>
-                        <p>{i18n.t(title)}</p>
+                        <h1 className="label-small-margin">{i18n.t(discipline)}</h1>
+                        <h2 className="subheader">{i18n.t(client)}</h2>
+                        <p className="text">{i18n.t(title)}</p>
                     </div>
                 </a>
             </Link>
-        </Animation>
+        </div>
     )
 }
 
