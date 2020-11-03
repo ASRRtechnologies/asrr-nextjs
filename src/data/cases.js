@@ -115,6 +115,7 @@ export const cases = [
     {
         type: "case",
         name: "esp",
+        description: "website",
         landing: {
             backgroundImage: {
                 extension: 'jpg'
@@ -124,6 +125,25 @@ export const cases = [
             {
                 title: true,
                 length: 4,
+                image: {
+                    extension: 'png'
+                }
+            }
+        ]
+    },
+    {
+        type: "case",
+        name: "aapjes",
+        description: "website",
+        landing: {
+            backgroundImage: {
+                extension: 'jpg'
+            }
+        },
+        sections: [
+            {
+                title: true,
+                length: 3,
                 image: {
                     extension: 'png'
                 }
