@@ -102,7 +102,7 @@ export const cases = [
                 }
             },
             {
-                length: 2,
+                length: 1,
                 title: true
             }
         ]
@@ -111,5 +111,23 @@ export const cases = [
         type: "case",
         name: "hsfn",
         readMore: true
+    },
+    {
+        type: "case",
+        name: "esp",
+        landing: {
+            backgroundImage: {
+                extension: 'jpg'
+            }
+        },
+        sections: [
+            {
+                title: true,
+                length: 4,
+                image: {
+                    extension: 'png'
+                }
+            }
+        ]
     }
 ];

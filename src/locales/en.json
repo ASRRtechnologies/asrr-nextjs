@@ -670,21 +670,68 @@
         }
       }
     },
-    "form-dashboard": {
-      "client": "Form",
-      "discipline": "Progressive Web App",
-      "title": "Configurator Dashboard",
-      "text": "Lorem ipsum fr"
-    },
-    "aapjes": {
-      "client": "De Kleine Aapjes",
-      "discipline": "Web Development",
-      "title": "Creating a clean online presence"
-    },
     "esp": {
-      "client": "ESP Consultancy",
-      "discipline": "Web Development",
-      "title": "A brand new look"
+      "content": {
+        "landing": {
+          "title": "A clean new website"
+        },
+        "smallTitle": "Web Application | Front-End Development | Design",
+        "subtitle": "ESP Consultancy",
+        "title": "Creating a web application with specific requirements",
+        "sections": {
+          "1": {
+            "title": "The Process",
+            "paragraphs": {
+              "1": {
+                "text": "ESP Consultancy is a recruitment and consultancy bureau, specialized in IT services. This means they need to impress both clients and potential recruits, the latter often unimpressed by any ordinary WordPress website.\n\n"
+              },
+              "2": {
+                "text": "ESP consultancy is a long-term client of us, and the request was simple. They wanted something in the style of their customers, big, well-known companies such as ASML. After several iterations, our designer created something that was exactly what they wanted, which is what is our number one priority. The design was first made in adobe XD, with online comments. After all feedback was put into the design, the design was implemented in code. This all was done using a team of UI/UX designers, front-end developers and a project manager."
+              },
+              "3": {
+                "text": "The client came to us with the request for a new website. In modern day web, mobile users make up a large portion of the traffic on most informative sites. That’s why all of our websites are built with mobile devices in mind and are fully responsive. The applications we build are Progressive Web Applications, which mean they have some nifty features. One of them is offline caching, if needed, an application can be cached and can work completely without internet after the first load. This also results in zero load times between different pages."
+              },
+              "4": {
+                "text": "Most of our web applications are based in ReactJS, build upon further with NextJS for server-side rendering and extra speed or performance. They can fit in with our back-end systems seamlessly and are built up using modular components."
+              }
+            },
+            "image": "The new website ranking first in Google (SEO optimized)"
+          }
+        }
+      },
+      "case": {
+        "landing": {
+          "discipline": "Automated BIM Configurator | Full-Stack",
+          "title": "Reinventing the housing industry",
+          "text": "A robust and new way of creating a safe online web portal\nfor companies and just text to put here."
+        },
+        "introduction": {
+          "title": "The Problem",
+          "text": "One of our oldest clients, FORM, has hired ASRR and its developers for years to provide for their IT needs. \nTogether with FORM we think about how we can realize the vision they\n have had for nearly a decade on how to revolutionize the housing industry"
+        },
+        "bullets": [
+          {
+            "key": "<p class=\"animated-link\"> The old process <br/> (in a generic BIM/Architecture firm)</p>",
+            "value": "<p>An architect manually changes chosen options for a new house for every house in a \nblock, then generates every export separately and has to manage the huge amount of files involved.</p>"
+          },
+          {
+            "key": "<p class=\"animated-link\">The goal</p>",
+            "value": "<p>Automate the configuration of houses using code, automatically upload exports to the cloud and open up requests for new houses to third parties.</p>"
+          },
+          {
+            "key": "<p class=\"animated-link\">What was needed</p>",
+            "value": "<ul><li>Complex interface with the existing program</li> <li>Spring Boot Rest API hosted in kubernetes </li> <li>Front-end Web App in ReactJS</li> <li>A custom server</li> <li>Cloud storage</li>  </ul>"
+          }
+        ],
+        "result": {
+          "title": "What We Did",
+          "text": "FORM uses complex BIM models to combine smart parametric designs with a structured way of working to create the \n3D models needed to build a house. This is a perfect example of something that can be automated.\nThe program FORM uses to engineer and model houses is called Autodesk Revit. Revit can be a bit unreliable at times,\n which posed a threat to ensuring we can go from a manual process to a fully automated cloud version.\nWe wrote a program that plugs into the existing application, enabling us to imitate user interactions with code. \nThis allows us to automate complex actions flawlessly. \nUsing the program, we create an output within Revit, for example a PDF with the building plans.\n This pdf is then uploaded to the cloud, and its location is passed to the central server.     "
+        },
+        "conclusion": {
+          "title": "Conclusion",
+          "text": "In short, we were able to adapt to the current process by writing code that integrates with the used programs. \nWe then pushed it all to the next level by using enterprise grade methods to ensure reliability,\n speed and a good overall user experience. \nTo put this into numbers, this can save hundreds of euros per house, making FORM’s Automation a cutting-edge competitor \nto big time firms while delivering consistent and reliable outputs. "
+        }
+      }
     }
   },
   "error": {
