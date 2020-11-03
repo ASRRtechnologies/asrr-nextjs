@@ -61,11 +61,11 @@ function Header({className}) {
                 <Link href="/"><a className="header-logo"><Logo/></a></Link>
 
                 <div className="header-menu">
-                    <Link scroll={false} href="/"><a className="fade-in-header">{i18n.t('header.home')}</a></Link>
-                    <Link scroll={false} href="/portfolio"><a className="text">{i18n.t('header.portfolio')}</a></Link>
-                    <Link scroll={false} href="/services"><a className="text">{i18n.t('header.services')}</a></Link>
-                    <Link scroll={false} href="/blog"><a className="text">{i18n.t('header.blog')}</a></Link>
-                    <Link scroll={false} href="/contact"><a className="text">{i18n.t('header.contact')}</a></Link>
+                    <Link href="/"><a className="fade-in-header">{i18n.t('header.home')}</a></Link>
+                    <Link href="/portfolio"><a className="text">{i18n.t('header.portfolio')}</a></Link>
+                    <Link href="/services"><a className="text">{i18n.t('header.services')}</a></Link>
+                    <Link href="/blog"><a className="text">{i18n.t('header.blog')}</a></Link>
+                    <Link href="/contact"><a className="text">{i18n.t('header.contact')}</a></Link>
                 </div>
 
                 <div className="header-actions">

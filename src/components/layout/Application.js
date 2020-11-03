@@ -24,15 +24,11 @@ const fadeOut = {
 
 function Layout({children}) {
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, []);
-
     return (
-        <motion.div initial={"show"} exit="hidden" animate="show" variants={fadeOut} className="application">
+        <div className="application">
             {children}
             <Footer/>
-        </motion.div>
+        </div>
     );
 }
 
