@@ -63,16 +63,15 @@ function Language(props) {
 
     return (
         <div ref={node} className="language">
-            <a onClick={() => setMenuOpen(!menuOpen)}>{i18n.activeLocale.toUpperCase()}</a>
-
+            <a className="text" onClick={() => setMenuOpen(!menuOpen)}>{i18n.activeLocale.toUpperCase()}</a>
             <div onClick={() => setMenuOpen(!menuOpen)} className={`${menuOpen ? "chev is-active" : "chev"}`}>
                 <div className="chev chev-down">
-                    <span className="line"></span>
-                    <span className="line"></span>
+                    <span className="line"/>
+                    <span className="line"/>
                 </div>
             </div>
             <Wrapper className={`menu ${menuOpen ? "menuOpen" : "menu"}`}>
-                {languages.map((d) => <span><a onClick={() => {setUnselectedLanguages(d)}}>{d.toUpperCase()}</a></span>)}
+                {languages.map((d) => <span><a className="text" onClick={() => {setUnselectedLanguages(d)}}>{d.toUpperCase()}</a></span>)}
             </Wrapper>
         </div>
     );

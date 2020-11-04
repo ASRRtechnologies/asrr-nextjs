@@ -8,7 +8,7 @@ const Wrapper = styled("div")`
         box-shadow: ${props => props.theme.card.shadow};
 `;
 
-const Card = ({image, basePath, paragraphs}) => {
+const Card = ({image, basePath, paragraphs, route}) => {
     let title = `${basePath}.title`;
 
     const i18n = useI18n();
@@ -24,7 +24,7 @@ const Card = ({image, basePath, paragraphs}) => {
                                 return <p className="text">{i18n.t(text) !== undefined ? i18n.t(text) : text}</p>
                             }
                         )}
-                        <ReadMore noAnimation className="text" to="/portfolio" text="buttons.portfolio"/>
+                        <ReadMore noAnimation className="text" to={`/services${route}`} text="buttons.services"/>
 					</span>
                 </div>
             </div>

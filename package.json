@@ -36,6 +36,5 @@
     "react-wavify": "^1.3.0",
     "rfs": "^9.0.3",
     "rosetta": "1.0.0"
-  },
-  "devDependencies": {}
+  }
 }

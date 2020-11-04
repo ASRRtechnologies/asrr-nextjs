@@ -12,12 +12,14 @@ import {cases} from "../../../data/cases";
 import useI18n from "../../../hooks/use-i18n";
 import t from "../../../hooks/translator";
 import Contact from "../../../components/contact/Preview";
+import {useHeader} from "../../../context/navigation/HeaderContext";
 
 function Page({data, query}) {
     const i18n = useI18n();
+    const header = useHeader();
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        header.setHeaderWhite(true)
     }, []);
 
     let basePath = `cases.${data.name}.content`;

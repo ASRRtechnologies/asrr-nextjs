@@ -312,7 +312,7 @@ const darkTheme = {
 
 	navigation: {
 		background: navigation.background.dark,
-		backgroundMobile: navigation.backgroundMobile.light,
+		backgroundMobile: navigation.backgroundMobile.dark,
 		logo: navigation.logo.dark,
 		font: navigation.fonts.dark,
 		shadow: navigation.shadow.dark,

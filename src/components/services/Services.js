@@ -21,25 +21,25 @@ function Services() {
 
                 <Fade delay={0} bottom>
                     <div className="service-card-wrapper card-margin-bottom">
-                        <Card basePath={`services.cards.bridge`} paragraphs={2} image={automation}/>
+                        <Card route="/" basePath={`services.cards.bridge`} paragraphs={2} image={automation}/>
                     </div>
                 </Fade>
 
                 <Fade delay={200} bottom>
                     <div className="service-card-wrapper card-margin-bottom">
-                        <Card basePath={`services.cards.itaas`} paragraphs={3} image={itaas}/>
+                        <Card route="/" basePath={`services.cards.itaas`} paragraphs={3} image={itaas}/>
                     </div>
                 </Fade>
 
                 <Fade delay={300} bottom>
                     <div className="service-card-wrapper card-margin-bottom">
-                        <Card basePath={`services.cards.microservices`} paragraphs={3} image={scale}/>
+                        <Card route="/" basePath={`services.cards.microservices`} paragraphs={3} image={scale}/>
                     </div>
                 </Fade>
 
                 <Fade delay={400} bottom>
                     <div className="service-card-wrapper card-margin-bottom">
-                        <Card basePath={`services.cards.insights`} paragraphs={3} image={analytics}/>
+                        <Card route="/" basePath={`services.cards.insights`} paragraphs={3} image={analytics}/>
                     </div>
                 </Fade>
 

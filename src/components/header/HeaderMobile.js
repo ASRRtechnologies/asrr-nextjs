@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react'
+import React, {useContext, useEffect, useRef, useState} from 'react'
 import Link from './Link';
 import {motion} from 'framer-motion'
 import {AnimationContext} from '../../context/animations/AnimationContext'
@@ -11,6 +11,7 @@ import Language from '@/header/Language'
 import LanguageMobile from '@/header/LanguageMobile'
 import useI18n from '../../hooks/use-i18n'
 import {MouseContext} from '../../context/animations/MouseContext'
+import {useHeader} from "../../context/navigation/HeaderContext";
 
 const Wrapper = styled('nav')`
         background: ${props => props.visible ? props.theme.navigation.background : "transparent"};
@@ -23,12 +24,12 @@ const Wrapper = styled('nav')`
        
         svg{
             path{
-            fill: ${props =>  props.theme.navigation.font};
+                fill: ${props => props.menuOpen ? props.theme.navigation.font : props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font };
             }
         }
        
         p, a {
-          color: ${props => props.theme.navigation.font };
+           color: ${props => props.menuOpen ? props.theme.navigation.font : props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font };
         }
         
         .header-background-text{
@@ -36,7 +37,7 @@ const Wrapper = styled('nav')`
         }
         
         .bar1, .bar2, .bar3, .chev > .line {
-          background-color:  ${props => props.theme.navigation.font}
+           background-color: ${props => props.menuOpen ? props.theme.navigation.font : props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font };
         }
     
 `;
@@ -46,7 +47,8 @@ function HeaderMobile({className}) {
     const i18n = useI18n();
     const [menuOpen, setMenuOpen] = useState(false);
     const [visible, setVisible] = useState(false);
-
+    const progressMobile = useRef("");
+    const header = useHeader();
     const themeState = useTheme();
     const toggle = () => themeState.toggle();
 
@@ -63,7 +65,7 @@ function HeaderMobile({className}) {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         const scrolled = (winScroll / height) * 100;
-        document.getElementById("myBar").style.width = scrolled + "%";
+        progressMobile.current.style.width = scrolled + "%";
     };
 
     useEffect(() => {
@@ -73,43 +75,36 @@ function HeaderMobile({className}) {
     const closeMenu = () => setMenuOpen(false);
 
     return (
-        <Wrapper visible={visible} menuOpen={menuOpen} className={`header-mobile ${menuOpen ? "menu-open" : ""} ${className}`}>
+        <Wrapper visible={visible} menuOpen={menuOpen} headerWhite={header.headerWhite}
+                 className={`header-mobile ${menuOpen ? "menu-open" : ""} ${className}`}>
+
             <div className="header-wrapper-mobile">
-
                 <Link href="/"><a className="header-logo"><Logo/></a></Link>
-
                 <div className={`header-menu-accordion-mobile ${menuOpen ? "menu-open" : ""}`}>
-
                     <div className="header-menu-panel-mobile">
-                        <Link scroll={false} href="/"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.home')}</a></Link>
-                        <Link scroll={false} href="/portfolio"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.portfolio')}</a></Link>
-                        <Link scroll={false} href="/services"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.services')}</a></Link>
-                        <Link scroll={false} href="/blog"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.blog')}</a></Link>
-                        <Link scroll={false} href="/contact"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.contact')}</a></Link>
+                        <Link href="/"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.home')}</a></Link>
+                        <Link href="/portfolio"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.portfolio')}</a></Link>
+                        <Link href="/services"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.services')}</a></Link>
+                        <Link href="/blog"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.blog')}</a></Link>
+                        <Link href="/contact"><a onClick={closeMenu} className="header-mobile-text">{i18n.t('header.contact')}</a></Link>
                         <LanguageMobile/>
                     </div>
-
-
                 </div>
 
                 <div className="header-actions-mobile">
                     <span className="icon" onClick={toggle}>
-                        {!themeState.dark ? <Sun/> : <Moon/>}
+                        {themeState.dark ?   <Sun/> : <Moon/>}
                     </span>
-
-                    <div onClick={() => {
-                        setMenuOpen(!menuOpen)
-                    }}
+                    <div onClick={() => {setMenuOpen(!menuOpen)}}
                          className={`${menuOpen ? 'hamburger open' : 'hamburger'}`}>
-                        <div className="bar1"></div>
-                        <div className="bar2"></div>
-                        <div className="bar3"></div>
+                        <div className="bar1"/>
+                        <div className="bar2"/>
+                        <div className="bar3"/>
                     </div>
-
                 </div>
 
-                <div className="progress-container">
-                    <div className="progress-bar" id="myBar"></div>
+                <div className="progress-container-mobile">
+                    <div ref={progressMobile} className="progress-bar-mobile"/>
                 </div>
 
             </div>

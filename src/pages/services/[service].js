@@ -12,12 +12,14 @@ import ArticleSection from "@/article/ArticleSection";
 import ArticleImage from "@/article/ArticleImage";
 import NextArticleWrapper from "@/article/NextArticleWrapper";
 import NextArticleCard from "@/article/NextArticleCard";
+import {useHeader} from "../../context/navigation/HeaderContext";
 
 function Page({data, query}) {
     const i18n = useI18n();
+    const header = useHeader();
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        header.setHeaderWhite(true)
     }, []);
 
     return (

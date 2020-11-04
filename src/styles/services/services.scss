@@ -7,7 +7,26 @@
 
 //Needed for react reveal because it messes up the component with encapsulation and its stylrd
 .service-card-wrapper {
-  width: 100%
+  width: 100%;
+
+  &:nth-of-type(even){
+
+    .service-card{
+      flex-direction: row-reverse;
+    }
+
+    .service-card-text{
+      border-radius: 0 5px 5px 0;
+    }
+
+    .service-card-image-wrapper {
+      border-radius: 5px 0 0 5px;
+
+      img {
+        border-radius: 5px 0 0 5px;
+      }
+    }
+  }
 
 }
 
@@ -15,30 +34,8 @@
 .service-card {
   @include size(100%, auto);
   @include flex(flex-start, center, row);
+  border-radius: 5px;
 
-  &:nth-child(even) > div {
-    flex-direction: row-reverse;
-
-    .service-card-image-wrapper {
-      border-radius: 5px 0 0 5px;
-
-      img {
-        border-radius: 5px 0 0 5px;
-      }
-    }
-  }
-
-  .reverse {
-    flex-direction: row-reverse;
-
-    .service-card-image-wrapper {
-      border-radius: 5px 0 0 5px;
-
-      img {
-        border-radius: 5px 0 0 5px;
-      }
-    }
-  }
 }
 
 .service-card-text {
@@ -115,37 +112,27 @@
 
   .service-card-wrapper {
     max-width: 600px;
+
+    &:nth-child(even) {
+
+      .service-card{
+        flex-direction: column-reverse;
+      }
+
+      .service-card-image-wrapper {
+        border-radius: 5px 5px 0 0;
+
+        img {
+          border-radius: 5px 5px 0 0;
+        }
+      }
+    }
+
   }
 
   .service-card {
     @include flex(center, flex-start, column-reverse);
-    max-width: 600px;
-
-    &:nth-child(even) > div {
-      flex-direction: column-reverse;
-
-      .service-card-image-wrapper {
-        border-radius: 5px 0 0 5px;
-
-        img {
-          border-radius: 5px 0 0 5px;
-        }
-      }
-    }
-
-    .reverse {
-      flex-direction: column-reverse;
-
-      .service-card-image-wrapper {
-        border-radius: 5px 0 0 5px;
-
-        img {
-          border-radius: 5px 0 0 5px;
-        }
-      }
-    }
-
-
+    max-width: 100%;
   }
 
   .service-card-text-wrapper {

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import Link from './Link';
 import {useTheme} from '../../context/theme/ThemeContext'
 import styled from '@emotion/styled'
@@ -7,6 +7,7 @@ import useI18n from '../../hooks/use-i18n'
 import Sun from "@/icons/Sun";
 import Moon from "@/icons/Moon";
 import Language from "@/header/Language";
+import {useHeader} from "../../context/navigation/HeaderContext";
 
 const Wrapper = styled('nav')`
         background: ${props => props.visible ? props.theme.navigation.background : "transparent"};
@@ -15,12 +16,12 @@ const Wrapper = styled('nav')`
         
         svg{
             path{
-            fill: ${props => props.theme.navigation.font};
+              fill: ${props => props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font };
             }
         }
-       
-        p, a {
-          color: ${props => props.theme.navigation.font};
+    
+         p, a {
+          color: ${props => props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font };
         }  
 `;
 
@@ -30,6 +31,8 @@ function Header({className}) {
     const [visible, setVisible] = useState(false);
     const themeState = useTheme();
     const toggle = () => themeState.toggle();
+    const header = useHeader();
+    const progress = useRef("");
 
     const headerPosition = () => {
         let currentScrollPos = window.pageYOffset;
@@ -44,7 +47,8 @@ function Header({className}) {
         const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         const scrolled = (winScroll / height) * 100;
-        document.getElementById("myBar").style.width = scrolled + "%";
+        progress.current.style.width = scrolled + "%";
+
     };
 
     useEffect(() => {
@@ -54,14 +58,14 @@ function Header({className}) {
 
 
     return (
-        <Wrapper visible={visible} className="header">
+        <Wrapper headerWhite={header.headerWhite} visible={visible} className="header">
 
             <div className="header-wrapper">
 
                 <Link href="/"><a className="header-logo"><Logo/></a></Link>
 
                 <div className="header-menu">
-                    <Link href="/"><a className="fade-in-header">{i18n.t('header.home')}</a></Link>
+                    <Link href="/"><a className="text">{i18n.t('header.home')}</a></Link>
                     <Link href="/portfolio"><a className="text">{i18n.t('header.portfolio')}</a></Link>
                     <Link href="/services"><a className="text">{i18n.t('header.services')}</a></Link>
                     <Link href="/blog"><a className="text">{i18n.t('header.blog')}</a></Link>
@@ -71,12 +75,12 @@ function Header({className}) {
                 <div className="header-actions">
                     <Language/>
                     <span className="icon" onClick={toggle}>
-                        {!themeState.dark ? <Sun/> : <Moon/>}
+                        {themeState.dark ? <Sun/> : <Moon/>}
                     </span>
                 </div>
 
                 <div className="progress-container">
-                    <div className="progress-bar" id="myBar"></div>
+                    <div ref={progress} className="progress-bar"></div>
                 </div>
 
             </div>

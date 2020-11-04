@@ -1,15 +1,18 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Application from '@/layout/Application'
-import Layout from '@/layout/Layout'
 import BlogPage from "@/blog/Blog";
-import SmallLanding from "@/landing/SmallLanding";
 import Contact from "@/contact/Preview";
+import {useHeader} from "../context/navigation/HeaderContext";
 
 function Blog () {
 
+	const header = useHeader();
+	useEffect(() => {
+		header.setHeaderWhite(false)
+	}, []);
+
 	return (
 		<Application>
-			{/*<SmallLanding title="Blog"/>*/}
 			<BlogPage/>
 			<Contact/>
 		</Application>

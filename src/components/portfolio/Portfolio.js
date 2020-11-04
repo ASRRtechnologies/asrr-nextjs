@@ -7,6 +7,7 @@ import Link from "next/link";
 import styled from "@emotion/styled";
 import useI18n from "../../hooks/use-i18n";
 import t from "../../hooks/translator";
+import {animationDelay} from "../../functions/helper-functions";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.layout};
@@ -23,7 +24,7 @@ function Portfolio({preview}) {
             <div className={`portfolio`}>
                 {portfolio.map(({image, id, type, href}, i) => {
                     return (
-                        <Fade delay={i * 300 } bottom>
+                        <Fade delay={animationDelay([0, 400, 800], 3, i )} bottom>
                             <div className="portfolio-card card-margin-bottom">
                                 <Link href={`/portfolio/case/${id}`}>
                                     <a className="portfolio-card-inner">
