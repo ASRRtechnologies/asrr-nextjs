@@ -8,6 +8,7 @@ import Fade from "react-reveal/Fade";
 import Link from "next/link";
 import useI18n from "../../hooks/use-i18n";
 import {animationDelay, animationdelay} from "../../functions/helper-functions";
+import t from "../../hooks/translator";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.portfolio};
@@ -46,10 +47,15 @@ function Portfolio({preview}) {
                                                 <img src={image} alt="image"/>
                                             </div>
                                         </Card>
+                                        <Card className="portfolio-card-image-wrapper">
+                                            <div className="portfolio-card-image">
+                                                <img src={image} alt="image"/>
+                                            </div>
+                                        </Card>
                                         <div className="portfolio-card-text">
-                                            <h1 className="label-small-margin">{i18n.t(`cases.${id}.discipline`)}</h1>
-                                            <h2 className="subheader">{i18n.t(`cases.${id}.client`)}</h2>
-                                            <p className="text">{i18n.t(`cases.${id}.title`)}</p>
+                                            <h1 className="label-small-margin">{t(`cases.${id}.content.smallTitle`)}</h1>
+                                            <h2 className="subheader">{t(`cases.${id}.content.title`)}</h2>
+                                            <p className="text">{t(`cases.${id}.content.subtitle`)}</p>
                                         </div>
                                     </a>
                                 </Link>
