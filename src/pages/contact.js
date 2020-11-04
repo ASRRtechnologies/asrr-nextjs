@@ -8,7 +8,7 @@ import {useHeader} from "../context/navigation/HeaderContext";
 function Contact() {
     const header = useHeader();
     useEffect(() => {
-        header.setHeaderWhite(true)
+        header.setHeaderWhite(false)
     }, []);
     return (
         <Application>

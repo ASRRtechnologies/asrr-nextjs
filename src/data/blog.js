@@ -9,6 +9,7 @@ export const blog = [
         name: "itaas",
         description: "",
         readMore: true,
+        image: "https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,w_624,h_351,c_scale/v1393498157/2469.jpg",
         landing: {
             backgroundImage: {
                 extension: 'jpg'
@@ -19,7 +20,7 @@ export const blog = [
                 title: true,
                 length: 4,
                 image: {
-                    src: "https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,w_624,h_351,c_scale/v1393498157/2469.jpg"
+                    src: "https://images.unsplash.com/photo-1519309621146-2a47d1f7103a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3906&q=80"
                 }
             },
             {
@@ -38,38 +39,63 @@ export const blog = [
     {
         type: "article",
         name: "microservices",
+        description: "",
         readMore: true,
-        tags: [
-            "development", "technology"
-        ],
-        content: [
+        image: "https://r2m.se/wp-content/uploads/2018/01/microservices-768x448.png",
+        landing: {
+            backgroundImage: {
+                extension: 'jpg'
+            }
+        },
+        sections: [
             {
-                type: "paragraph",
-                title: true
+                title: true,
+                length: 2,
+                image: {
+                    extension: 'png'
+                }
             },
             {
-                type: "paragraph",
-                title: false
-            },
-            {
-                type: "image",
-                format: "png"
-            },
-            {
-                type: "paragraph",
-                title: true
-            },
-            {
-                type: "paragraph",
-                title: false
-            },
-            {
-                type: "paragraph",
-                title: false
+                title: true,
+                length: 3,
             }
         ],
-        image: "https://r2m.se/wp-content/uploads/2018/01/microservices-768x448.png"
     },
+    // {
+    //     type: "article",
+    //     name: "microservices",
+    //     readMore: true,
+    //     tags: [
+    //         "development", "technology"
+    //     ],
+    //     content: [
+    //         {
+    //             type: "paragraph",
+    //             title: true
+    //         },
+    //         {
+    //             type: "paragraph",
+    //             title: false
+    //         },
+    //         {
+    //             type: "image",
+    //             format: "png"
+    //         },
+    //         {
+    //             type: "paragraph",
+    //             title: true
+    //         },
+    //         {
+    //             type: "paragraph",
+    //             title: false
+    //         },
+    //         {
+    //             type: "paragraph",
+    //             title: false
+    //         }
+    //     ],
+    //     image: "https://r2m.se/wp-content/uploads/2018/01/microservices-768x448.png"
+    // },
     {
         type: "article",
         name: "kubernetes",

@@ -587,11 +587,11 @@
     "protonise": {
       "content": {
         "landing": {
-          "title": "A playful online presence"
+          "title": "A stunning new website"
         },
         "smallTitle": "Web Application | Front-End Development | Design",
-        "subtitle": "De Kleine Aapjes",
-        "title": "A web application that suits its customers",
+        "subtitle": "Protonise",
+        "title": "A web application to attract petro chemical giants",
         "sections": {
           "1": {
             "title": "The Process",
@@ -749,37 +749,43 @@
         }
       },
       "microservices": {
-        "meta": {
+        "card": {
           "title": "Can microservices save you time and effort?",
           "description": "Using microservice architecture in software can provide various advantages over traditional monolithic applications. Find out how in this article."
         },
-        "card": {
-          "title": "Can microservices save you time and effort?",
-          "description": "Using microservice architecture in software can provide various advantages over traditional monolithic applications."
-        },
         "content": {
-          "paragraph": {
+          "landing": {
+            "title": "Expertise on demand"
+          },
+          "smallTitle": "Modular Building Block Foundation | Full stack development",
+          "title": "Can microservices save you time and effort?",
+          "subtitle": "Using microservice architecture in software can provide various advantages over traditional monolithic applications.",
+          "sections": {
             "1": {
               "title": "How using microservices can make your applications a lot more flexible",
-              "text": "Think of classical software as a very large cruise ship. It’s a very complex and big machine, capable of a lot of different things. However, it’s a large endeavor to build from scratch, and if one part breaks, the whole ship might sink. Furthermore, it’s a hassle to upgrade one specific part, even though the rest may be working fine."
+              "paragraphs": {
+                "1": {
+                  "text": "Think of classical software as a very large cruise ship. It’s a very complex and big machine, capable of a lot of different things. However, it’s a large endeavor to build from scratch, and if one part breaks, the whole ship might sink. Furthermore, it’s a hassle to upgrade one specific part, even though the rest may be working fine."
+                },
+                "2": {
+                  "text": "Microservices are like a fleet of smaller, more specialized boats. One focusses on payments, the next on user management, another one for security, etc. It’s easy to swap a single boat if it breaks. It’s easy to isolate a single part if it needs to be upgraded, and can be over-engineered as it is used extensively through different projects."
+                }
+              },
+              "image": "Monolithic structure vs. microservice structure"
             },
             "2": {
-              "text": "Microservices are like a fleet of smaller, more specialized boats. One focusses on payments, the next on user management, another one for security, etc. It’s easy to swap a single boat if it breaks. It’s easy to isolate a single part if it needs to be upgraded, and can be over-engineered as it is used extensively through different projects."
-            },
-            "3": {
               "title": "How does ASRR use this to its advantage?",
-              "text": "During the development process of any given project, we use and build up our extensive library of highly-scalable robust microservices. "
-            },
-            "4": {
-              "text": "For the customer, this means a couple of advantages. For one, a complex project can be based of a selection of our microservices, allowing us to focus on the parts that are difficult or unique to that specific project. Secondly, we can deliver the project quicker, and are able to rely on the tested and proven reliability of the microservices that were written before. The microservices that were written before were created with scalability and robustness in mind. Most of them are over-engineered for the current task at hand, so that they can scale freely in the future."
-            },
-            "5": {
-              "text": "In short, this results in lower costs while improving reliability."
-            }
-          },
-          "image": {
-            "1": {
-              "subtitle": "Monolithic structure vs. microservice structure"
+              "paragraphs": {
+                "1": {
+                  "text": "Think of classical software as a very large cruise ship. It’s a very complex and big machine, capable of a lot of different things. However, it’s a large endeavor to build from scratch, and if one part breaks, the whole ship might sink. Furthermore, it’s a hassle to upgrade one specific part, even though the rest may be working fine."
+                },
+                "2": {
+                  "text": "Microservices are like a fleet of smaller, more specialized boats. One focusses on payments, the next on user management, another one for security, etc. It’s easy to swap a single boat if it breaks. It’s easy to isolate a single part if it needs to be upgraded, and can be over-engineered as it is used extensively through different projects."
+                },
+                "3": {
+                  "text": "In short, this results in lower costs while improving reliability."
+                }
+              }
             }
           }
         }
@@ -790,14 +796,68 @@
           "description": "Kubernetes can be a useful addition to your IT infrastructure, allowing cheap, reliable and powerful solutions."
         },
         "content": {
+          "landing": {
+            "title": "Kubernetes or Cloud? Kubernetes at ASRR."
+          },
+          "smallTitle": "Modular Building Block Foundation | Full stack development",
           "title": "Kubernetes or Cloud? Kubernetes at ASRR.",
-          "paragraph": {
+          "subtitle": "Using microservice architecture in software can provide various advantages over traditional monolithic applications.",
+          "sections": {
             "1": {
-              "title": "What is kubernetes?",
-              "text": "Kubernetes is an open-source container-orchestration system for automating computer application deployment, scaling, and management. It was originally designed by Google and is now maintained by the Cloud Native Computing Foundation. In short, this means that it can be used to quickly scale any application you may have."
+              "title": "How using microservices can make your applications a lot more flexible",
+              "paragraphs": {
+                "1": {
+                  "text": ""
+                },
+                "2": {
+                  "text": ""
+                }
+              },
+              "image": ""
             },
             "2": {
-              "text": "lorem ipsum"
+              "title": "Title",
+              "paragraphs": {
+                "1": {
+                  "text": ""
+                }
+              }
+            }
+          }
+        }
+      },
+      "template": {
+        "card": {
+          "title": "",
+          "description": ""
+        },
+        "content": {
+          "landing": {
+            "title": ""
+          },
+          "smallTitle": "",
+          "title": "",
+          "subtitle": "",
+          "sections": {
+            "1": {
+              "title": "",
+              "paragraphs": {
+                "1": {
+                  "text": ""
+                },
+                "2": {
+                  "text": ""
+                }
+              },
+              "image": ""
+            },
+            "2": {
+              "title": "",
+              "paragraphs": {
+                "1": {
+                  "text": ""
+                }
+              }
             }
           }
         }
