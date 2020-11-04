@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 import {useRouter} from 'next/router'
 import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
@@ -16,11 +16,20 @@ function BigLanding({title, text}) {
     const i18n = useI18n();
     const router = useRouter();
     const darkmode = useTheme().dark;
-    const navigate = (url) => router.push(url).then(null);
-    const headerHeight = 80;
+    const landing = useRef("");
+
+    // const setHeight = () => {
+    //         landing.current.style.minHeight = `${window.innerHeight}${-80}px`;
+    // };
+    //
+    // useEffect(() => {
+    //     setHeight();
+    // },[]);
+
+
 
     return (
-        <Wrapper className="landing">
+        <Wrapper ref={landing} className="landing">
 
             <div className="landing-title-container">
                 <div className="landing-title">

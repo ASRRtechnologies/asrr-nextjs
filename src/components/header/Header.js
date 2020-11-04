@@ -7,6 +7,7 @@ import useI18n from '../../hooks/use-i18n'
 import Sun from "@/icons/Sun";
 import Moon from "@/icons/Moon";
 import Language from "@/header/Language";
+import {useHeader} from "../../context/navigation/HeaderContext";
 
 const Wrapper = styled('nav')`
         background: ${props => props.visible ? props.theme.navigation.background : "transparent"};
@@ -15,12 +16,12 @@ const Wrapper = styled('nav')`
         
         svg{
             path{
-            fill: ${props => props.theme.navigation.font};
+              fill: ${props => props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font };
             }
         }
-       
-        p, a {
-          color: ${props => props.theme.navigation.font};
+    
+         p, a {
+          color: ${props => props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font };
         }  
 `;
 
@@ -30,7 +31,8 @@ function Header({className}) {
     const [visible, setVisible] = useState(false);
     const themeState = useTheme();
     const toggle = () => themeState.toggle();
-    const progress = useRef(null);
+    const header = useHeader();
+    const progress = useRef("");
 
     const headerPosition = () => {
         let currentScrollPos = window.pageYOffset;
@@ -56,7 +58,7 @@ function Header({className}) {
 
 
     return (
-        <Wrapper visible={visible} className="header">
+        <Wrapper headerWhite={header.headerWhite} visible={visible} className="header">
 
             <div className="header-wrapper">
 

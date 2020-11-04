@@ -9,7 +9,7 @@
 .landing-title-container{
   @include flex(center, center, column);
   @include size(100%, 100%);
-  padding-top: 200px;
+  padding: 150px 0 50px 0;
   flex:1;
 }
 
@@ -19,7 +19,6 @@
   max-width: $max-width;
   min-height: auto;
   box-sizing: content-box;
-  margin-bottom: 200px;
 
   h1 {
     max-width: 800px;

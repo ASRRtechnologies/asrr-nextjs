@@ -4,9 +4,10 @@ import Title from '../titles/Title'
 import {portfolio} from '../../data/portfolio'
 import ReadMore from "@/text/ReadMore";
 import styled from "@emotion/styled";
-import Fade from "react-reveal";
+import Fade from "react-reveal/Fade";
 import Link from "next/link";
 import useI18n from "../../hooks/use-i18n";
+import {animationDelay, animationdelay} from "../../functions/helper-functions";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.portfolio};
@@ -32,8 +33,10 @@ function Portfolio({preview}) {
 
             <div className="portfolio">
                 {cases.map(({image, id, type, href}, i) => {
+                    {animationDelay([0, 400, 800], 3, i )}
+
                     return (
-                        <Fade delay={i * 300} bottom>
+                        <Fade delay={animationDelay([0, 400, 800], 3, i )} bottom>
                             <div className="portfolio-card card-margin-bottom">
                                 <Link href={`/portfolio/case/${id}`}>
                                     <a className="portfolio-card-inner">

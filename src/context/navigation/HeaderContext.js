@@ -2,17 +2,18 @@ import React, {useState, createContext, useContext, useEffect} from "react";
 
 const defaultContextData = {
 	headerWhite: false,
+	setHeaderWhite: () => {}
 };
 
 const HeaderContext = createContext(defaultContextData);
-const useTheme = () => useContext(HeaderContext);
+const useHeader = () => useContext(HeaderContext);
 
 
 function HeaderProvider({children}){
 
 	const [state, setState] = useState({headerWhite:false});
 
-	const toggleHeader = (toggle) => {
+	const setHeaderWhite = (toggle) => {
 		if(toggle === undefined || toggle === null) {
 			return false
 		}
@@ -23,12 +24,12 @@ function HeaderProvider({children}){
 
 	return(
 		<HeaderContext.Provider value={{
-			headerWhite: setState,
-			toggleHeader: toggleHeader
+			headerWhite: state,
+			setHeaderWhite
 		}}>
 			{children}
 		</HeaderContext.Provider>
 	)
 }
 
-export {HeaderProvider};
+export {HeaderProvider, useHeader, HeaderContext};

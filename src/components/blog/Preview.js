@@ -4,8 +4,9 @@ import Section from '@/layout/Section'
 import Title from "@/titles/Title";
 import ReadMore from "@/text/ReadMore";
 import {blog} from "../../data/blog";
-import Fade from "react-reveal";
+import Fade from "react-reveal/Fade";
 import styled from "@emotion/styled";
+import {animationDelay} from "../../functions/helper-functions";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.blog};
@@ -26,8 +27,9 @@ function Preview({preview}) {
                 <div className="blog">
                     {
                         cases.map((entry, i) => {
-                            return <Fade bottom delay={i * 300}><Card blog={entry}/></Fade>
-                        })
+                            return <Fade delay={animationDelay([0, 200, 400], 3, i)} bottom>
+                                <Card blog={entry}/>
+                            </Fade>                        })
                     }
                 </div>
 
