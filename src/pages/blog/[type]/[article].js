@@ -24,22 +24,35 @@ function Page({data, query}) {
     }, []);
 
     let basePath = `blog.${data.type}.${data.name}.content`;
-    {console.log(data)}
+    {
+        console.log(data)
+    }
     let sectionNumber = 0;
 
     return (
         <Application>
-            <SmallLanding title={t(`${basePath}.landing.title`)} background={`/assets/images/blog/${data.type}/${data.name}/${data.name}-landing.${data.landing.backgroundImage.extension}`}/>
+            <SmallLanding title={t(`${basePath}.landing.title`)}
+                          background={`/assets/images/blog/${data.type}/${data.name}/${data.name}-landing.${data.landing.backgroundImage.extension}`}/>
 
             <ArticleBody className="keywords">
 
                 <KeyWords keyWords={["blog", data.type, data.name, data.title]} compact/>
 
                 <ArticleContent>
-                    <ArticleTitle smallTitle={t(`${basePath}.smallTitle`)} title={t(`${basePath}.title`)}  subtitle={t(`${basePath}.subtitle`)} />
+                    <ArticleTitle smallTitle={t(`${basePath}.smallTitle`)} title={t(`${basePath}.title`)}
+                                  subtitle={t(`${basePath}.subtitle`)}/>
 
                     {data.sections.map(section => {
                         sectionNumber++;
+
+                        if (section.type === "iframe") {
+                            {
+                                console.log(<div dangerouslySetInnerHTML={section.code}/>)
+                            }
+                            return <ArticleSection>
+                                <div dangerouslySetInnerHTML={{__html: section.code}}/>
+                            </ArticleSection>
+                        }
 
                         let paragraphNumber = 0;
                         return <ArticleSection line={section.line}>
@@ -56,6 +69,9 @@ function Page({data, query}) {
                                           subtitle={`${basePath}.sections.${sectionNumber}.image`}
                                           image={section.image.src ? section.image.src : `/assets/images/blog/${data.type}/${data.name}/${data.name}-${sectionNumber}.${section.image.extension}`}
                             />}
+                            {/*{section.iframe && <div dangerouslySetInnerHTML={{__html: section.code}}/>*/}
+
+                            {/*}*/}
                         </ArticleSection>
 
                     })}
