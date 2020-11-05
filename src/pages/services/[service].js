@@ -42,7 +42,7 @@ function Page({data, query}) {
                         sectionNumber++;
 
                         if (section.type === "quote") {
-                            return <><blockquote className="quote">{t(`${basePath}.sections.${sectionNumber}.quote.text`)}</blockquote><p>- Amar Ramdas, Managing Director, ASRR B.V.{section.source}</p><br/><br/></>
+                            return <><blockquote className="quote">{t(`${basePath}.sections.${sectionNumber}.quote.text`)}</blockquote><p>-{section.source}</p><br/><br/></>
                         }
 
                         let paragraphNumber = 0;

@@ -22,7 +22,7 @@ export const services = [
             },
             {
                 type: "quote",
-                source: "Amar Ramdas, Managing Director ASRR B.V."
+                source: "Amar Ramdas, Managing Director ASRR"
             },
             {
                 title: true,
