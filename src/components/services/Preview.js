@@ -15,30 +15,19 @@ const Wrapper = styled(Section)`
 
 const services = [
     {
-        image: analytics,
-        id: "bridge",
-        title: 'Big Data/BI/Analytics',
-        text: 'orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been\n' +
-            '\t\t\t\t\t\tthe industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley\n' +
-            '\t\t\t\t\t\tof type',
-        alt: 'analytics',
+        image: scale,
+        id: 'itaas',
+        alt: 'scaleable software',
     },
     {
         image: automation,
-        id: "microservices",
-        title: 'High-end, Scaleable Software ',
-        text: 'orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been\n' +
-            '\t\t\t\t\t\tthe industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley\n' +
-            '\t\t\t\t\t\tof type',
+        id: "hardware",
         alt: 'automation',
     },
     {
-        image: scale,
-        id: 'itaas',
-        text: 'orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been\n' +
-            '\t\t\t\t\t\tthe industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley\n' +
-            '\t\t\t\t\t\tof type',
-        alt: 'scaleable software',
+        image: analytics,
+        id: "bi",
+        alt: 'analytics',
     },
 
 ];

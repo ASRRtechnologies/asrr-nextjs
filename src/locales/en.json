@@ -142,17 +142,21 @@
         "text": "We are the bridge between IT and Business, providing flexible and robust teams that scale with what you need."
       },
       "services": {
-        "bridge": {
-          "title": "Connecting IT and Business",
-          "text": "We aim to remove the barrier between IT and business that plagues modern day development environments. We turn your vision into a robust and scaleable application. During the development process, we keep you well informed so you can still decide on key points in the process. "
+        "bi": {
+          "title": "Business Insights",
+          "text": "We aim to remove the barrier between IT and business that plagues modern day development environments. Using Business Insights Dashboards (PowerBI), we can give you the real-time information that matters."
         },
-        "microservices": {
-          "title": "'Over Engineered' Building block foundation",
-          "text": "Using our wide range of microservice building blocks as a foundation, we can focus on what makes your product special. The code we create gets more powerful every iteration, making sure all our customers get the latest and greatest in tech."
+        "hardware": {
+          "title": "Custom Hardware",
+          "text": "Using the latest and greatest in tech, we can build cost-effective, powerful servers and workstations. These servers outperform their classical counterparts by a 2 to 1 ratio in terms of price and performance."
         },
         "itaas": {
-          "title": "Expertise on demand (ITaaS)",
-          "text": "Our flexible development teams can scale up or down based on your needs. This removes unnecessary overhead and saves both recruitment and training costs, while ensuring you get the expertise at the correct place and time."
+          "title": "IT Teams as a Service",
+          "text": "Our flexible development teams can scale up or down based on your needs. This removes unnecessary overhead and saves both recruitment and training costs, while ensuring you get the expertise at the correct place and time. "
+        },
+        "mciro": {
+          "title": "'Over Engineered' Building Block Foundation",
+          "text": "Using our wide range of microservice building blocks as a foundation, we can focus on what makes your product special. The code we create gets more powerful every iteration, making sure all our customers get the latest and greatest in tech."
         }
       }
     },

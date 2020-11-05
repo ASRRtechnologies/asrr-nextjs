@@ -8,6 +8,8 @@ import itaas from '#/services/itaas/itaas.jpg'
 import Fade from 'react-reveal/Fade';
 import styled from "@emotion/styled";
 import Card from "@/services/Card";
+import PreviewServices from "@/services/Preview";
+import Application from "@/layout/Application";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.layout};
@@ -16,12 +18,14 @@ const Wrapper = styled(Section)`
 function Services() {
     return (
         <Wrapper className="no-landing">
-            <Title basePath={'services.preview.header'}/>
+            <PreviewServices/>
+
+            {/*<Title basePath={'services.preview.header'}/>*/}
             <div className="services">
 
                 <Fade delay={0} bottom>
                     <div className="service-card-wrapper card-margin-bottom">
-                        <Card route="/" basePath={`services.cards.bridge`} paragraphs={2} image={automation}/>
+                        <Card route="/itaas" basePath={`services.cards.bridge`} paragraphs={2} image={automation}/>
                     </div>
                 </Fade>
 
