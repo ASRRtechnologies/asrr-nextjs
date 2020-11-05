@@ -43,7 +43,6 @@ function Page({data, query}) {
                                   subtitle={t(`${basePath}.subtitle`)}/>
 
                     {data.sections.map(section => {
-                        sectionNumber++;
 
                         if (section.type === "iframe") {
                             {
@@ -53,6 +52,8 @@ function Page({data, query}) {
                                 <div dangerouslySetInnerHTML={{__html: section.code}}/>
                             </ArticleSection>
                         }
+
+                        sectionNumber++;
 
                         let paragraphNumber = 0;
                         return <ArticleSection line={section.line}>
@@ -69,9 +70,9 @@ function Page({data, query}) {
                                           subtitle={`${basePath}.sections.${sectionNumber}.image`}
                                           image={section.image.src ? section.image.src : `/assets/images/blog/${data.type}/${data.name}/${data.name}-${sectionNumber}.${section.image.extension}`}
                             />}
-                            {/*{section.iframe && <div dangerouslySetInnerHTML={{__html: section.code}}/>*/}
+                            {section.iframe && <div dangerouslySetInnerHTML={{__html: section.iframe.code}}/>
 
-                            {/*}*/}
+                            }
                         </ArticleSection>
 
                     })}

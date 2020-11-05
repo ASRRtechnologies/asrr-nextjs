@@ -663,6 +663,39 @@
           "description": "Together with our partner FORM, we developed a online 3D House Configurator, based on a NextJS platform. This includes a dasbhoard to see customer configurations and a Spring Boot Back end to manage the data."
         },
         "content": {
+          "landing": {
+            "title": "A VR Ready, 3D environment to configure your future house - right in your browser"
+          },
+          "smallTitle": "",
+          "title": "Heijmans/FORM 3D House Configurator",
+          "subtitle": "A VR Ready, 3D environment to configure your future house - right in your browser",
+          "sections": {
+            "1": {
+              "title": "What did we do?",
+              "paragraphs": {
+                "1": {
+                  "text": "Together with FORM, we delivered an online 3D real-time BIM configurator. This allows users to see the options they pick in real time, even with VR. This all is rendered in a web browser, accessible from everywhere."
+                }
+              },
+              "image": "A screenshot of the online environment."
+            },
+            "2": {
+              "paragraphs": {
+                "1": {
+                  "text": "This all is running in one of our NextJS (ReactJS) web applications. The database that stores the customer configurations is controlled by a Spring Boot application (Java), and is based on MongoDB. We also created logic to calculate the prices in real time, and are generating a PDF with the chosen options in Heijmans format on the fly. The customers then receive the PDF in their email, with a link to see their configuration in 3D/VR."
+                }
+              },
+              "image": "The confirmation email"
+            }
+          }
+        }
+      },
+      "heijmans-confi2gurator": {
+        "card": {
+          "title": "ASRR & FORM launch Heijmans Online 3D Configurator.",
+          "description": "Together with our partner FORM, we developed a online 3D House Configurator, based on a NextJS platform. This includes a dasbhoard to see customer configurations and a Spring Boot Back end to manage the data."
+        },
+        "content": {
           "paragraph": {
             "1": {
               "title": "Finally, a real world implementation of our 3D housing configurator!",

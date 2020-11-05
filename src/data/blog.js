@@ -68,7 +68,7 @@ export const blog = [
         readMore: true,
         landing: {
             backgroundImage: {
-                extension: 'jpg'
+                extension: 'png'
             }
         },
         sections: [
@@ -78,14 +78,21 @@ export const blog = [
             },
             {
                 title: true,
-                length: 2,
+                length: 1,
                 image: {
-                    extension: 'png'
+                    extension: 'png',
                 }
+                // iframe: {
+                //     code: "<iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6719531516357091328\" height=\"692\" width=\"504\" frameborder=\"0\" allowfullscreen=\"\" title=\"Ingevoegde bijdrage\"></iframe>"
+                // }
             },
             {
-                title: true,
-                length: 3,
+                title: false,
+                length: 1,
+                image: {
+                    extension: 'png',
+                    square: true
+                }
             }
         ],
     },

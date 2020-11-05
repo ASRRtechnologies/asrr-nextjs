@@ -41,12 +41,6 @@ function Portfolio({preview}) {
                             <div className="portfolio-card card-margin-bottom">
                                 <Link href={`/portfolio/case/${id}`}>
                                     <a className="portfolio-card-inner">
-
-                                        <Card className="portfolio-card-image-wrapper">
-                                            <div className="portfolio-card-image">
-                                                <img src={image} alt="image"/>
-                                            </div>
-                                        </Card>
                                         <Card className="portfolio-card-image-wrapper">
                                             <div className="portfolio-card-image">
                                                 <img src={image} alt="image"/>
