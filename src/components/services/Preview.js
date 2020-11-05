@@ -8,6 +8,7 @@ import Fade from 'react-reveal/Fade';
 import useI18n from "../../hooks/use-i18n";
 import ReadMore from "@/text/ReadMore";
 import styled from "@emotion/styled";
+import t from "../../hooks/translator";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.services};
@@ -47,17 +48,17 @@ function Preview(props) {
 							<span className="service-preview-card-image">
 								<img src={service.image} alt={service.alt}/>
 							</span>
-                                <h1 className="theme-font subheader">{i18n.t(`${basePath}.services.${id}.title`)}</h1>
-                                <p className="text">{i18n.t(`${basePath}.services.${id}.text`)}</p>
+                                <h1 className="theme-font subheader">{t(`${basePath}.services.${id}.title`)}</h1>
+                                <p className="text">{t(`${basePath}.services.${id}.text`)}</p>
                             </div>
                         </Fade>
                     )
                 })}
             </div>
 
-            <div className="read-more-wrapper">
+            {!props.compact && <div className="read-more-wrapper">
                 <ReadMore className="subheader" to="/services" text="buttons.services"/>
-            </div>
+            </div>}
 
         </Wrapper>
     );

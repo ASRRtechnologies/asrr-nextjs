@@ -192,6 +192,38 @@
           "2": "This can all be visualized in a dashboard, creating real-time insights in your data."
         }
       }
+    },
+    "itaas": {
+      "content": {
+        "landing": {
+          "title": "Het nieuwe detacheren"
+        },
+        "smallTitle": "Service",
+        "title": "IT Teams as a Service",
+        "subtitle": "Het detacheren ",
+        "sections": {
+          "1": {
+            "title": "",
+            "paragraphs": {
+              "1": {
+                "text": ""
+              },
+              "2": {
+                "text": ""
+              }
+            },
+            "image": ""
+          },
+          "2": {
+            "title": "",
+            "paragraphs": {
+              "1": {
+                "text": ""
+              }
+            }
+          }
+        }
+      }
     }
   },
   "contact": {

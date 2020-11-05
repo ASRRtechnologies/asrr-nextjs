@@ -2,6 +2,7 @@ import React from 'react';
 import ReadMore from "../text/ReadMore";
 import useI18n from "../../hooks/use-i18n";
 import styled from "@emotion/styled";
+import t from "../../hooks/translator";
 
 const Wrapper = styled("div")`
         background: ${props => props.theme.card.background};
@@ -21,7 +22,7 @@ const Card = ({image, basePath, paragraphs, route}) => {
 
                         {[...Array(paragraphs)].map((x, i) => {
                                 let text = `${basePath}.paragraphs.${i}`;
-                                return <p className="text">{i18n.t(text) !== undefined ? i18n.t(text) : text}</p>
+                                return <p className="text">{t(text)}</p>
                             }
                         )}
                         <ReadMore noAnimation className="text" to={`/services${route}`} text="buttons.services"/>
