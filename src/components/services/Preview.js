@@ -5,10 +5,11 @@ import analytics from '#/services/data-analytics/data-analytics-square.jpg'
 import scale from '#/services/scaleable-software/scaleable-software-sqaure.jpg'
 import Title from "@/titles/Title";
 import Fade from 'react-reveal/Fade';
-import useI18n from "../../hooks/use-i18n";
 import ReadMore from "@/text/ReadMore";
 import styled from "@emotion/styled";
 import t from "../../hooks/translator";
+import ArticleParagraph from "@/article/ArticleParagraph";
+import ArticleSection from "@/article/ArticleSection";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.services};
@@ -19,11 +20,13 @@ const services = [
         image: scale,
         id: 'itaas',
         alt: 'scaleable software',
+        bullets: 3
     },
     {
         image: automation,
         id: "hardware",
         alt: 'automation',
+        bullets: 4
     },
     {
         image: analytics,
@@ -35,7 +38,6 @@ const services = [
 
 function Preview(props) {
     const basePath = "services.preview";
-    let i18n = useI18n();
     return (
         <Wrapper>
             <Title basePath={basePath + ".header"}/>
@@ -49,7 +51,15 @@ function Preview(props) {
 								<img src={service.image} alt={service.alt}/>
 							</span>
                                 <h1 className="theme-font subheader">{t(`${basePath}.services.${id}.title`)}</h1>
-                                <p className="text">{t(`${basePath}.services.${id}.text`)}</p>
+
+                                {!props.compact && <>  <p className="text">{t(`${basePath}.services.${id}.text`)}</p>
+                                </>}
+                                {props.compact && service.bullets && <ul>
+                                    {[...Array(service.bullets)].map((x, i) => {
+                                        return <li>lala</li>
+
+                                    })}
+                                </ul>}
                             </div>
                         </Fade>
                     )
