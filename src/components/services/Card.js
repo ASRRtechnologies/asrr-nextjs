@@ -25,7 +25,7 @@ const Card = ({image, basePath, paragraphs, route}) => {
                                 return <p className="text">{t(text)}</p>
                             }
                         )}
-                        <ReadMore noAnimation className="text" to={`/services${route}`} text="buttons.services"/>
+                        <ReadMore noAnimation className="text" to={`/services${route}`} text="buttons.read"/>
 					</span>
                 </div>
             </div>

@@ -29,7 +29,7 @@ function Page({data, query}) {
 
     return (
         <Application>
-            <SmallLanding title={t(`${basePath}.landing.title`)} background={`/assets/images/clients/${data.name}/${data.name}-landing.${data.landing.backgroundImage.extension}`}/>
+            <SmallLanding title={t(`${basePath}.landing.title`)} background={`/assets/images/services/${data.name}/${data.name}-landing.${data.landing.backgroundImage.extension}`}/>
 
             <ArticleBody className="keywords">
 
@@ -40,6 +40,10 @@ function Page({data, query}) {
 
                     {data.sections.map(section => {
                         sectionNumber++;
+
+                        if (section.type === "quote") {
+                            return <><blockquote className="quote">{t(`${basePath}.sections.${sectionNumber}.quote.text`)}</blockquote><p>- Amar Ramdas, Managing Director, ASRR B.V.{section.source}</p><br/><br/></>
+                        }
 
                         let paragraphNumber = 0;
                         return <ArticleSection line={section.line}>
