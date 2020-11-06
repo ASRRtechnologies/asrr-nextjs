@@ -68,7 +68,7 @@
 .article-section{
   @include size (100%, auto);
   @include flex(flex-start, flex-start, column);
-  @include margin-bottom(80px);
+  @include margin-bottom(30px);
 
   hr{
     width: 100%;
