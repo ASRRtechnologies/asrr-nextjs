@@ -7,6 +7,7 @@ import t from "../hooks/translator";
 import Contact from "../components/contact/Preview";
 import {useHeader} from "../context/navigation/HeaderContext";
 import {about} from "../data/about"
+import {NextSeo} from "next-seo";
 
 function Page({data, query}) {
     const i18n = useI18n();
@@ -18,7 +19,8 @@ function Page({data, query}) {
 
     let basePath = `${data.name}.article`;
 
-    return (
+    return (<>
+
         <Application>
             <SmallLanding title={t(`${basePath}.headline`)} background={`/assets/images/${data.name}/${data.name}-landing.${data.landing.backgroundImage.extension}`}/>
 
@@ -30,6 +32,7 @@ function Page({data, query}) {
             <Contact/>
 
         </Application>
+        </>
     )
 }
 

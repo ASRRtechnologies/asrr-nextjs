@@ -10,6 +10,7 @@ import styled from "@emotion/styled";
 import t from "../../hooks/translator";
 import ArticleParagraph from "@/article/ArticleParagraph";
 import ArticleSection from "@/article/ArticleSection";
+import check from "public/assets/icons/check_circle-24px.svg"
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.services};
@@ -20,18 +21,19 @@ const services = [
         image: scale,
         id: 'itaas',
         alt: 'scaleable software',
-        bullets: 3
+        bullets: 5
     },
     {
         image: automation,
         id: "hardware",
         alt: 'automation',
-        bullets: 4
+        bullets: 6
     },
     {
         image: analytics,
         id: "bi",
         alt: 'analytics',
+        bullets: 5
     },
 
 ];
@@ -56,7 +58,7 @@ function Preview(props) {
                                 </>}
                                 {props.compact && service.bullets && <ul>
                                     {[...Array(service.bullets)].map((x, i) => {
-                                        return <li>lala</li>
+                                        return <li>{t(`${basePath}.services.${id}.bullets.${i}`)}</li>
 
                                     })}
                                 </ul>}

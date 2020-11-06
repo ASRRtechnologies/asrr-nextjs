@@ -31,13 +31,13 @@ function Services() {
 
                 <Fade delay={200} bottom>
                     <div className="service-card-wrapper card-margin-bottom">
-                        <Card route="/" basePath={`services.cards.hardware`} paragraphs={3} image={automation}/>
+                        <Card route="/" basePath={`services.cards.hardware`} paragraphs={2} image={automation}/>
                     </div>
                 </Fade>
 
                 <Fade delay={300} bottom>
                     <div className="service-card-wrapper card-margin-bottom">
-                        <Card route="/" basePath={`services.cards.bi`} paragraphs={3} image={analytics}/>
+                        <Card route="/" basePath={`services.cards.bi`} paragraphs={1} image={analytics}/>
                     </div>
                 </Fade>
 
