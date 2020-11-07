@@ -127,14 +127,6 @@
     }
   },
   "services": {
-    "landing": {
-      "title": "Services",
-      "text": "Onze services"
-    },
-    "header": {
-      "title": "Onze Services",
-      "text": "Lorem ipsum much longer text enter here"
-    },
     "preview": {
       "header": {
         "title": "Wat we doen",
@@ -151,8 +143,38 @@
           "text": "Using our wide range of microservice building blocks as a foundation, we can focus on what makes your product special. The code we create gets more powerful every iteration, making sure all our customers get the latest and greatest in tech."
         },
         "itaas": {
-          "title": "Expertise on demand (ITaaS)",
-          "text": "Our flexible development teams can scale up or down based on your needs. This removes unnecessary overhead and saves both recruitment and training costs, while ensuring you get the expertise at the correct place and time."
+          "title": "IT Teams as a Service",
+          "text": "Our flexible development teams can scale up or down based on your needs. This removes unnecessary overhead and saves both recruitment and training costs, while ensuring you get the expertise at the correct place and time.",
+          "bullets": {
+            "0": "U haalt een ingewerkt team in huis",
+            "1": "Bespaar op recruitment- én trainingskosten",
+            "2": "Expertise on demand",
+            "3": "Korte doorlooptijd",
+            "4": "Altijd de 'latest and greatest'"
+          }
+        },
+        "hardware": {
+          "title": "Hardware op maat",
+          "text": "Hardware op maat",
+          "bullets": {
+            "0": "De beste prijs performance ratio",
+            "1": "Tot wel 128GB ram en 64 cores",
+            "2": "De nieuwste tech, voor de beste resultaten",
+            "3": "Speciaal afgestemd op uw wensen",
+            "4": "Integreert soepel met onze software",
+            "5": "Remote availability, secuur 2FA login systeem"
+          }
+        },
+        "bi": {
+          "title": "Business Analytics & Insights",
+          "text": "Insights op maat",
+          "bullets": {
+            "0": "Van business data naar business insights",
+            "1": "We zetten ook uw legacy data aan het werk",
+            "2": "Overzichtelijke PowerBI dashboards",
+            "3": "Real-time inzicht in uw data",
+            "4": "Integreert makkelijk met onze datbases"
+          }
         }
       }
     },
@@ -165,27 +187,95 @@
         }
       },
       "itaas": {
-        "title": "Expertise on demand (ITaaS)",
+        "title": "IT Teams as a Service",
         "paragraphs": {
-          "0": "Most Software projects need more than one discipline. It's hard and expensive to find developers that can do full-stack development. A team of multiple developers usually needs time to work well together and can easily get very expensive if used exclusively for one project. ",
-          "1": "ASRR Delivers flexible, full-stack teams that scale up or down, based on what you need. This reduces recruitment and training costs drastically.",
-          "2": "This ensures you always get the latest and greatest in terms of tech, while making sure you don't pay too much for unnecessary overhead costs."
+          "0": "Dit is de brug tussen Business en IT. Wij werken van visie tot applicatie en verzorgen een volledig ontzorgd IT-development traject. Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte IT-afdeling tijdelijk aan jouw bedrijf toevoegt. Hierbij je je niet druk over of-je-wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’ applicatie op maat. Je wijkt niet af van je huidige processen en houdt toch helder zicht op de tijdlijn, productie en oplevering. \n"
         }
       },
-      "microservices": {
-        "title": "'Over Engineered' Building Block Foundation",
+      "hardware": {
+        "title": "Krachtige hardware op maat",
         "paragraphs": {
-          "0": "The applications we build consist of modular microservice building blocks. By iterating over these building blocks every time we do a new project, they get stronger and more robust over time.",
-          "1": "Using this foundation, we can put most of the focus on the unique and custom parts of your application.",
-          "2": "This results in quicker development times, even for completely new subjects, while maintaining quality, robustness and scalability. "
+          "0": "ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De componenten worden precies zo uitgekozen dat ze passen bij het proces waar de hardware voor gebruikt wordt. Hierdoor betaalt u niet te veel voor onnodige componenten, en ligt de focus op de onderdelen die cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen binnen de technologie, waardoor er meer performance voor minder kosten gerealiseerd wordt.",
+          "1": "ASRR levert secure servers, met remote desktop capaciteit en een 2 factor authenticatie login methode. Ook bouwen we krachtige workstations, gaming rigs en budget pc’s."
         }
       },
-      "insights": {
+      "bi": {
         "title": "Business Insights",
         "paragraphs": {
-          "0": "Many businesses don't make use of the valuable data they already gather, or even miss out on gathering data completely. ",
-          "1": "We can extract valuable key values from your data to give you deep business insights. This allows you to save money, become more efficient, or predict future actions.",
-          "2": "This can all be visualized in a dashboard, creating real-time insights in your data."
+          "0": "Data is een waardevolle asset voor elk bedrijf. Veel bedrijven doen echter niks met de potentiele goudmijn waar ze op zitten. Doormiddel van een data-analyse kan ASRR een Business Insights dashboard opzetten. In zo’n dashboard kunt u de belangrijkste aspecten van uw dataset in een oogopslag zien. ",
+          "1": ""
+        }
+      }
+    },
+    "itaas": {
+      "content": {
+        "landing": {
+          "title": "Het nieuwe detacheren"
+        },
+        "smallTitle": "Service",
+        "title": "IT Teams as a Service",
+        "subtitle": "ASRR introduceert: IT Teams as a service. \nDe ideale combinatie van software development en IT-detachering in één.\n",
+        "sections": {
+          "1": {
+            "paragraphs": {
+              "1": {
+                "text": "Information Technology is cruciaal in een bedrijf in de huidige maatschappij. Door de digitalisering van de markt is er een enorme vraag naar software development en IT-kennis. IT is echter een erg breed vlak, en er zijn steeds vaker een heel scala aan expertises nodig. Niet elk bedrijf kan of wil zich een eigen IT-tak veroorloven waardoor men al snel uitkomt op losse externe IT’ers of rigide preferred suppliers. Deze aanpak is niet efficiënt. De recruitment- en inwerkkosten zijn groot, bedrijven worden geketend aan starre langdurige contracten en dan blijkt toch nog een groot deel van de opdracht buiten de scope van de uitvoerder te vallen."
+              }
+            }
+          },
+          "2": {
+            "title": "Dynamisch in plaats van vast",
+            "paragraphs": {
+              "1": {
+                "text": "Daarom ziet ASRR een IT-team als een dynamisch in plaats van een vast component. Er kan op vrijblijvende basis een team worden ingehuurd voor korte, of lange termijn om de benodigde werkzaamheden uit te voeren. "
+              }
+            }
+          },
+          "3": {
+            "quote": {
+              "text": "“Bedrijven komen met verschillende vraagstukken bij ASRR, maar allen zijn op zoek naar technische- en IT-kennis in de vorm van software development. Dit is noodzakelijk om aan interne digitaliserings- en automatiseringsdoelen te voldoen. Deze doelstellingen zijn lang niet altijd vrijwillig, aangezien de huidige IT-infrastructuur is verouderd en om de plek in de markt te houden is innovatie nodig. Oude IT-systemen moeten op termijn worden uit gefaseerd, maar worden idealiter nog wel aangesloten op het nieuwe systeem. Daarnaast zijn ‘business insights’ noodzakelijk voor de doorontwikkeling van het bedrijf. Maar hoe transformeer je ruwe bedrijfsdata tot waardevolle inzichten? Al deze punten hangen direct samen met de winstgevendheid en competitiviteit van het bedrijf.”"
+            }
+          },
+          "4": {
+            "title": "IT Teams as a Service (ITTAAS)",
+            "paragraphs": {
+              "1": {
+                "text": "Wij werken van visie tot applicatie en verzorgen een volledig ontzorgd IT-development traject. Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte IT-afdeling tijdelijk aan jouw bedrijf toevoegt. Hierbij je je niet druk over of-je-wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’ applicatie op maat. Je wijkt niet af van je huidige processen en houdt toch helder zicht op de tijdlijn, productie en oplevering. "
+              }
+            }
+          },
+          "5": {
+            "title": "Expertise on demand",
+            "paragraphs": {
+              "1": {
+                "text": "Met IT Teams as a service stel je met behulp van ‘Expertise on Demand’ zelf een projectteam samen, precies op maat van de opdracht. ASRR heeft alle nodige expertises in-house en heeft alvast wat voorwerk gedaan in de vorm van Microservices. Dit zijn ge-over-engineerde bouwstenen die de basis vormen van de tool of applicatie. Deze zijn of the shelve beschikbaar en direct te implementeren. De bouwstenen in de zogenaamde fundering hebben alle test al doorstaan, zodat onze analytische IT-pioniers kunnen focussen op wat belangrijk is: echte innovatie."
+              }
+            }
+          },
+          "6": {
+            "title": "Het proces",
+            "paragraphs": {
+              "1": {
+                "text": "Een Product Specialist analyseert de behoeften van uw bedrijf en geeft aan wat de technische benodigdheden zijn voor het realiseren van de taak. Vervolgens bieden wij een team aan dat samengesteld is op basis van uw project. Dit team bevat altijd de juiste expertise, waardoor het probleem op de juiste en meest efficiënte manier wordt opgelost. De leden van team zijn al op elkaar ingewerkt en hebben vaker samengewerkt in stressvolle en complexe situaties.   "
+              }
+            }
+          },
+          "7": {
+            "title": "‘Over Engineered’ Microservice Building Block Foundation",
+            "paragraphs": {
+              "1": {
+                "text": "Onze developers maken gebruik van de grote hoeveelheid basiscomponenten die deel uitmaken van de bibliotheek van ASRR. Deze componenten zijn modulair opgezet in een microservice structuur. Dit betekent dat een deel van de opdracht kan worden opgezet door een mix en match te maken van onze componenten, zodat er gefocust kan worden op het maatwerk. De componenten zijn gebouwd met schaalbaarheid en de toekomst in gedachte, waardoor deze nog robuuster en beter getest zijn dan reguliere code."
+              }
+            }
+          },
+          "8": {
+            "title": "",
+            "paragraphs": {
+              "1": {
+                "text": ""
+              }
+            }
+          }
         }
       }
     }
@@ -236,115 +326,6 @@
     "cta": {
       "curious": "Geinteresseerd in onze services?",
       "touch": "Lets get in touch!"
-    }
-  },
-  "service-cards": {
-    "teams": {
-      "title": "Schaalbare IT-teams",
-      "text": "With current technology, an IT project usually takes the hard work and expertise of multiple developers. Not every company can afford this, and even if they can it's hard to create an efficient team. This is where ASRR delivers full-stack scalable IT teams that can seamlessly integrate with your current process.",
-      "preview": {
-        "title": "Schaalbare IT-teams",
-        "text": "With current technology, an IT project usually takes the hard work and expertise of multiple developers. Not every company afford this, and even if they can it's hard to create an efficient team. This is where ASRR delivers full-stack scalable IT teams that can seamlessly integrate with your current process."
-      }
-    },
-    "full-stack": {
-      "route": "full-stack-development",
-      "title": "Full-Stack Software Ontwikkeling",
-      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
-      "preview": {
-        "title": "Full-Stack Software Development",
-        "text": "ASRR has both front and backend developers, as wel as an create anytures and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
-        "landingText": "Front- and Backend development in one team"
-      }
-    },
-    "workspace": {
-      "route": "workspace",
-      "title": "Gepersonaliseerde Werkplekken",
-      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
-      "preview": {
-        "title": "Personalised Workspace",
-        "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
-      }
-    },
-    "custom-work": {
-      "route": "custom-work",
-      "title": "Custom Work",
-      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
-      "preview": {
-        "title": "Custom Work",
-        "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
-      }
-    },
-    "web-applications": {
-      "route": "web-applications",
-      "title": "Progressieve Webapplicaties",
-      "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!",
-      "preview": {
-        "title": "Web Applications",
-        "text": "We create progressive web applications that give your end-user the best experience possible, using native features and offline caching combined with seamless integration with our back-end systems. Click read more for a full list of advantages!"
-      }
-    },
-    "data-analytics": {
-      "route": "data-analytics",
-      "title": "Data Analytics | BI",
-      "text": "Analysing data correctly can save any company from excess costs and inefficiency. Using our BI analytics on one of your existing or a new database, ASRR will provide insights into key aspects of your data.",
-      "preview": {
-        "title": "Data Analytics | BI",
-        "text": "Analysing data correctly can save any company from excess costs and inefficiency. Using our BI analytics on one of your existing or a new database, ASRR will provide insights into key aspects of your data."
-      }
-    },
-    "consultancy": {
-      "route": "it-consultancy",
-      "title": "IT Consultancy",
-      "text": "Not sure what you need? ASRR can send an expert to analyse your company processes and propose a solution and fitting advice. ASRR can then provide the required developing skills.",
-      "preview": {
-        "title": "IT Teams As A Service",
-        "text": "ASRR levert advies op maat for everything IT related, be it websites, applications, servers, AI/machine learning and much more. We can lead projects from the ground up, or adapt existing ones to fit your current needs. These solutions can then be carried out perfectly by our development team.",
-        "landingText": "Flexibele teams met de benodigde expertise"
-      }
-    },
-    "hardware": {
-      "route": "custom-hardware",
-      "title": "Custom Built Hardware",
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley",
-      "preview": {
-        "title": "Hardware op maat",
-        "text": "If cloud is not what you need, we can also provide you with custom built servers, with far superior power to cost ratios. They can be used as strong workstations, remote desktop environments or even to host your API's on a kubernetes cluster.",
-        "landingText": "Servers afgesteld op uw bedrijf!"
-      }
-    },
-    "servers": {
-      "title": "Servers | Hardware",
-      "text": "Slow and old systems can cause serious hinder in both security and efficiency. That's why we build our servers from scratch, selecting the right parts for the job at hand. Using this we can create remote desktop environments, data storage servers and machines optimized for heavy rendering.",
-      "preview": {
-        "title": "Servers",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
-      }
-    },
-    "development": {
-      "title": "Full-Stack Software Development",
-      "text": "Full-Stack Software Development",
-      "preview": {
-        "title": "Full-Stack Software Development",
-        "text": "Full stack"
-      }
-    },
-    "back-end": {
-      "route": "backend-applications",
-      "title": "Back-end Applicaties",
-      "text": "Using our microservice architecture, we can quickly create robust applications. We have an extensive library of over-engineered microservices that form a good basis for any complex application.",
-      "preview": {
-        "title": "Consultancy",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
-      }
-    },
-    "power-bi": {
-      "title": "Scalable Teams",
-      "text": "ASRR offers dynamic, multi-disciplinary IT teams that can be hired at short notice. The team will adapt to your needs, ensuring you have the right person at the right place, every time.",
-      "preview": {
-        "title": "Power Bi",
-        "text": "Lorem ipsum dit is de preview aar wat uitlegen"
-      }
     }
   },
   "why": {
@@ -1010,6 +991,51 @@
   "testimonials": {
     "header": {
       "title": "Wat onze klanten over ons zeggen"
+    }
+  },
+  "about": {
+    "article": {
+      "headline": "About ASRR",
+      "smallTitle": "about",
+      "title": "ASRR | Innovative Software Development",
+      "subtitle": "ASRR specialiseert zich in software development, custom hardware oplossingen en business insights. Dit zijn losstaande diensten, maar gecombineerd een 360 graden IT-oplossing. ",
+      "sections": {
+        "1": {
+          "paragraphs": {
+            "1": "ASRR introduceert: IT Teams as a service. \nDe ideale combinatie van software development en IT-detachering in één. \n"
+          }
+        },
+        "2": {
+          "title": "Van visie tot applicatie",
+          "paragraphs": {
+            "1": "Dit is de brug tussen Business en IT. Wij werken van visie tot applicatie en verzorgen een volledig ontzorgd IT-development traject. Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte IT-afdeling tijdelijk aan jouw bedrijf toevoegt. Hierbij maak je je niet druk over of je wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’ applicatie op maat. Je wijkt niet af van je huidige processen en houdt toch helder zicht op de tijdlijn, productie en oplevering. "
+          }
+        },
+        "3": {
+          "title": "Expertise on demand",
+          "paragraphs": {
+            "1": "Met IT Teams as a service stel je met behulp van ‘Expertise on Demand’ zelf een projectteam samen, precies op maat van de opdracht. ASRR heeft alle nodige expertises in-house en heeft alvast wat voorwerk gedaan in de vorm van Microservices. Dit zijn ge-over-engineerde bouwstenen die de basis vormen van de tool of applicatie. Deze zijn of the shelve beschikbaar en direct te implementeren. De bouwstenen in de zogenaamde fundering hebben alle test al doorstaan, zodat onze analytische IT-pioniers kunnen focussen op wat belangrijk is: echte innovatie."
+          }
+        },
+        "4": {
+          "title": "Een digitaliseringsslag",
+          "paragraphs": {
+            "1": "In deze tijd een must voor je bedrijf, maar ook een hoofdpijndossier. Wat omarm je om een competitief voordeel te krijgen of te behouden? En hoe word je bewust van poteniele kansen of juist blinde vlekken?",
+            "2": "ASRR heeft een scherpe blik op de markt. Wij adviseren en maken je bewust van kansen en eventuele blinde vlekken. De kans is groot dat je onbewust op een data-goudmijn zit, die doorslaggevend is voor het doel van het project en van ruwe data waardevolle ‘business insights’ maakt."
+          }
+        },
+        "5": {
+          "title": "Scope management",
+          "paragraphs": {
+            "1": "ASRR: Eén centraal punt voor al jouw software development betekent voor ons ook één aanspreekpunt. Dit aanspreekpunt is een ervaren ‘product owner’ met ruime development ervaring, spreekt zowel de taal van jou als de taal van developers en maximaliseert hierdoor grip op de zaak."
+          }
+        }
+      },
+      "quotes": {
+        "1": "ASRR ontwikkelt degelijke, innovatieve software met een scherpe focus op gebruiksvriendelijkheid en een intuïtief design.",
+        "3": "Dezelfde grip en korte lijnen die je bent gewend, maar nu 'remote' (en zonder de kantoor- en hardware kosten)",
+        "2": "Het modulair bouwen van het projectteam én applicatie is waar het bij IT Teams as a Service om draait.  "
+      }
     }
   }
 }

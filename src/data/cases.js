@@ -149,5 +149,24 @@ export const cases = [
                 }
             }
         ]
+    },
+    {
+        type: "case",
+        name: "protonise",
+        description: "website",
+        landing: {
+            backgroundImage: {
+                extension: 'jpg'
+            }
+        },
+        sections: [
+            {
+                title: true,
+                length: 3,
+                image: {
+                    extension: 'png'
+                }
+            }
+        ]
     }
 ];
