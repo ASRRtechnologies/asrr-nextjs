@@ -29,6 +29,10 @@
     margin-bottom: 75px;
   }
 
+  &.title-margin-small{
+    @include margin-bottom(75px);
+  }
+
   margin-bottom: 150px;
 }
 
@@ -58,8 +62,13 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $mobile-breakpoint) {
   .title-wrapper {
-    margin-bottom: 75px;
+
+
+    &.title-margin-small{
+      @include margin-bottom(150px);
+    }
+
   }
 }
