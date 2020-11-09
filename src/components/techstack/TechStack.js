@@ -2,14 +2,16 @@ import React from 'react'
 import Section from '../layout/Section'
 import Title from '../titles/Title'
 import styled from '@emotion/styled'
-import react from '#/techstack/react-black.png'
-import reactnative from '#/techstack/react-native-black.png'
-import spring from '#/techstack/spring-black.png'
-import kubernetes from '#/techstack/kubernetes.png'
-import docker from '#/techstack/docker-black.png'
-import nextjs from '#/techstack/nextjs.png'
+import react from '#/techstack/react-black-min.webp'
+import reactnative from '#/techstack/react-native-black-min.webp'
+import spring from '#/techstack/spring-boot-logo-black-min.webp'
+import kubernetes from '#/techstack/kubernetes-min.webp'
+import docker from '#/techstack/docker-black-min.webp'
+import nextjs from '#/techstack/nextjs-min.webp'
 import { useTheme } from '../../context/theme/ThemeContext'
 import Fade from "react-reveal/Fade";
+import Image from 'next/image'
+
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.techstack};
@@ -27,7 +29,7 @@ const techList = [
 const Tech = ({ image, alt, className }) => {
 	return (
 		<div className="tech-grid-cell">
-			<img className={className} src={image} alt={alt}/>
+			<Image width={300} height={100} layout="responsive" className={className} src={image} alt={alt}/>
 		</div>
 	)
 }
