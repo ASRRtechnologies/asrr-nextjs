@@ -38,20 +38,20 @@ export const previewCases = [
 
 export const portfolio = [
 	{
-		id: 'form',
-		image: form
+		id: 'nwo',
+		image: nwo
 	},
 	{
-		id: 'protonise',
-		image: protonise
+		id: 'form',
+		image: form
 	},
 	{
 		id: 'hes',
 		image: hes
 	},
 	{
-		id: 'nwo',
-		image: nwo
+		id: 'protonise',
+		image: protonise
 	},
 	{
 		id: 'esp',
