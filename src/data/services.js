@@ -22,7 +22,6 @@ export const services = [
             },
             {
                 type: "quote",
-                source: "Amar Ramdas, Managing Director ASRR"
             },
             {
                 title: true,
@@ -39,6 +38,10 @@ export const services = [
             {
                 title: true,
                 length: 1,
+            },
+            {
+                type: "bullets",
+                length: 5
             }
         ],
     },

@@ -42,7 +42,21 @@ function Page({data, query}) {
                         sectionNumber++;
 
                         if (section.type === "quote") {
-                            return <><blockquote className="quote">{t(`${basePath}.sections.${sectionNumber}.quote.text`)}</blockquote><p>-{section.source}</p><br/><br/></>
+                            return <><blockquote className="quote">{t(`${basePath}.sections.${sectionNumber}.quote.text`)}</blockquote><br/></>
+                        }
+
+                        if (section.type === "bullets") {
+                            let bulletNumber = 0;
+                            return <>
+                                <h1>{t(`${basePath}.sections.${sectionNumber}.title`)}</h1>
+                                <ul>
+                                {[...Array(section.length)].map((x, i) => {
+
+                                    bulletNumber++;
+                                    let bulletPath = `${basePath}.sections.${sectionNumber}.bullet.${bulletNumber}`;
+                                    return <li>{t(`${bulletPath}`)}</li>
+                                })}
+                            </ul></>
                         }
 
                         let paragraphNumber = 0;

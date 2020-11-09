@@ -122,7 +122,7 @@
       "header": {
         "title": "Wat we al hebben gedaan",
         "smallTitle": "Portfolio",
-        "text": "Take a look at our projects"
+        "text": "Neem een kijkje bij onze projecten"
       }
     }
   },
@@ -269,12 +269,14 @@
             }
           },
           "8": {
-            "title": "",
-            "paragraphs": {
-              "1": {
-                "text": ""
-              }
-            }
+            "bullet": {
+              "1": "U haalt een ingewerkt team in huis",
+              "2": "Bespaar op recruitment- én trainingskosten",
+              "3": "Expertise on demand",
+              "4": "Korte doorlooptijd",
+              "5": "Altijd de 'latest and greatest'"
+            },
+            "title": "Alle voordelen op een rijtje"
           }
         }
       }
@@ -534,11 +536,11 @@
     "nwo": {
       "content": {
         "landing": {
-          "title": "A super computer accessible from anywhere in the world"
+          "title": "Een super computer beschikbaar vanaf overal ter wereld"
         },
         "smallTitle": "Custom Built Hardware | Application | Full stack development",
         "subtitle": "Nord-West Oelleitung",
-        "title": "Creating a Secure, Powerful Remote Desktop Server",
+        "title": "De bouw van een veilige, krachtige Remote Desktop Server",
         "sections": {
           "1": {
             "title": "The Problem",
