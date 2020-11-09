@@ -2,10 +2,11 @@ export const about = [
     {
         type: "information",
         name: "about",
+        description: "About ASRR - Innovative Software Development",
         readMore: true,
         landing: {
             backgroundImage: {
-                extension: 'png'
+                extension: 'jpg'
             }
         },
         sections: [

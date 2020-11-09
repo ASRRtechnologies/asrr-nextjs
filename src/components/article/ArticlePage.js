@@ -49,7 +49,7 @@ function ArticlePage(props) {
         />
         <ArticleBody className="keywords">
 
-            <KeyWords keyWords={[type, data.name, data.description]} compact/>
+            <KeyWords keyWords={[type, data.name]} compact/>
 
             <ArticleContent>
                 <ArticleTitle smallTitle={t(`${basePath}.smallTitle`)} title={t(`${basePath}.title`)}

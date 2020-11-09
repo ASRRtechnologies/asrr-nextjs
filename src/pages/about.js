@@ -24,7 +24,7 @@ function Page({data, query}) {
         <Application>
             <SmallLanding title={t(`${basePath}.headline`)} background={`/assets/images/${data.name}/${data.name}-landing.${data.landing.backgroundImage.extension}`}/>
 
-            <ArticlePage type={"about"}
+            <ArticlePage type={"information"}
                          data={data}
                          basePath={basePath}
             />

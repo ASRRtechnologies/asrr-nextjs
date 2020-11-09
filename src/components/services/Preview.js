@@ -58,7 +58,7 @@ function Preview(props) {
                                 </>}
                                 {props.compact && service.bullets && <ul className="service-list">
                                     {[...Array(service.bullets)].map((x, i) => {
-                                        return <li>{t(`${basePath}.services.${id}.bullets.${i}`)}</li>
+                                        return <li>✔ {t(`${basePath}.services.${id}.bullets.${i}`)}</li>
 
                                     })}
                                 </ul>}
