@@ -144,7 +144,7 @@
         },
         "itaas": {
           "title": "IT Teams as a Service",
-          "text": "Our flexible development teams can scale up or down based on your needs. This removes unnecessary overhead and saves both recruitment and training costs, while ensuring you get the expertise at the correct place and time.",
+          "text": "Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte IT-afdeling tijdelijk aan jouw bedrijf toevoegt. Hierbij maak je je niet druk over of je wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’ applicatie op maat. Je wijkt niet af van je huidige processen en houdt toch helder zicht op de tijdlijn, productie en oplevering. ",
           "bullets": {
             "0": "U haalt een ingewerkt team in huis",
             "1": "Bespaar op recruitment- én trainingskosten",
@@ -155,7 +155,7 @@
         },
         "hardware": {
           "title": "Hardware op maat",
-          "text": "Hardware op maat",
+          "text": "ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De componenten worden precies zo uitgekozen dat ze passen bij het proces waar de hardware voor gebruikt wordt. Hierdoor betaalt u niet te veel voor onnodige componenten, en ligt de focus op de onderdelen die cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen binnen de technologie, waardoor er meer performance voor minder kosten gerealiseerd wordt.",
           "bullets": {
             "0": "De beste prijs performance ratio",
             "1": "Tot wel 128GB ram en 64 cores",
@@ -167,7 +167,7 @@
         },
         "bi": {
           "title": "Business Analytics & Insights",
-          "text": "Insights op maat",
+          "text": "Data is een waardevolle asset voor elk bedrijf. Veel bedrijven doen echter niks met de potentiele goudmijn waar ze op zitten. Doormiddel van een data-analyse kan ASRR een Business Insights dashboard opzetten. In zo’n dashboard kunt u de belangrijkste aspecten van uw dataset in een oogopslag zien. We zetten uw (legacy) data aan het werk.",
           "bullets": {
             "0": "Van business data naar business insights",
             "1": "We zetten ook uw legacy data aan het werk",
@@ -193,7 +193,7 @@
         }
       },
       "hardware": {
-        "title": "Krachtige hardware op maat",
+        "title": "ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De componenten worden precies zo uitgekozen dat ze passen bij het proces waar de hardware voor gebruikt wordt. Hierdoor betaalt u niet te veel voor onnodige componenten, en ligt de focus op de onderdelen die cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen binnen de technologie, waardoor er meer performance voor minder kosten gerealiseerd wordt.",
         "paragraphs": {
           "0": "ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De componenten worden precies zo uitgekozen dat ze passen bij het proces waar de hardware voor gebruikt wordt. Hierdoor betaalt u niet te veel voor onnodige componenten, en ligt de focus op de onderdelen die cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen binnen de technologie, waardoor er meer performance voor minder kosten gerealiseerd wordt.",
           "1": "ASRR levert secure servers, met remote desktop capaciteit en een 2 factor authenticatie login methode. Ook bouwen we krachtige workstations, gaming rigs en budget pc’s."
@@ -360,20 +360,20 @@
     "form": {
       "content": {
         "landing": {
-          "title": "Reinventing the housing industry"
+          "title": "De huizenmarkt op zijn kop zetten"
         },
         "smallTitle": "Expertise on demand | Full stack development",
         "subtitle": "FORM Architecture & Engineering",
-        "title": "Building an automated BIM-Configurator",
+        "title": "Het bouwen van een geautomatiseerde BIM-Configurator",
         "sections": {
           "1": {
-            "title": "The problem",
+            "title": "Het probleem",
             "paragraphs": {
               "1": {
-                "text": "Since 2011, FORM has had a vision about how the process of buying a new house could be automated. This is based on the principle of modelling the sub-components that make up the house in a modular and parametric fashion. This may sound complex and tedious, but doing this gives way to a scala of automations. With this vision in mind, we started a big new project at the beginning of 2018: the Configurator. More information about the latest version can be found in “this” article."
+                "text": "FORM heeft al sinds 2011 een visie over hoe het proces bij het kopen van een nieuwbouwhuis zou kunnen worden geautomatiseerd. Hierbij is de basis het modulair en parametrisch opbouwen van de sub-componenten waar een huis uit bestaat. Dat klinkt misschien ingewikkeld, maar door het zo te structureren kan er een hoop geautomatiseerd worden. Met deze visie zijn we in 2018 begonnen met een groot nieuw project, de Configurator. Meer informatie over de laatste versie hiervan is te vinden onder dit nieuwsbericht."
               },
               "2": {
-                "text": "The main idea behind the configurator is to translate a list of choices made by a consumer into official building plans, using Revit (an Autodesk 3D Modelling software package) models. This saves architects a lot of time, by automating repetitive tasks, as well as preventing any human errors."
+                "text": "Het idee achter de Configurator is om vanaf een lijst keuzes, gemaakt door de consument, automatisch het huis in Revit (een 3D engineering/modelleringsprogramma) samen te stellen en daarmee een officiële bouwtekening te genereren. Dit bespaart de architecten een hoop (herhaald) werk, en zorgt ervoor dat er minder fouten gemaakt worden in het proces."
               }
             },
             "image": "A modular design buildup of the house (https://www.form.nl/form-configurator)"
@@ -382,16 +382,16 @@
             "title": "The solution",
             "paragraphs": {
               "1": {
-                "text": "This is all easier said than done. For all of this to work you need a custom Revit-Addin, a enterprise grade back-end API system, a complex database and web-application, to just name a few of the requirements. The setup included complex decision trees to translate the client choices into the business rules needed to get the correct models. "
+                "text": "Dit alles is echter makkelijker gezegd dan gedaan. Om dit alles te laten werken is er een Custom Revit-Addin, een enterprise-grade back-end API, een complexe database en web-applicatie nodig, om maar een paar zaken te noemen. Er zijn complexe keuzebomen gemaakt om de keuze van de consument om te zetten in de business rules. Deze zijn nodig voor het samenstellen van de modellen voor een huis. "
               },
               "2": {
-                "text": "Next, a custom C# Revit Add-In was written, to control the Revit application using code. Based on the decision trees, the right 3D model is placed at the right coordinates. After a house has been constructed in Revit, building plans can be generated. These were then exported using our custom PDF printer, as there is none built into Revit."
+                "text": "Vervolgens is er een custom C# Revit Add-In geschreven, waarmee we de applicatie met code kunnen aansturen. Op basis van de keuzebomen wordt het juiste onderdeel in 3D op de juiste positie geplaatst. Als een huis eenmaal samengesteld is, kan deze met Revit worden weergegeven op een bouwtekening. Deze bouwtekening wordt met een zelfgebouwde PDF printer geëxporteerd, aangezien Revit deze niet ingebouwd heeft. "
               },
               "3": {
-                "text": "Using this Add-In, we were able to create local configurations using a list of choices from a client. However, for this to be used by actual consumers, the exports need to be served using an API. One of the big problems here is that Revit is too unstable to serve as a cog in a enterprise application. That is why we wrote a custom wrapper around Revit; a program that keeps Revit alive and communicates with our cloud system. This cloud system is the gateway to any web application that can then request actual building plans. "
+                "text": "Zo kan er dus lokaal op basis van een boodschappenlijstje een heel huis samengesteld worden. De bedoeling is echter dat de consument dit zelf kan opvragen, doormiddel van bijvoorbeeld een webapplicatie. Het grote probleem hierbij is dat Revit vrij instabiel kan zijn met grote of inefficiënte modellen. Daarom hebben we een programma geschreven dat als een soort schild fungeert om Revit heen. Het programma houdt Revit in leven, en zorgt ervoor dat er communicatie plaats kan vinden met de applicatie in de Cloud die aanvragen van buitenaf binnen krijgt."
               },
               "4": {
-                "text": "The crux in this story is the Cloud application. This is a Java Spring Boot application, hosted on our Kubernetes network. This application has to be available at any time, and has to be able to handle many requests at a time. It puts these requests in a queue, and feeds them to the Revit worker one at a time. The cloud application also makes sure everything ends up in an Azure datastore."
+                "text": "De crux hierin is de applicatie in de Cloud. Dit is een Java Spring boot applicatie, gehost op ons Kubernetes netwerk. Deze applicatie moet altijd beschikbaar zijn, en kan een enorme hoeveelheid aanvragen tegelijk aan. Vervolgens worden deze aanvragen opgeslagen in een database, met bijbehorend dashboard om in te zien wat de klanten gekozen hebben. De Cloud applicatie voert de aanvragen mondjesmaat aan de Revit worker, en zorgt ervoor dat de uploads veilig worden opgeslagen in Azure."
               }
             },
             "image": "The authentication screen for the Configurator dashboard"
@@ -399,7 +399,7 @@
           "3": {
             "paragraphs": {
               "1": {
-                "text": "Once the request has finished, the files can be downloaded very easily."
+                "text": "Als de request eenmaal voltooid is kan de klant de bouwtekeningen met een druk op de knop downloaden."
               }
             },
             "image": "The (redacted) dashboard, with insighsts of user behavior."
