@@ -122,7 +122,7 @@
       "header": {
         "title": "Wat we al hebben gedaan",
         "smallTitle": "Portfolio",
-        "text": "Take a look at our projects"
+        "text": "Neem een kijkje bij onze projecten"
       }
     }
   },
@@ -144,7 +144,7 @@
         },
         "itaas": {
           "title": "IT Teams as a Service",
-          "text": "Our flexible development teams can scale up or down based on your needs. This removes unnecessary overhead and saves both recruitment and training costs, while ensuring you get the expertise at the correct place and time.",
+          "text": "Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte IT-afdeling tijdelijk aan jouw bedrijf toevoegt. Hierbij maak je je niet druk over of je wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’ applicatie op maat. Je wijkt niet af van je huidige processen en houdt toch helder zicht op de tijdlijn, productie en oplevering. ",
           "bullets": {
             "0": "U haalt een ingewerkt team in huis",
             "1": "Bespaar op recruitment- én trainingskosten",
@@ -155,7 +155,7 @@
         },
         "hardware": {
           "title": "Hardware op maat",
-          "text": "Hardware op maat",
+          "text": "ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De componenten worden precies zo uitgekozen dat ze passen bij het proces waar de hardware voor gebruikt wordt. Hierdoor betaalt u niet te veel voor onnodige componenten, en ligt de focus op de onderdelen die cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen binnen de technologie, waardoor er meer performance voor minder kosten gerealiseerd wordt.",
           "bullets": {
             "0": "De beste prijs performance ratio",
             "1": "Tot wel 128GB ram en 64 cores",
@@ -167,7 +167,7 @@
         },
         "bi": {
           "title": "Business Analytics & Insights",
-          "text": "Insights op maat",
+          "text": "Data is een waardevolle asset voor elk bedrijf. Veel bedrijven doen echter niks met de potentiele goudmijn waar ze op zitten. Doormiddel van een data-analyse kan ASRR een Business Insights dashboard opzetten. In zo’n dashboard kunt u de belangrijkste aspecten van uw dataset in een oogopslag zien. We zetten uw (legacy) data aan het werk.",
           "bullets": {
             "0": "Van business data naar business insights",
             "1": "We zetten ook uw legacy data aan het werk",
@@ -193,7 +193,7 @@
         }
       },
       "hardware": {
-        "title": "Krachtige hardware op maat",
+        "title": "Hardware op maat",
         "paragraphs": {
           "0": "ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De componenten worden precies zo uitgekozen dat ze passen bij het proces waar de hardware voor gebruikt wordt. Hierdoor betaalt u niet te veel voor onnodige componenten, en ligt de focus op de onderdelen die cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen binnen de technologie, waardoor er meer performance voor minder kosten gerealiseerd wordt.",
           "1": "ASRR levert secure servers, met remote desktop capaciteit en een 2 factor authenticatie login methode. Ook bouwen we krachtige workstations, gaming rigs en budget pc’s."
@@ -207,10 +207,14 @@
         }
       }
     },
-    "itaas": {
+    "ittaas": {
       "content": {
         "landing": {
           "title": "Het nieuwe detacheren"
+        },
+        "quotes": {
+          "1":"Bedrijven komen met verschillende vraagstukken bij ASRR, maar allen zijn op zoek naar technische- en IT-kennis in de vorm van software development. Dit is noodzakelijk om aan interne digitaliserings- en automatiseringsdoelen te voldoen. Deze doelstellingen zijn lang niet altijd vrijwillig, aangezien de huidige IT-infrastructuur is verouderd en om de plek in de markt te houden is innovatie nodig. Oude IT-systemen moeten op termijn worden uit gefaseerd, maar worden idealiter nog wel aangesloten op het nieuwe systeem. Daarnaast zijn ‘business insights’ noodzakelijk voor de doorontwikkeling van het bedrijf. Maar hoe transformeer je ruwe bedrijfsdata tot waardevolle inzichten? Al deze punten hangen direct samen met de winstgevendheid en competitiviteit van het bedrijf."
+
         },
         "smallTitle": "Service",
         "title": "IT Teams as a Service",
@@ -218,63 +222,48 @@
         "sections": {
           "1": {
             "paragraphs": {
-              "1": {
-                "text": "Information Technology is cruciaal in een bedrijf in de huidige maatschappij. Door de digitalisering van de markt is er een enorme vraag naar software development en IT-kennis. IT is echter een erg breed vlak, en er zijn steeds vaker een heel scala aan expertises nodig. Niet elk bedrijf kan of wil zich een eigen IT-tak veroorloven waardoor men al snel uitkomt op losse externe IT’ers of rigide preferred suppliers. Deze aanpak is niet efficiënt. De recruitment- en inwerkkosten zijn groot, bedrijven worden geketend aan starre langdurige contracten en dan blijkt toch nog een groot deel van de opdracht buiten de scope van de uitvoerder te vallen."
-              }
+              "1": "Information Technology is cruciaal in een bedrijf in de huidige maatschappij. Door de digitalisering van de markt is er een enorme vraag naar software development en IT-kennis. IT is echter een erg breed vlak, en er zijn steeds vaker een heel scala aan expertises nodig. Niet elk bedrijf kan of wil zich een eigen IT-tak veroorloven waardoor men al snel uitkomt op losse externe IT’ers of rigide preferred suppliers. Deze aanpak is niet efficiënt. De recruitment- en inwerkkosten zijn groot, bedrijven worden geketend aan starre langdurige contracten en dan blijkt toch nog een groot deel van de opdracht buiten de scope van de uitvoerder te vallen."
             }
           },
           "2": {
             "title": "Dynamisch in plaats van vast",
             "paragraphs": {
-              "1": {
-                "text": "Daarom ziet ASRR een IT-team als een dynamisch in plaats van een vast component. Er kan op vrijblijvende basis een team worden ingehuurd voor korte, of lange termijn om de benodigde werkzaamheden uit te voeren. "
-              }
+              "1": "Daarom ziet ASRR een IT-team als een dynamisch in plaats van een vast component. Er kan op vrijblijvende basis een team worden ingehuurd voor korte, of lange termijn om de benodigde werkzaamheden uit te voeren."
             }
           },
           "3": {
-            "quote": {
-              "text": "“Bedrijven komen met verschillende vraagstukken bij ASRR, maar allen zijn op zoek naar technische- en IT-kennis in de vorm van software development. Dit is noodzakelijk om aan interne digitaliserings- en automatiseringsdoelen te voldoen. Deze doelstellingen zijn lang niet altijd vrijwillig, aangezien de huidige IT-infrastructuur is verouderd en om de plek in de markt te houden is innovatie nodig. Oude IT-systemen moeten op termijn worden uit gefaseerd, maar worden idealiter nog wel aangesloten op het nieuwe systeem. Daarnaast zijn ‘business insights’ noodzakelijk voor de doorontwikkeling van het bedrijf. Maar hoe transformeer je ruwe bedrijfsdata tot waardevolle inzichten? Al deze punten hangen direct samen met de winstgevendheid en competitiviteit van het bedrijf.”"
+            "title": "IT Teams as a Service (ITTAAS)",
+            "paragraphs": {
+              "1": "Wij werken van visie tot applicatie en verzorgen een volledig ontzorgd IT-development traject. Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte IT-afdeling tijdelijk aan jouw bedrijf toevoegt. Hierbij je je niet druk over of-je-wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’ applicatie op maat. Je wijkt niet af van je huidige processen en houdt toch helder zicht op de tijdlijn, productie en oplevering."
             }
           },
           "4": {
-            "title": "IT Teams as a Service (ITTAAS)",
+            "title": "Expertise on demand",
             "paragraphs": {
-              "1": {
-                "text": "Wij werken van visie tot applicatie en verzorgen een volledig ontzorgd IT-development traject. Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte IT-afdeling tijdelijk aan jouw bedrijf toevoegt. Hierbij je je niet druk over of-je-wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’ applicatie op maat. Je wijkt niet af van je huidige processen en houdt toch helder zicht op de tijdlijn, productie en oplevering. "
-              }
+              "1": "Met IT Teams as a service stel je met behulp van ‘Expertise on Demand’ zelf een projectteam samen, precies op maat van de opdracht. ASRR heeft alle nodige expertises in-house en heeft alvast wat voorwerk gedaan in de vorm van Microservices. Dit zijn ge-over-engineerde bouwstenen die de basis vormen van de tool of applicatie. Deze zijn of the shelve beschikbaar en direct te implementeren. De bouwstenen in de zogenaamde fundering hebben alle test al doorstaan, zodat onze analytische IT-pioniers kunnen focussen op wat belangrijk is: echte innovatie."
             }
           },
           "5": {
-            "title": "Expertise on demand",
+            "title": "Het proces",
             "paragraphs": {
-              "1": {
-                "text": "Met IT Teams as a service stel je met behulp van ‘Expertise on Demand’ zelf een projectteam samen, precies op maat van de opdracht. ASRR heeft alle nodige expertises in-house en heeft alvast wat voorwerk gedaan in de vorm van Microservices. Dit zijn ge-over-engineerde bouwstenen die de basis vormen van de tool of applicatie. Deze zijn of the shelve beschikbaar en direct te implementeren. De bouwstenen in de zogenaamde fundering hebben alle test al doorstaan, zodat onze analytische IT-pioniers kunnen focussen op wat belangrijk is: echte innovatie."
-              }
+              "1": "Een Product Specialist analyseert de behoeften van uw bedrijf en geeft aan wat de technische benodigdheden zijn voor het realiseren van de taak. Vervolgens bieden wij een team aan dat samengesteld is op basis van uw project. Dit team bevat altijd de juiste expertise, waardoor het probleem op de juiste en meest efficiënte manier wordt opgelost. De leden van team zijn al op elkaar ingewerkt en hebben vaker samengewerkt in stressvolle en complexe situaties.   "
             }
           },
           "6": {
-            "title": "Het proces",
+            "title": "‘Over Engineered’ Microservice Building Block Foundation",
             "paragraphs": {
-              "1": {
-                "text": "Een Product Specialist analyseert de behoeften van uw bedrijf en geeft aan wat de technische benodigdheden zijn voor het realiseren van de taak. Vervolgens bieden wij een team aan dat samengesteld is op basis van uw project. Dit team bevat altijd de juiste expertise, waardoor het probleem op de juiste en meest efficiënte manier wordt opgelost. De leden van team zijn al op elkaar ingewerkt en hebben vaker samengewerkt in stressvolle en complexe situaties.   "
-              }
+              "1": "Onze developers maken gebruik van de grote hoeveelheid basiscomponenten die deel uitmaken van de bibliotheek van ASRR. Deze componenten zijn modulair opgezet in een microservice structuur. Dit betekent dat een deel van de opdracht kan worden opgezet door een mix en match te maken van onze componenten, zodat er gefocust kan worden op het maatwerk. De componenten zijn gebouwd met schaalbaarheid en de toekomst in gedachte, waardoor deze nog robuuster en beter getest zijn dan reguliere code."
             }
           },
           "7": {
-            "title": "‘Over Engineered’ Microservice Building Block Foundation",
-            "paragraphs": {
-              "1": {
-                "text": "Onze developers maken gebruik van de grote hoeveelheid basiscomponenten die deel uitmaken van de bibliotheek van ASRR. Deze componenten zijn modulair opgezet in een microservice structuur. Dit betekent dat een deel van de opdracht kan worden opgezet door een mix en match te maken van onze componenten, zodat er gefocust kan worden op het maatwerk. De componenten zijn gebouwd met schaalbaarheid en de toekomst in gedachte, waardoor deze nog robuuster en beter getest zijn dan reguliere code."
-              }
-            }
-          },
-          "8": {
-            "title": "",
-            "paragraphs": {
-              "1": {
-                "text": ""
-              }
-            }
+            "bullet": {
+              "1": "U haalt een ingewerkt team in huis",
+              "2": "Bespaar op recruitment- én trainingskosten",
+              "3": "Expertise on demand",
+              "4": "Korte doorlooptijd",
+              "5": "Altijd de 'latest and greatest'"
+            },
+            "title": "Alle voordelen op een rijtje"
           }
         }
       }
@@ -348,7 +337,7 @@
     "header": {
       "title": "Wat onze klanten over ons zeggen",
       "smallTitle": "Klantervaringen",
-      "text": "De klant is koning(in) bij ASRR"
+      "text": "Een tevreden klant staat voorop in ons proces"
     }
   },
   "cases": {
@@ -360,20 +349,20 @@
     "form": {
       "content": {
         "landing": {
-          "title": "Reinventing the housing industry"
+          "title": "De huizenmarkt op zijn kop zetten"
         },
         "smallTitle": "Expertise on demand | Full stack development",
         "subtitle": "FORM Architecture & Engineering",
-        "title": "Building an automated BIM-Configurator",
+        "title": "Het bouwen van een geautomatiseerde BIM-Configurator",
         "sections": {
           "1": {
-            "title": "The problem",
+            "title": "Het probleem",
             "paragraphs": {
               "1": {
-                "text": "Since 2011, FORM has had a vision about how the process of buying a new house could be automated. This is based on the principle of modelling the sub-components that make up the house in a modular and parametric fashion. This may sound complex and tedious, but doing this gives way to a scala of automations. With this vision in mind, we started a big new project at the beginning of 2018: the Configurator. More information about the latest version can be found in “this” article."
+                "text": "FORM heeft al sinds 2011 een visie over hoe het proces bij het kopen van een nieuwbouwhuis zou kunnen worden geautomatiseerd. Hierbij is de basis het modulair en parametrisch opbouwen van de sub-componenten waar een huis uit bestaat. Dat klinkt misschien ingewikkeld, maar door het zo te structureren kan er een hoop geautomatiseerd worden. Met deze visie zijn we in 2018 begonnen met een groot nieuw project, de Configurator. Meer informatie over de laatste versie hiervan is te vinden onder dit nieuwsbericht."
               },
               "2": {
-                "text": "The main idea behind the configurator is to translate a list of choices made by a consumer into official building plans, using Revit (an Autodesk 3D Modelling software package) models. This saves architects a lot of time, by automating repetitive tasks, as well as preventing any human errors."
+                "text": "Het idee achter de Configurator is om vanaf een lijst keuzes, gemaakt door de consument, automatisch het huis in Revit (een 3D engineering/modelleringsprogramma) samen te stellen en daarmee een officiële bouwtekening te genereren. Dit bespaart de architecten een hoop (herhaald) werk, en zorgt ervoor dat er minder fouten gemaakt worden in het proces."
               }
             },
             "image": "A modular design buildup of the house (https://www.form.nl/form-configurator)"
@@ -382,16 +371,16 @@
             "title": "The solution",
             "paragraphs": {
               "1": {
-                "text": "This is all easier said than done. For all of this to work you need a custom Revit-Addin, a enterprise grade back-end API system, a complex database and web-application, to just name a few of the requirements. The setup included complex decision trees to translate the client choices into the business rules needed to get the correct models. "
+                "text": "Dit alles is echter makkelijker gezegd dan gedaan. Om dit alles te laten werken is er een Custom Revit-Addin, een enterprise-grade back-end API, een complexe database en web-applicatie nodig, om maar een paar zaken te noemen. Er zijn complexe keuzebomen gemaakt om de keuze van de consument om te zetten in de business rules. Deze zijn nodig voor het samenstellen van de modellen voor een huis. "
               },
               "2": {
-                "text": "Next, a custom C# Revit Add-In was written, to control the Revit application using code. Based on the decision trees, the right 3D model is placed at the right coordinates. After a house has been constructed in Revit, building plans can be generated. These were then exported using our custom PDF printer, as there is none built into Revit."
+                "text": "Vervolgens is er een custom C# Revit Add-In geschreven, waarmee we de applicatie met code kunnen aansturen. Op basis van de keuzebomen wordt het juiste onderdeel in 3D op de juiste positie geplaatst. Als een huis eenmaal samengesteld is, kan deze met Revit worden weergegeven op een bouwtekening. Deze bouwtekening wordt met een zelfgebouwde PDF printer geëxporteerd, aangezien Revit deze niet ingebouwd heeft. "
               },
               "3": {
-                "text": "Using this Add-In, we were able to create local configurations using a list of choices from a client. However, for this to be used by actual consumers, the exports need to be served using an API. One of the big problems here is that Revit is too unstable to serve as a cog in a enterprise application. That is why we wrote a custom wrapper around Revit; a program that keeps Revit alive and communicates with our cloud system. This cloud system is the gateway to any web application that can then request actual building plans. "
+                "text": "Zo kan er dus lokaal op basis van een boodschappenlijstje een heel huis samengesteld worden. De bedoeling is echter dat de consument dit zelf kan opvragen, doormiddel van bijvoorbeeld een webapplicatie. Het grote probleem hierbij is dat Revit vrij instabiel kan zijn met grote of inefficiënte modellen. Daarom hebben we een programma geschreven dat als een soort schild fungeert om Revit heen. Het programma houdt Revit in leven, en zorgt ervoor dat er communicatie plaats kan vinden met de applicatie in de Cloud die aanvragen van buitenaf binnen krijgt."
               },
               "4": {
-                "text": "The crux in this story is the Cloud application. This is a Java Spring Boot application, hosted on our Kubernetes network. This application has to be available at any time, and has to be able to handle many requests at a time. It puts these requests in a queue, and feeds them to the Revit worker one at a time. The cloud application also makes sure everything ends up in an Azure datastore."
+                "text": "De crux hierin is de applicatie in de Cloud. Dit is een Java Spring boot applicatie, gehost op ons Kubernetes netwerk. Deze applicatie moet altijd beschikbaar zijn, en kan een enorme hoeveelheid aanvragen tegelijk aan. Vervolgens worden deze aanvragen opgeslagen in een database, met bijbehorend dashboard om in te zien wat de klanten gekozen hebben. De Cloud applicatie voert de aanvragen mondjesmaat aan de Revit worker, en zorgt ervoor dat de uploads veilig worden opgeslagen in Azure."
               }
             },
             "image": "The authentication screen for the Configurator dashboard"
@@ -399,7 +388,7 @@
           "3": {
             "paragraphs": {
               "1": {
-                "text": "Once the request has finished, the files can be downloaded very easily."
+                "text": "Als de request eenmaal voltooid is kan de klant de bouwtekeningen met een druk op de knop downloaden."
               }
             },
             "image": "The (redacted) dashboard, with insighsts of user behavior."
@@ -534,44 +523,44 @@
     "nwo": {
       "content": {
         "landing": {
-          "title": "A super computer accessible from anywhere in the world"
+          "title": "Een super computer beschikbaar vanaf overal ter wereld"
         },
         "smallTitle": "Custom Built Hardware | Application | Full stack development",
         "subtitle": "Nord-West Oelleitung",
-        "title": "Creating a Secure, Powerful Remote Desktop Server",
+        "title": "De bouw van een veilige, krachtige Remote Desktop Server",
         "sections": {
           "1": {
-            "title": "The Problem",
+            "title": "Het probleem",
             "paragraphs": {
               "1": {
-                "text": "NWO, a subsidiary of BP and Shell, is a company that was built to create the first long-range crude oil line in Europe. Within this company an external specialized team, the Enlargement Project team, was set up. Due to security policies, the external employees could not get access to their current system for sharing files, programs and work environments. It was also noted that the current system was not up to the teams requirements to do their jobs properly."
+                "text": "NWO, een dochteronderneming van BP en Shell, is een bedrijf dat op is gezet om de eerste long-range onverwerkte olielijn in Europa op te zetten. Er bestond hierbinnen een speciaal team, het Enlargement Project Team dat extern ingeschakeld was. Dit was een gespecialiseerd team dat alleen voor een speciaal deelproject opgetuigd was. Aangezien het deels externe medewerkers waren, kon er door security policies geen toegang verschaft worden voor het bestaande systeem, waar bestanden, programmatuur en werkplekken op ingericht waren. Verder bleek dat het bestaande systeem niet toereikend was voor het gespecialiseerde team. "
               },
               "2": {
-                "text": "An environment had to be set up where documents, communication, applications and processing power could be shared with all of the project team members. The desktop environment had to be remotely accessible from anywhere in the world, and had to be secured with at least 2 factor authentication. Due to a recent leak with Citrix this could not be used to do the job at hand. The in house IT team did not consider this project within their scope, so the EP team had to find external help. They needed about 50 remote desktop environments, with enough processing power to run heavy CAD and modelling programs. Furthermore, the files had to be stored safely with a fitting back-up strategy."
+                "text": "Er moest een plek komen waarin documenten, communicatie en rekenkracht beschikbaar gesteld kon worden voor iedere werknemer. Deze werkplek moest remote beschikbaar zijn, en ten minste beveiligd zijn met twee factor authenticatie. Door een recente lek met Citrix mocht hier niet gebruik van gemaakt worden. De in house IT partij vond dit buiten de scope van hun werkzaamheden passen, waardoor het EP team externe hulp aantrok. De klant gaf aan dat er ongeveer 50 werknemers moesten komen werken op binnen de omgeving, en dat er genoeg rekenkracht nodig was om zware CAD en modelleer programma’s te runnen. Verder moesten de bestanden veilig opgeslagen worden met een back-up strategie. "
               }
             },
-            "image": "Aerial view of the Nord-West Oelleitung"
+            "image": "Een vogelvlucht van de Nord-West Oelleitung"
           },
           "2": {
-            "title": "The solution",
+            "title": "De Oplossing",
             "paragraphs": {
               "1": {
-                "text": "ASRR built a server from the ground up. It had a 64 Core Multi-threaded Processor, 128 Gigabytes of DDR4 RAM and a couple of SSD’s/HDD’s in a RAID configuration. This server also required a Remote Desktop Licensing/Managing System, that synchronized with our C# application to change the local user passwords on the server."
+                "text": "ASRR heeft een server op maat samengesteld. Deze server bevatte een 64 Core Multithreaded Processor, 128 Gigabyte aan DDR4 RAM en een aantal SSD’s/HDD’s in RAID configuratie. Op deze server moest ook een Remote Desktop Licensing/Managing systeem komen, dat met een van onze C# applicaties om de paar minuten het lokale wachtwoord op de server aanpaste, per gebruiker.  "
               },
               "2": {
-                "text": "The C# application connects to our cloud environment using an encrypted RabbitMQ connection. The cloud environment has a notion of the allowed users, with connected two factor authentication and a login system that users could use to generate a connection file. Users can then use this to open a secure connection with the server easily."
+                "text": "Deze C# applicatie stond in verbinding met onze Cloud omgeving d.m.v. een versleutelde RabbitMQ connectie. De Cloud omgeving had een notie van de gebruikers die in mogen loggen, en heeft daarbij met twee factor authenticatie een login systeem waarmee gebruikers een gegenereerd connectiebestand kunnen downloaden, waarmee gebruikers met 1 klik op de knop extreem secuur kunnen inloggen. "
               },
               "3": {
-                "text": "Inside of the environment, we applied the complete Microsoft suite. The key element in this was the use of Microsoft Teams, which was then still quite new. Teams served as the team hub for all files (with a SharePoint connection), meetings, announcements, planning, etc. We provided workers with a briefing about the usage of Teams and provided remote support through the system for any IT and Microsoft Office support requests."
+                "text": "Binnen de omgeving hebben we de volledige Microsoft stack toegepast, met als rode lijn Microsoft Teams. Dit was de hub voor alle bestanden (gekoppeld met het SharePoint systeem), meetings, announcements, planning, etc. We hebben de werknemers een briefing gegeven over het gebruik van Teams, dat toen nog in de kinderschoenen stond (voor Coronatijden), en remote support geleverd via het systeem met enige IT en Microsoft Office ondersteuningsverzoeken die in het dagelijkse proces naar boven kwamen. "
               }
             },
-            "image": "A screenshot of the application. "
+            "image": "Een screnshot van de applicatie. "
           },
           "3": {
-            "title": "The Conclusion",
+            "title": "De Conclusie",
             "paragraphs": {
               "1": {
-                "text": "Using a powerful server, a team spread through the Netherlands and Germany could work as if they were sitting in the same office. At moments that there are fewer people on the server, the remaining user have a powerful supercomputer at their disposal, allowing for fast calculations of tasks that would usually take overnight."
+                "text": "Door deze krachtige server kon een heel gespecialiseerd team, verspreid over Nederland en Duitsland goed samenwerken, alsof ze op dezelfde werkplek zaten. Op momenten dat er niet veel mensen op de server zitten, hebben de overgebleven users de rekenkracht van een supercomputer tot hun beschikking, wat handig is voor taken die normaal gesproken lang zouden duren. "
               }
             }
           }
@@ -677,20 +666,20 @@
     "aapjes": {
       "content": {
         "landing": {
-          "title": "A playful online presence"
+          "title": "A vrolijke en nieuwe website"
         },
         "smallTitle": "Web Application | Front-End Development | Design",
         "subtitle": "De Kleine Aapjes",
-        "title": "A web application that suits its customers",
+        "title": "A web application voor de kleintjes",
         "sections": {
           "1": {
-            "title": "The Process",
+            "title": "Het proces",
             "paragraphs": {
               "1": {
-                "text": "De Kleine aapjes is a daycare facility based in the Hague."
+                "text": "De Kleine aapjes is een peuterspeelzaal in Den Haag."
               },
               "2": {
-                "text": "The client came to us with the request for a new website. In modern day web, mobile users make up a large portion of the traffic on most informative sites. That’s why all of our websites are built with mobile devices in mind and are fully responsive. The applications we build are Progressive Web Applications, which mean they have some nifty features. One of them is offline caching, if needed, an application can be cached and can work completely without internet after the first load. This also results in zero load times between different pages."
+                "text": "De klant kwam naar ons toe voor een nieuwe website. In het huidige web. In modern day web, mobile users make up a large portion of the traffic on most informative sites. That’s why all of our websites are built with mobile devices in mind and are fully responsive. The applications we build are Progressive Web Applications, which mean they have some nifty features. One of them is offline caching, if needed, an application can be cached and can work completely without internet after the first load. This also results in zero load times between different pages."
               },
               "3": {
                 "text": "Most of our web applications are based in ReactJS, build upon further with NextJS for server-side rendering and extra speed or performance. They can fit in with our back-end systems seamlessly and are built up using modular components."
@@ -737,11 +726,11 @@
     "protonise": {
       "content": {
         "landing": {
-          "title": "A playful online presence"
+          "title": "Een prachtige nieuwe website"
         },
         "smallTitle": "Web Application | Front-End Development | Design",
-        "subtitle": "De Kleine Aapjes",
-        "title": "A web application that suits its customers",
+        "subtitle": "Protonise",
+        "title": "Een website voor Oliegiganten",
         "sections": {
           "1": {
             "title": "The Process",
@@ -866,7 +855,7 @@
     "article": {
       "itaas": {
         "card": {
-          "title": "IT Teams as a Service (ITaas)",
+          "title": "IT Teams as a Service (ITTAAS)",
           "description": "Wat zijn de voordelen van dynamische externe IT teams?"
         },
         "content": {
@@ -874,8 +863,8 @@
             "title": "Expertise on demand"
           },
           "smallTitle": "Expertise on demand | Full stack development",
-          "title": "IT Teams as a Service (ITaaS)",
-          "subtitle": "What are the advantages of a flexible team compared to a classic one-by-one recruitment strategy?",
+          "title": "IT Teams as a Service (ITTAAS)",
+          "subtitle": "Wat zijn de voordelen van dynamische externe IT teams ten opzichte van een 1 op 1 recruitment strategie?",
           "sections": {
             "1": {
               "title": "De huidige situatie",
@@ -896,7 +885,7 @@
               "image": ""
             },
             "2": {
-              "title": "Hoe ziet ASRR ITaaS",
+              "title": "Hoe ziet ASRR ITTAAS",
               "paragraphs": {
                 "1": {
                   "text": "De service begint met het aanspreekpunt. Dit is de brug tussen de Business en IT. Het aanspreekpunt moet inhoudelijke kennis hebben, maar moet ook kunnen relativeren en begrijpen wat belangrijk is voor de opdrachtgever. Communicatie, kennis en begrip zijn hierbij belangrijke karaktereigenschappen."
@@ -918,14 +907,6 @@
                 }
               },
               "image": ""
-            },
-            "4": {
-              "title": "The Conclusion",
-              "paragraphs": {
-                "1": {
-                  "text": "FORM needed many different IT disciplines to achieve their complex goal. Over the years we’ve provided them with a dynamic team, consisting of Front-End, Back-End, Database, Hosting and Design experts. This has resulted in a fantastic collaboration with a stable end product, using the latest and greatest technologies."
-                }
-              }
             }
           }
         }

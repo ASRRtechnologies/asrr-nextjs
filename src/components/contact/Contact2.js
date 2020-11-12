@@ -70,7 +70,7 @@ function Contact({big}) {
 
             <div className="contact">
 
-                <Title className="title-left title-button" basePath={'portfolio.preview.header'}/>
+                <Title className="title-left title-button" basePath={'contact.preview.header'}/>
 
                 <Fade bottom>
                     <div className="contact-adress">

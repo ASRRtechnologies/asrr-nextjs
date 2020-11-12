@@ -49,7 +49,7 @@ function ArticlePage(props) {
         />
         <ArticleBody className="keywords">
 
-            <KeyWords keyWords={[type, data.name, data.description]} compact/>
+            <KeyWords keyWords={[type, data.name]} compact/>
 
             <ArticleContent>
                 <ArticleTitle smallTitle={t(`${basePath}.smallTitle`)} title={t(`${basePath}.title`)}
@@ -65,7 +65,24 @@ function ArticlePage(props) {
                             {section.source && <><p>-{section.source}</p></>}
                         </>
                     }
+
                     sectionNumber++;
+
+                    if (section.type === "bullets") {
+                        let bulletNumber = 0;
+                        return <>
+                            <h1>{t(`${basePath}.sections.${sectionNumber}.title`)}</h1>
+                            <ul>
+                                {[...Array(section.length)].map((x, i) => {
+
+                                    bulletNumber++;
+                                    let bulletPath = `${basePath}.sections.${sectionNumber}.bullet.${bulletNumber}`;
+                                    return <li>{t(`${bulletPath}`)}</li>
+                                })}
+                            </ul>
+                        </>
+                    }
+
                     let paragraphNumber = 0;
                     return <ArticleSection line={section.line}>
                         {/* Auto generated arrays */}

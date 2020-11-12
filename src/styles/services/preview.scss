@@ -26,6 +26,11 @@
 
   text-align: center;
 
+  ul {
+    list-style: none;
+    //list-style-image: url("/assets/icons/check_circle_outline-24px.svg");
+  }
+
 }
 
 .service-preview-card-image{
@@ -53,6 +58,8 @@
     border-radius: 50%;
   }
 }
+
+
 
 @media screen and (max-width: $tablet-breakpoint) {
   .services-preview{

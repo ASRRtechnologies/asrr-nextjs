@@ -8,6 +8,7 @@ export const blog = [
         type: "article",
         name: "itaas",
         description: "",
+        availableLanguages: ["nl"],
         readMore: true,
         image: "https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,w_624,h_351,c_scale/v1393498157/2469.jpg",
         landing: {
@@ -39,6 +40,7 @@ export const blog = [
     {
         type: "article",
         name: "microservices",
+        availableLanguages: ["en"],
         description: "",
         readMore: true,
         image: "https://r2m.se/wp-content/uploads/2018/01/microservices-768x448.png",

@@ -14,6 +14,7 @@ import t from "../../hooks/translator";
 import Contact from "../../components/contact/Preview";
 import {useHeader} from "../../context/navigation/HeaderContext";
 import {services} from "../../data/services";
+import ArticlePage from "@/article/ArticlePage";
 
 function Page({data, query}) {
     const i18n = useI18n();
@@ -33,37 +34,52 @@ function Page({data, query}) {
 
             <ArticleBody className="keywords">
 
-                <KeyWords keyWords={["service", data.name, data.description]} compact/>
+                {/*<KeyWords keyWords={["service", data.name, data.description]} compact/>*/}
+                <ArticlePage data={data} basePath={basePath} type={'service'}/>
 
-                <ArticleContent>
-                    <ArticleTitle smallTitle={t(`${basePath}.smallTitle`)} title={t(`${basePath}.title`)}  subtitle={t(`${basePath}.subtitle`)} />
+                {/*// <ArticleContent>*/}
+                {/*//     <ArticleTitle smallTitle={t(`${basePath}.smallTitle`)} title={t(`${basePath}.title`)}  subtitle={t(`${basePath}.subtitle`)} />*/}
+                {/*//*/}
+                {/*//     {data.sections.map(section => {*/}
+                {/*//         sectionNumber++;*/}
+                {/*//*/}
+                {/*//         if (section.type === "quote") {*/}
+                {/*//             return <><blockquote className="quote">{t(`${basePath}.sections.${sectionNumber}.quote.text`)}</blockquote><br/></>*/}
+                {/*//         }*/}
+                {/*//*/}
+                {/*//         if (section.type === "bullets") {*/}
+                {/*//             let bulletNumber = 0;*/}
+                {/*//             return <>*/}
+                {/*//                 <h1>{t(`${basePath}.sections.${sectionNumber}.title`)}</h1>*/}
+                {/*//                 <ul>*/}
+                {/*//                 {[...Array(section.length)].map((x, i) => {*/}
+                {/*//*/}
+                {/*//                     bulletNumber++;*/}
+                {/*//                     let bulletPath = `${basePath}.sections.${sectionNumber}.bullet.${bulletNumber}`;*/}
+                {/*//                     return <li>{t(`${bulletPath}`)}</li>*/}
+                {/*//                 })}*/}
+                {/*//             </ul></>*/}
+                {/*//         }*/}
+                {/*//*/}
+                {/*//         let paragraphNumber = 0;*/}
+                {/*//         return <ArticleSection line={section.line}>*/}
+                {/*//             {[...Array(section.length)].map((x, i) => {*/}
+                {/*//*/}
+                {/*                paragraphNumber++;*/}
+                {/*                let paragraphPath = `${basePath}.sections.${sectionNumber}.paragraphs.${paragraphNumber}`;*/}
+                {/*                return <ArticleParagraph*/}
+                {/*                    title={i === 0 && section.title && t(`${basePath}.sections.${sectionNumber}.title`)}*/}
+                {/*                    text={t(`${paragraphPath}.text`)}/>*/}
+                {/*            })}*/}
+                {/*            {section.image &&*/}
+                {/*            <ArticleImage square={section.image.square}*/}
+                {/*                          subtitle={`${basePath}.sections.${sectionNumber}.image`}*/}
+                {/*                          image={`/assets/images/clients/${data.name}/${data.name}-${sectionNumber}.${section.image.extension}`}*/}
+                {/*            />}*/}
+                {/*        </ArticleSection>*/}
 
-                    {data.sections.map(section => {
-                        sectionNumber++;
-
-                        if (section.type === "quote") {
-                            return <><blockquote className="quote">{t(`${basePath}.sections.${sectionNumber}.quote.text`)}</blockquote><p>-{section.source}</p><br/><br/></>
-                        }
-
-                        let paragraphNumber = 0;
-                        return <ArticleSection line={section.line}>
-                            {[...Array(section.length)].map((x, i) => {
-
-                                paragraphNumber++;
-                                let paragraphPath = `${basePath}.sections.${sectionNumber}.paragraphs.${paragraphNumber}`;
-                                return <ArticleParagraph
-                                    title={i === 0 && section.title && t(`${basePath}.sections.${sectionNumber}.title`)}
-                                    text={t(`${paragraphPath}.text`)}/>
-                            })}
-                            {section.image &&
-                            <ArticleImage square={section.image.square}
-                                          subtitle={`${basePath}.sections.${sectionNumber}.image`}
-                                          image={`/assets/images/clients/${data.name}/${data.name}-${sectionNumber}.${section.image.extension}`}
-                            />}
-                        </ArticleSection>
-
-                    })}
-                </ArticleContent>
+                {/*    })}*/}
+                {/*</ArticleContent>*/}
 
             </ArticleBody>
             <Contact/>
