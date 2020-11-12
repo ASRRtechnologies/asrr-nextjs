@@ -350,7 +350,7 @@
     "header": {
       "title": "Wat onze klanten over ons zeggen",
       "smallTitle": "Klantervaringen",
-      "text": "De klant is koning(in) bij ASRR"
+      "text": "Een tevreden klant staat voorop in ons proces"
     }
   },
   "cases": {
@@ -543,37 +543,37 @@
         "title": "De bouw van een veilige, krachtige Remote Desktop Server",
         "sections": {
           "1": {
-            "title": "The Problem",
+            "title": "Het probleem",
             "paragraphs": {
               "1": {
-                "text": "NWO, a subsidiary of BP and Shell, is a company that was built to create the first long-range crude oil line in Europe. Within this company an external specialized team, the Enlargement Project team, was set up. Due to security policies, the external employees could not get access to their current system for sharing files, programs and work environments. It was also noted that the current system was not up to the teams requirements to do their jobs properly."
+                "text": "NWO, een dochteronderneming van BP en Shell, is een bedrijf dat op is gezet om de eerste long-range onverwerkte olielijn in Europa op te zetten. Er bestond hierbinnen een speciaal team, het Enlargement Project Team dat extern ingeschakeld was. Dit was een gespecialiseerd team dat alleen voor een speciaal deelproject opgetuigd was. Aangezien het deels externe medewerkers waren, kon er door security policies geen toegang verschaft worden voor het bestaande systeem, waar bestanden, programmatuur en werkplekken op ingericht waren. Verder bleek dat het bestaande systeem niet toereikend was voor het gespecialiseerde team. "
               },
               "2": {
-                "text": "An environment had to be set up where documents, communication, applications and processing power could be shared with all of the project team members. The desktop environment had to be remotely accessible from anywhere in the world, and had to be secured with at least 2 factor authentication. Due to a recent leak with Citrix this could not be used to do the job at hand. The in house IT team did not consider this project within their scope, so the EP team had to find external help. They needed about 50 remote desktop environments, with enough processing power to run heavy CAD and modelling programs. Furthermore, the files had to be stored safely with a fitting back-up strategy."
+                "text": "Er moest een plek komen waarin documenten, communicatie en rekenkracht beschikbaar gesteld kon worden voor iedere werknemer. Deze werkplek moest remote beschikbaar zijn, en ten minste beveiligd zijn met twee factor authenticatie. Door een recente lek met Citrix mocht hier niet gebruik van gemaakt worden. De in house IT partij vond dit buiten de scope van hun werkzaamheden passen, waardoor het EP team externe hulp aantrok. De klant gaf aan dat er ongeveer 50 werknemers moesten komen werken op binnen de omgeving, en dat er genoeg rekenkracht nodig was om zware CAD en modelleer programma’s te runnen. Verder moesten de bestanden veilig opgeslagen worden met een back-up strategie. "
               }
             },
-            "image": "Aerial view of the Nord-West Oelleitung"
+            "image": "Een vogelvlucht van de Nord-West Oelleitung"
           },
           "2": {
-            "title": "The solution",
+            "title": "De Oplossing",
             "paragraphs": {
               "1": {
-                "text": "ASRR built a server from the ground up. It had a 64 Core Multi-threaded Processor, 128 Gigabytes of DDR4 RAM and a couple of SSD’s/HDD’s in a RAID configuration. This server also required a Remote Desktop Licensing/Managing System, that synchronized with our C# application to change the local user passwords on the server."
+                "text": "ASRR heeft een server op maat samengesteld. Deze server bevatte een 64 Core Multithreaded Processor, 128 Gigabyte aan DDR4 RAM en een aantal SSD’s/HDD’s in RAID configuratie. Op deze server moest ook een Remote Desktop Licensing/Managing systeem komen, dat met een van onze C# applicaties om de paar minuten het lokale wachtwoord op de server aanpaste, per gebruiker.  "
               },
               "2": {
-                "text": "The C# application connects to our cloud environment using an encrypted RabbitMQ connection. The cloud environment has a notion of the allowed users, with connected two factor authentication and a login system that users could use to generate a connection file. Users can then use this to open a secure connection with the server easily."
+                "text": "Deze C# applicatie stond in verbinding met onze Cloud omgeving d.m.v. een versleutelde RabbitMQ connectie. De Cloud omgeving had een notie van de gebruikers die in mogen loggen, en heeft daarbij met twee factor authenticatie een login systeem waarmee gebruikers een gegenereerd connectiebestand kunnen downloaden, waarmee gebruikers met 1 klik op de knop extreem secuur kunnen inloggen. "
               },
               "3": {
-                "text": "Inside of the environment, we applied the complete Microsoft suite. The key element in this was the use of Microsoft Teams, which was then still quite new. Teams served as the team hub for all files (with a SharePoint connection), meetings, announcements, planning, etc. We provided workers with a briefing about the usage of Teams and provided remote support through the system for any IT and Microsoft Office support requests."
+                "text": "Binnen de omgeving hebben we de volledige Microsoft stack toegepast, met als rode lijn Microsoft Teams. Dit was de hub voor alle bestanden (gekoppeld met het SharePoint systeem), meetings, announcements, planning, etc. We hebben de werknemers een briefing gegeven over het gebruik van Teams, dat toen nog in de kinderschoenen stond (voor Coronatijden), en remote support geleverd via het systeem met enige IT en Microsoft Office ondersteuningsverzoeken die in het dagelijkse proces naar boven kwamen. "
               }
             },
-            "image": "A screenshot of the application. "
+            "image": "Een screnshot van de applicatie. "
           },
           "3": {
-            "title": "The Conclusion",
+            "title": "De Conclusie",
             "paragraphs": {
               "1": {
-                "text": "Using a powerful server, a team spread through the Netherlands and Germany could work as if they were sitting in the same office. At moments that there are fewer people on the server, the remaining user have a powerful supercomputer at their disposal, allowing for fast calculations of tasks that would usually take overnight."
+                "text": "Door deze krachtige server kon een heel gespecialiseerd team, verspreid over Nederland en Duitsland goed samenwerken, alsof ze op dezelfde werkplek zaten. Op momenten dat er niet veel mensen op de server zitten, hebben de overgebleven users de rekenkracht van een supercomputer tot hun beschikking, wat handig is voor taken die normaal gesproken lang zouden duren. "
               }
             }
           }
@@ -679,20 +679,20 @@
     "aapjes": {
       "content": {
         "landing": {
-          "title": "A playful online presence"
+          "title": "A vrolijke en nieuwe website"
         },
         "smallTitle": "Web Application | Front-End Development | Design",
         "subtitle": "De Kleine Aapjes",
-        "title": "A web application that suits its customers",
+        "title": "A web application voor de kleintjes",
         "sections": {
           "1": {
-            "title": "The Process",
+            "title": "Het proces",
             "paragraphs": {
               "1": {
-                "text": "De Kleine aapjes is a daycare facility based in the Hague."
+                "text": "De Kleine aapjes is een peuterspeelzaal in Den Haag."
               },
               "2": {
-                "text": "The client came to us with the request for a new website. In modern day web, mobile users make up a large portion of the traffic on most informative sites. That’s why all of our websites are built with mobile devices in mind and are fully responsive. The applications we build are Progressive Web Applications, which mean they have some nifty features. One of them is offline caching, if needed, an application can be cached and can work completely without internet after the first load. This also results in zero load times between different pages."
+                "text": "De klant kwam naar ons toe voor een nieuwe website. In het huidige web. In modern day web, mobile users make up a large portion of the traffic on most informative sites. That’s why all of our websites are built with mobile devices in mind and are fully responsive. The applications we build are Progressive Web Applications, which mean they have some nifty features. One of them is offline caching, if needed, an application can be cached and can work completely without internet after the first load. This also results in zero load times between different pages."
               },
               "3": {
                 "text": "Most of our web applications are based in ReactJS, build upon further with NextJS for server-side rendering and extra speed or performance. They can fit in with our back-end systems seamlessly and are built up using modular components."
