@@ -1,7 +1,7 @@
 export const services = [
     {
         type: "service",
-        name: "itaas",
+        name: "ittaas",
         readMore: true,
         landing: {
             backgroundImage: {
