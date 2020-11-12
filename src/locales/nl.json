@@ -868,7 +868,7 @@
     "article": {
       "itaas": {
         "card": {
-          "title": "IT Teams as a Service (ITaas)",
+          "title": "IT Teams as a Service (ITTAAS)",
           "description": "Wat zijn de voordelen van dynamische externe IT teams?"
         },
         "content": {
@@ -876,8 +876,8 @@
             "title": "Expertise on demand"
           },
           "smallTitle": "Expertise on demand | Full stack development",
-          "title": "IT Teams as a Service (ITaaS)",
-          "subtitle": "What are the advantages of a flexible team compared to a classic one-by-one recruitment strategy?",
+          "title": "IT Teams as a Service (ITTAAS)",
+          "subtitle": "Wat zijn de voordelen van dynamische externe IT teams ten opzichte van een 1 op 1 recruitment strategie?",
           "sections": {
             "1": {
               "title": "De huidige situatie",
@@ -898,7 +898,7 @@
               "image": ""
             },
             "2": {
-              "title": "Hoe ziet ASRR ITaaS",
+              "title": "Hoe ziet ASRR ITTAAS",
               "paragraphs": {
                 "1": {
                   "text": "De service begint met het aanspreekpunt. Dit is de brug tussen de Business en IT. Het aanspreekpunt moet inhoudelijke kennis hebben, maar moet ook kunnen relativeren en begrijpen wat belangrijk is voor de opdrachtgever. Communicatie, kennis en begrip zijn hierbij belangrijke karaktereigenschappen."
@@ -920,14 +920,6 @@
                 }
               },
               "image": ""
-            },
-            "4": {
-              "title": "The Conclusion",
-              "paragraphs": {
-                "1": {
-                  "text": "FORM needed many different IT disciplines to achieve their complex goal. Over the years we’ve provided them with a dynamic team, consisting of Front-End, Back-End, Database, Hosting and Design experts. This has resulted in a fantastic collaboration with a stable end product, using the latest and greatest technologies."
-                }
-              }
             }
           }
         }
