@@ -77,9 +77,23 @@
     padding: 0;
   }
 
-  .testimonial-card{
+  .testimonial-card {
     width: 100%;
     max-width: 500px;
+
+
+    &:nth-child(1) {
+      margin-right: 0;
+    }
+
+    &:nth-child(2) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &:nth-child(3) {
+      margin-left: 0;
+    }
   }
 
 }

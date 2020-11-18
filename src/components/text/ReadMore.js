@@ -21,7 +21,7 @@ function ReadMore({to, inverted, text, children, noAnimation, className, ...rest
         return (
             <>
                 {noAnimation ? (props.children) : (
-                    <Fade bottom>
+                    <Fade delay={400} bottom>
                         {props.children}
                     </Fade>
                 )}

@@ -6,7 +6,7 @@ import scale from '#/services/scaleable-software/scaleable-software-sqaure.webp'
 import Fade from 'react-reveal/Fade';
 import styled from "@emotion/styled";
 import Card from "@/services/Card";
-import PreviewServices from "@/services/Preview";
+import Title from "@/titles/Title";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.layout};
@@ -15,7 +15,7 @@ const Wrapper = styled(Section)`
 function Services() {
     return (
         <Wrapper className="no-landing">
-            {/*<Title basePath={'services.preview.header'}/>*/}
+            <Title basePath={'services.preview.header'}/>
             <div className="services">
 
                 <Fade delay={200} bottom>
