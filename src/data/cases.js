@@ -118,7 +118,7 @@ export const cases = [
         description: "website",
         landing: {
             backgroundImage: {
-                extension: 'jpg'
+                extension: 'webp'
             }
         },
         sections: [
@@ -126,7 +126,7 @@ export const cases = [
                 title: true,
                 length: 4,
                 image: {
-                    extension: 'png'
+                    extension: 'webp'
                 }
             }
         ]
