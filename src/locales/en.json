@@ -1036,6 +1036,13 @@
         "2": "Het modulair bouwen van het projectteam én applicatie is waar het bij IT Teams as a Service om draait.  "
       }
     }
+  },
+  "techstack": {
+    "preview": {
+      "header": {
+        "title": "The tech we use"
+      }
+    }
   }
 
 }

@@ -42,7 +42,7 @@ function TechStack ({ preview }) {
 
 	return (
 		<Wrapper>
-			<Title className="title-margin-small" basePath={'portfolio.preview.header'} compact noSection/>
+			<Title className="title-margin-small" basePath={'techstack.preview.header'} compact noSection/>
 			<Fade bottom>
 				<div className="techstack">
 					<div className="techgrid">
