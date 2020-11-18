@@ -6,7 +6,6 @@ import t from "../../hooks/translator";
 import ArticleSection from "@/article/ArticleSection";
 import ArticleParagraph from "@/article/ArticleParagraph";
 import ArticleImage from "@/article/ArticleImage";
-import Application from "@/layout/Application";
 import React from "react";
 import {NextSeo} from "next-seo";
 

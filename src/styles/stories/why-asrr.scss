@@ -1,6 +1,6 @@
 .why-asrr {
   @include flex(center, flex-start, row);
-  width: 100%;
+  width: auto;
   height: auto;
   max-width: $max-width;
 
@@ -64,7 +64,7 @@
     width: auto;
     max-width: 200px;
     margin-bottom: 0;
-    text-align: left;
+    //text-align: left;
   }
 
 }
@@ -74,6 +74,7 @@
   width: 60%;
   @include flex(center, flex-start, column);
   margin-left: 25px;
+  text-align: center;
 
   ul {
     list-style-position: inside;
