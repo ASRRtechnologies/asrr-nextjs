@@ -47,7 +47,7 @@ function Preview(props) {
                 {services.map((service, i) => {
                     let {id} = service;
                     return (
-                        <Fade delay={i * 300} bottom>
+                        <Fade delay={200} bottom>
                             <div className="service-preview-card card-margin-bottom">
 							<span className="service-preview-card-image">
 								<img src={service.image} alt={service.alt}/>

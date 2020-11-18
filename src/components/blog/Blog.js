@@ -19,7 +19,7 @@ function Preview({preview}) {
             <div className="blog">
                 {
                     blog.map((entry, i) => {
-                        return <Fade delay={animationDelay([0, 200, 400], 3, i)} bottom>
+                        return <Fade delay={200} bottom>
                             <Card blog={entry}/>
                         </Fade>
                     })
