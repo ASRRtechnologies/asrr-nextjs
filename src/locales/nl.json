@@ -580,7 +580,7 @@
                 "text": "Binnen de omgeving hebben we de volledige Microsoft stack toegepast, met als rode lijn Microsoft Teams. Dit was de hub voor alle bestanden (gekoppeld met het SharePoint systeem), meetings, announcements, planning, etc. We hebben de werknemers een briefing gegeven over het gebruik van Teams, dat toen nog in de kinderschoenen stond (voor Coronatijden), en remote support geleverd via het systeem met enige IT en Microsoft Office ondersteuningsverzoeken die in het dagelijkse proces naar boven kwamen. "
               }
             },
-            "image": "Een screnshot van de applicatie. "
+            "image": "Een screenshot van de applicatie. "
           },
           "3": {
             "title": "De Conclusie",
@@ -823,7 +823,7 @@
     "types": {
       "article": {
         "name": "Artikel",
-        "readMore": "Lees artikel [Engels]"
+        "readMore": "Lees artikel"
       },
       "news": {
         "name": "Nieuws",
