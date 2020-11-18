@@ -20,7 +20,7 @@ function Services() {
             {/*<Title basePath={'services.preview.header'}/>*/}
             <div className="services">
 
-                <Fade delay={0} bottom>
+                <Fade delay={200} bottom>
                     <div className="service-card-wrapper card-margin-bottom">
                         <Card route="/ittaas" basePath={`services.cards.itaas`} paragraphs={1} image={scale}/>
                     </div>
@@ -32,7 +32,7 @@ function Services() {
                     </div>
                 </Fade>
 
-                <Fade delay={300} bottom>
+                <Fade delay={200} bottom>
                     <div className="service-card-wrapper card-margin-bottom">
                         <Card route="/bi" basePath={`services.cards.bi`} paragraphs={1} image={analytics}/>
                     </div>
