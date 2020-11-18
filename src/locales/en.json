@@ -796,23 +796,6 @@
           }
         }
       },
-      "heijmans-confi2gurator": {
-        "card": {
-          "title": "ASRR & FORM launch Heijmans Online 3D Configurator.",
-          "description": "Together with our partner FORM, we developed a online 3D House Configurator, based on a NextJS platform. This includes a dasbhoard to see customer configurations and a Spring Boot Back end to manage the data."
-        },
-        "content": {
-          "paragraph": {
-            "1": {
-              "title": "Finally, a real world implementation of our 3D housing configurator!",
-              "text": "test"
-            },
-            "2": {
-              "text": "The result? A happy project leader and very excited customers!"
-            }
-          }
-        }
-      },
       "new-office": {
         "card": {
           "title": "ASRR moved to the Glass House in Wateringen",
@@ -894,7 +877,7 @@
         },
         "content": {
           "landing": {
-            "title": "Expertise on demand"
+            "title": "An over-engineered building block foundation"
           },
           "smallTitle": "Modular Building Block Foundation | Full stack development",
           "title": "Can microservices save you time and effort?",
@@ -1008,6 +991,52 @@
         }
       }
     }
+  },
+  "about": {
+    "article": {
+      "headline": "About ASRR",
+      "smallTitle": "about",
+      "title": "ASRR | Innovative Software Development",
+      "subtitle": "ASRR specialiseert zich in software development, custom hardware oplossingen en business insights. Dit zijn losstaande diensten, maar gecombineerd een 360 graden IT-oplossing. ",
+      "sections": {
+        "1": {
+          "paragraphs": {
+            "1": "ASRR introduceert: IT Teams as a service. \nDe ideale combinatie van software development en IT-detachering in één. \n"
+          }
+        },
+        "2": {
+          "title": "Van visie tot applicatie",
+          "paragraphs": {
+            "1": "Dit is de brug tussen Business en IT. Wij werken van visie tot applicatie en verzorgen een volledig ontzorgd IT-development traject. Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte IT-afdeling tijdelijk aan jouw bedrijf toevoegt. Hierbij maak je je niet druk over of je wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’ applicatie op maat. Je wijkt niet af van je huidige processen en houdt toch helder zicht op de tijdlijn, productie en oplevering. "
+          }
+        },
+        "3": {
+          "title": "Expertise on demand",
+          "paragraphs": {
+            "1": "Met IT Teams as a service stel je met behulp van ‘Expertise on Demand’ zelf een projectteam samen, precies op maat van de opdracht. ASRR heeft alle nodige expertises in-house en heeft alvast wat voorwerk gedaan in de vorm van Microservices. Dit zijn ge-over-engineerde bouwstenen die de basis vormen van de tool of applicatie. Deze zijn of the shelve beschikbaar en direct te implementeren. De bouwstenen in de zogenaamde fundering hebben alle test al doorstaan, zodat onze analytische IT-pioniers kunnen focussen op wat belangrijk is: echte innovatie."
+          }
+        },
+        "4": {
+          "title": "Een digitaliseringsslag",
+          "paragraphs": {
+            "1": "In deze tijd een must voor je bedrijf, maar ook een hoofdpijndossier. Wat omarm je om een competitief voordeel te krijgen of te behouden? En hoe word je bewust van poteniele kansen of juist blinde vlekken?",
+            "2": "ASRR heeft een scherpe blik op de markt. Wij adviseren en maken je bewust van kansen en eventuele blinde vlekken. De kans is groot dat je onbewust op een data-goudmijn zit, die doorslaggevend is voor het doel van het project en van ruwe data waardevolle ‘business insights’ maakt."
+          }
+        },
+        "5": {
+          "title": "Scope management",
+          "paragraphs": {
+            "1": "ASRR: Eén centraal punt voor al jouw software development betekent voor ons ook één aanspreekpunt. Dit aanspreekpunt is een ervaren ‘product owner’ met ruime development ervaring, spreekt zowel de taal van jou als de taal van developers en maximaliseert hierdoor grip op de zaak."
+          }
+        }
+      },
+      "quotes": {
+        "1": "ASRR ontwikkelt degelijke, innovatieve software met een scherpe focus op gebruiksvriendelijkheid en een intuïtief design.",
+        "3": "Dezelfde grip en korte lijnen die je bent gewend, maar nu 'remote' (en zonder de kantoor- en hardware kosten)",
+        "2": "Het modulair bouwen van het projectteam én applicatie is waar het bij IT Teams as a Service om draait.  "
+      }
+    }
   }
+
 }
 

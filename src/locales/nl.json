@@ -860,13 +860,29 @@
           "description": "Together with our partner FORM, we developed a online 3D House Configurator, based on a NextJS platform. This includes a dasbhoard to see customer configurations and a Spring Boot Back end to manage the data."
         },
         "content": {
-          "paragraph": {
+          "landing": {
+            "title": "Een huis configureren vanuit VR, vanuit je luie stoel."
+          },
+          "smallTitle": "",
+          "title": "Heijmans/FORM 3D House Configurator",
+          "subtitle": "A VR Ready, 3D omgeving om uw toekomstige huis te configureren vanuit je internet browser.",
+          "sections": {
             "1": {
-              "title": "Finally, a real world implementation of our 3D housing configurator!",
-              "text": "test"
+              "title": "Waar hebben we voor gezorgd?",
+              "paragraphs": {
+                "1": {
+                  "text": "Together with FORM, we delivered an online 3D real-time BIM configurator. This allows users to see the options they pick in real time, even with VR. This all is rendered in a web browser, accessible from everywhere."
+                }
+              },
+              "image": "De online omgeving."
             },
             "2": {
-              "text": "The result? A happy project leader and very excited customers!"
+              "paragraphs": {
+                "1": {
+                  "text": "Dit runt allemaal in een van onze NextJS applicaties. De database voor gebruikersinformatie is een MongoDB database. De prijzen worden in real-time berekend op basis van de gekozen opties. Er wordt een kassabon geprint in PDF formaat en de klant kan de configuratie terugvinden in de mail."
+                }
+              },
+              "image": "Wat de koper per mail ontvangt."
             }
           }
         }
@@ -940,31 +956,41 @@
       "microservices": {
         "card": {
           "title": "Can microservices save you time and effort?",
-          "description": "Using microservice architecture in software can provide various advantages over traditional monolithic applications."
+          "description": "Using microservice architecture in software can provide various advantages over traditional monolithic applications. Find out how in this article."
         },
         "content": {
-          "paragraph": {
+          "landing": {
+            "title": "An over-engineered building block foundation"
+          },
+          "smallTitle": "Modular Building Block Foundation | Full stack development",
+          "title": "Can microservices save you time and effort?",
+          "subtitle": "Using microservice architecture in software can provide various advantages over traditional monolithic applications.",
+          "sections": {
             "1": {
               "title": "How using microservices can make your applications a lot more flexible",
-              "text": "Think of classical software as a very large cruise ship. It’s a very complex and big machine, capable of a lot of different things. However, it’s a large endeavor to build from scratch, and if one part breaks, the whole ship might sink. Furthermore, it’s a hassle to upgrade one specific part, even though the rest may be working fine."
+              "paragraphs": {
+                "1": {
+                  "text": "Think of classical software as a very large cruise ship. It’s a very complex and big machine, capable of a lot of different things. However, it’s a large endeavor to build from scratch, and if one part breaks, the whole ship might sink. Furthermore, it’s a hassle to upgrade one specific part, even though the rest may be working fine."
+                },
+                "2": {
+                  "text": "Microservices are like a fleet of smaller, more specialized boats. One focusses on payments, the next on user management, another one for security, etc. It’s easy to swap a single boat if it breaks. It’s easy to isolate a single part if it needs to be upgraded, and can be over-engineered as it is used extensively through different projects."
+                }
+              },
+              "image": "Monolithic structure vs. microservice structure"
             },
             "2": {
-              "text": "Microservices are like a fleet of smaller, more specialized boats. One focusses on payments, the next on user management, another one for security, etc. It’s easy to swap a single boat if it breaks. It’s easy to isolate a single part if it needs to be upgraded, and can be over-engineered as it is used extensively through different projects."
-            },
-            "3": {
               "title": "How does ASRR use this to its advantage?",
-              "text": "During the development process of any given project, we use and build up our extensive library of highly-scalable robust microservices. "
-            },
-            "4": {
-              "text": "For the customer, this means a couple of advantages. For one, a complex project can be based of a selection of our microservices, allowing us to focus on the parts that are difficult or unique to that specific project. Secondly, we can deliver the project quicker, and are able to rely on the tested and proven reliability of the microservices that were written before. The microservices that were written before were created with scalability and robustness in mind. Most of them are over-engineered for the current task at hand, so that they can scale freely in the future."
-            },
-            "5": {
-              "text": "In short, this results in lower costs while improving reliability."
-            }
-          },
-          "image": {
-            "1": {
-              "subtitle": "Monolithic structure vs. microservice structure"
+              "paragraphs": {
+                "1": {
+                  "text": "Think of classical software as a very large cruise ship. It’s a very complex and big machine, capable of a lot of different things. However, it’s a large endeavor to build from scratch, and if one part breaks, the whole ship might sink. Furthermore, it’s a hassle to upgrade one specific part, even though the rest may be working fine."
+                },
+                "2": {
+                  "text": "Microservices are like a fleet of smaller, more specialized boats. One focusses on payments, the next on user management, another one for security, etc. It’s easy to swap a single boat if it breaks. It’s easy to isolate a single part if it needs to be upgraded, and can be over-engineered as it is used extensively through different projects."
+                },
+                "3": {
+                  "text": "In short, this results in lower costs while improving reliability."
+                }
+              }
             }
           }
         }
