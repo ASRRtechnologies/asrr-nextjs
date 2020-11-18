@@ -9,10 +9,6 @@ import ReadMore from "@/text/ReadMore";
 import styled from "@emotion/styled";
 import t from "../../hooks/translator";
 
-const Wrapper = styled(Section)`
-        background: ${props => props.theme.home.services};
- }`;
-
 const services = [
     {
         image: scale,
@@ -35,10 +31,10 @@ const services = [
 
 ];
 
-function Preview(props) {
+function CheckmarkServices(props) {
     const basePath = "services.preview";
     return (
-        <Wrapper>
+        <Section className="no-landing">
             <Title basePath={basePath + ".header"}/>
             <div className="services-preview">
                 {services.map((service, i) => {
@@ -51,12 +47,11 @@ function Preview(props) {
 							</span>
                                 <h1 className="theme-font subheader">{t(`${basePath}.services.${id}.title`)}</h1>
 
-                                {!props.compact && <>  <p className="text">{t(`${basePath}.services.${id}.text`)}</p>
-                                </>}
-                                {props.compact && service.bullets && <ul className="service-list">
+                                {/*{!props.compact && <>  <p className="text">{t(`${basePath}.services.${id}.text`)}</p></>}*/}
+
+                                {service.bullets && <ul className="service-list">
                                     {[...Array(service.bullets)].map((x, i) => {
                                         return <li>✔ {t(`${basePath}.services.${id}.bullets.${i}`)}</li>
-
                                     })}
                                 </ul>}
                             </div>
@@ -65,12 +60,8 @@ function Preview(props) {
                 })}
             </div>
 
-            {!props.compact && <div className="read-more-wrapper">
-                <ReadMore className="subheader" to="/services" text="buttons.services"/>
-            </div>}
-
-        </Wrapper>
+        </Section>
     );
 }
 
-export default Preview;
+export default CheckmarkServices;

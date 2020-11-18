@@ -1,8 +1,8 @@
 import React from 'react'
 import Section from '../layout/Section'
-import automation from '#/services/automation/automation-square.jpg'
-import analytics from '#/services/data-analytics/data-analytics-square.jpg'
-import scale from '#/services/scaleable-software/scaleable-software-sqaure.jpg'
+import automation from '#/services/automation/automation-square.webp'
+import analytics from '#/services/data-analytics/data-analytics-square.webp'
+import scale from '#/services/scaleable-software/scaleable-software-sqaure.webp'
 import Fade from 'react-reveal/Fade';
 import styled from "@emotion/styled";
 import Card from "@/services/Card";
@@ -15,8 +15,6 @@ const Wrapper = styled(Section)`
 function Services() {
     return (
         <Wrapper className="no-landing">
-            <PreviewServices compact/>
-
             {/*<Title basePath={'services.preview.header'}/>*/}
             <div className="services">
 
