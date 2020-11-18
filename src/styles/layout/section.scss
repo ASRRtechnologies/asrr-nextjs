@@ -16,6 +16,10 @@
     padding-bottom: 0;
   }
 
+  &.clients-section{
+    padding: 100px $padding-pc;
+  }
+
   &.footer-section{
     padding: 100px $padding-pc 50px $padding-pc;
     background-color: #000;
@@ -45,6 +49,10 @@
 
     &.footer-section{
       padding: 50px $padding-mobile 25px $padding-mobile;
+    }
+
+    &.clients-section{
+      padding: 50px $padding-pc;
     }
 
   }
