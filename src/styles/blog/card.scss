@@ -1,74 +1,95 @@
-$blog-card-first-breakpoint: 1400px;
-$blog-card-second-breakpoint: 1200px;
-$blog-card-third-breakpoint: 500px;
+.blog{
+  @include size(100%, auto);
+  @include flex(space-between, flex-start, row);
+  flex-wrap: wrap;
+  max-width: $max-width;
+  @include margin-top(-150px);
 
-.blog-card {
-  width: 394px; //ratio 9/16 => 700/ (9/16)
-  height: auto;
-  //min-height: 700px;
-  //margin-bottom: 100px;
 }
 
-.blog-card-inner {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  position: relative;
-  grid-template-columns: 1fr;
-  grid-template-rows: 222px 1fr; //ratio 16/9 => 394/ (16/9)
-  border-radius: 10px;
+.blog-card{
+  width: 30.33%;
+  min-width: 350px;
+  max-width: 400px;
+  min-height: 650px;
+  @include flex(flex-start, flex-start, column);
 }
 
-.blog-card-image {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.blog-card-inner-wrapper{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
-  img {
+.blog-card-image{
+  @include size(100%, auto);
+}
+
+.blog-card-image-wrapper{
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  img{
     @include size(100%, 100%);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     object-fit: cover;
     object-position: 50% 50%;
     transition: all 0.7s ease 0s;
     left: 0;
     top: 0;
-
-    &:hover {
-      transform: scale(1.2);
-      transition: all 0.7s ease 0s;
-    }
+    position: absolute;
   }
 
 }
 
-.blog-card-text {
-  @include flex(flex-start, flex-start, column);
+.blog-card-text{
   @include size(100%, 100%);
+  flex:1;
   padding: 30px;
-  text-align: left;
 }
 
-@media screen and (max-width: $blog-card-first-breakpoint) {
-  .blog-card {
-    width: 500px;
-  }
 
-  .blog-card-inner {
-    grid-template-rows: 282px 1fr; //ratio 16/9 => 500/ (16/9)
-  }
-}
-
-@media screen and (max-width: $blog-card-second-breakpoint) {
-  .blog-card {
-    width: 100%;
+@media screen and (max-width: 1400px) {
+  .blog-card{
+    width: 45%;
     max-width: 500px;
   }
 }
 
-@media screen and (max-width: $blog-card-third-breakpoint) {
-  .blog-card-inner {
-    grid-template-rows: calc( (100vw - #{$padding-mobile} * 2)/ 1.77 )  1fr; //ratio 16/9 => 500/ (16/9)
+@media screen and (max-width: $tablet-breakpoint) {
+  .blog{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .blog-card{
+    height: auto;
+    width: 100%;
+    min-width: 200px;
+    min-height: auto;
+  }
+
+  .blog-card-inner-wrapper{
+    flex:0;
+    height: auto;
+  }
+
+  .blog-card-text{
+    height: auto;
+    display: block;
+    flex:0;
+  }
+
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .blog{
+    @include margin-top(-100px);
   }
 }
