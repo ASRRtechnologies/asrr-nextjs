@@ -1,6 +1,4 @@
 import React from 'react';
-import Section from "@/layout/Section";
-import Application from "@/layout/Application";
 
 function ArticleContent(props) {
     return (

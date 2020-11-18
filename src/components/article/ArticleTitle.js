@@ -1,5 +1,4 @@
 import React from 'react';
-import useI18n from '../../hooks/use-i18n'
 import Fade from 'react-reveal/Fade';
 
 function ArticleTitle({smallTitle, title, subtitle}) {

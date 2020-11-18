@@ -13,7 +13,9 @@ function Title({compact, noSection, basePath, className, id}) {
             <Fade bottom>
                 <>
                     {<h1 className="title">{i18n.t(title) !== undefined ? i18n.t(title) : title}</h1>}
-                    {!noSection && <h2 className="title-label">{i18n.t(smallTitle) !== undefined ? i18n.t(smallTitle) : smallTitle}</h2>}
+                    {/*{!noSection && <h2 className="title-label">{i18n.t(smallTitle) !== undefined ? i18n.t(smallTitle) : smallTitle}</h2>}*/}
+                    {/*This in order for lighthouse to have proper heading order in each section so h1 h2 h3 instead of h1 h3*/}
+                    {noSection ? <h2 className="title-label"> </h2> : <h2 className="title-label">{i18n.t(smallTitle) !== undefined ? i18n.t(smallTitle) : smallTitle}</h2>}
                     {!compact && <h3 className="subtitle">{i18n.t(text) !== undefined ? i18n.t(text) : text}</h3>}
                 </>
             </Fade>

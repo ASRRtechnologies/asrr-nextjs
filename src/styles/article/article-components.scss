@@ -46,8 +46,10 @@
   @include size (100vw, auto);
   @include margin-bottom(48px);
   @include flex(center, center, row);
-  border-bottom: 1px solid white;
   padding: 0 $padding-pc;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+
   p{
     @include margin-bottom(32px);
   }

@@ -246,7 +246,18 @@ const alert = {
 		dark: cards.background.dark,
 		light: cards.background.light,
 	},
-}
+};
+
+const utilities = {
+
+	border:{
+		background:{
+			light:"#d7d7d7",
+			dark:"#eee",
+		}
+	}
+
+};
 
 const lightTheme = {
 
@@ -320,6 +331,12 @@ const lightTheme = {
 	alert: {
 		background: alert.background.light,
 	},
+
+	utilities:{
+		border:{
+			background:utilities.border.background.light
+		}
+	}
 
 }
 
@@ -397,6 +414,12 @@ const darkTheme = {
 	alert: {
 		background: alert.background.light,
 	},
+
+	utilities:{
+		border:{
+			background:utilities.border.background.light
+		}
+	}
 
 }
 
