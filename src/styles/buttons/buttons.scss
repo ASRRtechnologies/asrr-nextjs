@@ -1,7 +1,7 @@
 .button {
   border: none;
   text-align: center;
-  height: 100%;
+  height: auto;
   box-sizing: content-box;
   text-decoration: none;
   display: inline-block;
@@ -10,8 +10,9 @@
   border-radius: 5px;
   width: auto;
   font-family: inherit;
-
+  white-space: nowrap;
   transition: 50ms ease-in box-shadow;
+
   &:hover{
     box-shadow: none;
     transition: 50ms ease-in box-shadow;

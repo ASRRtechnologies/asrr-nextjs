@@ -87,7 +87,12 @@ $bermuda: #77D7B9;
 
 .header-actions {
   @include size(auto, 100%);
-  @include flex(flex-end, center, row)
+  @include flex(flex-end, center, row);
+
+  .button{
+    margin-right: 30px;
+  }
+
 }
 
 /* The progress container (grey background) */
