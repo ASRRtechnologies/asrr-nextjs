@@ -1,0 +1,40 @@
+.techstack {
+  @include size(100%, auto);
+  @include flex(center, flex-start, row);
+  max-width: $max-width;
+}
+
+.techgrid {
+  @include size(auto, auto);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 300px 300px;
+  grid-template-rows: 1fr;
+  grid-row-gap: 75px;
+}
+
+.tech-grid-cell {
+  @include size(auto, auto);
+}
+
+.tech-image {
+  display: block;
+  width: 200px;
+  height: auto;
+  filter: brightness(0);
+
+  &.tech-dark {
+    filter: invert(1);
+  }
+
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .techgrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+}
+
