@@ -267,8 +267,34 @@
           }
         }
       }
-    }
+    },
+    "hardware": {
+      "content": {
+        "landing": {
+          "title": "Hardware that looks as good as it performs"
+        },
+        "smallTitle": "Custom built workstations and servers",
+        "title": "Hardware that fits your needs precisely",
+        "subtitle": "With ASRR hardware you don't have to pay for unnecessary parts, making sure the budget goes to crucial parts",
+        "sections": {
+          "1": {
+            "image": "An elegant, powerful solution.",
+            "paragraphs": {
+              "1": "ASRR builds hardware that’s miles ahead of the competition. The components are carefully selected to fit your needs. This means that you don’t pay too much for unnecessary components, while keeping the focus on the crucial parts. We always use the latest and greatest in terms of technology, resulting in more performance for less costs.",
+              "2": "We deliver secure servers, with remote desktop capabilities and a custom built 2 factor authentication login method. We also build powerful workstations, gaming rigs and budget pc’s. "
 
+            }
+          },
+          "2": {
+            "title": "The Process",
+            "paragraphs": {
+              "1": "First, ASRR analyses your needs. You may need hardware that can handle heavy duty CAD/BIM, or other 3D based work. In that case, we include a powerful graphics card in the build. In other cases, the work is more focused on tasks that profit from high CPU clock speeds. It may even be possible that you don’t need a graphics card at all, resulting in more budget for the parts that matter. This all is packed into a neat, modern case, making your workspace or server look as good as it performs.",
+              "2": "Using this approach, we can deliver the best performance for your budget. "
+            }
+          }
+        }
+      }
+    }
   },
   "contact": {
     "landing": {
