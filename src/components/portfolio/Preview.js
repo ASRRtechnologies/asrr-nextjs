@@ -32,12 +32,13 @@ function Portfolio({preview}) {
 
             <Title basePath={'portfolio.preview.header'} compact noSection/>
 
+            {/*animationDelay([0, 400, 800], 3, i )*/}
+
             <div className="portfolio">
                 {cases.map(({image, id, type, href}, i) => {
-                    {animationDelay([0, 400, 800], 3, i )}
 
                     return (
-                        <Fade delay={animationDelay([0, 400, 800], 3, i )} bottom>
+                        <Fade delay={200} bottom>
                             <div className="portfolio-card card-margin-bottom">
                                 <Link href={`/portfolio/case/${id}`}>
                                     <a className="portfolio-card-inner">

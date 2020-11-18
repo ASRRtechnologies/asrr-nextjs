@@ -21,7 +21,7 @@ function Preview(props) {
 				{clients.map((client, i) => {
 					let {id} = client;
 					return (
-						<Fade delay={i * 300} bottom>
+						<Fade delay={200} bottom>
 							<div className="testimonial-card card-margin-bottom">
 								<span className="testimonial-card-image">
                 					<img src={i18n.t("home.stories." + client + ".picture")}/>

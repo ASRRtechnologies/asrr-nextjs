@@ -5,6 +5,8 @@ import Application from '../components/layout/Application'
 import SmallLanding from "@/landing/SmallLanding";
 import Contact from "@/contact/Preview";
 import {useHeader} from "../context/navigation/HeaderContext";
+import PreviewServices from "@/services/Preview";
+import CheckmarkServices from "@/services/CheckmarkServices";
 
 function Services(props) {
     const header = useHeader();
@@ -13,7 +15,7 @@ function Services(props) {
     }, []);
     return (
         <Application>
-            {/*<SmallLanding title="Our Services"/>*/}
+            <CheckmarkServices/>
             <ServicePage/>
             <Contact/>
         </Application>

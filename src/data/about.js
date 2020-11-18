@@ -6,7 +6,7 @@ export const about = [
         readMore: true,
         landing: {
             backgroundImage: {
-                extension: 'jpg'
+                extension: 'webp'
             }
         },
         sections: [

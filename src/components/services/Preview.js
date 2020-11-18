@@ -1,16 +1,13 @@
 import React from 'react';
 import Section from "@/layout/Section";
-import automation from '#/services/automation/automation-square.jpg'
-import analytics from '#/services/data-analytics/data-analytics-square.jpg'
-import scale from '#/services/scaleable-software/scaleable-software-sqaure.jpg'
+import automation from '#/services/automation/automation-square.webp'
+import analytics from '#/services/data-analytics/data-analytics-square.webp'
+import scale from '#/services/scaleable-software/scaleable-software-sqaure.webp'
 import Title from "@/titles/Title";
 import Fade from 'react-reveal/Fade';
 import ReadMore from "@/text/ReadMore";
 import styled from "@emotion/styled";
 import t from "../../hooks/translator";
-import ArticleParagraph from "@/article/ArticleParagraph";
-import ArticleSection from "@/article/ArticleSection";
-import check from "public/assets/icons/check_circle-24px.svg"
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.services};
@@ -47,7 +44,7 @@ function Preview(props) {
                 {services.map((service, i) => {
                     let {id} = service;
                     return (
-                        <Fade delay={i * 300} bottom>
+                        <Fade delay={200} bottom>
                             <div className="service-preview-card card-margin-bottom">
 							<span className="service-preview-card-image">
 								<img src={service.image} alt={service.alt}/>

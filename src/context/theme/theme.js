@@ -1,26 +1,26 @@
 //Font colors
-const headerDark= '#ffffff';
-const headerLight= '#1a1a1a';
-const paragraphLight = '#41474E';
-const paragraphDark = '#ededed';
-const subHeaderDark = '#e9e9e9';
-const subHeaderLight = '#41474E';
+const headerDark = '#ffffff'
+const headerLight = '#1a1a1a'
+const paragraphLight = '#41474E'
+const paragraphDark = '#ededed'
+const subHeaderDark = '#e9e9e9'
+const subHeaderLight = '#41474E'
 
-const dropShadowDark = ' 0 8px 10px rgba(1, 1, 1, 0.35)';
-const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)';
+const dropShadowDark = ' 0 8px 10px rgba(1, 1, 1, 0.35)'
+const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)'
 
-const white = '#fff';
-const white2 = '#fbfbfb';
+const white = '#fff'
+const white2 = '#fbfbfb'
 
-const black = '#0a0a0a';
-const black2 = '#131313';
-const black3 = '#1a1a1a';
+const black = '#0a0a0a'
+const black2 = '#131313'
+const black3 = '#1a1a1a'
 
-const hoverLinkDark = 'linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)';
-const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)';
+const hoverLinkDark = 'linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)'
+const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)'
 
-const borderColorDark = "2px solid #f0f0f0";
-const borderColorLight = "2px solid #ababab";
+const borderColorDark = '2px solid #f0f0f0'
+const borderColorLight = '2px solid #ababab'
 
 const fonts = {
 
@@ -44,118 +44,124 @@ const fonts = {
 		dark: hoverLinkDark,
 	},
 
-
 	inverse: {
-		light: headerDark ,
+		light: headerDark,
 		dark: headerLight,
 	},
 
-};
+}
 
 const layout = {
 	background: {
-		dark: "linear-gradient(120deg, #131313 45%, #0a0a0a 100%);",
-		light: "linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);",
+		dark: 'linear-gradient(120deg, #131313 45%, #0a0a0a 100%);',
+		light: 'linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);',
 	},
-};
+}
 
 const landing = {
 	background: {
 		dark: black,
 		// light: "linear-gradient(120deg, #eeeff1 45%, #e9e9e9 100%);",
-		light: "linear-gradient(120deg, #fff 45%, #fff 100%);",
+		light: 'linear-gradient(120deg, #fff 45%, #fff 100%);',
 	},
 
-	listItem:{
+	listItem: {
 		dark: borderColorDark,
 		light: borderColorLight,
-	}
+	},
 
-};
+}
 
 const button = {
 
-	background:{
-		dark:white,
-		light:black,
+	background: {
+		dark: white,
+		light: black,
 	},
 
-	hover:{
-		dark:"#d7d7d7",
-		light:"#4a4a4a",
+	hover: {
+		dark: '#d7d7d7',
+		light: '#4a4a4a',
 	},
 
-	font:{
-		dark:fonts.inverse.dark,
-		light:fonts.inverse.light,
+	font: {
+		dark: fonts.inverse.dark,
+		light: fonts.inverse.light,
 	},
 
-	shadow:{
-		dark:"0 8px 10px rgba(1, 1, 1, 0.35)",
-		light:"0px 10px 15px rgba(0,0,0,0.23)"
+	shadow: {
+		dark: '0 8px 10px rgba(1, 1, 1, 0.35)',
+		light: '0px 10px 15px rgba(0,0,0,0.23)',
 	},
 
-	darkButton:{
-		background:black,
-		font:"#fff",
-		shadow: "0px 10px 15px rgba(0,0,0,0.23)",
-		hover:"#4a4a4a",
-	}
+	darkButton: {
+		background: black,
+		font: '#fff',
+		shadow: '0px 10px 15px rgba(0,0,0,0.23)',
+		hover: '#4a4a4a',
+	},
 
-};
+}
 
 const home = {
 
-	services:{
+	services: {
 		background: {
-			dark: "linear-gradient(120deg, #131313 45%, #0a0a0a 100%);",
-			light:"linear-gradient(120deg, #fff 75%, #efedec 100%);",
+			dark: 'linear-gradient(120deg, #131313 45%, #0a0a0a 100%);',
+			light: 'linear-gradient(120deg, #fff 75%, #efedec 100%);',
 		},
 	},
 
-	portfolio:{
+	techstack: {
 		background: {
-			dark: "linear-gradient(-120deg, #211D25 45%, #37333a 100%);",
-			light: "linear-gradient(-120deg, #efedec 65%, #f3f3f3 100%);",
+			dark: 'linear-gradient(120deg, #131313 35%, rgba(39, 39, 39, 0.9) 100%);',
+			light: 'linear-gradient(120deg, #f3f3f3 45%, #fff 100%);',
 		},
 	},
 
-	stories:{
+	portfolio: {
 		background: {
-			dark: "linear-gradient(120deg, #131313 35%, rgba(39, 39, 39, 0.9) 100%);",
-			light: "linear-gradient(120deg, #f3f3f3 45%, #fff 100%);",
+			dark: 'linear-gradient(-120deg, #211D25 45%, #37333a 100%);',
+			light: 'linear-gradient(-120deg, #efedec 65%, #f3f3f3 100%);',
 		},
 	},
 
-	values:{
+	stories: {
 		background: {
-			dark: "linear-gradient(120deg, #29323c 45%, #191f25  100%);",
-			light:"linear-gradient(-120deg, #fff 65%, #fbfbfb 100%);",
+			dark: 'linear-gradient(120deg, #131313 35%, rgba(39, 39, 39, 0.9) 100%);',
+			light: 'linear-gradient(120deg, #f3f3f3 45%, #fff 100%);',
 		},
 	},
 
-	blog:{
+	values: {
 		background: {
-			dark: "linear-gradient(120deg, #131313 35%, rgba(39, 39, 39, 0.9) 100%);",
-			light: "linear-gradient(120deg, #fbfbfb 45%, #efedec 100%);",
+			dark: 'linear-gradient(120deg, #29323c 45%, #191f25  100%);',
+			light: 'linear-gradient(-120deg, #fff 65%, #fbfbfb 100%);',
 		},
 	},
 
-	contact:{
+	blog: {
 		background: {
-			dark: "linear-gradient(-120deg, #ff6961 45%, #ff392e  100%);",
-			light: "linear-gradient(-120deg, #ff6961 45%, #ff392e  100%);",
+			dark: 'linear-gradient(120deg, #131313 35%, rgba(39, 39, 39, 0.9) 100%);',
+			light: 'linear-gradient(120deg, #fbfbfb 45%, #efedec 100%);',
 		},
 	},
 
-	clients:{
+	contact: {
 		background: {
-			dark: "linear-gradient(120deg, #1a1a1a 45%, #0a0a0a  100%);",
-			light: "linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);",
+			dark: 'linear-gradient(-120deg, #ff6961 45%, #ff392e  100%);',
+			light: 'linear-gradient(-120deg, #ff6961 45%, #ff392e  100%);',
 		},
 	},
 
-};
+	clients: {
+		background: {
+			dark: 'linear-gradient(120deg, #1a1a1a 45%, #0a0a0a  100%);',
+			light: 'linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);',
+		},
+	},
+
+}
 
 const portfolio = {
 	landing: {
@@ -178,18 +184,18 @@ const portfolio = {
 		light: white2,
 	},
 
-};
+}
 
 const navigation = {
 
 	background: {
-		light: "rgba(252, 252, 252, 0.80)",
-		dark: "rgba(39, 39, 39, 0.9)",
+		light: 'rgba(252, 252, 252, 0.80)',
+		dark: 'rgba(39, 39, 39, 0.9)',
 	},
 
 	backgroundMobile: {
-		light: "rgba(252, 252, 252, 1)",
-		dark: "rgba(39, 39, 39, 1)",
+		light: 'rgba(252, 252, 252, 1)',
+		dark: 'rgba(39, 39, 39, 1)',
 	},
 
 	shadow: {
@@ -197,17 +203,17 @@ const navigation = {
 		light: dropShadowLight,
 	},
 
-	fonts:{
+	fonts: {
 		light: fonts.paragraph.light,
 		dark: fonts.paragraph.dark,
 	},
 
 	logo: {
-		light: "#1a1a1a",
-		dark: "#fff",
+		light: '#1a1a1a',
+		dark: '#fff',
 	},
 
-};
+}
 
 const cards = {
 
@@ -217,8 +223,8 @@ const cards = {
 	},
 
 	shadow: {
-			dark:dropShadowDark,
-			light:dropShadowLight,
+		dark: dropShadowDark,
+		light: dropShadowLight,
 	},
 
 	border: {
@@ -226,21 +232,20 @@ const cards = {
 		light: borderColorLight,
 	},
 
-};
-
-
+}
 
 const alert = {
-	background:{
-		dark:cards.background.dark,
-		light:cards.background.light
-	}
-};
+	background: {
+		dark: cards.background.dark,
+		light: cards.background.light,
+	},
+}
 
 const lightTheme = {
 
 	home: {
 		services: home.services.background.light,
+		techstack: home.techstack.background.light,
 		portfolio: home.portfolio.background.light,
 		contact: home.contact.background.light,
 		clients: home.clients.background.light,
@@ -248,7 +253,6 @@ const lightTheme = {
 		values: home.values.background.light,
 		blog: home.blog.background.light,
 	},
-
 
 	navigation: {
 		background: navigation.background.light,
@@ -274,8 +278,6 @@ const lightTheme = {
 
 	layout: layout.background.light,
 
-
-
 	portfolio: {
 		landing: portfolio.landing.light,
 		process: portfolio.process.light,
@@ -285,28 +287,28 @@ const lightTheme = {
 
 	card: {
 		background: cards.background.light,
-		shadow:cards.shadow.light,
+		shadow: cards.shadow.light,
 		border: cards.border.light,
 	},
 
-	button:{
+	button: {
 		background: button.background.light,
 		font: button.font.light,
 		hover: button.hover.light,
 		shadow: button.shadow.light,
-		dark:{
-			font:button.darkButton.font,
-			background:button.darkButton.background,
+		dark: {
+			font: button.darkButton.font,
+			background: button.darkButton.background,
 			shadow: button.darkButton.shadow,
 			hover: button.darkButton.hover,
-		}
+		},
 	},
 
-	alert:{
-		background:alert.background.light
-	}
+	alert: {
+		background: alert.background.light,
+	},
 
-};
+}
 
 const darkTheme = {
 
@@ -337,6 +339,7 @@ const darkTheme = {
 
 	home: {
 		services: home.services.background.dark,
+		techstack: home.techstack.background.dark,
 		portfolio: home.portfolio.background.dark,
 		contact: home.contact.background.dark,
 		clients: home.clients.background.dark,
@@ -355,30 +358,30 @@ const darkTheme = {
 
 	card: {
 		background: cards.background.dark,
-		shadow:cards.shadow.dark,
+		shadow: cards.shadow.dark,
 		border: cards.border.dark,
 	},
 
-	button:{
+	button: {
 		background: button.background.dark,
 		font: button.font.dark,
 		hover: button.hover.dark,
 		shadow: button.shadow.dark,
 
-		dark:{
-			font:button.darkButton.font,
-			background:button.darkButton.background,
+		dark: {
+			font: button.darkButton.font,
+			background: button.darkButton.background,
 			shadow: button.darkButton.shadow,
 			hover: button.darkButton.hover,
-		}
+		},
 	},
 
-	alert:{
-		background:alert.background.light
-	}
+	alert: {
+		background: alert.background.light,
+	},
 
-};
+}
 
-const theme = mode => (mode === 'dark' ? darkTheme : lightTheme);
+const theme = mode => (mode === 'dark' ? darkTheme : lightTheme)
 
 export default theme

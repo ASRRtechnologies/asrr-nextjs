@@ -5,7 +5,7 @@ export const cases = [
         description: "configurator",
         landing: {
             backgroundImage: {
-                extension: 'jpg'
+                extension: 'webp'
             }
         },
         readMore: true,
@@ -18,7 +18,7 @@ export const cases = [
                 type: "paragraph",
                 length: 2,
                 image: {
-                    extension: 'jpg',
+                    extension: 'webp',
                 }
             },
             {
@@ -27,14 +27,14 @@ export const cases = [
                 length: 4,
                 image: {
                     square: false,
-                    extension: 'png',
+                    extension: 'webp',
                 }
             },
             {
                 type: 'paragraph',
                 length: 1,
                 image: {
-                    extension: 'png'
+                    extension: 'webp'
                 }
             },
             {
@@ -67,7 +67,7 @@ export const cases = [
                 length: 4,
                 image: {
                     square: true,
-                    extension: 'png'
+                    extension: 'webp'
                 }
             },
             {
@@ -90,7 +90,7 @@ export const cases = [
                 title: true,
                 length: 2,
                 image: {
-                    extension: 'jpg'
+                    extension: 'webp'
                 }
             },
             {
@@ -137,7 +137,7 @@ export const cases = [
         description: "website",
         landing: {
             backgroundImage: {
-                extension: 'jpg'
+                extension: 'webp'
             }
         },
         sections: [
@@ -145,7 +145,7 @@ export const cases = [
                 title: true,
                 length: 3,
                 image: {
-                    extension: 'png'
+                    extension: 'webp'
                 }
             }
         ]
@@ -156,7 +156,7 @@ export const cases = [
         description: "website",
         landing: {
             backgroundImage: {
-                extension: 'jpg'
+                extension: 'webp'
             }
         },
         sections: [
@@ -164,7 +164,7 @@ export const cases = [
                 title: true,
                 length: 3,
                 image: {
-                    extension: 'png'
+                    extension: 'webp'
                 }
             }
         ]

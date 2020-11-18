@@ -10,10 +10,10 @@ export const blog = [
         description: "",
         availableLanguages: ["nl"],
         readMore: true,
-        image: "https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,w_624,h_351,c_scale/v1393498157/2469.jpg",
+        image: "https://res.cloudinary.com/people-matters/image/upload/fl_immutable_cache,w_624,h_351,w_624,h_351,c_scale/v1393498157/2469.webp",
         landing: {
             backgroundImage: {
-                extension: 'jpg'
+                extension: 'webp'
             }
         },
         sections: [
@@ -28,7 +28,7 @@ export const blog = [
                 title: true,
                 length: 3,
                 image: {
-                    extension: 'jpg'
+                    extension: 'webp'
                 }
             },
             {
@@ -43,10 +43,10 @@ export const blog = [
         availableLanguages: ["en"],
         description: "",
         readMore: true,
-        image: "https://r2m.se/wp-content/uploads/2018/01/microservices-768x448.png",
+        image: "https://r2m.se/wp-content/uploads/2018/01/microservices-768x448.webp",
         landing: {
             backgroundImage: {
-                extension: 'jpg'
+                extension: 'webp'
             }
         },
         sections: [
@@ -54,7 +54,7 @@ export const blog = [
                 title: true,
                 length: 2,
                 image: {
-                    extension: 'png'
+                    extension: 'webp'
                 }
             },
             {
@@ -70,7 +70,7 @@ export const blog = [
         readMore: true,
         landing: {
             backgroundImage: {
-                extension: 'png'
+                extension: 'webp'
             }
         },
         sections: [
@@ -82,7 +82,7 @@ export const blog = [
                 title: true,
                 length: 1,
                 image: {
-                    extension: 'png',
+                    extension: 'webp',
                 }
                 // iframe: {
                 //     code: "<iframe src=\"https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6719531516357091328\" height=\"692\" width=\"504\" frameborder=\"0\" allowfullscreen=\"\" title=\"Ingevoegde bijdrage\"></iframe>"
@@ -92,7 +92,7 @@ export const blog = [
                 title: false,
                 length: 1,
                 image: {
-                    extension: 'png',
+                    extension: 'webp',
                     square: true
                 }
             }
@@ -116,7 +116,7 @@ export const blog = [
     //         },
     //         {
     //             type: "image",
-    //             format: "png"
+    //             format: "webp"
     //         },
     //         {
     //             type: "paragraph",
@@ -131,7 +131,7 @@ export const blog = [
     //             title: false
     //         }
     //     ],
-    //     image: "https://r2m.se/wp-content/uploads/2018/01/microservices-768x448.png"
+    //     image: "https://r2m.se/wp-content/uploads/2018/01/microservices-768x448.webp"
     // },
     // {
     //     type: "article",
@@ -140,7 +140,7 @@ export const blog = [
     //     tags: [
     //         "Kubernetes", "Cloud", "Hosting"
     //     ],
-    //     image: "https://www.techiescorner.in/wp-content/uploads/2019/12/k8s-logo.png",
+    //     image: "https://www.techiescorner.in/wp-content/uploads/2019/12/k8s-logo.webp",
     //     content: [
     //         {
     //             type: "paragraph",
@@ -160,11 +160,11 @@ export const blog = [
     //         },
     //         {
     //             type: "image",
-    //             format: "png"
+    //             format: "webp"
     //         },
     //         {
     //             type: "image",
-    //             format: "jpg"
+    //             format: "webp"
     //         }
     //     ]
     //
@@ -175,7 +175,7 @@ export const blog = [
     //     tags: [
     //         "front-end", "development"
     //     ],
-    //     image: "https://miro.medium.com/max/1000/1*htbUdWgFQ3a94PMEvBr_hQ.png",
+    //     image: "https://miro.medium.com/max/1000/1*htbUdWgFQ3a94PMEvBr_hQ.webp",
     //     readMore: true
     // },
     // {
