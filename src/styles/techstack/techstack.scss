@@ -15,8 +15,9 @@
 }
 
 .tech-grid-cell {
-  display: block;
-  @include size(300px, 100px);
+  //display: block;
+  //@include size(300px, 100px);
+  @include size(auto, auto);
 }
 
 .tech-image {

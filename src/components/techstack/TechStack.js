@@ -29,7 +29,8 @@ const techList = [
 const Tech = ({ image, alt, className }) => {
 	return (
 		<div className="tech-grid-cell">
-			<Image width={300} height={100} layout="responsive" className={className} src={image} alt={alt}/>
+			{/*<Image width={300} height={100} layout="responsive" className={className} src={image} alt={alt}/>*/}
+			<img className={className} src={image} alt={alt}/>
 		</div>
 	)
 }
