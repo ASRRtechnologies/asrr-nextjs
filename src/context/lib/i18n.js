@@ -4,7 +4,7 @@ import rosetta from 'rosetta/debug';
 
 const i18n = rosetta();
 
-export const defaultLanguage = 'en';
+export const defaultLanguage = 'nl';
 export const languages = ['nl', 'en'];
 export const contentLanguageMap = { de: 'nl-NL', en: 'en-US' };
 

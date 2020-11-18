@@ -35,7 +35,7 @@ function Page({data, query}) {
             <ArticleBody className="keywords">
 
                 {/*<KeyWords keyWords={["service", data.name, data.description]} compact/>*/}
-                <ArticlePage data={data} basePath={basePath} type={'service'}/>
+                <ArticlePage data={data} basePath={basePath} type={'services'}/>
 
                 {/*// <ArticleContent>*/}
                 {/*//     <ArticleTitle smallTitle={t(`${basePath}.smallTitle`)} title={t(`${basePath}.title`)}  subtitle={t(`${basePath}.subtitle`)} />*/}

@@ -18,19 +18,19 @@ const services = [
         image: scale,
         id: 'itaas',
         alt: 'scaleable software',
-        bullets: 5
+        bullets: 3
     },
     {
         image: automation,
         id: "hardware",
         alt: 'automation',
-        bullets: 6
+        bullets: 3
     },
     {
         image: analytics,
         id: "bi",
         alt: 'analytics',
-        bullets: 5
+        bullets: 3
     },
 
 ];
