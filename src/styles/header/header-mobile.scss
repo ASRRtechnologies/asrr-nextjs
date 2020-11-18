@@ -47,6 +47,14 @@ $bermuda: #77D7B9;
       @include margin(32px 0);
     }
 
+
+    .button {
+      @include margin(32px 0);
+      a {
+        margin: 0;
+      }
+    }
+
     @for $i from 1 through 6 {
       a:nth-last-child(#{$i}) {
         opacity: 0;
@@ -107,6 +115,7 @@ $bermuda: #77D7B9;
   background: $primary-color;
   width: 0%;
 }
+
 
 
 @media screen and (min-width: $tablet-breakpoint) {

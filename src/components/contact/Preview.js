@@ -1,8 +1,7 @@
 import React from 'react'
 import Section from '@/layout/Section'
 import Title from '@/titles/Title'
-import Button from '@/buttons/Button'
-import Fade from "react-reveal";
+import Fade from "react-reveal/Fade";
 import styled from "@emotion/styled";
 import Link from "next/link";
 import useI18n from "../../hooks/use-i18n";
@@ -29,8 +28,8 @@ function Contact({title, className}) {
             <div className={`contact-preview ${title}`}>
                 <Title className={`${title} title-button`} basePath={'contact.preview.header'}/>
 
-                <Fade bottom>
-                    <DarkButton className={`button button-auto ${className}`} >
+                <Fade delay={100} bottom>
+                    <DarkButton className={`button button-auto ${className}`}>
                         <Link href="/contact"><a>{i18n.t("buttons.contact")}</a></Link>
                     </DarkButton>
                 </Fade>

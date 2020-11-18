@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Section({children, className, id}) {
+function Section({children, className, id, style}) {
     return (
-        <section id={id} className={`section ${className ? className : ""}`}>
+        <section style={style} id={id} className={`section ${className ? className : ""}`}>
                 {children}
         </section>
     );

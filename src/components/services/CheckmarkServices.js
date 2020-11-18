@@ -5,8 +5,6 @@ import analytics from '#/services/data-analytics/data-analytics-square.webp'
 import scale from '#/services/scaleable-software/scaleable-software-sqaure.webp'
 import Title from "@/titles/Title";
 import Fade from 'react-reveal/Fade';
-import ReadMore from "@/text/ReadMore";
-import styled from "@emotion/styled";
 import t from "../../hooks/translator";
 
 const services = [
@@ -34,7 +32,7 @@ const services = [
 function CheckmarkServices(props) {
     const basePath = "services.preview";
     return (
-        <Section className="no-landing">
+        <Section style={{paddingBottom:0}} className="no-landing">
             <Title basePath={basePath + ".header"}/>
             <div className="services-preview">
                 {services.map((service, i) => {

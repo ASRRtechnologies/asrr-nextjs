@@ -21,7 +21,7 @@ function Preview({preview}) {
                 {blogs.map((entry, i) => <Card blog={entry}/>)}
             </div>
             <div className="read-more-wrapper">
-                <ReadMore className="subtitle" to="/blog" text="buttons.blog"/>
+                <ReadMore className="subheader" to="/blog" text="buttons.blog"/>
             </div>
         </Wrapper>
     )
