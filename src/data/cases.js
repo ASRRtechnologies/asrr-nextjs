@@ -82,7 +82,7 @@ export const cases = [
         description: "rdp server",
         landing: {
             backgroundImage: {
-                extension: 'jpg'
+                extension: 'webp'
             }
         },
         sections: [
