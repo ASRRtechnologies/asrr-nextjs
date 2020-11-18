@@ -144,28 +144,44 @@
       "services": {
         "bi": {
           "title": "Business Insights",
-          "text": "We aim to remove the barrier between IT and business that plagues modern day development environments. Using Business Insights Dashboards (PowerBI), we can give you the real-time information that matters."
+          "text": "We aim to remove the barrier between IT and business that plagues modern day development environments. Using Business Insights Dashboards (PowerBI), we can give you the real-time information that matters.",
+          "bullets": {
+            "0": "Real-time insights in your data",
+            "2": "Clear and useful dashboards",
+            "1": "Raw business data to intelligent business insights"
+          }
         },
         "hardware": {
           "title": "Custom Hardware",
-          "text": "Using the latest and greatest in tech, we can build cost-effective, powerful servers and workstations. These servers outperform their classical counterparts by a 2 to 1 ratio in terms of price and performance."
+          "text": "Using the latest and greatest in tech, we can build cost-effective, powerful servers and workstations. These servers outperform their classical counterparts by a 2 to 1 ratio in terms of price and performance.",
+          "bullets": {
+            "0": "The best price/performance ratio",
+            "1": "Up to 128 GB of Ram and 64 Cores",
+            "2": "Uses the latest tech for the best results",
+            "3": "Tailored to your needs",
+            "4": "Integrates seamlessly with our software",
+            "5": "-\tRemote availability with secure over the web 2FA connections"
+          }
         },
         "itaas": {
           "title": "IT Teams as a Service",
-          "text": "Our flexible development teams can scale up or down based on your needs. This removes unnecessary overhead and saves both recruitment and training costs, while ensuring you get the expertise at the correct place and time. "
-        },
-        "mciro": {
-          "title": "'Over Engineered' Building Block Foundation",
-          "text": "Using our wide range of microservice building blocks as a foundation, we can focus on what makes your product special. The code we create gets more powerful every iteration, making sure all our customers get the latest and greatest in tech."
+          "text": "Our flexible development teams can scale up or down based on your needs. This removes unnecessary overhead and saves both recruitment and training costs, while ensuring you get the expertise at the correct place and time. ",
+          "bullets": {
+            "0": "A fully operational IT-team ready to go",
+            "1": "Save on recruitment and overhead costs",
+            "2": "Expertise on demand",
+            "3": "Short transition periods",
+            "4": "Always the latest and greatest in tech"
+          }
         }
       }
     },
     "cards": {
-      "bridge": {
-        "title": "Connecting IT & Business",
+      "hardware": {
+        "title": "Custom hardware",
         "paragraphs": {
-          "0": "Using an analytical approach, we assess the situation at hand. Using your vision as our input, we create robust and scalable IT solutions, custom built for your business.",
-          "1": "One of our IT consultants will be the bridge between your idea and the development process needed for its realisation."
+          "0": "ASRR builds hardware that’s miles ahead of the competition. The components are carefully selected to fit your needs. This means that you don’t pay too much for unnecessary components, while keeping the focus on the crucial parts. We always use the latest and greatest in terms of technology, resulting in more performance for less costs.",
+          "1": "We deliver secure servers, with remote desktop capabilities and a custom built 2 factor authentication login method. We also build powerful workstations, gaming rigs and budget pc’s. "
         }
       },
       "itaas": {
@@ -184,12 +200,10 @@
           "2": "This results in quicker development times, even for completely new subjects, while maintaining quality, robustness and scalability. "
         }
       },
-      "insights": {
+      "bi": {
         "title": "Business Insights",
         "paragraphs": {
-          "0": "Many businesses don't make use of the valuable data they already gather, or even miss out on gathering data completely. ",
-          "1": "We can extract valuable key values from your data to give you deep business insights. This allows you to save money, become more efficient, or predict future actions.",
-          "2": "This can all be visualized in a dashboard, creating real-time insights in your data."
+          "0": "Data may be the most overlooked assets of any modern day company. Most companies don’t use their gathered or ungathered data to their full potential. Using a data analysis, ASRR can set up a Business Insights dashboard. Using this dashboard, you can see the key aspects of your organization as a whole. We can even get insights from your legacy data. "
         }
       }
     },
