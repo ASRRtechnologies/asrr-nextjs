@@ -92,9 +92,9 @@ function Footer(props) {
                     <div className="grid">
                         <h1 className="small-header">{i18n.t('footer.social_media')}</h1>
                         <div className="footer-social-media">
-                            <a href="https://www.linkedin.com/company/asrr" target="_blank"
+                            <a className="footer-icons" href="https://www.linkedin.com/company/asrr" target="_blank"
                                rel="noopener"><LinkedIn/></a>
-                            <a href="https://www.facebook.com/ASRRTech" target="_blank" rel="noopener"><Facebook/></a>
+                            <a className="footer-icons" href="https://www.facebook.com/ASRRTech" target="_blank" rel="noopener"><Facebook/></a>
                         </div>
                     </div>
 

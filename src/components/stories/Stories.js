@@ -24,7 +24,7 @@ function Preview(props) {
 						<Fade delay={200} bottom>
 							<div className="testimonial-card card-margin-bottom">
 								<span className="testimonial-card-image">
-                					<img src={i18n.t("home.stories." + client + ".picture")}/>
+                					<img src={i18n.t("home.stories." + client + ".picture")} alt={i18n.t("home.stories." + client + ".name")}/>
             					</span>
 								<h1 className="small-header">{i18n.t("home.stories." + client + ".contact")}</h1>
 								<h2 className="label-small-margin">{i18n.t("home.stories." + client + ".function")}</h2>
