@@ -10,7 +10,7 @@
 .blog-card{
   width: 30.33%;
   min-width: 350px;
-  max-width: 400px;
+  max-width: 450px;
   min-height: 650px;
   @include flex(flex-start, flex-start, column);
 }

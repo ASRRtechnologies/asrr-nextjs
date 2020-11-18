@@ -101,6 +101,13 @@ const button = {
 		hover: '#4a4a4a',
 	},
 
+	lightButton: {
+		background: white,
+		font: fonts.inverse.dark,
+		shadow: '0px 10px 15px rgba(0,0,0,0.23)',
+		hover: '#d7d7d7',
+	},
+
 }
 
 const home = {
@@ -302,6 +309,12 @@ const lightTheme = {
 			shadow: button.darkButton.shadow,
 			hover: button.darkButton.hover,
 		},
+		light: {
+			font: button.lightButton.font,
+			background: button.lightButton.background,
+			shadow: button.lightButton.shadow,
+			hover: button.lightButton.hover,
+		},
 	},
 
 	alert: {
@@ -367,12 +380,17 @@ const darkTheme = {
 		font: button.font.dark,
 		hover: button.hover.dark,
 		shadow: button.shadow.dark,
-
 		dark: {
 			font: button.darkButton.font,
 			background: button.darkButton.background,
 			shadow: button.darkButton.shadow,
 			hover: button.darkButton.hover,
+		},
+		light: {
+			font: button.lightButton.font,
+			background: button.lightButton.background,
+			shadow: button.lightButton.shadow,
+			hover: button.lightButton.hover,
 		},
 	},
 

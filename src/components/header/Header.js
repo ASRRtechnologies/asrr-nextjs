@@ -8,6 +8,7 @@ import Sun from "@/icons/Sun";
 import Moon from "@/icons/Moon";
 import Language from "@/header/Language";
 import {useHeader} from "../../context/navigation/HeaderContext";
+import Button from "@/buttons/NavigationButton";
 
 const Wrapper = styled('nav')`
         background: ${props => props.visible ? props.theme.navigation.background : "transparent"};
@@ -16,13 +17,24 @@ const Wrapper = styled('nav')`
         
         svg{
             path{
-              fill: ${props => props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font };
+              fill: ${props => props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font};
             }
         }
     
          p, a {
-          color: ${props => props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font };
-        }  
+          color: ${props => props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font};
+        }
+        
+        .button{
+          p, a {color: ${props => props.visible ? props.theme.button.font : props.headerWhite ? props.theme.button.light.font : props.theme.button.font};}
+           background-color: ${props => props.visible ? props.theme.button.background : props.headerWhite ? props.theme.button.light.background : props.theme.button.background};
+           box-shadow: ${props => props.visible ? props.theme.button.shadow : props.headerWhite ? props.theme.button.light.shadow : props.theme.button.shadow};
+           &:hover{
+              background-color: ${props => props.visible ? props.theme.button.hover : props.headerWhite ? props.theme.button.light.hover : props.theme.button.hover};
+              box-shadow: none;
+          ;}
+        }
+          
 `;
 
 function Header({className}) {
@@ -70,10 +82,11 @@ function Header({className}) {
                     <Link href="/portfolio"><a className="text">{i18n.t('header.portfolio')}</a></Link>
                     <Link href="/services"><a className="text">{i18n.t('header.services')}</a></Link>
                     <Link href="/blog"><a className="text">{i18n.t('header.blog')}</a></Link>
-                    <Link href="/contact"><a className="text">{i18n.t('header.contact')}</a></Link>
+                    {/*<Link href="/contact"><a className="text">{i18n.t('header.contact')}</a></Link>*/}
                 </div>
 
                 <div className="header-actions">
+                    <Button title="header.contact" to="/contact"/>
                     <Language/>
                     <span className="icon" onClick={toggle}>
                         {themeState.dark ? <Sun/> : <Moon/>}
