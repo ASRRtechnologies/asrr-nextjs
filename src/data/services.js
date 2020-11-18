@@ -5,7 +5,7 @@ export const services = [
         readMore: true,
         landing: {
             backgroundImage: {
-                extension: 'jpg'
+                extension: 'webp'
             }
         },
         sections: [
