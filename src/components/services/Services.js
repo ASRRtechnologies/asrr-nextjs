@@ -15,7 +15,7 @@ const Wrapper = styled(Section)`
 function Services() {
     return (
         <Wrapper className="no-landing">
-            <Title basePath={'services.preview.header'}/>
+            {/*<Title basePath={'services.preview.header'}/>*/}
             <div className="services">
 
                 <Fade delay={200} bottom>
