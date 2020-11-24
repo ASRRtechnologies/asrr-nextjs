@@ -394,7 +394,7 @@
             "image": "A modular design buildup of the house (https://www.form.nl/form-configurator)"
           },
           "2": {
-            "title": "The solution",
+            "title": "De oplossing",
             "paragraphs": {
               "1": {
                 "text": "Dit alles is echter makkelijker gezegd dan gedaan. Om dit alles te laten werken is er een Custom Revit-Addin, een enterprise-grade back-end API, een complexe database en web-applicatie nodig, om maar een paar zaken te noemen. Er zijn complexe keuzebomen gemaakt om de keuze van de consument om te zetten in de business rules. Deze zijn nodig voor het samenstellen van de modellen voor een huis. "
@@ -420,10 +420,10 @@
             "image": "The (redacted) dashboard, with insighsts of user behavior."
           },
           "4": {
-            "title": "The Conclusion",
+            "title": "De Conclusie",
             "paragraphs": {
               "1": {
-                "text": "FORM needed many different IT disciplines to achieve their complex goal. Over the years we’ve provided them with a dynamic team, consisting of Front-End, Back-End, Database, Hosting and Design experts. This has resulted in a fantastic collaboration with a stable end product, using the latest and greatest technologies."
+                "text": "FORM had een scala aan IT disciplines nodig, en heeft door de jaren heen dynamisch op afroepbasis een team van verschillende developers bij ons afgenomen om hun visie te realiseren."
               }
             }
           }
