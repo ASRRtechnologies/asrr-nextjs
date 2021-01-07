@@ -48,5 +48,5 @@ collections:
         name: "article_title"
         widget: "list"
         fields:
-          - {label: Title, name: title, widget: string, default: "Emmet"}
+          - {label: Title, name: title, widget: string, default: "Emmetw"}
           - {label: Client, name: client, widget: string,}
