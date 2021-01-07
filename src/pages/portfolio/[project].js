@@ -59,13 +59,7 @@ function Page ({ allProjects, data, basePath }) {
 	}
 
 	return (
-		<Article project={data}>
-			{console.log(data)}
-			<SmallLanding title={data.landing.title} text={data.landing.text} alt={data.landing.alt}
-						  image={`${basePath}/${data.landing.image}`}
-						  imageWebp={`${basePath}/${data.landing.image_webp}`}/>
-
-		</Article>
+		<Article project={data} basePath={basePath}/>
 	)
 }
 

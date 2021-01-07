@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '@/layout/Application'
 import ReactMarkdown from 'react-markdown'
-import ArticleImage from '@/article/ArticleImage'
+import SmallLanding from '@/landing/SmallLanding'
 
 const ArticleTitle = ({ data }) => {
 	return (
@@ -29,9 +29,12 @@ const ArticleSection = ({ content, media }) => {
 	)
 }
 
-function Article ({ project }) {
+function Article ({ project, basePath }) {
 	return (
 		<Layout>
+			<SmallLanding title={project.landing.title} text={project.landing.text} alt={project.landing.alt}
+						  image={`${basePath}/${project.landing.image}`}
+						  imageWebp={`${basePath}/${project.landing.image_webp}`}/>
 			<ArticleTitle data={project.info}/>
 			{project.article.map(({ content, media }) => <ArticleSection content={content} media={media}/>)}
 		</Layout>
