@@ -22,7 +22,6 @@ collections:
       - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-
   - label: "Projects"
       name: "project"
       identifier_field: slug
