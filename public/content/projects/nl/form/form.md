@@ -11,6 +11,7 @@ info:
       tag: Artikel
     - hidden: hidden
       tag: Full stack Development
+    - tag: Expertise on demand
 card:
   title: Het bouwen van een geautomatiseerde BIM-Configurator
   description: Nieuwe applicatiesa in de bouw
