@@ -68,8 +68,8 @@ collections:
             collapsed: "true",
             required: "false"
             fields:
-                - {label: "Image_Webp", name: "image_webp", widget: "image"}
-                - {label: "Image", name: "image", widget: "image"}
-                - {label: "Image Description", name: "description", widget: "string"}
-                - {label: "Image Reference", name: "reference", widget: "string"}
-                - {label: "Image Alt", name: "alt", widget: "string"}
+              - {label: "Image_Webp", name: "image_webp", widget: "image"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Image Description", name: "description", widget: "string"}
+              - {label: "Image Reference", name: "reference", widget: "string"}
+              - {label: "Image Alt", name: "alt", widget: "string"}
