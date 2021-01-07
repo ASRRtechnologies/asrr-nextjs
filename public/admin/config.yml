@@ -40,7 +40,6 @@ collections:
       - label: "Landing"
         name: "landing"
         widget: "object"
-        collapsed: true
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Image_Webp", name: "image_webp", widget: "image"}
@@ -49,7 +48,6 @@ collections:
       - label: "Project Info"
         name: "info"
         widget: "object"
-        collapsed: true
         fields:
           - {label: "Project Title", name: "title", widget: "string"}
           - {label: "Client", name: "client", widget: "string"}
@@ -59,13 +57,11 @@ collections:
       - label: "Article Section"
         name: "article"
         widget: "list"
-        collapsed: true
         fields:
           - {label: "Content", name: "content", widget: "markdown"}
           - label: "Image"
             name: "image"
             widget: "list"
-            collapsed: true,
             required: false
             fields:
               - {label: "Image_Webp", name: "image_webp", widget: "image"}
