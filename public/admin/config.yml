@@ -33,19 +33,26 @@ collections:
     path: '{{language}}/{{title}}/{{slug}}'
     slug: '{{title}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
-      - { label: "Title", name: "title", widget: "string", description: This is name of the project}
-      - label: "Landing"
-        name: "landing"
+      - { label: "Title (also the file and path name)", name: "title", widget: "string", description: This is name of the project}
+      - label: "Project Info"
+        name: "info"
         widget: "object"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Image_Webp", name: "image_webp", widget: "image"}
-          - {label: "Image", name: "image", widget: "image"}
-          - {label: "Image Alt", name: "alt", widget: "string"}
-      - label: "Card Cover"
+          - {label: "Project Title", name: "title", widget: "string"}
+          - {label: "Client", name: "client", widget: "string"}
+          - label: "Project Date"
+            name: "date"
+            widget: "datetime"
+            default: ""
+            date_format: "DD.MM.YYYY"
+            time_format: "HH:mm"
+            format: "LLL"
+            picker_utc: false
+          - {label: "Author", name: "author", widget: "string", required: false}
+      - label: "Project Card"
         name: "card"
         widget: "object"
         fields:
@@ -54,14 +61,14 @@ collections:
           - {label: "Image_Webp", name: "image_webp", widget: "image"}
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Image Alt", name: "alt", widget: "string"}
-      - label: "Project Info"
-        name: "info"
+      - label: "Landing"
+        name: "landing"
         widget: "object"
         fields:
-          - {label: "Project Title", name: "title", widget: "string"}
-          - {label: "Client", name: "client", widget: "string"}
-          - {label: "Date", name: "date", widget: "date"}
-          - {label: "Author", name: "author", widget: "string", required: false}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Image_Webp", name: "image_webp", widget: "image"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Alt", name: "alt", widget: "string"}
       - label: "Article Section"
         name: "article"
         widget: "list"
