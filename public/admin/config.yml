@@ -10,6 +10,7 @@ logo_url: https://asrr.nl/assets/images/logo/asrr.svg
 collections:
   - label: "Blog"
     name: "blog"
+    identifier_field: slug
     folder: "content/blog"
     path: '{{language}}/{{slug}}'
     slug: '{{title}}-{{language}}'
