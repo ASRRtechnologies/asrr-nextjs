@@ -96,7 +96,9 @@ const ArticleSection = ({ basePath, content, media }) => {
 	return (
 		<div className="article-section">
 			<Fade delay={fadeDelay} bottom>
+				<div className="article-markdown">
 					<ReactMarkdown source={content}/>
+				</div>
 			</Fade>
 			{media && (
 				<>
