@@ -55,7 +55,7 @@ collections:
           - label: "Tags"
             name: "tags"
             widget: "list"
-            fields:
+            field:
               - {label: "Tag", name: "tag", widget: "select", options: ["Artikel", "Nieuws", "Full stack Development", "Expertise on demand"]}
       - label: "Project Card"
         name: "card"
