@@ -1,22 +1,22 @@
 ---
 language: nl
 title: Form
-landing:
-  title: De huizenmarkt op zijn kop zetten
-  image_webp: form-landing.webp
-  image: form-landing.jpg
-  alt: architecture building white
+info:
+  date: January 2, 2020 12:00 AM
+  title: Het bouwen van een geautomatiseerde BIM-Configurator
+  client: Form Architecture & Engineering
+  author: Re-Angelo
 card:
   title: Het bouwen van een geautomatiseerde BIM-Configurator
   image_webp: case-image.webp
   image: case-image.jpg
   description: Voor dit project hebben wij verschillende soorten apps gebouwt
   alt: Modern building design
-info:
-  date: November 14, 2019 12:00 AM
-  title: Het bouwen van een geautomatiseerde BIM-Configurator
-  client: Form Architecture & Engineering
-  author: Re-Angelo
+landing:
+  title: De huizenmarkt op zijn kop zetten
+  image_webp: form-landing.webp
+  image: form-landing.jpg
+  alt: architecture building white
 article:
   - content: >-
       # Het probleem
