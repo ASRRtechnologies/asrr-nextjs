@@ -1,16 +1,11 @@
 import React, {useEffect} from 'react'
 import Section from '@/layout/Section'
 import Layout from '@/layout/Application'
-import {getAllPosts} from "../../../lib/api";
+import {getAllProjects} from "../../lib/api";
 import {useRouter} from "next/router";
 import matter, {stringify} from "gray-matter";
 import BigLanding from "@/landing/BigLanding";
 import ReactMarkdown from "react-markdown";
-import FullScreenVideo from "@/projecten/comps/FullScreenVideo";
-import ProjectSlider from "@/projecten/comps/ProjectSlider";
-import GalleryGrid from "@/projecten/comps/GalleryGrid";
-import Map from "@/map/Map";
-import MoreProjects from "@/projecten/comps/MoreProjects";
 
 function Page({allProjects, data, basePath}) {
 
@@ -70,29 +65,23 @@ function Page({allProjects, data, basePath}) {
 			<Paragraph>
 				<ReactMarkdown source={data.content}/>
 			</Paragraph>
-			<FullScreenVideo video={`${basePath}/${data.project_video}`}/>
-			<ProjectSlider basePath={basePath} title="Main" images={data.slider}/>
-			<GalleryGrid title="Techniek" images={data.grid} basePath={basePath}/>
-			<Map lat={data.coordinates.latitude} lng={data.coordinates.longitude}/>
-			<ProjectSlider basePath={basePath} title="Overige" images={data.slider_2}/>
-			<MoreProjects projects={getRandomProject()}/>
+
 		</Layout>
 	)
 }
 
 export async function getStaticProps({params}) {
-	const {discipline, project} = params;
-	let content = await import(`public/content/projects/${discipline.toLowerCase()}/${project.toLowerCase()}/${project.toLowerCase()}.md`);
+	const {project} = params;
+	let content = await import(`public/content/projects/nl/${project}/${project}.md`);
 	let parsedContent = matter(content.default);
 	let data = parsedContent.data;
-	const basePath = `/content/projects/${discipline.toLowerCase()}/${project.toLowerCase()}`;
+	const basePath = `/content/projects/nl/${project.toLowerCase()}`;
 
-	const allProjects = getAllPosts([
+
+	//Get all project info and only show their cards and titles for the read more part
+	const allProjects = getAllProjects([
 		'title',
-		'discipline',
-		'projectCoverImage',
-		'projectCoverDescription',
-		'location',
+		'card'
 	]);
 
 	return {
@@ -102,13 +91,12 @@ export async function getStaticProps({params}) {
 
 export async function getStaticPaths() {
 
-	const allProjects = await getAllPosts([
+	const allProjects = await getAllProjects([
 		'title',
-		'discipline',
 	]);
 
 	const paths = allProjects.map(project => ({
-		params: {discipline: project.discipline.toLowerCase(), project: project.title.toLowerCase()},
+		params: {project: project.title.toLowerCase()},
 	}));
 
 	return {paths, fallback: false}
