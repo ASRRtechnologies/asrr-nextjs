@@ -1,165 +1,64 @@
-.wide-image {
-  @include flex(flex-start, flex-start, column);
-  @include size(100%, auto);
-  max-width: 650px;
-}
+$article-spacing: 50px;
 
-.square-image {
-  @include flex(flex-start, flex-start, column);
-  @include size(100%, auto);
-  max-width: 650px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.article-body{
-  @include size (100%, auto);
-  @include flex(flex-start, center, column);
-  padding: 0 $padding-pc;
-  @include padding-top(64px);
-  @include padding-bottom(64px);
-
-  &.keywords{
-    @include padding-top(32px);
-  }
-
-}
-
-.article-keywords{
-  @include size (100vw, auto);
-  @include margin-bottom(48px);
-  @include flex(center, center, row);
-  padding: 0 $padding-pc;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-
-  p{
-    @include margin-bottom(32px);
-  }
-}
-
-.article-keywords-wrapper{
-  @include size (100vw, auto);
-  @include flex(flex-start, center, row);
+.article-body {
+  @include flex(flex-start, flex-start, row);
+  @include size(100%, 100%);
   max-width: $max-width;
+  position: relative;
+  @include padding(100px 0);
 }
 
-.article-content{
-  @include size (100%, auto);
+.article-links {
+  @include flex(flex-start, flex-start, column);
+  width: 100px;
+  height: auto;
+  position: sticky;
+  top: 80px;
+}
+
+.article-content {
   @include flex(flex-start, center, column);
-  max-width: 650px;
+  @include size(100%, 100%);
+  max-width: 1000px;
+  @include margin-left(100px);
 }
 
-.article-section{
-  @include size (100%, auto);
+.article-title {
+  @include size(100%, auto);
+  @include margin-bottom($article-spacing)
+}
+
+.article-section {
   @include flex(flex-start, flex-start, column);
-  @include margin-bottom(30px);
+  @include size(100%, 100%);
+  @include margin-bottom(50px);
 
-  hr{
-    width: 100%;
+  h1 {
+    @include font-size(1.5rem);
+    @include margin-bottom(1rem);
   }
 
-  *{
-    &:last-child{
-      margin-bottom: 0;
-    }
+  h2 {
+    @include font-size(1.5rem);
+  }
+
+  p {
+    @include font-size(1rem);
   }
 
 }
 
-.article-title-wrapper{
-  @include size (100%, auto);
-  @include flex(center, flex-start, column);
-  @include margin-bottom(64px);
-
-  div {
-    //select all jids then the last  kid
-    * {
-      &:last-child{
-        margin-bottom: 0;
-      }
-    }
-
-  }
-}
-
-.article-paragraph{
-  @include size (100%, auto);
+//Styling for video and images
+.article-media-container {
   @include flex(flex-start, flex-start, column);
-  @include margin-bottom(48px);
+  @include size(100%, auto);
+  @include margin($article-spacing 0);
+}
 
+.article-media-description {
+  @include margin-top(25px);
   p{
-    margin-bottom: 0;
+    font-weight: bold;
   }
 }
-
-.article-image{
-  @include flex(flex-start, flex-start, column);
-  @include size(100%, auto);
-  @include margin-bottom(48px);
-  max-width: 650px;
-  h1{
-    @include margin-top(32px);
-  }
-
-}
-
-.next-article-wrapper{
-  @include flex(space-between, flex-start, row);
-  @include size(100vw, auto);
-}
-
-.next-article{
-  @include flex(space-between, flex-start, row);
-  @include size(100%, auto);
-  max-width: $max-width;
-
-}
-
-.next-article-card{
-  width: 45%;
-  height: 300px;
-  background-color: red;
-
-}
-
-@media screen and (max-width: $tablet-breakpoint) {
-  .article-body{
-    padding: 0 $padding-tablet;
-  }
-
-  .article-keywords{
-    padding: 0 $padding-tablet;
-  }
-
-}
-
-@media screen and (max-width: $mobile-breakpoint) {
-  .article-body{
-    padding: 0 $padding-mobile;
-  }
-
-  .article-keywords{
-    padding: 0 $padding-mobile;
-  }
-
-}
-
 

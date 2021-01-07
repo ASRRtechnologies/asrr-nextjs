@@ -161,3 +161,21 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+
+//Fonts
+
+//Used as a single large title for an article / lap of text
+.font-title{
+  @include font-size(2.3rem);
+  @include margin-bottom(2rem);
+}
+
+//Used for titles of paragraphs / articles
+.font-header{
+  @include font-size(1.5rem);
+  @include margin-bottom(1rem);
+}
+
+.font-reference{
+  @include rfs(12px);
+}
