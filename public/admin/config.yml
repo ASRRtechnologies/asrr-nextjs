@@ -23,30 +23,30 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
   - label: "Projects"
-      name: "project"
-      identifier_field: slug
-      summary: '{{title}} - {{language}}'
-      folder: "public/content/projects"
-      create: true
-      media_folder: ''
-      public_folder: ''
-      path: '{{language}}/{{slug}}'
-      slug: '{{title}}'
-      editor:
-        preview: false
-      fields:
-        - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
-        - { label: "Title", name: "title", widget: "string", description: This is name of the project}
-        - label: "Landing"
-          name: "landing"
+    name: "project"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/projects"
+    create: true
+    media_folder: ''
+    public_folder: ''
+    path: '{{language}}/{{slug}}'
+    slug: '{{title}}'
+    editor:
+      preview: false
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
+      - { label: "Title", name: "title", widget: "string", description: This is name of the project}
+      - label: "Landing"
+        name: "landing"
+        widget: "list"
+        allow_add: false
+        fields:
+          - {label: Title, name: title, widget: string, default: "Emmet"}
+          - {label: Image, name: image, widget: image}
+      - label: "Article Title"
+          name: "article_title"
           widget: "list"
-          allow_add: false
           fields:
             - {label: Title, name: title, widget: string, default: "Emmet"}
-            - {label: Image, name: image, widget: image}
-        - label: "Article Title"
-            name: "article_title"
-            widget: "list"
-            fields:
-              - {label: Title, name: title, widget: string, default: "Emmet"}
-              - {label: Client, name: client, widget: string,}
+            - {label: Client, name: client, widget: string,}
