@@ -30,7 +30,7 @@ collections:
     create: true
     media_folder: ''
     public_folder: ''
-    path: '{{language}}/{{slug}}'
+    path: '{{language}}/{{title}}/{{slug}}'
     slug: '{{title}}'
     editor:
       preview: false
