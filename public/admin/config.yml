@@ -53,7 +53,7 @@ collections:
             picker_utc: false
           - {label: "Author", name: "author", widget: "string", required: false}
           - label: "Tags"
-            name: "tags"
+            name: "type"
             widget: "list"
             fields:
               - {label: "Tag", name: "tag", widget: "select", options: ["Artikel", "Nieuws", "Full stack Development", "Expertise on demand"]}
