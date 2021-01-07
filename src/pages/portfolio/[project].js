@@ -57,6 +57,7 @@ function Page ({ allProjects, data, basePath }) {
 			return projectsToShow
 		}
 	}
+	{console.log(data)}
 
 	return (
 		<Article project={data} basePath={basePath}/>
