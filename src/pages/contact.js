@@ -9,9 +9,9 @@ function Contact() {
         header.setHeaderWhite(false)
     }, []);
     return (
-        <Application>
+        <>
             <ContactPage/>
-        </Application>
+        </>
     )
 }
 

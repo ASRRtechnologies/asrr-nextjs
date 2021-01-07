@@ -1,165 +1,94 @@
-.wide-image {
-  @include flex(flex-start, flex-start, column);
-  @include size(100%, auto);
-  max-width: 650px;
-}
+$article-max-width: 1000px;
+$article-spacing: 50px;
+$article-media-description-spacing: calc(#{$article-spacing} / 2);
 
-.square-image {
-  @include flex(flex-start, flex-start, column);
-  @include size(100%, auto);
-  max-width: 650px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.article-body{
-  @include size (100%, auto);
-  @include flex(flex-start, center, column);
-  padding: 0 $padding-pc;
-  @include padding-top(64px);
-  @include padding-bottom(64px);
-
-  &.keywords{
-    @include padding-top(32px);
-  }
-
-}
-
-.article-keywords{
-  @include size (100vw, auto);
-  @include margin-bottom(48px);
-  @include flex(center, center, row);
-  padding: 0 $padding-pc;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-
-  p{
-    @include margin-bottom(32px);
-  }
-}
-
-.article-keywords-wrapper{
-  @include size (100vw, auto);
-  @include flex(flex-start, center, row);
+.article-body {
+  @include flex(flex-start, flex-start, row);
+  @include size(100%, 100%);
   max-width: $max-width;
 }
 
-.article-content{
-  @include size (100%, auto);
+.article-links {
+  @include flex(flex-start, flex-start, column);
+  @include size(50px, auto);
+  top: 100px;
+  position: sticky;
+  left: 0;
+  z-index: 100;
+}
+
+.article-content {
   @include flex(flex-start, center, column);
-  max-width: 650px;
+  @include size(100%, 100%);
+  @include margin-left(100px)
 }
 
-.article-section{
-  @include size (100%, auto);
+.article-title {
+  @include size(100%, auto);
+  @include margin-bottom($article-spacing);
+  max-width: $article-max-width;
+}
+
+.article-section {
   @include flex(flex-start, flex-start, column);
-  @include margin-bottom(30px);
+  @include size(100%, 100%);
+  max-width: $article-max-width;
+  @include margin-bottom($article-spacing);
 
-  hr{
-    width: 100%;
+  .article-markdown {
+    @include size(100%, 100%);
   }
 
-  *{
-    &:last-child{
-      margin-bottom: 0;
-    }
+  h1 {
+    @include font-size(1.5rem);
+    @include margin-bottom(1rem);
+  }
+
+  h2 {
+    @include font-size(1.5rem);
+  }
+
+  p {
+    @include font-size(1rem);
   }
 
 }
 
-.article-title-wrapper{
-  @include size (100%, auto);
-  @include flex(center, flex-start, column);
-  @include margin-bottom(64px);
-
-  div {
-    //select all jids then the last  kid
-    * {
-      &:last-child{
-        margin-bottom: 0;
-      }
-    }
-
-  }
-}
-
-.article-paragraph{
-  @include size (100%, auto);
-  @include flex(flex-start, flex-start, column);
-  @include margin-bottom(48px);
-
-  p{
-    margin-bottom: 0;
-  }
-}
-
-.article-image{
+//Styling for video and images
+.article-media-container {
   @include flex(flex-start, flex-start, column);
   @include size(100%, auto);
-  @include margin-bottom(48px);
-  max-width: 650px;
-  h1{
-    @include margin-top(32px);
+  @include margin-top($article-spacing);
+}
+
+.article-media-description {
+  @include margin-top($article-media-description-spacing);
+
+  p {
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: $tablet-small-breakpoint) {
+  .article-body {
+    flex-direction: column;
   }
 
-}
 
-.next-article-wrapper{
-  @include flex(space-between, flex-start, row);
-  @include size(100vw, auto);
-}
-
-.next-article{
-  @include flex(space-between, flex-start, row);
-  @include size(100%, auto);
-  max-width: $max-width;
-
-}
-
-.next-article-card{
-  width: 45%;
-  height: 300px;
-  background-color: red;
-
-}
-
-@media screen and (max-width: $tablet-breakpoint) {
-  .article-body{
-    padding: 0 $padding-tablet;
+  .article-links {
+    flex-direction: row;
+    width: auto;
+    @include margin-bottom($article-spacing);
+    position: relative;
+    top: 0;
   }
 
-  .article-keywords{
-    padding: 0 $padding-tablet;
+  .article-content {
+    margin-left: 0;
   }
 
 }
 
 @media screen and (max-width: $mobile-breakpoint) {
-  .article-body{
-    padding: 0 $padding-mobile;
-  }
-
-  .article-keywords{
-    padding: 0 $padding-mobile;
-  }
 
 }
-
-

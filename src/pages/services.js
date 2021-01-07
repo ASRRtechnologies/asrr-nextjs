@@ -14,11 +14,11 @@ function Services(props) {
         header.setHeaderWhite(false)
     }, []);
     return (
-        <Application>
+        <>
             <CheckmarkServices/>
             <ServicePage/>
             <Contact/>
-        </Application>
+        </>
     )
 }
 

@@ -12,11 +12,11 @@ function Portfolio() {
         header.setHeaderWhite(false)
     }, []);
     return (
-        <Application>
+        <>
             {/*<SmallLanding title="Portfolio"/>*/}
             <PortfolioPage/>
             <Contact/>
-        </Application>
+        </>
     )
 }
 

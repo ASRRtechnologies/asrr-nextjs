@@ -4,12 +4,7 @@ import Layout from '@/layout/Application'
 import { getAllProjects } from '../../lib/api'
 import { useRouter } from 'next/router'
 import matter from 'gray-matter'
-import ReactMarkdown from 'react-markdown'
-import SmallLanding from '@/landing/SmallLanding'
-import ArticleSection from '@/article/ArticleSection'
-import ArticleTitle from '@/article/ArticleTitle'
 import Article from '@/article/Article'
-import ArticleBody from '@/article/ArticleBody'
 
 function Page ({ allProjects, data, basePath }) {
 
@@ -60,7 +55,9 @@ function Page ({ allProjects, data, basePath }) {
 	{console.log(data)}
 
 	return (
-		<Article project={data} basePath={basePath}/>
+		<Layout>
+			<Article project={data} basePath={basePath}/>
+		</Layout>
 	)
 }
 

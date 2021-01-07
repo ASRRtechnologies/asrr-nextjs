@@ -52,6 +52,13 @@ collections:
             format: "LLL"
             picker_utc: false
           - {label: "Author", name: "author", widget: "string", required: false}
+          - label: "Tags"
+            name: "tags"
+            widget: "list"
+            max: 10
+            min: 1
+            default: ["news", "article", "Full stack development", "Custom Built Hardware", "Expertise on demand", "Business Insights" ]
+            add_to_top: true
       - label: "Project Card"
         name: "card"
         widget: "object"
