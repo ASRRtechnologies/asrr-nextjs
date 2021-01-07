@@ -13,7 +13,7 @@ card:
   description: Voor dit project hebben wij verschillende soorten apps gebouwt
   alt: Modern building design
 info:
-  date: 2021-01-07T15:53:15.459Z
+  date: November 14, 2019 12:00 AM
   title: Het bouwen van een geautomatiseerde BIM-Configurator
   client: Form Architecture & Engineering
   author: Re-Angelo
