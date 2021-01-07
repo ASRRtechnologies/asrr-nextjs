@@ -55,10 +55,8 @@ collections:
           - label: "Tags"
             name: "tags"
             widget: "list"
-            max: 10
-            min: 1
-            default: ["news", "article", "Full stack development", "Custom Built Hardware", "Expertise on demand", "Business Insights" ]
-            add_to_top: true
+            fields:
+              - {label: "Tag", name: "tag", widget: "select", options: ["Artikel", "Nieuws", "Full stack Development", "Expertise on demand"]}
       - label: "Project Card"
         name: "card"
         widget: "object"
