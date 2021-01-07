@@ -11,9 +11,10 @@ collections:
   - label: "Blog"
     name: "blog"
     identifier_field: slug
-    folder: "content/blog"
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/blog"
     path: '{{language}}/{{slug}}'
-    slug: '{{title}}-{{language}}'
+    slug: '{{title}}'
     create: true
     editor:
       preview: false
