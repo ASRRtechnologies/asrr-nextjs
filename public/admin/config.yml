@@ -1,0 +1,25 @@
+backend:
+  name: github
+  repo: ASRRtechnologies/form-website-next
+  branch: master
+media_folder: public/img
+public_folder: img
+publish_mode: editorial_workflow
+display_url: https://asrr.nl
+logo_url: https://asrr.nl/assets/images/logo/asrr.svg
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "public/content/pages/home.md"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Locations
+            name: locations
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Address, name: address, widget: string}
