@@ -34,10 +34,10 @@ function BigLanding({title, text}) {
             <div className="landing-title-container">
                 <div className="landing-title">
                     <Fade bottom>
-                        <h1 className="slogan">{i18n.t(title)}</h1>
+                        <h1 className="slogan">{title}</h1>
                     </Fade>
                     <Fade delay={200} bottom>
-                        <p className="text">{i18n.t(text)}</p>
+                        <p className="text">{text}</p>
                     </Fade>
                     <Fade delay={400} bottom>
                         <Button custom to="/portfolio" title="buttons.cases"/>

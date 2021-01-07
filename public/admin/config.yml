@@ -75,7 +75,7 @@ collections:
         fields:
           - {label: "Content", name: "content", widget: "markdown"}
           - label: "Image"
-            name: "image"
+            name: "media"
             widget: "list"
             required: false
             fields:
