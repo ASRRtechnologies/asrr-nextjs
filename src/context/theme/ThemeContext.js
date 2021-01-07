@@ -3,9 +3,7 @@ import { ThemeProvider as EmotionThemeProvider } from "emotion-theming";
 import theme from "./theme.js";
 
 const defaultContextData = {
-    loadAnimation:false,
     dark: true,
-    disableAnimation: () => {},
     toggle: () => {}
 };
 
@@ -19,10 +17,6 @@ const useEffectDarkMode = () => {
 
      });
 
-    const [animationState, setAnimation] = useState({
-        loadAnimation: false
-    });
-
     useEffect(() => {
         console.log(localStorage.getItem("dark"));
         const lsDark = localStorage.getItem("dark") === "true";
@@ -30,22 +24,17 @@ const useEffectDarkMode = () => {
         setThemeState({ ...themeState, dark: lsDark, hasThemeMounted: true });
     }, []);
 
-    return [themeState, setThemeState, animationState, setAnimation];
+    return [themeState, setThemeState];
 };
 
 const ThemeProvider = ({ children }) => {
-    const [themeState, setThemeState, animationState, setAnimation] = useEffectDarkMode();
+    const [themeState, setThemeState] = useEffectDarkMode();
 
     if (!themeState.hasThemeMounted) {
         return <div />;
     }
 
-    const disableAnimation = () => {
-        setAnimation({loadAnimation:false});
-    };
-
     const toggle = () => {
-        setAnimation({loadAnimation:true});
         const dark = !themeState.dark;
         localStorage.setItem("dark", JSON.stringify(dark));
         setThemeState({ ...themeState, dark });
@@ -57,10 +46,8 @@ const ThemeProvider = ({ children }) => {
         <EmotionThemeProvider theme={computedTheme}>
             <ThemeContext.Provider
                 value={{
-                    animation: animationState.loadAnimation,
                     dark: themeState.dark,
                     toggle,
-                    disableAnimation
                 }}
             >
                 {children}
