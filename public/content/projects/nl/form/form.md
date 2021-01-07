@@ -6,6 +6,13 @@ info:
   title: Het bouwen van een geautomatiseerde BIM-Configurator
   client: Form Architecture & Engineering
   author: Re-Angelo
+  tags:
+    - eras
+  type:
+    - hidden: hidden
+      tag: Artikel
+    - hidden: hidden
+      tag: Full stack Development
 card:
   title: Het bouwen van een geautomatiseerde BIM-Configurator
   description: Nieuwe applicatiesa in de bouw
