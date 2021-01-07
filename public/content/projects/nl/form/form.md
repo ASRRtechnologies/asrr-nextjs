@@ -53,10 +53,15 @@ article:
         image: form-2.png
         alt: Login screen Configurator Dashboard
         description: The authentication screen for the Configurator dashboard
+        video: ""
+        video_description: ""
       - image_webp: form-3.webp
         image: form-3.png
         alt: Dashboard Configurator Application
         description: The (redacted) dashboard, with insighsts of user behavior.
+      - video: login_low_res.mp4
+        video_description: video
+        video_reference: test
   - content: >-
       # De conclusie
 
