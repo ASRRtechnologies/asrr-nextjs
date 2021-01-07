@@ -182,4 +182,14 @@ blockquote p {
     @include font-size(3rem);
   }
 
+  .font-title{
+    @include font-size(1.5rem);
+    @include margin-bottom(1rem);
+  }
+
+  .font-header {
+    @include font-size(1.2rem);
+    @include margin-bottom(0.8rem);
+  }
+
 }
