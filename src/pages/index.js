@@ -18,7 +18,7 @@ function Index(props) {
         header.setHeaderWhite(false)
     }, []);
     return (
-        <Application>
+        <>
             <BigLanding title={'home.landing.title'} text={'home.landing.text'} image={image}/>
             <PreviewServices/>
             <TechStack/>
@@ -28,7 +28,7 @@ function Index(props) {
             <PreviewBlog/>
             <Clients/>
             <Contact/>
-        </Application>
+        </>
 
     )
 }

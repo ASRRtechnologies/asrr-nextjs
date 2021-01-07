@@ -130,5 +130,10 @@
   .landing-small {
     padding: 0 $padding-mobile;
   }
+
+  .landing-title-small{
+    @include padding(200px 0);
+  }
+
 }
 

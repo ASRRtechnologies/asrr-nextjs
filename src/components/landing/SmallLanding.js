@@ -15,11 +15,15 @@ function SmallLanding({title, text, image, imageWebp, alt}) {
 
             <div className="landing-title-small">
                 <Fade bottom>
-                    <h1 className="slogan">{title}</h1>
+                    <h1 className="font-landing-title">{title}</h1>
                 </Fade>
-                <Fade delay={200} bottom>
-                    <p className="text">{text}</p>
-                </Fade>
+
+                {text && (
+                    <Fade delay={200} bottom>
+                        <p className="font-landing-text">{text}</p>
+                    </Fade>
+                )}
+
             </div>
 
                 <picture>
