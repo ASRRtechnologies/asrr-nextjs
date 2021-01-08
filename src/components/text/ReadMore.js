@@ -33,7 +33,7 @@ function ReadMore({to, inverted, text, children, noAnimation, className, ...rest
         <NoAnimation>
             <Link href={to}>
                 <LinkText inverted={inverted}
-                          className={`font-general read-more ${className} ${inverted ? "animated-link-light" : (darkmode ? "animated-link-light" : "animated-link-dark")} `}>
+                          className={`font-card-title read-more ${className} ${inverted ? "animated-link-light" : (darkmode ? "animated-link-light" : "animated-link-dark")} `}>
                     {text}
                 </LinkText>
             </Link>

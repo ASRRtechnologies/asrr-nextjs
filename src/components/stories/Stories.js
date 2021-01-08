@@ -11,12 +11,16 @@ const Wrapper = styled(Section)`
         background: ${props => props.theme.home.stories};
  }`;
 
-function Preview(props) {
+function Preview({data}) {
 	const basePath = "stories";
 	let i18n = useI18n();
+
+	console.log(data);
+
 	return (
 		<Wrapper>
 			<Title basePath={basePath + ".header"}/>
+
 			<div className="testimonials">
 				{clients.map((client, i) => {
 					let {id} = client;

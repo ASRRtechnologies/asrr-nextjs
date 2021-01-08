@@ -36,8 +36,8 @@ function Index({data, basePath}) {
             <BigLanding title={data.landing.title} text={data.landing.text} image={image}/>
             <PreviewServices basePath={basePath} data={data.services_section}/>
             <TechStack basePath={basePath} data={data.technologies_section}/>
-            <PreviewPortfolio />
-            <Stories/>
+            <PreviewPortfolio data={data.portfolio_section} basePath={basePath}/>
+            <Stories data={data.testimonials_section} basePath={basePath}/>
             <Why/>
             <PreviewBlog/>
             <Clients/>

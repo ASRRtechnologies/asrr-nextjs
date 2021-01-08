@@ -91,9 +91,15 @@ a{
   @include margin-bottom(1rem);
 }
 
+.font-card-header{
+  @include font-size(0.9rem);
+  @include margin-bottom(0.6rem);
+}
+
 .font-general{
   @include font-size(1rem);
   @include margin-bottom(1rem);
+  font-weight: normal;
 }
 
 //Used for titles of paragraphs / articles
