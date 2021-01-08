@@ -1,73 +1,45 @@
 import React from 'react';
 import Section from "@/layout/Section";
-import automation from '#/services/automation/automation-square.webp'
-import analytics from '#/services/data-analytics/data-analytics-square.webp'
-import scale from '#/services/scaleable-software/scaleable-software-sqaure.webp'
 import Title from "@/titles/Title";
-import Fade from 'react-reveal/Fade';
 import ReadMore from "@/text/ReadMore";
 import styled from "@emotion/styled";
-import t from "../../hooks/translator";
+import PictureFallback from "@/titles/PictureFallback";
+import Fade from "react-reveal/Fade";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.services};
  }`;
 
-const services = [
-    {
-        image: scale,
-        id: 'itaas',
-        alt: 'scaleable software',
-        bullets: 3
-    },
-    {
-        image: automation,
-        id: "hardware",
-        alt: 'automation',
-        bullets: 3
-    },
-    {
-        image: analytics,
-        id: "bi",
-        alt: 'analytics',
-        bullets: 3
-    },
+function Preview({data, basePath}) {
 
-];
-
-function Preview(props) {
-    const basePath = "services.preview";
     return (
         <Wrapper>
-            <Title basePath={basePath + ".header"}/>
+
+            <Title title={data.title} header={data.header} subHeader={data.subheader}/>
+
             <div className="services-preview">
-                {services.map((service, i) => {
-                    let {id} = service;
+                {data.services.map(({image, alt, image_webp, title, text}) => {
                     return (
-                        <Fade delay={200} bottom>
+                        <Fade bottom delay={200}>
                             <div className="service-preview-card card-margin-bottom">
+
 							<span className="service-preview-card-image">
-								<img src={service.image} alt={service.alt}/>
+                                <PictureFallback image={`${basePath}/${image_webp}`}
+                                                 fallbackImage={`${basePath}/${image}`} alt={alt}/>
 							</span>
-                                <h1 className="theme-font subheader">{t(`${basePath}.services.${id}.title`)}</h1>
 
-                                {!props.compact && <>  <p className="text">{t(`${basePath}.services.${id}.text`)}</p>
-                                </>}
-                                {props.compact && service.bullets && <ul className="service-list">
-                                    {[...Array(service.bullets)].map((x, i) => {
-                                        return <li>✔ {t(`${basePath}.services.${id}.bullets.${i}`)}</li>
-
-                                    })}
-                                </ul>}
+                                <h1 className="theme-font font-card-title">{title}</h1>
+                                <p className="font-general">{text}</p>
                             </div>
                         </Fade>
                     )
                 })}
+
             </div>
 
-            {!props.compact && <div className="read-more-wrapper">
-                <ReadMore className="subheader" to="/services" text="buttons.services"/>
-            </div>}
+            <div className="read-more-wrapper">
+                <ReadMore className="subheader" to="/services" text={data.button}/>
+            </div>
 
         </Wrapper>
     );

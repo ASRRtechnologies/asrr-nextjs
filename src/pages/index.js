@@ -25,7 +25,7 @@ import matter from 'gray-matter'
 //     return {data, content};
 //  }
 
-function Index({data}) {
+function Index({data, basePath}) {
     const header = useHeader();
     useEffect(() => {
         header.setHeaderWhite(false)
@@ -34,8 +34,8 @@ function Index({data}) {
         <>
             {console.log(data)}
             <BigLanding title={data.landing.title} text={data.landing.text} image={image}/>
-            <PreviewServices data={data.services_section}/>
-            <TechStack/>
+            <PreviewServices basePath={basePath} data={data.services_section}/>
+            <TechStack basePath={basePath} data={data.technologies_section}/>
             <PreviewPortfolio />
             <Stories/>
             <Why/>

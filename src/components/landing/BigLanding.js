@@ -13,8 +13,6 @@ const Wrapper = styled('div')`
  }`;
 
 function BigLanding({title, text}) {
-    const i18n = useI18n();
-    const router = useRouter();
     const darkmode = useTheme().dark;
     const landing = useRef("");
 
@@ -34,10 +32,10 @@ function BigLanding({title, text}) {
             <div className="landing-title-container">
                 <div className="landing-title">
                     <Fade bottom>
-                        <h1 className="slogan">{title}</h1>
+                        <h1 className="font-landing-title">{title}</h1>
                     </Fade>
                     <Fade delay={200} bottom>
-                        <p className="text">{text}</p>
+                        <p className="font-landing-text">{text}</p>
                     </Fade>
                     <Fade delay={400} bottom>
                         <Button custom to="/portfolio" title="buttons.cases"/>

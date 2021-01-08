@@ -8,9 +8,9 @@ import spring from '#/techstack/spring-boot-logo-black-min.webp'
 import kubernetes from '#/techstack/kubernetes-min.webp'
 import docker from '#/techstack/docker-black-min.webp'
 import nextjs from '#/techstack/nextjs-min.webp'
-import { useTheme } from '../../context/theme/ThemeContext'
+import {useTheme} from '../../context/theme/ThemeContext'
 import Fade from "react-reveal/Fade";
-import Image from 'next/image'
+import PictureFallback from "@/titles/PictureFallback";
 
 
 const Wrapper = styled(Section)`
@@ -18,42 +18,43 @@ const Wrapper = styled(Section)`
  }`
 
 const techList = [
-	{ logo: react, alt: 'react' },
-	{ logo: spring, alt: 'spring boot' },
-	{ logo: reactnative, alt: 'react-native' },
-	{ logo: kubernetes, alt: 'kubernetes' },
-	{ logo: docker, alt: 'docker' },
-	{ logo: nextjs, alt: 'nextjs' },
+    {logo: react, alt: 'react'},
+    {logo: spring, alt: 'spring boot'},
+    {logo: reactnative, alt: 'react-native'},
+    {logo: kubernetes, alt: 'kubernetes'},
+    {logo: docker, alt: 'docker'},
+    {logo: nextjs, alt: 'nextjs'},
 ]
 
-const Tech = ({ image, alt, className }) => {
-	return (
-		<div className="tech-grid-cell">
-			{/*<Image width={300} height={100} layout="responsive" className={className} src={image} alt={alt}/>*/}
-			<img className={className} src={image} alt={alt}/>
-		</div>
-	)
-}
+function TechStack({data, basePath}) {
 
-function TechStack ({ preview }) {
+    const darkmode = useTheme().dark
 
-	const darkmode = useTheme().dark
-	console.log(darkmode.dark)
+    const Tech = ({image, fallback, alt, className}) => {
+        return (
+            <div className="tech-grid-cell">
+                <PictureFallback fallbackImage={`${basePath}/${fallback}`} image={`${basePath}/${image}`}
+                                 alt={alt} className={className}/>
+            </div>
+        )
+    };
 
-	return (
-		<Wrapper>
-			<Title className="title-margin-small" basePath={'techstack.preview.header'} compact noSection/>
-			<Fade bottom>
-				<div className="techstack">
-					<div className="techgrid">
-						{techList.map((data, i) => <Tech className={darkmode ? 'tech-image tech-dark' : 'tech-image '}
-														 image={data.logo} alt={data.alt}/>)}
-					</div>
-				</div>
-			</Fade>
+    return (
+        <Wrapper>
+            <Title title={data.title} subHeader={data.subheader} header={data.header}/>
+            <Fade bottom>
+                <div className="techstack">
+                    <div className="techgrid">
+                        {data.technologies.map((data, i) => (
+                            <Tech className={darkmode ? 'tech-image tech-dark' : 'tech-image '} image={data.image_webp}
+                                  fallback={data.image} alt={data.alt}/>
+                        ))}
+                    </div>
+                </div>
+            </Fade>
 
-		</Wrapper>
-	)
+        </Wrapper>
+    )
 }
 
 export default TechStack

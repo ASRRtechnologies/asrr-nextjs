@@ -29,8 +29,8 @@ const ArticleVideo = ({ media, basePath }) => {
 				</div>
 
 				<div className="article-media-description">
-					<p>{description}</p>
-					<a className="font-reference" href={reference} target="_blank" rel="noopener">{reference}</a>
+					<p className="font-general">{description}</p>
+					<a className="font-article-reference" href={reference} target="_blank" rel="noopener">{reference}</a>
 				</div>
 
 			</div>
@@ -44,6 +44,7 @@ const ArticleImage = ({ media, basePath }) => {
 	return (
 		<Fade delay={fadeDelay} bottom>
 			<div className="article-media-container">
+
 				<div className="article-media aspect-ratio-1920">
 					<picture>
 						<source srcSet={`${basePath}/${image_webp}`} type="image/webp"/>
@@ -53,40 +54,40 @@ const ArticleImage = ({ media, basePath }) => {
 				</div>
 
 				<div className="article-media-description">
-					<p>{description}</p>
-					<a className="font-reference" href={reference}>{reference}</a>
+					<p className="font-general">{description}</p>
+					<a className="font-article-reference" href={reference}>{reference}</a>
 				</div>
 			</div>
 		</Fade>
 	)
-}
+};
 
 const ArticleLinks = ({}) => {
 	return (
 		<div className="article-links">
 
-			<FacebookShareButton url={'https://google.com'}>
+			<FacebookShareButton url={window.location.pathname}>
 				<FacebookIcon round size={50}/>
 			</FacebookShareButton>
 
-			<LinkedinShareButton url={'http://localhost:3002/portfolio/form'}>
+			<LinkedinShareButton url={window.location.pathname}>
 				<LinkedinIcon round size={50}/>
 			</LinkedinShareButton>
 
-			<TwitterShareButton url={'http://localhost:3002/portfolio/form'}>
+			<TwitterShareButton url={window.location.pathname}>
 				<TwitterIcon round size={50} />
 			</TwitterShareButton>
 
 		</div>
 	)
-}
+};
 
 const ArticleTitle = ({ data }) => {
 	return (
 		<Fade delay={fadeDelay}>
 			<div className="article-title">
-				<h1 className="font-title">{data.title}</h1>
-				<h2 className="font-header">{data.client}</h2>
+				<h1 className="font-article-title">{data.title}</h1>
+				<h2 className="font-article-info">Client: {data.client}</h2>
 			</div>
 		</Fade>
 	)
@@ -108,7 +109,7 @@ const ArticleSection = ({ basePath, content, media }) => {
 			)}
 		</div>
 	)
-}
+};
 
 const ArticleBody = ({ basePath, project }) => {
 	return (

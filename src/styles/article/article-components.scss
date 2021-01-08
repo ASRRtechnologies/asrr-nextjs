@@ -35,18 +35,20 @@ $article-media-description-spacing: calc(#{$article-spacing} / 2);
   max-width: $article-max-width;
   @include margin-bottom($article-spacing);
 
-  .article-markdown {
-    @include size(100%, 100%);
-  }
+}
+
+.article-markdown {
+  @include size(100%, 100%);
 
   h1 {
-    //Font-header
+    //Font-article-header
     @include font-size(1.5rem);
     @include margin-bottom(1rem);
   }
 
   h2 {
-    @include font-size(1.5rem);
+    @include font-size(1.2rem);
+    @include margin-bottom(1rem);
   }
 
   p {
@@ -56,6 +58,7 @@ $article-media-description-spacing: calc(#{$article-spacing} / 2);
   }
 
 }
+
 
 //Styling for video and images
 .article-media-container {
