@@ -10,6 +10,7 @@ import PreviewServices from "@/services/Preview";
 import PreviewPortfolio from "@/portfolio/Preview";
 import {useHeader} from "../context/navigation/HeaderContext";
 import TechStack from '@/techstack/TechStack'
+import matter from 'gray-matter'
 
 // import fs from 'fs'
 // import { join } from 'path'
@@ -24,15 +25,16 @@ import TechStack from '@/techstack/TechStack'
 //     return {data, content};
 //  }
 
-function Index(props) {
+function Index({data}) {
     const header = useHeader();
     useEffect(() => {
         header.setHeaderWhite(false)
     }, []);
     return (
         <>
-            <BigLanding title={'home.landing.title'} text={'home.landing.text'} image={image}/>
-            <PreviewServices/>
+            {console.log(data)}
+            <BigLanding title={data.landing.title} text={data.landing.text} image={image}/>
+            <PreviewServices data={data.services_section}/>
             <TechStack/>
             <PreviewPortfolio />
             <Stories/>
@@ -45,12 +47,15 @@ function Index(props) {
     )
 }
 
-// export async function getStaticProps () {
-//     const data = getDocBySlug("homepage")
-//
-//     return {
-//         props: { data },
-//     }
-// }
+export async function getStaticProps () {
+    let content = await import(`public/content/pages/nl/homepage/homepage.md`);
+    let parsedContent = matter(content.default);
+    let data = parsedContent.data;
+    const basePath = `/content/pages/nl/homepage`;
+    return {
+        props: { basePath, data},
+    }
+
+}
 
 export default Index
