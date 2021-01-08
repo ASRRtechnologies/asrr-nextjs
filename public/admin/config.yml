@@ -127,7 +127,7 @@ collections:
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Image Alt", name: "alt", widget: "string"}
       - label: "Service Section"
-        name: "services"
+        name: "services_section"
         widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
@@ -144,8 +144,23 @@ collections:
               - {label: "Service Card Title", name: "title", widget: "string"}
               - {label: "Service Card Text", name: "text", widget: "string"}
           - {label: "Button", name: "button", widget: "string", default: "Ga naar services"}
+      - label: "Tech Stack"
+        name: "technologies_section"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
+          - label: "Technologies"
+            name: "technologies"
+            widget: "list"
+            required: true
+            fields:
+              - {label: "Image_Webp", name: "image_webp", widget: "image"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Image Alt", name: "alt", widget: "string"}
       - label: "Portfolio"
-        name: "portfolio"
+        name: "portfolio_section"
         widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
@@ -164,7 +179,7 @@ collections:
               - {label: "Portfolio Card url", name: "url", widget: "string"}
           - {label: "Button", name: "button", widget: "string", default: "Ga naar portfolio"}
       - label: "Testimonials"
-        name: "testimonials"
+        name: "testimonials_section"
         widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
@@ -197,7 +212,7 @@ collections:
               - {label: "Quality Keyword", name: "quality", widget: "string"}
               - {label: "Quality Description", name: "description", widget: "string"}
       - label: "Blog"
-        name: "blog"
+        name: "blog_section"
         widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
