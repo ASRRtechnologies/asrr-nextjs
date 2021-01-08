@@ -145,20 +145,20 @@ collections:
               - {label: "Service Card Text", name: "text", widget: "string"}
           - {label: "Button", name: "button", widget: "string", default: "Ga naar services"}
       - label: "Tech Stack"
-          name: "services"
-          widget: "object"
-          fields:
-            - {label: "Title", name: "title", widget: "string"}
-            - {label: "Header", name: "header", widget: "string"}
-            - {label: "Subheader", name: "subheader", widget: "string"}
-            - label: "Technologies"
-              name: "technologies"
-              widget: "list"
-              required: true
-              fields:
-                - {label: "Image_Webp", name: "image_webp", widget: "image"}
-                - {label: "Image", name: "image", widget: "image"}
-                - {label: "Image Alt", name: "alt", widget: "string"}
+        name: "services"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
+          - label: "Technologies"
+            name: "technologies"
+            widget: "list"
+            required: true
+            fields:
+              - {label: "Image_Webp", name: "image_webp", widget: "image"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Image Alt", name: "alt", widget: "string"}
       - label: "Portfolio"
         name: "portfolio"
         widget: "object"
