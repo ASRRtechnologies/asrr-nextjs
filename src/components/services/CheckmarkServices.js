@@ -3,7 +3,7 @@ import Section from "@/layout/Section";
 import automation from '#/services/automation/automation-square.webp'
 import analytics from '#/services/data-analytics/data-analytics-square.webp'
 import scale from '#/services/scaleable-software/scaleable-software-sqaure.webp'
-import Title from "@/titles/Title";
+import Title from "@/utillities/titles/Title";
 import Fade from 'react-reveal/Fade';
 import t from "../../hooks/translator";
 

@@ -6,7 +6,7 @@ import scale from '#/services/scaleable-software/scaleable-software-sqaure.webp'
 import Fade from 'react-reveal/Fade';
 import styled from "@emotion/styled";
 import Card from "@/services/Card";
-import Title from "@/titles/Title";
+import Title from "@/utillities/titles/Title";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.layout};

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import ReadMore from '@/text/ReadMore'
+import ReadMore from '@/utillities/text/ReadMore'
 import logo from '#/logo/asrr-logo-spacing-white.svg'
 import useI18n from '../../hooks/use-i18n'
 import LinkedIn from '@/icons/LinkedIn'

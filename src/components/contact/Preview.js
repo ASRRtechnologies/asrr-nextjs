@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '@/layout/Section'
-import Title from '@/titles/Title'
+import Title from '@/utillities/titles/Title'
 import Fade from "react-reveal/Fade";
 import styled from "@emotion/styled";
 import Link from "next/link";

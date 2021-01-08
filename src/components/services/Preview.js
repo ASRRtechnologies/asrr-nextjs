@@ -1,48 +1,38 @@
-import React from 'react';
-import Section from "@/layout/Section";
-import Title from "@/titles/Title";
-import ReadMore from "@/text/ReadMore";
-import styled from "@emotion/styled";
-import PictureFallback from "@/titles/PictureFallback";
-import Fade from "react-reveal/Fade";
+import React from 'react'
+import Section from '@/layout/Section'
+import Title from '@/utillities/titles/Title'
+import ReadMore from '@/utillities/text/ReadMore'
+import styled from '@emotion/styled'
+import { Fade } from 'react-awesome-reveal'
+import ServiceCards from '@/utillities/cards/ServiceCards'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.services};
- }`;
+ }`
 
-function Preview({data, basePath}) {
+function Preview ({ data, basePath }) {
 
-    return (
-        <Wrapper>
+	return (
+		<Wrapper>
 
-            <Title title={data.title} header={data.header} subHeader={data.subheader}/>
+			<Title title={data.title} header={data.header} subHeader={data.subheader}/>
 
-            <div className="services-preview">
-                {data.services.map(({image, alt, image_webp, title, text}) => {
-                    return (
-                        <Fade bottom delay={200}>
-                            <div className="service-preview-card card-margin-bottom">
+			<div className="cards-container">
+				<Fade cascade delay={200} duration={500} fraction={0.3} triggerOnce>
+					{data.services.map((data) => {
+						return (
+							<ServiceCards data={data} basePath={basePath}/>
+						)
+					})}
+				</Fade>
+			</div>
 
-							<span className="service-preview-card-image">
-                                <PictureFallback image={`${basePath}/${image_webp}`}
-                                                 fallbackImage={`${basePath}/${image}`} alt={alt}/>
-							</span>
+			<div className="read-more-wrapper">
+				<ReadMore className="subheader" to="/services" text={data.button}/>
+			</div>
 
-                                <h1 className="theme-font font-card-title">{title}</h1>
-                                <p className="font-general">{text}</p>
-                            </div>
-                        </Fade>
-                    )
-                })}
-
-            </div>
-
-            <div className="read-more-wrapper">
-                <ReadMore className="subheader" to="/services" text={data.button}/>
-            </div>
-
-        </Wrapper>
-    );
+		</Wrapper>
+	)
 }
 
-export default Preview;
+export default Preview

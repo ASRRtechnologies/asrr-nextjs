@@ -73,6 +73,18 @@
   }
 }
 
+.zoom-in-effect-minimal {
+  object-position: 50% 50%;
+  transition: all 0.7s ease 0s;
+  left: 0;
+  top: 0;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.7s ease 0s;
+  }
+}
+
 .bold {
   font-weight: bold;
 }

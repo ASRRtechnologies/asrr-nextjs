@@ -2,7 +2,7 @@ import React from 'react';
 import Section from "@/layout/Section";
 import Button from "@/buttons/Button";
 import {useRouter} from "next/router";
-import Title from "@/titles/Title";
+import Title from "@/utillities/titles/Title";
 import Wave from "react-wavify";
 import {useTheme} from "../../context/theme/ThemeContext";
 

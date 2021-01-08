@@ -1,78 +1,71 @@
-import React, {useEffect, useRef} from 'react'
-import {useRouter} from 'next/router'
+import React, { useRef } from 'react'
 import styled from '@emotion/styled'
-import useI18n from '../../hooks/use-i18n'
 import Button from '../buttons/Button'
-import {useTheme} from '../../context/theme/ThemeContext'
-import useScreenHeight from '../../hooks/helper-functions'
-import Fade from 'react-reveal/Fade';
-import Wave from "react-wavify";
+import { useTheme } from '../../context/theme/ThemeContext'
+import Wave from 'react-wavify'
+import { Fade } from 'react-awesome-reveal'
 
 const Wrapper = styled('div')`
         background: ${props => props.theme.landing.background};
- }`;
+ }`
 
-function BigLanding({title, text}) {
-    const darkmode = useTheme().dark;
-    const landing = useRef("");
+function BigLanding ({ title, text }) {
+	const darkmode = useTheme().dark
+	const landing = useRef('')
 
-    // const setHeight = () => {
-    //         landing.current.style.minHeight = `${window.innerHeight}${-80}px`;
-    // };
-    //
-    // useEffect(() => {
-    //     setHeight();
-    // },[]);
+	// const setHeight = () => {
+	//         landing.current.style.minHeight = `${window.innerHeight}${-80}px`;
+	// };
+	//
+	// useEffect(() => {
+	//     setHeight();
+	// },[]);
 
+	return (
+		<Wrapper ref={landing} className="landing">
 
+			<div className="landing-title-container">
+				<div className="landing-title">
 
-    return (
-        <Wrapper ref={landing} className="landing">
+					<Fade triggerOnce cascade damping={0.3} direction="up">
+						<h1 className="font-landing-title">{title}</h1>
+						<p className="font-landing-text">{text}</p>
+						<Button custom to="/portfolio" title="buttons.cases"/>
+					</Fade>
 
-            <div className="landing-title-container">
-                <div className="landing-title">
-                    <Fade bottom>
-                        <h1 className="font-landing-title">{title}</h1>
-                    </Fade>
-                    <Fade delay={200} bottom>
-                        <p className="font-landing-text">{text}</p>
-                    </Fade>
-                    <Fade delay={400} bottom>
-                        <Button custom to="/portfolio" title="buttons.cases"/>
-                    </Fade>
-                </div>
-            </div>
+				</div>
+			</div>
 
-            <div className="landing-wave">
+			<div className="landing-wave">
 
-                <div className="wave wave-top">
-                    <Wave fill="#ff6961"
-                        // fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}
-                          paused={false}
-                          options={{
-                              height: 50,
-                              amplitude: 50,
-                              speed: 0.25,
-                              points: 7
-                          }}
-                    />
-                </div>
-                <div className="wave wave-bottom">
-                    <Wave
-                        fill={`${darkmode ? "#131313" : "#fff"}`}
-                        paused={false}
-                        options={{
-                            height: 15,
-                            amplitude: 15,
-                            speed: 0.35,
-                            points: 9
-                        }}
-                    />
-                </div>
-            </div>
+				<div className="wave wave-top">
+					<Wave fill="#ff6961"
+						// fill={`${darkmode ? "#1a1a1a" : "#F3F4F5"}`}
+						  paused={false}
+						  options={{
+							  height: 50,
+							  amplitude: 50,
+							  speed: 0.25,
+							  points: 7,
+						  }}
+					/>
+				</div>
+				<div className="wave wave-bottom">
+					<Wave
+						fill={`${darkmode ? '#131313' : '#fff'}`}
+						paused={false}
+						options={{
+							height: 15,
+							amplitude: 15,
+							speed: 0.35,
+							points: 9,
+						}}
+					/>
+				</div>
+			</div>
 
-        </Wrapper>
-    )
+		</Wrapper>
+	)
 }
 
 export default BigLanding

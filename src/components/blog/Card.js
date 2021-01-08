@@ -37,7 +37,7 @@
 import React from 'react'
 import fallback from '#/logo/asrr-banner.jpg'
 import styled from '@emotion/styled'
-import ReadMore from '@/text/ReadMore'
+import ReadMore from '@/utillities/text/ReadMore'
 import t from '../../hooks/translator'
 import Fade from "react-reveal/Fade"
 

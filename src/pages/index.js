@@ -3,7 +3,7 @@ import BigLanding from '@/landing/BigLanding'
 import image from '../../public/assets/images/landing/drone-2.jpg'
 import Clients from '../components/clients/Clients'
 import Contact from '../components/contact/Preview'
-import Stories from '@/stories/Stories'
+import Stories from '@/testimonials/Testimonials'
 import Why from '@/why-asrr/Why'
 import PreviewBlog from '@/blog/Preview'
 import PreviewServices from "@/services/Preview";

@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '../layout/Section'
-import Title from '../titles/Title'
+import Title from '../utillities/titles/Title'
 import styled from '@emotion/styled'
 import react from '#/techstack/react-black-min.webp'
 import reactnative from '#/techstack/react-native-black-min.webp'
@@ -10,7 +10,7 @@ import docker from '#/techstack/docker-black-min.webp'
 import nextjs from '#/techstack/nextjs-min.webp'
 import {useTheme} from '../../context/theme/ThemeContext'
 import Fade from "react-reveal/Fade";
-import PictureFallback from "@/titles/PictureFallback";
+import PictureFallback from "@/utillities/titles/PictureFallback";
 
 
 const Wrapper = styled(Section)`

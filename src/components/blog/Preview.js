@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import Card from '@/blog/Card'
 import Section from '@/layout/Section'
-import Title from "@/titles/Title";
-import ReadMore from "@/text/ReadMore";
+import Title from "@/utillities/titles/Title";
+import ReadMore from "@/utillities/text/ReadMore";
 import {blog} from "../../data/blog";
 import styled from "@emotion/styled";
 

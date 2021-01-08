@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import styled from '@emotion/styled'
-import {useTheme} from '../../context/theme/ThemeContext'
-import useI18n from "../../hooks/use-i18n";
+import {useTheme} from '../../../context/theme/ThemeContext'
+import useI18n from "../../../hooks/use-i18n";
 import Fade from "react-reveal/Fade";
 
 const LinkText = styled('a')`
