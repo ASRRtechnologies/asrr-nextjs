@@ -144,6 +144,25 @@ collections:
               - {label: "Service Card Title", name: "title", widget: "string"}
               - {label: "Service Card Text", name: "text", widget: "string"}
           - {label: "Button", name: "button", widget: "string", default: "Ga naar services"}
+      - label: "Portfolio"
+        name: "portfolio"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
+          - label: "Portfolio Cards"
+            name: "cards"
+            widget: "list"
+            required: true
+            fields:
+              - {label: "Image_Webp", name: "image_webp", widget: "image"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Image Alt", name: "alt", widget: "string"}
+              - {label: "Portfolio Card Title", name: "title", widget: "string"}
+              - {label: "Portfolio Card Client", name: "client", widget: "string"}
+              - {label: "Portfolio Card url", name: "url", widget: "string"}
+          - {label: "Button", name: "button", widget: "string", default: "Ga naar portfolio"}
       - label: "Testimonials"
         name: "testimonials"
         widget: "object"
