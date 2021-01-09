@@ -18,7 +18,7 @@ function ReadMore({to, inverted, text, children, noAnimation, className, ...rest
     return (
             <Link href={to}>
                 <LinkText className={`font-header read-more ${className} ${darkmode ? "animated-link-light" : "animated-link-dark"}`}>
-                    {/*{text}*/}
+                    {text}
                 </LinkText>
             </Link>
     )

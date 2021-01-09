@@ -11,7 +11,7 @@ const Wrapper = styled('div')`
         `
 
 function NavigationButton ({ className, title, to, custom, ...props }) {
-	const i18n = useI18n()
+
 	return (
 		<>
 			<Wrapper {...props} className={`button ${className}`}>

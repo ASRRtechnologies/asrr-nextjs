@@ -37,7 +37,7 @@ function Portfolio ({ data, basePath }) {
 			</div>
 
 			<div className="read-more-wrapper">
-				<ReadMore className="subheader" to="/portfolio" text={data.button}/>
+				<ReadMore className="subheader" to={data.button.url} text={data.button.title}/>
 			</div>
 
 		</Wrapper>
