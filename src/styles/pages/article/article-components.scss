@@ -31,15 +31,6 @@ $article-spacing: 100px;
 
 }
 
-.article-title {
-  @include size(100%, auto);
-  @include margin-bottom($article-spacing);
-  max-width: $article-max-width;
-  h1 {
-    @include margin-bottom(1rem);
-  }
-}
-
 .article-section {
   @include flex(flex-start, flex-start, column);
   @include size(100%, 100%);
@@ -56,16 +47,25 @@ $article-spacing: 100px;
   @include size(100%, 100%);
   @include margin-bottom(100px);
 
-  h1 {
-    //Font-header
-    @include font-size(1.5rem);
-    @include margin-bottom(1rem);
+  h1{
+    //Font title
+    @include font-size(2.5rem);
+    @include margin-bottom(1.5rem);
+    font-weight: bold;
   }
 
-  h2 {
-    //font - subheader
+  h2{
+    //Font header
+    @include font-size(1.5rem);
+    @include margin-bottom(1.3rem);
+    font-weight: bold;
+  }
+
+  h3{
+    //Font-subheader
     @include font-size(1.2rem);
     @include margin-bottom(1rem);
+    font-weight: bold;
   }
 
   p {
@@ -96,7 +96,6 @@ $article-spacing: 100px;
     flex-direction: column;
   }
 
-
   .article-links {
     flex-direction: row;
     width: auto;
@@ -107,17 +106,6 @@ $article-spacing: 100px;
 
   .article-content {
     margin-left: 0;
-  }
-
-  .article-section {
-    h1 {
-      @include font-size(1.2rem);
-      @include margin-bottom(0.8rem);
-    }
-
-    h2 {
-      @include font-size(1.1rem);
-    }
   }
 
 }
