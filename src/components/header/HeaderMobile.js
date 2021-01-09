@@ -7,7 +7,7 @@ import Sun from '../icons/Sun'
 import Moon from '../icons/Moon'
 import useI18n from '../../hooks/use-i18n'
 import { useHeader } from '../../context/navigation/HeaderContext'
-import Button from '@/buttons/NavigationButton'
+import NavigationButton from '../buttons/NavigationButton'
 import NL from '../../locales/nl'
 
 const Wrapper = styled('nav')`
@@ -108,8 +108,8 @@ function HeaderMobile ({ className }) {
 						<Link href="/blog"><a onClick={closeMenu}
 											  className="header-mobile-text">{i18n.t('header.blog')}</a></Link>
 
-						<Button onClick={closeMenu} title="buttons.contact" to="/contact"/>
-						{/*<LanguageMobile/>*/}
+						<NavigationButton onClick={closeMenu} title="Contact ons" to="/contact"/>
+ 						{/*<LanguageMobile/>*/}
 
 					</div>
 				</div>

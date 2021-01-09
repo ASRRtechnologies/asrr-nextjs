@@ -10,7 +10,7 @@ const Wrapper = styled('div')`
         &:hover{background-color: ${props => props.theme.button.hover};}
         `
 
-function Button ({ className, title, to, custom, ...props }) {
+function NavigationButton ({ className, title, to, custom, ...props }) {
 	const i18n = useI18n()
 	return (
 		<>
@@ -21,4 +21,4 @@ function Button ({ className, title, to, custom, ...props }) {
 	)
 }
 
-export default Button
+export default NavigationButton

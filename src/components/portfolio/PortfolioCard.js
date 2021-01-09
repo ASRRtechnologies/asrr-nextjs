@@ -11,7 +11,7 @@ const Card = styled('div')`
 
 function PortfolioCard ({ cases, basePath }) {
 
-	const { image, image_webp, client, url, alt, title, text } = cases
+	const { image, image_webp, client, url, alt, title, text, type } = cases
 
 	const darkmode = useTheme().dark
 
@@ -41,13 +41,21 @@ function PortfolioCard ({ cases, basePath }) {
 
 					<div className="card-rectangle-text-container">
 						<div className="card-rectangle-text">
-							<h1 className="font-card-header">Web application</h1>
+							<div className="card-rectangle-tags">
+								{type.map(({tag}) => {
+									return(
+										<span>
+											<h1 className="font-card-tags">{tag}</h1>
+										</span>
+									)
+								})}
+							</div>
 							<h2 className="font-card-title">{title}</h2>
 							<h3 className="font-general">{text}</h3>
 						</div>
 
 						<span>
-							<h4 className="font-card-subheader">{client}</h4>
+							<h4 className="font-card-header">{client}</h4>
 							<ReadMore to={url}/>
 						</span>
 					</div>
