@@ -13,12 +13,12 @@ function Portfolio ({ data, basePath }) {
 
 	return (
 		<Wrapper>
-			<Title title={data.title} subHeader={data.subheader} header={data.header}/>
-			<div className="cards-container">
-				<CardFadeAnimation>
-					{data.cards.map((blog) => <BlogCard data={blog} basePath={basePath}/>)}
-				</CardFadeAnimation>
-			</div>
+			{/*<Title title={data.title} subHeader={data.subheader} header={data.header}/>*/}
+			{/*<div className="cards-container">*/}
+			{/*	<CardFadeAnimation>*/}
+			{/*		{data.cards.map((blog) => <BlogCard data={blog} basePath={basePath}/>)}*/}
+			{/*	</CardFadeAnimation>*/}
+			{/*</div>*/}
 		</Wrapper>
 	)
 }
