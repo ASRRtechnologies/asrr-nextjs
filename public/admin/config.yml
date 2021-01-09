@@ -228,7 +228,6 @@ collections:
         name: "info"
         widget: "object"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
           - {label: "Client", name: "client", widget: "string", required: false}
           - label: "Date"
             name: "date"

@@ -113,7 +113,7 @@ const ArticleBody = ({ basePath, project }) => {
 		<div className="article-body">
 			<ArticleLinks/>
 			<div className="article-content">
-				<ArticleTitle data={project.info}/>
+				{/*<ArticleTitle data={project.info}/>*/}
 				{project.article.map(
 					({ content, media }) => <ArticleSection basePath={basePath} content={content} media={media}/>)}
 			</div>
