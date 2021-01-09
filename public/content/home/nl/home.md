@@ -4,12 +4,12 @@ title: home
 landing:
   title: Innovative Software Development
   text: Verantwoordelijk voor het bouwen van next-level software - snel en efficient.
-  image_webp: colorful-earth.jpg
-  image: colorful-earth.jpg
-  alt: rtwrtrwtrwt
+  image_webp: ""
+  image: ""
+  alt: ""
   button:
-    title: wrg
-    url: gwr
+    title: Bekijk cases
+    url: /portfolio
 services_section:
   button: Ga naar services
   title: Wat we doen
@@ -76,6 +76,13 @@ portfolio_section:
   title: Wat we al hebben gedaan
   subheader: Onze portfolio
   header: Neem een kijkje naar onze voorgaande projecten
+  cards:
+    - image_webp: case-image.webp
+      image: case-image.jpg
+      alt: Modern Building
+      title: Het bouwen van een geautomatiseerde BIM-Configurator
+      client: FORM Architecture & Engineering
+      url: /portfolio/form
 testimonials_section:
   title: Wat onze klanten over ons zeggen
   subheader: Onze Klantervaringen
