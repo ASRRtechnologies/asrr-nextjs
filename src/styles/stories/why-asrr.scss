@@ -1,5 +1,5 @@
 .why-asrr {
-  @include flex(center, flex-start, row);
+  @include flex(center, center, row);
   width: auto;
   height: auto;
   max-width: $max-width;
@@ -71,17 +71,13 @@
 
 .why-asrr-text {
   height: 100%;
-  width: 60%;
-  @include flex(center, flex-start, column);
-  margin-left: 25px;
+  max-width: 1200px;
+  @include flex(center, center, column);
+  @include margin-left(50px);
   text-align: center;
 
-  ul {
-    list-style-position: inside;
-
-    li {
-      min-height: 30px;
-    }
+  p{
+    max-width: 800px;
   }
 
 }

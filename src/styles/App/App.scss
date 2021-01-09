@@ -55,6 +55,7 @@ a{
 
 .font-title{
   @include font-size(2.5rem);
+
 }
 
 .font-header{
@@ -92,12 +93,12 @@ a{
 }
 
 .font-card-header{
-  @include font-size(0.9rem);
+  @include font-size(1rem);
   @include margin-bottom(0.6rem);
 }
 
 .font-card-subheader{
-  @include font-size(1rem);
+  @include font-size(0.9rem);
   @include margin-bottom(0.3rem);
 }
 
@@ -116,12 +117,12 @@ a{
 
   .font-title{
     @include font-size(1.5rem);
-    @include margin-bottom(1rem);
+    //@include margin-bottom(1rem);
   }
 
   .font-header {
     @include font-size(1.2rem);
-    @include margin-bottom(0.8rem);
+    //@include margin-bottom(0.8rem);
   }
 
 }

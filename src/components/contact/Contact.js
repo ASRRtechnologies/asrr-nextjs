@@ -46,7 +46,6 @@ function Contact({big}) {
             if (response.ok) {
                 notify('user_notifications.contact.success.title', 'user_notifications.contact.success.text',
                     {success: true})
-                console.log('notified')
                 //Clear input when successfully sent
                 setEmail({})
             } else {

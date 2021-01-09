@@ -20,11 +20,11 @@ const Card = ({ children }) => {
 	)
 };
 
-function Clients (props) {
+function Clients ({data}) {
 	return (
 		<Wrapper className="clients-section">
 			<Fade bottom delay={200}>
-				<Title className="title-button" basePath={'clients.header'} compact noSection/>
+				<Title title={data.title} header={data.header} subHeader={data.subheader}/>
 				<div className="clients">
 					<Ticker speed={2} mode="chain">
 						{({ index }) => (clients.map((d, i) => <Card key={uuid()} children={d.logo}/>))}
