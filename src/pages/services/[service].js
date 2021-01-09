@@ -90,7 +90,7 @@ function Page({data, query}) {
 
 Page.getInitialProps = ({query}) => {
     let data = services.find(c => c.name === query.service);
-    console.log(data)
+
     return {
         data,
         query

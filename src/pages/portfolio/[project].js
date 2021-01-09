@@ -1,28 +1,19 @@
 import React, { useEffect } from 'react'
-import Section from '@/layout/Section'
 import Layout from '@/layout/Application'
 import { getAllProjects } from '../../lib/api'
-import { useRouter } from 'next/router'
 import matter from 'gray-matter'
 import Article from '@/article/Article'
+import useI18n from '../../hooks/use-i18n'
+import NL from '../../locales/nl'
 
 function Page ({ allProjects, data, basePath }) {
 
-	const router = useRouter()
-
+	//Need to set locale in the static page
+	const i18n = useI18n()
 	useEffect(() => {
+		i18n.locale('nl', NL);
+	}, [])
 
-	})
-
-	const Paragraph = ({ children }) => {
-		return (
-			<Section className="section-paragraph">
-				<div className="project-paragraph">
-					{children}
-				</div>
-			</Section>
-		)
-	}
 
 	const getRandomProject = () => {
 		let numOfProjectsToShow = 2

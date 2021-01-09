@@ -4,12 +4,17 @@ import matter from 'gray-matter'
 
 const projectsDirectory = join(process.cwd(), 'public', 'content', 'projects');
 const blogsDirectory = join(process.cwd(), 'public', 'content', 'blog');
+const pagesDirectory = join(process.cwd(), 'public', 'content', 'pages');
 
 export function getProjectsSlugs() {
     return walkSync(projectsDirectory)
 }
 
 export function getBlogsSlugs() {
+    return walkSync(blogsDirectory)
+}
+
+export function getPagesSlugs() {
     return walkSync(blogsDirectory)
 }
 
@@ -24,7 +29,6 @@ const walkSync = function(dir, filelist) {
         }
         else {
             if(file.endsWith(".md")){
-                console.log(dir, file);
                 let post = {
                     directory: dir,
                     file: file
@@ -74,6 +78,15 @@ export function getAllProjects(fields = []) {
 
 export function getAllBlogs(fields = []) {
     const slugs = getBlogsSlugs();
+    const posts = slugs
+    .map((slug) => getPostBySlug(slug, fields))
+        // sort posts by date in descending order
+        .sort((post1, post2) => (post1.date > post2.date ? '-1' : '1'));
+    return posts
+}
+
+export function getAllPages(fields = []) {
+    const slugs = getPagesSlugs();
     const posts = slugs
     .map((slug) => getPostBySlug(slug, fields))
         // sort posts by date in descending order

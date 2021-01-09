@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Section from '../layout/Section'
-import Title from '../titles/Title'
-import Input from '@/text/Input'
+import Title from '../utillities/titles/Title'
+import Input from '@/utillities/text/Input'
 import Map from '@/contact/Map'
 import useI18n from '../../hooks/use-i18n'
 import {toast} from 'react-toastify'
@@ -46,7 +46,6 @@ function Contact({big}) {
             if (response.ok) {
                 notify('user_notifications.contact.success.title', 'user_notifications.contact.success.text',
                     {success: true})
-                console.log('notified')
                 //Clear input when successfully sent
                 setEmail({})
             } else {

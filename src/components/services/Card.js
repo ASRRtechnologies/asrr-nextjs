@@ -1,5 +1,5 @@
 import React from 'react';
-import ReadMore from "../text/ReadMore";
+import ReadMore from "../utillities/text/ReadMore";
 import useI18n from "../../hooks/use-i18n";
 import styled from "@emotion/styled";
 import t from "../../hooks/translator";

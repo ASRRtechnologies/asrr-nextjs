@@ -1,71 +1,47 @@
-import React, {useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import Section from '../layout/Section'
-import Title from '../titles/Title'
-import {portfolio} from '../../data/portfolio'
-import ReadMore from "@/text/ReadMore";
-import styled from "@emotion/styled";
-import Fade from "react-reveal/Fade";
-import Link from "next/link";
-import useI18n from "../../hooks/use-i18n";
-import {animationDelay, animationdelay} from "../../functions/helper-functions";
-import t from "../../hooks/translator";
+import Title from '../utillities/titles/Title'
+import { portfolio } from '../../data/portfolio'
+import ReadMore from '@/utillities/text/ReadMore'
+import styled from '@emotion/styled'
+import PortfolioCard from '@/portfolio/PortfolioCard'
+import CardFadeAnimation from '@/animation/CardFadeAnimation'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.portfolio};
- }`;
+ }`
 
-const Card = styled('div')`
-        box-shadow: ${props => props.theme.card.portfolio};
-`;
+function Portfolio ({ data, basePath }) {
 
-function Portfolio({preview}) {
+	const [cases, setCases] = useState([])
 
-    const [cases, setCases] = useState([]);
-    const i18n = useI18n();
+	useEffect(() => {
+		setCases(portfolio.slice(0, 3))
+	}, [])
 
-    useEffect(() => {
-        setCases(portfolio.slice(0, 3));
-    }, []);
+	return (
+		<Wrapper>
 
-    return (
-        <Wrapper>
+			<Title title={data.title} header={data.header} subHeader={data.subheader}/>
 
-            <Title basePath={'portfolio.preview.header'} compact noSection/>
+			<div className="cards-container">
 
-            {/*animationDelay([0, 400, 800], 3, i )*/}
+				<CardFadeAnimation>
+					{cases.map((data) => {
+						return (
+							<PortfolioCard cases={data}/>
+						)
+					})}
+				</CardFadeAnimation>
 
-            <div className="portfolio">
-                {cases.map(({image, id, type, href}, i) => {
+			</div>
 
-                    return (
-                        <Fade delay={200} bottom>
-                            <div className="portfolio-card card-margin-bottom">
-                                <Link href={`/portfolio/case/${id}`}>
-                                    <a className="portfolio-card-inner">
-                                        <Card className="portfolio-card-image-wrapper">
-                                            <div className="portfolio-card-image">
-                                                <img src={image} alt="image"/>
-                                            </div>
-                                        </Card>
-                                        <div className="portfolio-card-text">
-                                            <h1 className="label-small-margin">{t(`cases.${id}.content.smallTitle`)}</h1>
-                                            <h2 className="subheader">{t(`cases.${id}.content.title`)}</h2>
-                                            <p className="text">{t(`cases.${id}.content.subtitle`)}</p>
-                                        </div>
-                                    </a>
-                                </Link>
-                            </div>
-                        </Fade>
-                    )
-                })}
-            </div>
+			<div className="read-more-wrapper">
+				<ReadMore className="subheader" to="/portfolio" text={data.button}/>
+			</div>
 
-            <div className="read-more-wrapper">
-                <ReadMore className="subheader" to="/portfolio" text="buttons.portfolio"/>
-            </div>
-
-        </Wrapper>
-    )
+		</Wrapper>
+	)
 }
 
 export default Portfolio

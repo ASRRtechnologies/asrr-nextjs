@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from '@/layout/Section'
-import Title from '@/titles/Title'
-import Fade from "react-reveal/Fade";
+import Title from '@/utillities/titles/Title'
+import { Fade } from 'react-awesome-reveal'
 import styled from "@emotion/styled";
 import Link from "next/link";
 import useI18n from "../../hooks/use-i18n";
@@ -27,13 +27,11 @@ function Contact({title, className}) {
         <Wrapper className={`contact-invitation-section ${className ? className : ""}`}>
             <div className={`contact-preview ${title}`}>
                 <Title className={`${title} title-button`} basePath={'contact.preview.header'}/>
-
-                <Fade delay={100} bottom>
+                <Fade delay={100}  direction="up">
                     <DarkButton className={`button button-auto ${className}`}>
                         <Link href="/contact"><a>{i18n.t("buttons.contact")}</a></Link>
                     </DarkButton>
                 </Fade>
-
             </div>
         </Wrapper>
     )

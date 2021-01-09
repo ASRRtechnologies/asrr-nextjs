@@ -4,7 +4,7 @@ import SmallLanding from '@/landing/SmallLanding'
 import video from '../../../public/assets/videos/demo/rdp/2-fa-high.mp4'
 import Contact from '@/contact/Preview'
 import Section from '@/layout/Section'
-import Fade from 'react-reveal/Fade'
+import { Fade } from 'react-awesome-reveal'
 import {
 	FacebookIcon,
 	FacebookShareButton,
@@ -19,20 +19,18 @@ const fadeDelay = 200
 const ArticleVideo = ({ media, basePath }) => {
 	const { video, reference, description } = media
 	return (
-		<Fade delay={fadeDelay} bottom>
-			<div className="article-media aspect-ratio-1920">
-
-				<div className="article-media-aspect-ratio">
+		<Fade triggerOnce damping={0.3} direction="up" className="article-animation-fade-container">
+			<div className="article-media-container">
+				<div className="article-media aspect-ratio-1920">
 					<video autoPlay muted loop id="myVideo">
 						<source src={`${basePath}/${video}`} type="video/mp4"/>
 					</video>
 				</div>
 
 				<div className="article-media-description">
-					<p>{description}</p>
+					<p className="font-subheader">{description}</p>
 					<a className="font-reference" href={reference} target="_blank" rel="noopener">{reference}</a>
 				</div>
-
 			</div>
 		</Fade>
 	)
@@ -42,7 +40,7 @@ const ArticleImage = ({ media, basePath }) => {
 	const { image, image_webp, alt, reference, description } = media
 
 	return (
-		<Fade delay={fadeDelay} bottom>
+		<Fade triggerOnce damping={0.3} direction="up" className="article-animation-fade-container">
 			<div className="article-media-container">
 				<div className="article-media aspect-ratio-1920">
 					<picture>
@@ -53,8 +51,8 @@ const ArticleImage = ({ media, basePath }) => {
 				</div>
 
 				<div className="article-media-description">
-					<p>{description}</p>
-					<a className="font-reference" href={reference}>{reference}</a>
+					<p className="font-subheader">{description}</p>
+					<a className="font-reference" href={reference} target="_blank" rel="noopener">{reference}</a>
 				</div>
 			</div>
 		</Fade>
@@ -64,42 +62,42 @@ const ArticleImage = ({ media, basePath }) => {
 const ArticleLinks = ({}) => {
 	return (
 		<div className="article-links">
+			<Fade cascade triggerOnce delay={fadeDelay}>
+				<FacebookShareButton url={window.location.pathname}>
+					<FacebookIcon round size={50}/>
+				</FacebookShareButton>
 
-			<FacebookShareButton url={'https://google.com'}>
-				<FacebookIcon round size={50}/>
-			</FacebookShareButton>
+				<LinkedinShareButton url={window.location.pathname}>
+					<LinkedinIcon round size={50}/>
+				</LinkedinShareButton>
 
-			<LinkedinShareButton url={'http://localhost:3002/portfolio/form'}>
-				<LinkedinIcon round size={50}/>
-			</LinkedinShareButton>
-
-			<TwitterShareButton url={'http://localhost:3002/portfolio/form'}>
-				<TwitterIcon round size={50} />
-			</TwitterShareButton>
-
+				<TwitterShareButton url={window.location.pathname}>
+					<TwitterIcon round size={50}/>
+				</TwitterShareButton>
+			</Fade>
 		</div>
 	)
 }
 
 const ArticleTitle = ({ data }) => {
 	return (
-		<Fade delay={fadeDelay}>
-			<div className="article-title">
+		<div className="article-title">
+			<Fade triggerOnce cascade damping={0.3} direction="up">
 				<h1 className="font-title">{data.title}</h1>
-				<h2 className="font-header">{data.client}</h2>
-			</div>
-		</Fade>
+				<h2 className="font-header">Client: {data.client}</h2>
+			</Fade>
+		</div>
 	)
 }
 
 const ArticleSection = ({ basePath, content, media }) => {
 	return (
 		<div className="article-section">
-			<Fade delay={fadeDelay} bottom>
-				<div className="article-markdown">
+			<div className="article-markdown">
+				<Fade triggerOnce cascade damping={0.3} direction="up">
 					<ReactMarkdown source={content}/>
-				</div>
-			</Fade>
+				</Fade>
+			</div>
 			{media && (
 				<>
 					{media.images?.map((image) => <ArticleImage basePath={basePath} media={image}/>)}

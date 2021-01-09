@@ -1,6 +1,5 @@
 $article-max-width: 1000px;
-$article-spacing: 50px;
-$article-media-description-spacing: calc(#{$article-spacing} / 2);
+$article-spacing: 100px;
 
 .article-body {
   @include flex(flex-start, flex-start, row);
@@ -20,24 +19,42 @@ $article-media-description-spacing: calc(#{$article-spacing} / 2);
 .article-content {
   @include flex(flex-start, center, column);
   @include size(100%, 100%);
-  @include margin-left(100px)
+  @include margin-left(100px);
+
+  //Remove margin of last paragraph
+  & .article-section:last-of-type{
+    margin-bottom: 0;
+    .article-markdown{
+      margin-bottom: 0;
+    }
+  }
+
 }
 
 .article-title {
   @include size(100%, auto);
   @include margin-bottom($article-spacing);
   max-width: $article-max-width;
+  h1 {
+    @include margin-bottom(1rem);
+  }
 }
 
 .article-section {
   @include flex(flex-start, flex-start, column);
   @include size(100%, 100%);
-  max-width: $article-max-width;
   @include margin-bottom($article-spacing);
+  max-width: $article-max-width;
 
-  .article-markdown {
-    @include size(100%, 100%);
+  & .article-animation-fade-container:last-of-type{
+    margin-bottom: 0;
   }
+
+}
+
+.article-markdown {
+  @include size(100%, 100%);
+  @include margin-bottom(100px);
 
   h1 {
     //Font-header
@@ -46,7 +63,9 @@ $article-media-description-spacing: calc(#{$article-spacing} / 2);
   }
 
   h2 {
-    @include font-size(1.5rem);
+    //font - subheader
+    @include font-size(1.2rem);
+    @include margin-bottom(1rem);
   }
 
   p {
@@ -58,18 +77,18 @@ $article-media-description-spacing: calc(#{$article-spacing} / 2);
 }
 
 //Styling for video and images
+.article-animation-fade-container{
+  width: 100%;
+  @include margin-bottom($article-spacing);
+}
+
 .article-media-container {
   @include flex(flex-start, flex-start, column);
   @include size(100%, auto);
-  @include margin-top($article-spacing);
 }
 
 .article-media-description {
-  @include margin-top($article-media-description-spacing);
-
-  p {
-    font-weight: bold;
-  }
+  @include margin-top(25px);
 }
 
 @media screen and (max-width: $tablet-small-breakpoint) {
@@ -91,22 +110,14 @@ $article-media-description-spacing: calc(#{$article-spacing} / 2);
   }
 
   .article-section {
-
     h1 {
       @include font-size(1.2rem);
       @include margin-bottom(0.8rem);
     }
 
     h2 {
-      @include font-size(1.5rem);
+      @include font-size(1.1rem);
     }
-
-    p {
-      @include font-size(1rem);
-      white-space: pre-wrap;
-      overflow-wrap: break-word;
-    }
-
   }
 
 }

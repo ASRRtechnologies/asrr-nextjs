@@ -36,146 +36,62 @@ body {
   overflow-x: hidden !important;
   white-space: pre-wrap;
   overflow-wrap: break-word;
-  //overflow-y: hidden!important;
-}
-
-
-h1, h2, h3 {
-  font-weight: bold;
-}
-
-h4, h5, a, p {
-  font-weight: normal;
-  text-decoration: none;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 5px;
-  width: 1px;
-  background-color: transparent;
-}
-
-::-webkit-scrollbar {
-  height: 7px;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 5px;
-  -webkit-box-shadow: none;
-  background-color: #555;
-}
-
-.slogan {
-  @include rfs(64px);
-}
-
-.title {
-  @include rfs(48px);
-  @include margin-bottom(32px)
-}
-
-.subtitle {
-  @include rfs(26px);
-}
-
-.title-label {
-  @include rfs(14px);
-  @include margin-bottom(32px)
-}
-
-.subheader {
-  @include rfs(22px);
-  @include margin-bottom(20px)
-}
-
-.small-header {
-  @include rfs(18px);
-  @include margin-bottom(16px)
-}
-
-.text {
-  @include rfs(16px);
-  @include margin-bottom(32px)
-}
-
-.label {
-  @include rfs(14px);
-  @include margin-bottom(32px)
-}
-
-.label-small-margin {
-  @include rfs(14px);
-  @include margin-bottom(16px)
-}
-
-.header-mobile-text {
-  @include rfs(32px);
-}
-
-.article-title {
-  @include rfs(48px);
-  @include margin-bottom(26px)
-}
-
-.article-subtitle {
-  @include rfs(26px);
-  @include margin-bottom(26px)
-}
-
-.article-title-label {
-  @include rfs(14px);
-  @include margin-bottom(16px)
-}
-
-blockquote {
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 0em 10px 2.5em 10px;
-  padding: 0.5em 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-}
-
-blockquote:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-
-blockquote p {
-  display: inline;
 }
 
 //Fonts
+a{
+  text-decoration: none;
+}
 
+//Landing page fonts
 .font-landing-title {
-  @include font-size(4rem);
+  @include font-size(3rem);
 }
 
 .font-landing-text {
   @include font-size(1rem);
-  @include margin(1.5rem);
+  @include margin(1.5rem 0);
 }
 
-//Used as a single large title for an article / lap of text
-.font-title {
+.font-title{
   @include font-size(2.5rem);
-  @include margin-bottom(2rem);
 }
 
-//Used for titles of paragraphs / articles
-.font-header {
+.font-header{
   @include font-size(1.5rem);
-  @include margin-bottom(1rem);
+}
+
+.font-subheader{
+  @include font-size(1.2rem);
 }
 
 .font-reference {
   @include rfs(12px);
+  @include margin-top(12px);
 }
 
+.font-card-title{
+  @include font-size(1.3rem);
+  @include margin-bottom(1rem);
+}
+
+.font-card-header{
+  @include font-size(1rem);
+  @include margin-bottom(0.6rem);
+}
+
+.font-card-subheader{
+  @include font-size(0.9rem);
+  @include margin-bottom(0.3rem);
+}
+
+.font-general{
+  @include font-size(1rem);
+  @include margin-bottom(1rem);
+  font-weight: normal;
+}
+
+//Used for titles of paragraphs / articles
 
 @media screen and (max-width: $tablet-small-breakpoint) {
   .font-landing-title {
@@ -184,12 +100,14 @@ blockquote p {
 
   .font-title{
     @include font-size(1.5rem);
-    @include margin-bottom(1rem);
   }
 
   .font-header {
     @include font-size(1.2rem);
-    @include margin-bottom(0.8rem);
+  }
+
+  .font-subheader{
+    @include font-size(1.1rem);
   }
 
 }

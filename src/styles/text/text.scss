@@ -2,6 +2,7 @@
 .title-wrapper {
   @include size(100%, auto);
   @include flex(flex-start, center, column);
+  @include margin-bottom(150px);
   max-width: 800px;
 
   h1, h2, h3{
@@ -10,35 +11,13 @@
 
   h2{
     color: $primary-color !important;
+    @include margin(1.5rem 0);
   }
 
-  &.title-left{
-    @include flex(flex-start, flex-start, column);
-    h1, h2, h3{
-      text-align: left;
-    }
-  }
-
-  *{
-    &:last-child{
-      margin-bottom: 0;
-    }
-  }
-
-  &.title-button{
-    margin-bottom: 75px;
-  }
-
-  &.title-margin-small{
-    @include margin-bottom(75px);
-  }
-
-  margin-bottom: 150px;
 }
 
 .read-more-wrapper{
   @include margin-top(120px);
-
 }
 
 //Readmore
@@ -48,13 +27,82 @@
   margin-bottom: 0;
   position: relative;
   cursor: pointer;
-
-  &.read-more-big{
-    font-size:22px;
-  }
-
 }
 
+.animated-link-dark {
+  position: relative;
+  display: inline-block;
+  //overflow: hidden;
+  background: linear-gradient(to right, $primary-color, $primary-color 50%, #1a1a1a 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 300ms ease;
+  text-decoration: none; // text decorations are clipped in WebKit browsers
+  &:hover {
+    background-position: 0 100%;
+    transition: background-position 300ms ease;
+  }
+}
+
+.animated-link-light {
+  position: relative;
+  display: inline-block;
+  //overflow: hidden;
+  background: linear-gradient(to right, $primary-color, $primary-color 50%, white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 300ms ease;
+  text-decoration: none; // text decorations are clipped in WebKit browsers
+  &:hover {
+    background-position: 0 100%;
+    transition: background-position 300ms ease;
+  }
+}
+
+.animated-link-dark-wrapper {
+  .animated-link{
+    position: relative;
+    display: inline-block;
+    //overflow: hidden;
+    background: linear-gradient(to right, $primary-color, $primary-color 50%, #1a1a1a 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 300ms ease;
+    text-decoration: none; // text decorations are clipped in WebKit browsers
+    &:hover {
+      background-position: 0 100%;
+      transition: background-position 300ms ease;
+    }
+  }
+}
+
+.animated-link-light-wrapper {
+  .animated-link{
+    position: relative;
+    display: inline-block;
+    //overflow: hidden;
+    background: linear-gradient(to right, $primary-color, $primary-color 50%, white 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 300ms ease;
+    text-decoration: none; // text decorations are clipped in WebKit browsers
+    &:hover {
+      background-position: 0 100%;
+      transition: background-position 300ms ease;
+    }
+  }
+}
 
 @media screen and (max-width: $tablet-breakpoint) {
   .title-wrapper {

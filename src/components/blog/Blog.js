@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from '@/blog/Card'
 import Section from '@/layout/Section'
-import Title from "@/titles/Title";
+import Title from "@/utillities/titles/Title";
 import {blog} from "../../data/blog";
 import styled from "@emotion/styled";
 

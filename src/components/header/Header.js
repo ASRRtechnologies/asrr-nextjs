@@ -9,6 +9,7 @@ import Moon from "@/icons/Moon";
 import Language from "@/header/Language";
 import {useHeader} from "../../context/navigation/HeaderContext";
 import Button from "@/buttons/NavigationButton";
+import NL from '../../locales/nl'
 
 const Wrapper = styled('nav')`
         background: ${props => props.visible ? props.theme.navigation.background : "transparent"};
@@ -68,6 +69,14 @@ function Header({className}) {
         window.addEventListener('scroll', headerProgress);
     });
 
+    const setSelectedLanguage = () => {
+        i18n.locale('nl', NL)
+    }
+
+    useEffect(() => {
+        setSelectedLanguage()
+    },[]);
+
 
     return (
         <Wrapper headerWhite={header.headerWhite} visible={visible} className="header">
@@ -82,12 +91,12 @@ function Header({className}) {
                     <Link href="/portfolio"><a className="text">{i18n.t('header.portfolio')}</a></Link>
                     <Link href="/services"><a className="text">{i18n.t('header.services')}</a></Link>
                     <Link href="/blog"><a className="text">{i18n.t('header.blog')}</a></Link>
-                    {/*<Link href="/contact"><a className="text">{i18n.t('header.contact')}</a></Link>*/}
+                    <Link href="/contact"><a className="text">{i18n.t('header.contact')}</a></Link>
                 </div>
 
                 <div className="header-actions">
                     <Button title="buttons.contact" to="/contact"/>
-                    <Language/>
+                    {/*<Language/>*/}
                     <span className="icon" onClick={toggle}>
                         {themeState.dark ? <Sun/> : <Moon/>}
                     </span>

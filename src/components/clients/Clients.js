@@ -1,7 +1,7 @@
 import React from 'react'
 import {clients} from '../../data/clients'
 import styled from '@emotion/styled'
-import Title from '@/titles/Title'
+import Title from '@/utillities/titles/Title'
 import Section from '@/layout/Section'
 import Ticker from 'react-ticker'
 import Fade from "react-reveal/Fade";
@@ -20,11 +20,11 @@ const Card = ({ children }) => {
 	)
 };
 
-function Clients (props) {
+function Clients ({data}) {
 	return (
 		<Wrapper className="clients-section">
 			<Fade bottom delay={200}>
-				<Title className="title-button" basePath={'clients.header'} compact noSection/>
+				<Title title={data.title} header={data.header} subHeader={data.subheader}/>
 				<div className="clients">
 					<Ticker speed={2} mode="chain">
 						{({ index }) => (clients.map((d, i) => <Card key={uuid()} children={d.logo}/>))}
