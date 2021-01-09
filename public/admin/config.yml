@@ -255,12 +255,12 @@ collections:
                 picker_utc: false
               - {label: "Blog Card Author", name: "author", widget: "string"}
               - {label: "Blog Card url", name: "url", widget: "string"}
-              - label: "Button"
-                name: "button"
-                widget: "object"
-                fields:
-                  - {label: "Title", name: "title", widget: "string", default: "Ga naar blog"}
-                  - {label: "Url", name: "url", widget: "string"}
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string", default: "Ga naar blog"}
+              - {label: "Url", name: "url", widget: "string"}
       - label: "Clients"
         name: "clients"
         widget: "object"
