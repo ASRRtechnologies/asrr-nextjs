@@ -22,7 +22,16 @@ landing:
   alt: Team on Cliff sunset
 section:
   - content: >-
-      # De huidige situatie
+      # IT Teams as a Service (ITTAAS)
+
+
+      ## Wat zijn de voordelen van dynamische externe IT teams ten opzichte van een 1 op 1 recruitment strategie?
+
+
+      <br/>
+
+
+      ### De huidige situatie
 
 
       In de huidige markt voor externe IT-werkzaamheden wordt er vaak erg in hokjes gedacht. Een opdrachtgever klopt aan bij een recruitmentbureau en geeft aan wat voor competenties hij of zij denkt nodig te hebben voor de opdracht. De recruiter stelt dan op basis van deze input een opdrachtomschrijving op. Dit resulteert vaak in aparte eisen.
@@ -61,7 +70,7 @@ section:
           description: Description under the image
           reference: www.google.com
   - content: >-
-      # Hoe ziet ASRR ITTAAS
+      ### Hoe ziet ASRR ITTAAS
 
 
       De service begint met het aanspreekpunt. Dit is de brug tussen de Business en IT. Het aanspreekpunt moet inhoudelijke kennis hebben, maar moet ook kunnen relativeren en begrijpen wat belangrijk is voor de opdrachtgever. Communicatie, kennis en begrip zijn hierbij belangrijke karaktereigenschappen.
@@ -89,7 +98,7 @@ section:
           image: itaas-2.jpg
           alt: Team planning
   - content: >-
-      # Wat zijn hiervan de voordelen?
+      ### Wat zijn hiervan de voordelen?
 
 
       De klant haalt hiermee direct een ingewerkt team in huis, in plaats van een set aan losse spelers. Dit zorgt voor besparing op gebied van recruitment- en inwerkkosten. Het probleem wordt van begin af aan al begeleid door een specialist. Dit zorgt ervoor dat de visie van de klant goed vertaald kan worden tot een werkend eindproduct. Hierbij wordt de klant volledig ontzorgd. Daarbij is er een centraal aanspreekpunt dat de technische vraagstukken kan vertalen naar taal die de klant begrijpt, zodat er toch nog executive beslissingen kunnen worden gemaakt over belangrijke aspecten binnen het proces. Tot slot kan er worden meegelift op ervaring en oplossingen die opgedaan zijn tijdens processen voor andere klanten.
