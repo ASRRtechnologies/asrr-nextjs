@@ -57,6 +57,28 @@
 
 }
 
+.card-rectangle-tags{
+  @include margin-bottom(10px);
+
+  span{
+    @include padding-right(10px);
+    @include margin-left(10px);
+    display: inline-block;
+    border-right: 2px solid $primary-color;
+  }
+
+  & span:first-of-type{
+     margin-left: 0;
+   }
+
+  & span:last-of-type{
+    padding-right: 0;
+    border-right: none;
+  }
+
+
+}
+
 .card-round{
   @include size(30.333%, auto);
   @include flex(flex-start, center, column);

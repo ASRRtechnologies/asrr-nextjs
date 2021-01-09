@@ -10,7 +10,7 @@ const Card = styled('div')`
 `
 
 function BlogCard ({ data, basePath }) {
-	const { alt, author, date, image, image_webp, tag, text, title, url } = data;
+	const { alt, author, date, image, image_webp, type, text, title, url } = data;
 	const darkmode = useTheme().dark;
 
 	const ReadMore = ({to, text}) => {
@@ -40,14 +40,22 @@ function BlogCard ({ data, basePath }) {
 					<div className="card-rectangle-text-container">
 
 						<div className="card-rectangle-text">
-							<h1 className="font-card-header">{tag}</h1>
+							<div className="card-rectangle-tags">
+								{type.map(({tag}) => {
+									return(
+										<span>
+											<h1 className="font-card-tags">{tag}</h1>
+										</span>
+									)
+								})}
+							</div>
 							<h2 className="font-card-title">{title}</h2>
 							<h3 className="font-general">{text}</h3>
 						</div>
 
 						<span>
-							<h4 className="font-card-subheader">{author}</h4>
-							<h5 className="font-card-label">{date}</h5>
+							<h4 className="font-card-header">{author}</h4>
+							<h5 className="font-card-subheader">{date}</h5>
 							<ReadMore to={url}/>
 						</span>
 
