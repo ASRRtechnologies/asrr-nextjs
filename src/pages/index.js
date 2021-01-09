@@ -21,7 +21,6 @@ function Index ({ data, basePath }) {
 
 	return (
 		<>
-			{console.log(data)}
 			<BigLanding title={data.landing.title} text={data.landing.text} button={data.landing.button} image={image}/>
 			<PreviewServices basePath={basePath} data={data.services_section}/>
 			<TechStack basePath={basePath} data={data.technologies_section}/>

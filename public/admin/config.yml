@@ -278,3 +278,18 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Header", name: "header", widget: "string"}
           - {label: "Subheader", name: "subheader", widget: "string"}
+  - label: "Portfolio"
+    name: "portfolio"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/portfolio"
+    path: '{{language}}/{{slug}}'
+    slug: '{{title}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Header", name: "header", widget: "string"}
+      - {label: "Subheader", name: "subheader", widget: "string"}
