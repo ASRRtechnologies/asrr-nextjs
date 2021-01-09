@@ -42,7 +42,7 @@ section:
       images:
         - image_webp: hes-landing.webp
           image: ezgif.com-gif-maker-3-min.jpg
-          description: Luchtfoto van de HES Hartel Tank Terminaal
+          description: "Aerial view of the HES Hartel Tank Terminal "
           reference: https://www.linkedin.com/company/hes-hartel-tank-terminal-b-v
           alt: HES International Containers
   - content: >-
@@ -82,7 +82,7 @@ section:
         - image_webp: case-cover.webp
           image: case-image.png
           alt: Dashboard overview of application
-          description: De PowerBI dashboard (links) en webapplicatie (rechts).
+          description: The PowerBI dashboard (left) and application (right) we delivered.
   - content: >-
       ### The Conclusion
 
