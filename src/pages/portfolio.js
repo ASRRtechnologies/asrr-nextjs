@@ -3,8 +3,7 @@ import PortfolioPage from '@/portfolio/Portfolio'
 import Contact from "@/contact/Preview";
 import {useHeader} from "../context/navigation/HeaderContext";
 import matter from 'gray-matter'
-import { getAllProjects } from '../lib/api'
-// import { getAllProjects } from '../lib/api'
+import { getAllCases } from '../lib/api'
 
 function Portfolio({basePath, data, allProjects}) {
 
@@ -24,19 +23,20 @@ function Portfolio({basePath, data, allProjects}) {
 }
 
 export async function getStaticProps () {
+    //This is the portfolio page cms
     let content = await import(`public/content/portfolio/nl/portfolio.md`);
     let parsedContent = matter(content.default);
     let data = parsedContent.data;
-    const basePath = `/content/portfolio/nl`;
 
-    const allProjects = getAllProjects([
+    const basePath = `/content/written/case/nl`;
+    const allCases = getAllCases([
         'title',
         'slug',
         'card'
     ]);
 
     return {
-        props: {allProjects, basePath, data },
+        props: {allCases, basePath, data },
     }
 }
 
