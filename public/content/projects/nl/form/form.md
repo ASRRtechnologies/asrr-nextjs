@@ -13,11 +13,17 @@ info:
       tag: Full stack Development
     - tag: Expertise on demand
 card:
-  title: Het bouwen van een geautomatiseerde BIM-Configurator
-  description: Nieuwe applicatiesa in de bouw
   image_webp: case-image.webp
-  image: case-image.jpg
   alt: Modern Building
+  client: Form Architectuur & Engineering
+  text: Voor Form maken wij verscheidene projecten aan
+  url: /portfolio/form
+  title: Het bouwen van een geautomatiseerde BIM-Configurator
+  type:
+    - tag: Full stack Development
+    - tag: Expertise on demand
+  image: case-image.jpg
+  description: Nieuwe applicatiesa in de bouw
 landing:
   title: De huizenmarkt op zijn kop zetten
   image_webp: form-landing.webp
