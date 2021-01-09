@@ -7,6 +7,9 @@ landing:
   image_webp: colorful-earth.jpg
   image: colorful-earth.jpg
   alt: rtwrtrwtrwt
+  button:
+    title: wrg
+    url: gwr
 services_section:
   button: Ga naar services
   title: Wat we doen
@@ -178,10 +181,14 @@ blog_section:
       image: heijmans-min.jpg
   title: Het laatste nieuws
   subheader: Ons Blog
-  header: Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on-als offline!
-button: Ga naar blog
+  header: Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on-als
+    offline!
+  button:
+    title: gwr
+    url: wgr
 clients:
   title: Vertrouwd door
   header: Zij hebben ons hun vertrouwen gegeven. U ook?
   subheader: Vertrouwen
+button: Ga naar blog
 ---
