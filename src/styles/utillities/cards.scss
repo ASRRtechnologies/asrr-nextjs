@@ -11,7 +11,7 @@
   height: auto;
   border-radius: 5px;
   width: 100%;
-  min-height: 750px;
+  min-height: 800px;
   transition: ease-in-out transform 300ms;
 
   &:hover{
@@ -44,7 +44,7 @@
 }
 
 .card-rectangle-text-container{
-  @include padding(25px 20px);
+  @include padding(25px 20px 15px 20px);
   @include flex(space-between, flex-start, column);
   width: 100%;
   flex: 1;

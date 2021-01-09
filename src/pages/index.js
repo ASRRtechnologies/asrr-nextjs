@@ -37,10 +37,10 @@ function Index ({ data, basePath }) {
 }
 
 export async function getStaticProps () {
-	let content = await import(`public/content/pages/nl/homepage/homepage.md`)
-	let parsedContent = matter(content.default)
-	let data = parsedContent.data
-	const basePath = `/content/pages/nl/homepage`
+	let content = await import(`public/content/home/nl/home.md`);
+	let parsedContent = matter(content.default);
+	let data = parsedContent.data;
+	const basePath = `/content/home/nl`;
 	return {
 		props: { basePath, data },
 	}
