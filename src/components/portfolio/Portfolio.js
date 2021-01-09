@@ -3,22 +3,26 @@ import Section from '../layout/Section'
 import styled from '@emotion/styled'
 import Title from '@/utillities/titles/Title'
 import CardFadeAnimation from '@/animation/CardFadeAnimation'
-import BlogCard from '@/blog/BlogCard'
+import PortfolioCard from '@/portfolio/PortfolioCard'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.portfolio};
  }`
 
-function Portfolio ({ data, basePath }) {
+function Portfolio ({ data, basePath, allProjects }) {
+
+	const { page_title } = data
+
+	{console.log(allProjects)}
 
 	return (
 		<Wrapper>
-			{/*<Title title={data.title} subHeader={data.subheader} header={data.header}/>*/}
-			{/*<div className="cards-container">*/}
-			{/*	<CardFadeAnimation>*/}
-			{/*		{data.cards.map((blog) => <BlogCard data={blog} basePath={basePath}/>)}*/}
-			{/*	</CardFadeAnimation>*/}
-			{/*</div>*/}
+			<Title title={page_title.title} subHeader={page_title.subheader} header={page_title.header}/>
+			<div className="cards-container">
+				<CardFadeAnimation>
+					{allProjects.map(({ card }) => <PortfolioCard project={card} basePath={basePath}/>)}
+				</CardFadeAnimation>
+			</div>
 		</Wrapper>
 	)
 }
