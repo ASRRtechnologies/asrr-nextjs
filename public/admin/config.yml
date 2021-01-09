@@ -123,6 +123,12 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Text", name: "text", widget: "string"}
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Url", name: "url", widget: "string"}
           - {label: "Image_Webp", name: "image_webp", widget: "image", required: false}
           - {label: "Image", name: "image", widget: "image", required: false}
           - {label: "Image Alt", name: "alt", widget: "string", required: false}
@@ -143,7 +149,12 @@ collections:
               - {label: "Image Alt", name: "alt", widget: "string"}
               - {label: "Service Card Title", name: "title", widget: "string"}
               - {label: "Service Card Text", name: "text", widget: "string"}
-          - {label: "Button", name: "button", widget: "string", default: "Ga naar services"}
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Url", name: "url", widget: "string"}
       - label: "Tech Stack"
         name: "technologies_section"
         widget: "object"
@@ -177,7 +188,12 @@ collections:
               - {label: "Portfolio Card Title", name: "title", widget: "string"}
               - {label: "Portfolio Card Client", name: "client", widget: "string"}
               - {label: "Portfolio Card url", name: "url", widget: "string"}
-          - {label: "Button", name: "button", widget: "string", default: "Ga naar portfolio"}
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string", default: "Ga naar portfolio"}
+              - {label: "Url", name: "url", widget: "string"}
       - label: "Testimonials"
         name: "testimonials_section"
         widget: "object"
@@ -239,7 +255,12 @@ collections:
                 picker_utc: false
               - {label: "Blog Card Author", name: "author", widget: "string"}
               - {label: "Blog Card url", name: "url", widget: "string"}
-      - {label: "Button", name: "button", widget: "string", default: "Ga naar blog"}
+              - label: "Button"
+                name: "button"
+                widget: "object"
+                fields:
+                  - {label: "Title", name: "title", widget: "string", default: "Ga naar blog"}
+                  - {label: "Url", name: "url", widget: "string"}
       - label: "Clients"
         name: "clients"
         widget: "object"

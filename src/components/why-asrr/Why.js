@@ -38,7 +38,7 @@ function Why ({ data }) {
 					</CardFadeAnimation>
 				</div>
 
-				<Fade delay={600}>
+				<Fade triggerOnce delay={600}>
 					<div className="why-asrr-text why-asrr-center">
 						<p className="text">{qualities[currentQuality].description}</p>
 					</div>

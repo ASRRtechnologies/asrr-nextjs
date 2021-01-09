@@ -177,9 +177,8 @@ blog_section:
       tag: Nieuws
       image: heijmans-min.jpg
   title: Het laatste nieuws
-  subheader: Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on-
-    als offline!
-  header: Ons Blog
+  subheader: Ons Blog
+  header: Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on-als offline!
 button: Ga naar blog
 clients:
   title: Vertrouwd door
