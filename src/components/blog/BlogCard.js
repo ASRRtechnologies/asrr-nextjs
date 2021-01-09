@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import styled from '@emotion/styled'
 import PictureFallback from '@/utillities/titles/PictureFallback'
-import ReadMore from "@/utillities/text/ReadMore";
+import { useTheme } from '../../context/theme/ThemeContext'
 
 const Card = styled('div')`
         box-shadow: ${props => props.theme.card.background};
@@ -10,7 +10,20 @@ const Card = styled('div')`
 `
 
 function BlogCard ({ data, basePath }) {
-	const { alt, author, date, image, image_webp, tag, text, title, url } = data
+	const { alt, author, date, image, image_webp, tag, text, title, url } = data;
+	const darkmode = useTheme().dark;
+
+	const ReadMore = ({to, text}) => {
+		return (
+			<Link href={to}>
+				<a className={`font-card-read-more read-more ${darkmode
+					? 'animated-link-light'
+					: 'animated-link-dark'}`}>
+					Lees meer
+				</a>
+			</Link>
+		)
+	}
 
 	return (
 		<Link href={url}>
@@ -35,7 +48,7 @@ function BlogCard ({ data, basePath }) {
 						<span>
 							<h4 className="font-card-subheader">{author}</h4>
 							<h5 className="font-card-label">{date}</h5>
-							<ReadMore className="font-card-read-more" to={url}/>
+							<ReadMore to={url}/>
 						</span>
 
 					</div>

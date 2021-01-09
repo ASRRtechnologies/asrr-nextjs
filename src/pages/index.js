@@ -22,7 +22,7 @@ function Index ({ data, basePath }) {
 	return (
 		<>
 			{console.log(data)}
-			<BigLanding title={data.landing.title} text={data.landing.text} image={image}/>
+			<BigLanding title={data.landing.title} text={data.landing.text} button={data.landing.button} image={image}/>
 			<PreviewServices basePath={basePath} data={data.services_section}/>
 			<TechStack basePath={basePath} data={data.technologies_section}/>
 			<PreviewPortfolio data={data.portfolio_section} basePath={basePath}/>
@@ -32,7 +32,6 @@ function Index ({ data, basePath }) {
 			<Clients data={data.clients}/>
 			<Contact/>
 		</>
-
 	)
 }
 
