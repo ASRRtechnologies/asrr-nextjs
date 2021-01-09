@@ -278,8 +278,8 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Header", name: "header", widget: "string"}
           - {label: "Subheader", name: "subheader", widget: "string"}
-  - label: "Portfolio"
-    name: "portfolio"
+  - label: "Portfolio Page"
+    name: "portfolio_page"
     identifier_field: slug
     summary: '{{title}} - {{language}}'
     folder: "public/content/portfolio"
@@ -290,6 +290,11 @@ collections:
       preview: false
     fields:
       - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Header", name: "header", widget: "string"}
-      - {label: "Subheader", name: "subheader", widget: "string"}
+      - {label: "Page Name (name of md file)", name: "title", widget: "string", default: "portfolio"}
+      - label: "Name of Page Title"
+        name: "page_title"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
