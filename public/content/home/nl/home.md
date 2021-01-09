@@ -4,9 +4,12 @@ title: home
 landing:
   title: Innovative Software Development
   text: Verantwoordelijk voor het bouwen van next-level software - snel en efficient.
-  image_webp: colorful-earth.jpg
-  image: colorful-earth.jpg
-  alt: rtwrtrwtrwt
+  image_webp: ""
+  image: ""
+  alt: ""
+  button:
+    title: Bekijk cases
+    url: /portfolio
 services_section:
   button: Ga naar services
   title: Wat we doen
@@ -73,6 +76,25 @@ portfolio_section:
   title: Wat we al hebben gedaan
   subheader: Onze portfolio
   header: Neem een kijkje naar onze voorgaande projecten
+  cards:
+    - image_webp: case-image.webp
+      image: case-image.jpg
+      alt: Modern Building
+      title: Het bouwen van een geautomatiseerde BIM-Configurator
+      client: FORM Architecture & Engineering
+      url: /portfolio/form
+    - image_webp: case-hes-image.webp
+      image: computer-desktop-windows-square.jpg
+      alt: "NWO Desktop "
+      title: De bouw van een veilige, krachtige Remote Desktop Server
+      client: Nord-West Oelleitung
+      url: portfolio/nwo
+    - image_webp: case-cover.webp
+      image: case-image.png
+      alt: Mobile an dLaptop application Hes
+      title: From Excel sheet to Enterprise Application
+      client: HES International
+      url: portfolio/hes
 testimonials_section:
   title: Wat onze klanten over ons zeggen
   subheader: Onze Klantervaringen
@@ -178,10 +200,14 @@ blog_section:
       image: heijmans-min.jpg
   title: Het laatste nieuws
   subheader: Ons Blog
-  header: Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on-als offline!
-button: Ga naar blog
+  header: Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on-als
+    offline!
+  button:
+    title: gwr
+    url: wgr
 clients:
   title: Vertrouwd door
   header: Zij hebben ons hun vertrouwen gegeven. U ook?
   subheader: Vertrouwen
+button: Ga naar blog
 ---
