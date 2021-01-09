@@ -83,6 +83,18 @@ portfolio_section:
       title: Het bouwen van een geautomatiseerde BIM-Configurator
       client: FORM Architecture & Engineering
       url: /portfolio/form
+    - image_webp: case-hes-image.webp
+      image: computer-desktop-windows-square.jpg
+      alt: "NWO Desktop "
+      title: De bouw van een veilige, krachtige Remote Desktop Server
+      client: Nord-West Oelleitung
+      url: portfolio/nwo
+    - image_webp: case-cover.webp
+      image: case-image.png
+      alt: Mobile an dLaptop application Hes
+      title: From Excel sheet to Enterprise Application
+      client: HES International
+      url: portfolio/hes
 testimonials_section:
   title: Wat onze klanten over ons zeggen
   subheader: Onze Klantervaringen
