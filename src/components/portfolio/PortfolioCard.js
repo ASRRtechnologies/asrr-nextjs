@@ -42,8 +42,8 @@ function PortfolioCard ({ project, basePath }) {
 					<div className="card-rectangle-text-container">
 						<div className="card-rectangle-text">
 							<div className="card-rectangle-tags">
-								{type.map(({tag}) => {
-									return(
+								{type && type.map(({ tag }) => {
+									return (
 										<span>
 											<h1 className="font-card-tags">{tag}</h1>
 										</span>
@@ -51,7 +51,7 @@ function PortfolioCard ({ project, basePath }) {
 								})}
 							</div>
 							<h2 className="font-card-title">{title}</h2>
-							<h3 className="font-general">{text}</h3>
+							{text && <h3 className="font-general">{text}</h3>}
 						</div>
 
 						<span>

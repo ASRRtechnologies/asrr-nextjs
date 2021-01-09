@@ -11,14 +11,9 @@ const Wrapper = styled(Section)`
         background: ${props => props.theme.home.portfolio};
  }`
 
-function Portfolio ({ data, basePath }) {
+function Portfolio ({ data, basePath, selectedProjects }) {
 
-	const [cases, setCases] = useState([])
-
-	useEffect(() => {
-		setCases(portfolio.slice(0, 3))
-	}, [])
-
+	console.log(selectedProjects)
 	return (
 		<Wrapper>
 
@@ -27,9 +22,9 @@ function Portfolio ({ data, basePath }) {
 			<div className="cards-container">
 
 				<CardFadeAnimation>
-					{data.cards.map((portfolioCase) => {
+					{selectedProjects.map(({card}) => {
 						return (
-							<PortfolioCard project={portfolioCase} basePath={basePath}/>
+							<PortfolioCard project={card} basePath={basePath}/>
 						)
 					})}
 				</CardFadeAnimation>
