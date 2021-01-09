@@ -19,9 +19,5 @@ function Page({data, query}) {
     )
 }
 
-Page.getInitialProps = ({query}) => {
-
-};
-
 export default Page
 
