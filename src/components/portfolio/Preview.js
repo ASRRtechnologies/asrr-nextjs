@@ -22,9 +22,9 @@ function Portfolio ({ data, basePath, selectedProjects }) {
 			<div className="cards-container">
 
 				<CardFadeAnimation>
-					{selectedProjects.map(({card}) => {
+					{selectedProjects.map(({title, card, info}) => {
 						return (
-							<PortfolioCard project={card} basePath={basePath}/>
+							<PortfolioCard project={card} client={info.client} basePath={`${basePath}/${title.toLowerCase()}`}/>
 						)
 					})}
 				</CardFadeAnimation>
