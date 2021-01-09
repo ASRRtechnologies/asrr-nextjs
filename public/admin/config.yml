@@ -249,7 +249,6 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Text", name: "text", widget: "string", required: false}
-          - {label: "Client", name: "client", widget: "string", required: false}
           - {label: "Url", name: "url", widget: "string"}
           - {label: "Image_Webp", name: "image_webp", widget: "image"}
           - {label: "Image", name: "image", widget: "image"}

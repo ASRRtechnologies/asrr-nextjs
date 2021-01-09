@@ -11,9 +11,9 @@ import { useHeader } from '../context/navigation/HeaderContext'
 import TechStack from '@/techstack/TechStack'
 import matter from 'gray-matter'
 import Testimonials from '@/testimonials/Testimonials'
-import { getAllProjects } from '../lib/api'
+import { getAllCases } from '../lib/api'
 
-function Index ({ homepage, basePath, allProjects }) {
+function Index ({ homepage, basePath, allCases }) {
 
 	const header = useHeader()
 
@@ -21,8 +21,8 @@ function Index ({ homepage, basePath, allProjects }) {
 		header.setHeaderWhite(false)
 	}, [])
 
-	const getProjects = () => {
-		return allProjects.filter((project) => project.title === "Form");
+	const getCases = () => {
+		return allCases.filter((project) => project.title === "Form");
 	}
 
 	return (
@@ -30,7 +30,7 @@ function Index ({ homepage, basePath, allProjects }) {
 			<BigLanding title={homepage.landing.title} text={homepage.landing.text} button={homepage.landing.button} image={image}/>
 			<PreviewServices basePath={basePath} data={homepage.services_section}/>
 			<TechStack basePath={basePath} data={homepage.technologies_section}/>
-			<PreviewPortfolio data={homepage.portfolio_section} basePath={basePath} selectedProjects={getProjects()}/>
+			{/*<PreviewPortfolio data={homepage.portfolio_section} basePath={basePath} selectedProjects={getCases()}/>*/}
 			<Testimonials data={homepage.testimonials_section} basePath={basePath}/>
 			<Why data={homepage.quality_section}/>
 			<PreviewBlog data={homepage.blog_section} basePath={basePath}/>
@@ -46,7 +46,7 @@ export async function getStaticProps () {
 	let homepage = parsedContent.data;
 	const basePath = `/content/home/nl`;
 
-	const allProjects = getAllProjects([
+	const allCases = getAllCases([
 		'title',
 		'slug',
 		'card'
@@ -54,7 +54,7 @@ export async function getStaticProps () {
 
 
 	return {
-		props: { basePath, homepage, allProjects },
+		props: { basePath, homepage, allCases },
 	}
 }
 

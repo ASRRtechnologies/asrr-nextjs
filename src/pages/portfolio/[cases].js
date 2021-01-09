@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Layout from '@/layout/Application'
-import { getAllProjects } from '../../lib/api'
+import { getAllCases} from '../../lib/api'
 import matter from 'gray-matter'
 import Article from '@/article/Article'
 import useI18n from '../../hooks/use-i18n'
@@ -47,37 +47,37 @@ function Page ({ allProjects, data, basePath }) {
 
 	return (
 		<Layout>
-			<Article project={data} basePath={basePath}/>
+			{/*<Article project={data} basePath={basePath}/>*/}
 		</Layout>
 	)
 }
 
 export async function getStaticProps ({ params }) {
-	const { project } = params
-	let content = await import(`public/content/projects/nl/${project}/${project}.md`)
+	const { cases } = params
+	let content = await import(`public/content/written/case/nl/${cases}/${cases}.md`)
 	let parsedContent = matter(content.default)
 	let data = parsedContent.data
-	const basePath = `/content/projects/nl/${project.toLowerCase()}`
+	const basePath = `/content/written/case/nl/${cases.toLowerCase()}`
 
 	//Get all project info and only show their cards and titles for the read more part
-	const allProjects = getAllProjects([
+	const allCases = getAllCases([
 		'title',
 		'card',
 	])
 
 	return {
-		props: { allProjects, basePath, data },
+		props: { allCases, basePath, data },
 	}
 }
 
 export async function getStaticPaths () {
 
-	const allProjects = await getAllProjects([
+	const allCases = await getAllCases([
 		'title',
 	])
 
-	const paths = allProjects.map(project => ({
-		params: { project: project.title.toLowerCase() },
+	const paths = allCases.map(project => ({
+		params: { cases: project.title.toLowerCase() },
 	}))
 
 	return { paths, fallback: false }
