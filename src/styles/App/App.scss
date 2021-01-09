@@ -55,7 +55,6 @@ a{
 
 .font-title{
   @include font-size(2.5rem);
-
 }
 
 .font-header{
@@ -63,28 +62,12 @@ a{
 }
 
 .font-subheader{
-  @include font-size(1rem);
-  @include margin(1.5rem 0);
+  @include font-size(1.2rem);
 }
 
-//Used as a single large title for an article / lap of text
-.font-article-title {
-  @include font-size(2.5rem);
-  @include margin-bottom(2rem);
-}
-
-.font-article-header {
-  @include font-size(1.5rem);
-  @include margin-bottom(1rem);
-}
-
-.font-article-info{
-  @include font-size(1.5rem);
-  @include margin-bottom(1rem);
-}
-
-.font-article-reference {
+.font-reference {
   @include rfs(12px);
+  @include margin-top(12px);
 }
 
 .font-card-title{
@@ -117,12 +100,14 @@ a{
 
   .font-title{
     @include font-size(1.5rem);
-    //@include margin-bottom(1rem);
   }
 
   .font-header {
     @include font-size(1.2rem);
-    //@include margin-bottom(0.8rem);
+  }
+
+  .font-subheader{
+    @include font-size(1.1rem);
   }
 
 }

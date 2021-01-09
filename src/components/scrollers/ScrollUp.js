@@ -19,10 +19,13 @@ const ScrollUp = () => {
 	const [arrowVisible, useArrow] = useState(false);
 
 	const showArrow = () => {
-		let currentScrollPos = window.pageYOffset;
-		if (currentScrollPos > 300) {
+		const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+		const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		const scrolled = (winScroll / height) * 100;
+
+		if (scrolled > 10 && scrolled < 85) {
 			useArrow(true)
-		} else if (currentScrollPos < 300) {
+		} else {
 			useArrow(false)
 		}
 	};

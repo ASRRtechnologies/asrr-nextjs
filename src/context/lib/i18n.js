@@ -6,7 +6,6 @@ const i18n = rosetta();
 
 export const defaultLanguage = 'nl';
 export const languages = ['nl', 'en'];
-export const contentLanguageMap = { de: 'nl-NL', en: 'en-US' };
 
 export const I18nContext = createContext();
 

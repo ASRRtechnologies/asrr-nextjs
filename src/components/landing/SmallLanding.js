@@ -1,39 +1,27 @@
 import React from 'react'
-import {useRouter} from 'next/router'
-import styled from '@emotion/styled'
-import useI18n from '../../hooks/use-i18n'
-import Button from '../buttons/Button'
-import {useTheme} from '../../context/theme/ThemeContext'
-import useScreenHeight from '../../hooks/helper-functions'
-import Fade from 'react-reveal/Fade';
-import image from "#/landing/colorful-earth.jpg";
+import { Fade } from 'react-awesome-reveal'
 
-function SmallLanding({title, text, image, imageWebp, alt}) {
+function SmallLanding ({ title, text, image, imageWebp, alt }) {
 
-    return (
-        <div className="landing-small">
+	return (
+		<div className="landing-small">
 
-            <div className="landing-title-small">
-                <Fade bottom>
-                    <h1 className="font-landing-title">{title}</h1>
-                </Fade>
+			<div className="landing-title-small">
+				<Fade triggerOnce cascade damping={0.3} direction="up">
+					<h1 className="font-landing-title">{title}</h1>
+					<p className="font-landing-text">{text}</p>
+				</Fade>
 
-                {text && (
-                    <Fade delay={200} bottom>
-                        <p className="font-landing-text">{text}</p>
-                    </Fade>
-                )}
+			</div>
 
-            </div>
+			<picture>
+				<source srcSet={imageWebp} type="image/webp"/>
+				<source srcSet={image} type="image/jpeg"/>
+				<img src={image} alt={alt}/>
+			</picture>
 
-                <picture>
-                    <source srcSet={imageWebp} type="image/webp"/>
-                    <source srcSet={image} type="image/jpeg"/>
-                    <img src={image} alt={alt}/>
-                </picture>
-
-        </div>
-    )
+		</div>
+	)
 }
 
 export default SmallLanding

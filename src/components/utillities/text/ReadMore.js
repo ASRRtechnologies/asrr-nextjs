@@ -13,31 +13,14 @@ const LinkText = styled('a')`
 `;
 
 function ReadMore({to, inverted, text, children, noAnimation, className, ...rest}) {
-    const i18n = useI18n();
     const darkmode = useTheme().dark;
 
-    const NoAnimation = (props) => {
-
-        return (
-            <>
-                {noAnimation ? (props.children) : (
-                    <Fade delay={400} bottom>
-                        {props.children}
-                    </Fade>
-                )}
-            </>
-        )
-    };
-
     return (
-        <NoAnimation>
             <Link href={to}>
-                <LinkText inverted={inverted}
-                          className={`font-card-title read-more ${className} ${inverted ? "animated-link-light" : (darkmode ? "animated-link-light" : "animated-link-dark")} `}>
+                <LinkText className={`font-header read-more ${darkmode ? "animated-link-light" : "animated-link-dark"}`}>
                     {text}
                 </LinkText>
             </Link>
-        </NoAnimation>
     )
 
 }

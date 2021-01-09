@@ -15,19 +15,7 @@
     margin-right: auto;
   }
 
-  //Make label white in footer of email
-  //Make label white in footer of email
-  input {
-    color: white !important;
-    border-bottom: solid 3px white;
-    margin-bottom: 0;
-  }
-
-  .input-container {
-    margin: 0;
-  }
-
-  h1, h4, p, a {
+  h1,  p, a {
     color: white !important;
   }
 
@@ -39,11 +27,19 @@
 
   .grid {
     width: auto;
-    //width: 25%;
     @include flex(flex-start, flex-start, column);
 
-    a {
-      margin: 0 0 10px 0;
+    & *{
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+
+    h1{
+      @include margin-bottom(1rem)
+    }
+    p, a{
+      @include margin-bottom(0.8rem)
     }
 
     .footer-social-media{
@@ -102,7 +98,6 @@
     @include flex(space-between, center, row);
 
     p {
-      font-weight: bold;
       margin: 0;
     }
   }
