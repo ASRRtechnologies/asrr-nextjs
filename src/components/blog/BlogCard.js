@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import styled from '@emotion/styled'
 import PictureFallback from '@/utillities/titles/PictureFallback'
+import ReadMore from "@/utillities/text/ReadMore";
 
 const Card = styled('div')`
         box-shadow: ${props => props.theme.card.background};
@@ -34,6 +35,7 @@ function BlogCard ({ data, basePath }) {
 						<span>
 							<h4 className="font-card-subheader">{author}</h4>
 							<h5 className="font-card-label">{date}</h5>
+							<ReadMore className="font-card-read-more" to={url}/>
 						</span>
 
 					</div>

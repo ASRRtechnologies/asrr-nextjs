@@ -85,6 +85,16 @@ a{
   @include margin-bottom(0.3rem);
 }
 
+.font-card-label{
+  @include font-size(0.7rem);
+}
+
+.font-card-read-more{
+  @include font-size(1rem);
+  font-weight: bold;
+  @include margin-top(1.3rem);
+}
+
 .font-general{
   @include font-size(1rem);
   @include margin-bottom(1rem);

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import styled from '@emotion/styled'
+import ReadMore from "@/utillities/text/ReadMore";
 
 const Card = styled('div')`
         box-shadow: ${props => props.theme.card.background};
@@ -9,7 +10,7 @@ const Card = styled('div')`
 
 function PortfolioCard ({ cases }) {
 
-	const { image } = cases
+	const { image, url } = cases;
 
 	return (
  			<Link href={`/portfolio/case`}>
@@ -33,7 +34,7 @@ function PortfolioCard ({ cases }) {
 
 							<span>
 								<h4 className="font-card-subheader">Form Architecture</h4>
-								<h5 className="font-card-label">31 December 2020</h5>
+								<ReadMore className="font-card-read-more" to="/"/>
 							</span>
 						</div>
 

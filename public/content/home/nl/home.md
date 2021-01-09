@@ -1,6 +1,6 @@
 ---
 language: nl
-title: homepage
+title: home
 landing:
   title: Innovative Software Development
   text: Verantwoordelijk voor het bouwen van next-level software - snel en efficient.
