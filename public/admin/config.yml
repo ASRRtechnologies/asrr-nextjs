@@ -149,6 +149,12 @@ collections:
               - {label: "Image Alt", name: "alt", widget: "string"}
               - {label: "Service Card Title", name: "title", widget: "string"}
               - {label: "Service Card Text", name: "text", widget: "string"}
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string", default: "Ga naar blog"}
+              - {label: "Url", name: "url", widget: "string"}
       - label: "Tech Stack"
         name: "technologies_section"
         widget: "object"
@@ -182,6 +188,17 @@ collections:
               - {label: "Portfolio Card Title", name: "title", widget: "string"}
               - {label: "Portfolio Card Client", name: "client", widget: "string"}
               - {label: "Portfolio Card url", name: "url", widget: "string"}
+              - label: "Tags"
+                name: "type"
+                widget: "list"
+                fields:
+                  - {label: "Tag", name: "tag", widget: "select", options: ["Artikel", "Nieuws", "Full stack Development", "Expertise on demand"]}
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string", default: "Ga naar blog"}
+              - {label: "Url", name: "url", widget: "string"}
       - label: "Testimonials"
         name: "testimonials_section"
         widget: "object"
@@ -243,6 +260,11 @@ collections:
                 picker_utc: false
               - {label: "Blog Card Author", name: "author", widget: "string"}
               - {label: "Blog Card url", name: "url", widget: "string"}
+              - label: "Tags"
+                name: "type"
+                widget: "list"
+                fields:
+                  - {label: "Tag", name: "tag", widget: "select", options: ["Artikel", "Nieuws", "Full stack Development", "Expertise on demand"]}
           - label: "Button"
             name: "button"
             widget: "object"

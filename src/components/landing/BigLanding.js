@@ -4,16 +4,17 @@ import Button from '../buttons/Button'
 import { useTheme } from '../../context/theme/ThemeContext'
 import Wave from 'react-wavify'
 import { Fade } from 'react-awesome-reveal'
+import NavigationButton from '@/buttons/NavigationButton'
 
 const Wrapper = styled('div')`
         background: ${props => props.theme.landing.background};
  }`
 
-function BigLanding ({ title, text }) {
+function BigLanding ({ title, text, button }) {
 	const darkmode = useTheme().dark
 	const landing = useRef('')
 
-	// const setHeight = () => {
+ 	// const setHeight = () => {
 	//         landing.current.style.minHeight = `${window.innerHeight}${-80}px`;
 	// };
 	//
@@ -30,7 +31,7 @@ function BigLanding ({ title, text }) {
 					<Fade triggerOnce cascade damping={0.3} direction="up">
 						<h1 className="font-landing-title">{title}</h1>
 						<p className="font-landing-text">{text}</p>
-						<Button custom to="/portfolio" title="buttons.cases"/>
+						<NavigationButton to={button.url} title={button.title}/>
 					</Fade>
 
 				</div>

@@ -27,9 +27,9 @@ function Portfolio ({ data, basePath }) {
 			<div className="cards-container">
 
 				<CardFadeAnimation>
-					{cases.map((data) => {
+					{data.cards.map((portfolioCase) => {
 						return (
-							<PortfolioCard cases={data}/>
+							<PortfolioCard cases={portfolioCase} basePath={basePath}/>
 						)
 					})}
 				</CardFadeAnimation>
