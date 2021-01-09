@@ -11,7 +11,6 @@ landing:
     title: Bekijk cases
     url: /portfolio
 services_section:
-  button: Ga naar services
   title: Wat we doen
   header: ASRR vormt de brug tussen IT en business met flexibele, robuuste teams
     die meeschalen met wat u nodig heeft.
@@ -72,7 +71,6 @@ technologies_section:
       image: nextjs-min.png
       alt: Nextjs Logo
 portfolio_section:
-  button: Ga naar portfolio
   title: Wat we al hebben gedaan
   subheader: Onze portfolio
   header: Neem een kijkje naar onze voorgaande projecten
