@@ -9,9 +9,9 @@ const Card = styled('div')`
         background-color: ${props => props.theme.card.background};
 `
 
-function PortfolioCard ({ cases, basePath }) {
+function PortfolioCard ({ project, basePath }) {
 
-	const { image, image_webp, client, url, alt, title, text, type } = cases
+	const { image, image_webp, client, url, alt, title, text, type } = project
 
 	const darkmode = useTheme().dark
 

@@ -29,7 +29,7 @@ function Portfolio ({ data, basePath }) {
 				<CardFadeAnimation>
 					{data.cards.map((portfolioCase) => {
 						return (
-							<PortfolioCard cases={portfolioCase} basePath={basePath}/>
+							<PortfolioCard project={portfolioCase} basePath={basePath}/>
 						)
 					})}
 				</CardFadeAnimation>
