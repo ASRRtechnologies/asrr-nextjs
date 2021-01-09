@@ -8,88 +8,6 @@ publish_mode: editorial_workflow
 display_url: https://asrr.nl
 logo_url: https://asrr.nl/assets/images/logo/asrr.svg
 collections:
-  - label: "Projects"
-    name: "project"
-    identifier_field: slug
-    summary: '{{title}} - {{language}}'
-    folder: "public/content/projects"
-    create: true
-    media_folder: ''
-    public_folder: ''
-    path: '{{language}}/{{title}}/{{slug}}'
-    slug: '{{title}}'
-    editor:
-      preview: true
-    fields:
-      - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
-      - { label: "Title (also the file and path name)", name: "title", widget: "string", description: This is name of the project}
-      - label: "Project Info"
-        name: "info"
-        widget: "object"
-        fields:
-          - {label: "Project Title", name: "title", widget: "string"}
-          - {label: "Client", name: "client", widget: "string"}
-          - label: "Project Date"
-            name: "date"
-            widget: "datetime"
-            default: ""
-            date_format: "DD.MM.YYYY"
-            time_format: "HH:mm"
-            format: "LLL"
-            picker_utc: false
-          - {label: "Author", name: "author", widget: "string", required: false}
-          - label: "Tags"
-            name: "type"
-            widget: "list"
-            fields:
-              - {label: "Tag", name: "tag", widget: "select", options: ["Artikel", "Nieuws", "Full stack Development", "Expertise on demand"]}
-      - label: "Project Card"
-        name: "card"
-        widget: "object"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Text", name: "text", widget: "string", required: false}
-          - {label: "Client", name: "client", widget: "string"}
-          - {label: "Card url", name: "url", widget: "string"}
-          - {label: "Image_Webp", name: "image_webp", widget: "image"}
-          - {label: "Image", name: "image", widget: "image"}
-          - {label: "Image Alt", name: "alt", widget: "string"}
-      - label: "Landing"
-        name: "landing"
-        widget: "object"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Image_Webp", name: "image_webp", widget: "image"}
-          - {label: "Image", name: "image", widget: "image"}
-          - {label: "Image Alt", name: "alt", widget: "string"}
-      - label: "Article Section"
-        name: "article"
-        widget: "list"
-        fields:
-          - {label: "Content", name: "content", widget: "markdown"}
-          - label: "Media"
-            name: "media"
-            widget: "object"
-            required: false
-            fields:
-              - label: "Image"
-                name: "images"
-                widget: "list"
-                required: false
-                fields:
-                  - {label: "Image_Webp", name: "image_webp", widget: "image", required: false}
-                  - {label: "Image", name: "image", widget: "image", required: false}
-                  - {label: "Image Alt", name: "alt", widget: "string", required: false}
-                  - {label: "Image Description", name: "description", widget: "string", required: false}
-                  - {label: "Image Reference", name: "reference", widget: "string", required: false}
-              - label: "Videos"
-                name: "videos"
-                widget: "list"
-                required: false
-                fields:
-                  - {label: "Video", name: "video", widget: "file", required: false}
-                  - {label: "Video Description", name: "video_description", widget: "string", required: false}
-                  - {label: "Video Reference", name: "video_reference", widget: "string", required: false}
   - label: "Home Page"
     name: "home_page"
     identifier_field: slug
@@ -305,7 +223,7 @@ collections:
     fields:
       - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
       - { label: "Title (also the file and path name)", name: "title", widget: "string", description: This is name of the project}
-      - {label: "Type", name: "type", widget: "select", options: ["Artikel", "Blog", "Project"]}
+      - {label: "Type", name: "type", widget: "select", options: ["Artikel", "Nieuws", "Case"]}
       - label: "Info"
         name: "info"
         widget: "object"
