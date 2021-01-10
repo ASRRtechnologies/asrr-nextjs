@@ -9,8 +9,9 @@ const Card = styled('div')`
         background-color: ${props => props.theme.card.background};
 `
 
-function PortfolioCard ({ project, basePath, client }) {
+function PortfolioCard ({ project, basePath,  info }) {
 
+	const {tag, author, date, client} = info;
 	const { image, image_webp, url, alt, title, text, type } = project
 
 	const darkmode = useTheme().dark
@@ -42,7 +43,7 @@ function PortfolioCard ({ project, basePath, client }) {
 					<div className="card-rectangle-text-container">
 						<div className="card-rectangle-text">
 							<div className="card-rectangle-tags">
-								{type && type.map(({ tag }) => {
+								{tag && tag.map(({ tag }) => {
 									return (
 										<span>
 											<h1 className="font-card-tags">{tag}</h1>
