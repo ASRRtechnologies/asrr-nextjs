@@ -25,7 +25,7 @@ function Portfolio ({ data, selectedProjects }) {
 				<CardFadeAnimation>
 					{selectedProjects.map(({title, card, info}) => {
 						return (
-							<PortfolioCard project={card} info={info} basePath={`${casesPath}/${title.toLowerCase()}`}/>
+							<PortfolioCard project={card} client={info.client} basePath={`${casesPath}/${title.toLowerCase()}`}/>
 						)
 					})}
 				</CardFadeAnimation>

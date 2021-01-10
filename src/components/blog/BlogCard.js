@@ -11,7 +11,7 @@ const Card = styled('div')`
 
 function BlogCard ({ article, info, type, name }) {
 
-	const {tag, author, date} = info;
+	const {writtenType, author, date} = info;
 	const { alt, image, image_webp, text, title, url } = article
 	const darkmode = useTheme().dark;
 
@@ -48,7 +48,7 @@ function BlogCard ({ article, info, type, name }) {
 
 						<div className="card-rectangle-text">
 							<div className="card-rectangle-tags">
-								{tag && tag.map(({ tag }) => {
+								{writtenType && writtenType.map(({ tag }) => {
 									return (
 										<span>
 											<h1 className="font-card-tags">{tag}</h1>
