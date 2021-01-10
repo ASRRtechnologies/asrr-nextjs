@@ -77,31 +77,6 @@ portfolio_section:
   title: Wat we al hebben gedaan
   subheader: Onze portfolio
   header: Neem een kijkje naar onze voorgaande projecten
-  cards:
-    - image_webp: case-image.webp
-      image: case-image.jpg
-      alt: Modern Building
-      title: Het bouwen van een geautomatiseerde BIM-Configurator
-      client: FORM Architecture & Engineering
-      url: /portfolio/form
-      type:
-        - tag: Full stack Development
-    - image_webp: case-hes-image.webp
-      image: computer-desktop-windows-square.jpg
-      alt: "NWO Desktop "
-      title: De bouw van een veilige, krachtige Remote Desktop Server
-      client: Nord-West Oelleitung
-      url: portfolio/nwo
-      type:
-        - tag: Full stack Development
-    - image_webp: case-cover.webp
-      image: case-image.png
-      alt: Mobile an dLaptop application Hes
-      title: From Excel sheet to Enterprise Application
-      client: HES International
-      url: portfolio/hes
-      type:
-        - tag: Full stack Development
   button:
     title: Ga naar portfolio
     url: /portfolio
@@ -176,44 +151,6 @@ quality_section:
         highlighten daarbij belangrijke aspecten zodat u de juiste conclusies
         kan trekken in real-time.
 blog_section:
-  cards:
-    - image_webp: ittaas.webp
-      alt: IT Teams as a Service (ITTAAS)
-      author: Re-Angelo Jarvis
-      text: Wat zijn de voordelen van dynamische externe IT teams?
-      date: January 8, 2021 2:47 AM
-      url: /blog/ittaas
-      title: IT Teams as a Service (ITTAAS)
-      type:
-        - tag: Artikel
-      tag: Artikel
-      image: ittaas.jpg
-    - image_webp: pexels-miguel-á-padriñán-3785927-min.webp
-      alt: Microservices
-      author: Amar Ramdas
-      text: Using microservice architecture in software can provide various advantages
-        over traditional monolithic applications. Find out how in this article.
-      date: January 8, 2021 2:48 AM
-      url: blog/microservices
-      title: Can microservices save you time and effort?
-      type:
-        - tag: Artikel
-      tag: Artikel
-      image: pexels-miguel-á-padriñán-3785927-min.jpg
-    - image_webp: heijmans-min-1-.webp
-      alt: Heijmans Configurator
-      author: Re-Angelo Jarvis
-      text: Together with our partner FORM, we developed a online 3D House
-        Configurator, based on a NextJS platform. This includes a dasbhoard to
-        see customer configurations and a Spring Boot Back end to manage the
-        data.
-      date: January 8, 2021 2:54 AM
-      url: blog/form
-      title: ASRR & FORM launch Heijmans Online 3D Configurator.
-      type:
-        - tag: Nieuws
-      tag: Nieuws
-      image: heijmans-min.jpg
   title: Het laatste nieuws
   subheader: Ons Blog
   header: Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on-als

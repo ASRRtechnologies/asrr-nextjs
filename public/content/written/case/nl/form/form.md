@@ -7,10 +7,7 @@ info:
   client: Form Architecture & Engineering
   author: Re-Angelo
   type:
-    - hidden: hidden
-      tag: Artikel
-    - hidden: hidden
-      tag: Full stack Development
+    - tag: Full stack Development
     - tag: Expertise on demand
   writtenType:
     - tag: Full stack Development

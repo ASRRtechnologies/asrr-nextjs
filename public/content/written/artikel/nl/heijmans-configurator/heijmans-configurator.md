@@ -11,7 +11,7 @@ card:
   title: Heijmans/FORM 3D Huis Configurator
   text: Een VR Ready, 3D omgeving om uw toekomstige huis te configureren vanuit
     een internet browser.
-  url: /blog/news/heijmans-configurator
+  url: blog/artikel/heijmans-configurator
   image_webp: heijmans-configurator-landing.webp
   image: ezgif.com-gif-maker-4-.jpg
   alt: Webapplicatie Huis Configurator

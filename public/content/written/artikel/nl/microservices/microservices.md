@@ -9,7 +9,7 @@ info:
     - tag: Artikel
 card:
   title: Can microservices save you time and effort?
-  url: blog/article/microservices
+  url: blog/artikel/microservices
   image_webp: microservices-landing.webp
   image: microservices-min.jpg
   alt: Microservices

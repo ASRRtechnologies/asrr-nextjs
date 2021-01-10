@@ -11,7 +11,7 @@ info:
 card:
   title: IT Teams as a Service (ITTAAS)
   text: Wat zijn de voordelen van dynamische externe IT teams
-  url: blog/itaas
+  url: /blog/artikel/itaas
   image_webp: ittaas.webp
   image: ittaas.jpg
   alt: Paper peoples (team)
