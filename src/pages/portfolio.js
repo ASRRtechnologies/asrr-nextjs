@@ -16,7 +16,7 @@ function Portfolio({basePath, data, allCases}) {
 
     return (
         <>
-            <PortfolioPage data={data} allProjects={allCases} />
+            <PortfolioPage data={data} allProjects={allCases}/>
             <Contact/>
         </>
     )

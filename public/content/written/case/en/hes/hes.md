@@ -6,7 +6,7 @@ info:
   date: January 9, 2021 10:09 PM
   client: HES International
   author: Amar Ramdas
-  writtenType:
+  tag:
     - tag: Full stack Development
     - tag: Expertise on demand
 card:

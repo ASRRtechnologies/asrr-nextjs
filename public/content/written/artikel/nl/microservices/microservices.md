@@ -5,7 +5,7 @@ type: Artikel
 info:
   date: January 10, 2021 12:08 AM
   author: Amar Ramdas
-  writtenType:
+  tag:
     - tag: Artikel
 card:
   title: Can microservices save you time and effort?
