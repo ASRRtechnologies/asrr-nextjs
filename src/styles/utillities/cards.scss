@@ -44,7 +44,7 @@
 }
 
 .card-rectangle-text-container{
-  @include padding(25px 20px 15px 20px);
+  @include padding(25px 20px 25px 20px);
   @include flex(space-between, flex-start, column);
   width: 100%;
   flex: 1;
@@ -54,7 +54,6 @@
   h1{
     color: $primary-color !important;
   }
-
 }
 
 .card-rectangle-tags{

@@ -11,9 +11,9 @@ import { useHeader } from '../context/navigation/HeaderContext'
 import TechStack from '@/techstack/TechStack'
 import matter from 'gray-matter'
 import Testimonials from '@/testimonials/Testimonials'
-import { getAllCases } from '../lib/api'
+import { getAllArticles, getAllCases, getAllNews } from '../lib/api'
 
-function Index ({ homepage, basePath, allCases }) {
+function Index ({ homepage, basePath, allCases, allArticles, allNews }) {
 
 	const header = useHeader()
 
@@ -22,18 +22,37 @@ function Index ({ homepage, basePath, allCases }) {
 	}, [])
 
 	const getCases = () => {
-		return allCases.filter((project) => project.title === "Form");
+		return allCases.filter((project) => {
+			return project.title.toLowerCase() === 'form' || project.title.toLowerCase() === 'nwo' ||
+				project.title.toLowerCase() === 'hes'
+		})
 	}
+
+	const getBlogs = () => {
+		return allArticles.filter(
+			(article) => article.title.toLowerCase() === 'itaas' || article.title.toLowerCase() === 'microservices' ||
+				article.title.toLowerCase() === 'heijmans-configurator')
+
+		// let news = allNews.filter((artnews) => {
+		// 	console.log(artnews)
+		// })
+
+		// let selectedBlogs = [...articles, ...news]
+
+	}
+
+	getBlogs()
 
 	return (
 		<>
-			<BigLanding title={homepage.landing.title} text={homepage.landing.text} button={homepage.landing.button} image={image}/>
+			<BigLanding title={homepage.landing.title} text={homepage.landing.text} button={homepage.landing.button}
+						image={image}/>
 			<PreviewServices basePath={basePath} data={homepage.services_section}/>
 			<TechStack basePath={basePath} data={homepage.technologies_section}/>
-			{/*<PreviewPortfolio data={homepage.portfolio_section} basePath={basePath} selectedProjects={getCases()}/>*/}
+			<PreviewPortfolio data={homepage.portfolio_section} selectedProjects={getCases()}/>
 			<Testimonials data={homepage.testimonials_section} basePath={basePath}/>
 			<Why data={homepage.quality_section}/>
-			<PreviewBlog data={homepage.blog_section} basePath={basePath}/>
+			<PreviewBlog data={homepage.blog_section} selectedBlogs={getBlogs()}/>
 			<Clients data={homepage.clients}/>
 			<Contact/>
 		</>
@@ -41,20 +60,36 @@ function Index ({ homepage, basePath, allCases }) {
 }
 
 export async function getStaticProps () {
-	let content = await import(`public/content/home/nl/home.md`);
-	let parsedContent = matter(content.default);
-	let homepage = parsedContent.data;
-	const basePath = `/content/home/nl`;
+	let content = await import(`public/content/home/nl/home.md`)
+	let parsedContent = matter(content.default)
+	let homepage = parsedContent.data
+	const basePath = `/content/home/nl`
 
 	const allCases = getAllCases([
 		'title',
 		'slug',
-		'card'
-	]);
+		'card',
+		'info',
+	])
 
+	const allArticles = getAllArticles([
+		'title',
+		'slug',
+		'card',
+		'info',
+		'type'
+	])
+
+	const allNews = getAllNews([
+		'title',
+		'slug',
+		'card',
+		'info',
+		'type'
+	])
 
 	return {
-		props: { basePath, homepage, allCases },
+		props: { basePath, homepage, allCases, allArticles, allNews },
 	}
 }
 

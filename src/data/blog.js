@@ -1,6 +1,6 @@
 export const blog = [
     // {
-    //     type: "article",
+    //     type: "written",
     //     name: "working-from-home",
     //     readMore: true,
     // },
@@ -99,7 +99,7 @@ export const blog = [
         ],
     },
     // {
-    //     type: "article",
+    //     type: "written",
     //     name: "microservices",
     //     readMore: true,
     //     tags: [
@@ -134,7 +134,7 @@ export const blog = [
     //     image: "https://r2m.se/wp-content/uploads/2018/01/microservices-768x448.webp"
     // },
     // {
-    //     type: "article",
+    //     type: "written",
     //     name: "kubernetes",
     //     readMore: true,
     //     tags: [
@@ -170,7 +170,7 @@ export const blog = [
     //
     // },
     // {
-    //     type: "article",
+    //     type: "written",
     //     name: "nextjs",
     //     tags: [
     //         "front-end", "development"

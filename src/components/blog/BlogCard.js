@@ -9,11 +9,18 @@ const Card = styled('div')`
         background-color: ${props => props.theme.card.background};
 `
 
-function BlogCard ({ data, basePath }) {
-	const { alt, author, date, image, image_webp, type, text, title, url } = data;
+function BlogCard ({ article, info, type, name }) {
+
+	const {writtenType, author, date} = info;
+	const { alt, image, image_webp, text, title, url } = article
 	const darkmode = useTheme().dark;
 
-	const ReadMore = ({to, text}) => {
+	const newsPath = 'content/written/nieuws/nl'
+	const articlesPath = 'content/written/artikel/nl'
+
+	const basePath = `${type.toLowerCase() === 'artikel' ? articlesPath : newsPath}/${name.toLowerCase()}`
+
+	const ReadMore = ({ to, text }) => {
 		return (
 			<Link href={to}>
 				<a className={`font-card-read-more read-more ${darkmode
@@ -41,8 +48,8 @@ function BlogCard ({ data, basePath }) {
 
 						<div className="card-rectangle-text">
 							<div className="card-rectangle-tags">
-								{type.map(({tag}) => {
-									return(
+								{writtenType && writtenType.map(({ tag }) => {
+									return (
 										<span>
 											<h1 className="font-card-tags">{tag}</h1>
 										</span>

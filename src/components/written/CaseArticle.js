@@ -108,20 +108,7 @@ const ArticleSection = ({ basePath, content, media }) => {
 	)
 }
 
-const ArticleBody = ({ basePath, project }) => {
-	return (
-		<div className="article-body">
-			<ArticleLinks/>
-			<div className="article-content">
-				{/*<ArticleTitle data={project.info}/>*/}
-				{project.article.map(
-					({ content, media }) => <ArticleSection basePath={basePath} content={content} media={media}/>)}
-			</div>
-		</div>
-	)
-}
-
-function Article ({ project, basePath }) {
+function CaseArticle ({ project, basePath }) {
 	return (
 		<>
 			<SmallLanding title={project.landing.title} text={project.landing.text} alt={project.landing.alt}
@@ -129,11 +116,19 @@ function Article ({ project, basePath }) {
 						  imageWebp={`${basePath}/${project.landing.image_webp}`}/>
 
 			<Section>
-				<ArticleBody basePath={basePath} project={project}/>
+				<div className="article-body">
+					<ArticleLinks/>
+
+					<div className="article-content">
+						{project.section.map(
+							({ content, media }) => <ArticleSection basePath={basePath} content={content} media={media}/>)}
+					</div>
+
+				</div>
 			</Section>
 			<Contact/>
 		</>
 	)
 }
 
-export default Article
+export default CaseArticle
