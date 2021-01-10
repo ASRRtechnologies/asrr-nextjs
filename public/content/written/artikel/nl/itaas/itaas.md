@@ -6,7 +6,7 @@ info:
   date: January 9, 2021 8:22 PM
   title: IT Teams as a Service (ITTAAS)
   author: Amar Ramdas
-  writtenType:
+  tag:
     - tag: Artikel
 card:
   title: IT Teams as a Service (ITTAAS)

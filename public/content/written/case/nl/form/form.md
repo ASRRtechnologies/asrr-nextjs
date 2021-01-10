@@ -1,15 +1,13 @@
 ---
 language: nl
 title: Form
+type:Case
 info:
   date: January 7, 2021 12:00 AM
   title: Het bouwen van een geautomatiseerde BIM-Configurator
   client: Form Architecture & Engineering
   author: Re-Angelo
-  type:
-    - tag: Full stack Development
-    - tag: Expertise on demand
-  writtenType:
+  tag:
     - tag: Full stack Development
     - tag: Expertise on demand
 card:

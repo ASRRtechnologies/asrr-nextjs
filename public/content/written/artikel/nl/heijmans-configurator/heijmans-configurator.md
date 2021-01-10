@@ -4,8 +4,8 @@ title: heijmans-configurator
 type: Artikel
 info:
   date: January 10, 2021 12:20 AM
-  client: ""
-  writtenType:
+  author: Amar Ramdas
+  tag:
     - tag: Artikel
 card:
   title: Heijmans/FORM 3D Huis Configurator
