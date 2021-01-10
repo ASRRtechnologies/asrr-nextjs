@@ -11,9 +11,10 @@ const Wrapper = styled(Section)`
         background: ${props => props.theme.home.portfolio};
  }`
 
-function Portfolio ({ data, basePath, selectedProjects }) {
+function Portfolio ({ data, selectedProjects }) {
 
-	console.log(selectedProjects)
+	const casesPath = 'content/written/case/nl'
+
 	return (
 		<Wrapper>
 
@@ -24,7 +25,7 @@ function Portfolio ({ data, basePath, selectedProjects }) {
 				<CardFadeAnimation>
 					{selectedProjects.map(({title, card, info}) => {
 						return (
-							<PortfolioCard project={card} client={info.client} basePath={`${basePath}/${title.toLowerCase()}`}/>
+							<PortfolioCard project={card} client={info.client} basePath={`${casesPath}/${title.toLowerCase()}`}/>
 						)
 					})}
 				</CardFadeAnimation>

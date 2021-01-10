@@ -15,10 +15,7 @@ import { getAllArticles, getAllCases, getAllNews } from '../lib/api'
 
 function Index ({ homepage, basePath, allCases, allArticles, allNews }) {
 
-	const header = useHeader();
-	const casesPath = "content/written/case/nl";
-	const newsPath = "content/written/nieuws/nl";
-	const articlesPath = "content/written/artikel/nl";
+	const header = useHeader()
 
 	useEffect(() => {
 		header.setHeaderWhite(false)
@@ -26,38 +23,36 @@ function Index ({ homepage, basePath, allCases, allArticles, allNews }) {
 
 	const getCases = () => {
 		return allCases.filter((project) => {
-			return project.title.toLowerCase() === "form" || project.title.toLowerCase() ==="nwo" || project.title.toLowerCase() === "hes";
-		});
-	}
-
-	const getBlogs= () => {
-		let articles = allArticles.filter((article) => article.title.toLowerCase() === "itaas");
-
-		let news = allNews.filter((artnews) => {
-			console.log(artnews);
+			return project.title.toLowerCase() === 'form' || project.title.toLowerCase() === 'nwo' ||
+				project.title.toLowerCase() === 'hes'
 		})
+	}
 
-		let selectedBlogs = [...articles, ...news];
+	const getBlogs = () => {
+		return allArticles.filter(
+			(article) => article.title.toLowerCase() === 'itaas' || article.title.toLowerCase() === 'microservices' ||
+				article.title.toLowerCase() === 'heijmans-configurator')
 
-		return allCases.filter((project) => {
-			return project.title.toLowerCase() === "form" || project.title.toLowerCase() ==="nwo" || project.title.toLowerCase() === "hes";
-		});
+		// let news = allNews.filter((artnews) => {
+		// 	console.log(artnews)
+		// })
 
+		// let selectedBlogs = [...articles, ...news]
 
 	}
 
-	getBlogs();
-
+	getBlogs()
 
 	return (
 		<>
-			<BigLanding title={homepage.landing.title} text={homepage.landing.text} button={homepage.landing.button} image={image}/>
+			<BigLanding title={homepage.landing.title} text={homepage.landing.text} button={homepage.landing.button}
+						image={image}/>
 			<PreviewServices basePath={basePath} data={homepage.services_section}/>
 			<TechStack basePath={basePath} data={homepage.technologies_section}/>
-			<PreviewPortfolio data={homepage.portfolio_section} basePath={casesPath} selectedProjects={getCases()}/>
+			<PreviewPortfolio data={homepage.portfolio_section} selectedProjects={getCases()}/>
 			<Testimonials data={homepage.testimonials_section} basePath={basePath}/>
 			<Why data={homepage.quality_section}/>
-			<PreviewBlog data={homepage.blog_section} basePath={basePath}/>
+			<PreviewBlog data={homepage.blog_section} selectedBlogs={getBlogs()}/>
 			<Clients data={homepage.clients}/>
 			<Contact/>
 		</>
@@ -65,32 +60,33 @@ function Index ({ homepage, basePath, allCases, allArticles, allNews }) {
 }
 
 export async function getStaticProps () {
-	let content = await import(`public/content/home/nl/home.md`);
-	let parsedContent = matter(content.default);
-	let homepage = parsedContent.data;
-	const basePath = `/content/home/nl`;
+	let content = await import(`public/content/home/nl/home.md`)
+	let parsedContent = matter(content.default)
+	let homepage = parsedContent.data
+	const basePath = `/content/home/nl`
 
 	const allCases = getAllCases([
 		'title',
 		'slug',
 		'card',
-		'info'
-	]);
+		'info',
+	])
 
 	const allArticles = getAllArticles([
 		'title',
 		'slug',
 		'card',
-		'info'
-	]);
+		'info',
+		'type'
+	])
 
 	const allNews = getAllNews([
 		'title',
 		'slug',
 		'card',
-		'info'
-	]);
-
+		'info',
+		'type'
+	])
 
 	return {
 		props: { basePath, homepage, allCases, allArticles, allNews },

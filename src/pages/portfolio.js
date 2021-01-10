@@ -5,7 +5,7 @@ import {useHeader} from "../context/navigation/HeaderContext";
 import matter from 'gray-matter'
 import { getAllCases } from '../lib/api'
 
-function Portfolio({basePath, data, allProjects}) {
+function Portfolio({basePath, data, allCases}) {
 
     const header = useHeader();
 
@@ -16,7 +16,7 @@ function Portfolio({basePath, data, allProjects}) {
 
     return (
         <>
-            <PortfolioPage basePath={basePath} data={data} allProjects={allProjects} />
+            <PortfolioPage data={data} allProjects={allCases} />
             <Contact/>
         </>
     )
@@ -28,15 +28,15 @@ export async function getStaticProps () {
     let parsedContent = matter(content.default);
     let data = parsedContent.data;
 
-    const basePath = `/content/written/case/nl`;
-    const allCases = getAllCases([
+     const allCases = getAllCases([
         'title',
         'slug',
-        'card'
+        'card',
+         'info'
     ]);
 
     return {
-        props: {allCases, basePath, data },
+        props: {allCases, data },
     }
 }
 
