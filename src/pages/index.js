@@ -21,12 +21,14 @@ function Index ({ homepage, basePath, allCases, allArticles, allNews }) {
 		header.setHeaderWhite(false)
 	}, [])
 
-	const getCases = () => {
-		return allCases.filter((project) => {
-			return project.title.toLowerCase() === 'form' || project.title.toLowerCase() === 'nwo' ||
-				project.title.toLowerCase() === 'hes'
-		})
-	}
+	console.log(allCases)
+
+	// const getCases = () => {
+	// 	return allCases.filter((project) => {
+	// 		return project.title.toLowerCase() === 'form' || project.title.toLowerCase() === 'nwo' ||
+	// 			project.title.toLowerCase() === 'hes'
+	// 	})
+	// }
 
 	const getBlogs = () => {
 		return allArticles.filter(
@@ -49,7 +51,7 @@ function Index ({ homepage, basePath, allCases, allArticles, allNews }) {
 						image={image}/>
 			<PreviewServices basePath={basePath} data={homepage.services_section}/>
 			<TechStack basePath={basePath} data={homepage.technologies_section}/>
-			<PreviewPortfolio data={homepage.portfolio_section} selectedProjects={getCases()}/>
+			{/*<PreviewPortfolio data={homepage.portfolio_section} selectedProjects={getCases()}/>*/}
 			<Testimonials data={homepage.testimonials_section} basePath={basePath}/>
 			<Why data={homepage.quality_section}/>
 			<PreviewBlog data={homepage.blog_section} selectedBlogs={getBlogs()}/>
