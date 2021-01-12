@@ -14,7 +14,6 @@ function Preview ({ data, selectedBlogs }) {
 	return (
 		<Wrapper>
 			<Title title={data.title} subHeader={data.subheader} header={data.header}/>
-			{console.log(selectedBlogs)}
 
 			<div className="cards-container">
 				<CardFadeAnimation>

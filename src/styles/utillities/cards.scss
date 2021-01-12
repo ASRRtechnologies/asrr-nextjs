@@ -50,30 +50,32 @@
   flex: 1;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-
-  h1{
-    color: $primary-color !important;
-  }
 }
 
 .card-rectangle-tags{
   @include margin-bottom(10px);
 
   span{
-    @include padding-right(10px);
-    @include margin-left(10px);
+    @include padding(4px);
+    @include margin-right(10px);
     display: inline-block;
-    border-right: 2px solid $primary-color;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    @include margin-bottom(15px);
+
+    //&:hover{
+    //  transition: 300ms ease-in-out all;
+    //  background-color: $primary-color;
+    //  h1{
+    //    color: white;
+    //  }
+    //}
+
   }
 
   & span:first-of-type{
      margin-left: 0;
    }
-
-  & span:last-of-type{
-    padding-right: 0;
-    border-right: none;
-  }
 
 
 }
@@ -140,7 +142,6 @@
   .card-rectangle{
     min-height: auto;
     span{
-      @include padding-top(50px);
     }
 
   }

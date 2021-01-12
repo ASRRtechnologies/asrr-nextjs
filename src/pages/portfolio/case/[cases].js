@@ -43,7 +43,6 @@ function Page ({ allProjects, data, basePath }) {
 			return projectsToShow
 		}
 	}
-	{console.log(data)}
 
 	return (
 		<Layout>

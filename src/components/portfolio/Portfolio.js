@@ -6,21 +6,19 @@ import CardFadeAnimation from '@/animation/CardFadeAnimation'
 import PortfolioCard from '@/portfolio/PortfolioCard'
 
 const Wrapper = styled(Section)`
-        background: ${props => props.theme.home.portfolio};
+        background: ${props => props.theme.layout};
  }`
 
 function Portfolio ({ data, allProjects }) {
 
 	const { page_title } = data
-	const casesPath = 'content/written/case/nl'
 
 	return (
 		<Wrapper>
 			<Title title={page_title.title} subHeader={page_title.subheader} header={page_title.header}/>
 			<div className="cards-container">
 				<CardFadeAnimation>
-					{allProjects.map(({ title, card, info }) => <PortfolioCard project={card} client={info.client}
-																			   basePath={`${casesPath}/${title.toLowerCase()}`}/>)}
+					{allProjects.map(({ title, card, info }) => <PortfolioCard project={card} info={info} fileName={title}/>)}
 				</CardFadeAnimation>
 			</div>
 		</Wrapper>
