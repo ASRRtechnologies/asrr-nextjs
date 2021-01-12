@@ -3,7 +3,7 @@ import PictureFallback from '@/utillities/titles/PictureFallback'
 
 function ServiceCards ({ data, basePath, bullets }) {
 
-	const { image, alt, image_webp, title, text, bullet_points } = data
+	const { image, alt, image_webp, title, preview_text, bullet_points } = data
 
 	return (
 		<div className="card-round">
@@ -15,7 +15,7 @@ function ServiceCards ({ data, basePath, bullets }) {
 				<ul>
 					{bullet_points.map(({bullet}) => <li><p className="font-general">✔{bullet}</p></li>)}
 				</ul>
-			) : <p className="font-general">{text}</p>}
+			) : <p className="font-general">{preview_text}</p>}
 		</div>
 	)
 }

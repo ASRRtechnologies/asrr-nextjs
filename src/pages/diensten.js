@@ -15,7 +15,7 @@ function Diensten ({data}) {
 	return (
 		<>
 			<CheckmarkServices data={data}/>
-			<ServicePage/>
+			<ServicePage data={data}/>
 			<Contact/>
 		</>
 	)
