@@ -1,0 +1,116 @@
+$article-max-width: 1000px;
+$article-spacing: 100px;
+
+.article-body {
+  @include flex(flex-start, flex-start, row);
+  @include size(100%, 100%);
+  max-width: $max-width;
+}
+
+.article-links {
+  @include flex(flex-start, flex-start, column);
+  @include size(50px, auto);
+  top: 100px;
+  position: sticky;
+  left: 0;
+  z-index: 100;
+}
+
+.article-content {
+  @include flex(flex-start, center, column);
+  @include size(100%, 100%);
+  @include margin-left(100px);
+
+  //Remove margin of last paragraph
+  & .article-section:last-of-type{
+    margin-bottom: 0;
+    .article-markdown{
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+.article-section {
+  @include flex(flex-start, flex-start, column);
+  @include size(100%, 100%);
+  @include margin-bottom($article-spacing);
+  max-width: $article-max-width;
+
+  & .article-animation-fade-container:last-of-type{
+    margin-bottom: 0;
+  }
+
+}
+
+.article-markdown {
+  @include size(100%, 100%);
+  @include margin-bottom(100px);
+
+  h1{
+    //Font title
+    @include font-size(2.5rem);
+    @include margin-bottom(1.5rem);
+    font-weight: bold;
+  }
+
+  h2{
+    //Font header
+    @include font-size(1.5rem);
+    @include margin-bottom(1.3rem);
+    font-weight: bold;
+  }
+
+  h3{
+    //Font-subheader
+    @include font-size(1.2rem);
+    @include margin-bottom(1rem);
+    font-weight: bold;
+  }
+
+  p {
+    @include font-size(1rem);
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+  }
+
+}
+
+//Styling for video and images
+.article-animation-fade-container{
+  width: 100%;
+  @include margin-bottom($article-spacing);
+}
+
+.article-media-container {
+  @include flex(flex-start, flex-start, column);
+  @include size(100%, auto);
+}
+
+.article-media-description {
+  @include margin-top(25px);
+  font-weight: bold;
+}
+
+@media screen and (max-width: $tablet-small-breakpoint) {
+  .article-body {
+    flex-direction: column;
+  }
+
+  .article-links {
+    flex-direction: row;
+    width: auto;
+    @include margin-bottom($article-spacing);
+    position: relative;
+    top: 0;
+  }
+
+  .article-content {
+    margin-left: 0;
+  }
+
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+
+}

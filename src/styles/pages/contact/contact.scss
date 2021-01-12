@@ -1,0 +1,97 @@
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 50px;
+  @include size(100%, 100%);
+  max-width: $max-width;
+
+
+  .form {
+    @include flex(space-between, flex-start, column);
+    @include size(100%, 100%);
+    margin-top: 25px;
+    max-width: 600px;
+
+    .input-container {
+      &:nth-of-type(5) {
+        margin-bottom: 50px;
+      }
+    }
+
+  }
+}
+
+.contact-preview {
+  @include flex(flex-start, center, column);
+  text-align: center;
+}
+
+.contact-details{
+  width: 100%;
+  max-width: 600px;
+}
+
+
+.contact-form {
+  @include margin-bottom(100px);
+  h1 {
+    @include margin-bottom(1rem);
+  }
+}
+
+
+.contact-adres {
+
+  h1 {
+    @include margin-bottom(1rem);
+  }
+
+  span {
+    @include flex(flex-start, flex-start, row);
+  }
+
+  a {
+    display: block;
+    text-decoration: #536dc8;
+    font-weight: bold;
+  }
+
+}
+
+.map-container {
+  flex: 1;
+  @include flex(flex-start, center, column);
+  @include size(100%, 100%);
+  //The map has an outer div which doesn't allow for justify-content space between because there are 3 divs then.
+  div:first-child {
+    position: absolute;
+  }
+}
+
+.map {
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: $tablet-breakpoint) {
+
+  .contact{
+    @include flex(flex-start, flex-start, column);
+  }
+
+  .map-container{
+    @include margin-top(100px);
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .contact {
+    .map {
+      height: 300px;
+    }
+  }
+}

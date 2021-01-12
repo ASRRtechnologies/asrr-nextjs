@@ -1,10 +1,10 @@
 import React from 'react'
 import {clients} from '../../data/clients'
 import styled from '@emotion/styled'
-import Title from '@/titles/Title'
+import Title from '@/utillities/titles/Title'
 import Section from '@/layout/Section'
 import Ticker from 'react-ticker'
-import Fade from "react-reveal/Fade";
+import { Fade } from 'react-awesome-reveal'
 import uuid from 'react-uuid'
 
 const Wrapper = styled(Section)`
@@ -20,18 +20,18 @@ const Card = ({ children }) => {
 	)
 };
 
-function Clients (props) {
+function Clients ({data}) {
 	return (
 		<Wrapper className="clients-section">
-			<Fade bottom delay={200}>
-				<Title className="title-button" basePath={'clients.header'} compact noSection/>
-				<div className="clients">
+ 				<Title title={data.title} header={data.header} subHeader={data.subheader}/>
+			<Fade fraction={0.4} damping={0.3} triggerOnce direction="up">
+			<div className="clients">
 					<Ticker speed={2} mode="chain">
 						{({ index }) => (clients.map((d, i) => <Card key={uuid()} children={d.logo}/>))}
 					</Ticker>
 				</div>
 			</Fade>
-		</Wrapper>
+ 		</Wrapper>
 
 	)
 }

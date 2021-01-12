@@ -3,9 +3,11 @@ import Section from "@/layout/Section";
 import automation from '#/services/automation/automation-square.webp'
 import analytics from '#/services/data-analytics/data-analytics-square.webp'
 import scale from '#/services/scaleable-software/scaleable-software-sqaure.webp'
-import Title from "@/titles/Title";
+import Title from "@/utillities/titles/Title";
 import Fade from 'react-reveal/Fade';
 import t from "../../hooks/translator";
+import CardFadeAnimation from '@/animation/CardFadeAnimation'
+import ServiceCards from '@/utillities/cards/ServiceCards'
 
 const services = [
     {
@@ -29,33 +31,23 @@ const services = [
 
 ];
 
-function CheckmarkServices(props) {
-    const basePath = "services.preview";
+function CheckmarkServices({data}) {
+    const {page_title} = data;
+    const basePath = `content/service_page/nl`
+
     return (
         <Section style={{paddingBottom:0}} className="no-landing">
-            <Title basePath={basePath + ".header"}/>
-            <div className="services-preview">
-                {services.map((service, i) => {
-                    let {id} = service;
-                    return (
-                        <Fade delay={200} bottom>
-                            <div className="service-preview-card card-margin-bottom">
-							<span className="service-preview-card-image">
-								<img src={service.image} alt={service.alt}/>
-							</span>
-                                <h1 className="theme-font subheader">{t(`${basePath}.services.${id}.title`)}</h1>
 
-                                {/*{!props.compact && <>  <p className="text">{t(`${basePath}.services.${id}.text`)}</p></>}*/}
+            <Title title={page_title.title} header={page_title.header} subHeader={page_title.subheader}/>
 
-                                {service.bullets && <ul className="service-list">
-                                    {[...Array(service.bullets)].map((x, i) => {
-                                        return <li>✔ {t(`${basePath}.services.${id}.bullets.${i}`)}</li>
-                                    })}
-                                </ul>}
-                            </div>
-                        </Fade>
-                    )
-                })}
+            <div className="cards-container">
+                <CardFadeAnimation>
+                    {data.card.map((service) => {
+                        return (
+                            <ServiceCards data={service} basePath={basePath} bullets={true}/>
+                        )
+                    })}
+                </CardFadeAnimation>
             </div>
 
         </Section>
@@ -63,3 +55,4 @@ function CheckmarkServices(props) {
 }
 
 export default CheckmarkServices;
+

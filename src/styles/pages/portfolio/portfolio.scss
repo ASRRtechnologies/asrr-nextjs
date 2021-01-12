@@ -1,0 +1,6 @@
+.portfolio{
+  @include size(100%, auto);
+  @include flex(space-between, flex-start, row);
+
+}
+

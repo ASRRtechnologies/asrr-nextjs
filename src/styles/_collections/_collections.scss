@@ -1,0 +1,34 @@
+//@import "fonts";
+@import "mixins";
+@import "variables";
+@import "global-styles";
+
+@import "../global/header/header";
+@import "../global/header/header-mobile";
+@import "../global/header/hamburger";
+@import "../global/header/language";
+@import "../global/layout/section";
+@import "../global/layout/application";
+@import "../global/landing/landing";
+@import "../global/landing/landing-image";
+@import "../global/animation/transition-animation";
+
+@import "../utillities/scrollers/scroll-down";
+@import "../utillities/scrollers/scroll-up";
+@import "../utillities/scrollers/cursor";
+@import "../utillities/text/text";
+@import "../utillities/text/input";
+@import "../utillities/buttons/buttons";
+@import "../utillities/cards";
+
+@import "../pages/article/article-components";
+@import "../pages/portfolio/portfolio";
+@import "../pages/article/slider";
+@import "../pages/services/preview";
+@import "../pages/services/services";
+@import "../pages/contact/contact";
+@import "../pages/home/clients/clients";
+@import "../global/footer/footer";
+@import "../pages/home/qualities/why-asrr";
+@import "../pages/home/techstack/techstack";
+

@@ -1,37 +1,52 @@
 import React, { useState } from 'react'
-import useI18n from '../../hooks/use-i18n'
 import Section from '@/layout/Section'
 import { useTheme } from '../../context/theme/ThemeContext'
-import Title from '@/titles/Title'
-import Fade from "react-reveal";
-import styled from "@emotion/styled";
-import t from '../../hooks/translator'
+import Title from '@/utillities/titles/Title'
+import styled from '@emotion/styled'
+import { Fade } from 'react-awesome-reveal'
+import CardFadeAnimation from '@/animation/CardFadeAnimation'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.values};
- }`;
+ }`
 
-function Why() {
-	const [card, setCard] = useState(0);
-	const i18n = useI18n();
-	const values = ["modular", "flexible", "easy", "compatibility", "insights"];
-	const darkmode = useTheme().dark;
+function Why ({ data }) {
+	const { qualities, title, subheader, header } = data
+	const [currentQuality, setCurrentQuality] = useState(0)
+	const darkmode = useTheme().dark
 
 	return (
 		<Wrapper>
-			<Fade bottom>
-			<Title basePath={'why.header'} compact noSection/>
+			<Title title={title} subHeader={subheader} header={header}/>
+
 			<div className="why-asrr">
+
 				<div className="why-asrr-points why-asrr-center">
-					{values.map((d, i) => <span onClick={() => setCard(i)}
-					                            className={`${i === card && "selected-line"}`}><p
-						className={`small-header ${!darkmode ? "animated-link-dark" : "animated-link-light"}`}>{t('home.why.' + i + '.title')}</p></span>)}
+					<CardFadeAnimation>
+						{qualities.map(({ quality, description }, i) => {
+							return (
+								<span onClick={() => setCurrentQuality(i)}
+									  className={`${i === currentQuality && 'selected-line'}`}>
+									<p className={`small-header ${!darkmode
+										? 'animated-link-dark'
+										: 'animated-link-light'}`}>
+										{quality}
+									</p>
+								</span>
+							)
+						})}
+					</CardFadeAnimation>
 				</div>
-				<div className="why-asrr-text why-asrr-center">
-					<p className="text">{t('home.why.' + card + '.text')}</p>
-				</div>
+
+				<Fade triggerOnce delay={600}>
+					<div className="why-asrr-text why-asrr-center">
+						<p className="text">{qualities[currentQuality].description}</p>
+					</div>
+				</Fade>
+
+
 			</div>
-			</Fade>
+
 		</Wrapper>
 	)
 }

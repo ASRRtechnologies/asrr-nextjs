@@ -1,25 +1,366 @@
 backend:
   name: github
   repo: ASRRtechnologies/asrr-nextjs
-  branch: master
+  branch: production
 media_folder: public/img
 public_folder: img
 publish_mode: editorial_workflow
 display_url: https://asrr.nl
 logo_url: https://asrr.nl/assets/images/logo/asrr.svg
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-      - label: "Home"
-        name: "home"
-        file: "public/content/pages/home.md"
+  - label: "Home Page"
+    name: "home_page"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/home"
+    path: '{{language}}/{{slug}}'
+    slug: '{{title}}'
+    create: true
+    media_folder: ''
+    public_folder: ''
+    editor:
+      preview: false
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Landing"
+        name: "landing"
+        widget: "object"
         fields:
-          - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - label: Locations
-            name: locations
-            widget: list
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string"}
+          - label: "Button"
+            name: "button"
+            widget: "object"
             fields:
-              - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: string}
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Url", name: "url", widget: "string"}
+          - {label: "Image_Webp", name: "image_webp", widget: "image", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
+      - label: "Service Section"
+        name: "services_section"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
+          - label: "Service Cards"
+            name: "services"
+            widget: "list"
+            required: true
+            fields:
+              - {label: "Image_Webp", name: "image_webp", widget: "image"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Image Alt", name: "alt", widget: "string"}
+              - {label: "Service Card Title", name: "title", widget: "string"}
+              - {label: "Service Card Text", name: "text", widget: "string"}
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string", default: "Ga naar blog"}
+              - {label: "Url", name: "url", widget: "string"}
+      - label: "Tech Stack"
+        name: "technologies_section"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
+          - label: "Technologies"
+            name: "technologies"
+            widget: "list"
+            required: true
+            fields:
+              - {label: "Image_Webp", name: "image_webp", widget: "image"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Image Alt", name: "alt", widget: "string"}
+      - label: "Portfolio"
+        name: "portfolio_section"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string", default: "Ga naar blog"}
+              - {label: "Url", name: "url", widget: "string"}
+      - label: "Testimonials"
+        name: "testimonials_section"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
+          - label: "Testimonial Cards"
+            name: "cards"
+            widget: "list"
+            required: true
+            fields:
+              - {label: "Image_Webp", name: "image_webp", widget: "image"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Image Alt", name: "alt", widget: "string"}
+              - {label: "Client Name", name: "name", widget: "string"}
+              - {label: "Client Position", name: "position", widget: "string"}
+              - {label: "Client Story", name: "story", widget: "string"}
+              - {label: "Client Company", name: "company", widget: "string"}
+      - label: "ASRR Qualities"
+        name: "quality_section"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
+          - label: "Quality List"
+            name: "qualities"
+            widget: "list"
+            required: true
+            fields:
+              - {label: "Quality Keyword", name: "quality", widget: "string"}
+              - {label: "Quality Description", name: "description", widget: "string"}
+      - label: "Blog"
+        name: "blog_section"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - {label: "Title", name: "title", widget: "string", default: "Ga naar blog"}
+      - label: "Clients"
+        name: "clients"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
+  - label: "Portfolio Page"
+    name: "portfolio_page"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/portfolio"
+    path: '{{language}}/{{slug}}'
+    slug: '{{title}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
+      - {label: "Page Name (name of md file)", name: "title", widget: "string", default: "portfolio"}
+      - label: "Name of Page Title"
+        name: "page_title"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
+  - label: "Blog Page"
+    name: "blog_page"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/blog"
+    path: '{{language}}/{{slug}}'
+    slug: '{{title}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
+      - {label: "Page Name (name of md file)", name: "title", widget: "string", default: "blog"}
+      - label: "Name of Page Title"
+        name: "page_title"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
+  - label: "Writtens"
+    name: "written"
+    identifier_field: slug
+    summary: '{{title}} - {{language}} - {{type}}'
+    folder: "public/content/written"
+    create: true
+    media_folder: ''
+    public_folder: ''
+    path: '{{type}}/{{language}}/{{title}}/{{slug}}'
+    slug: '{{title}}'
+    view_filters:
+      - label: Group by Type
+        field: type
+        pattern: 'This is a type post of'
+    editor:
+      preview: true
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
+      - { label: "Title (also the file and path name)", name: "title", widget: "string", description: This is name of the project}
+      - {label: "Type", name: "type", widget: "select", options: ["Artikel", "Nieuws", "Case"]}
+      - label: "Info"
+        name: "info"
+        widget: "object"
+        fields:
+          - {label: "Client", name: "client", widget: "string", required: false}
+          - label: "Date"
+            name: "date"
+            widget: "datetime"
+            default: ""
+            date_format: "DD.MM.YYYY"
+            time_format: "HH:mm"
+            format: "LLL"
+            picker_utc: false
+          - {label: "Author", name: "author", widget: "string", required: false}
+          - label: "Tags"
+            name: "tag"
+            widget: "list"
+            fields:
+              - {label: "Tag", name: "tag", widget: "select", options: ["Artikel", "Nieuws", "Full stack Development", "Expertise on demand"]}
+      - label: "Card"
+        name: "card"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image_Webp", name: "image_webp", widget: "image"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Alt", name: "alt", widget: "string"}
+      - label: "Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image_Webp", name: "image_webp", widget: "image"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Alt", name: "alt", widget: "string"}
+      - label: "Section"
+        name: "section"
+        widget: "list"
+        fields:
+          - {label: "Content", name: "content", widget: "markdown"}
+          - label: "Media"
+            name: "media"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Image"
+                name: "images"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Image_Webp", name: "image_webp", widget: "image", required: false}
+                  - {label: "Image", name: "image", widget: "image", required: false}
+                  - {label: "Image Alt", name: "alt", widget: "string", required: false}
+                  - {label: "Image Description", name: "description", widget: "string", required: false}
+                  - {label: "Image Reference", name: "reference", widget: "string", required: false}
+              - label: "Videos"
+                name: "videos"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Video", name: "video", widget: "file", required: false}
+                  - {label: "Video Description", name: "video_description", widget: "string", required: false}
+                  - {label: "Video Reference", name: "video_reference", widget: "string", required: false}
+  - label: "Service Page"
+    name: "service_page"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/service_page"
+    path: '{{language}}/{{slug}}'
+    slug: '{{title}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
+      - {label: "Page Name (name of md file)", name: "title", widget: "string", default: "services"}
+      - label: "Name of Page Title"
+        name: "page_title"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
+      - label: "Card"
+        name: "card"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Preview Text (home page)", name: "preview_text", widget: "string"}
+          - {label: "Text", name: "text", widget: "string"}
+          - {label: "Image_Webp", name: "image_webp", widget: "image"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Alt", name: "alt", widget: "string"}
+          - {label: "Url", name: "url", widget: "string"}
+          - label: "Bullets"
+            name: "bullet_points"
+            widget: "list"
+            fields:
+              - {label: "Bullet point", name: "bullet", widget: "string"}
+  - label: "Services"
+    name: "services"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/services"
+    path: '{{language}}/{{title}}/{{slug}}'
+    slug: '{{title}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
+      - { label: "Title (also the file and path name)", name: "title", widget: "string", description: This is name of the project}
+      - label: "Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image_Webp", name: "image_webp", widget: "image"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Alt", name: "alt", widget: "string"}
+      - label: "Section"
+        name: "section"
+        widget: "list"
+        fields:
+          - {label: "Content", name: "content", widget: "markdown"}
+          - label: "Media"
+            name: "media"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Image"
+                name: "images"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Image_Webp", name: "image_webp", widget: "image", required: false}
+                  - {label: "Image", name: "image", widget: "image", required: false}
+                  - {label: "Image Alt", name: "alt", widget: "string", required: false}
+                  - {label: "Image Description", name: "description", widget: "string", required: false}
+                  - {label: "Image Reference", name: "reference", widget: "string", required: false}
+  - label: "Contact Page"
+    name: "contact_page"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/contact"
+    path: '{{language}}/{{slug}}'
+    slug: '{{title}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
+      - {label: "Page Name (name of md file)", name: "title", widget: "string", default: "contact"}
+      - label: "Name of Page Title"
+        name: "page_title"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}

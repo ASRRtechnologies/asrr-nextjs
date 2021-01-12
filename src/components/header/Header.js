@@ -1,14 +1,14 @@
-import React, {useEffect, useRef, useState} from 'react'
-import Link from './Link';
-import {useTheme} from '../../context/theme/ThemeContext'
+import React, { useEffect, useRef, useState } from 'react'
+import Link from './Link'
+import { useTheme } from '../../context/theme/ThemeContext'
 import styled from '@emotion/styled'
 import Logo from './Logo'
 import useI18n from '../../hooks/use-i18n'
-import Sun from "@/icons/Sun";
-import Moon from "@/icons/Moon";
-import Language from "@/header/Language";
-import {useHeader} from "../../context/navigation/HeaderContext";
-import Button from "@/buttons/NavigationButton";
+import Sun from '@/icons/Sun'
+import Moon from '@/icons/Moon'
+import { useHeader } from '../../context/navigation/HeaderContext'
+import NL from '../../locales/nl'
+import NavigationButton from '../buttons/NavigationButton'
 
 const Wrapper = styled('nav')`
         background: ${props => props.visible ? props.theme.navigation.background : "transparent"};
@@ -68,6 +68,14 @@ function Header({className}) {
         window.addEventListener('scroll', headerProgress);
     });
 
+    const setSelectedLanguage = () => {
+        i18n.locale('nl', NL)
+    }
+
+    useEffect(() => {
+        setSelectedLanguage()
+    },[]);
+
 
     return (
         <Wrapper headerWhite={header.headerWhite} visible={visible} className="header">
@@ -78,16 +86,16 @@ function Header({className}) {
 
                 <div className="header-menu">
                     <Link href="/"><a className="text">{i18n.t('header.home')}</a></Link>
-                    <Link href="/about"><a className="text">{i18n.t('header.about')}</a></Link>
+                    {/*<Link href="/over"><a className="text">{i18n.t('header.about')}</a></Link>*/}
                     <Link href="/portfolio"><a className="text">{i18n.t('header.portfolio')}</a></Link>
-                    <Link href="/services"><a className="text">{i18n.t('header.services')}</a></Link>
+                    <Link href="/diensten"><a className="text">{i18n.t('header.services')}</a></Link>
                     <Link href="/blog"><a className="text">{i18n.t('header.blog')}</a></Link>
                     {/*<Link href="/contact"><a className="text">{i18n.t('header.contact')}</a></Link>*/}
                 </div>
 
                 <div className="header-actions">
-                    <Button title="buttons.contact" to="/contact"/>
-                    <Language/>
+                    <NavigationButton title="Contact ons" to="/contact"/>
+                    {/*<Language/>*/}
                     <span className="icon" onClick={toggle}>
                         {themeState.dark ? <Sun/> : <Moon/>}
                     </span>

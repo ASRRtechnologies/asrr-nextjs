@@ -1,30 +1,35 @@
-import React, {useEffect, useState} from 'react'
-import Card from '@/blog/Card'
+import React from 'react'
 import Section from '@/layout/Section'
-import Title from "@/titles/Title";
-import ReadMore from "@/text/ReadMore";
-import {blog} from "../../data/blog";
-import styled from "@emotion/styled";
+import Title from '@/utillities/titles/Title'
+import ReadMore from '@/utillities/text/ReadMore'
+import styled from '@emotion/styled'
+import CardFadeAnimation from '@/animation/CardFadeAnimation'
+import BlogCard from '@/blog/BlogCard'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.blog};
- }`;
+ }`
 
-function Preview({preview}) {
-    let [blogs, setBlogs] = useState(blog);
-    useEffect(() => setBlogs(blog.slice(0, 3)), []);
+function Preview ({ data, selectedBlogs }) {
+	return (
+		<Wrapper>
+			<Title title={data.title} subHeader={data.subheader} header={data.header}/>
 
-    return (
-        <Wrapper>
-            <Title basePath="blog.landing" noSection/>
-            <div className="blog">
-                {blogs.map((entry, i) => <Card blog={entry}/>)}
-            </div>
-            <div className="read-more-wrapper">
-                <ReadMore className="subheader" to="/blog" text="buttons.blog"/>
-            </div>
-        </Wrapper>
-    )
+			<div className="cards-container">
+				<CardFadeAnimation>
+					{selectedBlogs.map(({ title, card, info, type }) => {
+						return (
+							<BlogCard article={card} info={info} name={title} type={type}/>
+						)
+					})}
+				</CardFadeAnimation>
+			</div>
+
+			<div className="read-more-wrapper">
+				<ReadMore className="subheader" to="/blog" text={data.button.title}/>
+			</div>
+		</Wrapper>
+	)
 }
 
 export default Preview

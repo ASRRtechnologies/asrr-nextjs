@@ -1,0 +1,122 @@
+.aspect-ratio-container {
+  @include flex(flex-start, center, column);
+  @include size(100%, auto);
+
+  .aspect-ratio-wrapper {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+
+    &.full-width-aspect-ratio {
+      width: 100%;
+      padding-bottom: 56.25%;
+    }
+
+    &.square-width-aspect-ratio {
+      width: 100%;
+      padding-bottom: 100%;
+    }
+
+    img {
+      @include size(100%, 100%);
+      object-fit: cover;
+      position: absolute;
+      object-position: 50% 50%;
+      transition: all 0.7s ease 0s;
+      left: 0;
+      top: 0;
+
+      &:hover {
+        transform: scale(1.2);
+        transition: all 0.7s ease 0s;
+      }
+    }
+
+    video {
+      @include size(100%, 100%);
+      object-fit: cover;
+      position: absolute;
+      object-position: 50% 50%;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.aspect-ratio-1920 {
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+
+  img, video {
+    @include size(100%, 100%);
+    object-fit: cover;
+    position: absolute;
+    object-position: 50% 50%;
+    left: 0;
+    top: 0;
+  }
+
+}
+
+.zoom-in-effect {
+  object-position: 50% 50%;
+  transition: all 0.7s ease 0s;
+  left: 0;
+  top: 0;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.7s ease 0s;
+  }
+}
+
+.zoom-in-effect-minimal {
+  object-position: 50% 50%;
+  transition: all 0.7s ease 0s;
+  left: 0;
+  top: 0;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all 0.7s ease 0s;
+  }
+}
+
+.bold {
+  font-weight: bold !important;
+}
+
+.margin-bottom-article-section {
+  margin-bottom: 40px;
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    margin-bottom: 40px;
+  }
+
+}
+
+.no-margin {
+  margin: 0;
+}
+
+
+.card-margin-bottom {
+  @include margin-top(150px);
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+  .card-margin-bottom {
+    margin-top: 100px;
+  }
+
+
+
+
+}

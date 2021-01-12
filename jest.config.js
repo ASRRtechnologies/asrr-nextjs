@@ -21,3 +21,4 @@ module.exports = {
 		'\\.svg$': './jest/transformers/raw-loader.js',
 	},
 };
+
