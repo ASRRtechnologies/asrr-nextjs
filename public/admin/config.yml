@@ -329,32 +329,32 @@ collections:
           - {label: "Image_Webp", name: "image_webp", widget: "image"}
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Image Alt", name: "alt", widget: "string"}
-      - label: "Section"
-        name: "section"
-        widget: "list"
-        fields:
-          - {label: "Content", name: "content", widget: "markdown"}
-          - label: "Media"
-            name: "media"
-            widget: "object"
-            required: false
+          - label: "Section"
+            name: "section"
+            widget: "list"
             fields:
-              - label: "Image"
-                name: "images"
-                widget: "list"
+              - {label: "Content", name: "content", widget: "markdown"}
+              - label: "Media"
+                name: "media"
+                widget: "object"
                 required: false
                 fields:
-                  - {label: "Image_Webp", name: "image_webp", widget: "image", required: false}
-                  - {label: "Image", name: "image", widget: "image", required: false}
-                  - {label: "Image Alt", name: "alt", widget: "string", required: false}
-                  - {label: "Image Description", name: "description", widget: "string", required: false}
-                  - {label: "Image Reference", name: "reference", widget: "string", required: false}
-              - label: "Videos"
-                name: "videos"
-                widget: "list"
-                required: false
-                fields:
-                  - {label: "Video", name: "video", widget: "file", required: false}
-                  - {label: "Video Description", name: "video_description", widget: "string", required: false}
-                  - {label: "Video Reference", name: "video_reference", widget: "string", required: false}
+                  - label: "Image"
+                    name: "images"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - {label: "Image_Webp", name: "image_webp", widget: "image", required: false}
+                      - {label: "Image", name: "image", widget: "image", required: false}
+                      - {label: "Image Alt", name: "alt", widget: "string", required: false}
+                      - {label: "Image Description", name: "description", widget: "string", required: false}
+                      - {label: "Image Reference", name: "reference", widget: "string", required: false}
+                  - label: "Videos"
+                    name: "videos"
+                    widget: "list"
+                    required: false
+                    fields:
+                      - {label: "Video", name: "video", widget: "file", required: false}
+                      - {label: "Video Description", name: "video_description", widget: "string", required: false}
+                      - {label: "Video Reference", name: "video_reference", widget: "string", required: false}
 
