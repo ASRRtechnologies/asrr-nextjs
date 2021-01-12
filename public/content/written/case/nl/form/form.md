@@ -19,7 +19,7 @@ card:
   image_webp: case-image.webp
   alt: Modern Building
   client: Form Architectuur & Engineering
-  text: Voor Form maken wij verscheidene projecten aan
+  text: ""
   url: /portfolio/form
   title: Het bouwen van een geautomatiseerde BIM-Configurator
   type:
