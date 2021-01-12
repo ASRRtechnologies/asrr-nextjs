@@ -5,6 +5,7 @@ page_title:
   title: Wat we doen
   header: ASRR vormt de brug tussen IT en business met flexibele, robuuste teams
     die meeschalen met wat u nodig heeft.
+  subheader: Onze Services
 card:
   - title: IT Teams as a Service
     preview_text: Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte
@@ -56,4 +57,23 @@ card:
       - bullet: De beste prijs performance ratio
       - bullet: Tot wel 128GB ram en 64 cores
       - bullet: De nieuwste tech, voor de beste resultaten
+  - title: Business Analytics & Insights
+    text: Data is een waardevolle asset voor elk bedrijf. Veel bedrijven doen echter
+      niks met de potentiele goudmijn waar ze op zitten. Doormiddel van een
+      data-analyse kan ASRR een Business Insights dashboard opzetten. In zo’n
+      dashboard kunt u de belangrijkste aspecten van uw dataset in een oogopslag
+      zien.
+    preview_text: Data is een waardevolle asset voor elk bedrijf. Veel bedrijven
+      doen echter niks met de potentiele goudmijn waar ze op zitten. Doormiddel
+      van een data-analyse kan ASRR een Business Insights dashboard opzetten. In
+      zo’n dashboard kunt u de belangrijkste aspecten van uw dataset in een
+      oogopslag zien. We zetten uw (legacy) data aan het werk.
+    image_webp: data-analytics-square.webp
+    image: data-analytics-square.jpg
+    alt: Dashboard
+    url: analytics
+    bullet_points:
+      - bullet: Van business data naar business insights
+      - bullet: We zetten ook uw legacy data aan het werk
+      - bullet: Overzichtelijke PowerBI dashboards
 ---
