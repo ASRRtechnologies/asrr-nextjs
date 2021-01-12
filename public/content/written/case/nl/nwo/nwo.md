@@ -9,6 +9,9 @@ info:
   writtenType:
     - tag: Full stack Development
     - tag: Expertise on demand
+  tag:
+    - tag: Full stack Development
+    - tag: Expertise on demand
 card:
   title: De bouw van een veilige, krachtige Remote Desktop Server
   url: portfolio/nwo
