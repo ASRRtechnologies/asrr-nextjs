@@ -12,6 +12,9 @@ info:
     - hidden: hidden
       tag: Full stack Development
     - tag: Expertise on demand
+  tag:
+    - tag: Full stack Development
+    - tag: Expertise on demand
 card:
   image_webp: case-image.webp
   alt: Modern Building
@@ -101,4 +104,5 @@ article:
 
 
       FORM had een scala aan IT disciplines nodig, en heeft door de jaren heen dynamisch op afroepbasis een team van verschillende developers bij ons afgenomen om hun visie te realiseren.
+type: Case
 ---
