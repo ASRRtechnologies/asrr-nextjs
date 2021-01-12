@@ -4,42 +4,34 @@ title: heijmans-configurator
 type: Artikel
 info:
   date: January 10, 2021 12:20 AM
-  author: Amar Ramdas
-  tag:
+  client: ""
+  writtenType:
     - tag: Artikel
 card:
   title: Heijmans/FORM 3D Huis Configurator
   text: Een VR Ready, 3D omgeving om uw toekomstige huis te configureren vanuit
-    een internet browser.
-  url: blog/artikel/heijmans-configurator
+    een internetbrowser.
+  url: /blog/news/heijmans-configurator
   image_webp: heijmans-configurator-landing.webp
   image: ezgif.com-gif-maker-4-.jpg
-  alt: Webapplicatie Huis Configurator
+  alt: Een screenshot van de webapplicatie Woningconfigurator Heijmans
 landing:
-  title: Een huis configureren in virtual reality, vanuit je stoel.
+  title: Een huis configureren in virtual reality, vanuit je luie stoel.
   image_webp: heijmans-configurator-landing.webp
   image: ezgif.com-gif-maker-4-.jpg
   alt: Webapplicatie Huis Configurator
 section:
   - content: >-
-      # Heijmans/FORM 3D House Configurator
+      # Heijmans/FORM 3D Woningconfigurator
 
 
-      ## A VR Ready, 3D omgeving om uw toekomstige huis te configureren vanuit je internet browser.
+      ## Een VR Ready, 3D omgeving om online uw toekomstige huis te configureren.
 
-
-      <br/>
-
-
-      <br/>
-
-
-      ### \
 
       Waar hebben we voor gezorgd?
 
 
-      Together with FORM, we delivered an online 3D real-time BIM configurator. This allows users to see the options they pick in real time, even with VR. This all is rendered in a web browser, accessible from everywhere.
+      In samenwerking met [FORM](https://form.nl) en [Heijmans](www.heijmans.nl) hebben een 3D, real-time BIM configurator opgeleverd. Met deze webapplicatie krijgen gebruikers de toekomstige woning in een game engine te zien, waardoor opties goed gevisualiseerd kunnen worden. Dan toch maar een uitbouw of een dakkapel erbij, doordat de klant kan zien hoe het zicht vanuit binnen het huis verandert.
     media:
       images:
         - image_webp: heijmans-configurator-landing.webp
@@ -47,9 +39,12 @@ section:
           description: De online omgeving.
           alt: Webapplicatie Huis Configurator
       videos: []
-  - content: Dit runt allemaal in een van onze NextJS applicaties. De database voor
-      gebruikersinformatie is een MongoDB database. De prijzen worden in
-      real-time berekend op basis van de gekozen opties. Er wordt een kassabon
-      geprint in PDF formaat en de klant kan de configuratie terugvinden in de
-      mail.
+  - content: De applicatie is gebouwd op een van onze NextJS applicaties. De
+      applicatie onttrekt data uit een MongoDB database. De prijzen worden in
+      real-time berekend op basis van de gekozen opties. Als de klant eenmaal
+      klaar is met configureren, wordt de configuratie opgeslagen. De klant
+      krijgt dan een brochure per mail met daarin de specificaties van de
+      gekozen woning. Verder wordt er een link toegevoegd waarmee de
+      configuratie weer opgevraagd kan worden, om te laten zien aan de
+      kopersbegeleider, of zelf aan relaties van de koper.
 ---
