@@ -11,13 +11,12 @@ const Card = styled('div')`
 
 function BlogCard ({ article, info, type, name }) {
 	const darkmode = useTheme().dark
-	const { writtenType, author, date } = info
+	const { tag, author, date } = info
 	const { alt, image, image_webp, text, title } = article
 	const fileName = name.toLowerCase()
-	const url = `blog/${fileName}`
 
 	const getProperUrl = () => {
-		switch (type) {
+		switch (type.toLowerCase()) {
 			case 'artikel':
 				return `blog/artikel/${fileName}`
 			case 'nieuws':
@@ -67,7 +66,7 @@ function BlogCard ({ article, info, type, name }) {
 
 						<div className="card-rectangle-text">
 							<div className="card-rectangle-tags">
-								{writtenType && writtenType.map(({ tag }) => {
+								{tag && tag.map(({ tag }) => {
 									return (
 										<span>
 											<h1 className="font-card-tags">{tag}</h1>
@@ -82,7 +81,7 @@ function BlogCard ({ article, info, type, name }) {
 						<span>
 							<h4 className="font-card-header">{author}</h4>
 							<h5 className="font-card-subheader">{date}</h5>
-							<ReadMore to={url}/>
+							<ReadMore to={getProperUrl()}/>
 						</span>
 
 					</div>

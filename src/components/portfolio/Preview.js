@@ -21,11 +21,7 @@ function Portfolio ({ data, selectedProjects }) {
 			<div className="cards-container">
 
 				<CardFadeAnimation>
-					{selectedProjects.map(({title, card, info}) => {
-						return (
-							<PortfolioCard project={card} client={info.client} fileName={title}/>
-						)
-					})}
+					{selectedProjects.map(({ title, card, info }) => <PortfolioCard project={card} info={info} fileName={title}/>)}
 				</CardFadeAnimation>
 
 			</div>

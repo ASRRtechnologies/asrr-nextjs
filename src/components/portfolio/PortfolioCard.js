@@ -9,14 +9,15 @@ const Card = styled('div')`
         background-color: ${props => props.theme.card.background};
 `
 
-function PortfolioCard ({ project, fileName, client }) {
+function PortfolioCard ({ project, fileName, info }) {
 
-	const { image, image_webp, alt, title, text, type } = project;
-
+	const { image, image_webp, alt, title, text} = project;
 	const url = `portfolio/case/${fileName.toLowerCase()}`
 	const baseUrl = `content/written/case/nl/${fileName.toLowerCase()}`
 
 	const darkmode = useTheme().dark
+
+	console.log(project);
 
 	const ReadMore = ({ to, text }) => {
 		return (
@@ -45,7 +46,7 @@ function PortfolioCard ({ project, fileName, client }) {
 					<div className="card-rectangle-text-container">
 						<div className="card-rectangle-text">
 							<div className="card-rectangle-tags">
-								{type && type.map(({ tag }) => {
+								{info.tag && info.tag.map(({ tag }) => {
 									return (
 										<span>
 											<h1 className="font-card-tags">{tag}</h1>
@@ -58,7 +59,7 @@ function PortfolioCard ({ project, fileName, client }) {
 						</div>
 
 						<span>
-							<h4 className="font-card-header">{client}</h4>
+							<h4 className="font-card-header">{info.client}</h4>
 							<ReadMore to={url}/>
 						</span>
 					</div>

@@ -120,8 +120,9 @@ function CaseArticle ({ project, basePath }) {
 					<ArticleLinks/>
 
 					<div className="article-content">
-						{project.section.map(
-							({ content, media }) => <ArticleSection basePath={basePath} content={content} media={media}/>)}
+						{project.section?.map(
+							({ content, media }) => <ArticleSection basePath={basePath} content={content}
+																	media={media}/>)}
 					</div>
 
 				</div>
