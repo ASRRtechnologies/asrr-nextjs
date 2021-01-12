@@ -29,7 +29,7 @@ function Contact ({ data }) {
 
 	const handleChange = ({ name, value }) => setEmail({ ...email, [name]: value })
 
-	console.log(data);
+	console.log(data)
 
 	const handleSubmit = (event) => {
 
@@ -71,7 +71,8 @@ function Contact ({ data }) {
 	return (
 		<Wrapper className="no-landing">
 
-			<Title className="title-left title-button" basePath={'contact.preview.header'}/>
+			<Title className="title-button" title={data.page_title.title}
+				   subHeader={data.page_title.subheader} header={data.page_title.header}/>
 
 			<div className="contact">
 
@@ -124,7 +125,8 @@ function Contact ({ data }) {
 								<Input onChange={(e) => handleChange(e.target)} value={email.name} className="no-margin"
 									   name="name" type="text"
 									   required={true} placeholder="Naam*"/>
-								<Input onChange={(e) => handleChange(e.target)} value={email.subject} className="no-margin"
+								<Input onChange={(e) => handleChange(e.target)} value={email.subject}
+									   className="no-margin"
 									   name="subject" type="text"
 									   required={true} placeholder="Onderwerp*"/>
 								<Input onChange={(e) => handleChange(e.target)} value={email.organization}
@@ -139,14 +141,14 @@ function Contact ({ data }) {
 									   name="body" last textArea={true} type="text"
 									   required={true} placeholder="Bericht*"/>
 								<FormButton title="buttons.submit"/>
-						</form>
+							</form>
 						</div>
 					</Fade>
 				</div>
 
-					<div className="map-container">
-						<Map/>
-					</div>
+				<div className="map-container">
+					<Map/>
+				</div>
 
 			</div>
 
