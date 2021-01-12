@@ -77,6 +77,34 @@ function Contact ({ data }) {
 			<div className="contact">
 
 				<div className="contact-details">
+					<Fade fraction={0.4} damping={0.3} triggerOnce direction="up">
+						<div className="contact-form">
+							<h1 className="font-header">Contactformulier</h1>
+
+							<form onSubmit={handleSubmit} id="contact-form" className="form">
+
+								<Input onChange={(e) => handleChange(e.target)} value={email.name} className="no-margin"
+									   name="name" type="text"
+									   required={true} placeholder="Naam*"/>
+								<Input onChange={(e) => handleChange(e.target)} value={email.subject}
+									   className="no-margin"
+									   name="subject" type="text"
+									   required={true} placeholder="Onderwerp*"/>
+								<Input onChange={(e) => handleChange(e.target)} value={email.organization}
+									   name="organization"
+									   type="text"
+									   placeholder="Organisatie"/>
+								<Input required={true} pattern={emailRegex} onChange={(e) => handleChange(e.target)}
+									   value={email.userEmail}
+									   name="userEmail" type="email"
+									   placeholder="Email*"/>
+								<Input onChange={(e) => handleChange(e.target)} value={email.body}
+									   name="body" last textArea={true} type="text"
+									   required={true} placeholder="Bericht*"/>
+								<FormButton title="buttons.submit"/>
+							</form>
+						</div>
+					</Fade>
 
 					<Fade fraction={0.4} damping={0.3} triggerOnce direction="up">
 						<div className="contact-adres">
@@ -116,34 +144,6 @@ function Contact ({ data }) {
 						</div>
 					</Fade>
 
-					<Fade fraction={0.4} damping={0.3} triggerOnce direction="up">
-						<div className="contact-form">
-							<h1 className="font-header">Contactformulier</h1>
-
-							<form onSubmit={handleSubmit} id="contact-form" className="form">
-
-								<Input onChange={(e) => handleChange(e.target)} value={email.name} className="no-margin"
-									   name="name" type="text"
-									   required={true} placeholder="Naam*"/>
-								<Input onChange={(e) => handleChange(e.target)} value={email.subject}
-									   className="no-margin"
-									   name="subject" type="text"
-									   required={true} placeholder="Onderwerp*"/>
-								<Input onChange={(e) => handleChange(e.target)} value={email.organization}
-									   name="organization"
-									   type="text"
-									   placeholder="Organisatie"/>
-								<Input required={true} pattern={emailRegex} onChange={(e) => handleChange(e.target)}
-									   value={email.userEmail}
-									   name="userEmail" type="email"
-									   placeholder="Email*"/>
-								<Input onChange={(e) => handleChange(e.target)} value={email.body}
-									   name="body" last textArea={true} type="text"
-									   required={true} placeholder="Bericht*"/>
-								<FormButton title="buttons.submit"/>
-							</form>
-						</div>
-					</Fade>
 				</div>
 
 				<div className="map-container">
