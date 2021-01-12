@@ -31,10 +31,10 @@ section:
       ## Nord-West Oelleitung
 
 
-      <br/>
+      &nbsp;
 
 
-      <br/>
+      &nbsp;
 
 
       ### Het probleem
@@ -43,10 +43,10 @@ section:
       NWO, een dochteronderneming van BP en Shell, is een bedrijf dat op is gezet om de eerste long-range onverwerkte olielijn in Europa op te zetten. Er bestond hierbinnen een speciaal team, het Enlargement Project Team dat extern ingeschakeld was. Dit was een gespecialiseerd team dat alleen voor een speciaal deelproject opgetuigd was. Aangezien het deels externe medewerkers waren, kon er door security policies geen toegang verschaft worden voor het bestaande systeem, waar bestanden, programmatuur en werkplekken op ingericht waren. Verder bleek dat het bestaande systeem niet toereikend was voor het gespecialiseerde team.
 
 
-      <br/>
+      &nbsp;
 
 
-      <br/>
+      &nbsp;
 
 
       Er moest een plek komen waarin documenten, communicatie en rekenkracht beschikbaar gesteld kon worden voor iedere werknemer. Deze werkplek moest remote beschikbaar zijn, en ten minste beveiligd zijn met twee factor authenticatie. Door een recente lek met Citrix mocht hier niet gebruik van gemaakt worden. De in house IT partij vond dit buiten de scope van hun werkzaamheden passen, waardoor het EP team externe hulp aantrok. De klant gaf aan dat er ongeveer 50 werknemers moesten komen werken op binnen de omgeving, en dat er genoeg rekenkracht nodig was om zware CAD en modelleer programma’s te runnen. Verder moesten de bestanden veilig opgeslagen worden met een back-up strategie.
@@ -63,28 +63,28 @@ section:
       ASRR heeft een server op maat samengesteld. Deze server bevatte een 64 Core Multithreaded Processor, 128 Gigabyte aan DDR4 RAM en een aantal SSD’s/HDD’s in RAID configuratie. Op deze server moest ook een Remote Desktop Licensing/Managing systeem komen, dat met een van onze C# applicaties om de paar minuten het lokale wachtwoord op de server aanpaste, per gebruiker.
 
 
-      <br/>
+      &nbsp;
 
 
-      <br/>
+      &nbsp;
 
 
       Deze C# applicatie stond in verbinding met onze Cloud omgeving d.m.v. een versleutelde RabbitMQ connectie. De Cloud omgeving had een notie van de gebruikers die in mogen loggen, en heeft daarbij met twee factor authenticatie een login systeem waarmee gebruikers een gegenereerd connectiebestand kunnen downloaden, waarmee gebruikers met 1 klik op de knop extreem secuur kunnen inloggen.
 
 
-      <br/>
+      &nbsp;
 
 
-      <br/>
+      &nbsp;
 
 
       Binnen de omgeving hebben we de volledige Microsoft stack toegepast, met als rode lijn Microsoft Teams. Dit was de hub voor alle bestanden (gekoppeld met het SharePoint systeem), meetings, announcements, planning, etc. We hebben de werknemers een briefing gegeven over het gebruik van Teams, dat toen nog in de kinderschoenen stond (voor Coronatijden), en remote support geleverd via het systeem met enige IT en Microsoft Office ondersteuningsverzoeken die in het dagelijkse proces naar boven kwamen.
 
 
-      <br/>
+      &nbsp;
 
 
-      <br/>
+      &nbsp;
     media:
       images:
         - image_webp: computer-login.webp
