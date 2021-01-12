@@ -13,8 +13,6 @@ const Wrapper = styled(Section)`
 
 function Portfolio ({ data, selectedProjects }) {
 
-	const casesPath = 'content/written/case/nl'
-
 	return (
 		<Wrapper>
 
@@ -25,7 +23,7 @@ function Portfolio ({ data, selectedProjects }) {
 				<CardFadeAnimation>
 					{selectedProjects.map(({title, card, info}) => {
 						return (
-							<PortfolioCard project={card} client={info.client} basePath={`${casesPath}/${title.toLowerCase()}`}/>
+							<PortfolioCard project={card} client={info.client} fileName={title}/>
 						)
 					})}
 				</CardFadeAnimation>
@@ -33,7 +31,7 @@ function Portfolio ({ data, selectedProjects }) {
 			</div>
 
 			<div className="read-more-wrapper">
-				<ReadMore className="subheader" to={data.button.url} text={data.button.title}/>
+				<ReadMore className="subheader" to="/portfolio" text={data.button.title}/>
 			</div>
 
 		</Wrapper>

@@ -10,15 +10,33 @@ const Card = styled('div')`
 `
 
 function BlogCard ({ article, info, type, name }) {
+	const darkmode = useTheme().dark
+	const { writtenType, author, date } = info
+	const { alt, image, image_webp, text, title } = article
+	const fileName = name.toLowerCase()
+	const url = `blog/${fileName}`
 
-	const {writtenType, author, date} = info;
-	const { alt, image, image_webp, text, title, url } = article
-	const darkmode = useTheme().dark;
+	const getProperUrl = () => {
+		switch (type) {
+			case 'artikel':
+				return `blog/artikel/${fileName}`
+			case 'nieuws':
+				return `blog/nieuws/${fileName}`
+			default :
+				return `blog`
+		}
+	}
 
-	const newsPath = 'content/written/nieuws/nl'
-	const articlesPath = 'content/written/artikel/nl'
-
-	const basePath = `${type.toLowerCase() === 'artikel' ? articlesPath : newsPath}/${name.toLowerCase()}`
+	const getProperBaseUrl = () => {
+		switch (type) {
+			case 'artikel':
+				return `content/written/artikel/nl/${fileName}`
+			case 'nieuws':
+				return `content/written/nieuws/nl/${fileName}`
+			default :
+				return `content/written/artikel/nl/${fileName}`
+		}
+	}
 
 	const ReadMore = ({ to, text }) => {
 		return (
@@ -33,13 +51,14 @@ function BlogCard ({ article, info, type, name }) {
 	}
 
 	return (
-		<Link href={url}>
+		<Link href={getProperUrl()}>
 			<a>
 				<Card className="card-rectangle">
 
 					<div className="card-rectangle-image">
 						<div className="card-rectangle-image-aspect-ratio zoom-in-effect-minimal">
-							<PictureFallback image={`${basePath}/${image_webp}`} fallbackImage={`${basePath}/${image}`}
+							<PictureFallback image={`${getProperBaseUrl()}/${image_webp}`}
+											 fallbackImage={`${getProperBaseUrl()}/${image}`}
 											 alt={alt}/>
 						</div>
 					</div>
