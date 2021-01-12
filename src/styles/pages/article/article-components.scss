@@ -89,6 +89,7 @@ $article-spacing: 100px;
 
 .article-media-description {
   @include margin-top(25px);
+  font-weight: bold;
 }
 
 @media screen and (max-width: $tablet-small-breakpoint) {
