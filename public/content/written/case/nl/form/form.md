@@ -8,7 +8,7 @@ info:
   author: Re-Angelo
   type:
     - hidden: hidden
-      tag: Artikel
+      tag: Case
     - hidden: hidden
       tag: Full stack Development
     - tag: Expertise on demand

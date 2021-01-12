@@ -24,8 +24,8 @@ function Index ({ homepage, basePath, allCases, allArticles, allNews }) {
 	const getCases = () => {
 		return allCases.filter((project) => {
 			console.log(project);
-			return project.title.toLowerCase() === 'hes' || project.title.toLowerCase() === 'nwo';
-			// 	project.title.toLowerCase() === 'hes'
+			return project.title.toLowerCase() === 'form' || project.title.toLowerCase() === 'nwo' ||
+				project.title.toLowerCase() === 'hes'
 		})
 	}
 

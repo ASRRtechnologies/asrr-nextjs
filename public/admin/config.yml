@@ -191,6 +191,10 @@ collections:
     public_folder: ''
     path: '{{type}}/{{language}}/{{title}}/{{slug}}'
     slug: '{{title}}'
+    view_filters:
+      - label: Group by Type
+        field: type
+        pattern: 'This is a type post of'
     editor:
       preview: true
     fields:
@@ -222,7 +226,6 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Text", name: "text", widget: "string", required: false}
-          - {label: "Url", name: "url", widget: "string"}
           - {label: "Image_Webp", name: "image_webp", widget: "image"}
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Image Alt", name: "alt", widget: "string"}
