@@ -28,7 +28,7 @@ function Preview ({ data, basePath }) {
 			</div>
 
 			<div className="read-more-wrapper">
-				<ReadMore className="subheader" to={data.button.url} text={data.button.title}/>
+				<ReadMore className="subheader" to="/services" text={data.button.title}/>
 			</div>
 
 		</Wrapper>

@@ -13,7 +13,6 @@ function Portfolio({basePath, data, allCases}) {
         header.setHeaderWhite(false)
     }, []);
 
-
     return (
         <>
             <PortfolioPage data={data} allProjects={allCases}/>

@@ -27,7 +27,7 @@ function Preview ({ data, selectedBlogs }) {
 			</div>
 
 			<div className="read-more-wrapper">
-				<ReadMore className="subheader" to={data.button.url} text={data.button.title}/>
+				<ReadMore className="subheader" to="/blog" text={data.button.title}/>
 			</div>
 		</Wrapper>
 	)

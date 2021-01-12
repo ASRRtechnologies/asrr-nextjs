@@ -9,9 +9,12 @@ const Card = styled('div')`
         background-color: ${props => props.theme.card.background};
 `
 
-function PortfolioCard ({ project, basePath, client }) {
+function PortfolioCard ({ project, fileName, client }) {
 
-	const { image, image_webp, url, alt, title, text, type } = project
+	const { image, image_webp, alt, title, text, type } = project;
+
+	const url = `portfolio/case/${fileName.toLowerCase()}`
+	const baseUrl = `content/written/case/nl/${fileName.toLowerCase()}`
 
 	const darkmode = useTheme().dark
 
@@ -34,7 +37,7 @@ function PortfolioCard ({ project, basePath, client }) {
 
 					<div className="card-rectangle-image">
 						<div className="card-rectangle-image-aspect-ratio zoom-in-effect-minimal">
-							<PictureFallback image={`${basePath}/${image_webp}`} fallbackImage={`${basePath}/${image}`}
+							<PictureFallback image={`${baseUrl}/${image_webp}`} fallbackImage={`${baseUrl}/${image}`}
 											 alt={alt}/>
 						</div>
 					</div>
