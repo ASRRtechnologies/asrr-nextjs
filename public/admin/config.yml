@@ -191,6 +191,10 @@ collections:
     public_folder: ''
     path: '{{type}}/{{language}}/{{title}}/{{slug}}'
     slug: '{{title}}'
+    view_filters:
+      - label: Group by Type
+        field: type
+        pattern: 'This is a type post of'
     editor:
       preview: true
     fields:
