@@ -29,7 +29,7 @@ function Contact ({ data }) {
 
 	const handleChange = ({ name, value }) => setEmail({ ...email, [name]: value })
 
-	console.log(data);
+	console.log(data)
 
 	const handleSubmit = (event) => {
 
@@ -71,11 +71,40 @@ function Contact ({ data }) {
 	return (
 		<Wrapper className="no-landing">
 
-			<Title className="title-left title-button" basePath={'contact.preview.header'}/>
+			<Title className="title-button" title={data.page_title.title}
+				   subHeader={data.page_title.subheader} header={data.page_title.header}/>
 
 			<div className="contact">
 
 				<div className="contact-details">
+					<Fade fraction={0.4} damping={0.3} triggerOnce direction="up">
+						<div className="contact-form">
+							<h1 className="font-header">Contactformulier</h1>
+
+							<form onSubmit={handleSubmit} id="contact-form" className="form">
+
+								<Input onChange={(e) => handleChange(e.target)} value={email.name} className="no-margin"
+									   name="name" type="text"
+									   required={true} placeholder="Naam*"/>
+								<Input onChange={(e) => handleChange(e.target)} value={email.subject}
+									   className="no-margin"
+									   name="subject" type="text"
+									   required={true} placeholder="Onderwerp*"/>
+								<Input onChange={(e) => handleChange(e.target)} value={email.organization}
+									   name="organization"
+									   type="text"
+									   placeholder="Organisatie"/>
+								<Input required={true} pattern={emailRegex} onChange={(e) => handleChange(e.target)}
+									   value={email.userEmail}
+									   name="userEmail" type="email"
+									   placeholder="Email*"/>
+								<Input onChange={(e) => handleChange(e.target)} value={email.body}
+									   name="body" last textArea={true} type="text"
+									   required={true} placeholder="Bericht*"/>
+								<FormButton title="buttons.submit"/>
+							</form>
+						</div>
+					</Fade>
 
 					<Fade fraction={0.4} damping={0.3} triggerOnce direction="up">
 						<div className="contact-adres">
@@ -115,38 +144,11 @@ function Contact ({ data }) {
 						</div>
 					</Fade>
 
-					<Fade fraction={0.4} damping={0.3} triggerOnce direction="up">
-						<div className="contact-form">
-							<h1 className="font-header">Contactformulier</h1>
-
-							<form onSubmit={handleSubmit} id="contact-form" className="form">
-
-								<Input onChange={(e) => handleChange(e.target)} value={email.name} className="no-margin"
-									   name="name" type="text"
-									   required={true} placeholder="Naam*"/>
-								<Input onChange={(e) => handleChange(e.target)} value={email.subject} className="no-margin"
-									   name="subject" type="text"
-									   required={true} placeholder="Onderwerp*"/>
-								<Input onChange={(e) => handleChange(e.target)} value={email.organization}
-									   name="organization"
-									   type="text"
-									   placeholder="Organisatie"/>
-								<Input required={true} pattern={emailRegex} onChange={(e) => handleChange(e.target)}
-									   value={email.userEmail}
-									   name="userEmail" type="email"
-									   placeholder="Email*"/>
-								<Input onChange={(e) => handleChange(e.target)} value={email.body}
-									   name="body" last textArea={true} type="text"
-									   required={true} placeholder="Bericht*"/>
-								<FormButton title="buttons.submit"/>
-						</form>
-						</div>
-					</Fade>
 				</div>
 
-					<div className="map-container">
-						<Map/>
-					</div>
+				<div className="map-container">
+					<Map/>
+				</div>
 
 			</div>
 

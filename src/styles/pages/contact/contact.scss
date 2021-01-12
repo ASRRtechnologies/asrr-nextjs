@@ -32,8 +32,16 @@
   max-width: 600px;
 }
 
-.contact-adres {
+
+.contact-form {
   @include margin-bottom(100px);
+  h1 {
+    @include margin-bottom(1rem);
+  }
+}
+
+
+.contact-adres {
 
   h1 {
     @include margin-bottom(1rem);
@@ -49,12 +57,6 @@
     font-weight: bold;
   }
 
-}
-
-.contact-form {
-  h1 {
-    @include margin-bottom(1rem);
-  }
 }
 
 .map-container {
