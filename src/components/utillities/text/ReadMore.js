@@ -15,7 +15,7 @@ function ReadMore ({ to, inverted, text, children, noAnimation, className, ...re
 	const darkmode = useTheme().dark
 
 	return (
-		<Fade  fraction={0.4} damping={0.3} triggerOnce direction="up">
+		<Fade fraction={0.4} damping={0.3} triggerOnce direction="up">
 			<Link href={to}>
 				<LinkText className={`font-header read-more ${className} ${darkmode
 					? 'animated-link-light'

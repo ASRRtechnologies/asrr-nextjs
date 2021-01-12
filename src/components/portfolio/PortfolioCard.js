@@ -11,15 +11,12 @@ const Card = styled('div')`
 
 function PortfolioCard ({ project, fileName, info }) {
 
-	const { image, image_webp, alt, title, text} = project;
+	const { image, image_webp, alt, title, text } = project
 	const url = `portfolio/case/${fileName.toLowerCase()}`
 	const baseUrl = `content/written/case/nl/${fileName.toLowerCase()}`
-
 	const darkmode = useTheme().dark
 
-	console.log(project);
-
-	const ReadMore = ({ to, text }) => {
+	const ReadMore = ({to}) => {
 		return (
 			<Link href={to}>
 				<a className={`font-card-read-more read-more ${darkmode
@@ -35,7 +32,6 @@ function PortfolioCard ({ project, fileName, info }) {
 		<Link href={`/portfolio/case`}>
 			<a>
 				<Card className="card-rectangle">
-
 					<div className="card-rectangle-image">
 						<div className="card-rectangle-image-aspect-ratio zoom-in-effect-minimal">
 							<PictureFallback image={`${baseUrl}/${image_webp}`} fallbackImage={`${baseUrl}/${image}`}

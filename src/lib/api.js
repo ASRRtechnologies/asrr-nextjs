@@ -2,9 +2,10 @@ import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
 
-const caseDirectory = join(process.cwd(), 'public', 'content', 'written', 'case', 'nl')
-const articleDirectory = join(process.cwd(), 'public', 'content', 'written', 'artikel', 'nl')
-const newsDirectory = join(process.cwd(), 'public', 'content', 'written', 'nieuws', 'nl')
+const caseDirectory = join(process.cwd(), 'public', 'content', 'written', 'case', 'nl');
+const articleDirectory = join(process.cwd(), 'public', 'content', 'written', 'artikel', 'nl');
+const newsDirectory = join(process.cwd(), 'public', 'content', 'written', 'nieuws', 'nl');
+const serviceDirectory = join(process.cwd(), 'public', 'content', 'services', 'nl');
 
 export function getCaseSlugs () {
 	return walkSync(caseDirectory)
@@ -16,6 +17,10 @@ export function getArticleSlugs () {
 
 export function getNewsSlugs () {
 	return walkSync(newsDirectory)
+}
+
+export function getServicesSlugs () {
+	return walkSync(serviceDirectory)
 }
 
 // List all files in a directory in Node.js recursively in a synchronous fashion
@@ -84,6 +89,14 @@ export function getAllArticles (fields = []) {
 
 export function getAllNews (fields = []) {
 	const slugs = getNewsSlugs()
+	const posts = slugs.map((slug) => getPostBySlug(slug, fields))
+		// sort posts by date in descending order
+		.sort((post1, post2) => (post1.date > post2.date ? '-1' : '1'))
+	return posts
+}
+
+export function getAllServices (fields = []) {
+	const slugs = getServicesSlugs()
 	const posts = slugs.map((slug) => getPostBySlug(slug, fields))
 		// sort posts by date in descending order
 		.sort((post1, post2) => (post1.date > post2.date ? '-1' : '1'))

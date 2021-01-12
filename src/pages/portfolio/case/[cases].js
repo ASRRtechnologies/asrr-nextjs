@@ -53,7 +53,7 @@ function Page ({ allProjects, data, basePath }) {
 
 export async function getStaticProps ({ params }) {
 	const { cases } = params
-	let content = await import(`public/content/written/case/nl/${cases}/${cases}.md`)
+	let content = await import(`public/content/written/case/nl/${cases.toLowerCase()}/${cases.toLowerCase()}.md`)
 	let parsedContent = matter(content.default)
 	let data = parsedContent.data
 	const basePath = `/content/written/case/nl/${cases.toLowerCase()}`

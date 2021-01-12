@@ -10,27 +10,25 @@ const Wrapper = styled(Section)`
         background: ${props => props.theme.home.services};
  }`
 
-function Preview ({ data, basePath }) {
+function Preview ({data, cards}) {
+
+	const basePath = `content/service_page/nl`
 
 	return (
 		<Wrapper>
-
 			<Title title={data.title} header={data.header} subHeader={data.subheader}/>
-
 			<div className="cards-container">
 				<CardFadeAnimation>
-					{data.services.map((data) => {
+					{cards.card.map((data) => {
 						return (
 							<ServiceCards data={data} basePath={basePath}/>
 						)
 					})}
 				</CardFadeAnimation>
 			</div>
-
 			<div className="read-more-wrapper">
-				<ReadMore className="subheader" to="/services" text={data.button.title}/>
+				<ReadMore className="subheader" to="/diensten" text={data.button.title}/>
 			</div>
-
 		</Wrapper>
 	)
 }

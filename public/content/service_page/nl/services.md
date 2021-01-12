@@ -5,7 +5,7 @@ page_title:
   title: Wat we doen
   header: ASRR vormt de brug tussen IT en business met flexibele, robuuste teams
     die meeschalen met wat u nodig heeft.
-  subheader: Onze Services
+  subheader: Onze Diensten
 card:
   - title: IT Teams as a Service
     preview_text: Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte
