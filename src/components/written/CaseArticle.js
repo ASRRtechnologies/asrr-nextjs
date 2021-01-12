@@ -118,6 +118,7 @@ function CaseArticle ({ project, basePath }) {
 			<Section>
 				<div className="article-body">
 					<ArticleLinks/>
+					{console.log(project)}
 
 					<div className="article-content">
 						{project.section?.map(
