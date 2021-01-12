@@ -270,7 +270,7 @@ collections:
     name: "service_page"
     identifier_field: slug
     summary: '{{title}} - {{language}}'
-    folder: "public/content/services"
+    folder: "public/content/service_page"
     path: '{{language}}/{{slug}}'
     slug: '{{title}}'
     create: true
@@ -307,10 +307,54 @@ collections:
     identifier_field: slug
     summary: '{{title}} - {{language}}'
     folder: "public/content/services"
-    path: '{{language}}/{{slug}}'
+    path: '{{language}}/{{title}}/{{slug}}'
     slug: '{{title}}'
     create: true
     editor:
       preview: false
     fields:
+      - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
+      - { label: "Title (also the file and path name)", name: "title", widget: "string", description: This is name of the project}
+      - {label: "Type", name: "type", widget: "select", options: ["Artikel", "Nieuws", "Case"]}
+      - label: "Info"
+        name: "info"
+        widget: "object"
+        fields:
+      - label: "Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image_Webp", name: "image_webp", widget: "image"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Alt", name: "alt", widget: "string"}
+      - label: "Section"
+        name: "section"
+        widget: "list"
+        fields:
+          - {label: "Content", name: "content", widget: "markdown"}
+          - label: "Media"
+            name: "media"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Image"
+                name: "images"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Image_Webp", name: "image_webp", widget: "image", required: false}
+                  - {label: "Image", name: "image", widget: "image", required: false}
+                  - {label: "Image Alt", name: "alt", widget: "string", required: false}
+                  - {label: "Image Description", name: "description", widget: "string", required: false}
+                  - {label: "Image Reference", name: "reference", widget: "string", required: false}
+              - label: "Videos"
+                name: "videos"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Video", name: "video", widget: "file", required: false}
+                  - {label: "Video Description", name: "video_description", widget: "string", required: false}
+                  - {label: "Video Reference", name: "video_reference", widget: "string", required: false}
 
