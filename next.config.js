@@ -9,20 +9,5 @@ module.exports = withImages(withVideos({
         })
         return cfg;
     }
-
-    // shallowRender: true,  <-- enable this in production mode wont call getInitialprops on every page render
 }))
-// module.exports = withImages({
-//     experimental: {
-//         redirects() {
-//             return [
-//                 {
-//                     source: '/',
-//                     permanent: true,
-//                     destination: '/en',
-//                 },
-//             ]
-//         },
-//     },
-// });
 
