@@ -28,7 +28,10 @@ section:
       ## Wat zijn de voordelen van dynamische externe IT teams ten opzichte van een 1 op 1 recruitment strategie?
 
 
-      <br/>
+      &nbsp;
+
+
+      &nbsp;
 
 
       ### De huidige situatie
@@ -37,28 +40,28 @@ section:
       In de huidige markt voor externe IT-werkzaamheden wordt er vaak erg in hokjes gedacht. Een opdrachtgever klopt aan bij een recruitmentbureau en geeft aan wat voor competenties hij of zij denkt nodig te hebben voor de opdracht. De recruiter stelt dan op basis van deze input een opdrachtomschrijving op. Dit resulteert vaak in aparte eisen.
 
 
-      <br/>
+      &nbsp;
 
 
-      <br/>
+      &nbsp;
 
 
       Het probleem is hier tweevoudig. De opdrachtgever moet zelf bepalen wat voor expertise hij of zij nodig heeft, terwijl dit soms een erg inhoudelijke vraag is. Er wordt daardoor vaak op voorhand al gekozen voor een verkeerde aanpak. Weet u bijvoorbeeld al wat de beste aanpak is voor een webapplicatie? (link naar andere blogpost)
 
 
-      <br/>
+      &nbsp;
 
 
-      <br/>
+      &nbsp;
 
 
       Ten tweede heeft IT recruitment vaak meer oog voor buzzwords, jaren ervaring en andere zaken. Deze factoren garanderen niet altijd in een goede match. Veel IT’ers worden juist afgeschrikt door opdrachten waarin de technische eisen niet kloppen. of waarin er veel termen worden rondgegooid die niets te maken hebben met de technologie of opdracht. Zo spreken opdrachtgevers en de inhuurkrachten vaak een andere taal.
 
 
-      <br/>
+      &nbsp;
 
 
-      <br/>
+      &nbsp;
 
 
       Al om al, het is van groot belang dat aan het begin van de zoektocht technische kennis wordt toegepast. Daarmee komen we bij wat in ons opzicht de oplossing is: IT Teams as a Service.
@@ -76,19 +79,19 @@ section:
       De service begint met het aanspreekpunt. Dit is de brug tussen de Business en IT. Het aanspreekpunt moet inhoudelijke kennis hebben, maar moet ook kunnen relativeren en begrijpen wat belangrijk is voor de opdrachtgever. Communicatie, kennis en begrip zijn hierbij belangrijke karaktereigenschappen.
 
 
-      <br/>
+      &nbsp;
 
 
-      <br/>
+      &nbsp;
 
 
       Het aanspreekpunt gaat als consultant een gesprek aan met de opdrachtgever. Hierbij wordt geanalyseerd hoe het huidige proces in het bedrijf gaat, wat de knelpunten zijn en wat de technische oplossing hiervoor zou kunnen zijn.
 
 
-      <br/>
+      &nbsp;
 
 
-      <br/>
+      &nbsp;
 
 
       Het aanspreekpunt stuurt vervolgens het IT team aan en fungeert daarbij als product owner. Hierbij staat bewaking van de wensen van de klant centraal. Het IT team§ bestaat uit developers met verschillende expertises. De samenstelling van het team is dynamisch, op basis van de opdracht. De ene keer bestaat deze uit een volledig front end team, de andere keer ligt de focus meer op back-end, etcetera. Dit zorgt voor minder onnodige overhead en de juiste expertise op de juiste plek
