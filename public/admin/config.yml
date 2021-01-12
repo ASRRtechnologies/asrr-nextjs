@@ -364,9 +364,9 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Header", name: "header", widget: "string"}
           - {label: "Subheader", name: "subheader", widget: "string"}
-      - label: "Invitation Tekst"
+      - label: "Invitation Text"
         name: "card"
-        widget: "list"
+        widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Header", name: "header", widget: "string"}

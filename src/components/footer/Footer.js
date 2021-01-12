@@ -73,8 +73,8 @@ function Footer (props) {
 						<h1 className="font-subheader">{i18n.t('footer.navigation')}</h1>
 						<AnimatedLink text="header.home" to="/"/>
 						<AnimatedLink text="header.portfolio" to="/portfolio"/>
-						<AnimatedLink text="header.services" to="/services"/>
-						<AnimatedLink text="header.about" to="/over"/>
+						<AnimatedLink text="header.services" to="/diensten"/>
+						{/*<AnimatedLink text="header.about" to="/over"/>*/}
 						<AnimatedLink text="header.contact" to="/contact"/>
 					</div>
 

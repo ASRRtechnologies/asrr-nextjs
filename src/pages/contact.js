@@ -8,6 +8,7 @@ function Contact() {
     useEffect(() => {
         header.setHeaderWhite(false)
     }, []);
+
     return (
         <>
             <ContactPage/>
