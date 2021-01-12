@@ -1,9 +1,9 @@
 import React from 'react'
 import PictureFallback from '@/utillities/titles/PictureFallback'
 
-function ServiceCards ({ data, basePath }) {
+function ServiceCards ({ data, basePath, bullets }) {
 
-	const { image, alt, image_webp, title, text } = data
+	const { image, alt, image_webp, title, text, bullet_points } = data
 
 	return (
 		<div className="card-round">
@@ -11,7 +11,11 @@ function ServiceCards ({ data, basePath }) {
 				<PictureFallback image={`${basePath}/${image_webp}`} fallbackImage={`${basePath}/${image}`} alt={alt}/>
 			</span>
 			<h1 className="theme-font font-card-title">{title}</h1>
-			<p className="font-general">{text}</p>
+			{bullets ? (
+				<ul>
+					{bullet_points.map(({bullet}) => <li><p className="font-general">✔{bullet}</p></li>)}
+				</ul>
+			) : <p className="font-general">{text}</p>}
 		</div>
 	)
 }

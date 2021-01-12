@@ -14,7 +14,7 @@ services_section:
   title: Wat we doen
   header: ASRR vormt de brug tussen IT en business met flexibele, robuuste teams
     die meeschalen met wat u nodig heeft.
-  subheader: Onze Services
+  subheader: Onze Diensten
   services:
     - image_webp: scaleable-software-sqaure.webp
       image: scaleable-software-sqaure.jpg

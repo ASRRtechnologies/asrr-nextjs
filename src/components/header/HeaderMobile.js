@@ -103,7 +103,7 @@ function HeaderMobile ({ className }) {
 						<Link href="/portfolio"><a onClick={closeMenu}
 												   className="header-mobile-text">{i18n.t(
 							'header.portfolio')}</a></Link>
-						<Link href="/services"><a onClick={closeMenu}
+						<Link href="/diensten"><a onClick={closeMenu}
 												  className="header-mobile-text">{i18n.t('header.services')}</a></Link>
 						<Link href="/blog"><a onClick={closeMenu}
 											  className="header-mobile-text">{i18n.t('header.blog')}</a></Link>

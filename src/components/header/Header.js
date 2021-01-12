@@ -86,9 +86,9 @@ function Header({className}) {
 
                 <div className="header-menu">
                     <Link href="/"><a className="text">{i18n.t('header.home')}</a></Link>
-                    <Link href="/about"><a className="text">{i18n.t('header.about')}</a></Link>
+                    {/*<Link href="/over"><a className="text">{i18n.t('header.about')}</a></Link>*/}
                     <Link href="/portfolio"><a className="text">{i18n.t('header.portfolio')}</a></Link>
-                    <Link href="/services"><a className="text">{i18n.t('header.services')}</a></Link>
+                    <Link href="/diensten"><a className="text">{i18n.t('header.services')}</a></Link>
                     <Link href="/blog"><a className="text">{i18n.t('header.blog')}</a></Link>
                     {/*<Link href="/contact"><a className="text">{i18n.t('header.contact')}</a></Link>*/}
                 </div>

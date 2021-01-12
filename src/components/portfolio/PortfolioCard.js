@@ -11,13 +11,10 @@ const Card = styled('div')`
 
 function PortfolioCard ({ project, fileName, info }) {
 
-	const { image, image_webp, alt, title, text} = project;
+	const { image, image_webp, alt, title, text } = project
 	const url = `portfolio/case/${fileName.toLowerCase()}`
 	const baseUrl = `content/written/case/nl/${fileName.toLowerCase()}`
-
 	const darkmode = useTheme().dark
-
-	console.log(project);
 
 	const ReadMore = ({ to, text }) => {
 		return (

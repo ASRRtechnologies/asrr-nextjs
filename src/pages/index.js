@@ -13,9 +13,11 @@ import matter from 'gray-matter'
 import Testimonials from '@/testimonials/Testimonials'
 import { getAllArticles, getAllCases, getAllNews } from '../lib/api'
 
-function Index ({ homepage, basePath, allCases, allArticles, allNews }) {
+function Index ({ homepage, servicepage, basePath, allCases, allArticles, allNews }) {
 
 	const header = useHeader()
+
+	console.log(servicepage);
 
 	useEffect(() => {
 		header.setHeaderWhite(false)
@@ -23,7 +25,6 @@ function Index ({ homepage, basePath, allCases, allArticles, allNews }) {
 
 	const getCases = () => {
 		return allCases.filter((project) => {
-			console.log(project);
 			return project.title.toLowerCase() === 'form' || project.title.toLowerCase() === 'nwo' ||
 				project.title.toLowerCase() === 'hes'
 		})
@@ -50,7 +51,7 @@ function Index ({ homepage, basePath, allCases, allArticles, allNews }) {
 		<>
 			<BigLanding title={homepage.landing.title} text={homepage.landing.text} button={homepage.landing.button}
 						image={image}/>
-			<PreviewServices basePath={basePath} data={homepage.services_section}/>
+			<PreviewServices data={homepage.services_section} cards={servicepage}/>
 			<TechStack basePath={basePath} data={homepage.technologies_section}/>
 			<PreviewPortfolio data={homepage.portfolio_section} selectedProjects={getCases()}/>
 			<Testimonials data={homepage.testimonials_section} basePath={basePath}/>
@@ -66,7 +67,11 @@ export async function getStaticProps () {
 	let content = await import(`public/content/home/nl/home.md`)
 	let parsedContent = matter(content.default)
 	let homepage = parsedContent.data
-	const basePath = `/content/home/nl`
+	const basePath = `/content/home/nl`;
+
+	let servicesContent = await import(`public/content/service_page/nl/services.md`)
+	let servicesParsedContent = matter(servicesContent.default)
+	let servicepage = servicesParsedContent.data
 
 	const allCases = getAllCases([
 		'title',
@@ -92,7 +97,7 @@ export async function getStaticProps () {
 	])
 
 	return {
-		props: { basePath, homepage, allCases, allArticles, allNews },
+		props: { basePath, homepage, servicepage, allCases, allArticles, allNews },
 	}
 }
 
