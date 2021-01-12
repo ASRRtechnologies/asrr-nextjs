@@ -316,10 +316,6 @@ collections:
       - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
       - { label: "Title (also the file and path name)", name: "title", widget: "string", description: This is name of the project}
       - {label: "Type", name: "type", widget: "select", options: ["Artikel", "Nieuws", "Case"]}
-      - label: "Info"
-        name: "info"
-        widget: "object"
-        fields:
       - label: "Landing"
         name: "landing"
         widget: "object"
