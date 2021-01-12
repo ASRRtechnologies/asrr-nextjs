@@ -5,7 +5,6 @@ import { Fade } from 'react-awesome-reveal'
 import styled from '@emotion/styled'
 import Link from 'next/link'
 import useI18n from '../../hooks/use-i18n'
-import matter from 'gray-matter'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.contact};
@@ -23,8 +22,6 @@ const DarkButton = styled('div')`
 
 function Contact ({ title, className }) {
 	const i18n = useI18n()
-	let parsedContent = matter(contactFile.default)
-	let data = parsedContent.data
 
 	const titleObject = {
 		title: 'Neem contact met ons op',
