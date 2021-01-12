@@ -344,3 +344,30 @@ collections:
                   - {label: "Image Alt", name: "alt", widget: "string", required: false}
                   - {label: "Image Description", name: "description", widget: "string", required: false}
                   - {label: "Image Reference", name: "reference", widget: "string", required: false}
+  - label: "Contact Page"
+    name: "contact_page"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/contact"
+    path: '{{language}}/{{slug}}'
+    slug: '{{title}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Language", name: "language", widget: "select", options: ["nl", "en"], default: "nl"}
+      - {label: "Page Name (name of md file)", name: "title", widget: "string", default: "contact"}
+      - label: "Name of Page Title"
+        name: "page_title"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
+      - label: "Invitation Tekst"
+        name: "card"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Header", name: "header", widget: "string"}
+          - {label: "Subheader", name: "subheader", widget: "string"}
