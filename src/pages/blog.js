@@ -5,7 +5,7 @@ import {useHeader} from "../context/navigation/HeaderContext";
 import matter from 'gray-matter'
 import { getAllArticles } from '../lib/api'
 
-function Portfolio({basePath, data, allArticles}) {
+function Portfolio({ data, allArticles}) {
 
 	//Todo add allNews to AllArticles array
 
