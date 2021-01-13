@@ -4,13 +4,14 @@ title: heijmans-configurator
 type: Artikel
 info:
   date: January 10, 2021 12:20 AM
-  client: ""
+  client: Heijmans
   writtenType:
     - tag: Artikel
   tag:
     - tag: Artikel
+  author: Re-Angelo Jarvis
 card:
-  title: Heijmans/FORM 3D Huis Configurator
+  title: Heijmans/FORM 3D Woningconfigurator
   text: Een VR Ready, 3D omgeving om uw toekomstige huis te configureren vanuit
     een internetbrowser.
   url: /blog/news/heijmans-configurator
@@ -22,6 +23,7 @@ landing:
   image_webp: heijmans-configurator-landing.webp
   image: ezgif.com-gif-maker-4-.jpg
   alt: Webapplicatie Huis Configurator
+  text_color: true
 section:
   - content: >-
       # Heijmans/FORM 3D Woningconfigurator
