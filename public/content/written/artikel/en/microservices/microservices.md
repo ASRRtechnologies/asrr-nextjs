@@ -18,6 +18,7 @@ landing:
   image_webp: microservices-landing.webp
   image: microservices-min.jpg
   alt: Microservices
+  text_color: true
 section:
   - content: >-
       # Can microservices save you time and effort?
