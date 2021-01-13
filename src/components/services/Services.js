@@ -7,11 +7,11 @@ import { Fade } from 'react-awesome-reveal'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.layout};
-`
+`;
 
 function Services ({ data }) {
 
-	const basePath = `content/service_page/nl`
+	const basePath = `content/service_page/nl`;
 
 	return (
 		<Wrapper className="no-landing">

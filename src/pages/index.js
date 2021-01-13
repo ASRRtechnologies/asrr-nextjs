@@ -12,13 +12,10 @@ import TechStack from '@/techstack/TechStack'
 import matter from 'gray-matter'
 import Testimonials from '@/testimonials/Testimonials'
 import { getAllArticles, getAllCases, getAllNews } from '../lib/api'
-import Lighthouse from "@/lighthouse/Lighthouse";
 
 function Index ({ homepage, servicepage, basePath, allCases, allArticles, allNews }) {
 
-	const header = useHeader()
-
-	console.log(servicepage);
+	const header = useHeader();
 
 	useEffect(() => {
 		header.setHeaderWhite(false)
@@ -63,21 +60,21 @@ function Index ({ homepage, servicepage, basePath, allCases, allArticles, allNew
 }
 
 export async function getStaticProps () {
-	let content = await import(`public/content/home/nl/home.md`)
-	let parsedContent = matter(content.default)
-	let homepage = parsedContent.data
+	let content = await import(`public/content/home/nl/home.md`);
+	let parsedContent = matter(content.default);
+	let homepage = parsedContent.data;
 	const basePath = `/content/home/nl`;
 
-	let servicesContent = await import(`public/content/service_page/nl/services.md`)
-	let servicesParsedContent = matter(servicesContent.default)
-	let servicepage = servicesParsedContent.data
+	let servicesContent = await import(`public/content/service_page/nl/services.md`);
+	let servicesParsedContent = matter(servicesContent.default);
+	let servicepage = servicesParsedContent.data;
 
 	const allCases = getAllCases([
 		'title',
 		'slug',
 		'card',
 		'info',
-	])
+	]);
 
 	const allArticles = getAllArticles([
 		'title',
@@ -85,7 +82,7 @@ export async function getStaticProps () {
 		'card',
 		'info',
 		'type'
-	])
+	]);
 
 	const allNews = getAllNews([
 		'title',
@@ -93,7 +90,7 @@ export async function getStaticProps () {
 		'card',
 		'info',
 		'type'
-	])
+	]);
 
 	return {
 		props: { basePath, homepage, servicepage, allCases, allArticles, allNews },

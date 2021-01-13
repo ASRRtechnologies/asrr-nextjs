@@ -36,7 +36,7 @@ export async function getStaticProps () {
 		'card',
 		'info',
 		'type'
-	])
+	]);
 
 	return {
 		props: {allArticles, data },

@@ -20,7 +20,7 @@ function HeaderProvider({children}){
 		else{
 			setState(toggle)
 		}
-	}
+	};
 
 	return(
 		<HeaderContext.Provider value={{

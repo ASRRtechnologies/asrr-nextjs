@@ -7,11 +7,11 @@ import PortfolioCard from '@/portfolio/PortfolioCard'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.layout};
- }`
+ }`;
 
 function Portfolio ({ data, allProjects }) {
 
-	const { page_title } = data
+	const { page_title } = data;
 
 	return (
 		<Wrapper>

@@ -7,14 +7,14 @@ import { useTheme } from '../../context/theme/ThemeContext'
 const Card = styled('div')`
         box-shadow: ${props => props.theme.card.background};
         background-color: ${props => props.theme.card.background};
-`
+`;
 
 function PortfolioCard ({ project, fileName, info }) {
 
-	const { image, image_webp, alt, title, text } = project
-	const url = `portfolio/case/${fileName.toLowerCase()}`
-	const baseUrl = `content/written/case/nl/${fileName.toLowerCase()}`
-	const darkmode = useTheme().dark
+	const { image, image_webp, alt, title, text } = project;
+	const url = `portfolio/case/${fileName.toLowerCase()}`;
+	const baseUrl = `content/written/case/nl/${fileName.toLowerCase()}`;
+	const darkmode = useTheme().dark;
 
 	const ReadMore = ({to}) => {
 		return (
@@ -26,7 +26,7 @@ function PortfolioCard ({ project, fileName, info }) {
 				</a>
 			</Link>
 		)
-	}
+	};
 
 	return (
 		<Link href={url}>

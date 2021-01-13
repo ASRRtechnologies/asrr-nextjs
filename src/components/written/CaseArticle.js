@@ -14,10 +14,10 @@ import {
 	TwitterShareButton,
 } from 'react-share'
 
-const fadeDelay = 200
+const fadeDelay = 200;
 
 const ArticleVideo = ({ media, basePath }) => {
-	const { video, reference, description } = media
+	const { video, reference, description } = media;
 	return (
 		<Fade triggerOnce damping={0.3} direction="up" className="article-animation-fade-container">
 			<div className="article-media-container">
@@ -34,10 +34,10 @@ const ArticleVideo = ({ media, basePath }) => {
 			</div>
 		</Fade>
 	)
-}
+};
 
 const ArticleImage = ({ media, basePath }) => {
-	const { image, image_webp, alt, reference, description } = media
+	const { image, image_webp, alt, reference, description } = media;
 
 	return (
 		<Fade triggerOnce damping={0.3} direction="up" className="article-animation-fade-container">
@@ -57,7 +57,7 @@ const ArticleImage = ({ media, basePath }) => {
 			</div>
 		</Fade>
 	)
-}
+};
 
 const ArticleLinks = ({}) => {
 	return (
@@ -77,7 +77,7 @@ const ArticleLinks = ({}) => {
 			</Fade>
 		</div>
 	)
-}
+};
 
 const ArticleTitle = ({ data }) => {
 	return (
@@ -88,7 +88,7 @@ const ArticleTitle = ({ data }) => {
 			</Fade>
 		</div>
 	)
-}
+};
 
 const ArticleSection = ({ basePath, content, media }) => {
 	return (
@@ -106,7 +106,7 @@ const ArticleSection = ({ basePath, content, media }) => {
 			)}
 		</div>
 	)
-}
+};
 
 function CaseArticle ({ project, basePath }) {
 	return (

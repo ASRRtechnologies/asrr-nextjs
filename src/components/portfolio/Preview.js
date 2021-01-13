@@ -9,7 +9,7 @@ import CardFadeAnimation from '@/animation/CardFadeAnimation'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.portfolio};
- }`
+ }`;
 
 function Portfolio ({ data, selectedProjects }) {
 

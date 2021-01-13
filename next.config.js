@@ -1,5 +1,5 @@
 const withImages = require('next-images');
-const withVideos = require('next-videos')
+const withVideos = require('next-videos');
 
 module.exports = withImages(withVideos({
     webpack: (cfg) => {

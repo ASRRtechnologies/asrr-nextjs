@@ -70,7 +70,7 @@ function Header({className}) {
 
     const setSelectedLanguage = () => {
         i18n.locale('nl', NL)
-    }
+    };
 
     useEffect(() => {
         setSelectedLanguage()

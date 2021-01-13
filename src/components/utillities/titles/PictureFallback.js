@@ -3,10 +3,10 @@ import React from 'react'
 function PictureFallback ({ image, fallbackImage, fallbackType, alt, className }) {
 
 	const appendImage = () => {
-		let path = fallbackImage
-		let splitPath = path.split('.')[0]
+		let path = fallbackImage;
+		let splitPath = path.split('.')[0];
 		return splitPath.concat('.webp')
-	}
+	};
 
 	return (
 		<picture>
