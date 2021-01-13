@@ -23,6 +23,10 @@
     }
   }
 
+  &.error{
+    @include margin-bottom(50px);
+  }
+
 }
 
 .read-more-wrapper{

@@ -16,20 +16,20 @@ const Wrapper = styled(Section)`
         a{
           text-decoration: ${props => props.theme.fonts.title};
         }
-`
+`;
 
-const emailRegex = '(?:[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\\])'
+const emailRegex = '(?:[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\\])';
 
 function Contact ({ data }) {
-	const i18n = useI18n()
-	const recipient = 'contact@asrr.nl'
-	const [email, setEmail] = useState({ body: '', subject: '', userEmail: '', organization: '', name: '' })
-	const { enqueueSnackbar, closeSnackbar } = useSnackbar()
-	const darkmode = useTheme().dark
+	const i18n = useI18n();
+	const recipient = 'contact@asrr.nl';
+	const [email, setEmail] = useState({ body: '', subject: '', userEmail: '', organization: '', name: '' });
+	const { enqueueSnackbar, closeSnackbar } = useSnackbar();
+	const darkmode = useTheme().dark;
 
-	const handleChange = ({ name, value }) => setEmail({ ...email, [name]: value })
+	const handleChange = ({ name, value }) => setEmail({ ...email, [name]: value });
 
-	console.log(data)
+	console.log(data);
 
 	const handleSubmit = (event) => {
 
@@ -37,7 +37,7 @@ function Contact ({ data }) {
 			body: `from: ${email.userEmail}, name:${email.name}, subject:${email.subject}, organization: ${email.organization}, message: ${email.body}`,
 			subject: email.subject,
 			recipient: recipient,
-		}
+		};
 
 		fetch('https://mail.api.asrr-tech.com/mail/send/simple', {
 			method: 'POST',
@@ -47,26 +47,26 @@ function Contact ({ data }) {
 			body: JSON.stringify(emailObject),
 		}).then(function (response) {
 			if (response.ok) {
-				enqueueSnackbar(i18n.t('user_notifications.contact.success.title'), { variant: 'success' })
+				enqueueSnackbar(i18n.t('user_notifications.contact.success.title'), { variant: 'success' });
 				setEmail({})
 			} else {
 				response.json().then(function (object) {
-					console.log(object)
-					console.log(object.propertyErrors)
-					console.log(response)
+					console.log(object);
+					console.log(object.propertyErrors);
+					console.log(response);
 
 					enqueueSnackbar(i18n.t('user_notifications.contact.error.title'), { error: true })
 
-				})
+				});
 				throw new Error(response.statusText)
 			}
 		}).catch(error => {
 			enqueueSnackbar(i18n.t('user_notifications.contact.error.title'), { error: true })
-		})
+		});
 
 		event.preventDefault()
 
-	}
+	};
 
 	return (
 		<Wrapper className="no-landing">

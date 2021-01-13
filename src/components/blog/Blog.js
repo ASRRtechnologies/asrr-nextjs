@@ -7,7 +7,7 @@ import BlogCard from '@/blog/BlogCard'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.layout};
-`
+`;
 
 function Blog ({ data, allBlogs }) {
 

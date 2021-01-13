@@ -8,7 +8,7 @@ const Wrapper = styled('div')`
         box-shadow: ${props => props.theme.button.shadow};
         p, a{color: ${props => props.theme.button.font}} !important;
         &:hover{background-color: ${props => props.theme.button.hover};}
-        `
+        `;
 
 function NavigationButton ({ className, title, to, custom, ...props }) {
 

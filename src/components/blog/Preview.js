@@ -8,7 +8,7 @@ import BlogCard from '@/blog/BlogCard'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.blog};
- }`
+ }`;
 
 function Preview ({ data, selectedBlogs }) {
 	return (
@@ -26,7 +26,7 @@ function Preview ({ data, selectedBlogs }) {
 			</div>
 
 			<div className="read-more-wrapper">
-				<ReadMore className="subheader" to="/blog" text={data.button.title}/>
+				<ReadMore to="/blog" text={data.button.title}/>
 			</div>
 		</Wrapper>
 	)

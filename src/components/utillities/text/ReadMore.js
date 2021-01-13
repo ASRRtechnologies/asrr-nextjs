@@ -9,10 +9,10 @@ const LinkText = styled('a')`
         &:before{
           background-color: ${props => props.inverted ? props.theme.fonts.white : props.theme.fonts.title} ;
         }
-`
+`;
 
 function ReadMore ({ to, inverted, text, children, noAnimation, className, ...rest }) {
-	const darkmode = useTheme().dark
+	const darkmode = useTheme().dark;
 
 	return (
 		<Fade fraction={0.4} damping={0.3} triggerOnce direction="up">

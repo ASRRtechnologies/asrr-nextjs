@@ -8,10 +8,10 @@ import Section from '@/layout/Section'
 import Link from 'next/link'
 
 function Footer (props) {
-	const [email, setEmail] = useState({ body: '', subject: '', userEmail: '', organization: '', name: '' })
+	const [email, setEmail] = useState({ body: '', subject: '', userEmail: '', organization: '', name: '' });
 
-	const handleChange = ({ name, value }) => setEmail({ ...email, [name]: value })
-	const { enqueueSnackbar, closeSnackbar } = useSnackbar()
+	const handleChange = ({ name, value }) => setEmail({ ...email, [name]: value });
+	const { enqueueSnackbar, closeSnackbar } = useSnackbar();
 
 	const handleSubmit = (event) => {
 
@@ -19,7 +19,7 @@ function Footer (props) {
 			body: `from: ${email.userEmail}, name:${email.name}, subject:${email.subject}, organization: ${email.organization}, message: ${email.body}`,
 			subject: email.subject,
 			recipient: recipient,
-		}
+		};
 
 		// console.log(JSON.stringify(emailObject))
 
@@ -31,25 +31,25 @@ function Footer (props) {
 			body: JSON.stringify(emailObject),
 		}).then(function (response) {
 			if (response.ok) {
-				enqueueSnackbar('user_notifications.contact.success.title', { variant: 'success' })
+				enqueueSnackbar('user_notifications.contact.success.title', { variant: 'success' });
 				setEmail({})
 			} else {
 				response.json().then(function (object) {
-					console.log(object)
-					console.log(object.propertyErrors)
-					console.log(response)
+					console.log(object);
+					console.log(object.propertyErrors);
+					console.log(response);
 					enqueueSnackbar('user_notifications.contact.error.title', { error: true })
 
-				})
+				});
 				throw new Error(response.statusText)
 			}
 		}).catch(error => {
 			enqueueSnackbar('user_notifications.contact.error.title', { error: true })
-		})
+		});
 		event.preventDefault()
-	}
+	};
 
-	const i18n = useI18n()
+	const i18n = useI18n();
 
 	const AnimatedLink = ({ text, to }) => {
 		return (
@@ -59,7 +59,7 @@ function Footer (props) {
 				</a>
 			</Link>
 		)
-	}
+	};
 
 	return (
 		<Section className="footer-section">

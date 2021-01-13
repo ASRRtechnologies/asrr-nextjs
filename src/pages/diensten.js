@@ -7,10 +7,10 @@ import matter from 'gray-matter'
 
 function Diensten ({data}) {
 
-	const header = useHeader()
+	const header = useHeader();
 	useEffect(() => {
 		header.setHeaderWhite(false)
-	}, [])
+	}, []);
 
 	return (
 		<>
@@ -23,9 +23,9 @@ function Diensten ({data}) {
 
 export async function getStaticProps () {
 	//This is the portfolio page cms
-	let content = await import(`public/content/service_page/nl/services.md`)
-	let parsedContent = matter(content.default)
-	let data = parsedContent.data
+	let content = await import(`public/content/service_page/nl/services.md`);
+	let parsedContent = matter(content.default);
+	let data = parsedContent.data;
 
 	return {
 		props: { data },

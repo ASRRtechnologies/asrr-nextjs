@@ -8,12 +8,12 @@ import CardFadeAnimation from '@/animation/CardFadeAnimation'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.values};
- }`
+ }`;
 
 function Why ({ data }) {
-	const { qualities, title, subheader, header } = data
-	const [currentQuality, setCurrentQuality] = useState(0)
-	const darkmode = useTheme().dark
+	const { qualities, title, subheader, header } = data;
+	const [currentQuality, setCurrentQuality] = useState(0);
+	const darkmode = useTheme().dark;
 
 	return (
 		<Wrapper>

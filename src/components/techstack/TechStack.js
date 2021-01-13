@@ -8,11 +8,11 @@ import CardFadeAnimation from '@/animation/CardFadeAnimation'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.techstack};
- }`
+ }`;
 
 function TechStack ({ data, basePath }) {
 
-	const darkmode = useTheme().dark
+	const darkmode = useTheme().dark;
 
 	const Tech = ({ image, fallback, alt, className }) => {
 		return (
@@ -21,7 +21,7 @@ function TechStack ({ data, basePath }) {
 								 alt={alt} className={className}/>
 			</div>
 		)
-	}
+	};
 
 	return (
 		<Wrapper>

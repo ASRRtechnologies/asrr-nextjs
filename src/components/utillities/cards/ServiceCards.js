@@ -3,7 +3,7 @@ import PictureFallback from '@/utillities/titles/PictureFallback'
 
 function ServiceCards ({ data, basePath, bullets }) {
 
-	const { image, alt, image_webp, title, preview_text, bullet_points } = data
+	const { image, alt, image_webp, title, preview_text, bullet_points } = data;
 
 	return (
 		<div className="card-round">

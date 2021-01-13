@@ -1,26 +1,26 @@
 //Font colors
-const headerDark = '#ffffff'
-const headerLight = '#1a1a1a'
-const paragraphLight = '#41474E'
-const paragraphDark = '#ededed'
-const subHeaderDark = '#e9e9e9'
-const subHeaderLight = '#41474E'
+const headerDark = '#ffffff';
+const headerLight = '#1a1a1a';
+const paragraphLight = '#41474E';
+const paragraphDark = '#ededed';
+const subHeaderDark = '#e9e9e9';
+const subHeaderLight = '#41474E';
 
-const dropShadowDark = ' 0 8px 10px rgba(1, 1, 1, 0.35)'
-const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)'
+const dropShadowDark = ' 0 8px 10px rgba(1, 1, 1, 0.35)';
+const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)';
 
-const white = '#fff'
-const white2 = '#fbfbfb'
+const white = '#fff';
+const white2 = '#fbfbfb';
 
-const black = '#0a0a0a'
-const black2 = '#131313'
-const black3 = '#1a1a1a'
+const black = '#0a0a0a';
+const black2 = '#131313';
+const black3 = '#1a1a1a';
 
-const hoverLinkDark = 'linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)'
-const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)'
+const hoverLinkDark = 'linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)';
+const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)';
 
-const borderColorDark = '2px solid #f0f0f0'
-const borderColorLight = '2px solid #ababab'
+const borderColorDark = '2px solid #f0f0f0';
+const borderColorLight = '2px solid #ababab';
 
 const fonts = {
 
@@ -49,14 +49,14 @@ const fonts = {
 		dark: headerLight,
 	},
 
-}
+};
 
 const layout = {
 	background: {
 		dark: 'linear-gradient(120deg, #131313 45%, #0a0a0a 100%);',
 		light: 'linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);',
 	},
-}
+};
 
 const landing = {
 	background: {
@@ -70,7 +70,7 @@ const landing = {
 		light: borderColorLight,
 	},
 
-}
+};
 
 const button = {
 
@@ -108,7 +108,7 @@ const button = {
 		hover: '#d7d7d7',
 	},
 
-}
+};
 
 const home = {
 
@@ -168,7 +168,7 @@ const home = {
 		},
 	},
 
-}
+};
 
 const portfolio = {
 	landing: {
@@ -191,7 +191,7 @@ const portfolio = {
 		light: white2,
 	},
 
-}
+};
 
 const navigation = {
 
@@ -220,7 +220,7 @@ const navigation = {
 		dark: '#fff',
 	},
 
-}
+};
 
 const cards = {
 
@@ -239,7 +239,7 @@ const cards = {
 		light: borderColorLight,
 	},
 
-}
+};
 
 const alert = {
 	background: {
@@ -338,7 +338,7 @@ const lightTheme = {
 		}
 	}
 
-}
+};
 
 const darkTheme = {
 
@@ -421,8 +421,8 @@ const darkTheme = {
 		}
 	}
 
-}
+};
 
-const theme = mode => (mode === 'dark' ? darkTheme : lightTheme)
+const theme = mode => (mode === 'dark' ? darkTheme : lightTheme);
 
 export default theme
