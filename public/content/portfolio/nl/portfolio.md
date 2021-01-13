@@ -2,7 +2,7 @@
 language: nl
 title: portfolio
 page_title:
-  title: Portfolio Pagina
+  title: Wat we hebben gedaan
   header: Bekijk onze projecten
   subheader: Portfolio
 ---
