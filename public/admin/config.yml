@@ -181,8 +181,8 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header", name: "header", widget: "string" }
           - { label: "Subheader", name: "subheader", widget: "string" }
-  - label: "Writtens"
-    name: "written"
+  - label: "Posts"
+    name: "posts"
     identifier_field: slug
     summary: 'Title: {{title}} - Language: {{language}} - Type: {{type}} {{info.author}}'
     folder: "public/content/written"
@@ -201,6 +201,9 @@ collections:
       - label: article
         field: type
         pattern: 'Artikel'
+      - label: article
+        field: type
+        pattern: 'Tutorial'
       - label: case
         field: type
         pattern: 'Case'
@@ -217,7 +220,7 @@ collections:
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
       - { label: "Title (also the file and path name)", name: "title", widget: "string", description: This is name of the project }
-      - { label: "Type", name: "type", widget: "select", options: [ "Artikel", "Nieuws", "Case" ] }
+      - { label: "Type", name: "type", widget: "select", options: [ "Artikel", "Nieuws", "Case", "Tutorial" ] }
       - label: "Info"
         name: "info"
         widget: "object"
