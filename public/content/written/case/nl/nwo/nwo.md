@@ -1,6 +1,6 @@
 ---
 language: nl
-title: Nwo
+title: nwo
 type: Case
 info:
   date: January 9, 2021 9:58 PM
