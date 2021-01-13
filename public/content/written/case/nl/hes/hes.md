@@ -65,7 +65,7 @@ section:
         - image_webp: case-cover.webp
           image: case-image.png
           alt: Dashboard overview of application
-          description: De PowerBI dashboard (links) en webapplicatie (rechts).
+          description: Het PowerBI dashboard (links) en de webapplicatie (rechts).
   - content: >-
       ### Conclusie
 
