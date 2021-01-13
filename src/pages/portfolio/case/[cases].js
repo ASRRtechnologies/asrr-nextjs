@@ -5,15 +5,17 @@ import matter from 'gray-matter'
 import CaseArticle from '@/written/CaseArticle'
 import useI18n from '../../../hooks/use-i18n'
 import NL from '../../../locales/nl'
+import {useHeader} from "../../../context/navigation/HeaderContext";
 
 function Page ({ allProjects, data, basePath }) {
 
 	//Need to set locale in the static page
 	const i18n = useI18n();
+	const header = useHeader();
 	useEffect(() => {
+		header.setHeaderWhite(true);
 		i18n.locale('nl', NL);
 	}, []);
-
 
 	const getRandomProject = () => {
 		let numOfProjectsToShow = 2;
