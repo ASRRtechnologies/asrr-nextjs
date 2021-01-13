@@ -29,7 +29,7 @@ function PortfolioCard ({ project, fileName, info }) {
 	}
 
 	return (
-		<Link href={`/portfolio/case`}>
+		<Link href={url}>
 			<a>
 				<Card className="card-rectangle">
 					<div className="card-rectangle-image">

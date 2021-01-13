@@ -7,6 +7,8 @@ info:
   author: Amar Ramdas
   writtenType:
     - tag: Artikel
+  tag:
+    - tag: Artikel
 card:
   title: Kunnen microservices tijd en moeite besparen?
   url: blog/article/microservices

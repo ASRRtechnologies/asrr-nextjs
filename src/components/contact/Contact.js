@@ -109,7 +109,7 @@ function Contact ({ data }) {
 					<Fade fraction={0.4} damping={0.3} triggerOnce direction="up">
 						<div className="contact-adres">
 
-							<h1 className="font-header">Contact Details</h1>
+							<h1 className="font-header">Contactinformatie</h1>
 
 							<span>
 								<p className="bold font-general">Adres: </p>

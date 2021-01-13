@@ -87,26 +87,47 @@ function Footer (props) {
 
 					</div>
 
-					<div className="grid">
-						<h1 className="font-subheader">{i18n.t('footer.contact')}</h1>
+					<div className="grid grid-contact">
+						<h1 className="font-subheader">Contactinformatie</h1>
 						<p>ASRR Tech</p>
 
-						<a target="_blank" rel="noopener noreferrer" href="https://goo.gl/maps/fZqhC9FUVTpiEiCb7"
-						   className="animated-link-light text">
-							{i18n.t('contact.address.street')} <br/>
-							{i18n.t('contact.address.zipcode')} <br/>
-							{i18n.t('contact.address.country')}
-						</a>
+						<span>
+							<p className="bold font-general">Adres: </p>
+							<p className="font-general">'s Gravenzandseweg 2 unit A</p>
+						</span>
 
-						<a href="mailto:contact@asrr.nl" target="_blank" rel="noopener noreferrer"
-						   className="animated-link-light text">
+						<span>
+							<p className="bold font-general">Postcode: </p>
+							<p className="font-general">2291 PE</p>
+						</span>
+
+						<span>
+							<p className="bold font-general">Plaats: </p>
+							<p className="font-general">Wateringen</p>
+						</span>
+
+						<span>
+							<p className="bold font-general">Land: </p>
+							<p className="font-general">Nederland</p>
+						</span>
+
+						<span>
+							<p className="bold font-general">Mail ons: </p>
+							<a href="mailto:contact@asrr.nl" target="_blank" rel="noopener noreferrer"
+							   className="animated-link-light font-general bold">
 							contact@asrr.nl
+						</a>
+						</span>
+
+						<a href="https://goo.gl/maps/fZqhC9FUVTpiEiCb7" target="_blank" rel="noopener noreferrer"
+						   className="animated-link-light font-general bold">
+							Plan route
 						</a>
 
 					</div>
 
 					<div className="grid">
-						<h1 className="font-subheader">{i18n.t('footer.social_media')}</h1>
+						<h1 className="font-subheader">Volg ons</h1>
 
 						<div className="footer-social-media">
 							<a className="footer-icons" href="https://www.linkedin.com/company/asrr" target="_blank"

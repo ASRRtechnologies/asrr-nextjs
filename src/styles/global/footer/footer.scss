@@ -81,6 +81,14 @@
         margin-bottom: 0;
       }
     }
+
+    &.grid-contact{
+      span{
+        @include flex(flex-start, flex-start, row);
+
+      }
+    }
+
   }
 
   .footer-newsletter{

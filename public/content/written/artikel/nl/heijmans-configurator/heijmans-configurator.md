@@ -7,6 +7,8 @@ info:
   client: ""
   writtenType:
     - tag: Artikel
+  tag:
+    - tag: Artikel
 card:
   title: Heijmans/FORM 3D Huis Configurator
   text: Een VR Ready, 3D omgeving om uw toekomstige huis te configureren vanuit

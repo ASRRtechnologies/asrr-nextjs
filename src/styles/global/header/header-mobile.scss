@@ -45,8 +45,8 @@ $bermuda: #77D7B9;
 
     a{
       @include margin(32px 0);
+      @include font-size(1.5rem);
     }
-
 
     .button {
       @include margin(32px 0);
