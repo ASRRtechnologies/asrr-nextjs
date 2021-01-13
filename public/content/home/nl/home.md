@@ -52,8 +52,8 @@ services_section:
     url: /diensten
 technologies_section:
   title: Waar we op bouwen
-  header: ASRR gebruikt de meest geadvanceerde Technologieën
-  subheader: Onze technologieën
+  header: ASRR gebruikt de meest geadvanceerde technologieën
+  subheader: Technologieën
   technologies:
     - image_webp: react-black-min.webp
       image: react-black-min.png
@@ -75,8 +75,8 @@ technologies_section:
       alt: Nextjs Logo
 portfolio_section:
   title: Wat we al hebben gedaan
-  subheader: Onze portfolio
-  header: Neem een kijkje naar onze voorgaande projecten
+  subheader: Portoflio
+  header: Neem een kijkje bij onze voorgaande projecten
   button:
     title: Ga naar portfolio
     url: /portfolio
@@ -152,15 +152,15 @@ quality_section:
         kan trekken in real-time.
 blog_section:
   title: Het laatste nieuws
-  subheader: Ons Blog
+  subheader: Blog
   header: Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on-als
     offline!
   button:
     title: Ga naar blog
     url: /blog
 clients:
-  title: Vertrouwd door
-  header: Zij hebben ons hun vertrouwen gegeven. U ook?
-  subheader: Vertrouwen
+  title: Deze klanten gingen u voor.
+  header: Vetrouwd door
+  subheader: Bent u de volgende?
 button: Ga naar blog
 ---
