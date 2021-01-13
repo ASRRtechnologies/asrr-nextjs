@@ -108,7 +108,7 @@
 //
 //}
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: $tablet-breakpoint) {
 
   .service-card-wrapper {
     max-width: 600px;
