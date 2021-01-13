@@ -160,7 +160,7 @@ blog_section:
     url: /blog
 clients:
   title: Vertrouwd door
-  header: Zij hebben ons hun vertrouwen gegeven. U ook?
-  subheader: Vertrouwen
+  header: Bent u de volgende?
+  subheader: Deze klanten gingen u voor.
 button: Ga naar blog
 ---
