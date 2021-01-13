@@ -94,7 +94,7 @@ function Header({className}) {
                 </div>
 
                 <div className="header-actions">
-                    <NavigationButton title="Contact ons" to="/contact"/>
+                    <NavigationButton title="Contact" to="/contact"/>
                     {/*<Language/>*/}
                     <span className="icon" onClick={toggle}>
                         {themeState.dark ? <Sun/> : <Moon/>}
