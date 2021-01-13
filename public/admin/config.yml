@@ -106,7 +106,7 @@ collections:
               - {label: "Image Alt", name: "alt", widget: "string"}
               - {label: "Client Name", name: "name", widget: "string"}
               - {label: "Client Position", name: "position", widget: "string"}
-              - {label: "Client Story", name: "story", widget: "string"}
+              - {label: "Client Story", name: "story", widget: "markdown"}
               - {label: "Client Company", name: "company", widget: "string"}
       - label: "ASRR Qualities"
         name: "quality_section"
@@ -225,7 +225,7 @@ collections:
         widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Text (Text visible on the card)", name: "text", widget: "markdown", required: false}
           - {label: "Image_Webp", name: "image_webp", widget: "image"}
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Image Alt", name: "alt", widget: "string"}
@@ -235,7 +235,6 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Text", name: "text", widget: "string", required: false}
-          - {label: "Text Color White", name: "text_color", widget: "boolean"}
           - {label: "Image_Webp", name: "image_webp", widget: "image"}
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Image Alt", name: "alt", widget: "string"}
@@ -292,8 +291,8 @@ collections:
         widget: "list"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Preview Text (home page)", name: "preview_text", widget: "string"}
-          - {label: "Text", name: "text", widget: "string"}
+          - {label: "Preview Text (home page)", name: "preview_text", widget: "markdown"}
+          - {label: "Text", name: "text", widget: "markdown"}
           - {label: "Image_Webp", name: "image_webp", widget: "image"}
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Image Alt", name: "alt", widget: "string"}
@@ -322,7 +321,6 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Text", name: "text", widget: "string", required: false}
-          - {label: "Text Color White", name: "text_color", widget: "boolean"}
           - {label: "Image_Webp", name: "image_webp", widget: "image"}
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Image Alt", name: "alt", widget: "string"}
