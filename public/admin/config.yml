@@ -192,9 +192,17 @@ collections:
     path: '{{type}}/{{language}}/{{title}}/{{slug}}'
     slug: '{{title}}'
     view_filters:
-      - label: Group by Type
+      - label: Posts With Index
         field: type
-        pattern: 'This is a type post of'
+        pattern: 'This post has type #'
+      - label: Drafts
+        field: language
+        pattern: 'This post has language #'
+    view_groups:
+      - label: Language
+        field: language
+      - label: Type
+        field: type
     editor:
       preview: true
     fields:
