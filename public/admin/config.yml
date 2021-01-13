@@ -101,13 +101,13 @@ collections:
             widget: "list"
             required: true
             fields:
-              - { label: "Image_Webp", name: "image_webp", widget: "image" }
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Image Alt", name: "alt", widget: "string" }
-              - { label: "Client Name", name: "name", widget: "string" }
-              - { label: "Client Position", name: "position", widget: "string" }
-              - { label: "Client Story", name: "story", widget: "string" }
-              - { label: "Client Company", name: "company", widget: "string" }
+              - {label: "Image_Webp", name: "image_webp", widget: "image"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Image Alt", name: "alt", widget: "string"}
+              - {label: "Client Name", name: "name", widget: "string"}
+              - {label: "Client Position", name: "position", widget: "string"}
+              - {label: "Client Story", name: "story", widget: "markdown"}
+              - {label: "Client Company", name: "company", widget: "string"}
       - label: "ASRR Qualities"
         name: "quality_section"
         widget: "object"
@@ -181,10 +181,10 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header", name: "header", widget: "string" }
           - { label: "Subheader", name: "subheader", widget: "string" }
-  - label: "Posts"
-    name: "posts"
+  - label: "Writtens"
+    name: "written"
     identifier_field: slug
-    summary: 'Title: {{title}} | Language: {{language}} | Type: {{type}} | Author: {{author}}'
+    summary: '{{title}} - {{language}} - {{type}}'
     folder: "public/content/written"
     create: true
     media_folder: ''
@@ -238,21 +238,20 @@ collections:
         name: "card"
         widget: "object"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string", required: false }
-          - { label: "Image_Webp", name: "image_webp", widget: "image" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Image Alt", name: "alt", widget: "string" }
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text (Text visible on the card)", name: "text", widget: "markdown", required: false}
+          - {label: "Image_Webp", name: "image_webp", widget: "image"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Alt", name: "alt", widget: "string"}
       - label: "Landing"
         name: "landing"
         widget: "object"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string", required: false }
-          - { label: "Text Color White", name: "text_color", widget: "boolean" }
-          - { label: "Image_Webp", name: "image_webp", widget: "image" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Image Alt", name: "alt", widget: "string" }
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image_Webp", name: "image_webp", widget: "image"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Alt", name: "alt", widget: "string"}
       - label: "Section"
         name: "section"
         widget: "list"
@@ -305,13 +304,13 @@ collections:
         name: "card"
         widget: "list"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Preview Text (home page)", name: "preview_text", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-          - { label: "Image_Webp", name: "image_webp", widget: "image" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Image Alt", name: "alt", widget: "string" }
-          - { label: "Url", name: "url", widget: "string" }
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Preview Text (home page)", name: "preview_text", widget: "markdown"}
+          - {label: "Text", name: "text", widget: "markdown"}
+          - {label: "Image_Webp", name: "image_webp", widget: "image"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Alt", name: "alt", widget: "string"}
+          - {label: "Url", name: "url", widget: "string"}
           - label: "Bullets"
             name: "bullet_points"
             widget: "list"
@@ -334,12 +333,11 @@ collections:
         name: "landing"
         widget: "object"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string", required: false }
-          - { label: "Text Color White", name: "text_color", widget: "boolean" }
-          - { label: "Image_Webp", name: "image_webp", widget: "image" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Image Alt", name: "alt", widget: "string" }
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image_Webp", name: "image_webp", widget: "image"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Alt", name: "alt", widget: "string"}
       - label: "Section"
         name: "section"
         widget: "list"
