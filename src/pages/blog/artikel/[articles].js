@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Layout from '@/layout/Application'
+import Application from '@/layout/Application'
 import { getAllArticles } from '../../../lib/api'
 import matter from 'gray-matter'
 import CaseArticle from '@/written/CaseArticle'
@@ -9,6 +9,11 @@ import BlogArticle from '@/written/BlogArticle'
 import {useHeader} from "../../../context/navigation/HeaderContext";
 
 function Page ({ allProjects, data, basePath }) {
+
+	const SEOProps = {
+		title:`ASRR - Artikel - ${data.title}`,
+		content:`${data.landing.title}`
+	}
 
 	//Need to set locale in the static page
 	const i18n = useI18n();
@@ -48,9 +53,9 @@ function Page ({ allProjects, data, basePath }) {
 	};
 
 	return (
-		<Layout>
+		<Application {...SEOProps}>
 			<BlogArticle project={data} basePath={basePath}/>
-		</Layout>
+		</Application>
 	)
 }
 

@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import Title from "@/utillities/titles/Title";
-import Layout from "@/layout/Application";
+import Application from "@/layout/Application";
 import SmallLanding from "@/landing/SmallLanding";
 import error from "#/404/error.jpg";
 import error2 from "#/404/error.webp";
@@ -12,6 +12,11 @@ import { Fade } from 'react-awesome-reveal'
 
 function Error() {
 
+    const SEOProps = {
+        title:`ASRR - 404 Error`,
+        content:`De pagina die u zoekt kan niet gevonden worden`
+    }
+
     const darkmode = useTheme().dark;
     const header = useHeader();
     useEffect(() => {
@@ -19,7 +24,7 @@ function Error() {
     }, []);
 
     return (
-        <Layout>
+        <Application {...SEOProps}>
             <SmallLanding title="Pagina niet gevonden" alt="Abstract" image={error} imageWebp={error2}/>
             <Section>
                 <Title className="error" title="404 Error" subHeader="Error"
@@ -32,7 +37,7 @@ function Error() {
                            </Link>
                        </Fade>
             </Section>
-        </Layout>
+        </Application>
     );
 }
 

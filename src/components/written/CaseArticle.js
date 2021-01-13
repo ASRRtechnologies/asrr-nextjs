@@ -12,7 +12,8 @@ import {
 	LinkedinShareButton,
 	TwitterIcon,
 	TwitterShareButton,
-} from 'react-share'
+} from 'react-share';
+import uuid from "react-uuid";
 
 const fadeDelay = 200;
 
@@ -118,11 +119,10 @@ function CaseArticle ({ project, basePath }) {
 			<Section>
 				<div className="article-body">
 					<ArticleLinks/>
-					{console.log(project)}
 
 					<div className="article-content">
 						{project.section?.map(
-							({ content, media }) => <ArticleSection basePath={basePath} content={content}
+							({ content, media }) => <ArticleSection key={uuid()} basePath={basePath} content={content}
 																	media={media}/>)}
 					</div>
 

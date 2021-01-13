@@ -29,8 +29,6 @@ function Contact ({ data }) {
 
 	const handleChange = ({ name, value }) => setEmail({ ...email, [name]: value });
 
-	console.log(data);
-
 	const handleSubmit = (event) => {
 
 		let emailObject = {
@@ -52,11 +50,7 @@ function Contact ({ data }) {
 			} else {
 				response.json().then(function (object) {
 					console.log(object);
-					console.log(object.propertyErrors);
-					console.log(response);
-
 					enqueueSnackbar(i18n.t('user_notifications.contact.error.title'), { error: true })
-
 				});
 				throw new Error(response.statusText)
 			}
