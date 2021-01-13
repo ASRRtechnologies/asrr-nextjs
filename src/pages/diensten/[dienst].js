@@ -5,16 +5,17 @@ import matter from 'gray-matter'
 import CaseArticle from '@/written/CaseArticle'
 import useI18n from '../../hooks/use-i18n'
 import NL from '../../locales/nl'
+import {useHeader} from "../../context/navigation/HeaderContext";
 
 function Page ({data, basePath }) {
 
 	//Need to set locale in the static page
 	const i18n = useI18n();
+	const header = useHeader();
 	useEffect(() => {
-		i18n.locale('nl', NL)
+		header.setHeaderWhite(true);
+		i18n.locale('nl', NL);
 	}, []);
-
-	console.log(data);
 
 	return (
 		<Layout>
