@@ -10,19 +10,19 @@ info:
     - tag: Full stack Development
     - tag: Expertise on demand
 card:
-  title: From Excel sheet to Enterprise Application
+  title: Van Excel sheet naar Enterprise Applicatie
   url: portfolio/hes
   image_webp: case-cover.webp
   image: case-image.png
   alt: Dashboard overview of application
 landing:
-  title: Automating a 500 million dollar project
+  title: Procesversnelling bij een petro-gigant
   image_webp: hes-landing.webp
   image: ezgif.com-gif-maker-3-min.jpg
   alt: HES International Containers
 section:
   - content: >-
-      # From Excel sheet to Enterprise Application
+      # Van Excel sheet naar Enterprise Applicatie
 
 
       ## HES International
@@ -34,10 +34,10 @@ section:
       &nbsp;
 
 
-      ### The Problem
+      ### Het probleem
 
 
-      HES is one of Europe’s biggest multinationals when it comes to bulk transport, processing, blending and storage. For one of the Oil Terminals (Hartel Tank Terminal) at the Maasvlakte in Rotterdam, all of the planning, status and speficiations of the different steel parts were processed in a single Excel sheet, spanning more than 30.000 lines. This results in a bigger chance of errors, and makes it very hard to conclude anything based on the dataset in reference to the project status
+      HES is een van de grootste multinationals in Europa op het gebied van transporteren, verwerken, mengen en opslaan van bulk. Voor HES zijn Hartel tank terminal in de Maasvlakte van Rotterdam werd de planning, status en specificaties van verschillende staalonderdelen bijgehouden in een Excel sheet van meer dan 30.000 regels. U kunt zich wellicht al inbeelden hoe foutgevoelig en onoverzichtelijk dit het proces maakt. Om dit in te perken hebben wij een drievoudige oplossing bedacht.
     media:
       images:
         - image_webp: hes-landing.webp
@@ -46,10 +46,7 @@ section:
           reference: https://www.linkedin.com/company/hes-hartel-tank-terminal-b-v
           alt: HES International Containers
   - content: >-
-      ### The solution
-
-
-      The solution we provided consisted of three main parts:
+      ### De Oplossing
 
 
       &nbsp;
@@ -58,7 +55,7 @@ section:
       &nbsp;
 
 
-      The Database: Using code, we parsed the Excel sheet and structured the data using a model that separates the tank terminals. This all runs in a Spring Boot Java environment, with data storage in SQL.
+      1. **De Database:** De eerste stap is structuur aanbrengen in de Excel sheet. Een goede structuur biedt houvast, overzicht en duidelijkheid. We hebben een code geschreven die het bestaande Excel bestand kon uitlezen en op de gewenste manier kon structureren. 
 
 
       &nbsp;
@@ -67,7 +64,7 @@ section:
       &nbsp;
 
 
-      The API: Next, all actions that can result in a change in data were analysed and grouped in different business rules. For each of these rules, an API call was created, so that a construction worker can find a specific tank part by searching for terminal number, tank number and a list of available parts. The application tracks who makes the edits for safety purposes. The application can then be used to check-in a specific part at a checkpoint in the process. The application contains a overview of the status of all of the elements, relieving the administrative workers from a repetitive task, and shifts the responsibility for keeping the data up to date to the workers that are responsible for that specific part.
+      1. **De API:** Vervolgens zijn de verschillende acties die invloed kunnen hebben op de data losgetrokken, en is geanalyseerd op welk moment deze van toepassing zijn. Zo zijn er API calls geschreven waarmee een fabrieksmedewerker een specifiek onderdeel kan aftekenen, door eerst te kiezen voor de terminal nummer, dan het tanknummer, en vervolgens een gefilterde lijst ziet van de beschikbare onderdelen, met daarbij hun statussen. Er wordt bijgehouden welke medewerker iets aanpast, zodat altijd kan worden herleid waar acties vandaan komen. De medewerker kan dan voor een onderdeel aangeven waar deze zich bevindt in het proces. Vervolgens houdt de applicatie bij wat de status is van alle elementen, en laat zien wanneer een onderdeel, een hele tank of zelfs een hele terminal gereed is. Hierdoor werd een hoop werk weggehaald bij de administratieve medewerkers, en kan de verantwoordelijkheid liggen bij de mensen die over de onderdelen gaan.
 
 
       &nbsp;
@@ -76,7 +73,7 @@ section:
       &nbsp;
 
 
-      The Insights: Because the data set is so large, it is hard to see what the status of the whole project is at a glance. That is why our BI expert set up a PowerBI dashboard. This dashboard highlights all kinds of key values, aimed towards management. Management can see delays in Planned vs. Actuals, how much steel is at what point in the process and what the status is of each terminal. This all results in an automated process of rapporting, saving human hours. Management gets a real time insight of the status of the whole project.
+      1. **Insights**: Doordat het een enorme set data is, kan er in een oogopslag niet veel gezegd worden over de status van het project door alleen te kijken naar de tabel waar alles in staat. Daarom hebben we met behulp van onze Business Insights expert een PowerBI dashboard opgezet. In dit dashboard worden verschillende zaken interactief weergegeven, gespitst op het management. Zo kan er worden gezien hoeveel vertraging er zit tussen de Planning en de Actuals, hoeveel staal er op welk punt in het proces zit en wat de status van elke terminal is. Dit alles zorgt ervoor dat er geen menselijke handelingen meer verricht hoeven te worden voor het genereren van rapportages. Verder krijgt het management real-time inzichten in de status van het gehele project, met highlights op key waarden.
     media:
       images:
         - image_webp: case-cover.webp
@@ -84,17 +81,8 @@ section:
           alt: Dashboard overview of application
           description: De PowerBI dashboard (links) en webapplicatie (rechts).
   - content: >-
-      ### The Conclusion
+      ### Conclusie
 
 
-      By investing in custom built software that is adapted to the current work flow, a tool was developed that saves the time of the company employees, improves data security, shifts responsibilities to the right people and has given management new insights in the status of the project.
-
-
-      &nbsp;
-
-
-      &nbsp;
-
-
-      We are happy to have experienced writing software for such a big company, allowing our data experts to have a nice set of content to extract useful information from.
+      Door middel van een investering in een automatisering die aansluit op het huidige werkproces, is er een tool ontwikkeld waarmee tijd van de werknemers bespaard is, de data veiliger is opgeslagen, verantwoordelijkheden verplaatst zijn naar de personen die daarover gaan en heeft het management nieuw inzicht in de status van het project.
 ---
