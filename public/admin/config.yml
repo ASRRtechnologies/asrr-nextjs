@@ -184,7 +184,7 @@ collections:
   - label: "Posts"
     name: "posts"
     identifier_field: slug
-    summary: 'Title: {{title}} | Language: {{language}} | Type: {{type}} | Author: {{author}}'
+    summary: 'Title: {{title}} - Language: {{language}} - Type: {{type}} {{info.author}}'
     folder: "public/content/written"
     create: true
     media_folder: ''
@@ -192,12 +192,21 @@ collections:
     path: '{{type}}/{{language}}/{{title}}/{{slug}}'
     slug: '{{title}}'
     view_filters:
-      - label: Posts With Index
-        field: type
-        pattern: 'This post has type #'
-      - label: Drafts
+      - label: nl
         field: language
-        pattern: 'This post has language #'
+        pattern: 'nl'
+      - label: en
+        field: language
+        pattern: 'en'
+      - label: article
+        field: type
+        pattern: 'Artikel'
+      - label: case
+        field: type
+        pattern: 'Case'
+      - label: news
+        field: type
+        pattern: 'Nieuws'
     view_groups:
       - label: Language
         field: language
