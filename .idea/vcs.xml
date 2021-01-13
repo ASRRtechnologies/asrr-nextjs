@@ -3,9 +3,7 @@
   <component name="GithubSharedProjectSettings">
     <option name="branchProtectionPatterns">
       <list>
-        <option value="master" />
-        <option value="production" />
-        <option value="main" />
+        <option value="staging" />
       </list>
     </option>
   </component>
