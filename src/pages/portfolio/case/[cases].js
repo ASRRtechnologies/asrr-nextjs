@@ -5,24 +5,26 @@ import matter from 'gray-matter'
 import CaseArticle from '@/written/CaseArticle'
 import useI18n from '../../../hooks/use-i18n'
 import NL from '../../../locales/nl'
+import {useHeader} from "../../../context/navigation/HeaderContext";
 
 function Page ({ allProjects, data, basePath }) {
 
 	//Need to set locale in the static page
-	const i18n = useI18n()
+	const i18n = useI18n();
+	const header = useHeader();
 	useEffect(() => {
+		header.setHeaderWhite(true);
 		i18n.locale('nl', NL);
-	}, [])
-
+	}, []);
 
 	const getRandomProject = () => {
-		let numOfProjectsToShow = 2
-		let projectsToShow = []
+		let numOfProjectsToShow = 2;
+		let projectsToShow = [];
 
 		//Remove current page project
 		let uniqueProjects = allProjects.filter((project) => {
 			return project.title !== data.title && project.discipline !== data.discipline
-		})
+		});
 
 		//Get random number between 0 and num of projects
 		function randomIntFromInterval (min, max) { // min and max included
@@ -36,13 +38,13 @@ function Page ({ allProjects, data, basePath }) {
 			//loop twice
 			for (let i = 0; i < numOfProjectsToShow; i++) {
 				//push random project in projects to show array
-				projectsToShow.push(uniqueProjects[randomIntFromInterval(0, uniqueProjects.length - 1)])
+				projectsToShow.push(uniqueProjects[randomIntFromInterval(0, uniqueProjects.length - 1)]);
 				//remove the pushed project form the uniqueProjects so that isnt possible by chance to add twice the same projects
 				uniqueProjects = uniqueProjects.filter(val => !projectsToShow.includes(val))
 			}
 			return projectsToShow
 		}
-	}
+	};
 
 	return (
 		<Layout>
@@ -52,17 +54,17 @@ function Page ({ allProjects, data, basePath }) {
 }
 
 export async function getStaticProps ({ params }) {
-	const { cases } = params
-	let content = await import(`public/content/written/case/nl/${cases.toLowerCase()}/${cases.toLowerCase()}.md`)
-	let parsedContent = matter(content.default)
-	let data = parsedContent.data
-	const basePath = `/content/written/case/nl/${cases.toLowerCase()}`
+	const { cases } = params;
+	let content = await import(`public/content/written/case/nl/${cases.toLowerCase()}/${cases.toLowerCase()}.md`);
+	let parsedContent = matter(content.default);
+	let data = parsedContent.data;
+	const basePath = `/content/written/case/nl/${cases.toLowerCase()}`;
 
 	//Get all project info and only show their cards and titles for the read more part
 	const allCases = getAllCases([
 		'title',
 		'card',
-	])
+	]);
 
 	return {
 		props: { allCases, basePath, data },
@@ -73,11 +75,11 @@ export async function getStaticPaths () {
 
 	const allCases = await getAllCases([
 		'title',
-	])
+	]);
 
 	const paths = allCases.map(project => ({
 		params: { cases: project.title.toLowerCase() },
-	}))
+	}));
 
 	return { paths, fallback: false }
 

@@ -11,30 +11,30 @@ const Wrapper = styled(Section)`
         h1, h2, h3, p {
           color:white !important;
         }
- }`
+ }`;
 
 const DarkButton = styled('div')`
         background-color: ${props => props.theme.button.dark.background};
         box-shadow: ${props => props.theme.button.dark.shadow};
         p, a{color: ${props => props.theme.button.dark.font}} !important;
         // &:hover{background-color: ${props => props.theme.button.dark.hover};}
-        `
+        `;
 
 function Contact ({ title, className }) {
-	const i18n = useI18n()
+	const i18n = useI18n();
 
 	const titleObject = {
 		title: 'Neem contact met ons op',
 		header: 'Meer weten over wat ASRR voor u kan betekenen? Een van onze experts staat u graag te woord.',
 		subheader: 'Contact',
-	}
+	};
 
 	return (
 		<Wrapper className={`contact-invitation-section ${className ? className : ''}`}>
 			<div className={`contact-preview ${title}`}>
 				<Title className={`${title} title-button`} header={titleObject.header} subHeader={titleObject.subheader}
 					   title={titleObject.title}/>
-				<Fade delay={100} direction="up">
+				<Fade triggerOnce delay={300} direction="up">
 					<DarkButton className={`button button-auto ${className}`}>
 						<Link href="/contact"><a>{i18n.t('buttons.contact')}</a></Link>
 					</DarkButton>

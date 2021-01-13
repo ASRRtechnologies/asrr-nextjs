@@ -8,12 +8,12 @@ import { useTheme } from '../../context/theme/ThemeContext'
 const Wrapper = styled('div')`
         background: ${props => props.theme.card.background};
         box-shadow: ${props => props.theme.card.shadow};
-`
+`;
 
 const Card = ({ data, basePath, route }) => {
 
 	const { image, alt, image_webp, title, text } = data;
-	const darkmode = useTheme().dark
+	const darkmode = useTheme().dark;
 
 	const ReadMore = ({ to, text }) => {
 		return (
@@ -25,9 +25,9 @@ const Card = ({ data, basePath, route }) => {
 				</a>
 			</Link>
 		)
-	}
+	};
 
-	console.log(data, 23)
+	console.log(data, 23);
 
 	return (
 		<Fade  fraction={0.4} damping={0.3} triggerOnce direction="up">
@@ -51,6 +51,6 @@ const Card = ({ data, basePath, route }) => {
 			</Wrapper>
 		</Fade>
 	)
-}
+};
 
 export default Card

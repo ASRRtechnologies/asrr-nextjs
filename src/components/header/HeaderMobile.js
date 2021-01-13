@@ -49,47 +49,47 @@ const Wrapper = styled('nav')`
 	: props.headerWhite ? 'white' : props.theme.navigation.font};
         }
     
-`
+`;
 
 function HeaderMobile ({ className }) {
 
-	const i18n = useI18n()
-	const [menuOpen, setMenuOpen] = useState(false)
-	const [visible, setVisible] = useState(false)
-	const progressMobile = useRef('')
-	const header = useHeader()
-	const themeState = useTheme()
-	const toggle = () => themeState.toggle()
-	const closeMenu = () => setMenuOpen(false)
+	const i18n = useI18n();
+	const [menuOpen, setMenuOpen] = useState(false);
+	const [visible, setVisible] = useState(false);
+	const progressMobile = useRef('');
+	const header = useHeader();
+	const themeState = useTheme();
+	const toggle = () => themeState.toggle();
+	const closeMenu = () => setMenuOpen(false);
 
 	const headerPosition = () => {
-		let currentScrollPos = window.pageYOffset
+		let currentScrollPos = window.pageYOffset;
 		if (currentScrollPos < (2 / 16 * window.innerHeight)) {
 			setVisible(false)
 		} else if (currentScrollPos > (2 / 16 * window.innerHeight)) {
 			setVisible(true)
 		}
-	}
+	};
 
 	const headerProgress = () => {
-		const winScroll = document.body.scrollTop || document.documentElement.scrollTop
-		const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
-		const scrolled = (winScroll / height) * 100
+		const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+		const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+		const scrolled = (winScroll / height) * 100;
 		progressMobile.current.style.width = scrolled + '%'
-	}
+	};
 
 	useEffect(() => {
-		window.addEventListener('scroll', headerPosition)
+		window.addEventListener('scroll', headerPosition);
 		window.addEventListener('scroll', headerProgress)
-	})
+	});
 
 	const setSelectedLanguage = () => {
 		i18n.locale('nl', NL)
-	}
+	};
 
 	useEffect(() => {
 		setSelectedLanguage()
-	}, [])
+	}, []);
 
 	return (
 		<Wrapper visible={visible} menuOpen={menuOpen} headerWhite={header.headerWhite}

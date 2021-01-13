@@ -7,35 +7,35 @@ import { useTheme } from '../../context/theme/ThemeContext'
 const Card = styled('div')`
         box-shadow: ${props => props.theme.card.background};
         background-color: ${props => props.theme.card.background};
-`
+`;
 
 function BlogCard ({ article, info, type, name }) {
-	const darkmode = useTheme().dark
-	const { tag, author, date } = info
-	const { alt, image, image_webp, text, title } = article
-	const fileName = name.toLowerCase()
+	const darkmode = useTheme().dark;
+	const { tag, author, date } = info;
+	const { alt, image, image_webp, text, title } = article;
+	const fileName = name.toLowerCase();
 
 	const getProperUrl = () => {
 		switch (type.toLowerCase()) {
 			case 'artikel':
-				return `blog/artikel/${fileName}`
+				return `blog/artikel/${fileName}`;
 			case 'nieuws':
-				return `blog/nieuws/${fileName}`
+				return `blog/nieuws/${fileName}`;
 			default :
 				return `blog`
 		}
-	}
+	};
 
 	const getProperBaseUrl = () => {
 		switch (type) {
 			case 'artikel':
-				return `content/written/artikel/nl/${fileName}`
+				return `content/written/artikel/nl/${fileName}`;
 			case 'nieuws':
-				return `content/written/nieuws/nl/${fileName}`
+				return `content/written/nieuws/nl/${fileName}`;
 			default :
 				return `content/written/artikel/nl/${fileName}`
 		}
-	}
+	};
 
 	const ReadMore = ({ to, text }) => {
 		return (
@@ -47,7 +47,7 @@ function BlogCard ({ article, info, type, name }) {
 				</a>
 			</Link>
 		)
-	}
+	};
 
 	return (
 		<Link href={getProperUrl()}>

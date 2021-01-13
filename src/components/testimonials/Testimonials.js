@@ -7,7 +7,7 @@ import CardFadeAnimation from '@/animation/CardFadeAnimation'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.stories};
- }`
+ }`;
 
 function Preview ({ data, basePath }) {
 	return (

@@ -7,7 +7,7 @@ export default function t(path) {
     let translation = i18n.t(path);
 
     if (translation === undefined) {
-        console.log(`Missing: ${translation}`)
+        console.log(`Missing: ${translation}`);
         return path;
     }
 

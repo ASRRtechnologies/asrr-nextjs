@@ -8,11 +8,11 @@ import CardFadeAnimation from '@/animation/CardFadeAnimation'
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.services};
- }`
+ }`;
 
 function Preview ({data, cards}) {
 
-	const basePath = `content/service_page/nl`
+	const basePath = `content/service_page/nl`;
 
 	return (
 		<Wrapper>

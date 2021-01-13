@@ -1,11 +1,11 @@
-export const GA_TRACKING_ID = 'UA-90768292-6'
+export const GA_TRACKING_ID = 'UA-90768292-6';
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 export const pageview = (url) => {
     window.gtag('config', GA_TRACKING_ID, {
         page_path: url,
     })
-}
+};
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
 export const event = ({ action, category, label, value }) => {
@@ -14,6 +14,6 @@ export const event = ({ action, category, label, value }) => {
         event_label: label,
         value: value,
     })
-}
+};
 
-export const GTM_ID = 'GTM-MLCFDZD'
+export const GTM_ID = 'GTM-MLCFDZD';

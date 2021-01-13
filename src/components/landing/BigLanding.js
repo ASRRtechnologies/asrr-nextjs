@@ -8,11 +8,11 @@ import NavigationButton from '@/buttons/NavigationButton'
 
 const Wrapper = styled('div')`
         background: ${props => props.theme.landing.background};
- }`
+ }`;
 
 function BigLanding ({ title, text, button }) {
-	const darkmode = useTheme().dark
-	const landing = useRef('')
+	const darkmode = useTheme().dark;
+	const landing = useRef('');
 
  	// const setHeight = () => {
 	//         landing.current.style.minHeight = `${window.innerHeight}${-80}px`;

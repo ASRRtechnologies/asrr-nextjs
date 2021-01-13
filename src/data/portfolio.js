@@ -34,7 +34,7 @@ export const previewCases = [
 		text: 'cases.nwo.text',
 		id: 'nwo',
 	},
-]
+];
 
 export const portfolio = [
 	{
@@ -63,4 +63,4 @@ export const portfolio = [
 		image: aapjes,
 		href: "https://de-kleine-aapjes.vercel.app/"
 	}
-]
+];
