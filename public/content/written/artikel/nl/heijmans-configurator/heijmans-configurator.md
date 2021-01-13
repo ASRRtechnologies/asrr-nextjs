@@ -1,7 +1,7 @@
 ---
 language: nl
 title: heijmans-configurator
-type: Artikel
+type: Case
 info:
   date: January 10, 2021 12:20 AM
   client: Heijmans
