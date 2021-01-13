@@ -1,6 +1,6 @@
 ---
 language: nl
-title: Form
+title: form
 info:
   date: January 7, 2021 12:00 AM
   title: Het bouwen van een geautomatiseerde BIM-Configurator
@@ -32,6 +32,7 @@ landing:
   image_webp: form-landing.webp
   image: form-landing.jpg
   alt: Modern White Building Architecture
+  text_color: true
 article:
   - content: >-
       # Het probleem
