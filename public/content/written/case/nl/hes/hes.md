@@ -55,25 +55,11 @@ section:
       &nbsp;
 
 
-      1. **De Database:** De eerste stap is structuur aanbrengen in de Excel sheet. Een goede structuur biedt houvast, overzicht en duidelijkheid. We hebben een code geschreven die het bestaande Excel bestand kon uitlezen en op de gewenste manier kon structureren. 
+      1. **De Database:** De eerste stap is structuur aanbrengen in de Excel sheet. Een goede structuur biedt houvast, overzicht en duidelijkheid. We hebben een code geschreven die het bestaande Excel bestand kon uitlezen en op de gewenste manier kon structureren. &nbsp; &nbsp;
 
+      2. **De API:** Vervolgens zijn de verschillende acties die invloed kunnen hebben op de data losgetrokken, en is geanalyseerd op welk moment deze van toepassing zijn. Zo zijn er API calls geschreven waarmee een fabrieksmedewerker een specifiek onderdeel kan aftekenen, door eerst te kiezen voor de terminal nummer, dan het tanknummer, en vervolgens een gefilterde lijst ziet van de beschikbare onderdelen, met daarbij hun statussen. Er wordt bijgehouden welke medewerker iets aanpast, zodat altijd kan worden herleid waar acties vandaan komen. De medewerker kan dan voor een onderdeel aangeven waar deze zich bevindt in het proces. Vervolgens houdt de applicatie bij wat de status is van alle elementen, en laat zien wanneer een onderdeel, een hele tank of zelfs een hele terminal gereed is. Hierdoor werd een hoop werk weggehaald bij de administratieve medewerkers, en kan de verantwoordelijkheid liggen bij de mensen die over de onderdelen gaan. &nbsp; &nbsp;
 
-      &nbsp;
-
-
-      &nbsp;
-
-
-      1. **De API:** Vervolgens zijn de verschillende acties die invloed kunnen hebben op de data losgetrokken, en is geanalyseerd op welk moment deze van toepassing zijn. Zo zijn er API calls geschreven waarmee een fabrieksmedewerker een specifiek onderdeel kan aftekenen, door eerst te kiezen voor de terminal nummer, dan het tanknummer, en vervolgens een gefilterde lijst ziet van de beschikbare onderdelen, met daarbij hun statussen. Er wordt bijgehouden welke medewerker iets aanpast, zodat altijd kan worden herleid waar acties vandaan komen. De medewerker kan dan voor een onderdeel aangeven waar deze zich bevindt in het proces. Vervolgens houdt de applicatie bij wat de status is van alle elementen, en laat zien wanneer een onderdeel, een hele tank of zelfs een hele terminal gereed is. Hierdoor werd een hoop werk weggehaald bij de administratieve medewerkers, en kan de verantwoordelijkheid liggen bij de mensen die over de onderdelen gaan.
-
-
-      &nbsp;
-
-
-      &nbsp;
-
-
-      1. **Insights**: Doordat het een enorme set data is, kan er in een oogopslag niet veel gezegd worden over de status van het project door alleen te kijken naar de tabel waar alles in staat. Daarom hebben we met behulp van onze Business Insights expert een PowerBI dashboard opgezet. In dit dashboard worden verschillende zaken interactief weergegeven, gespitst op het management. Zo kan er worden gezien hoeveel vertraging er zit tussen de Planning en de Actuals, hoeveel staal er op welk punt in het proces zit en wat de status van elke terminal is. Dit alles zorgt ervoor dat er geen menselijke handelingen meer verricht hoeven te worden voor het genereren van rapportages. Verder krijgt het management real-time inzichten in de status van het gehele project, met highlights op key waarden.
+      3. **Insights**: Doordat het een enorme set data is, kan er in een oogopslag niet veel gezegd worden over de status van het project door alleen te kijken naar de tabel waar alles in staat. Daarom hebben we met behulp van onze Business Insights expert een PowerBI dashboard opgezet. In dit dashboard worden verschillende zaken interactief weergegeven, gespitst op het management. Zo kan er worden gezien hoeveel vertraging er zit tussen de Planning en de Actuals, hoeveel staal er op welk punt in het proces zit en wat de status van elke terminal is. Dit alles zorgt ervoor dat er geen menselijke handelingen meer verricht hoeven te worden voor het genereren van rapportages. Verder krijgt het management real-time inzichten in de status van het gehele project, met highlights op key waarden. &nbsp; &nbsp;
     media:
       images:
         - image_webp: case-cover.webp
