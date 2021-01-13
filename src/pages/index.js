@@ -12,8 +12,14 @@ import TechStack from '@/techstack/TechStack'
 import matter from 'gray-matter'
 import Testimonials from '@/testimonials/Testimonials'
 import { getAllArticles, getAllCases, getAllNews } from '../lib/api'
+import Application from '@/layout/Application'
 
 function Index ({ homepage, servicepage, basePath, allCases, allArticles, allNews }) {
+
+	const SEOProps = {
+		title:"ASRR - Home",
+		content:"ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
+	}
 
 	const header = useHeader();
 
@@ -27,8 +33,6 @@ function Index ({ homepage, servicepage, basePath, allCases, allArticles, allNew
 				project.title.toLowerCase() === 'hes'
 		})
 	};
-
-	getCases();
 
 	const getBlogs = () => {
 		return allArticles.filter(
@@ -44,7 +48,7 @@ function Index ({ homepage, servicepage, basePath, allCases, allArticles, allNew
 	};
 
 	return (
-		<>
+		<Application {...SEOProps}>
 			<BigLanding title={homepage.landing.title} text={homepage.landing.text} button={homepage.landing.button}
 						image={image}/>
 			<PreviewServices data={homepage.services_section} cards={servicepage}/>
@@ -55,7 +59,7 @@ function Index ({ homepage, servicepage, basePath, allCases, allArticles, allNew
 			<PreviewBlog data={homepage.blog_section} selectedBlogs={getBlogs()}/>
 			<Clients data={homepage.clients}/>
 			<Contact/>
-		</>
+		</Application>
 	)
 }
 

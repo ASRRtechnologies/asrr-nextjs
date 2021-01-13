@@ -33,7 +33,6 @@ const walkSync = function (dir, filelist) {
 			filelist = walkSync(dir + '/' + file, filelist)
 		} else {
 			if (file.endsWith('.md')) {
-				console.log(dir, file);
 				let post = {
 					directory: dir,
 					file: file,

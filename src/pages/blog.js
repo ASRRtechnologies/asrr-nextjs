@@ -4,8 +4,14 @@ import Contact from "@/contact/Preview";
 import {useHeader} from "../context/navigation/HeaderContext";
 import matter from 'gray-matter'
 import { getAllArticles } from '../lib/api'
+import Application from '@/layout/Application'
 
 function Portfolio({ data, allArticles}) {
+
+	const SEOProps = {
+		title:"ASRR - Blog",
+		content:"ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
+	}
 
 	//Todo add allNews to AllArticles array
 
@@ -17,10 +23,10 @@ function Portfolio({ data, allArticles}) {
 
 
 	return (
-		<>
+		<Application {...SEOProps}>
 			<BlogPage data={data} allBlogs={allArticles} />
 			<Contact/>
-		</>
+		</Application>
 	)
 }
 

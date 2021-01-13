@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Layout from '@/layout/Application'
+import Application from '@/layout/Application'
 import { getAllServices } from '../../lib/api'
 import matter from 'gray-matter'
 import CaseArticle from '@/written/CaseArticle'
@@ -8,6 +8,11 @@ import NL from '../../locales/nl'
 import {useHeader} from "../../context/navigation/HeaderContext";
 
 function Page ({data, basePath }) {
+
+	const SEOProps = {
+		title:`ASRR - Diensten - ${data.title}`,
+		content:`${data.landing.title}`
+	}
 
 	//Need to set locale in the static page
 	const i18n = useI18n();
@@ -18,9 +23,9 @@ function Page ({data, basePath }) {
 	}, []);
 
 	return (
-		<Layout>
+		<Application {...SEOProps}>
 			<CaseArticle project={data} basePath={basePath}/>
-		</Layout>
+		</Application>
 	)
 }
 

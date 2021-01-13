@@ -36,10 +36,7 @@ function Footer (props) {
 			} else {
 				response.json().then(function (object) {
 					console.log(object);
-					console.log(object.propertyErrors);
-					console.log(response);
 					enqueueSnackbar('user_notifications.contact.error.title', { error: true })
-
 				});
 				throw new Error(response.statusText)
 			}

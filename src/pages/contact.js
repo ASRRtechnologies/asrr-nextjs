@@ -2,17 +2,24 @@ import React, { useEffect } from 'react'
 import ContactPage from '../components/contact/Contact'
 import { useHeader } from '../context/navigation/HeaderContext'
 import matter from 'gray-matter'
+import Application from '@/layout/Application'
 
 function Contact ({ data }) {
+
+	const SEOProps = {
+		title:"ASRR - Contact",
+		content:"ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
+	}
+
 	const header = useHeader();
 	useEffect(() => {
 		header.setHeaderWhite(false)
 	}, []);
 
 	return (
-		<>
+		<Application {...SEOProps}>
 			<ContactPage data={data}/>
-		</>
+		</Application>
 	)
 }
 

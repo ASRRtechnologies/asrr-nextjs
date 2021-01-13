@@ -4,8 +4,14 @@ import Contact from '@/contact/Preview'
 import { useHeader } from '../context/navigation/HeaderContext'
 import CheckmarkServices from '@/services/CheckmarkServices'
 import matter from 'gray-matter'
+import Application from '@/layout/Application'
 
 function Diensten ({data}) {
+
+	const SEOProps = {
+		title:"ASRR - Diensten",
+		content:"ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
+	}
 
 	const header = useHeader();
 	useEffect(() => {
@@ -13,11 +19,11 @@ function Diensten ({data}) {
 	}, []);
 
 	return (
-		<>
+		<Application {...SEOProps}>
 			<CheckmarkServices data={data}/>
 			<ServicePage data={data}/>
 			<Contact/>
-		</>
+		</Application>
 	)
 }
 

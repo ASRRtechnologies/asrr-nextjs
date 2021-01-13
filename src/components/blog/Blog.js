@@ -13,7 +13,6 @@ function Blog ({ data, allBlogs }) {
 
 	const { page_title } = data;
 
-	console.log(allBlogs);
 
 	return (
 		<Wrapper className="no-landing">

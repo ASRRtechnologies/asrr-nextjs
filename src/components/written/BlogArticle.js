@@ -13,6 +13,7 @@ import {
 	TwitterIcon,
 	TwitterShareButton,
 } from 'react-share'
+import uuid from "react-uuid";
 
 const fadeDelay = 200;
 
@@ -121,7 +122,7 @@ function BlogArticle ({ project, basePath }) {
 
 					<div className="article-content">
 						{project.section.map(
-							({ content, media }) => <ArticleSection basePath={basePath} content={content} media={media}/>)}
+							({ content, media }) => <ArticleSection key={uuid()} basePath={basePath} content={content} media={media}/>)}
 					</div>
 
 				</div>
