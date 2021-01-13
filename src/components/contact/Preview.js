@@ -29,6 +29,7 @@ function Contact ({ title, className }) {
 		subheader: 'Contact',
 	};
 
+
 	return (
 		<Wrapper className={`contact-invitation-section ${className ? className : ''}`}>
 			<div className={`contact-preview ${title}`}>
