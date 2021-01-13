@@ -12,6 +12,7 @@ import TechStack from '@/techstack/TechStack'
 import matter from 'gray-matter'
 import Testimonials from '@/testimonials/Testimonials'
 import { getAllArticles, getAllCases, getAllNews } from '../lib/api'
+import Lighthouse from "@/lighthouse/Lighthouse";
 
 function Index ({ homepage, servicepage, basePath, allCases, allArticles, allNews }) {
 
@@ -21,14 +22,14 @@ function Index ({ homepage, servicepage, basePath, allCases, allArticles, allNew
 
 	useEffect(() => {
 		header.setHeaderWhite(false)
-	}, [])
+	}, []);
 
 	const getCases = () => {
 		return allCases.filter((project) => {
 			return project.title.toLowerCase() === 'form' || project.title.toLowerCase() === 'nwo' ||
 				project.title.toLowerCase() === 'hes'
 		})
-	}
+	};
 
 	getCases();
 
@@ -43,9 +44,7 @@ function Index ({ homepage, servicepage, basePath, allCases, allArticles, allNew
 
 		// let selectedBlogs = [...articles, ...news]
 
-	}
-
-	getBlogs()
+	};
 
 	return (
 		<>

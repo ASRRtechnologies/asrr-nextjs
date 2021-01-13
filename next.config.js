@@ -6,8 +6,8 @@ module.exports = withImages(withVideos({
         cfg.module.rules.push({
             test: /\.md$/,
             use: 'raw-loader',
-        })
+        });
         return cfg;
     }
-}))
+}));
 

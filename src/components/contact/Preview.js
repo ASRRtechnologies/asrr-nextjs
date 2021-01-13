@@ -34,7 +34,7 @@ function Contact ({ title, className }) {
 			<div className={`contact-preview ${title}`}>
 				<Title className={`${title} title-button`} header={titleObject.header} subHeader={titleObject.subheader}
 					   title={titleObject.title}/>
-				<Fade delay={100} direction="up">
+				<Fade triggerOnce delay={300} direction="up">
 					<DarkButton className={`button button-auto ${className}`}>
 						<Link href="/contact"><a>{i18n.t('buttons.contact')}</a></Link>
 					</DarkButton>
