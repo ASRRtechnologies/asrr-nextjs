@@ -4,18 +4,22 @@ import {useHeader} from "../context/navigation/HeaderContext";
 
 function Page({data, query}) {
 
+    const SEOProps = {
+        title:"ASRR - Home",
+        content:"ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
+    }
+
     const header = useHeader();
 
     useEffect(() => {
         header.setHeaderWhite(true)
     }, []);
 
-    return (<>
-
-        <Application>
+    return (
+        <Application {...SEOProps}>
 
         </Application>
-        </>
+
     )
 }
 

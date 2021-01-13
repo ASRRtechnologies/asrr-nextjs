@@ -1,6 +1,6 @@
 import React, { createContext, useState, useRef, useEffect } from 'react'
-// import rosetta from 'rosetta'
-import rosetta from 'rosetta/debug';
+import rosetta from 'rosetta'
+// import rosetta from 'rosetta/debug';
 
 const i18n = rosetta();
 

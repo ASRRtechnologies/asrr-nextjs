@@ -27,8 +27,6 @@ const Card = ({ data, basePath, route }) => {
 		)
 	};
 
-	console.log(data, 23);
-
 	return (
 		<Fade  fraction={0.4} damping={0.3} triggerOnce direction="up">
 			<Wrapper className="service-card">

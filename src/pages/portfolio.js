@@ -4,8 +4,14 @@ import Contact from "@/contact/Preview";
 import {useHeader} from "../context/navigation/HeaderContext";
 import matter from 'gray-matter'
 import { getAllCases } from '../lib/api'
+import Application from '@/layout/Application'
 
 function Portfolio({basePath, data, allCases}) {
+
+    const SEOProps = {
+        title:"ASRR - Portfolio",
+        content:"ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
+    }
 
     const header = useHeader();
 
@@ -14,10 +20,10 @@ function Portfolio({basePath, data, allCases}) {
     }, []);
 
     return (
-        <>
+        <Application {...SEOProps}>
             <PortfolioPage data={data} allProjects={allCases}/>
             <Contact/>
-        </>
+        </Application>
     )
 }
 
