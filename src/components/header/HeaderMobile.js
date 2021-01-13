@@ -108,7 +108,7 @@ function HeaderMobile ({ className }) {
 						<Link href="/blog"><a onClick={closeMenu}
 											  className="header-mobile-text">{i18n.t('header.blog')}</a></Link>
 
-						<NavigationButton onClick={closeMenu} title="Contact ons" to="/contact"/>
+						<NavigationButton onClick={closeMenu} title="Contact" to="/contact"/>
  						{/*<LanguageMobile/>*/}
 
 					</div>

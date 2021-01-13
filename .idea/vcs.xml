@@ -5,6 +5,7 @@
       <list>
         <option value="master" />
         <option value="production" />
+        <option value="main" />
       </list>
     </option>
   </component>
