@@ -3,7 +3,8 @@ language: nl
 title: home
 landing:
   title: Innovative Software Development
-  text: Verantwoordelijk voor het bouwen van next-level software - snel en efficient.
+  text: Uw partner voor het bouwen van next-level software - snel, betrouwbaar en
+    efficient.
   image_webp: ""
   image: ""
   alt: ""
@@ -75,8 +76,8 @@ technologies_section:
       alt: Nextjs Logo
 portfolio_section:
   title: Wat we al hebben gedaan
-  subheader: Portoflio
-  header: Neem een kijkje bij onze voorgaande projecten
+  subheader: Portfolio
+  header: Bekijk onze voorgaande projecten
   button:
     title: Ga naar portfolio
     url: /portfolio
@@ -159,8 +160,8 @@ blog_section:
     title: Ga naar blog
     url: /blog
 clients:
-  title: Deze klanten gingen u voor.
-  header: Vetrouwd door
+  title: Deze klanten gingen u voor
+  header: " "
   subheader: Bent u de volgende?
 button: Ga naar blog
 ---
