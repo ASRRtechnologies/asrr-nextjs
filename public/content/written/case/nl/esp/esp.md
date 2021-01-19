@@ -17,6 +17,8 @@ card:
   image_webp: esp-cover.webp
   image: esp-cover.jpg
   alt: Skyscrapers from below
+  text: Een website om zowel de business als de techniek aan te spreken met
+    verschillende marketing funnels
 landing:
   title: Een professionele website
   image_webp: esp-landing.webp
@@ -24,10 +26,16 @@ landing:
   alt: Businessman in front of building
 section:
   - content: >-
-      # Een website om IT'ers aan te trekken
+      # Een website om IT en Business aan te trekken
 
 
       ESP is een consultancy bureau dat zich specialiseert in het plaatsen van professionals in de IT wereld. In de huidige markt is het cruciaal wat voor indruk er achtergelaten wordt bij potentiële werknemers. Daarom besloot ESP ons te benaderen om een website te bouwen met de laatste foefjes op gebied van web development. 
+
+
+      &nbsp;&nbsp;
+
+
+      De website moest verschillende "funnels" krijgen, waarbij er verschillende landingspaginas kunnen worden voorgeschoteld, op basis van wie de doelgroep is.
 
 
       &nbsp;&nbsp;
