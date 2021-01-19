@@ -26,7 +26,8 @@ card:
   image_webp: case-image.webp
   alt: Modern Building
   client: Form Architectuur & Engineering
-  text: ""
+  text: Aansturen van werkprogramma met een custom wrapper. Data-extractie naar
+    onze cloud om een enterprise grade service te bouwen.
   url: /portfolio/form
   title: Het bouwen van een geautomatiseerde BIM-Configurator
   type:
