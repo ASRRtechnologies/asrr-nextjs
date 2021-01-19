@@ -121,7 +121,7 @@ testimonials_section:
       company: Ministerie van Financiën c.q. Belastingdienst/Douane Nederland
 quality_section:
   title: Waarom ASRR?
-  header: Waarom zou u voor ASRR moeten kiezen
+  header: Wij focussen ons op de volgende kernwaarden
   subheader: Over ASRR
   qualities:
     - quality: Expertise
