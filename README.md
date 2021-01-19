@@ -21,7 +21,7 @@ Repository that houses the ASRR Website. A progressive web app built on NextJS a
 
 ## Environments
 
-|   | Master | Production |
+|   | Production | CMS Staging |
 | ------------- | ------------- |------------- |
 |  url | https://asrr.nl  | https://asrr-next.netlify.com |
 | hosting  | Vercel  | Netlify |
