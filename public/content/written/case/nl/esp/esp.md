@@ -72,8 +72,8 @@ section:
       De website is [hier](https://espconsultancy.nl) te vinden. Disclaimer: design is volledig bepaald door de klant en daardoor niet in stijl ASRR, er kan ook gekozen worden voor een hands-on aanpak waarbij ASRR een design aflevert dat in onze optiek goed in de markt past.
     media:
       images:
-        - image_webp: esp-example.webp
-          image: esp-example.jpg
+        - image_webp: esp-example-safari.webp
+          image: esp-example-safari.jpg
           alt: Sneak peak of ESP website
           description: Screenshot of the website
           reference: https://espconsultancy.nl
