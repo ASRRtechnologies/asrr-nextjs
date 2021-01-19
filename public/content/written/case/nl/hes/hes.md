@@ -15,6 +15,8 @@ card:
   image_webp: case-cover.webp
   image: case-image.png
   alt: Dashboard overview of application
+  text: Van raw business data naar business insights. Verantwoordelijkheden bij de
+    mensen die daarover gaan.
 landing:
   title: Procesversnelling bij een petro-gigant
   image_webp: hes-landing.webp
