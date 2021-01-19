@@ -16,14 +16,14 @@ card:
   title: Een website voor de kleintjes
   image_webp: aapjes-card.webp
   image: aapjes-card.jpg
-  alt: Skyscrapers from below
+  alt: Crayons
   text: Een goede website hoeft niet veel te kosten. Snel, krachtig en modern met
     groeimogelijkheden.
 landing:
   title: Een vrolijke en frisse nieuwe website
   image_webp: aapjes-cover.webp
   image: aapjes-cover.jpg
-  alt: Businessman in front of building
+  alt: Playground
 section:
   - content: >-
       # Een website voor de kleintjes
