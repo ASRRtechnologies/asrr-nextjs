@@ -8,7 +8,9 @@ info:
   writtenType:
     - tag: Artikel
   tag:
-    - tag: Artikel
+    - tag: Full stack Development
+    - tag: Expertise on demand
+    - tag: Design
   author: Re-Angelo Jarvis
 card:
   title: Heijmans/FORM 3D Woningconfigurator
@@ -32,7 +34,7 @@ section:
       ## Een VR Ready, 3D omgeving om online uw toekomstige huis te configureren.
 
 
-      Waar hebben we voor gezorgd?
+      ### Waar hebben we voor gezorgd?
 
 
       &nbsp;
@@ -49,12 +51,16 @@ section:
           description: De online omgeving.
           alt: Webapplicatie Huis Configurator
       videos: []
-  - content: De applicatie is gebouwd op een van onze NextJS applicaties. De
-      applicatie onttrekt data uit een MongoDB database. De prijzen worden in
-      real-time berekend op basis van de gekozen opties. Als de klant eenmaal
+  - content: >-
+      De applicatie is gebouwd op een van onze **`NextJS`** applicaties. De
+      applicatie onttrekt data uit een **`MongoDB`** database. De prijzen worden
+      in real-time berekend op basis van de gekozen opties. Als de klant eenmaal
       klaar is met configureren, wordt de configuratie opgeslagen. De klant
       krijgt dan een brochure per mail met daarin de specificaties van de
       gekozen woning. Verder wordt er een link toegevoegd waarmee de
       configuratie weer opgevraagd kan worden, om te laten zien aan de
       kopersbegeleider, of zelf aan relaties van de koper.
+
+
+      Een publieke demo van een versie opgezet voor FORM is te [hier](https://configurator.form.asrr.nl/projects/form-2020/1) te vinden.
 ---
