@@ -3,7 +3,8 @@
   <component name="GithubSharedProjectSettings">
     <option name="branchProtectionPatterns">
       <list>
-        <option value="staging" />
+        <option value="cms-staging" />
+        <option value="production" />
       </list>
     </option>
   </component>

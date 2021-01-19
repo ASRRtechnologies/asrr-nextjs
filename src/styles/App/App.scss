@@ -43,6 +43,23 @@ a{
   text-decoration: none;
 }
 
+.cookie-banner{
+  max-width: 90%;
+  p{
+    font-weight: lighter;
+    display: inline-block;
+  }
+
+  a{
+    text-decoration: underline $primary-color;
+    color: white;
+    &:hover{
+      color: $primary-color;
+    }
+  }
+
+}
+
 //Landing page fonts
 .font-landing-title {
   @include font-size(3rem);

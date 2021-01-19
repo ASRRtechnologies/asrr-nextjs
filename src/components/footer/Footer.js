@@ -75,15 +75,6 @@ function Footer (props) {
 						<AnimatedLink text="header.contact" to="/contact"/>
 					</div>
 
-					<div className="grid">
-						<h1 className="font-subheader">{i18n.t('footer.information')}</h1>
-
-						<a href="/assets/documents/file.pdf" target="_blank" rel="noopener noreferrer"
-						   className="animated-link-light text">{i18n.t('footer.policy')}
-						</a>
-
-					</div>
-
 					<div className="grid grid-contact">
 						<h1 className="font-subheader">Contactinformatie</h1>
 						<p>ASRR Tech</p>
@@ -119,6 +110,19 @@ function Footer (props) {
 						<a href="https://goo.gl/maps/fZqhC9FUVTpiEiCb7" target="_blank" rel="noopener noreferrer"
 						   className="animated-link-light font-general bold">
 							Plan route
+						</a>
+
+					</div>
+
+					<div className="grid">
+						<h1 className="font-subheader">{i18n.t('footer.information')}</h1>
+
+						<a href="/assets/documents/algemene-voorwaarden-asrr.pdf" target="_blank" rel="noopener noreferrer"
+						   className="animated-link-light text">Algemene voorwaarden
+						</a>
+
+						<a href="/assets/documents/privacy-asrr.pdf" target="_blank" rel="noopener noreferrer"
+						   className="animated-link-light text">Privacybeleid
 						</a>
 
 					</div>

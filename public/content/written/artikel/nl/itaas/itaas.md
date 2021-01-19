@@ -7,7 +7,7 @@ info:
   title: IT Teams as a Service (ITTAAS)
   author: Amar Ramdas
   tag:
-    - tag: Artikel
+    - tag: Expertise on demand
 card:
   title: IT Teams as a Service (ITTAAS)
   text: Wat zijn de voordelen van dynamische externe IT teams

@@ -15,6 +15,13 @@ info:
   tag:
     - tag: Full stack Development
     - tag: Expertise on demand
+  technologies:
+    - technologies: BIM
+    - technologies: Revit API
+    - technologies: ReactJS
+    - technologies: Kubernetes
+    - technologies: Spring Boot
+    - technologies: C#
 card:
   image_webp: case-image.webp
   alt: Modern Building
