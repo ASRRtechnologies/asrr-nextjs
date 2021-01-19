@@ -4,7 +4,7 @@ backend:
   branch: cms-staging
 media_folder: public/img
 public_folder: img
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 display_url: https://asrr.nl
 logo_url: https://asrr.nl/assets/images/logo/asrr.svg
 collections:
