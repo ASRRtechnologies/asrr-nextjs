@@ -105,6 +105,6 @@ section:
         - image_webp: esp-example-safari.webp
           image: esp-example-safari.jpg
           alt: Sneak peak of ESP website
-          description: Screenshot of the website
+          description: Screenshot van de website
           reference: https://espconsultancy.nl
 ---
