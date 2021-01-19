@@ -14,17 +14,17 @@ landing:
 services_section:
   title: Wat we doen
   header: ASRR vormt de brug tussen IT en business met flexibele, robuuste teams
-    die meeschalen met wat u nodig heeft.
+    die inspelen op wat u nodig heeft.
   subheader: Onze Diensten
   services:
     - image_webp: scaleable-software-sqaure.webp
       image: scaleable-software-sqaure.jpg
       alt: IT Teams as a Service
       title: IT Teams as a Service
-      text: Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte
-        IT-afdeling tijdelijk aan jouw bedrijf toevoegt. Hierbij maak je je niet
-        druk over of je wel-of-niet de juiste expertises hebt aangenomen. De
-        modulaire aanpak van ASRR combineert de snelheid en solide bouw van een
+      text: Met een ASRR IT-team voeg je een volledig ingewerkte IT-afdeling tijdelijk
+        of langdurig toe aan je bedrijf. Hierbij maak je je niet druk over of je
+        wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak
+        van ASRR combineert de snelheid en solide bouw van een
         gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’
         applicatie op maat. Je wijkt niet af van je huidige processen en houdt
         toch helder zicht op de tijdlijn, productie en oplevering.
