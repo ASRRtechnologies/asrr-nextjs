@@ -26,7 +26,8 @@ card:
   image_webp: case-image.webp
   alt: Modern Building
   client: Form Architectuur & Engineering
-  text: ""
+  text: Aansturen van werkprogramma met een custom wrapper. Data-extractie naar
+    onze cloud om een enterprise grade service te bouwen.
   url: /portfolio/form
   title: Het bouwen van een geautomatiseerde BIM-Configurator
   type:
@@ -183,7 +184,7 @@ section:
       images:
         - image_webp: form-2.webp
           image: form-2.png
-          description: Login scherm van de Configurator dashboard
+          description: Login scherm van het Configurator dashboard
           alt: Configurator Login
   - content: Als de request eenmaal voltooid is kan de klant de bouwtekeningen met
       een druk op de knop downloaden.
@@ -192,7 +193,7 @@ section:
         - image_webp: form-3.webp
           image: form-3.png
           alt: Dashboard
-          description: Gesimplificeerde versie van de configurator dashboard
+          description: Gesimplificeerde versie van het configurator dashboard
   - content: >-
       ### De Conclusie
 
