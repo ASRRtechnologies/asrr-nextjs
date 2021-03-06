@@ -94,18 +94,18 @@ const button = {
 		light: '0px 10px 15px rgba(0,0,0,0.23)',
 	},
 
-	darkButton: {
+	lightButton: {
 		background: black,
 		font: '#fff',
 		shadow: '0px 10px 15px rgba(0,0,0,0.23)',
 		hover: '#4a4a4a',
 	},
 
-	lightButton: {
+	darkButton: {
 		background: white,
-		font: fonts.inverse.dark,
+		font: `${fonts.inverse.dark}`,
 		shadow: '0px 10px 15px rgba(0,0,0,0.23)',
-		hover: '#d7d7d7',
+		hover: '#f5f5f5',
 	},
 
 };

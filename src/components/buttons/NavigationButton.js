@@ -5,8 +5,8 @@ import useI18n from '../../hooks/use-i18n'
 
 const Wrapper = styled('div')`
         background-color: ${props => props.theme.button.background};
-        box-shadow: ${props => props.theme.button.shadow};
-        p, a{color: ${props => props.theme.button.font}} !important;
+        //box-shadow: ${props => props.theme.button.shadow};
+        p, a{color: ${props => props.theme.button.font }!important} ;
         &:hover{background-color: ${props => props.theme.button.hover};}
         `;
 

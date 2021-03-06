@@ -9,6 +9,7 @@ import Moon from '@/icons/Moon'
 import { useHeader } from '../../context/navigation/HeaderContext'
 import NL from '../../locales/nl'
 import NavigationButton from '../buttons/NavigationButton'
+import NavigationButtonWhite from "@/buttons/NavigationButtonWhite";
 
 const Wrapper = styled('nav')`
         background: ${props => props.visible ? props.theme.navigation.background : "transparent"};
@@ -25,16 +26,6 @@ const Wrapper = styled('nav')`
           color: ${props => props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font};
         }
         
-        .button{
-          p, a {color: ${props => props.visible ? props.theme.button.font : props.headerWhite ? props.theme.button.light.font : props.theme.button.font};}
-           background-color: ${props => props.visible ? props.theme.button.background : props.headerWhite ? props.theme.button.light.background : props.theme.button.background};
-           box-shadow: ${props => props.visible ? props.theme.button.shadow : props.headerWhite ? props.theme.button.light.shadow : props.theme.button.shadow};
-           &:hover{
-              background-color: ${props => props.visible ? props.theme.button.hover : props.headerWhite ? props.theme.button.light.hover : props.theme.button.hover};
-              box-shadow: none;
-          ;}
-        }
-          
 `;
 
 function Header({className}) {
@@ -60,17 +51,33 @@ function Header({className}) {
         const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         const scrolled = (winScroll / height) * 100;
         progress.current.style.width = scrolled + "%";
-
     };
+
+    const setSelectedLanguage = () => {
+        i18n.locale('nl', NL)
+    };
+
+    const renderButton = () => {
+
+        //If page needs header in white and at top of page (not visible) render white
+        if(header.headerWhite && !visible) {
+            return  <NavigationButtonWhite title="Contact" to="/contact"/>
+        }
+
+        if(header.headerWhite && visible) {
+            return <NavigationButton title="Contact" to="/contact"/>
+        }
+
+        else {
+            return <NavigationButton title="Contact" to="/contact"/>
+        }
+
+    }
 
     useEffect(() => {
         window.addEventListener('scroll', headerPosition);
         window.addEventListener('scroll', headerProgress);
     });
-
-    const setSelectedLanguage = () => {
-        i18n.locale('nl', NL)
-    };
 
     useEffect(() => {
         setSelectedLanguage()
@@ -94,7 +101,9 @@ function Header({className}) {
                 </div>
 
                 <div className="header-actions">
-                    <NavigationButton title="Contact" to="/contact"/>
+
+                    {renderButton()}
+
                     {/*<Language/>*/}
                     <span className="icon" onClick={toggle}>
                         {themeState.dark ? <Sun/> : <Moon/>}
