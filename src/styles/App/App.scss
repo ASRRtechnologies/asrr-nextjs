@@ -60,62 +60,114 @@ a{
 
 }
 
-//Landing page fonts
+//Landing page fontsfolder
 .font-landing-title {
   @include font-size(3rem);
 }
 
-.font-landing-text {
-  @include font-size(1rem);
-  @include margin(1.5rem 0);
-}
-
-.font-title{
+h1{
   @include font-size(2.5rem);
-}
-
-.font-header{
-  @include font-size(1.5rem);
-}
-
-.font-subheader{
-  @include font-size(1.2rem);
-}
-
-.font-reference {
-  @include rfs(12px);
-  @include margin-top(12px);
-}
-
-.font-card-tags{
-  @include font-size(0.8rem);
-}
-
-.font-card-title{
-  @include font-size(1.3rem);
   @include margin-bottom(1rem);
 }
 
-.font-card-header{
-  @include font-size(0.9rem);
-  @include margin-bottom(0.3rem);
-}
-
-.font-card-subheader{
-  @include font-size(0.8rem);
-}
-
-.font-card-read-more{
-  @include font-size(1rem);
-  @include margin-top(1.3rem);
-  font-weight: bold;
-}
-
-.font-general{
-  @include font-size(1.2rem);
+h2{
+  @include font-size(1.5rem);
   @include margin-bottom(1rem);
   font-weight: normal;
 }
+
+h3{
+  @include font-size(1.2rem);
+  @include margin-bottom(1rem);
+}
+
+h4{
+  @include font-size(1rem);
+  @include margin-bottom(1rem);
+  font-weight: normal;
+}
+
+h5{
+  @include font-size(0.8rem);
+  @include margin-bottom(1rem);
+  font-weight: normal;
+
+}
+
+p{
+  @include font-size(1.15rem);
+  @include margin-bottom(1rem);
+}
+
+a{
+  @include font-size(1.3rem);
+}
+
+.navigation-font{
+  @include font-size(1rem);
+}
+
+.primary-color{
+  color: $primary-color !important;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+
+
+//.font-landing-text {
+//  @include font-size(1rem);
+//  @include margin(1.5rem 0);
+//}
+//
+//.font-title{
+//  @include font-size(2.5rem);
+//}
+//
+//.font-header{
+//  @include font-size(1.5rem);
+//}
+//
+//.font-subheader{
+//  @include font-size(1.2rem);
+//}
+//
+//.font-reference {
+//  @include rfs(12px);
+//  @include margin-top(12px);
+//}
+//
+//.font-card-tags{
+//  @include font-size(0.8rem);
+//}
+//
+//.font-card-title{
+//  @include font-size(1.3rem);
+//  @include margin-bottom(1rem);
+//}
+//
+//.font-card-header{
+//  @include font-size(0.9rem);
+//  @include margin-bottom(0.3rem);
+//}
+//
+//.font-card-subheader{
+//  @include font-size(0.8rem);
+//}
+//
+//.font-card-read-more{
+//  @include font-size(1rem);
+//  @include margin-top(1.3rem);
+//  font-weight: bold;
+//}
+//
+//.font-general{
+//  @include font-size(1.2rem);
+//  @include margin-bottom(1rem);
+//  font-weight: normal;
+//}
 
 //Used for titles of paragraphs / articles
 

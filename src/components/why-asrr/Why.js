@@ -27,11 +27,11 @@ function Why ({ data }) {
 							return (
 								<span onClick={() => setCurrentQuality(i)}
 									  className={`${i === currentQuality && 'selected-line'}`}>
-									<p className={`small-header ${!darkmode
+									<h2 className={`${!darkmode
 										? 'animated-link-dark'
 										: 'animated-link-light'}`}>
 										{quality}
-									</p>
+									</h2>
 								</span>
 							)
 						})}
@@ -40,7 +40,7 @@ function Why ({ data }) {
 
 				<Fade triggerOnce delay={600}>
 					<div className="why-asrr-text why-asrr-center">
-						<p className="text">{qualities[currentQuality].description}</p>
+						<p>{qualities[currentQuality].description}</p>
 					</div>
 				</Fade>
 

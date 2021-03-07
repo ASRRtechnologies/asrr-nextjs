@@ -15,7 +15,7 @@ function NavigationButton ({ className, title, to, custom, ...props }) {
 	return (
 		<>
 			<Wrapper {...props} className={`button ${className}`}>
-				<Link href={to}><a>{title}</a></Link>
+				<Link href={to}><a className="navigation-font">{title}</a></Link>
 			</Wrapper>
 		</>
 	)
