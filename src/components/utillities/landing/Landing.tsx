@@ -4,27 +4,30 @@ import {mq, styles} from "@/utillities/styles/global_variabels";
 import {LandingProps} from "@/utillities/landing/types";
 import ImageLanding from "@/utillities/landing/sub-components/ImageLanding";
 import TextLanding from "@/utillities/landing/sub-components/TextLanding";
+import Section from "@/utillities/section/Section";
 
-const StyledLanding = styled.div`
+const StyledLanding = styled(Section)`
   width: 100vw;
-  min-height: 70vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: ${styles.tertiaryColor};
-  padding: 100px;
-  
+
+  //TODO add dynamic height from header
+  padding: 80px 25px;
+
   h1, p {
     color: ${styles.whiteFont};
   }
   
   h1{
-    word-spacing: 100vw;
-    max-width: 500px;
-  }
-  
-  ${mq["xsm"]}{
     
+  }
+
+
+  ${mq["xsm"]}{
+
   }
   
 `

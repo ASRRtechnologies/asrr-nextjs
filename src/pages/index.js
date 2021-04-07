@@ -66,8 +66,6 @@ function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}
                 )}
             />
 
-            <ImageLanding image={image} title={homepage.landing.title} text={homepage.landing.text}
-                          button={homepage.landing.button}/>
             <PreviewServices data={homepage.services_section} cards={servicepage}/>
             <TechStack basePath={basePath} data={homepage.technologies_section}/>
             <PreviewPortfolio data={homepage.portfolio_section} selectedProjects={getCases()}/>

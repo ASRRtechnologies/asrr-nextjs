@@ -1,9 +1,10 @@
 import React from "react";
 import {ButtonGroup} from "@/utillities/button-group";
+import {StandardProps} from "@/utillities/global_types";
 
 declare type LandingType = "text-landing" | "image-landing";
 
-export interface BaseLandingProps {
+export interface BaseLandingProps extends StandardProps{
     title: string,
     text: string,
     button?: React.ReactElement<typeof ButtonGroup>,

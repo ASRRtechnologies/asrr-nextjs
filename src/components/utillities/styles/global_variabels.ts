@@ -14,6 +14,8 @@ export const styles = {
     //Borders
     buttonBorderRadius: "5px"
 
+    //Padding of Section
+
 }
 
 

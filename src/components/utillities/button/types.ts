@@ -1,17 +1,24 @@
 /**
  * List of types of buttons needed to render the proper button
  */
+import {StandardProps} from "@/utillities/global_types";
+
 declare type ButtonType = "navigation-button" | "action-button";
 
 /**
  * List of types of buttons needed to render the proper button
  */
-export declare type ButtonStyle = "default" | "outlined" | "disabled" | "hover-disabled-outlined" | "hover-disabled-default";
+export declare type ButtonStyle =
+    "default"
+    | "outlined"
+    | "disabled"
+    | "hover-disabled-outlined"
+    | "hover-disabled-default";
 
 /**
  * Interface that all buttons inherit
  */
-export interface BaseButtonProps {
+export interface BaseButtonProps extends StandardProps {
     text: string,
     type: ButtonType,
     buttonStyle?: ButtonStyle
