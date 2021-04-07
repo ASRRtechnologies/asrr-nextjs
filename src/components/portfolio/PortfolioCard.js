@@ -45,17 +45,17 @@ function PortfolioCard ({ project, fileName, info }) {
 								{info.tag && info.tag.map(({ tag }) => {
 									return (
 										<span>
-											<h1 className="font-card-tags">{tag}</h1>
+											<h5>{tag}</h5>
 										</span>
 									)
 								})}
 							</div>
-							<h2 className="font-card-title">{title}</h2>
-							{text && <h3 className="font-general">{text}</h3>}
+							<h2 className="bold">{title}</h2>
+							{text && <p>{text}</p>}
 						</div>
 
 						<span>
-							<h4 className="font-card-header">{info.client}</h4>
+							<h4>{info.client}</h4>
 							<ReadMore to={url}/>
 						</span>
 					</div>

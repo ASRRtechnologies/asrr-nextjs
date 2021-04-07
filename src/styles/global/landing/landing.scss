@@ -2,7 +2,7 @@
   @include flex(flex-start, center, column);
   @include size(100vw, auto);
   padding: 0 $padding-pc;
-  min-height: 100vh;
+  min-height: 80vh;
 
 }
 
@@ -19,13 +19,16 @@
   max-width: $max-width;
   min-height: auto;
   box-sizing: content-box;
+  z-index: 20;
 
   h1 {
     max-width: 800px;
+    color: white !important;
   }
 
   p{
     max-width: 600px;
+    color: white !important;
   }
 
 }
