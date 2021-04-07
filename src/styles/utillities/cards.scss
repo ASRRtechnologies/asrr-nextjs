@@ -2,22 +2,22 @@
   display: grid;
   @include size(100%, auto);
   grid-template-columns: repeat(3,minmax(25%,1fr));
+  grid-auto-rows: 1fr;
   grid-gap: 50px;
   max-width: $max-width;
+
+  h5{
+    margin: 0;
+  }
+
 }
 
 .card-rectangle{
   @include flex(flex-start, flex-start, column);
-  height: auto;
+  height: 100%;
   border-radius: 5px;
   width: 100%;
-  min-height: 800px;
   transition: ease-in-out transform 300ms;
-
-  &:hover{
-    transform: scale(1.03);
-    transition: ease-in-out transform 300ms;
-  }
 
 }
 
@@ -56,12 +56,13 @@
   @include margin-bottom(10px);
 
   span{
-    @include padding(4px);
+    @include padding(6px);
     @include margin-right(10px);
-    display: inline-block;
-    border: 2px solid $primary-color;
-    border-radius: 5px;
     @include margin-bottom(15px);
+    display: inline-block;
+    background-color: $primary-color;
+    border-radius: 5px;
+    color: white !important;
 
     //&:hover{
     //  transition: 300ms ease-in-out all;

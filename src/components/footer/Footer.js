@@ -76,7 +76,7 @@ function Footer (props) {
 					</div>
 
 					<div className="grid grid-contact">
-						<h1 className="font-subheader">Contactinformatie</h1>
+						<h3>Contactinformatie</h3>
 						<p>ASRR Tech</p>
 
 						<span>
@@ -115,7 +115,7 @@ function Footer (props) {
 					</div>
 
 					<div className="grid">
-						<h1 className="font-subheader">{i18n.t('footer.information')}</h1>
+						<h3>{i18n.t('footer.information')}</h3>
 
 						<a href="/assets/documents/algemene-voorwaarden-asrr.pdf" target="_blank" rel="noopener noreferrer"
 						   className="animated-link-light text">Algemene voorwaarden
@@ -128,7 +128,7 @@ function Footer (props) {
 					</div>
 
 					<div className="grid">
-						<h1 className="font-subheader">Volg ons</h1>
+						<h3>Volg ons</h3>
 
 						<div className="footer-social-media">
 							<a className="footer-icons" href="https://www.linkedin.com/company/asrr" target="_blank"

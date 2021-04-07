@@ -10,7 +10,7 @@ function ServiceCards ({ data, basePath, bullets }) {
 			<span className="card-round-image">
 				<PictureFallback image={`${basePath}/${image_webp}`} fallbackImage={`${basePath}/${image}`} alt={alt}/>
 			</span>
-			<h1 className="theme-font font-card-title">{title}</h1>
+			<h2 className="theme-font bold">{title}</h2>
 			{bullets ? (
 				<ul>
 					{bullet_points.map(({bullet}) => <li><p className="font-general">✔{bullet}</p></li>)}

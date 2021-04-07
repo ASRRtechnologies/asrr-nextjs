@@ -1,5 +1,5 @@
-$article-max-width: 1000px;
-$article-spacing: 100px;
+$article-max-width: 800px;
+$article-spacing: 50px;
 
 .article-body {
   @include flex(flex-start, flex-start, row);
@@ -19,7 +19,6 @@ $article-spacing: 100px;
 .article-content {
   @include flex(flex-start, center, column);
   @include size(100%, 100%);
-  @include margin-left(100px);
 
   //Remove margin of last paragraph
   & .article-section:last-of-type{
@@ -45,7 +44,7 @@ $article-spacing: 100px;
 
 .article-markdown {
   @include size(100%, 100%);
-  @include margin-bottom(100px);
+  @include margin-bottom(50px);
 
   h1{
     //Font title
@@ -69,7 +68,7 @@ $article-spacing: 100px;
   }
 
   p {
-    @include font-size(1rem);
+    @include font-size(1.4rem);
     white-space: pre-wrap;
     overflow-wrap: break-word;
   }

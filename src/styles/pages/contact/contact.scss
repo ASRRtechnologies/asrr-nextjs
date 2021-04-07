@@ -6,7 +6,6 @@
   @include size(100%, 100%);
   max-width: $max-width;
 
-
   .form {
     @include flex(space-between, flex-start, column);
     @include size(100%, 100%);
