@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import {styles} from "@/styles/global";
+import {styles} from "@/utillities/styles/global_variabels";
 import {ImageLandingProps} from "@/utillities/landing/types";
 import Image from "next/image";
 import React from "react";

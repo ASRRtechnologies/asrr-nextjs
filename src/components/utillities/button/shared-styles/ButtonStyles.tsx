@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import {css} from '@emotion/react'
-import {styles} from "@/styles/global";
+import {styles} from "@/utillities/styles/global_variabels";
 
 export const BaseButtonStyle = css`
   width: auto;
   height: auto;
-  padding: 16px 20px;
+  padding: 12px 16px;
   text-align: center;
   cursor: pointer;
 
@@ -19,6 +19,7 @@ export const BaseButtonStyle = css`
 export const ButtonStyleDefault = css`
   background-color: ${styles.primaryColor} !important;
   color: ${styles.whiteFont};
+  
 `
 
 export const ButtonStyleOutlined = css`

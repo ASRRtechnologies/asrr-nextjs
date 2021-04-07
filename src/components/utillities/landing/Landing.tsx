@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "@emotion/styled";
-import {styles} from "@/styles/global";
+import {mq, styles} from "@/utillities/styles/global_variabels";
 import {LandingProps} from "@/utillities/landing/types";
 import ImageLanding from "@/utillities/landing/sub-components/ImageLanding";
 import TextLanding from "@/utillities/landing/sub-components/TextLanding";
@@ -20,9 +20,13 @@ const StyledLanding = styled.div`
   
   h1{
     word-spacing: 100vw;
-    width: 500px;
+    max-width: 500px;
   }
-
+  
+  ${mq["xsm"]}{
+    
+  }
+  
 `
 
 function Landing(props: LandingProps) {

@@ -65,6 +65,12 @@ a{
   @include font-size(3rem);
 }
 
+a, p {
+  @include font-size(1rem);
+  @include margin-bottom(2rem);
+  text-decoration: none;
+}
+
 h1, .h1{
   @include font-size(3.5rem);
   @include margin-bottom(1rem);
@@ -92,15 +98,6 @@ h5{
   @include margin-bottom(1rem);
   font-weight: normal;
 
-}
-
-p{
-  @include font-size(1.15rem);
-  @include margin-bottom(1rem);
-}
-
-a{
-  @include font-size(1.3rem);
 }
 
 .navigation-font{

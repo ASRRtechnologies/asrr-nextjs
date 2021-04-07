@@ -2,7 +2,7 @@
 import React from 'react';
 import {ButtonGroupProps} from "@/utillities/button-group/types";
 import styled from "@emotion/styled";
-import {styles} from "@/styles/global";
+import {styles} from "@/utillities/styles/global_variabels";
 import css, {SerializedStyles} from "@emotion/css";
 
 const StyledButtonGroup = styled.div`
