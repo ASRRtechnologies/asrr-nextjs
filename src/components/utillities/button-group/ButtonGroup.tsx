@@ -3,7 +3,7 @@ import React from 'react';
 import {ButtonGroupProps} from "@/utillities/button-group/types";
 import styled from "@emotion/styled";
 import {styles} from "@/styles/global";
-import css from "@emotion/css";
+import css, {SerializedStyles} from "@emotion/css";
 
 const StyledButtonGroup = styled.div`
   width: 100%;
@@ -16,8 +16,8 @@ const ButtonsLeft = css`
   flex-direction: row;
   justify-content: flex-start;
 
-  &:first-child {
-    margin-right: 10px;
+  & > :first-child {
+    margin-right: 20px;
   }
 `
 
@@ -32,7 +32,8 @@ const ButtonsRight = css`
 
 const ButtonsCenter = css`
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+   
 `
 
 const ButtonsSpaceBetween = css`
@@ -44,9 +45,14 @@ const ButtonsSpaceBetween = css`
   }
 `
 
-function ButtonGroup(props, {position = "right"}: ButtonGroupProps) {
+function ButtonGroup(props: ButtonGroupProps) {
+    const {position} = props;
 
-    const renderStyles = () => {
+    /**
+     * Returns style for button group
+     * @default left
+     */
+    const renderStyles = (): SerializedStyles => {
         switch (position) {
             case "right":
                 return ButtonsRight;
@@ -56,13 +62,15 @@ function ButtonGroup(props, {position = "right"}: ButtonGroupProps) {
                 return ButtonsCenter;
             case "space-between":
                 return ButtonsSpaceBetween
+            default:
+                return ButtonsLeft;
         }
     }
 
     return (
-        <div css={ButtonsCenter}>
+        <StyledButtonGroup css={renderStyles()}>
             {props.children}
-        </div>
+        </StyledButtonGroup>
     );
 }
 

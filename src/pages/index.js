@@ -59,9 +59,9 @@ function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}
                 title={homepage.landing.title}
                 text={homepage.landing.text}
                 button={(
-                    <ButtonGroup position="center">
-                        <Button type="navigation-button" text="contact" to="/contact"/>
-                        <Button type="navigation-button" text="contact" to="/contact"/>
+                    <ButtonGroup position="left">
+                        <Button type="navigation-button" text="contact" to="/contact" buttonStyle="default"/>
+                        <Button type="navigation-button" text="contacert" to="/contact" buttonStyle="outlined"/>
                     </ButtonGroup>
                 )}
             />

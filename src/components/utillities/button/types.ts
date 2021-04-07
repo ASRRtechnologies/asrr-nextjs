@@ -4,11 +4,17 @@
 declare type ButtonType = "navigation-button" | "action-button";
 
 /**
+ * List of types of buttons needed to render the proper button
+ */
+export declare type ButtonStyle = "default" | "outlined" | "disabled" | "hover-disabled-outlined" | "hover-disabled-default";
+
+/**
  * Interface that all buttons inherit
  */
 export interface BaseButtonProps {
     text: string,
-    type: ButtonType
+    type: ButtonType,
+    buttonStyle?: ButtonStyle
 }
 
 /**

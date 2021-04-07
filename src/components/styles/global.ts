@@ -9,6 +9,9 @@ export const styles = {
     whiteFont:"#fff",
 
     //Dimensions
-    maxWidth: "1000px"
+    maxWidth: "1000px",
+
+    //Borders
+    buttonBorderRadius: "5px"
 
 }
