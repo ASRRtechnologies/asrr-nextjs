@@ -7,9 +7,14 @@ const StyledTextLanding = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   max-width: ${styles.maxWidth};
+ 
+  p{
+    max-width:400px;
+  }
+  
 `
 const TextLanding = (props: TextLandingProps) => {
     const {title, text, button,} = props;
@@ -18,8 +23,11 @@ const TextLanding = (props: TextLandingProps) => {
         <StyledTextLanding>
             <span>
                 <h1>{title}</h1>
+            </span>
+
+            <span>
                 <p>{text}</p>
-                <div className="button-group for now"/>
+                {props?.button}
             </span>
         </StyledTextLanding>
     )

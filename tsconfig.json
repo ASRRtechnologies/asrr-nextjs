@@ -22,7 +22,8 @@
     "paths": {
       "@/*": ["src/components/*"],
       "#/*": ["public/assets/images/*"]
-    }
+    },
+    "types": ["@emotion/core"]
   },
   "exclude": [
     "node_modules"

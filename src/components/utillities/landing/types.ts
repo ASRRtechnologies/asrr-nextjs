@@ -1,23 +1,22 @@
 import React from "react";
+import {ButtonGroup} from "@/utillities/button-group";
 
-export enum LandingType {
-    TextLanding = "text-landing",
-    ImageLanding = "image-landing"
-}
+declare type LandingType = "text-landing" | "image-landing";
 
 export interface BaseLandingProps {
     title: string,
     text: string,
-    button?: React.ReactElement,
+    button?: React.ReactElement<typeof ButtonGroup>,
+    type: LandingType
 }
 
 export interface TextLandingProps extends BaseLandingProps {
-    type: LandingType.TextLanding
+    type: "text-landing"
 }
 
 export interface ImageLandingProps extends BaseLandingProps {
     image: string,
-    type: LandingType.ImageLanding
+    type: "image-landing"
 }
 
 export type LandingProps = ImageLandingProps | TextLandingProps

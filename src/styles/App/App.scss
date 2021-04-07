@@ -65,8 +65,8 @@ a{
   @include font-size(3rem);
 }
 
-h1{
-  @include font-size(2.5rem);
+h1, .h1{
+  @include font-size(3.5rem);
   @include margin-bottom(1rem);
 }
 

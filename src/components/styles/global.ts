@@ -6,8 +6,9 @@ export const styles = {
     //Font colors
     primaryFont:"#113537",
     secondaryFont:"#2b4b4d",
+    whiteFont:"#fff",
 
     //Dimensions
-    maxWidth: "1600px"
+    maxWidth: "1000px"
 
 }

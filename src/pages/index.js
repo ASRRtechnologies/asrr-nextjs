@@ -13,6 +13,11 @@ import {getAllArticles, getAllCases, getAllNews} from '../lib/api'
 import Application from '@/layout/Application'
 import ImageLanding from "@/landing/ImageLanding";
 import image from "#/landing/landing-asrr-min.jpg";
+import Landing from "@/utillities/landing/Landing";
+import NavigationButtonWhite from "@/buttons/NavigationButtonWhite";
+import {Fade} from "react-awesome-reveal";
+import {ButtonGroup} from "@/utillities/button-group";
+import {Button} from "@/utillities/button";
 
 function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}) {
 
@@ -49,6 +54,18 @@ function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}
 
     return (
         <Application {...SEOProps}>
+            <Landing
+                type="text-landing"
+                title={homepage.landing.title}
+                text={homepage.landing.text}
+                button={(
+                    <ButtonGroup position="center">
+                        <Button type="navigation-button" text="contact" to="/contact"/>
+                        <Button type="navigation-button" text="contact" to="/contact"/>
+                    </ButtonGroup>
+                )}
+            />
+
             <ImageLanding image={image} title={homepage.landing.title} text={homepage.landing.text}
                           button={homepage.landing.button}/>
             <PreviewServices data={homepage.services_section} cards={servicepage}/>
