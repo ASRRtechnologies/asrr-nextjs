@@ -1,4 +1,4 @@
-/** @jsx jsx */
+/** @jsxImportSource @emotion/react */
 import React from 'react';
 import {ButtonGroupProps} from "@/utillities/button-group/types";
 import styled from "@emotion/styled";

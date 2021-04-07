@@ -9,6 +9,7 @@
     "export": "npm run build && next export"
   },
   "dependencies": {
+    "@emotion/babel-plugin": "^11.2.0",
     "@emotion/core": "^10.0.27",
     "@emotion/styled": "^10.0.27",
     "@material-ui/core": "^4.11.0",
