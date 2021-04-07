@@ -8,10 +8,10 @@ function TestimonialCards ({ data, basePath }) {
 			<span className="card-round-image">
 				<PictureFallback image={`${basePath}/${image_webp}`} fallbackImage={`${basePath}/${image}`} alt={alt}/>
 			</span>
-			<h1 className="theme-font font-card-title">{name}</h1>
-			<h2 className="font-card-header">{position}</h2>
-			<h3 className="font-general">{story}</h3>
-			<p className="font-card-subheader">{company}</p>
+			<h2 className="bold">{name}</h2>
+			<h4>{position}</h4>
+			<p>{story}</p>
+			<h4 className="bold">{company}</h4>
 		</div>
 	)
 }

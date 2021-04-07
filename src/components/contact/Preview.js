@@ -5,6 +5,7 @@ import { Fade } from 'react-awesome-reveal'
 import styled from '@emotion/styled'
 import Link from 'next/link'
 import useI18n from '../../hooks/use-i18n'
+import NavigationButtonWhite from "@/buttons/NavigationButtonWhite";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.contact};
@@ -36,9 +37,7 @@ function Contact ({ title, className }) {
 				<Title className={`${title} title-button`} header={titleObject.header} subHeader={titleObject.subheader}
 					   title={titleObject.title}/>
 				<Fade triggerOnce delay={300} direction="up">
-					<DarkButton className={`button button-auto ${className}`}>
-						<Link href="/contact"><a>{i18n.t('buttons.contact')}</a></Link>
-					</DarkButton>
+					<NavigationButtonWhite title="Kom in contact" to="contact"/>
 				</Fade>
 			</div>
 		</Wrapper>
