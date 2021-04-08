@@ -4,8 +4,8 @@ import SubSection from "@/utillities/section/sub-components/SubSection";
 
 function About(props) {
     return (
-        <Section style={{backgroundColor:"red"}} padding={true} className="rere">
-            <SubSection maxWidth={true} style={{backgroundColor:"green"}}>
+        <Section style={{backgroundColor: "red"}} padding={true} className="rere">
+            <SubSection maxWidth={true} style={{backgroundColor: "green"}}>
                 <h1>Test</h1>
             </SubSection>
         </Section>

@@ -2,9 +2,10 @@ import {StandardProps} from "@/utillities/global_types";
 import React from "react";
 
 /**
- * Inherits AspectRatio props except for x and y which are set inside component
+ * Outer Aspect Ratio Wrapper
+ * Needs only maxWidth and minWidth for it's width dimensions.
  */
-export interface CircleProps extends Omit<AspectRatioProps, "x" | "y"> {
+export interface AspectRatioWrapper extends Omit<AspectRatioProps, "x" | "y">, Omit<StandardProps, any> {
 
 }
 
@@ -14,7 +15,7 @@ export interface CircleProps extends Omit<AspectRatioProps, "x" | "y"> {
  *  For the calculated height percentage it also expects x and y ratio
  */
 export interface AspectRatioComponent extends Omit<AspectRatioProps, "maxWidth" | "minWidth"> {
-    children: React.ReactElement
+    children?: React.ReactElement
 }
 
 export interface AspectRatioProps extends StandardProps {
