@@ -10,23 +10,34 @@ function Section(props: SectionProps) {
      */
     const {padding, children, ...other} = props;
 
+    const paddingSmall = "25px";
+
+    const paddingMedium = "50px 75px";
+
+    const paddingBig = "100px 75px";
+
     const StyledSection = styled.section`
       height: auto;
-      width: 100%;
+      width: 100vw;
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: ${props.padding ? "25px 100px" : "none"}
+      padding: ${props.padding ? paddingSmall : "none"};
       
       ${mq["sm"]}{
-        padding: ${props.padding ? "25px" : "none"}
+        padding: ${props.padding ? paddingMedium : "none"}
       }
+
+      ${mq["lg"]}{
+        padding: ${props.padding ? paddingBig : "none"}
+      }
+      
     `
 
     return (
-        <section css={StyledSection} {...other}>
+        <StyledSection {...other}>
             {children}
-        </section>
+        </StyledSection>
     );
 }
 

@@ -29,7 +29,7 @@ html {
 
 body {
   position: relative;
-  font-family: 'Poppins', 'Source Sans Pro', serif !important;
+  font-family: 'Inter', 'Source Sans Pro', serif !important;
   min-height: 100%;
   height: auto;
   width: 100%;
@@ -69,11 +69,13 @@ a, p {
   @include font-size(1rem);
   @include margin-bottom(2rem);
   text-decoration: none;
+  font-family: 'Poppins', 'Source Sans Pro', serif;
 }
 
 h1, .h1{
-  @include font-size(3.5rem);
+  @include font-size(4rem);
   @include margin-bottom(1rem);
+  font-weight: 900;
 }
 
 h2{

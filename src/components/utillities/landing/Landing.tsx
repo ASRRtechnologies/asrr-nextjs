@@ -8,28 +8,12 @@ import Section from "@/utillities/section/Section";
 
 const StyledLanding = styled(Section)`
   width: 100vw;
-  min-height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: ${styles.tertiaryColor};
-
-  //TODO add dynamic height from header
-  padding: 80px 25px;
+  min-height: 70vh;
 
   h1, p {
     color: ${styles.whiteFont};
   }
-  
-  h1{
-    
-  }
 
-
-  ${mq["xsm"]}{
-
-  }
-  
 `
 
 function Landing(props: LandingProps) {
@@ -45,7 +29,7 @@ function Landing(props: LandingProps) {
     }
 
     return (
-        <StyledLanding>
+        <StyledLanding padding={true} {...props}>
             {renderComponent()}
         </StyledLanding>
     );

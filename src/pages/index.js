@@ -11,13 +11,17 @@ import matter from 'gray-matter'
 import Testimonials from '@/testimonials/Testimonials'
 import {getAllArticles, getAllCases, getAllNews} from '../lib/api'
 import Application from '@/layout/Application'
-import ImageLanding from "@/landing/ImageLanding";
-import image from "#/landing/landing-asrr-min.jpg";
 import Landing from "@/utillities/landing/Landing";
-import NavigationButtonWhite from "@/buttons/NavigationButtonWhite";
-import {Fade} from "react-awesome-reveal";
 import {ButtonGroup} from "@/utillities/button-group";
 import {Button} from "@/utillities/button";
+import {styles} from "@/utillities/styles/global_variabels";
+import image from "#/landing/landing-asrr.jpg";
+import About from "@/pages/home/About";
+
+const backgrounds = {
+    landing: styles.tertiaryColor
+
+}
 
 function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}) {
 
@@ -55,16 +59,20 @@ function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}
     return (
         <Application {...SEOProps}>
             <Landing
-                type="text-landing"
+                image={image}
+                style={{backgroundColor:backgrounds.landing}}
+                type="image-landing"
                 title={homepage.landing.title}
                 text={homepage.landing.text}
                 button={(
                     <ButtonGroup position="left">
-                        <Button type="navigation-button" text="contact" to="/contact" buttonStyle="default"/>
-                        <Button type="navigation-button" text="contacert" to="/contact" buttonStyle="outlined"/>
+                        <Button type="navigation-button" text="Contact" to="/contact" buttonStyle="default"/>
+                        <Button type="navigation-button" text="Bekijk demo" to="/contact" buttonStyle="outlined"/>
                     </ButtonGroup>
                 )}
             />
+
+            <About/>
 
             <PreviewServices data={homepage.services_section} cards={servicepage}/>
             <TechStack basePath={basePath} data={homepage.technologies_section}/>

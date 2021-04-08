@@ -12,9 +12,11 @@ export const styles = {
     maxWidth: "1000px",
 
     //Borders
-    buttonBorderRadius: "5px"
+    buttonBorderRadius: "5px",
 
     //Padding of Section
+
+    imageBorderRadius:"10px"
 
 }
 

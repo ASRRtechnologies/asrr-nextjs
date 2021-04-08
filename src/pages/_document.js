@@ -20,6 +20,11 @@ class MyDocument extends Document {
 
                     <link
                         rel="stylesheet"
+                        href="https://fonts.googleapis.com/css2?family=Inter:300,400,500,700,900&display=swap"
+                    />
+
+                    <link
+                        rel="stylesheet"
                         href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
                     />
                     <script
