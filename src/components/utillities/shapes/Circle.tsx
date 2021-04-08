@@ -1,10 +1,10 @@
 import React from 'react';
 import AspectRatio from "@/utillities/aspect-ratio/AspectRatio";
-import {CircleProps} from "@/utillities/shapes/types";
+import {BaseShapeProps} from "@/utillities/shapes/types";
 
-function Circle(props: CircleProps) {
+function Circle(props: BaseShapeProps) {
 
-    const {maxWidth, minWidth, children, style, ...other} = props;
+    const {maxWidth, minWidth, children, style} = props;
 
     const circleStyles = {...style, ...{borderRadius: "50%"}}
 

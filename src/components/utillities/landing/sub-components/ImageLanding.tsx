@@ -4,6 +4,7 @@ import {ImageLandingProps} from "@/utillities/landing/types";
 import Image from "next/image";
 import React from "react";
 import SubSection from "@/utillities/section/sub-components/SubSection";
+import Square from "@/utillities/shapes/Square";
 
 const StyledLandingWithSideImage = styled(SubSection)`
   width: 100%;
@@ -20,11 +21,8 @@ const StyledLandingWithSideImage = styled(SubSection)`
   img{
     display: block;
     width: 100%;
-    max-width: 400px;
-    aspect-ratio: 16 / 16;
     object-fit: cover;
     border-radius: ${styles.imageBorderRadius};
-    margin-top: 50px;
   }
 
   ${mq["lg"]}{
@@ -58,10 +56,13 @@ const ImageLanding = (props: ImageLandingProps) => {
                 {button}
             </span>
 
-            <img
-                src={image}
-                alt="Mountains"
-            />
+            <Square maxWidth={400} style={{borderRadius:styles.imageBorderRadius}}>
+                <img
+                    src={image}
+                    alt="Mountains"
+                />
+            </Square>
+
         </StyledLandingWithSideImage>
     )
 }
