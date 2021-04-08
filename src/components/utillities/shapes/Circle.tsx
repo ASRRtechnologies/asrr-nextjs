@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "@emotion/styled";
-import {CircleProps} from "@/utillities/shapes/types";
-import {minWidth} from "@material-ui/system";
+import {AspectRatioProps, CalculatedAspectRatio} from "@/utillities/shapes/types";
 
 const StyledCircleWrapper = styled.div`
   border-radius: 50%;
@@ -13,13 +12,19 @@ const StyledCircleWrapper = styled.div`
 const StyledCircle = styled.div`
   display: block;
   width: 100%;
-  max-width: ${(props: CircleProps) => props.maxWidth ? props.maxWidth : "100%"};
-  min-width: ${(props: CircleProps) => props.minWidth ? props.minWidth : "100%"};
-  padding-bottom: 100%;
+  max-width: ${(props: AspectRatioProps) => props.maxWidth ? props.maxWidth : "100%"};
+  min-width: ${(props) => props.minWidth ? props.minWidth : "100%"};
   border-radius: 50%;
 `
 
-function Circle(props: CircleProps) {
+/**
+ * Takes in x and y aspect-ratio and returns a height in percentage;
+ * @param {int} x
+ * @param {int} y
+ */
+const calculateAspectRatio = (x: number, y: number): string => `${(y/x) * 100}%`
+
+function Circle(props: AspectRatioProps) {
     const {maxWidth, minWidth} = props;
 
     return (
