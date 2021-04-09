@@ -2,6 +2,7 @@
  * List of types of buttons needed to render the proper button
  */
 import {StandardProps} from "@/utillities/global_types";
+import {ReactElement} from "react";
 
 declare type ButtonType = "navigation-button" | "action-button";
 
@@ -43,4 +44,12 @@ export interface ActionButtonProps extends BaseButtonProps {
 /**
  * Props which the Header expects when rendering the different types of buttons
  */
-export type ButtonProps = NavigationButtonProps | ActionButtonProps
+// export type HeaderProps = NavigationButtonProps | ActionButtonProps
+
+export type HeaderComponent = ReactElement | ReactElement[] | null
+
+export interface HeaderProps extends StandardProps {
+    left?: HeaderComponent
+    center?: HeaderComponent
+    right?: HeaderComponent
+}

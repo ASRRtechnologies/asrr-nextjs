@@ -1,7 +1,8 @@
 import React from "react";
 
-export interface StandardProps {
+//T is childrenType for specific children such as Button only etc
+export interface StandardProps<T = void> {
         className?: string;
         style?: React.CSSProperties;
-        children? : React.ReactElement[] | React.ReactElement;
+        children? : React.ReactElement<T>[] | React.ReactElement<T>;
 };

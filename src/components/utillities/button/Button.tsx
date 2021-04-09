@@ -12,7 +12,7 @@ function Button(props: ButtonProps) {
         if (props.type === "action-button")
             return <ActionButton {...props}/>
 
-        throw new Error("Button component type not specified")
+        throw new Error("Header component type not specified")
     }
 
     return (
