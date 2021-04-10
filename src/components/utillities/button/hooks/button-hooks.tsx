@@ -4,7 +4,7 @@ import {
     ButtonStyleDefaultHoverDisabled,
     ButtonStyleDisabled,
     ButtonStyleOutlined,
-    ButtonStyleOutlinedHoverDisabled
+    ButtonStyleOutlinedHoverDisabled, ButtonStyleTextOnly
 } from "@/utillities/button/shared-styles/ButtonStyles";
 import {ButtonStyle} from "@/utillities/button/types";
 
@@ -23,6 +23,8 @@ export const useButtonStyles = (styles: ButtonStyle): SerializedStyles => {
             return ButtonStyleDefaultHoverDisabled
         case "disabled":
             return ButtonStyleDisabled
+        case "text-only":
+            return ButtonStyleTextOnly;
         default:
             return ButtonStyleDefault;
     }

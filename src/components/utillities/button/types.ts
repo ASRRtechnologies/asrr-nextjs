@@ -13,7 +13,8 @@ export declare type ButtonStyle =
     | "outlined"
     | "disabled"
     | "hover-disabled-outlined"
-    | "hover-disabled-default";
+    | "hover-disabled-default"
+    | "text-only"
 
 /**
  * Interface that all buttons inherit

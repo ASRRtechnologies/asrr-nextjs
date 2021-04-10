@@ -48,3 +48,7 @@ export const ButtonStyleDisabled = css`
   background-color: ${styles.primaryColor} !important;
   color: ${styles.whiteFont};
 `
+
+export const ButtonStyleTextOnly = css`
+  color: ${styles.whiteFont};
+`

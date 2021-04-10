@@ -11,8 +11,6 @@ function NavigationButton(props: NavigationButtonProps) {
 
     const {styles} = useButtonStyles(buttonStyle);
 
-    console.log(styles);
-
     return (
         <div css={css`${BaseButtonStyle} ${styles}`}>
             <Link href={to}>

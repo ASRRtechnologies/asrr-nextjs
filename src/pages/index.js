@@ -17,10 +17,7 @@ import {Button} from "@/utillities/button";
 import {styles} from "@/utillities/styles/global_variabels";
 import image from "#/landing/landing-asrr.jpg";
 import About from "@/pages/home/About";
-import Header from "@/utillities/header/Header";
-import Logo from '../components/header/Logo'
-import HeaderSection from "@/utillities/header/sub-components/HeaderSection";
-import HeaderTab from "@/utillities/header/sub-components/HeaderTab";
+import Navigation from "@/header/Navigation";
 
 const backgrounds = {
     landing: styles.tertiaryColor
@@ -64,7 +61,7 @@ function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}
         <Application {...SEOProps}>
             <Landing
                 image={image}
-                style={{backgroundColor:backgrounds.landing}}
+                style={{backgroundColor: backgrounds.landing}}
                 type="image-landing"
                 title={homepage.landing.title}
                 text={homepage.landing.text}
@@ -77,22 +74,7 @@ function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}
             />
 
             <About/>
-
-            <Header style={{backgroundColor:"pink"}} left={
-                (
-                    <HeaderSection style={{display:"flex"}}>
-                        <HeaderTab>
-                            <Logo/>
-                        </HeaderTab>
-
-                        <HeaderTab>
-                            <p>This is going to be a new buildable header</p>
-                        </HeaderTab>
-
-                    </HeaderSection>
-
-                )
-            }/>
+            <Navigation/>
 
             <PreviewServices data={homepage.services_section} cards={servicepage}/>
             <TechStack basePath={basePath} data={homepage.technologies_section}/>
