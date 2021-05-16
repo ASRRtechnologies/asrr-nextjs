@@ -141,6 +141,36 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header", name: "header", widget: "string" }
           - { label: "Subheader", name: "subheader", widget: "string" }
+
+  - label: "About page"
+    name: "about"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+      folder: "public/content/about"
+      path: '{{language}}/{{slug}}'
+      slug: '{{title}}'
+      create: true
+      media_folder: ''
+      public_folder: ''
+    fields:
+      - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
+          - label: "Button"
+            name: "button"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Url", name: "url", widget: "string" }
+          - { label: "Image_Webp", name: "image_webp", widget: "image", required: false }
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Image Alt", name: "alt", widget: "string", required: false }
+
   - label: "Portfolio Page"
     name: "portfolio_page"
     identifier_field: slug
