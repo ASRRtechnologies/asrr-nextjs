@@ -1,6 +1,9 @@
 import React, {useEffect} from 'react'
 import Application from "@/layout/Application";
 import {useHeader} from "../context/navigation/HeaderContext";
+import ImageLanding from "@/landing/ImageLanding";
+import image from "#/landing/landing-asrr-min.jpg";
+import matter from "gray-matter";
 
 function Page({data, query}) {
 
@@ -17,10 +20,22 @@ function Page({data, query}) {
 
     return (
         <Application {...SEOProps}>
-
+            <ImageLanding image={data.landing.image} title={data.landing.title} text={data.landing.text}
+                          button={data.landing.button}/>
         </Application>
 
     )
+}
+
+export async function getStaticProps () {
+    //This is the portfolio page cms
+    let aboutContent = await import(`public/content/about/nl/about.md`);
+    let aboutParsed = matter(aboutContent.default);
+    let data = aboutParsed.data;
+
+    return {
+        props: { data },
+    }
 }
 
 export default Page
