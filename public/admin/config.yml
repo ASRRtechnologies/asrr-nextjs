@@ -141,7 +141,6 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Header", name: "header", widget: "string" }
           - { label: "Subheader", name: "subheader", widget: "string" }
-
   - label: "About page"
     name: "about"
     identifier_field: slug
