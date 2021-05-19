@@ -70,8 +70,8 @@ section:
         - image_webp: itaas-landing.webp
           image: itaas-landing.jpg
           alt: Team on Mountain
-          description: Description under the image
-          reference: www.google.com
+          description: ""
+          reference: ""
   - content: >-
       ### Hoe ziet ASRR ITTAAS
 
