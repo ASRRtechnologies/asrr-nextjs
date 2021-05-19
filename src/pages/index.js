@@ -13,6 +13,7 @@ import {getAllArticles, getAllCases, getAllNews} from '../lib/api'
 import Application from '@/layout/Application'
 import ImageLanding from "@/landing/ImageLanding";
 import image from "#/landing/landing-asrr-min.jpg";
+import ClientGrid from "@/clients/ClientGrid";
 
 function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}) {
 
@@ -51,6 +52,7 @@ function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}
         <Application {...SEOProps}>
             <ImageLanding image={image} title={homepage.landing.title} text={homepage.landing.text}
                           button={homepage.landing.button}/>
+            <ClientGrid data={homepage.clients}/>
             <PreviewServices data={homepage.services_section} cards={servicepage}/>
             <TechStack basePath={basePath} data={homepage.technologies_section}/>
             <PreviewPortfolio data={homepage.portfolio_section} selectedProjects={getCases()}/>
