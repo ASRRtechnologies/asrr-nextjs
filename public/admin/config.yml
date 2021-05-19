@@ -169,7 +169,6 @@ collections:
           - { label: "Image_Webp", name: "image_webp", widget: "image", required: false }
           - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Image Alt", name: "alt", widget: "string", required: false }
-
   - label: "Portfolio Page"
     name: "portfolio_page"
     identifier_field: slug
