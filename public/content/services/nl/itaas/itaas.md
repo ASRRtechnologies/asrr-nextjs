@@ -1,6 +1,6 @@
 ---
 language: nl
-title: itaas
+title: ittaas
 type: Nieuws
 landing:
   title: Het nieuwe detacheren

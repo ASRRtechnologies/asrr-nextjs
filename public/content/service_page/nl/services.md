@@ -27,7 +27,7 @@ card:
     image_webp: automation-square.webp
     image: automation-square.jpg
     alt: Laptop ASRR
-    url: itaas
+    url: ittaas
     bullet_points:
       - bullet: U haalt een ingewerkt team in huis
       - bullet: Bespaar op recruitment- én trainingskosten

@@ -6,7 +6,7 @@ export const blog = [
     // },
     {
         type: "article",
-        name: "itaas",
+        name: "ittaas",
         description: "",
         availableLanguages: ["nl"],
         readMore: true,

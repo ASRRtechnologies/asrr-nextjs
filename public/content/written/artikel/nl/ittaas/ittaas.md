@@ -1,6 +1,6 @@
 ---
 language: nl
-title: itaas
+title: ittaas
 type: Artikel
 info:
   date: January 9, 2021 8:22 PM
@@ -11,14 +11,14 @@ info:
 card:
   title: IT Teams as a Service (ITTAAS)
   text: Wat zijn de voordelen van dynamische externe IT teams
-  url: /blog/artikel/itaas
+  url: /blog/artikel/ittaas
   image_webp: ittaas.webp
   image: ittaas.jpg
   alt: Paper peoples (team)
 landing:
   title: Expertise on demand
-  image_webp: itaas-landing.webp
-  image: itaas-landing.jpg
+  image_webp: ittaas-landing.webp
+  image: ittaas-landing.jpg
   alt: Team on Cliff sunset
 section:
   - content: >-
@@ -46,7 +46,7 @@ section:
       &nbsp;
 
 
-      Het probleem is hier tweevoudig. De opdrachtgever moet zelf bepalen wat voor expertise hij of zij nodig heeft, terwijl dit soms een erg inhoudelijke vraag is. Er wordt daardoor vaak op voorhand al gekozen voor een verkeerde aanpak. Weet u bijvoorbeeld al wat de beste aanpak is voor een webapplicatie? (link naar andere blogpost)
+      Het probleem is hier tweevoudig. De opdrachtgever moet zelf bepalen wat voor expertise hij of zij nodig heeft, terwijl dit soms een erg inhoudelijke vraag is. Er wordt daardoor vaak op voorhand al gekozen voor een verkeerde aanpak. 
 
 
       &nbsp;
@@ -55,7 +55,7 @@ section:
       &nbsp;
 
 
-      Ten tweede heeft IT recruitment vaak meer oog voor buzzwords, jaren ervaring en andere zaken. Deze factoren garanderen niet altijd in een goede match. Veel IT’ers worden juist afgeschrikt door opdrachten waarin de technische eisen niet kloppen. of waarin er veel termen worden rondgegooid die niets te maken hebben met de technologie of opdracht. Zo spreken opdrachtgevers en de inhuurkrachten vaak een andere taal.
+      Ten tweede heeft IT recruitment vaak meer oog voor buzzwords, jaren ervaring en andere zaken. Deze factoren garanderen niet altijd een goede match. Veel IT’ers worden juist afgeschrikt door opdrachten waarin de technische eisen niet kloppen, of waarin er veel termen worden rondgegooid die niets te maken hebben met de technologie of opdracht. Zo spreken opdrachtgevers en de inhuurkrachten vaak een andere taal.
 
 
       &nbsp;
@@ -64,14 +64,14 @@ section:
       &nbsp;
 
 
-      Al om al, het is van groot belang dat aan het begin van de zoektocht technische kennis wordt toegepast. Daarmee komen we bij wat in ons opzicht de oplossing is: IT Teams as a Service.
+      Al om al, het is van groot belang dat aan het begin van de zoektocht technische kennis wordt toegepast. Daarmee komen we bij wat in ons opzicht dé oplossing is: IT Teams as a Service.
     media:
       images:
-        - image_webp: itaas-landing.webp
-          image: itaas-landing.jpg
+        - image_webp: ittaas-landing.webp
+          image: ittaas-landing.jpg
           alt: Team on Mountain
-          description: Description under the image
-          reference: www.google.com
+          description: ""
+          reference: ""
   - content: >-
       ### Hoe ziet ASRR ITTAAS
 
@@ -94,11 +94,11 @@ section:
       &nbsp;
 
 
-      Het aanspreekpunt stuurt vervolgens het IT team aan en fungeert daarbij als product owner. Hierbij staat bewaking van de wensen van de klant centraal. Het IT team§ bestaat uit developers met verschillende expertises. De samenstelling van het team is dynamisch, op basis van de opdracht. De ene keer bestaat deze uit een volledig front end team, de andere keer ligt de focus meer op back-end, etcetera. Dit zorgt voor minder onnodige overhead en de juiste expertise op de juiste plek
+      Het aanspreekpunt stuurt vervolgens het IT team aan en fungeert daarbij als product owner. Hierbij staat bewaking van de wensen van de klant centraal. Het IT team bestaat uit developers met verschillende expertises. De samenstelling van het team is dynamisch, op basis van de opdracht. De ene keer bestaat deze uit een volledig front end team, de andere keer ligt de focus meer op back-end, etcetera. Dit zorgt voor minder onnodige overhead en de juiste expertise op de juiste plek
     media:
       images:
-        - image_webp: itaas-2.webp
-          image: itaas-2.jpg
+        - image_webp: ittaas-2.webp
+          image: ittaas-2.jpg
           alt: Team planning
   - content: >-
       ### Wat zijn hiervan de voordelen?
