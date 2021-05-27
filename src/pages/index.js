@@ -36,7 +36,7 @@ function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}
 
     const getBlogs = () => {
         return allArticles.filter(
-            (article) => article.title.toLowerCase() === 'itaas' || article.title.toLowerCase() === 'microservices' ||
+            (article) => article.title.toLowerCase() === 'ittaas' || article.title.toLowerCase() === 'microservices' ||
                 article.title.toLowerCase() === 'heijmans-configurator')
 
         // let news = allNews.filter((artnews) => {
