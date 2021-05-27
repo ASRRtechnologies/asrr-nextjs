@@ -88,7 +88,7 @@ section:
     media:
       images:
         - image_webp: computer-login.webp
-          description: Een screenshot van de login scherm van de webapplicatie.
+          description: Een screenshot van het login scherm van de webapplicatie.
           alt: login screen web application nwo
           image: ezgif.com-gif-maker-2-min.jpg
   - content: >-

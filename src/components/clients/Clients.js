@@ -32,7 +32,6 @@ function Clients ({data}) {
 				</div>
 			</Fade>
  		</Wrapper>
-
 	)
 }
 
