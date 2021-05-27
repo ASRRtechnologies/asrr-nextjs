@@ -1,6 +1,6 @@
 ---
 language: nl
-title: itaas
+title: ittaas
 type: Artikel
 info:
   date: January 9, 2021 8:22 PM
@@ -11,14 +11,14 @@ info:
 card:
   title: IT Teams as a Service (ITTAAS)
   text: Wat zijn de voordelen van dynamische externe IT teams
-  url: /blog/artikel/itaas
+  url: /blog/artikel/ittaas
   image_webp: ittaas.webp
   image: ittaas.jpg
   alt: Paper peoples (team)
 landing:
   title: Expertise on demand
-  image_webp: itaas-landing.webp
-  image: itaas-landing.jpg
+  image_webp: ittaas-landing.webp
+  image: ittaas-landing.jpg
   alt: Team on Cliff sunset
 section:
   - content: >-
@@ -67,8 +67,8 @@ section:
       Al om al, het is van groot belang dat aan het begin van de zoektocht technische kennis wordt toegepast. Daarmee komen we bij wat in ons opzicht dé oplossing is: IT Teams as a Service.
     media:
       images:
-        - image_webp: itaas-landing.webp
-          image: itaas-landing.jpg
+        - image_webp: ittaas-landing.webp
+          image: ittaas-landing.jpg
           alt: Team on Mountain
           description: ""
           reference: ""
@@ -97,8 +97,8 @@ section:
       Het aanspreekpunt stuurt vervolgens het IT team aan en fungeert daarbij als product owner. Hierbij staat bewaking van de wensen van de klant centraal. Het IT team bestaat uit developers met verschillende expertises. De samenstelling van het team is dynamisch, op basis van de opdracht. De ene keer bestaat deze uit een volledig front end team, de andere keer ligt de focus meer op back-end, etcetera. Dit zorgt voor minder onnodige overhead en de juiste expertise op de juiste plek
     media:
       images:
-        - image_webp: itaas-2.webp
-          image: itaas-2.jpg
+        - image_webp: ittaas-2.webp
+          image: ittaas-2.jpg
           alt: Team planning
   - content: >-
       ### Wat zijn hiervan de voordelen?
