@@ -8,6 +8,7 @@ info:
   author: Amar Ramdas
   tag:
     - tag: Expertise on demand
+  client: ASRR
 card:
   title: IT Teams as a Service (ITTAAS)
   text: Wat zijn de voordelen van dynamische externe IT teams
