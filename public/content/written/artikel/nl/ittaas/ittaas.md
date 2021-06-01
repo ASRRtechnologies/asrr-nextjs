@@ -55,7 +55,7 @@ section:
       &nbsp;
 
 
-      Verder heeft IT recruitment vaak meer oog voor buzzwords, jaren ervaring en andere zaken terwijl een goede developer zich eerder kenmerkt door groeipotentie en aanpassingsvermogen. Zaken die naar voren komen naarmate ze in teamverband werken en zichzelf ontwikkelen. De huidige factoren garanderen niet altijd een goede match. Daardoor worden veel IT’ers juist afgeschrikt door opdrachten waarin de technische eisen niet kloppen of waarin er veel termen worden rondgegooid die niets te maken hebben met de technologie of opdracht. Zo spreken opdrachtgevers en de inhuurkrachten vaak een andere taal.
+      Verder heeft IT recruitment vaak meer oog voor buzzwords, jaren ervaring en andere zaken terwijl een goede developer zich eerder kenmerkt door groeipotentie en aanpassingsvermogen. Zaken die naar voren komen naarmate ze in teamverband werken en zichzelf ontwikkelen. De huidige factoren garanderen niet altijd een goede match. IT’ers worden afgeschrikt door opdrachten waarin de technische eisen niet kloppen of waarin er veel termen worden rondgegooid die niets te maken hebben met de technologie of de opdracht. Zo spreken opdrachtgevers en de inhuurkrachten vaak een andere taal.
 
 
       &nbsp;
@@ -85,7 +85,7 @@ section:
       &nbsp;
 
 
-      Het aanspreekpunt gaat als consultant een gesprek aan met de opdrachtgever. Hierbij wordt geanalyseerd hoe het huidige proces in het bedrijf gaat, wat de knelpunten zijn en wat de technische oplossing hiervoor zou kunnen zijn.
+      Het aanspreekpunt gaat als consultant een gesprek aan met de opdrachtgever. Hierbij wordt geanalyseerd hoe het huidige proces in het bedrijf gaat, wat de knelpunten zijn en wat de technische oplossing hiervoor is.
 
 
       &nbsp;
@@ -105,4 +105,13 @@ section:
 
 
       De klant haalt hiermee direct een ingewerkt team in huis, in plaats van een set aan losse spelers. Dit zorgt voor besparing op gebied van recruitment- en inwerkkosten. Het probleem wordt van begin af aan al begeleid door een specialist. Dit zorgt ervoor dat de visie van de klant goed vertaald kan worden tot een werkend eindproduct. Hierbij wordt de klant volledig ontzorgd. Daarbij is er een centraal aanspreekpunt dat de technische vraagstukken kan vertalen naar taal die de klant begrijpt, zodat er toch nog executive beslissingen kunnen worden gemaakt over belangrijke aspecten binnen het proces. Tot slot kan er worden meegelift op ervaring en oplossingen die opgedaan zijn tijdens processen voor andere klanten.
+
+
+      &nbsp;
+
+
+      &nbsp;
+
+
+      ASRR helpt graag bij het vertalen van uw business problemen naar IT oplossingen met behulp van een dynamisch schaalbaar ITTAAS.
 ---
