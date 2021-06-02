@@ -11,8 +11,8 @@ info:
   client: ASRR
 card:
   title: IT Teams as a Service (ITTAAS)
-  text: "**Wat zijn de voordelen van een dynamisch extern IT-team ten opzichte van
-    een een-op-een recruitmentstrategie?**"
+  text: Wat zijn de voordelen van een dynamisch extern IT-team ten opzichte van
+    een een-op-een recruitmentstrategie?
   url: /blog/artikel/ittaas
   image_webp: ittaas-banner.webp
   image: ittaas-banner.jpeg
