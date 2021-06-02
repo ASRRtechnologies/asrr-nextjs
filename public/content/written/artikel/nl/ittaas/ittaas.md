@@ -11,10 +11,11 @@ info:
   client: ASRR
 card:
   title: IT Teams as a Service (ITTAAS)
-  text: Wat zijn de voordelen van dynamische externe IT teams
+  text: "**Wat zijn de voordelen van een dynamisch extern IT-team ten opzichte van
+    een een-op-een recruitmentstrategie?**"
   url: /blog/artikel/ittaas
-  image_webp: ittaas.webp
-  image: ittaas.jpg
+  image_webp: ittaas-banner.webp
+  image: ittaas-banner.jpeg
   alt: Paper peoples (team)
 landing:
   title: Expertise on demand
@@ -26,7 +27,7 @@ section:
       # IT Teams as a Service (ITTAAS)
 
 
-      ## Wat zijn de voordelen van een dynamisch externe IT team ten opzichte van een 1 op 1 recruitment strategie?
+      ## **Wat zijn de voordelen van een dynamisch extern IT-team ten opzichte van een een-op-een recruitmentstrategie?**
 
 
       &nbsp;
@@ -38,7 +39,7 @@ section:
       ### De huidige situatie
 
 
-      In de huidige markt voor externe IT-werkzaamheden wordt er vaak erg in hokjes gedacht. Een opdrachtgever klopt aan bij een recruitmentbureau en geeft aan wat voor competenties hij of zij denkt nodig te hebben voor de opdracht. De recruiter stelt dan op basis van deze input een opdrachtomschrijving op. Dit resulteert vaak in een eisenlijst waar developers op afknappen. Verder is de eisenlijst niet representatief voor het uiteindelijke werk, waardoor er niet de juiste persoon op de juiste plek wordt geplaatst.
+      In de huidige markt voor externe IT-werkzaamheden wordt vaak in hokjes gedacht. Een opdrachtgever klopt aan bij een recruitmentbureau en geeft aan welke competenties mogelijk nodig zijn voor een opdracht. De recruiter stelt op basis van deze input een opdrachtomschrijving op. Dit resulteert vaak in een eisenlijst waar developers op afknappen. Daarnaast is de eisenlijst niet representatief voor het uiteindelijke werk waardoor de juiste persoon niet op de juiste plek wordt geplaatst.
 
 
       &nbsp;
@@ -47,7 +48,7 @@ section:
       &nbsp;
 
 
-      Het probleem is hier tweevoudig. De opdrachtgever moet zelf bepalen wat voor expertise hij of zij nodig heeft, terwijl dit soms een erg inhoudelijke vraag is. Er wordt daardoor vaak op voorhand al gekozen voor een verkeerde aanpak. 
+      Het probleem is hier tweevoudig. De opdrachtgever bepaalt zelf welke expertise nodig is, terwijl dit een zeer inhoudelijke vraag kan zijn. Daarom wordt vaak op voorhand al gekozen voor een verkeerde aanpak.
 
 
       &nbsp;
@@ -56,7 +57,7 @@ section:
       &nbsp;
 
 
-      Verder heeft IT recruitment vaak meer oog voor buzzwords, jaren ervaring en andere zaken terwijl een goede developer zich eerder kenmerkt door groeipotentie en aanpassingsvermogen. Zaken die naar voren komen naarmate ze in teamverband werken en zichzelf ontwikkelen. De huidige factoren garanderen niet altijd een goede match. IT’ers worden afgeschrikt door opdrachten waarin de technische eisen niet kloppen of waarin er veel termen worden rondgegooid die niets te maken hebben met de technologie of de opdracht. Zo spreken opdrachtgevers en de inhuurkrachten vaak een andere taal.
+      Verder heeft het IT-recruitment veelal meer oog voor buzzwords en jarenlange ervaring, terwijl een goede developer zich eerder kenmerkt door groeipotentie en aanpassingsvermogen. Deze zaken komen naar voren naarmate developers in teamverband werken en zichzelf ontwikkelen. De huidige factoren garanderen niet altijd een goede match. IT’ers worden afgeschrikt door opdrachten waarin de technische eisen niet kloppen of waarin veel termen worden aangehaald die niets te maken hebben met de technologie of de opdracht. Opdrachtgevers en inhuurkrachten spreken daardoor vaak een andere taal.
 
 
       &nbsp;
@@ -65,7 +66,7 @@ section:
       &nbsp;
 
 
-      Al om al, het is van groot belang dat aan het begin van de zoektocht technische kennis wordt toegepast. Daarmee komen we bij wat in ons opzicht dé oplossing is: IT Teams as a Service.
+      Kortom, het is van groot belang dat aan het begin van de zoektocht naar de juiste expertise technische kennis wordt toegepast. Dit is volgens ons dé oplossing: IT Teams as a Service.
     media:
       images:
         - image_webp: ittaas-landing.webp
@@ -74,19 +75,19 @@ section:
           description: ""
           reference: ""
   - content: >-
-      ### Hoe ziet ASRR ITTAAS
+      ### Hoe ziet ASRR ITTAAS?
 
 
-      De service begint met het aanspreekpunt. Dit is de brug tussen de Business en IT. Het aanspreekpunt moet inhoudelijke kennis hebben, maar moet ook kunnen relativeren en begrijpen wat belangrijk is voor de opdrachtgever. Communicatie, kennis en begrip zijn hierbij belangrijk.
-
-
-      &nbsp;
+      De service begint met een aanspreekpunt. Dit is de brug tussen de Business en het IT. Het aanspreekpunt moet inhoudelijke kennis hebben, maar ook kunnen relativeren en begrijpen wat belangrijk is voor een opdrachtgever. Communicatie, kennis en begrip zijn dus essentieel.
 
 
       &nbsp;
 
 
-      Het aanspreekpunt gaat als consultant een gesprek aan met de opdrachtgever. Hierbij wordt geanalyseerd hoe het huidige proces in het bedrijf gaat, wat de knelpunten zijn en wat de technische oplossing hiervoor is.
+      &nbsp;
+
+
+      Het aanspreekpunt gaat als consultant een gesprek aan met de opdrachtgever. Hierbij wordt geanalyseerd hoe het huidige proces in het bedrijf verloopt, wat de knelpunten zijn en wat de technische oplossing hiervoor is.
 
 
       &nbsp;
@@ -102,17 +103,17 @@ section:
           image: ittaas-2.jpg
           alt: Team planning
   - content: >-
-      ### Wat zijn hiervan de voordelen?
+      ### **Wat zijn de voordelen van ITTAAS?**
 
 
-      De klant haalt hiermee direct een ingewerkt team in huis, in plaats van een set aan losse spelers. Dit zorgt voor besparing op gebied van recruitment- en inwerkkosten. Het probleem wordt van begin af aan al begeleid door een specialist. Dit zorgt ervoor dat de visie van de klant goed vertaald kan worden tot een werkend eindproduct. Hierbij wordt de klant volledig ontzorgd. Daarbij is er een centraal aanspreekpunt dat de technische vraagstukken kan vertalen naar taal die de klant begrijpt, zodat er toch nog executive beslissingen kunnen worden gemaakt over belangrijke aspecten binnen het proces. Tot slot kan er worden meegelift op ervaring en oplossingen die opgedaan zijn tijdens processen voor andere klanten.
-
-
-      &nbsp;
+      De klant haalt direct een ingewerkt team in huis, in plaats van een set aan losse spelers. Dit zorgt voor besparing op het gebied van recruitment- en inwerkkosten. Het probleem wordt van het begin af aan begeleid door een specialist waardoor de visie van de klant goed vertaald kan worden naar een werkend eindproduct. De klant wordt hierbij volledig ontzorgd. Daarnaast vertaalt een centraal aanspreekpunt de technische vraagstukken naar een voor de klant begrijpelijke taal, zodat executieve beslissingen kunnen worden gemaakt over belangrijke aspecten binnen het proces. Tot slot bestaat het IT-team uit bijzondere individuen die complexe vraagstukken voor andere klanten hebben opgelost. Zij gebruiken hun expertise en ervaring bij het ontwikkelen van uw applicaties.
 
 
       &nbsp;
 
 
-      ASRR helpt graag bij het vertalen van uw business problemen naar IT oplossingen met behulp van een dynamisch schaalbaar ITTAAS.
+      &nbsp;
+
+
+      ASRR helpt graag bij het vertalen van uw business problemen naar IT-oplossingen met behulp van een dynamisch schaalbaar ITTAAS.
 ---

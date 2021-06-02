@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: ASRRtechnologies/asrr-nextjs
-  branch: cms-staging
+  branch: production
 media_folder: public/img
 public_folder: img
 #publish_mode: editorial_workflow
