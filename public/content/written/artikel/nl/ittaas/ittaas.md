@@ -13,8 +13,8 @@ card:
   text: "**Wat zijn de voordelen van een dynamisch extern IT-team ten opzichte van
     een een-op-een recruitmentstrategie?**"
   url: /blog/artikel/ittaas
-  image_webp: ittaas.webp
-  image: ittaas.jpg
+  image_webp: ittaas-banner.webp
+  image: ittaas-banner.jpeg
   alt: Paper peoples (team)
 landing:
   title: Expertise on demand
