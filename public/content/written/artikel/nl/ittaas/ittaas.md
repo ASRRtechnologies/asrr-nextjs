@@ -96,7 +96,7 @@ section:
       &nbsp;
 
 
-      Het aanspreekpunt stuurt vervolgens het IT team aan en fungeert daarbij als product owner. Hierbij staat bewaking van de wensen van de klant centraal. Het IT team bestaat uit developers met verschillende expertises. De samenstelling van het team is dynamisch en gebaseerd op de opdracht. De ene keer bestaat deze uit een volledig front end team, de andere keer ligt de focus meer op back-end, etcetera. Dit zorgt voor minder onnodige overhead en de juiste expertise op de juiste plek.
+      Vervolgens stuurt het aanspreekpunt het IT-team aan en fungeert daarbij als product owner. Het bewaken van de wensen van de klant staat hier centraal. Het IT-team bestaat uit developers met verschillende expertises. De samenstelling van het team is dynamisch en gebaseerd op de opdracht. De ene keer bestaat die uit een volledig front-end team, de andere keer ligt de focus meer op back-end, etcetera. Dit voorkomt onnodige overhead en zorgt voor de juiste expertise op de juiste plek.
     media:
       images:
         - image_webp: ittaas-2.webp
