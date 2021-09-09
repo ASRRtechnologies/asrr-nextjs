@@ -57,8 +57,8 @@ section:
       Een duurzame oplossing moet dus een harmonieuze combinatie zijn van deze drie elementen en aan je huidige behoeftes voldoen zonder de behoeftes van toekomstige generaties te belemmeren.
     media:
       images:
-        - image_webp: sustainability-circle-final.png
-          image: sustainability-circle-final.png
+        - image_webp: sustainability-circle-final-1-.png
+          image: sustainability-circle-final-1-.png
           alt: Sustainability
   - content: >-
       ### Drie onderdelen waarin ASRR duurzaam is
