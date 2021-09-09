@@ -21,7 +21,7 @@ landing:
   alt: Windmills
 section:
   - content: >-
-      # Duurzaamheid 
+      # Duurzaamheid
 
 
       ## **Wat houdt duurzaamheid precies in en hoe gaan wij daar bij ASRR mee om?**
@@ -36,7 +36,7 @@ section:
       ### Wat is duurzaamheid?
 
 
-      Duurzaamheid. Een populaire term, geen bedrijf ontkomt er meer aan. Logisch, want duurzaamheid gaat een stuk verder dan bewust omgaan met het milieu. Duurzaamheid gaat over aan je behoeftes voldoen, zonder dat je daarmee de behoeftes van toekomstige generaties belemmert.
+      Duurzaamheid. Een populaire term, geen bedrijf ontkomt er meer aan. Logisch, want duurzaamheid gaat een stuk verder dan bewust omgaan met het milieu. Duurzaamheid gaat over aan je behoeftes voldoen, zonder dat je daarmee de behoeftes van toekomstige generaties belemmert (CBS, 2021).
 
 
        &nbsp;
@@ -67,7 +67,7 @@ section:
       #### Paperless office
 
 
-      Een kantoor zonder papier was voorheen ondenkbaar, maar tegenwoordig goed realiseerbaar. ASRR hoort bij een kleine groep bedrijven die helemaal geen papier meer gebruikt. Doordat ASRR een ‘paperless office’ is, redden we jaarlijks bijna twee grote volgroeide bomen (1). Deze bomen kunnen 40 kg CO2 per jaar (Coörperatief Dutch Renewergy, 2021)
+      Een kantoor zonder papier was voorheen ondenkbaar, maar tegenwoordig goed realiseerbaar. ASRR hoort bij een kleine groep bedrijven die helemaal geen papier meer gebruikt. Doordat ASRR een ‘paperless office’ is, redden we jaarlijks bijna twee grote volgroeide bomen (1). Deze bomen kunnen 40 kg CO2 per jaar terugwinnen uit de lucht (Coörperatief Dutch Renewergy, 2021).
 
 
        &nbsp;
@@ -107,7 +107,9 @@ section:
       #### Bronnen
 
 
-      * Coöperatief Dutch Renewergy. 2021. HOEVEEL CO2-UITSTOOT COMPENSEERT 1 BOOM PER JAAR?. \[online] Available at: [<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/](<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/)>.
+      * cbs.nl. 2021. *Duurzaamheid*. \[online] Available at: <https://www.cbs.nl/nl-nl/economie/landbouw/monitor-duurzame-agro-grondstoffen-2016/toelichtingen-homepage-agro-grondstoffen/duurzaamheid#:~:text=Duurzame%20ontwikkeling%20is%20een%20ontwikkeling,VN%2Dcommissie%20Brundtland%20uit%201987.> \[Accessed 9 September 2021].
+
+      * Coöperatief Dutch Renewergy. 2021. HOEVEEL CO2-UITSTOOT COMPENSEERT 1 BOOM PER JAAR?. \[online] Available at: \[<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/](<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/)>.
 
       * O'Mara, M., 2021. How Much Paper Is Used in One Day?. \[online] Record Nations. Available at: <https://www.recordnations.com/2016/02/how-much-paper-is-used-in-one-day/> \[Accessed 8 September 2021]. 
 
