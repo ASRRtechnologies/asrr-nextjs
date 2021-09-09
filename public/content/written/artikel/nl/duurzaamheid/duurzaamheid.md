@@ -98,34 +98,19 @@ section:
       #### Bronnen
 
 
-      Coöperatief Dutch Renewergy. 2021. HOEVEEL CO2-UITSTOOT COMPENSEERT 1 BOOM PER JAAR?. \[online] Available at: <<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/>>.
-
-
-       &nbsp;
+      Coöperatief Dutch Renewergy. 2021. HOEVEEL CO2-UITSTOOT COMPENSEERT 1 BOOM PER JAAR?. \[online] Available at: [<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/](<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/)>.
 
 
       O'Mara, M., 2021. How Much Paper Is Used in One Day?. \[online] Record Nations. Available at: <https://www.recordnations.com/2016/02/how-much-paper-is-used-in-one-day/> \[Accessed 8 September 2021]. 
 
 
-       &nbsp;
-
-
       Papier en Karton. 2021. Papier weetjes | Papier & Karton. \[online] Available at: <https://papierenkarton.nl/cijfers-feiten/papier-weetjes/> \[Accessed 8 September 2021].
-
-
-       &nbsp;
 
 
       Rvo.nl. 2020. Hernieuwbare energie uit afvalverbranding | RVO.nl | Rijksdienst. \[online] Available at: <https://www.rvo.nl/onderwerpen/duurzaam-ondernemen/duurzame-energie-opwekken/bio-energie/afvalverbranding> \[Accessed 9 September 2021].
 
 
-       &nbsp;
-
-
       Bijleveld, M., Bergsma, G. and Nusselder, S., 2016. Circulaire economie: een belangrijk instrument voor CO2 reductie. \[online] Ce.nl. Available at: <https://ce.nl/wp-content/uploads/2021/03/20160610_CE_Delft_2H81_Magazine_Final_NL.pdf> \[Accessed 9 September 2021].
-
-
-       &nbsp;
 
 
       TechPulse. 2021. Hoeveel verbruikt jouw PC? - TechPulse. \[online] Available at: <https://techpulse.be/achtergrond/116243/wat-verbruikt-je-pc/> \[Accessed 8 September 2021].
