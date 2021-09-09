@@ -70,19 +70,28 @@ section:
       Een kantoor zonder papier was voorheen ondenkbaar, maar tegenwoordig goed realiseerbaar. ASRR hoort bij een kleine groep bedrijven die helemaal geen papier meer gebruikt. Doordat ASRR een ‘paperless office’ is, redden we jaarlijks bijna twee grote volgroeide bomen (1). Deze bomen kunnen 40 kg CO2 per jaar (Coörperatief Dutch Renewergy, 2021)
 
 
+       &nbsp;
+
+
+       &nbsp;
+
+
       #### Recycling
 
 
       Bij ASRR op kantoor wordt PMD, restafval en papier gescheiden. Scheiden maakt het mogelijk om waardevolle materialen terug te winnen en te recyclen tot een nieuw product. In Nederland beland afval dat niet wordt gescheiden op de vuilnisbelt. Dit wordt uiteindelijk verbrand (Rijksdienst, 2020). Verbranding draagt bij aan het broeikaseffect en het verlies van grondstoffen (Bijleveld, Bergsma and Nusselder, 2016). Kortom, recyclen is van groot belang.
 
 
+       &nbsp;
+
+
+       &nbsp;
+
+
       #### Low power
 
 
       Computers die weinig vermogen gebruiken. Het is bijna een ‘must have’ voor Tech bedrijven. Het bespaart namelijk energie en geld. Door onze zelf samengestelde computers en servers bespaard ASRR de helft van wat het normaalgesproken zou kosten (2).
-
-
-       &nbsp;
 
 
        &nbsp;
