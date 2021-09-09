@@ -59,6 +59,7 @@ section:
       images:
         - image_webp: people.png
           image: people.png
+          alt: Sustainability
   - content: >-
       ### Drie onderdelen waarin ASRR duurzaam is
 
