@@ -267,7 +267,7 @@ collections:
             name: "tag"
             widget: "list"
             fields:
-              - { label: "Tag", name: "tag", widget: "select", options: [ "Full stack Development", "Front End Development", "Back End Development", "Hardware", "Expertise on demand", "IT Teams as a Service", "Design", "Consultancy", "Innovation" ] }
+              - { label: "Tag", name: "tag", widget: "select", options: [ "Full stack Development", "Front End Development", "Back End Development", "Hardware", "Expertise on demand", "IT Teams as a Service", "Design", "Consultancy", "Innovation", "Sustainability" ] }
           - label: "Technologies"
             name: "technologies"
             widget: "list"

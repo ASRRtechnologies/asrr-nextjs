@@ -1,0 +1,121 @@
+@import "src/styles/globals";
+
+@include media(">=xs") {
+  .footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100vw;
+    height: auto;
+    background-color: $black;
+
+    h1, h2, a, p {
+      color: white;
+    }
+
+  }
+
+  .footerInner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: flex;
+    max-width: 100px;
+    @include margin-bottom(30px);
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .address {
+    span {
+      display: flex;
+      flex-direction: column;
+
+      &:nth-of-type(1) {
+        @include margin-bottom(20px);
+      }
+    }
+
+    @include margin-bottom(30px);
+  }
+
+  .socialMedia {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    width: 100%;
+
+    span {
+      display: flex;
+      width: 100%;
+      max-width: 150px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    img {
+      width: 100%;
+      max-width: 30px;
+    }
+  }
+
+}
+
+@include media(">=sm") {
+  .footer {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .line{
+    display: flex;
+    width: 3px;
+    margin: 0 50px;
+    background-color: white;
+    border-radius: 2px;
+  }
+
+  .footerInner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 0;
+    margin-right: 50px;
+    display: flex;
+    align-items:center;
+  }
+
+  .socialMedia{
+    min-width: 250px;
+    max-width: 350px;
+
+    span {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    img {
+      max-width: 50px;
+    }
+  }
+
+}
+
+
+@include media(">sm", "<=lg") {
+
+
+}

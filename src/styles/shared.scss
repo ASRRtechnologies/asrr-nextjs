@@ -1,0 +1,42 @@
+@include media(">=xs") {
+  .full-screen-container {
+    width: 100vw;
+    min-height: 100vh;
+  }
+}
+
+@include media(">=xs", "<sm") {
+  .global-padding-horizontal {
+    padding-left: $xs-padding-horizontal;
+    padding-right: $xs-padding-horizontal;
+  }
+
+  .global-padding-vertical {
+    padding-top: $xs-padding-vertical;
+    padding-bottom: $xs-padding-vertical;
+  }
+}
+
+@include media(">=sm", "<lg") {
+  .global-padding-horizontal {
+    padding-left: $sm-padding-horizontal;
+    padding-right: $sm-padding-horizontal;
+  }
+
+  .global-padding-vertical {
+    padding-top: $sm-padding-vertical;
+    padding-bottom: $sm-padding-vertical;
+  }
+}
+
+@include media(">=lg") {
+  .global-padding-horizontal {
+    padding-left: $lg-padding-horizontal;
+    padding-right: $lg-padding-horizontal;
+  }
+
+  .global-padding-vertical {
+    padding-top: $lg-padding-vertical;
+    padding-bottom: $lg-padding-vertical;
+  }
+}

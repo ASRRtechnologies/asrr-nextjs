@@ -1,4 +1,4 @@
-@import "../_collections/collections";
+@import "_collections/collections";
 
 * {
   margin: 0;
@@ -65,43 +65,43 @@ a{
   @include font-size(3rem);
 }
 
-h1{
-  @include font-size(2.5rem);
-  @include margin-bottom(1rem);
-}
-
-h2{
-  @include font-size(1.5rem);
-  @include margin-bottom(1rem);
-  font-weight: normal;
-}
-
-h3{
-  @include font-size(1.2rem);
-  @include margin-bottom(1rem);
-}
-
-h4{
-  @include font-size(1rem);
-  @include margin-bottom(1rem);
-  font-weight: normal;
-}
-
-h5{
-  @include font-size(0.8rem);
-  @include margin-bottom(1rem);
-  font-weight: normal;
-
-}
-
-p{
-  @include font-size(1.15rem);
-  @include margin-bottom(1rem);
-}
-
-a{
-  @include font-size(1.3rem);
-}
+//h1{
+//  @include font-size(2.5rem);
+//  @include margin-bottom(1rem);
+//}
+//
+//h2{
+//  @include font-size(1.5rem);
+//  @include margin-bottom(1rem);
+//  font-weight: normal;
+//}
+//
+//h3{
+//  @include font-size(1.2rem);
+//  @include margin-bottom(1rem);
+//}
+//
+//h4{
+//  @include font-size(1rem);
+//  @include margin-bottom(1rem);
+//  font-weight: normal;
+//}
+//
+//h5{
+//  @include font-size(0.8rem);
+//  @include margin-bottom(1rem);
+//  font-weight: normal;
+//
+//}
+//
+//p{
+//  @include font-size(1.15rem);
+//  @include margin-bottom(1rem);
+//}
+//
+//a{
+//  @include font-size(1.3rem);
+//}
 
 .navigation-font{
   @include font-size(1rem);

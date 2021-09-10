@@ -1,0 +1,61 @@
+@import "~rfs/scss";
+
+@font-face {
+  font-family: 'Nunito-Bold';
+  src: url('../../public/assets/fonts/Nunito-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Nunito-Regular';
+  src: url('../../public/assets/fonts/Nunito-Regular.ttf');
+}
+
+h1, h2, h3, h4, h5, p, a, li {
+  color: #1a1a1a;
+  font-family: Nunito-Bold, serif;
+}
+
+h1, .h1{
+  @include font-size(3rem);
+  font-weight: bold;
+  margin-top: 0;
+}
+
+h2, .h2{
+  @include font-size(2.5rem);
+  font-weight: bold;
+  margin-top: 0;
+}
+
+h3, .h3{
+  @include font-size(2rem);
+  font-weight: bold;
+  margin-top: 0;
+}
+
+h4, .h4{
+  @include font-size(1.4rem);
+  font-weight: bold;
+  margin-top: 0;
+}
+
+h5, .h5{
+  @include font-size(0.9rem);
+  font-weight: bold;
+  @include margin-top(5px);
+}
+
+a, p{
+  @include font-size(1.2rem);
+  @include margin-top(15px);
+  font-family: Nunito-Regular, serif;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.not-bold{
+  font-weight: normal;
+}
