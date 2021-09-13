@@ -12,6 +12,7 @@ interface TeamCardProps {
     image?: string
     website?: string
     content: string
+    alt: string
 }
 
 function TeamCard(props: TeamCardProps) {
