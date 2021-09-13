@@ -11,11 +11,10 @@ interface TeamCardProps {
     position: string,
     image?: string
     website?: string
-
-
+    content: string
 }
 
-function TeamCard(props) {
+function TeamCard(props: TeamCardProps) {
     const [collapsed, setCollapsed] = useState(false);
 
     return (

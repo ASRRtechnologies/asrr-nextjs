@@ -1,9 +1,12 @@
 import React from 'react';
 import bannerStyles from "./banner.module.scss"
-import teamStyles from "@/modules/team/teamStyles.module.scss";
 
+interface BannerProps {
+    title: string
+    content?: string
+}
 
-function Banner(props) {
+function Banner(props: BannerProps) {
     return (
         <div className={`${bannerStyles.banner} global-padding-horizontal global-padding-vertical`}>
             <div className={bannerStyles.innerBanner}>
@@ -11,9 +14,7 @@ function Banner(props) {
                     {props.title}
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque eaque est fugiat ipsa laborum
-                    nisi optio quod ratione velit. Adipisci amet aut consectetur dignissimos hic illum labore quia,
-                    quod!
+                    {props.content}
                 </p>
             </div>
         </div>
