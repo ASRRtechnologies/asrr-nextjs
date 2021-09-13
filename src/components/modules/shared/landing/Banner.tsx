@@ -8,7 +8,7 @@ function Banner(props) {
         <div className={`${bannerStyles.banner} global-padding-horizontal global-padding-vertical`}>
             <div className={bannerStyles.innerBanner}>
                 <h1>
-                    De team
+                    {props.title}
                 </h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cumque eaque est fugiat ipsa laborum
