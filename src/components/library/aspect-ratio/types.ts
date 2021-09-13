@@ -26,7 +26,7 @@ export interface AspectRatioProps extends StandardProps {
     /**
      * Max width in pixels
      */
-    maxWidth: number,
+    maxWidth?: number,
 
     //This component should only accept one child
     children?: React.ReactElement;

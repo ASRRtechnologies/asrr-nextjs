@@ -1,0 +1,50 @@
+@import "src/styles/globals";
+
+@include media(">=xs") {
+  .card{
+    display: block;
+    width: 100%;
+    height: auto;
+
+    .border{
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: red;
+      @include margin(10px 0);
+    }
+
+    img{
+      object-fit: cover;
+    }
+
+    a{
+      text-decoration: underline;
+      text-decoration-color: inherit;
+    }
+
+    .name{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+  }
+
+}
+
+@include media(">=sm") {
+  .teamGrid {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+  }
+
+}
+
+
+@include media(">sm", "<=lg") {
+  .teamGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+}

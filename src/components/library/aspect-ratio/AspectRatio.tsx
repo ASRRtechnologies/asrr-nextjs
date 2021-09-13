@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "@emotion/styled";
-import {AspectRatioComponent, AspectRatioProps, AspectRatioWrapper} from "@/utillities/aspect-ratio/types";
+import {AspectRatioComponent, AspectRatioProps, AspectRatioWrapper} from "@/library/aspect-ratio/types";
 
 /**
  * Takes in x and y aspect-ratio and returns a height in percentage;
