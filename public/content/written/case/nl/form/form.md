@@ -182,6 +182,14 @@ section:
 
       FORM had een scala aan IT disciplines nodig, en heeft door de jaren heen dynamisch op afroepbasis een team van verschillende developers bij ons afgenomen om hun visie te realiseren.
   - content: >-
+      ### Feedback klant
+
+
+      > "ASRR denkt pro-actief mee in de projecten en komt met goede en efficiënte oplossingen. Ze begeleiden het project vakkundig, zijn heel flexibel en kunnen snel schakelen indien nodig. Het is erg plezierig om met ze samen te werken!"
+
+
+      \- Jörgen Haring
+  - content: >-
       ### Preview
 
 
