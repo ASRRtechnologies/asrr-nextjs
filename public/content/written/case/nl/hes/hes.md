@@ -48,7 +48,7 @@ section:
       ## De Oplossing
 
 
-      ### **1 - Database:** 
+      ### **1 - Database**
 
 
       De eerste stap is structuur aanbrengen in de Excel sheet. Een goede structuur biedt houvast, overzicht en duidelijkheid. We hebben een code geschreven die het bestaande Excel bestand kon uitlezen en op de gewenste manier kon structureren. 
