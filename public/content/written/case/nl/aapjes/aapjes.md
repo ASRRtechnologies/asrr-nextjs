@@ -47,7 +47,7 @@ section:
       &nbsp;
 
 
-      ## Het resultaat
+      ## Oplossing
 
 
       * Een snelle NextJS web app.
