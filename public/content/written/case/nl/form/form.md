@@ -134,8 +134,8 @@ section:
       De basis van het automatiseren van het ontwerpproces is het modulair en parametrisch opbouwen van de sub-componenten waar een huis uit bestaat. Dat klinkt misschien ingewikkeld, maar door het zo te structureren kan er een hoop geautomatiseerd worden.
     media:
       images:
-        - image_webp: form-1.webp
-          image: form-1.jpg
+        - image_webp: form-1-2.png
+          image: form-1-2.png
           description: A modular design buildup of the house
           reference: https://www.form.nl/form-configurator
           alt: Autodesk Revit
