@@ -31,22 +31,22 @@ section:
       # Heijmans/FORM 3D Woningconfigurator
 
 
-      ## Een VR Ready, 3D omgeving om online uw toekomstige huis te configureren.
+      *Een VR Ready, 3D omgeving om online uw toekomstige huis te configureren.*
 
 
-      *Heijmans is een van de grootste bouwbedrijven van Nederland. Zij wilde in samenwerking met FORM een 3D woningconfigurator realiseren.* 
+      &nbsp;
 
 
-      ### Probleem
+      ## Probleem
 
 
-      Heijmans wilde in samenwerking met FORM een 3D woningconfigurator realiseren 
+      Als je een huis koopt kan je bij de architect aangeven welke opties je op jouw huis zou willen, zoals een dakkapel of een uitbouw. De architect moet voor elke klant een apart ontwerp maken. Het is vast in te beelden dat dit een tijdrovende bezigheid is als de huizen in grote getallen gebouwd worden. Daarbij zijn mensen minder snel geneigd om een extra optie te kiezen als zij zich vooraf niet goed kunnen inbeelden hoe dit eruit zal zien. 
 
 
-      ### Oplossing
+      &nbsp;
 
 
-      In samenwerking met [FORM](https://form.nl) en [Heijmans](www.heijmans.nl) hebben een 3D, real-time BIM configurator opgeleverd. Met deze webapplicatie krijgen gebruikers de toekomstige woning in een game engine te zien, waardoor opties goed gevisualiseerd kunnen worden. Dan toch maar een uitbouw of een dakkapel erbij, doordat de klant kan zien hoe het zicht vanuit binnen het huis verandert.
+      Kortom, het kost een architect veel tijd en energie om voor alle klanten een afzonderlijk ontwerp te realiseren en de klanten zijn minder snel geneigd extra opties aan hun huis toe te voegen, omdat zij dit niet kunnen inbeelden.
     media:
       images:
         - image_webp: heijmans-configurator-landing.webp
@@ -55,15 +55,24 @@ section:
           alt: Webapplicatie Huis Configurator
       videos: []
   - content: >-
-      De applicatie is gebouwd op een van onze **`NextJS`** applicaties. De
-      applicatie onttrekt data uit een **`MongoDB`** database. De prijzen worden
-      in real-time berekend op basis van de gekozen opties. Als de klant eenmaal
-      klaar is met configureren, wordt de configuratie opgeslagen. De klant
-      krijgt dan een brochure per mail met daarin de specificaties van de
-      gekozen woning. Verder wordt er een link toegevoegd waarmee de
-      configuratie weer opgevraagd kan worden, om te laten zien aan de
-      kopersbegeleider, of zelf aan relaties van de koper.
+      ## Oplossing
 
 
-      Een publieke demo van een versie opgezet voor FORM is te [hier](https://configurator.form.asrr.nl/projects/form-2020/1) te vinden.
+      In samenwerking met [FORM](https://form.nl) en [Heijmans](www.heijmans.nl) hebben een 3D, real-time BIM configurator opgeleverd. Met deze webapplicatie krijgen gebruikers de toekomstige woning in een game engine te zien, waardoor opties goed gevisualiseerd kunnen worden. Dan toch maar een uitbouw of een dakkapel erbij, doordat de klant zelfs kan zien hoe het zicht vanuit binnen het huis verandert.
+
+
+      &nbsp;
+
+
+      De applicatie is gebouwd op een van onze **`NextJS`** applicaties. De applicatie onttrekt data uit een **`MongoDB`** database. De prijzen worden in real-time berekend op basis van de gekozen opties. Als de klant eenmaal klaar is met configureren, wordt de configuratie opgeslagen. De klant krijgt dan een brochure per mail met daarin de specificaties van de gekozen woning. Verder wordt er een link toegevoegd waarmee de configuratie weer opgevraagd kan worden, om te laten zien aan de kopersbegeleider, of zelf aan relaties van de koper.
+  - content: >-
+      ## Conclusie
+
+
+      Het configureren van huizen is nog nooit zo simpel en aantrekkelijk geweest door deze tijdsbesparende applicatie die ASRR in samenwerking met FORM en Heijmans heeft gerealiseerd.
+  - content: >-
+      ## Preview
+
+
+      Een publieke demo van de configurator opgezet voor FORM is te vinden door [hier](https://configurator.form.asrr.nl/projects/form-2020/1) te drukken.
 ---
