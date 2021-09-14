@@ -81,10 +81,10 @@ section:
       ## Feedback van de klant
 
 
-      > ASRR is een erg jong, professioneel en dynamisch bedrijf met een flat management structuur, dit zorgt voor een vlotte communicatie zowel intern als met de klanten, waardoor er veel aandacht en zorg is voor de klant. Ik heb erg goede ervaringen opgedaan met ASRR. Een echte aanrader als je op zoek bent naar een professionele partner die met je meedenkt en waar de klant op nummer 1 staat!
+      > "ASRR is een erg jong, professioneel en dynamisch bedrijf met een flat management structuur, dit zorgt voor een vlotte communicatie zowel intern als met de klanten, waardoor er veel aandacht en zorg is voor de klant. Ik heb erg goede ervaringen opgedaan met ASRR. Een echte aanrader als je op zoek bent naar een professionele partner die met je meedenkt en waar de klant op nummer 1 staat!"
 
 
-      Ravi Badal, Manager Operations
+      \- Ravi Badal, Manager Operations
 
 
       &nbsp;
@@ -93,7 +93,7 @@ section:
       ## Preview
 
 
-      De website is** [hier](https://espconsultancy.nl)** te vinden. Disclaimer: design is volledig bepaald door de klant en daardoor niet in stijl ASRR, er kan ook gekozen worden voor een hands-on aanpak waarbij ASRR een design aflevert dat in onze optiek goed in de markt past.
+      De website is[hier](https://espconsultancy.nl) te vinden. Disclaimer: design is volledig bepaald door de klant en daardoor niet in stijl ASRR, er kan ook gekozen worden voor een hands-on aanpak waarbij ASRR een design aflevert dat in onze optiek goed in de markt past.
     media:
       images:
         - image_webp: esp-example-safari.webp
