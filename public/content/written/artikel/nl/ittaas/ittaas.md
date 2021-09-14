@@ -30,19 +30,10 @@ section:
       ## **Wat zijn de voordelen van een dynamisch extern IT-team ten opzichte van een een-op-een recruitmentstrategie?**
 
 
-      &nbsp;
-
-
-      &nbsp;
-
-
       ### De huidige situatie
 
 
       In de huidige markt voor externe IT-werkzaamheden wordt vaak in hokjes gedacht. Een opdrachtgever klopt aan bij een recruitmentbureau en geeft aan welke competenties mogelijk nodig zijn voor een opdracht. De recruiter stelt op basis van deze input een opdrachtomschrijving op. Dit resulteert vaak in een eisenlijst waar developers op afknappen. Daarnaast is de eisenlijst niet representatief voor het uiteindelijke werk waardoor de juiste persoon niet op de juiste plek wordt geplaatst.
-
-
-      &nbsp;
 
 
       &nbsp;
@@ -54,13 +45,7 @@ section:
       &nbsp;
 
 
-      &nbsp;
-
-
       Verder heeft het IT-recruitment veelal meer oog voor buzzwords en jarenlange ervaring, terwijl een goede developer zich eerder kenmerkt door groeipotentie en aanpassingsvermogen. Deze zaken komen naar voren naarmate developers in teamverband werken en zichzelf ontwikkelen. De huidige factoren garanderen niet altijd een goede match. IT’ers worden afgeschrikt door opdrachten waarin de technische eisen niet kloppen of waarin veel termen worden aangehaald die niets te maken hebben met de technologie of de opdracht. Opdrachtgevers en inhuurkrachten spreken daardoor vaak een andere taal.
-
-
-      &nbsp;
 
 
       &nbsp;
@@ -75,6 +60,11 @@ section:
           description: ""
           reference: ""
   - content: >-
+      ## Wat is ITTAAS?
+
+
+      Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte IT-afdeling tijdelijk aan jouw bedrijf toevoegt. Hierbij hoeft de klant zich niet druk te maken over of-je-wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’ applicatie op maat.
+  - content: >-
       ### Hoe ziet ASRR ITTAAS?
 
 
@@ -84,13 +74,7 @@ section:
       &nbsp;
 
 
-      &nbsp;
-
-
       Het aanspreekpunt gaat als consultant een gesprek aan met de opdrachtgever. Hierbij wordt geanalyseerd hoe het huidige proces in het bedrijf verloopt, wat de knelpunten zijn en wat de technische oplossing hiervoor is.
-
-
-      &nbsp;
 
 
       &nbsp;
