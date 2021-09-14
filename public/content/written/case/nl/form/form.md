@@ -143,7 +143,7 @@ section:
       ### Oplossing
 
 
-      Met deze visie zijn we in 2018 begonnen met een groot nieuw project, de Configurator. Meer informatie over de laatste versie hiervan is te vinden onder dit nieuwsbericht.
+      Met deze visie zijn we in 2018 begonnen met een groot nieuw project, de Configurator. Meer informatie over de laatste versie van de Configurator is te vinden onderaan de pagina.
 
 
       &nbsp;
