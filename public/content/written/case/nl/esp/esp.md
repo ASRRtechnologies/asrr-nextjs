@@ -93,7 +93,7 @@ section:
       ## Preview
 
 
-      De website is[hier](https://espconsultancy.nl) te vinden. Disclaimer: design is volledig bepaald door de klant en daardoor niet in stijl ASRR, er kan ook gekozen worden voor een hands-on aanpak waarbij ASRR een design aflevert dat in onze optiek goed in de markt past.
+      De website is [hier](https://espconsultancy.nl) te vinden. Disclaimer: design is volledig bepaald door de klant en daardoor niet in stijl met ASRR. Er kan ook gekozen worden voor een hands-on aanpak waarbij ASRR een design aflevert dat in onze optiek goed in de markt past.
     media:
       images:
         - image_webp: esp-example-safari.webp
