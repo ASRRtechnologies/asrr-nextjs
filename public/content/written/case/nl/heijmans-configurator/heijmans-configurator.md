@@ -21,7 +21,7 @@ card:
   image: ezgif.com-gif-maker-4-.jpg
   alt: Een screenshot van de webapplicatie Woningconfigurator Heijmans
 landing:
-  title: Een huis configureren in virtual reality, vanuit je luie stoel.
+  title: Een huis configureren in virtual reality vanuit je luie stoel.
   image_webp: heijmans-configurator-landing.webp
   image: ezgif.com-gif-maker-4-.jpg
   alt: Webapplicatie Huis Configurator
@@ -34,13 +34,16 @@ section:
       ## Een VR Ready, 3D omgeving om online uw toekomstige huis te configureren.
 
 
-      ### Waar hebben we voor gezorgd?
+      *Heijmans is een van de grootste bouwbedrijven van Nederland. Zij wilde in samenwerking met FORM een 3D woningconfigurator realiseren.* 
 
 
-      &nbsp;
+      ### Probleem
 
 
-      &nbsp;
+      Heijmans wilde in samenwerking met FORM een 3D woningconfigurator realiseren 
+
+
+      ### Oplossing
 
 
       In samenwerking met [FORM](https://form.nl) en [Heijmans](www.heijmans.nl) hebben een 3D, real-time BIM configurator opgeleverd. Met deze webapplicatie krijgen gebruikers de toekomstige woning in een game engine te zien, waardoor opties goed gevisualiseerd kunnen worden. Dan toch maar een uitbouw of een dakkapel erbij, doordat de klant kan zien hoe het zicht vanuit binnen het huis verandert.
