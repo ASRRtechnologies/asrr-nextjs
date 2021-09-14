@@ -122,7 +122,7 @@ section:
       ## FORM Architecture & Engineering
 
 
-      *FORM is een architectenbureau die al sinds 2011 een visie heeft over hoe het ontwerpproces van nieuwbouwhuizen zou kunnen worden geautomatiseerd.*
+      *FORM is een architectenbureau dat al sinds 2011 een visie heeft over hoe het ontwerpproces van nieuwbouwhuizen zou kunnen worden geautomatiseerd.*
 
 
       &nbsp;
