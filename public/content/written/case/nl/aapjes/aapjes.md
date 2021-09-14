@@ -71,8 +71,8 @@ section:
       &nbsp;
     media:
       images:
-        - image_webp: aapjes-example.webp
-          image: aapjes-example.jpg
+        - image_webp: aapjes-example-2.png
+          image: aapjes-example-2.png
           alt: Sneak peak of aapjes website
           description: Preview van de website
           reference: https://www.dekleineaapjes.nl/
