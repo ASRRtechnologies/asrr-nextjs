@@ -71,14 +71,17 @@ section:
 
       Doordat het een enorme set data is, kan er in een oogopslag niet veel gezegd worden over de status van het project door alleen te kijken naar de tabel waar alles in staat. Daarom hebben we met behulp van onze Business Insights expert een PowerBI dashboard opgezet. In dit dashboard worden verschillende zaken interactief weergegeven, gespitst op het management. Zo wordt er gezien hoeveel vertraging er zit tussen de Planning en de Actuals. Hoeveel staal er op welk punt in het proces zit en wat de status van elke terminal is. Dit alles zorgt ervoor dat er geen menselijke handelingen meer verricht hoeven te worden voor het genereren van rapportages. Verder krijgt het management real-time inzichten in de status van het gehele project, met highlights op key waarden.
     media:
-      images:
-        - image_webp: case-image-2.png
-          image: case-image-2.png
-          alt: Dashboard overview of application
-          description: Het PowerBI dashboard (links) en de webapplicatie (rechts).
+      images: []
   - content: >-
       ### Conclusie
 
 
       Door middel van een investering in een automatisering die aansluit op het huidige werkproces, is er een tool ontwikkeld waarmee tijd van de werknemers bespaard is, de data veiliger is opgeslagen, verantwoordelijkheden verplaatst zijn naar de personen die daarover gaan en heeft het management nieuw inzicht in de status van het project.
+  - content: "## Preview"
+    media:
+      images:
+        - alt: Dashboard overview of application
+          description: Het PowerBI dashboard (links) en de webapplicatie (rechts).
+          image: case-image-2.png
+          image_webp: case-image-2.png
 ---
