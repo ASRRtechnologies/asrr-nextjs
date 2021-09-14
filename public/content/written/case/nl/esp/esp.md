@@ -44,13 +44,13 @@ section:
       &nbsp;
 
 
+      ## Oplossing
+
+
       Zo is deze website gebouwd op het React framework, met als doel een progressieve web applicatie te realiseren. Zo'n applicatie heeft een hoop voordelen, waaronder bijvoorbeeld het offline-cachen van een groot deel van de gegevens. Hierdoor is de webapplicatie razendsnel en kan deze zelfs zonder internetverbinding werken. 
 
 
       &nbsp;
-
-
-      ## Proces
 
 
       ESP droeg een aantal voorbeelden aan van websites die in de smaak vielen. Hieronder een aantal tech giganten, zoals ASML, maar ook concurrenten in de branche. Onze designer heeft getracht deze elementen te combineren tot geheel dat de sterke punten van deze voorbeelden combineert. Na een aantal iteraties in Adobe XD kwam er een definitief design uit. 
