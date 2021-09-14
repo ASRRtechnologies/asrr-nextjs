@@ -29,16 +29,19 @@ section:
       # Een website voor de kleintjes
 
 
-      ASRR is er voor bedrijven op elke schaal, zo ook voor kinderdagverblijf de Kleine Aapjes in Den Haag. Dit bedrijf transitioneerde van een WordPress website naar een van onze NextJS webapps. 
+      *Het kinderdagverblijf, de Kleine Aapjes, in Den Haag had een simpele website nodig.*
 
 
-      &nbsp;&nbsp;
+      ASRR is er voor bedrijven op elke schaal, zo ook voor kinderdagverblijf de Kleine Aapjes in Den Haag. De website van dit bedrijf transitioneerde van een WordPress website naar een van onze NextJS webapps. 
+
+
+      &nbsp;
 
 
       De website moest simpel, snel en modern ogen. Binnen het budget hebben we een van onze templates gebruikt en deze gehost op ons hosting systeem. De klant is volledig ontzorgd met de juiste resultaten.
 
 
-      &nbsp;&nbsp;
+      &nbsp;
 
 
       ## Het resultaat
@@ -53,13 +56,16 @@ section:
       * Globally redundant hosting op met een razendsnel hosting systeem.
 
 
-      &nbsp;&nbsp;
+      &nbsp;
 
 
-      De website is [hier](https://dekleineaapjes.nl) te vinden. 
+      ## Preview
 
 
-      &nbsp;&nbsp;
+      Hieronder een preview van de website. De website is [hier](https://dekleineaapjes.nl) te vinden. 
+
+
+      &nbsp;
     media:
       images:
         - image_webp: aapjes-example.webp
