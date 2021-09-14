@@ -60,7 +60,7 @@ section:
           description: ""
           reference: ""
   - content: >-
-      ## Wat is ITTAAS?
+      ### Wat is ITTAAS?
 
 
       Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte IT-afdeling tijdelijk aan jouw bedrijf toevoegt. Hierbij hoeft de klant zich niet druk te maken over of-je-wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’ applicatie op maat.
