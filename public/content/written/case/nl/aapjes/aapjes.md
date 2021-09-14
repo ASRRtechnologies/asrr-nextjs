@@ -75,5 +75,5 @@ section:
           image: aapjes-example.jpg
           alt: Sneak peak of aapjes website
           description: Preview van de website
-          reference: https://dekleineaapjes.nl
+          reference: https://www.dekleineaapjes.nl/
 ---
