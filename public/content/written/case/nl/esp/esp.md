@@ -47,6 +47,9 @@ section:
       Zo is deze website gebouwd op het React framework, met als doel een progressieve web applicatie te realiseren. Zo'n applicatie heeft een hoop voordelen, waaronder bijvoorbeeld het offline-cachen van een groot deel van de gegevens. Hierdoor is de webapplicatie razendsnel en kan deze zelfs zonder internetverbinding werken. 
 
 
+      &nbsp;
+
+
       ## Proces
 
 
@@ -59,6 +62,9 @@ section:
       Ons front-end team is toen hard aan de slag gegaan om dit design te realiseren in code. De klant kreeg tijdens het proces een link waarop de wijzigingen real-time te volgen waren. Ons deployment systeem zorgt ervoor dat alle werkzaamheden bijna gelijk zichtbaar zijn.
 
 
+      &nbsp;
+
+
       ## Conclusie
 
 
@@ -67,6 +73,11 @@ section:
       * Automatische HTTPS/SSL certificering.
 
       * Globally redundant hosting op met een razendsnel hosting systeem.
+
+
+
+
+      &nbsp;
 
 
       ## Feedback van de klant
@@ -78,10 +89,13 @@ section:
       Ravi Badal, Manager Operations
 
 
+      &nbsp;
+
+
       ## Preview
 
 
-      De website is [hier](https://espconsultancy.nl) te vinden. Disclaimer: design is volledig bepaald door de klant en daardoor niet in stijl ASRR, er kan ook gekozen worden voor een hands-on aanpak waarbij ASRR een design aflevert dat in onze optiek goed in de markt past.
+      De website is** [hier](https://espconsultancy.nl)** te vinden. Disclaimer: design is volledig bepaald door de klant en daardoor niet in stijl ASRR, er kan ook gekozen worden voor een hands-on aanpak waarbij ASRR een design aflevert dat in onze optiek goed in de markt past.
     media:
       images:
         - image_webp: esp-example-safari.webp
