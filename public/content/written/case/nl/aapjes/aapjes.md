@@ -29,7 +29,7 @@ section:
       # Een website voor de kleintjes
 
 
-      *Het kinderdagverblijf, de Kleine Aapjes, in Den Haag had een simpele website nodig.*
+      *Het kinderdagverblijf, de Kleine Aapjes, in Den Haag heeft ASRR benaderd voor een simpele, snelle moderne website.*
 
 
       ASRR is er voor bedrijven op elke schaal, zo ook voor kinderdagverblijf de Kleine Aapjes in Den Haag. De website van dit bedrijf transitioneerde van een WordPress website naar een van onze NextJS webapps. 
