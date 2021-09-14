@@ -17,13 +17,13 @@ card:
   text: Een VR Ready, 3D omgeving om uw toekomstige huis te configureren vanuit
     een internetbrowser.
   url: /blog/news/heijmans-configurator
-  image_webp: heijmans-configurator-landing.webp
-  image: ezgif.com-gif-maker-4-.jpg
+  image_webp: ezgif.com-gif-maker-4-2.jpg
+  image: ezgif.com-gif-maker-4-2.jpg
   alt: Een screenshot van de webapplicatie Woningconfigurator Heijmans
 landing:
   title: Een huis configureren in virtual reality vanuit je luie stoel.
-  image_webp: heijmans-configurator-landing.webp
-  image: ezgif.com-gif-maker-4-.jpg
+  image_webp: ezgif.com-gif-maker-4-2.jpg
+  image: ezgif.com-gif-maker-4-2.jpg
   alt: Webapplicatie Huis Configurator
   text_color: true
 section:
@@ -48,11 +48,7 @@ section:
 
       Kortom, het kost een architect veel tijd en energie om voor alle klanten een afzonderlijk ontwerp te realiseren en de klanten zijn minder snel geneigd extra opties aan hun huis toe te voegen, omdat zij dit niet kunnen inbeelden.
     media:
-      images:
-        - image_webp: heijmans-configurator-landing.webp
-          image: ezgif.com-gif-maker-4-.jpg
-          description: De online omgeving.
-          alt: Webapplicatie Huis Configurator
+      images: []
       videos: []
   - content: >-
       ## Oplossing
@@ -65,6 +61,12 @@ section:
 
 
       De applicatie is gebouwd op een van onze **`NextJS`** applicaties. De applicatie onttrekt data uit een **`MongoDB`** database. De prijzen worden in real-time berekend op basis van de gekozen opties. Als de klant eenmaal klaar is met configureren, wordt de configuratie opgeslagen. De klant krijgt dan een brochure per mail met daarin de specificaties van de gekozen woning. Verder wordt er een link toegevoegd waarmee de configuratie weer opgevraagd kan worden, om te laten zien aan de kopersbegeleider, of zelf aan relaties van de koper.
+    media:
+      images:
+        - image_webp: ezgif.com-gif-maker-4-2.jpg
+          image: ezgif.com-gif-maker-4-2.jpg
+          description: De online omgeving
+          alt: Configurator
   - content: >-
       ## Conclusie
 
