@@ -75,10 +75,10 @@ section:
       Binnen de omgeving hebben we de volledige Microsoft stack toegepast, met als rode lijn Microsoft Teams. Dit was de hub voor alle bestanden (gekoppeld met het SharePoint systeem), meetings, announcements, planning, etc. We hebben de werknemers een briefing gegeven over het gebruik van Teams, dat toen destijds nog in de kinderschoenen stond. Verder hebben we remote support geleverd via het systeem, zoals IT en Microsoft Office ondersteuningsverzoeken die in het dagelijkse proces naar boven kwamen.
     media:
       images:
-        - image_webp: ontwerp-zonder-titel-1-.png
+        - image_webp: ontwerp-zonder-titel-5-.png
           description: Een screenshot van het login scherm van de webapplicatie.
           alt: login screen web application nwo
-          image: ontwerp-zonder-titel-1-.png
+          image: ontwerp-zonder-titel-5-.png
   - content: >-
       ## De Conclusie
 
