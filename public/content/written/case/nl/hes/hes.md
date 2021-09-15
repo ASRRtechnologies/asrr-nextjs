@@ -72,8 +72,8 @@ section:
       Doordat het een enorme set data is, kan er in een oogopslag niet veel gezegd worden over de status van het project door alleen te kijken naar de tabel waar alles in staat. Daarom hebben we met behulp van onze Business Insights expert een PowerBI dashboard opgezet. In dit dashboard worden verschillende zaken interactief weergegeven, gespitst op het management. Zo wordt er gezien hoeveel vertraging er zit tussen de Planning en de Actuals. Hoeveel staal er op welk punt in het proces zit en wat de status van elke terminal is. Dit alles zorgt ervoor dat er geen menselijke handelingen meer verricht hoeven te worden voor het genereren van rapportages. Verder krijgt het management real-time inzichten in de status van het gehele project, met highlights op key waarden.
     media:
       images:
-        - image_webp: ontwerp-zonder-titel-3-.png
-          image: ontwerp-zonder-titel-3-.png
+        - image_webp: voorbeeld.png
+          image: voorbeeld.png
           description: Het PowerBI dashboard (links) en de webapplicatie (rechts).
           alt: Dashboard overview of application
   - content: >-
