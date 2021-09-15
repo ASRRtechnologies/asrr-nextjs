@@ -119,16 +119,13 @@ section:
       # Het bouwen van een geautomatiseerde BIM-Configurator
 
 
-      ## FORM Architecture & Engineering
-
-
-      *FORM is een architectenbureau dat al sinds 2011 een visie heeft over hoe het ontwerpproces van nieuwbouwhuizen zou kunnen worden geautomatiseerd.*
+      *FORM Architecture & Engineering is een architectenbureau dat al sinds 2011 een visie heeft over hoe het ontwerpproces van nieuwbouwhuizen zou kunnen worden geautomatiseerd.*
 
 
       &nbsp;
 
 
-      ### Het probleem
+      ## Het probleem
 
 
       De basis van het automatiseren van het ontwerpproces is het modulair en parametrisch opbouwen van de sub-componenten waar een huis uit bestaat. Dat klinkt misschien ingewikkeld, maar door het zo te structureren kan er een hoop geautomatiseerd worden.
@@ -140,7 +137,7 @@ section:
           reference: https://www.form.nl/form-configurator
           alt: Autodesk Revit
   - content: >-
-      ### Oplossing
+      ## Oplossing
 
 
       Met deze visie zijn we in 2018 begonnen met een groot nieuw project, de Configurator. Meer informatie over de laatste versie van de Configurator is te vinden onderaan de pagina.
@@ -177,12 +174,12 @@ section:
     media:
       images: []
   - content: >-
-      ### Conclusie
+      ## Conclusie
 
 
       FORM had een scala aan IT disciplines nodig, en heeft door de jaren heen dynamisch op afroepbasis een team van verschillende developers bij ons afgenomen om hun visie te realiseren.
   - content: >-
-      ### Feedback klant
+      ## Feedback klant
 
 
       > "ASRR denkt pro-actief mee in de projecten en komt met goede en efficiënte oplossingen. Ze begeleiden het project vakkundig, zijn heel flexibel en kunnen snel schakelen indien nodig. Het is erg plezierig om met ze samen te werken!"
@@ -190,7 +187,7 @@ section:
 
       \- Jörgen Haring
   - content: >-
-      ### Preview
+      ## Preview
 
 
       Dit is een preview van het dashboard. Als de request eenmaal voltooid is kan de klant de bouwtekeningen met een druk op de knop downloaden.
