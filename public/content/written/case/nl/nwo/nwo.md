@@ -15,8 +15,8 @@ info:
 card:
   title: De bouw van een veilige, krachtige Remote Desktop Server
   url: portfolio/nwo
-  image_webp: ontwerp-zonder-titel-5-.png
-  image: ontwerp-zonder-titel-5-.png
+  image_webp: case-image.webp
+  image: case-image.webp
   alt: Login screen Remote Desktop Webapplication
 landing:
   title: Een super computer beschikbaar vanaf overal ter wereld
