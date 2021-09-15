@@ -60,7 +60,13 @@ section:
       &nbsp;
 
 
-      De applicatie is gebouwd op een van onze **`NextJS`** applicaties. De applicatie onttrekt data uit een **`MongoDB`** database. De prijzen worden in real-time berekend op basis van de gekozen opties. Als de klant eenmaal klaar is met configureren, wordt de configuratie opgeslagen. De klant krijgt dan een brochure per mail met daarin de specificaties van de gekozen woning. Verder wordt er een link toegevoegd waarmee de configuratie weer opgevraagd kan worden, om te laten zien aan de kopersbegeleider, of zelf aan relaties van de koper. Onder het **kopje preview** is een link waarmee een **online demo** bekeken kan worden.
+      De applicatie is gebouwd op een van onze **`NextJS`** applicaties. De applicatie onttrekt data uit een **`MongoDB`** database. De prijzen worden in real-time berekend op basis van de gekozen opties. Als de klant eenmaal klaar is met configureren, wordt de configuratie opgeslagen. De klant krijgt dan een brochure per mail met daarin de specificaties van de gekozen woning. Verder wordt er een link toegevoegd waarmee de configuratie weer opgevraagd kan worden, om te laten zien aan de kopersbegeleider, of zelf aan relaties van de koper. 
+
+
+      &nbsp;
+
+
+      Een publieke demo van de configurator opgezet voor FORM is te vinden door [hier](https://configurator.form.asrr.nl/projects/form-2020/1) te drukken.
     media:
       images:
         - image_webp: ezgif.com-gif-maker-4-2.jpg
