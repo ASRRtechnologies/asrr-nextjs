@@ -12,8 +12,8 @@ info:
 card:
   title: Van Excel sheet naar Enterprise Applicatie
   url: portfolio/hes
-  image_webp: case-image-2.png
-  image: case-image-2.png
+  image_webp: case-image.png
+  image: case-image.png
   alt: Dashboard overview of application
   text: Van raw business data naar business insights. Verantwoordelijkheden bij de
     mensen die daarover gaan.
