@@ -52,8 +52,8 @@ section:
       De klant gaf aan dat de omgeving geschikt moest zijn voor ongeveer vijftig werknemers. Verder moest de omgeving genoeg rekenkracht hebben om zware CAD en modelleer programma’s te runnen. Ook moesten de bestanden veilig opgeslagen worden met een back-up strategie.
     media:
       images:
-        - image_webp: nwo-1.webp
-          image: nwo-1.jpg
+        - image_webp: nwo-1-2.png
+          image: nwo-1-2.png
           description: Een vogelvlucht van de Nord-West Oelleitung
           alt: Route of Nord-West Oelleitung
   - content: >-
