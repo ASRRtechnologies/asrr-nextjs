@@ -171,8 +171,22 @@ section:
 
 
       De crux hierin is de applicatie in de Cloud. Dit is een Java Spring boot applicatie, gehost op ons Kubernetes netwerk. Deze applicatie moet altijd beschikbaar zijn, en kan een enorme hoeveelheid aanvragen tegelijk aan. Vervolgens worden deze aanvragen opgeslagen in een database, met bijbehorend dashboard om in te zien wat de klanten gekozen hebben. De Cloud applicatie voert de aanvragen mondjesmaat aan de Revit worker, en zorgt ervoor dat de uploads veilig worden opgeslagen in Azure.
+
+
+      &nbsp;
+
+
+      Dit is een preview van het dashboard. Als de request eenmaal voltooid is kan de klant de bouwtekeningen met een druk op de knop downloaden.
     media:
-      images: []
+      images:
+        - image_webp: form-3.png
+          image: form-3.png
+          description: Gesimplificeerde versie van het configurator dashboard
+          alt: Dashboard
+        - description: Login scherm van het Configurator dashboard
+          alt: Configurator login
+          image_webp: form-2.png
+          image: form-2.png
   - content: >-
       ## Conclusie
 
@@ -186,19 +200,4 @@ section:
 
 
       \- Jörgen Haring
-  - content: >-
-      ## Preview
-
-
-      Dit is een preview van het dashboard. Als de request eenmaal voltooid is kan de klant de bouwtekeningen met een druk op de knop downloaden.
-    media:
-      images:
-        - image_webp: form-3.webp
-          image: form-3.png
-          alt: Dashboard
-          description: Gesimplificeerde versie van het configurator dashboard
-        - image_webp: form-2.png
-          image: form-2.png
-          alt: Configurator Login
-          description: Login scherm van het Configurator dashboard
 ---
