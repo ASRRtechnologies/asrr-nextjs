@@ -54,7 +54,7 @@ section:
       ## Oplossing
 
 
-      In samenwerking met [FORM](https://form.nl) en [Heijmans](www.heijmans.nl) hebben een 3D, real-time BIM configurator opgeleverd. Met deze webapplicatie krijgen gebruikers de toekomstige woning in een game engine te zien, waardoor opties goed gevisualiseerd kunnen worden. Dan toch maar een uitbouw of een dakkapel erbij, doordat de klant zelfs kan zien hoe het zicht vanuit binnen het huis verandert.
+      In samenwerking met [FORM](https://form.nl) en [Heijmans](www.heijmans.nl) hebben we een 3D, real-time BIM configurator opgeleverd. Met deze webapplicatie krijgen gebruikers de toekomstige woning in een game engine te zien, waardoor opties goed gevisualiseerd kunnen worden. Dan toch maar een uitbouw of een dakkapel erbij, doordat de klant zelfs kan zien hoe het zicht vanuit binnen het huis verandert.
 
 
       &nbsp;
