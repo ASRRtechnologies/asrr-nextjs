@@ -14,8 +14,6 @@ section:
       ## Data is een waardevolle asset voor elk bedrijf.
 
 
-      &nbsp;\
-
       \
 
       Data is een waardevolle asset voor elk bedrijf. Veel bedrijven doen echter niks met de potentiele goudmijn waar ze op zitten. Door middel van een data-analyse kan ASRR een Business Insights dashboard opzetten. In zo’n dashboard kunt u de belangrijkste aspecten van uw dataset in een oogopslag zien.
