@@ -31,6 +31,8 @@ section:
       ASRR heeft in het verleden voor verschillende klanten een dergelijk dashboard opgezet. Een voorbeeld daarvan is te vinden onder [](/portfolio/case/hes)de case van [HES](https://asrr-next.netlify.app/portfolio/case/hes). Klik [hier](https://asrr-next.netlify.app/portfolio/case/hes) voor de case.
     media:
       images:
-        - image_webp: ontwerp-zonder-titel-2-.png
-          image: ontwerp-zonder-titel-2-.png
+        - image_webp: voorbeeld.png
+          image: voorbeeld.png
+          description: Het PowerBI dashboard (links) en de webapplicatie (rechts).
+          alt: Hes dashboard
 ---
