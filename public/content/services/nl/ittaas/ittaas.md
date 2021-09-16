@@ -113,9 +113,6 @@ section:
       ## ASRR introduceert: IT Teams as a service. De ideale combinatie van software development en IT-detachering in één.
 
 
-      &nbsp;
-
-
       Information Technology is cruciaal in een bedrijf in de huidige maatschappij. Door de digitalisering van de markt is er een enorme vraag naar software development en IT-kennis. IT is echter een erg breed vlak en er zijn steeds vaker een heel scala aan expertises nodig. Niet elk bedrijf kan een eigen IT-tak veroorloven of wil een eigen IT-tak. Men komt hierdoor al snel uit op losse externe IT’ers of rigide preferred suppliers. Deze aanpak is inefficiënt, omdat de recruitment- en inwerkkosten hoog zijn, bedrijven worden geketend aan starre langdurige contracten en dan blijkt toch nog een groot deel van de opdracht buiten de scope van de uitvoerder te vallen.
 
 
@@ -131,11 +128,11 @@ section:
       &nbsp;
 
 
-      > "Bedrijven komen met verschillende vraagstukken bij ASRR, maar allen zijn op zoek naar technische- en IT-kennis in de vorm van software development. Dit is noodzakelijk om aan interne digitaliserings- en automatiseringsdoelen te voldoen. Deze doelstellingen zijn lang niet altijd vrijwillig, aangezien de huidige IT-infrastructuur is verouderd en om de plek in de markt te houden is innovatie nodig. Oude IT-systemen moeten op termijn worden uit gefaseerd, maar worden idealiter nog wel aangesloten op het nieuwe systeem. Daarnaast zijn ‘business insights’ noodzakelijk voor de doorontwikkeling van het bedrijf. Maar hoe transformeer je ruwe bedrijfsdata tot waardevolle inzichten? Al deze punten hangen direct samen met de winstgevendheid en competitiviteit van het bedrijf."
+      > *"Bedrijven komen met verschillende vraagstukken bij ASRR, maar allen zijn op zoek naar technische- en IT-kennis in de vorm van software development. Dit is noodzakelijk om aan interne digitaliserings- en automatiseringsdoelen te voldoen. Deze doelstellingen zijn lang niet altijd vrijwillig, aangezien de huidige IT-infrastructuur is verouderd en om de plek in de markt te houden is innovatie nodig. Oude IT-systemen moeten op termijn worden uit gefaseerd, maar worden idealiter nog wel aangesloten op het nieuwe systeem. Daarnaast zijn ‘business insights’ noodzakelijk voor de doorontwikkeling van het bedrijf. Maar hoe transformeer je ruwe bedrijfsdata tot waardevolle inzichten? Al deze punten hangen direct samen met de winstgevendheid en competitiviteit van het bedrijf."*
 
       >
 
-      > \- Amar Ramdas, Eigenaar and Founder van ASRR
+      > *\- Amar Ramdas, Eigenaar and Founder van ASRR*
 
 
       &nbsp;
