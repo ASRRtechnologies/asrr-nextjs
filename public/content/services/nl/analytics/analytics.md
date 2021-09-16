@@ -24,13 +24,13 @@ section:
       &nbsp;
 
 
-      Dit geeft management real-time inzichten in de staat van het proces, waardoor er tijdig kan worden bijgestuurd. Dit kan kosten door vertraging, onnodige stress en gemiste kansen voorkomen.
+      Dit geeft management real-time inzichten in de status van het proces, waardoor er tijdig kan worden bijgestuurd. Dit kan kosten door vertraging, onnodige stress en gemiste kansen voorkomen.
 
 
       &nbsp;
 
 
-      ASRR heeft in het verleden voor verschillende klanten een dergelijk dashboard opgezet. Een voorbeeld daarvan is te vinden onder [](/portfolio/case/hes)de case van [HES](/portfolio/case/hes).
+      ASRR heeft in het verleden voor verschillende klanten een dergelijk dashboard opgezet. Een voorbeeld daarvan is te vinden onder [](/portfolio/case/hes)de case van [HES](https://asrr-next.netlify.app/portfolio/case/hes). Klik [hier](https://asrr-next.netlify.app/portfolio/case/hes) voor de case.
     media:
       images:
         - image_webp: ontwerp-zonder-titel-2-.png
