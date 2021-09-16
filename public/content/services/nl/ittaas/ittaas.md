@@ -133,6 +133,10 @@ section:
 
       > "Bedrijven komen met verschillende vraagstukken bij ASRR, maar allen zijn op zoek naar technische- en IT-kennis in de vorm van software development. Dit is noodzakelijk om aan interne digitaliserings- en automatiseringsdoelen te voldoen. Deze doelstellingen zijn lang niet altijd vrijwillig, aangezien de huidige IT-infrastructuur is verouderd en om de plek in de markt te houden is innovatie nodig. Oude IT-systemen moeten op termijn worden uit gefaseerd, maar worden idealiter nog wel aangesloten op het nieuwe systeem. Daarnaast zijn ‘business insights’ noodzakelijk voor de doorontwikkeling van het bedrijf. Maar hoe transformeer je ruwe bedrijfsdata tot waardevolle inzichten? Al deze punten hangen direct samen met de winstgevendheid en competitiviteit van het bedrijf."
 
+      >
+
+      > \- Amar Ramdas
+
 
       &nbsp;
 
