@@ -11,19 +11,13 @@ section:
       # Hardware precies gevormd naar uw gebruik
 
 
-      ## Met ASRR hardware worden de onderdelen afgestemd op je gebruik, waardoor je nooit te veel betaalt.
+      ## Met ASRR hardware worden de onderdelen afgestemd op jouw gebruik, waardoor je nooit te veel betaalt.
 
 
       &nbsp;
 
 
-      &nbsp;
-
-
-      ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De componenten worden precies zo uitgekozen dat ze passen bij het proces waar de hardware voor gebruikt wordt. Hierdoor betaalt u niet te veel voor onnodige componenten, en ligt de focus op de onderdelen die cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen binnen de technologie, waardoor er meer performance voor minder kosten gerealiseerd wordt.
-
-
-      &nbsp;
+      ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De componenten worden zo uitgekozen dat ze precies passen bij het proces waar de hardware voor wordt gebruikt. Hierdoor betaal je niet te veel voor onnodige componenten en ligt de focus op de onderdelen die voor jou cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen binnen de technologie, waardoor je meer performance hebt voor minder kosten
 
 
       &nbsp;
@@ -40,14 +34,11 @@ section:
       ### Het proces
 
 
-      ASRR analyseert eerst uw behoefte. Heeft u de hardware nodig voor zware grafische zaken zoals BIM/CAD of ander 3D werk? Dan zorgen wij voor een zware grafische kaart. Is uw werk meer gefocust op zaken die afhangen van een hoge CPU-snelheid, dan zorgen wij voor een sterke processor. Hierbij is er soms niet eens een grafische kaart nodig, waardoor er kosten kunnen worden bespaard, of er komt extra budget vrij voor de componenten die er wel toe doen in uw situatie. Dit alles wordt geleverd in een strakke, moderne case, waardoor uw werkplek of server er hypermodern uit ziet.
+      ASRR analyseert eerst uw behoefte. Heeft u de hardware nodig voor zware grafische zaken zoals BIM/CAD of ander 3D werk? Dan zorgen wij voor een zware grafische kaart. Is uw werk meer gefocust op zaken die afhangen van een hoge CPU-snelheid, dan zorgen wij voor een sterke processor. Hierbij is er soms niet eens een grafische kaart nodig, waardoor er kosten kunnen worden bespaard of er komt extra budget vrij voor de componenten die er wel toe doen in uw situatie. Dit alles wordt geleverd in een strakke, moderne case, waardoor uw werkplek of server er hypermodern uit ziet.
 
 
       &nbsp;
 
 
-      &nbsp;
-
-
-      Door deze aanpak kan er tegen een scherpe prijs de beste performance geleverd worden. U betaalt niet voor onnodige componenten.
+      Door deze aanpak kan er tegen een scherpe prijs de beste performance geleverd worden en je betaalt niet voor onnodige componenten.
 ---
