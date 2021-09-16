@@ -36,19 +36,19 @@ card:
       - bullet: Expertise on demand
   - title: Hardware op maat
     preview_text: ASRR bouwt hardware die met kop en schouders boven de rest
-      uitsteekt. De componenten worden precies zo uitgekozen dat ze passen bij
-      het proces waar de hardware voor gebruikt wordt. Hierdoor betaalt u niet
-      te veel voor onnodige componenten, en ligt de focus op de onderdelen die
-      cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van
-      ontwikkelingen binnen de technologie, waardoor er meer performance voor
-      minder kosten gerealiseerd wordt.
+      uitsteekt. De componenten worden zo uitgekozen dat ze precies passen bij
+      het proces waar de hardware voor wordt gebruikt. Hierdoor betaalt u niet
+      te veel voor onnodige componenten en ligt de focus op de onderdelen die
+      voor jou cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied
+      van ontwikkelingen binnen de technologie, waardoor je meer performance
+      krijgt voor minder kosten.
     text: ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De
-      componenten worden precies zo uitgekozen dat ze passen bij het proces waar
-      de hardware voor gebruikt wordt. Hierdoor betaalt u niet te veel voor
-      onnodige componenten, en ligt de focus op de onderdelen die cruciaal zijn.
-      Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen binnen
-      de technologie, waardoor er meer performance voor minder kosten
-      gerealiseerd wordt.  ASRR levert secure servers, met remote desktop
+      componenten worden zo uitgekozen dat ze precies passen bij het proces waar
+      de hardware voor wordt gebruikt. Hierdoor betaalt u niet te veel voor
+      onnodige componenten en ligt de focus op de onderdelen die voor jou
+      cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van
+      ontwikkelingen binnen de technologie, waardoor je meer performance krijgt
+      voor minder kosten.  ASRR levert secure servers met remote desktop
       capaciteit en een 2 factor authenticatie login methode. Ook bouwen we
       krachtige workstations, gaming rigs en budget pc’s.
     image: hardware-1.jpg
@@ -62,14 +62,14 @@ card:
   - title: Business Analytics & Insights
     text: Data is een waardevolle asset voor elk bedrijf. Veel bedrijven doen echter
       niks met de potentiele goudmijn waar ze op zitten. Doormiddel van een
-      data-analyse kan ASRR een Business Insights dashboard opzetten. In zo’n
-      dashboard kunt u de belangrijkste aspecten van uw dataset in een oogopslag
-      zien.
+      data-analyse kan ASRR een Business Insights dashboard voor jou opzetten.
+      In zo’n dashboard zie je de belangrijkste aspecten van jouw dataset in een
+      oogopslag.
     preview_text: Data is een waardevolle asset voor elk bedrijf. Veel bedrijven
       doen echter niks met de potentiele goudmijn waar ze op zitten. Doormiddel
-      van een data-analyse kan ASRR een Business Insights dashboard opzetten. In
-      zo’n dashboard kunt u de belangrijkste aspecten van uw dataset in een
-      oogopslag zien. We zetten uw (legacy) data aan het werk.
+      van een data-analyse kan ASRR een Business Insights dashboard voor jou
+      opzetten. In zo’n dashboard zie je de belangrijkste aspecten van jouw
+      dataset in een oogopslag. We zetten jouw (legacy) data aan het werk.
     image_webp: data-analytics-square.webp
     image: data-analytics-square.jpg
     alt: Dashboard
