@@ -132,7 +132,7 @@ section:
 
       >
 
-      > *\- Amar Ramdas, Eigenaar and Founder van ASRR*
+      > *\- Amar Ramdas, Eigenaar and Founder van ASRR B.V.*
 
 
       &nbsp;
