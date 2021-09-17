@@ -16,6 +16,9 @@
     flex-direction: column;
     width: 100%;
     max-width: $max-width;
+    h1, p {
+      color: $white;
+    }
 
     p {
       max-width: 600px;
