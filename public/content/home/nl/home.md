@@ -124,11 +124,15 @@ quality_section:
   header: Wij focussen ons op de volgende kernwaarden
   subheader: Over ASRR
   qualities:
-    - quality: Expertise
-      description: ASRR heeft een divers team van getalenteerde professionals.
-        Gezamenlijk vormen we een team met een brede kennis in alles wat met IT
-        te maken heeft. We hebben specialisten in websites, apps, databases,
-        hardware, desktop aplpicaties, BI, Data analytics en veel meer!
+    - quality: Innovatie
+      description: "''Go where others won't.'' &nbsp;  ASRR heeft een open cultuur die
+        innovatie faciliteert en stimuleert. Wij geven onze medewerkers alle
+        ruimte om nieuwe ideeën te bedenken. Dit motiveert hen altijd out of the
+        box te denken waardoor zowel binnen als buiten de bekende kaders naar
+        oplossingen wordt gezocht. Het is belangrijk dat deze oplossingen
+        effectief en wenselijk zijn. Daarom vindt eerst een vooronderzoek plaats
+        en wordt tussendoor geëvalueerd. Grote uitdagingen gaan wij niet uit de
+        weg. Wij halen daar juist voldoening uit. "
     - quality: Effectiviteit
       description: Met onze microservices hoeven we niet elke keer het wiel opnieuw
         uit te vinden bij elke opdracht. Dit zorgt ervoor dat we ons kunnen
