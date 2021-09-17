@@ -18,6 +18,8 @@ card:
   image_webp: case-image.webp
   image: case-image.webp
   alt: Login screen Remote Desktop Webapplication
+  text: Een veilige omgeving waarin documenten, communicatie en rekenkracht
+    beschikbaar is voor iedere werknemer.
 landing:
   title: Een super computer beschikbaar vanaf overal ter wereld
   image_webp: nwo-landing.webp
