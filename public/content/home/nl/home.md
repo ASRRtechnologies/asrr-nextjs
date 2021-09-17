@@ -125,62 +125,55 @@ quality_section:
   subheader: Over ASRR
   qualities:
     - quality: Innovatie
-      description: "''Go where others won't.'' &nbsp;  ASRR heeft een open cultuur die
-        innovatie faciliteert en stimuleert. Wij geven onze medewerkers alle
-        ruimte om nieuwe ideeën te bedenken. Dit motiveert hen altijd out of the
-        box te denken waardoor zowel binnen als buiten de bekende kaders naar
-        oplossingen wordt gezocht. Het is belangrijk dat deze oplossingen
-        effectief en wenselijk zijn. Daarom vindt eerst een vooronderzoek plaats
-        en wordt tussendoor geëvalueerd. Grote uitdagingen gaan wij niet uit de
-        weg. Wij halen daar juist voldoening uit. "
+      description: "ASRR heeft een open cultuur die innovatie faciliteert en
+        stimuleert. Wij geven onze medewerkers alle ruimte om nieuwe ideeën te
+        bedenken. Dit motiveert hen altijd out of the box te denken waardoor
+        zowel binnen als buiten de bekende kaders naar oplossingen wordt
+        gezocht. Het is belangrijk dat deze oplossingen effectief en wenselijk
+        zijn. Daarom vindt eerst een vooronderzoek plaats en wordt tussendoor
+        geëvalueerd. Grote uitdagingen gaan wij niet uit de weg. Wij halen daar
+        juist voldoening uit. "
     - quality: Constant improvement
-      description: "''Evolve and adapt.'' &nbsp; Het begint bij innovatie, maar daar
-        stopt het niet. Doordat binnen ASRR constant wordt gestreefd naar
-        verbetering zijn de producten die ASRR maakt robuust en hebben die een
-        lange levensduur. Wij zijn altijd op zoek naar de beste technologie van
-        dit moment en wij weten die in te zetten op de juiste plekken. Zowel
-        tijdens als na elke opdracht kijken wij welke verbeteringen mogelijk
-        zijn. Dit zorgt ervoor dat elk nieuw project nog beter, slimmer en
-        sneller is en dat wij altijd beschikken over de nieuwste technieken. Dit
-        is heel gunstig voor klanten die een duurzame relatie hebben met ASRR,
-        maar ook nieuwe klanten profiteren hiervan. "
+      description: "Het begint bij innovatie, maar daar stopt het niet. Doordat binnen
+        ASRR constant wordt gestreefd naar verbetering zijn de producten die
+        ASRR maakt robuust en hebben die een lange levensduur. Wij zijn altijd
+        op zoek naar de beste technologie van dit moment en wij weten die in te
+        zetten op de juiste plekken. Zowel tijdens als na elke opdracht kijken
+        wij welke verbeteringen mogelijk zijn. Dit zorgt ervoor dat elk nieuw
+        project nog beter, slimmer en sneller is en dat wij altijd beschikken
+        over de nieuwste technieken. Dit is heel gunstig voor klanten die een
+        duurzame relatie hebben met ASRR, maar ook nieuwe klanten profiteren
+        hiervan. "
     - quality: Co-makership
-      description: "“If you want to go fast, go alone. If you want to go far, go
-        together.” &nbsp;  Bij ASRR zijn wij veelal bezig met het uitwerken van
-        complexe technische problemen. Co-makership biedt hier een passende
-        oplossing. Zo gebruiken wij voor onze klanten in de bouw een
-        sprintproces waarin de klant elke twee weken input geeft vanuit zijn
-        expertise. Op basis daarvan kijken wij naar mogelijke oplossingen. De
-        technische vraagstukken vertalen wij in voor de klant begrijpelijke
-        taal. Wij vinden het belangrijk dat onze klanten zonder IT-kennis ook
-        een bijdrage kunnen leveren aan belangrijke beslissingen tijdens het
-        proces. Zij hebben immers niet alleen belang bij het eindproduct, maar
-        ook bij de totstandkoming daarvan. "
+      description: "Bij ASRR zijn wij veelal bezig met het uitwerken van complexe
+        technische problemen. Co-makership biedt hier een passende oplossing. Zo
+        gebruiken wij voor onze klanten in de bouw een sprintproces waarin de
+        klant elke twee weken input geeft vanuit zijn expertise. Op basis
+        daarvan kijken wij naar mogelijke oplossingen. De technische
+        vraagstukken vertalen wij in voor de klant begrijpelijke taal. Wij
+        vinden het belangrijk dat onze klanten zonder IT-kennis ook een bijdrage
+        kunnen leveren aan belangrijke beslissingen tijdens het proces. Zij
+        hebben immers niet alleen belang bij het eindproduct, maar ook bij de
+        totstandkoming daarvan. "
     - quality: Effectiviteit
-      description: '"Get it done." &nbsp; Klassieke software kun je zien als een groot
-        cruiseschip dat alle gewenste faciliteiten heeft: een zwembad, bioscoop,
-        bar, live entertainment etc. Dat klinkt fantastisch, maar wat als het
-        zwembad groter moet worden? Dat heeft invloed op de hele constructie van
-        het cruiseschip en de kosten daarvan zijn torenhoog. ASRR bouwt software
-        op een andere manier. Dit kan gezien worden als een hele vloot met
-        kleinere bootjes die elk een eigen functie hebben maar toch met elkaar
-        verbonden zijn. Eén bootje heeft bijvoorbeeld een zwembad, een andere
-        heeft live entertainment etc. Als in dit geval het zwembad groter moet
-        worden, dan wordt een nieuw bootje (met een groter zwembad) neergezet.
-        Dit vermindert de kosten aanzienlijk en heeft geen gevolgen voor de
+      description: "Klassieke software kun je zien als een groot cruiseschip dat alle
+        gewenste faciliteiten heeft: een zwembad, bioscoop, bar, live
+        entertainment etc. Dat klinkt fantastisch, maar wat als het zwembad
+        groter moet worden? Dat heeft invloed op de hele constructie van het
+        cruiseschip en de kosten daarvan zijn torenhoog. ASRR bouwt software op
+        een andere manier. Dit kan gezien worden als een hele vloot met kleinere
+        bootjes die elk een eigen functie hebben maar toch met elkaar verbonden
+        zijn. Eén bootje heeft bijvoorbeeld een zwembad, een andere heeft live
+        entertainment etc. Als in dit geval het zwembad groter moet worden, dan
+        wordt een nieuw bootje (met een groter zwembad) neergezet. Dit
+        vermindert de kosten aanzienlijk en heeft geen gevolgen voor de
         constructie van de hele vloot. Daarnaast is het eenvoudig om een ander
         soort bootje, bijvoorbeeld één met een restaurant, toe te voegen aan de
         vloot of om een bestaand bootje weg te halen. Ook is het makkelijk een
         bestaand bootje na te maken. De vloot is dus modulair, net als de code
         die wij schrijven. Elk bootje symboliseert een microservice. Deze
         techniek maakt onze code stabiel, schaalbaar en biedt de klant eindeloze
-        mogelijkheden om hun producten te ontwikkelen.'
-    - quality: Inzichten
-      description: Wij zetten uw data aan het werk. Veel bedrijven hebben een hoop
-        data waar veel toegevoegde waarde uit gehaald kan worden, mits het juist
-        opgeschoond en ganalyseerd wordt. Wij geven u inzichten in uw data, en
-        highlighten daarbij belangrijke aspecten zodat u de juiste conclusies
-        kan trekken in real-time.
+        mogelijkheden om hun producten te ontwikkelen."
 blog_section:
   title: Het laatste nieuws
   subheader: Blog
