@@ -133,7 +133,7 @@ quality_section:
         zijn. Daarom vindt eerst een vooronderzoek plaats en wordt tussendoor
         geëvalueerd. Grote uitdagingen gaan wij niet uit de weg. Wij halen daar
         juist voldoening uit. "
-    - quality: Constant improvement
+    - quality: Constant &nbsp; improvement
       description: "Het begint bij innovatie, maar daar stopt het niet. Doordat binnen
         ASRR constant wordt gestreefd naar verbetering zijn de producten die
         ASRR maakt robuust en hebben die een lange levensduur. Wij zijn altijd
