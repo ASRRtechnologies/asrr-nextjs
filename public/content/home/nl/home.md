@@ -156,19 +156,18 @@ quality_section:
         hebben immers niet alleen belang bij het eindproduct, maar ook bij de
         totstandkoming daarvan. "
     - quality: Effectiviteit
-      description: "Klassieke software kun je zien als een groot cruiseschip dat alle
-        gewenste faciliteiten heeft: een zwembad, bioscoop, live entertainment
-        etc. Dat klinkt fantastisch, maar wat als het zwembad groter moet
-        worden? Dat heeft invloed op de hele constructie van het cruiseschip en
-        de kosten daarvan zijn torenhoog. ASRR bouwt software op een andere
-        manier. Dit kan gezien worden als een hele vloot met kleinere bootjes
-        die elk een eigen functie hebben maar toch met elkaar verbonden zijn.
-        Hierdoor kunnen gemakkelijk bootjes worden aangepast, toegevoegd,
-        gedupliceerd of verwijderd worden als er bijvoorbeeld een groter zwembad
-        nodig is of een extra restaurant. De vloot is dus modulair, net als de
-        code die wij schrijven. Elk bootje symboliseert een microservice. Deze
-        techniek maakt onze code stabiel, schaalbaar en biedt de klant eindeloze
-        mogelijkheden om hun producten te ontwikkelen."
+      description: Klassieke software kun je zien als een groot cruiseschip dat alle
+        gewenste faciliteiten heeft. Dat klinkt fantastisch, maar wat als
+        bijvoorbeeld het zwembad groter moet worden? Dat heeft invloed op de
+        hele constructie van het cruiseschip en de kosten daarvan zijn
+        torenhoog. ASRR bouwt software op een andere manier. Dit kan gezien
+        worden als een hele vloot met kleinere bootjes die elk een eigen functie
+        hebben maar toch met elkaar verbonden zijn. Hierdoor kunnen gemakkelijk
+        bootjes worden aangepast, toegevoegd, gedupliceerd of verwijderd worden.
+        De vloot is dus modulair, net als de code die wij schrijven. Elk bootje
+        symboliseert een microservice. Deze techniek maakt onze code stabiel,
+        schaalbaar en biedt de klant eindeloze mogelijkheden om hun producten te
+        ontwikkelen.
 blog_section:
   title: Het laatste nieuws
   subheader: Blog
