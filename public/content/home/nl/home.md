@@ -133,7 +133,7 @@ quality_section:
         zijn. Daarom vindt eerst een vooronderzoek plaats en wordt tussendoor
         geëvalueerd. Grote uitdagingen gaan wij niet uit de weg. Wij halen daar
         juist voldoening uit. "
-    - quality: Constant &nbsp; improvement
+    - quality: Constant&nbsp;improvement
       description: "Het begint bij innovatie, maar daar stopt het niet. Doordat binnen
         ASRR constant wordt gestreefd naar verbetering zijn de producten die
         ASRR maakt robuust en hebben die een lange levensduur. Wij zijn altijd
@@ -168,7 +168,7 @@ quality_section:
         nodig is of een extra restaurant. De vloot is dus modulair, net als de
         code die wij schrijven. Elk bootje symboliseert een microservice. Deze
         techniek maakt onze code stabiel, schaalbaar en biedt de klant eindeloze
-        mogelijkheden om hun producten te ontwikkelen. "
+        mogelijkheden om hun producten te ontwikkelen."
 blog_section:
   title: Het laatste nieuws
   subheader: Blog
