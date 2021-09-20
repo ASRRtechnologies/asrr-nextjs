@@ -45,4 +45,20 @@ members:
       van het werk. Verder heb ik een achtergrond in Technische Natuurkunde,
       waardoor gestructureerd complexe problemen analyseren en oplossen als
       thuis voelt. Dit kan ik goed toepassen bij ASRR.
+  - name: Azat Arica
+    position: Back-end Lead
+    website: https://www.linkedin.com/in/azat-a/
+  - name: Vanisha Oedayrajsingh Varma
+    position: Back-end Developer
+  - name: Jay Schipper
+    position: Marketing specialist
+    website: https://www.linkedin.com/in/jay-schipper-607890171/
+  - name: "Lisabelle Sengönül "
+    position: "Personal Assistant "
+    website: https://www.linkedin.com/in/lisabelle-seng%C3%B6n%C3%BCl-4a1708181/
+  - name: Amit Ramdas
+    position: Sales and Marketing Specialist
+    website: https://www.linkedin.com/in/amit-nitesh-ramdas-a6a171172/
+  - name: Neil Alwani
+    position: Front-end Developer
 ---
