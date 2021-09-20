@@ -24,4 +24,14 @@ members:
       minimalisme. Hierdoor krijgt de klant de meest moderne designs. Tenzij de
       klant natuurlijk iets anders in gedachte heeft, dan kan dat ook geregeld
       worden.
+  - name: Rayel Hardwarsing
+    position: Back-end Developer
+    website: https://www.linkedin.com/in/rayelhardwarsing/
+    story: Als back-end developer werk ik aan het verbreiden/verbeteren van
+      bestaande applicaties en het opzetten van nieuwe applicaties. Verder houd
+      ik me bezig met de deployment en hosting van onze applicaties op ons
+      kubernetes netwerk. Met mijn achtergrond in de econometrie ben ik van
+      nature analytisch ingesteld en geïnteresseerd in het oplossen van complexe
+      problemen. Dit komt zeker te pas bij ASRR, waar we altijd flexibele en
+      robuuste oplossingen bieden aan de klant!
 ---
