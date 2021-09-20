@@ -443,8 +443,7 @@ collections:
         fields:
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Position", name: "position", widget: "string" }
-          - { label: "Position", name: "position", widget: "string" }
-          - { label: "Linkedin", name: "linkedin", widget: "string" }
+          - { label: "Website", name: "website", widget: "string", required: false }
           - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Image Alt", name: "alt", widget: "string", required: false }
-          - { label: "Story", name: "story", widget: "markdown" }
+          - { label: "Story", name: "story", widget: "markdown",  required: false }
