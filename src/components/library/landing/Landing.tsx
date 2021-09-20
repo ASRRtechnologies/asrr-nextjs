@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from "@emotion/styled";
-import {mq, styles} from "@/utillities/styles/global_variabels";
-import {LandingProps} from "@/utillities/landing/types";
-import ImageLanding from "@/utillities/landing/sub-components/ImageLanding";
-import TextLanding from "@/utillities/landing/sub-components/TextLanding";
-import Section from "@/utillities/section/Section";
+import {mq, styles} from "@/library/styles/global_variabels";
+import {LandingProps} from "@/library/landing/types";
+import ImageLanding from "@/library/landing/sub-components/ImageLanding";
+import TextLanding from "@/library/landing/sub-components/TextLanding";
+import Section from "@/library/section/Section";
 
 const StyledLanding = styled(Section)`
   width: 100vw;

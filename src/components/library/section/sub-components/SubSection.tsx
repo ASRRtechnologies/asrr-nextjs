@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
-import {SubSectionProps} from "@/utillities/section/types";
+import {SubSectionProps} from "@/library/section/types";
 import styled from "@emotion/styled";
-import {mq, styles} from "@/utillities/styles/global_variabels";
+import {mq, styles} from "@/library/styles/global_variabels";
 
 
 const StyledSubSection = styled.div`

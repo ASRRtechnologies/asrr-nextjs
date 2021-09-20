@@ -1,6 +1,6 @@
 import React from 'react';
-import AspectRatio from "@/utillities/aspect-ratio/AspectRatio";
-import {BaseShapeProps} from "@/utillities/shapes/types";
+import AspectRatio from "@/library/aspect-ratio/AspectRatio";
+import {BaseShapeProps} from "@/library/shapes/types";
 
 function Circle(props: BaseShapeProps) {
 

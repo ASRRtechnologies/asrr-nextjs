@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
-import {mq, styles} from "@/utillities/styles/global_variabels";
-import {ImageLandingProps} from "@/utillities/landing/types";
+import {mq, styles} from "@/library/styles/global_variabels";
+import {ImageLandingProps} from "@/library/landing/types";
 import Image from "next/image";
 import React from "react";
-import SubSection from "@/utillities/section/sub-components/SubSection";
-import Square from "@/utillities/shapes/Square";
+import SubSection from "@/library/section/sub-components/SubSection";
+import Square from "@/library/shapes/Square";
 
 const StyledLandingWithSideImage = styled(SubSection)`
   width: 100%;

@@ -1,11 +1,8 @@
 import React, {ReactElement} from 'react';
-import {HeaderComponent, HeaderProps} from "@/utillities/header/types";
-import NavigationButton from "@/utillities/button/sub-components/NavigationButton";
-import ActionButton from "@/utillities/button/sub-components/ActionButton";
-import Section from "@/utillities/section/Section";
-import SubSection from "@/utillities/section/sub-components/SubSection";
+import {HeaderComponent, HeaderProps} from "@/library/header/types";
+import Section from "@/library/section/Section";
+import SubSection from "@/library/section/sub-components/SubSection";
 import styled from "@emotion/styled";
-import {AspectRatioComponent} from "@/utillities/aspect-ratio/types";
 
 const StyledHeader = styled(SubSection)`
   display: flex;

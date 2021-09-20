@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
-import {ActionButtonProps} from "@/utillities/button/types";
-import {useButtonStyles} from "@/utillities/button/hooks/button-hooks";
-import {BaseButtonStyle} from "@/utillities/button/shared-styles/ButtonStyles";
+import {ActionButtonProps} from "@/library/button/types";
+import {useButtonStyles} from "@/library/button/hooks/button-hooks";
+import {BaseButtonStyle} from "@/library/button/shared-styles/ButtonStyles";
 import css from "@emotion/css";
 
 function ActionButton(props: ActionButtonProps) {

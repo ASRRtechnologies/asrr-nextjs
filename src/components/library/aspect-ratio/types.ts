@@ -1,4 +1,4 @@
-import {StandardProps} from "@/utillities/global_types";
+import {StandardProps} from "../index";
 import React from "react";
 
 /**

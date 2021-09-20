@@ -4,6 +4,7 @@ import AspectRatio from "@/library/aspect-ratio/AspectRatio";
 import Accordion from "@/library/accordion/Accordion";
 import {Fade} from "react-awesome-reveal";
 import ChevronRotatable from "@/icons/ChevronRotatable";
+// @ts-ignore
 import placeholder from "#/team/placeholder.png";
 
 interface TeamCardProps {

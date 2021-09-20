@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import {css} from '@emotion/react'
-import {styles} from "@/utillities/styles/global_variabels";
+import {styles} from "@/library/styles/global_variabels";
 
 export const BaseButtonStyle = css`
   width: auto;
