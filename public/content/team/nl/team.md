@@ -3,7 +3,7 @@ language: nl
 title: team
 page_title:
   title: "Het Team "
-  text: H
+  text: "Focussen op potentie dan op ervaring. Goed in probleem oplossen "
 members:
   - name: Amar Ramdas
     position: Managing Director
