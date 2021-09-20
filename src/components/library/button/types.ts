@@ -1,7 +1,7 @@
 /**
  * List of types of buttons needed to render the proper button
  */
-import {StandardProps} from "@/utillities/global_types";
+import {StandardProps} from "@/library/index";
 
 declare type ButtonType = "navigation-button" | "action-button";
 

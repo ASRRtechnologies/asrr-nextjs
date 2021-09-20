@@ -5,8 +5,8 @@ import {
     ButtonStyleDisabled,
     ButtonStyleOutlined,
     ButtonStyleOutlinedHoverDisabled, ButtonStyleTextOnly
-} from "@/utillities/button/shared-styles/ButtonStyles";
-import {ButtonStyle} from "@/utillities/button/types";
+} from "@/library/button/shared-styles/ButtonStyles";
+import {ButtonStyle} from "@/library/button/types";
 
 /**
  * Hook that takes in a button-style a prop and returns a serialized css object

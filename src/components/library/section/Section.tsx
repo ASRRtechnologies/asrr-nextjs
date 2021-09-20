@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
-import {SectionProps} from "@/utillities/section/types";
+import {SectionProps} from "@/library/section/types";
 import styled from "@emotion/styled";
-import {mq} from "@/utillities/styles/global_variabels";
+import {mq} from "@/library/styles/global_variabels";
 
 function Section(props: SectionProps) {
     /**

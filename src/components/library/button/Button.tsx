@@ -1,7 +1,7 @@
 import React from 'react';
-import {ButtonProps} from "@/utillities/button/types";
-import NavigationButton from "@/utillities/button/sub-components/NavigationButton";
-import ActionButton from "@/utillities/button/sub-components/ActionButton";
+import {ButtonProps} from "@/library/button/types";
+import NavigationButton from "@/library/button/sub-components/NavigationButton";
+import ActionButton from "@/library/button/sub-components/ActionButton";
 
 function Button(props: ButtonProps) {
 

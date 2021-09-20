@@ -1,5 +1,5 @@
 import React from "react";
-import {ActionButton, NavigationButton} from "../button/Button";
+import {ActionButton, NavigationButton} from "../button/index";
 import {StandardProps} from "../index";
 
 /**

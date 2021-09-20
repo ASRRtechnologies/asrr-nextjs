@@ -1,6 +1,6 @@
 import React from 'react';
 import {css} from "@emotion/react";
-import {styles} from "@/utillities/styles/global_variabels";
+import {styles} from "@/library/styles/global_variabels";
 import styled from "@emotion/styled";
 
 export const StyledHeaderSection = styled.div`

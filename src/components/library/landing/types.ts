@@ -1,6 +1,6 @@
 import React from "react";
-import {ButtonGroup} from "@/utillities/button-group";
-import {StandardProps} from "@/utillities/global_types";
+import {ButtonGroup} from "@/library/button-group";
+import {StandardProps} from "@/library/index";
 
 declare type LandingType = "text-landing" | "image-landing";
 

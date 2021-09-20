@@ -1,7 +1,7 @@
-import {TextLandingProps} from "@/utillities/landing/types";
+import {TextLandingProps} from "@/library/landing/types";
 import React from "react";
 import styled from "@emotion/styled";
-import {mq, styles} from "@/utillities/styles/global_variabels";
+import {mq, styles} from "@/library/styles/global_variabels";
 
 const StyledTextLanding = styled.div`
   width: 100%;
