@@ -10,7 +10,8 @@ import TechStack from '@/techstack/TechStack'
 import matter from 'gray-matter'
 import Testimonials from '@/testimonials/Testimonials'
 import {getAllArticles, getAllCases, getAllNews} from '../lib/api'
-import PageLayout from '@/layout/PageLayout'import ImageLanding from "@/landing/ImageLanding";
+import PageLayout from '@/layout/PageLayout'
+import ImageLanding from "@/landing/ImageLanding";
 import image from "#/landing/landing-asrr-min.jpg";
 
 function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}) {

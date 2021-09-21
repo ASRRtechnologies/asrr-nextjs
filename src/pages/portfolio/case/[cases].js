@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
-import PageLayout from '@/layout/PageLayout'import { getAllCases} from '../../../lib/api'
+import PageLayout from '@/layout/PageLayout'
+import { getAllCases} from '../../../lib/api'
 import matter from 'gray-matter'
 import CaseArticle from '@/written/CaseArticle'
 import useI18n from '../../../hooks/use-i18n'
