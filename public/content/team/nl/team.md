@@ -22,7 +22,7 @@ members:
       IT-oplossing. Verder haal ik energie uit het begeleiden van mensen en
       teamwork bevorderen.
   - name: Ré-Angelo Jarvis
-    position: Front-end Developer
+    position: Front-End Developer
     website: https://www.linkedin.com/in/reangelojarvis/
     image: ontwerp-zonder-titel-7-.png
     alt: Reangelo
@@ -33,7 +33,7 @@ members:
       klant natuurlijk iets anders in gedachte heeft, dan kan dat ook geregeld
       worden.
   - name: Rayel Hardwarsing
-    position: Back-end Developer
+    position: Back-End Developer
     website: https://www.linkedin.com/in/rayelhardwarsing/
     story: Als back-end developer werk ik aan het verbreiden/verbeteren van
       bestaande applicaties en het opzetten van nieuwe applicaties. Verder houd
@@ -52,12 +52,12 @@ members:
       waardoor gestructureerd complexe problemen analyseren en oplossen als
       thuis voelt. Dit kan ik goed toepassen bij ASRR.
   - name: Azat Arica
-    position: Back-end Lead
+    position: Back-End Lead
     website: https://www.linkedin.com/in/azat-a/
   - name: Vanisha Oedayrajsingh Varma
-    position: Back-end Developer
+    position: Back-End Developer
   - name: Jay Schipper
-    position: Marketing specialist
+    position: Marketing Specialist
     website: https://www.linkedin.com/in/jay-schipper-607890171/
   - name: "Lisabelle Sengönül "
     position: "Personal Assistant "
@@ -66,5 +66,5 @@ members:
     position: Sales and Marketing Specialist
     website: https://www.linkedin.com/in/amit-nitesh-ramdas-a6a171172/
   - name: Neil Alwani
-    position: Front-end Developer
+    position: Front-End Developer
 ---
