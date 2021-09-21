@@ -187,8 +187,9 @@ collections:
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" },
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Image Alt", name: "alt", widget: "string", required: false }
   - label: "Blog Page"
     name: "blog_page"
     identifier_field: slug
@@ -207,8 +208,9 @@ collections:
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" },
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Image Alt", name: "alt", widget: "string", required: false }
   - label: "Posts"
     name: "posts"
     identifier_field: slug
@@ -338,8 +340,9 @@ collections:
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" },
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Image Alt", name: "alt", widget: "string", required: false }
       - label: "Card"
         name: "card"
         widget: "list"
@@ -375,7 +378,6 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Text", name: "text", widget: "string", required: false}
-          - {label: "Image_Webp", name: "image_webp", widget: "image"}
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Image Alt", name: "alt", widget: "string"}
       - label: "Section"
@@ -416,8 +418,9 @@ collections:
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" },
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Image Alt", name: "alt", widget: "string", required: false }
   - label: "Team Page"
     name: "team_page"
     identifier_field: slug
@@ -436,7 +439,9 @@ collections:
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" },
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Image Alt", name: "alt", widget: "string", required: false }
       - label: "Team Member"
         name: "members"
         widget: "list"
