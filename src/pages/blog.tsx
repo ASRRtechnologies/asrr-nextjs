@@ -5,35 +5,37 @@ import {useHeader} from "../context/navigation/HeaderContext";
 import matter from 'gray-matter'
 import { getAllArticles } from '../lib/api'
 import PageLayout from '@/layout/PageLayout'
-function Portfolio({ data, allArticles}) {
 
-	const SEOProps = {
-		title:"ASRR - Blog",
-		content:"ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
-	}
+const SEOProps = {
+	title:"ASRR - Blog",
+	content:"ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
+}
+
+function Portfolio({ content, allArticles}) {
 
 	//Todo add allNews to AllArticles array
 
 	const header = useHeader();
 
 	useEffect(() => {
+		// @ts-ignore
 		header.setHeaderWhite(false)
 	}, []);
 
 
 	return (
 		<PageLayout {...SEOProps}>
-			<BlogPage data={data} allBlogs={allArticles} />
-			<Contact/>
+			<BlogPage data={content} allBlogs={allArticles} />
+			<Contact title={undefined} className={undefined}/>
 		</PageLayout>
 	)
 }
 
 export async function getStaticProps () {
 	//This is the portfolio page cms
-	let content = await import(`public/content/blog/nl/blog.md`);
-	let parsedContent = matter(content.default);
-	let data = parsedContent.data;
+	// @ts-ignore
+	let data = await import(`public/content/blog/nl/blog.md`);
+	let content = matter(data.default).data;
 
 	const allArticles = getAllArticles([
 		'title',
@@ -44,7 +46,7 @@ export async function getStaticProps () {
 	]);
 
 	return {
-		props: {allArticles, data },
+		props: {allArticles, content },
 	}
 }
 

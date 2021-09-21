@@ -6,35 +6,37 @@ import CheckmarkServices from '@/services/CheckmarkServices'
 import matter from 'gray-matter'
 import PageLayout from '@/layout/PageLayout'
 
-function Diensten ({data}) {
 
-	const SEOProps = {
-		title:"ASRR - Diensten",
-		content:"ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
-	}
+const SEOProps = {
+	title:"ASRR - Diensten",
+	content:"ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
+}
+
+function Diensten ({content}) {
 
 	const header = useHeader();
 	useEffect(() => {
+		// @ts-ignore
 		header.setHeaderWhite(false)
 	}, []);
 
 	return (
 		<PageLayout {...SEOProps}>
-			<CheckmarkServices data={data}/>
-			<ServicePage data={data}/>
-			<Contact/>
+			<CheckmarkServices data={content}/>
+			<ServicePage data={content}/>
+			<Contact title={undefined} className={undefined}/>
 		</PageLayout>
 	)
 }
 
 export async function getStaticProps () {
 	//This is the portfolio page cms
-	let content = await import(`public/content/service_page/nl/services.md`);
-	let parsedContent = matter(content.default);
-	let data = parsedContent.data;
+	// @ts-ignore
+	let data = await import(`public/content/service_page/nl/services.md`);
+	let content = matter(data.default).data;
 
 	return {
-		props: { data },
+		props: { content },
 	}
 }
 

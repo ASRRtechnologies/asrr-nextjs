@@ -14,14 +14,14 @@ import PageLayout from '@/layout/PageLayout'
 import ImageLanding from "@/landing/ImageLanding";
 import image from "#/landing/landing-asrr-min.jpg";
 
+const SEOProps = {
+    title: "ASRR - Home",
+    content: "ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
+}
+
 function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}) {
 
     const header = useHeader();
-
-    const SEOProps = {
-        title: "ASRR - Home",
-        content: "ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
-    }
 
     useEffect(() => {
         header.setHeaderWhite(true)

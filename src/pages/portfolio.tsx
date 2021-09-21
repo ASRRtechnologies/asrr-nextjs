@@ -13,6 +13,7 @@ const SEOProps = {
 }
 
 function Portfolio({content, allProjects}) {
+    const {title, text} = content.page_title;
     const header = useHeader();
     const customBasePath = (projectName: string) => `/content/written/case/nl/${projectName}`; //nl will be language variable
 
@@ -23,7 +24,7 @@ function Portfolio({content, allProjects}) {
 
     return (
         <PageLayout {...SEOProps}>
-            <Banner title={"Portfolio"} content={"drfree"}/>
+            <Banner title={title} content={text}/>
             <PortfolioPage content={content} allProjects={allProjects} customBasePath={customBasePath}/>
             <Contact title={undefined} className={undefined}/>
         </PageLayout>
