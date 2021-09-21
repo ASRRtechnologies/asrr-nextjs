@@ -211,7 +211,7 @@ collections:
           - { label: "Text", name: "text", widget: "string" }
           - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Image Alt", name: "alt", widget: "string", required: false }
-  - label: "Posts"
+  - label: "Projects"
     name: "posts"
     identifier_field: slug
     summary: 'Title: {{title}} - Language: {{language}} - Type: {{type}} {{info.author}}'
