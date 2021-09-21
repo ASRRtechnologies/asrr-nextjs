@@ -2,7 +2,7 @@
 language: nl
 title: team
 page_title:
-  title: "Het Team "
+  title: "Het Portfolio "
   text: "Bij ASRR zijn er een aantal eigenschappen die wij belangrijk vinden om
     terug te zien in onze teamleden. Dat is niet zo zeer jarenlange ervaring,
     maar meer potentie en het vermogen om complexe problemen op te lossen. Wij

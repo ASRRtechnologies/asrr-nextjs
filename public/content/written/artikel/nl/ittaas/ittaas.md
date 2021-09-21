@@ -21,7 +21,7 @@ landing:
   title: Expertise on demand
   image_webp: ittaas-landing.webp
   image: ittaas-landing.jpg
-  alt: Team on Cliff sunset
+  alt: Portfolio on Cliff sunset
 section:
   - content: >-
       # IT Teams as a Service (ITTAAS)
@@ -71,7 +71,7 @@ section:
       images:
         - image_webp: ittaas-landing.webp
           image: ittaas-landing.jpg
-          alt: Team on Mountain
+          alt: Portfolio on Mountain
           description: ""
           reference: ""
   - content: >-
@@ -101,7 +101,7 @@ section:
       images:
         - image_webp: ittaas-2.webp
           image: ittaas-2.jpg
-          alt: Team planning
+          alt: Portfolio planning
   - content: >-
       ### **Wat zijn de voordelen van ITTAAS?**
 

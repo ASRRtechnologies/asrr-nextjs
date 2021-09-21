@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from "@/layout/Section";
+import Section from "@/modules/shared/section/Section";
 import Title from "@/utillities/titles/Title";
 import CardFadeAnimation from '@/animation/CardFadeAnimation'
 import ServiceCards from '@/utillities/cards/ServiceCards'

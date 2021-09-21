@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
-import Application from '@/layout/Application'
-import { getAllServices } from '../../lib/api'
+import PageLayout from '@/layout/PageLayout'import { getAllServices } from '../../lib/api'
 import matter from 'gray-matter'
 import CaseArticle from '@/written/CaseArticle'
 import useI18n from '../../hooks/use-i18n'
@@ -23,9 +22,9 @@ function Page ({data, basePath }) {
 	}, []);
 
 	return (
-		<Application {...SEOProps}>
+		<PageLayout {...SEOProps}>
 			<CaseArticle project={data} basePath={basePath}/>
-		</Application>
+		</PageLayout>
 	)
 }
 

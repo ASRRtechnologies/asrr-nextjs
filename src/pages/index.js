@@ -10,8 +10,7 @@ import TechStack from '@/techstack/TechStack'
 import matter from 'gray-matter'
 import Testimonials from '@/testimonials/Testimonials'
 import {getAllArticles, getAllCases, getAllNews} from '../lib/api'
-import Application from '@/layout/Application'
-import ImageLanding from "@/landing/ImageLanding";
+import PageLayout from '@/layout/PageLayout'import ImageLanding from "@/landing/ImageLanding";
 import image from "#/landing/landing-asrr-min.jpg";
 
 function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}) {
@@ -48,7 +47,7 @@ function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}
     };
 
     return (
-        <Application {...SEOProps}>
+        <PageLayout {...SEOProps}>
             <ImageLanding image={image} title={homepage.landing.title} text={homepage.landing.text}
                           button={homepage.landing.button}/>
             <PreviewServices data={homepage.services_section} cards={servicepage}/>
@@ -59,7 +58,7 @@ function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}
             <PreviewBlog data={homepage.blog_section} selectedBlogs={getBlogs()}/>
             <Clients data={homepage.clients}/>
             <Contact/>
-        </Application>
+        </PageLayout>
     )
 }
 

@@ -4,8 +4,7 @@ import Contact from "@/contact/Preview";
 import {useHeader} from "../context/navigation/HeaderContext";
 import matter from 'gray-matter'
 import { getAllArticles } from '../lib/api'
-import Application from '@/layout/Application'
-
+import PageLayout from '@/layout/PageLayout'
 function Portfolio({ data, allArticles}) {
 
 	const SEOProps = {
@@ -23,10 +22,10 @@ function Portfolio({ data, allArticles}) {
 
 
 	return (
-		<Application {...SEOProps}>
+		<PageLayout {...SEOProps}>
 			<BlogPage data={data} allBlogs={allArticles} />
 			<Contact/>
-		</Application>
+		</PageLayout>
 	)
 }
 

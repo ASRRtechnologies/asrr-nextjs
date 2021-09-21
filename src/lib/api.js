@@ -24,9 +24,9 @@ export function getServicesSlugs () {
 	return walkSync(serviceDirectory)
 }
 
-export function getTeamSlugs () {
-	return walkSync(teamDirectory)
-}
+// export function getTeamSlugs () {
+// 	return walkSync(teamDirectory)
+// }
 
 // List all files in a directory in Node.js recursively in a synchronous fashion
 const walkSync = function (dir, filelist) {
@@ -99,7 +99,7 @@ export function getAllServices (fields = []) {
 	return getSlugData(slugs, fields);
 }
 
-export function getAllTeams (fields = []) {
-	const slugs = getTeamSlugs();
-	return getSlugData(slugs, fields);
-}
+// export function getAllTeams (fields = []) {
+// 	const slugs = getTeamSlugs();
+// 	return getSlugData(slugs, fields);
+// }

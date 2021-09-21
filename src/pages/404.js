@@ -1,10 +1,10 @@
 import React, {useEffect} from 'react';
 import Title from "@/utillities/titles/Title";
-import Application from "@/layout/Application";
+import PageLayout from "@/layout/PageLayout";
 import SmallLanding from "@/landing/SmallLanding";
 import error from "#/404/error.jpg";
 import error2 from "#/404/error.webp";
-import Section from "@/layout/Section";
+import Section from "@/modules/shared/section/Section";
 import {useHeader} from "../context/navigation/HeaderContext";
 import Link from 'next/link'
 import {useTheme} from "../context/theme/ThemeContext";
@@ -24,7 +24,7 @@ function Error() {
     }, []);
 
     return (
-        <Application {...SEOProps}>
+        <PageLayout {...SEOProps}>
             <SmallLanding title="Pagina niet gevonden" alt="Abstract" image={error} imageWebp={error2}/>
             <Section>
                 <Title className="error" title="404 Error" subHeader="Error"
@@ -37,7 +37,7 @@ function Error() {
                            </Link>
                        </Fade>
             </Section>
-        </Application>
+        </PageLayout>
     );
 }
 
