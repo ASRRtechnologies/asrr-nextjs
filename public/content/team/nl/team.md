@@ -3,7 +3,13 @@ language: nl
 title: team
 page_title:
   title: "Het Team "
-  text: "Focussen op potentie dan op ervaring. Goed in probleem oplossen "
+  text: "Bij ASRR zijn er een aantal eigenschappen die wij belangrijk vinden om
+    terug te zien in onze teammembers. Dat is niet zo zeer jarenlange ervaring,
+    maar meer potentie en het vermogen om complexe problemen op te lossen. Wij
+    hebben gemerkt dat mensen met deze eigenschappen een enorme groei meemaken
+    bij ASRR, doordat zij de vrijheid hebben om zichzelf verder te ontwikkelen.
+    Dit is voordelig voor de klant, omdat wij mensen aanbieden die gedreven
+    zijn, snel nieuwe dingen oppakken en gewend zijn aan een uitdaging. "
 members:
   - name: Amar Ramdas
     position: Managing Director
