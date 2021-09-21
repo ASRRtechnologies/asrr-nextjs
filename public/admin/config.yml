@@ -181,13 +181,13 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Page Name (name of md file)", name: "title", widget: "string", default: "portfolio" }
+      - { label: "Title", name: "title", widget: "string" }
       - label: "Page Title"
         name: "page_title"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" },
+          - { label: "Text", name: "text", widget: "string" }
           - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Image Alt", name: "alt", widget: "string", required: false }
   - label: "Blog Page"
@@ -208,7 +208,7 @@ collections:
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" },
+          - { label: "Text", name: "text", widget: "string" }
           - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Image Alt", name: "alt", widget: "string", required: false }
   - label: "Posts"
@@ -340,7 +340,7 @@ collections:
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" },
+          - { label: "Text", name: "text", widget: "string" }
           - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Image Alt", name: "alt", widget: "string", required: false }
       - label: "Card"
@@ -418,7 +418,7 @@ collections:
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" },
+          - { label: "Text", name: "text", widget: "string" }
           - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Image Alt", name: "alt", widget: "string", required: false }
   - label: "Team Page"
@@ -439,7 +439,7 @@ collections:
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" },
+          - { label: "Text", name: "text", widget: "string" }
           - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Image Alt", name: "alt", widget: "string", required: false }
       - label: "Team Member"
