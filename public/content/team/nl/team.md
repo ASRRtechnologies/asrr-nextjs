@@ -4,7 +4,7 @@ title: team
 page_title:
   title: "Het Team "
   text: "Bij ASRR zijn er een aantal eigenschappen die wij belangrijk vinden om
-    terug te zien in onze teammembers. Dat is niet zo zeer jarenlange ervaring,
+    terug te zien in onze teamleden. Dat is niet zo zeer jarenlange ervaring,
     maar meer potentie en het vermogen om complexe problemen op te lossen. Wij
     hebben gemerkt dat mensen met deze eigenschappen een enorme groei meemaken
     bij ASRR, doordat zij de vrijheid hebben om zichzelf verder te ontwikkelen.
