@@ -76,7 +76,7 @@ technologies_section:
       alt: Nextjs Logo
 portfolio_section:
   title: Wat we al hebben gedaan
-  subheader: Portfolio
+  subheader: Blog
   header: Bekijk onze voorgaande projecten
   button:
     title: Ga naar portfolio

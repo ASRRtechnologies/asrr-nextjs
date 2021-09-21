@@ -1,38 +1,38 @@
 import React, {useEffect} from 'react'
-import BlogPage from '@/blog/Blog'
+import BlogPage from '@/modules/Blog/Blog'
 import Contact from "@/contact/Preview";
 import {useHeader} from "../context/navigation/HeaderContext";
 import matter from 'gray-matter'
 import { getAllArticles } from '../lib/api'
 import PageLayout from '@/layout/PageLayout'
+import Banner from "@/modules/shared/landing/Banner";
 
 const SEOProps = {
 	title:"ASRR - Blog",
 	content:"ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
 }
 
+//Todo add allNews to AllArticles array
 function Portfolio({ content, allArticles}) {
-
-	//Todo add allNews to AllArticles array
-
+	const {title, text} = content.page_title;
 	const header = useHeader();
+	const customBasePath = (projectName: string) => `/content/written/artikel/nl/${projectName}`;
 
 	useEffect(() => {
 		// @ts-ignore
 		header.setHeaderWhite(false)
 	}, []);
 
-
 	return (
 		<PageLayout {...SEOProps}>
-			<BlogPage data={content} allBlogs={allArticles} />
+			<Banner title={title} content={text}/>
+			<BlogPage data={content} allBlogs={allArticles} customBasePath={customBasePath}/>
 			<Contact title={undefined} className={undefined}/>
 		</PageLayout>
 	)
 }
 
 export async function getStaticProps () {
-	//This is the portfolio page cms
 	// @ts-ignore
 	let data = await import(`public/content/blog/nl/blog.md`);
 	let content = matter(data.default).data;
