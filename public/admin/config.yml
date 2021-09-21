@@ -182,7 +182,7 @@ collections:
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
       - { label: "Page Name (name of md file)", name: "title", widget: "string", default: "portfolio" }
-      - label: "Name of Page Title"
+      - label: "Page Title"
         name: "page_title"
         widget: "object"
         fields:
@@ -203,7 +203,7 @@ collections:
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
       - { label: "Page Name (name of md file)", name: "title", widget: "string", default: "blog" }
-      - label: "Name of Page Title"
+      - label: "Page Title"
         name: "page_title"
         widget: "object"
         fields:
@@ -335,7 +335,7 @@ collections:
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
       - { label: "Page Name (name of md file)", name: "title", widget: "string", default: "services" }
-      - label: "Name of Page Title"
+      - label: "Page Title"
         name: "page_title"
         widget: "object"
         fields:
@@ -413,7 +413,7 @@ collections:
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
       - { label: "Page Name (name of md file)", name: "title", widget: "string", default: "contact" }
-      - label: "Name of Page Title"
+      - label: "Page Title"
         name: "page_title"
         widget: "object"
         fields:
@@ -434,7 +434,7 @@ collections:
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
       - { label: "Page Name (name of md file)", name: "title", widget: "string", default: "team" }
-      - label: "Name of Page Title"
+      - label: "Page Title"
         name: "page_title"
         widget: "object"
         fields:
