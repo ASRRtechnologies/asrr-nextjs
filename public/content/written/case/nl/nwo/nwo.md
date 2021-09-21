@@ -40,7 +40,7 @@ section:
       ### Het probleem
 
 
-      NWO, een dochteronderneming van BP en Shell, is een bedrijf dat op is gezet om de eerste long-range onverwerkte olielijn in Europa op te zetten. Er bestond hierbinnen een speciaal team, het Enlargement Project Team dat extern ingeschakeld was. Dit was een gespecialiseerd team dat alleen voor een speciaal deelproject opgetuigd was. Aangezien het deels externe medewerkers waren, kon er door security policies geen toegang verschaft worden voor het bestaande systeem, waar bestanden, programmatuur en werkplekken op ingericht waren. Verder bleek dat het bestaande systeem niet toereikend was voor het gespecialiseerde team.
+      NWO, een dochteronderneming van BP en Shell, is een bedrijf dat op is gezet om de eerste long-range onverwerkte olielijn in Europa op te zetten. Er bestond hierbinnen een speciaal team, het Enlargement Project Portfolio dat extern ingeschakeld was. Dit was een gespecialiseerd team dat alleen voor een speciaal deelproject opgetuigd was. Aangezien het deels externe medewerkers waren, kon er door security policies geen toegang verschaft worden voor het bestaande systeem, waar bestanden, programmatuur en werkplekken op ingericht waren. Verder bleek dat het bestaande systeem niet toereikend was voor het gespecialiseerde team.
 
 
       &nbsp;

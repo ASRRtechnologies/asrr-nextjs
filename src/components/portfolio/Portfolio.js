@@ -1,5 +1,5 @@
 import React from 'react'
-import Section from '../layout/Section'
+import Section from '../modules/shared/section/Section'
 import styled from '@emotion/styled'
 import Title from '@/utillities/titles/Title'
 import CardFadeAnimation from '@/animation/CardFadeAnimation'
@@ -9,9 +9,9 @@ const Wrapper = styled(Section)`
         background: ${props => props.theme.layout};
  }`;
 
-function Portfolio ({ data, allProjects }) {
+function Portfolio ({ content, allProjects }) {
 
-	const { page_title } = data;
+	const { page_title } = content;
 
 	return (
 		<Wrapper>

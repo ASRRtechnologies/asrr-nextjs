@@ -1,11 +1,20 @@
 import React from 'react'
-import Footer from '../footer/Footer'
 import Head from 'next/head'
 
-function Application({children, title, content}) {
+interface LayoutProps {
+    children: React.ReactElement | React.ReactElement[],
+    title: string,
+    content: string,
+    className?: string,
+
+    [x: string]: any,
+}
+
+function PageLayout(props: LayoutProps) {
+    const {children, title, content, className} = props;
 
     return (
-        <div className="application">
+        <div className={className} {...props}>
             <Head>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
                 <meta name="description" content={content}/>
@@ -16,4 +25,4 @@ function Application({children, title, content}) {
     );
 }
 
-export default Application;
+export default PageLayout;

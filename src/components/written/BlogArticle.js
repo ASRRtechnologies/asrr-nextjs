@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown'
 import SmallLanding from '@/landing/SmallLanding'
 import video from '../../../public/assets/videos/demo/rdp/2-fa-high.mp4'
 import Contact from '@/contact/Preview'
-import Section from '@/layout/Section'
+import Section from '@/modules/shared/section/Section'
 import { Fade } from 'react-awesome-reveal'
 import {
 	FacebookIcon,

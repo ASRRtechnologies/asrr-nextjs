@@ -1,5 +1,6 @@
 import React from 'react';
 import bannerStyles from "./banner.module.scss"
+import Section from "@/modules/shared/section/Section";
 
 interface BannerProps {
     title: string
@@ -8,7 +9,7 @@ interface BannerProps {
 
 function Banner(props: BannerProps) {
     return (
-        <div className={`${bannerStyles.banner} global-padding-horizontal global-padding-vertical`}>
+        <Section className={`${bannerStyles.banner}`}>
             <div className={bannerStyles.innerBanner}>
                 <h1>
                     {props.title}
@@ -17,7 +18,7 @@ function Banner(props: BannerProps) {
                     {props.content}
                 </p>
             </div>
-        </div>
+        </Section>
     );
 }
 

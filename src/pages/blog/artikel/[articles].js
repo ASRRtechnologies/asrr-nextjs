@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Application from '@/layout/Application'
+import PageLayout from '@/layout/PageLayout'
 import { getAllArticles } from '../../../lib/api'
 import matter from 'gray-matter'
 import CaseArticle from '@/written/CaseArticle'
@@ -53,9 +53,9 @@ function Page ({ allProjects, data, basePath }) {
 	};
 
 	return (
-		<Application {...SEOProps}>
+		<PageLayout {...SEOProps}>
 			<BlogArticle project={data} basePath={basePath}/>
-		</Application>
+		</PageLayout>
 	)
 }
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Section from '@/layout/Section'
+import Section from '@/modules/shared/section/Section'
 import { useTheme } from '../../context/theme/ThemeContext'
 import Title from '@/utillities/titles/Title'
 import styled from '@emotion/styled'

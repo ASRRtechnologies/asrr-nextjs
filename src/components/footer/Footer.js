@@ -4,7 +4,7 @@ import useI18n from '../../hooks/use-i18n'
 import LinkedIn from '@/icons/LinkedIn'
 import Facebook from '@/icons/Facebook'
 import { useSnackbar } from 'notistack'
-import Section from '@/layout/Section'
+import Section from '@/modules/shared/section/Section'
 import Link from 'next/link'
 
 function Footer (props) {

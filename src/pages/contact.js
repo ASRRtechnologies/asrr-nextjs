@@ -2,8 +2,7 @@ import React, { useEffect } from 'react'
 import ContactPage from '../components/contact/Contact'
 import { useHeader } from '../context/navigation/HeaderContext'
 import matter from 'gray-matter'
-import Application from '@/layout/Application'
-
+import PageLayout from '@/layout/PageLayout'
 function Contact ({ data }) {
 
 	const SEOProps = {
@@ -17,9 +16,9 @@ function Contact ({ data }) {
 	}, []);
 
 	return (
-		<Application {...SEOProps}>
+		<PageLayout {...SEOProps}>
 			<ContactPage data={data}/>
-		</Application>
+		</PageLayout>
 	)
 }
 

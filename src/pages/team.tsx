@@ -1,33 +1,33 @@
 import React from 'react';
 import TeamPage from "@/modules/team/Team";
 import Banner from "@/modules/shared/landing/Banner";
-import {getAllTeams} from "../lib/api";
 import matter from "gray-matter";
+import PageLayout from "@/layout/PageLayout";
 
-function Team({basePath, team}) {
-    const {title, text} = team[0].page_title;
+const SEOProps = {
+    title: "ASRR - Team",
+    content: "ASRR Ons Team"
+}
+
+function Team({content}) {
+    const {title, text} = content.page_title;
+    const basePath = `/content/team/nl`;
 
     return (
-        <div>
+        <PageLayout {...SEOProps}>
             <Banner title={title} content={text}/>
-            <TeamPage team={team[0]} basePath={basePath}/>
-        </div>
+            <TeamPage team={content} basePath={basePath}/>
+        </PageLayout>
     );
 }
 
-export async function getStaticProps () {
-
-    const basePath = `/content/team/nl`;
-
-    const team = getAllTeams([
-        'title',
-        'slug',
-        'page_title',
-        'members',
-    ]);
+export async function getStaticProps() {
+    // @ts-ignore
+    let data = await import(`public/content/team/nl/team.md`);
+    let content = matter(data.default).data;
 
     return {
-        props: {basePath, team},
+        props: {content},
     }
 }
 

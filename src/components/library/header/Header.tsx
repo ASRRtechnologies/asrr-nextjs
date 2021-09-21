@@ -8,7 +8,6 @@ const StyledHeader = styled(SubSection)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 `
 
 function Header(props: HeaderProps) {

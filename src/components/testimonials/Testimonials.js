@@ -1,4 +1,4 @@
-import Section from '@/layout/Section'
+import Section from '@/modules/shared/section/Section'
 import Title from '@/utillities/titles/Title'
 import React from 'react'
 import styled from '@emotion/styled'

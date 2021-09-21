@@ -10,7 +10,7 @@ info:
     - tag: Full stack Development
     - tag: Expertise on demand
 card:
-  title: From Excel sheet to Enterprise Application
+  title: From Excel sheet to Enterprise PageLayout
   url: portfolio/hes
   image_webp: case-cover.webp
   image: case-image.png
@@ -22,7 +22,7 @@ landing:
   alt: HES International Containers
 section:
   - content: >-
-      # From Excel sheet to Enterprise Application
+      # From Excel sheet to Enterprise PageLayout
 
 
       ## HES International

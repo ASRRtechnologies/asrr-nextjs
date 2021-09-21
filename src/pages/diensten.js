@@ -4,7 +4,7 @@ import Contact from '@/contact/Preview'
 import { useHeader } from '../context/navigation/HeaderContext'
 import CheckmarkServices from '@/services/CheckmarkServices'
 import matter from 'gray-matter'
-import Application from '@/layout/Application'
+import PageLayout from '@/layout/PageLayout'
 
 function Diensten ({data}) {
 
@@ -19,11 +19,11 @@ function Diensten ({data}) {
 	}, []);
 
 	return (
-		<Application {...SEOProps}>
+		<PageLayout {...SEOProps}>
 			<CheckmarkServices data={data}/>
 			<ServicePage data={data}/>
 			<Contact/>
-		</Application>
+		</PageLayout>
 	)
 }
 

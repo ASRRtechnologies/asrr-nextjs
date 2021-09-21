@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Section from '../layout/Section'
+import Section from '../modules/shared/section/Section'
 import Title from '../utillities/titles/Title'
 import Input from '@/utillities/text/Input'
 import Map from '@/contact/Map'

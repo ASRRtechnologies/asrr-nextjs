@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Section from '../layout/Section'
+import Section from '../modules/shared/section/Section'
 import Title from '../utillities/titles/Title'
 import { portfolio } from '../../data/portfolio'
 import ReadMore from '@/utillities/text/ReadMore'

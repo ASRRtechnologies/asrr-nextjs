@@ -1,5 +1,5 @@
 import React from 'react'
-import Section from '@/layout/Section'
+import Section from '@/modules/shared/section/Section'
 import Title from '@/utillities/titles/Title'
 import { Fade } from 'react-awesome-reveal'
 import styled from '@emotion/styled'
@@ -20,6 +20,7 @@ const DarkButton = styled('div')`
         p, a{color: ${props => props.theme.button.dark.font}} !important;
         // &:hover{background-color: ${props => props.theme.button.dark.hover};}
         `;
+
 
 function Contact ({ title, className }) {
 	const i18n = useI18n();

@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import Application from "@/layout/Application";
+import PageLayout from "@/layout/PageLayout";
 import {useHeader} from "../context/navigation/HeaderContext";
 import ImageLanding from "@/landing/ImageLanding";
 import image from "#/landing/landing-asrr-min.jpg";
@@ -19,10 +19,10 @@ function Page({data, query}) {
     }, []);
 
     return (
-        <Application {...SEOProps}>
+        <PageLayout {...SEOProps}>
             <ImageLanding image={data.landing.image} title={data.landing.title} text={data.landing.text}
                           button={data.landing.button}/>
-        </Application>
+        </PageLayout>
 
     )
 }
