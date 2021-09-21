@@ -60,7 +60,7 @@ members:
     position: Marketing Specialist
     website: https://www.linkedin.com/in/jay-schipper-607890171/
   - name: "Lisabelle Sengönül "
-    position: "Personal Assistant "
+    position: Assistant to the Director
     website: https://www.linkedin.com/in/lisabelle-seng%C3%B6n%C3%BCl-4a1708181/
   - name: Amit Ramdas
     position: Sales and Marketing Specialist
