@@ -43,7 +43,7 @@ members:
       problemen. Dit komt zeker te pas bij ASRR, waar we altijd flexibele en
       robuuste oplossingen bieden aan de klant!
   - name: Lotte Boonstra
-    position: Operational Manager
+    position: Operations Manager
     website: www.linkedin.com/in/lotte-boonstra
     story: Ik ben werkzaam als operations manager bij ASRR. Ik ben verantwoordelijk
       voor het effectief en efficiënt verloop van operaties binnen ASRR. Ik
