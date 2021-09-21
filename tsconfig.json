@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "target": "es2015",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -20,10 +16,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/components/*"],
-      "#/*": ["public/assets/images/*"]
+      "#/*": ["public/assets/images/*"],
     }
   },
   "include": [
+    "public/**/*",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"

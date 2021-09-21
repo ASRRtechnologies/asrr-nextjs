@@ -10,10 +10,11 @@ import placeholder from "#/team/placeholder.png";
 interface TeamCardProps {
     name: string,
     position: string,
-    image?: string
+    image?: string,
+    basePath?: string,
     website?: string
-    content: string
-    alt: string
+    story: string
+    alt?: string
 }
 
 function TeamCard(props: TeamCardProps) {
@@ -22,13 +23,13 @@ function TeamCard(props: TeamCardProps) {
     return (
         <div className={cardStyles.card}>
             <AspectRatio x={4} y={3}>
-                <img src={props.image || placeholder} alt={props.alt}/>
+                <img src={props.image? `${props.basePath}/${props.image}` : placeholder} alt={props?.alt}/>
             </AspectRatio>
 
             <div className={cardStyles.border}/>
             <div className={cardStyles.name}>
                 {props.website ?
-                    <a className="h4" href={props.website}>{props.name}</a>:
+                    <a className="h4" href={props.website} target="_blank" rel="noopener">{props.name}</a>:
                     <p className="h4">{props.name}</p>
                 }
                 <ChevronRotatable rotate={collapsed} onClick={() => setCollapsed(!collapsed)} color={"black"}/>
@@ -36,7 +37,7 @@ function TeamCard(props: TeamCardProps) {
 
             <Accordion collapsed={collapsed}>
                 <Fade duration={800}>
-                    <h1>This is a collapse</h1>
+                    <p>{props.story}</p>
                 </Fade>
             </Accordion>
 

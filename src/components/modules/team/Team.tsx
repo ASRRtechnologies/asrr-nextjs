@@ -3,11 +3,15 @@ import teamStyles from "./teamStyles.module.scss"
 import TeamCard from "@/modules/team/TeamCard";
 
 function Team(props) {
+    const {members} = props.team;
+
     return (
         <div className={`${teamStyles.team} global-padding-horizontal global-padding-vertical`}>
             <div className={teamStyles.teamGrid}>
-                <TeamCard name="Re-Angelo" website="www.linkedin.com/re-angelo" position="Work" alt="test" content="test"/>
-                <TeamCard name="Rere" position="Work" alt="test" content="test"/>
+                {members.map(({name, website, position, alt, image, story}) => {
+                    return <TeamCard name={name} website={website} position={position}
+                                     image={image} alt={alt} story={story} basePath={props.basePath}/>
+                })}
             </div>
         </div>
     );
