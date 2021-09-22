@@ -53,16 +53,16 @@ card:
       - bullet: Tot wel 128GB ram en 64 cores
       - bullet: De nieuwste tech, voor de beste resultaten
   - title: Business Analytics & Insights
-    text: Data is een waardevolle asset voor elk bedrijf. Veel bedrijven doen echter
-      niks met de potentiele goudmijn waar ze op zitten. Doormiddel van een
-      data-analyse kan ASRR een Business Insights dashboard voor jou opzetten.
-      In zo’n dashboard zie je de belangrijkste aspecten van jouw dataset in een
-      oogopslag.
-    preview_text: Data is een waardevolle asset voor elk bedrijf. Veel bedrijven
-      doen echter niks met de potentiele goudmijn waar ze op zitten. Doormiddel
-      van een data-analyse kan ASRR een Business Insights dashboard voor jou
-      opzetten. In zo’n dashboard zie je de belangrijkste aspecten van jouw
-      dataset in een oogopslag. We zetten jouw (legacy) data aan het werk.
+    text: Data is een waardevolle asset voor elk bedrijf, echter gebruiken niet veel
+      bedrijven de potentiële goudmijn waar ze op zitten. Wij kunnen doormiddel
+      van een data-analyse een Business Insights Dashboard voor jouw bedrijf
+      opzetten, waarin je de belangrijkste aspecten van jouw dataset in een
+      oogopslag kan zien. We zetten jouw (legacy) data aan het werk.
+    preview_text: Data is een waardevolle asset voor elk bedrijf, echter gebruiken
+      niet veel bedrijven de potentiële goudmijn waar ze op zitten. Wij kunnen
+      doormiddel van een data-analyse een Business Insights Dashboard voor jouw
+      bedrijf opzetten, waarin je de belangrijkste aspecten van jouw dataset in
+      een oogopslag kan zien. We zetten jouw (legacy) data aan het werk.
     image_webp: data-analytics-square.webp
     image: data-analytics-square.jpg
     alt: Dashboard
