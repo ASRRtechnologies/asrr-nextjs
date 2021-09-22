@@ -6,24 +6,21 @@ page_title:
   text: Bekijk onze projecten
 card:
   - title: IT Teams as a Service
-    preview_text: Met een ASRR IT-team is het alsof er een volledig ingewerkte
-      IT-afdeling aan jouw bedrijf wordt toegevoegd voor een periode die
-      aansluit bij jouw behoeftes. Hierbij hoef jij je niet druk te maken over
-      of er wel-of-niet de juiste expertises zijn aangenomen. De modulaire
-      aanpak van ASRR combineert de snelheid en solide bouw van een
+    preview_text: Met een ASRR IT-team voeg je een volledig ingewerkte IT-afdeling
+      aan jouw bedrijf voor een periode die aansluit bij jouw behoeftes. Hierbij
+      hoef jij je niet druk te maken over of er wel-of-niet de juiste expertises
+      zijn aangenomen en heb je alle voordelen van een gestandaardiseerde
+      aanpak.
+    text: Dit is de brug tussen Business en IT. Wij werken van visie tot applicatie
+      en verzorgen een volledig ontzorgd IT-development traject. Met een ASRR
+      IT-team voeg je een volledig ingewerkte IT-afdeling aan jouw bedrijf voor
+      een periode die aansluit bij jouw behoeftes. Hierbij hoef jij je niet druk
+      te maken over of er of-je-wel-of-niet de juiste expertises zijn
+      aangenomen, omdat dit wordt aangepast op jouw wensen en eisen. De
+      modulaire aanpak van ASRR combineert de snelheid en solide bouw van een
       gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’
       applicatie op maat. Je wijkt niet af van je huidige processen en houdt
       toch helder zicht op de tijdlijn, productie en oplevering.
-    text: Dit is de brug tussen Business en IT. Wij werken van visie tot applicatie
-      en verzorgen een volledig ontzorgd IT-development traject. Met een ASRR
-      IT-team is het alsof je een volledig ingewerkte IT-afdeling aan jouw
-      bedrijf toevoegt voor een periode die aansluit bij jouw behoeftes. Hierbij
-      hoef jij je niet druk te maken over of er of-je-wel-of-niet de juiste
-      expertises zijn aangenomen, omdat dit wordt aangepast op jouw wensen en
-      eisen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw
-      van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting
-      edge’ applicatie op maat. Je wijkt niet af van je huidige processen en
-      houdt toch helder zicht op de tijdlijn, productie en oplevering.
     image_webp: automation-square.webp
     image: automation-square.jpg
     alt: Laptop ASRR
@@ -34,12 +31,10 @@ card:
       - bullet: Expertise on demand
   - title: Hardware op maat
     preview_text: ASRR bouwt hardware die met kop en schouders boven de rest
-      uitsteekt. De componenten worden zo uitgekozen dat ze precies passen bij
-      het proces waar de hardware voor wordt gebruikt. Hierdoor betaalt u niet
-      te veel voor onnodige componenten en ligt de focus op de onderdelen die
-      voor jou cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied
-      van ontwikkelingen binnen de technologie, waardoor je meer performance
-      krijgt voor minder kosten.
+      uitsteekt. De componenten zijn cutting edge technology en worden precies
+      afgestemd op het proces waarvoor de hardware gebruikt gaat worden. Dit
+      beperkt kosten, vergroot de performance en legt de focus op de cruciale
+      componenten.
     text: ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De
       componenten worden zo uitgekozen dat ze precies passen bij het proces waar
       de hardware voor wordt gebruikt. Hierdoor betaalt u niet te veel voor
