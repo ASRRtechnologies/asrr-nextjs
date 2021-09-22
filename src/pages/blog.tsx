@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import BlogPage from '@/modules/Blog/Blog'
+import BlogPage from '@/modules/blog/Blog';
 import Contact from "@/contact/Preview";
 import {useHeader} from "../context/navigation/HeaderContext";
 import matter from 'gray-matter'
