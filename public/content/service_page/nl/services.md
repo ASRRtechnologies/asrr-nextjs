@@ -31,10 +31,10 @@ card:
       - bullet: Expertise on demand
   - title: Hardware op maat
     preview_text: ASRR bouwt hardware die met kop en schouders boven de rest
-      uitsteekt. De componenten worden precies afgestemd op het proces waarvoor
-      de hardware gebruikt gaat worden. Dit beperkt kosten en legt de focus op
-      de cruciale componenten. Verder gebruiken wij cutting edge technology,
-      waardoor je meer performance krijgt voor minder kosten.
+      uitsteekt. De componenten zijn cutting edge technology en worden precies
+      afgestemd op het proces waarvoor de hardware gebruikt gaat worden. Dit
+      beperkt kosten, vergroot de performance en legt de focus op de cruciale
+      componenten.
     text: ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De
       componenten worden zo uitgekozen dat ze precies passen bij het proces waar
       de hardware voor wordt gebruikt. Hierdoor betaalt u niet te veel voor
