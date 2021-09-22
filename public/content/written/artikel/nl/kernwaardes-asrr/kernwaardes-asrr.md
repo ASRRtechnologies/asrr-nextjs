@@ -1,6 +1,6 @@
 ---
 language: nl
-title: Kernwaardes ASRR
+title: Kernwaardes-ASRR
 type: Artikel
 info:
   date: September 22, 2021 12:00 AM

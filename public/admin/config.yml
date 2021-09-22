@@ -153,15 +153,15 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Title", name: "title", widget: "string" }
-      - label: "Page Title"
-        name: "page_title"
+      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
+      - label: "Landing"
+        name: "landing"
         widget: "object"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-          - { label: "Image", name: "image", widget: "image", required: false }
-          - { label: "Image Alt", name: "alt", widget: "string", required: false }
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
   - label: "Portfolio Case"
     name: "portfolio_case"
     identifier_field: slug
@@ -186,7 +186,7 @@ collections:
       preview: true
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Title (also the file and path name)", name: "title", widget: "string", description: This is name of the project }
+      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
       - label: "Case Info"
         name: "info"
         widget: "object"
@@ -219,8 +219,8 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Text", name: "text", widget: "string", required: false}
-          - {label: "Image", name: "image", widget: "image"}
-          - {label: "Image Alt", name: "alt", widget: "string"}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
       - label: "Case Section"
         name: "section"
         widget: "list"
@@ -260,72 +260,29 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Title (also the file and path name)", name: "title", widget: "string", description: This is name of the project }
+      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
       - label: "Landing"
         name: "landing"
         widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Text", name: "text", widget: "string", required: false}
-          - {label: "Image", name: "image", widget: "image"}
-          - {label: "Image Alt", name: "alt", widget: "string"}
-      - label: "Section"
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
+      - label: "Service Section"
         name: "section"
-        widget: "list"
-        fields:
-          - { label: "Content", name: "content", widget: "markdown" }
-          - label: "Media"
-            name: "media"
-            widget: "object"
-            required: false
-            fields:
-              - label: "Image"
-                name: "images"
-                widget: "list"
-                required: false
-                fields:
-                  - { label: "Image_Webp", name: "image_webp", widget: "image", required: false }
-                  - { label: "Image", name: "image", widget: "image", required: false }
-                  - { label: "Image Alt", name: "alt", widget: "string", required: false }
-                  - { label: "Image Description", name: "description", widget: "string", required: false }
-                  - { label: "Image Reference", name: "reference", widget: "string", required: false }
-  - label: "Service Page"
-    name: "service_page"
-    identifier_field: slug
-    summary: '{{title}} - {{language}}'
-    folder: "public/content/service_page"
-    path: '{{language}}/{{slug}}'
-    slug: '{{title}}'
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Page Name (name of md file)", name: "title", widget: "string", default: "services" }
-      - label: "Page Title"
-        name: "page_title"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-          - { label: "Image", name: "image", widget: "image", required: false }
-          - { label: "Image Alt", name: "alt", widget: "string", required: false }
-      - label: "Card"
-        name: "card"
-        widget: "list"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Preview Text (home page)", name: "preview_text", widget: "markdown"}
-          - {label: "Text", name: "text", widget: "markdown"}
-          - {label: "Image_Webp", name: "image_webp", widget: "image"}
-          - {label: "Image", name: "image", widget: "image"}
-          - {label: "Image Alt", name: "alt", widget: "string"}
-          - {label: "Url", name: "url", widget: "string"}
-          - label: "Bullets"
-            name: "bullet_points"
+          - { label: "Image", name: "image", widget: "image",}
+          - { label: "Image Alt", name: "alt", widget: "string",}
+          - label: "Services"
+            name: "services"
             widget: "list"
             fields:
-              - { label: "Bullet point", name: "bullet", widget: "string" }
+              - { label: "Service Title", name: "title", widget: "string" }
+              - { label: "Service Text", name: "text", widget: "text" }
+              - { label: "Url (Filename of service article)", name: "url", widget: "string" }
   - label: "About page"
     name: "about"
     identifier_field: slug
@@ -338,22 +295,15 @@ collections:
     public_folder: ''
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
       - label: "Landing"
         name: "landing"
         widget: "object"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-          - label: "Button"
-            name: "button"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Url", name: "url", widget: "string" }
-          - { label: "Image_Webp", name: "image_webp", widget: "image", required: false }
-          - { label: "Image", name: "image", widget: "image", required: false }
-          - { label: "Image Alt", name: "alt", widget: "string", required: false }
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
   - label: "Team Page"
     name: "team"
     identifier_field: slug
@@ -366,15 +316,15 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Page Name (name of md file)", name: "title", widget: "string", default: "team" }
-      - label: "Page Title"
-        name: "page_title"
+      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
+      - label: "Landing"
+        name: "landing"
         widget: "object"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-          - { label: "Image", name: "image", widget: "image", required: false }
-          - { label: "Image Alt", name: "alt", widget: "string", required: false }
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
       - label: "Team Member"
         name: "members"
         widget: "list"
@@ -397,15 +347,15 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Page Name (name of md file)", name: "title", widget: "string", default: "blog" }
-      - label: "Page Title"
-        name: "page_title"
+      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
+      - label: "Landing"
+        name: "landing"
         widget: "object"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-          - { label: "Image", name: "image", widget: "image", required: false }
-          - { label: "Image Alt", name: "alt", widget: "string", required: false }
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
   - label: "Contact Page"
     name: "contact"
     identifier_field: slug
@@ -418,12 +368,12 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Page Name (name of md file)", name: "title", widget: "string", default: "contact" }
-      - label: "Page Title"
-        name: "page_title"
+      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
+      - label: "Landing"
+        name: "landing"
         widget: "object"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-          - { label: "Image", name: "image", widget: "image", required: false }
-          - { label: "Image Alt", name: "alt", widget: "string", required: false }
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
