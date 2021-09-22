@@ -11,6 +11,9 @@ function BlogCard(props: PortfolioCardProps) {
     const {image, alt, title, text} = props.card;
     const {client, date, author, tag, technologies} = props.info;
 
+    let convertedDate = new Date(date);
+    var noTime = new Date(convertedDate.getFullYear(), convertedDate.getMonth(), convertedDate.getDate());
+
     return (
         <div className={cardStyles.card}>
             <AspectRatio x={4} y={3}>
