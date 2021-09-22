@@ -9,7 +9,7 @@ function Portfolio(props) {
 
     return (
         <Section>
-            <div className={portfolioStyles.teamGrid}>
+            <div className={portfolioStyles.grid}>
                 {allProjects.map((project) => {
                     const basePath = customBasePath(project.title);
                     return <PortfolioCard {...project} basePath={basePath}/>

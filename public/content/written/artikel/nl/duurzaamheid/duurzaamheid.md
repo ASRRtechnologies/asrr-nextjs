@@ -27,12 +27,6 @@ section:
       ## **Wat houdt duurzaamheid precies in en hoe gaan wij daar bij ASRR mee om?**
 
 
-      &nbsp;
-
-
-      &nbsp;
-
-
       ### Wat is duurzaamheid?
 
 
@@ -42,13 +36,7 @@ section:
        &nbsp;
 
 
-      &nbsp;
-
-
       Duurzaamheid bevat drie elementen: ‘people’, ‘planet’ en ‘profit’. Er kan niet worden gesproken over duurzaamheid als een of meerdere elementen buiten beschouwing worden gelaten, omdat er dan geen harmonie is tussen de elementen. Elementen kunnen er namelijk mogelijk onder lijden, als er geen harmonie is.  
-
-
-       &nbsp;
 
 
       &nbsp;
@@ -73,9 +61,6 @@ section:
        &nbsp;
 
 
-       &nbsp;
-
-
       #### Recycling
 
 
@@ -85,16 +70,10 @@ section:
        &nbsp;
 
 
-       &nbsp;
-
-
       #### Low power
 
 
       Computers die weinig vermogen gebruiken. Het is bijna een ‘must have’ voor Tech bedrijven. Het bespaart namelijk energie en geld. Door onze zelf samengestelde computers en servers bespaard ASRR de helft van wat het normaalgesproken zou kosten (2).
-
-
-       &nbsp;
 
 
        &nbsp;

@@ -29,7 +29,7 @@ function Why ({ data }) {
 									  className={`${i === currentQuality && 'selected-line'}`}>
 									<h2 className={`${!darkmode
 										? 'animated-link-dark'
-										: 'animated-link-light'}`}>
+										: 'animated-link-light'}`} style={{textAlign: "right"}}>
 										{quality}
 									</h2>
 								</span>

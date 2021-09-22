@@ -35,13 +35,7 @@ section:
       &nbsp;
 
 
-      &nbsp;
-
-
       Microservices zijn eerder een grote vloot aan kleinere, gespecialiseerde bootjes. Een gaat over de financien, de ander over klanten, etc. Dit zorgt ervoor dat het gemakkelijk is om een enkele boot te vervangen, mocht deze kapot zijn of verbeterd moeten worden. Deze kleine bootjes kunnen geschaard worden over meerdere projecten, en daardoor over-engineered opgezet worden, zodat elke klant profijt heeft van de extra kracht.
-
-
-      &nbsp;
 
 
       &nbsp;

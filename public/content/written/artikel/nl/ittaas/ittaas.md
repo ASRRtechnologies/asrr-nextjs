@@ -21,19 +21,13 @@ landing:
   title: Expertise on demand
   image_webp: ittaas-landing.webp
   image: ittaas-landing.jpg
-  alt: Portfolio on Cliff sunset
+  alt: Blog on Cliff sunset
 section:
   - content: >-
       # IT Teams as a Service (ITTAAS)
 
 
       ## **Wat zijn de voordelen van een dynamisch extern IT-team ten opzichte van een een-op-een recruitmentstrategie?**
-
-
-      &nbsp;
-
-
-      &nbsp;
 
 
       ### De huidige situatie
@@ -45,13 +39,7 @@ section:
       &nbsp;
 
 
-      &nbsp;
-
-
       Het probleem is hier tweevoudig. De opdrachtgever bepaalt zelf welke expertise nodig is, terwijl dit een zeer inhoudelijke vraag kan zijn. Daarom wordt vaak op voorhand al gekozen voor een verkeerde aanpak.
-
-
-      &nbsp;
 
 
       &nbsp;
@@ -63,25 +51,24 @@ section:
       &nbsp;
 
 
-      &nbsp;
-
-
       Kortom, het is van groot belang dat aan het begin van de zoektocht naar de juiste expertise technische kennis wordt toegepast. Dit is volgens ons dé oplossing: IT Teams as a Service.
     media:
       images:
         - image_webp: ittaas-landing.webp
           image: ittaas-landing.jpg
-          alt: Portfolio on Mountain
+          alt: Blog on Mountain
           description: ""
           reference: ""
+  - content: >-
+      ### Wat is ITTAAS?
+
+
+      Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte IT-afdeling tijdelijk aan jouw bedrijf toevoegt. Hierbij hoeft de klant zich niet druk te maken over of-je-wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’ applicatie op maat.
   - content: >-
       ### Hoe ziet ASRR ITTAAS?
 
 
       De service begint met een aanspreekpunt. Dit is de brug tussen de Business en het IT. Het aanspreekpunt moet inhoudelijke kennis hebben, maar ook kunnen relativeren en begrijpen wat belangrijk is voor een opdrachtgever. Communicatie, kennis en begrip zijn dus essentieel.
-
-
-      &nbsp;
 
 
       &nbsp;
@@ -93,23 +80,17 @@ section:
       &nbsp;
 
 
-      &nbsp;
-
-
       Vervolgens stuurt het aanspreekpunt het IT-team aan en fungeert daarbij als product owner. Het bewaken van de wensen van de klant staat hier centraal. Het IT-team bestaat uit developers met verschillende expertises. De samenstelling van het team is dynamisch en gebaseerd op de opdracht. De ene keer bestaat die uit een volledig front-end team, de andere keer ligt de focus meer op back-end, etcetera. Dit voorkomt onnodige overhead en zorgt voor de juiste expertise op de juiste plek.
     media:
       images:
         - image_webp: ittaas-2.webp
           image: ittaas-2.jpg
-          alt: Portfolio planning
+          alt: Blog planning
   - content: >-
       ### **Wat zijn de voordelen van ITTAAS?**
 
 
       De klant haalt direct een ingewerkt team in huis, in plaats van een set aan losse spelers. Dit zorgt voor besparing op het gebied van recruitment- en inwerkkosten. Het probleem wordt van het begin af aan begeleid door een specialist waardoor de visie van de klant goed vertaald kan worden naar een werkend eindproduct. De klant wordt hierbij volledig ontzorgd. Daarnaast vertaalt een centraal aanspreekpunt de technische vraagstukken naar een voor de klant begrijpelijke taal, zodat executieve beslissingen kunnen worden gemaakt over belangrijke aspecten binnen het proces. Tot slot bestaat het IT-team uit bijzondere individuen die complexe vraagstukken voor andere klanten hebben opgelost. Zij gebruiken hun expertise en ervaring bij het ontwikkelen van uw applicaties.
-
-
-      &nbsp;
 
 
       &nbsp;
