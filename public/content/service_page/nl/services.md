@@ -6,22 +6,24 @@ page_title:
   text: Bekijk onze projecten
 card:
   - title: IT Teams as a Service
-    preview_text: Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte
-      IT-afdeling tijdelijk aan jouw bedrijf toevoegt. Hierbij maak je je niet
-      druk over of je wel-of-niet de juiste expertises hebt aangenomen. De
-      modulaire aanpak van ASRR combineert de snelheid en solide bouw van een
+    preview_text: Met een ASRR IT-team is het alsof er een volledig ingewerkte
+      IT-afdeling aan jouw bedrijf wordt toegevoegd voor een periode die
+      aansluit bij jouw behoeftes. Hierbij hoef jij je niet druk te maken over
+      of er wel-of-niet de juiste expertises zijn aangenomen. De modulaire
+      aanpak van ASRR combineert de snelheid en solide bouw van een
       gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’
       applicatie op maat. Je wijkt niet af van je huidige processen en houdt
       toch helder zicht op de tijdlijn, productie en oplevering.
     text: Dit is de brug tussen Business en IT. Wij werken van visie tot applicatie
       en verzorgen een volledig ontzorgd IT-development traject. Met een ASRR
-      IT-team lijkt het alsof je een volledig ingewerkte IT-afdeling tijdelijk
-      aan jouw bedrijf toevoegt. Hierbij je je niet druk over of-je-wel-of-niet
-      de juiste expertises hebt aangenomen. De modulaire aanpak van ASRR
-      combineert de snelheid en solide bouw van een gestandaardiseerde aanpak,
-      met alle voordelen van een ‘cutting edge’ applicatie op maat. Je wijkt
-      niet af van je huidige processen en houdt toch helder zicht op de
-      tijdlijn, productie en oplevering.
+      IT-team is het alsof je een volledig ingewerkte IT-afdeling aan jouw
+      bedrijf toevoegt voor een periode die aansluit bij jouw behoeftes. Hierbij
+      hoef jij je niet druk te maken over of er of-je-wel-of-niet de juiste
+      expertises zijn aangenomen, omdat dit wordt aangepast op jouw wensen en
+      eisen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw
+      van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting
+      edge’ applicatie op maat. Je wijkt niet af van je huidige processen en
+      houdt toch helder zicht op de tijdlijn, productie en oplevering.
     image_webp: automation-square.webp
     image: automation-square.jpg
     alt: Laptop ASRR
@@ -32,19 +34,19 @@ card:
       - bullet: Expertise on demand
   - title: Hardware op maat
     preview_text: ASRR bouwt hardware die met kop en schouders boven de rest
-      uitsteekt. De componenten worden precies zo uitgekozen dat ze passen bij
-      het proces waar de hardware voor gebruikt wordt. Hierdoor betaalt u niet
-      te veel voor onnodige componenten, en ligt de focus op de onderdelen die
-      cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van
-      ontwikkelingen binnen de technologie, waardoor er meer performance voor
-      minder kosten gerealiseerd wordt.
+      uitsteekt. De componenten worden zo uitgekozen dat ze precies passen bij
+      het proces waar de hardware voor wordt gebruikt. Hierdoor betaalt u niet
+      te veel voor onnodige componenten en ligt de focus op de onderdelen die
+      voor jou cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied
+      van ontwikkelingen binnen de technologie, waardoor je meer performance
+      krijgt voor minder kosten.
     text: ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De
-      componenten worden precies zo uitgekozen dat ze passen bij het proces waar
-      de hardware voor gebruikt wordt. Hierdoor betaalt u niet te veel voor
-      onnodige componenten, en ligt de focus op de onderdelen die cruciaal zijn.
-      Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen binnen
-      de technologie, waardoor er meer performance voor minder kosten
-      gerealiseerd wordt.  ASRR levert secure servers, met remote desktop
+      componenten worden zo uitgekozen dat ze precies passen bij het proces waar
+      de hardware voor wordt gebruikt. Hierdoor betaalt u niet te veel voor
+      onnodige componenten en ligt de focus op de onderdelen die voor jou
+      cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van
+      ontwikkelingen binnen de technologie, waardoor je meer performance krijgt
+      voor minder kosten.  ASRR levert secure servers met remote desktop
       capaciteit en een 2 factor authenticatie login methode. Ook bouwen we
       krachtige workstations, gaming rigs en budget pc’s.
     image: hardware-1.jpg
@@ -58,14 +60,14 @@ card:
   - title: Business Analytics & Insights
     text: Data is een waardevolle asset voor elk bedrijf. Veel bedrijven doen echter
       niks met de potentiele goudmijn waar ze op zitten. Doormiddel van een
-      data-analyse kan ASRR een Business Insights dashboard opzetten. In zo’n
-      dashboard kunt u de belangrijkste aspecten van uw dataset in een oogopslag
-      zien.
+      data-analyse kan ASRR een Business Insights dashboard voor jou opzetten.
+      In zo’n dashboard zie je de belangrijkste aspecten van jouw dataset in een
+      oogopslag.
     preview_text: Data is een waardevolle asset voor elk bedrijf. Veel bedrijven
       doen echter niks met de potentiele goudmijn waar ze op zitten. Doormiddel
-      van een data-analyse kan ASRR een Business Insights dashboard opzetten. In
-      zo’n dashboard kunt u de belangrijkste aspecten van uw dataset in een
-      oogopslag zien. We zetten uw (legacy) data aan het werk.
+      van een data-analyse kan ASRR een Business Insights dashboard voor jou
+      opzetten. In zo’n dashboard zie je de belangrijkste aspecten van jouw
+      dataset in een oogopslag. We zetten jouw (legacy) data aan het werk.
     image_webp: data-analytics-square.webp
     image: data-analytics-square.jpg
     alt: Dashboard
