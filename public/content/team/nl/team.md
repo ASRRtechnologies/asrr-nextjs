@@ -56,12 +56,23 @@ members:
     website: https://www.linkedin.com/in/azat-a/
   - name: Vanisha Oedayrajsingh Varma
     position: Back-End Developer
+    story: Ik ben back-end developer bij ASRR. Mijn specialiteit is bugs vinden,
+      fixen en code waterdicht maken. Naast werken bij ASRR, studeer ik Computer
+      Science & Engineering aan TU Delft. Ik haal energie uit vaardigheden, die
+      ik tijdens mijn studie heb opgedaan, toe te passen bij ASRR.
   - name: Jay Schipper
     position: Marketing Specialist
     website: https://www.linkedin.com/in/jay-schipper-607890171/
   - name: "Lisabelle Sengönül "
     position: Assistant to the Director
     website: https://www.linkedin.com/in/lisabelle-seng%C3%B6n%C3%BCl-4a1708181/
+    story: Succes begint bij een andere kijk op het bedrijfsmodel. Ik werk inmiddels
+      een jaar bij ASRR als assistent van de directeur, een aangeboden kans om
+      meer te leren in een toegankelijke omgeving. Ik zag snel waarde in het
+      innovatieve bedrijf en wilde graag mijn huidige kennis en ervaring delen
+      om ASRR samen administratief sterk te maken en een stevige fundering te
+      leggen voor het snel groeiende bedrijf. ASRR is 'resilient' te noemen mede
+      doordat er geen alledaagse - doch bekwame - bedrijfsvoering word beoefent.
   - name: Amit Ramdas
     position: Sales and Marketing Specialist
     website: https://www.linkedin.com/in/amit-nitesh-ramdas-a6a171172/
