@@ -1,7 +1,7 @@
 ---
 language: nl
 title: portfolio
-page_title:
+landing:
   title: Wat we hebben gedaan
   text: Bekijk onze projecten
 ---

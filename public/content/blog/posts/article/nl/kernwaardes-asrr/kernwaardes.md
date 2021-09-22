@@ -1,6 +1,6 @@
 ---
 language: nl
-title: Kernwaardes-ASRR
+title: kernwaardes
 type: Artikel
 info:
   date: September 22, 2021 12:00 AM
@@ -14,12 +14,10 @@ card:
   text: De kernwaardes van ASRR zijn innovatie, constant improvement, co-makership
     en effectiviteit. Lees verder als jij wil weten hoe het aanhouden van deze
     kernwaardes kan leiden tot succes.
-  image_webp: bill-oxford-fgqsewtsjy-unsplash.jpg
   image: bill-oxford-fgqsewtsjy-unsplash.jpg
   alt: Tandwiel
 landing:
   title: Hoe het aanhouden van onze kernwaardes heeft geleid tot succes
-  image_webp: bill-oxford-fgqsewtsjy-unsplash.jpg
   image: bill-oxford-fgqsewtsjy-unsplash.jpg
   alt: Tandwielen
 section:

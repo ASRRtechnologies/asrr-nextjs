@@ -1,24 +1,16 @@
 ---
 language: nl
 title: microservices
-type: Artikel
+type: article
 info:
   date: January 13, 2021 4:30 PM
   author: Amar Ramdas
-  writtenType:
-    - tag: Artikel
-  tag:
-    - tag: Back End Development
-    - tag: Full stack Development
 card:
   title: Kunnen microservices tijd en moeite besparen?
-  url: blog/article/microservices
-  image_webp: microservices-landing.webp
   image: microservices-min.jpg
   alt: Microservices
 landing:
   title: Een over-engineered fundatie van code-bouwsteentjes
-  image_webp: microservices-landing.webp
   image: microservices-min.jpg
   alt: Microservices
 section:
@@ -41,8 +33,7 @@ section:
       &nbsp;
     media:
       images:
-        - image_webp: microservices-1.webp
-          image: microservices-1.png
+        - image: microservices-1.png
           description: Monolithic structure vs. microservice structure
           alt: Monolithic structure vs. microservice structure
 ---
