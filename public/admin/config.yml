@@ -153,7 +153,7 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
+      - { label: "Filename", name: "title", widget: "string", default: "portfolio"}
       - label: "Meta tags"
         name: "meta_tags"
         widget: "object"
@@ -274,7 +274,7 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
+      - { label: "Filename", name: "title", widget: "string", default: "diensten"}
       - label: "Meta tags"
         name: "meta_tags"
         widget: "object"
@@ -403,7 +403,7 @@ collections:
     public_folder: ''
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
+      - { label: "Filename", name: "title", widget: "string", default: "over"}
       - label: "Meta tags"
         name: "meta_tags"
         widget: "object"
@@ -430,7 +430,7 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
+      - { label: "Filename", name: "title", widget: "string", default: "team"}
       - label: "Meta tags"
         name: "meta_tags"
         widget: "object"
@@ -467,7 +467,7 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
+      - { label: "Filename", name: "title", widget: "string", default: "blog"}
       - label: "Meta tags"
         name: "meta_tags"
         widget: "object"
@@ -592,7 +592,7 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
+      - { label: "Filename", name: "title", widget: "string", default: "contact"}
       - label: "Meta tags"
         name: "meta_tags"
         widget: "object"
