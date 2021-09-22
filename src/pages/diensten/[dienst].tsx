@@ -34,7 +34,6 @@ function Page ({content, basePath }) {
 
 export async function getStaticProps ({ params }) {
 	const slug = params.dienst.toLowerCase();
-	// @ts-ignore
 	let data = await import(`public/content/services/posts/nl/${slug}/${slug}.md`);
 	// let data = await import(`${BasePaths.SERVICES}/nl/${slug}/${slug}.md`);
 	let content = matter(data.default).data;

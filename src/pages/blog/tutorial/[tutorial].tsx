@@ -33,9 +33,10 @@ function Page({allProjects, content, basePath, error}) {
 
 export async function getStaticProps({params}) {
     const slug = params.tutorial.toLowerCase();
+    // let data = await import(`${BasePaths.TUTORIAL}/nl/${slug}/${slug}.md`);
+
     // @ts-ignore
-    let data = await import(`${BasePaths.TUTORIAL}/nl/${slug}/${slug}.md`);
-    // let data = await import(`public/content/blog/posts/tutorial/nl/${slug}/${slug}.md`);
+    let data = await import(`public/content/blog/posts/tutorial/nl/${slug}/${slug}.md`);
     let content = matter(data.default).data;
     const basePath = `/content/written/tutorial/nl/${slug}`;
 
