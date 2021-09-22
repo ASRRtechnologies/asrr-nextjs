@@ -5,11 +5,12 @@ import AspectRatio from "@/library/aspect-ratio/AspectRatio";
 import placeholder from "#/team/placeholder.png";
 import {PortfolioCardProps} from "@/modules/portfolio/types";
 import Link from "next/link";
+import {BlogCardProps} from "@/modules/blog/types";
 
-function BlogCard(props: PortfolioCardProps) {
+function BlogCard(props: BlogCardProps) {
     const projectName = props.title;
     const {image, alt, title, text} = props.card;
-    const {client, date, author, tag, technologies} = props.info;
+    const {client, date, author, tags} = props.info;
 
     let convertedDate = new Date(date);
     var noTime = new Date(convertedDate.getFullYear(), convertedDate.getMonth(), convertedDate.getDate());
@@ -27,13 +28,13 @@ function BlogCard(props: PortfolioCardProps) {
 
             <div className={cardStyles.text}>
                 <p>{text}</p>
-                <Link href={`/portfolio/${projectName}`}>
+                <Link href={`/blog/${props.type}/${projectName}`}>
                     <a className="bold">Lees meer</a>
                 </Link>
             </div>
 
             <div className={cardStyles.tags}>
-                {tag.map(({tag}) => {
+                {tags?.map((tag) => {
                     return (
                         <Link href={`/portfolio`}>
                             <a className="h6">{tag}</a>

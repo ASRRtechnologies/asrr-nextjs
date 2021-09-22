@@ -4,13 +4,11 @@ import Section from "@/modules/shared/section/Section";
 import PortfolioCard from "@/modules/portfolio/PortfolioCard";
 
 function Portfolio(props) {
-    const {allProjects, customBasePath} = props;
-    console.log(props);
-
+    const {allCases, customBasePath} = props;
     return (
         <Section>
             <div className={portfolioStyles.grid}>
-                {allProjects.map((project) => {
+                {allCases.map((project) => {
                     const basePath = customBasePath(project.title);
                     return <PortfolioCard {...project} basePath={basePath}/>
                 })}

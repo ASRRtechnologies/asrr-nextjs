@@ -3,8 +3,8 @@ import {join} from 'path'
 import matter from 'gray-matter'
 
 const caseDirectory = join(process.cwd(), 'public', 'content', 'portfolio', 'cases', 'nl');
-const articleDirectory = join(process.cwd(), 'public', 'content', 'blog', 'posts', 'article', 'nl');
-const newsDirectory = join(process.cwd(), 'public', 'content', 'blog', 'posts', 'news', 'nl');
+const articleDirectory = join(process.cwd(), 'public', 'content', 'blog', 'posts', 'artikel', 'nl');
+const newsDirectory = join(process.cwd(), 'public', 'content', 'blog', 'posts', 'nieuws', 'nl');
 const tutorialDirectory = join(process.cwd(), 'public', 'content', 'blog', 'posts', 'tutorial', 'nl');
 const serviceDirectory = join(process.cwd(), 'public', 'content', 'services', 'posts', 'nl');
 const teamDirectory = join(process.cwd(), 'public', 'content', 'team', 'nl');

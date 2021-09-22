@@ -517,7 +517,7 @@ collections:
         name: "type"
         widget: "select"
         multiple: false
-        options: [ "news", "article", "tutorial" ]
+        options: [ "nieuws", "artikel", "tutorial" ]
       - label: "Blog post Info"
         name: "info"
         widget: "object"

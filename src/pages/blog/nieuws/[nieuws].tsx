@@ -35,7 +35,7 @@ function Page({allProjects, content, basePath, error}) {
 export async function getStaticProps({params}) {
     const slug = params.nieuws.toLowerCase();
     // @ts-ignore
-    let data = await import(`public/content/blog/posts/news/nl/${slug}/${slug}.md`);
+    let data = await import(`public/content/blog/posts/nieuws/nl/${slug}/${slug}.md`);
 
     // let data = await import(`${BasePaths.NEWS}/nl/${slug}/${slug}.md`);
     let content = matter(data.default).data;

@@ -12,8 +12,8 @@ const SEOProps = {
     content:"ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
 }
 
-function Portfolio({content, allProjects}) {
-    const {title, text} = content.page_title;
+function Portfolio({content, allCases}) {
+    console.log(content)
     const header = useHeader();
     const customBasePath = (projectName: string) => `/content/written/case/nl/${projectName}`; //nl will be language variable
 
@@ -24,8 +24,8 @@ function Portfolio({content, allProjects}) {
 
     return (
         <PageLayout {...SEOProps}>
-            <Banner title={title} content={text}/>
-            <PortfolioPage content={content} allProjects={allProjects} customBasePath={customBasePath}/>
+            <Banner {...content.landing}/>
+            <PortfolioPage content={content} allCases={allCases} customBasePath={customBasePath}/>
             <Contact title={undefined} className={undefined}/>
         </PageLayout>
     )
@@ -37,7 +37,7 @@ export async function getStaticProps () {
     // let data = await import(`${BasePaths.PORTFOLIO}/nl/portfolio.md`);
     let content = matter(data.default).data;
 
-     const allProjects = getAllCases([
+     const allCases = getAllCases([
         'title',
         'slug',
         'card',
@@ -45,7 +45,7 @@ export async function getStaticProps () {
     ]);
 
     return {
-        props: {allProjects, content },
+        props: {allCases, content },
     }
 }
 

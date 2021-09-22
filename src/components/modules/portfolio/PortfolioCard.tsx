@@ -9,7 +9,7 @@ import Link from "next/link";
 function PortfolioCard(props: PortfolioCardProps) {
     const projectName = props.title;
     const {image, alt, title, text} = props.card;
-    const {client, date, author, tag, technologies} = props.info;
+    const {client, date, author, tags} = props.info;
 
     return (
         <div className={cardStyles.card}>
@@ -24,20 +24,19 @@ function PortfolioCard(props: PortfolioCardProps) {
 
             <div className={cardStyles.text}>
                 <p>{text}</p>
-                <Link href={`/portfolio/${projectName}`}>
+                <Link href={`/portfolio/cases/${projectName}`}>
                     <a className="bold">Lees meer</a>
                 </Link>
             </div>
 
             <div className={cardStyles.tags}>
-                {tag.map(({tag}) => {
+                {tags?.map((tag) => {
                     return (
                         <Link href={`/portfolio`}>
                             <a className="h6">{tag}</a>
                         </Link>
                     )
                 })}
-                {/*{technologies?.map(({technologies}) => <Link href="/portfolio"><a className="h5">{technologies}</a> </Link>)}*/}
             </div>
         </div>
     );

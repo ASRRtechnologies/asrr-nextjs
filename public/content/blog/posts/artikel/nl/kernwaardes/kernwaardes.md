@@ -1,7 +1,7 @@
 ---
 language: nl
 title: kernwaardes
-type: Artikel
+type: artikel
 info:
   date: September 22, 2021 12:00 AM
   client: ASRR

@@ -4,7 +4,9 @@ import Section from "@/modules/shared/section/Section";
 
 interface BannerProps {
     title: string
-    content?: string
+    text?: string,
+    image? : string,
+    alt? : string
 }
 
 function Banner(props: BannerProps) {
@@ -15,7 +17,7 @@ function Banner(props: BannerProps) {
                     {props.title}
                 </h1>
                 <p>
-                    {props.content}
+                    {props.text}
                 </p>
             </div>
         </Section>

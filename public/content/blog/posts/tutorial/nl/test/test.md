@@ -1,7 +1,7 @@
 ---
 language: nl
 title: test
-type: article
+type: tutorial
 info:
   date: January 9, 2021 8:22 PM
   title: IT Teams as a Service (ITTAAS)

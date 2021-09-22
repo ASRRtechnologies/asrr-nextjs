@@ -6,23 +6,15 @@ export interface Card {
     text: string;
 }
 
-export interface Tag {
-    tag: string;
-}
-
-export interface Technology {
-    technologies: string;
-}
-
 export interface Info {
     date: string;
     client: string;
     author: string;
-    tag: Tag[];
-    technologies: Technology[];
+    tags: string[];
 }
 
-export interface PortfolioCardProps {
+export interface BlogCardProps {
+    type: string;
     title: string;
     slug: string;
     card: Card;

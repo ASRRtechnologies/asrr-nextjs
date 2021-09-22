@@ -65,7 +65,7 @@ export async function getStaticProps({params}) {
     const slug = params.article.toLowerCase();
     // let data = await import(`${BasePaths.ARTICLE}/nl/${slug}/${slug}.md`);
     // @ts-ignore
-    let data = await import(`public/content/blog/posts/article//nl/${slug}/${slug}.md`);
+    let data = await import(`public/content/blog/posts/artikel//nl/${slug}/${slug}.md`);
     let content = matter(data.default).data;
     const basePath = `/content/written/artikel/nl/${slug}`;
 

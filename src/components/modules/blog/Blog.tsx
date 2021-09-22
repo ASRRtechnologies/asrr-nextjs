@@ -10,9 +10,9 @@ function Blog(props) {
     return (
         <Section>
             <div className={blogStyles.grid}>
-                {allBlogs.map((project) => {
-                    const basePath = customBasePath(project.title);
-                    return <BlogCard {...project} basePath={basePath}/>
+                {allBlogs.map((post) => {
+                    const basePath = customBasePath(post.title);
+                    return <BlogCard {...post} basePath={basePath}/>
                 })}
             </div>
         </Section>

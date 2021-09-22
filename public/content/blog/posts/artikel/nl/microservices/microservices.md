@@ -1,7 +1,7 @@
 ---
 language: nl
 title: microservices
-type: article
+type: artikel
 info:
   date: January 13, 2021 4:30 PM
   author: Amar Ramdas

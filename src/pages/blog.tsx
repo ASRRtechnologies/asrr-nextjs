@@ -14,8 +14,9 @@ const SEOProps = {
 
 //Todo add allNews to AllArticles array
 function Portfolio({ content, allArticles}) {
-	const {title, text} = content.page_title;
+	const {landing} = content
 	const header = useHeader();
+
 	const customBasePath = (projectName: string) => `/content/written/artikel/nl/${projectName}`;
 
 	useEffect(() => {
@@ -25,7 +26,7 @@ function Portfolio({ content, allArticles}) {
 
 	return (
 		<PageLayout {...SEOProps}>
-			<Banner title={title} content={text}/>
+			<Banner {...landing}/>
 			<BlogPage data={content} allBlogs={allArticles} customBasePath={customBasePath}/>
 			<Contact title={undefined} className={undefined}/>
 		</PageLayout>

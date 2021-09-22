@@ -16,7 +16,7 @@ function Team({content}) {
 
     return (
         <PageLayout {...SEOProps}>
-            <Banner title={title} content={text}/>
+            <Banner title={title} text={text}/>
             <TeamPage team={content} basePath={basePath}/>
         </PageLayout>
     );

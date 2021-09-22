@@ -1,7 +1,7 @@
 ---
 language: nl
 title: duurzaamheid
-type: article
+type: artikel
 info:
   date: September 9, 2021 12:00 AM
   author: Lotte Boonstra

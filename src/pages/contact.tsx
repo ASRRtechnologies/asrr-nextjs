@@ -20,7 +20,7 @@ function Contact({content}) {
 
     return (
         <PageLayout {...SEOProps}>
-            <Banner title={title} content={text}/>
+            <Banner title={title} text={text}/>
             <ContactPage data={content}/>
         </PageLayout>
     )
