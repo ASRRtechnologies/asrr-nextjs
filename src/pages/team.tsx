@@ -3,6 +3,7 @@ import TeamPage from "@/modules/team/Team";
 import Banner from "@/modules/shared/landing/Banner";
 import matter from "gray-matter";
 import PageLayout from "@/layout/PageLayout";
+import {BasePaths} from "../data/paths";
 
 const SEOProps = {
     title: "ASRR - Team",
@@ -24,6 +25,7 @@ function Team({content}) {
 export async function getStaticProps() {
     // @ts-ignore
     let data = await import(`public/content/team/nl/team.md`);
+    // let data = await import(`${BasePaths.TEAM}/nl/team.md`);
     let content = matter(data.default).data;
 
     return {

@@ -2,10 +2,11 @@ import fs from 'fs'
 import {join} from 'path'
 import matter from 'gray-matter'
 
-const caseDirectory = join(process.cwd(), 'public', 'content', 'written', 'case', 'nl');
-const articleDirectory = join(process.cwd(), 'public', 'content', 'written', 'artikel', 'nl');
-const newsDirectory = join(process.cwd(), 'public', 'content', 'written', 'nieuws', 'nl');
-const serviceDirectory = join(process.cwd(), 'public', 'content', 'services', 'nl');
+const caseDirectory = join(process.cwd(), 'public', 'content', 'portfolio', 'cases', 'nl');
+const articleDirectory = join(process.cwd(), 'public', 'content', 'blog', 'posts', 'article', 'nl');
+const newsDirectory = join(process.cwd(), 'public', 'content', 'blog', 'posts', 'news', 'nl');
+const tutorialDirectory = join(process.cwd(), 'public', 'content', 'blog', 'posts', 'tutorial', 'nl');
+const serviceDirectory = join(process.cwd(), 'public', 'content', 'services', 'posts', 'nl');
 const teamDirectory = join(process.cwd(), 'public', 'content', 'team', 'nl');
 
 export function getCaseSlugs () {
@@ -14,6 +15,10 @@ export function getCaseSlugs () {
 
 export function getArticleSlugs () {
 	return walkSync(articleDirectory)
+}
+
+export function getTutorialSlugs () {
+	return walkSync(tutorialDirectory)
 }
 
 export function getNewsSlugs () {
@@ -86,6 +91,11 @@ export function getAllCases (fields = []) {
 
 export function getAllArticles (fields = []) {
 	const slugs = getArticleSlugs();
+	return getSlugData(slugs, fields);
+}
+
+export function getAllTutorials (fields = []) {
+	const slugs = getTutorialSlugs();
 	return getSlugData(slugs, fields);
 }
 

@@ -32,7 +32,8 @@ function Diensten ({content}) {
 export async function getStaticProps () {
 	//This is the portfolio page cms
 	// @ts-ignore
-	let data = await import(`public/content/service_page/nl/services.md`);
+	let data = await import(`public/content/services/nl/services.md`);
+	// let data = await import(`${BasePaths.SERVICE_PAGE}/nl/services.md`);
 	let content = matter(data.default).data;
 
 	return {

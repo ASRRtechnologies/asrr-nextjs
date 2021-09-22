@@ -3,15 +3,17 @@ import PageLayout from '@/layout/PageLayout'
 import {getAllArticles} from '../../../lib/api'
 import matter from 'gray-matter'
 import useI18n from '../../../hooks/use-i18n'
+// @ts-ignore
 import NL from '../../../locales/nl'
 import BlogArticle from '@/written/BlogArticle'
 import {useHeader} from "../../../context/navigation/HeaderContext";
+import {BasePaths} from "../../../data/paths";
 
-function Page({allProjects, data, basePath}) {
+function Page({allProjects, content, basePath}) {
 
     const SEOProps = {
-        title: `ASRR - Artikel - ${data.title}`,
-        content: `${data.landing.title}`
+        title: `ASRR - Artikel - ${content.title}`,
+        content: `${content.landing.title}`
     }
 
     //Need to set locale in the static page
@@ -19,6 +21,7 @@ function Page({allProjects, data, basePath}) {
     const header = useHeader();
     useEffect(() => {
         i18n.locale('nl', NL);
+        // @ts-ignore
         header.setHeaderWhite(true)
     }, []);
 
@@ -28,7 +31,7 @@ function Page({allProjects, data, basePath}) {
 
         //Remove current page project
         let uniqueProjects = allProjects.filter((project) => {
-            return project.title !== data.title && project.discipline !== data.discipline
+            return project.title !== content.title && project.discipline !== content.discipline
         });
 
         //Get random number between 0 and num of projects
@@ -53,17 +56,18 @@ function Page({allProjects, data, basePath}) {
 
     return (
         <PageLayout {...SEOProps}>
-            <BlogArticle project={data} basePath={basePath}/>
+            <BlogArticle project={content} basePath={basePath}/>
         </PageLayout>
     )
 }
 
 export async function getStaticProps({params}) {
-    const {articles} = params;
-    let content = await import(`public/content/written/artikel/nl/${articles}/${articles}.md`);
-    let parsedContent = matter(content.default);
-    let data = parsedContent.data;
-    const basePath = `/content/written/artikel/nl/${articles.toLowerCase()}`;
+    const slug = params.article.toLowerCase();
+    // let data = await import(`${BasePaths.ARTICLE}/nl/${slug}/${slug}.md`);
+    // @ts-ignore
+    let data = await import(`public/content/blog/posts/article//nl/${slug}/${slug}.md`);
+    let content = matter(data.default).data;
+    const basePath = `/content/written/artikel/nl/${slug}`;
 
     //Get all project info and only show their cards and titles for the read more part
     const allArticles = getAllArticles([
@@ -72,7 +76,7 @@ export async function getStaticProps({params}) {
     ]);
 
     return {
-        props: {allArticles, basePath, data},
+        props: {allArticles, basePath, content},
     }
 }
 
@@ -83,7 +87,7 @@ export async function getStaticPaths() {
     ]);
 
     const paths = allArticles.map(project => ({
-        params: {articles: project.title.toLowerCase()},
+        params: {article: project.title.toLowerCase()},
     }));
 
     return {paths, fallback: false}

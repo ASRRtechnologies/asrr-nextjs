@@ -4,20 +4,23 @@ import { getAllCases} from '../../../lib/api'
 import matter from 'gray-matter'
 import CaseArticle from '@/written/CaseArticle'
 import useI18n from '../../../hooks/use-i18n'
+// @ts-ignore
 import NL from '../../../locales/nl'
 import {useHeader} from "../../../context/navigation/HeaderContext";
+import {BasePaths} from "../../../data/paths";
 
-function Page ({ allProjects, data, basePath }) {
+function Page ({ allProjects, content, basePath }) {
 
 	const SEOProps = {
-		title:`ASRR - Case - ${data.title}`,
-		content:`${data.landing.title}`
+		title:`ASRR - Case - ${content.title}`,
+		content:`${content.landing.title}`
 	}
 
 	//Need to set locale in the static page
 	const i18n = useI18n();
 	const header = useHeader();
 	useEffect(() => {
+		// @ts-ignore
 		header.setHeaderWhite(true);
 		i18n.locale('nl', NL);
 	}, []);
@@ -28,7 +31,7 @@ function Page ({ allProjects, data, basePath }) {
 
 		//Remove current page project
 		let uniqueProjects = allProjects.filter((project) => {
-			return project.title !== data.title && project.discipline !== data.discipline
+			return project.title !== content.title && project.discipline !== content.discipline
 		});
 
 		//Get random number between 0 and num of projects
@@ -53,17 +56,18 @@ function Page ({ allProjects, data, basePath }) {
 
 	return (
 		<PageLayout {...SEOProps}>
-			<CaseArticle project={data} basePath={basePath}/>
+			<CaseArticle project={content} basePath={basePath}/>
 		</PageLayout>
 	)
 }
 
 export async function getStaticProps ({ params }) {
-	const { cases } = params;
-	let content = await import(`public/content/written/case/nl/${cases.toLowerCase()}/${cases.toLowerCase()}.md`);
-	let parsedContent = matter(content.default);
-	let data = parsedContent.data;
-	const basePath = `/content/written/case/nl/${cases.toLowerCase()}`;
+	const slug = params.cases.toLowerCase();
+	// @ts-ignore
+	let data = await import(`public/content/portfolio/cases/nl/${slug}/${slug}.md`);
+	// let data = await import(`${BasePaths.CASES}/nl/${slug}/${slug}.md`);
+	let content = matter(data.default).data;
+	const basePath = `/content/written/case/nl/${slug}`; //TODO check if works with enum
 
 	//Get all project info and only show their cards and titles for the read more part
 	const allCases = getAllCases([
@@ -72,7 +76,7 @@ export async function getStaticProps ({ params }) {
 	]);
 
 	return {
-		props: { allCases, basePath, data },
+		props: { allCases, basePath, content },
 	}
 }
 
@@ -82,8 +86,8 @@ export async function getStaticPaths () {
 		'title',
 	]);
 
-	const paths = allCases.map(project => ({
-		params: { cases: project.title.toLowerCase() },
+	const paths = allCases.map(cse => ({
+		params: { cases: cse.title.toLowerCase() },
 	}));
 
 	return { paths, fallback: false }

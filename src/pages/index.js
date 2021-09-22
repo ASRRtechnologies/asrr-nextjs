@@ -13,6 +13,7 @@ import {getAllArticles, getAllCases, getAllNews} from '../lib/api'
 import PageLayout from '@/layout/PageLayout'
 import ImageLanding from "@/landing/ImageLanding";
 import image from "#/landing/landing-asrr-min.jpg";
+import {BasePaths} from "../data/paths";
 
 const SEOProps = {
     title: "ASRR - Home",
@@ -64,13 +65,16 @@ function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}
 }
 
 export async function getStaticProps() {
-
+    // @ts-ignore
     let content = await import(`public/content/home/nl/home.md`);
+    // let content = await import(`${BasePaths.HOME}/nl/home.md`);
     let parsedContent = matter(content.default);
     let homepage = parsedContent.data;
     const basePath = `/content/home/nl`;
 
-    let servicesContent = await import(`public/content/service_page/nl/services.md`);
+    // @ts-ignore
+    let servicesContent = await import(`public/content/services/nl/services.md`);
+    // let servicesContent = await import(`${BasePaths.SERVICE_PAGE}/nl/services.md`);
     let servicesParsedContent = matter(servicesContent.default);
     let servicepage = servicesParsedContent.data;
 

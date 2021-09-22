@@ -35,6 +35,7 @@ function Portfolio({ content, allArticles}) {
 export async function getStaticProps () {
 	// @ts-ignore
 	let data = await import(`public/content/blog/nl/blog.md`);
+	// let data = await import(`${BasePaths.BLOG}/nl/blog.md`);
 	let content = matter(data.default).data;
 
 	const allArticles = getAllArticles([

@@ -30,6 +30,7 @@ export async function getStaticProps() {
     //This is the portfolio page cms
     // @ts-ignore
     let data = await import(`public/content/contact/nl/contact.md`);
+    // let data = await import(`${BasePaths.CONTACT}/nl/contact.md`);
     let content = matter(data.default).data;
 
     return {

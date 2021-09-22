@@ -2,7 +2,9 @@ import React, {useEffect} from 'react';
 import Title from "@/utillities/titles/Title";
 import PageLayout from "@/layout/PageLayout";
 import SmallLanding from "@/landing/SmallLanding";
+// @ts-ignore
 import error from "#/404/error.jpg";
+// @ts-ignore
 import error2 from "#/404/error.webp";
 import Section from "@/modules/shared/section/Section";
 import {useHeader} from "../context/navigation/HeaderContext";
@@ -20,12 +22,13 @@ function Error() {
     const darkmode = useTheme().dark;
     const header = useHeader();
     useEffect(() => {
+        // @ts-ignore
         header.setHeaderWhite(true)
     }, []);
 
     return (
         <PageLayout {...SEOProps}>
-            <SmallLanding title="Pagina niet gevonden" alt="Abstract" image={error} imageWebp={error2}/>
+            <SmallLanding title="Pagina niet gevonden" alt="Abstract" image={error} imageWebp={error2} text={undefined}/>
             <Section>
                 <Title className="error" title="404 Error" subHeader="Error"
                        header="De pagina die u zoekt kan niet gevonden worden"/>
