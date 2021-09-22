@@ -5,7 +5,7 @@ type: Artikel
 info:
   date: September 22, 2021 12:00 AM
   client: ASRR
-  author: Elise Arica
+  author: Elise Chandoe-Arica
   tag:
     - tag: Innovation
   technologies: []
