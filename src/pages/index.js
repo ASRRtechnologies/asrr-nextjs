@@ -63,7 +63,7 @@ function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}
             <Why data={homepage.quality_section}/>
             <PreviewBlog data={homepage.blog_section} selectedBlogs={getBlogs()}/>
             <Clients data={homepage.clients}/>
-            <Grid images={homepage.clients} col={5}/>
+
             <FlexGrid images={homepage.clients} col={5}/>
             <Contact/>
         </PageLayout>

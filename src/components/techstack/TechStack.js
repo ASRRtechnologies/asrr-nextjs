@@ -12,33 +12,32 @@ const Wrapper = styled(Section)`
  }`;
 
 function TechStack ({ data, basePath }) {
-
 	const darkmode = useTheme().dark;
 
 	const Tech = ({ image, fallback, alt, className }) => {
 		return (
 			<div className="tech-grid-cell">
-				<PictureFallback fallbackImage={`${basePath}/${fallback}`} image={`${basePath}/${image}`}
-								 alt={alt} className={className}/>
+				<PictureFallback fallbackImage={`${basePath}/${fallback}`} />
 			</div>
 		)
 	};
 
-	return (
-		<Wrapper>
-			<Title title={data.title} subHeader={data.subheader} header={data.header}/>
-			<div className="techstack">
-				<div className="techgrid">
-					<CardFadeAnimation>
-						{data.technologies.map((data, i) => (
-							<Tech className={darkmode ? 'tech-image tech-dark' : 'tech-image '} image={data.image_webp}
-								  fallback={data.image} alt={data.alt}/>
-						))}
-					</CardFadeAnimation>
-				</div>
+	const breakPoints = {
+		1400: 4,
+		1200: 3,
+		1000: 2,
+	}
 
-			</div>
-		</Wrapper>
+	return (
+		<Section>
+			<Title title={data.title} subHeader={data.subheader} header={data.header}/>
+			<Grid col={2} breakpoints={breakPoints}>
+				{data.technologies.map((data, i) => (
+					<img className={darkmode ? 'tech-image tech-dark' : 'tech-image '} src={`${basePath}/${data.image}`}
+						 alt={data.alt}/>
+				))}
+			</Grid>
+		</Section>
 	)
 }
 
