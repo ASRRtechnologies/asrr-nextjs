@@ -3,7 +3,6 @@ import cardStyles from "@/modules/portfolio/cardStyles.module.scss";
 import AspectRatio from "@/library/aspect-ratio/AspectRatio";
 // @ts-ignore
 import placeholder from "#/team/placeholder.png";
-import {PortfolioCardProps} from "@/modules/portfolio/types";
 import Link from "next/link";
 import {BlogCardProps} from "@/modules/blog/types";
 

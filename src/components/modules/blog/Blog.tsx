@@ -11,10 +11,14 @@ function Blog(props) {
     return (
         <Section>
             <div className={blogStyles.grid}>
-                {allBlogs.map((post) => {
+                {allBlogs.map((post, i) => {
                     const basePath = customBasePath(post.title);
+
+                    //Set delay for each uneven card. TODO make cards on mobile just same speed
+                    const animationSettings = cardAnimations({duration: i % 2 === 0 ? 1000 : 1500})
+
                     return (
-                        <Fade direction="up" {...cardAnimations}>
+                        <Fade direction="up" {...animationSettings}>
                             <BlogCard {...post} basePath={basePath}/>
                         </Fade>
                     )

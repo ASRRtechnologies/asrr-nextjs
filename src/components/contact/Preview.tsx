@@ -3,7 +3,6 @@ import Section from '@/modules/shared/section/Section'
 import {Fade} from 'react-awesome-reveal'
 import styled from '@emotion/styled'
 import useI18n from '../../hooks/use-i18n'
-import NavigationButtonWhite from "@/buttons/NavigationButtonWhite";
 import contactStyles from "./contact.module.scss";
 
 // @ts-ignore
@@ -20,7 +19,7 @@ const DarkButton = styled('div')`
 `;
 
 
-function Preview({title, className}) {
+function Preview() {
     const i18n = useI18n();
 
     const titleObject = {
@@ -31,14 +30,12 @@ function Preview({title, className}) {
 
     return (
         <Section className={contactStyles.contactPreview}>
-            <div className={contactStyles.contactInner}>
-                <h1 className="h2">{titleObject.title}</h1>
-                <h2 className="h3 not-bold">{titleObject.header}</h2>
-                {/*<Fade triggerOnce delay={300} direction="up">*/}
-                {/*    <NavigationButtonWhite title="Kom in contact" to="contact" className={undefined}*/}
-                {/*                           custom={undefined}/>*/}
-                {/*</Fade>*/}
-            </div>
+            <Fade delay={400} triggerOnce={true}>
+                <div className={contactStyles.contactInner}>
+                    <h1 className="h2">{titleObject.title}</h1>
+                    <h2 className="h3 not-bold">{titleObject.header}</h2>
+                </div>
+            </Fade>
         </Section>
     )
 }
