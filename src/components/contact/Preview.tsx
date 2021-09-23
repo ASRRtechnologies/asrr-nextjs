@@ -6,18 +6,6 @@ import useI18n from '../../hooks/use-i18n'
 import contactStyles from "./contact.module.scss";
 
 // @ts-ignore
-const DarkButton = styled('div')`
-  background-color: ${props => props.theme.button.dark.background};
-  box-shadow: ${props => props.theme.button.dark.shadow};
-
-  p, a {
-    color: ${props => props.theme.button.dark.font}
-  }
-
-!important;
-    // &:hover{background-color: ${props => props.theme.button.dark.hover};}
-`;
-
 
 function Preview() {
     const i18n = useI18n();

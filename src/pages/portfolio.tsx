@@ -26,7 +26,7 @@ function Portfolio({content, allCases}) {
         <PageLayout {...SEOProps}>
             <Banner {...content.landing}/>
             <PortfolioPage content={content} allCases={allCases} customBasePath={customBasePath}/>
-            <Contact title={undefined} className={undefined}/>
+            <Contact/>
         </PageLayout>
     )
 }
