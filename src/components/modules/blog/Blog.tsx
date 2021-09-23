@@ -3,7 +3,7 @@ import blogStyles from "./blogStyles.module.scss"
 import Section from "@/modules/shared/section/Section";
 import BlogCard from "@/modules/blog/BlogCard";
 import { Fade } from "react-awesome-reveal";
-import {cardAnimations} from "../../../data/card-animations";
+import {animationsSettings} from "../../../data/animations-settings";
 
 function Blog(props) {
     const {allBlogs, customBasePath} = props;
@@ -15,10 +15,10 @@ function Blog(props) {
                     const basePath = customBasePath(post.title);
 
                     //Set delay for each uneven card. TODO make cards on mobile just same speed
-                    const animationSettings = cardAnimations({duration: i % 2 === 0 ? 1000 : 1500})
+                    const animationSettings = animationsSettings({}, i);
 
                     return (
-                        <Fade direction="up" {...animationSettings}>
+                        <Fade {...animationSettings}>
                             <BlogCard {...post} basePath={basePath}/>
                         </Fade>
                     )

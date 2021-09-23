@@ -14,6 +14,7 @@ h2, .h2{
   @include font-size(2.5rem);
   font-weight: bold;
   margin-top: 0;
+  @include margin-bottom(15px);
 }
 
 h3, .h3{
@@ -43,6 +44,7 @@ h6, .h6{
 }
 
 a, p{
+  display: block;
   @include font-size(16px);
   @include margin-bottom(1rem);
 }
@@ -50,6 +52,14 @@ a, p{
 a{
   cursor: pointer;
   text-decoration: none;
+  margin-bottom: 0;
+}
+
+.lees-meer{
+  color: $primary-color;
+  margin-top: 30px!important;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .hover-link{

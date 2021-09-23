@@ -20,3 +20,7 @@ export interface PortfolioCardProps {
     info: Info;
     basePath?: string,
 }
+
+export interface PortfolioHighlightProps {
+    left: boolean
+}
