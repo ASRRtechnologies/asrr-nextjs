@@ -16,6 +16,8 @@ import image from "#/landing/landing-asrr-min.jpg";
 import {BasePaths} from "../data/paths";
 import PortfolioPreview from "@/modules/portfolio/PortfolioPreview";
 import Banner from "@/modules/shared/landing/Banner";
+import Grid from "@/modules/shared/grid/Grid";
+import FlexGrid from "@/modules/shared/grid/FlexGrid";
 
 const SEOProps = {
     title: "ASRR - Home",
@@ -61,6 +63,8 @@ function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}
             <Why data={homepage.quality_section}/>
             <PreviewBlog data={homepage.blog_section} selectedBlogs={getBlogs()}/>
             <Clients data={homepage.clients}/>
+            <Grid images={homepage.clients} col={5}/>
+            <FlexGrid images={homepage.clients} col={5}/>
             <Contact/>
         </PageLayout>
     )

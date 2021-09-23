@@ -5,6 +5,7 @@ import styled from '@emotion/styled'
 import { useTheme } from '../../context/theme/ThemeContext'
 import PictureFallback from '@/utillities/titles/PictureFallback'
 import CardFadeAnimation from '@/animation/CardFadeAnimation'
+import Grid from "@/modules/shared/grid/Grid";
 
 const Wrapper = styled(Section)`
         background: ${props => props.theme.home.techstack};
@@ -35,6 +36,7 @@ function TechStack ({ data, basePath }) {
 						))}
 					</CardFadeAnimation>
 				</div>
+
 			</div>
 		</Wrapper>
 	)

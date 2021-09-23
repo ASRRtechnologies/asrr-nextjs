@@ -27,7 +27,7 @@ function Clients ({data}) {
 			<Fade fraction={0.4} damping={0.3} triggerOnce direction="up">
 			<div className="clients">
 					<Ticker speed={2} mode="chain">
-						{({ index }) => (clients.map((d, i) => <Card key={uuid()} children={d.logo}/>))}
+						{({ index }) => (clients.map((d, i) => <Card key={uuid()} children={d.image}/>))}
 					</Ticker>
 				</div>
 			</Fade>
