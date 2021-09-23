@@ -16,7 +16,7 @@ function Portfolio ({ data, selectedProjects }) {
 	return (
 		<Wrapper>
 
-			<Title title={data.title} header={data.header} subHeader={data.subheader}/>
+			<Title title={data.header} text={data.subheader}/>
 
 			<div className="cards-container">
 
