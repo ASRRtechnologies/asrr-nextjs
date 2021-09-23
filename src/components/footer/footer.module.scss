@@ -5,12 +5,16 @@
     @include size(100%, auto);
     @include flex(space-between, center, column);
     background-color: #000;
-
     //OVERRIDE
     padding-bottom: 35px !important;
 
-    h1, h2, p, a {
+    .h6, .h5, p, a {
       color: $white;
+      margin-bottom: 10px;
+    }
+
+    a{
+      text-decoration: underline;
     }
   }
 
@@ -48,10 +52,6 @@
     width: 100%;
     max-width: $max-width;
     @include padding-top(2rem);
-
-    p {
-      margin-bottom: 0;
-    }
   }
 
   .socials{

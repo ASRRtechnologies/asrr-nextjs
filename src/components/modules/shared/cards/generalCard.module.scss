@@ -5,6 +5,7 @@
     display: block;
     width: 100%;
     height: auto;
+    cursor: pointer;
 
     .border{
       display: block;
@@ -29,32 +30,5 @@
         border-radius: 5px;
       }
     }
-
-    .text{
-      a{
-        color: $primary-color;
-        text-decoration: underline;
-        text-decoration-color: inherit;
-      }
-
-    }
-
   }
-
-}
-
-@include media(">=sm") {
-  .teamGrid {
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 50px;
-  }
-
-}
-
-
-@include media(">sm", "<=lg") {
-  .teamGrid {
-    grid-template-columns: 1fr 1fr;
-  }
-
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import portfolioStyles from "./portfolioStyles.module.scss"
 import Section from "@/modules/shared/section/Section";
 import PortfolioCard from "@/modules/portfolio/PortfolioCard";
-import {cardAnimations} from "../../../data/card-animations";
+import {animationsSettings} from "../../../data/animations-settings";
 import {Fade} from "react-awesome-reveal";
 
 function Portfolio(props) {
@@ -14,10 +14,10 @@ function Portfolio(props) {
                     const basePath = customBasePath(project.title);
 
                     //Set delay for each uneven card. TODO make cards on mobile just same speed
-                    const animationSettings = cardAnimations({duration: i % 2 === 0 ? 1000 : 1500})
+                    const animationSettings = animationsSettings({}, i)
 
                     return (
-                        <Fade direction="up" {...animationSettings}>
+                        <Fade {...animationSettings}>
                             <PortfolioCard {...project} basePath={basePath} {...animationSettings}/>
                         </Fade>
                     )

@@ -14,6 +14,8 @@ import PageLayout from '@/layout/PageLayout'
 import ImageLanding from "@/landing/ImageLanding";
 import image from "#/landing/landing-asrr-min.jpg";
 import {BasePaths} from "../data/paths";
+import PortfolioPreview from "@/modules/portfolio/PortfolioPreview";
+import Banner from "@/modules/shared/landing/Banner";
 
 const SEOProps = {
     title: "ASRR - Home",
@@ -50,11 +52,11 @@ function Index({homepage, servicepage, basePath, allCases, allArticles, allNews}
 
     return (
         <PageLayout {...SEOProps}>
-            <ImageLanding image={image} title={homepage.landing.title} text={homepage.landing.text}
-                          button={homepage.landing.button}/>
+            <Banner landing={true} image={image} title={homepage.landing.title} text={homepage.landing.text} button={homepage.landing.button}/>
             <PreviewServices data={homepage.services_section} cards={servicepage}/>
             <TechStack basePath={basePath} data={homepage.technologies_section}/>
             <PreviewPortfolio data={homepage.portfolio_section} selectedProjects={getCases()}/>
+            <PortfolioPreview/>
             <Testimonials data={homepage.testimonials_section} basePath={basePath}/>
             <Why data={homepage.quality_section}/>
             <PreviewBlog data={homepage.blog_section} selectedBlogs={getBlogs()}/>

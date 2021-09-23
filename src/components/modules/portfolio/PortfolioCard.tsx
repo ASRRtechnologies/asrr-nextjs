@@ -1,18 +1,21 @@
 import React from 'react';
-import cardStyles from "@/modules/portfolio/cardStyles.module.scss";
+import cardStyles from "@/modules/shared/cards/generalCard.module.scss";
 import AspectRatio from "@/library/aspect-ratio/AspectRatio";
 // @ts-ignore
 import placeholder from "#/team/placeholder.png";
 import {PortfolioCardProps} from "@/modules/portfolio/types";
 import Link from "next/link";
+import {useRouter} from "next/router";
 
 function PortfolioCard(props: PortfolioCardProps) {
     const projectName = props.title;
     const {image, alt, title, text} = props.card;
     const {client, date, author, tags} = props.info;
+    const router = useRouter();
+    const goToCase = () => router.push(`/portfolio/cases/${projectName}`);
 
     return (
-        <div className={cardStyles.card}>
+        <div className={cardStyles.card} onClick={goToCase}>
             <AspectRatio x={4} y={3}>
                 <img src={image ? `${props.basePath}/${image}` : placeholder} alt={alt}/>
             </AspectRatio>
