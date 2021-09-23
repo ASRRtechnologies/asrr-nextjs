@@ -28,7 +28,7 @@ function Portfolio({ content, allArticles}) {
 		<PageLayout {...SEOProps}>
 			<Banner {...landing}/>
 			<BlogPage data={content} allBlogs={allArticles} customBasePath={customBasePath}/>
-			<Contact title={undefined} className={undefined}/>
+			<Contact/>
 		</PageLayout>
 	)
 }

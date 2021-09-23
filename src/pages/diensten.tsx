@@ -24,7 +24,7 @@ function Diensten ({content}) {
 		<PageLayout {...SEOProps}>
 			<CheckmarkServices data={content}/>
 			<ServicePage data={content}/>
-			<Contact title={undefined} className={undefined}/>
+			<Contact/>
 		</PageLayout>
 	)
 }

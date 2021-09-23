@@ -1,5 +1,6 @@
 @import "/node_modules/include-media";
 @import "~rfs/scss";
+@import "./mixins";
 
 $breakpoints: (xs: 100px, sm: 768px, lg: 1024px, xl: 1200px);
 
@@ -17,6 +18,7 @@ $xl-padding-vertical: 200px;
 $black: #24272A;
 $white: #f8f8f8;
 $primary-color:#FF6961FF;
+$secondary-color: #185cd5;
 
 //max-width
 $max-width: 1000px;

@@ -12,7 +12,7 @@ function Section(props: SectionProps) {
     const {children, className} = props;
 
     return (
-        <section className={`${className} ${sectionStyles.section} global-padding-horizontal global-padding-vertical`} {...props}>
+        <section {...props} className={`${className} ${sectionStyles.section} global-padding-horizontal global-padding-vertical`}>
             {children}
         </section>
     );

@@ -30,8 +30,7 @@ function Error() {
         <PageLayout {...SEOProps}>
             <SmallLanding title="Pagina niet gevonden" alt="Abstract" image={error} imageWebp={error2} text={undefined}/>
             <Section>
-                <Title className="error" title="404 Error" subHeader="Error"
-                       header="De pagina die u zoekt kan niet gevonden worden"/>
+                <Title className="error" title="404 Error" text="De pagina die u zoekt kan niet gevonden worden"/>
                        <Fade triggerOnce direction="up">
                            <Link href="/">
                                <a className={`${darkmode
