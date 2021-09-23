@@ -8,6 +8,7 @@ import styled from '@emotion/styled'
 import FormButton from '@/buttons/FormButton'
 import {useSnackbar} from 'notistack'
 import {useTheme} from '../../context/theme/ThemeContext'
+import {postCall} from "../../functions/helper-functions";
 
 const Wrapper = styled(Section)`
   background: ${props => props.theme.layout};
@@ -28,44 +29,34 @@ function Contact({data}) {
 
     const handleChange = ({name, value}) => setEmail({...email, [name]: value});
 
-    const handleSubmit = (event) => {
-
+    const handleSubmit = async (event) => {
         let emailObject = {
             body: `from: ${email.userEmail}, name:${email.name}, subject:${email.subject}, organization: ${email.organization}, message: ${email.body}`,
             subject: email.subject,
             recipient: recipient,
         };
 
-        fetch('https://mail.api.asrr-tech.com/mail/send/simple', {
-            method: 'POST',
+        const [data, error ] = await postCall({
+            url:"https://form-configurator-api.azurewebsites.net/api/v1/mail/send",
+            data: emailObject,
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(emailObject),
-        }).then(function (response) {
-            if (response.ok) {
-                enqueueSnackbar(i18n.t('user_notifications.contact.success.title'), {variant: 'success'});
-                setEmail({})
-            } else {
-                response.json().then(function (object) {
-                    console.log(object);
-                    enqueueSnackbar(i18n.t('user_notifications.contact.error.title'), {error: true})
-                });
-                throw new Error(response.statusText)
-            }
-        }).catch(error => {
-            enqueueSnackbar(i18n.t('user_notifications.contact.error.title'), {error: true})
-        });
+        })
+
+        if(error){
+            enqueueSnackbar(i18n.t('user_notifications.contact.error.title'), {error: true});
+            return;
+        }
+
+        enqueueSnackbar(i18n.t('user_notifications.contact.success.title'), {variant: 'success'});
+        setEmail(null)
 
         event.preventDefault()
-
     };
 
     return (
         <Wrapper className="no-landing">
-
-            <Title className="title-button" title={data.page_title.title}
-                   subHeader={data.page_title.subheader} header={data.page_title.header}/>
 
             <div className="contact">
 

@@ -1,166 +1,107 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
+// @ts-ignore
 import logo from '#/logo/asrr-logo-spacing-white.svg'
-import useI18n from '../../hooks/use-i18n'
-import LinkedIn from '@/icons/LinkedIn'
-import Facebook from '@/icons/Facebook'
-import { useSnackbar } from 'notistack'
 import Section from '@/modules/shared/section/Section'
 import Link from 'next/link'
+import footerStyles from "./footer.module.scss";
+import {useRouter} from "next/router";
+import LinkedIn from "@/icons/LinkedIn";
+import Facebook from "@/icons/Facebook";
 
-function Footer (props) {
-	const [email, setEmail] = useState({ body: '', subject: '', userEmail: '', organization: '', name: '' });
+const year = new Date().getFullYear();
 
-	const handleChange = ({ name, value }) => setEmail({ ...email, [name]: value });
-	const { enqueueSnackbar, closeSnackbar } = useSnackbar();
+function Footer(props) {
+    const [email, setEmail] = useState({body: '', subject: '', userEmail: '', organization: '', name: ''});
+    const router = useRouter();
+    const goToHome = () => router.push("/")
 
-	const handleSubmit = (event) => {
+    const navigation = [
+        {
+            title: "Navigatie",
+            paths: ["Home", "Portfolio", "Diensten", "Over", "Team", "Blog", "Contact"]
+        },
+        {
+            title: "Contact",
+            texts: ["ASRR Tech", "'s Gravenzandseweg 2 unit A", "2291 PE", "Wateringen", "Nederland"],
+            customPaths: [
+                {
+                    title: "contact@asrr.nl",
+                    href: "mailto:contact@asrr.nl"
+                },
+                {
+                    title: "Plan uw route",
+                    href: "https://goo.gl/maps/fZqhC9FUVTpiEiCb7"
+                }
+            ]
+        },
+        {
+            title: "Informatie",
+            customPaths: [
+                {
+                    title: "Algemene Voorwaarden",
+                    href: "/assets/documents/algemene-voorwaarden-asrr.pdf"
+                },
+                {
+                    title: "Privacybeleid",
+                    href: "/assets/documents/privacy-asrr.pdf"
+                }
+            ],
+        },
 
-		let emailObject = {
-			body: `from: ${email.userEmail}, name:${email.name}, subject:${email.subject}, organization: ${email.organization}, message: ${email.body}`,
-			subject: email.subject,
-			recipient: recipient,
-		};
+    ]
 
-		// console.log(JSON.stringify(emailObject))
+    return (
+        <Section className={footerStyles.footer}>
+            <div className={footerStyles.innerFooter}>
 
-		fetch('https://mail.api.asrr-tech.com/mail/send/simple', {
-			method: 'POST',
-			headers: {
-				'Content-Type': 'application/json',
-			},
-			body: JSON.stringify(emailObject),
-		}).then(function (response) {
-			if (response.ok) {
-				enqueueSnackbar('user_notifications.contact.success.title', { variant: 'success' });
-				setEmail({})
-			} else {
-				response.json().then(function (object) {
-					console.log(object);
-					enqueueSnackbar('user_notifications.contact.error.title', { error: true })
-				});
-				throw new Error(response.statusText)
-			}
-		}).catch(error => {
-			enqueueSnackbar('user_notifications.contact.error.title', { error: true })
-		});
-		event.preventDefault()
-	};
+                <div className={footerStyles.footerGrid}>
+                    <div>
+                        <img onClick={goToHome} className={footerStyles.logo} alt="asrr-logo" src={logo}/>
+                        <p className="h6">Innovative Software</p>
+                    </div>
 
-	const i18n = useI18n();
+                    {navigation.map((nav) => {
+                        return (
+                            <div className={footerStyles.grid}>
+                                <h1 className="h5 bold">{nav.title}</h1>
 
-	const AnimatedLink = ({ text, to }) => {
-		return (
-			<Link href={to}>
-				<a className={`font-general read-more animated-link-light`}>
-					{i18n.t(text)}
-				</a>
-			</Link>
-		)
-	};
+                                {nav.texts?.map((path) => <p className="h6">{path}</p>)}
 
-	return (
-		<Section className="footer-section">
+                                {nav.paths?.map((path) => <Link href={path.toLowerCase()}><a
+                                    className="h6 hover-link">{path}</a></Link>)}
 
-			<div className="footer">
-				<img alt="asrr-logo" src={logo}/>
+                                {nav.customPaths?.map(({href, title}) => {
+                                    return (
+                                        <a target="_blank" rel="noopener noreferrer" href={href}
+                                           className="h6 hover-link">{title}</a>
+                                    )
+                                })}
+                            </div>
+                        )
+                    })}
+                </div>
 
-				<div className="footer-navigation">
+                <div className={footerStyles.bottom}>
+                    <div>
+                        <p className="h7">Copyright ASRR {year}</p>
+                        <p className="h7">Gemaakt met ❤ door ASRR</p>
+                    </div>
 
-					<div className="grid">
-						<h1 className="font-subheader">{i18n.t('footer.navigation')}</h1>
-						<AnimatedLink text="header.home" to="/"/>
-						<AnimatedLink text="header.portfolio" to="/portfolio"/>
-						<AnimatedLink text="header.services" to="/diensten"/>
-						{/*<AnimatedLink text="header.about" to="/over"/>*/}
-						<AnimatedLink text="header.contact" to="/contact"/>
-					</div>
+                    <div className={footerStyles.socials}>
+                        <a className={footerStyles.icons} href="https://www.linkedin.com/company/asrr" target="_blank"
+                           rel="noopener"><LinkedIn/>
+                        </a>
+                        <a className={footerStyles.icons} href="https://www.facebook.com/ASRRTech" target="_blank"
+                           rel="noopener">
+                            <Facebook/>
+                        </a>
+                    </div>
 
-					<div className="grid grid-contact">
-						<h3>Contactinformatie</h3>
-						<p>ASRR Tech</p>
+                </div>
 
-						<span>
-							<p className="bold font-general">Adres: </p>
-							<p className="font-general">'s Gravenzandseweg 2 unit A</p>
-						</span>
-
-						<span>
-							<p className="bold font-general">Postcode: </p>
-							<p className="font-general">2291 PE</p>
-						</span>
-
-						<span>
-							<p className="bold font-general">Plaats: </p>
-							<p className="font-general">Wateringen</p>
-						</span>
-
-						<span>
-							<p className="bold font-general">Land: </p>
-							<p className="font-general">Nederland</p>
-						</span>
-
-						<span>
-							<p className="bold font-general">Mail ons: </p>
-							<a href="mailto:contact@asrr.nl" target="_blank" rel="noopener noreferrer"
-							   className="animated-link-light font-general bold">
-							contact@asrr.nl
-						</a>
-						</span>
-
-						<a href="https://goo.gl/maps/fZqhC9FUVTpiEiCb7" target="_blank" rel="noopener noreferrer"
-						   className="animated-link-light font-general bold">
-							Plan route
-						</a>
-
-					</div>
-
-					<div className="grid">
-						<h3>{i18n.t('footer.information')}</h3>
-
-						<a href="/assets/documents/algemene-voorwaarden-asrr.pdf" target="_blank" rel="noopener noreferrer"
-						   className="animated-link-light text">Algemene voorwaarden
-						</a>
-
-						<a href="/assets/documents/privacy-asrr.pdf" target="_blank" rel="noopener noreferrer"
-						   className="animated-link-light text">Privacybeleid
-						</a>
-
-					</div>
-
-					<div className="grid">
-						<h3>Volg ons</h3>
-
-						<div className="footer-social-media">
-							<a className="footer-icons" href="https://www.linkedin.com/company/asrr" target="_blank"
-							   rel="noopener"><LinkedIn/>
-							</a>
-							<a className="footer-icons" href="https://www.facebook.com/ASRRTech" target="_blank"
-							   rel="noopener">
-								<Facebook/>
-							</a>
-						</div>
-
-					</div>
-
-				</div>
-
-				{/*<div className="footer-newsletter">*/}
-				{/*    <h1 className="small-header">{i18n.t('footer.letter')}</h1>*/}
-				{/*    <form onSubmit={handleSubmit}>*/}
-				{/*        <Input onChange={(e) => handleChange(e.target)} value={email.name} className="full-width"*/}
-				{/*               button={i18n.t('buttons.submit')}*/}
-				{/*               placeholder={i18n.t('contact.form.email.placeholder')}/>*/}
-				{/*    </form>*/}
-				{/*</div>*/}
-
-				<div className="bottom">
-					<p className="label">Copyright ASRR</p>
-					<p className="label">{i18n.t('footer.design')}</p>
-				</div>
-
-			</div>
-		</Section>
-	)
+            </div>
+        </Section>
+    )
 }
 
 export default Footer

@@ -42,32 +42,7 @@
       @include margin-bottom(0.8rem)
     }
 
-    .footer-social-media{
-      @include flex(flex-start, flex-end, row);
-      a{
-        display: inline-block;
-        margin: 0;
-        height: auto;
-        svg {
-          width: 30px;
-          height: auto;
 
-          path {
-            fill: white;
-            transition: 300ms ease-in-out fill;
-            cursor: pointer;
-          }
-
-          &:hover {
-            path {
-              fill: $primary-color;
-              transition: 300ms ease-in-out fill;
-            }
-          }
-
-        }
-      }
-    }
 
     &.address {
       width: 25%;

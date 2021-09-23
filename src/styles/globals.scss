@@ -1,5 +1,6 @@
 @import "/node_modules/include-media";
 @import "~rfs/scss";
+@import "./mixins";
 
 $breakpoints: (xs: 100px, sm: 768px, lg: 1024px, xl: 1200px);
 
