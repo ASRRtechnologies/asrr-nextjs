@@ -31,7 +31,7 @@ function TechStack ({ data, basePath }) {
 	return (
 		<Section>
 			<Title title={data.title} subHeader={data.subheader} header={data.header}/>
-			<Grid col={2} breakpoints={breakPoints}>
+			<Grid col={3} breakpoints={breakPoints}>
 				{data.technologies.map((data, i) => (
 					<img className={darkmode ? 'tech-image tech-dark' : 'tech-image '} src={`${basePath}/${data.image}`}
 						 alt={data.alt}/>
