@@ -3,7 +3,6 @@ import {clients} from '../../data/clients'
 import styled from '@emotion/styled'
 import Title from '@/utillities/titles/Title'
 import Section from '@/modules/shared/section/Section'
-import Ticker from 'react-ticker'
 import { Fade } from 'react-awesome-reveal'
 import uuid from 'react-uuid'
 
@@ -26,9 +25,7 @@ function Clients ({data}) {
  				<Title title={data.title} header={data.header} subHeader={data.subheader}/>
 			<Fade fraction={0.4} damping={0.3} triggerOnce direction="up">
 			<div className="clients">
-					<Ticker speed={2} mode="chain">
-						{({ index }) => (clients.map((d, i) => <Card key={uuid()} children={d.image}/>))}
-					</Ticker>
+
 				</div>
 			</Fade>
  		</Wrapper>

@@ -4,8 +4,6 @@ import gridStyles from "./grid.module.scss"
 import logo from '#/logo/asrr-logo-spacing-white.svg'
 import styled from "@emotion/styled";
 import {maxWidth} from "../../../../data/style_variables";
-import css from "@emotion/css";
-import {useMedia} from "react-use";
 
 type Breakpoint = {
     ["x: number"]: number
@@ -26,33 +24,43 @@ const StyledGrid = styled(`div`)<GridProps>`
   width: 100%;
   max-width: ${maxWidth};
   justify-items: center;
- 
+
 `
 
 function Grid(props: GridProps) {
     const gridRef = useRef(null);
 
     const renderBreakPoints = (breakpoints: Breakpoint) => {
-        let parsedBreakpoints = [Object.entries(breakpoints)];
+        let parsedBreakpoints = [];
         let filteredBreakpoints = [];
         let sortedByLargestBreakpoints = [];
         let currentCol;
 
-       filteredBreakpoints = parsedBreakpoints.filter((breakpoint, i) => {
-            return window.innerWidth >= breakpoint[i][1]
-        });
-
-       console.log(filteredBreakpoints)
-        //if smaller than smallest breakpoint use smallest one
-        if(filteredBreakpoints === []){
-            gridRef.current.style.gridTemplateColumns = `repeat(${currentCol}, 1fr)`;
+        for (let breakPoint in breakpoints) {
+            parsedBreakpoints.push({
+                col: breakpoints[breakPoint],
+                media: breakPoint
+            })
         }
+
+        filteredBreakpoints = parsedBreakpoints.filter((breakpoint, i) => {
+            return window.innerWidth >= breakpoint.media;
+        });
 
         //Sort from high to low in screensize
         sortedByLargestBreakpoints = filteredBreakpoints.sort((a, b) => a.media > b.media ? -1 : 1);
 
-        //Get first or highest media query that is true
-        currentCol = sortedByLargestBreakpoints[0].col;
+        //If the screen is smaller than the smallest breakpoint property is undefined
+        //Therefore we set 0 as the smallest breakpoint with the amount of col of the lowest media point.
+        console.log(sortedByLargestBreakpoints)
+
+        //Undefined when its lower than the smallest screensize
+        if(sortedByLargestBreakpoints[0].col === undefined){
+            currentCol = 2;
+        }
+        else{
+            currentCol = sortedByLargestBreakpoints[0].col;
+        }
 
         gridRef.current.style.gridTemplateColumns = `repeat(${currentCol}, 1fr)`;
     }
