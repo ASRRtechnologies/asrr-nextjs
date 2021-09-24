@@ -72,7 +72,7 @@ function Grid(props: GridProps) {
 
     return (
         <>
-            <StyledGrid ref={gridRef} className={gridStyles.grid}>
+            <StyledGrid breakpoints={props.breakpoints} ref={gridRef} className={gridStyles.grid}>
                 {React.Children.map(props.children, child => (
                     React.cloneElement(child, {style: {...child.props.style}})
                 ))}
