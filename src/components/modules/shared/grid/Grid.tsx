@@ -4,6 +4,8 @@ import gridStyles from "./grid.module.scss"
 import logo from '#/logo/asrr-logo-spacing-white.svg'
 import styled from "@emotion/styled";
 import {maxWidth} from "../../../../data/style_variables";
+import _ from "lodash";
+import {Omit} from "@material-ui/core";
 
 type Breakpoint = {
     ["x: number"]: number
@@ -14,65 +16,57 @@ interface GridProps {
     breakpoints: Breakpoint
 }
 
-const highestBreakPoint = (breakpoint: Breakpoint) => {
-
-}
-
-const StyledGrid = styled(`div`)<GridProps>`
+const StyledGrid = styled(`div`)<Omit<GridProps, 'children' | 'breakpoints'>>`
   grid-row-gap: 50px;
   grid-column-gap: 30px;
   width: 100%;
   max-width: ${maxWidth};
   justify-items: center;
-
 `
+
+const getCurrentColumn = (breakpoints: Breakpoint): number => {
+    let parsedBreakpoints = [];
+
+    for (let breakPoint in breakpoints) {
+        parsedBreakpoints.push({
+            col: breakpoints[breakPoint],
+            media: parseInt(breakPoint)
+        })
+    }
+
+    let filteredBreakpoints = [];
+    filteredBreakpoints = parsedBreakpoints.filter((breakpoint, i) => {
+        return window.innerWidth >= breakpoint.media;
+    });
+
+    //Sort from high to low by media query
+    let sortedByLargestBreakpoints = [];
+    sortedByLargestBreakpoints = filteredBreakpoints.sort((a, b) => a.media > b.media ? -1 : 1);
+
+    //Grab biggest media query
+    return sortedByLargestBreakpoints[0].col;
+}
 
 function Grid(props: GridProps) {
     const gridRef = useRef(null);
 
-    const renderBreakPoints = (breakpoints: Breakpoint) => {
-        let parsedBreakpoints = [];
-        let filteredBreakpoints = [];
-        let sortedByLargestBreakpoints = [];
-        let currentCol;
-
-        for (let breakPoint in breakpoints) {
-            parsedBreakpoints.push({
-                col: breakpoints[breakPoint],
-                media: breakPoint
-            })
-        }
-
-        filteredBreakpoints = parsedBreakpoints.filter((breakpoint, i) => {
-            return window.innerWidth >= breakpoint.media;
-        });
-
-        //Sort from high to low in screensize
-        sortedByLargestBreakpoints = filteredBreakpoints.sort((a, b) => a.media > b.media ? -1 : 1);
-
-        //If the screen is smaller than the smallest breakpoint property is undefined
-        //Therefore we set 0 as the smallest breakpoint with the amount of col of the lowest media point.
-        console.log(sortedByLargestBreakpoints)
-
-        //Undefined when its lower than the smallest screensize
-        if(sortedByLargestBreakpoints[0].col === undefined){
-            currentCol = 2;
-        }
-        else{
-            currentCol = sortedByLargestBreakpoints[0].col;
-        }
-
+    const renderColumns = () => {
+        const currentCol = getCurrentColumn(props.breakpoints);
         gridRef.current.style.gridTemplateColumns = `repeat(${currentCol}, 1fr)`;
     }
 
     useEffect(() => {
-        window.addEventListener("resize", () => renderBreakPoints(props.breakpoints))
-        return window.removeEventListener("resize", () => renderBreakPoints(props.breakpoints))
+        //For initial layout props
+        renderColumns();
+
+        //Fires on scroll after every 1 second
+        window.addEventListener("resize", _.throttle(renderColumns, 1000))
+        return window.removeEventListener("resize", _.throttle(renderColumns, 1000))
     }, [])
 
     return (
         <>
-            <StyledGrid breakpoints={props.breakpoints} ref={gridRef} className={gridStyles.grid}>
+            <StyledGrid ref={gridRef} className={gridStyles.grid}>
                 {React.Children.map(props.children, child => (
                     React.cloneElement(child, {style: {...child.props.style}})
                 ))}
