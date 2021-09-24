@@ -35,9 +35,3 @@ export function useScreenResized() {
 	return screenResized
 }
 
-const throttleFunction = () => {
-    const [value, setValue] = useState(0)
-    const throttled = useRef(throttle((newValue) => console.log(newValue), 1000))
-
-    useEffect(() => throttled.current(value), [value])
-}
