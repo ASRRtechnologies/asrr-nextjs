@@ -6,18 +6,20 @@ import styled from "@emotion/styled";
 import {maxWidth} from "../../../../data/style_variables";
 import _ from "lodash";
 import {Omit} from "@material-ui/core";
+import {Fade} from "react-awesome-reveal";
 
 type Breakpoint = {
-    ["x: number"]: number
+    [x: number]: number
 }
 
 interface GridProps {
     children: React.ReactElement[] | React.ReactElement;
-    breakpoints: Breakpoint
+    breakpoints: Breakpoint,
+    fade?: boolean
 }
 
 const StyledGrid = styled(`div`)<Omit<GridProps, 'children' | 'breakpoints'>>`
-  grid-row-gap: 50px;
+  grid-row-gap: 100px;
   grid-column-gap: 30px;
   width: 100%;
   max-width: ${maxWidth};
@@ -67,10 +69,16 @@ function Grid(props: GridProps) {
     return (
         <>
             <StyledGrid ref={gridRef} className={gridStyles.grid}>
-                {React.Children.map(props.children, child => (
-                    React.cloneElement(child, {style: {...child.props.style}})
-                ))}
-
+                {React.Children.map(props.children, child => {
+                    if(props.fade){
+                        return (
+                            <Fade fraction={0.4} damping={0.3} triggerOnce={true}>
+                                {React.cloneElement(child, {style: {...child.props.style}})}
+                            </Fade>
+                        )
+                    }
+                    return React.cloneElement(child, {style: {...child.props.style}})
+                })}
             </StyledGrid>
         </>
 
