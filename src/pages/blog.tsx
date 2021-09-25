@@ -17,8 +17,6 @@ function Blog({content, allBlogs}) {
     const {landing} = content
     const header = useHeader();
 
-    const customBasePath = (projectName: string) => `/content/written/artikel/nl/${projectName}`;
-
     useEffect(() => {
         // @ts-ignore
         header.setHeaderWhite(false)
@@ -27,7 +25,7 @@ function Blog({content, allBlogs}) {
     return (
         <PageLayout {...SEOProps}>
             <Banner {...landing}/>
-            <BlogPage data={content} allBlogs={allBlogs} customBasePath={customBasePath}/>
+            <BlogPage data={content} allBlogs={allBlogs}/>
             <Contact/>
         </PageLayout>
     )

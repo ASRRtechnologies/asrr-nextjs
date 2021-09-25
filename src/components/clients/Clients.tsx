@@ -32,7 +32,7 @@ const Client = styled("div")<TechStack>`
   `}
 `
 
-function Clients({data}) {
+function Clients({content}) {
     const darkmode = useTheme().dark;
 
     const breakPoints = {
@@ -44,7 +44,7 @@ function Clients({data}) {
 
     return (
         <Section>
-            <Title title={data.title} text={data.text}/>
+            <Title title={content.title} text={content.text}/>
             <Grid breakpoints={breakPoints} fade={true}>
                 {clients.map(({image}) => <Client darkmode={darkmode}>{image}</Client>)}
             </Grid>

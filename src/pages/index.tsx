@@ -33,15 +33,13 @@ function Index({homepage, servicepage, allCases, allBlogs,}) {
         <PageLayout {...SEOProps}>
             <Banner landing={true} image={image} title={homepage.landing.title} text={homepage.landing.text}
                     button={homepage.landing.button}/>
-            <PreviewServices data={homepage.services_section} cards={servicepage}/>
-            <TechStack basePath={basePath} data={homepage.technologies_section}/>
-
+            <PreviewServices data={homepage.services} cards={servicepage}/>
+            <TechStack basePath={basePath} data={homepage.technologies}/>
             <PortfolioPreview allCases={allCases}/>
-            <Testimonials data={homepage.testimonials_section} basePath={basePath}/>
-            <Why data={homepage.quality_section}/>
-            <BlogPreview allBlogs={allBlogs}/>
-            <Clients data={homepage.clients}/>
-
+            <Testimonials data={homepage.testimonials} basePath={basePath}/>
+            <Why data={homepage.quality}/>
+            <BlogPreview content={homepage.blog} allBlogs={allBlogs}/>
+            <Clients content={homepage.clients}/>
             {/*<FlexGrid images={homepage.clients} col={5}/>*/}
             <Contact/>
         </PageLayout>
@@ -57,7 +55,7 @@ export async function getStaticProps() {
 
     // @ts-ignore
     let servicesContent = await import(`public/content/services/nl/services.md`);
-    // let servicesContent = await import(`${BasePaths.SERVICE_PAGE}/nl/services.md`);
+    // let servicesContent = await import(`${BasePa ths.SERVICE_PAGE}/nl/services.md`);
     let servicesParsedContent = matter(servicesContent.default);
     let servicepage = servicesParsedContent.data;
 
