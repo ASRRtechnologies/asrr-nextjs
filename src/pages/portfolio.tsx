@@ -13,7 +13,6 @@ const SEOProps = {
 }
 
 function Portfolio({content, allCases}) {
-    console.log(content)
     const header = useHeader();
     const customBasePath = (projectName: string) => `/content/written/case/nl/${projectName}`; //nl will be language variable
 

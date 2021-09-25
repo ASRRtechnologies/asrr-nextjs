@@ -11,11 +11,10 @@ landing:
   button:
     title: Bekijk cases
     url: /portfolio
-services_section:
-  title: Wat we doen
-  header: ASRR vormt de brug tussen IT en business met flexibele, robuuste teams
+services:
+  title: Onze Diensten
+  text: ASRR vormt de brug tussen IT en business met flexibele, robuuste teams
     die inspelen op wat u nodig heeft.
-  subheader: Onze Diensten
   services:
     - image_webp: scaleable-software-sqaure.webp
       image: scaleable-software-sqaure.jpg
@@ -51,10 +50,9 @@ services_section:
   button:
     title: Ga naar diensten
     url: /diensten
-technologies_section:
-  title: Waar we op bouwen
-  header: ASRR gebruikt de meest geadvanceerde technologieën
-  subheader: Technologieën
+technologies:
+  title: Technologieën
+  text: ASRR gebruikt de meest geadvanceerde technologieën
   technologies:
     - image_webp: react-black-min.webp
       image: react-black-min.png
@@ -74,17 +72,15 @@ technologies_section:
     - image_webp: nextjs-min.webp
       image: nextjs-min.png
       alt: Nextjs Logo
-portfolio_section:
-  title: Wat we al hebben gedaan
-  subheader: Blog
-  header: Bekijk onze voorgaande projecten
+portfolio:
+  title: Portfolio
+  text: Bekijk onze voorgaande projecten
   button:
     title: Ga naar portfolio
     url: /portfolio
-testimonials_section:
-  title: Wat onze klanten over ons zeggen
-  subheader: Onze Klantervaringen
-  header: Een tevreden klant staat voorop in ons proces
+testimonials:
+  title: Onze Klantervaringen
+  text: Onze Klantervaringen
   cards:
     - name: Jorgen Haring
       position: Architect Partner
@@ -119,10 +115,9 @@ testimonials_section:
         say that his service is top notch! I would certainly recommend him to
         others. Knowledge and experience!"'
       company: Ministerie van Financiën c.q. Belastingdienst/Douane Nederland
-quality_section:
+quality:
   title: Waarom ASRR?
-  header: Wij focussen ons op de volgende kernwaarden
-  subheader: Over ASRR
+  text: Wij focussen ons op de volgende kernwaarden
   qualities:
     - quality: Innovatie
       description: "ASRR heeft een open cultuur die innovatie faciliteert en
@@ -168,17 +163,14 @@ quality_section:
         symboliseert een microservice. Deze techniek maakt onze code stabiel,
         schaalbaar en biedt de klant eindeloze mogelijkheden om hun producten te
         ontwikkelen.
-blog_section:
-  title: Het laatste nieuws
-  subheader: Blog
-  header: Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on-als
+blog:
+  title: Blog
+  text: Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on-als
     offline!
   button:
     title: Ga naar blog
     url: /blog
 clients:
   title: Deze klanten gingen u voor
-  header: " "
-  subheader: Bent u de volgende?
-button: Ga naar blog
+  text: "Bent u de volgende?"
 ---

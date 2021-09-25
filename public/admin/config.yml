@@ -39,7 +39,7 @@ collections:
           - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Image Alt", name: "alt", widget: "string", required: false }
       - label: "Service Section"
-        name: "services_section"
+        name: "services"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
@@ -62,7 +62,7 @@ collections:
               - { label: "Title", name: "title", widget: "string", default: "Ga naar blog" }
               - { label: "Url", name: "url", widget: "string" }
       - label: "Tech Stack"
-        name: "technologies_section"
+        name: "technologies"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
@@ -77,7 +77,7 @@ collections:
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Image Alt", name: "alt", widget: "string" }
       - label: "Portfolio"
-        name: "portfolio_section"
+        name: "portfolio"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
@@ -90,7 +90,7 @@ collections:
               - { label: "Title", name: "title", widget: "string", default: "Ga naar blog" }
               - { label: "Url", name: "url", widget: "string" }
       - label: "Testimonials"
-        name: "testimonials_section"
+        name: "testimonials"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
@@ -109,7 +109,7 @@ collections:
               - {label: "Client Story", name: "story", widget: "markdown"}
               - {label: "Client Company", name: "company", widget: "string"}
       - label: "ASRR Qualities"
-        name: "quality_section"
+        name: "quality"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
@@ -123,7 +123,7 @@ collections:
               - { label: "Quality Keyword", name: "quality", widget: "string" }
               - { label: "Quality Description", name: "description", widget: "string" }
       - label: "Blog"
-        name: "blog_section"
+        name: "blog"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
@@ -171,7 +171,7 @@ collections:
   - label: "Portfolio Case"
     name: "portfolio_case"
     identifier_field: slug
-    summary: '{{title}} - {{language}}'
+    summary: '{{title}} - {{language}} - PREVIEW:{{preview}}'
     folder: "public/content/portfolio/cases"
     create: true
     media_folder: ''
@@ -203,6 +203,7 @@ collections:
         name: "info"
         widget: "object"
         fields:
+          - {label: "Homepage Preview", name: "preview", widget: "boolean", default: false}
           - { label: "Client", name: "client", widget: "string", required: false }
           - label: "Date"
             name: "date"
@@ -485,7 +486,7 @@ collections:
   - label: "Blog post"
     name: "blog_post"
     identifier_field: slug
-    summary: '{{title}} - {{language}}'
+    summary: '{{title}} - {{language}} - PREVIEW:{{preview}}'
     folder: "public/content/blog/posts"
     create: true
     media_folder: ''
@@ -522,6 +523,7 @@ collections:
         name: "info"
         widget: "object"
         fields:
+          - {label: "Homepage Preview", name: "preview", widget: "boolean", default: false}
           - { label: "Client", name: "client", widget: "string", required: false }
           - label: "Date"
             name: "date"
