@@ -16,10 +16,11 @@ const Wrapper = styled(`div`)`
 function PortfolioPreview(props) {
     const {allCases} = props;
     const basePath = (projectName: string) => `/content/written/case/nl/${projectName}`; //nl will be language variable
+    const filteredCases = allCases.filter((proj) => proj.info.preview); //Return all cases where preview is true
 
     return (
         <Wrapper>
-            {allCases.map((project, i) => {
+            {filteredCases.map((project, i) => {
                 const even = i % 2 === 0;
                 return (
                     <PortfolioHighlight left={even} content={project.card} basePath={basePath(project.title)}/>
