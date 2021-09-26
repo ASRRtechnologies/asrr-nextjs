@@ -32,7 +32,7 @@ function PortfolioPreview(props) {
                 {filteredCases.map((project, i) => {
                     const even = i % 2 === 0;
                     return (
-                        <PortfolioHighlight left={even} content={project.card} basePath={basePath(project.title)}/>
+                        <PortfolioHighlight {...project} left={even} basePath={basePath(project.title)}/>
                     )
                 })}
             </Wrapper>

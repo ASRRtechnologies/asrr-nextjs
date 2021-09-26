@@ -22,7 +22,7 @@ export interface PortfolioCardProps {
 }
 
 export interface PortfolioHighlightProps {
-    content:{
+    card:{
         alt: string
         client: string
         text: string
@@ -32,6 +32,13 @@ export interface PortfolioHighlightProps {
         image: string
         description: string
     }
+    info:{
+        client: string
+        date: string
+        author: string
+        tags: string
+    }
+    title: string
     left: boolean
     basePath: string
 }

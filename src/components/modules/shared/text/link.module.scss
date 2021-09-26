@@ -1,0 +1,70 @@
+@import "src/styles/globals";
+
+.linkLight {
+  position: relative;
+  display: inline-block;
+  //overflow: hidden;
+  background: linear-gradient(to right, $primary-color, $primary-color 50%, $black 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 300ms ease;
+  //text-decoration: none; // text decorations are clipped in WebKit browsers
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: $black;
+    height: 2px;
+    width: 100%;
+    bottom: -2px;
+  }
+
+  &:hover {
+    background-position: 0 100%;
+    transition: background-position 300ms ease;
+
+    &:before {
+      background-color: $primary-color;
+      transition: background 300ms ease;
+    }
+  }
+}
+
+.linkDark {
+  position: relative;
+  display: inline-block;
+  //overflow: hidden;
+  background: linear-gradient(to right, $primary-color, $primary-color 50%, $white 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 300ms ease;
+  text-decoration: none; // text decorations are clipped in WebKit browsers
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: $white;
+    height: 2px;
+    width: 100%;
+    bottom: -2px;
+  }
+
+  &:hover {
+    background-position: 0 100%;
+    transition: background-position 300ms ease;
+
+    &:before {
+      background-color: $primary-color;
+      transition: background 300ms ease;
+    }
+  }
+
+}

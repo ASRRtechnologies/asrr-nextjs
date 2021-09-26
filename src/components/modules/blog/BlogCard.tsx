@@ -6,6 +6,7 @@ import placeholder from "#/team/placeholder.png";
 import Link from "next/link";
 import {BlogCardProps} from "@/modules/blog/types";
 import {useRouter} from "next/router";
+import LinkText from "../shared/text/LinkText";
 
 function BlogCard(props: BlogCardProps) {
     const projectName = props.title;
@@ -31,20 +32,11 @@ function BlogCard(props: BlogCardProps) {
 
             <div className={cardStyles.text}>
                 <p>{text}</p>
-                <Link href={`/blog/${props.type}/${projectName}`}>
-                    <a className="bold lees-meer hover-link">Lees meer</a>
-                </Link>
+                <LinkText href={`/blog/${props.type}/${projectName}`} customLink={false} classes="bold lees-meer" title={null}/>
             </div>
 
             <div className={cardStyles.tags}>
-                {tags?.map((tag) => {
-                    return (
-                        <Link href={`/portfolio`}>
-                            <a className="h6">{tag}</a>
-                        </Link>
-                    )
-                })}
-                {/*{technologies?.map(({technologies}) => <Link href="/portfolio"><a className="h5">{technologies}</a> </Link>)}*/}
+                {tags?.map((tag) => <LinkText href={`/blog`} customLink={false} className="h6" title={tag}/>)}
             </div>
         </div>
     );
