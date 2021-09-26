@@ -15,7 +15,7 @@ function PortfolioHighlight(props: PortfolioHighlightProps) {
     const {client, date, author, tags} = props.info;
     return (
         <div className="global-padding-vertical">
-            <Section className={`${cardStyles.highlight} ${props.left && cardStyles.highlightLeft}`}>
+            <Section className={`${cardStyles.highlight} ${props.reverse && cardStyles.highlightLeft}`}>
                 <Filter opacity={0.5}/>
 
                 <Reveal keyframes={zoomIn} {...bannerAnimations} className="image-zoom-animation">

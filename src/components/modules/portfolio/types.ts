@@ -39,6 +39,6 @@ export interface PortfolioHighlightProps {
         tags: string
     }
     title: string
-    left: boolean
+    reverse: boolean
     basePath: string
 }

@@ -27,7 +27,7 @@ function Preview ({data, cards}) {
 				</CardFadeAnimation>
 			</div>
 			<div className="read-more-wrapper">
-				<ReadMore className="subheader" to="/diensten" text={data.button.title}/>
+				{/*<ReadMore className="subheader" to="/diensten" text={data.button.title}/>*/}
 			</div>
 		</Wrapper>
 	)

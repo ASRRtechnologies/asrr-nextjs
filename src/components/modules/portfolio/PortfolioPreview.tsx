@@ -30,9 +30,10 @@ function PortfolioPreview(props) {
             <Title title={content.title} text={content.text}/>
             <Wrapper>
                 {filteredCases.map((project, i) => {
-                    const even = i % 2 === 0;
+                    const even = i % 2 === 1;
                     return (
-                        <PortfolioHighlight {...project} left={even} basePath={basePath(project.title)}/>
+                        <PortfolioHighlight reverse={even} card={project.card} info={project.info}
+                                            basePath={basePath(project.title)} title={project.title}/>
                     )
                 })}
             </Wrapper>

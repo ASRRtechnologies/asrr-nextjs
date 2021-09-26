@@ -24,6 +24,12 @@ export const animationsSettings = (values: object, index?: number) => {
     }
 }
 
+export const cardAnimation = {
+    duration:  1000,
+    triggerOnce: true,
+    cascade:false
+}
+
 export const textAnimations = {
     direction: up,
     cascade: true,
