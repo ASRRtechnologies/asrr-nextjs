@@ -1,6 +1,22 @@
 ---
 language: nl
 title: hardware
+info:
+  date: September 26, 2021 9:05 PM
+  preview: true
+meta_tags:
+  title: Diensten - Hardware
+  text: ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De
+    componenten worden zo uitgekozen dat ze precies passen bij het proces waar
+    de hardware voor wordt gebruikt. Hierdoor betaal je niet te veel voor
+    onnodige componenten en ligt de focus op de onderdelen die voor jou cruciaal
+    zijn. Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen
+    binnen de technologie, waardoor je meer performance hebt voor minder kosten
+card:
+  text: ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De
+    componenten worden zo uitgekozen dat ze precies passen bij het proces waar
+    de hardware voor wordt gebruikt.
+  title: Hardware
 landing:
   title: Hardware met serieuze performance
   image_webp: hardware-landing.webp
