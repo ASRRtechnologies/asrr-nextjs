@@ -71,4 +71,13 @@ card:
       - bullet: Van business data naar business insights
       - bullet: We zetten ook uw legacy data aan het werk
       - bullet: Overzichtelijke PowerBI dashboards
+meta_tags:
+  title: Diensten
+  text: ASRR heeft verschillende diensten
+landing:
+  title: Diensten
+section:
+  title: All onze diensten in een
+  image: automation-square.jpg
+  alt: ASRR - Diensten
 ---
