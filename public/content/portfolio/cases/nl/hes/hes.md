@@ -6,7 +6,7 @@ meta_tags:
   title: Case - HES International
   text: Case - HES International
 info:
-  date: January 9, 2021 10:09 PM
+  date: September 26, 2021 10:32 PM
   client: HES International
   author: Amar Ramdas
   preview: true
