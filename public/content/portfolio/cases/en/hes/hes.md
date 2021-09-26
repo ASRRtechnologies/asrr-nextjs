@@ -1,10 +1,16 @@
 ---
 language: en
 title: hes
+meta_tags:
+  title: HES International
+  text: Hes International
 info:
   date: January 9, 2021 10:09 PM
   client: HES International
   author: Amar Ramdas
+  preview: true
+  tags:
+    - left
 card:
   title: From Excel sheet to Enterprise PageLayout
   image: case-image.png
