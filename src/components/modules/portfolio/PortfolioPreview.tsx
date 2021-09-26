@@ -5,6 +5,10 @@ import Title from '@/utillities/titles/Title';
 import Section from '../shared/section/Section';
 
 const Wrapper = styled(`div`)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   //& > div:not(:first-child) {
   //  padding-top: 0;
   //}

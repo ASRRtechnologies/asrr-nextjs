@@ -18,10 +18,9 @@ function Testimonials({data, basePath}) {
 
             <div className={testimonialStyles.testimonials}>
                 {data.cards.map((testimonial, i) => {
-                    const even = i % 2 === 0;
                     return (
                             <Fade {...cardAnimation} className={testimonialStyles.cardFadeWrapper}>
-                                <TestimonialCards content={testimonial} basePath={basePath} reverse={even}/>
+                                <TestimonialCards content={testimonial} basePath={basePath} />
                             </Fade>
                         )
                     }

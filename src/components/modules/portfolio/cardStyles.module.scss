@@ -19,7 +19,7 @@
       padding: 50px 25px;
       text-align: left;
       background-color: white;
-      width: 90%;
+      width: 100%;
       max-width: 500px;
       z-index: 10;
     }
@@ -36,6 +36,7 @@
 @include media(">=lg") {
   .highlight{
     align-items: flex-end;
+    width: 75vw;
     min-height: 70vh;
     height: 70vh;
 
@@ -49,9 +50,4 @@
     }
 
   }
-}
-
-
-@include media(">sm", "<=lg") {
-
 }

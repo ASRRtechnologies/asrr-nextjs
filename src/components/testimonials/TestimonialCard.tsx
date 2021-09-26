@@ -3,17 +3,16 @@ import React from 'react'
 import testimonialStyles from "./testimonial.module.scss";
 
 interface TestimonialCardProps {
-    reverse: boolean;
     content: any,
     basePath: string
 }
 
 function TestimonialCards(props:TestimonialCardProps) {
     const {name, position, story, company, alt, image} = props.content;
-    const {left, basePath} = props;
+    const { basePath} = props;
 
     return (
-        <div className={`${testimonialStyles.card} ${left && testimonialStyles.reverse}`}>
+        <div className={`${testimonialStyles.card}`}>
             <div className={testimonialStyles.cardImage}>
                 <AspectRatio x={4} y={4}>
                     <img src={`${basePath}/${image}`} alt={alt}/>
