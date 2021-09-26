@@ -1,6 +1,6 @@
 ---
 language: nl
-title: services
+title: diensten
 page_title:
   title: Onze Diensten
   text: Bekijk onze projecten
