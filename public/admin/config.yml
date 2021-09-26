@@ -203,7 +203,7 @@ collections:
         name: "info"
         widget: "object"
         fields:
-          - {label: "Homepage Preview", name: "preview", widget: "boolean", default: false}
+          - {label: "Homepage Preview", name: "preview", widget: "boolean", default: false, required: false}
           - { label: "Client", name: "client", widget: "string", required: false }
           - label: "Date"
             name: "date"
@@ -523,7 +523,7 @@ collections:
         name: "info"
         widget: "object"
         fields:
-          - {label: "Homepage Preview", name: "preview", widget: "boolean", default: false}
+          - {label: "Homepage Preview", name: "preview", widget: "boolean", default: false, required: false}
           - { label: "Client", name: "client", widget: "string", required: false }
           - label: "Date"
             name: "date"

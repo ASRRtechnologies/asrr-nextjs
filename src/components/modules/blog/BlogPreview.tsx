@@ -9,12 +9,13 @@ import Title from "../../utillities/titles/Title";
 function Blog(props) {
     const {allBlogs, content} = props;
     const basePath = (blogType: string, projectName: string) => `/content/blog/posts/${blogType}/nl/${projectName}`;
+    const filteredBlogs = allBlogs.filter((blog) => blog.info.preview); //Return all cases where preview is true
 
     return (
         <Section>
             <Title title={content.title} text={content.text}/>
             <div className={blogStyles.grid}>
-                {allBlogs.map((post, i) => {
+                {filteredBlogs.map((post, i) => {
                     //Set delay for each uneven card. TODO make cards on mobile just same speed
                     const animationSettings = animationsSettings({}, i)
                     return (

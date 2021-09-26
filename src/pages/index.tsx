@@ -35,7 +35,7 @@ function Index({homepage, servicepage, allCases, allBlogs,}) {
                     button={homepage.landing.button}/>
             <PreviewServices data={homepage.services} cards={servicepage}/>
             <TechStack basePath={basePath} data={homepage.technologies}/>
-            <PortfolioPreview allCases={allCases}/>
+            <PortfolioPreview content={homepage.portfolio} allCases={allCases}/>
             <Testimonials data={homepage.testimonials} basePath={basePath}/>
             <Why data={homepage.quality}/>
             <BlogPreview content={homepage.blog} allBlogs={allBlogs}/>

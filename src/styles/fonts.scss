@@ -69,6 +69,10 @@ a{
   }
 }
 
+.bold {
+  font-weight: bold !important;
+}
+
 .not-bold{
-  font-weight: normal;
+  font-weight: normal !important;
 }
