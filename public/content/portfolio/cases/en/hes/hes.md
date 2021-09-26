@@ -2,7 +2,7 @@
 language: en
 title: hes
 meta_tags:
-  title: HES International
+  title: Case - HES International
   text: Hes International
 info:
   date: January 9, 2021 10:09 PM
