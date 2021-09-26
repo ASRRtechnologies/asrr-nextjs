@@ -2,6 +2,13 @@
 language: nl
 title: heijmans-configurator
 type: Case
+meta_tags:
+  title: Case - Heijmans Configurator
+  text: Een VR Ready, 3D omgeving om online uw toekomstige huis te configureren.
+    Als je een huis koopt kan je bij de architect aangeven welke opties je op
+    jouw huis zou willen, zoals een dakkapel of een uitbouw. De architect moet
+    voor elke klant een apart ontwerp maken. Het is vast in te beelden dat dit
+    een tijdrovende bezigheid is als de huizen in grote getallen gebouwd worden.
 info:
   date: January 10, 2021 12:20 AM
   client: Heijmans
@@ -12,10 +19,16 @@ info:
     - tag: Expertise on demand
     - tag: Design
   author: Re-Angelo Jarvis
+  preview: true
+  tags:
+    - left
 card:
   title: Heijmans/FORM 3D Woningconfigurator
-  text: Een VR Ready, 3D omgeving om uw toekomstige huis te configureren vanuit
-    een internetbrowser.
+  text: Een VR Ready, 3D omgeving om online uw toekomstige huis te configureren.
+    Als je een huis koopt kan je bij de architect aangeven welke opties je op
+    jouw huis zou willen, zoals een dakkapel of een uitbouw. De architect moet
+    voor elke klant een apart ontwerp maken. Het is vast in te beelden dat dit
+    een tijdrovende bezigheid is als de huizen in grote getallen gebouwd worden.
   url: /blog/news/heijmans-configurator
   image_webp: ezgif.com-gif-maker-4-2.jpg
   image: ezgif.com-gif-maker-4-2.jpg
