@@ -13,6 +13,7 @@ type Breakpoint = {
 }
 
 interface GridProps {
+    maxWidth?: string
     children: React.ReactElement[] | React.ReactElement;
     breakpoints: Breakpoint,
     fade?: boolean
@@ -22,7 +23,7 @@ const StyledGrid = styled(`div`)<Omit<GridProps, 'children' | 'breakpoints'>>`
   grid-row-gap: 100px;
   grid-column-gap: 30px;
   width: 100%;
-  max-width: ${maxWidth};
+  max-width: ${props => props.maxWidth || maxWidth};
   justify-items: center;
 `
 
@@ -68,7 +69,7 @@ function Grid(props: GridProps) {
 
     return (
         <>
-            <StyledGrid ref={gridRef} className={gridStyles.grid}>
+            <StyledGrid ref={gridRef} className={gridStyles.grid} maxWidth={props.maxWidth}>
                 {React.Children.map(props.children, child => {
                     if(props.fade){
                         return (

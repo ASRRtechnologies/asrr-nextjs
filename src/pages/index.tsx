@@ -33,7 +33,7 @@ function Index({homepage, servicepage, allCases, allBlogs,}) {
         <PageLayout {...SEOProps}>
             <Banner landing={true} image={image} title={homepage.landing.title} text={homepage.landing.text}
                     button={homepage.landing.button}/>
-            <PreviewServices data={homepage.services} cards={servicepage}/>
+            <PreviewServices data={homepage.services} services={servicepage}/>
             <TechStack basePath={basePath} data={homepage.technologies}/>
             <PortfolioPreview content={homepage.portfolio} allCases={allCases}/>
             <Testimonials data={homepage.testimonials} basePath={basePath}/>
