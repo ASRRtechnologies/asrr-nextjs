@@ -8,8 +8,8 @@ import {Fade} from "react-awesome-reveal";
 import {cardAnimation} from "../../data/animations-settings";
 
 const Wrapper = styled(Section)`
-  background: ${props => props.theme.home.stories};
-}`;
+
+`;
 
 function Testimonials({data, basePath}) {
     return (
