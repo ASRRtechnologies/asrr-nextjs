@@ -21,8 +21,7 @@ function Diensten ({content}) {
 	}, []);
 
 	return (
-		<PageLayout {...SEOProps}>
-			<CheckmarkServices data={content}/>
+		<PageLayout className="darkmodeContainer" {...SEOProps}>
 			<ServicePage data={content}/>
 			<Contact/>
 		</PageLayout>

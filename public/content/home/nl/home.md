@@ -16,8 +16,7 @@ services:
   text: ASRR vormt de brug tussen IT en business met flexibele, robuuste teams
     die inspelen op wat u nodig heeft.
   services:
-    - image_webp: scaleable-software-sqaure.webp
-      image: scaleable-software-sqaure.jpg
+    - image: scaleable-software-sqaure.jpg
       alt: IT Teams as a Service
       title: IT Teams as a Service
       text: Met een ASRR IT-team voeg je een volledig ingewerkte IT-afdeling tijdelijk
@@ -36,7 +35,6 @@ services:
         cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van
         ontwikkelingen binnen de technologie, waardoor er meer performance voor
         minder kosten gerealiseerd wordt.
-      image_webp: hardware-1.webp
       image: hardware-1.jpg
     - alt: Business Analytics & Insights
       title: Business Analytics & Insights
@@ -45,42 +43,29 @@ services:
         data-analyse kan ASRR een Business Insights dashboard opzetten. In zo’n
         dashboard kunt u de belangrijkste aspecten van uw dataset in een
         oogopslag zien. We zetten uw (legacy) data aan het werk.
-      image_webp: data-analytics-square.webp
       image: data-analytics-square.jpg
-  button:
-    title: Ga naar diensten
-    url: /diensten
 technologies:
   title: Technologieën
   text: ASRR gebruikt de meest geadvanceerde technologieën
   technologies:
-    - image_webp: react-black-min.webp
-      image: react-black-min.png
+    - image: react-black-min.png
       alt: React-Logo
-    - image_webp: spring-boot-logo-black-min.webp
-      image: spring-boot-logo-black-min.png
+    - image: spring-boot-logo-black-min.png
       alt: Spring Boot Logo
-    - image_webp: react-native-black-min.webp
-      image: react-native-black-min.png
+    - image: react-native-black-min.png
       alt: React-Native Logo
-    - image_webp: kubernetes-min.webp
-      image: kubernetes-min.png
+    - image: kubernetes-min.png
       alt: Kubernetes Logo
-    - image_webp: docker-black-min.webp
-      image: docker-black-min.png
+    - image: docker-black-min.png
       alt: Docker Logo
-    - image_webp: nextjs-min.webp
-      image: nextjs-min.png
+    - image: nextjs-min.png
       alt: Nextjs Logo
 portfolio:
   title: Portfolio
   text: Bekijk onze voorgaande projecten
-  button:
-    title: Ga naar portfolio
-    url: /portfolio
 testimonials:
   title: Onze Klantervaringen
-  text: Onze Klantervaringen
+  text: Een tevreden klant staat voorop in ons proces
   cards:
     - name: Jorgen Haring
       position: Architect Partner
@@ -88,8 +73,7 @@ testimonials:
         efficiënte oplossingen. Ze begeleiden het project vakkundig, zijn heel
         flexibel en kunnen snel schakelen indien nodig. Het is erg plezierig om
         met ze samen te werken!"'
-      company: FORM Architecture & Engineering B.V.
-      image_webp: jorgenharing_kleur-min.webp
+      company: FORMHET Architecture & Engineering B.V.
       image: jorgenharing_kleur-min.jpg
       alt: Foto Jorgen Haring
     - name: Ravi Badal
@@ -102,10 +86,8 @@ testimonials:
         en waar de klant op nummer 1 staat!"'
       company: ESP Consultancy B.V.
       alt: Ravi Badal Photo
-      image_webp: ben-sweet-2lowvivhz-e-unsplash-min.webp
       image: ben-sweet-2lowvivhz-e-unsplash-min.jpg
-    - image_webp: robby-makka-min.webp
-      image: robby-makka-min.jpg
+    - image: robby-makka-min.jpg
       alt: Robby Makka Photo
       name: Robby Makka
       position: Manager
@@ -167,9 +149,6 @@ blog:
   title: Blog
   text: Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on-als
     offline!
-  button:
-    title: Ga naar blog
-    url: /blog
 clients:
   title: Deze klanten gingen u voor
   text: "Bent u de volgende?"

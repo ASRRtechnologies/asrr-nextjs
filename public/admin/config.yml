@@ -28,14 +28,7 @@ collections:
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-          - label: "Button"
-            name: "button"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Url", name: "url", widget: "string" }
-          - { label: "Image_Webp", name: "image_webp", widget: "image", required: false }
+          - { label: "Text", name: "text", widget: "string", required: false}
           - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Image Alt", name: "alt", widget: "string", required: false }
       - label: "Service Section"
@@ -43,37 +36,27 @@ collections:
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
           - label: "Service Cards"
             name: "services"
             widget: "list"
             required: true
             fields:
-              - { label: "Image_Webp", name: "image_webp", widget: "image" }
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Image Alt", name: "alt", widget: "string" }
               - { label: "Service Card Title", name: "title", widget: "string" }
               - { label: "Service Card Text", name: "text", widget: "string" }
-          - label: "Button"
-            name: "button"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string", default: "Ga naar blog" }
-              - { label: "Url", name: "url", widget: "string" }
       - label: "Tech Stack"
         name: "technologies"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
           - label: "Technologies"
             name: "technologies"
             widget: "list"
             required: true
             fields:
-              - { label: "Image_Webp", name: "image_webp", widget: "image" }
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Image Alt", name: "alt", widget: "string" }
       - label: "Portfolio"
@@ -81,40 +64,32 @@ collections:
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
-          - label: "Button"
-            name: "button"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string", default: "Ga naar blog" }
-              - { label: "Url", name: "url", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
       - label: "Testimonials"
         name: "testimonials"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
           - label: "Testimonial Cards"
             name: "cards"
             widget: "list"
             required: true
             fields:
-              - {label: "Image_Webp", name: "image_webp", widget: "image"}
-              - {label: "Image", name: "image", widget: "image"}
-              - {label: "Image Alt", name: "alt", widget: "string"}
               - {label: "Client Name", name: "name", widget: "string"}
               - {label: "Client Position", name: "position", widget: "string"}
-              - {label: "Client Story", name: "story", widget: "markdown"}
+              - {label: "Client Story", name: "story", widget: "text"}
               - {label: "Client Company", name: "company", widget: "string"}
+              - {label: "Client Avatar", name: "avatar", widget: "string"}
+              - {label: "Client Avatar Alt", name: "avatar_alt", widget: "string"}
+              - {label: "Card Image", name: "image", widget: "image"}
+              - {label: "Card Image Alt", name: "alt", widget: "string"}
       - label: "ASRR Qualities"
         name: "quality"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
           - label: "Quality List"
             name: "qualities"
             widget: "list"
@@ -127,20 +102,13 @@ collections:
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
-          - label: "Button"
-            name: "button"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string", default: "Ga naar blog" }
+          - { label: "Text", name: "text", widget: "string" }
       - label: "Clients"
         name: "clients"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
   - label: "Portfolio page"
     name: "portfolio"
     identifier_field: slug
@@ -203,7 +171,7 @@ collections:
         name: "info"
         widget: "object"
         fields:
-          - {label: "Homepage Preview", name: "preview", widget: "boolean", default: false}
+          - {label: "Homepage Preview", name: "preview", widget: "boolean", default: false, required: false}
           - { label: "Client", name: "client", widget: "string", required: false }
           - label: "Date"
             name: "date"
@@ -307,7 +275,7 @@ collections:
   - label: "Service Post"
     name: "service_post"
     identifier_field: slug
-    summary: '{{title}} - {{language}}'
+    summary: '{{title}} - {{language}} - PREVIEW:{{info.preview}}'
     folder: "public/content/services/posts"
     create: true
     media_folder: ''
@@ -333,6 +301,7 @@ collections:
         name: "info"
         widget: "object"
         fields:
+          - { label: "Homepage Preview", name: "preview", widget: "boolean", default: false, required: false }
           - { label: "Client", name: "client", widget: "string", required: false }
           - label: "Date"
             name: "date"
@@ -354,8 +323,6 @@ collections:
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Text", name: "text", widget: "text", required: false}
-          - {label: "Image", name: "image", widget: "image"}
-          - {label: "Image Alt", name: "alt", widget: "string"}
       - label: "Service post Landing"
         name: "landing"
         widget: "object"
@@ -523,7 +490,7 @@ collections:
         name: "info"
         widget: "object"
         fields:
-          - {label: "Homepage Preview", name: "preview", widget: "boolean", default: false}
+          - {label: "Homepage Preview", name: "preview", widget: "boolean", default: false, required: false}
           - { label: "Client", name: "client", widget: "string", required: false }
           - label: "Date"
             name: "date"

@@ -21,7 +21,7 @@ function Portfolio({content, allCases}) {
     }, []);
 
     return (
-        <PageLayout {...SEOProps}>
+        <PageLayout className="darkmodeContainer" {...SEOProps}>
             <Banner {...content.landing}/>
             <PortfolioPage content={content} allCases={allCases}/>
             <Contact/>

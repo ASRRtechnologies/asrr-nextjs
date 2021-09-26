@@ -31,7 +31,7 @@ h4, .h4{
 }
 
 h5, .h5{
-  @include font-size(1rem);
+  @include font-size(1.1rem);
   @include margin-bottom(0.5rem);
 }
 
@@ -69,6 +69,10 @@ a{
   }
 }
 
+.bold {
+  font-weight: bold !important;
+}
+
 .not-bold{
-  font-weight: normal;
+  font-weight: normal !important;
 }
