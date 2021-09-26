@@ -2,6 +2,9 @@
 language: nl
 title: hes
 type: Case
+meta_tags:
+  title: Case - HES International
+  text: Case - HES International
 info:
   date: January 9, 2021 10:09 PM
   client: HES International
@@ -9,6 +12,9 @@ info:
   tag:
     - tag: Full stack Development
     - tag: Expertise on demand
+  preview: true
+  tags:
+    - left
 card:
   title: Van Excel sheet naar Enterprise Applicatie
   url: portfolio/hes
