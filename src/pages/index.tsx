@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import Clients from '../components/clients/Clients'
 import Contact from '../components/contact/Preview'
-import Why from '@/why-asrr/Why'
+import Values from '@/values/Values';
 import PreviewServices from '@/services/ServicePreview'
 import {useHeader} from '../context/navigation/HeaderContext'
 import TechStack from '@/techstack/TechStack'
@@ -41,7 +41,7 @@ function Index({homepage, allServices, allCases, allBlogs,}) {
             <TechStack basePath={basePath} content={homepage.technologies}/>
             <PortfolioPreview content={homepage.portfolio} allCases={allCases}/>
             <Testimonials content={homepage.testimonials} basePath={basePath}/>
-            <Why data={homepage.quality}/>
+            <Values content={homepage.quality}/>
             <BlogPreview content={homepage.blog} allBlogs={allBlogs}/>
             <Clients content={homepage.clients}/>
             {/*<FlexGrid images={homepage.clients} col={5}/>*/}
