@@ -12,12 +12,12 @@ meta_tags:
     dashboard kunt u de belangrijkste aspecten van uw dataset in een oogopslag
     zien.
 card:
-  title: analytics
+  title: Business Analytics & Insights
   text: Data is een waardevolle asset voor elk bedrijf. Veel bedrijven doen echter
-    niks met de potentiele goudmijn waar ze op zitten. Door middel van een
-    data-analyse kan ASRR een Business Insights dashboard opzetten. In zo’n
-    dashboard kunt u de belangrijkste aspecten van uw dataset in een oogopslag
-    zien.
+    niks met de potentiele goudmijn waar ze op zitten. Doormiddel van een
+    data-analyse kan ASRR een Business Insights dashboard voor jou opzetten. In
+    zo’n dashboard zie je de belangrijkste aspecten van jouw dataset in een
+    oogopslag. We zetten jouw (legacy) data aan het werk.
 landing:
   title: Realtime Analytics met ASRR
   image_webp: bi-landing.jpg
