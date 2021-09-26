@@ -1,12 +1,19 @@
 ---
 language: nl
 title: ittaas
+meta_tags:
+  title: Blog - IT Teams as a Service (ITTAAS)
+  text: Wat zijn de voordelen van een dynamisch extern IT-team ten opzichte van
+    een een-op-een recruitmentstrategie?
 type: artikel
 info:
   date: January 9, 2021 8:22 PM
   title: IT Teams as a Service (ITTAAS)
   author: Amar Ramdas
   client: ASRR
+  tags:
+    - left
+  preview: true
 card:
   title: IT Teams as a Service (ITTAAS)
   text: Wat zijn de voordelen van een dynamisch extern IT-team ten opzichte van
