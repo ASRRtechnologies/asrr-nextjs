@@ -13,10 +13,15 @@ meta_tags:
     zijn. Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen
     binnen de technologie, waardoor je meer performance hebt voor minder kosten
 card:
-  text: ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De
+  text: >
+    ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De
     componenten worden zo uitgekozen dat ze precies passen bij het proces waar
-    de hardware voor wordt gebruikt.
-  title: Hardware
+    de hardware voor wordt gebruikt. Hierdoor betaalt u niet te veel voor
+    onnodige componenten en ligt de focus op de onderdelen die voor jou cruciaal
+    zijn. Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen
+    binnen de technologie, waardoor je meer performance krijgt voor minder
+    kosten.
+  title: Hardware op maat
 landing:
   title: Hardware met serieuze performance
   image_webp: hardware-landing.webp
