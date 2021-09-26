@@ -15,6 +15,15 @@ card:
   title: From Excel sheet to Enterprise PageLayout
   image: case-image.png
   alt: Dashboard overview of application
+  text: >+
+    HES is one of Europe’s biggest multinationals when it comes to bulk
+    transport, processing, blending and storage. For one of the Oil Terminals
+    (Hartel Tank Terminal) at the Maasvlakte in Rotterdam, all of the planning,
+    status and speficiations of the different steel parts were processed in a
+    single Excel sheet, spanning more than 30.000 lines. This results in a
+    bigger chance of errors, and makes it very hard to conclude anything based
+    on the dataset in reference to the project status
+
 landing:
   title: Automating a 500 million dollar project
   image: ezgif.com-gif-maker-3-min.jpg
