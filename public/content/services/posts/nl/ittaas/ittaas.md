@@ -27,7 +27,7 @@ card:
     voordelen van een ‘cutting edge’ applicatie op maat. Je wijkt niet af van je
     huidige processen en houdt toch helder zicht op de tijdlijn, productie en
     oplevering.
-  title: Hardware op maat
+  title: IT Teams as a Service
 landing:
   title: Het nieuwe detacheren
   image_webp: ittaas-landing.webp
