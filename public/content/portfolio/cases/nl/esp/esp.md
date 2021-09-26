@@ -6,22 +6,14 @@ info:
   date: May 6, 2020 12:00 AM
   client: ESP Consultancy
   author: Amar Ramdas
-  tag:
-    - tag: Front End Development
-    - tag: Design
-  technologies:
-    - technologies: ReactJS
-    - technologies: NextJS
 card:
   title: Een professionele, nieuwe website
-  image_webp: esp-cover.webp
   image: esp-cover.jpg
   alt: Skyscrapers from below
   text: Een website om zowel de business als de techniek aan te spreken met
     verschillende marketing funnels
 landing:
   title: Een professionele website
-  image_webp: esp-landing.webp
   image: esp-landing.jpg
   alt: Businessman in front of building
 section:
@@ -66,8 +58,7 @@ section:
       De website is [hier](https://espconsultancy.nl) te vinden. Disclaimer: design is volledig bepaald door de klant en daardoor niet in stijl met ASRR. Er kan ook gekozen worden voor een hands-on aanpak waarbij ASRR een design aflevert dat in onze optiek goed in de markt past.
     media:
       images:
-        - image_webp: esp-example-safari-2.png
-          image: esp-example-safari-2.png
+        - image: esp-example-safari-2.png
           reference: https://espconsultancy.nl
           description: Screenshot van de website
           alt: Sneak peak of ESP website
