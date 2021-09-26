@@ -1,6 +1,23 @@
 ---
 language: nl
 title: analytics
+info:
+  date: September 26, 2021 9:04 PM
+  preview: true
+meta_tags:
+  title: Diensten - Analytics
+  text: Data is een waardevolle asset voor elk bedrijf. Veel bedrijven doen echter
+    niks met de potentiele goudmijn waar ze op zitten. Door middel van een
+    data-analyse kan ASRR een Business Insights dashboard opzetten. In zo’n
+    dashboard kunt u de belangrijkste aspecten van uw dataset in een oogopslag
+    zien.
+card:
+  title: analytics
+  text: Data is een waardevolle asset voor elk bedrijf. Veel bedrijven doen echter
+    niks met de potentiele goudmijn waar ze op zitten. Door middel van een
+    data-analyse kan ASRR een Business Insights dashboard opzetten. In zo’n
+    dashboard kunt u de belangrijkste aspecten van uw dataset in een oogopslag
+    zien.
 landing:
   title: Realtime Analytics met ASRR
   image_webp: bi-landing.jpg
