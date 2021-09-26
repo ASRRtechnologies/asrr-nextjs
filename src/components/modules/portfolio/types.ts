@@ -22,5 +22,16 @@ export interface PortfolioCardProps {
 }
 
 export interface PortfolioHighlightProps {
+    content:{
+        alt: string
+        client: string
+        text: string
+        url: string
+        title: string
+        type: string
+        image: string
+        description: string
+    }
     left: boolean
+    basePath: string
 }

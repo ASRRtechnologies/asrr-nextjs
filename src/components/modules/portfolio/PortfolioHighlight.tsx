@@ -10,26 +10,21 @@ import Filter from "@/modules/shared/section/Filter";
 import {bannerAnimations, textAnimations, zoomIn} from "../../../data/animations-settings";
 
 function PortfolioHighlight(props: PortfolioHighlightProps) {
-
+    const {content, basePath} = props;
     return (
         <div className="global-padding-vertical">
             <Section className={`${cardStyles.highlight} ${props.left && cardStyles.highlightLeft}`}>
                 <Filter opacity={0.5}/>
 
                 <Reveal keyframes={zoomIn} {...bannerAnimations} className="image-zoom-animation">
-                    <img src={img}/>
+                    <img src={`${basePath}/${content.image}`} alt={content.alt}/>
                 </Reveal>
 
                 <div className={cardStyles.highlightCard}>
                     <div className={cardStyles.highlightCardInner}>
                         <Fade {...textAnimations}>
-                            <h1 className="h2 primary-color">A new data economy</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet deleniti eius eum
-                                fugiat
-                                nihil
-                                rem totam! Alias aliquid amet aut eligendi incidunt, magnam nostrum nulla quis tempore
-                                totam
-                                voluptate!</p>
+                            <h1 className="h2 primary-color">{content.title}</h1>
+                            <p>{content.text}</p>
 
                             <Link href={`/portfolio/cases/`}>
                                 <a className="lees-meer bold hover-link">Lees meer</a>

@@ -14,7 +14,6 @@ const SEOProps = {
 
 function Portfolio({content, allCases}) {
     const header = useHeader();
-    const customBasePath = (projectName: string) => `/content/written/case/nl/${projectName}`; //nl will be language variable
 
     useEffect(() => {
         // @ts-ignore
@@ -24,7 +23,7 @@ function Portfolio({content, allCases}) {
     return (
         <PageLayout {...SEOProps}>
             <Banner {...content.landing}/>
-            <PortfolioPage content={content} allCases={allCases} customBasePath={customBasePath}/>
+            <PortfolioPage content={content} allCases={allCases}/>
             <Contact/>
         </PageLayout>
     )

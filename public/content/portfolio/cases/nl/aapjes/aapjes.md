@@ -6,22 +6,14 @@ info:
   date: May 6, 2020 12:00 AM
   client: De Kleine Aapjes
   author: Amar Ramdas
-  tag:
-    - tag: Front End Development
-    - tag: Design
-  technologies:
-    - technologies: ReactJS
-    - technologies: NextJS
 card:
   title: Een website voor de kleintjes
-  image_webp: aapjes-card.webp
   image: aapjes-card.jpg
   alt: Crayons
   text: Een goede website hoeft niet veel te kosten. Snel, krachtig en modern met
     groeimogelijkheden.
 landing:
   title: Een vrolijke en frisse nieuwe website
-  image_webp: aapjes-cover.webp
   image: aapjes-cover.jpg
   alt: Playground
 section:
@@ -71,8 +63,7 @@ section:
       &nbsp;
     media:
       images:
-        - image_webp: aapjes-example-2.png
-          image: aapjes-example-2.png
+        - image: aapjes-example-2.png
           alt: Sneak peak of aapjes website
           description: Preview van de website
           reference: https://www.dekleineaapjes.nl/

@@ -12,12 +12,6 @@ meta_tags:
 info:
   date: January 10, 2021 12:20 AM
   client: Heijmans
-  writtenType:
-    - tag: Artikel
-  tag:
-    - tag: Full stack Development
-    - tag: Expertise on demand
-    - tag: Design
   author: Re-Angelo Jarvis
   preview: true
   tags:
@@ -29,16 +23,12 @@ card:
     jouw huis zou willen, zoals een dakkapel of een uitbouw. De architect moet
     voor elke klant een apart ontwerp maken. Het is vast in te beelden dat dit
     een tijdrovende bezigheid is als de huizen in grote getallen gebouwd worden.
-  url: /blog/news/heijmans-configurator
-  image_webp: ezgif.com-gif-maker-4-2.jpg
   image: ezgif.com-gif-maker-4-2.jpg
   alt: Een screenshot van de webapplicatie Woningconfigurator Heijmans
 landing:
   title: Een huis configureren in virtual reality vanuit je luie stoel.
-  image_webp: ezgif.com-gif-maker-4-2.jpg
   image: ezgif.com-gif-maker-4-2.jpg
   alt: Webapplicatie Huis Configurator
-  text_color: true
 section:
   - content: >-
       # Heijmans/FORM 3D Woningconfigurator
@@ -82,8 +72,7 @@ section:
       Een publieke demo van de configurator opgezet voor FORM is te vinden door [hier](https://configurator.form.asrr.nl/projects/form-2020/1) te drukken.
     media:
       images:
-        - image_webp: ezgif.com-gif-maker-4-2.jpg
-          image: ezgif.com-gif-maker-4-2.jpg
+        - image: ezgif.com-gif-maker-4-2.jpg
           description: De online omgeving
           alt: Configurator
   - content: >-

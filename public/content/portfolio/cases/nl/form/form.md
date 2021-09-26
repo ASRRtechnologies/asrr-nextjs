@@ -6,41 +6,18 @@ info:
   title: Het bouwen van een geautomatiseerde BIM-Configurator
   client: Form Architecture & Engineering
   author: Re-Angelo
-  type:
-    - hidden: hidden
-      tag: Case
-    - hidden: hidden
-      tag: Full stack Development
-    - tag: Expertise on demand
-  tag:
-    - tag: Full stack Development
-    - tag: Expertise on demand
-  technologies:
-    - technologies: BIM
-    - technologies: Revit API
-    - technologies: ReactJS
-    - technologies: Kubernetes
-    - technologies: Spring Boot
-    - technologies: C#
 card:
-  image_webp: case-image.webp
   alt: Modern Building
   client: Form Architectuur & Engineering
   text: Aansturen van een werkprogramma met een custom wrapper en data-extractie
     naar onze cloud om een enterprise grade service te bouwen.
-  url: /portfolio/form
   title: Het bouwen van een geautomatiseerde BIM-Configurator
-  type:
-    - tag: Full stack Development
-    - tag: Expertise on demand
   image: case-image.jpg
   description: Nieuwe applicatiesa in de bouw
 landing:
   title: De huizenmarkt op zijn kop zetten
-  image_webp: form-landing.webp
   image: form-landing.jpg
   alt: Modern White Building Architecture
-  text_color: true
 article:
   - content: >-
       # Het probleem
@@ -58,8 +35,7 @@ article:
       Het idee achter de Configurator is om vanaf een lijst keuzes, gemaakt door de consument, automatisch het huis in Revit (een 3D engineering/modelleringsprogramma) samen te stellen en daarmee een officiële bouwtekening te genereren. Dit bespaart de architecten een hoop (herhaald) werk, en zorgt ervoor dat er minder fouten gemaakt worden in het proces.
     media:
       images:
-        - image_webp: form-1.webp
-          image: form-1.jpg
+        - image: form-1.jpg
           alt: Revit autodesk
           description: A modular design buildup of the house
           reference: https://www.form.nl/form-configurator
@@ -100,8 +76,7 @@ article:
       De crux hierin is de applicatie in de Cloud. Dit is een Java Spring boot applicatie, gehost op ons Kubernetes netwerk. Deze applicatie moet altijd beschikbaar zijn, en kan een enorme hoeveelheid aanvragen tegelijk aan. Vervolgens worden deze aanvragen opgeslagen in een database, met bijbehorend dashboard om in te zien wat de klanten gekozen hebben. De Cloud applicatie voert de aanvragen mondjesmaat aan de Revit worker, en zorgt ervoor dat de uploads veilig worden opgeslagen in Azure.
     media:
       images:
-        - image_webp: form-2.webp
-          image: form-2.png
+        - image: form-2.png
           alt: Configurator dashboard login screen
           description: The authentication screen for the Configurator dashboard
         - image_webp: form-3.webp
@@ -131,8 +106,7 @@ section:
       De basis van het automatiseren van het ontwerpproces is het modulair en parametrisch opbouwen van de sub-componenten waar een huis uit bestaat. Dat klinkt misschien ingewikkeld, maar door het zo te structureren kan er een hoop geautomatiseerd worden.
     media:
       images:
-        - image_webp: form-1-2.png
-          image: form-1-2.png
+        - image: form-1-2.png
           description: A modular design buildup of the house
           reference: https://www.form.nl/form-configurator
           alt: Autodesk Revit
@@ -179,8 +153,7 @@ section:
       Dit is een preview van het dashboard. Als de request eenmaal voltooid is kan de klant de bouwtekeningen met een druk op de knop downloaden.
     media:
       images:
-        - image_webp: form-3.png
-          image: form-3.png
+        - image: form-3.png
           description: Gesimplificeerde versie van het configurator dashboard
           alt: Dashboard
         - description: Login scherm van het Configurator dashboard
