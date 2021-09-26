@@ -2,11 +2,11 @@ import React, {useState} from 'react'
 // @ts-ignore
 import logo from '#/logo/asrr-logo-spacing-white.svg'
 import Section from '@/modules/shared/section/Section'
-import Link from 'next/link'
 import footerStyles from "./footer.module.scss";
 import {useRouter} from "next/router";
 import LinkedIn from "@/icons/LinkedIn";
 import Facebook from "@/icons/Facebook";
+import LinkText from "../modules/shared/text/LinkText";
 
 const year = new Date().getFullYear();
 
@@ -25,7 +25,7 @@ function Footer(props) {
             texts: ["ASRR Tech", "'s Gravenzandseweg 2 unit A", "2291 PE", "Wateringen", "Nederland"],
             customPaths: [
                 {
-                    title: "contact@asrr.nl",
+                    title: "Contact@asrr.nl",
                     href: "mailto:contact@asrr.nl"
                 },
                 {
@@ -67,13 +67,23 @@ function Footer(props) {
 
                                 {nav.texts?.map((path) => <p className="h6">{path}</p>)}
 
-                                {nav.paths?.map((path) => <Link href={path.toLowerCase()}><a
-                                    className="h6 hover-link">{path}</a></Link>)}
+                                {nav.paths?.map((path) => {
+                                    return (
+                                        //Extra span so that a tag width is its own width and not 100% of grid for underline to be same width
+                                        <span>
+                                            <LinkText className="h6 hover-link" href={path.toLowerCase()} title={path} customLink/>
+                                        </span>
+                                    )
+                                })}
 
                                 {nav.customPaths?.map(({href, title}) => {
                                     return (
-                                        <a target="_blank" rel="noopener noreferrer" href={href}
-                                           className="h6 hover-link">{title}</a>
+                                        //Extra span so that a tag width is its own width and not 100% of grid for underline to be same width
+                                        <span>
+                                            <LinkText href={href} customLink={true} target="_blank"
+                                                      rel="noopener noreferrer"
+                                                      className="h6 hover-link" title={title}/>
+                                        </span>
                                     )
                                 })}
                             </div>
