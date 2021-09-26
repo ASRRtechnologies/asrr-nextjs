@@ -7,6 +7,7 @@ import {PortfolioCardProps} from "@/modules/portfolio/types";
 import Link from "next/link";
 import {useRouter} from "next/router";
 import LinkText from "../shared/text/LinkText";
+import Tag from "../shared/text/Tag";
 
 function PortfolioCard(props: PortfolioCardProps) {
     const projectName = props.title;
@@ -32,7 +33,7 @@ function PortfolioCard(props: PortfolioCardProps) {
             </div>
 
             <div className={cardStyles.tags}>
-                {tags?.map((tag) =><LinkText href={`/portfolio`} customLink={false} className="h6" title={tag}/>)}
+                {tags?.map((tag) =><Tag href={`/portfolio`} customLink={false} className="h6" title={tag}/>)}
             </div>
         </div>
     );

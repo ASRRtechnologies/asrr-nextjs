@@ -15,7 +15,6 @@ function Testimonials({data, basePath}) {
     return (
         <Section>
             <Title title={data.title} text={data.text}/>
-
             <div className={testimonialStyles.testimonials}>
                 {data.cards.map((testimonial, i) => {
                     return (

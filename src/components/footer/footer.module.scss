@@ -5,10 +5,11 @@
     @include size(100%, auto);
     @include flex(space-between, center, column);
     background-color: #000;
+    color: white;
     //OVERRIDE
     padding-bottom: 35px !important;
 
-    .h6, .h5, p, a {
+    h1, h2, h3, p, a {
       color: $white;
       margin-bottom: 10px;
     }

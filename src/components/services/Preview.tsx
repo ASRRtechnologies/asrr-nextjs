@@ -30,7 +30,6 @@ function Preview({data, services}) {
                     )
                 })}
             </Grid>
-
         </Wrapper>
     )
 }

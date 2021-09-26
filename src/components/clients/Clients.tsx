@@ -22,7 +22,7 @@ const Client = styled("div")<TechStack>`
   height: auto;
   filter: brightness(0);
 
-  svg{
+  svg {
     width: 100%;
     height: auto;
   }

@@ -3,7 +3,6 @@ import TeamPage from "@/modules/team/Team";
 import Banner from "@/modules/shared/landing/Banner";
 import matter from "gray-matter";
 import PageLayout from "@/layout/PageLayout";
-import {BasePaths} from "../data/paths";
 
 const SEOProps = {
     title: "ASRR - Team",
@@ -15,7 +14,7 @@ function Team({content}) {
     const basePath = `/content/team/nl`;
 
     return (
-        <PageLayout {...SEOProps}>
+        <PageLayout className="darkmodeContainer" {...SEOProps}>
             <Banner title={title} text={text}/>
             <TeamPage team={content} basePath={basePath}/>
         </PageLayout>

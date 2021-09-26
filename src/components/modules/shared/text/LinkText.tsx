@@ -3,7 +3,7 @@ import React from 'react';
 import styledLink from "./link.module.scss";
 import {useTheme} from "../../../../context/theme/ThemeContext";
 
-interface LinkText {
+interface LinkTextProps {
     href: string,
     customLink: boolean,
     title: string,
@@ -12,7 +12,7 @@ interface LinkText {
     [x: string]: any,
 }
 
-function LinkText(props: LinkText) {
+function LinkText(props: LinkTextProps) {
     const darkmode = useTheme().dark;
     const {title = "", customLink, classes, href} = props;
 

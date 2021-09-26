@@ -106,9 +106,7 @@ function Footer(props) {
                             <Facebook/>
                         </a>
                     </div>
-
                 </div>
-
             </div>
         </Section>
     )

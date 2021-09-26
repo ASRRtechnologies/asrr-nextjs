@@ -68,3 +68,14 @@
   }
 
 }
+
+.tags{
+  a{
+    display: inline-block;
+    color: $white !important;
+    background-color: $primary-color;
+    margin-right: 5px;
+    @include padding(5px 10px);
+    border-radius: 5px;
+  }
+}
