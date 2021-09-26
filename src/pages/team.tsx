@@ -4,12 +4,11 @@ import Banner from "@/modules/shared/landing/Banner";
 import matter from "gray-matter";
 import PageLayout from "@/layout/PageLayout";
 
-const SEOProps = {
-    title: "ASRR - Team",
-    content: "ASRR Ons Team"
-}
-
 function Team({content}) {
+    const SEOProps = {
+        ...content.meta_tags
+    }
+
     const {title, text} = content.page_title;
     const basePath = `/content/team/nl`;
 

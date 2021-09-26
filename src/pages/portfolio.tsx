@@ -7,12 +7,10 @@ import { getAllCases } from '../lib/api'
 import PageLayout from '@/layout/PageLayout'
 import Banner from "@/modules/shared/landing/Banner";
 
-const SEOProps = {
-    title:"ASRR - Portfolio",
-    content:"ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
-}
-
 function Portfolio({content, allCases}) {
+    const SEOProps = {
+        ...content.meta_tags
+    }
     const header = useHeader();
 
     useEffect(() => {

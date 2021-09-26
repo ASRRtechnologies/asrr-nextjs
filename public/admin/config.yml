@@ -23,6 +23,12 @@ collections:
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
       - { label: "Title", name: "title", widget: "string" }
+      - label: "Meta tags"
+        name: "meta_tags"
+        widget: "object"
+        fields:
+          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
+          - { label: "Text (search engine text)", name: "text", widget: "text", required: true }
       - label: "Landing"
         name: "landing"
         widget: "object"

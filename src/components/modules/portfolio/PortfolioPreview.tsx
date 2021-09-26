@@ -23,7 +23,6 @@ const Wrapper = styled(`div`)`
 
 `
 
-
 function PortfolioPreview(props) {
     const {allCases, content} = props;
     const basePath = (projectName: string) => `/content/written/case/nl/${projectName}`; //nl will be language variable
