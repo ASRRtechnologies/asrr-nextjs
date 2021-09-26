@@ -12,22 +12,23 @@ h1, .h1{
 
 h2, .h2{
   @include font-size(2.5rem);
+  @include margin-bottom(20px);
   font-weight: bold;
   margin-top: 0;
-  @include margin-bottom(15px);
 }
 
 h3, .h3{
   @include font-size(1.5rem);
+  @include margin-bottom(20px);
   font-weight: bold;
   margin-top: 0;
 }
 
 h4, .h4{
   @include font-size(1.3rem);
+  @include margin-bottom(1rem);
   font-weight: bold;
   margin-top: 0;
-  @include margin-bottom(1rem);
 }
 
 h5, .h5{
@@ -37,6 +38,7 @@ h5, .h5{
 
 h6, .h6{
   @include font-size(14px);
+  margin-bottom: 0;
 }
 
 .h7{
