@@ -8,7 +8,7 @@ info:
   date: January 9, 2021 10:09 PM
   client: HES International
   author: Amar Ramdas
-  preview: true
+  preview: false
   tags:
     - left
 card:
