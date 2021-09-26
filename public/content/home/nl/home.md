@@ -5,7 +5,6 @@ landing:
   title: Innovative Software Development
   text: Uw partner voor het bouwen van next-level software - snel, betrouwbaar en
     efficient.
-  image_webp: ""
   image: ""
   alt: ""
   button:
@@ -15,35 +14,6 @@ services:
   title: Onze Diensten
   text: ASRR vormt de brug tussen IT en business met flexibele, robuuste teams
     die inspelen op wat u nodig heeft.
-  services:
-    - image: scaleable-software-sqaure.jpg
-      alt: IT Teams as a Service
-      title: IT Teams as a Service
-      text: Met een ASRR IT-team voeg je een volledig ingewerkte IT-afdeling tijdelijk
-        of langdurig toe aan je bedrijf. Hierbij maak je je niet druk over of je
-        wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak
-        van ASRR combineert de snelheid en solide bouw van een
-        gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’
-        applicatie op maat. Je wijkt niet af van je huidige processen en houdt
-        toch helder zicht op de tijdlijn, productie en oplevering.
-    - title: Hardware op maat
-      alt: Hardware op maat
-      text: ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De
-        componenten worden precies zo uitgekozen dat ze passen bij het proces
-        waar de hardware voor gebruikt wordt. Hierdoor betaalt u niet te veel
-        voor onnodige componenten, en ligt de focus op de onderdelen die
-        cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van
-        ontwikkelingen binnen de technologie, waardoor er meer performance voor
-        minder kosten gerealiseerd wordt.
-      image: hardware-1.jpg
-    - alt: Business Analytics & Insights
-      title: Business Analytics & Insights
-      text: Data is een waardevolle asset voor elk bedrijf. Veel bedrijven doen echter
-        niks met de potentiele goudmijn waar ze op zitten. Doormiddel van een
-        data-analyse kan ASRR een Business Insights dashboard opzetten. In zo’n
-        dashboard kunt u de belangrijkste aspecten van uw dataset in een
-        oogopslag zien. We zetten uw (legacy) data aan het werk.
-      image: data-analytics-square.jpg
 technologies:
   title: Technologieën
   text: ASRR gebruikt de meest geadvanceerde technologieën

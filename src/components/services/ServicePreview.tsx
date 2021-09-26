@@ -6,11 +6,12 @@ import Grid from "@/modules/shared/grid/Grid";
 import ServiceCards from "./ServiceCards";
 
 const Wrapper = styled(Section)`
- 
+
 `;
 
-function Preview({data, services}) {
+function ServicePreview({content, allServices}) {
     const basePath = `content/service_page/nl`;
+    const filteredServices = allServices.filter((service) => service.info.preview);
 
     const breakPoints = {
         1200: 3,
@@ -21,9 +22,9 @@ function Preview({data, services}) {
 
     return (
         <Wrapper>
-            <Title title={data.title} text={data.text}/>
+            <Title title={content.title} text={content.text}/>
             <Grid breakpoints={breakPoints} fade={true} maxWidth="1400px">
-                {services.card.map((service) => {
+                {filteredServices.map((service) => {
                     return (
                         <ServiceCards content={service} basePath={basePath}/>
                     )
@@ -33,4 +34,4 @@ function Preview({data, services}) {
     )
 }
 
-export default Preview
+export default ServicePreview

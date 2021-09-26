@@ -17,7 +17,7 @@
   }
 }
 
-@include media(">=sm", "<lg") {
+@include media(">=400px", "<lg") {
   .global-padding-horizontal {
     padding-left: $sm-padding-horizontal;
     padding-right: $sm-padding-horizontal;

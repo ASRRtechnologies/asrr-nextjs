@@ -25,7 +25,7 @@ const Tech = styled("img")<TechStack>`
   `}
 `
 
-function TechStack({data, basePath}) {
+function TechStack({content, basePath}) {
     const darkmode = useTheme().dark;
 
     const breakPoints = {
@@ -37,10 +37,10 @@ function TechStack({data, basePath}) {
 
     return (
         <Section>
-            <Title title={data.title} text={data.text}/>
+            <Title title={content.title} text={content.text}/>
             <Grid breakpoints={breakPoints} fade={true}>
-                {data.technologies.map((data, i) => <Tech darkmode={darkmode} src={`${basePath}/${data.image}`}
-                                                          alt={data.alt}/>)}
+                {content.technologies.map((data, i) => <Tech darkmode={darkmode} src={`${basePath}/${data.image}`}
+                                                             alt={data.alt}/>)}
             </Grid>
         </Section>
     )

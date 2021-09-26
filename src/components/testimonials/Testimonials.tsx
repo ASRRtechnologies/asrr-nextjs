@@ -11,12 +11,12 @@ const Wrapper = styled(Section)`
 
 `;
 
-function Testimonials({data, basePath}) {
+function Testimonials({ content, basePath}) {
     return (
         <Section>
-            <Title title={data.title} text={data.text}/>
+            <Title title={content.title} text={content.text}/>
             <div className={testimonialStyles.testimonials}>
-                {data.cards.map((testimonial, i) => {
+                {content.cards.map((testimonial, i) => {
                     return (
                             <Fade {...cardAnimation} className={testimonialStyles.cardFadeWrapper}>
                                 <TestimonialCards content={testimonial} basePath={basePath} />

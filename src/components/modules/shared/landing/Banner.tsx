@@ -22,7 +22,7 @@ interface BannerProps {
 function Banner(props: BannerProps) {
     return (
         <Section className={`${bannerStyles.banner} ${props.landing && bannerStyles.landing}`}>
-            <Filter opacity={0.6}/>
+            {props.image && <Filter opacity={0.6}/>}
 
             <Reveal keyframes={zoomIn} duration={1800} className="image-zoom-animation">
                 <img src={props.image} alt={props.alt}/>
