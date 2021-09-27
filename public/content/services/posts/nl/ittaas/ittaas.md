@@ -22,7 +22,7 @@ card:
   text: Met een ASRR IT-team voeg je een volledig ingewerkte IT-afdeling aan jouw
     bedrijf voor een periode die aansluit bij jouw behoeftes. Hierbij hoef jij
     je niet druk te maken over of er wel-of-niet de juiste expertises zijn
-    aangenomen, heb je alle voordelen van een gestandaardiseerde aanpak in
+    aangenomen en heb je alle voordelen van een gestandaardiseerde aanpak in
     combinatie met 'cutting edge' maatwerk.
   title: IT Teams as a Service
 landing:
