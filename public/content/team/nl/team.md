@@ -1,15 +1,19 @@
 ---
 language: nl
 title: team
+meta_tags:
+  title: Team
+  text: Neem zelf een kijkje bij de mensen die onderdeel uitmaken van ASRR. Zij
+    zijn gedreven, pakken snel nieuwe dingen op en houden van een uitdaging.
 landing:
-  title: "Het Team"
-  text: "Bij ASRR zijn er een aantal eigenschappen die wij belangrijk vinden om
+  title: Het Team
+  text: Bij ASRR zijn er een aantal eigenschappen die wij belangrijk vinden om
     terug te zien in onze teamleden. Dat is niet zo zeer jarenlange ervaring,
     maar meer potentie en het vermogen om complexe problemen op te lossen. Wij
     hebben gemerkt dat mensen met deze eigenschappen een enorme groei meemaken
     bij ASRR, doordat zij de vrijheid hebben om zichzelf verder te ontwikkelen.
     Dit is voordelig voor de klant, omdat wij mensen aanbieden die gedreven
-    zijn, snel nieuwe dingen oppakken en gewend zijn aan een uitdaging. "
+    zijn, snel nieuwe dingen oppakken en gewend zijn aan een uitdaging
 members:
   - name: Amar Ramdas
     position: Managing Director
@@ -78,4 +82,11 @@ members:
     website: https://www.linkedin.com/in/amit-nitesh-ramdas-a6a171172/
   - name: Neil Alwani
     position: Front-End Developer
+    story: Mijn volledige naam is Neil Mahesh Alwani en ik ben sinds 3 maanden
+      front-end developer bij ASRR en ik ben een BSc student Technische
+      Informatica aan de TU Delft. Ik vind het leuk om door de code heen te gaan
+      zodat ik kan inzien hoe projecten voor de bedrijven in elkaar zitten en de
+      kennis die ik heb opgedaan in tijdens mijn bachelor te kunnen toepassen in
+      de praktijk.
+    website: https://www.linkedin.com/in/neil-alwani-a1b9a2182/
 ---
