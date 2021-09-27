@@ -7,26 +7,17 @@ info:
   preview: true
 meta_tags:
   title: Diensten - ITTAAS
-  text: >
-    Information Technology is cruciaal in een bedrijf in de huidige
-    maatschappij. Door de digitalisering van de markt is er een enorme vraag
-    naar software development en IT-kennis. IT is echter een erg breed vlak en
-    er zijn steeds vaker een heel scala aan expertises nodig. Niet elk bedrijf
-    kan een eigen IT-tak veroorloven of wil een eigen IT-tak. Men komt hierdoor
-    al snel uit op losse externe IT’ers of rigide preferred suppliers. Deze
-    aanpak is inefficiënt, omdat de recruitment- en inwerkkosten hoog zijn,
-    bedrijven worden geketend aan starre langdurige contracten en dan blijkt
-    toch nog een groot deel van de opdracht buiten de scope van de uitvoerder te
-    vallen.
+  text: Met een ASRR IT-team voeg je een volledig ingewerkte IT-afdeling aan jouw
+    bedrijf voor een periode die aansluit bij jouw behoeftes. Hierbij hoef jij
+    je niet druk te maken over of er wel-of-niet de juiste expertises zijn
+    aangenomen en heb je alle voordelen van een gestandaardiseerde aanpak in
+    combinatie met 'cutting edge' maatwerk.
 card:
-  text: Met een ASRR IT-team is het alsof er een volledig ingewerkte IT-afdeling
-    aan jouw bedrijf wordt toegevoegd voor een periode die aansluit bij jouw
-    behoeftes. Hierbij hoef jij je niet druk te maken over of er wel-of-niet de
-    juiste expertises zijn aangenomen. De modulaire aanpak van ASRR combineert
-    de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle
-    voordelen van een ‘cutting edge’ applicatie op maat. Je wijkt niet af van je
-    huidige processen en houdt toch helder zicht op de tijdlijn, productie en
-    oplevering.
+  text: Met een ASRR IT-team voeg je een volledig ingewerkte IT-afdeling aan jouw
+    bedrijf voor een periode die aansluit bij jouw behoeftes. Hierbij hoef jij
+    je niet druk te maken over of er wel-of-niet de juiste expertises zijn
+    aangenomen en heb je alle voordelen van een gestandaardiseerde aanpak in
+    combinatie met 'cutting edge' maatwerk.
   title: IT Teams as a Service
 landing:
   title: Het nieuwe detacheren
@@ -167,7 +158,7 @@ section:
       ### IT Teams as a Service (ITTAAS)
 
 
-      Wij werken van visie tot applicatie en verzorgen een volledig ontzorgd IT-development traject. Met een ASRR IT-team is het alsof er een volledig ingewerkte IT-afdeling aan jouw bedrijf wordt toegevoegd voor een periode die aansluit bij jouw behoeftes. Hierbij hoef jij je niet druk te maken over of er wel-of-niet de juiste expertises zijn aangenomen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’ applicatie op maat. Je wijkt niet af van je huidige processen en houdt toch helder zicht op de tijdlijn, productie en oplevering.
+      Wij werken van visie tot applicatie en verzorgen een volledig ontzorgd IT-development traject. Met een ASRR IT-team voeg je een volledig ingewerkte IT-afdeling aan jouw bedrijf voor een periode die aansluit bij jouw behoeftes. Hierbij hoef jij je niet druk te maken over of er wel-of-niet de juiste expertises zijn aangenomen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’ applicatie op maat. Je wijkt niet af van je huidige processen en houdt toch helder zicht op de tijdlijn, productie en oplevering.
 
 
       &nbsp;

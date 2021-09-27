@@ -7,20 +7,15 @@ info:
 meta_tags:
   title: Diensten - Hardware
   text: ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De
-    componenten worden zo uitgekozen dat ze precies passen bij het proces waar
-    de hardware voor wordt gebruikt. Hierdoor betaal je niet te veel voor
-    onnodige componenten en ligt de focus op de onderdelen die voor jou cruciaal
-    zijn. Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen
-    binnen de technologie, waardoor je meer performance hebt voor minder kosten
+    componenten zijn cutting edge technology en worden precies afgestemd op het
+    proces waarvoor de hardware gebruikt gaat worden. Dit beperkt kosten,
+    vergroot de performance en legt de focus op de cruciale componenten.
 card:
   text: >
     ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De
-    componenten worden zo uitgekozen dat ze precies passen bij het proces waar
-    de hardware voor wordt gebruikt. Hierdoor betaalt u niet te veel voor
-    onnodige componenten en ligt de focus op de onderdelen die voor jou cruciaal
-    zijn. Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen
-    binnen de technologie, waardoor je meer performance krijgt voor minder
-    kosten.
+    componenten zijn cutting edge technology en worden precies afgestemd op het
+    proces waarvoor de hardware gebruikt gaat worden. Dit beperkt kosten,
+    vergroot de performance en legt de focus op de cruciale componenten.
   title: Hardware op maat
 landing:
   title: Hardware met serieuze performance
@@ -35,7 +30,7 @@ section:
       ## Met ASRR hardware worden de onderdelen afgestemd op jouw gebruik, waardoor je nooit te veel betaalt.
 
 
-      ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De componenten worden zo uitgekozen dat ze precies passen bij het proces waar de hardware voor wordt gebruikt. Hierdoor betaal je niet te veel voor onnodige componenten en ligt de focus op de onderdelen die voor jou cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van ontwikkelingen binnen de technologie, waardoor je meer performance hebt voor minder kosten
+      ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De componenten zijn cutting edge technology en worden precies afgestemd op het proces waarvoor de hardware gebruikt gaat worden. Dit beperkt kosten, vergroot de performance en legt de focus op de cruciale componenten.
 
 
       &nbsp;
