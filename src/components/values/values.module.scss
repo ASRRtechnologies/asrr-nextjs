@@ -11,39 +11,75 @@
     display: grid;
     width: 100%;
     grid-template-columns: 1fr;
-    grid-row-gap: 10px;
     margin-bottom: 30px;
+    align-content: center;
 
     .valueTitles {
       display: inline-block;
       text-align: left;
       padding-left: 15px;
       border-left: 2px solid transparent;
-      transition: border-left-color 300ms ease-in-out;
+      transition: border 300ms ease-in-out;
       cursor: pointer;
 
       h1 {
         transition: color 300ms ease-in-out;
         margin-bottom: 0;
+        padding-bottom: 20px;
       }
 
       &.active, &:hover {
         border-left: 2px solid $primary-color;
-        transition: border-left-color 300ms ease-in-out;
+        transition: border 300ms ease-in-out;
 
         h1 {
           color: $primary-color !important;
           transition: color 300ms ease-in-out;
         }
       }
+    }
 
+    .valueTitles:last-child{
+      h1{
+        padding-bottom: 0;
+      }
     }
   }
 
   .text{
     padding-left: 15px; //Same as title
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
   }
 
+}
+
+@include media(">=sm") {
+  .values {
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 50px;
+  }
+
+  .valueTitlesContainer {
+    align-content: start;
+
+    .valueTitles {
+      border-left:none;
+      border-right: 2px solid transparent;
+      padding-right: 15px;
+      padding-left: 0;
+
+      &.active, &:hover {
+        border-left:none;
+        border-right: 2px solid $primary-color;
+      }
+    }
+    margin-bottom: 0;
+  }
+
+  .text{
+    padding-left: 0;
+    margin-bottom: 0;
+
+  }
 }

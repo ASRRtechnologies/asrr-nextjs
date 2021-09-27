@@ -22,8 +22,10 @@ function Blog({content, allBlogs}) {
         header.setHeaderWhite(false)
     }, []);
 
+    console.log(allBlogs);
+
     return (
-        <PageLayout {...SEOProps}>
+        <PageLayout className="darkmodeContainer" {...SEOProps}>
             <Banner {...landing}/>
             <BlogPage data={content} allBlogs={allBlogs}/>
             <Contact/>

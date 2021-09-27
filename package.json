@@ -19,11 +19,13 @@
     "framer-motion": "^1.10.3",
     "gray-matter": "^4.0.2",
     "include-media": "^1.4.10",
+    "interweave": "^12.8.0",
     "jest-config": "^26.6.3",
     "lodash": "^4.17.21",
     "next": "@latest",
     "next-images": "^1.4.0",
     "next-seo": "^4.15.0",
+    "next-transpile-modules": "^8.0.0",
     "next-videos": "^1.4.0",
     "node-sass": "^4.14.0",
     "notistack": "^1.0.1",
@@ -33,13 +35,13 @@
     "react-awesome-reveal": "^3.5.2",
     "react-cookie-consent": "^6.2.1",
     "react-dom": "16.13.1",
-    "react-markdown": "^5.0.3",
     "react-share": "^4.3.1",
     "react-slick": "^0.26.1",
     "react-use": "15.1.0",
     "react-uuid": "^1.0.2",
     "rfs": "^9.0.3",
-    "rosetta": "1.0.0"
+    "rosetta": "1.0.0",
+    "react-markdown": "^5.0.0"
   },
   "devDependencies": {
     "typescript": "^4.4.3"

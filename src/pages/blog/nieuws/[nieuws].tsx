@@ -5,7 +5,6 @@ import matter from 'gray-matter'
 import useI18n from '../../../hooks/use-i18n'
 // @ts-ignore
 import NL from '../../../locales/nl'
-import BlogArticle from '@/written/BlogArticle'
 import {useHeader} from "../../../context/navigation/HeaderContext";
 import {BasePaths} from "../../../data/paths";
 
@@ -27,7 +26,6 @@ function Page({allProjects, content, basePath, error}) {
 
     return (
         <PageLayout {...SEOProps}>
-            <BlogArticle project={content} basePath={basePath}/>
         </PageLayout>
     )
 }

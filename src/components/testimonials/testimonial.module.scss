@@ -42,7 +42,7 @@
     .avatar {
       width: 100%;
       min-width: 50px;
-      max-width: 70px;
+      max-width: 60px;
       margin-right: 20px;
 
       img {
@@ -69,7 +69,7 @@
 
 }
 
-@include media(">=500px") {
+@include media(">=650px") {
   .testimonials{
     grid-row-gap: 150px;
 
@@ -85,10 +85,12 @@
     flex-direction: row;
     max-width: $max-width;
     justify-content: space-between;
+    gap: 30px;
 
     .cardImage {
       width: 100%;
       max-width: 400px;
+      min-width: 200px;
       display: block;
       img{
         object-fit: cover;
@@ -98,6 +100,7 @@
     .cardContent{
       justify-content: space-between;
       flex-direction: column-reverse;
+      min-width: 300px;
     }
 
     .credentials{
@@ -110,5 +113,10 @@
 
 @include media(">sm", "<=lg") {
 
+  .credentials{
+    .avatar{
+      max-width: 70px;
+    }
+  }
 }
 

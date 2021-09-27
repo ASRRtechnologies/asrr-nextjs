@@ -1,0 +1,29 @@
+@import "src/styles/globals";
+
+@include media(">=xs") {
+  .body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    max-width: $max-width;
+  }
+
+  .socials{
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    grid-column-gap: 15px;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
