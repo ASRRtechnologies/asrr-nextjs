@@ -7,17 +7,11 @@ info:
   preview: true
 meta_tags:
   title: Diensten - ITTAAS
-  text: >
-    Information Technology is cruciaal in een bedrijf in de huidige
-    maatschappij. Door de digitalisering van de markt is er een enorme vraag
-    naar software development en IT-kennis. IT is echter een erg breed vlak en
-    er zijn steeds vaker een heel scala aan expertises nodig. Niet elk bedrijf
-    kan een eigen IT-tak veroorloven of wil een eigen IT-tak. Men komt hierdoor
-    al snel uit op losse externe IT’ers of rigide preferred suppliers. Deze
-    aanpak is inefficiënt, omdat de recruitment- en inwerkkosten hoog zijn,
-    bedrijven worden geketend aan starre langdurige contracten en dan blijkt
-    toch nog een groot deel van de opdracht buiten de scope van de uitvoerder te
-    vallen. ASRR heeft als oplossing ITTAAS (IT Teams as a Service).
+  text: Met een ASRR IT-team voeg je een volledig ingewerkte IT-afdeling aan jouw
+    bedrijf voor een periode die aansluit bij jouw behoeftes. Hierbij hoef jij
+    je niet druk te maken over of er wel-of-niet de juiste expertises zijn
+    aangenomen en heb je alle voordelen van een gestandaardiseerde aanpak in
+    combinatie met 'cutting edge' maatwerk.
 card:
   text: Met een ASRR IT-team voeg je een volledig ingewerkte IT-afdeling aan jouw
     bedrijf voor een periode die aansluit bij jouw behoeftes. Hierbij hoef jij
