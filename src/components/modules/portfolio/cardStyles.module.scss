@@ -36,9 +36,8 @@
 @include media(">=lg") {
   .highlight{
     align-items: flex-end;
-    width: 75vw;
+    width: 80vw;
     min-height: 70vh;
-    height: 70vh;
 
     &.highlightLeft{
       align-items: start;

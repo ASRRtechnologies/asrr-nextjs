@@ -5,12 +5,10 @@ import matter from 'gray-matter'
 import useI18n from '../../../hooks/use-i18n'
 // @ts-ignore
 import NL from '../../../locales/nl'
-import BlogArticle from '@/written/BlogArticle'
 import {useHeader} from "../../../context/navigation/HeaderContext";
-import {BasePaths} from "../../../data/paths";
+import Article from "@/modules/article/Article";
 
 function Page({allProjects, content, basePath}) {
-
     const SEOProps = {
         title: `ASRR - Artikel - ${content.title}`,
         content: `${content.landing.title}`
@@ -55,11 +53,13 @@ function Page({allProjects, content, basePath}) {
     };
 
     return (
-        <PageLayout {...SEOProps}>
-            <BlogArticle project={content} basePath={basePath}/>
+        <PageLayout className="darkmodeContainer" {...SEOProps}>
+            <Article project={content} basePath={basePath}/>
         </PageLayout>
     )
 }
+
+export default Page
 
 export async function getStaticProps({params}) {
     const slug = params.article.toLowerCase();
@@ -93,5 +93,3 @@ export async function getStaticPaths() {
     return {paths, fallback: false}
 
 }
-
-export default Page

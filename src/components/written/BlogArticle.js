@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactMarkdown from 'react-markdown'
-import SmallLanding from '@/landing/SmallLanding'
 import video from '../../../public/assets/videos/demo/rdp/2-fa-high.mp4'
 import Contact from '@/contact/Preview'
 import Section from '@/modules/shared/section/Section'
@@ -14,6 +13,7 @@ import {
 	TwitterShareButton,
 } from 'react-share'
 import uuid from "react-uuid";
+import Banner from "@/modules/shared/landing/Banner";
 
 const fadeDelay = 200;
 
@@ -112,9 +112,8 @@ const ArticleSection = ({ basePath, content, media }) => {
 function BlogArticle ({ project, basePath }) {
 	return (
 		<>
-			<SmallLanding title={project.landing.title} text={project.landing.text} alt={project.landing.alt}
-						  image={`${basePath}/${project.landing.image}`}
-						  imageWebp={`${basePath}/${project.landing.image_webp}`}/>
+			<Banner title={project.landing.title} text={project.landing.text} alt={project.landing.alt}
+						  image={`${basePath}/${project.landing.image}`}/>
 
 			<Section>
 				<div className="article-body">
