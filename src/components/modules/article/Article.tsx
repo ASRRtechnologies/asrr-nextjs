@@ -1,6 +1,6 @@
 import React from 'react'
-import ReactMarkdown from 'react-markdown'
 import Contact from '@/contact/Preview'
+import Interweave, {Markup} from "interweave";
 import Section from '@/modules/shared/section/Section'
 import { Fade } from 'react-awesome-reveal'
 import {
@@ -14,6 +14,7 @@ import {
 import uuid from "react-uuid";
 import Banner from "@/modules/shared/landing/Banner";
 import articleStyles from "./article.module.scss";
+import ReactMarkdown from 'react-markdown';
 
 const fadeDelay = 200;
 
@@ -79,16 +80,14 @@ function transform(node: HTMLElement, children: Node[]): React.ReactNode {
 }
 
 const ArticleSection = ({ basePath, content, media }) => {
+    // @ts-ignore
+    console.log(content)
     return (
         <div className={articleStyles.text}>
                 <Fade triggerOnce cascade damping={0.3} direction="up">
-                    <ReactMarkdown children={content}
-                        components={{
-                            p: "h5",
-                            h1: ({node, ...props}) => <h2 className="h3" {...props}/>,
-                            h2: ({node, ...props}) => <h3 className="h4" {...props}/>,
-                        }}
-                    />
+                    <ReactMarkdown renderers={{
+                        paragraph: props => <a>{props.children}</a>,
+                    }} source={content} />
                 </Fade>
             {media && (
                 <>
@@ -126,7 +125,7 @@ function Article ({ project, basePath }) {
             <Banner title={project.landing.title} text={project.landing.text} alt={project.landing.alt}
                     image={`${basePath}/${project.landing.image}`}/>
 
-            <Section>
+            <Section className="darkmodeContainer">
                 <div className={articleStyles.body}>
                     <Socials/>
 

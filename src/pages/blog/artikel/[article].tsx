@@ -17,40 +17,12 @@ function Page({allProjects, content, basePath}) {
     //Need to set locale in the static page
     const i18n = useI18n();
     const header = useHeader();
+
     useEffect(() => {
         i18n.locale('nl', NL);
         // @ts-ignore
         header.setHeaderWhite(true)
     }, []);
-
-    const getRandomProject = () => {
-        let numOfProjectsToShow = 2;
-        let projectsToShow = [];
-
-        //Remove current page project
-        let uniqueProjects = allProjects.filter((project) => {
-            return project.title !== content.title && project.discipline !== content.discipline
-        });
-
-        //Get random number between 0 and num of projects
-        function randomIntFromInterval(min, max) { // min and max included
-            return Math.floor(Math.random() * (max - min + 1) + min)
-        }
-
-        //In case of one project
-        if (uniqueProjects.length === 1) {
-            return uniqueProjects[0]
-        } else {
-            //loop twice
-            for (let i = 0; i < numOfProjectsToShow; i++) {
-                //push random project in projects to show array
-                projectsToShow.push(uniqueProjects[randomIntFromInterval(0, uniqueProjects.length - 1)]);
-                //remove the pushed project form the uniqueProjects so that isnt possible by chance to add twice the same projects
-                uniqueProjects = uniqueProjects.filter(val => !projectsToShow.includes(val))
-            }
-            return projectsToShow
-        }
-    };
 
     return (
         <PageLayout className="darkmodeContainer" {...SEOProps}>
