@@ -1,11 +1,18 @@
 ---
 language: nl
 title: duurzaamheid
+meta_tags:
+  title: Duurzaamheid
+  text: Denk jij wel eens na over hoe jij jouw Information Technology (IT) bedrijf
+    kan verduurzamen? Lees dan verder hoe ASRR dat op drie manieren heeft
+    gedaan.
 type: artikel
 info:
   date: September 9, 2021 12:00 AM
   author: Lotte Boonstra
   client: ASRR
+  tags:
+    - center
 card:
   title: Duurzaamheid
   text: Wat houdt duurzaamheid precies in en hoe gaan wij daar bij ASRR mee om?
@@ -39,6 +46,9 @@ section:
 
 
       Een duurzame oplossing moet dus een harmonieuze combinatie zijn van deze drie elementen en aan je huidige behoeftes voldoen zonder de behoeftes van toekomstige generaties te belemmeren.
+
+
+      &nbsp;
     media:
       images:
         - image: sustainability-circle-final-1-.png
@@ -77,13 +87,15 @@ section:
       1. Een gemiddelde kantoor medewerker gebruikt gemiddeld 10.000 vellen kopieerpapier per jaar (O'Mara, 2021). Een boom levert gemiddeld 60.000 vellen kopieerpapier (Papier en Karton, 2021). Met onze hoeveelheid medewerkers bespaart dat bijna 2 bomen per jaar.  
 
       2. Standaard high-end pc’s hebben een vermogen van 850 watt. Door het zelf samenstellen van de componenten van de servers en pc’s is ASRR in staat een high-end product te bouwen met de helft van het vermogen (TechPulse Redactie, 2021).
+
+         &nbsp;
   - content: >-
       #### Bronnen
 
 
       * cbs.nl. 2021. *Duurzaamheid*. \[online] Available at: <https://www.cbs.nl/nl-nl/economie/landbouw/monitor-duurzame-agro-grondstoffen-2016/toelichtingen-homepage-agro-grondstoffen/duurzaamheid#:~:text=Duurzame%20ontwikkeling%20is%20een%20ontwikkeling,VN%2Dcommissie%20Brundtland%20uit%201987.> \[Accessed 9 September 2021].
 
-      * Coöperatief Dutch Renewergy. 2021. HOEVEEL CO2-UITSTOOT COMPENSEERT 1 BOOM PER JAAR?. \[online] Available at: \[<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/](<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/)>.
+      * Coöperatief Dutch Renewergy. 2021. HOEVEEL CO2-UITSTOOT COMPENSEERT 1 BOOM PER JAAR?. \[online] Available at: [[https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/](<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/)](https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/](<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/))
 
       * O'Mara, M., 2021. How Much Paper Is Used in One Day?. \[online] Record Nations. Available at: <https://www.recordnations.com/2016/02/how-much-paper-is-used-in-one-day/> \[Accessed 8 September 2021]. 
 
