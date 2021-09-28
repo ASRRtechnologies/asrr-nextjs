@@ -14,12 +14,10 @@ info:
     - center
 card:
   title: "Waarom hybride werken positief is "
-  text: "Het lijkt wel de droom van elke IT-er: thuiswerken. Door de
-    coronapandemie is die droom werkelijkheid geworden, maar voor veel bedrijven
-    was dit een grote uitdaging. Zij hebben zich in een korte tijd moeten
-    aanpassen aan een situatie waarin mensen veel thuiswerken. Inmiddels gaan we
-    terug naar het ‘normale leven’. Veel bedrijven staan daarom voor de vraag:
-    Hoe gaan we nu verder?"
+  text: "Door de coronapandemie hebben veel bedrijven zich in een korte tijd
+    moeten aanpassen aan een situatie waarin veel mensen thuiswerken. Inmiddels
+    gaan we terug naar het ‘normale leven’. Veel bedrijven staan daarom voor de
+    vraag: Hoe gaan we nu verder?"
   image: nick-morrison-fhnnjk1yj7y-unsplash.jpg
   alt: Working from home
 landing:
