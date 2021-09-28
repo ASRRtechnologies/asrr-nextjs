@@ -57,7 +57,7 @@ section:
       &nbsp;
 
 
-      Ten derde is hybride werken ook duurzaam werken (Fuchs, 2006). De hoeveelheid energie en materialen die gebruikt worden, zijn lager wanneer werknemers hybride werken. Bovendien heeft deze manier van werken ook een positieve invloed op hun energie, omdat zij aan het einde van een werkdag minder vermoeid zijn. Hybride werken is dus goed voor the people, the planet and the profit. Wil je meer weten over duurzaamheid en duurzaamheid binnen ASRR klik dan [hier](https://asrr.nl/blog/artikel/duurzaamheid).
+      Ten derde is hybride werken ook duurzaam werken (Fuchs, 2006). De hoeveelheid energie en materialen die gebruikt worden, zijn lager wanneer werknemers hybride werken. Bovendien heeft deze manier van werken ook een positieve invloed op hun energie, omdat zij aan het einde van een werkdag minder vermoeid zijn. Hybride werken is dus goed voor the people, the planet and the profit. Wil je meer weten over duurzaamheid en duurzaamheid binnen ASRR klik dan [hier. ](https://asrr.nl/blog/artikel/duurzaamheid)[](https://asrr.nl/blog/artikel/duurzaamheid)
 
 
       &nbsp;
