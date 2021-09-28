@@ -15,7 +15,11 @@ info:
     - center
 card:
   title: Duurzaamheid
-  text: Wat houdt duurzaamheid precies in en hoe gaan wij daar bij ASRR mee om?
+  text: "Ben jij al bekend met de drie P's en denk jij wel eens na over wat de
+    mogelijke voordelen zijn van het verduurzamen van jouw bedrijf? Lees verder
+    om erachter te komen wat de drie P's inhouden, hoe de drie P's toepassen kan
+    leiden tot een duurzamer bedrijf en wat voor voordelen ASRR heeft van
+    verduurzamen. "
   image: chelsea-wvusc5m-tm8-unsplash.jpg
   alt: "solar panels "
 landing:
