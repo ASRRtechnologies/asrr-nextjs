@@ -70,12 +70,12 @@ section:
 
       &nbsp;
   - content: >-
-      ### Bronnen
+      ## Bronnen
 
 
       * Gorlick, A. (2020). The productivity pitfalls of working from home in the age of COVID-19. *Stanford News*.
 
-      * Bloom, N., Liang, J., Roberts, J. and Ying, Z., 2014. Does Working from Home Work? Evidence from a Chinese Experiment*. *The Quarterly Journal of Economics*, 130(1), pp.165-218.
+      * Bloom, N., Liang, J., Roberts, J. and Ying, Z., 2014. Does Working from Home Work? Evidence from a Chinese Experiment*.* The Quarterly Journal of Economics*, 130(1), pp.165-218.
 
       * Fuchs, C., 2006. The implications of new information and communication technologies for sustainability. Environment, Development and Sustainability, 10(3), pp.291-309.
 ---
