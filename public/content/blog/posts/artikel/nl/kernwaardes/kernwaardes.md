@@ -25,7 +25,7 @@ card:
   image: bill-oxford-fgqsewtsjy-unsplash.jpg
   alt: Tandwiel
 landing:
-  title: Hoe het aanhouden van onze kernwaardes heeft geleid tot succes
+  title: Let your values drive your choices
   image: bill-oxford-fgqsewtsjy-unsplash.jpg
   alt: Tandwielen
 section:
