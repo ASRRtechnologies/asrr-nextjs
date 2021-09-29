@@ -31,10 +31,10 @@ section:
       # Duurzaamheid
 
 
-      ## **Wat houdt duurzaamheid precies in en hoe gaan wij daar bij ASRR mee om?**
+      Wat houdt duurzaamheid precies in en hoe gaan wij daar bij ASRR mee om?
 
 
-      ### Wat is duurzaamheid?
+      ## Wat is duurzaamheid?
 
 
       Duurzaamheid. Een populaire term, geen bedrijf ontkomt er meer aan. Logisch, want duurzaamheid gaat een stuk verder dan bewust omgaan met het milieu. Duurzaamheid gaat over aan je behoeftes voldoen, zonder dat je daarmee de behoeftes van toekomstige generaties belemmert (CBS, 2021).
@@ -58,10 +58,10 @@ section:
         - image: sustainability-circle-final-1-.png
           alt: Sustainability
   - content: >-
-      ### Drie onderdelen waarin ASRR duurzaam is
+      ## Drie onderdelen waarin ASRR duurzaam is
 
 
-      #### Paperless office
+      ### Paperless office
 
 
       Een kantoor zonder papier was voorheen ondenkbaar, maar tegenwoordig goed realiseerbaar. ASRR hoort bij een kleine groep bedrijven die helemaal geen papier meer gebruikt. Doordat ASRR een ‘paperless office’ is, redden we jaarlijks bijna twee grote volgroeide bomen (1). Deze bomen kunnen 40 kg CO2 per jaar terugwinnen uit de lucht (Coörperatief Dutch Renewergy, 2021).
@@ -70,7 +70,7 @@ section:
        &nbsp;
 
 
-      #### Recycling
+      ### Recycling
 
 
       Bij ASRR op kantoor wordt PMD, restafval en papier gescheiden. Scheiden maakt het mogelijk om waardevolle materialen terug te winnen en te recyclen tot een nieuw product. In Nederland beland afval dat niet wordt gescheiden op de vuilnisbelt. Dit wordt uiteindelijk verbrand (Rijksdienst, 2020). Verbranding draagt bij aan het broeikaseffect en het verlies van grondstoffen (Bijleveld, Bergsma and Nusselder, 2016). Kortom, recyclen is van groot belang.
@@ -79,7 +79,7 @@ section:
        &nbsp;
 
 
-      #### Low power
+      ### Low power
 
 
       Computers die weinig vermogen gebruiken. Het is bijna een ‘must have’ voor Tech bedrijven. Het bespaart namelijk energie en geld. Door onze zelf samengestelde computers en servers bespaard ASRR de helft van wat het normaalgesproken zou kosten (2).
@@ -94,12 +94,12 @@ section:
 
          &nbsp;
   - content: >-
-      #### Bronnen
+      ## Bronnen
 
 
       * cbs.nl. 2021. *Duurzaamheid*. \[online] Available at: <https://www.cbs.nl/nl-nl/economie/landbouw/monitor-duurzame-agro-grondstoffen-2016/toelichtingen-homepage-agro-grondstoffen/duurzaamheid#:~:text=Duurzame%20ontwikkeling%20is%20een%20ontwikkeling,VN%2Dcommissie%20Brundtland%20uit%201987.> \[Accessed 9 September 2021].
 
-      * Coöperatief Dutch Renewergy. 2021. HOEVEEL CO2-UITSTOOT COMPENSEERT 1 BOOM PER JAAR?. \[online] Available at: [[https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/](<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/)](https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/](<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/))
+      * Coöperatief Dutch Renewergy. 2021. HOEVEEL CO2-UITSTOOT COMPENSEERT 1 BOOM PER JAAR?. \[online] Available at: [\[https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/](<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/)](https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/](<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/))
 
       * O'Mara, M., 2021. How Much Paper Is Used in One Day?. \[online] Record Nations. Available at: <https://www.recordnations.com/2016/02/how-much-paper-is-used-in-one-day/> \[Accessed 8 September 2021]. 
 
