@@ -102,7 +102,7 @@ section:
 
       * cbs.nl. 2021. *Duurzaamheid*. \[online] Available at: <https://www.cbs.nl/nl-nl/economie/landbouw/monitor-duurzame-agro-grondstoffen-2016/toelichtingen-homepage-agro-grondstoffen/duurzaamheid#:~:text=Duurzame%20ontwikkeling%20is%20een%20ontwikkeling,VN%2Dcommissie%20Brundtland%20uit%201987.> \[Accessed 9 September 2021].
 
-      * Coöperatief Dutch Renewergy. 2021. HOEVEEL CO2-UITSTOOT COMPENSEERT 1 BOOM PER JAAR?. \[online] Available at: [\[https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/](<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/)](https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/](<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/))
+      * Coöperatief Dutch Renewergy. 2021. HOEVEEL CO2-UITSTOOT COMPENSEERT 1 BOOM PER JAAR?. \[online] Available at: [\[https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/]](https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/](<https://dutchrenewergy.nl/ufaqs/hoeveel-co2-uitstoot-compenseert-1-boom-per-jaar/))
 
       * O'Mara, M., 2021. How Much Paper Is Used in One Day?. \[online] Record Nations. Available at: <https://www.recordnations.com/2016/02/how-much-paper-is-used-in-one-day/> \[Accessed 8 September 2021]. 
 
