@@ -21,7 +21,7 @@ card:
   image: nick-morrison-fhnnjk1yj7y-unsplash.jpg
   alt: Working from home
 landing:
-  title: "Waarom hybride werken positief is "
+  title: Working remote
   image: nick-morrison-fhnnjk1yj7y-unsplash.jpg
   alt: Working from home
 section:
