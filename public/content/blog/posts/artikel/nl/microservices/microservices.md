@@ -1,14 +1,26 @@
 ---
 language: nl
 title: microservices
+meta_tags:
+  title: Microservices
+  text: "Ben jij benieuwd naar de verschillende voordelen van microservice
+    software architectuur ten opzichte van traditionele monolithische
+    applicaties? Lees dan verder hoe het implementeren van microservices jou
+    tijd en moeite kan besparen. "
 type: artikel
 info:
   date: January 13, 2021 4:30 PM
   author: Amar Ramdas
+  tags:
+    - left
 card:
   title: Kunnen microservices tijd en moeite besparen?
   image: microservices-min.jpg
   alt: Microservices
+  text: "Ben jij benieuwd naar de verschillende voordelen van microservice
+    software architectuur ten opzichte van traditionele monolithische
+    applicaties? Lees dan verder hoe het implementeren van microservices jou
+    tijd en moeite kan besparen. "
 landing:
   title: Een over-engineered fundatie van code-bouwsteentjes
   image: microservices-min.jpg
