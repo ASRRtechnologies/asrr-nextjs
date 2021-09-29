@@ -38,7 +38,7 @@ section:
 
       &nbsp;
   - content: >-
-      ### **Innovatie**
+      ## **Innovatie**
 
 
       > ''Go where others won't.''
@@ -52,7 +52,7 @@ section:
 
       &nbsp;
   - content: >-
-      ### **Constant improvement**
+      ## **Constant improvement**
 
 
       > *''Evolve and adapt*.''
@@ -66,7 +66,7 @@ section:
 
       &nbsp;
   - content: >-
-      ### **Co-makership**
+      ## **Co-makership**
 
 
       > “If you want to go fast, go alone. If you want to go far, go together.”
@@ -80,7 +80,7 @@ section:
 
       &nbsp;
   - content: >-
-      ### **Effectiviteit**
+      ## **Effectiviteit**
 
 
       > *''Get it done.''*
