@@ -34,10 +34,13 @@ section:
       # IT Teams as a Service (ITTAAS)
 
 
-      ## **Wat zijn de voordelen van een dynamisch extern IT-team ten opzichte van een een-op-een recruitmentstrategie?**
+      In dit artikel gaan we dieper in op de voordelen van een dynamisch extern IT-team ten opzichte van een een-op-een recruitmentstrategie en hoe dit jouw bedrijf kan aanvullen. 
 
 
-      ### De huidige situatie
+      &nbsp;
+
+
+      ## De huidige situatie
 
 
       In de huidige markt voor externe IT-werkzaamheden wordt vaak in hokjes gedacht. Een opdrachtgever klopt aan bij een recruitmentbureau en geeft aan welke competenties mogelijk nodig zijn voor een opdracht. De recruiter stelt op basis van deze input een opdrachtomschrijving op. Dit resulteert vaak in een eisenlijst waar developers op afknappen. Daarnaast is de eisenlijst niet representatief voor het uiteindelijke werk waardoor de juiste persoon niet op de juiste plek wordt geplaatst.
@@ -59,6 +62,9 @@ section:
 
 
       Kortom, het is van groot belang dat aan het begin van de zoektocht naar de juiste expertise technische kennis wordt toegepast. Dit is volgens ons dé oplossing: IT Teams as a Service.
+
+
+      &nbsp;
     media:
       images:
         - image: ittaas-landing.jpg
@@ -66,7 +72,7 @@ section:
           description: ""
           reference: ""
   - content: >-
-      ### Wat is ITTAAS?
+      ## Wat is ITTAAS?
 
 
       Met een ASRR IT-team lijkt het alsof je een volledig ingewerkte IT-afdeling tijdelijk aan jouw bedrijf toevoegt. Hierbij hoeft de klant zich niet druk te maken over of-je-wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak van ASRR combineert de snelheid en solide bouw van een gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’ applicatie op maat.
@@ -74,7 +80,7 @@ section:
 
       &nbsp;
   - content: >-
-      ### Hoe ziet ASRR ITTAAS?
+      ## Hoe ziet ASRR ITTAAS?
 
 
       De service begint met een aanspreekpunt. Dit is de brug tussen de Business en het IT. Het aanspreekpunt moet inhoudelijke kennis hebben, maar ook kunnen relativeren en begrijpen wat belangrijk is voor een opdrachtgever. Communicatie, kennis en begrip zijn dus essentieel.
@@ -99,7 +105,7 @@ section:
         - image: ittaas-2.jpg
           alt: Blog planning
   - content: >-
-      ### **Wat zijn de voordelen van ITTAAS?**
+      ## **Wat zijn de voordelen van ITTAAS?**
 
 
       De klant haalt direct een ingewerkt team in huis, in plaats van een set aan losse spelers. Dit zorgt voor besparing op het gebied van recruitment- en inwerkkosten. Het probleem wordt van het begin af aan begeleid door een specialist waardoor de visie van de klant goed vertaald kan worden naar een werkend eindproduct. De klant wordt hierbij volledig ontzorgd. Daarnaast vertaalt een centraal aanspreekpunt de technische vraagstukken naar een voor de klant begrijpelijke taal, zodat executieve beslissingen kunnen worden gemaakt over belangrijke aspecten binnen het proces. Tot slot bestaat het IT-team uit bijzondere individuen die complexe vraagstukken voor andere klanten hebben opgelost. Zij gebruiken hun expertise en ervaring bij het ontwikkelen van uw applicaties.
