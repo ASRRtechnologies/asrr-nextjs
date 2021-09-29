@@ -33,7 +33,10 @@ section:
       # Kernwaardes van ASRR
 
 
-      ## Onze kerwaardes zijn innovatie, constant improvement, co-makership en effectiviteit. Lees verder als jij wil weten hoe het aanhouden van deze kernwaardes kan leiden tot succes.
+      Onze kernwaardes zijn innovatie, constant improvement, co-makership en effectiviteit. In dit artikel lichten wij toe hoe het aanhouden van deze kernwaardes kan leiden tot succes.
+
+
+      &nbsp;
   - content: >-
       ### **Innovatie**
 
