@@ -86,7 +86,7 @@ collections:
               - {label: "Client Position", name: "position", widget: "string"}
               - {label: "Client Story", name: "story", widget: "text"}
               - {label: "Client Company", name: "company", widget: "string"}
-              - {label: "Client Avatar", name: "avatar", widget: "string"}
+              - {label: "Client Avatar", name: "avatar", widget: "image"}
               - {label: "Client Avatar Alt", name: "avatar_alt", widget: "string"}
               - {label: "Card Image", name: "image", widget: "image"}
               - {label: "Card Image Alt", name: "alt", widget: "string"}
