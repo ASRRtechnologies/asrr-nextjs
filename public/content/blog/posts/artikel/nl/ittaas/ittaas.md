@@ -22,7 +22,7 @@ card:
     Er bestaat een grote kans dat ITTAAS het missende puzzelstukje is in jouw
     bedrijf. ITTAAS is een dynamisch extern IT-team dat veel voordelen heeft ten
     opzichte van de standaard één-op-één recruitmentstrategie. Meer weten over
-    hoe een ITTAAS jou bedrijf kan aanvullen, lees dan verder. 
+    hoe een ITTAAS jou bedrijf kan aanvullen? Lees dan verder. 
   image: ittaas-banner.jpeg
   alt: Paper peoples (team)
 landing:
