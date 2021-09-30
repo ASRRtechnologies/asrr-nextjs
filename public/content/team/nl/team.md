@@ -80,6 +80,11 @@ members:
   - name: Amit Ramdas
     position: Sales and Marketing Specialist
     website: https://www.linkedin.com/in/amit-nitesh-ramdas-a6a171172/
+    story: Ik ben Amit Ramdas, 20 jaar. Voor ASRR doe ik zowel enkele
+      marketing/sales taken als design taken, in de vorm van
+      kledingdesign/logodesign. Voor marketing/sales probeer ik contactgegevens
+      van potentiële klanten te vergaren en ze te contacteren. Daarnaast help ik
+      met het promoten van ASRR op sociale media kanalen zoals LinkedIn.
   - name: Neil Alwani
     position: Front-End Developer
     story: Mijn volledige naam is Neil Mahesh Alwani en ik ben sinds 3 maanden
