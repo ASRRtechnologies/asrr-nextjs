@@ -58,6 +58,13 @@ members:
   - name: Azat Arica
     position: Back-End Lead
     website: https://www.linkedin.com/in/azat-a/
+    story: Hi, ik ben Azat, ik werk als back-end coördinator bij ASRR. Toen ASRR
+      werd opgericht, was ik een van de eerste personen die daarbij betrokken
+      was. Momenteel ben ik bijna drie jaar in dienst. Door de jaren heen heb ik
+      ASRR zien opgroeien tot een professioneel IT-bedrijf met een jong en
+      energiek team. Het was voor mij vanzelfsprekend dat ik daar onderdeel van
+      uit wilde maken. Ik ben graag in contact met klanten en ik haal energie
+      uit het maken van complexe applicaties.
   - name: Vanisha Oedayrajsingh Varma
     position: Back-End Developer
     story: Ik ben back-end developer bij ASRR. Mijn specialiteit is bugs vinden,
