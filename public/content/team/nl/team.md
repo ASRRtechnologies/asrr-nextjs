@@ -71,9 +71,6 @@ members:
       fixen en code waterdicht maken. Naast werken bij ASRR, studeer ik Computer
       Science & Engineering aan TU Delft. Ik haal energie uit vaardigheden, die
       ik tijdens mijn studie heb opgedaan, toe te passen bij ASRR.
-  - name: Jay Schipper
-    position: Marketing Specialist
-    website: https://www.linkedin.com/in/jay-schipper-607890171/
   - name: "Lisabelle Sengönül "
     position: Assistant to the Director
     website: https://www.linkedin.com/in/lisabelle-seng%C3%B6n%C3%BCl-4a1708181/
@@ -101,4 +98,7 @@ members:
       kennis die ik heb opgedaan in tijdens mijn bachelor te kunnen toepassen in
       de praktijk.
     website: https://www.linkedin.com/in/neil-alwani-a1b9a2182/
+  - name: Jay Schipper
+    position: Marketing Specialist
+    website: https://www.linkedin.com/in/jay-schipper-607890171/
 ---
