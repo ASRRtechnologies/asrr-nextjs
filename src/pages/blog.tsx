@@ -14,15 +14,13 @@ const SEOProps = {
 
 //Todo add allNews to AllArticles array
 function Blog({content, allBlogs}) {
-    const {landing} = content
+    const {landing} = content;
     const header = useHeader();
 
     useEffect(() => {
         // @ts-ignore
         header.setHeaderWhite(false)
     }, []);
-
-    console.log(allBlogs);
 
     return (
         <PageLayout className="darkmodeContainer" {...SEOProps}>

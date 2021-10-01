@@ -9,6 +9,19 @@ function Blog(props) {
     const {allBlogs} = props;
     const basePath = (blogType: string, projectName: string) => `/content/blog/posts/${blogType}/nl/${projectName}`;
 
+    //Fuzzy search
+    // <input
+    //     type="text"
+    //     placeholder="Search"
+    //     onChange={async (e) => {
+    //         const { value } = e.currentTarget
+    //         // Dynamically load fuse.js
+    //         const Fuse = (await import('fuse.js')).default
+    //         const fuse = new Fuse(names)
+    //
+    //         setResults(fuse.search(value))
+    //     }}
+
     return (
         <Section>
             <div className={blogStyles.grid}>
