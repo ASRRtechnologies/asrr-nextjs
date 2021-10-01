@@ -69,11 +69,10 @@ testimonials:
       alt: Robby Makka Photo
       name: Robby Makka
       position: Manager
-      story: '"ASRR recently did some work for me, namely improving my internet
-        connection, and they did it very well! He also gave very good advise
-        related to the purchase of a new PC 👍. I am very satisfied and would
-        say that his service is top notch! I would certainly recommend him to
-        others. Knowledge and experience!"'
+      story: '"ASRR recently did some work for me. They set up a remote workplace, and
+        they did it very well! I am very satisfied and would say that his
+        service is top notch! I would certainly recommend him to others.
+        Knowledge and experience!"'
       company: Ministerie van Financiën c.q. Belastingdienst/Douane Nederland
       avatar: dsc07233.jpg
       avatar_alt: PC
