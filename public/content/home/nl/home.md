@@ -1,6 +1,10 @@
 ---
 language: nl
 title: home
+meta_tags:
+  title: Home
+  text: Specialist in innovatieve software en hardware op maat, business analytics
+    and insights en IT teams as a service.
 landing:
   title: Innovative Software Development
   text: Uw partner voor het bouwen van next-level software - snel, betrouwbaar en
@@ -12,8 +16,8 @@ landing:
     url: /portfolio
 services:
   title: Onze Diensten
-  text: ASRR vormt de brug tussen IT en business met flexibele, robuuste teams
-    die inspelen op wat u nodig heeft.
+  text: ASRR vormt de brug tussen IT en business met flexibele, robuuste teams die
+    inspelen op wat u nodig hebt.
 technologies:
   title: Technologieën
   text: ASRR gebruikt de meest geadvanceerde technologieën
@@ -46,6 +50,8 @@ testimonials:
       company: FORMHET Architecture & Engineering B.V.
       image: jorgenharing_kleur-min.jpg
       alt: Foto Jorgen Haring
+      avatar: form-foto.png
+      avatar_alt: form kantoor
     - name: Ravi Badal
       position: Manager Operations
       story: '"Het is een erg jong, professioneel en dynamisch bedrijf met een flat
@@ -57,6 +63,8 @@ testimonials:
       company: ESP Consultancy B.V.
       alt: Ravi Badal Photo
       image: ben-sweet-2lowvivhz-e-unsplash-min.jpg
+      avatar: 1543325645873.jpeg
+      avatar_alt: WTC rotterdam
     - image: robby-makka-min.jpg
       alt: Robby Makka Photo
       name: Robby Makka
@@ -67,9 +75,11 @@ testimonials:
         say that his service is top notch! I would certainly recommend him to
         others. Knowledge and experience!"'
       company: Ministerie van Financiën c.q. Belastingdienst/Douane Nederland
+      avatar: dsc07233.jpg
+      avatar_alt: PC
 quality:
   title: Waarom ASRR?
-  text: Wij focussen ons op de volgende kernwaarden
+  text: Wij focussen ons op de volgende kernwaardes
   qualities:
     - quality: Innovatie
       description: "ASRR heeft een open cultuur die innovatie faciliteert en
@@ -113,13 +123,13 @@ quality:
         gemakkelijk aangepast, toegevoegd, gedupliceerd of verwijderd worden .
         De vloot is dus modulair, net als de code die wij schrijven. Elk bootje
         symboliseert een microservice. Deze techniek maakt onze code stabiel,
-        schaalbaar en biedt de klant eindeloze mogelijkheden om hun producten te
-        ontwikkelen.
+        schaalbaar en biedt de klant eindeloze mogelijkheden om zijn producten
+        te ontwikkelen.
 blog:
   title: Blog
   text: Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on-als
     offline!
 clients:
   title: Deze klanten gingen u voor
-  text: "Bent u de volgende?"
+  text: Bent u de volgende?
 ---
