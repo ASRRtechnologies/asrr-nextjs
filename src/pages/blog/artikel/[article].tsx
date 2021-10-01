@@ -50,7 +50,6 @@ export async function getStaticProps({params}) {
 }
 
 export async function getStaticPaths() {
-
     const allArticles = await getAllArticles([
         'title',
     ]);
