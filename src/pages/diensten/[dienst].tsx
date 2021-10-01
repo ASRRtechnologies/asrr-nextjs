@@ -1,59 +1,58 @@
-import React, { useEffect } from 'react'
+// noinspection DuplicatedCode
+
+import React, {useEffect} from 'react'
 import PageLayout from '@/layout/PageLayout'
-import { getAllServices } from '../../lib/api'
+import {getAllServices} from '../../lib/api'
 import matter from 'gray-matter'
-import useI18n from '../../hooks/use-i18n'
-// @ts-ignore
-import NL from '../../locales/nl'
 import {useHeader} from "../../context/navigation/HeaderContext";
-import {BasePaths} from "../../data/paths";
+import Article from "@/modules/article/Article";
 
-function Page ({content, basePath }) {
+function Page({content}) {
+    const basePath = `/content/services/posts/nl/${content.title}`;
+    console.log(content);
 
-	const SEOProps = {
-		title:`ASRR - Diensten - ${content.title}`,
-		content:`${content.landing.title}`
-	}
+    const SEOProps = {
+        title: `ASRR - Artikel - ${content.title}`,
+        content: `${content.landing.title}`
+    }
 
-	//Need to set locale in the static page
-	const i18n = useI18n();
-	const header = useHeader();
-	useEffect(() => {
-		// @ts-ignore
-		header.setHeaderWhite(true);
-		i18n.locale('nl', NL);
-	}, []);
+    const header = useHeader();
+    useEffect(() => {
+        // @ts-ignore
+        header.setHeaderWhite(true)
+    }, []);
 
-	return (
-		<PageLayout {...SEOProps}>
-		</PageLayout>
-	)
-}
-
-export async function getStaticProps ({ params }) {
-	const slug = params.dienst.toLowerCase();
-	let data = await import(`public/content/services/posts/nl/${slug}/${slug}.md`);
-	// let data = await import(`${BasePaths.SERVICES}/nl/${slug}/${slug}.md`);
-	let content = matter(data.default).data;
-	const basePath = `/content/services/nl/${slug.toLowerCase()}`;
-
-	return {
-		props: { basePath, content },
-	}
-}
-
-export async function getStaticPaths () {
-
-	const allServices = await getAllServices([
-		'title',
-	]);
-
-	const paths = allServices.map(project => ({
-		params: { dienst: project.title.toLowerCase() },
-	}));
-
-	return { paths, fallback: false }
-
+    return (
+        <PageLayout className="darkmodeContainer" {...SEOProps}>
+            <Article content={content} basePath={basePath}/>
+        </PageLayout>
+    )
 }
 
 export default Page
+
+export async function getStaticProps({params}) {
+    const slug = params.dienst.toLowerCase();
+    let data = await import(`public/content/services/posts/nl/${slug}/${slug}.md`);
+    // let data = await import(`${BasePaths.SERVICES}/nl/${slug}/${slug}.md`);
+    let content = matter(data.default).data;
+    const basePath = `/content/services/nl/${slug.toLowerCase()}`;
+
+    return {
+        props: {basePath, content},
+    }
+}
+
+export async function getStaticPaths() {
+
+    const allServices = await getAllServices([
+        'title',
+    ]);
+
+    const paths = allServices.map(project => ({
+        params: {dienst: project.title.toLowerCase()},
+    }));
+
+    return {paths, fallback: false}
+
+}

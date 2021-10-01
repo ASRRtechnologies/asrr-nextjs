@@ -36,7 +36,13 @@
 
     &.blogImage{
       max-width: 600px;
-      margin: 0 auto; //center
+      margin: 20px auto; //center
+
+      .description{
+        p{
+          @include margin(15px 0);
+        }
+      }
     }
 
   }

@@ -1,33 +1,35 @@
+// noinspection DuplicatedCode
+
 import React, {useEffect} from 'react'
 import PageLayout from '@/layout/PageLayout'
 import {getAllTutorials} from '../../../lib/api'
 import matter from 'gray-matter'
-import useI18n from '../../../hooks/use-i18n'
-// @ts-ignore
-import NL from '../../../locales/nl'
 import {useHeader} from "../../../context/navigation/HeaderContext";
+import Article from "@/modules/article/Article";
 
-function Page({allProjects, content, basePath, error}) {
+function Page({content}) {
+    const basePath = `/content/blog/posts/${content.type}/nl/${content.title}`;
 
     const SEOProps = {
         title: `ASRR - Artikel - ${content.title}`,
         content: `${content.landing.title}`
     }
 
-    //Need to set locale in the static page
-    const i18n = useI18n();
     const header = useHeader();
     useEffect(() => {
-        i18n.locale('nl', NL);
         // @ts-ignore
         header.setHeaderWhite(true)
     }, []);
 
     return (
-        <PageLayout {...SEOProps}>
+        <PageLayout className="darkmodeContainer" {...SEOProps}>
+            <Article content={content} basePath={basePath}/>
         </PageLayout>
     )
 }
+
+export default Page
+
 
 export async function getStaticProps({params}) {
     const slug = params.tutorial.toLowerCase();
@@ -62,5 +64,3 @@ export async function getStaticPaths() {
     return {paths, fallback: false}
 
 }
-
-export default Page

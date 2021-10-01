@@ -37,12 +37,11 @@ function ArticleImage(props: MediaProps) {
                 {props.media.mediaType === "image" ? <Image {...props}/> : <Video {...props}/>}
             </AspectRatio>
 
-            <div className={cardStyles.name}>
-                <p className="font-subheader">{description}</p>
-                <a className="font-reference" href={reference} target="_blank"
+            <div className={cardStyles.description}>
+                <p className="h6">{description}</p>
+                <a className="h7" href={reference} target="_blank"
                    rel="noopener">{reference}</a>
             </div>
-            {console.log(props)}
         </div>
     );
 }

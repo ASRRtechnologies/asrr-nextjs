@@ -1,14 +1,13 @@
+// noinspection DuplicatedCode
+
 import React, {useEffect} from 'react'
 import PageLayout from '@/layout/PageLayout'
 import {getAllArticles} from '../../../lib/api'
 import matter from 'gray-matter'
-import useI18n from '../../../hooks/use-i18n'
-// @ts-ignore
-import NL from '../../../locales/nl'
 import {useHeader} from "../../../context/navigation/HeaderContext";
 import Article from "@/modules/article/Article";
 
-function Page({allProjects, content}) {
+function Page({content}) {
     const basePath = `/content/blog/posts/${content.type}/nl/${content.title}`;
 
     const SEOProps = {
@@ -16,21 +15,15 @@ function Page({allProjects, content}) {
         content: `${content.landing.title}`
     }
 
-    console.log(content);
-
-    //Need to set locale in the static page
-    const i18n = useI18n();
     const header = useHeader();
-
     useEffect(() => {
-        i18n.locale('nl', NL);
         // @ts-ignore
         header.setHeaderWhite(true)
     }, []);
 
     return (
         <PageLayout className="darkmodeContainer" {...SEOProps}>
-            <Article project={content} basePath={basePath}/>
+            <Article content={content} basePath={basePath}/>
         </PageLayout>
     )
 }

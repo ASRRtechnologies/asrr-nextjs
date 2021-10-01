@@ -97,18 +97,18 @@ const Socials = () => {
     )
 };
 
-function Article({project, basePath}) {
+function Article({content, basePath}) {
     return (
         <>
-            <Banner title={project.landing.title} text={project.landing.text} alt={project.landing.alt}
-                    image={`${basePath}/${project.landing.image}`}/>
+            <Banner title={content.landing.title} text={content.landing.text} alt={content.landing.alt}
+                    image={`${basePath}/${content.landing.image}`}/>
 
             <Section className="darkmodeContainer">
                 <div className={articleStyles.body}>
                     <Socials/>
 
                     <div className={articleStyles.content}>
-                        {project.section.map(
+                        {content.section.map(
                             ({content, media}) => <ArticleSection key={uuid()} basePath={basePath} content={content}
                                                                   media={media}/>)}
                     </div>
