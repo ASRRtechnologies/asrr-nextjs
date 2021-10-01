@@ -8,11 +8,15 @@ import NL from '../../../locales/nl'
 import {useHeader} from "../../../context/navigation/HeaderContext";
 import Article from "@/modules/article/Article";
 
-function Page({allProjects, content, basePath}) {
+function Page({allProjects, content}) {
+    const basePath = `/content/blog/posts/${content.type}/nl/${content.title}`;
+
     const SEOProps = {
         title: `ASRR - Artikel - ${content.title}`,
         content: `${content.landing.title}`
     }
+
+    console.log(content);
 
     //Need to set locale in the static page
     const i18n = useI18n();

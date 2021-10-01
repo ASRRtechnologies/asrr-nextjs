@@ -57,18 +57,23 @@ a{
   margin-bottom: 0;
 }
 
+.link{
+  color: inherit;
+  text-decoration: underline;
+ }
+
+.hover-link{
+  &:hover{
+    transition: 200ms ease-in-out;
+    color: $primary-color !important;
+  }
+}
+
 .lees-meer{
   color: $primary-color;
   margin-top: 30px!important;
   text-decoration: underline;
   text-decoration-thickness: 2px;
-}
-
-.hover-link{
-  &:hover{
-    transition: 200ms ease-in-out;
-    color: $primary-color;
-  }
 }
 
 .bold {
@@ -77,4 +82,8 @@ a{
 
 .not-bold{
   font-weight: normal !important;
+}
+
+.no-margin {
+  margin: 0;
 }
