@@ -7,8 +7,8 @@ import Sun from '../icons/Sun'
 import Moon from '../icons/Moon'
 import useI18n from '../../hooks/use-i18n'
 import { useHeader } from '../../context/navigation/HeaderContext'
-import NavigationButton from '../buttons/NavigationButton'
 import NL from '../../locales/nl'
+import Button from "@/modules/shared/buttons/Button";
 
 const Wrapper = styled('nav')`
         background: ${props => props.visible ? props.theme.navigation.background : 'transparent'};
@@ -108,9 +108,13 @@ function HeaderMobile ({ className }) {
 						<Link href="/blog"><a onClick={closeMenu}
 											  className="header-mobile-text">{i18n.t('header.blog')}</a></Link>
 
-						<NavigationButton onClick={closeMenu} title="Contact" to="/contact"/>
+						<Button onClick={closeMenu} buttonType={{
+							buttonType:"navigation",
+							href:"contact",
+							title:"Contact",
+							mode:"darkmode"
+						}}/>
  						{/*<LanguageMobile/>*/}
-
 					</div>
 				</div>
 

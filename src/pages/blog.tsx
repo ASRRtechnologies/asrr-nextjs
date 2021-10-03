@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
-import BlogPage from '@/modules/blog/Blog';
-import Contact from "@/contact/Preview";
+import BlogPage from '@/modules/pages/blog/Blog';
 import {useHeader} from "../context/navigation/HeaderContext";
 import matter from 'gray-matter'
 import {getAllArticles, getAllNews, getAllTutorials} from '../lib/api'
@@ -26,7 +25,6 @@ function Blog({content, allBlogs}) {
         <PageLayout className="darkmodeContainer" {...SEOProps}>
             <Banner {...landing}/>
             <BlogPage data={content} allBlogs={allBlogs}/>
-            <Contact/>
         </PageLayout>
     )
 }

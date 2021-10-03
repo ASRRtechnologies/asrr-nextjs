@@ -19,7 +19,7 @@ function Contact({content}) {
     }, []);
 
     return (
-        <PageLayout className="darkmodeContainer" {...SEOProps}>
+        <PageLayout noPreview={true} className="darkmodeContainer" {...SEOProps}>
             <Banner title={title} text={text}/>
             <ContactPage data={content}/>
         </PageLayout>

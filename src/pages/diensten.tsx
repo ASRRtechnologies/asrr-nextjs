@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import ServicePage from '../components/services/Services'
+import ServicePage from '@/modules/pages/services/Services'
 import Contact from '@/contact/Preview'
 import {useHeader} from '../context/navigation/HeaderContext'
 import matter from 'gray-matter'
@@ -22,7 +22,6 @@ function Diensten({content, allServices}) {
         <PageLayout className="darkmodeContainer" {...SEOProps}>
             <Banner {...content.landing}/>
             <ServicePage content={content} allServices={allServices}/>
-            <Contact/>
         </PageLayout>
     )
 }
