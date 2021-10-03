@@ -65,12 +65,12 @@ function Footer(props) {
                             <div className={footerStyles.grid}>
                                 <h1 className="h5 bold">{nav.title}</h1>
 
-                                {nav.texts?.map((path) => <p className="h6">{path}</p>)}
+                                {nav.texts?.map((path,i) => <p key={path+i} className="h6">{path}</p>)}
 
-                                {nav.paths?.map((path) => {
+                                {nav.paths?.map((path, i) => {
                                     return (
                                         //Extra span so that a tag width is its own width and not 100% of grid for underline to be same width
-                                        <span>
+                                        <span key={path + i}>
                                             <LinkText className="h6 hover-link" href={path.toLowerCase()} title={path} customLink/>
                                         </span>
                                     )
@@ -79,7 +79,7 @@ function Footer(props) {
                                 {nav.customPaths?.map(({href, title}) => {
                                     return (
                                         //Extra span so that a tag width is its own width and not 100% of grid for underline to be same width
-                                        <span>
+                                        <span key={href}>
                                             <LinkText href={href} customLink={true} target="_blank"
                                                       rel="noopener noreferrer"
                                                       className="h6 hover-link" title={title}/>

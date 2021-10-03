@@ -22,7 +22,6 @@ function Diensten({content, allServices}) {
         <PageLayout className="darkmodeContainer" {...SEOProps}>
             <Banner {...content.landing}/>
             <ServicePage content={content} allServices={allServices}/>
-            <Contact/>
         </PageLayout>
     )
 }

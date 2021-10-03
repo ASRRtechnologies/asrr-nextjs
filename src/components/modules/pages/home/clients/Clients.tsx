@@ -6,13 +6,15 @@ import {useTheme} from '../../../../../context/theme/ThemeContext'
 import Grid from "@/modules/shared/grid/Grid";
 import css from "@emotion/css";
 import {clients} from "../../../../../data/clients";
+import uuid from "uuid";
 
 // const Wrapper = styled(Section)`
 //   background: ${props => props.theme.home.techstack};
 // }`;
 
 interface TechStack {
-    darkmode: boolean
+    darkmode: boolean,
+    key: number
 }
 
 const Client = styled("div")<TechStack>`
@@ -46,7 +48,7 @@ function Clients({content}) {
         <Section>
             <Title title={content.title} text={content.text}/>
             <Grid breakpoints={breakPoints} fade={true}>
-                {clients.map(({image}) => <Client darkmode={darkmode}>{image}</Client>)}
+                {clients.map(({image}, i) => <Client darkmode={darkmode} key={uuid()}>{image}</Client>)}
             </Grid>
         </Section>
     )

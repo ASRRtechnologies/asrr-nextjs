@@ -13,11 +13,12 @@ const Wrapper = styled(`div`)`
   //  padding-top: 0;
   //}
   width: 100vw;
-  
-  & > div{
-    padding-top: 0;
-    :last-child{
-      padding-bottom: 0;
+
+  & > div {
+    margin-top: 0;
+
+    :last-child {
+      margin-bottom: 0;
     }
   }
 

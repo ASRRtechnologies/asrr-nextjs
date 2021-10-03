@@ -30,7 +30,7 @@ function Blog(props) {
                     const animationSettings = animationsSettings({}, i);
                     return (
                         <Fade {...animationSettings}>
-                            <BlogCard {...post} basePath={basePath(post.type, post.title)}/>
+                            <BlogCard key={post.title + i} {...post} basePath={basePath(post.type, post.title)}/>
                         </Fade>
                     )
                 })}

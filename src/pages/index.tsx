@@ -32,15 +32,14 @@ function Index({homepage, allServices, allCases, allBlogs,}) {
         <PageLayout className="darkmodeContainer" {...SEOProps}>
             <Banner landing={true} image={image} title={homepage.landing.title} text={homepage.landing.text}
                     button={homepage.landing.button}/>
+            <Clients content={homepage.clients}/>
             <PreviewServices content={homepage.services} allServices={allServices}/>
-            <TechStack basePath={basePath} content={homepage.technologies}/>
             <PortfolioPreview content={homepage.portfolio} allCases={allCases}/>
             <Testimonials content={homepage.testimonials} basePath={basePath}/>
             <Values content={homepage.quality}/>
             <BlogPreview content={homepage.blog} allBlogs={allBlogs}/>
-            <Clients content={homepage.clients}/>
+            <TechStack basePath={basePath} content={homepage.technologies}/>
             {/*<FlexGrid images={homepage.clients} col={5}/>*/}
-            <Contact/>
         </PageLayout>
     )
 }

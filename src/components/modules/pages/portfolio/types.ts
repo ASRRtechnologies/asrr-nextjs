@@ -42,3 +42,11 @@ export interface PortfolioHighlightProps {
     reverse: boolean
     basePath: string
 }
+
+export type StyledPortfolioHighlightProps = {
+    theme?:{
+        card:{
+            shadow:string
+        }
+    }
+}

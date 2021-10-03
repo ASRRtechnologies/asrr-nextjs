@@ -11,38 +11,26 @@ const black4 = '#272727';
 const dropShadowDark = `4px 12px 15px rgba(12, 12, 12, 0.35)`;
 const dropShadowLight = '0 12px 15px rgba(0,0,0,0.23)';
 
-//Font colors
-const headerDark = white;
-const subHeaderDark = white2;
-const paragraphDark = white3;
-
-const headerLight = black2;
-const subHeaderLight = black3;
-const paragraphLight = '#41474E';
-
-
 const fonts = {
-
 	header: {
-		light: headerLight,
-		dark: headerDark,
-	},
-
-	paragraph: {
-		light: paragraphLight,
-		dark: paragraphDark,
+		light: black,
+		dark: white,
 	},
 
 	subHeader: {
-		light: subHeaderLight,
-		dark: subHeaderDark,
+		light: black2,
+		dark: white2,
 	},
 
-	inverse: {
-		light: headerDark,
-		dark: headerLight,
+	miniHeader: {
+		light: black4,
+		dark: white3,
 	},
 
+	paragraph: {
+		light: black4,
+		dark: white,
+	},
 };
 
 const layout = {
@@ -53,7 +41,6 @@ const layout = {
 };
 
 const button = {
-
 	background: {
 		dark: white,
 		light: black,
@@ -65,29 +52,14 @@ const button = {
 	},
 
 	font: {
-		dark: fonts.inverse.dark,
-		light: fonts.inverse.light,
+		dark: black,
+		light: white,
 	},
 
 	shadow: {
 		dark: '0 8px 10px rgba(1, 1, 1, 0.35)',
 		light: '0px 10px 15px rgba(0,0,0,0.23)',
 	},
-
-	lightButton: {
-		background: black,
-		font: '#fff',
-		shadow: '0px 10px 15px rgba(0,0,0,0.23)',
-		hover: '#4a4a4a',
-	},
-
-	darkButton: {
-		background: white,
-		font: `${fonts.inverse.dark}`,
-		shadow: '0px 10px 15px rgba(0,0,0,0.23)',
-		hover: '#f5f5f5',
-	},
-
 };
 
 const home = {
@@ -182,7 +154,7 @@ const navigation = {
 const card = {
 	background: {
 		dark: black2,
-		light: white2,
+		light: white,
 	},
 
 	shadow: {
@@ -219,11 +191,11 @@ const lightTheme = {
 	},
 
 	fonts: {
-		title: fonts.header.light,
+		header: fonts.header.light,
+		subHeader: fonts.subHeader.light,
+		miniHeader: fonts.miniHeader.light,
 		paragraph: fonts.paragraph.light,
 		whiteFont: fonts.paragraph.light,
-		inverse: fonts.inverse.light,
-		subHeader: fonts.subHeader.light,
 	},
 
 	layout: {
@@ -236,21 +208,23 @@ const lightTheme = {
 	},
 
 	button: {
-		background: button.background.light,
-		font: button.font.light,
-		hover: button.hover.light,
-		shadow: button.shadow.light,
-		dark: {
-			font: button.darkButton.font,
-			background: button.darkButton.background,
-			shadow: button.darkButton.shadow,
-			hover: button.darkButton.hover,
+		dark:{
+			background: button.background.light, //Button is dark in lightmode
+			font: button.font.light,
+			shadow: button.shadow.light,
+			hover: button.hover.light,
 		},
-		light: {
-			font: button.lightButton.font,
-			background: button.lightButton.background,
-			shadow: button.lightButton.shadow,
-			hover: button.lightButton.hover,
+		light:{
+			background: button.background.dark, //Button is light in darkmode
+			font: button.font.dark,
+			shadow: button.shadow.dark,
+			hover: button.hover.dark,
+		},
+		darkmode:{
+			background: button.background.light,
+			font: button.font.light,
+			shadow: button.shadow.light,
+			hover: button.hover.light,
 		},
 	},
 
@@ -270,12 +244,11 @@ const darkTheme = {
 	},
 
 	fonts: {
-		title: fonts.header.dark,
 		header: fonts.header.dark,
+		subHeader: fonts.subHeader.dark,
+		miniHeader: fonts.miniHeader.dark,
 		paragraph: fonts.paragraph.dark,
 		whiteFont: fonts.paragraph.dark,
-		inverse: fonts.inverse.dark,
-		subHeader: fonts.subHeader.dark,
 	},
 
 	layout: {
@@ -299,21 +272,23 @@ const darkTheme = {
 	},
 
 	button: {
-		background: button.background.dark,
-		font: button.font.dark,
-		hover: button.hover.dark,
-		shadow: button.shadow.dark,
-		dark: {
-			font: button.darkButton.font,
-			background: button.darkButton.background,
-			shadow: button.darkButton.shadow,
-			hover: button.darkButton.hover,
+		dark:{
+			background: button.background.light, //Button is dark in lightmode
+			font: button.font.light,
+			shadow: button.font.light,
+			hover: button.hover.light,
 		},
-		light: {
-			font: button.lightButton.font,
-			background: button.lightButton.background,
-			shadow: button.lightButton.shadow,
-			hover: button.lightButton.hover,
+		light:{
+			background: button.background.dark, //Button is light in darkmode
+			font: button.font.dark,
+			shadow: button.font.dark,
+			hover: button.hover.dark,
+		},
+		darkmode:{
+			background: button.background.dark,
+			font: button.font.dark,
+			shadow: button.font.dark,
+			hover: button.hover.dark,
 		},
 	},
 

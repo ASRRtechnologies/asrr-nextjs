@@ -23,7 +23,7 @@ function PortfolioCard(props: PortfolioCardProps) {
             </AspectRatio>
             <div className={cardStyles.border}/>
 
-            <h1 className="h5">{client}</h1>
+            <h1 className="h5 not-bold">{client}</h1>
 
             <h2 className="h4">{title}</h2>
 

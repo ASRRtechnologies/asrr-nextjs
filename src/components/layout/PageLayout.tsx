@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import styled from "@emotion/styled";
+import Contact from "@/contact/Preview";
 
 type LayoutDarkModeProps = {
     theme: {
@@ -19,12 +20,13 @@ interface LayoutProps {
     title: string,
     content: string,
     className?: string,
+    noPreview?: boolean
 
     [x: string]: any,
 }
 
 function PageLayout(props: LayoutProps) {
-    const {children, title, text, className} = props;
+    const {children, title, text, className, noPreview} = props;
 
     return (
         <StyledLayout className={className} {...props}>
@@ -34,8 +36,13 @@ function PageLayout(props: LayoutProps) {
                 <title>{title}</title>
             </Head>
             {children}
+            {!noPreview && <Contact/>}
         </StyledLayout>
     );
 }
+
+PageLayout.defaultProps = {
+    noPreview: false
+};
 
 export default PageLayout;

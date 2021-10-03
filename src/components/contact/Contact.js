@@ -1,14 +1,13 @@
 import React, {useState} from 'react'
 import Section from '../modules/shared/section/Section'
-import Title from '../utillities/titles/Title'
 import Input from '@/utillities/text/Input'
 import Map from '@/contact/Map'
 import useI18n from '../../hooks/use-i18n'
 import styled from '@emotion/styled'
-import FormButton from '@/buttons/FormButton'
 import {useSnackbar} from 'notistack'
 import {useTheme} from '../../context/theme/ThemeContext'
 import {postCall} from "../../functions/helper-functions";
+import Button from "@/modules/shared/buttons/Button";
 
 const Wrapper = styled(Section)`
   background: ${props => props.theme.layout};
@@ -36,15 +35,15 @@ function Contact({data}) {
             recipient: recipient,
         };
 
-        const [data, error ] = await postCall({
-            url:"https://form-configurator-api.azurewebsites.net/api/v1/mail/send",
+        const [data, error] = await postCall({
+            url: "https://form-configurator-api.azurewebsites.net/api/v1/mail/send",
             data: emailObject,
             headers: {
                 'Content-Type': 'application/json',
             },
         })
 
-        if(error){
+        if (error) {
             enqueueSnackbar(i18n.t('user_notifications.contact.error.title'), {error: true});
             return;
         }
@@ -85,7 +84,7 @@ function Contact({data}) {
                             <Input onChange={(e) => handleChange(e.target)} value={email.body}
                                    name="body" last textArea={true} type="text"
                                    required={true} placeholder="Bericht*"/>
-                            <FormButton title="buttons.submit"/>
+                            <Button buttonType={{title: "Verzenden", mode: "darkmode"}}/>
                         </form>
                     </div>
 

@@ -27,7 +27,7 @@ function BlogCard(props: BlogCardProps) {
             </AspectRatio>
             <div className={cardStyles.border}/>
 
-            <h1 className="h5 not-bold">{date}</h1>
+            <h1 className="h6 not-bold">{date}</h1>
 
             <h2 className="h4">{title}</h2>
 

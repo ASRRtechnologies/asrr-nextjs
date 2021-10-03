@@ -11,7 +11,8 @@ import css from "@emotion/css";
 // }`;
 
 interface TechStack {
-    darkmode: boolean
+    darkmode: boolean,
+    key: number | string
 }
 
 const Tech = styled("img")<TechStack>`
@@ -39,7 +40,7 @@ function TechStack({content, basePath}) {
         <Section>
             <Title title={content.title} text={content.text}/>
             <Grid breakpoints={breakPoints} fade={true}>
-                {content.technologies.map((data, i) => <Tech darkmode={darkmode} src={`${basePath}/${data.image}`}
+                {content.technologies.map((data, i) => <Tech key={data.image + i} darkmode={darkmode} src={`${basePath}/${data.image}`}
                                                              alt={data.alt}/>)}
             </Grid>
         </Section>

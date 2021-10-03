@@ -1,31 +1,30 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import Link from './Link'
-import { useTheme } from '../../context/theme/ThemeContext'
+import {useTheme} from '../../context/theme/ThemeContext'
 import styled from '@emotion/styled'
 import Logo from './Logo'
 import useI18n from '../../hooks/use-i18n'
 import Sun from '@/icons/Sun'
 import Moon from '@/icons/Moon'
-import { useHeader } from '../../context/navigation/HeaderContext'
+import {useHeader} from '../../context/navigation/HeaderContext'
 import NL from '../../locales/nl'
-import NavigationButton from '../buttons/NavigationButton'
-import NavigationButtonWhite from "@/buttons/NavigationButtonWhite";
+import Button from "@/modules/shared/buttons/Button";
 
 const Wrapper = styled('nav')`
-        background: ${props => props.visible ? props.theme.navigation.background : "transparent"};
-        backdrop-filter: ${props => props.visible ? "blur(12px)" : "transparent"};
-        box-shadow: ${props => props.visible ? props.theme.navigation.shadow : 'none'};
-        
-        svg{
-            path{
-              fill: ${props => props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font};
-            }
-        }
-    
-         p, a {
-          color: ${props => props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font};
-        }
-        
+  background: ${props => props.visible ? props.theme.navigation.background : "transparent"};
+  backdrop-filter: ${props => props.visible ? "blur(12px)" : "transparent"};
+  box-shadow: ${props => props.visible ? props.theme.navigation.shadow : 'none'};
+
+  svg {
+    path {
+      fill: ${props => props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font};
+    }
+  }
+
+  p, a {
+    color: ${props => props.visible ? props.theme.navigation.font : props.headerWhite ? "white" : props.theme.navigation.font};
+  }
+
 `;
 
 function Header({className}) {
@@ -60,18 +59,30 @@ function Header({className}) {
     const renderButton = () => {
 
         //If page needs header in white and at top of page (not visible) render white
-        if(header.headerWhite && !visible) {
-            return  <NavigationButtonWhite title="Contact" to="/contact"/>
+        if (header.headerWhite && !visible) {
+            return <Button buttonType={{
+                buttonType: "navigation",
+                href: "contact",
+                title: "Contact",
+                mode: "light"
+            }}/>
         }
 
-        if(header.headerWhite && visible) {
-            return <NavigationButton title="Contact" to="/contact"/>
+        if (header.headerWhite && visible) {
+            return <Button buttonType={{
+                buttonType: "navigation",
+                href: "contact",
+                title: "Contact",
+                mode: "darkmode"
+            }}/>
         }
 
-        else {
-            return <NavigationButton title="Contact" to="/contact"/>
-        }
-
+        return <Button buttonType={{
+            buttonType: "navigation",
+            href: "contact",
+            title: "Contact",
+            mode: "darkmode"
+        }}/>
     }
 
     useEffect(() => {
@@ -81,7 +92,7 @@ function Header({className}) {
 
     useEffect(() => {
         setSelectedLanguage()
-    },[]);
+    }, []);
 
 
     return (

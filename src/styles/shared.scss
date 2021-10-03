@@ -15,6 +15,11 @@
     padding-top: $xs-padding-vertical;
     padding-bottom: $xs-padding-vertical;
   }
+
+  .global-margin-vertical {
+    margin-top: $xs-padding-vertical;
+    margin-bottom: $xs-padding-vertical;
+  }
 }
 
 @include media(">=400px", "<lg") {
@@ -27,6 +32,11 @@
     padding-top: $sm-padding-vertical;
     padding-bottom: $sm-padding-vertical;
   }
+
+  .global-margin-vertical {
+    margin-top: $sm-padding-vertical;
+    margin-bottom: $sm-padding-vertical;
+  }
 }
 
 @include media(">=lg") {
@@ -38,6 +48,11 @@
   .global-padding-vertical {
     padding-top: $lg-padding-vertical;
     padding-bottom: $lg-padding-vertical;
+  }
+
+  .global-margin-vertical {
+    margin-top: $lg-padding-vertical;
+    margin-bottom: $lg-padding-vertical;
   }
 }
 

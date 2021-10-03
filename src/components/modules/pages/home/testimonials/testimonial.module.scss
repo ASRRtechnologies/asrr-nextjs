@@ -92,8 +92,10 @@
       max-width: 400px;
       min-width: 200px;
       display: block;
+
       img{
         object-fit: cover;
+        border-radius: $border-radius;
       }
     }
 
