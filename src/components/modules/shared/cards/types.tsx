@@ -1,6 +1,8 @@
 export type CardDarkModeProps = {
-    card?: {
-        background: string
-        shadow: string
+    theme: {
+        card?: {
+            background: string
+            shadow: string
+        }
     }
 }

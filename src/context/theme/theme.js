@@ -1,14 +1,15 @@
 const white = '#fff';
-const white2 = '#fbfbfb';
-const white3 = '#fdf1f1ff';
+const white2 = '#eae5e5';
+const white3 = '#d4cfcf';
+const white4 = '#cbc4c4';
 
 const black = '#0a0a0a';
 const black2 = '#131313';
 const black3 = '#1a1a1a';
 const black4 = '#272727';
 
-const dropShadowDark = ' 0 8px 10px rgba(1, 1, 1, 0.35)';
-const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)';
+const dropShadowDark = `4px 12px 15px rgba(12, 12, 12, 0.35)`;
+const dropShadowLight = '0 12px 15px rgba(0,0,0,0.23)';
 
 //Font colors
 const headerDark = white;
@@ -46,8 +47,8 @@ const fonts = {
 
 const layout = {
 	background: {
-		dark: 'linear-gradient(120deg, #131313 45%, #0a0a0a 100%);',
-		light: 'linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);',
+		dark: `linear-gradient(90deg, ${black} 45%, ${black3} 100%);`,
+		light: `linear-gradient(90deg, ${white} 25%, ${white} 100%);`,
 	},
 };
 
@@ -179,10 +180,9 @@ const navigation = {
 };
 
 const card = {
-
 	background: {
-		dark: '#1a1a1a',
-		light: '#ffffff',
+		dark: black2,
+		light: white2,
 	},
 
 	shadow: {
@@ -226,7 +226,9 @@ const lightTheme = {
 		subHeader: fonts.subHeader.light,
 	},
 
-	layout: layout.background.light,
+	layout: {
+		background: layout.background.light,
+	},
 
 	card: {
 		background: card.background.light,
@@ -276,7 +278,9 @@ const darkTheme = {
 		subHeader: fonts.subHeader.dark,
 	},
 
-	layout: layout.background.dark,
+	layout: {
+		background: layout.background.dark,
+	},
 
 	home: {
 		services: home.services.background.dark,

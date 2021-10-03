@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import PortfolioPage from '@/modules/portfolio/Portfolio';
+import PortfolioPage from '@/modules/pages/portfolio/Portfolio';
 import Contact from "@/contact/Preview";
 import {useHeader} from "../context/navigation/HeaderContext";
 import matter from 'gray-matter'

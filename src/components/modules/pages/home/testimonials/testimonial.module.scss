@@ -1,0 +1,122 @@
+@import "../../../../../styles/globals";
+
+@include media(">=xs") {
+  .testimonials {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-row-gap: 100px;
+    justify-items: center;
+    max-width: $max-width;
+  }
+
+  //Wrapper element for Fade animation container
+  .cardFadeWrapper{
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+
+    .cardImage {
+      display: none;
+    }
+  }
+
+  .cardContent{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .credentials {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .avatar {
+      width: 100%;
+      min-width: 50px;
+      max-width: 60px;
+      margin-right: 20px;
+
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .H4 {
+      margin-bottom: 10px;
+    }
+
+    .H5{
+      margin-bottom: 0;
+    }
+
+  }
+
+  .story{
+    p{
+      max-width: 500px;
+    }
+  }
+
+}
+
+@include media(">=650px") {
+  .testimonials{
+    grid-row-gap: 150px;
+
+    // Every even cardFadeWrapper target its child fade class
+    .cardFadeWrapper:nth-of-type(even){
+      .card{
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  .card {
+    flex-direction: row;
+    max-width: $max-width;
+    justify-content: space-between;
+    gap: 30px;
+
+    .cardImage {
+      width: 100%;
+      max-width: 400px;
+      min-width: 200px;
+      display: block;
+      img{
+        object-fit: cover;
+      }
+    }
+
+    .cardContent{
+      justify-content: space-between;
+      flex-direction: column-reverse;
+      min-width: 300px;
+    }
+
+    .credentials{
+      margin-bottom: 0;
+    }
+
+  }
+}
+
+
+@include media(">sm", "<=lg") {
+
+  .credentials{
+    .avatar{
+      max-width: 70px;
+    }
+  }
+}
+

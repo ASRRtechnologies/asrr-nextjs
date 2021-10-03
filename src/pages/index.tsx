@@ -1,32 +1,27 @@
 import React, {useEffect} from 'react'
-import Clients from '../components/clients/Clients'
+import Clients from '@/modules/pages/home/clients/Clients'
 import Contact from '../components/contact/Preview'
-import Values from '@/values/Values';
-import PreviewServices from '@/services/ServicePreview'
+import Values from '@/modules/pages/home/values/Values';
+import PreviewServices from '@/modules/pages/services/ServicePreview'
 import {useHeader} from '../context/navigation/HeaderContext'
-import TechStack from '@/techstack/TechStack'
+import TechStack from '@/modules/pages/home/techstack/TechStack'
 import matter from 'gray-matter'
-import Testimonials from '@/testimonials/Testimonials'
+import Testimonials from '@/modules/pages/home/testimonials/Testimonials'
 import {getAllArticles, getAllCases, getAllNews, getAllServices, getAllTutorials} from '../lib/api'
 import PageLayout from '@/layout/PageLayout'
-import PortfolioPreview from "@/modules/portfolio/PortfolioPreview";
+import PortfolioPreview from '@/modules/pages/portfolio/PortfolioPreview';
 import Banner from "@/modules/shared/landing/Banner";
-import BlogPreview from "@/modules/blog/BlogPreview";
+import BlogPreview from "@/modules/pages/blog/BlogPreview";
 // @ts-ignore
 import image from "#/landing/landing-asrr-min.jpg";
-
-const SEOProps = {
-    title: "ASRR - Home",
-    content: "ASRR Levert innovatieve software oplossingen met een specialisme in de bouw"
-}
 
 function Index({homepage, allServices, allCases, allBlogs,}) {
     const basePath = `/content/home/nl`;
     const header = useHeader();
 
-    // const SEOProps = {
-    //     ...homepage.meta_tags
-    // }
+    const SEOProps = {
+        ...homepage.meta_tags
+    }
 
     useEffect(() => {
         // @ts-ignore

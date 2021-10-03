@@ -84,6 +84,7 @@ collections:
             fields:
               - {label: "Client Name", name: "name", widget: "string"}
               - {label: "Client Position", name: "position", widget: "string"}
+              - { label: "Client Story Title", name: "title", widget: "string" }
               - {label: "Client Story", name: "story", widget: "text"}
               - {label: "Client Company", name: "company", widget: "string"}
               - {label: "Client Avatar", name: "avatar", widget: "image"}

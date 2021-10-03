@@ -5,14 +5,13 @@ import PageLayout from '@/layout/PageLayout'
 import {getAllArticles} from '../../../lib/api'
 import matter from 'gray-matter'
 import {useHeader} from "../../../context/navigation/HeaderContext";
-import Article from "@/modules/article/Article";
+import Article from "@/modules/shared/article/Article";
 
 function Page({content}) {
     const basePath = `/content/blog/posts/${content.type}/nl/${content.title}`;
 
     const SEOProps = {
-        title: `ASRR - Artikel - ${content.title}`,
-        content: `${content.landing.title}`
+        ...content.meta_tags
     }
 
     const header = useHeader();

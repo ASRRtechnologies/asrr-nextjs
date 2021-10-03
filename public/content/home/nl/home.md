@@ -43,17 +43,19 @@ testimonials:
   cards:
     - name: Jorgen Haring
       position: Architect Partner
+      title: Innovatie bij Form
       story: '"ASRR denkt pro-actief mee in de projecten en komt met goede en
         efficiënte oplossingen. Ze begeleiden het project vakkundig, zijn heel
         flexibel en kunnen snel schakelen indien nodig. Het is erg plezierig om
         met ze samen te werken!"'
       company: FORMHET Architecture & Engineering B.V.
-      image: jorgenharing_kleur-min.jpg
-      alt: Foto Jorgen Haring
-      avatar: form-foto.png
-      avatar_alt: form kantoor
+      avatar: jorgenharing_kleur-min.jpg
+      avatar_alt: Foto Jorgen Haring
+      image: form-foto.png
+      alt: form kantoor
     - name: Ravi Badal
       position: Manager Operations
+      title: Een nieuw Web-applicatie
       story: '"Het is een erg jong, professioneel en dynamisch bedrijf met een flat
         management structuur, dit zorgt voor een vlotte communicatie zowel
         intern als met de klanten, waardoor er veel aandacht en zorg is voor de
@@ -61,21 +63,22 @@ testimonials:
         als je op zoek bent naar een professionele partner die met je meedenkt
         en waar de klant op nummer 1 staat!"'
       company: ESP Consultancy B.V.
-      alt: Ravi Badal Photo
-      image: ben-sweet-2lowvivhz-e-unsplash-min.jpg
-      avatar: 1543325645873.jpeg
-      avatar_alt: WTC rotterdam
-    - image: robby-makka-min.jpg
-      alt: Robby Makka Photo
+      avatar_alt: Ravi Badal Photo
+      avatar: ben-sweet-2lowvivhz-e-unsplash-min.jpg
+      image: 1543325645873.jpeg
+      alt: WTC rotterdam
+    - avatar: robby-makka-min.jpg
+      avatar_alt: Robby Makka Photo
       name: Robby Makka
       position: Manager
+      title: Een nieuwe supercomputer
       story: '"ASRR recently did some work for me. They set up a remote workplace, and
         they did it very well! I am very satisfied and would say that his
         service is top notch! I would certainly recommend him to others.
         Knowledge and experience!"'
       company: Ministerie van Financiën c.q. Belastingdienst/Douane Nederland
-      avatar: dsc07233.jpg
-      avatar_alt: PC
+      image: dsc07233.jpg
+      alt: PC
 quality:
   title: Waarom ASRR?
   text: Wij focussen ons op de volgende kernwaardes
