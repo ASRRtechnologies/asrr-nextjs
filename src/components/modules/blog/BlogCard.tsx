@@ -3,11 +3,11 @@ import cardStyles from "@/modules/shared/cards/generalCard.module.scss";
 import AspectRatio from "@/library/aspect-ratio/AspectRatio";
 // @ts-ignore
 import placeholder from "#/team/placeholder.png";
-import Link from "next/link";
 import {BlogCardProps} from "@/modules/blog/types";
 import {useRouter} from "next/router";
 import LinkText from "../shared/text/LinkText";
 import Tag from "../shared/text/Tag";
+import DarkModeCard from "@/modules/shared/cards/DarkModeCard";
 
 function BlogCard(props: BlogCardProps) {
     const projectName = props.title;
@@ -21,7 +21,7 @@ function BlogCard(props: BlogCardProps) {
     const goToBlog = () => router.push(`/blog/${props.type}/${projectName}`);
 
     return (
-        <div className={cardStyles.card} onClick={goToBlog}>
+        <DarkModeCard className={cardStyles.card} onClick={goToBlog}>
             <AspectRatio x={4} y={3}>
                 <img src={image ? `${props.basePath}/${image}` : placeholder} alt={alt}/>
             </AspectRatio>
@@ -33,13 +33,14 @@ function BlogCard(props: BlogCardProps) {
 
             <div className={cardStyles.text}>
                 <p>{text}</p>
-                <LinkText href={`/blog/${props.type}/${projectName}`} customLink={false} classes="bold lees-meer" title={null}/>
+                <LinkText href={`/blog/${props.type}/${projectName}`} customLink={false} classes="bold lees-meer"
+                          title={null}/>
             </div>
 
             <div className={cardStyles.tags}>
                 {tags?.map((tag) => <Tag href={`/blog`} customLink={false} className="h6" title={tag}/>)}
             </div>
-        </div>
+        </DarkModeCard>
     );
 }
 

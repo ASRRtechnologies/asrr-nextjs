@@ -1,26 +1,24 @@
-//Font colors
-const headerDark = '#ffffff';
-const headerLight = '#1a1a1a';
-const paragraphLight = '#41474E';
-const paragraphDark = '#ededed';
-const subHeaderDark = '#e9e9e9';
-const subHeaderLight = '#41474E';
-
-const dropShadowDark = ' 0 8px 10px rgba(1, 1, 1, 0.35)';
-const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)';
-
 const white = '#fff';
 const white2 = '#fbfbfb';
+const white3 = '#fdf1f1ff';
 
 const black = '#0a0a0a';
 const black2 = '#131313';
 const black3 = '#1a1a1a';
+const black4 = '#272727';
 
-const hoverLinkDark = 'linear-gradient(to right, #ff6961, #ff6961 50%, #ffffff 50%)';
-const hoverLinkLight = 'linear-gradient(to right, #ff6961, #ff6961 50%, #1a1a1a 50%)';
+const dropShadowDark = ' 0 8px 10px rgba(1, 1, 1, 0.35)';
+const dropShadowLight = '0 10px 15px rgba(0,0,0,0.23)';
 
-const borderColorDark = '2px solid #f0f0f0';
-const borderColorLight = '2px solid #ababab';
+//Font colors
+const headerDark = white;
+const subHeaderDark = white2;
+const paragraphDark = white3;
+
+const headerLight = black2;
+const subHeaderLight = black3;
+const paragraphLight = '#41474E';
+
 
 const fonts = {
 
@@ -39,11 +37,6 @@ const fonts = {
 		dark: subHeaderDark,
 	},
 
-	link: {
-		light: hoverLinkLight,
-		dark: hoverLinkDark,
-	},
-
 	inverse: {
 		light: headerDark,
 		dark: headerLight,
@@ -56,20 +49,6 @@ const layout = {
 		dark: 'linear-gradient(120deg, #131313 45%, #0a0a0a 100%);',
 		light: 'linear-gradient(120deg, #FBFBFB 45%, #efedec 100%);',
 	},
-};
-
-const landing = {
-	background: {
-		dark: black,
-		// light: "linear-gradient(120deg, #eeeff1 45%, #e9e9e9 100%);",
-		light: 'linear-gradient(120deg, #fff 45%, #fff 100%);',
-	},
-
-	listItem: {
-		dark: borderColorDark,
-		light: borderColorLight,
-	},
-
 };
 
 const button = {
@@ -170,29 +149,6 @@ const home = {
 
 };
 
-const portfolio = {
-	landing: {
-		dark: black3,
-		light: white,
-	},
-
-	process: {
-		dark: black2,
-		light: white2,
-	},
-
-	showcase: {
-		dark: black3,
-		light: white,
-	},
-
-	otherCases: {
-		dark: black2,
-		light: white2,
-	},
-
-};
-
 const navigation = {
 
 	background: {
@@ -222,7 +178,7 @@ const navigation = {
 
 };
 
-const cards = {
+const card = {
 
 	background: {
 		dark: '#1a1a1a',
@@ -233,34 +189,16 @@ const cards = {
 		dark: dropShadowDark,
 		light: dropShadowLight,
 	},
-
-	border: {
-		dark: borderColorDark,
-		light: borderColorLight,
-	},
-
 };
 
 const alert = {
 	background: {
-		dark: cards.background.dark,
-		light: cards.background.light,
+		dark: card.background.dark,
+		light: card.background.light,
 	},
 };
 
-const utilities = {
-
-	border:{
-		background:{
-			light:"#d7d7d7",
-			dark:"#eee",
-		}
-	}
-
-};
-
 const lightTheme = {
-
 	home: {
 		services: home.services.background.light,
 		techstack: home.techstack.background.light,
@@ -286,27 +224,13 @@ const lightTheme = {
 		whiteFont: fonts.paragraph.light,
 		inverse: fonts.inverse.light,
 		subHeader: fonts.subHeader.light,
-		link: fonts.link.light,
-	},
-
-	landing: {
-		background: landing.background.light,
-		listItem: landing.listItem.light,
 	},
 
 	layout: layout.background.light,
 
-	portfolio: {
-		landing: portfolio.landing.light,
-		process: portfolio.process.light,
-		showcase: portfolio.showcase.light,
-		otherCases: portfolio.otherCases.light,
-	},
-
 	card: {
-		background: cards.background.light,
-		shadow: cards.shadow.light,
-		border: cards.border.light,
+		background: card.background.light,
+		shadow: card.shadow.light,
 	},
 
 	button: {
@@ -332,16 +256,9 @@ const lightTheme = {
 		background: alert.background.light,
 	},
 
-	utilities:{
-		border:{
-			background:utilities.border.background.light
-		}
-	}
-
 };
 
 const darkTheme = {
-
 	navigation: {
 		background: navigation.background.dark,
 		backgroundMobile: navigation.backgroundMobile.dark,
@@ -357,12 +274,6 @@ const darkTheme = {
 		whiteFont: fonts.paragraph.dark,
 		inverse: fonts.inverse.dark,
 		subHeader: fonts.subHeader.dark,
-		link: fonts.link.dark,
-	},
-
-	landing: {
-		background: landing.background.dark,
-		listItem: landing.listItem.light,
 	},
 
 	layout: layout.background.dark,
@@ -378,18 +289,9 @@ const darkTheme = {
 		blog: home.blog.background.dark,
 	},
 
-	portfolio: {
-		landing: portfolio.landing.dark,
-		process: portfolio.process.dark,
-		showcase: portfolio.showcase.dark,
-		otherCases: portfolio.otherCases.dark,
-
-	},
-
 	card: {
-		background: cards.background.dark,
-		shadow: cards.shadow.dark,
-		border: cards.border.dark,
+		background: card.background.dark,
+		shadow: card.shadow.dark,
 	},
 
 	button: {
@@ -414,12 +316,6 @@ const darkTheme = {
 	alert: {
 		background: alert.background.light,
 	},
-
-	utilities:{
-		border:{
-			background:utilities.border.background.light
-		}
-	}
 
 };
 
