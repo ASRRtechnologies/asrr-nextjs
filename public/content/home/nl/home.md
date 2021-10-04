@@ -4,7 +4,7 @@ title: home
 meta_tags:
   title: Home
   text: Specialist in innovatieve software en hardware op maat, business analytics
-    and insights en IT teams as a service.
+    and insights en IT Teams as a Service.
 landing:
   title: Innovative Software Development
   text: Uw partner voor het bouwen van next-level software - snel, betrouwbaar en
@@ -41,44 +41,45 @@ testimonials:
   title: Onze Klantervaringen
   text: Een tevreden klant staat voorop in ons proces
   cards:
-    - name: Jorgen Haring
+    - avatar_alt: Foto Jorgen Haring
       position: Architect Partner
-      title: Innovatie bij Form
+      alt: form kantoor
+      name: Jorgen Haring
       story: '"ASRR denkt pro-actief mee in de projecten en komt met goede en
         efficiënte oplossingen. Ze begeleiden het project vakkundig, zijn heel
         flexibel en kunnen snel schakelen indien nodig. Het is erg plezierig om
         met ze samen te werken!"'
-      company: FORMHET Architecture & Engineering B.V.
+      title: Innovatie bij Form
       avatar: jorgenharing_kleur-min.jpg
-      avatar_alt: Foto Jorgen Haring
       image: form-foto.png
-      alt: form kantoor
-    - name: Ravi Badal
+      company: FORMHET Architecture & Engineering B.V.
+    - avatar_alt: Ravi Badal Photo
       position: Manager Operations
-      title: Een nieuw Web-applicatie
+      alt: WTC rotterdam
+      name: Ravi Badal
       story: '"Het is een erg jong, professioneel en dynamisch bedrijf met een flat
         management structuur, dit zorgt voor een vlotte communicatie zowel
         intern als met de klanten, waardoor er veel aandacht en zorg is voor de
         klant. Ik heb erg goede ervaringen opgedaan met ASRR. Een echte aanrader
         als je op zoek bent naar een professionele partner die met je meedenkt
         en waar de klant op nummer 1 staat!"'
-      company: ESP Consultancy B.V.
-      avatar_alt: Ravi Badal Photo
+      title: Een nieuwe Web-applicatie
       avatar: ben-sweet-2lowvivhz-e-unsplash-min.jpg
       image: 1543325645873.jpeg
-      alt: WTC rotterdam
-    - avatar: robby-makka-min.jpg
-      avatar_alt: Robby Makka Photo
-      name: Robby Makka
-      position: Manager
-      title: Een nieuwe supercomputer
-      story: '"ASRR recently did some work for me. They set up a remote workplace, and
-        they did it very well! I am very satisfied and would say that his
-        service is top notch! I would certainly recommend him to others.
-        Knowledge and experience!"'
-      company: Ministerie van Financiën c.q. Belastingdienst/Douane Nederland
-      image: dsc07233.jpg
+      company: ESP Consultancy B.V.
+    - avatar_alt: Robby Makka Photo
+      position: "Founder "
       alt: PC
+      name: Joyce Boonstra-Verhaert
+      story: ASRR heeft in korte tijd voor ons een dedicated podcast app gecreëerd. We
+        zijn erg tevreden met het eindresultaat. Het fijne aan ASRR is dat ze
+        niet puur uitvoeren wat je van ze vraagt, maar ze denken proactief mee
+        en doen suggesties ter verbetering van een product. De lijnen zijn kort
+        en de uitvoering gaat zeer vlot. Ik kan ze aan iedereen aanbevelen.
+      title: Een snelle, simpele podcast app
+      avatar: mr1808_ovdw-180926-joyce-boonstra-verhaert-bijzonderstrafrecht-advocatuur.jpeg
+      image: bijzonderstrafrecht-bestanddelen-podcast.png
+      company: BijzonderStrafrecht
 quality:
   title: Waarom ASRR?
   text: Wij focussen ons op de volgende kernwaardes
