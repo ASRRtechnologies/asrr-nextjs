@@ -8,6 +8,7 @@ meta_tags:
 landing:
   title: Diensten
   image: dsc07233-1-min.jpg
+  alt: Server
 section:
   title: All onze diensten in een
   image: automation-square.jpg
