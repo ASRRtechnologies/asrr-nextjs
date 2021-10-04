@@ -68,7 +68,7 @@ testimonials:
       image: 1543325645873.jpeg
       company: ESP Consultancy B.V.
     - avatar_alt: Robby Makka Photo
-      position: "Founder "
+      position: Owner/Senior Legal Advisor
       alt: PC
       name: Joyce Boonstra-Verhaert
       story: ASRR heeft in korte tijd voor ons een dedicated podcast app gecreëerd. We
