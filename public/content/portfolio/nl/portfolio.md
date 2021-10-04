@@ -10,4 +10,5 @@ landing:
   title: Wat we hebben gedaan
   text: Bekijk onze projecten
   image: dsc07311-1-min.jpg
+  alt: "Re aan het programmeren "
 ---
