@@ -4,6 +4,7 @@ import Title from '@/utillities/titles/Title'
 import styled from '@emotion/styled'
 import Grid from "@/modules/shared/grid/Grid";
 import ServiceCards from "./ServiceCards";
+import LinkText from "@/modules/shared/text/LinkText";
 
 const Wrapper = styled(Section)`
 
@@ -30,6 +31,7 @@ function ServicePreview({content, allServices}) {
                     )
                 })}
             </Grid>
+            <LinkText goToSection={true} customLink={false} href="/diensten" title="Ga naar diensten"/>
         </Wrapper>
     )
 }
