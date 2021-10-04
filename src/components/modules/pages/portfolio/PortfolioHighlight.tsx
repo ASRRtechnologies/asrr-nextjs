@@ -12,7 +12,10 @@ import DarkModeCard from "@/modules/shared/cards/DarkModeCard";
 import styled from "@emotion/styled";
 
  const StyledPortfolioHighlight = styled(`div`)<StyledPortfolioHighlightProps>`
-  box-shadow: ${props => props.theme.card.shadow};
+ @media screen and (min-width: 1024px){
+   box-shadow: ${props => props.theme.card.shadow};
+ }
+   
 `
 
 function PortfolioHighlight(props: PortfolioHighlightProps) {

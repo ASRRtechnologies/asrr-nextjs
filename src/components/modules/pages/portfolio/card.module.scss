@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-radius: $border-radius;
+    box-shadow: none;
 
     .highlightCard{
       position: relative;
@@ -40,6 +40,8 @@
     align-items: flex-end;
     width: 80vw;
     min-height: 70vh;
+    border-radius: $border-radius;
+    box-shadow: inherit;
 
     &.highlightLeft{
       align-items: start;

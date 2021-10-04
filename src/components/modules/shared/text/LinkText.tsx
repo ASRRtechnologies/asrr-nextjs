@@ -8,13 +8,14 @@ interface LinkTextProps {
     customLink: boolean,
     title: string,
     classes?: string,
+    goToSection?: boolean
 
     [x: string]: any,
 }
 
 function LinkText(props: LinkTextProps) {
     const darkmode = useTheme().dark;
-    const {title = "", customLink, classes, href} = props;
+    const {title = "", customLink, classes, goToSection, href} = props;
 
     return (
         <>
@@ -22,14 +23,21 @@ function LinkText(props: LinkTextProps) {
                 <a className={`${classes} ${darkmode ? styledLink.linkDark : styledLink.linkLight}`} {...props}>{title || "Lees Meer"}</a>
                 :
                 <Link href={href}>
-                    <a className={`${classes} ${darkmode ? styledLink.linkDark : styledLink.linkLight}`} {...props}>{title || "Lees Meer"}</a>
+                    <a className={`
+                        ${classes} 
+                        ${darkmode ? styledLink.linkDark : styledLink.linkLight}
+                        ${goToSection && `h4 ${styledLink.goToSection}`}    
+                    `}
+                       {...props}>{title || "Lees Meer"}
+                    </a>
                 </Link>}
         </>
     );
 }
 
 LinkText.defaultProps = {
-    title: null
+    title: null,
+    goToSection: false
 };
 
 export default LinkText;

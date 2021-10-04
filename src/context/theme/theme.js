@@ -46,11 +46,6 @@ const button = {
 		light: black,
 	},
 
-	hover: {
-		dark: '#d7d7d7',
-		light: '#4a4a4a',
-	},
-
 	font: {
 		dark: black,
 		light: white,
@@ -212,19 +207,16 @@ const lightTheme = {
 			background: button.background.light, //Button is dark in lightmode
 			font: button.font.light,
 			shadow: button.shadow.light,
-			hover: button.hover.light,
 		},
 		light:{
 			background: button.background.dark, //Button is light in darkmode
 			font: button.font.dark,
 			shadow: button.shadow.dark,
-			hover: button.hover.dark,
 		},
 		darkmode:{
 			background: button.background.light,
 			font: button.font.light,
 			shadow: button.shadow.light,
-			hover: button.hover.light,
 		},
 	},
 
@@ -275,20 +267,17 @@ const darkTheme = {
 		dark:{
 			background: button.background.light, //Button is dark in lightmode
 			font: button.font.light,
-			shadow: button.font.light,
-			hover: button.hover.light,
+			shadow: button.shadow.light,
 		},
 		light:{
 			background: button.background.dark, //Button is light in darkmode
 			font: button.font.dark,
-			shadow: button.font.dark,
-			hover: button.hover.dark,
+			shadow: button.shadow.dark,
 		},
 		darkmode:{
 			background: button.background.dark,
 			font: button.font.dark,
-			shadow: button.font.dark,
-			hover: button.hover.dark,
+			shadow: button.shadow.dark,
 		},
 	},
 

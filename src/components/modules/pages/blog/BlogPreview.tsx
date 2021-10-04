@@ -5,6 +5,7 @@ import {Fade} from "react-awesome-reveal";
 import {animationsSettings} from "../../../../data/animations-settings";
 import Title from "../../../utillities/titles/Title";
 import MaxTwoColGrid from "@/modules/shared/layout/MaxTwoColGrid";
+import LinkText from "@/modules/shared/text/LinkText";
 
 function Blog(props) {
     const {allBlogs, content} = props;
@@ -25,6 +26,8 @@ function Blog(props) {
                     )
                 })}
             </MaxTwoColGrid>
+
+            <LinkText goToSection={true} customLink={false} href="/blog" title="Bekijk all onze blogposts"/>
         </Section>
     );
 }

@@ -3,6 +3,7 @@ import PortfolioHighlight from "@/modules/pages/portfolio/PortfolioHighlight";
 import styled from "@emotion/styled";
 import Title from '@/utillities/titles/Title';
 import Section from '../../shared/section/Section';
+import LinkText from "@/modules/shared/text/LinkText";
 
 const Wrapper = styled(`div`)`
   display: flex;
@@ -41,6 +42,8 @@ function PortfolioPreview(props) {
                     )
                 })}
             </Wrapper>
+
+            <LinkText goToSection={true} customLink={false} href="/portfolio" title="Bekijk alle projecten"/>
         </Section>
     );
 }
