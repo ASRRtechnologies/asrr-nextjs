@@ -7,6 +7,6 @@ meta_tags:
 landing:
   title: Blog
   text: Hier vind je het laatste nieuws over ASRR, code tutorials en tips
-  image: 2-min.jpg
+  image: dsc07405-min-min.jpg
   alt: Uittekenen proces
 ---
