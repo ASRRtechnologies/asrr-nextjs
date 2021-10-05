@@ -45,10 +45,10 @@ testimonials:
       position: Architect Partner
       alt: form kantoor
       name: Jorgen Haring
-      story: '"ASRR denkt pro-actief mee in de projecten en komt met goede en
-        efficiënte oplossingen. Ze begeleiden het project vakkundig, zijn heel
-        flexibel en kunnen snel schakelen indien nodig. Het is erg plezierig om
-        met ze samen te werken!"'
+      story: ASRR denkt pro-actief mee in de projecten en komt met goede en efficiënte
+        oplossingen. Ze begeleiden het project vakkundig, zijn heel flexibel en
+        kunnen snel schakelen indien nodig. Het is erg plezierig om met ze samen
+        te werken!
       title: Innovatie bij Form
       avatar: jorgenharing_kleur-min.jpg
       image: form-foto.png
@@ -57,12 +57,12 @@ testimonials:
       position: Manager Operations
       alt: WTC rotterdam
       name: Ravi Badal
-      story: '"Het is een erg jong, professioneel en dynamisch bedrijf met een flat
+      story: Het is een erg jong, professioneel en dynamisch bedrijf met een flat
         management structuur, dit zorgt voor een vlotte communicatie zowel
         intern als met de klanten, waardoor er veel aandacht en zorg is voor de
         klant. Ik heb erg goede ervaringen opgedaan met ASRR. Een echte aanrader
         als je op zoek bent naar een professionele partner die met je meedenkt
-        en waar de klant op nummer 1 staat!"'
+        en waar de klant op nummer 1 staat!
       title: Een nieuwe Web-applicatie
       avatar: ben-sweet-2lowvivhz-e-unsplash-min.jpg
       image: 1543325645873.jpeg
