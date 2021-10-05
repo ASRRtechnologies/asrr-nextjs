@@ -9,6 +9,6 @@ meta_tags:
 landing:
   title: Wat we hebben gedaan
   text: Bekijk onze projecten
-  image: 3-min.jpg
+  image: luke-chesser-jkutrj4vk00-unsplash.jpg
   alt: "Re aan het programmeren "
 ---
