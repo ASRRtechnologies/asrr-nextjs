@@ -20,7 +20,7 @@ function Blog(props) {
                     //Set delay for each uneven card. TODO make cards on mobile just same speed
                     const animationSettings = animationsSettings({}, i)
                     return (
-                        <Fade direction="up" {...animationSettings}>
+                        <Fade style={{width:"100%"}} direction="up" {...animationSettings}>
                             <BlogCard {...post} basePath={basePath(post.type, post.title)}/>
                         </Fade>
                     )

@@ -11,7 +11,7 @@ const SEOProps = {
 }
 
 function Contact({content}) {
-    const {title, text} = content.page_title;
+    const basePath = `/content/contact/nl`;
     const header = useHeader();
     useEffect(() => {
         // @ts-ignore
@@ -20,7 +20,7 @@ function Contact({content}) {
 
     return (
         <PageLayout noPreview={true} className="darkmodeContainer" {...SEOProps}>
-            <Banner title={title} text={text}/>
+            <Banner {...content.landing} image={`${basePath}/${content.landing.image}`}/>
             <ContactPage data={content}/>
         </PageLayout>
     )

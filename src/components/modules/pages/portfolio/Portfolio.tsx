@@ -7,7 +7,7 @@ import MaxTwoColGrid from "@/modules/shared/layout/MaxTwoColGrid";
 
 function Portfolio(props) {
     const {allCases} = props;
-    const basePath = (projectName: string) => `/content/written/case/nl/${projectName}`; //nl will be language variable
+    const basePath = (projectName: string) => `/content/portfolio/cases/nl/${projectName}`; //nl will be language variable
 
     return (
         <Section>
@@ -17,7 +17,7 @@ function Portfolio(props) {
                     const animationSettings = animationsSettings({}, i)
 
                     return (
-                        <Fade {...animationSettings}>
+                        <Fade style={{width:"100%"}} {...animationSettings}>
                             <PortfolioCard {...project} basePath={basePath(project.title)} {...animationSettings}/>
                         </Fade>
                     )

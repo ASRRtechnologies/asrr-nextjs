@@ -13,6 +13,7 @@ const SEOProps = {
 
 //Todo add allNews to AllArticles array
 function Blog({content, allBlogs}) {
+    const basePath = `/content/blog/nl`;
     const {landing} = content;
     const header = useHeader();
 
@@ -23,7 +24,7 @@ function Blog({content, allBlogs}) {
 
     return (
         <PageLayout className="darkmodeContainer" {...SEOProps}>
-            <Banner {...landing}/>
+            <Banner {...content.landing} image={`${basePath}/${content.landing.image}`}/>
             <BlogPage data={content} allBlogs={allBlogs}/>
         </PageLayout>
     )

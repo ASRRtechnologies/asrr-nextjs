@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 import ServicePage from '@/modules/pages/services/Services'
-import Contact from '@/contact/Preview'
 import {useHeader} from '../context/navigation/HeaderContext'
 import matter from 'gray-matter'
 import PageLayout from '@/layout/PageLayout'
@@ -8,6 +7,8 @@ import {getAllServices} from 'src/lib/api'
 import Banner from "../components/modules/shared/landing/Banner";
 
 function Diensten({content, allServices}) {
+    const basePath = `/content/services/nl`;
+
     const SEOProps = {
         ...content.meta_tags
     }
@@ -20,7 +21,7 @@ function Diensten({content, allServices}) {
 
     return (
         <PageLayout className="darkmodeContainer" {...SEOProps}>
-            <Banner {...content.landing}/>
+            <Banner {...content.landing} image={`${basePath}/${content.landing.image}`}/>
             <ServicePage content={content} allServices={allServices}/>
         </PageLayout>
     )

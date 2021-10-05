@@ -13,7 +13,7 @@ function Team({content}) {
 
     return (
         <PageLayout className="darkmodeContainer" {...SEOProps}>
-            <Banner {...content.landing}/>
+            <Banner {...content.landing} image={`${basePath}/${content.landing.image}`}/>
             <TeamPage team={content} basePath={basePath}/>
         </PageLayout>
     );

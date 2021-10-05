@@ -11,6 +11,7 @@ function Portfolio({content, allCases}) {
         ...content.meta_tags
     }
     const header = useHeader();
+    const basePath = '/content/portfolio/nl';
 
     useEffect(() => {
         // @ts-ignore
@@ -19,7 +20,7 @@ function Portfolio({content, allCases}) {
 
     return (
         <PageLayout className="darkmodeContainer" {...SEOProps}>
-            <Banner {...content.landing}/>
+            <Banner {...content.landing} image={`${basePath}/${content.landing.image}`}/>
             <PortfolioPage content={content} allCases={allCases}/>
         </PageLayout>
     )
