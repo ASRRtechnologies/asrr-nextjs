@@ -7,7 +7,7 @@ meta_tags:
     dashboards en biedt IT Teams as a service aan. "
 landing:
   title: Diensten
-  image: dsc07233-1-min.jpg
+  image: 1-min.jpg
   alt: Server
 section:
   title: All onze diensten in een
