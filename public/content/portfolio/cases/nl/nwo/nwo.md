@@ -28,7 +28,7 @@ section:
       # De bouw van een veilige, krachtige Remote Desktop Server
 
 
-      *Nord-West Oelleitung (NWO), een dochteronderneming van BP en Shell, is een bedrijf dat is opgezet om de eerste long-range onverwerkte olielijn in Europa op te zetten.*
+      Nord-West Oelleitung (NWO), een dochteronderneming van BP en Shell, is een bedrijf dat is opgezet om de eerste long-range onverwerkte olielijn in Europa op te zetten. NWO had behoefte aan een online omgeving waarin interne en externe teams konden samenwerken. 
 
 
       &nbsp;
@@ -37,20 +37,26 @@ section:
       ## Het probleem
 
 
-      Er bestond binnen NWO een extern team dat een deelproject toegewezen had gekregen. Het probleem was dat dit externe team geen toegang kon krijgen tot het bestaande systeem waar de hele werkmethode op was ingericht. Verder bleek dat het bestaande systeem niet toereikend was voor het gespecialiseerde team.
-
-
-      NWO, een dochteronderneming van BP en Shell, is een bedrijf dat op is gezet om de eerste long-range onverwerkte olielijn in Europa op te zetten. Er bestond hierbinnen een speciaal team, het Enlargement Project Blog dat extern ingeschakeld was. Dit was een gespecialiseerd team dat alleen voor een speciaal deelproject opgetuigd was. Aangezien het deels externe medewerkers waren, kon er door security policies geen toegang verschaft worden voor het bestaande systeem, waar bestanden, programmatuur en werkplekken op ingericht waren. Verder bleek dat het bestaande systeem niet toereikend was voor het gespecialiseerde team.
-
-      &nbsp;
-
-      Er moest een plek komen waarin documenten, communicatie en rekenkracht beschikbaar zou zijn voor iedere werknemer. Deze werkplek moest remote beschikbaar zijn en ten minste beveiligd zijn met twee factor authenticatie.
+      Binnen NWO moeten verschillende teams met elkaar samenwerken, dit gaat om zowel interne teams als externe teams. Het probleem was dat externe teams geen toegang konden krijgen tot het bestaande systeem waar de hele werkmethode op was ingericht en dat het bestaande systeem niet toereikend was voor gespecialiseerde teams.\
 
 
       &nbsp;
 
 
-      De klant gaf aan dat de omgeving geschikt moest zijn voor ongeveer vijftig werknemers. Verder moest de omgeving genoeg rekenkracht hebben om zware CAD en modelleer programma’s te runnen. Ook moesten de bestanden veilig opgeslagen worden met een back-up strategie.
+      Er was gebrek aan een gezamenlijke plek waar werknemers documenten delen, communiceren en rekenkracht beschikbaar hebben. Deze gezamenlijke plek moest toegankelijk zijn voor alle werknemers op alle plekken en goed beveiligd zijn (met op zijn minste een twee factor authenticatie). 
+
+
+      &nbsp;
+
+
+      NWO gaf aan een aantal eisen te hebben. De online omgeving moest:
+
+
+      * geschikt zijn voor ongeveer vijftig werknemers.
+
+      * genoeg rekenkracht hebben om zware CAD en modelleer programma's te draaien.
+
+      * op een veilige manier bestanden kunnen opslaan met behulp van een back-up strategie.
     media:
       images:
         - image: nwo-1-2.png
