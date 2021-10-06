@@ -53,13 +53,19 @@ section:
       ### **1 - Database**
 
 
-      De eerste stap is structuur aanbrengen in de Excel sheet. Een goede structuur biedt houvast, overzicht en duidelijkheid. Wij hebben een code geschreven die het bestaande Excel bestand kon uitlezen en op de gewenste manier kon structureren. 
+      De eerste stap is structuur aanbrengen in de Excel sheet. Een goede structuur biedt overzicht en duidelijkheid. Wij hebben een code geschreven die het bestaande Excel bestand kon uitlezen en op de gewenste manier kon structureren en opslaan in een database. 
 
 
       ### **2 - API**
 
 
-      Vervolgens zijn de verschillende acties die invloed kunnen hebben op de data losgetrokken en is geanalyseerd op welk moment deze van toepassing zijn. Zo zijn er API calls geschreven waarmee een fabrieksmedewerker een specifiek onderdeel kan aftekenen, door eerst te kiezen voor de terminal nummer, dan het tanknummer en vervolgens een gefilterde lijst ziet van de beschikbare onderdelen met daarbij hun statussen. Er wordt bijgehouden welke medewerker iets aanpast, zodat altijd kan worden herleid waar acties vandaan komen. De medewerker kan dan voor een onderdeel aangeven waar deze zich bevindt in het proces. Vervolgens houdt de applicatie de status van alle elementen bij en laat zien wanneer een onderdeel, een hele tank of zelfs een hele terminal gereed is. Hierdoor is een hoop werk weggehaald bij de administratieve medewerkers en kan de verantwoordelijkheid liggen bij de mensen die over de onderdelen gaan.
+      We hebben geanalyseerd welke acties invloed hebben op de data, zoals het aftekenen van een verzending. Vervolgens zijn er API calls geschreven om deze acties te ondersteunen. 
+
+
+      Een voorbeeld is dat een fabrieksmedewerker een verzending kan aftekenen. De medewerker krijgt door het terminal nummer en tank nummer in te vullen in de applicatie een gefilterde lijst te zien van ladingen en hun statussen. De medewerker kan vervolgens de juiste lading uitkiezen, deze aftekenen en aangeven waar deze zich in het proces bevind. Verder wordt er bijgehouden welke medewerker iets aanpast, hierdoor wordt er herleid welke medewerker verantwoordelijk is voor bepaalde acties. 
+
+
+      De applicatie houdt ook de status van alle elementen bij en laat zien wanneer een onderdeel, een hele tank of zelfs een hele terminal gereed is. Dit bespaard de administratieve medewerkers een hoop werk en de verantwoordelijkheid ligt bij de fabrieksmedewerkers
 
 
       ### **3 - Insights**
