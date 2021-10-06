@@ -66,7 +66,9 @@ section:
       ## De Oplossing
 
 
-      ASRR heeft een server op maat samengesteld. Deze server bevatte een 64 Core Multithreaded Processor, 128 Gigabyte aan DDR4 RAM en een aantal SSD’s/HDD’s in RAID configuratie. Op deze server moest ook een Remote Desktop Licensing/Managing systeem komen, dat met een van onze C# applicaties om de paar minuten per gebruiker het lokale wachtwoord op de server aanpaste.
+      ASRR heeft een server samengesteld die aansluit op de behoefte van NWO. Deze server bevatte een 64 Core Multithreaded Processor, 128 Gigabyte aan DDR4 RAM en een aantal SSD’s/HDD’s in RAID configuratie. Deze onderdelen zorgen voor een .....\
+
+      Op deze server moest ook een Remote Desktop Licensing/Managing systeem komen, dat met een van onze C# applicaties om de paar minuten per gebruiker het lokale wachtwoord op de server aanpaste.
 
 
       &nbsp;
