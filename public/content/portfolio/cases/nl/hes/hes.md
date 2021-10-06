@@ -33,16 +33,13 @@ section:
       # Van Excel sheet naar Enterprise Applicatie
 
 
-      *HES is een van de grootste multinationals in Europa op het gebied van transporteren, verwerken, mengen en opslaan van bulk. Structuur en overzicht in je data is daarbij van groot belang.*
-
-
-      &nbsp;
+      HES is een van de grootste multinationals in Europa op het gebied van transporteren, verwerken, mengen en opslaan van bulk. HES had behoefte aan inzicht en overzicht in zijn data.
 
 
       ## Het probleem
 
 
-      Voor HES zijn Hartel tank terminal in de Maasvlakte van Rotterdam werd de planning, status en specificaties van verschillende staalonderdelen bijgehouden in een Excel sheet van meer dan 30.000 regels. Het is wellicht al in te beelden hoe foutgevoelig en onoverzichtelijk dit het proces maakt. Om dit in te perken hebben wij een drievoudige oplossing bedacht.
+      Voor HES (Hartel tank terminal in de Maasvlakte van Rotterdam) werd de planning, status en specificaties van verschillende staalonderdelen bijgehouden in een Excel sheet van meer dan 30.000 regels. Alle werknemers hadden toegang tot dit Excel bestand. De grootte van het Excel bestand in combinatie met de hoeveelheid mensen die toegang hadden tot dit bestand, maakte het proces onoverzichtelijk en foutgevoelig. Om het proces overzichtelijk en niet foutgevoelig te maken hebben wij een drievoudige oplossing bedacht.
     media:
       images:
         - image: ezgif.com-gif-maker-3-min.jpg
