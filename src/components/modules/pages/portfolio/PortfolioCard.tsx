@@ -29,7 +29,7 @@ function PortfolioCard(props: PortfolioCardProps) {
 
             <div className={cardStyles.text}>
                 <p className="no-margin">{text}</p>
-                <LinkText href={`/portfolio/cases/${projectName}`} customLink={false} classes="bold lees-meer" title={null}/>
+                <LinkText href={`/portfolio/${projectName}`} customLink={false} classes="bold lees-meer" title={null}/>
             </div>
 
             <div className={cardStyles.tags}>
