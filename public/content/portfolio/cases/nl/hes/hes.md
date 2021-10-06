@@ -53,19 +53,13 @@ section:
       ### **1 - Database**
 
 
-      De eerste stap is structuur aanbrengen in de Excel sheet. Een goede structuur biedt houvast, overzicht en duidelijkheid. We hebben een code geschreven die het bestaande Excel bestand kon uitlezen en op de gewenste manier kon structureren. 
-
-
-      &nbsp;
+      De eerste stap is structuur aanbrengen in de Excel sheet. Een goede structuur biedt houvast, overzicht en duidelijkheid. Wij hebben een code geschreven die het bestaande Excel bestand kon uitlezen en op de gewenste manier kon structureren. 
 
 
       ### **2 - API**
 
 
       Vervolgens zijn de verschillende acties die invloed kunnen hebben op de data losgetrokken en is geanalyseerd op welk moment deze van toepassing zijn. Zo zijn er API calls geschreven waarmee een fabrieksmedewerker een specifiek onderdeel kan aftekenen, door eerst te kiezen voor de terminal nummer, dan het tanknummer en vervolgens een gefilterde lijst ziet van de beschikbare onderdelen met daarbij hun statussen. Er wordt bijgehouden welke medewerker iets aanpast, zodat altijd kan worden herleid waar acties vandaan komen. De medewerker kan dan voor een onderdeel aangeven waar deze zich bevindt in het proces. Vervolgens houdt de applicatie de status van alle elementen bij en laat zien wanneer een onderdeel, een hele tank of zelfs een hele terminal gereed is. Hierdoor is een hoop werk weggehaald bij de administratieve medewerkers en kan de verantwoordelijkheid liggen bij de mensen die over de onderdelen gaan.
-
-
-      &nbsp;
 
 
       ### **3 - Insights**
