@@ -72,30 +72,10 @@ section:
       De server is geleverd met een door ons ontwikkelde applicatie die de veiligheid van de server waarborgt, doordat het om de paar minuten het wachtwoord van de gebruikers veranderd. Dit maakt het extreem moeilijk om de server te hacken.
 
 
-      De applicatie heeft een versleutelde verbinding met onze Cloud,
+      De gebruiker logt eerst in door met een gebruikersnaam en wachtwoord op de webapplicatie. Vervolgens wordt er een SMS-bericht naar de gebruiker zijn telefoon gestuurd, waarbij de gebruiker moet bevestigen dat hij wil inloggen. Dit is een factor twee authenticatie, omdat de gebruiker op twee manieren moet bevestigen dat hijzelf wil inloggen. Als alle informatie correct is, verwijst de webapplicatie door naar een webpagina, waar de gebruiker verbinding kan maken met de server door een knop aan te klikken. Het tijdelijke wachtwoord (aangezien het om de paar minuten wordt veranderd) wordt hierdoor gekopieerd naar het klemboord en de gebruiker kan hiermee inloggen. 
 
 
-      inloggen op webapplicate
-
-
-      eerst username en password
-
-
-      2FA op telefoon
-
-
-      pagina verwijst door naar een pagina waar je met knop verbinding kan maken met server
-
-
-      het wachtwoord wordt gekopieerd naar het klembord. 
-
-
-      Deze C# applicatie stond in verbinding met onze Cloud omgeving d.m.v. een versleutelde RabbitMQ connectie. De Cloud omgeving had een notie van de gebruikers die mochten inloggen. Het loginsysteem had een twee factor authenticatie waarmee gebruikers een gegenereerd connectie bestand konden downloaden. Door dit bestand konden gebruikers met een muisklik extreem secuur inloggen op een.
-
-
-
-
-      Binnen de omgeving hebben we de volledige Microsoft stack toegepast, met als rode lijn Microsoft Teams. Dit was de hub voor alle bestanden (gekoppeld met het SharePoint systeem), meetings, announcements, planning, etc. We hebben de werknemers een briefing gegeven over het gebruik van Teams, dat toen destijds nog in de kinderschoenen stond. Verder hebben we remote support geleverd via het systeem, zoals IT en Microsoft Office ondersteuningsverzoeken die in het dagelijkse proces naar boven kwamen.
+      Binnen de omgeving hebben we de volledige Microsoft stack toegepast voor de werkzaamheden tussen alle gebruikers (zowel intern als extern). Microsoft Teams stond hierin centraal. Teams maakt het mogelijk om bestanden te delen, meetings te houden, announcements te maken, te plannen etc. Wij hebben alle gebruikers een briefing gegeven over het gebruik van Microsoft Teams, wat toentertijd nog in de kinderschoenen stond. Verder hebben wij waar nodig remote support geleverd via het systeem, zoals IT- en Microsoft Office ondersteuning.
     media:
       images:
         - description: Een screenshot van het login scherm van de webapplicatie.
@@ -105,5 +85,5 @@ section:
       ## De Conclusie
 
 
-      Door deze krachtige server kon een heel extern team dat verspreid was over Nederland en Duitsland samenwerken alsof ze op dezelfde werkplek zaten. Op momenten dat er weinig mensen op de server zaten, zoals in de avonden of weekenden, hadden ze de rekenkracht van een supercomputer tot hun beschikking. Dit is handig voor taken die normaal gesproken lang zouden duren, zoals het van een zwaar programma of modelleren.
+      Door deze krachtige server konden interne en externe teams verspreid over Nederland en Duitsland samenwerken alsof zij op dezelfde werkplek zaten. Op momenten dat er weinig gebruikers gebruik maakte van de server (zoals in de avonden of weekenden) hadden gebruikers de rekenkracht van een supercomputer tot hun beschikking. Dit is handig voor taken die normaal gesproken veel tijd zouden kosten, bijvoorbeeld het runnen van een zwaar CAD programma of modelleren.
 ---
