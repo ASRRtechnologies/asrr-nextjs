@@ -71,7 +71,7 @@ section:
       images:
         - description: Een screenshot van het login scherm van de webapplicatie.
           alt: login screen web application nwo
-          image: ontwerp-zonder-titel-1-.png
+          image: ezgif.com-gif-maker-2-min.jpg
   - content: >-
       ## De Conclusie
 
