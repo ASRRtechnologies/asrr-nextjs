@@ -39,7 +39,7 @@ function PortfolioHighlight(props: PortfolioHighlightProps) {
 
                             {/*Extra fragment because fade messes with link styling*/}
                             <>
-                                <LinkText href={`/portfolio/cases/${projectName}`} customLink={false}
+                                <LinkText href={`/portfolio/${projectName}`} customLink={false}
                                           classes="bold lees-meer" title={null}/>
                             </>
                         </Fade>

@@ -2,9 +2,9 @@
 
 import React, {useEffect} from 'react'
 import PageLayout from '@/layout/PageLayout'
-import {getAllCases} from '../../../lib/api'
+import {getAllCases} from '../../lib/api'
 import matter from 'gray-matter'
-import {useHeader} from "../../../context/navigation/HeaderContext";
+import {useHeader} from "../../context/navigation/HeaderContext";
 import Article from "@/modules/shared/article/Article";
 
 function Page({content}) {

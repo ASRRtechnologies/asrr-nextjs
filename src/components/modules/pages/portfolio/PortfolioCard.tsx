@@ -14,7 +14,7 @@ function PortfolioCard(props: PortfolioCardProps) {
     const {image, alt, title, text} = props.card;
     const {client, date, author, tags} = props.info;
     const router = useRouter();
-    const goToCase = () => router.push(`/portfolio/cases/${projectName}`);
+    const goToCase = () => router.push(`/portfolio/${projectName}`);
 
     return (
         <div className={cardStyles.card} onClick={goToCase}>
