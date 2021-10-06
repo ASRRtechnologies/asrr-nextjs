@@ -66,18 +66,33 @@ section:
       ## De Oplossing
 
 
-      ASRR heeft een server samengesteld die aansluit op de behoefte van NWO. Deze server bevatte een 64 Core Multithreaded Processor, 128 Gigabyte aan DDR4 RAM en een aantal SSD’s/HDD’s in RAID configuratie. Deze onderdelen zorgen voor een .....\
-
-      Op deze server moest ook een Remote Desktop Licensing/Managing systeem komen, dat met een van onze C# applicaties om de paar minuten per gebruiker het lokale wachtwoord op de server aanpaste.
+      ASRR heeft een server samengesteld die aansluit op de behoefte van NWO. Deze server bevatte een 64 Core Multithreaded Processor, 128 Gigabyte aan DDR4 RAM en een aantal SSD’s/HDD’s in RAID configuratie. Deze onderdelen zorgen voor een krachtige en snelle server met een grote opslagcapaciteit.
 
 
-      &nbsp;
+      De server is geleverd met een door ons ontwikkelde applicatie die de veiligheid van de server waarborgt, doordat het om de paar minuten het wachtwoord van de gebruikers veranderd. Dit maakt het extreem moeilijk om de server te hacken.
+
+
+      De applicatie heeft een versleutelde verbinding met onze Cloud,
+
+
+      inloggen op webapplicate
+
+
+      eerst username en password
+
+
+      2FA op telefoon
+
+
+      pagina verwijst door naar een pagina waar je met knop verbinding kan maken met server
+
+
+      het wachtwoord wordt gekopieerd naar het klembord. 
 
 
       Deze C# applicatie stond in verbinding met onze Cloud omgeving d.m.v. een versleutelde RabbitMQ connectie. De Cloud omgeving had een notie van de gebruikers die mochten inloggen. Het loginsysteem had een twee factor authenticatie waarmee gebruikers een gegenereerd connectie bestand konden downloaden. Door dit bestand konden gebruikers met een muisklik extreem secuur inloggen op een.
 
 
-      &nbsp;
 
 
       Binnen de omgeving hebben we de volledige Microsoft stack toegepast, met als rode lijn Microsoft Teams. Dit was de hub voor alle bestanden (gekoppeld met het SharePoint systeem), meetings, announcements, planning, etc. We hebben de werknemers een briefing gegeven over het gebruik van Teams, dat toen destijds nog in de kinderschoenen stond. Verder hebben we remote support geleverd via het systeem, zoals IT en Microsoft Office ondersteuningsverzoeken die in het dagelijkse proces naar boven kwamen.
