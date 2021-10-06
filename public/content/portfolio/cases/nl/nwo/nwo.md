@@ -5,7 +5,7 @@ type: Case
 meta_tags:
   title: NWO
   text: Een veilige online omgeving waarin documenten, communicatie en rekenkracht
-    beschikbaar is voor iedere werknemer.
+    beschikbaar is voor iedere werknemer, zowel intern als extern.
 info:
   date: January 9, 2021 9:58 PM
   client: Nord-West Oelleitung
@@ -16,8 +16,9 @@ card:
   title: De bouw van een veilige, krachtige Remote Desktop Server
   image: computer-desktop-windows-square.jpg
   alt: Login screen Remote Desktop Webapplication
-  text: Een veilige omgeving waarin documenten, communicatie en rekenkracht
-    beschikbaar is voor iedere werknemer.
+  text: NWO is een groot olie bedrijf dat behoefte had aan een veilige online
+    omgeving waarin documenten, communicatie en rekenkracht beschikbaar was voor
+    iedere werknemer, zowel intern als extern.
 landing:
   title: Een super computer beschikbaar vanaf overal ter wereld
   image: ezgif.com-gif-maker-1-min.jpg
