@@ -18,11 +18,12 @@ card:
   title: Van Excel sheet naar Enterprise Applicatie
   image: case-image.png
   alt: Dashboard overview of application
-  text: "Van raw business data naar business insights: Een dashboard dat inzicht
+  text: >
+    Van raw business data naar business insights: Een dashboard dat inzicht
     geeft in verschillende lagen van jouw processen. Binnen het dashboard kunnen
-    verschillende rollen toegewezen worden, waardoor bijvoorbeeld een logistiek
-    werknemer of een manager gelijk inzicht krijgt in wat belangrijk is bij hun
-    rol."
+    verschillende rollen toegewezen worden, waardoor een logistiek medewerker
+    inzicht krijgt in de status van een verzending en een inspecteur in de
+    kwaliteit van een lading. 
 landing:
   title: Procesversnelling bij een petro-gigant
   image: ezgif.com-gif-maker-3-min.jpg
