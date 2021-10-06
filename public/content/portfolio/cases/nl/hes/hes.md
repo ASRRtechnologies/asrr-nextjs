@@ -4,7 +4,9 @@ title: hes
 type: Case
 meta_tags:
   title: Case - HES International
-  text: Case - HES International
+  text: >
+    Van raw business data naar business insights: Een dashboard dat inzicht
+    geeft in verschillende lagen van jouw processen. 
 info:
   date: September 26, 2021 10:32 PM
   client: HES International
