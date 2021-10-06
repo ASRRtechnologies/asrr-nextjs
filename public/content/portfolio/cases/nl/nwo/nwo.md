@@ -31,22 +31,13 @@ section:
       Nord-West Oelleitung (NWO), een dochteronderneming van BP en Shell, is een bedrijf dat is opgezet om de eerste long-range onverwerkte olielijn in Europa op te zetten. NWO had behoefte aan een online omgeving waarin interne en externe teams konden samenwerken. 
 
 
-      &nbsp;
-
-
       ## Het probleem
 
 
-      Binnen NWO moeten verschillende teams met elkaar samenwerken, dit gaat om zowel interne teams als externe teams. Het probleem was dat externe teams geen toegang konden krijgen tot het bestaande systeem waar de hele werkmethode op was ingericht en dat het bestaande systeem niet toereikend was voor gespecialiseerde teams.\
-
-
-      &nbsp;
+      Binnen NWO moeten verschillende teams met elkaar samenwerken, dit gaat om zowel interne teams als externe teams. Het probleem was dat externe teams geen toegang konden krijgen tot het bestaande systeem waar de hele werkmethode op was ingericht en dat het bestaande systeem niet toereikend was voor gespecialiseerde teams.
 
 
       Er was gebrek aan een gezamenlijke plek waar werknemers documenten delen, communiceren en rekenkracht beschikbaar hebben. Deze gezamenlijke plek moest toegankelijk zijn voor alle werknemers op alle plekken en goed beveiligd zijn (met op zijn minste een twee factor authenticatie). 
-
-
-      &nbsp;
 
 
       NWO gaf aan een aantal eisen te hebben. De online omgeving moest:
