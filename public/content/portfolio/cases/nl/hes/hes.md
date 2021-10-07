@@ -68,21 +68,21 @@ section:
       Andere voorbeelden van acties die wij ondersteunen met onze API calls zijn:
 
 
-      * Aangeven wanneer een onderdeel, een tank of zelfs een terminal gereed is.
+      * aangeven wanneer een onderdeel, een tank of zelfs een terminal gereed is;
 
-      * Aangeven waar een lading zich in het proces bevind.
+      * aangeven waar een lading zich bevind in het proces;
 
-      * Bijhouden welke medewerker informatie aanpast.
+      * bijhouden welke medewerker informatie aanpast.
 
 
       Voordelen hiervan zijn:
 
 
-      * Minder werk voor administratieve medewerkers
+      * minder werk voor administratieve medewerkers;
 
-      * Meer inzicht in de tijdlijn van het proces
+      * meer inzicht in de tijdlijn van het proces;
 
-      * Er valt te herleiden welk medewerker verantwoordelijk is voor bepaalde acties.
+      * er valt te herleiden welk medewerker verantwoordelijk is voor bepaalde acties.
 
 
       ### **3. Insights**
