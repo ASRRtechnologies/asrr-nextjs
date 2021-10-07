@@ -39,7 +39,7 @@ section:
       ## Het probleem
 
 
-      Voor HES (Hartel tank terminal in de Maasvlakte van Rotterdam) werd de planning, status en specificaties van verschillende staalonderdelen bijgehouden in een Excel sheet van meer dan 30.000 regels. Alle werknemers hadden toegang tot dit Excel bestand. De grootte van het Excel bestand in combinatie met de hoeveelheid mensen die toegang hadden tot dit bestand, maakte het proces onoverzichtelijk en foutgevoelig. Om het proces overzichtelijk en niet foutgevoelig te maken hebben wij een drievoudige oplossing bedacht.
+      Voor HES zijn Hartel tank terminal in de Maasvlakte van Rotterdam werd de planning, status en specificaties van verschillende staalonderdelen bijgehouden in een Excel sheet van meer dan 30.000 regels. Alle werknemers hadden toegang tot dit Excel bestand. De grootte van het Excel bestand in combinatie met de hoeveelheid mensen die toegang hadden tot dit bestand, maakte het proces onoverzichtelijk en foutgevoelig. Om het proces overzichtelijk en niet foutgevoelig te maken hebben wij een drievoudige oplossing bedacht.
     media:
       images:
         - image: ezgif.com-gif-maker-3-min.jpg
