@@ -1,12 +1,11 @@
 import React, {useEffect} from 'react';
 import Title from "@/utillities/titles/Title";
-import PageLayout from "@/layout/PageLayout";
+import PageLayout from "@/modules/shared/layout/PageLayout";
 // @ts-ignore
 import error from "#/404/error.jpg";
 // @ts-ignore
 import error2 from "#/404/error.webp";
 import Section from "@/modules/shared/section/Section";
-import {useHeader} from "../context/navigation/HeaderContext";
 import Link from 'next/link'
 import {useTheme} from "../context/theme/ThemeContext";
 import {Fade} from 'react-awesome-reveal'
@@ -20,11 +19,6 @@ function Error() {
     }
 
     const darkmode = useTheme().dark;
-    const header = useHeader();
-    useEffect(() => {
-        // @ts-ignore
-        header.setHeaderWhite(true)
-    }, []);
 
     return (
         <PageLayout {...SEOProps}>

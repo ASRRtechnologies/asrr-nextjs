@@ -13,6 +13,15 @@ export enum BasePaths {
     TEAM = "public/content/team",
     CONTACT = "public/content/contact",
 }
+export const navigationPaths = [
+    {name:"Home", path:"/"},
+    {name:"Portfolio", path:"/portfolio"},
+    {name:"Diensten", path:"/diensten"},
+    {name:"Over", path:"/over"},
+    {name:"Team", path:"/team"},
+    {name:"Blog", path:"/blog"}
+]
+
 //
 // export const BasePaths = {
 //     home: "public/content/home",

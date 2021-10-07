@@ -1,0 +1,87 @@
+@import "src/styles/globals";
+@include media(">=xs") {
+  .header{
+    display: none;
+  }
+}
+
+@include media(">=lg") {
+  .header {
+    @include size(100%, 80px);
+    @include flex(center, center, row);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 900;
+  }
+
+  .logoWrapper{
+    margin: 0;
+    z-index: 9999;
+  }
+
+  .headerWrapper {
+    @include size(100%, 100%);
+    @include flex(space-between, center, row);
+    max-width: $max-width;
+    position: relative;
+  }
+
+  .menu {
+    position: relative;
+    @include flex(center, center, row);
+    width: 100%;
+    overflow: hidden;
+
+    a {
+      @include flex(space-between, center, row);
+      @include size(auto, auto);
+      margin: 0 20px;
+      &.activeLink {
+        color: $primary-color;
+      }
+
+    }
+  }
+
+  //Moon / sun icon
+  .icon {
+    width: 25px;
+    height: 25px;
+    z-index: 10000000;
+    cursor: pointer;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    align-items: center;
+
+  }
+
+  /* The progress container (grey background) */
+  .progressContainer {
+    width: 100vw;
+    height: 2px;
+    position: fixed;
+    top: 76px;
+    left:0;
+    z-index: 1000;
+  }
+
+  /* The progress bar (scroll indicator) */
+  .progressBar {
+    height: 4px;
+    z-index: 100000;
+    background: $primary-color;
+    width: 0%;
+  }
+
+}
+

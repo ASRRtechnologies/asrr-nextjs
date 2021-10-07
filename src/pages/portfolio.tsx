@@ -1,22 +1,15 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import PortfolioPage from '@/modules/pages/portfolio/Portfolio';
-import {useHeader} from "../context/navigation/HeaderContext";
 import matter from 'gray-matter'
 import {getAllCases} from '../lib/api'
-import PageLayout from '@/layout/PageLayout'
+import PageLayout from '@/modules/shared/layout/PageLayout'
 import Banner from "@/modules/shared/landing/Banner";
 
 function Portfolio({content, allCases}) {
     const SEOProps = {
         ...content.meta_tags
     }
-    const header = useHeader();
     const basePath = '/content/portfolio/nl';
-
-    useEffect(() => {
-        // @ts-ignore
-        header.setHeaderWhite(false)
-    }, []);
 
     return (
         <PageLayout className="darkmodeContainer" {...SEOProps}>

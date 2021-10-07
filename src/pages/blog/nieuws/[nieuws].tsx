@@ -1,10 +1,8 @@
 // noinspection DuplicatedCode
-
-import React, {useEffect} from 'react'
-import PageLayout from '@/layout/PageLayout'
+import React from 'react'
+import PageLayout from '@/modules/shared/layout/PageLayout'
 import {getAllArticles, getAllNews} from '../../../lib/api'
 import matter from 'gray-matter'
-import {useHeader} from "../../../context/navigation/HeaderContext";
 import Article from "@/modules/shared/article/Article";
 
 function Page({content}) {
@@ -13,12 +11,6 @@ function Page({content}) {
     const SEOProps = {
         ...content.meta_tags
     }
-
-    const header = useHeader();
-    useEffect(() => {
-        // @ts-ignore
-        header.setHeaderWhite(true)
-    }, []);
 
     return (
         <PageLayout className="darkmodeContainer" {...SEOProps}>

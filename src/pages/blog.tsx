@@ -1,9 +1,8 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import BlogPage from '@/modules/pages/blog/Blog';
-import {useHeader} from "../context/navigation/HeaderContext";
 import matter from 'gray-matter'
 import {getAllArticles, getAllNews, getAllTutorials} from '../lib/api'
-import PageLayout from '@/layout/PageLayout'
+import PageLayout from '@/modules/shared/layout/PageLayout'
 import Banner from "@/modules/shared/landing/Banner";
 
 const SEOProps = {
@@ -14,13 +13,6 @@ const SEOProps = {
 //Todo add allNews to AllArticles array
 function Blog({content, allBlogs}) {
     const basePath = `/content/blog/nl`;
-    const {landing} = content;
-    const header = useHeader();
-
-    useEffect(() => {
-        // @ts-ignore
-        header.setHeaderWhite(false)
-    }, []);
 
     return (
         <PageLayout className="darkmodeContainer" {...SEOProps}>

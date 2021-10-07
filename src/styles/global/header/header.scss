@@ -1,8 +1,3 @@
-$indigo: #536dc8;
-$danube: #6191d1;
-$white: #fff;
-$bermuda: #77D7B9;
-
 .header {
   @include size(100%, 80px);
   @include flex(center, center, row);
@@ -27,20 +22,19 @@ $bermuda: #77D7B9;
 
 //For menu to use as relative parent
 .header-relative {
+  @include flex(center, center, row);
   width: 100vw;
   height: 100%;
-  @include flex(center, center, row);
   position: relative;
   padding: 0 $padding-pc;
  }
 
 .header-wrapper {
   @include size(100%, 100%);
-  max-width: $max-width;
   @include flex(space-between, center, row);
+  max-width: $max-width;
   position: relative;
 }
-
 
 .header-menu {
   position: relative;

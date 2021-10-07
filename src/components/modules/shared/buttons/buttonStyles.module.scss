@@ -2,7 +2,6 @@
 
 @include media(">=xs") {
   .button{
-    border: none;
     text-align: center;
     height: auto;
     box-sizing: content-box;
@@ -13,18 +12,16 @@
     width: auto;
     font-family: inherit;
     white-space: nowrap;
-    transition: 200ms ease-in background-color, box-shadow;
+    transition-property: border, background-color;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
     margin: 0;
+    border: 2px solid transparent;
 
     &:hover{
-      background-color: $primary-color;
-      box-shadow: none;
-      transition: 200ms ease-in background-color, box-shadow;
-
-      p, a{
-        color: white !important;
-        transition: 100ms color ease-in;
-      }
+      transition-property: border, background-color;
+      transition-duration: 200ms;
+      transition-timing-function: ease-in-out;
     }
 
     p, a{

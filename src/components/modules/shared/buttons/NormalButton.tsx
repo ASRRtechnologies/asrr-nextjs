@@ -15,6 +15,20 @@ const StyledButton = styled("div")<NormalButtonProps>`
   ${props => props.mode === "light" && css`
     background-color: ${props.theme.button.light.background};
   `}
+
+  &:hover{
+    ${props => props.mode === "darkmode" && css`
+    border-color: ${props.theme.button.darkmode.border};
+  `}
+
+    ${props => props.mode === "dark" && css`
+    border-color: ${props.theme.button.dark.border};
+  `}
+
+    ${props => props.mode === "light" && css`
+    border-color: ${props.theme.button.light.border};
+  `}
+  }
 `
 
 const NormalButton = (props: NormalButtonProps) => {

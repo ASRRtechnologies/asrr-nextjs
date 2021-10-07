@@ -51,7 +51,7 @@ const getCurrentColumn = (breakpoints: Breakpoint): number => {
 }
 
 function Grid(props: GridProps) {
-    const gridRef = useRef(null);
+    const gridRef =  useRef<HTMLDivElement>(null);
 
     const renderColumns = () => {
         const currentCol = getCurrentColumn(props.breakpoints);
