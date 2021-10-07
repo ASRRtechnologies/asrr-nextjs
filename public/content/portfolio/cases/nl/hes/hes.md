@@ -88,7 +88,7 @@ section:
       ### **3. Insights**
 
 
-      Er kan in een oogopslag niet veel worden gezegd over de status van een project door alleen te kijken naar alle informatie in de database. Om meer inzicht te krijgen in de status van een project heeft een van onze Business Insight Experts een gebruiksvriendelijke PowerBI dashboard opgezet. Voorbeelden van onderdelen van het dashboard zijn:
+      Er kan in een oogopslag niet veel worden gezegd over de status van een project door alleen te kijken naar alle informatie in de database. Om meer inzicht te krijgen in de status van een project heeft een van onze Business Insight Experts een gebruiksvriendelijk PowerBI dashboard opgezet. Voorbeelden van onderdelen van het dashboard zijn:
 
 
       * De vertraging tussen de planning en het daadwerkelijke uitvoeren wordt.
