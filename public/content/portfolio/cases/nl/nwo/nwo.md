@@ -3,7 +3,7 @@ language: nl
 title: nwo
 type: Case
 meta_tags:
-  title: NWO
+  title: Case - NWO
   text: Een veilige online omgeving waarin documenten, communicatie en rekenkracht
     beschikbaar is voor iedere werknemer, zowel intern als extern.
 info:
