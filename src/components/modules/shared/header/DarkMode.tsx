@@ -1,14 +1,42 @@
 import React from 'react';
 import Sun from "@/icons/Sun";
 import Moon from "@/icons/Moon";
-import IconButton from "@/modules/shared/buttons/IconButton";
+import Button from "@/modules/shared/buttons/Button";
 
-function DarkMode({darkmode, toggleDarkmode}) {
+const MoonButton = ({toggleDarkmode, visible}) => {
     return (
-        <div>
-            {darkmode ? <IconButton onClick={toggleDarkmode} mode="darkmode" buttonType="icon" children={<Sun/>}/> :
-                <IconButton mode="darkmode" buttonType="icon" children={<Moon/>} onClick={toggleDarkmode}/>}
-        </div>
+        <Button
+            title={undefined}
+            onClick={toggleDarkmode}
+            mode={visible ? "darkmode" : "light"}
+            children={<Moon/>}
+            buttonType={{
+                buttonType: "icon",
+            }}
+        />
+    )
+}
+
+const SunButton = ({toggleDarkmode, visible}) => {
+    return (
+        <Button
+            title={undefined}
+            onClick={toggleDarkmode}
+            mode={visible ? "darkmode" : "light"}
+            children={<Sun/>}
+            buttonType={{
+                buttonType: "icon",
+            }}
+        />
+    )
+}
+
+function DarkMode({darkmode, toggleDarkmode, visible}) {
+    return (
+        <>
+            {darkmode ? <SunButton visible={visible} toggleDarkmode={toggleDarkmode}/> :
+                <MoonButton visible={visible} toggleDarkmode={toggleDarkmode}/>}
+        </>
     );
 }
 

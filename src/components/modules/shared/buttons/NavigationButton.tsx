@@ -1,10 +1,10 @@
 import React from 'react';
-import {NavigationButtonProps} from "@/modules/shared/buttons/types";
+import {ButtonProps, NavigationButtonProps} from "@/modules/shared/buttons/types";
 import Link from "next/link";
 import styled from '@emotion/styled';
 import css from "@emotion/css";
 
-const StyledButton = styled("div")<NavigationButtonProps>`
+const StyledButton = styled("div")<ButtonProps>`
   ${props => props.mode === "darkmode" && css`
     background-color: ${props.theme.button.darkmode.background};
     color: ${props.theme.button.darkmode.font} !important;
@@ -35,10 +35,10 @@ const StyledButton = styled("div")<NavigationButtonProps>`
   }
 `
 
-const NavigationButton = (props: NavigationButtonProps) => {
+const NavigationButton = (props: ButtonProps) => {
     return (
-        <StyledButton {...props}>
-            <Link href={props.href}>
+        <StyledButton href={undefined} {...props}>
+            <Link href={props.buttonType.href}>
                 <a>{props.title}</a>
             </Link>
         </StyledButton>

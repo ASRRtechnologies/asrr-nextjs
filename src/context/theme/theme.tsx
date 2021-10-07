@@ -1,7 +1,7 @@
-const white = '#fff';
+export const white = '#fff';
 const white2 = '#eae5e5';
 const white3 = '#d4cfcf';
-const white4 = '#ebebeb';
+const white4 = '#e7e4e4';
 
 const black = '#0a0a0a';
 const black2 = '#131313';
@@ -54,8 +54,8 @@ const button = {
         white: fonts.header.dark
     },
     border: {
-        dark: white,
-        light: black,
+        dark: white3,
+        light: black5,
     },
 
     shadow: {
@@ -205,10 +205,10 @@ const lightTheme = {
 
     button: {
         dark: {
-            background: button.background.light, //Button is dark in lightmode
-            font: button.font.light,
-            shadow: button.shadow.light,
-            border: button.border.light
+            background: button.background.dark, //Button is dark in lightmode
+            font: button.font.dark,
+            shadow: button.shadow.dark,
+            border: button.border.dark
         },
         light: {
             background: button.background.light,
@@ -269,16 +269,16 @@ const darkTheme = {
 
     button: {
         dark: {
-            background: button.background.light, //Button is dark in lightmode
-            font: button.font.light,
-            shadow: button.shadow.light,
-            border: button.border.light
-        },
-        light: {
-            background: button.background.dark, //Button is light in darkmode
+            background: button.background.dark, //Button is dark in lightmode
             font: button.font.dark,
             shadow: button.shadow.dark,
             border: button.border.dark
+        },
+        light: {
+            background: button.background.light,
+            font: button.font.light,
+            shadow: button.shadow.light,
+            border: button.border.light
         },
         darkmode: {
             background: button.background.dark,

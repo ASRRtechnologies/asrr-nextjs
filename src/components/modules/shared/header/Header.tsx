@@ -42,7 +42,7 @@ function Header() {
     const themeState = useTheme();
     const toggle = () => themeState.toggle();
     const darkmode = themeState.dark;
-    const progress =  useRef<HTMLDivElement>(null);
+    const progress = useRef<HTMLDivElement>(null);
 
     const headerPosition = () => {
         let currentScrollPos = window.scrollY;
@@ -60,27 +60,10 @@ function Header() {
         progress.current.style.width = scrolled + "%";
     };
 
-    const renderContactButton = () => {
-        if (!visible) {
-            return <Button buttonType={{
-                buttonType: "navigation",
-                href: "contact",
-                title: "Contact",
-                mode: "light"
-            }}/>
-        }
-        return <Button buttonType={{
-            buttonType: "navigation",
-            href: "contact",
-            title: "Contact",
-            mode: "darkmode"
-        }}/>
-    }
-
     useEffect(() => {
         window.addEventListener('scroll', headerPosition);
         window.addEventListener('scroll', headerProgress);
-    });
+    }, []);
 
     return (
         <Wrapper visible={visible} className={`${headerStyles.header} global-padding-horizontal`}>
@@ -93,8 +76,9 @@ function Header() {
                 </div>
 
                 <div className={headerStyles.actions}>
-                    {renderContactButton()}
-                    <DarkMode darkmode={darkmode} toggleDarkmode={toggle}/>
+                    <Button title="Contact" mode={visible ? "darkmode" : "light"}
+                            buttonType={{buttonType: "navigation", href: "/contact"}}/>
+                    <DarkMode visible={visible} darkmode={darkmode} toggleDarkmode={toggle}/>
                 </div>
 
                 <div className={headerStyles.progressContainer}>

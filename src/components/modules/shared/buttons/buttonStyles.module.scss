@@ -6,7 +6,9 @@
     height: auto;
     box-sizing: content-box;
     text-decoration: none;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     border-radius: 5px;
     width: auto;
@@ -35,16 +37,18 @@
     }
   }
 
+  .iconButton{
+    //overrides
+    width: 40px;
+    height: 40px;
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
   //Edge case contact preview
   .contactPreview{
-    &:hover{
-      background-color: $white;
-      box-shadow: none;
-      transition: 200ms ease-in background-color, box-shadow;
 
-      a{
-        color: $black !important;
-      }
-    }
   }
 }

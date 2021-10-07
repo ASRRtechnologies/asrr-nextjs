@@ -1,37 +1,34 @@
-import {NormalButtonProps, SubmitButtonProps} from "@/modules/shared/buttons/types";
+import {ButtonProps} from "@/modules/shared/buttons/types";
 import React from "react";
 import styled from "@emotion/styled";
 import css from "@emotion/css";
 
-const StyledButton = styled("button")<SubmitButtonProps>`
+const StyledButton = styled("button")<ButtonProps>`
   ${props => props.mode === "darkmode" && css`
     background-color: ${props.theme.button.darkmode.background};
   `}
-
   ${props => props.mode === "dark" && css`
     background-color: ${props.theme.button.dark.background};
   `}
-
   ${props => props.mode === "light" && css`
     background-color: ${props.theme.button.light.background};
   `}
-
-  &:hover{
+  &:hover {
     ${props => props.mode === "darkmode" && css`
-    border-color: ${props.theme.button.darkmode.border};
-  `}
+      border-color: ${props.theme.button.darkmode.border};
+    `}
 
     ${props => props.mode === "dark" && css`
-    border-color: ${props.theme.button.dark.border};
-  `}
+      border-color: ${props.theme.button.dark.border};
+    `}
 
     ${props => props.mode === "light" && css`
-    border-color: ${props.theme.button.light.border};
-  `}
+      border-color: ${props.theme.button.light.border};
+    `}
   }
 `
 
-const SubmitButton = (props: SubmitButtonProps) => {
+const SubmitButton = (props: ButtonProps) => {
     return (
         <StyledButton {...props}>
             <p>{props.title}</p>

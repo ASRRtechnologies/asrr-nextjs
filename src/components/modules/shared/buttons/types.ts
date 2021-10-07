@@ -1,4 +1,5 @@
 import {ReactElement} from "react";
+import {Merge} from 'type-fest';
 
 export type ButtonMode = "darkmode" | "dark" | "light";
 
@@ -28,19 +29,19 @@ export interface ButtonThemeProps {
 }
 
 export type NavigationButtonProps = ButtonThemeProps & {
-    buttonType: "navigation", href: string, title: string, mode: ButtonMode, className?: string
+    buttonType: "navigation", href: string,
 }
 
 export type NormalButtonProps = ButtonThemeProps & {
-    buttonType: "normal", href?: never, title: string, mode: ButtonMode, className?: string
+    buttonType: "normal", href?: never,
 }
 
 export type SubmitButtonProps = ButtonThemeProps & {
-    buttonType: "submit", href?: never, title: string, mode: ButtonMode, className?: string
+    buttonType: "submit", href?: never,
 }
 
 export type IconButtonProps = ButtonThemeProps & {
-    buttonType: "icon", href?: never, title?: never, mode: ButtonMode, className?: string, children: ReactElement<SVGElement>, [x: string] : any
+    buttonType: "icon", href?: never, title?: never,
 }
 
 export type ButtonTypeProps = (
@@ -50,6 +51,10 @@ export type ButtonTypeProps = (
     | IconButtonProps
     )
 
-export interface ButtonProps {
+export interface ButtonProps extends ButtonThemeProps{
     buttonType: ButtonTypeProps,
+    className?: string,
+    [x: string] : any,
+    title: string,
+    mode: ButtonMode,
 }

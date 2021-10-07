@@ -1,62 +1,52 @@
-import {IconButtonProps, NormalButtonProps} from "@/modules/shared/buttons/types";
+import {ButtonProps} from "@/modules/shared/buttons/types";
 import React from "react";
 import styled from "@emotion/styled";
 import css from "@emotion/css";
 
-const StyledButton = styled("div")<IconButtonProps>`
-  width:45px;
-  height: 45px;
-  padding: 10px;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid transparent;
-  cursor: pointer;
-
+const StyledButton = styled("div")<ButtonProps>`
   ${props => props.mode === "darkmode" && css`
     background-color: ${props.theme.button.darkmode.background};
-    svg:{
-      path:{
+
+    svg {
+      path {
         fill: ${props.theme.button.darkmode.font}
       }
     }
   `}
-
   ${props => props.mode === "dark" && css`
     background-color: ${props.theme.button.dark.background};
-    svg:{
-      path:{
+
+    svg {
+      path {
         fill: ${props.theme.button.dark.font}
       }
     }
   `}
-
   ${props => props.mode === "light" && css`
     background-color: ${props.theme.button.light.background};
-    svg:{
-      path:{
+
+    svg {
+      path {
         fill: ${props.theme.button.light.font}
       }
     }
   `}
-  
-  &:hover{
+  &:hover {
     ${props => props.mode === "darkmode" && css`
-    border-color: ${props.theme.button.darkmode.border};
-  `}
+      border-color: ${props.theme.button.darkmode.border};
+    `}
 
     ${props => props.mode === "dark" && css`
-    border-color: ${props.theme.button.dark.border};
-  `}
+      border-color: ${props.theme.button.dark.border};
+    `}
 
     ${props => props.mode === "light" && css`
-    border-color: ${props.theme.button.light.border};
-  `}
+      border-color: ${props.theme.button.light.border};
+    `}
   }
 `
 
-const IconButton = (props: IconButtonProps) => {
+const IconButton = (props: ButtonProps) => {
     return (
         <StyledButton {...props}>
             {props.children}
