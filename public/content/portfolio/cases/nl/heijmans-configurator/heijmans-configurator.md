@@ -38,7 +38,7 @@ section:
       ## Probleem
 
 
-      Bij het kopen van een huis geeft de klant aan welke opties hij op zijn huis wil, zoals een dakkapel of een uitbouw. De architect moet voor elke klant een apart ontwerp maken, gebaseerd op de aangegeven opties. Dit proces is onnodig tijdrovend en repetitief, vooral als huizen in grote getallen worden gebouwd. Daarbij zijn klanten minder snel geneigd om een extra optie te kiezen als zij vooraf niet goed kunnen visualiseren hoe dit eruit zal zien, wat nadelig is voor de partij die de huizen verkoopt.
+      Bij het kopen van een huis geeft de klant aan welke opties hij op zijn huis wil, zoals een dakkapel of een uitbouw. De architect moet voor elke klant handmatig een apart ontwerp maken, gebaseerd op de aangegeven opties. Dit proces is onnodig tijdrovend en repetitief, vooral als huizen in grote getallen worden gebouwd. Daarbij zijn klanten minder snel geneigd om een extra optie te kiezen als zij vooraf niet goed kunnen visualiseren hoe dit eruit zal zien, wat nadelig is voor de partij die de huizen verkoopt.
 
 
       Kortom, het kost veel tijd en energie om voor alle klanten handmatig een ontwerp te realiseren en de klanten zijn minder snel geneigd extra opties, omdat zij het resultaat niet kunnen inbeelden.
