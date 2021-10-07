@@ -16,7 +16,7 @@ info:
     - left
 card:
   title: Heijmans/FORM 3D Woningconfigurator
-  text: Een VR Ready, 3D omgeving om online uw toekomstige huis te configureren.
+  text: Een VR Ready, 3D omgeving om online jouw toekomstige huis te configureren.
     Als je een huis koopt kan je bij de architect aangeven welke opties je op
     jouw huis zou willen, zoals een dakkapel of een uitbouw. De architect moet
     voor elke klant een apart ontwerp maken. Het is vast in te beelden dat dit
