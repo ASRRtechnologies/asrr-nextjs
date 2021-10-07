@@ -59,19 +59,46 @@ section:
       ### **2 - API**
 
 
-      We hebben geanalyseerd welke acties invloed hebben op de data, zoals het aftekenen van een verzending. Vervolgens zijn er API calls geschreven om deze acties te ondersteunen. 
+      We hebben geanalyseerd welke acties invloed hebben op de data, zoals het aftekenen van een verzending. Vervolgens zijn er API calls (code die zorgt dat applicaties kunnen communiceren) geschreven om deze acties te ondersteunen. 
 
 
-      Een voorbeeld is dat een fabrieksmedewerker een verzending kan aftekenen. De medewerker krijgt door het terminal nummer en tank nummer in te vullen in de applicatie een gefilterde lijst te zien van ladingen en hun statussen. De medewerker kan vervolgens de juiste lading uitkiezen, deze aftekenen en aangeven waar deze zich in het proces bevind. Verder wordt er bijgehouden welke medewerker iets aanpast, hierdoor wordt er herleid welke medewerker verantwoordelijk is voor bepaalde acties. 
+      Een voorbeeld van een actie is dat een fabrieksmedewerker een verzending kan aftekenen. Onze API call maakt het mogelijk voor een medewerker om een gefilterde lijst te zien van ladingen en hun statussen door het invullen van een terminal- en tanknummer. De medewerker kan vervolgens de juiste lading uitkiezen uit de gefilterde lijst en de lading aftekenen. 
 
 
-      De applicatie houdt ook de status van alle elementen bij en laat zien wanneer een onderdeel, een hele tank of zelfs een hele terminal gereed is. Dit bespaard de administratieve medewerkers een hoop werk en de verantwoordelijkheid ligt bij de fabrieksmedewerkers
+      Andere voorbeelden van acties die wij ondersteunen met onze API calls zijn:
+
+
+      * Aangeven wanneer een onderdeel, een tank of zelfs een terminal gereed is.
+
+      * Aangeven waar een lading zich in het proces bevind.
+
+      * Bijhouden welke medewerker informatie aanpast.
+
+
+      Voordelen hiervan zijn:
+
+
+      * Minder werk voor administratieve medewerkers
+
+      * Meer inzicht in de tijdlijn van het proces
+
+      * Er valt te herleiden welk medewerker verantwoordelijk is voor bepaalde acties.
 
 
       ### **3 - Insights**
 
 
-      Doordat het een enorme set data is, kan er in een oogopslag niet veel gezegd worden over de status van het project door alleen te kijken naar de tabel waar alles in staat. Daarom hebben we met behulp van onze Business Insights expert een PowerBI dashboard opgezet. In dit dashboard worden verschillende zaken interactief weergegeven, gespitst op het management. Zo wordt er gezien hoeveel vertraging er zit tussen de Planning en de Actuals. Hoeveel staal er op welk punt in het proces zit en wat de status van elke terminal is. Dit alles zorgt ervoor dat er geen menselijke handelingen meer verricht hoeven te worden voor het genereren van rapportages. Verder krijgt het management real-time inzichten in de status van het gehele project, met highlights op key waarden.
+      Er kan in een oogopslag niet veel worden gezegd over de status van een project door alleen te kijken naar alle informatie in de database. Om meer inzicht te krijgen in de status van een project heeft een van onze Business Insight Experts een PowerBI dashboard opgezet. Voorbeelden van onderdelen van het dashboard zijn:
+
+
+      * De vertraging tussen de planning en het daadwerkelijke uitvoeren.
+
+      * De status van alle terminals.
+
+      * De hoeveelheid staal op elk punt in het proces zit.
+
+
+      Het dashboard neemt een deel van de verantwoordelijkheden over die eerst bij mensen lagen, zoals het genereren van rapportages. Verder krijgt het management real-time inzichten in de status van het gehele project.
     media:
       images:
         - image: voorbeeld.png
