@@ -88,17 +88,17 @@ section:
       ### **3 - Insights**
 
 
-      Er kan in een oogopslag niet veel worden gezegd over de status van een project door alleen te kijken naar alle informatie in de database. Om meer inzicht te krijgen in de status van een project heeft een van onze Business Insight Experts een PowerBI dashboard opgezet. Voorbeelden van onderdelen van het dashboard zijn:
+      Er kan in een oogopslag niet veel worden gezegd over de status van een project door alleen te kijken naar alle informatie in de database. Om meer inzicht te krijgen in de status van een project heeft een van onze Business Insight Experts een gebruiksvriendelijke PowerBI dashboard opgezet. Voorbeelden van onderdelen van het dashboard zijn:
 
 
-      * De vertraging tussen de planning en het daadwerkelijke uitvoeren.
+      * De vertraging tussen de planning en het daadwerkelijke uitvoeren wordt.
 
       * De status van alle terminals.
 
       * De hoeveelheid staal op elk punt in het proces zit.
 
 
-      Het dashboard neemt een deel van de verantwoordelijkheden over die eerst bij mensen lagen, zoals het genereren van rapportages. Verder krijgt het management real-time inzichten in de status van het gehele project.
+      Het dashboard neemt een deel van de verantwoordelijkheden over die voorheen bij werknemers lagen, zoals het genereren van rapportages. Verder krijgt het management real-time inzichten in de status van het gehele project.
     media:
       images:
         - image: voorbeeld.png
@@ -108,5 +108,5 @@ section:
       ### Conclusie
 
 
-      Door middel van een investering in een automatisering die aansluit op het huidige werkproces, is er een tool ontwikkeld waarmee tijd van de werknemers bespaard is, de data veiliger is opgeslagen, verantwoordelijkheden verplaatst zijn naar de personen die daarover gaan en heeft het management nieuw inzicht in de status van het project.
+      We hebben een grote hoeveelheid raw data getransformeerd tot een 'cutting edge' applicatie die inzicht geeft in het gehele proces. Onze applicatie sluit aan bij het huidige werkproces, bespaard werknemers tijd, slaat veiliger data op, verplaatst verantwoordelijkheden naar de medewerkers die acties hebben uitgevoerd, is gebruiksvriendelijk en geeft het management nieuwe inzichten in de status van een project.
 ---
