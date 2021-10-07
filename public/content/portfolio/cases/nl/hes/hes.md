@@ -91,11 +91,11 @@ section:
       Er kan in een oogopslag niet veel worden gezegd over de status van een project door alleen te kijken naar alle informatie in de database. Om meer inzicht te krijgen in de status van een project heeft een van onze Business Insight Experts een gebruiksvriendelijk PowerBI dashboard opgezet. Voorbeelden van onderdelen van het dashboard zijn:
 
 
-      * De vertraging tussen de planning en het daadwerkelijke uitvoeren wordt.
+      * de vertraging tussen de planning en het daadwerkelijke uitvoeren;
 
-      * De status van alle terminals.
+      * de status van alle terminals;
 
-      * De hoeveelheid staal op elk punt in het proces zit.
+      * de hoeveelheid staal op elk punt in het proces zit.
 
 
       Het dashboard neemt een deel van de verantwoordelijkheden over die voorheen bij werknemers lagen, zoals het genereren van rapportages. Verder krijgt het management real-time inzichten in de status van het gehele project.
