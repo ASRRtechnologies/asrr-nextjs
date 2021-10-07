@@ -35,9 +35,6 @@ section:
       Architecten besteden uren aan het verwerken van alle optielijsten van klanten; uittekenen hoe de woningen eruit komen te zien. Heijmans en FORM vonden dat dit veel korter kon en kwamen met het idee van een 3D-woningconfigurator waarin de klant zelf kan ontwerpen hoe zijn droomhuis eruit komt te zien.
 
 
-      &nbsp;
-
-
       ## Probleem
 
 
