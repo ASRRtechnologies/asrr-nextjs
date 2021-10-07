@@ -53,7 +53,7 @@ section:
       ### **1. Database**
 
 
-      De eerste stap is structuur aanbrengen in de Excel sheet. Een goede structuur biedt overzicht en duidelijkheid. Wij hebben een code geschreven die het bestaande Excel bestand kon uitlezen en op de gewenste manier kon structureren en opslaan in een database. 
+      De eerste stap is structuur aanbrengen in de Excel sheet. Een goede structuur biedt overzicht en duidelijkheid. Wij hebben een code geschreven die het bestaande Excel bestand kon uitlezen en het op de gewenste manier kon structureren en opslaan in een database. 
 
 
       ### **2. API**
