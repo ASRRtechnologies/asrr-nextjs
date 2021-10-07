@@ -50,13 +50,13 @@ section:
       ## De Oplossing
 
 
-      ### **1 - Database**
+      ### **1. Database**
 
 
       De eerste stap is structuur aanbrengen in de Excel sheet. Een goede structuur biedt overzicht en duidelijkheid. Wij hebben een code geschreven die het bestaande Excel bestand kon uitlezen en op de gewenste manier kon structureren en opslaan in een database. 
 
 
-      ### **2 - API**
+      ### **2. API**
 
 
       We hebben geanalyseerd welke acties invloed hebben op de data, zoals het aftekenen van een verzending. Vervolgens zijn er API calls (code die zorgt dat applicaties kunnen communiceren) geschreven om deze acties te ondersteunen. 
@@ -85,7 +85,7 @@ section:
       * Er valt te herleiden welk medewerker verantwoordelijk is voor bepaalde acties.
 
 
-      ### **3 - Insights**
+      ### **3. Insights**
 
 
       Er kan in een oogopslag niet veel worden gezegd over de status van een project door alleen te kijken naar alle informatie in de database. Om meer inzicht te krijgen in de status van een project heeft een van onze Business Insight Experts een gebruiksvriendelijke PowerBI dashboard opgezet. Voorbeelden van onderdelen van het dashboard zijn:
