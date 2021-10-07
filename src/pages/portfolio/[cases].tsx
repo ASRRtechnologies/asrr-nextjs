@@ -8,7 +8,7 @@ import {useHeader} from "../../context/navigation/HeaderContext";
 import Article from "@/modules/shared/article/Article";
 
 function Page({content}) {
-    const basePath = `/content/portfolio/posts/nl/${content.title}`;
+    const basePath = `/content/portfolio/cases/nl/${content.title}`;
 
     const SEOProps = {
         ...content.meta_tags
