@@ -7,7 +7,7 @@
   z-index: 1000000000;
   transform: scale(0.8);
 
-  .bar1, .bar3 {
+  .barOne, .barThree {
     width: 35px;
     height: 3px;
     background-color: #333;
@@ -16,7 +16,7 @@
     border-radius: 10px;
   }
 
-  .bar2 {
+  .barTwo {
     width: 25px;
     height: 3px;
     background-color: #333;
@@ -33,23 +33,23 @@
     }
 
   }
+}
 
-  &.open {
-    .bar1 {
-      //-webkit-transform: rotate(-45deg) translate(-9px, 6px);
-      transform: rotate(-45deg) translate(-5px, 6px);
-    }
+.hamburgerOpen {
+  .barOne {
+    //-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
 
-    /* Fade out the second bar */
-    .bar2 {
-      opacity: 0;
-    }
+  /* Fade out the second bar */
+  .barTwo {
+    opacity: 0;
+  }
 
-    /* Rotate last bar */
-    .bar3 {
-      -webkit-transform: rotate(45deg) translate(-8px, -8px);
-      transform: rotate(45deg) translate(-7px, -8px);
-    }
+  /* Rotate last bar */
+  .barThree {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-7px, -8px);
   }
 }
 

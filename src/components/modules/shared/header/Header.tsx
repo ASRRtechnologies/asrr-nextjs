@@ -71,8 +71,12 @@ function Header() {
                 <Link href="/"><a className={headerStyles.logoWrapper}><Logo/></a></Link>
 
                 <div className={headerStyles.menu}>
-                    {navigationPaths.map(({path, name}) => <Link href={path}><a
-                        className="hover-link">{name}</a></Link>)}
+                    {navigationPaths.map(({path, name}) => {
+                        if (path === "/contact")
+                            return null
+
+                        return (<Link href={path}><a className="hover-link">{name}</a></Link>)
+                    })}
                 </div>
 
                 <div className={headerStyles.actions}>

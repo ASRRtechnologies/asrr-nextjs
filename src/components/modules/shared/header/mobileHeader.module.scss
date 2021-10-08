@@ -1,0 +1,139 @@
+@import "src/styles/globals";
+$headerHeight: 60px;
+$menu-items: 7;
+
+@include media(">=xs") {
+  .header{
+   display: block;
+    width: 100vw;
+    height: $headerHeight;
+    position: fixed;
+    z-index: 10000;
+  }
+
+  .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 100;
+  }
+
+  .actions{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu{
+    display: block;
+    height: 100vh;
+    width: 100%;
+    //transform: translateX(-100%);
+    position: absolute;
+    left:0;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: calc(#{$headerHeight} + 20px); //Padding height of header + 20 pixels;
+    padding-bottom: 20px;
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 350ms;
+  }
+
+  .menuGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+
+  .gridCell{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    height: auto;
+    width: 100%;
+    position: relative;
+    max-width: 800px;
+
+    &:before{
+      position: absolute;
+      display: block;
+      height: 1px;
+      content:"";
+      left:0;
+      bottom:0;
+      width: 0;
+    }
+
+    //Line transition of menu items
+    @for $i from $menu-items through 1 {
+      &:nth-child(#{$i}) {
+        &:before{
+          transition-delay: #{$i * 80}ms;
+          transition-property: width;
+          transition-duration: 300ms;
+          transition-timing-function: ease-in-out;
+        }
+      }
+    }
+  }
+
+  .menuOpen{
+    transform: translateX(0);
+    opacity: 1;
+    transition-property: opacity, transform;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0ms;
+
+    .menuGrid{
+      //Line transition of menu items
+      @for $i from 1 through $menu-items {
+        .gridCell:nth-child(#{$i}) {
+          &:before{
+            transition-delay: #{$i * 70}ms;
+            transition-property: width;
+            transition-duration: 300ms;
+            transition-timing-function: ease-in-out;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+  }
+
+  /* The progress container (grey background) */
+  .progressContainer {
+    width: 100vw;
+    height: 2px;
+    position: fixed;
+    top: 56px;
+    left:0;
+    z-index: 1000;
+  }
+
+  /* The progress bar (scroll indicator) */
+  .progressBar {
+    height: 4px;
+    z-index: 100000;
+    background: $primary-color;
+    width: 0;
+  }
+
+}
+
+@include media(">=lg") {
+  .header{
+    display: none;
+  }
+}
+

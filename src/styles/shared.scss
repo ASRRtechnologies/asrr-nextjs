@@ -7,13 +7,6 @@
     cursor: pointer;
   }
 
-  .full-screen-container {
-    width: 100vw;
-    min-height: 100vh;
-  }
-}
-
-@include media(">=xs", "<sm") {
   .global-padding-horizontal {
     padding-left: $xs-padding-horizontal;
     padding-right: $xs-padding-horizontal;
@@ -48,7 +41,7 @@
 }
 
 @include media(">=lg") {
-  .logo {
+  .logo{
     width: 80px;
   }
 
