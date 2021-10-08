@@ -32,13 +32,13 @@ section:
       # Heijmans/FORM 3D Woningconfigurator
 
 
-      Architecten besteden uren aan het verwerken van alle optielijsten van klanten; uittekenen hoe de woningen eruit komen te zien. Heijmans en FORM vonden dat dit proces veel korter moest en kwamen met het idee van een 3D-woningconfigurator waarin de klant zelf kan ontwerpen hoe zijn droomhuis eruit komt te zien.
+      Architecten besteden uren aan het verwerken van alle optielijsten van klanten; uittekenen hoe de woningen eruit komen te zien. Heijmans en FORM vonden dat dit proces veel korter kon en moest. Zij kwamen daarom met het idee van een 3D-woningconfigurator waarin de klant zelf kan ontwerpen hoe zijn droomhuis eruit komt te zien. Er komt geen architect meer aan te pas, alleen de fantasie en creativiteit van de klant. 
 
 
       ## Probleem
 
 
-      Bij het kopen van een huis geeft de klant aan welke opties hij op zijn huis wil, zoals een dakkapel of een uitbouw. De architect moet voor elke klant handmatig een apart ontwerp maken, gebaseerd op de aangegeven opties. Dit proces is onnodig tijdrovend en repetitief, vooral als huizen in grote getallen worden gebouwd. Daarbij zijn klanten minder snel geneigd om een extra optie te kiezen als zij vooraf niet goed kunnen visualiseren hoe dit eruit zal zien, wat nadelig is voor de partij die de huizen verkoopt.
+      Bij het kopen van een huis geeft de klant aan welke opties hij op zijn huis wil, zoals een dakkapel of een uitbouw. De architect moet voor elke klant handmatig een apart ontwerp maken, gebaseerd op de aangegeven opties. Dit proces is onnodig tijdrovend en repetitief, vooral als huizen in grote getallen worden gebouwd. Daarbij zijn klanten minder snel geneigd om een extra optie te kiezen als zij vooraf niet goed kunnen visualiseren hoe het effect eruit zal zien, wat nadelig is voor de partij die de huizen verkoopt (in dit geval Heijmans en FORM).
     media:
       images: []
       videos: []
