@@ -46,13 +46,19 @@ section:
       ## Oplossing
 
 
-      In samenwerking met [FORM](https://form.nl) en [Heijmans](www.heijmans.nl) hebben we een 3D, real-time BIM configurator opgeleverd. Met deze webapplicatie krijgen gebruikers de toekomstige woning in een game engine te zien, waardoor opties goed gevisualiseerd kunnen worden. Dan toch maar een uitbouw of een dakkapel erbij, doordat de klant zelfs kan zien wat de invloed hiervan is. Bijvoorbeeld hoe het licht binnenhuis verandert door een uitbouw. 
+      In samenwerking met FORM en Heijmans hebben we een 3D, real-time BIM configurator opgeleverd. Met deze **`NextJS`** webapplicatie krijgen klanten hun toekomstige woning in een game engine te zien, waardoor opties goed gevisualiseerd kunnen worden. Dan toch maar een uitbouw of een dakkapel erbij, doordat de klant zelf kan zien wat de invloed hiervan is. Bijvoorbeeld hoe het licht binnenhuis verandert door het toevoegen van een uitbouw. We hebben het namelijk mogelijk gemaakt om het huis van zowel de binnen- als de buitenkant te bekijken onder verschillende hoeken. Hieronder lopen we je even door het proces van een klant heen. 
 
 
-      De applicatie is gebouwd op een van onze **`NextJS`** applicaties. De applicatie onttrekt data uit een **`MongoDB`** database. De prijzen worden in real-time berekend op basis van de gekozen opties. Als de klant eenmaal klaar is met configureren, wordt de configuratie opgeslagen. De klant krijgt dan een brochure per mail met daarin de specificaties van de gekozen woning. Verder wordt er een link toegevoegd waarmee de configuratie weer opgevraagd kan worden, om te laten zien aan de kopersbegeleider, of zelf aan relaties van de koper. 
+      Er wordt een standaard configuratie getoond als de klant de applicatie voor het eerst opent. De klant kan vervolgens met knoppen het ontwerp aanpassen. Hij kan bijvoorbeeld een dakkapel toevoegen door op de knop naast het zolder raam te klikken of een uitbouw door op de knop naast het beneden raam te klikken. 
 
 
-      Een publieke demo van de configurator opgezet voor FORM is te vinden door [hier](https://configurator.form.asrr.nl/projects/form-2020/1) te drukken.
+      Alle mogelijke opties aan het huis zijn vooraf gevisualiseerd en opgeslagen in een **`MongoDB`** database. Dit maakt het mogelijk voor de klant om direct te zien wat het effect is van het toevoegen van een dakkapel en hoeveel het gaat kosten. Er kan dus veel beter worden geoordeeld of het toevoegen van een dakkapel het geld waard is, waardoor klanten sneller geneigd zijn om er een toe te voegen. 
+
+
+      Nadat de klant zijn droomhuis heeft ontworpen, wordt de configuratie opgeslagen. De klant krijgt dan een brochure per mail met daarin de specificaties van de gekozen woning. Verder wordt er een link toegevoegd waarmee de configuratie weer opgevraagd kan worden om te laten zien aan de kopersbegeleider of aan relaties van de koper. 
+
+
+      Een publieke demo van de configurator opgezet voor FORM is te vinden door hier te drukken.
     media:
       images:
         - image: ezgif.com-gif-maker-4-2.jpg
