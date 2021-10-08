@@ -10,6 +10,7 @@ import HamburgerMenu from "@/modules/shared/header/HamburgerMenu";
 
 type HeaderStyle = {
     visible: boolean,
+    open: boolean,
     theme: {
         navigation: {
             backgroundMobile: string,
@@ -31,12 +32,12 @@ const Wrapper = styled('nav')<HeaderStyle>`
 
   .logo {
     path {
-      fill: ${props => props.visible ? props.theme.navigation.font : props.theme.navigation.fontWhite};
+      fill: ${props => props.open || props.visible ? props.theme.navigation.font : props.theme.navigation.fontWhite};
     }
   }
 
   p, a {
-    color: ${props => props.theme.navigation.font };
+    color: ${props => props.theme.navigation.font};
   }
 
   //Target pseudo element of grid-cell
@@ -78,9 +79,9 @@ function Header() {
     }, []);
 
     return (
-        <Wrapper visible={visible} className={`${headerStyles.header}`}>
+        <Wrapper open={open} visible={visible} className={`${headerStyles.header}`}>
             <div className={`${headerStyles.wrapper} global-padding-horizontal`}>
-                <HamburgerMenu onClick={() => setOpen(!open)} open={open}/>
+                <HamburgerMenu visible={visible} onClick={() => setOpen(!open)} open={open}/>
 
                 <div className={`${headerStyles.menu} ${open && headerStyles.menuOpen} global-padding-horizontal`}>
                     <div className={headerStyles.menuGrid}>

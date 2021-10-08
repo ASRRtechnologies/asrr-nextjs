@@ -84,6 +84,13 @@ $menu-items: 7;
         }
       }
     }
+
+    a{
+      display: flex;
+      align-items: center;
+      height: 100%;
+    }
+
   }
 
   .menuOpen{
