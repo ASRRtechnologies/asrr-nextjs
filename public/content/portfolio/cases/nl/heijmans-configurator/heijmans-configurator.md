@@ -73,5 +73,5 @@ section:
       ## Preview
 
 
-      Een publieke demo van de configurator opgezet voor FORM is te vinden door [hier](https://configurator.form.asrr.nl/projects/form-2020/1) te drukken.
+      Een publieke demo van de configurator opgezet voor FORM is te vinden door hier te drukken.
 ---
