@@ -42,8 +42,9 @@ section:
       Er bestond binnen NWO een extern team dat een deelproject toegewezen had gekregen. Het probleem was dat dit externe team geen toegang kon krijgen tot het bestaande systeem waar de hele werkmethode op was ingericht. Verder bleek dat het bestaande systeem niet toereikend was voor het gespecialiseerde team.
 
 
+      NWO, een dochteronderneming van BP en Shell, is een bedrijf dat op is gezet om de eerste long-range onverwerkte olielijn in Europa op te zetten. Er bestond hierbinnen een speciaal team, het Enlargement Project Blog dat extern ingeschakeld was. Dit was een gespecialiseerd team dat alleen voor een speciaal deelproject opgetuigd was. Aangezien het deels externe medewerkers waren, kon er door security policies geen toegang verschaft worden voor het bestaande systeem, waar bestanden, programmatuur en werkplekken op ingericht waren. Verder bleek dat het bestaande systeem niet toereikend was voor het gespecialiseerde team.
+      
       &nbsp;
-
 
       Er moest een plek komen waarin documenten, communicatie en rekenkracht beschikbaar zou zijn voor iedere werknemer. Deze werkplek moest remote beschikbaar zijn en ten minste beveiligd zijn met twee factor authenticatie.
 

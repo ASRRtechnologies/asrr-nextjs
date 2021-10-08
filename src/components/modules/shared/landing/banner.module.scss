@@ -1,0 +1,54 @@
+@import "src/styles/globals";
+
+@include media(">=xs") {
+  .banner {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    min-height: 60vh;
+    background-color: $primary-color;
+    //background-color: #F18e8b;
+    position: relative;
+    overflow: hidden;
+
+    &.landing{
+      min-height: 80vh;
+    }
+
+    img{
+      position:absolute ;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .innerBanner {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: $max-width;
+    z-index: 10;
+
+    h1, p {
+      color: $white!important;
+    }
+
+    p {
+      max-width: 700px;
+    }
+
+  }
+}
+
+@include media(">=sm") {
+
+
+}
+
+
+@include media(">sm", "<=lg") {
+
+
+}

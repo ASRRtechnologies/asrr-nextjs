@@ -1,8 +1,14 @@
 ---
 language: nl
 title: portfolio
-page_title:
+meta_tags:
+  title: Portfolio
+  text: "Jouw eigen droomhuis ontwerpen, inzicht krijgen in jouw data en een app
+    om podcasts op te luisteren zijn allemaal voorbeelden van de diverse
+    projecten binnen ASRR. Bekijk al onze projecten. "
+landing:
   title: Wat we hebben gedaan
-  header: Bekijk onze projecten
-  subheader: Portfolio
+  text: Bekijk onze projecten
+  image: dsc07258-min.jpg
+  alt: "Re aan het programmeren "
 ---

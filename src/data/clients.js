@@ -7,11 +7,10 @@ import VolkerWessels from "@/logo-reactjs-svg/clients/VolkerWessels";
 import Axi from "@/logo-reactjs-svg/clients/Axi";
 
 export const clients = [
-    {logo:<Form/>, alt:"Form Architecture & Engineering"},
-    {logo:<NWO/>, alt:"Nord-West Oelleitung"},
-    {logo:<Hes/>, alt:"HES International"},
-    {logo:<Heijmans/>, alt:"Heijmans"},
-    {logo:<VolkerWessels/>, alt:"VolkerWessels Vastgoed"},
-    {logo:<Axi/>, alt:"AXI IT"},
-
+    {image:<Form/>, alt:"Form Architecture & Engineering"},
+    {image:<NWO/>, alt:"Nord-West Oelleitung"},
+    {image:<Hes/>, alt:"HES International"},
+    {image:<Heijmans/>, alt:"Heijmans"},
+    {image:<VolkerWessels/>, alt:"VolkerWessels Vastgoed"},
+    {image:<Axi/>, alt:"AXI IT"},
 ];

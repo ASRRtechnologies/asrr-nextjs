@@ -1,128 +1,88 @@
 ---
 language: nl
 title: home
+meta_tags:
+  title: Home
+  text: Specialist in innovatieve software en hardware op maat, business analytics
+    and insights en IT Teams as a Service.
 landing:
   title: Innovative Software Development
   text: Uw partner voor het bouwen van next-level software - snel, betrouwbaar en
     efficient.
-  image_webp: ""
   image: ""
   alt: ""
   button:
     title: Bekijk cases
     url: /portfolio
-services_section:
-  title: Wat we doen
-  header: ASRR vormt de brug tussen IT en business met flexibele, robuuste teams
-    die inspelen op wat u nodig heeft.
-  subheader: Onze Diensten
-  services:
-    - image_webp: scaleable-software-sqaure.webp
-      image: scaleable-software-sqaure.jpg
-      alt: IT Teams as a Service
-      title: IT Teams as a Service
-      text: Met een ASRR IT-team voeg je een volledig ingewerkte IT-afdeling tijdelijk
-        of langdurig toe aan je bedrijf. Hierbij maak je je niet druk over of je
-        wel-of-niet de juiste expertises hebt aangenomen. De modulaire aanpak
-        van ASRR combineert de snelheid en solide bouw van een
-        gestandaardiseerde aanpak, met alle voordelen van een ‘cutting edge’
-        applicatie op maat. Je wijkt niet af van je huidige processen en houdt
-        toch helder zicht op de tijdlijn, productie en oplevering.
-    - title: Hardware op maat
-      alt: Hardware op maat
-      text: ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De
-        componenten worden precies zo uitgekozen dat ze passen bij het proces
-        waar de hardware voor gebruikt wordt. Hierdoor betaalt u niet te veel
-        voor onnodige componenten, en ligt de focus op de onderdelen die
-        cruciaal zijn. Ook gebruiken wij altijd het nieuwste op gebied van
-        ontwikkelingen binnen de technologie, waardoor er meer performance voor
-        minder kosten gerealiseerd wordt.
-      image_webp: hardware-1.webp
-      image: hardware-1.jpg
-    - alt: Business Analytics & Insights
-      title: Business Analytics & Insights
-      text: Data is een waardevolle asset voor elk bedrijf. Veel bedrijven doen echter
-        niks met de potentiele goudmijn waar ze op zitten. Doormiddel van een
-        data-analyse kan ASRR een Business Insights dashboard opzetten. In zo’n
-        dashboard kunt u de belangrijkste aspecten van uw dataset in een
-        oogopslag zien. We zetten uw (legacy) data aan het werk.
-      image_webp: data-analytics-square.webp
-      image: data-analytics-square.jpg
-  button:
-    title: Ga naar diensten
-    url: /diensten
-technologies_section:
-  title: Waar we op bouwen
-  header: ASRR gebruikt de meest geadvanceerde technologieën
-  subheader: Technologieën
+services:
+  title: Onze Diensten
+  text: ASRR vormt de brug tussen IT en business met flexibele, robuuste teams die
+    inspelen op wat u nodig hebt.
+technologies:
+  title: Technologieën
+  text: ASRR gebruikt de meest geadvanceerde technologieën
   technologies:
-    - image_webp: react-black-min.webp
-      image: react-black-min.png
+    - image: react-black-min.png
       alt: React-Logo
-    - image_webp: spring-boot-logo-black-min.webp
-      image: spring-boot-logo-black-min.png
+    - image: spring-boot-logo-black-min.png
       alt: Spring Boot Logo
-    - image_webp: react-native-black-min.webp
-      image: react-native-black-min.png
+    - image: react-native-black-min.png
       alt: React-Native Logo
-    - image_webp: kubernetes-min.webp
-      image: kubernetes-min.png
+    - image: kubernetes-min.png
       alt: Kubernetes Logo
-    - image_webp: docker-black-min.webp
-      image: docker-black-min.png
+    - image: docker-black-min.png
       alt: Docker Logo
-    - image_webp: nextjs-min.webp
-      image: nextjs-min.png
+    - image: nextjs-min.png
       alt: Nextjs Logo
-portfolio_section:
-  title: Wat we al hebben gedaan
-  subheader: Portfolio
-  header: Bekijk onze voorgaande projecten
-  button:
-    title: Ga naar portfolio
-    url: /portfolio
-testimonials_section:
-  title: Wat onze klanten over ons zeggen
-  subheader: Onze Klantervaringen
-  header: Een tevreden klant staat voorop in ons proces
+portfolio:
+  title: Portfolio
+  text: Bekijk onze voorgaande projecten
+testimonials:
+  title: Onze Klantervaringen
+  text: Een tevreden klant staat voorop in ons proces
   cards:
-    - name: Jorgen Haring
+    - avatar_alt: Foto Jorgen Haring
       position: Architect Partner
-      story: '"ASRR denkt pro-actief mee in de projecten en komt met goede en
-        efficiënte oplossingen. Ze begeleiden het project vakkundig, zijn heel
-        flexibel en kunnen snel schakelen indien nodig. Het is erg plezierig om
-        met ze samen te werken!"'
-      company: FORM Architecture & Engineering B.V.
-      image_webp: jorgenharing_kleur-min.webp
-      image: jorgenharing_kleur-min.jpg
-      alt: Foto Jorgen Haring
-    - name: Ravi Badal
+      alt: form kantoor
+      name: Jorgen Haring
+      story: ASRR denkt pro-actief mee in de projecten en komt met goede en efficiënte
+        oplossingen. Ze begeleiden het project vakkundig, zijn heel flexibel en
+        kunnen snel schakelen indien nodig. Het is erg plezierig om met ze samen
+        te werken!
+      title: Innovatie bij Form
+      avatar: jorgenharing_kleur-min.jpg
+      image: form-foto.png
+      company: FORMHET Architecture & Engineering B.V.
+    - avatar_alt: Ravi Badal Photo
       position: Manager Operations
-      story: '"Het is een erg jong, professioneel en dynamisch bedrijf met een flat
+      alt: WTC rotterdam
+      name: Ravi Badal
+      story: Het is een erg jong, professioneel en dynamisch bedrijf met een flat
         management structuur, dit zorgt voor een vlotte communicatie zowel
         intern als met de klanten, waardoor er veel aandacht en zorg is voor de
         klant. Ik heb erg goede ervaringen opgedaan met ASRR. Een echte aanrader
         als je op zoek bent naar een professionele partner die met je meedenkt
-        en waar de klant op nummer 1 staat!"'
+        en waar de klant op nummer 1 staat!
+      title: Een nieuwe Web-applicatie
+      avatar: ben-sweet-2lowvivhz-e-unsplash-min.jpg
+      image: 1543325645873.jpeg
       company: ESP Consultancy B.V.
-      alt: Ravi Badal Photo
-      image_webp: ben-sweet-2lowvivhz-e-unsplash-min.webp
-      image: ben-sweet-2lowvivhz-e-unsplash-min.jpg
-    - image_webp: robby-makka-min.webp
-      image: robby-makka-min.jpg
-      alt: Robby Makka Photo
-      name: Robby Makka
-      position: Manager
-      story: '"ASRR recently did some work for me, namely improving my internet
-        connection, and they did it very well! He also gave very good advise
-        related to the purchase of a new PC 👍. I am very satisfied and would
-        say that his service is top notch! I would certainly recommend him to
-        others. Knowledge and experience!"'
-      company: Ministerie van Financiën c.q. Belastingdienst/Douane Nederland
-quality_section:
+    - avatar_alt: Robby Makka Photo
+      position: Owner/Senior Legal Advisor
+      alt: PC
+      name: Joyce Boonstra-Verhaert
+      story: ASRR heeft in korte tijd voor ons een dedicated podcast app gecreëerd. We
+        zijn erg tevreden met het eindresultaat. Het fijne aan ASRR is dat ze
+        niet puur uitvoeren wat je van ze vraagt, maar ze denken proactief mee
+        en doen suggesties ter verbetering van een product. De lijnen zijn kort
+        en de uitvoering gaat zeer vlot. Ik kan ze aan iedereen aanbevelen.
+      title: Een dedicated podcast app
+      avatar: mr1808_ovdw-180926-joyce-boonstra-verhaert-bijzonderstrafrecht-advocatuur.jpeg
+      image: bijzonderstrafrecht-bestanddelen-podcast.png
+      company: BijzonderStrafrecht
+quality:
   title: Waarom ASRR?
-  header: Wij focussen ons op de volgende kernwaarden
-  subheader: Over ASRR
+  text: Wij focussen ons op de volgende kernwaardes
   qualities:
     - quality: Innovatie
       description: "ASRR heeft een open cultuur die innovatie faciliteert en
@@ -166,19 +126,13 @@ quality_section:
         gemakkelijk aangepast, toegevoegd, gedupliceerd of verwijderd worden .
         De vloot is dus modulair, net als de code die wij schrijven. Elk bootje
         symboliseert een microservice. Deze techniek maakt onze code stabiel,
-        schaalbaar en biedt de klant eindeloze mogelijkheden om hun producten te
-        ontwikkelen.
-blog_section:
-  title: Het laatste nieuws
-  subheader: Blog
-  header: Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on-als
+        schaalbaar en biedt de klant eindeloze mogelijkheden om zijn producten
+        te ontwikkelen.
+blog:
+  title: Blog
+  text: Blijf hier op de hoogte van het laatste nieuws rondom ASRR, zowel on-als
     offline!
-  button:
-    title: Ga naar blog
-    url: /blog
 clients:
   title: Deze klanten gingen u voor
-  header: " "
-  subheader: Bent u de volgende?
-button: Ga naar blog
+  text: Bent u de volgende?
 ---

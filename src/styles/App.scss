@@ -1,0 +1,194 @@
+@import "globals";
+@import "_collections/collections";
+@import "shared";
+@import "fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+  background-color: #555;
+}
+
+html {
+  height: auto;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+body {
+  position: relative;
+  font-family: 'Poppins', 'Source Sans Pro', serif !important;
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+  overflow-x: hidden !important;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+//Fonts
+a{
+  text-decoration: none;
+}
+
+.cookie-banner{
+  max-width: 90%;
+  p{
+    font-weight: lighter;
+    display: inline-block;
+  }
+
+  a{
+    text-decoration: underline $primary-color;
+    color: white;
+    &:hover{
+      color: $primary-color;
+    }
+  }
+
+}
+
+//Landing page fontsfolder
+.font-landing-title {
+  @include font-size(3rem);
+}
+
+//h1{
+//  @include font-size(2.5rem);
+//  @include margin-bottom(1rem);
+//}
+//
+//h2{
+//  @include font-size(1.5rem);
+//  @include margin-bottom(1rem);
+//  font-weight: normal;
+//}
+//
+//h3{
+//  @include font-size(1.2rem);
+//  @include margin-bottom(1rem);
+//}
+//
+//h4{
+//  @include font-size(1rem);
+//  @include margin-bottom(1rem);
+//  font-weight: normal;
+//}
+//
+//h5{
+//  @include font-size(0.8rem);
+//  @include margin-bottom(1rem);
+//  font-weight: normal;
+//
+//}
+//
+//p{
+//  @include font-size(1.15rem);
+//  @include margin-bottom(1rem);
+//}
+//
+//a{
+//  @include font-size(1.3rem);
+//}
+
+.navigation-font{
+  @include font-size(1rem);
+}
+
+.primary-color{
+  color: $primary-color !important;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+
+
+//.font-landing-text {
+//  @include font-size(1rem);
+//  @include margin(1.5rem 0);
+//}
+//
+//.font-title{
+//  @include font-size(2.5rem);
+//}
+//
+//.font-header{
+//  @include font-size(1.5rem);
+//}
+//
+//.font-subheader{
+//  @include font-size(1.2rem);
+//}
+//
+//.font-reference {
+//  @include rfs(12px);
+//  @include margin-top(12px);
+//}
+//
+//.font-card-tags{
+//  @include font-size(0.8rem);
+//}
+//
+//.font-card-title{
+//  @include font-size(1.3rem);
+//  @include margin-bottom(1rem);
+//}
+//
+//.font-card-header{
+//  @include font-size(0.9rem);
+//  @include margin-bottom(0.3rem);
+//}
+//
+//.font-card-subheader{
+//  @include font-size(0.8rem);
+//}
+//
+//.font-card-read-more{
+//  @include font-size(1rem);
+//  @include margin-top(1.3rem);
+//  font-weight: bold;
+//}
+//
+//.font-general{
+//  @include font-size(1.2rem);
+//  @include margin-bottom(1rem);
+//  font-weight: normal;
+//}
+
+//Used for titles of paragraphs / articles
+
+@media screen and (max-width: $tablet-small-breakpoint) {
+  .font-landing-title {
+    @include font-size(3rem);
+  }
+
+  .font-title{
+    @include font-size(1.5rem);
+  }
+
+  .font-header {
+    @include font-size(1.2rem);
+  }
+
+  .font-subheader{
+    @include font-size(1.1rem);
+  }
+
+}

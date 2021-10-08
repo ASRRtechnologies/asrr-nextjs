@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: ASRRtechnologies/asrr-nextjs
-  branch: production
+  branch: test
 media_folder: public/img
 public_folder: img
 #publish_mode: editorial_workflow
@@ -23,98 +23,80 @@ collections:
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
       - { label: "Title", name: "title", widget: "string" }
+      - label: "Meta tags"
+        name: "meta_tags"
+        widget: "object"
+        fields:
+          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
+          - { label: "Text (search engine text)", name: "text", widget: "text", required: true }
       - label: "Landing"
         name: "landing"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-          - label: "Button"
-            name: "button"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Url", name: "url", widget: "string" }
-          - { label: "Image_Webp", name: "image_webp", widget: "image", required: false }
+          - { label: "Text", name: "text", widget: "string", required: false}
           - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Image Alt", name: "alt", widget: "string", required: false }
       - label: "Service Section"
-        name: "services_section"
+        name: "services"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
           - label: "Service Cards"
             name: "services"
             widget: "list"
             required: true
             fields:
-              - { label: "Image_Webp", name: "image_webp", widget: "image" }
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Image Alt", name: "alt", widget: "string" }
               - { label: "Service Card Title", name: "title", widget: "string" }
               - { label: "Service Card Text", name: "text", widget: "string" }
-          - label: "Button"
-            name: "button"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string", default: "Ga naar blog" }
-              - { label: "Url", name: "url", widget: "string" }
       - label: "Tech Stack"
-        name: "technologies_section"
+        name: "technologies"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
           - label: "Technologies"
             name: "technologies"
             widget: "list"
             required: true
             fields:
-              - { label: "Image_Webp", name: "image_webp", widget: "image" }
               - { label: "Image", name: "image", widget: "image" }
               - { label: "Image Alt", name: "alt", widget: "string" }
       - label: "Portfolio"
-        name: "portfolio_section"
+        name: "portfolio"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
-          - label: "Button"
-            name: "button"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string", default: "Ga naar blog" }
-              - { label: "Url", name: "url", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
       - label: "Testimonials"
-        name: "testimonials_section"
+        name: "testimonials"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
           - label: "Testimonial Cards"
             name: "cards"
             widget: "list"
             required: true
             fields:
-              - {label: "Image_Webp", name: "image_webp", widget: "image"}
-              - {label: "Image", name: "image", widget: "image"}
-              - {label: "Image Alt", name: "alt", widget: "string"}
               - {label: "Client Name", name: "name", widget: "string"}
               - {label: "Client Position", name: "position", widget: "string"}
-              - {label: "Client Story", name: "story", widget: "markdown"}
+              - { label: "Client Story Title", name: "title", widget: "string" }
+              - {label: "Client Story", name: "story", widget: "text"}
               - {label: "Client Company", name: "company", widget: "string"}
+              - {label: "Client Avatar", name: "avatar", widget: "image"}
+              - {label: "Client Avatar Alt", name: "avatar_alt", widget: "string"}
+              - {label: "Card Image", name: "image", widget: "image"}
+              - {label: "Card Image Alt", name: "alt", widget: "string"}
       - label: "ASRR Qualities"
-        name: "quality_section"
+        name: "quality"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
           - label: "Quality List"
             name: "qualities"
             widget: "list"
@@ -123,24 +105,267 @@ collections:
               - { label: "Quality Keyword", name: "quality", widget: "string" }
               - { label: "Quality Description", name: "description", widget: "string" }
       - label: "Blog"
-        name: "blog_section"
+        name: "blog"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
-          - label: "Button"
-            name: "button"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string", default: "Ga naar blog" }
+          - { label: "Text", name: "text", widget: "string" }
       - label: "Clients"
         name: "clients"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Text", name: "text", widget: "string" }
+  - label: "Portfolio page"
+    name: "portfolio"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/portfolio"
+    path: '{{language}}/{{slug}}'
+    slug: '{{title}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
+      - { label: "Filename", name: "title", widget: "string", default: "portfolio"}
+      - label: "Meta tags"
+        name: "meta_tags"
+        widget: "object"
+        fields:
+          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
+          - { label: "Text (search engine text)", name: "text", widget: "text", required: true }
+      - label: "Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
+  - label: "Portfolio Case"
+    name: "portfolio_case"
+    identifier_field: slug
+    summary: '{{title}} - {{language}} - PREVIEW:{{info.preview}}'
+    folder: "public/content/portfolio/cases"
+    create: true
+    media_folder: ''
+    public_folder: ''
+    path: '{{language}}/{{title}}/{{slug}}'
+    slug: '{{title}}'
+    view_filters:
+      - label: nl
+        field: language
+        pattern: 'nl'
+      - label: en
+        field: language
+        pattern: 'en'
+    view_groups:
+      - label: Language
+        field: language
+    editor:
+      preview: true
+    fields:
+      - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
+      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
+      - label: "Meta tags"
+        name: "meta_tags"
+        widget: "object"
+        fields:
+          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
+          - { label: "Text (search engine text)", name: "text", widget: "text", required: true }
+      - label: "Case Info"
+        name: "info"
+        widget: "object"
+        fields:
+          - {label: "Homepage Preview", name: "preview", widget: "boolean", default: false, required: false}
+          - { label: "Client", name: "client", widget: "string", required: false }
+          - label: "Date"
+            name: "date"
+            widget: "datetime"
+            default: ""
+            date_format: "DD.MM.YYYY"
+            format: "LLL"
+            picker_utc: false
+          - { label: "Author", name: "author", widget: "string", required: false }
+          - label: "Tags"
+            name: "tags"
+            widget: "select"
+            multiple: true
+            options: ["left", "center", "right"]
+      - label: "Case Card"
+        name: "card"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "text", required: false}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Alt", name: "alt", widget: "string"}
+      - label: "Case Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
+      - label: "Case Section"
+        name: "section"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Content", name: "content", widget: "markdown" }
+          - { label: "Code Block", name: "code", widget: "code", required: false }
+          - label: "Media"
+            name: "media"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Image"
+                name: "images"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Image Alt", name: "alt", widget: "string", required: false }
+                  - { label: "Image Description", name: "description", widget: "text", required: false }
+                  - { label: "Image Reference", name: "reference", widget: "text", required: false }
+              - label: "Videos"
+                name: "videos"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Video", name: "video", widget: "file", required: false }
+                  - { label: "Video Description", name: "video_description", widget: "string", required: false }
+                  - { label: "Video Reference", name: "video_reference", widget: "string", required: false }
+  - label: "Service page"
+    name: "services"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/services"
+    path: '{{language}}/{{title}}/{{slug}}'
+    slug: '{{title}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
+      - { label: "Filename", name: "title", widget: "string", default: "diensten"}
+      - label: "Meta tags"
+        name: "meta_tags"
+        widget: "object"
+        fields:
+          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
+          - { label: "Text (search engine text)", name: "text", widget: "text", required: true }
+      - label: "Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
+      - label: "Service Section"
+        name: "section"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Image", name: "image", widget: "image",}
+          - { label: "Image Alt", name: "alt", widget: "string",}
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Service Title", name: "title", widget: "string" }
+              - { label: "Service Text", name: "text", widget: "text" }
+              - { label: "Url (Filename of service article)", name: "url", widget: "string" }
+  - label: "Service Post"
+    name: "service_post"
+    identifier_field: slug
+    summary: '{{title}} - {{language}} - PREVIEW:{{info.preview}}'
+    folder: "public/content/services/posts"
+    create: true
+    media_folder: ''
+    public_folder: ''
+    path: '{{language}}/{{title}}/{{slug}}'
+    slug: '{{title}}'
+    view_filters:
+      - label: nl
+        field: language
+        pattern: 'nl'
+      - label: en
+        field: language
+        pattern: 'en'
+    view_groups:
+      - label: Language
+        field: language
+    editor:
+      preview: true
+    fields:
+      - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
+      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
+      - label: "Service post Info"
+        name: "info"
+        widget: "object"
+        fields:
+          - { label: "Homepage Preview", name: "preview", widget: "boolean", default: false, required: false }
+          - { label: "Client", name: "client", widget: "string", required: false }
+          - label: "Date"
+            name: "date"
+            widget: "datetime"
+            default: ""
+            date_format: "DD.MM.YYYY"
+            format: "LLL"
+            picker_utc: false
+          - { label: "Author", name: "author", widget: "string", required: false }
+      - label: "Meta tags"
+        name: "meta_tags"
+        widget: "object"
+        fields:
+          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
+          - { label: "Text (search engine text)", name: "text", widget: "text", required: true }
+      - label: "Service post Card"
+        name: "card"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "text", required: false}
+      - label: "Service post Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
+      - label: "Service post Section"
+        name: "section"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Content", name: "content", widget: "markdown" }
+          - label: "Media"
+            name: "media"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Image"
+                name: "images"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Image Alt", name: "alt", widget: "string", required: false }
+                  - { label: "Image Description", name: "description", widget: "text", required: false }
+                  - { label: "Image Reference", name: "reference", widget: "text", required: false }
+              - label: "Videos"
+                name: "videos"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Video", name: "video", widget: "file", required: false }
+                  - { label: "Video Description", name: "video_description", widget: "string", required: false }
+                  - { label: "Video Reference", name: "video_reference", widget: "string", required: false }
   - label: "About page"
     name: "about"
     identifier_field: slug
@@ -153,27 +378,26 @@ collections:
     public_folder: ''
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Filename", name: "title", widget: "string", default: "over"}
+      - label: "Meta tags"
+        name: "meta_tags"
+        widget: "object"
+        fields:
+          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
+          - { label: "Text (search engine text)", name: "text", widget: "string", required: true }
       - label: "Landing"
         name: "landing"
         widget: "object"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Text", name: "text", widget: "string" }
-          - label: "Button"
-            name: "button"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Url", name: "url", widget: "string" }
-          - { label: "Image_Webp", name: "image_webp", widget: "image", required: false }
-          - { label: "Image", name: "image", widget: "image", required: false }
-          - { label: "Image Alt", name: "alt", widget: "string", required: false }
-  - label: "Portfolio Page"
-    name: "portfolio_page"
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
+  - label: "Team Page"
+    name: "team"
     identifier_field: slug
     summary: '{{title}} - {{language}}'
-    folder: "public/content/portfolio"
+    folder: "public/content/team"
     path: '{{language}}/{{slug}}'
     slug: '{{title}}'
     create: true
@@ -181,16 +405,33 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Page Name (name of md file)", name: "title", widget: "string", default: "portfolio" }
-      - label: "Name of Page Title"
-        name: "page_title"
+      - { label: "Filename", name: "title", widget: "string", default: "team"}
+      - label: "Meta tags"
+        name: "meta_tags"
         widget: "object"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
+          - { label: "Text (search engine text)", name: "text", widget: "text", required: true }
+      - label: "Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
+      - label: "Team Member"
+        name: "members"
+        widget: "list"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Position", name: "position", widget: "string" }
+          - { label: "Website", name: "website", widget: "string", required: false }
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Image Alt", name: "alt", widget: "string", required: false }
+          - { label: "Story", name: "story", widget: "markdown",  required: false }
   - label: "Blog Page"
-    name: "blog_page"
+    name: "blog"
     identifier_field: slug
     summary: '{{title}} - {{language}}'
     folder: "public/content/blog"
@@ -201,19 +442,26 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Page Name (name of md file)", name: "title", widget: "string", default: "blog" }
-      - label: "Name of Page Title"
-        name: "page_title"
+      - { label: "Filename", name: "title", widget: "string", default: "blog"}
+      - label: "Meta tags"
+        name: "meta_tags"
         widget: "object"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
-  - label: "Posts"
-    name: "posts"
+          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
+          - { label: "Text (search engine text)", name: "text", widget: "text", required: true }
+      - label: "Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
+  - label: "Blog post"
+    name: "blog_post"
     identifier_field: slug
-    summary: 'Title: {{title}} - Language: {{language}} - Type: {{type}} {{info.author}}'
-    folder: "public/content/written"
+    summary: '{{title}} - {{language}} - PREVIEW:{{info.preview}}'
+    folder: "public/content/blog/posts"
     create: true
     media_folder: ''
     public_folder: ''
@@ -226,75 +474,64 @@ collections:
       - label: en
         field: language
         pattern: 'en'
-      - label: article
-        field: type
-        pattern: 'Artikel'
-      - label: article
-        field: type
-        pattern: 'Tutorial'
-      - label: case
-        field: type
-        pattern: 'Case'
-      - label: news
-        field: type
-        pattern: 'Nieuws'
     view_groups:
       - label: Language
         field: language
-      - label: Type
-        field: type
     editor:
       preview: true
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Title (also the file and path name)", name: "title", widget: "string", description: This is name of the project }
-      - { label: "Type", name: "type", widget: "select", options: [ "Artikel", "Nieuws", "Case", "Tutorial" ] }
-      - label: "Info"
+      - { label: "Url (dont use any spaces or capital letters)", name: "title", widget: "string", description: This is the url of the project and the filename where the markdown is stored }
+      - label: "Meta tags"
+        name: "meta_tags"
+        widget: "object"
+        fields:
+          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
+          - { label: "Text (search engine text)", name: "text", widget: "text", required: true }
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        multiple: false
+        options: [ "nieuws", "artikel", "tutorial" ]
+      - label: "Blog post Info"
         name: "info"
         widget: "object"
         fields:
+          - {label: "Homepage Preview", name: "preview", widget: "boolean", default: false, required: false}
           - { label: "Client", name: "client", widget: "string", required: false }
           - label: "Date"
             name: "date"
             widget: "datetime"
             default: ""
             date_format: "DD.MM.YYYY"
-            time_format: "HH:mm"
             format: "LLL"
             picker_utc: false
           - { label: "Author", name: "author", widget: "string", required: false }
           - label: "Tags"
-            name: "tag"
-            widget: "list"
-            fields:
-              - { label: "Tag", name: "tag", widget: "select", options: [ "Full stack Development", "Front End Development", "Back End Development", "Hardware", "Expertise on demand", "IT Teams as a Service", "Design", "Consultancy", "Innovation" ] }
-          - label: "Technologies"
-            name: "technologies"
-            widget: "list"
-            fields:
-              - { label: "Technologies", name: "technologies", widget: "select", options: [ "BIM", "Revit API", "ReactJS", "NextJS", "Kubernetes", "Spring Boot", "Java", "C#" ] }
-
-      - label: "Card"
+            name: "tags"
+            widget: "select"
+            multiple: true
+            options: ["left", "center", "right"]
+      - label: "Blog post Card"
         name: "card"
         widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Text (Text visible on the card)", name: "text", widget: "markdown", required: false}
-          - {label: "Image_Webp", name: "image_webp", widget: "image"}
+          - {label: "Text", name: "text", widget: "text", required: false}
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Image Alt", name: "alt", widget: "string"}
-      - label: "Landing"
+      - label: "Blog post Landing"
         name: "landing"
         widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Text", name: "text", widget: "string", required: false}
-          - {label: "Image_Webp", name: "image_webp", widget: "image"}
-          - {label: "Image", name: "image", widget: "image"}
-          - {label: "Image Alt", name: "alt", widget: "string"}
-      - label: "Section"
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
+      - label: "Blog post Section"
         name: "section"
         widget: "list"
+        required: false
         fields:
           - { label: "Content", name: "content", widget: "markdown" }
           - label: "Media"
@@ -307,11 +544,10 @@ collections:
                 widget: "list"
                 required: false
                 fields:
-                  - { label: "Image_Webp", name: "image_webp", widget: "image", required: false }
                   - { label: "Image", name: "image", widget: "image", required: false }
                   - { label: "Image Alt", name: "alt", widget: "string", required: false }
-                  - { label: "Image Description", name: "description", widget: "string", required: false }
-                  - { label: "Image Reference", name: "reference", widget: "string", required: false }
+                  - { label: "Image Description", name: "description", widget: "text", required: false }
+                  - { label: "Image Reference", name: "reference", widget: "text", required: false }
               - label: "Videos"
                 name: "videos"
                 widget: "list"
@@ -320,86 +556,8 @@ collections:
                   - { label: "Video", name: "video", widget: "file", required: false }
                   - { label: "Video Description", name: "video_description", widget: "string", required: false }
                   - { label: "Video Reference", name: "video_reference", widget: "string", required: false }
-  - label: "Service Page"
-    name: "service_page"
-    identifier_field: slug
-    summary: '{{title}} - {{language}}'
-    folder: "public/content/service_page"
-    path: '{{language}}/{{slug}}'
-    slug: '{{title}}'
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Page Name (name of md file)", name: "title", widget: "string", default: "services" }
-      - label: "Name of Page Title"
-        name: "page_title"
-        widget: "object"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
-      - label: "Card"
-        name: "card"
-        widget: "list"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Preview Text (home page)", name: "preview_text", widget: "markdown"}
-          - {label: "Text", name: "text", widget: "markdown"}
-          - {label: "Image_Webp", name: "image_webp", widget: "image"}
-          - {label: "Image", name: "image", widget: "image"}
-          - {label: "Image Alt", name: "alt", widget: "string"}
-          - {label: "Url", name: "url", widget: "string"}
-          - label: "Bullets"
-            name: "bullet_points"
-            widget: "list"
-            fields:
-              - { label: "Bullet point", name: "bullet", widget: "string" }
-  - label: "Services"
-    name: "services"
-    identifier_field: slug
-    summary: '{{title}} - {{language}}'
-    folder: "public/content/services"
-    path: '{{language}}/{{title}}/{{slug}}'
-    slug: '{{title}}'
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Title (also the file and path name)", name: "title", widget: "string", description: This is name of the project }
-      - label: "Landing"
-        name: "landing"
-        widget: "object"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Text", name: "text", widget: "string", required: false}
-          - {label: "Image_Webp", name: "image_webp", widget: "image"}
-          - {label: "Image", name: "image", widget: "image"}
-          - {label: "Image Alt", name: "alt", widget: "string"}
-      - label: "Section"
-        name: "section"
-        widget: "list"
-        fields:
-          - { label: "Content", name: "content", widget: "markdown" }
-          - label: "Media"
-            name: "media"
-            widget: "object"
-            required: false
-            fields:
-              - label: "Image"
-                name: "images"
-                widget: "list"
-                required: false
-                fields:
-                  - { label: "Image_Webp", name: "image_webp", widget: "image", required: false }
-                  - { label: "Image", name: "image", widget: "image", required: false }
-                  - { label: "Image Alt", name: "alt", widget: "string", required: false }
-                  - { label: "Image Description", name: "description", widget: "string", required: false }
-                  - { label: "Image Reference", name: "reference", widget: "string", required: false }
   - label: "Contact Page"
-    name: "contact_page"
+    name: "contact"
     identifier_field: slug
     summary: '{{title}} - {{language}}'
     folder: "public/content/contact"
@@ -410,11 +568,18 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Page Name (name of md file)", name: "title", widget: "string", default: "contact" }
-      - label: "Name of Page Title"
-        name: "page_title"
+      - { label: "Filename", name: "title", widget: "string", default: "contact"}
+      - label: "Meta tags"
+        name: "meta_tags"
         widget: "object"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Header", name: "header", widget: "string" }
-          - { label: "Subheader", name: "subheader", widget: "string" }
+          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
+          - { label: "Text (search engine text)", name: "text", widget: "text", required: true }
+      - label: "Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}

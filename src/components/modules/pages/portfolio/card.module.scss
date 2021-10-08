@@ -1,0 +1,56 @@
+@import "../../../../styles/globals";
+
+@include media(">=xs") {
+  .highlight{
+    display: flex;
+    width: 100%;
+    min-height: 90vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: none;
+
+    .highlightCard{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 50px 25px;
+      text-align: left;
+      width: 100%;
+      max-width: 500px;
+      z-index: 10;
+      border-radius: $border-radius;
+
+    }
+
+    .highlightCardInner{
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+}
+
+@include media(">=lg") {
+  .highlight{
+    align-items: flex-end;
+    width: 80vw;
+    min-height: 70vh;
+    border-radius: $border-radius;
+    box-shadow: inherit;
+
+    &.highlightLeft{
+      align-items: start;
+    }
+
+    .highlightCard{
+      max-width: 600px;
+      padding: 50px;
+    }
+
+  }
+}
