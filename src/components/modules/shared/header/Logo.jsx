@@ -2,7 +2,7 @@ import React from 'react'
 
 function Logo() {
     return (
-        <svg  className="asrr-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <svg  className="logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              width="800px" height="261px" viewBox="0 0 800 261" enableBackground="new 0 0 800 261" xmlSpace="preserve">
 <g>
 	<path d="M75.385,223.024L56.113,261H14.17L127.531,34.279l75.668,151.336h-42.51l-33.158-66.6l-33.441,66.6L75.385,223.024z

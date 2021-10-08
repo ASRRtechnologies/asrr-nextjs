@@ -1,11 +1,12 @@
 @include media(">=xs") {
-  .full-screen-container {
-    width: 100vw;
-    min-height: 100vh;
+  .logo {
+    width: 50px;
+    height: auto;
+    z-index: 9999;
+    margin: 0;
+    cursor: pointer;
   }
-}
 
-@include media(">=xs", "<sm") {
   .global-padding-horizontal {
     padding-left: $xs-padding-horizontal;
     padding-right: $xs-padding-horizontal;
@@ -40,6 +41,10 @@
 }
 
 @include media(">=lg") {
+  .logo{
+    width: 80px;
+  }
+
   .global-padding-horizontal {
     padding-left: $lg-padding-horizontal;
     padding-right: $lg-padding-horizontal;

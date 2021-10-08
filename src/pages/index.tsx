@@ -1,14 +1,12 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import Clients from '@/modules/pages/home/clients/Clients'
-import Contact from '../components/contact/Preview'
 import Values from '@/modules/pages/home/values/Values';
 import PreviewServices from '@/modules/pages/services/ServicePreview'
-import {useHeader} from '../context/navigation/HeaderContext'
 import TechStack from '@/modules/pages/home/techstack/TechStack'
 import matter from 'gray-matter'
 import Testimonials from '@/modules/pages/home/testimonials/Testimonials'
 import {getAllArticles, getAllCases, getAllNews, getAllServices, getAllTutorials} from '../lib/api'
-import PageLayout from '@/layout/PageLayout'
+import PageLayout from '@/modules/shared/layout/PageLayout'
 import PortfolioPreview from '@/modules/pages/portfolio/PortfolioPreview';
 import Banner from "@/modules/shared/landing/Banner";
 import BlogPreview from "@/modules/pages/blog/BlogPreview";
@@ -17,16 +15,10 @@ import image from "#/landing/landing-asrr-min.jpg";
 
 function Index({homepage, allServices, allCases, allBlogs,}) {
     const basePath = `/content/home/nl`;
-    const header = useHeader();
 
     const SEOProps = {
         ...homepage.meta_tags
     }
-
-    useEffect(() => {
-        // @ts-ignore
-        header.setHeaderWhite(true)
-    }, []);
 
     return (
         <PageLayout className="darkmodeContainer" {...SEOProps}>

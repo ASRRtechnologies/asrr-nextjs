@@ -2,7 +2,7 @@ import React from 'react';
 import TeamPage from "@/modules/pages/team/Team";
 import Banner from "@/modules/shared/landing/Banner";
 import matter from "gray-matter";
-import PageLayout from "@/layout/PageLayout";
+import PageLayout from "@/modules/shared/layout/PageLayout";
 
 function Team({content}) {
     const basePath = `/content/team/nl`;

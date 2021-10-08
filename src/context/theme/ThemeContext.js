@@ -1,6 +1,6 @@
 import React, {useState, createContext, useContext, useEffect} from "react";
 import { ThemeProvider as EmotionThemeProvider } from "emotion-theming";
-import theme from "./theme.js";
+import theme from "./theme.tsx";
 
 const defaultContextData = {
     dark: true,
@@ -14,12 +14,10 @@ const useEffectDarkMode = () => {
     const [themeState, setThemeState] = useState({
         dark: false,
         hasThemeMounted: false,
-
      });
 
     useEffect(() => {
         const lsDark = localStorage.getItem("dark") === "true";
-        // const lsDark = localStorage.getItem("dark") === "true" || localStorage.getItem("dark") === null;
         setThemeState({ ...themeState, dark: lsDark, hasThemeMounted: true });
     }, []);
 

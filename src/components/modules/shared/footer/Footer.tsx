@@ -6,7 +6,7 @@ import footerStyles from "./footer.module.scss";
 import {useRouter} from "next/router";
 import LinkedIn from "@/icons/LinkedIn";
 import Facebook from "@/icons/Facebook";
-import LinkText from "../modules/shared/text/LinkText";
+import LinkText from "@/modules/shared/text/LinkText";
 
 const year = new Date().getFullYear();
 
@@ -56,7 +56,7 @@ function Footer(props) {
 
                 <div className={footerStyles.footerGrid}>
                     <div>
-                        <img onClick={goToHome} className={footerStyles.logo} alt="asrr-logo" src={logo}/>
+                        <img onClick={goToHome} className="logo" alt="asrr-logo" src={logo}/>
                         <p className="h6">Innovative Software</p>
                     </div>
 

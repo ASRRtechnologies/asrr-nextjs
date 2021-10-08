@@ -42,7 +42,8 @@
     "react-use": "15.1.0",
     "react-uuid": "^1.0.2",
     "rfs": "^9.0.3",
-    "rosetta": "1.0.0"
+    "rosetta": "1.0.0",
+    "type-fest": "^2.3.4"
   },
   "devDependencies": {
     "typescript": "^4.4.3"

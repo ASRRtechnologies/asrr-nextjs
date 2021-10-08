@@ -1,8 +1,7 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import ServicePage from '@/modules/pages/services/Services'
-import {useHeader} from '../context/navigation/HeaderContext'
 import matter from 'gray-matter'
-import PageLayout from '@/layout/PageLayout'
+import PageLayout from '@/modules/shared/layout/PageLayout'
 import {getAllServices} from 'src/lib/api'
 import Banner from "../components/modules/shared/landing/Banner";
 
@@ -12,12 +11,6 @@ function Diensten({content, allServices}) {
     const SEOProps = {
         ...content.meta_tags
     }
-
-    const header = useHeader();
-    useEffect(() => {
-        // @ts-ignore
-        header.setHeaderWhite(false)
-    }, []);
 
     return (
         <PageLayout className="darkmodeContainer" {...SEOProps}>

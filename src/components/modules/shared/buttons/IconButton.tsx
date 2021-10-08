@@ -3,15 +3,33 @@ import React from "react";
 import styled from "@emotion/styled";
 import css from "@emotion/css";
 
-const StyledButton = styled("button")<ButtonProps>`
+const StyledButton = styled("div")<ButtonProps>`
   ${props => props.mode === "darkmode" && css`
     background-color: ${props.theme.button.darkmode.background};
+
+    svg {
+      path {
+        fill: ${props.theme.button.darkmode.font}
+      }
+    }
   `}
   ${props => props.mode === "dark" && css`
     background-color: ${props.theme.button.dark.background};
+
+    svg {
+      path {
+        fill: ${props.theme.button.dark.font}
+      }
+    }
   `}
   ${props => props.mode === "light" && css`
     background-color: ${props.theme.button.light.background};
+
+    svg {
+      path {
+        fill: ${props.theme.button.light.font}
+      }
+    }
   `}
   &:hover {
     ${props => props.mode === "darkmode" && css`
@@ -28,11 +46,16 @@ const StyledButton = styled("button")<ButtonProps>`
   }
 `
 
-const SubmitButton = (props: ButtonProps) => {
+const IconButton = (props: ButtonProps) => {
     return (
         <StyledButton {...props}>
-            <p>{props.title}</p>
+            {props.children}
         </StyledButton>
     )
 }
-export default SubmitButton;
+
+IconButton.defaultProps = {
+    mode: "darkmode"
+};
+
+export default IconButton;

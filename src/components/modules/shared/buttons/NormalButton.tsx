@@ -1,9 +1,9 @@
-import {NormalButtonProps} from "@/modules/shared/buttons/types";
+import {ButtonProps, NormalButtonProps} from "@/modules/shared/buttons/types";
 import React from "react";
 import styled from "@emotion/styled";
 import css from "@emotion/css";
 
-const StyledButton = styled("div")<NormalButtonProps>`
+const StyledButton = styled("div")<ButtonProps>`
   ${props => props.mode === "darkmode" && css`
     background-color: ${props.theme.button.darkmode.background};
   `}
@@ -15,9 +15,23 @@ const StyledButton = styled("div")<NormalButtonProps>`
   ${props => props.mode === "light" && css`
     background-color: ${props.theme.button.light.background};
   `}
+
+  &:hover{
+    ${props => props.mode === "darkmode" && css`
+    border-color: ${props.theme.button.darkmode.border};
+  `}
+
+    ${props => props.mode === "dark" && css`
+    border-color: ${props.theme.button.dark.border};
+  `}
+
+    ${props => props.mode === "light" && css`
+    border-color: ${props.theme.button.light.border};
+  `}
+  }
 `
 
-const NormalButton = (props: NormalButtonProps) => {
+const NormalButton = (props: ButtonProps) => {
     return (
         <StyledButton {...props}>
             <p>{props.title}</p>

@@ -1,3 +1,6 @@
+import {ReactElement} from "react";
+import {Merge} from 'type-fest';
+
 export type ButtonMode = "darkmode" | "dark" | "light";
 
 export interface ButtonThemeProps {
@@ -6,40 +9,52 @@ export interface ButtonThemeProps {
             dark: {
                 background: string,
                 shadow: string,
-                font: string
+                font: string,
+                border: string
             }
             light: {
                 background: string,
                 shadow: string,
-                font: string
+                font: string,
+                border: string
             }
             darkmode: {
                 background: string,
                 shadow: string,
-                font: string
+                font: string,
+                border: string
             }
         }
     }
 }
 
 export type NavigationButtonProps = ButtonThemeProps & {
-    buttonType: "navigation", href: string, title: string, mode: ButtonMode, className?: string
+    buttonType: "navigation", href: string,
 }
 
 export type NormalButtonProps = ButtonThemeProps & {
-    buttonType: "normal", href?: never, title: string, mode: ButtonMode, className?: string
+    buttonType: "normal", href?: never,
 }
 
 export type SubmitButtonProps = ButtonThemeProps & {
-    buttonType: "submit", href?: never, title: string, mode: ButtonMode, className?: string
+    buttonType: "submit", href?: never,
+}
+
+export type IconButtonProps = ButtonThemeProps & {
+    buttonType: "icon", href?: never, title?: never,
 }
 
 export type ButtonTypeProps = (
     | NavigationButtonProps
     | NormalButtonProps
     | SubmitButtonProps
+    | IconButtonProps
     )
 
-export interface ButtonProps {
+export interface ButtonProps extends ButtonThemeProps{
     buttonType: ButtonTypeProps,
+    className?: string,
+    [x: string] : any,
+    title: string,
+    mode: ButtonMode,
 }

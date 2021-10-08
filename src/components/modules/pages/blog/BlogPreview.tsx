@@ -27,7 +27,12 @@ function Blog(props) {
                 })}
             </MaxTwoColGrid>
 
-            <LinkText goToSection={true} customLink={false} href="/blog" title="Bekijk all onze blogposts"/>
+            <Fade triggerOnce={true}>
+                <>
+                    <LinkText goToSection={true} customLink={false} href="/blog" title="Bekijk all onze blogposts"/>
+                </>
+            </Fade>
+
         </Section>
     );
 }

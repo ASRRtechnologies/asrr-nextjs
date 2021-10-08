@@ -1,8 +1,7 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import ContactPage from '../components/contact/Contact'
-import {useHeader} from '../context/navigation/HeaderContext'
 import matter from 'gray-matter'
-import PageLayout from '@/layout/PageLayout'
+import PageLayout from '@/modules/shared/layout/PageLayout'
 import Banner from "@/modules/shared/landing/Banner";
 
 const SEOProps = {
@@ -12,11 +11,6 @@ const SEOProps = {
 
 function Contact({content}) {
     const basePath = `/content/contact/nl`;
-    const header = useHeader();
-    useEffect(() => {
-        // @ts-ignore
-        header.setHeaderWhite(false)
-    }, []);
 
     return (
         <PageLayout noPreview={true} className="darkmodeContainer" {...SEOProps}>

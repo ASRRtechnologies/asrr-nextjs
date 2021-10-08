@@ -5,6 +5,7 @@ import styled from '@emotion/styled'
 import Grid from "@/modules/shared/grid/Grid";
 import ServiceCards from "./ServiceCards";
 import LinkText from "@/modules/shared/text/LinkText";
+import {Fade} from "react-awesome-reveal";
 
 const Wrapper = styled(Section)`
 
@@ -31,7 +32,11 @@ function ServicePreview({content, allServices}) {
                     )
                 })}
             </Grid>
-            <LinkText goToSection={true} customLink={false} href="/diensten" title="Ga naar diensten"/>
+            <Fade triggerOnce={true}>
+                <>
+                    <LinkText goToSection={true} customLink={false} href="/diensten" title="Ga naar diensten"/>
+                </>
+            </Fade>
         </Wrapper>
     )
 }

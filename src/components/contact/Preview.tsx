@@ -20,15 +20,9 @@ function Preview() {
                 <div className={contactStyles.contactInner}>
                     <h1 className="h2">{titleObject.title}</h1>
                     <h2 className="h3 not-bold">{titleObject.header}</h2>
-                    <Button
-                        buttonType={{
-                            buttonType: "navigation",
-                            title: "Kom in contact",
-                            href: "/contact",
-                            mode:"light",
-                            className: buttonStyles.contactPreview
-                        }}
-                    />
+                    <Button title="Kom in contact" mode="light"
+                            className={buttonStyles.contactPreview}
+                            buttonType={{buttonType: "navigation", href: "/contact"}}/>
                 </div>
             </Fade>
         </Section>
