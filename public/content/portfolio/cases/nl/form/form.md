@@ -41,7 +41,13 @@ section:
       ## Oplossing
 
 
-      Het idee achter de Configurator is om vanaf een lijst keuzes, gemaakt door de consument, automatisch het huis in Revit (een 3D engineering/modelleringsprogramma) samen te stellen en daarmee een officiële bouwtekening te genereren. Dit bespaart de architecten een hoop (herhaald) werk, en zorgt ervoor dat er minder fouten gemaakt worden in het proces.
+      De configurator maakt het mogelijk voor klanten om hun optielijst (die normaal gesproken door de architect werd uitgetekend) direct om te zetten in een officiële 3D - bouwtekening. De bouwtekening wordt gegenereerd in Revit, een 3D engineering/modellering programma.
+
+
+      De eerste stap in het automatiseren van het ontwerpproces is het opbouwen van de subcomponenten waar een huis uit bestaat, zoals een dak of een gevel. De tweede stap is een keuzeboom maken. Dit houdt in dat je moet afbakenen wat de klant nog kan kiezen nadat hij al een bepaalde keuze heeft gemaakt. Een klant kiest bijvoorbeeld voor dak A, maar dak A kan niet in combinatie van dakkapel A gebouwd worden. De klant moet dan voor dak A kiezen met dakkapel B.
+
+
+      De laatste stap is het exporteren van de bouwtekening.
 
 
       Dit alles is echter makkelijker gezegd dan gedaan. Om dit alles te laten werken is er een Custom Revit-Addin, een enterprise-grade back-end API, een complexe database en web-applicatie nodig om maar een paar zaken te noemen. Er zijn complexe keuzebomen gemaakt om de keuze van de consument om te zetten in de business rules. Deze zijn nodig voor het samenstellen van de modellen voor een huis.
