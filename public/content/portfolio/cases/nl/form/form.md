@@ -44,7 +44,7 @@ section:
       De configurator maakt het mogelijk voor klanten om hun optielijst (die normaal gesproken door de architect werd uitgetekend) direct om te zetten in een officiële 3D - bouwtekening. De bouwtekening wordt gegenereerd in Revit, een 3D engineering/modellering programma.
 
 
-      De eerste stap in het automatiseren van het ontwerpproces is het opbouwen van de subcomponenten waar een huis uit bestaat, zoals een dak of een gevel. De tweede stap is een keuzeboom maken. Dit houdt in dat je moet afbakenen wat de klant nog kan kiezen nadat hij al een bepaalde keuze heeft gemaakt. Een klant kiest bijvoorbeeld voor dak A, maar dak A kan niet in combinatie van dakkapel A gebouwd worden. De klant moet dan voor dak A kiezen met dakkapel B.
+      De eerste stap in het automatiseren van het ontwerpproces is het parametrisch opbouwen van de subcomponenten waar een huis uit bestaat, zoals een dak of een gevel. De tweede stap is een keuzeboom maken. Dit houdt in dat je moet afbakenen wat de klant nog kan kiezen nadat hij al een bepaalde keuze heeft gemaakt. Een klant kiest bijvoorbeeld voor dak A, maar dak A kan niet in combinatie van dakkapel A gebouwd worden. De klant moet dan voor dak A kiezen met dakkapel B.
 
 
       De laatste stap is het exporteren van de bouwtekening.
