@@ -24,13 +24,13 @@ section:
       # Het bouwen van een geautomatiseerde BIM-Configurator
 
 
-      FORM Architecture & Engineering heeft al sinds 2011 een visie over hoe het automatiseren van het ontwerpproces van nieuwbouwhuizen. In 2018 zijn we met deze visie aan de slag gegaan en begonnen met het realiseren van de Configurator. De configurator maakt het mogelijk voor consumenten om zelf hun droomhuis te ontwerpen. Meer informatie over de laatste versie van de Configurator is te vinden onderaan de pagina. Voor een demo klik hier. 
+      FORM Architecture & Engineering heeft al sinds 2011 een visie over hoe het automatiseren van het ontwerpproces van nieuwbouwhuizen. In 2018 zijn we met deze visie aan de slag gegaan en begonnen met het realiseren van de Configurator. De configurator maakt het mogelijk voor consumenten om zelf hun droomhuis te ontwerpen. Meer informatie over de laatste versie van de Configurator is te vinden onderaan de pagina. Voor een demo klik hier.
 
 
       ## Het probleem
 
 
-      De basis van het automatiseren van het ontwerpproces is het modulair en parametrisch opbouwen van de sub-componenten waar een huis uit bestaat. Dat klinkt misschien ingewikkeld, maar door het zo te structureren kan er een hoop geautomatiseerd worden.
+      Bij het kopen van een huis geeft de klant aan welke opties hij op zijn huis wil, zoals een dakkapel of een uitbouw. De architect moet voor elke klant handmatig een apart ontwerp maken, gebaseerd op de aangegeven opties. Dit proces is onnodig tijdrovend en repetitief, vooral als huizen in grote getallen worden gebouwd. Daarbij zijn klanten minder snel geneigd om een extra optie te kiezen als zij vooraf niet goed kunnen visualiseren wat het effect is, wat nadelig is voor de partij die de huizen verkoopt (in dit geval FORM).
     media:
       images:
         - image: form-1-2.png
