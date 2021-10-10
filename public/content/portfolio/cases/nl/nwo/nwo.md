@@ -76,5 +76,5 @@ section:
       ## De Conclusie
 
 
-      Door deze krachtige server konden interne en externe teams verspreid over Nederland en Duitsland samenwerken alsof zij op dezelfde werkplek zaten. Op momenten dat er weinig gebruikers gebruik maakte van de server (zoals in de avonden of weekenden) hadden gebruikers de rekenkracht van een supercomputer tot hun beschikking. Dit is handig voor taken die normaal gesproken veel tijd zouden kosten, bijvoorbeeld het runnen van een zwaar CAD programma of modelleren.
+      Door deze krachtige server werken interne en externe teams verspreid over Nederland en Duitsland samen alsof zij op dezelfde locatie werken. Op momenten dat er weinig gebruikers gebruik maken van de server (zoals in de avonden of weekenden) hebben gebruikers de rekenkracht van een supercomputer tot hun beschikking. Dit is handig voor taken die normaal gesproken veel tijd kosten, bijvoorbeeld het runnen van een zwaar CAD programma of modelleren.
 ---
