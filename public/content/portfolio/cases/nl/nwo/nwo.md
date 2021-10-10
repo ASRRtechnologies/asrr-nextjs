@@ -37,7 +37,7 @@ section:
       Binnen NWO moeten verschillende teams met elkaar samenwerken, dit gaat om zowel interne teams als externe teams. Het probleem was dat externe teams geen toegang konden krijgen tot het bestaande systeem waar de hele werkmethode op was ingericht en dat het bestaande systeem niet toereikend was voor gespecialiseerde teams.
 
 
-      Er was gebrek aan een gezamenlijke plek waar werknemers documenten kunnen delen, kunnen communiceren en rekenkracht beschikbaar hebben. Deze gezamenlijke plek moest toegankelijk zijn voor alle werknemers op alle plekken en goed beveiligd zijn (met op zijn minste een twee factor authenticatie). 
+      Er was gebrek aan een gezamenlijke plek waar werknemers documenten kunnen delen, kunnen communiceren en rekenkracht beschikbaar hebben. Deze gezamenlijke plek moest toegankelijk zijn voor alle werknemers vanaf alle mogelijke locaties en goed beveiligd zijn (met op zijn minste een twee factor authenticatie). 
 
 
       NWO gaf aan een aantal eisen te hebben. De online omgeving moest:
