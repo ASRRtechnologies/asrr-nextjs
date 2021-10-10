@@ -59,7 +59,7 @@ section:
       ### **2. API**
 
 
-      We hebben geanalyseerd welke acties invloed hebben op de data, zoals het aftekenen van een verzending. Vervolgens zijn er API calls (code die zorgt dat applicaties kunnen communiceren) geschreven om deze acties te ondersteunen. 
+      We hebben geanalyseerd welke acties invloed hebben op de data, zoals het aftekenen van een verzending. Vervolgens zijn er API calls (codes die zorgen dat applicaties kunnen communiceren) geschreven om deze acties te ondersteunen. 
 
 
       Een voorbeeld van een actie is dat een fabrieksmedewerker een verzending kan aftekenen. Onze API call maakt het mogelijk voor een medewerker om een gefilterde lijst te zien van ladingen en hun statussen door het invullen van een terminal- en tanknummer. De medewerker kan vervolgens de juiste lading uitkiezen uit de gefilterde lijst en de lading aftekenen. 
