@@ -82,7 +82,7 @@ section:
 
       * meer inzicht in de tijdlijn van het proces;
 
-      * er valt te herleiden welk medewerker verantwoordelijk is voor bepaalde acties.
+      * er valt te herleiden welke medewerker verantwoordelijk is voor bepaalde acties.
 
 
       ### **3. Insights**
