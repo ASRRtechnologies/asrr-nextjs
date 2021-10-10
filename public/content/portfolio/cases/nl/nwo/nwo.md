@@ -43,9 +43,9 @@ section:
       NWO gaf aan een aantal eisen te hebben. De online omgeving moest:
 
 
-      * geschikt zijn voor ongeveer vijftig werknemers.
+      * geschikt zijn voor ongeveer vijftig werknemers;
 
-      * genoeg rekenkracht hebben om zware CAD en modelleer programma's te draaien.
+      * genoeg rekenkracht hebben om zware CAD en modelleer programma's te draaien;
 
       * op een veilige manier bestanden kunnen opslaan met behulp van een back-up strategie.
     media:
