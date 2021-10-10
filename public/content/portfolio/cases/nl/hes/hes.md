@@ -95,7 +95,7 @@ section:
 
       * de status van alle terminals;
 
-      * de hoeveelheid staal op elk punt in het proces zit.
+      * de hoeveelheid staal op elk punt in het proces.
 
 
       Het dashboard neemt een deel van de verantwoordelijkheden over die voorheen bij werknemers lagen, zoals het genereren van rapportages. Verder krijgt het management real-time inzichten in de status van het gehele project.
