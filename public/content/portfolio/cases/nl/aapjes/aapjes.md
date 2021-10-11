@@ -32,50 +32,31 @@ section:
       # Een website voor de kleintjes
 
 
-      *Het kinderdagverblijf, de Kleine Aapjes, in Den Haag heeft ASRR benaderd voor een simpele, snelle moderne website.*
+      Zonder (goede) website sta je als bedrijf gelijk een stap achter. Een website is tegenwoordig een 'must have' voor alle soorten bedrijven. Ook kinderdagverblijf, De Kleine Aapjes, kon hier niet in achterblijven en wilde graag een digitaal visitekaartje dat hen als kinderdagverblijf goed representeert.
 
 
-      &nbsp;
+      ## Probleem
 
 
-      ASRR is er voor bedrijven op elke schaal, zo ook voor kinderdagverblijf de Kleine Aapjes in Den Haag. De website van dit bedrijf transitioneerde van een WordPress website naar een van onze NextJS webapps. 
-
-
-      &nbsp;
-
-
-      De website moest simpel, snel en modern ogen. Binnen het budget hebben we een van onze templates gebruikt en deze gehost op ons hosting systeem. De klant is volledig ontzorgd met de juiste resultaten.
-
-
-      &nbsp;
+      De huidige website van het kinderdagverblijf was een WordPress website. Het dagverblijf vond hun huidige website niet toereikend genoeg en waren toe aan verbeteringen. 
 
 
       ## Oplossing
 
 
-      * Een snelle NextJS web app.
-
-      * Responsive webdesign.
-
-      * Automatische HTTPS/SSL certificering.
-
-      * Globally redundant hosting op met een razendsnel hosting systeem.
+      ASRR is er voor bedrijven op elke schaal, zo ook voor de Kleine Aapjes in Den Haag. De website van dit bedrijf transitioneerde van een WordPress website naar een van onze NextJS webapps. 
 
 
-      &nbsp;
-
-
-      ## Preview
-
-
-      Hieronder een preview van de website. De website is [hier](https://dekleineaapjes.nl) te vinden. 
-
-
-      &nbsp;
+      De website moest simpel en snel zijn en modern ogen, maar het moest binnen budget blijven. Om kosten te drukken hebben wij een van onze standaard templates gebruikt, waardoor er geen tijd en geld in een nieuw design gestopt hoeft te worden. Onze templates vallen onder 'Responsive Webdesign', dat houdt in dat er wordt gestreefd naar een optimale webervaring op een breed scala aan apparaten. Verder gebruiken wij Automatische HTTPS/SSL certificering, wat veiligheid van de website waarborgt. De website hosten wij op ons eigen razendsnelle hosting systeem. Dit is globally redundant hosting, wat bijdraagt aan een snelle website.
     media:
       images:
         - image: aapjes-example-2.png
           alt: Sneak peak of aapjes website
           description: Preview van de website
           reference: https://www.dekleineaapjes.nl/
+  - content: >-
+      ## Conclusie
+
+
+      ASRR is er voor bedrijven op elke schaal en kan door gebruik te maken voor onze standaard templates en razendsnelle hosting een esthetische, snelle, moderne, simpele, scherp geprijsde website maken.
 ---
