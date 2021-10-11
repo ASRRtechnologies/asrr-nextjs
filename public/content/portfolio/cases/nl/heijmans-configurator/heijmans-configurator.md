@@ -4,9 +4,9 @@ title: heijmans-configurator
 type: Case
 meta_tags:
   title: Case - Heijmans Configurator
-  text: Een online 3D-omgeving om samen of zelf jouw toekomstige huis te
-    ontwerpen. Er komt geen architect meer aan te pas, alleen jouw fantasie en
-    creativiteit.
+  text: ASRR heeft een online 3D-omgeving gemaakt waar jij zelf jouw toekomstige
+    huis kan ontwerpen. Er komt geen architect meer aan te pas, alleen jouw
+    fantasie en creativiteit.
 info:
   date: January 10, 2021 12:20 AM
   client: Heijmans
