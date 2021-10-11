@@ -4,8 +4,10 @@ title: esp
 type: Case
 meta_tags:
   title: Case - ESP
-  text: Een website om zowel de business als de techniek aan te spreken met
-    verschillende marketing funnels
+  text: >+
+    Een website om een breed scala aan klanten aan te spreken door voor elke
+    type klant een kanaal aan te maken waar zij terecht kunnen.
+
 info:
   date: May 6, 2020 12:00 AM
   client: ESP Consultancy
@@ -16,8 +18,11 @@ card:
   title: Een professionele, nieuwe website
   image: esp-cover.jpg
   alt: Skyscrapers from below
-  text: Een website om zowel de business als de techniek aan te spreken met
-    verschillende marketing funnels
+  text: "Een website om een breed scala aan klanten aan te spreken door voor elke
+    type klant, zoals een ZZP'er of een freelancer een kanaal te maken dat
+    beschikt over nuttige informatie en een contact knop. Als een klant contact
+    opneemt deze knop, ontvangt de website nuttige achtergrond informatie over
+    de potentiële klant. "
 landing:
   title: Een professionele website
   image: esp-landing.jpg
