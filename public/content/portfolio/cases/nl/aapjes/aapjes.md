@@ -16,8 +16,13 @@ card:
   title: Een website voor de kleintjes
   image: aapjes-card.jpg
   alt: Crayons
-  text: Een goede website hoeft niet veel te kosten. Snel, krachtig en modern met
+  text: >+
+    Iedereen zoekt alles tegenwoordig online op en wat is een beter digitaal
+    visite kaartje dan een esthetische en overzichtelijke website met al jouw
+    belangrijke informatie? Een goede website is tegenwoordig een 'must have' en
+    hoeft niet veel te kosten. Onze websites zijn snel, krachtig, modern met
     groeimogelijkheden.
+
 landing:
   title: Een vrolijke en frisse nieuwe website
   image: aapjes-cover.jpg
