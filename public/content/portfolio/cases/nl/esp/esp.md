@@ -32,16 +32,13 @@ section:
       # Een website om IT en Business aan te trekken
 
 
-      *ESP is een consultancy bureau dat zich specialiseert in het plaatsen van professionals in de IT wereld. In de huidige markt is het cruciaal wat voor indruk er achtergelaten wordt bij potentiële werknemers. Daarom besloot ESP ons te benaderen om een website te bouwen met de laatste foefjes op gebied van web development.* 
-
-
-      &nbsp;
+      ESP is een consultancy bureau dat zich specialiseert in het plaatsen van professionals in de IT-wereld. In de huidige recruitment markt is het cruciaal om een goede indruk achter te laten bij potentiële werknemers. "You need to stand out from the crowd". Om die reden had ESP behoefte aan een goed online visite kaartje dat toereikend is voor verschillende soorten klanten.
 
 
       ## Probleem
 
 
-      De website moest verschillende "funnels" krijgen, waarbij er verschillende landingspaginas kunnen worden voorgeschoteld, op basis van wie de doelgroep is.
+      De website moest verschillende "funnels" krijgen, waarbij er verschillende landingspaginas kunnen worden voorgeschoteld, op basis van wie de doelgroep is. ESP had behoefte aan een website die toereikend is voor een breed scala aan klanten, zoals ZZP'ers of freelancers.
     media:
       images: []
   - content: >-
