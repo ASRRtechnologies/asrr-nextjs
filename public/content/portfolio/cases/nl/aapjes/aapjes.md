@@ -4,8 +4,9 @@ title: aapjes
 type: Case
 meta_tags:
   title: Case - De Kleine Aapjes
-  text: "Een goede website hoeft niet veel te kosten. Snel, krachtig en modern met
-    groeimogelijkheden. "
+  text: "Een goede website is tegenwoordig een 'must have' en hoeft niet veel te
+    kosten. Onze websites zijn snel, krachtig en modern met groeimogelijkheden.
+    "
 info:
   date: May 6, 2020 12:00 AM
   client: De Kleine Aapjes
