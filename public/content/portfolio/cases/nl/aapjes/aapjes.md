@@ -2,10 +2,16 @@
 language: nl
 title: aapjes
 type: Case
+meta_tags:
+  title: Case - De Kleine Aapjes
+  text: "Een goede website hoeft niet veel te kosten. Snel, krachtig en modern met
+    groeimogelijkheden. "
 info:
   date: May 6, 2020 12:00 AM
   client: De Kleine Aapjes
   author: Amar Ramdas
+  tags:
+    - center
 card:
   title: Een website voor de kleintjes
   image: aapjes-card.jpg
