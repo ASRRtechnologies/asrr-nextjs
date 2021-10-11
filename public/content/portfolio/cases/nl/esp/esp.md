@@ -2,10 +2,16 @@
 language: nl
 title: esp
 type: Case
+meta_tags:
+  title: Case - ESP
+  text: Een website om zowel de business als de techniek aan te spreken met
+    verschillende marketing funnels
 info:
   date: May 6, 2020 12:00 AM
   client: ESP Consultancy
   author: Amar Ramdas
+  tags:
+    - left
 card:
   title: Een professionele, nieuwe website
   image: esp-cover.jpg
