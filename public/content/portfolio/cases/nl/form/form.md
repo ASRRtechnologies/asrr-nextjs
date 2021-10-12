@@ -89,7 +89,7 @@ section:
       ## Conclusie
 
 
-      FORM had een scala aan IT disciplines nodig, en heeft door de jaren heen dynamisch op afroepbasis een team van verschillende developers bij ons afgenomen om hun visie te realiseren.
+      Door de configurator kunnen klanten zelfstandig een bouwtekening van hun droomhuis laten genereren. Naast de klant de zelfstandigheid geven om zijn eigen woning te ontwerpen, heeft de architect niet meer onnodig veel en repetitief werk. Er valt hier zeker te spreken van een win-win-situatie.
   - content: >-
       ## Feedback klant
 
