@@ -41,28 +41,35 @@ section:
       ## Oplossing
 
 
-      De configurator maakt het mogelijk voor klanten om hun optielijst (die normaal gesproken door de architect werd uitgetekend) direct om te zetten in een officiële 3D - bouwtekening. De bouwtekening wordt gegenereerd in Revit, een 3D engineering/modellering programma.
+      De configurator maakt het mogelijk voor klanten om hun optielijst (die normaal gesproken door de architect werd uitgetekend) direct om te zetten in een officiële 3D - bouwtekening. De bouwtekening wordt gegenereerd in Revit, een 3D engineering/modellering programma. Hieronder een uitleg en een schematische weergave van hoe wij dit hebben gerealiseerd. 
 
 
-      De eerste stap in het automatiseren van het ontwerpproces is het parametrisch opbouwen van de subcomponenten waar een huis uit bestaat, zoals een dak of een gevel. De tweede stap is een keuzeboom maken. Dit houdt in dat je moet afbakenen wat de klant nog kan kiezen nadat hij al een bepaalde keuze heeft gemaakt. Een klant kiest bijvoorbeeld voor dak A, maar dak A kan niet in combinatie van dakkapel A gebouwd worden. De klant moet dan voor dak A kiezen met dakkapel B.
+      ### Maken configuratie (rode pijlen)
 
 
-      De laatste stap is het exporteren van de bouwtekening.
+      1. De eerste stap in dit proces is natuurlijk het invullen van de optielijst. Dit kan op een door ons ontwikkelde webapplicatie, ook wel het dashboard genoemd. Als de klant tevreden is met zijn keuzes, dan stuurt het dashboard de keuzes door naar de Hive.
+
+      2. De Hive werkt als een brein van de applicatie. De Hive moet er voor zorgen dat alle keuzes van de klant goed worden gecommuniceerd naar Revit, het programma dat de keuzes gaat omzetten in een 3D-bouwtekening. Alleen kunnen de Hive en Revit niet zo goed met elkaar samenwerken, wat directe communicatie moeilijk maakt. De Hive en Revit hebben een bemiddelaar nodig die er voor zorgt dat zij zonder problemen met elkaar kunnen communiceren. Die bemiddelaar is de Thin Client. De Hive stuurt de keuzes naar de Thin Client.
+
+      3. De Thin Client is als een schild om Revit heen gebouwd op dezelfde Windows PC. Zo kan de Thin Client naast bemiddelen ook Revit ondersteunen. De Thin Client stuurt de keuzes door naar Revit, die er een bouwtekening van maakt voor de klant.
+
+      4. De bouwtekening wordt terug gestuurd naar de Thin Client. 
+
+      5. De Thin Client stuurt de bouwtekening terug naar de Hive.
+
+      6. De Hive is echter alleen goed in communicatie en niet in het opslaan van bestanden, dus het brein stuurt de configuratie door naar Azure. Azure slaat de configuratie van de klant veilig op.
 
 
-      Dit alles is echter makkelijker gezegd dan gedaan. Om dit alles te laten werken is er een Custom Revit-Addin, een enterprise-grade back-end API, een complexe database en web-applicatie nodig om maar een paar zaken te noemen. Er zijn complexe keuzebomen gemaakt om de keuze van de consument om te zetten in de business rules. Deze zijn nodig voor het samenstellen van de modellen voor een huis.
+      ### Opvragen configuratie (paarse pijlen)
 
 
-      Vervolgens is er een custom C# Revit Add-In geschreven, waarmee we de applicatie met code kunnen aansturen. Op basis van de keuzebomen wordt het juiste onderdeel in 3D op de juiste positie geplaatst. Als een huis eenmaal samengesteld is, kan deze met Revit worden weergegeven op een bouwtekening. Deze bouwtekening wordt met een zelfgebouwde PDF printer geëxporteerd, aangezien Revit deze niet ingebouwd heeft.
+      7. Als de klant de configuratie wil zien, moet hij dit opvragen via het dashboard. Het dashboard vraagt aan de Hive of hij de configuratie mag zien, want het brein gaat over communicatie.
 
+      8. De Hive vraagt de configuratie op bij Azure. 
 
-      Zo kan er dus lokaal op basis van een boodschappenlijstje een heel huis samengesteld worden. De bedoeling is echter dat de consument dit zelf kan opvragen, doormiddel van bijvoorbeeld een webapplicatie. Het grote probleem hierbij is dat Revit vrij instabiel kan zijn met grote of inefficiënte modellen. Daarom hebben we een programma geschreven dat als een soort schild fungeert om Revit heen. Het programma houdt Revit in leven, en zorgt ervoor dat er communicatie plaats kan vinden met de applicatie in de Cloud die aanvragen van buitenaf binnen krijgt.
+      9. Azure stuurt de configuratie naar de Hive.
 
-
-      De crux hierin is de applicatie in de Cloud. Dit is een Java Spring boot applicatie, gehost op ons Kubernetes netwerk. Deze applicatie moet altijd beschikbaar zijn, en kan een enorme hoeveelheid aanvragen tegelijk aan. Vervolgens worden deze aanvragen opgeslagen in een database, met bijbehorend dashboard om in te zien wat de klanten gekozen hebben. De Cloud applicatie voert de aanvragen mondjesmaat aan de Revit worker, en zorgt ervoor dat de uploads veilig worden opgeslagen in Azure.
-
-
-      Dit is een preview van het dashboard. Als de request eenmaal voltooid is kan de klant de bouwtekeningen met een druk op de knop downloaden.
+      10. De Hive stuurt de configuratie terug naar het dashboard. De klant heeft nu een 3D-bouwtekening van zijn toekomstige woning downloaden met een klik op de knop.
     media:
       images:
         - image: form-3.png
