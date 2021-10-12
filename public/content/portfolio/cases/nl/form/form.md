@@ -3,7 +3,8 @@ language: nl
 title: form
 meta_tags:
   title: Case - FORM
-  text: "-"
+  text: De Configurator maakt het mogelijk voor klanten om hun droomhuis direct om
+    te zetten in een officiële 3D - bouwtekening.
 info:
   date: January 7, 2021 12:00 AM
   title: Het bouwen van een geautomatiseerde BIM-Configurator
@@ -14,7 +15,7 @@ info:
 card:
   alt: Modern Building
   client: Form Architectuur & Engineering
-  text: De configurator maakt het mogelijk voor klanten om hun droomhuis direct om
+  text: De Configurator maakt het mogelijk voor klanten om hun droomhuis direct om
     te zetten in een officiële 3D - bouwtekening. De bouwtekening wordt
     gegenereerd in Revit, een 3D engineering/modellering programma.
   title: Het bouwen van een geautomatiseerde BIM-Configurator
