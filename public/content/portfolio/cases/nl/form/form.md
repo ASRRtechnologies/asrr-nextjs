@@ -72,6 +72,12 @@ section:
       10. De Hive stuurt de configuratie terug naar het dashboard. De klant heeft nu een 3D-bouwtekening van zijn toekomstige woning downloaden met een klik op de knop.
     media:
       images:
+        - image: configurator-schema-1-.png
+          description: Schematische weergave van de werking van de Configurator. De rode
+            pijlen representeren het configureren van een bouwtekening en de
+            paarse gestippelde lijnen representeren het opvragen van de
+            bouwtekening.
+          alt: Huis configureren
         - image: form-3.png
           description: Gesimplificeerde versie van het configurator dashboard
           alt: Dashboard
