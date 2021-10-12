@@ -14,8 +14,9 @@ info:
 card:
   alt: Modern Building
   client: Form Architectuur & Engineering
-  text: Aansturen van een werkprogramma met een custom wrapper en data-extractie
-    naar onze cloud om een enterprise grade service te bouwen.
+  text: De configurator maakt het mogelijk voor klanten om hun droomhuis direct om
+    te zetten in een officiële 3D - bouwtekening. De bouwtekening wordt
+    gegenereerd in Revit, een 3D engineering/modellering programma.
   title: Het bouwen van een geautomatiseerde BIM-Configurator
   image: case-image.jpg
   description: Nieuwe applicatiesa in de bouw
@@ -30,7 +31,7 @@ section:
       ## Het probleem
 
 
-      Bij het kopen van een huis geeft de klant aan welke opties hij op zijn huis wil, zoals een dakkapel of een uitbouw. De architect moet voor elke klant handmatig een apart ontwerp maken, gebaseerd op de aangegeven opties. Dit proces is onnodig tijdrovend en repetitief, vooral als huizen in grote getallen worden gebouwd. Daarbij zijn klanten minder snel geneigd om een extra optie te kiezen als zij vooraf niet goed kunnen visualiseren wat het effect is, wat nadelig is voor de partij die de huizen verkoopt (in dit geval FORM).
+      Bij het kopen van een huis geeft de klant aan welke opties hij op zijn huis wil, zoals een dakkapel of een uitbouw. De architect moet voor elke klant handmatig een apart ontwerp maken, gebaseerd op de aangegeven opties. Dit proces is onnodig tijdrovend en repetitief, vooral als huizen in grote getallen worden gebouwd.
     media:
       images:
         - image: form-1-2.png
