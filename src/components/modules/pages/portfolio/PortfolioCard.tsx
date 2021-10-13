@@ -32,9 +32,9 @@ function PortfolioCard(props: PortfolioCardProps) {
                 <LinkText href={`/portfolio/${projectName}`} customLink={false} classes="bold lees-meer" title={null}/>
             </div>
 
-            <div className={cardStyles.tags}>
-                {tags?.map((tag) =><Tag href={`/portfolio`} customLink={false} className="h6" title={tag}/>)}
-            </div>
+            {/*<div className={cardStyles.tags}>*/}
+            {/*    {tags?.map((tag) =><Tag href={`/portfolio`} customLink={false} className="h6" title={tag}/>)}*/}
+            {/*</div>*/}
         </div>
     );
 }

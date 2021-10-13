@@ -33,13 +33,13 @@ section:
       # Van Excel sheet naar Enterprise Applicatie
 
 
-      HES is een van de grootste multinationals in Europa op het gebied van transporteren, verwerken, mengen en opslaan van bulk. HES had behoefte aan inzicht en overzicht in zijn data.
+      HES is een van de grootste multinationals in Europa op het gebied van transporteren, verwerken, mengen en opslaan van bulk. HES had behoefte aan een applicatie die inzicht en overzicht geeft in zijn data.
 
 
       ## Het probleem
 
 
-      Voor HES zijn Hartel tank terminal in de Maasvlakte van Rotterdam werd de planning, status en specificaties van verschillende staalonderdelen bijgehouden in een Excel sheet van meer dan 30.000 regels. Alle werknemers hadden toegang tot dit Excel bestand. De grootte van het Excel bestand in combinatie met de hoeveelheid mensen die toegang hadden tot dit bestand, maakte het proces onoverzichtelijk en foutgevoelig. Om het proces overzichtelijk en niet foutgevoelig te maken hebben wij een drievoudige oplossing bedacht die wordt besproken in de volgende alinea.
+      Voor HES zijn Hartel tank terminal in de Maasvlakte van Rotterdam werd de planning, status en specificaties van verschillende staalonderdelen bijgehouden in een Excel sheet van meer dan 30.000 regels. Allen werknemers hadden toegang tot dit Excel bestand. De grootte van het Excel bestand in combinatie met de hoeveelheid mensen die toegang hadden tot dit bestand, maakte het proces onoverzichtelijk en foutgevoelig. Om het proces overzichtelijk en niet foutgevoelig te maken hebben wij een drievoudige oplossing bedacht die wordt besproken in de volgende alinea.
     media:
       images:
         - image: ezgif.com-gif-maker-3-min.jpg
@@ -59,7 +59,7 @@ section:
       ### **2. API**
 
 
-      We hebben geanalyseerd welke acties invloed hebben op de data, zoals het aftekenen van een verzending. Vervolgens zijn er API calls (code die zorgt dat applicaties kunnen communiceren) geschreven om deze acties te ondersteunen. 
+      We hebben geanalyseerd welke acties invloed hebben op de data, zoals het aftekenen van een verzending. Vervolgens zijn er API calls (codes die zorgen dat applicaties kunnen communiceren) geschreven om deze acties te ondersteunen. 
 
 
       Een voorbeeld van een actie is dat een fabrieksmedewerker een verzending kan aftekenen. Onze API call maakt het mogelijk voor een medewerker om een gefilterde lijst te zien van ladingen en hun statussen door het invullen van een terminal- en tanknummer. De medewerker kan vervolgens de juiste lading uitkiezen uit de gefilterde lijst en de lading aftekenen. 
@@ -82,7 +82,7 @@ section:
 
       * meer inzicht in de tijdlijn van het proces;
 
-      * er valt te herleiden welk medewerker verantwoordelijk is voor bepaalde acties.
+      * er valt te herleiden welke medewerker verantwoordelijk is voor bepaalde acties.
 
 
       ### **3. Insights**
@@ -95,7 +95,7 @@ section:
 
       * de status van alle terminals;
 
-      * de hoeveelheid staal op elk punt in het proces zit.
+      * de hoeveelheid staal op elk punt in het proces.
 
 
       Het dashboard neemt een deel van de verantwoordelijkheden over die voorheen bij werknemers lagen, zoals het genereren van rapportages. Verder krijgt het management real-time inzichten in de status van het gehele project.

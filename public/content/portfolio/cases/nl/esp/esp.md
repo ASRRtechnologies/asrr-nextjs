@@ -2,16 +2,27 @@
 language: nl
 title: esp
 type: Case
+meta_tags:
+  title: Case - ESP
+  text: >+
+    Een website om een breed scala aan klanten aan te spreken door voor elke
+    type klant een kanaal aan te maken waar zij terecht kunnen.
+
 info:
   date: May 6, 2020 12:00 AM
   client: ESP Consultancy
   author: Amar Ramdas
+  tags:
+    - left
 card:
   title: Een professionele, nieuwe website
   image: esp-cover.jpg
   alt: Skyscrapers from below
-  text: Een website om zowel de business als de techniek aan te spreken met
-    verschillende marketing funnels
+  text: "Een website om een breed scala aan klanten aan te spreken door voor elke
+    type klant, zoals een ZZP'er of een freelancer een kanaal te maken dat
+    beschikt over nuttige informatie en een contact knop. Als een klant contact
+    opneemt via deze knop, ontvangt de website nuttige achtergrond informatie
+    over de potentiële klant. "
 landing:
   title: Een professionele website
   image: esp-landing.jpg
@@ -21,16 +32,13 @@ section:
       # Een website om IT en Business aan te trekken
 
 
-      *ESP is een consultancy bureau dat zich specialiseert in het plaatsen van professionals in de IT wereld. In de huidige markt is het cruciaal wat voor indruk er achtergelaten wordt bij potentiële werknemers. Daarom besloot ESP ons te benaderen om een website te bouwen met de laatste foefjes op gebied van web development.* 
-
-
-      &nbsp;
+      ESP is een consultancy bureau dat zich specialiseert in het plaatsen van professionals in de IT-wereld. In de huidige recruitment markt is het cruciaal om een goede indruk achter te laten bij potentiële werknemers. "You need to stand out from the crowd". Om die reden had ESP behoefte aan een goed online visite kaartje dat toereikend is voor verschillende soorten klanten.
 
 
       ## Probleem
 
 
-      De website moest verschillende "funnels" krijgen, waarbij er verschillende landingspaginas kunnen worden voorgeschoteld, op basis van wie de doelgroep is.
+      ESP wordt dagelijks benaderd door verschillende soorten potentiële klanten. In de huidige website was er weinig structuur aangebracht om deze klanten te leiden. Om die reden had ESP behoefte aan een website die toereikend is voor een breed scala aan klanten, zoals ZZP'ers en freelancers. De website moest verschillende kanalen krijgen voor elke doelgroep.
     media:
       images: []
   - content: >-

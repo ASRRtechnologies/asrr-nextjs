@@ -37,9 +37,9 @@ function BlogCard(props: BlogCardProps) {
                           title={null}/>
             </div>
 
-            <div className={cardStyles.tags}>
-                {tags?.map((tag) => <Tag href={`/blog`} customLink={false} className="h6" title={tag}/>)}
-            </div>
+            {/*<div className={cardStyles.tags}>*/}
+            {/*    {tags?.map((tag) => <Tag href={`/blog`} customLink={false} className="h6" title={tag}/>)}*/}
+            {/*</div>*/}
         </div>
     );
 }

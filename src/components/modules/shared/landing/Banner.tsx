@@ -37,7 +37,7 @@ function Banner(props: BannerProps) {
                         {props.text}
                     </p>
 
-                    <p>Button Here</p>
+                    {/*<p>Button Here</p>*/}
                 </Fade>
             </div>
         </Section>
