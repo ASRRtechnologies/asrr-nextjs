@@ -10,7 +10,6 @@ import PageLayout from '@/modules/shared/layout/PageLayout'
 import PortfolioPreview from '@/modules/pages/portfolio/PortfolioPreview';
 import Banner from "@/modules/shared/landing/Banner";
 import BlogPreview from "@/modules/pages/blog/BlogPreview";
-// @ts-ignore
 import image from '/public/assets/images/landing/landing-asrr-min.jpg';
 
 function Index({homepage, allServices, allCases, allBlogs,}) {
