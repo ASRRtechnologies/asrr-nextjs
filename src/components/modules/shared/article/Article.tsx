@@ -133,7 +133,6 @@ function Article({ content, basePath }) {
           </div>
         </div>
       </Section>
-      <Contact />
     </>
   );
 }

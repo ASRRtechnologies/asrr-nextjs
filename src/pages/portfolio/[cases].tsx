@@ -10,11 +10,11 @@ function Page({ content }) {
   const basePath = `/content/portfolio/cases/nl/${content.title}`;
 
   const SEOProps = {
-    ...content.meta_tags
+    ...content.meta_tags,
   };
 
   return (
-    <PageLayout className='darkmodeContainer' {...SEOProps}>
+    <PageLayout className="darkmodeContainer" {...SEOProps}>
       <Article content={content} basePath={basePath} />
     </PageLayout>
   );
@@ -26,7 +26,7 @@ export async function getStaticProps({ params }) {
   const slug = params.cases.toLowerCase();
   const data = await import(
     `public/content/portfolio/cases/nl/${slug}/${slug}.md`
-    );
+  );
   const content = matter(data.default).data;
   const basePath = `/content/written/case/nl/${slug}`; //TODO check if works with enum
 
@@ -34,7 +34,7 @@ export async function getStaticProps({ params }) {
   const allCases = getAllCases(['title', 'card']);
 
   return {
-    props: { allCases, basePath, content }
+    props: { allCases, basePath, content },
   };
 }
 
@@ -42,7 +42,7 @@ export async function getStaticPaths() {
   const allCases = await getAllCases(['title']);
 
   const paths = allCases.map((cse) => ({
-    params: { cases: cse.title.toLowerCase() }
+    params: { cases: cse.title.toLowerCase() },
   }));
 
   return { paths, fallback: false };
