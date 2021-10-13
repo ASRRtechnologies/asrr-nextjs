@@ -46,6 +46,9 @@ section:
       ## Oplossing
 
 
+      Dit project is een uitbreiding op een van onze voorgaande projecten: de FORM configurator. Klanten kunnen nu een real-time 3D-model zien tijdens het configureren van hun huis in plaats van alleen een bouwtekening opvragen van hun huis na het configureren. Hieronder een schematische weergave van hoe de 3D-configurator werkt. Het enige verschil tussen de FORM configurator en de 3D-configurator is dat het dashboard nu ook beschikt over een applicatie die de klant real-time zijn huis laat samenstellen. Ben je geïnteresseerd in de werking van de applicatie klik dan hier.
+
+
       In samenwerking met FORM en Heijmans hebben we een 3D, real-time BIM configurator opgeleverd. Met deze **`NextJS`** webapplicatie krijgen klanten hun toekomstige woning in een game engine te zien, waardoor opties goed gevisualiseerd kunnen worden. Dan toch maar een uitbouw of een dakkapel erbij, doordat de klant zelf kan zien wat de invloed hiervan is. Bijvoorbeeld hoe het licht binnenhuis verandert door het toevoegen van een uitbouw. We hebben het namelijk mogelijk gemaakt om het huis van zowel de binnen- als de buitenkant te bekijken onder verschillende hoeken. Hieronder lopen we je even door het proces van een klant heen. 
 
 
@@ -64,6 +67,13 @@ section:
         - image: ezgif.com-gif-maker-4-2.jpg
           description: De online omgeving
           alt: Configurator
+        - image: configurator-schema.jpg
+          alt: Schema config werking
+          description: "Schematische weergave van de werking van de configurator. De rode
+            pijlen representeren het configureren van een huis en de paarse
+            gestippelde lijnen representeren het opvragen van de configuratie.
+            Voor een uitgebreide uitleg over hoe dit proces in zijn werking gaat
+            klik hier. "
   - content: >-
       ## Conclusie
 
