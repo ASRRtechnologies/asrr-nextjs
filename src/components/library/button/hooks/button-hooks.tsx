@@ -1,4 +1,4 @@
-import {SerializedStyles} from "@emotion/css";
+import {SerializedStyles} from "@emotion/react";
 import {
     ButtonStyleDefault,
     ButtonStyleDefaultHoverDisabled,

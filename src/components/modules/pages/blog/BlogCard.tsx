@@ -20,10 +20,11 @@ function BlogCard(props: BlogCardProps) {
 
     const goToBlog = () => router.push(`/blog/${props.type}/${projectName}`);
 
+    // @ts-ignore
     return (
         <div className={cardStyles.card} onClick={goToBlog}>
             <AspectRatio x={4} y={3}>
-                <img src={image ? `${props.basePath}/${image}` : placeholder} alt={alt}/>
+                <img src={image ? `${props.basePath}/${image}` : placeholder.src } alt={alt}/>
             </AspectRatio>
             <div className={cardStyles.border}/>
 

@@ -1,5 +1,5 @@
 import React, {useState, createContext, useContext, useEffect} from "react";
-import { ThemeProvider as EmotionThemeProvider } from "emotion-theming";
+import { ThemeProvider as EmotionThemeProvider } from "@emotion/react";
 import theme from "./theme.tsx";
 
 const defaultContextData = {

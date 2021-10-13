@@ -2,7 +2,7 @@ import React from 'react';
 import {ButtonProps, NavigationButtonProps} from "@/modules/shared/buttons/types";
 import Link from "next/link";
 import styled from '@emotion/styled';
-import css from "@emotion/css";
+import {css} from "@emotion/react";
 
 const StyledButton = styled("div")<ButtonProps>`
   ${props => props.mode === "darkmode" && css`

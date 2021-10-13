@@ -66,7 +66,7 @@ function Header() {
     }, []);
 
     return (
-        <Wrapper visible={visible} className={`${headerStyles.header} global-padding-horizontal`}>
+        <Wrapper visible={visible} className={`${headerStyles.header} global-padding-horizontal`} theme={undefined}>
             <div className={headerStyles.headerWrapper}>
                 <Link href="/"><a className={headerStyles.logoWrapper}><Logo/></a></Link>
 

@@ -8,6 +8,10 @@ module.exports = withImages(withVideos({
             use: 'raw-loader',
         });
         return cfg;
+    },
+    images: {
+        disableStaticImages: true
     }
 }));
+
 

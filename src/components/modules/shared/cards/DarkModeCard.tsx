@@ -9,7 +9,7 @@ const StyledCard = styled("div")<CardDarkModeProps>`
 
 function DarkModeCard(props) {
     return (
-        <StyledCard className={props.className}>
+        <StyledCard className={props.className} theme={""}>
             {props.children}
         </StyledCard>
     );

@@ -19,7 +19,7 @@ function PortfolioCard(props: PortfolioCardProps) {
     return (
         <div className={cardStyles.card} onClick={goToCase}>
             <AspectRatio x={4} y={3}>
-                <img src={image ? `${props.basePath}/${image}` : placeholder} alt={alt}/>
+                <img src={image ? `${props.basePath}/${image}` : placeholder.src} alt={alt}/>
             </AspectRatio>
             <div className={cardStyles.border}/>
 

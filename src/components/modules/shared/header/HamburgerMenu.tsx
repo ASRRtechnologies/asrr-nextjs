@@ -32,7 +32,8 @@ const StyledHamburgerMenu = styled('nav')<HamburgerStyle>`
 function HamburgerMenu({open, onClick, visible}) {
     return (
         <StyledHamburgerMenu visible={visible} open={open} onClick={onClick}
-                             className={`${hamburgerStyles.hamburger} ${open && hamburgerStyles.hamburgerOpen}`}>
+                             className={`${hamburgerStyles.hamburger} ${open && hamburgerStyles.hamburgerOpen}`}
+                             theme={undefined}>
             <div className={hamburgerStyles.barOne}/>
             <div className={hamburgerStyles.barTwo}/>
             <div className={hamburgerStyles.barThree}/>

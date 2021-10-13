@@ -4,7 +4,7 @@ import Title from '../../../../utillities/titles/Title'
 import styled from '@emotion/styled'
 import {useTheme} from '../../../../../context/theme/ThemeContext'
 import Grid from "@/modules/shared/grid/Grid";
-import css from "@emotion/css";
+import {css} from "@emotion/react";
 
 // const Wrapper = styled(Section)`
 //   background: ${props => props.theme.home.techstack};

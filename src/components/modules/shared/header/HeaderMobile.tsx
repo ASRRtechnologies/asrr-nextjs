@@ -79,7 +79,7 @@ function Header() {
     }, []);
 
     return (
-        <Wrapper open={open} visible={visible} className={`${headerStyles.header}`}>
+        <Wrapper open={open} visible={visible} className={`${headerStyles.header}`} theme={undefined}>
             <div className={`${headerStyles.wrapper} global-padding-horizontal`}>
                 <HamburgerMenu visible={visible} onClick={() => setOpen(!open)} open={open}/>
 

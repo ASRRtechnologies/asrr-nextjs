@@ -23,7 +23,7 @@ function TeamCard(props: TeamCardProps) {
     return (
         <div className={`${cardStyles.card} ${cardStyles.teamCard}`}>
             <AspectRatio x={4} y={3}>
-                <img src={props.image? `${props.basePath}/${props.image}` : placeholder} alt={props?.alt}/>
+                <img src={props.image? `${props.basePath}/${props.image}` : placeholder.src} alt={props?.alt}/>
             </AspectRatio>
 
             <div className={cardStyles.border}/>

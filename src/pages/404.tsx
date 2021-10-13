@@ -22,7 +22,7 @@ function Error() {
 
     return (
         <PageLayout {...SEOProps}>
-            <Banner title="Pagina niet gevonden" alt="Abstract" image={error} text={undefined}/>
+            <Banner title="Pagina niet gevonden" alt="Abstract" image={error.src} text={undefined}/>
             <Section>
                 <Title className="error" title="404 Error" text="De pagina die u zoekt kan niet gevonden worden"/>
                 <Fade triggerOnce direction="up">

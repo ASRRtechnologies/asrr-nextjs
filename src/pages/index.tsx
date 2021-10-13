@@ -22,7 +22,7 @@ function Index({homepage, allServices, allCases, allBlogs,}) {
 
     return (
         <PageLayout className="darkmodeContainer" {...SEOProps}>
-            <Banner landing={true} image={image} title={homepage.landing.title} text={homepage.landing.text}
+            <Banner landing={true} image={image.src} title={homepage.landing.title} text={homepage.landing.text}
                     button={homepage.landing.button}/>
             <Clients content={homepage.clients}/>
             <PreviewServices content={homepage.services} allServices={allServices}/>

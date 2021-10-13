@@ -4,7 +4,7 @@ import {ButtonGroupProps} from "@/library/button-group/types";
 
 import styled from "@emotion/styled";
 import {styles} from "@/library/styles/global_variabels";
-import css, {SerializedStyles} from "@emotion/css";
+import {css, SerializedStyles} from "@emotion/react";
 
 const StyledButtonGroup = styled.div`
   width: 100%;

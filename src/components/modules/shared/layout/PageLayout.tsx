@@ -29,7 +29,7 @@ function PageLayout(props: LayoutProps) {
     const {children, title, text, className, noPreview} = props;
 
     return (
-        <StyledLayout className={className} {...props}>
+        <StyledLayout theme={undefined} className={className} {...props}>
             <Head>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
                 <meta name="description" content={text}/>
