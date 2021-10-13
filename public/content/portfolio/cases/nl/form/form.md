@@ -15,9 +15,10 @@ info:
 card:
   alt: Modern Building
   client: Form Architectuur & Engineering
-  text: De Configurator maakt het mogelijk voor klanten om hun droomhuis direct om
-    te zetten in een officiële 3D - bouwtekening. De bouwtekening wordt
-    gegenereerd in Revit, een 3D engineering/modellering programma.
+  text: "De Configurator maakt het mogelijk voor klanten om hun droomhuis direct
+    om te zetten in een officiële 3D - bouwtekening. De bouwtekening wordt
+    gegenereerd in Revit, een 3D engineering/modellering programma. Geen onnodig
+    repetitief werk meer voor architecten. "
   title: Het bouwen van een geautomatiseerde BIM-Configurator
   image: case-image.jpg
   description: Nieuwe applicatiesa in de bouw
