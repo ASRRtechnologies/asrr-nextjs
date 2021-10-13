@@ -27,7 +27,7 @@ section:
       # Het bouwen van een geautomatiseerde BIM-Configurator
 
 
-      FORM Architecture & Engineering heeft al sinds 2011 een visie over hoe het automatiseren van het ontwerpproces van nieuwbouwhuizen. In 2018 zijn we met deze visie aan de slag gegaan en begonnen met het realiseren van de Configurator. De configurator maakt het mogelijk voor consumenten om zelf hun droomhuis te ontwerpen. Meer informatie over de laatste versie van de Configurator is te vinden onderaan de pagina. Voor een demo klik hier.
+      FORM Architecture & Engineering heeft al sinds 2011 een visie over het automatiseren van het ontwerpproces van nieuwbouwhuizen. In 2018 zijn we met deze visie aan de slag gegaan en zijn we begonnen met het realiseren van de Configurator. De configurator maakt het mogelijk voor consumenten om zelf hun droomhuis te ontwerpen. Meer informatie over de laatste versie van de Configurator is te vinden onderaan de pagina. Voor een demo klik hier.
 
 
       ## Het probleem
@@ -44,23 +44,23 @@ section:
       ## Oplossing
 
 
-      De configurator maakt het mogelijk voor klanten om hun optielijst (die normaal gesproken door de architect werd uitgetekend) direct om te zetten in een officiële 3D - bouwtekening. De bouwtekening wordt gegenereerd in Revit, een 3D engineering/modellering programma. Hieronder een uitleg en een schematische weergave van hoe wij dit hebben gerealiseerd. 
+      De configurator maakt het mogelijk voor klanten om hun optielijst (die normaal gesproken door de architect werd uitgetekend) direct om te zetten in een officiële 3D - bouwtekening. De bouwtekening wordt gegenereerd in Revit, een 3D engineering/modellering programma. Hieronder een uitleg en een schematische weergave van hoe wij dit hebben gerealiseerd. Het proces is opgedeeld in twee onderdelen: Het maken van de configuratie en het opvragen van de configuratie.
 
 
       ### Maken configuratie (rode pijlen)
 
 
-      1. De eerste stap in dit proces is natuurlijk het invullen van de optielijst. Dit kan op een door ons ontwikkelde webapplicatie, ook wel het dashboard genoemd. Als de klant tevreden is met zijn keuzes, dan stuurt het dashboard de keuzes door naar de Hive.
+      1. De eerste stap in dit proces is natuurlijk het invullen van de optielijst. Dit kan op een door ons ontwikkelde webapplicatie, ook wel het **dashboard** genoemd. Als de klant tevreden is met zijn keuzes, dan stuurt het dashboard de keuzes door naar de **Hive**.
 
-      2. De Hive werkt als een brein van de applicatie. De Hive moet er voor zorgen dat alle keuzes van de klant goed worden gecommuniceerd naar Revit, het programma dat de keuzes gaat omzetten in een 3D-bouwtekening. Alleen kunnen de Hive en Revit niet zo goed met elkaar samenwerken, wat directe communicatie moeilijk maakt. De Hive en Revit hebben een bemiddelaar nodig die er voor zorgt dat zij zonder problemen met elkaar kunnen communiceren. Die bemiddelaar is de Thin Client. De Hive stuurt de keuzes naar de Thin Client.
+      2. De Hive werkt als een brein van de applicatie dat communiceert met alle onderdelen. De Hive moet er voor zorgen dat alle keuzes van de klant goed worden gecommuniceerd naar **Revit**, het programma dat de keuzes gaat omzetten in een 3D-bouwtekening. Alleen kunnen de Hive en Revit niet zo goed met elkaar samenwerken, wat directe communicatie moeilijk maakt. De Hive en Revit hebben een bemiddelaar nodig die er voor zorgt dat zij zonder problemen met elkaar kunnen communiceren. Die bemiddelaar is de **Thin Client**. De Hive stuurt de keuzes naar de Thin Client.
 
-      3. De Thin Client is als een schild om Revit heen gebouwd op dezelfde Windows PC. Zo kan de Thin Client naast bemiddelen ook Revit ondersteunen. De Thin Client stuurt de keuzes door naar Revit, die er een bouwtekening van maakt voor de klant.
+      3. De Thin Client is als een schild om Revit heen gebouwd op dezelfde **Windows PC**. Zo kan de Thin Client naast bemiddelen ook Revit ondersteunen. De Thin Client stuurt de keuzes door naar Revit, die er een 3D-bouwtekening van maakt voor de klant.
 
       4. De bouwtekening wordt terug gestuurd naar de Thin Client. 
 
       5. De Thin Client stuurt de bouwtekening terug naar de Hive.
 
-      6. De Hive is echter alleen goed in communicatie en niet in het opslaan van bestanden, dus het brein stuurt de configuratie door naar Azure. Azure slaat de configuratie van de klant veilig op.
+      6. De Hive is echter alleen goed in communicatie en niet in het opslaan van bestanden, dus het brein stuurt de configuratie door naar de cloud op **Azure**. Azure slaat de configuratie van de klant veilig op.
 
 
       ### Opvragen configuratie (paarse pijlen)
@@ -72,7 +72,7 @@ section:
 
       9. Azure stuurt de configuratie naar de Hive.
 
-      10. De Hive stuurt de configuratie terug naar het dashboard. De klant heeft nu een 3D-bouwtekening van zijn toekomstige woning downloaden met een klik op de knop.
+      10. De Hive stuurt de configuratie terug naar het dashboard. De klant heeft nu een 3D-bouwtekening van zijn toekomstige woning die hij met een klik op de knop kan downloaden.
     media:
       images:
         - image: configurator-schema-1-.png
