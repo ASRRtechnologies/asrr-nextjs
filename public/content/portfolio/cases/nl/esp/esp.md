@@ -21,8 +21,8 @@ card:
   text: "Een website om een breed scala aan klanten aan te spreken door voor elke
     type klant, zoals een ZZP'er of een freelancer een kanaal te maken dat
     beschikt over nuttige informatie en een contact knop. Als een klant contact
-    opneemt deze knop, ontvangt de website nuttige achtergrond informatie over
-    de potentiële klant. "
+    opneemt via deze knop, ontvangt de website nuttige achtergrond informatie
+    over de potentiële klant. "
 landing:
   title: Een professionele website
   image: esp-landing.jpg
