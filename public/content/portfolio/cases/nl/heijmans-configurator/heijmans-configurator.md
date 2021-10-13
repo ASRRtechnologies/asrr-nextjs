@@ -64,9 +64,6 @@ section:
       Een publieke demo van de configurator opgezet voor FORM is te vinden door hier te drukken.
     media:
       images:
-        - image: ezgif.com-gif-maker-4-2.jpg
-          description: De online omgeving
-          alt: Configurator
         - image: configurator-schema.jpg
           alt: Schema config werking
           description: "Schematische weergave van de werking van de configurator. De rode
@@ -74,6 +71,9 @@ section:
             gestippelde lijnen representeren het opvragen van de configuratie.
             Voor een uitgebreide uitleg over hoe dit proces in zijn werking gaat
             klik hier. "
+        - image: ezgif.com-gif-maker-4-2.jpg
+          description: De online omgeving
+          alt: Configurator
   - content: >-
       ## Conclusie
 
