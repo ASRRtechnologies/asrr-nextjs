@@ -1,13 +1,10 @@
 import React from 'react';
-import {Global, css} from '@emotion/react'
+import { css, Global } from '@emotion/react';
 
-const GlobalStyle = css`
-`
+const GlobalStyle = css``;
 
 function GlobalStyles(props) {
-    return (
-        <Global styles={GlobalStyle}/>
-    );
+  return <Global styles={GlobalStyle} />;
 }
 
 export default GlobalStyles;

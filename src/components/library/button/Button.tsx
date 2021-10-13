@@ -1,25 +1,25 @@
 import React from 'react';
-import {ButtonProps} from "@/library/button/types";
-import NavigationButton from "@/library/button/sub-components/NavigationButton";
-import ActionButton from "@/library/button/sub-components/ActionButton";
+import { ButtonProps } from '@/library/button/types';
+import NavigationButton from '@/library/button/sub-components/NavigationButton';
+import ActionButton from '@/library/button/sub-components/ActionButton';
 
 function Button(props: ButtonProps) {
 
-    const renderComponent = () => {
-        if (props.type === "navigation-button")
-            return <NavigationButton {...props}/>
+  const renderComponent = () => {
+    if (props.type === 'navigation-button')
+      return <NavigationButton {...props} />;
 
-        if (props.type === "action-button")
-            return <ActionButton {...props}/>
+    if (props.type === 'action-button')
+      return <ActionButton {...props} />;
 
-        throw new Error("Header component type not specified")
-    }
+    throw new Error('Header component type not specified');
+  };
 
-    return (
-        <>
-            {renderComponent()}
-        </>
-    );
+  return (
+    <>
+      {renderComponent()}
+    </>
+  );
 }
 
 export default Button;

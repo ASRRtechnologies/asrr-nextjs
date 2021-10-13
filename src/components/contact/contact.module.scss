@@ -1,11 +1,11 @@
 @import "src/styles/globals";
 
 @include media(">=xs") {
-  .contactPreview{
+  .contactPreview {
     background-color: $primary-color;
   }
 
-  .contactInner{
+  .contactInner {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,7 +16,7 @@
       text-align: center;
     }
 
-    h2{
+    h2 {
       max-width: 600px;
     }
 

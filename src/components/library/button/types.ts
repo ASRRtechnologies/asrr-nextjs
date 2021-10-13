@@ -1,44 +1,44 @@
 /**
  * List of types of buttons needed to render the proper button
  */
-import {StandardProps} from "@/library/index";
+import { StandardProps } from '@/library/index';
 
-declare type ButtonType = "navigation-button" | "action-button";
+declare type ButtonType = 'navigation-button' | 'action-button';
 
 /**
  * List of types of buttons needed to render the proper button
  */
 export declare type ButtonStyle =
-    "default"
-    | "outlined"
-    | "disabled"
-    | "hover-disabled-outlined"
-    | "hover-disabled-default"
-    | "text-only"
+  'default'
+  | 'outlined'
+  | 'disabled'
+  | 'hover-disabled-outlined'
+  | 'hover-disabled-default'
+  | 'text-only'
 
 /**
  * Interface that all buttons inherit
  */
 export interface BaseButtonProps extends StandardProps {
-    text: string,
-    type: ButtonType,
-    buttonStyle?: ButtonStyle
+  text: string,
+  type: ButtonType,
+  buttonStyle?: ButtonStyle
 }
 
 /**
  * Header used for performing navigations in nextjs
  */
 export interface NavigationButtonProps extends BaseButtonProps {
-    to: string,
-    type: "navigation-button"
+  to: string,
+  type: 'navigation-button'
 }
 
 /**
  * Native dom button used for performing form or functional methods
  */
 export interface ActionButtonProps extends BaseButtonProps {
-    onClick: () => void,
-    type: "action-button"
+  onClick: () => void,
+  type: 'action-button'
 }
 
 /**

@@ -15,7 +15,7 @@
   margin: 0;
 }
 
-.header-logo{
+.header-logo {
   margin: 0;
   z-index: 9999;
 }
@@ -27,7 +27,7 @@
   height: 100%;
   position: relative;
   padding: 0 $padding-pc;
- }
+}
 
 .header-wrapper {
   @include size(100%, 100%);
@@ -50,7 +50,7 @@
     text-decoration: none;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       color: $primary-color;
     }
 
@@ -83,7 +83,7 @@
   @include size(auto, 100%);
   @include flex(flex-end, center, row);
 
-  .button{
+  .button {
     margin-right: 30px;
   }
 
@@ -95,7 +95,7 @@
   height: 2px;
   position: fixed;
   top: 76px;
-  left:0;
+  left: 0;
   z-index: 1000;
 }
 
@@ -108,7 +108,7 @@
 }
 
 @media screen and (max-width: $tablet-breakpoint) {
-  .header{
+  .header {
     display: none;
   }
 

@@ -1,26 +1,26 @@
-.services-preview{
+.services-preview {
   @include flex(space-between, flex-start, row);
   @include size(100%, auto);
   @include margin-top(-150px);
   max-width: $max-width;
 }
 
-.service-preview-card{
+.service-preview-card {
   @include size(30.333%, auto);
   @include flex(flex-start, center, column);
   min-height: 300px;
   max-width: 500px;
 
-  &:nth-child(1){
+  &:nth-child(1) {
     margin-right: 20px;
   }
 
-  &:nth-child(2){
+  &:nth-child(2) {
     margin-left: 20px;
     margin-right: 20px;
   }
 
-  &:nth-child(3){
+  &:nth-child(3) {
     margin-left: 20px;
   }
 
@@ -33,25 +33,25 @@
 
 }
 
-.service-preview-card-image{
+.service-preview-card-image {
   @include size(150px, 150px);
   position: relative;
   margin-bottom: 45px;
   border-radius: 50%;
 
-  &:before{
+  &:before {
     @include size(100%, 100%);
-    content:"";
+    content: "";
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     background: linear-gradient(133deg, $primary-color 0%, #667eea 100%);
     border-radius: 50%;
     opacity: 0.35;
 
   }
 
-  img{
+  img {
     object-fit: cover;
     @include size(100%, 100%);
     object-position: center;
@@ -60,15 +60,14 @@
 }
 
 
-
 @media screen and (max-width: $tablet-breakpoint) {
-  .services-preview{
+  .services-preview {
     @include flex(flex-start, center, column);
     @include size(100%, auto);
     padding: 0;
   }
 
-  .service-preview-card{
+  .service-preview-card {
     width: 100%;
     max-width: 500px;
   }
@@ -76,7 +75,7 @@
 
 
 @media screen and (max-width: $mobile-breakpoint) {
-  .services-preview{
+  .services-preview {
     @include margin-top(-100px);
   }
 }

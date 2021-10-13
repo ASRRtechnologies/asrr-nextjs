@@ -1,14 +1,27 @@
-import React from 'react'
+import React from 'react';
 
-function Spring (props) {
-	return (
-		<>
-
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-				 x="0px" y="0px" width="440px" height="180px" viewBox="0 0 440 180" enableBackground="new 0 0 440 180"
-				 xmlSpace="preserve">
-				<image id="image0" width="440" height="180" x="0" y="0"
-					   xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbgAAAC0CAYAAADmfzl8AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+function Spring(props) {
+  return (
+    <>
+      <svg
+        version="1.1"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        x="0px"
+        y="0px"
+        width="440px"
+        height="180px"
+        viewBox="0 0 440 180"
+        enableBackground="new 0 0 440 180"
+        xmlSpace="preserve"
+      >
+        <image
+          id="image0"
+          width="440"
+          height="180"
+          x="0"
+          y="0"
+          xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbgAAAC0CAYAAADmfzl8AAAABGdBTUEAALGPC/xhBQAAACBjSFJN
 AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAACA
 AElEQVR42uy9d5xd1XX+/exyyu3Tm3rvEkIIEL2aZowLBgMGl8Q1dsxrxyXFTvxL7BQnITZx7zbG
 xmDAmI6QAKEu1Ls0mhlper39nrLL+8e5M0ggYAYGGyvn+/mMpNHMPWWfffbae+21nkW01ggJCQkJ
@@ -696,11 +709,11 @@ pq1KusBpmqZpq5IucJqmadqqpAucpmmatirpAqdpmqatSrrAaZqmaauSLnCapmnaqqQLnKZpmrYq
 pmmatirpAqdpmqatSrrAaZqmaauSLnCapmnaqqQLnKZpmrYq6QKnaZqmrUq6wGmapmmrki5wmqZp
 2qqkC5ymaZq2KukCp2mapq1KusBpmqZpq9L/Bwj0e49QwwnCAAAAJXRFWHRkYXRlOmNyZWF0ZQAy
 MDIwLTExLTA5VDE3OjI0OjQyKzAzOjAw0/mdmgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMC0xMS0w
-OVQxNzoyNDo0MiswMzowMKKkJSYAAAAASUVORK5CYII="/>
-			</svg>
-
-		</>
-	)
+OVQxNzoyNDo0MiswMzowMKKkJSYAAAAASUVORK5CYII="
+        />
+      </svg>
+    </>
+  );
 }
 
-export default Spring
+export default Spring;

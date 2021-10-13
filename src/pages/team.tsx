@@ -8,11 +8,11 @@ function Team({ content }) {
   const basePath = `/content/team/nl`;
 
   const SEOProps = {
-    ...content.meta_tags,
+    ...content.meta_tags
   };
 
   return (
-    <PageLayout className="darkmodeContainer" {...SEOProps}>
+    <PageLayout className='darkmodeContainer' {...SEOProps}>
       <Banner
         {...content.landing}
         image={`${basePath}/${content.landing.image}`}
@@ -27,7 +27,7 @@ export async function getStaticProps() {
   const content = matter(data.default).data;
 
   return {
-    props: { content },
+    props: { content }
   };
 }
 

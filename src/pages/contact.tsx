@@ -7,14 +7,14 @@ import Banner from '@/modules/shared/landing/Banner';
 const SEOProps = {
   title: 'ASRR - Contact',
   content:
-    'ASRR Levert innovatieve software oplossingen met een specialisme in de bouw',
+    'ASRR Levert innovatieve software oplossingen met een specialisme in de bouw'
 };
 
 function Contact({ content }) {
   const basePath = `/content/contact/nl`;
 
   return (
-    <PageLayout noPreview={true} className="darkmodeContainer" {...SEOProps}>
+    <PageLayout noPreview={true} className='darkmodeContainer' {...SEOProps}>
       <Banner
         {...content.landing}
         image={`${basePath}/${content.landing.image}`}
@@ -29,7 +29,7 @@ export async function getStaticProps() {
   const content = matter(data.default).data;
 
   return {
-    props: { content },
+    props: { content }
   };
 }
 

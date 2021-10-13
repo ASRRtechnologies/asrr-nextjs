@@ -5,13 +5,7 @@ import PreviewServices from '@/modules/pages/services/ServicePreview';
 import TechStack from '@/modules/pages/home/techstack/TechStack';
 import matter from 'gray-matter';
 import Testimonials from '@/modules/pages/home/testimonials/Testimonials';
-import {
-  getAllArticles,
-  getAllCases,
-  getAllNews,
-  getAllServices,
-  getAllTutorials,
-} from '../lib/api';
+import { getAllArticles, getAllCases, getAllNews, getAllServices, getAllTutorials } from '../lib/api';
 import PageLayout from '@/modules/shared/layout/PageLayout';
 import PortfolioPreview from '@/modules/pages/portfolio/PortfolioPreview';
 import Banner from '@/modules/shared/landing/Banner';
@@ -22,11 +16,11 @@ function Index({ homepage, allServices, allCases, allBlogs }) {
   const basePath = `/content/home/nl`;
 
   const SEOProps = {
-    ...homepage.meta_tags,
+    ...homepage.meta_tags
   };
 
   return (
-    <PageLayout className="darkmodeContainer" {...SEOProps}>
+    <PageLayout className='darkmodeContainer' {...SEOProps}>
       <Banner
         landing={true}
         image={image}
@@ -54,7 +48,7 @@ export async function getStaticProps() {
 
   const servicesContent = await import(
     `public/content/services/nl/services.md`
-  );
+    );
   // let servicesContent = await import(`${BasePa ths.SERVICE_PAGE}/nl/services.md`);
   const servicesParsedContent = matter(servicesContent.default);
   const servicepage = servicesParsedContent.data;
@@ -72,13 +66,13 @@ export async function getStaticProps() {
     'slug',
     'card',
     'info',
-    'type',
+    'type'
   ]);
 
   const allBlogs = [...allArticles, ...allNews, ...allTutorials];
 
   return {
-    props: { homepage, allCases, allBlogs, allServices },
+    props: { homepage, allCases, allBlogs, allServices }
   };
 }
 

@@ -1,17 +1,18 @@
 @import "src/styles/globals";
+
 $headerHeight: 60px;
 $menu-items: 7;
 
 @include media(">=xs") {
-  .header{
-   display: block;
+  .header {
+    display: block;
     width: 100vw;
     height: $headerHeight;
     position: fixed;
     z-index: 10000;
   }
 
-  .wrapper{
+  .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,20 +22,20 @@ $menu-items: 7;
     z-index: 100;
   }
 
-  .actions{
+  .actions {
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: center;
   }
 
-  .menu{
+  .menu {
     display: block;
     height: 100vh;
     width: 100%;
     transform: translateX(-100%);
     position: absolute;
-    left:0;
+    left: 0;
     top: 0;
     overflow-x: hidden;
     padding-top: calc(#{$headerHeight} + 20px); //Padding height of header + 20 pixels;
@@ -46,14 +47,14 @@ $menu-items: 7;
     transition-delay: 350ms;
   }
 
-  .menuGrid{
+  .menuGrid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     justify-items: center;
   }
 
-  .gridCell{
+  .gridCell {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,20 +64,20 @@ $menu-items: 7;
     position: relative;
     max-width: 800px;
 
-    &:before{
+    &:before {
       position: absolute;
       display: block;
       height: 1px;
-      content:"";
-      left:0;
-      bottom:0;
+      content: "";
+      left: 0;
+      bottom: 0;
       width: 0;
     }
 
     //Line transition of menu items
     @for $i from $menu-items through 1 {
       &:nth-child(#{$i}) {
-        &:before{
+        &:before {
           transition-delay: #{$i * 80}ms;
           transition-property: width;
           transition-duration: 300ms;
@@ -85,7 +86,7 @@ $menu-items: 7;
       }
     }
 
-    a{
+    a {
       display: flex;
       align-items: center;
       height: 100%;
@@ -93,7 +94,7 @@ $menu-items: 7;
 
   }
 
-  .menuOpen{
+  .menuOpen {
     transform: translateX(0);
     opacity: 1;
     transition-property: opacity, transform;
@@ -101,11 +102,11 @@ $menu-items: 7;
     transition-timing-function: ease-in-out;
     transition-delay: 0ms;
 
-    .menuGrid{
+    .menuGrid {
       //Line transition of menu items
       @for $i from 1 through $menu-items {
         .gridCell:nth-child(#{$i}) {
-          &:before{
+          &:before {
             transition-delay: #{$i * 70}ms;
             transition-property: width;
             transition-duration: 300ms;
@@ -124,7 +125,7 @@ $menu-items: 7;
     height: 2px;
     position: fixed;
     top: 56px;
-    left:0;
+    left: 0;
     z-index: 1000;
   }
 
@@ -139,7 +140,7 @@ $menu-items: 7;
 }
 
 @include media(">=lg") {
-  .header{
+  .header {
     display: none;
   }
 }

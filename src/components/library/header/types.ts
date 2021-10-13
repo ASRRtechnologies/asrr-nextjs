@@ -1,44 +1,44 @@
 /**
  * List of types of buttons needed to render the proper button
  */
-import {StandardProps} from "@/library/index";
-import {ReactElement} from "react";
+import { StandardProps } from '@/library/index';
+import { ReactElement } from 'react';
 
-declare type ButtonType = "navigation-button" | "action-button";
+declare type ButtonType = 'navigation-button' | 'action-button';
 
 /**
  * List of types of buttons needed to render the proper button
  */
 export declare type ButtonStyle =
-    "default"
-    | "outlined"
-    | "disabled"
-    | "hover-disabled-outlined"
-    | "hover-disabled-default";
+  'default'
+  | 'outlined'
+  | 'disabled'
+  | 'hover-disabled-outlined'
+  | 'hover-disabled-default';
 
 /**
  * Interface that all buttons inherit
  */
 export interface BaseButtonProps extends StandardProps {
-    text: string,
-    type: ButtonType,
-    buttonStyle?: ButtonStyle
+  text: string,
+  type: ButtonType,
+  buttonStyle?: ButtonStyle
 }
 
 /**
  * Header used for performing navigations in nextjs
  */
 export interface NavigationButtonProps extends BaseButtonProps {
-    to: string,
-    type: "navigation-button"
+  to: string,
+  type: 'navigation-button'
 }
 
 /**
  * Native dom button used for performing form or functional methods
  */
 export interface ActionButtonProps extends BaseButtonProps {
-    onClick: () => void,
-    type: "action-button"
+  onClick: () => void,
+  type: 'action-button'
 }
 
 /**
@@ -49,7 +49,7 @@ export interface ActionButtonProps extends BaseButtonProps {
 export type HeaderComponent = ReactElement | ReactElement[] | null
 
 export interface HeaderProps extends StandardProps {
-    left?: HeaderComponent
-    center?: HeaderComponent
-    right?: HeaderComponent
+  left?: HeaderComponent;
+  center?: HeaderComponent;
+  right?: HeaderComponent;
 }

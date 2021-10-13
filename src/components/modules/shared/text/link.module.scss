@@ -69,8 +69,8 @@
 
 }
 
-.tags{
-  a{
+.tags {
+  a {
     display: inline-block;
     color: $white !important;
     background-color: $primary-color;
@@ -80,6 +80,6 @@
   }
 }
 
-.goToSection{
+.goToSection {
   @include margin-top(5rem);
 }

@@ -1,27 +1,28 @@
 //Paths for importing markdown files for cms
 export enum BasePaths {
-    HOME = "public/content/home",
-    PORTFOLIO = "public/content/portfolio",
-    CASES = "public/content/portfolio/cases",
-    SERVICE_PAGE = "public/content/services",
-    SERVICES = "public/content/services/posts",
-    BLOG = "public/content/blog",
-    ARTICLE = "public/content/blog/posts/article",
-    NEWS = "public/content/blog/posts/news",
-    TUTORIAL = "public/content/blog/posts/tutorial",
-    ABOUT = "public/content/about",
-    TEAM = "public/content/team",
-    CONTACT = "public/content/contact",
+  HOME = 'public/content/home',
+  PORTFOLIO = 'public/content/portfolio',
+  CASES = 'public/content/portfolio/cases',
+  SERVICE_PAGE = 'public/content/services',
+  SERVICES = 'public/content/services/posts',
+  BLOG = 'public/content/blog',
+  ARTICLE = 'public/content/blog/posts/article',
+  NEWS = 'public/content/blog/posts/news',
+  TUTORIAL = 'public/content/blog/posts/tutorial',
+  ABOUT = 'public/content/about',
+  TEAM = 'public/content/team',
+  CONTACT = 'public/content/contact',
 }
+
 export const navigationPaths = [
-    {name:"Home", path:"/"},
-    {name:"Portfolio", path:"/portfolio"},
-    {name:"Diensten", path:"/diensten"},
-    // {name:"Over", path:"/over"},
-    {name:"Team", path:"/team"},
-    {name:"Blog", path:"/blog"},
-    {name:"Contact", path:"/contact"}
-]
+  { name: 'Home', path: '/' },
+  { name: 'Portfolio', path: '/portfolio' },
+  { name: 'Diensten', path: '/diensten' },
+  // {name:"Over", path:"/over"},
+  { name: 'Team', path: '/team' },
+  { name: 'Blog', path: '/blog' },
+  { name: 'Contact', path: '/contact' }
+];
 
 //
 // export const BasePaths = {

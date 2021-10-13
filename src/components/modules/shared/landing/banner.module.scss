@@ -11,12 +11,12 @@
     position: relative;
     overflow: hidden;
 
-    &.landing{
+    &.landing {
       min-height: 80vh;
     }
 
-    img{
-      position:absolute ;
+    img {
+      position: absolute;
       width: 100%;
       height: 100%;
     }
@@ -32,7 +32,7 @@
     z-index: 10;
 
     h1, p {
-      color: $white!important;
+      color: $white !important;
     }
 
     p {

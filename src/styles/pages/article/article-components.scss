@@ -21,9 +21,10 @@ $article-spacing: 50px;
   @include size(100%, 100%);
 
   //Remove margin of last paragraph
-  & .article-section:last-of-type{
+  & .article-section:last-of-type {
     margin-bottom: 0;
-    .article-markdown{
+
+    .article-markdown {
       margin-bottom: 0;
     }
   }
@@ -36,7 +37,7 @@ $article-spacing: 50px;
   @include margin-bottom($article-spacing);
   max-width: $article-max-width;
 
-  & .article-animation-fade-container:last-of-type{
+  & .article-animation-fade-container:last-of-type {
     margin-bottom: 0;
   }
 
@@ -46,21 +47,21 @@ $article-spacing: 50px;
   @include size(100%, 100%);
   @include margin-bottom(50px);
 
-  h1{
+  h1 {
     //Font title
     @include font-size(2.5rem);
     @include margin-bottom(1.5rem);
     font-weight: bold;
   }
 
-  h2{
+  h2 {
     //Font header
     @include font-size(1.5rem);
     @include margin-bottom(1.3rem);
     font-weight: bold;
   }
 
-  h3{
+  h3 {
     //Font-subheader
     @include font-size(1.2rem);
     @include margin-bottom(1rem);
@@ -76,7 +77,7 @@ $article-spacing: 50px;
 }
 
 //Styling for video and images
-.article-animation-fade-container{
+.article-animation-fade-container {
   width: 100%;
   @include margin-bottom($article-spacing);
 }

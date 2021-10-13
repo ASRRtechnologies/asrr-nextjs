@@ -1,90 +1,93 @@
-#scroll-mouse{
-    width: 70px;
-    height: 7px;
-    position: absolute;
-    bottom:-70px;
-    left:50%;
-    transform: translateX(-50%);
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#scroll-mouse {
+  width: 70px;
+  height: 7px;
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #scroll-mouse a {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #scroll-mouse a span {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 30px;
-    height: 50px;
-    margin-left: -15px;
-    border-radius: 50px;
-    box-sizing: border-box;
-    z-index: 10;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border-radius: 50px;
+  box-sizing: border-box;
+  z-index: 10;
 
-    &.scroll-down-light{
-        border: 2px solid #1a1a1a;
+  &.scroll-down-light {
+    border: 2px solid #1a1a1a;
 
-        &:before{
-            background-color: #1a1a1a;
-        }
+    &:before {
+      background-color: #1a1a1a;
     }
+  }
 
-    &.scroll-down-dark{
-        border: 2px solid #fff;
+  &.scroll-down-dark {
+    border: 2px solid #fff;
 
-        &:before{
-            background-color: #fff;
-        }
+    &:before {
+      background-color: #fff;
     }
+  }
 
 }
+
 #scroll-mouse a span::before {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    content: '';
-    width: 6px;
-    height: 6px;
-    margin-left: -3px;
-    border-radius: 100%;
-    -webkit-animation: sdb10 2s infinite;
-    animation: sdb10 2s infinite;
-    box-sizing: border-box;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
 }
+
 @-webkit-keyframes sdb10 {
-    0% {
-        -webkit-transform: translate(0, 0);
-        opacity: 0;
-    }
-    40% {
-        opacity: 1;
-    }
-    80% {
-        -webkit-transform: translate(0, 20px);
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
+
 @keyframes sdb10 {
-    0% {
-        transform: translate(0, 0);
-        opacity: 0;
-    }
-    40% {
-        opacity: 1;
-    }
-    80% {
-        transform: translate(0, 20px);
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }

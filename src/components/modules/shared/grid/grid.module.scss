@@ -1,9 +1,9 @@
 @import "src/styles/globals";
 
 @include media(">=xs") {
-   .grid{
-     display: grid;
-   }
+  .grid {
+    display: grid;
+  }
 }
 
 @include media(">=sm") {

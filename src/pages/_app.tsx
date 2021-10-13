@@ -79,16 +79,16 @@ function MyApp({ Component, pageProps, router }) {
           </GlobalStyle>
         </I18n>
 
-        <CookieConsent buttonText="Accepteer cookies">
-          <div className="cookie-banner">
+        <CookieConsent buttonText='Accepteer cookies'>
+          <div className='cookie-banner'>
             <p>
               Deze website maakt gebruik van anonieme cookies voor statistische
               doeleinden, namelijk om meer informatie te krijgen over het
               algemeen gebruik van de website. Meer info kunt u vinden in onze{' '}
               <a
-                href="/assets/documents/privacy-asrr.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+                href='/assets/documents/privacy-asrr.pdf'
+                target='_blank'
+                rel='noopener noreferrer'
               >
                 privacybeleid.
               </a>

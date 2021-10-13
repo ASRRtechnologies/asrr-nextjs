@@ -1,35 +1,35 @@
-.language{
+.language {
   height: 100%;
-  width:auto;
-  @include flex (center, center, row);
+  width: auto;
+  @include flex(center, center, row);
   position: relative;
   margin-right: 50px;
   cursor: pointer;
 
-  a{
+  a {
     margin: 0;
     line-height: 10px;
   }
 
-  .menu{
+  .menu {
     position: absolute;
-    width:100px;
+    width: 100px;
     height: 50px;
-    top:100%;
+    top: 100%;
     //left:50%;
     transform: scaleY(0);
     padding: 0.5em;
-    @include flex (center, center, row);
-    opacity:1;
+    @include flex(center, center, row);
+    opacity: 1;
     pointer-events: none;
     transition: all 0.3s ease-in-out;
     transform-origin: top;
 
 
-    &.menuOpen{
+    &.menuOpen {
       transform: scaleY(1);
       transform-origin: top;
-      opacity:1;
+      opacity: 1;
       pointer-events: auto;
       transition: all 0.3s ease-in-out;
     }
@@ -37,21 +37,22 @@
 }
 
 .chev {
-  display:block;
+  display: block;
   position: absolute;
-  left:0;
-  top:50%;
-  width:20px;
+  left: 0;
+  top: 50%;
+  width: 20px;
   height: 20px;
   margin: 0 0 0 1px;
   transform: scale(0.8) translate(65%, -60%);
 }
+
 .chev .line {
   background-color: inherit;
   display: block;
-  float:left;
+  float: left;
   border-radius: 4px;
-  transition: width, height, margin, 0.3s ease-in-out ;
+  transition: width, height, margin, 0.3s ease-in-out;
 }
 
 .chev-down .line, .chev-up .line {
@@ -66,53 +67,57 @@
   margin: 0px;
 }
 
-.chev-down .line:nth-child(1){
+.chev-down .line:nth-child(1) {
   -webkit-transform: translateX(0px) rotate(-45deg);
   -ms-transform: translateX(0px) rotate(-45deg);
   -o-transform: translateX(0px) rotate(-45deg);
   transform: translateX(0px) rotate(-45deg);
 }
-.chev-down .line:nth-child(2){
+
+.chev-down .line:nth-child(2) {
   -webkit-transform: translateY(0px) rotate(45deg);
   -ms-transform: translateY(0px) rotate(45deg);
   -o-transform: translateY(0px) rotate(45deg);
   transform: translateY(0px) rotate(45deg);
 }
-.chev.is-active .chev-down .line:nth-child(1){
+
+.chev.is-active .chev-down .line:nth-child(1) {
   -webkit-transform: translateX(4px) rotate(45deg);
   -ms-transform: translateX(4px) rotate(45deg);
   -o-transform: translateX(4px) rotate(45deg);
   transform: translateX(4px) rotate(45deg);
 }
-.chev.is-active .chev-down .line:nth-child(2){
+
+.chev.is-active .chev-down .line:nth-child(2) {
   -webkit-transform: translateX(-4px) rotate(-45deg);
   -ms-transform: translateX(-4px) rotate(-45deg);
   -o-transform: translateX(-4px) rotate(-45deg);
   transform: translateX(-4px) rotate(-45deg);
 }
 
-.language-mobile{
-  height:auto;
-  width:auto;
-  @include flex (center, center, row);
+.language-mobile {
+  height: auto;
+  width: auto;
+  @include flex(center, center, row);
   position: relative;
   display: none;
 
-  a{
+  a {
     padding: 10px;
   }
 
 }
 
 @media screen and (max-width: $tablet-breakpoint) {
-  .language{
+  .language {
     display: none;
-    .menu{
+
+    .menu {
       display: none;
     }
   }
 
-  .language-mobile{
+  .language-mobile {
     display: flex;
   }
 

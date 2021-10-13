@@ -7,12 +7,12 @@ import Banner from '@/modules/shared/landing/Banner';
 
 function Portfolio({ content, allCases }) {
   const SEOProps = {
-    ...content.meta_tags,
+    ...content.meta_tags
   };
   const basePath = '/content/portfolio/nl';
 
   return (
-    <PageLayout className="darkmodeContainer" {...SEOProps}>
+    <PageLayout className='darkmodeContainer' {...SEOProps}>
       <Banner
         {...content.landing}
         image={`${basePath}/${content.landing.image}`}
@@ -30,7 +30,7 @@ export async function getStaticProps() {
   const allCases = getAllCases(['title', 'slug', 'card', 'info']);
 
   return {
-    props: { allCases, content },
+    props: { allCases, content }
   };
 }
 

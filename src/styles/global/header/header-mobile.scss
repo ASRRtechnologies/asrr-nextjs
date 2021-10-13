@@ -4,7 +4,6 @@ $white: #fff;
 $bermuda: #77D7B9;
 
 
-
 .header-mobile {
   @include size(100%, 80px);
   @include flex(center, center, row);
@@ -15,7 +14,7 @@ $bermuda: #77D7B9;
   padding: 0 $padding-tablet;
 }
 
-.header-wrapper-mobile{
+.header-wrapper-mobile {
   @include size(100%, 100%);
   @include flex(space-between, center, row);
   position: relative;
@@ -23,33 +22,34 @@ $bermuda: #77D7B9;
   z-index: $header-zIndex;
 }
 
-.header-menu-accordion-mobile{
-  width:100vw;
+.header-menu-accordion-mobile {
+  width: 100vw;
   @include flex(flex-start, center, column);
   transition: 0.4s;
   position: fixed;
-  left:0;
-  top:0;
-  height:0;
+  left: 0;
+  top: 0;
+  height: 0;
   overflow: hidden;
 
 
-  .header-menu-panel-mobile{
+  .header-menu-panel-mobile {
     @include flex(center, center, column);
     width: 100vw;
     height: 100vh;
     position: absolute;
-    top:0;
-    left:0;
-    transition: height 1s cubic-bezier(.42,.97,.52,1.49);
+    top: 0;
+    left: 0;
+    transition: height 1s cubic-bezier(.42, .97, .52, 1.49);
 
-    a{
+    a {
       @include margin(32px 0);
       @include font-size(1.5rem);
     }
 
     .button {
       @include margin(32px 0);
+
       a {
         margin: 0;
       }
@@ -66,18 +66,18 @@ $bermuda: #77D7B9;
   }
 
 
-  &.menu-open{
-    width:100vw;
-    height:100vh;
-    transition: height 1s cubic-bezier(.42,.97,.52,1.49);
+  &.menu-open {
+    width: 100vw;
+    height: 100vh;
+    transition: height 1s cubic-bezier(.42, .97, .52, 1.49);
 
-    .header-menu-panel-mobile{
+    .header-menu-panel-mobile {
 
       @for $i from 1 through 6 {
         a:nth-child(#{$i}) {
           opacity: 1;
           transition: opacity ease-in 50ms;
-          transition-delay: calc(100ms + #{$i * 50ms} );
+          transition-delay: calc(100ms + #{$i * 50ms});
         }
       }
 
@@ -104,7 +104,7 @@ $bermuda: #77D7B9;
   height: 2px;
   position: fixed;
   top: 76px;
-  left:0;
+  left: 0;
   z-index: 1000;
 }
 
@@ -117,15 +117,14 @@ $bermuda: #77D7B9;
 }
 
 
-
 @media screen and (min-width: $tablet-breakpoint) {
-  .header-mobile{
+  .header-mobile {
     display: none;
   }
 }
 
 @media screen and (max-width: $mobile-breakpoint) {
-  .header-mobile{
+  .header-mobile {
     padding: 0 $padding-mobile;
   }
 }

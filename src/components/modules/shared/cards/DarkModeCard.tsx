@@ -1,18 +1,18 @@
 import React from 'react';
-import styled from "@emotion/styled";
-import {CardDarkModeProps} from "@/modules/shared/cards/types";
+import styled from '@emotion/styled';
+import { CardDarkModeProps } from '@/modules/shared/cards/types';
 
-const StyledCard = styled("div")<CardDarkModeProps>`
-  background-color: ${props => props.theme.card.background};
-  box-shadow: ${props => props.theme.card.shadow};
-`
+const StyledCard = styled('div')<CardDarkModeProps>`
+  background-color: ${(props) => props.theme.card.background};
+  box-shadow: ${(props) => props.theme.card.shadow};
+`;
 
 function DarkModeCard(props) {
-    return (
-        <StyledCard className={props.className} theme={undefined}>
-            {props.children}
-        </StyledCard>
-    );
+  return (
+    <StyledCard className={props.className} theme={undefined}>
+      {props.children}
+    </StyledCard>
+  );
 }
 
 export default DarkModeCard;

@@ -1,7 +1,7 @@
 @import "src/styles/globals";
 
 @include media(">=xs") {
-  .title{
+  .title {
     width: 100%;
     height: auto;
     display: flex;

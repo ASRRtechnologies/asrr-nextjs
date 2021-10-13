@@ -5,19 +5,19 @@
   @include margin-bottom(150px);
   max-width: 800px;
 
-  h1, h2, h3{
+  h1, h2, h3 {
     text-align: center;
   }
 
-  h2{
+  h2 {
     @include margin(1.5rem 0);
   }
 
-  &.title-left{
+  &.title-left {
     @include flex(flex-start, flex-start, column);
     max-width: $max-width;
 
-    h1, h2, h3{
+    h1, h2, h3 {
       text-align: left;
     }
   }
@@ -33,7 +33,7 @@
 
 @media screen and (max-width: $mobile-breakpoint) {
   .title-wrapper {
-    &.title-margin-small{
+    &.title-margin-small {
       @include margin-bottom(150px);
     }
 

@@ -11,7 +11,7 @@ import Banner from '@/modules/shared/landing/Banner';
 function Error() {
   const SEOProps = {
     title: `ASRR - 404 Error`,
-    content: `De pagina die u zoekt kan niet gevonden worden`,
+    content: `De pagina die u zoekt kan niet gevonden worden`
   };
 
   const darkmode = useTheme().dark;
@@ -19,19 +19,19 @@ function Error() {
   return (
     <PageLayout {...SEOProps}>
       <Banner
-        title="Pagina niet gevonden"
-        alt="Abstract"
+        title='Pagina niet gevonden'
+        alt='Abstract'
         image={error.src}
         text={undefined}
       />
       <Section>
         <Title
-          className="error"
-          title="404 Error"
-          text="De pagina die u zoekt kan niet gevonden worden"
+          className='error'
+          title='404 Error'
+          text='De pagina die u zoekt kan niet gevonden worden'
         />
-        <Fade triggerOnce direction="up">
-          <Link href="/">
+        <Fade triggerOnce direction='up'>
+          <Link href='/'>
             <a
               className={`${
                 darkmode ? 'animated-link-light' : 'animated-link-dark'
