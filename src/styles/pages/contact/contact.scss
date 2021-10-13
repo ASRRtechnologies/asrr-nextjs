@@ -26,7 +26,7 @@
   text-align: center;
 }
 
-.contact-details{
+.contact-details {
   width: 100%;
   max-width: 600px;
 }
@@ -34,6 +34,7 @@
 
 .contact-form {
   @include margin-bottom(100px);
+
   h1 {
     @include margin-bottom(1rem);
   }
@@ -76,11 +77,11 @@
 
 @media screen and (max-width: $tablet-breakpoint) {
 
-  .contact{
+  .contact {
     @include flex(flex-start, flex-start, column);
   }
 
-  .map-container{
+  .map-container {
     @include margin-top(100px);
   }
 

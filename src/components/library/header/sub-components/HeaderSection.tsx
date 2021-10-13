@@ -1,7 +1,6 @@
 import React from 'react';
-import {css} from "@emotion/react";
-import {styles} from "@/library/styles/global_variabels";
-import styled from "@emotion/styled";
+import { styles } from '@/library/styles/global_variabels';
+import styled from '@emotion/styled';
 
 export const StyledHeaderSection = styled.div`
   width: 100%;
@@ -11,14 +10,14 @@ export const StyledHeaderSection = styled.div`
   align-items: center;
   background-color: ${styles.primaryColor} !important;
   color: ${styles.whiteFont};
-`
+`;
 
 function HeaderSection(props) {
-    return (
-        <StyledHeaderSection>
-            {props.children}
-        </StyledHeaderSection>
-    );
+  return (
+    <StyledHeaderSection>
+      {props.children}
+    </StyledHeaderSection>
+  );
 }
 
 export default HeaderSection;

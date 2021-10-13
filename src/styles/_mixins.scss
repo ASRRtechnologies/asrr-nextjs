@@ -1,16 +1,16 @@
-@mixin size ($width, $height){
-  width:$width;
-  height:$height;
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
 }
 
-@mixin flex ($x, $y, $direction){
+@mixin flex($x, $y, $direction) {
   display: flex;
   justify-content: $x;
   align-items: $y;
   flex-direction: $direction;
 }
 
-@mixin background (){
+@mixin background() {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

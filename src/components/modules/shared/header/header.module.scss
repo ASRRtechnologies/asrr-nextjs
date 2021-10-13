@@ -1,6 +1,7 @@
 @import "src/styles/globals";
+
 @include media(">=xs") {
-  .header{
+  .header {
     display: none;
   }
 }
@@ -15,7 +16,7 @@
     z-index: 900;
   }
 
-  .logoWrapper{
+  .logoWrapper {
     margin: 0;
     z-index: 9999;
   }
@@ -37,6 +38,7 @@
       @include flex(space-between, center, row);
       @include size(auto, auto);
       margin: 0 20px;
+
       &.activeLink {
         color: $primary-color;
       }
@@ -71,7 +73,7 @@
     height: 2px;
     position: fixed;
     top: 76px;
-    left:0;
+    left: 0;
     z-index: 1000;
   }
 

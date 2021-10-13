@@ -1,5 +1,5 @@
-import React, { createContext, useState, useRef, useEffect } from 'react'
-import rosetta from 'rosetta'
+import React, { createContext, useEffect, useRef, useState } from 'react';
+import rosetta from 'rosetta';
 // import rosetta from 'rosetta/debug';
 
 const i18n = rosetta();
@@ -22,7 +22,7 @@ export default function I18n({ children, locale, lngDict }) {
   if (locale && firstRender.current === true) {
     firstRender.current = false;
     i18n.locale(locale);
-    i18n.set(locale, activeDict)
+    i18n.set(locale, activeDict);
   }
 
   useEffect(() => {
@@ -31,7 +31,7 @@ export default function I18n({ children, locale, lngDict }) {
       i18n.set(locale, activeDict);
       activeLocaleRef.current = locale;
       // force rerender
-      setTick((tick) => tick + 1)
+      setTick((tick) => tick + 1);
     }
   }, [locale, activeDict]);
 
@@ -43,14 +43,14 @@ export default function I18n({ children, locale, lngDict }) {
       activeLocaleRef.current = l;
       if (dict) {
         i18n.set(l, dict);
-        setActiveDict(dict)
+        setActiveDict(dict);
       } else {
-        setTick((tick) => tick + 1)
+        setTick((tick) => tick + 1);
       }
-    },
+    }
   };
 
   return (
     <I18nContext.Provider value={i18nWrapper}>{children}</I18nContext.Provider>
-  )
+  );
 }

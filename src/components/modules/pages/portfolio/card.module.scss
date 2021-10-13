@@ -1,7 +1,7 @@
 @import "../../../../styles/globals";
 
 @include media(">=xs") {
-  .highlight{
+  .highlight {
     display: flex;
     width: 100%;
     min-height: 90vh;
@@ -11,7 +11,7 @@
     overflow: hidden;
     box-shadow: none;
 
-    .highlightCard{
+    .highlightCard {
       position: relative;
       display: flex;
       justify-content: center;
@@ -26,7 +26,7 @@
 
     }
 
-    .highlightCardInner{
+    .highlightCardInner {
       width: 100%;
       height: auto;
     }
@@ -36,18 +36,18 @@
 }
 
 @include media(">=lg") {
-  .highlight{
+  .highlight {
     align-items: flex-end;
     width: 80vw;
     min-height: 70vh;
     border-radius: $border-radius;
     box-shadow: inherit;
 
-    &.highlightLeft{
+    &.highlightLeft {
       align-items: start;
     }
 
-    .highlightCard{
+    .highlightCard {
       max-width: 600px;
       padding: 50px;
     }

@@ -40,10 +40,10 @@
       transition: 300ms ease-in-out;
     }
 
-    p{
-      &:hover{
+    p {
+      &:hover {
         font-weight: bold;
-        transition:100ms ease-in-out all;
+        transition: 100ms ease-in-out all;
       }
     }
 
@@ -53,7 +53,7 @@
       p {
         font-weight: bold;
         background-position: 0 100%;
-        transition:500ms ease-in-out all;
+        transition: 500ms ease-in-out all;
       }
 
     }
@@ -76,7 +76,7 @@
   @include margin-left(50px);
   text-align: center;
 
-  p{
+  p {
     max-width: 800px;
   }
 
@@ -136,12 +136,13 @@
       }
     }
 
-    &.why-asrr-center{
-      span{
+    &.why-asrr-center {
+      span {
         max-width: 100%;
         justify-content: center;
         padding: 25px 0;
-        p{
+
+        p {
           display: inline-block;
         }
       }
@@ -166,8 +167,8 @@
       margin-left: 25px;
     }
 
-    &.why-asrr-center{
-      p{
+    &.why-asrr-center {
+      p {
         text-align: center;
       }
     }
@@ -178,7 +179,7 @@
 
 @media screen and (max-width: 600px) {
   .why-asrr {
-    &.margin-bottom{
+    &.margin-bottom {
       margin-bottom: 50px;
     }
   }

@@ -4,74 +4,74 @@ h1, h2, h3, h4, h5, p, a, li {
   color: #1a1a1a;
 }
 
-h1, .h1{
+h1, .h1 {
   @include font-size(3.5rem);
   font-weight: bold;
   margin-top: 0;
 }
 
-h2, .h2{
+h2, .h2 {
   @include font-size(2.5rem);
   @include margin-bottom(20px);
   font-weight: bold;
   margin-top: 0;
 }
 
-h3, .h3{
+h3, .h3 {
   @include font-size(1.5rem);
   @include margin-bottom(20px);
   font-weight: bold;
   margin-top: 0;
 }
 
-h4, .h4{
+h4, .h4 {
   @include font-size(1.3rem);
   @include margin-bottom(1rem);
   font-weight: bold;
   margin-top: 0;
 }
 
-h5, .h5{
+h5, .h5 {
   @include font-size(1.1rem);
   @include margin-bottom(0.5rem);
 }
 
-h6, .h6{
+h6, .h6 {
   @include font-size(14px);
   margin-bottom: 0;
 }
 
-.h7{
+.h7 {
   @include font-size(12px);
 }
 
-a, p{
+a, p {
   display: block;
   @include font-size(16px);
   @include margin-bottom(1rem);
 }
 
-a{
+a {
   cursor: pointer;
   text-decoration: none;
   margin-bottom: 0;
 }
 
-.link{
+.link {
   color: inherit;
   text-decoration: underline;
- }
+}
 
-.hover-link{
-  &:hover{
+.hover-link {
+  &:hover {
     transition: 200ms ease-in-out;
     color: $primary-color !important;
   }
 }
 
-.lees-meer{
+.lees-meer {
   color: $primary-color;
-  margin-top: 20px!important;
+  margin-top: 20px !important;
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
@@ -80,7 +80,7 @@ a{
   font-weight: bold !important;
 }
 
-.not-bold{
+.not-bold {
   font-weight: normal !important;
 }
 

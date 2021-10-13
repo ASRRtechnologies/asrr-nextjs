@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import {css} from '@emotion/react'
-import {styles} from "@/library/styles/global_variabels";
+import { css } from '@emotion/react';
+import { styles } from '@/library/styles/global_variabels';
 
 export const BaseButtonStyle = css`
   width: auto;
@@ -14,13 +14,13 @@ export const BaseButtonStyle = css`
   }
 
   border-radius: ${styles.buttonBorderRadius};
-`
+`;
 
 export const ButtonStyleDefault = css`
   background-color: ${styles.primaryColor} !important;
   color: ${styles.whiteFont};
   
-`
+`;
 
 export const ButtonStyleOutlined = css`
   background-color: transparent;
@@ -32,19 +32,19 @@ export const ButtonStyleOutlined = css`
     color: ${styles.whiteFont};
   }
 
-`
+`;
 
 export const ButtonStyleOutlinedHoverDisabled = css`
   background-color: ${styles.primaryColor} !important;
   color: ${styles.whiteFont};
-`
+`;
 
 export const ButtonStyleDefaultHoverDisabled = css`
   background-color: ${styles.primaryColor} !important;
   color: ${styles.whiteFont};
-`
+`;
 
 export const ButtonStyleDisabled = css`
   background-color: ${styles.primaryColor} !important;
   color: ${styles.whiteFont};
-`
+`;

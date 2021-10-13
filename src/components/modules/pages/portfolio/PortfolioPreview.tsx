@@ -1,9 +1,9 @@
 import React from 'react';
-import PortfolioHighlight from "@/modules/pages/portfolio/PortfolioHighlight";
-import styled from "@emotion/styled";
+import PortfolioHighlight from '@/modules/pages/portfolio/PortfolioHighlight';
+import styled from '@emotion/styled';
 import Title from '@/utillities/titles/Title';
 import Section from '../../shared/section/Section';
-import LinkText from "@/modules/shared/text/LinkText";
+import LinkText from '@/modules/shared/text/LinkText';
 
 const Wrapper = styled(`div`)`
   display: flex;
@@ -22,30 +22,40 @@ const Wrapper = styled(`div`)`
       margin-bottom: 0;
     }
   }
-
-`
+`;
 
 function PortfolioPreview(props) {
-    const {allCases, content} = props;
-    const basePath = (projectName: string) => `/content/written/case/nl/${projectName}`; //nl will be language variable
-    const filteredCases = allCases.filter((proj) => proj.info.preview); //Return all cases where preview is true
+  const { allCases, content } = props;
+  const basePath = (projectName: string) =>
+    `/content/written/case/nl/${projectName}`; //nl will be language variable
+  const filteredCases = allCases.filter((proj) => proj.info.preview); //Return all cases where preview is true
 
-    return (
-        <Section>
-            <Title title={content.title} text={content.text}/>
-            <Wrapper>
-                {filteredCases.map((project, i) => {
-                    const even = i % 2 === 1;
-                    return (
-                        <PortfolioHighlight reverse={even} card={project.card} info={project.info}
-                                            basePath={basePath(project.title)} title={project.title}/>
-                    )
-                })}
-            </Wrapper>
+  return (
+    <Section>
+      <Title title={content.title} text={content.text} />
+      <Wrapper>
+        {filteredCases.map((project, i) => {
+          const even = i % 2 === 1;
+          return (
+            <PortfolioHighlight
+              reverse={even}
+              card={project.card}
+              info={project.info}
+              basePath={basePath(project.title)}
+              title={project.title}
+            />
+          );
+        })}
+      </Wrapper>
 
-            <LinkText goToSection={true} customLink={false} href="/portfolio" title="Bekijk alle projecten"/>
-        </Section>
-    );
+      <LinkText
+        goToSection={true}
+        customLink={false}
+        href="/portfolio"
+        title="Bekijk alle projecten"
+      />
+    </Section>
+  );
 }
 
 export default PortfolioPreview;

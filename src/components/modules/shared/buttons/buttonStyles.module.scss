@@ -1,7 +1,7 @@
 @import "../../../../styles/globals";
 
 @include media(">=xs") {
-  .button{
+  .button {
     text-align: center;
     height: auto;
     box-sizing: content-box;
@@ -20,13 +20,13 @@
     margin: 0;
     border: 2px solid transparent;
 
-    &:hover{
+    &:hover {
       transition-property: border, background-color;
       transition-duration: 200ms;
       transition-timing-function: ease-in-out;
     }
 
-    p, a{
+    p, a {
       display: block;
       width: 100%;
       height: 100%;
@@ -37,18 +37,19 @@
     }
   }
 
-  .iconButton{
+  .iconButton {
     //overrides
     width: 40px;
     height: 40px;
-    svg{
+
+    svg {
       width: 20px;
       height: 20px;
     }
   }
 
   //Edge case contact preview
-  .contactPreview{
+  .contactPreview {
 
   }
 }

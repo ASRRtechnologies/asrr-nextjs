@@ -38,44 +38,34 @@ section:
       ## Probleem
 
 
-      ESP wordt dagelijks benaderd door verschillende soorten potentiële klanten. In de huidige website was er weinig structuur aangebracht om deze klanten te leiden. Om die reden had ESP behoefte aan een website die toereikend is voor een breed scala aan klanten, zoals ZZP'ers en freelancers. De website moest verschillende kanalen krijgen voor elke doelgroep.
+      ESP wordt dagelijks benaderd via hun website door verschillende soorten potentiële klanten. In de huidige website was er weinig structuur aangebracht om deze klanten te leiden naar pagina’s die nuttig waren voor hen. Om die reden had ESP behoefte aan een website die toereikend is voor een breed scala aan klanten, zoals ZZP'ers en freelancers. De website moest verschillende kanalen krijgen voor elke doelgroep.
     media:
       images: []
   - content: >-
       ## Oplossing
 
 
-      Zo is deze website gebouwd op het React framework, met als doel een progressieve web applicatie te realiseren. Zo'n applicatie heeft een hoop voordelen, waaronder bijvoorbeeld het offline-cachen van een groot deel van de gegevens. Hierdoor is de webapplicatie razendsnel en kan deze zelfs zonder internetverbinding werken. 
+      De website is gebouwd op een React framework, met als doel een progressieve web applicatie realiseren. Zo'n applicatie heeft een hoop voordelen, waaronder bijvoorbeeld het offline-cachen van een groot deel van de gegevens. Hierdoor is de webapplicatie razendsnel en kan deze zelfs zonder internetverbinding werken. De website hosten wij op ons eigen razendsnelle hosting systeem. Dit is globally redundant hosting, wat ook bijdraagt aan een snelle website. Verder werken we met 'Responsive Webdesign', dat houdt in dat er wordt gestreefd naar een optimale webervaring op een breed scala aan apparaten. Ook gebruiken wij Automatische HTTPS/SSL certificering, wat veiligheid van de website waarborgt. Al deze elementen dragen bij aan een snelle, veilige, gebruiksvriendelijke website.
 
 
-      &nbsp;
+      Onze designer maakt op basis van een aantal voorbeelden een design. De voorbeelden die ESP aandroeg, waren tech giganten, zoals ASML, maar ook concurrenten in de branche. Wij analyseren de voorbeelden, bepalen de sterke punten en verwerken deze in het design van de website. Designen doen wij samen met de klant, dus het is een iteratief proces. 
 
 
-      ESP droeg een aantal voorbeelden aan van websites die in de smaak vielen. Hieronder een aantal tech giganten, zoals ASML, maar ook concurrenten in de branche. Onze designer heeft getracht deze elementen te combineren tot geheel dat de sterke punten van deze voorbeelden combineert. Na een aantal iteraties in Adobe XD kwam er een definitief design uit. 
+      Daarna is ons front-end team hard aan de slag gegaan om dit design te realiseren in code. De klant kreeg tijdens het proces een link waarop de wijzigingen real-time te volgen waren. Ons deployment systeem zorgt ervoor dat alle werkzaamheden bijna gelijk zichtbaar zijn.
 
 
-      &nbsp;
-
-
-      Ons front-end team is toen hard aan de slag gegaan om dit design te realiseren in code. De klant kreeg tijdens het proces een link waarop de wijzigingen real-time te volgen waren. Ons deployment systeem zorgt ervoor dat alle werkzaamheden bijna gelijk zichtbaar zijn.
-
-
-      &nbsp;
-
-
-      De website is [hier](https://espconsultancy.nl) te vinden. Disclaimer: design is volledig bepaald door de klant en daardoor niet in stijl met ASRR. Er kan ook gekozen worden voor een hands-on aanpak waarbij ASRR een design aflevert dat in onze optiek goed in de markt past.
+      De website is hier te vinden. Disclaimer: design is volledig bepaald door de klant en daardoor niet in stijl met ASRR. Er kan ook gekozen worden voor een hands-on aanpak waarbij ASRR een design aflevert dat in onze optiek goed in de markt past.
     media:
       images:
         - image: esp-example-safari-2.png
           reference: https://espconsultancy.nl
           description: Screenshot van de website
           alt: Sneak peak of ESP website
-  - content: |-
+  - content: >-
       ## Conclusie
 
-      * Een PWA precies afgesteld op de specifieke design wensen van de klant.
-      * Automatische HTTPS/SSL certificering.
-      * Globally redundant hosting op met een razendsnel hosting systeem.
+
+      We hebben een snelle, veilige en gebruiksvriendelijke website voor ESP gerealiseerd, waarop zij een breed scala aan klanten goed kunnen ontvangen. Het ontwerpen en realiseren van de website hebben wij in nauw Co-Makership met de klant gemaakt. Wij vinden het belangrijk dat de klant ook bijdraagt aan beslissingen tijdens het proces. Co-makership is overigens ook een van onze kernwaardes. Klik hier om meer te weten te komen over onze kernwaardes.
   - content: >-
       ## Feedback van de klant
 

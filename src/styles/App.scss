@@ -42,21 +42,23 @@ body {
 }
 
 //Fonts
-a{
+a {
   text-decoration: none;
 }
 
-.cookie-banner{
+.cookie-banner {
   max-width: 90%;
-  p{
+
+  p {
     font-weight: lighter;
     display: inline-block;
   }
 
-  a{
+  a {
     text-decoration: underline $primary-color;
     color: white;
-    &:hover{
+
+    &:hover {
       color: $primary-color;
     }
   }
@@ -106,18 +108,17 @@ a{
 //  @include font-size(1.3rem);
 //}
 
-.navigation-font{
+.navigation-font {
   @include font-size(1rem);
 }
 
-.primary-color{
+.primary-color {
   color: $primary-color !important;
 }
 
-.bold{
+.bold {
   font-weight: bold;
 }
-
 
 
 //.font-landing-text {
@@ -179,7 +180,7 @@ a{
     @include font-size(3rem);
   }
 
-  .font-title{
+  .font-title {
     @include font-size(1.5rem);
   }
 
@@ -187,7 +188,7 @@ a{
     @include font-size(1.2rem);
   }
 
-  .font-subheader{
+  .font-subheader {
     @include font-size(1.1rem);
   }
 

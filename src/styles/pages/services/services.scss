@@ -9,13 +9,13 @@
 .service-card-wrapper {
   width: 100%;
 
-  &:nth-of-type(even){
+  &:nth-of-type(even) {
 
-    .service-card{
+    .service-card {
       flex-direction: row-reverse;
     }
 
-    .service-card-text{
+    .service-card-text {
       border-radius: 0 5px 5px 0;
     }
 
@@ -115,7 +115,7 @@
 
     &:nth-child(even) {
 
-      .service-card{
+      .service-card {
         flex-direction: column-reverse;
       }
 
