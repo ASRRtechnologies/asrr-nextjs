@@ -12,7 +12,7 @@ import Banner from "@/modules/shared/landing/Banner";
 import BlogPreview from "@/modules/pages/blog/BlogPreview";
 import image from '/public/assets/images/landing/landing-asrr-min.jpg';
 
-function Index({homepage, allServices, allCases, allBlogs,}) {
+function Index({homepage, allServices, allCases, allBlogs}) {
     const basePath = `/content/home/nl`;
 
     const SEOProps = {
@@ -36,17 +36,15 @@ function Index({homepage, allServices, allCases, allBlogs,}) {
 }
 
 export async function getStaticProps() {
-    // @ts-ignore
-    let content = await import(`public/content/home/nl/home.md`);
+    const content = await import(`public/content/home/nl/home.md`);
     // let content = await import(`${BasePaths.HOME}/nl/home.md`);
-    let parsedContent = matter(content.default);
-    let homepage = parsedContent.data;
+    const parsedContent = matter(content.default);
+    const homepage = parsedContent.data;
 
-    // @ts-ignore
-    let servicesContent = await import(`public/content/services/nl/services.md`);
+    const servicesContent = await import(`public/content/services/nl/services.md`);
     // let servicesContent = await import(`${BasePa ths.SERVICE_PAGE}/nl/services.md`);
-    let servicesParsedContent = matter(servicesContent.default);
-    let servicepage = servicesParsedContent.data;
+    const servicesParsedContent = matter(servicesContent.default);
+    const servicepage = servicesParsedContent.data;
 
     const allServices = getAllServices([
         'title',
