@@ -63,5 +63,5 @@ section:
       ## Conclusie
 
 
-      Wij hebben in een korte tijd een simpele en visueel aantrekkelijke React Native app opgebouwd in de huisstijl van de klant met al bestaande data, waardoor de klant zelf content en gebruikers kan beheren. Dit is ideaal als jouw bedrijf het ontwikkelen van een app wil uitbesteden, maar wel controle wil hebben over de content en de gebruikers.
+      Wij hebben in een korte tijd een simpele en visueel aantrekkelijke React Native app opgebouwd in de huisstijl van de klant met al bestaande data, waardoor de klant zelf content en gebruikers kan beheren. Dit is ideaal als jouw bedrijf het ontwikkelen van een app wil uitbesteden, maar wel controle wil hebben over de content en de gebruikers. Check de app in de AppStore of Playstore.
 ---
