@@ -38,7 +38,7 @@ section:
       ## Probleem
 
 
-      De website moest verschillende "funnels" krijgen, waarbij er verschillende landingspaginas kunnen worden voorgeschoteld, op basis van wie de doelgroep is. ESP had behoefte aan een website die toereikend is voor een breed scala aan klanten, zoals ZZP'ers of freelancers.
+      ESP wordt dagelijks benaderd door verschillende soorten potentiële klanten. In de huidige website was er weinig structuur aangebracht om deze klanten te leiden. Om die reden had ESP behoefte aan een website die toereikend is voor een breed scala aan klanten, zoals ZZP'ers en freelancers. De website moest verschillende kanalen krijgen voor elke doelgroep.
     media:
       images: []
   - content: >-
