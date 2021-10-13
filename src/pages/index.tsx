@@ -11,7 +11,7 @@ import PortfolioPreview from '@/modules/pages/portfolio/PortfolioPreview';
 import Banner from "@/modules/shared/landing/Banner";
 import BlogPreview from "@/modules/pages/blog/BlogPreview";
 // @ts-ignore
-import image from "#/landing/landing-asrr-min.jpg";
+import image from '/public/assets/images/landing/landing-asrr-min.jpg';
 
 function Index({homepage, allServices, allCases, allBlogs,}) {
     const basePath = `/content/home/nl`;
@@ -22,7 +22,7 @@ function Index({homepage, allServices, allCases, allBlogs,}) {
 
     return (
         <PageLayout className="darkmodeContainer" {...SEOProps}>
-            <Banner landing={true} image={image.src} title={homepage.landing.title} text={homepage.landing.text}
+            <Banner landing={true} image={image} title={homepage.landing.title} text={homepage.landing.text}
                     button={homepage.landing.button}/>
             <Clients content={homepage.clients}/>
             <PreviewServices content={homepage.services} allServices={allServices}/>
