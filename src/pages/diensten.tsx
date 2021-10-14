@@ -24,11 +24,8 @@ function Diensten({ content, allServices }) {
 }
 
 export async function getStaticProps() {
-  //This is the portfolio page cms
   const data = await import(`public/content/services/nl/services.md`);
-  // let data = await import(`${BasePaths.SERVICE_PAGE}/nl/services.md`);
   const content = matter(data.default).data;
-
   const allServices = getAllServices(['title', 'slug', 'card', 'info']);
 
   return {
