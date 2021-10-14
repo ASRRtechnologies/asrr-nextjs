@@ -2,7 +2,7 @@
 language: nl
 title: bijzonderstrafrecht
 meta_tags:
-  title: BijzonderStrafrecht
+  title: Case - BijzonderStrafrecht
   text: Voor BijzonderStrafrecht hebben wij een dedicated podcast app gecreëerd
     met behulp van React Native.
 info:
