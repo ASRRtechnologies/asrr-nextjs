@@ -1,6 +1,5 @@
 import React from 'react';
 import cardStyles from '@/modules/pages/portfolio/card.module.scss';
-// @ts-ignore
 import img from '#/landing/placeholder.jpg';
 import Section from '@/modules/shared/section/Section';
 import {
@@ -17,6 +16,7 @@ import {
 import LinkText from '../../shared/text/LinkText';
 import DarkModeCard from '@/modules/shared/cards/DarkModeCard';
 import styled from '@emotion/styled';
+import Image from 'next/image';
 
 const StyledPortfolioHighlight = styled(`div`)<StyledPortfolioHighlightProps>`
   @media screen and (min-width: 1024px) {
@@ -42,7 +42,7 @@ function PortfolioHighlight(props: PortfolioHighlightProps) {
           {...bannerAnimations}
           className="image-zoom-animation"
         >
-          <img src={`${props.basePath}/${image}`} alt={alt} />
+          <Image src={`${props.basePath}/${image}`} alt={alt} layout="fill" />
         </Reveal>
 
         <DarkModeCard className={cardStyles.highlightCard}>
