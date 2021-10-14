@@ -7,11 +7,8 @@ info:
   preview: true
 meta_tags:
   title: Diensten - ITTAAS
-  text: Met een ASRR IT-team voeg je een volledig ingewerkte IT-afdeling aan jouw
-    bedrijf voor een periode die aansluit bij jouw behoeftes. Hierbij hoef jij
-    je niet druk te maken over of er wel-of-niet de juiste expertises zijn
-    aangenomen en heb je alle voordelen van een gestandaardiseerde aanpak in
-    combinatie met 'cutting edge' maatwerk.
+  text: "Met een ASRR IT-team voeg je een volledig ingewerkte IT-afdeling aan jouw
+    bedrijf voor een periode die aansluit bij jouw behoeftes. "
 card:
   text: Met een ASRR IT-team voeg je een volledig ingewerkte IT-afdeling aan jouw
     bedrijf voor een periode die aansluit bij jouw behoeftes. Hierbij hoef jij
