@@ -41,14 +41,12 @@ function Index({ homepage, allServices, allCases, allBlogs }) {
       <Clients content={homepage.clients} />
       <BlogPreview content={homepage.blog} allBlogs={allBlogs} />
       <TechStack basePath={basePath} content={homepage.technologies} />
-      {/*<FlexGrid images={homepage.clients} col={5}/>*/}
     </PageLayout>
   );
 }
 
 export async function getStaticProps() {
   const content = await import(`public/content/home/nl/home.md`);
-  // let content = await import(`${BasePaths.HOME}/nl/home.md`);
   const parsedContent = matter(content.default);
   const homepage = parsedContent.data;
 
