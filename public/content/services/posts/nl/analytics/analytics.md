@@ -6,11 +6,8 @@ info:
   preview: true
 meta_tags:
   title: Diensten - Analytics
-  text: Data is een waardevolle asset voor elk bedrijf, echter gebruiken niet veel
-    bedrijven de potentiële goudmijn waar ze op zitten. Wij kunnen doormiddel
-    van een data-analyse een Business Insights Dashboard voor jouw bedrijf
-    opzetten, waarin je de belangrijkste aspecten van jouw dataset in een
-    oogopslag kan zien. We zetten jouw (legacy) data aan het werk.
+  text: Wij zetten met een data-analyse een Business Insights Dashboard om jouw
+    (legacy) data aan het werk te zetten.
 card:
   title: Business Analytics & Insights
   text: Data is een waardevolle asset voor elk bedrijf, echter gebruiken niet veel
@@ -36,16 +33,10 @@ section:
       Data is een waardevolle asset voor elk bedrijf, echter gebruiken niet veel bedrijven de potentiële goudmijn waar ze op zitten. Wij kunnen doormiddel van een data-analyse een Business Insights Dashboard voor jouw bedrijf opzetten, waarin je de belangrijkste aspecten van jouw dataset in een oogopslag kan zien. We zetten jouw (legacy) data aan het werk.
 
 
-      &nbsp;
-
-
       Dit geeft management real-time inzichten in de status van het proces, waardoor er tijdig kan worden bijgestuurd. Dit kan onnodige kosten door vertraging, stress en gemiste kansen voorkomen.
 
 
-      &nbsp;
-
-
-      ASRR heeft in het verleden voor verschillende klanten een dergelijk dashboard opgezet. Een voorbeeld daarvan is te vinden onder [](/portfolio/case/hes)de case van [HES](https://asrr-next.netlify.app/portfolio/case/hes). Klik [hier](https://asrr-next.netlify.app/portfolio/case/hes) voor de case.
+      ASRR heeft in het verleden voor verschillende klanten een dergelijk dashboard opgezet. Een voorbeeld daarvan is te vinden onder [](/portfolio/case/hes)de case van HES. Klik hier voor de case.
     media:
       images:
         - image_webp: voorbeeld.png

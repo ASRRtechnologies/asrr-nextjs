@@ -6,15 +6,14 @@ info:
   preview: true
 meta_tags:
   title: Diensten - Hardware
-  text: ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De
-    componenten zijn cutting edge technology en worden precies afgestemd op het
-    proces waarvoor de hardware gebruikt gaat worden. Dit beperkt kosten,
-    vergroot de performance en legt de focus op de cruciale componenten.
+  text: "De hardware van ASRR is cutting edge technology en wordt precies
+    afgestemd op jouw needs, waardoor er maximale performance wordt behaalt voor
+    minimale prijs. "
 card:
   text: >
     ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De
-    componenten zijn cutting edge technology en worden precies afgestemd op het
-    proces waarvoor de hardware gebruikt gaat worden. Dit beperkt kosten,
+    componenten zijn "cutting edge" technology en worden precies afgestemd op
+    het proces waarvoor de hardware gebruikt gaat worden. Dit beperkt kosten,
     vergroot de performance en legt de focus op de cruciale componenten.
   title: Hardware op maat
 landing:
@@ -33,9 +32,6 @@ section:
       ASRR bouwt hardware die met kop en schouders boven de rest uitsteekt. De componenten zijn cutting edge technology en worden precies afgestemd op het proces waarvoor de hardware gebruikt gaat worden. Dit beperkt kosten, vergroot de performance en legt de focus op de cruciale componenten.
 
 
-      &nbsp;
-
-
       ASRR levert secure servers, met remote desktop capaciteit en een 2 factor authenticatie login methode. Ook bouwen we krachtige workstations, gaming rigs en budget pc’s.
     media:
       images:
@@ -47,10 +43,7 @@ section:
       ### Het proces
 
 
-      ASRR analyseert eerst uw behoefte. Heeft u de hardware nodig voor zware grafische zaken zoals BIM/CAD of ander 3D werk? Dan zorgen wij voor een zware grafische kaart. Is uw werk meer gefocust op zaken die afhangen van een hoge CPU-snelheid, dan zorgen wij voor een sterke processor. Hierbij is er soms niet eens een grafische kaart nodig, waardoor er kosten kunnen worden bespaard of er komt extra budget vrij voor de componenten die er wel toe doen in uw situatie. Dit alles wordt geleverd in een strakke, moderne case, waardoor uw werkplek of server er hypermodern uit ziet.
-
-
-      &nbsp;
+      ASRR analyseert eerst jouw behoefte. Heb je de hardware nodig voor zware grafische zaken zoals BIM/CAD of ander 3D werk? Dan zorgen wij voor een zware grafische kaart. Is jouw werk meer gefocust op zaken die afhangen van een hoge CPU-snelheid, dan zorgen wij voor een sterke processor. Hierbij is er soms niet eens een grafische kaart nodig, waardoor er kosten kunnen worden bespaard of er komt extra budget vrij voor de componenten die er wel toe doen in uw situatie. Dit alles wordt geleverd in een strakke, moderne case, waardoor uw werkplek of server er hypermodern uit ziet.
 
 
       Door deze aanpak kan er tegen een scherpe prijs de beste performance geleverd worden en je betaalt niet voor onnodige componenten.
