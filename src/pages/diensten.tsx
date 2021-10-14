@@ -9,11 +9,11 @@ function Diensten({ content, allServices }) {
   const basePath = `/content/services/nl`;
 
   const SEOProps = {
-    ...content.meta_tags
+    ...content.meta_tags,
   };
 
   return (
-    <PageLayout className='darkmodeContainer' {...SEOProps}>
+    <PageLayout className="darkmodeContainer" {...SEOProps}>
       <Banner
         {...content.landing}
         image={`${basePath}/${content.landing.image}`}
@@ -25,7 +25,6 @@ function Diensten({ content, allServices }) {
 
 export async function getStaticProps() {
   //This is the portfolio page cms
-  // @ts-ignore
   const data = await import(`public/content/services/nl/services.md`);
   // let data = await import(`${BasePaths.SERVICE_PAGE}/nl/services.md`);
   const content = matter(data.default).data;
@@ -33,7 +32,7 @@ export async function getStaticProps() {
   const allServices = getAllServices(['title', 'slug', 'card', 'info']);
 
   return {
-    props: { content, allServices }
+    props: { content, allServices },
   };
 }
 
