@@ -2,7 +2,7 @@
 language: nl
 title: microservices
 meta_tags:
-  title: Microservices
+  title: Blog - Microservices
   text: "Microservicesoftware architectuur kan verschillende voordelen hebben ten
     opzichte van traditionele monolithische applicaties. "
 type: artikel
