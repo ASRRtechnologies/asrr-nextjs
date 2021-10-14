@@ -27,7 +27,7 @@ landing:
   alt: Law system
 section:
   - content: >-
-      # Een dedicated 
+      # Een dedicated podcast
 
 
       Wij hebben recent een Podcast app ontwikkeld voor BijzonderStrafrecht. De app is te downloaden via de AppStore en Playstore. Op de app kunnen gebruikers het laatste nieuws binnen het strafrecht beluisteren.  
