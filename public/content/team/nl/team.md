@@ -14,6 +14,7 @@ landing:
     bij ASRR, doordat zij de vrijheid hebben om zichzelf verder te ontwikkelen.
     Dit is voordelig voor de klant, omdat wij mensen aanbieden die gedreven
     zijn, snel nieuwe dingen oppakken en gewend zijn aan een uitdaging
+  image: takahiro-sakamoto-imued0tpo1s-unsplash.jpg
 members:
   - name: Amar Ramdas
     position: Managing Director

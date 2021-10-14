@@ -4,6 +4,7 @@ import Section from '@/modules/shared/section/Section';
 import Filter from '@/modules/shared/section/Filter';
 import Reveal, { Fade } from 'react-awesome-reveal';
 import { textAnimations, zoomIn } from '../../../../data/animations-settings';
+import Image from 'next/image';
 
 type ButtonProps = {
   text: string;
@@ -33,7 +34,7 @@ function Banner(props: BannerProps) {
         duration={1800}
         className="image-zoom-animation"
       >
-        <img src={props.image} alt={props.alt} />
+        <Image src={props.image} alt={props.alt} layout="fill" />
       </Reveal>
 
       <div className={bannerStyles.innerBanner}>
