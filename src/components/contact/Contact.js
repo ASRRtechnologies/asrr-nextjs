@@ -8,6 +8,7 @@ import { useSnackbar } from 'notistack';
 import { useTheme } from '../../context/theme/ThemeContext';
 import { postCall } from '../../functions/helper-functions';
 import Button from '@/modules/shared/buttons/Button';
+import buttonStyles from '@/modules/shared/buttons/buttonStyles.module.scss';
 
 const Wrapper = styled(Section)`
   background: ${(props) => props.theme.layout};
@@ -29,6 +30,7 @@ function Contact({ data }) {
     userEmail: '',
     organization: '',
     name: '',
+    success: false,
   });
   const { enqueueSnackbar, closeSnackbar } = useSnackbar();
   const darkmode = useTheme().dark;
@@ -37,33 +39,34 @@ function Contact({ data }) {
     setEmail({ ...email, [name]: value });
 
   const handleSubmit = async (event) => {
-    let emailObject = {
-      body: `from: ${email.userEmail}, name:${email.name}, subject:${email.subject}, organization: ${email.organization}, message: ${email.body}`,
-      subject: email.subject,
-      recipient: recipient,
-    };
+    event.preventDefault();
 
     const [data, error] = await postCall({
       url: 'https://form-configurator-api.azurewebsites.net/api/v1/mail/send',
-      data: emailObject,
+      params: {
+        recipient: recipient,
+        subject: email.subject,
+        body: `from: ${email.userEmail}, name:${email.name}, subject:${email.subject}, organization: ${email.organization}, message: ${email.body}`,
+      },
       headers: {
         'Content-Type': 'application/json',
       },
     });
 
     if (error) {
-      enqueueSnackbar(i18n.t('user_notifications.contact.error.title'), {
-        error: true,
-      });
+      console.log('Error while sending email: ', error);
+      // enqueueSnackbar('Error', {
+      //   error: true,
+      // });
       return;
     }
 
-    enqueueSnackbar(i18n.t('user_notifications.contact.success.title'), {
-      variant: 'success',
-    });
-    setEmail(null);
+    console.log('email sent successfully');
+    setEmail({ ...email, success: true });
 
-    event.preventDefault();
+    // enqueueSnackbar('Success', {
+    //   variant: 'success',
+    // });
   };
 
   return (
@@ -118,7 +121,13 @@ function Contact({ data }) {
                 required={true}
                 placeholder="Bericht*"
               />
-              <Button buttonType={{ title: 'Verzenden', mode: 'darkmode' }} />
+              <Button
+                title={email.success ? 'Bericht verstuurd!' : 'Verstuur'}
+                mode="darkmode"
+                className={buttonStyles.contactPreview}
+                buttonType={{ buttonType: 'submit' }}
+                onClick={(e) => handleSubmit(e)}
+              />
             </form>
           </div>
 
