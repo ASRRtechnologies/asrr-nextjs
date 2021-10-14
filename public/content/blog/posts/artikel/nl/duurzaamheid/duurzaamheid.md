@@ -2,7 +2,7 @@
 language: nl
 title: duurzaamheid
 meta_tags:
-  title: Duurzaamheid
+  title: Blog - Duurzaamheid
   text: Denk jij wel eens na over hoe jij jouw Information Technology (IT) bedrijf
     kan verduurzamen? Lees dan verder hoe ASRR dat op drie manieren heeft
     gedaan.
@@ -51,8 +51,6 @@ section:
 
 
       Een duurzame oplossing moet dus een harmonieuze combinatie zijn van deze drie elementen en aan je huidige behoeftes voldoen zonder de behoeftes van toekomstige generaties te belemmeren.
-
-
     media:
       images:
         - image: sustainability-circle-final-1-.png
