@@ -19,7 +19,7 @@ card:
     gemaakt die gebruikers kunnen downloaden in de AppStore en PlayStorewaarin.
     Op de app kunnen gebruikers het laatste nieuws binnen het strafrecht
     beluisteren.  "
-  image: bijzonderstrafrecht-bestanddelen-podcast-min.png
+  image: bijzonderstrafrecht-case-image-2.jpg
   alt: Podcast image
 landing:
   title: Een dedicated podcast
