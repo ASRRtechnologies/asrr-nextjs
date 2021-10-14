@@ -3,10 +3,8 @@ language: nl
 title: microservices
 meta_tags:
   title: Microservices
-  text: "Ben jij benieuwd naar de verschillende voordelen van microservice
-    software architectuur ten opzichte van traditionele monolithische
-    applicaties? Lees dan verder hoe het implementeren van microservices jou
-    tijd en moeite kan besparen. "
+  text: "Microservicesoftware architectuur kan verschillende voordelen hebben ten
+    opzichte van traditionele monolithische applicaties. "
 type: artikel
 info:
   date: January 13, 2021 4:30 PM
