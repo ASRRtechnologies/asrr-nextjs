@@ -49,7 +49,7 @@ testimonials:
         oplossingen. Ze begeleiden het project vakkundig, zijn heel flexibel en
         kunnen snel schakelen indien nodig. Het is erg plezierig om met ze samen
         te werken!
-      title: Innovatie bij Form
+      title: Innovatie bij FORMHET
       avatar: jorgenharing_kleur-min.jpg
       image: form-foto.png
       company: FORMHET Architecture & Engineering B.V.

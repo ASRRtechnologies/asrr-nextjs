@@ -34,7 +34,7 @@ section:
       Dit geeft management real-time inzichten in de status van het proces, waardoor er tijdig kan worden bijgestuurd. Dit kan onnodige kosten door vertraging, stress en gemiste kansen voorkomen.
 
 
-      ASRR heeft in het verleden voor verschillende klanten een dergelijk dashboard opgezet. Een voorbeeld daarvan is te vinden onder de case van [HES](https://asrr.nl/portfolio/hes). Test
+      ASRR heeft in het verleden voor verschillende klanten een dergelijk dashboard opgezet. Een voorbeeld daarvan is te vinden onder de case van [HES](https://asrr.nl/portfolio/hes).
     media:
       images:
         - image_webp: voorbeeld.png
