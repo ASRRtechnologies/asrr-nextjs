@@ -9,8 +9,9 @@ landing:
   title: Diensten
   image: 1-min.jpg
   alt: Server
+  text: Bekijk onze diensten
 section:
-  title: All onze diensten in een
+  title: All onze diensten in één
   image: automation-square.jpg
   alt: ASRR - Diensten
 ---
