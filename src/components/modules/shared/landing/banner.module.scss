@@ -7,7 +7,6 @@
     width: 100vw;
     min-height: 60vh;
     background-color: $primary-color;
-    //background-color: #F18e8b;
     position: relative;
     overflow: hidden;
 
@@ -43,12 +42,7 @@
 }
 
 @include media(">=sm") {
-
-
 }
 
-
 @include media(">sm", "<=lg") {
-
-
 }
