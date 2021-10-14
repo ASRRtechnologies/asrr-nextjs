@@ -28,8 +28,6 @@ section:
       ## Data is een waardevolle asset voor elk bedrijf.
 
 
-      \
-
       Data is een waardevolle asset voor elk bedrijf, echter gebruiken niet veel bedrijven de potentiële goudmijn waar ze op zitten. Wij kunnen doormiddel van een data-analyse een Business Insights Dashboard voor jouw bedrijf opzetten, waarin je de belangrijkste aspecten van jouw dataset in een oogopslag kan zien. We zetten jouw (legacy) data aan het werk.
 
 
