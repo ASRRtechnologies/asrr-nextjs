@@ -1,6 +1,7 @@
 import AspectRatio from '@/library/aspect-ratio/AspectRatio';
 import React from 'react';
 import testimonialStyles from './testimonial.module.scss';
+import Image from 'next/image';
 
 interface TestimonialCardProps {
   content: any;
@@ -25,7 +26,7 @@ function TestimonialCards(props: TestimonialCardProps) {
     <div className={`${testimonialStyles.card}`}>
       <div className={testimonialStyles.cardImage}>
         <AspectRatio x={4} y={4}>
-          <img src={`${basePath}/${image}`} alt={alt} />
+          <Image src={`${basePath}/${image}`} alt={alt} layout="fill" />
         </AspectRatio>
       </div>
 
@@ -33,7 +34,11 @@ function TestimonialCards(props: TestimonialCardProps) {
         <div className={testimonialStyles.credentials}>
           <span className={testimonialStyles.avatar}>
             <AspectRatio x={1} y={1}>
-              <img src={`${basePath}/${avatar}`} alt={avatar_alt} />
+              <Image
+                src={`${basePath}/${avatar}`}
+                alt={avatar_alt}
+                layout="fill"
+              />
             </AspectRatio>
           </span>
 
