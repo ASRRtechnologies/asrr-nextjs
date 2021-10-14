@@ -3,7 +3,8 @@ language: nl
 title: hybridewerken
 meta_tags:
   title: Hybride werken
-  text: "Ontdek waarom ASRR kiest voor hybride werken en wat de voordelen zijn. "
+  text: "Hybride werken. Go of no go? In dit artikel gaan wij in op waarom hybride
+    werken een keiharde go moet zijn.  "
 type: artikel
 info:
   preview: false
