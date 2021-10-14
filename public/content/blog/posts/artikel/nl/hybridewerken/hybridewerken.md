@@ -2,7 +2,7 @@
 language: nl
 title: hybridewerken
 meta_tags:
-  title: Hybride werken
+  title: Blog - Hybride werken
   text: "Hybride werken. Go of no go? In dit artikel gaan wij in op waarom hybride
     werken een keiharde go moet zijn.  "
 type: artikel
