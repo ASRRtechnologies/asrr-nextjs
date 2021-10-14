@@ -13,7 +13,7 @@ info:
   tags:
     - center
 card:
-  title: "Waarom hybride werken positief is "
+  title: "Waarom hybride werken iets positiefs is "
   text: "Door de coronapandemie hebben veel bedrijven zich in een korte tijd
     moeten aanpassen aan een situatie waarin veel mensen thuiswerken. Inmiddels
     gaan we terug naar het ‘normale leven’. Veel bedrijven staan daarom voor de
@@ -26,7 +26,7 @@ landing:
   alt: Working from home
 section:
   - content: >-
-      # Waarom hybride werken positief is
+      # Waarom hybride werken iets positiefs is
 
 
       Het lijkt wel de droom van elke IT-er: thuiswerken. Door de coronapandemie is die droom werkelijkheid geworden, maar voor veel bedrijven was dit een grote uitdaging. Zij hebben zich in een korte tijd moeten aanpassen aan een situatie waarin mensen veel thuiswerken. Inmiddels gaan we terug naar het ‘normale leven’. Veel bedrijven staan daarom voor de vraag: Hoe gaan we nu verder?
