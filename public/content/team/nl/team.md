@@ -14,6 +14,7 @@ landing:
     bij ASRR, doordat zij de vrijheid hebben om zichzelf verder te ontwikkelen.
     Dit is voordelig voor de klant, omdat wij mensen aanbieden die gedreven
     zijn, snel nieuwe dingen oppakken en gewend zijn aan een uitdaging
+  image: takahiro-sakamoto-imued0tpo1s-unsplash.jpg
 members:
   - name: Amar Ramdas
     position: Managing Director
@@ -36,25 +37,6 @@ members:
       minimalisme. Hierdoor krijgt de klant de meest moderne designs. Tenzij de
       klant natuurlijk iets anders in gedachte heeft, dan kan dat ook geregeld
       worden.
-  - name: Rayel Hardwarsing
-    position: Back-End Developer
-    website: https://www.linkedin.com/in/rayelhardwarsing/
-    story: Als back-end developer werk ik aan het verbreiden/verbeteren van
-      bestaande applicaties en het opzetten van nieuwe applicaties. Verder houd
-      ik me bezig met de deployment en hosting van onze applicaties op ons
-      kubernetes netwerk. Met mijn achtergrond in de econometrie ben ik van
-      nature analytisch ingesteld en geïnteresseerd in het oplossen van complexe
-      problemen. Dit komt zeker te pas bij ASRR, waar we altijd flexibele en
-      robuuste oplossingen bieden aan de klant!
-  - name: Lotte Boonstra
-    position: Operations Manager
-    website: www.linkedin.com/in/lotte-boonstra
-    story: Ik ben werkzaam als operations manager bij ASRR. Ik ben verantwoordelijk
-      voor het effectief en efficiënt verloop van operaties binnen ASRR. Ik
-      breng structuur aan in processen. Een goede structuur is namelijk de helft
-      van het werk. Verder heb ik een achtergrond in Technische Natuurkunde,
-      waardoor gestructureerd complexe problemen analyseren en oplossen als
-      thuis voelt. Dit kan ik goed toepassen bij ASRR.
   - name: Azat Arica
     position: Back-End Lead
     website: https://www.linkedin.com/in/azat-a/
@@ -65,6 +47,25 @@ members:
       energiek team. Het was voor mij vanzelfsprekend dat ik daar onderdeel van
       uit wilde maken. Ik ben graag in contact met klanten en ik haal energie
       uit het maken van complexe applicaties.
+  - name: Lotte Boonstra
+    position: Operations Manager
+    website: www.linkedin.com/in/lotte-boonstra
+    story: Ik ben werkzaam als operations manager bij ASRR. Ik ben verantwoordelijk
+      voor het effectief en efficiënt verloop van operaties binnen ASRR. Ik
+      breng structuur aan in processen. Een goede structuur is namelijk de helft
+      van het werk. Verder heb ik een achtergrond in Technische Natuurkunde,
+      waardoor gestructureerd complexe problemen analyseren en oplossen als
+      thuis voelt. Dit kan ik goed toepassen bij ASRR.
+  - name: Rayel Hardwarsing
+    position: Back-End Developer
+    website: https://www.linkedin.com/in/rayelhardwarsing/
+    story: Als back-end developer werk ik aan het verbreiden/verbeteren van
+      bestaande applicaties en het opzetten van nieuwe applicaties. Verder houd
+      ik me bezig met de deployment en hosting van onze applicaties op ons
+      kubernetes netwerk. Met mijn achtergrond in de econometrie ben ik van
+      nature analytisch ingesteld en geïnteresseerd in het oplossen van complexe
+      problemen. Dit komt zeker te pas bij ASRR, waar we altijd flexibele en
+      robuuste oplossingen bieden aan de klant!
   - name: Vanisha Oedayrajsingh Varma
     position: Back-End Developer
     story: Ik ben back-end developer bij ASRR. Mijn specialiteit is bugs vinden,

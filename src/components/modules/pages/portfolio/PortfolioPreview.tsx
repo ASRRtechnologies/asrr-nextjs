@@ -38,6 +38,7 @@ function PortfolioPreview(props) {
           const even = i % 2 === 1;
           return (
             <PortfolioHighlight
+              key={project.title}
               reverse={even}
               card={project.card}
               info={project.info}

@@ -2,7 +2,7 @@
 language: nl
 title: bijzonderstrafrecht
 meta_tags:
-  title: Case - BijzonderStrafrecht
+  title: BijzonderStrafrecht
   text: Voor BijzonderStrafrecht hebben wij een dedicated podcast app gecreëerd
     met behulp van React Native.
 info:
@@ -15,7 +15,7 @@ info:
 card:
   title: Dedicated podcast app
   text: "Podcasts worden steeds populairder en gewilder. Het is een goede manier
-    om jouw doelgroep te informeren of vermaken. Wij hebben een Podcast App
+    om jouw doelgroep te informeren en/of vermaken. Wij hebben een Podcast App
     gemaakt die gebruikers kunnen downloaden in de AppStore en PlayStorewaarin.
     Op de app kunnen gebruikers het laatste nieuws binnen het strafrecht
     beluisteren.  "
@@ -27,7 +27,7 @@ landing:
   alt: Law system
 section:
   - content: >-
-      # Een dedicated podcast
+      # Een dedicated 
 
 
       Wij hebben recent een Podcast app ontwikkeld voor BijzonderStrafrecht. De app is te downloaden via de AppStore en Playstore. Op de app kunnen gebruikers het laatste nieuws binnen het strafrecht beluisteren.  
@@ -63,5 +63,5 @@ section:
       ## Conclusie
 
 
-      Wij hebben in een korte tijd een simpele en visueel aantrekkelijke React Native app opgebouwd in de huisstijl van de klant met al bestaande data, waardoor de klant zelf content en gebruikers kan beheren. Dit is ideaal als jouw bedrijf het ontwikkelen van een app wil uitbesteden, maar wel controle wil hebben over de content en de gebruikers. Check de app in de AppStore of Playstore.
+      Wij hebben in een korte tijd een gebruiksvriendelijke en visueel aantrekkelijke React Native app opgebouwd in de huisstijl van de klant met al bestaande data, waardoor de klant zelf content en gebruikers kan beheren. Dit is ideaal als jouw bedrijf het ontwikkelen van een app wil uitbesteden, maar wel controle wil hebben over de content en de gebruikers.
 ---

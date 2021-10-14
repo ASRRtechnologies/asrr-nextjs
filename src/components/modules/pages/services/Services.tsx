@@ -29,7 +29,13 @@ function Services({ content, allServices }) {
         <div className={serviceStyles.gridWrapper}>
           <Grid breakpoints={breakPoints} fade={true} maxWidth="1400px">
             {allServices.map((service) => {
-              return <ServiceCards content={service} basePath={basePath} />;
+              return (
+                <ServiceCards
+                  key={service}
+                  content={service}
+                  basePath={basePath}
+                />
+              );
             })}
           </Grid>
         </div>
