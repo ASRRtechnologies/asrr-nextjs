@@ -1,8 +1,7 @@
 import React from 'react';
 import cardStyles from '@/modules/shared/cards/cards.module.scss';
 import AspectRatio from '@/library/aspect-ratio/AspectRatio';
-// @ts-ignore
-import placeholder from '#/team/placeholder.png';
+import Image from 'next/image';
 
 type MediaTypeProps =
   | {
@@ -33,12 +32,13 @@ const Video = (props: MediaProps) => {
   );
 };
 
-const Image = (props: MediaProps) => {
+const MediaImage = (props: MediaProps) => {
   if (props.media.mediaType === 'image')
     return (
-      <img
+      <Image
         src={`${props.basePath}/${props.media.src}`}
         alt={props?.media.alt}
+        layout="fill"
       />
     );
 };
@@ -49,7 +49,7 @@ function ArticleImage(props: MediaProps) {
     <div className={`${cardStyles.card} ${cardStyles.blogImage}`}>
       <AspectRatio x={4} y={3}>
         {props.media.mediaType === 'image' ? (
-          <Image {...props} />
+          <MediaImage {...props} />
         ) : (
           <Video {...props} />
         )}
