@@ -13,7 +13,7 @@ function Portfolio(props) {
   return (
     <Section>
       <MaxTwoColGrid>
-        {allCases.map((project, i) => {
+        {shuffle(allCases).map((project, i) => {
           //Set delay for each uneven card. TODO make cards on mobile just same speed
           const animationSettings = animationsSettings({}, i);
 
@@ -30,6 +30,26 @@ function Portfolio(props) {
       </MaxTwoColGrid>
     </Section>
   );
+}
+
+function shuffle(array) {
+  let currentIndex = array.length,
+    randomIndex;
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+
+  return array;
 }
 
 export default Portfolio;

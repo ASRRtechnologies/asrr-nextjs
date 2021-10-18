@@ -65,6 +65,10 @@ function Footer(props) {
           title: 'Privacybeleid',
           href: '/assets/documents/privacy-asrr.pdf',
         },
+        {
+          title: 'Customer Support Portal',
+          href: 'https://asrrtechnologies.atlassian.net/servicedesk/customer/portals',
+        },
       ],
     },
   ];

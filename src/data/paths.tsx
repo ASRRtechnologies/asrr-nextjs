@@ -21,7 +21,11 @@ export const navigationPaths = [
   // {name:"Over", path:"/over"},
   { name: 'Team', path: '/team' },
   { name: 'Blog', path: '/blog' },
-  { name: 'Contact', path: '/contact' }
+  {
+    name: 'Support',
+    path: 'https://asrrtechnologies.atlassian.net/servicedesk/customer/portals',
+  },
+  { name: 'Contact', path: '/contact' },
 ];
 
 //

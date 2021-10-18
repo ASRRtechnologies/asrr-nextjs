@@ -2,7 +2,7 @@
 language: nl
 title: bijzonderstrafrecht
 meta_tags:
-  title: BijzonderStrafrecht
+  title: Case - BijzonderStrafrecht
   text: Voor BijzonderStrafrecht hebben wij een dedicated podcast app gecreëerd
     met behulp van React Native.
 info:
@@ -22,12 +22,12 @@ card:
   image: bijzonderstrafrecht-case-image-2.jpg
   alt: Podcast image
 landing:
-  title: Een dedicated podcast
+  title: Een eigen app in de AppStore
   image: tingey-injury-law-firm-dzpc4uy8zty-unsplash-min.jpg
   alt: Law system
 section:
   - content: >-
-      # Een dedicated 
+      # Een dedicated podcast
 
 
       Wij hebben recent een Podcast app ontwikkeld voor BijzonderStrafrecht. De app is te downloaden via de AppStore en Playstore. Op de app kunnen gebruikers het laatste nieuws binnen het strafrecht beluisteren.  
