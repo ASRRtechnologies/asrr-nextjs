@@ -16,8 +16,8 @@ card:
   title: Dedicated podcast app
   text: "Podcasts worden steeds populairder en gewilder. Het is een goede manier
     om jouw doelgroep te informeren en/of vermaken. Wij hebben een Podcast App
-    gemaakt die gebruikers kunnen downloaden in de AppStore en PlayStorewaarin.
-    Op de app kunnen gebruikers het laatste nieuws binnen het strafrecht
+    gemaakt die gebruikers kunnen downloaden in de AppStore en PlayStore. Op de
+    app kunnen gebruikers het laatste nieuws binnen het strafrecht
     beluisteren.  "
   image: bijzonderstrafrecht-case-image-2.jpg
   alt: Podcast image
