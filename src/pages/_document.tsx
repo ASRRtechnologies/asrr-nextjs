@@ -45,8 +45,8 @@ class MyDocument extends Document {
             src="https://platform-api.sharethis.com/js/sharethis.js#property=5f9e0bb92a7af500195a76a7&product=inline-share-buttons"
             async
           />
-          {/*<link rel="preconnect" href="https://media.nedigital.sg" />*/}
-          {/*<link rel="dns-prefetch" href="https://media.nedigital.sg" />*/}
+          <link rel="preconnect" href="https://l.sharethis.com" />
+          <link rel="dns-prefetch" href="https://l.sharethis.com" />
         </Head>
         <body>
           {/* Google Tag Manager (noscript) */}
