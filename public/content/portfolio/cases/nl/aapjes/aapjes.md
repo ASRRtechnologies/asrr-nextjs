@@ -45,7 +45,7 @@ section:
       ## Oplossing
 
 
-      ASRR is er voor bedrijven op elke schaal, zo ook voor de Kleine Aapjes in Den Haag. De website van dit bedrijf transitioneerde van een WordPress website naar een van onze NextJS webapps. 
+      ASRR is er voor bedrijven op elke schaal, zo ook voor [de Kleine Aapjes in Den Haag](https://www.dekleineaapjes.nl/). De website van dit bedrijf transitioneerde van een WordPress website naar een van onze NextJS webapps. 
 
 
       De website moest simpel en snel zijn en modern ogen, maar het moest binnen budget blijven. Om kosten te drukken hebben wij een van onze standaard templates gebruikt, waardoor er geen tijd en geld in een nieuw design gestopt hoeft te worden. Onze templates vallen onder 'Responsive Webdesign', dat houdt in dat er wordt gestreefd naar een optimale webervaring op een breed scala aan apparaten. Verder gebruiken wij Automatische HTTPS/SSL certificering, wat veiligheid van de website waarborgt. De website hosten wij op ons eigen razendsnelle hosting systeem. Dit is globally redundant hosting, wat bijdraagt aan een snelle website.

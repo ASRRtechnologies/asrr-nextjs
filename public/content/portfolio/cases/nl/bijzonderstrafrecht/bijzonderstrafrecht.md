@@ -23,7 +23,7 @@ card:
   image: bijzonderstrafrecht-case-image-2.jpg
   alt: Podcast image
 landing:
-  title: Een eigen app in de AppStore
+  title: Een app die tot zijn recht komt
   image: tingey-injury-law-firm-dzpc4uy8zty-unsplash-min.jpg
   alt: Law system
 section:
