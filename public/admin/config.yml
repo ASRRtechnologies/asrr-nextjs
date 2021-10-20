@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   repo: ASRRtechnologies/asrr-nextjs
   branch: test
 base_url: "https://test.asrr.nl"
