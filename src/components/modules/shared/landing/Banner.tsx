@@ -41,6 +41,7 @@ function Banner(props: BannerProps) {
           // height={600}
           // width={1200}
           priority
+          quality={50}
         />
       </Reveal>
 
