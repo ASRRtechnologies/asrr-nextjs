@@ -18,6 +18,7 @@ function Testimonials({ content, basePath }) {
         {content.cards.map((testimonial, i) => {
           return (
             <Fade
+              key={i}
               {...cardAnimation}
               className={testimonialStyles.cardFadeWrapper}
             >

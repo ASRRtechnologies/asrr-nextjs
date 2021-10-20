@@ -37,7 +37,7 @@ function Blog(props) {
         <>
           <LinkText
             goToSection={true}
-            customLink={false}
+            customlink={false}
             href="/blog"
             title="Bekijk all onze blogposts"
           />

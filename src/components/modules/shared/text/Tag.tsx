@@ -15,7 +15,7 @@ function Tag(props: TagProps) {
   return (
     <>
       <div className={styledLink.tags}>
-        <LinkText href={href} customLink={false} className="h6" title={title} />
+        <LinkText href={href} customlink={false} className="h6" title={title} />
       </div>
     </>
   );

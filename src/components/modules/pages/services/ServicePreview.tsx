@@ -34,7 +34,7 @@ function ServicePreview({ content, allServices }) {
         <>
           <LinkText
             goToSection={true}
-            customLink={false}
+            customlink={false}
             href="/diensten"
             title="Ga naar diensten"
           />

@@ -34,14 +34,14 @@ function PortfolioCard(props: PortfolioCardProps) {
         <p className="no-margin">{text}</p>
         <LinkText
           href={`/portfolio/${projectName}`}
-          customLink={false}
+          customlink={false}
           classes="bold lees-meer"
           title={null}
         />
       </div>
 
       {/*<div className={cardStyles.tags}>*/}
-      {/*    {tags?.map((tag) =><Tag href={`/portfolio`} customLink={false} className="h6" title={tag}/>)}*/}
+      {/*    {tags?.map((tag) =><Tag href={`/portfolio`} customlink={false} className="h6" title={tag}/>)}*/}
       {/*</div>*/}
     </div>
   );

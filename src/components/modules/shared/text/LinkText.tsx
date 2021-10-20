@@ -5,7 +5,7 @@ import { useTheme } from '../../../../context/theme/ThemeContext';
 
 interface LinkTextProps {
   href: string;
-  customLink: boolean;
+  customlink: boolean;
   title: string;
   classes?: string;
   goToSection?: boolean;
@@ -15,11 +15,11 @@ interface LinkTextProps {
 
 function LinkText(props: LinkTextProps) {
   const darkmode = useTheme().dark;
-  const { title = '', customLink, classes, goToSection, href } = props;
+  const { title = '', customlink, classes, goToSection, href } = props;
 
   return (
     <>
-      {customLink ? (
+      {customlink ? (
         <a
           className={`${classes} ${
             darkmode ? styledLink.linkDark : styledLink.linkLight

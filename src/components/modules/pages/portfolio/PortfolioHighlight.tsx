@@ -55,7 +55,7 @@ function PortfolioHighlight(props: PortfolioHighlightProps) {
               <>
                 <LinkText
                   href={`/portfolio/${projectName}`}
-                  customLink={false}
+                  customlink={false}
                   classes="bold lees-meer"
                   title={null}
                 />

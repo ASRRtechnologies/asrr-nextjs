@@ -44,7 +44,7 @@ function BlogCard(props: BlogCardProps) {
         <p className="no-margin">{text}</p>
         <LinkText
           href={`/blog/${props.type}/${projectName}`}
-          customLink={false}
+          customlink={false}
           classes="bold lees-meer"
           title={null}
         />

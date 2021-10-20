@@ -106,7 +106,7 @@ function Footer(props) {
                         className="h6 hover-link"
                         href={path.toLowerCase()}
                         title={path}
-                        customLink
+                        customlink
                       />
                     </span>
                   );
@@ -118,7 +118,7 @@ function Footer(props) {
                     <span key={href}>
                       <LinkText
                         href={href}
-                        customLink={true}
+                        customlink={true}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="h6 hover-link"

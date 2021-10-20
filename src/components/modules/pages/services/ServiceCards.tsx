@@ -13,7 +13,7 @@ function ServiceCards({ content, basePath }) {
       </p>
       <LinkText
         classes="bold lees-meer"
-        customLink={false}
+        customlink={false}
         href={`/diensten/${url}`}
         title={null}
       />
