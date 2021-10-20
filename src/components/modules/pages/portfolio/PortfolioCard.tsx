@@ -1,8 +1,6 @@
 import React from 'react';
 import cardStyles from '@/modules/shared/cards/cards.module.scss';
 import AspectRatio from '@/library/aspect-ratio/AspectRatio';
-// @ts-ignore
-import placeholder from '#/team/placeholder.png';
 import { PortfolioCardProps } from '@/modules/pages/portfolio/types';
 import { useRouter } from 'next/router';
 import LinkText from '../../shared/text/LinkText';
@@ -18,7 +16,11 @@ function PortfolioCard(props: PortfolioCardProps) {
     <div className={cardStyles.card} onClick={goToCase}>
       <AspectRatio x={4} y={3}>
         <img
-          src={image ? `${props.basePath}/${image}` : placeholder.src}
+          src={
+            image
+              ? `${props.basePath}/${image}`
+              : '/images/team/placeholder.png'
+          }
           alt={alt}
         />
       </AspectRatio>

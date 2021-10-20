@@ -10,8 +10,5 @@ module.exports = withImages(
       });
       return cfg;
     },
-    images: {
-      disableStaticImages: true,
-    },
   })
 );
