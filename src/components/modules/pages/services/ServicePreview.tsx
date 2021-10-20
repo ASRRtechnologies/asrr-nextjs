@@ -26,8 +26,8 @@ function ServicePreview({ content, allServices }) {
     <Wrapper>
       <Title title={content.title} text={content.text} />
       <Grid breakpoints={breakPoints} fade={true} maxWidth="1400px">
-        {filteredServices.map((service) => {
-          return <ServiceCards content={service} basePath={basePath} />;
+        {filteredServices.map((service, i) => {
+          return <ServiceCards content={service} basePath={basePath} key={i} />;
         })}
       </Grid>
       <Fade triggerOnce={true}>

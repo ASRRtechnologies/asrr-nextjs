@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Axi(props) {
+function Axi() {
   return (
     <>
       <svg

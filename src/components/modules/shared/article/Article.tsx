@@ -1,5 +1,4 @@
 import React from 'react';
-import Contact from '@/contact/Preview';
 import Markdown from 'markdown-to-jsx';
 import Section from '@/modules/shared/section/Section';
 import { Fade } from 'react-awesome-reveal';
@@ -61,7 +60,7 @@ const ArticleSection = ({ basePath, content, media }) => {
       </Fade>
       {media && (
         <>
-          {media.images?.map((imageProps) => {
+          {media.images?.map((imageProps, i) => {
             return (
               <ArticleImage
                 basePath={basePath}
@@ -70,15 +69,17 @@ const ArticleSection = ({ basePath, content, media }) => {
                   src: imageProps.image,
                   ...imageProps,
                 }}
+                key={i}
               />
             );
           })}
-          {media.videos?.map((video) => {
+          {media.videos?.map((video, i) => {
             console.log('Rendering video');
             return (
               <ArticleImage
                 basePath={basePath}
                 media={{ mediaType: 'video', src: video.video, ...video }}
+                key={i}
               />
             );
           })}

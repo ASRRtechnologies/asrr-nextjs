@@ -87,9 +87,9 @@ function Footer(props) {
             <p className="h6">Innovative Software</p>
           </div>
 
-          {navigation.map((nav) => {
+          {navigation.map((nav, i) => {
             return (
-              <div className={footerStyles.grid}>
+              <div className={footerStyles.grid} key={i}>
                 <h1 className="h5 bold">{nav.title}</h1>
 
                 {nav.texts?.map((path, i) => (

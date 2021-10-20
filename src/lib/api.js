@@ -45,6 +45,7 @@ const serviceDirectory = join(
   'posts',
   'nl'
 );
+
 const teamDirectory = join(process.cwd(), 'public', 'content', 'team', 'nl');
 
 export function getCaseSlugs() {

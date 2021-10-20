@@ -119,7 +119,7 @@ function Header() {
                 );
 
               return (
-                <div className={headerStyles.gridCell}>
+                <div className={headerStyles.gridCell} key={name}>
                   <Link href={path}>
                     <a onClick={() => setOpen(false)} className="hover-link">
                       {name}

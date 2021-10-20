@@ -34,8 +34,9 @@ const renderButton = (props: ButtonProps) => {
         <IconButton
           {...props}
           className={`${props.className} ${buttonStyles.button} ${buttonStyles.iconButton}`}
-          children={props.children}
-        />
+        >
+          {props.children}
+        </IconButton>
       );
   }
 };

@@ -22,6 +22,7 @@ function Blog(props) {
           const animationSettings = animationsSettings({}, i);
           return (
             <Fade
+              key={i}
               style={{ width: '100%' }}
               direction="up"
               {...animationSettings}
