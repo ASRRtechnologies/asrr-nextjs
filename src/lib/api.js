@@ -73,7 +73,7 @@ export function getServicesSlugs() {
 
 // List all files in a directory in Node.js recursively in a synchronous fashion
 const walkSync = function (dir, filelist) {
-  const fs = fs || require('fs'),
+  let fs = fs || require('fs'),
     files = fs.readdirSync(dir);
   filelist = filelist || [];
   files.forEach(function (file) {
