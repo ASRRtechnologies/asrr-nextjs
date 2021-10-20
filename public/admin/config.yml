@@ -5,6 +5,7 @@ backend:
 local_backend: true
 media_folder: public/img
 public_folder: img
+base_url: test.asrr.nl
 #publish_mode: editorial_workflow
 display_url: https://asrr.nl
 logo_url: https://asrr.nl/assets/images/logo/asrr.svg
