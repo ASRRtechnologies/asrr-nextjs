@@ -34,7 +34,12 @@ function Banner(props: BannerProps) {
         duration={1800}
         className="image-zoom-animation"
       >
-        <Image src={props.image} alt={props.alt} layout="fill" />
+        <Image
+          src={props.image}
+          alt={props.alt}
+          layout="fill"
+          priority={true}
+        />
       </Reveal>
 
       <div className={bannerStyles.innerBanner}>
