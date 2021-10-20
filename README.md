@@ -43,7 +43,7 @@ https://asrr-next.netlify.com/admin/
 2. `yarn dev`
 3. Open http://localhost:5000
 
-## Local CMS
+### Local CMS
 1. `yarn cms`
 2. open http://localhost:5000/admin/index.html to see cms
 
