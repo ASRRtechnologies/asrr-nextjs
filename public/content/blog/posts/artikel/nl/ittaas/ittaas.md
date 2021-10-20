@@ -49,7 +49,7 @@ section:
       Verder heeft het IT-recruitment veelal meer oog voor buzzwords en jarenlange ervaring, terwijl een goede developer zich eerder kenmerkt door groeipotentie en aanpassingsvermogen. Deze zaken komen naar voren naarmate developers in teamverband werken en zichzelf ontwikkelen. De huidige factoren garanderen niet altijd een goede match. IT’ers worden afgeschrikt door opdrachten waarin de technische eisen niet kloppen of waarin veel termen worden aangehaald die niets te maken hebben met de technologie of de opdracht. Opdrachtgevers en inhuurkrachten spreken daardoor vaak een andere taal.
 
 
-      Kortom, het is van groot belang dat aan het begin van de zoektocht naar de juiste expertise technische kennis wordt toegepast. Dit is volgens ons dé oplossing: IT Teams as a Service.
+      Kortom, het is van groot belang dat aan het begin van de zoektocht naar de juiste expertise technische kennis wordt toegepast. Dit is volgens ons dé oplossing: [IT Teams as a Service.](https://asrr.nl/diensten/ittaas)
     media:
       images:
         - image: ittaas-landing.jpg
