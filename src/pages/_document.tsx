@@ -1,5 +1,5 @@
 import React from 'react';
-import Document, { Head, Html, Main, NextScript } from 'next/document';
+import Document, { Head, Html, Main } from 'next/document';
 import { GA_TRACKING_ID, GTM_ID } from '../lib/gtag';
 import DeferNextScript from '@/utillities/seo/DeferNextScript';
 
@@ -45,6 +45,8 @@ class MyDocument extends Document {
             src="https://platform-api.sharethis.com/js/sharethis.js#property=5f9e0bb92a7af500195a76a7&product=inline-share-buttons"
             async
           />
+          {/*<link rel="preconnect" href="https://media.nedigital.sg" />*/}
+          {/*<link rel="dns-prefetch" href="https://media.nedigital.sg" />*/}
         </Head>
         <body>
           {/* Google Tag Manager (noscript) */}

@@ -16,6 +16,7 @@ import PageLayout from '@/modules/shared/layout/PageLayout';
 import PortfolioPreview from '@/modules/pages/portfolio/PortfolioPreview';
 import Banner from '@/modules/shared/landing/Banner';
 import BlogPreview from '@/modules/pages/blog/BlogPreview';
+import Head from 'next/head';
 
 function Index({ homepage, allServices, allCases, allBlogs }) {
   const basePath = `/content/home/nl`;
@@ -26,6 +27,13 @@ function Index({ homepage, allServices, allCases, allBlogs }) {
 
   return (
     <PageLayout className="darkmodeContainer" {...SEOProps}>
+      <Head>
+        <link
+          rel="preload"
+          href={'/assets/images/landing/landing-asrr-min.jpg'}
+          as="image"
+        />
+      </Head>
       <Banner
         landing={true}
         image={'/assets/images/landing/landing-asrr-min.jpg'}
