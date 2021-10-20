@@ -29,11 +29,11 @@ function Banner(props: BannerProps) {
     >
       {props.image && <Filter opacity={0.6} />}
 
-      {/*<Reveal*/}
-      {/*  keyframes={zoomIn}*/}
-      {/*  duration={400}*/}
-      {/*  className="image-zoom-animation"*/}
-      {/*>*/}
+      <Reveal
+        keyframes={zoomIn}
+        duration={1600}
+        className="image-zoom-animation"
+      >
         <Image
           src={props.image}
           alt={props.alt}
@@ -43,7 +43,7 @@ function Banner(props: BannerProps) {
           priority={true}
           loading="eager"
         />
-      {/*</Reveal>*/}
+      </Reveal>
 
       <div className={bannerStyles.innerBanner}>
         <Fade {...textAnimations}>

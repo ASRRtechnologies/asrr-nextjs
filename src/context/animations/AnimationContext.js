@@ -5,7 +5,7 @@ export const AnimationContext = createContext();
 
 const provider = ({ children }) => {
   //Create animation hooks for start stop methods
-  const scale = 2.2;
+  const scale = 1.2;
 
   const useAnimationHook = {
     background: useAnimation(),
