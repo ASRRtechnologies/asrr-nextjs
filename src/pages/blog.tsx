@@ -8,7 +8,7 @@ import Banner from '@/modules/shared/landing/Banner';
 const SEOProps = {
   title: 'ASRR - Blog',
   content:
-    'ASRR Levert innovatieve software oplossingen met een specialisme in de bouw'
+    'ASRR Levert innovatieve software oplossingen met een specialisme in de bouw',
 };
 
 //Todo add allNews to AllArticles array
@@ -16,7 +16,7 @@ function Blog({ content, allBlogs }) {
   const basePath = `/content/blog/nl`;
 
   return (
-    <PageLayout className='darkmodeContainer' {...SEOProps}>
+    <PageLayout className="darkmodeContainer" {...SEOProps}>
       <Banner
         {...content.landing}
         image={`${basePath}/${content.landing.image}`}
@@ -40,7 +40,7 @@ export async function getStaticProps() {
     'slug',
     'card',
     'info',
-    'type'
+    'type',
   ]);
 
   const allBlogs = [...allArticles, ...allNews, ...allTutorials];
@@ -48,8 +48,8 @@ export async function getStaticProps() {
   return {
     props: {
       allBlogs,
-      content
-    }
+      content,
+    },
   };
 }
 

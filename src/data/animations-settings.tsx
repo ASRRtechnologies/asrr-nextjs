@@ -2,7 +2,7 @@ import React from 'react';
 import { keyframes } from '@emotion/react';
 
 declare type FadeDirection =
-  'bottom-left'
+  | 'bottom-left'
   | 'bottom-right'
   | 'down'
   | 'left'
@@ -20,14 +20,14 @@ export const animationsSettings = (values: object, index?: number) => {
     duration: index ? (index % 2 === 0 ? 1000 : 1500) : 1000, //If index is passed create delay effect otherwise use default value
     cascade: true,
     triggerOnce: true,
-    ...values
+    ...values,
   };
 };
 
 export const cardAnimation = {
   duration: 1000,
   triggerOnce: true,
-  cascade: false
+  cascade: false,
 };
 
 export const textAnimations = {
@@ -35,13 +35,13 @@ export const textAnimations = {
   cascade: true,
   delay: 200,
   duration: 600,
-  triggerOnce: true
+  triggerOnce: true,
 };
 
 export const bannerAnimations = {
   delay: 200,
   duration: 1500,
-  triggerOnce: true
+  triggerOnce: true,
 };
 
 //Custom animations

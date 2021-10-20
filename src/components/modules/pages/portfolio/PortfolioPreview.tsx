@@ -51,7 +51,7 @@ function PortfolioPreview(props) {
 
       <LinkText
         goToSection={true}
-        customLink={false}
+        customlink={false}
         href="/portfolio"
         title="Bekijk alle projecten"
       />

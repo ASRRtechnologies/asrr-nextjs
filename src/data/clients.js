@@ -12,5 +12,5 @@ export const clients = [
   { image: <Hes />, alt: 'HES International' },
   { image: <Heijmans />, alt: 'Heijmans' },
   { image: <VolkerWessels />, alt: 'VolkerWessels Vastgoed' },
-  { image: <Axi />, alt: 'AXI IT' }
+  { image: <Axi />, alt: 'AXI IT' },
 ];

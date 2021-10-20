@@ -94,7 +94,7 @@ function Header() {
             if (path === '/contact') return null;
 
             return (
-              <Link href={path}>
+              <Link href={path} key={name}>
                 <a className="hover-link">{name}</a>
               </Link>
             );

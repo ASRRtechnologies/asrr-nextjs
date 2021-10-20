@@ -31,14 +31,17 @@ function Banner(props: BannerProps) {
 
       <Reveal
         keyframes={zoomIn}
-        duration={1800}
+        duration={1600}
         className="image-zoom-animation"
       >
         <Image
           src={props.image}
           alt={props.alt}
           layout="fill"
-          priority={true}
+          // height={600}
+          // width={1200}
+          priority
+          quality={50}
         />
       </Reveal>
 

@@ -9,7 +9,8 @@ export const BaseButtonStyle = css`
   text-align: center;
   cursor: pointer;
 
-  a, p {
+  a,
+  p {
     color: inherit;
   }
 
@@ -19,7 +20,6 @@ export const BaseButtonStyle = css`
 export const ButtonStyleDefault = css`
   background-color: ${styles.primaryColor} !important;
   color: ${styles.whiteFont};
-  
 `;
 
 export const ButtonStyleOutlined = css`
@@ -31,7 +31,6 @@ export const ButtonStyleOutlined = css`
     background-color: ${styles.primaryColor};
     color: ${styles.whiteFont};
   }
-
 `;
 
 export const ButtonStyleOutlinedHoverDisabled = css`

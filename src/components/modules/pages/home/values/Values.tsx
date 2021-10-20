@@ -30,7 +30,7 @@ function Values({ content }) {
           {qualities.map((quality, i) => {
             const active = currentQuality === i;
             return (
-              <Fade triggerOnce={true} cascade={true}>
+              <Fade triggerOnce={true} cascade={true} key={i}>
                 <div
                   onClick={() => changeValue(i)}
                   className={`${valueStyles.valueTitles}  ${

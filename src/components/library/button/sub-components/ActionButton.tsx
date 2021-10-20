@@ -11,7 +11,12 @@ function ActionButton(props: ActionButtonProps) {
   const { styles } = useButtonStyles(buttonStyle);
 
   return (
-    <button onClick={onClick} css={css`${BaseButtonStyle} ${styles}`}>
+    <button
+      onClick={onClick}
+      css={css`
+        ${BaseButtonStyle} ${styles}
+      `}
+    >
       {text}
     </button>
   );

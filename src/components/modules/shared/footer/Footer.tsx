@@ -87,9 +87,9 @@ function Footer(props) {
             <p className="h6">Innovative Software</p>
           </div>
 
-          {navigation.map((nav) => {
+          {navigation.map((nav, i) => {
             return (
-              <div className={footerStyles.grid}>
+              <div className={footerStyles.grid} key={i}>
                 <h1 className="h5 bold">{nav.title}</h1>
 
                 {nav.texts?.map((path, i) => (
@@ -106,7 +106,7 @@ function Footer(props) {
                         className="h6 hover-link"
                         href={path.toLowerCase()}
                         title={path}
-                        customLink
+                        customlink
                       />
                     </span>
                   );
@@ -118,7 +118,7 @@ function Footer(props) {
                     <span key={href}>
                       <LinkText
                         href={href}
-                        customLink={true}
+                        customlink={true}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="h6 hover-link"

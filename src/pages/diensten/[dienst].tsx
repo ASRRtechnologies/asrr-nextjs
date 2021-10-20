@@ -9,11 +9,11 @@ function Page({ content }) {
   const basePath = `/content/services/posts/nl/${content.title}`;
 
   const SEOProps = {
-    ...content.meta_tags
+    ...content.meta_tags,
   };
 
   return (
-    <PageLayout className='darkmodeContainer' {...SEOProps}>
+    <PageLayout className="darkmodeContainer" {...SEOProps}>
       <Article content={content} basePath={basePath} />
     </PageLayout>
   );
@@ -25,13 +25,13 @@ export async function getStaticProps({ params }) {
   const slug = params.dienst.toLowerCase();
   const data = await import(
     `public/content/services/posts/nl/${slug}/${slug}.md`
-    );
+  );
   // let data = await import(`${BasePaths.SERVICES}/nl/${slug}/${slug}.md`);
   const content = matter(data.default).data;
   const basePath = `/content/services/nl/${slug.toLowerCase()}`;
 
   return {
-    props: { basePath, content }
+    props: { basePath, content },
   };
 }
 
@@ -39,7 +39,7 @@ export async function getStaticPaths() {
   const allServices = await getAllServices(['title']);
 
   const paths = allServices.map((project) => ({
-    params: { dienst: project.title.toLowerCase() }
+    params: { dienst: project.title.toLowerCase() },
   }));
 
   return { paths, fallback: false };

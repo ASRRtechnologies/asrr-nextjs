@@ -4,6 +4,7 @@ import AspectRatio from '@/library/aspect-ratio/AspectRatio';
 import { BlogCardProps } from '@/modules/pages/blog/types';
 import { useRouter } from 'next/router';
 import LinkText from '../../shared/text/LinkText';
+import Image from 'next/image';
 
 function BlogCard(props: BlogCardProps) {
   const projectName = props.title;
@@ -23,12 +24,13 @@ function BlogCard(props: BlogCardProps) {
   return (
     <div className={cardStyles.card} onClick={goToBlog}>
       <AspectRatio x={4} y={3}>
-        <img
+        <Image
           src={
             image
               ? `${props.basePath}/${image}`
               : '/images/team/placeholder.png'
           }
+          layout="fill"
           alt={alt}
         />
       </AspectRatio>
@@ -42,15 +44,11 @@ function BlogCard(props: BlogCardProps) {
         <p className="no-margin">{text}</p>
         <LinkText
           href={`/blog/${props.type}/${projectName}`}
-          customLink={false}
+          customlink={false}
           classes="bold lees-meer"
           title={null}
         />
       </div>
-
-      {/*<div className={cardStyles.tags}>*/}
-      {/*    {tags?.map((tag) => <Tag href={`/blog`} customLink={false} className="h6" title={tag}/>)}*/}
-      {/*</div>*/}
     </div>
   );
 }

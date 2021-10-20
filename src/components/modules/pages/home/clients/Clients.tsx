@@ -50,7 +50,7 @@ function Clients({ content }) {
     <Section>
       <Title title={content.title} text={content.text} />
       <Grid breakpoints={breakPoints} fade={true}>
-        {clients.map(({ image }, i) => (
+        {clients.map(({ image }) => (
           <Client darkmode={darkmode} key={uuid()}>
             {image}
           </Client>

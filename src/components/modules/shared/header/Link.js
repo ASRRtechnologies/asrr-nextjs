@@ -12,7 +12,7 @@ export default ({ href, children, ...props }) => {
 
   return (
     <Link {...props} href={href}>
-      {React.cloneElement(children, { className, ariaLabel: 'active-link' })}
+      {React.cloneElement(children, { className, 'aria-label': 'active-link' })}
     </Link>
   );
 };
