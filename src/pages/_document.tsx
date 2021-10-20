@@ -1,6 +1,7 @@
 import React from 'react';
 import Document, { Head, Html, Main, NextScript } from 'next/document';
 import { GA_TRACKING_ID, GTM_ID } from '../lib/gtag';
+import DeferNextScript from '@/utillities/seo/DeferNextScript';
 
 class MyDocument extends Document {
   render() {
@@ -54,7 +55,7 @@ class MyDocument extends Document {
           />
           {/* End Google Tag Manager (noscript) */}
           <Main />
-          <NextScript />
+          <DeferNextScript />
         </body>
       </Html>
     );
