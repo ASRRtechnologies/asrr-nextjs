@@ -31,7 +31,7 @@ section:
       # Een dedicated podcast app
 
 
-      Wij hebben recent een Podcast app ontwikkeld voor BijzonderStrafrecht. De app is te downloaden via de AppStore en Playstore. Op de app kunnen gebruikers het laatste nieuws binnen het strafrecht beluisteren.  
+      Wij hebben recent een Podcast app ontwikkeld voor BijzonderStrafrecht. De app is te downloaden via de [AppStore](https://apps.apple.com/nl/app/bijzonderstrafrecht-podcast/id1569507280) en [Playstore](https://play.google.com/store/apps/details?id=nl.asrr.bspa). Op de app kunnen gebruikers het laatste nieuws binnen het strafrecht beluisteren.  
 
 
       ## Probleem
