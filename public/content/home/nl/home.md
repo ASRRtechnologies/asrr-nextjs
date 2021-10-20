@@ -76,7 +76,7 @@ testimonials:
         niet puur uitvoeren wat je van ze vraagt, maar ze denken proactief mee
         en doen suggesties ter verbetering van een product. De lijnen zijn kort
         en de uitvoering gaat zeer vlot. Ik kan ze aan iedereen aanbevelen.
-      title: Een dedicated podcast app
+      title: Een podcast die tot zijn recht komt
       avatar: mr1808_ovdw-180926-joyce-boonstra-verhaert-bijzonderstrafrecht-advocatuur.jpeg
       image: bijzonderstrafrecht-bestanddelen-podcast.png
       company: BijzonderStrafrecht
