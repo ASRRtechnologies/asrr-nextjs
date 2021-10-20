@@ -73,11 +73,12 @@ const ArticleSection = ({ basePath, content, media }) => {
               />
             );
           })}
-          {media.video?.map((video) => {
+          {media.videos?.map((video) => {
+            console.log('Rendering video');
             return (
               <ArticleImage
                 basePath={basePath}
-                media={{ mediaType: 'video', ...video }}
+                media={{ mediaType: 'video', src: video.video, ...video }}
               />
             );
           })}

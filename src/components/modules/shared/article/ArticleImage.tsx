@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 type MediaTypeProps =
   | {
-      mediaType: 'movie';
+      mediaType: 'video';
       src: string;
       alt?: never;
       description: string;
@@ -26,7 +26,7 @@ interface MediaProps {
 
 const Video = (props: MediaProps) => {
   return (
-    <video autoPlay muted loop id="myVideo">
+    <video autoPlay controls muted loop id="myVideo" className="video">
       <source src={`${props.basePath}/${props.media.src}`} type="video/mp4" />
     </video>
   );
@@ -47,13 +47,13 @@ function ArticleImage(props: MediaProps) {
   const { reference, description } = props.media;
   return (
     <div className={`${cardStyles.card} ${cardStyles.blogImage}`}>
-      <AspectRatio x={4} y={3}>
-        {props.media.mediaType === 'image' ? (
+      {props.media.mediaType === 'image' ? (
+        <AspectRatio x={4} y={3}>
           <MediaImage {...props} />
-        ) : (
-          <Video {...props} />
-        )}
-      </AspectRatio>
+        </AspectRatio>
+      ) : (
+        <Video {...props} />
+      )}
 
       <div className={cardStyles.description}>
         <p className="h6">{description}</p>
