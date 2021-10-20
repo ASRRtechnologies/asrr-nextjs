@@ -2,7 +2,6 @@ backend:
   name: git-gateway
   repo: ASRRtechnologies/asrr-nextjs
   branch: test
-local_backend: true
 media_folder: public/img
 public_folder: img
 base_url: test.asrr.nl
