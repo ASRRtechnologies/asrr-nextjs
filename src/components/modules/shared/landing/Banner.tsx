@@ -40,7 +40,7 @@ function Banner(props: BannerProps) {
           layout="fill"
           // height={600}
           // width={1200}
-          priority={true}
+          priority
           loading="eager"
         />
       </Reveal>
