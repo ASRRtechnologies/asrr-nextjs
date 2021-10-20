@@ -1,9 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
   repo: ASRRtechnologies/asrr-nextjs
   branch: test
-base_url: "https://test.asrr.nl"
-auth_endpoint: "api/auth"
+base_url: https://test.asrr.nl
+auth_endpoint: api/auth
 
 media_folder: public/img
 public_folder: img
