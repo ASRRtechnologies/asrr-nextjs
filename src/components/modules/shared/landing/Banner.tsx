@@ -38,6 +38,8 @@ function Banner(props: BannerProps) {
           src={props.image}
           alt={props.alt}
           layout="fill"
+          // height={600}
+          // width={1200}
           priority={true}
         />
       </Reveal>
