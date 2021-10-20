@@ -31,7 +31,7 @@ function Banner(props: BannerProps) {
 
       <Reveal
         keyframes={zoomIn}
-        duration={1800}
+        duration={400}
         className="image-zoom-animation"
       >
         <Image
@@ -41,6 +41,7 @@ function Banner(props: BannerProps) {
           // height={600}
           // width={1200}
           priority={true}
+          loading="eager"
         />
       </Reveal>
 
