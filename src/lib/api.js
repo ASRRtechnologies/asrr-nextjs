@@ -2,11 +2,49 @@ import fs from 'fs';
 import { join } from 'path';
 import matter from 'gray-matter';
 
-const caseDirectory = join(process.cwd(), 'public', 'content', 'portfolio', 'cases', 'nl');
-const articleDirectory = join(process.cwd(), 'public', 'content', 'blog', 'posts', 'artikel', 'nl');
-const newsDirectory = join(process.cwd(), 'public', 'content', 'blog', 'posts', 'nieuws', 'nl');
-const tutorialDirectory = join(process.cwd(), 'public', 'content', 'blog', 'posts', 'tutorial', 'nl');
-const serviceDirectory = join(process.cwd(), 'public', 'content', 'services', 'posts', 'nl');
+const caseDirectory = join(
+  process.cwd(),
+  'public',
+  'content',
+  'portfolio',
+  'cases',
+  'nl'
+);
+const articleDirectory = join(
+  process.cwd(),
+  'public',
+  'content',
+  'blog',
+  'posts',
+  'artikel',
+  'nl'
+);
+const newsDirectory = join(
+  process.cwd(),
+  'public',
+  'content',
+  'blog',
+  'posts',
+  'nieuws',
+  'nl'
+);
+const tutorialDirectory = join(
+  process.cwd(),
+  'public',
+  'content',
+  'blog',
+  'posts',
+  'tutorial',
+  'nl'
+);
+const serviceDirectory = join(
+  process.cwd(),
+  'public',
+  'content',
+  'services',
+  'posts',
+  'nl'
+);
 const teamDirectory = join(process.cwd(), 'public', 'content', 'team', 'nl');
 
 export function getCaseSlugs() {
@@ -34,18 +72,18 @@ export function getServicesSlugs() {
 // }
 
 // List all files in a directory in Node.js recursively in a synchronous fashion
-const walkSync = function(dir, filelist) {
-  var fs = fs || require('fs'),
+const walkSync = function (dir, filelist) {
+  var fs = fs || require('fs'), // FIXME: If this is set to let or const the app will crash
     files = fs.readdirSync(dir);
   filelist = filelist || [];
-  files.forEach(function(file) {
+  files.forEach(function (file) {
     if (fs.statSync(dir + '/' + file).isDirectory()) {
       filelist = walkSync(dir + '/' + file, filelist);
     } else {
       if (file.endsWith('.md')) {
         let post = {
           directory: dir,
-          file: file
+          file: file,
         };
 
         filelist.push(post);
@@ -79,9 +117,12 @@ export function getPostBySlug(slug, fields = []) {
 }
 
 const getSlugData = (slugs, fields) => {
-  return slugs.map((slug) => getPostBySlug(slug, fields))
-    // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? '-1' : '1'));
+  return (
+    slugs
+      .map((slug) => getPostBySlug(slug, fields))
+      // sort posts by date in descending order
+      .sort((post1, post2) => (post1.date > post2.date ? '-1' : '1'))
+  );
 };
 
 export function getAllCases(fields = []) {

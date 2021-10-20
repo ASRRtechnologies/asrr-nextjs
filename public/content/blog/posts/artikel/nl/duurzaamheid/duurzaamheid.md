@@ -31,10 +31,7 @@ section:
       # Duurzaamheid
 
 
-      Wat houdt duurzaamheid precies in en hoe gaan wij daar bij ASRR mee om?
-
-
-      &nbsp;
+      Ben jij al bekend met de drie P's en denk jij wel eens na over wat de mogelijke voordelen zijn van het verduurzamen van jouw bedrijf? Lees verder om erachter te komen wat de drie P's inhouden, hoe de drie P's toepassen kan leiden tot een duurzamer bedrijf en wat voor voordelen ASRR heeft van verduurzamen. 
 
 
       ## Wat is duurzaamheid?
@@ -43,11 +40,7 @@ section:
       Duurzaamheid. Een populaire term, geen bedrijf ontkomt er meer aan. Logisch, want duurzaamheid gaat een stuk verder dan bewust omgaan met het milieu. Duurzaamheid gaat over aan je behoeftes voldoen, zonder dat je daarmee de behoeftes van toekomstige generaties belemmert (CBS, 2021).
 
 
-
-
       Duurzaamheid bevat drie elementen: ‘people’, ‘planet’ en ‘profit’. Er kan niet worden gesproken over duurzaamheid als een of meerdere elementen buiten beschouwing worden gelaten, omdat er dan geen harmonie is tussen de elementen. Elementen kunnen er namelijk mogelijk onder lijden, als er geen harmonie is.  
-
-
 
 
       Een duurzame oplossing moet dus een harmonieuze combinatie zijn van deze drie elementen en aan je huidige behoeftes voldoen zonder de behoeftes van toekomstige generaties te belemmeren.
@@ -65,14 +58,10 @@ section:
       Een kantoor zonder papier was voorheen ondenkbaar, maar tegenwoordig goed realiseerbaar. ASRR hoort bij een kleine groep bedrijven die helemaal geen papier meer gebruikt. Doordat ASRR een ‘paperless office’ is, redden we jaarlijks bijna twee grote volgroeide bomen (1). Deze bomen kunnen 40 kg CO2 per jaar terugwinnen uit de lucht (Coörperatief Dutch Renewergy, 2021).
 
 
-
-
       ### Recycling
 
 
       Bij ASRR op kantoor wordt PMD, restafval en papier gescheiden. Scheiden maakt het mogelijk om waardevolle materialen terug te winnen en te recyclen tot een nieuw product. In Nederland beland afval dat niet wordt gescheiden op de vuilnisbelt. Dit wordt uiteindelijk verbrand (Rijksdienst, 2020). Verbranding draagt bij aan het broeikaseffect en het verlies van grondstoffen (Bijleveld, Bergsma and Nusselder, 2016). Kortom, recyclen is van groot belang.
-
-
 
 
       ### Low power
@@ -81,13 +70,9 @@ section:
       Computers die weinig vermogen gebruiken. Het is bijna een ‘must have’ voor Tech bedrijven. Het bespaart namelijk energie en geld. Door onze zelf samengestelde computers en servers bespaard ASRR de helft van wat het normaalgesproken zou kosten (2).
 
 
-
-
       1. Een gemiddelde kantoor medewerker gebruikt gemiddeld 10.000 vellen kopieerpapier per jaar (O'Mara, 2021). Een boom levert gemiddeld 60.000 vellen kopieerpapier (Papier en Karton, 2021). Met onze hoeveelheid medewerkers bespaart dat bijna 2 bomen per jaar.  
 
       2. Standaard high-end pc’s hebben een vermogen van 850 watt. Door het zelf samenstellen van de componenten van de servers en pc’s is ASRR in staat een high-end product te bouwen met de helft van het vermogen (TechPulse Redactie, 2021).
-
-         &nbsp;
   - content: >-
       ## Bronnen
 
