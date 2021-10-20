@@ -1,5 +1,6 @@
 backend:
   name: github
+  api_root: https://api.github.com
   repo: ASRRtechnologies/asrr-nextjs
   branch: test
 base_url: https://test.asrr.nl/
