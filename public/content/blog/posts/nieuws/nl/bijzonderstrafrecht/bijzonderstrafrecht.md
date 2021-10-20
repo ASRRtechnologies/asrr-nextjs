@@ -37,7 +37,7 @@ section:
       ## Probleem
 
 
-      BijzonderStrafrecht organiseert al sinds 2012 geaccrediteerde cursussen. Maar ook BijzonderStrafrecht doet mee aan digitalisering en heeft in 2021 besloten om naast (online) cursussen ook podcasts te gaan organiseren. De klant wilde dat de podcasts die op de website geplaatst werden ook toegankelijk zouden zijn via een mobiele app. De app moest simpel en visueel aantrekkelijk zijn. Daarbij wilde de klant zelf de controle hebben over de content die in de app werd geplaatst en over het beheren van de gebruikers.
+      [BijzonderStrafrecht](https://www.bijzonderstrafrecht.nl/) organiseert al sinds 2012 geaccrediteerde cursussen. Maar ook BijzonderStrafrecht doet mee aan digitalisering en heeft in 2021 besloten om naast (online) cursussen ook podcasts te gaan organiseren. De klant wilde dat de podcasts die op de website geplaatst werden ook toegankelijk zouden zijn via een mobiele app. De app moest simpel en visueel aantrekkelijk zijn. Daarbij wilde de klant zelf de controle hebben over de content die in de app werd geplaatst en over het beheren van de gebruikers.
   - content: >-
       ## Oplossing
 
