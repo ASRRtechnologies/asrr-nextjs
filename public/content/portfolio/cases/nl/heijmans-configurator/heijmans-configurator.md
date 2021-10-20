@@ -32,7 +32,7 @@ section:
       # Heijmans/FORM 3D Woningconfigurator
 
 
-      Architecten besteden uren aan het verwerken van alle optielijsten van klanten; uittekenen hoe de woningen eruit komen te zien. Heijmans en FORM vonden dat dit proces veel korter kon en moest. Zij kwamen daarom met het idee van een 3D-woningconfigurator waarin de klant zelf kan ontwerpen hoe zijn droomhuis eruit komt te zien. Er komt geen architect meer aan te pas, alleen de fantasie en creativiteit van de klant. 
+      Architecten besteden uren aan het verwerken van alle optielijsten van klanten; uittekenen hoe de woningen eruit komen te zien. [Heijmans](https://www.heijmans.nl/nl/) en [FORM](https://formhet.nl/) vonden dat dit proces veel korter kon en moest. Zij kwamen daarom met het idee van een 3D-woningconfigurator waarin de klant zelf kan ontwerpen hoe zijn droomhuis eruit komt te zien. Er komt geen architect meer aan te pas, alleen de fantasie en creativiteit van de klant. 
 
 
       ## Probleem
@@ -77,7 +77,7 @@ section:
       Nadat de klant zijn droomhuis heeft ontworpen, wordt de configuratie opgeslagen. De klant krijgt dan een brochure per mail met daarin de specificaties van de gekozen woning. Verder wordt er een link toegevoegd waarmee de configuratie weer opgevraagd kan worden om te laten zien aan de kopersbegeleider of aan relaties van de koper. 
 
 
-      Een publieke demo van de configurator opgezet voor FORM is te vinden door hier te drukken.
+      Een publieke demo van de configurator opgezet voor FORM is te vinden door [hier](https://configurator.heijmans.asrr.nl) te drukken.
     media:
       images:
         - image: ezgif.com-gif-maker-4-2.jpg
