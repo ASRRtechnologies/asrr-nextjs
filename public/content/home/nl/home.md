@@ -4,7 +4,7 @@ title: home
 meta_tags:
   title: Home
   text: Specialist in innovatieve software en hardware op maat, business analytics
-    and insights en IT Teams as a Service.t
+    and insights en IT Teams as a Service.
 landing:
   title: Innovative Software Development
   text: Uw partner voor het bouwen van next-level software - snel, betrouwbaar en
