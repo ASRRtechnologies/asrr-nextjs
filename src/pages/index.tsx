@@ -32,6 +32,7 @@ function Index({ homepage, allServices, allCases, allBlogs }) {
         title={homepage.landing.title}
         text={homepage.landing.text}
         button={homepage.landing.button}
+        alt={homepage.landing.title + '-image'}
       />
       <PreviewServices content={homepage.services} allServices={allServices} />
       <PortfolioPreview content={homepage.portfolio} allCases={allCases} />
