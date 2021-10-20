@@ -43,8 +43,5 @@ section:
       ### Het proces
 
 
-      ASRR analyseert eerst jouw behoefte. Heb je de hardware nodig voor zware grafische zaken zoals BIM/CAD of ander 3D werk? Dan zorgen wij voor een zware grafische kaart. Is jouw werk meer gefocust op zaken die afhangen van een hoge CPU-snelheid, dan zorgen wij voor een sterke processor. Hierbij is er soms niet eens een grafische kaart nodig, waardoor er kosten kunnen worden bespaard of er komt extra budget vrij voor de componenten die er wel toe doen in uw situatie. Dit alles wordt geleverd in een strakke, moderne case, waardoor uw werkplek of server er hypermodern uit ziet.
-
-
-      Door deze aanpak kan er tegen een scherpe prijs de beste performance geleverd worden en je betaalt niet voor onnodige componenten.
+      ASRR analyseert eerst jouw behoefte. Heb je de hardware nodig voor zware grafische zaken zoals BIM/CAD of ander 3D werk? Dan zorgen wij voor een zware grafische kaart. Is jouw werk meer gefocust op zaken die afhangen van een hoge CPU-snelheid, dan zorgen wij voor een sterke processor. Hierbij is er soms niet eens een grafische kaart nodig, waardoor er kosten kunnen worden bespaard of er komt extra budget vrij voor de componenten die er wel toe doen in uw situatie. Dit alles wordt geleverd in een strakke, moderne case, waardoor uw werkplek of server er hypermodern uit ziet. Door deze aanpak kan er tegen een scherpe prijs de beste performance geleverd worden en je betaalt niet voor onnodige componenten. Voor [NWO](https://asrr.nl/portfolio/nwo) hebben wij een supercomputer gebouwd waarop zowel interne als externe werknemers konden samenwerken alsof zij op dezelfde locatie zaten.
 ---
