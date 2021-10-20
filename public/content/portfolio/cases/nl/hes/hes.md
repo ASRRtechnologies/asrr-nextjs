@@ -33,7 +33,7 @@ section:
       # Van Excel sheet naar Enterprise Applicatie
 
 
-      HES is een van de grootste multinationals in Europa op het gebied van transporteren, verwerken, mengen en opslaan van bulk. HES had behoefte aan een applicatie die inzicht en overzicht geeft in zijn data.
+      [HES](https://www.hesinternational.eu/nl/) is een van de grootste multinationals in Europa op het gebied van transporteren, verwerken, mengen en opslaan van bulk. HES had behoefte aan een applicatie die inzicht en overzicht geeft in zijn data.
 
 
       ## Het probleem

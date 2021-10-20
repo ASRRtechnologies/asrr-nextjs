@@ -27,7 +27,7 @@ section:
       # Het bouwen van een geautomatiseerde BIM-Configurator
 
 
-      FORM Architecture & Engineering heeft al sinds 2011 een visie over het automatiseren van het ontwerpproces van nieuwbouwhuizen. In 2018 zijn we met deze visie aan de slag gegaan en zijn we begonnen met het realiseren van de Configurator. De configurator maakt het mogelijk voor consumenten om zelf hun droomhuis te ontwerpen. Meer informatie over de laatste versie van de Configurator is te vinden onderaan de pagina. Voor een demo klik hier.
+      [FORM Architecture & Engineering](https://formhet.nl/) heeft al sinds 2011 een visie over het automatiseren van het ontwerpproces van nieuwbouwhuizen. In 2018 zijn we met deze visie aan de slag gegaan en zijn we begonnen met het realiseren van de Configurator. De configurator maakt het mogelijk voor consumenten om zelf hun droomhuis te ontwerpen. Meer informatie over de laatste versie van de Configurator is te vinden onderaan de pagina. Voor een demo klik hier.
 
 
       ## Het probleem
