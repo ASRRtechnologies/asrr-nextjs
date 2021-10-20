@@ -60,6 +60,8 @@ section:
 
 
       De bestaande podcast onderdelen van de website moesten in het framework worden verwerkt en irrelevante onderdelen van de website moesten worden afgeschermd. Daarbij moesten de zichtbare onderdelen gepresenteerd worden in de huisstijl van BijzonderStrafrecht. Verder hebben wij een authenticatiedatabase en dashboard opgezet. De authenticatiedatabase is een verzameling van beveiligde informatie over alle gebruikers en via het door ons ontwikkelde dashboard kan de klant die informatie zelf beheren. Dit betekent dat de klant accounts kan aanmaken, accounts kan verwijderen en wachtwoord herstel kan regelen.
+    media:
+      videos: []
   - content: >-
       ## Conclusie
 
