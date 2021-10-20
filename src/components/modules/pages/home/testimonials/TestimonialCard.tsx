@@ -43,16 +43,16 @@ function TestimonialCards(props: TestimonialCardProps) {
           </span>
 
           <span>
-            <h1 className={`${testimonialStyles.H4} h4`}>{name}</h1>
-            <h1 className={`${testimonialStyles.H5} h5 not-bold`}>
+            <h2 className={`${testimonialStyles.H4} h4`}>{name}</h2>
+            <h2 className={`${testimonialStyles.H5} h5 not-bold`}>
               {position}
-            </h1>
-            <h3 className="h6 not-bold">{company}</h3>
+            </h2>
+            <h2 className="h6 not-bold">{company}</h2>
           </span>
         </div>
 
         <div className={testimonialStyles.story}>
-          <h4 className="h3">{title}</h4>
+          <h2 className="h3">{title}</h2>
           <p className="no-margin">"{story}"</p>
         </div>
       </div>
