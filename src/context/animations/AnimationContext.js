@@ -5,6 +5,8 @@ export const AnimationContext = createContext();
 
 const provider = ({ children }) => {
   //Create animation hooks for start stop methods
+  const scale = 2.2;
+
   const useAnimationHook = {
     background: useAnimation(),
     logo: useAnimation(),
@@ -28,7 +30,7 @@ const provider = ({ children }) => {
     await useAnimationHook.background.start({
       scaleX: 0,
       transition: {
-        duration: 1,
+        duration: 1 / scale,
         easing: easing,
       },
     });
@@ -42,7 +44,7 @@ const provider = ({ children }) => {
     await useAnimationHook.logo.start({
       y: '0%',
       transition: {
-        duration: 0.5,
+        duration: 0.5 / scale,
         easing: easing,
       },
     });
@@ -52,7 +54,7 @@ const provider = ({ children }) => {
     await useAnimationHook.logo.start({
       opacity: 0,
       transition: {
-        duration: 0.2,
+        duration: 0.2 / scale,
         easing: easing,
       },
     });
@@ -66,7 +68,7 @@ const provider = ({ children }) => {
     await useAnimationHook.box.start({
       scaleX: 1,
       transition: {
-        duration: 0.5,
+        duration: 0.5 / scale,
         easing: easing,
       },
     });
@@ -76,7 +78,7 @@ const provider = ({ children }) => {
     await useAnimationHook.box.start({
       scaleX: 0,
       transition: {
-        duration: 0.5,
+        duration: 0.5 / scale,
         easing: easing,
       },
       transformOrigin: 'right',
@@ -90,7 +92,7 @@ const provider = ({ children }) => {
   const exitHeader = {
     translateY: '-400%',
     transition: {
-      duration: 0.4,
+      duration: 0.4 / scale,
       easing: easing,
     },
   };
@@ -99,7 +101,7 @@ const provider = ({ children }) => {
     await useAnimationHook.header.start({
       translateY: '0%',
       transition: {
-        duration: 0.4,
+        duration: 0.4 / scale,
         easing: easing,
       },
     });
@@ -113,8 +115,8 @@ const provider = ({ children }) => {
   const exitText = (i) => ({
     translateY: '100%',
     transition: {
-      delay: i * 0.2,
-      duration: 0.3,
+      delay: (i * 0.2) / scale,
+      duration: 0.3 / scale,
       ease: textEasing,
     },
   });
@@ -124,8 +126,8 @@ const provider = ({ children }) => {
     await useAnimationHook.landingText.start((i) => ({
       translateY: '0%',
       transition: {
-        delay: 0.5 * i,
-        duration: 0.6,
+        delay: (0.5 * i) / scale,
+        duration: 0.6 / scale,
         ease: textEasing,
       },
     }));
@@ -139,7 +141,7 @@ const provider = ({ children }) => {
     scaleY: 0,
     transition: {
       delay: 0.4,
-      duration: 0.2,
+      duration: 0.2 / scale,
     },
   };
 
@@ -147,7 +149,7 @@ const provider = ({ children }) => {
     await useAnimationHook.landingCards.start({
       scaleY: 1,
       transition: {
-        duration: 0.2,
+        duration: 0.2 / scale,
         ease: textEasing,
       },
     });
