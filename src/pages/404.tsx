@@ -1,7 +1,6 @@
 import React from 'react';
 import Title from '@/utillities/titles/Title';
 import PageLayout from '@/modules/shared/layout/PageLayout';
-import error from '#/404/error.jpg';
 import Section from '@/modules/shared/section/Section';
 import Link from 'next/link';
 import { useTheme } from '../context/theme/ThemeContext';
@@ -21,7 +20,7 @@ function Error() {
       <Banner
         title="Pagina niet gevonden"
         alt="Abstract"
-        image={error}
+        image={'/assets/images/404/error.jpg'}
         text={undefined}
       />
       <Section>

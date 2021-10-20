@@ -1,8 +1,6 @@
 import React from 'react';
 import cardStyles from '@/modules/shared/cards/cards.module.scss';
 import AspectRatio from '@/library/aspect-ratio/AspectRatio';
-// @ts-ignore
-import placeholder from '#/team/placeholder.png';
 import { BlogCardProps } from '@/modules/pages/blog/types';
 import { useRouter } from 'next/router';
 import LinkText from '../../shared/text/LinkText';
@@ -22,12 +20,15 @@ function BlogCard(props: BlogCardProps) {
 
   const goToBlog = () => router.push(`/blog/${props.type}/${projectName}`);
 
-  // @ts-ignore
   return (
     <div className={cardStyles.card} onClick={goToBlog}>
       <AspectRatio x={4} y={3}>
         <img
-          src={image ? `${props.basePath}/${image}` : placeholder.src}
+          src={
+            image
+              ? `${props.basePath}/${image}`
+              : '/images/team/placeholder.png'
+          }
           alt={alt}
         />
       </AspectRatio>
