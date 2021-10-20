@@ -1,32 +1,9 @@
 import React from 'react';
 import Section from '../../../shared/section/Section';
 import Title from '../../../../utillities/titles/Title';
-import styled from '@emotion/styled';
 import { useTheme } from '../../../../../context/theme/ThemeContext';
 import Grid from '@/modules/shared/grid/Grid';
-import { css } from '@emotion/react';
-
-// const Wrapper = styled(Section)`
-//   background: ${props => props.theme.home.techstack};
-// }`;
-
-interface TechStack {
-  darkmode: boolean;
-  key: number | string;
-}
-
-const Tech = styled('img')<TechStack>`
-  display: block;
-  width: 200px;
-  height: auto;
-  filter: brightness(0);
-
-  ${(props) =>
-    props.darkmode &&
-    css`
-      filter: invert(1);
-    `}
-`;
+import Image from 'next/image';
 
 function TechStack({ content, basePath }) {
   const darkmode = useTheme().dark;
@@ -43,10 +20,12 @@ function TechStack({ content, basePath }) {
       <Title title={content.title} text={content.text} />
       <Grid breakpoints={breakPoints} fade={true}>
         {content.technologies.map((data, i) => (
-          <Tech
-            key={data.image + i}
-            darkmode={darkmode}
+          <Image
             src={`${basePath}/${data.image}`}
+            width={200}
+            height={66}
+            key={data.image + i}
+            className={darkmode ? 'tech-logo tech-logo-dark' : 'tech-logo'}
             alt={data.alt}
           />
         ))}
