@@ -99,17 +99,17 @@ members:
       robuuste oplossingen bieden aan de klant!
   - name: Vanisha Oedayrajsingh Varma
     position: Back-End Developer
-    story: Ik ben back-end developer bij ASRR. Mijn specialiteit is bugs vinden,
-      fixen en code waterdicht maken. Naast werken bij ASRR, studeer ik Computer
-      Science & Engineering aan TU Delft. Ik haal energie uit vaardigheden, die
-      ik tijdens mijn studie heb opgedaan, toe te passen bij ASRR.
+    story: Ik ben back-end developer bij ASRR. Mijn specialiteiten zijn het vinden
+      en fixen van bugs en code waterdicht maken. Naast werken bij ASRR studeer
+      ik Computer Science & Engineering aan TU Delft. Ik heb tijdens mijn studie
+      veel vaardigheden opgedaan die ik met veel plezier kan toepassen bij ASRR.
   - name: Neil Alwani
     position: Front-End Developer
     story: Mijn volledige naam is Neil Mahesh Alwani en ik ben sinds 3 maanden
       front-end developer bij ASRR en ik ben een BSc student Technische
-      Informatica aan de TU Delft. Ik vind het leuk om door de code heen te gaan
-      zodat ik kan inzien hoe projecten voor de bedrijven in elkaar zitten en de
-      kennis die ik heb opgedaan in tijdens mijn bachelor te kunnen toepassen in
-      de praktijk.
+      Informatica aan de TU Delft. Ik vind het leuk om code te bestuderen.
+      Hierdoor krijg ik een idee hoe projecten voor bedrijven in elkaar zitten.
+      Daarbij vind ik het ook leuk dat ik de kennis die ik heb opgedaan tijdens
+      mijn bachelor kan toepassen in de praktijk.
     website: https://www.linkedin.com/in/neil-alwani-a1b9a2182/
 ---
