@@ -23,22 +23,22 @@ members:
     alt: Amar
     story: Ik ben de eigenaar en founder van ASRR. Wat begon als een hobby met een
       paar vrienden is al snel uitgegroeid tot een innovatieve business. Ik zorg
-      ervoor dat de businessvraag of -probleem vertaald wordt naar een
-      IT-oplossing. Verder haal ik energie uit het begeleiden van mensen en
+      ervoor dat businessvragen of -problemen vertaald worden naar een robuuste
+      IT-oplossing. Verder haal ik energie uit het begeleiden van talent en
       teamwork bevorderen.
   - name: Ré-Angelo Jarvis
-    position: Front-End Developer
+    position: Front-End Lead Developer
     website: https://www.linkedin.com/in/reangelojarvis/
     image: ontwerp-zonder-titel-7-.png
     alt: Reangelo
-    story: Bij ASRR ben ik verantwoordelijk voor de front-end development. Daaronder
-      valt ook deze tekst die u nu leest🙂. Ik hou ervan om constant de nieuwste
-      trends van designs te volgen en die toe te passen met een vleugje
-      minimalisme. Hierdoor krijgt de klant de meest moderne designs. Tenzij de
-      klant natuurlijk iets anders in gedachte heeft, dan kan dat ook geregeld
-      worden.
+    story: Bij ASRR ben ik de eindverantwoordelijke voor de front-end werkzaamheden.
+      Daaronder valt ook deze tekst die u nu leest🙂. Ik hou ervan om constant
+      de nieuwste trends van designs te volgen en die toe te passen met een
+      vleugje minimalisme. Hierdoor krijgt de klant de meest moderne designs.
+      Tenzij de klant natuurlijk iets anders in gedachte heeft, dan kan dat ook
+      geregeld worden.
   - name: Azat Arica
-    position: Back-End Lead
+    position: Back-End Lead Developer
     website: https://www.linkedin.com/in/azat-a/
     story: Hi, ik ben Azat, ik werk als back-end coördinator bij ASRR. Toen ASRR
       werd opgericht, was ik een van de eerste personen die daarbij betrokken
@@ -60,7 +60,7 @@ members:
       uitdagingen zijn die ik niet uit de weg ga, ook niet bij ASRR.
     image: linkedin-professionele-foto-min.jpg
     alt: Lotte
-  - name: "Lisabelle Sengönül "
+  - name: Lisabelle Sengönül
     position: Assistant to the Director
     website: https://www.linkedin.com/in/lisabelle-seng%C3%B6n%C3%BCl-4a1708181/
     story: Succes begint bij een andere kijk op het bedrijfsmodel. Ik werk inmiddels
@@ -88,7 +88,7 @@ members:
     image: foto-elise-min.jpg
     alt: Elise
   - name: Rayel Hardwarsing
-    position: Back-End Developer
+    position: Back-End Developer / Senior Data Analyst
     website: https://www.linkedin.com/in/rayelhardwarsing/
     story: Als back-end developer werk ik aan het verbreiden/verbeteren van
       bestaande applicaties en het opzetten van nieuwe applicaties. Verder houd
@@ -97,19 +97,25 @@ members:
       nature analytisch ingesteld en geïnteresseerd in het oplossen van complexe
       problemen. Dit komt zeker te pas bij ASRR, waar we altijd flexibele en
       robuuste oplossingen bieden aan de klant!
+    image: silhouette-man-1-.png
+    alt: "Silhouette "
   - name: Vanisha Oedayrajsingh Varma
-    position: Back-End Developer
-    story: Ik ben back-end developer bij ASRR. Mijn specialiteit is bugs vinden,
-      fixen en code waterdicht maken. Naast werken bij ASRR, studeer ik Computer
-      Science & Engineering aan TU Delft. Ik haal energie uit vaardigheden, die
-      ik tijdens mijn studie heb opgedaan, toe te passen bij ASRR.
+    position: Medior Back-End Developer
+    story: Ik ben back-end developer bij ASRR. Mijn specialiteiten zijn het vinden
+      en fixen van bugs en code waterdicht maken. Naast werken bij ASRR studeer
+      ik Computer Science & Engineering aan TU Delft. Ik heb tijdens mijn studie
+      veel vaardigheden opgedaan die ik met veel plezier kan toepassen bij ASRR.
+    image: silhouet-vrouw.png
+    alt: "Silhouette "
   - name: Neil Alwani
-    position: Front-End Developer
+    position: Junior Front-End Developer
     story: Mijn volledige naam is Neil Mahesh Alwani en ik ben sinds 3 maanden
-      front-end developer bij ASRR en ik ben een BSc student Technische
-      Informatica aan de TU Delft. Ik vind het leuk om door de code heen te gaan
-      zodat ik kan inzien hoe projecten voor de bedrijven in elkaar zitten en de
-      kennis die ik heb opgedaan in tijdens mijn bachelor te kunnen toepassen in
-      de praktijk.
+      front-end developer bij ASRR. Ik ben een BSc student Technische
+      Informatica aan de TU Delft. Ik vind het leuk om code te bestuderen.
+      Hierdoor krijg ik een idee hoe projecten voor bedrijven in elkaar zitten.
+      Daarbij vind ik het ook leuk dat ik de kennis die ik heb opgedaan tijdens
+      mijn bachelor kan toepassen in de praktijk.
     website: https://www.linkedin.com/in/neil-alwani-a1b9a2182/
+    image: silhouette-man-1-.png
+    alt: "Silhouette "
 ---
