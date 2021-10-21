@@ -76,10 +76,10 @@ members:
     position: Sales and Marketing Specialist
     website: https://www.linkedin.com/in/amit-nitesh-ramdas-a6a171172/
     story: Ik ben Amit Ramdas, 20 jaar. Voor ASRR doe ik zowel enkele
-      marketing/sales taken als design taken, in de vorm van
-      kledingdesign/logodesign. Voor marketing/sales probeer ik contactgegevens
-      van potentiële klanten te vergaren en ze te contacteren. Daarnaast help ik
-      met het promoten van ASRR op sociale media kanalen zoals LinkedIn.
+      marketing/sales taken als design taken. Mijn werkzaamheden variëren dus
+      van kleding- en logodesign tot contactgegevens van potentiële klanten te
+      vergaren en ze te contacteren. Daarnaast help ik met het promoten van ASRR
+      op sociale media kanalen zoals LinkedIn.
     image: foto-amit-min.jpg
     alt: Amit
   - name: Rayel Hardwarsing
@@ -107,4 +107,9 @@ members:
       kennis die ik heb opgedaan in tijdens mijn bachelor te kunnen toepassen in
       de praktijk.
     website: https://www.linkedin.com/in/neil-alwani-a1b9a2182/
+  - name: Elise Chandoe-Arica
+    position: Chief-Editor
+    website: https://www.linkedin.com/in/elise-chandoe-arica-083a61aa/
+    image: foto-elise-min.jpg
+    alt: Elise
 ---
