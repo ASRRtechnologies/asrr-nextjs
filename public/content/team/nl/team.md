@@ -82,6 +82,11 @@ members:
       op sociale media kanalen zoals LinkedIn.
     image: foto-amit-min.jpg
     alt: Amit
+  - name: Elise Chandoe-Arica
+    position: Chief-Editor
+    website: https://www.linkedin.com/in/elise-chandoe-arica-083a61aa/
+    image: foto-elise-min.jpg
+    alt: Elise
   - name: Rayel Hardwarsing
     position: Back-End Developer
     website: https://www.linkedin.com/in/rayelhardwarsing/
@@ -107,9 +112,4 @@ members:
       kennis die ik heb opgedaan in tijdens mijn bachelor te kunnen toepassen in
       de praktijk.
     website: https://www.linkedin.com/in/neil-alwani-a1b9a2182/
-  - name: Elise Chandoe-Arica
-    position: Chief-Editor
-    website: https://www.linkedin.com/in/elise-chandoe-arica-083a61aa/
-    image: foto-elise-min.jpg
-    alt: Elise
 ---
