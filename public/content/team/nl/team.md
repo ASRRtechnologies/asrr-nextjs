@@ -97,7 +97,7 @@ members:
       nature analytisch ingesteld en geïnteresseerd in het oplossen van complexe
       problemen. Dit komt zeker te pas bij ASRR, waar we altijd flexibele en
       robuuste oplossingen bieden aan de klant!
-    image: silhouette-man-1-.png
+    image: silhoutte-manier-2-man.jpg
     alt: "Silhouette "
   - name: Vanisha Oedayrajsingh Varma
     position: Medior Back-End Developer
@@ -105,7 +105,7 @@ members:
       en fixen van bugs en code waterdicht maken. Naast werken bij ASRR studeer
       ik Computer Science & Engineering aan TU Delft. Ik heb tijdens mijn studie
       veel vaardigheden opgedaan die ik met veel plezier kan toepassen bij ASRR.
-    image: silhouet-vrouw.png
+    image: silhouette-geplakt-over-foto-vrouw.jpg
     alt: "Silhouette "
   - name: Neil Alwani
     position: Junior Front-End Developer
@@ -116,6 +116,6 @@ members:
       Daarbij vind ik het ook leuk dat ik de kennis die ik heb opgedaan tijdens
       mijn bachelor kan toepassen in de praktijk.
     website: https://www.linkedin.com/in/neil-alwani-a1b9a2182/
-    image: silhouette-man-1-.png
+    image: silhoutte-manier-2-man.jpg
     alt: "Silhouette "
 ---
