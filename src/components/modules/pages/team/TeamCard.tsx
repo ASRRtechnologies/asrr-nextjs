@@ -4,6 +4,7 @@ import AspectRatio from '@/library/aspect-ratio/AspectRatio';
 import Accordion from '@/library/accordion/Accordion';
 import { Fade } from 'react-awesome-reveal';
 import ChevronRotatable from '@/icons/ChevronRotatable';
+import Image from 'next/image';
 
 interface TeamCardProps {
   name: string;
@@ -21,12 +22,13 @@ function TeamCard(props: TeamCardProps) {
   return (
     <div className={`${cardStyles.card} ${cardStyles.teamCard}`}>
       <AspectRatio x={4} y={3}>
-        <img
+        <Image
           src={
             props.image
               ? `${props.basePath}/${props.image}`
-              : '/images/team/placeholder.png'
+              : '/assets/images/team/placeholder.png'
           }
+          layout="fill"
           alt={props?.alt}
         />
       </AspectRatio>
