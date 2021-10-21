@@ -31,12 +31,12 @@ members:
     website: https://www.linkedin.com/in/reangelojarvis/
     image: ontwerp-zonder-titel-7-.png
     alt: Reangelo
-    story: Bij ASRR ben ik verantwoordelijk voor de front-end development. Daaronder
-      valt ook deze tekst die u nu leest🙂. Ik hou ervan om constant de nieuwste
-      trends van designs te volgen en die toe te passen met een vleugje
-      minimalisme. Hierdoor krijgt de klant de meest moderne designs. Tenzij de
-      klant natuurlijk iets anders in gedachte heeft, dan kan dat ook geregeld
-      worden.
+    story: Bij ASRR ben ik de eindverantwoordelijke voor de front-end werkzaamheden.
+      Daaronder valt ook deze tekst die u nu leest🙂. Ik hou ervan om constant
+      de nieuwste trends van designs te volgen en die toe te passen met een
+      vleugje minimalisme. Hierdoor krijgt de klant de meest moderne designs.
+      Tenzij de klant natuurlijk iets anders in gedachte heeft, dan kan dat ook
+      geregeld worden.
   - name: Azat Arica
     position: Back-End Lead Developer
     website: https://www.linkedin.com/in/azat-a/
@@ -60,7 +60,7 @@ members:
       uitdagingen zijn die ik niet uit de weg ga, ook niet bij ASRR.
     image: linkedin-professionele-foto-min.jpg
     alt: Lotte
-  - name: "Lisabelle Sengönül"
+  - name: Lisabelle Sengönül
     position: Assistant to the Director
     website: https://www.linkedin.com/in/lisabelle-seng%C3%B6n%C3%BCl-4a1708181/
     story: Succes begint bij een andere kijk op het bedrijfsmodel. Ik werk inmiddels
