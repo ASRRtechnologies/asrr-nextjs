@@ -19,7 +19,7 @@ card:
     moeten aanpassen aan een situatie waarin veel mensen thuiswerken. Inmiddels
     gaan we terug naar het ‘normale leven’. Veel bedrijven staan daarom voor de
     vraag: Hoe gaan we nu verder?"
-  image: nick-morrison-fhnnjk1yj7y-unsplash.jpg
+  image: nick-morrison-fhnnjk1yj7y-unsplash-1-min.jpg
   alt: Working from home
 landing:
   title: Working remote

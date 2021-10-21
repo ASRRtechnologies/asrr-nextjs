@@ -19,7 +19,7 @@ members:
   - name: Amar Ramdas
     position: Managing Director
     website: https://www.linkedin.com/in/amarramdas/
-    image: ontwerp-zonder-titel-8-.png
+    image: foto-amar-min.jpg
     alt: Amar
     story: Ik ben de eigenaar en founder van ASRR. Wat begon als een hobby met een
       paar vrienden is al snel uitgegroeid tot een innovatieve business. Ik zorg
@@ -47,6 +47,8 @@ members:
       energiek team. Het was voor mij vanzelfsprekend dat ik daar onderdeel van
       uit wilde maken. Ik ben graag in contact met klanten en ik haal energie
       uit het maken van complexe applicaties.
+    image: foto-azat-min.jpg
+    alt: Azat
   - name: Lotte Boonstra
     position: Operations Manager
     website: www.linkedin.com/in/lotte-boonstra
@@ -54,8 +56,37 @@ members:
       voor het effectief en efficiënt verloop van operaties binnen ASRR. Ik
       breng structuur aan in processen. Een goede structuur is namelijk de helft
       van het werk. Verder heb ik een achtergrond in Technische Natuurkunde,
-      waardoor gestructureerd complexe problemen analyseren en oplossen als
-      thuis voelt. Dit kan ik goed toepassen bij ASRR.
+      waardoor gestructureerd complexe problemen analyseren en oplossen
+      uitdagingen zijn die ik niet uit de weg ga, ook niet bij ASRR.
+    image: linkedin-professionele-foto-min.jpg
+    alt: Lotte
+  - name: "Lisabelle Sengönül "
+    position: Assistant to the Director
+    website: https://www.linkedin.com/in/lisabelle-seng%C3%B6n%C3%BCl-4a1708181/
+    story: Succes begint bij een andere kijk op het bedrijfsmodel. Ik werk inmiddels
+      een jaar bij ASRR als assistent van de directeur, een aangeboden kans om
+      meer te leren in een toegankelijke omgeving. Ik zag snel waarde in het
+      innovatieve bedrijf en wilde graag mijn huidige kennis en ervaring delen
+      om ASRR samen administratief sterk te maken en een stevige fundering te
+      leggen voor het snel groeiende bedrijf. ASRR is 'resilient' te noemen mede
+      doordat er geen alledaagse - doch bekwame - bedrijfsvoering word beoefent.
+    image: foto-lis-min.jpg
+    alt: Lis
+  - name: Amit Ramdas
+    position: Sales and Marketing Specialist
+    website: https://www.linkedin.com/in/amit-nitesh-ramdas-a6a171172/
+    story: Ik ben Amit Ramdas, 20 jaar. Voor ASRR doe ik zowel enkele
+      marketing/sales taken als design taken. Mijn werkzaamheden variëren dus
+      van kleding- en logodesign tot contactgegevens van potentiële klanten te
+      vergaren en ze te contacteren. Daarnaast help ik met het promoten van ASRR
+      op sociale media kanalen zoals LinkedIn.
+    image: foto-amit-min.jpg
+    alt: Amit
+  - name: Elise Chandoe-Arica
+    position: Chief-Editor
+    website: https://www.linkedin.com/in/elise-chandoe-arica-083a61aa/
+    image: foto-elise-min.jpg
+    alt: Elise
   - name: Rayel Hardwarsing
     position: Back-End Developer
     website: https://www.linkedin.com/in/rayelhardwarsing/
@@ -68,38 +99,17 @@ members:
       robuuste oplossingen bieden aan de klant!
   - name: Vanisha Oedayrajsingh Varma
     position: Back-End Developer
-    story: Ik ben back-end developer bij ASRR. Mijn specialiteit is bugs vinden,
-      fixen en code waterdicht maken. Naast werken bij ASRR, studeer ik Computer
-      Science & Engineering aan TU Delft. Ik haal energie uit vaardigheden, die
-      ik tijdens mijn studie heb opgedaan, toe te passen bij ASRR.
-  - name: "Lisabelle Sengönül "
-    position: Assistant to the Director
-    website: https://www.linkedin.com/in/lisabelle-seng%C3%B6n%C3%BCl-4a1708181/
-    story: Succes begint bij een andere kijk op het bedrijfsmodel. Ik werk inmiddels
-      een jaar bij ASRR als assistent van de directeur, een aangeboden kans om
-      meer te leren in een toegankelijke omgeving. Ik zag snel waarde in het
-      innovatieve bedrijf en wilde graag mijn huidige kennis en ervaring delen
-      om ASRR samen administratief sterk te maken en een stevige fundering te
-      leggen voor het snel groeiende bedrijf. ASRR is 'resilient' te noemen mede
-      doordat er geen alledaagse - doch bekwame - bedrijfsvoering word beoefent.
-  - name: Amit Ramdas
-    position: Sales and Marketing Specialist
-    website: https://www.linkedin.com/in/amit-nitesh-ramdas-a6a171172/
-    story: Ik ben Amit Ramdas, 20 jaar. Voor ASRR doe ik zowel enkele
-      marketing/sales taken als design taken, in de vorm van
-      kledingdesign/logodesign. Voor marketing/sales probeer ik contactgegevens
-      van potentiële klanten te vergaren en ze te contacteren. Daarnaast help ik
-      met het promoten van ASRR op sociale media kanalen zoals LinkedIn.
+    story: Ik ben back-end developer bij ASRR. Mijn specialiteiten zijn het vinden
+      en fixen van bugs en code waterdicht maken. Naast werken bij ASRR studeer
+      ik Computer Science & Engineering aan TU Delft. Ik heb tijdens mijn studie
+      veel vaardigheden opgedaan die ik met veel plezier kan toepassen bij ASRR.
   - name: Neil Alwani
     position: Front-End Developer
     story: Mijn volledige naam is Neil Mahesh Alwani en ik ben sinds 3 maanden
       front-end developer bij ASRR en ik ben een BSc student Technische
-      Informatica aan de TU Delft. Ik vind het leuk om door de code heen te gaan
-      zodat ik kan inzien hoe projecten voor de bedrijven in elkaar zitten en de
-      kennis die ik heb opgedaan in tijdens mijn bachelor te kunnen toepassen in
-      de praktijk.
+      Informatica aan de TU Delft. Ik vind het leuk om code te bestuderen.
+      Hierdoor krijg ik een idee hoe projecten voor bedrijven in elkaar zitten.
+      Daarbij vind ik het ook leuk dat ik de kennis die ik heb opgedaan tijdens
+      mijn bachelor kan toepassen in de praktijk.
     website: https://www.linkedin.com/in/neil-alwani-a1b9a2182/
-  - name: Jay Schipper
-    position: Marketing Specialist
-    website: https://www.linkedin.com/in/jay-schipper-607890171/
 ---
