@@ -105,7 +105,7 @@ members:
       en fixen van bugs en code waterdicht maken. Naast werken bij ASRR studeer
       ik Computer Science & Engineering aan TU Delft. Ik heb tijdens mijn studie
       veel vaardigheden opgedaan die ik met veel plezier kan toepassen bij ASRR.
-    image: silhouette-geplakt-over-foto-vrouw.jpg
+    image: anonieme-foto-vrouw-def..jpg
     alt: "Silhouette "
   - name: Neil Alwani
     position: Junior Front-End Developer
