@@ -39,8 +39,10 @@ section:
       images:
         - image: dsc09408.jpg
           alt: Amite en Amar aan het werk
-        - image: dsc09389-min.jpg
-          alt: Azat en Elise
         - image: img_9991-min.jpg
           alt: Jay maakt foto amit
+        - image: dsc09389-min.jpg
+          alt: Azat en Elise
+        - image: img_9999-min.jpg
+          alt: "Lunch aan tafel "
 ---
