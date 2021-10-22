@@ -29,7 +29,7 @@ members:
   - name: Ré-Angelo Jarvis
     position: Front-End Lead Developer
     website: https://www.linkedin.com/in/reangelojarvis/
-    image: ontwerp-zonder-titel-7-.png
+    image: dsc07311-1-min-min.jpg
     alt: Reangelo
     story: Bij ASRR ben ik de eindverantwoordelijke voor de front-end werkzaamheden.
       Daaronder valt ook deze tekst die u nu leest🙂. Ik hou ervan om constant
