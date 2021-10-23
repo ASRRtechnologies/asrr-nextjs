@@ -16,6 +16,9 @@ section:
   title: Over ASRR
   alt: Over ASRR
   image: dsc09392.jpg
+  text: >
+    ASRR onderscheidt zich door zijn moderne werkmethode. Wij beginnen met een geheel vrijblijvende procesanalyse, waardoor er echt duidelijk wordt wat jij nodig hebt en wij een passende oplossing kunnen leveren. Vervolgens staat er een team van specialisten klaar om met die passende oplossing aan de slag te gaan. “Co-makership” heeft hierin een centrale rol.
+
   kernwaarden:
     - title: Innovatie
       text: >
@@ -69,17 +72,7 @@ section:
         onze code stabiel, schaalbaar en biedt de klant eindeloze mogelijkheden
         om hun producten te ontwikkelen.
       url: /
-  text: >
-    ASRR is een jong, dynamisch en innovatief softwarebedrijf. Wij zijn
-    gespecialiseerd in het ontwikkelen van Software- en Hardware op maat, het
-    aanbieden van Business Analytics and Insights en het aanbieden van IT-Teams
-    as a Service (ITTAAS).
   content: >-
-    ## Wat doet ASRR?
-
-
-    ASRR is een jong, dynamisch en innovatief softwarebedrijf. Wij zijn gespecialiseerd in het ontwikkelen van Software- en Hardware op maat, het aanbieden van Business Analytics and Insights en het aanbieden van IT-Teams as a Service (ITTAAS).
-
 
     ## Onze werkmethode
 

@@ -5,6 +5,7 @@ import titleStyles from './title.module.scss';
 interface TitleProps {
   title: string;
   text?: string;
+  paragraph?: string;
 
   [x: string]: string;
 }

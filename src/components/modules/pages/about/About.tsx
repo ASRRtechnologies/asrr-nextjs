@@ -8,8 +8,25 @@ import aboutStyles from './aboutStyles.module.scss';
 import AspectRatio from '@/library/aspect-ratio/AspectRatio';
 import { Fade } from 'react-awesome-reveal';
 import Markdown from 'markdown-to-jsx';
+import articleStyles from '@/modules/shared/article/article.module.scss';
 
 const Wrapper = styled(Section)``;
+
+const HeaderOne = ({ children }) => {
+  return <h1 className="h2">{children}</h1>;
+};
+
+const HeaderTwo = ({ children }) => {
+  return <h2 className="h3 no-margin">{children}</h2>;
+};
+
+const HeaderThree = ({ children }) => {
+  return <h3 className="h4 no-margin">{children}</h3>;
+};
+
+const HeaderFour = ({ children }) => {
+  return <h4 className="h5 no-margin">{children}</h4>;
+};
 
 function About({ content }) {
   const { title, text, image, alt } = content.section;
@@ -25,6 +42,26 @@ function About({ content }) {
   return (
     <Wrapper>
       <Title title={title} text={text} />
+
+      {/*<Section className="darkmodeContainer">*/}
+      {/*  <div className={articleStyles.body}>*/}
+      {/*    <div className={articleStyles.content}>*/}
+      {/*      <Markdown*/}
+      {/*        options={{*/}
+      {/*          overrides: {*/}
+      {/*            h1: HeaderOne,*/}
+      {/*            h2: HeaderTwo,*/}
+      {/*            h3: HeaderThree,*/}
+      {/*            h4: HeaderFour,*/}
+      {/*          },*/}
+      {/*          wrapper: React.Fragment,*/}
+      {/*        }}*/}
+      {/*      >*/}
+      {/*        {content.section.content}*/}
+      {/*      </Markdown>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</Section>*/}
 
       <div className={aboutStyles.services}>
         <div className={aboutStyles.gridWrapper}>
