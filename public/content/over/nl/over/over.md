@@ -15,7 +15,7 @@ image: dsc00185.jpg
 section:
   title: Over ASRR
   alt: Over ASRR
-  image: dsc00185.jpg
+  image: dsc09392.jpg
   kernwaarden:
     - title: Innovatie
       text: >
