@@ -13,7 +13,7 @@ landing:
   image: dsc09408.jpg
 image: dsc00185.jpg
 section:
-  title: Over ASRR
+  title: Onze werkmethode
   alt: Over ASRR
   image: dsc09392.jpg
   text: >
