@@ -1,9 +1,9 @@
 import React from 'react';
 import LinkText from '@/modules/shared/text/LinkText';
 
-function AboutCards({ content, basePath }) {
-  const { title, text } = content.card;
-  const url = content.title;
+function AboutCards({ kernwaarde, basePath }) {
+  const { title, text } = kernwaarde;
+  const url = kernwaarde.title;
 
   return (
     <div>
@@ -11,12 +11,12 @@ function AboutCards({ content, basePath }) {
       <p className="no-margin" style={{ maxWidth: '400px' }}>
         {text}
       </p>
-      <LinkText
-        classes="bold lees-meer"
-        customlink={false}
-        href={`/diensten/${url}`}
-        title={null}
-      />
+      {/*<LinkText*/}
+      {/*  classes="bold lees-meer"*/}
+      {/*  customlink={false}*/}
+      {/*  href={`/diensten/${url}`}*/}
+      {/*  title={null}*/}
+      {/*/>*/}
     </div>
   );
 }

@@ -4,15 +4,16 @@ import Title from '@/utillities/titles/Title';
 import styled from '@emotion/styled';
 import Grid from '@/modules/shared/grid/Grid';
 import AboutCards from './AboutCards';
-import serviceStyles from './serviceStyles.module.scss';
+import aboutStyles from './aboutStyles.module.scss';
 import AspectRatio from '@/library/aspect-ratio/AspectRatio';
 import { Fade } from 'react-awesome-reveal';
+import Markdown from 'markdown-to-jsx';
 
 const Wrapper = styled(Section)``;
 
-function Services({ content, allServices }) {
+function About({ content }) {
   const { title, text, image, alt } = content.section;
-  const basePath = `content/services/nl`;
+  const basePath = `content/over/nl/over`;
   console.log(content);
 
   const breakPoints = {
@@ -25,14 +26,14 @@ function Services({ content, allServices }) {
     <Wrapper>
       <Title title={title} text={text} />
 
-      <div className={serviceStyles.services}>
-        <div className={serviceStyles.gridWrapper}>
+      <div className={aboutStyles.services}>
+        <div className={aboutStyles.gridWrapper}>
           <Grid breakpoints={breakPoints} fade={true} maxWidth="1400px">
-            {allServices.map((service) => {
+            {content.section.kernwaarden.map((kernwaarde) => {
               return (
                 <AboutCards
-                  key={service}
-                  content={service}
+                  key={kernwaarde.title}
+                  kernwaarde={kernwaarde}
                   basePath={basePath}
                 />
               );
@@ -40,7 +41,7 @@ function Services({ content, allServices }) {
           </Grid>
         </div>
 
-        <Fade className={serviceStyles.image}>
+        <Fade className={aboutStyles.image}>
           <div>
             <AspectRatio x={3} y={4}>
               <img src={`${basePath}/${image}`} alt={alt} />
@@ -52,4 +53,4 @@ function Services({ content, allServices }) {
   );
 }
 
-export default Services;
+export default About;

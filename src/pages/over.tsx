@@ -3,6 +3,8 @@ import TeamPage from '@/modules/pages/team/Team';
 import Banner from '@/modules/shared/landing/Banner';
 import matter from 'gray-matter';
 import PageLayout from '@/modules/shared/layout/PageLayout';
+import About from '@/modules/pages/about/About';
+import { getAllCases, getAllServices } from '../lib/api';
 
 function Over({ content }) {
   const basePath = `/content/over/nl`;
@@ -17,6 +19,7 @@ function Over({ content }) {
         {...content.landing}
         image={`${basePath}/${content.landing.image}`}
       />
+      <About content={content} />
       {/*<TeamPage team={content} basePath={basePath} />*/}
     </PageLayout>
   );
