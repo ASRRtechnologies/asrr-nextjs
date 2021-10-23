@@ -30,7 +30,7 @@ section:
     as a Service (ITTAAS). 
 
 
-    ASRR onderscheidt zich door zijn moderne werkmethode. Wij beginnen met een geheel vrijblijvende procesanalyse, waardoor er echt duidelijk wordt wat jij nodig hebt en wij een passende oplossing kunnen leveren. Vervolgens staat er een team van specialisten klaar om met die passende oplossing aan de slag te gaan. “Co-makership” heeft hierin een centrale rol. 
+    ASRR onderscheidt zich door haar moderne werkmethode. Wij beginnen met een geheel vrijblijvende procesanalyse, waardoor er echt duidelijk wordt wat jij nodig hebt en wij een passende oplossing kunnen leveren. Vervolgens staat er een team van specialisten klaar om met die passende oplossing aan de slag te gaan. “Co-makership” heeft hierin een centrale rol. 
 
     Wij houden ons bezig met “innovatie” en gebruiken alleen maar de nieuwste technologiën, hierdoor heeft de klant gegarandeerd een snel, duurzaam en gebruiksvriendelijk product. Om jouw producten snel, duurzaam en gebruiksvriendelijk te houden is er “constant improvement” nodig. Het is belangrijk om te blijven verbeteren, hierdoor blijft jouw applicatie up-to-date en betrouwbaar op de lange termijn. 
 
