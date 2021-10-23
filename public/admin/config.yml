@@ -596,6 +596,7 @@ collections:
           - { label: "Text", name: "text", widget: "text" }
           - { label: "Image", name: "image", widget: "image",}
           - { label: "Image Alt", name: "alt", widget: "string",}
+          - { label: "Content", name: "content", widget: "markdown" }
           - label: "Kernwaarden"
             name: "kernwaarden"
             widget: "list"

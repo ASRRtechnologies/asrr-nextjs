@@ -7,7 +7,7 @@ import About from '@/modules/pages/about/About';
 import { getAllCases, getAllServices } from '../lib/api';
 
 function Over({ content }) {
-  const basePath = `/content/over/nl`;
+  const basePath = `/content/over/nl/over`;
 
   const SEOProps = {
     ...content.meta_tags,
