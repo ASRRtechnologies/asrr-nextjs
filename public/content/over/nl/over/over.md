@@ -15,4 +15,12 @@ section:
     - title: kernwaard 1
       text: hai
       url: https://asrr.nl/urlpurl
+    - title: Kernwaarde 2
+      text: Lorem ipsum lala iaiai lalala jdfkjf ajjaja lala. Lorem ipsum lala iaiai
+        lalala jdfkjf ajjaja lala. Lorem ipsum lala iaiai lalala jdfkjf ajjaja
+        lala. Lorem ipsum lala iaiai lalala jdfkjf ajjaja lala.
+      url: /
+    - title: Kernwaarde 3
+      text: Test 123. Test 1234. Test123456.
+      url: /
 ---
