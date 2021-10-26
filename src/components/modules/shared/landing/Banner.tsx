@@ -40,6 +40,7 @@ function Banner(props: BannerProps) {
           layout="fill"
           // height={600}
           // width={1200}
+          // placeholder="blur"
           priority
           quality={50}
         />
