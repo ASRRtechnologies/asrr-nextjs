@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 function PictureFallback({
   image,
@@ -20,7 +21,7 @@ function PictureFallback({
         srcSet={fallbackImage}
         type={!fallbackType ? 'image/jpeg' : fallbackType}
       />
-      <img src={fallbackImage} alt={alt} className={className} />
+      <Image src={fallbackImage} alt={alt} className={className} />
     </picture>
   );
 }

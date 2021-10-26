@@ -53,6 +53,7 @@ function TestimonialCards(props: TestimonialCardProps) {
 
         <div className={testimonialStyles.story}>
           <h2 className="h3">{title}</h2>
+          {/* eslint-disable-next-line react/no-unescaped-entities */}
           <p className="no-margin">"{story}"</p>
         </div>
       </div>

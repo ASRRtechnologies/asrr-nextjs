@@ -1,3 +1,4 @@
+// eslint-disable-next-line @next/next/no-document-import-in-page
 import { NextScript } from 'next/document';
 
 function dedupe<T extends { file: string }>(bundles: T[]): T[] {
