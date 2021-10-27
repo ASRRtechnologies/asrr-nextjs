@@ -38,6 +38,6 @@ module.exports = withPlugins(
       });
       return cfg;
     },
-    swcMinify: true,
+    swcMinify: false,
   }
 );
