@@ -37,13 +37,13 @@ module.exports = withPlugins(
     ],
   ],
   {
-    webpack: (cfg) => {
-      cfg.module.rules.push({
-        test: /\.md$/,
-        use: 'raw-loader',
-      });
-      return cfg;
-    },
+    // webpack: (cfg) => {
+    //   cfg.module.rules.push({
+    //     test: /\.md$/,
+    //     use: 'raw-loader',
+    //   });
+    //   return cfg;
+    // },
     swcMinify: false,
   }
 );
