@@ -37,12 +37,12 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export async function getStaticPaths() {
-  const allArticles = await getAllArticles(['title']);
-
-  const paths = allArticles.map((project) => ({
-    params: { article: project.title.toLowerCase() },
-  }));
-
-  return { paths, fallback: false };
-}
+// export async function getStaticPaths() {
+//   const allArticles = await getAllArticles(['title']);
+//
+//   const paths = allArticles.map((project) => ({
+//     params: { article: project.title.toLowerCase() },
+//   }));
+//
+//   return { paths, fallback: false };
+// }
