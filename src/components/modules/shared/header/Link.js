@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import headerStyles from './header.module.scss';
 
-export default ({ href, children, ...props }) => {
+export default function CustomLink({ href, children, ...props }) {
   const router = useRouter();
   let className = children.props.className || '';
   if (router.pathname === href) {
@@ -15,4 +15,4 @@ export default ({ href, children, ...props }) => {
       {React.cloneElement(children, { className, 'aria-label': 'active-link' })}
     </Link>
   );
-};
+}

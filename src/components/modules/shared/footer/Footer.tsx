@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// @ts-ignore
 import logo from '#/logo/asrr-logo-spacing-white.svg';
 import Section from '@/modules/shared/section/Section';
 import footerStyles from './footer.module.scss';
@@ -7,17 +6,11 @@ import { useRouter } from 'next/router';
 import LinkedIn from '@/icons/LinkedIn';
 import Facebook from '@/icons/Facebook';
 import LinkText from '@/modules/shared/text/LinkText';
+import Image from 'next/image';
 
 const year = new Date().getFullYear();
 
-function Footer(props) {
-  const [email, setEmail] = useState({
-    body: '',
-    subject: '',
-    userEmail: '',
-    organization: '',
-    name: '',
-  });
+function Footer() {
   const router = useRouter();
   const goToHome = () => router.push('/');
 
@@ -78,11 +71,12 @@ function Footer(props) {
       <div className={footerStyles.innerFooter}>
         <div className={footerStyles.footerGrid}>
           <div>
-            <img
+            <Image
               onClick={goToHome}
               className="logo"
               alt="asrr-logo"
               src={logo}
+              layout="fill"
             />
             <p className="h6">Innovative Software</p>
           </div>

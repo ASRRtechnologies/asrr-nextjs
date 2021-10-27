@@ -46,7 +46,7 @@ const serviceDirectory = join(
   'nl'
 );
 
-const teamDirectory = join(process.cwd(), 'public', 'content', 'team', 'nl');
+// const teamDirectory = join(process.cwd(), 'public', 'content', 'team', 'nl');
 
 export function getCaseSlugs() {
   return walkSync(caseDirectory);

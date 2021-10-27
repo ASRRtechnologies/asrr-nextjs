@@ -1,8 +1,6 @@
 import React from 'react';
 import gridStyles from './grid.module.scss';
 import Section from '@/modules/shared/section/Section';
-// @ts-ignore
-import logo from '#/logo/asrr-logo-spacing-white.svg';
 import styled from '@emotion/styled';
 import { maxWidth } from '../../../../data/style_variables';
 import { clients } from '../../../../data/clients';
@@ -18,8 +16,6 @@ interface GridProps {
   images?: ImageProps[];
   total: number;
 }
-
-const calculateRemainder = (total: number, col: number): number => col % total;
 
 const StyledGrid = styled(`div`)<GridProps>`
   display: flex;
@@ -52,12 +48,12 @@ function FlexGrid(props: GridProps) {
         total={props.images.length}
         className={gridStyles.grid}
       >
-        {clients.map(({ image }) => (
-          <div className="grid">{image}</div>
+        {clients.map(({ image, i }) => (
+          <div key={i} className="grid">
+            {image}
+          </div>
         ))}
       </StyledGrid>
     </Section>
   );
 }
-
-export default FlexGrid;

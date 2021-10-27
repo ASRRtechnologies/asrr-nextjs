@@ -18,7 +18,7 @@ export const navigationPaths = [
   { name: 'Home', path: '/' },
   { name: 'Portfolio', path: '/portfolio' },
   { name: 'Diensten', path: '/diensten' },
-  { name: 'Over', path: '/over' },
+  // { name: 'Over', path: '/over' },
   { name: 'Team', path: '/team' },
   { name: 'Blog', path: '/blog' },
   {

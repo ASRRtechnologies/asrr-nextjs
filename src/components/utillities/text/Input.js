@@ -13,16 +13,7 @@ const TextArea = styled(`textarea`)`
 
 function Input(props) {
   const placeholderRef = useRef(null);
-  const {
-    hidden,
-    textArea,
-    placeholder,
-    label,
-    className,
-    button,
-    action,
-    ...rest
-  } = props;
+  const { textArea, placeholder, label, button, action, ...rest } = props;
   return (
     <div className={`input-container`}>
       {button ? (

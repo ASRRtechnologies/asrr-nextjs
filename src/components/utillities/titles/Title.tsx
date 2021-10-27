@@ -11,7 +11,7 @@ interface TitleProps {
 }
 
 function Title(props: TitleProps) {
-  const { className, title, text } = props;
+  const { title, text } = props;
 
   return (
     <div className={titleStyles.title}>

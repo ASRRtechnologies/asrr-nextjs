@@ -5,7 +5,7 @@ import {
   ButtonStyleDisabled,
   ButtonStyleOutlined,
   ButtonStyleOutlinedHoverDisabled,
-  ButtonStyleTextOnly
+  ButtonStyleTextOnly,
 } from '@/library/button/shared-styles/ButtonStyles';
 import { ButtonStyle } from '@/library/button/types';
 

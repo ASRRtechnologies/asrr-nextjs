@@ -12,11 +12,13 @@ function NavigationButton(props: NavigationButtonProps) {
   const { styles } = useButtonStyles(buttonStyle);
 
   return (
-    <div css={css`${BaseButtonStyle} ${styles}`}>
+    <div
+      css={css`
+        ${BaseButtonStyle} ${styles}
+      `}
+    >
       <Link href={to}>
-        <a>
-          {text}
-        </a>
+        <a>{text}</a>
       </Link>
     </div>
   );

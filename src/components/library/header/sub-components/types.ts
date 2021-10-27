@@ -4,11 +4,8 @@
 import { StandardProps } from '@/library/index';
 import HeaderTab from '@/library/header/sub-components/HeaderTab';
 
-
 // export type HeaderProps = NavigationButtonProps | ActionButtonProps
 
-export type HeaderTab = typeof HeaderTab
+export type HeaderTab = typeof HeaderTab;
 
-export interface HeaderSectionProps extends StandardProps<HeaderTab> {
-
-}
+export type HeaderSectionProps = StandardProps<HeaderTab>;

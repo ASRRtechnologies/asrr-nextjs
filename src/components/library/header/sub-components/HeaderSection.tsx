@@ -13,11 +13,7 @@ export const StyledHeaderSection = styled.div`
 `;
 
 function HeaderSection(props) {
-  return (
-    <StyledHeaderSection>
-      {props.children}
-    </StyledHeaderSection>
-  );
+  return <StyledHeaderSection>{props.children}</StyledHeaderSection>;
 }
 
 export default HeaderSection;

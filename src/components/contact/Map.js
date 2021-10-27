@@ -6,7 +6,8 @@ import { useTheme } from '../../context/theme/ThemeContext';
 import mapStyles from './mapStyles';
 
 const center = {
-  lat: 52.011250, lng: 4.286770
+  lat: 52.01125,
+  lng: 4.28677,
 };
 
 function Map(props) {
@@ -14,11 +15,20 @@ function Map(props) {
 
   return (
     <>
-      <LoadScript googleMapsApiKey='AIzaSyBMpKvbhfxhLV_S2t7zgHAZvlCyUKO8jwU'>
-        <GoogleMap center={center} zoom={15} mapContainerClassName='map'
-                   options={{ styles: darkTheme.dark ? mapStyles.dark : mapStyles.light }}>
+      <LoadScript googleMapsApiKey="AIzaSyBMpKvbhfxhLV_S2t7zgHAZvlCyUKO8jwU">
+        <GoogleMap
+          center={center}
+          zoom={15}
+          mapContainerClassName="map"
+          options={{
+            styles: darkTheme.dark ? mapStyles.dark : mapStyles.light,
+          }}
+        >
           <>
-            <Marker icon={darkTheme.dark ? logoWhite : logo} position={center} />
+            <Marker
+              icon={darkTheme.dark ? logoWhite : logo}
+              position={center}
+            />
           </>
         </GoogleMap>
       </LoadScript>
