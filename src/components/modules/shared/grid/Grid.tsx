@@ -68,7 +68,7 @@ function Grid(props: GridProps) {
       'resize',
       _.throttle(renderColumns, 1000)
     );
-  }, []);
+  });
 
   return (
     <>

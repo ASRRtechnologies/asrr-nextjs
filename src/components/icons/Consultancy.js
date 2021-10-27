@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Consultancy(props) {
+function Consultancy() {
   return (
     <>
       <svg

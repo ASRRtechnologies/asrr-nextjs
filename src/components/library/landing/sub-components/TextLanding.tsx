@@ -32,7 +32,7 @@ const StyledTextLanding = styled.div`
   }
 `;
 const TextLanding = (props: TextLandingProps) => {
-  const { title, text, button } = props;
+  const { title, text } = props;
 
   return (
     <StyledTextLanding>

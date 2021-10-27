@@ -10,7 +10,7 @@ interface LinkTextProps {
   classes?: string;
   goToSection?: boolean;
 
-  [x: string]: any;
+  [x: string]: string | boolean;
 }
 
 function LinkText(props: LinkTextProps) {

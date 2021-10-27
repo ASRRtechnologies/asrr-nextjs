@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Moon(props) {
+function Moon() {
   return (
     <svg
       version="1.1"

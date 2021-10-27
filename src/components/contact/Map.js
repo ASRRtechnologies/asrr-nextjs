@@ -10,7 +10,7 @@ const center = {
   lng: 4.28677,
 };
 
-function Map(props) {
+function Map() {
   const darkTheme = useTheme();
 
   return (

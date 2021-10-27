@@ -1,6 +1,6 @@
 import React from 'react';
 
-function WebApplications(props) {
+function WebApplications() {
   return (
     <>
       <svg

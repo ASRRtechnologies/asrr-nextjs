@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Electron(props) {
+function Electron() {
   return (
     <>
       <svg

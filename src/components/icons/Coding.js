@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Coding(props) {
+function Coding() {
   return (
     <>
       <svg

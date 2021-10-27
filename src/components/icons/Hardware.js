@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Hardware(props) {
+function Hardware() {
   return (
     <>
       <svg

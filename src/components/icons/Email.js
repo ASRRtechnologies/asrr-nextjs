@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Arrow({ reverse }) {
+function Arrow() {
   return (
     <>
       <svg viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg">

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Correct(props) {
+function Correct() {
   return (
     <>
       <svg

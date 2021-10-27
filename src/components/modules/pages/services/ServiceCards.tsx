@@ -1,7 +1,7 @@
 import React from 'react';
 import LinkText from '@/modules/shared/text/LinkText';
 
-function ServiceCards({ content, basePath }) {
+function ServiceCards({ content }) {
   const { title, text } = content.card;
   const url = content.title;
 

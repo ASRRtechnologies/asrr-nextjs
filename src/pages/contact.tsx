@@ -19,7 +19,7 @@ function Contact({ content }) {
         {...content.landing}
         image={`${basePath}/${content.landing.image}`}
       />
-      <ContactPage data={content} />
+      <ContactPage />
     </PageLayout>
   );
 }

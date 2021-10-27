@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Facebook(props) {
+function Facebook() {
   return (
     <svg
       fill="#000000"

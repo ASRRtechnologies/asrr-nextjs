@@ -1,6 +1,6 @@
 import React from 'react';
 
-function LinkedIn(props) {
+function LinkedIn() {
   return (
     <svg
       fill="#000000"

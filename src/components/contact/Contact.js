@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import Section from '../modules/shared/section/Section';
 import Input from '@/utillities/text/Input';
 import Map from '@/contact/Map';
-import useI18n from '../../hooks/use-i18n';
 import styled from '@emotion/styled';
-import { useSnackbar } from 'notistack';
 import { useTheme } from '../../context/theme/ThemeContext';
 import { postCall } from '../../functions/helper-functions';
 import Button from '@/modules/shared/buttons/Button';
@@ -21,8 +19,7 @@ const Wrapper = styled(Section)`
 const emailRegex =
   '(?:[a-z0-9!#$%&\'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&\'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\\])';
 
-function Contact({ data }) {
-  const i18n = useI18n();
+function Contact() {
   const recipient = 'contact@asrr.nl';
   const [email, setEmail] = useState({
     body: '',
@@ -32,16 +29,14 @@ function Contact({ data }) {
     name: '',
     success: false,
   });
-  const { enqueueSnackbar, closeSnackbar } = useSnackbar();
-  const darkmode = useTheme().dark;
 
+  const darkmode = useTheme().dark;
   const handleChange = ({ name, value }) =>
     setEmail({ ...email, [name]: value });
-
   const handleSubmit = async (event) => {
     event.preventDefault();
 
-    const [data, error] = await postCall({
+    const [, error] = await postCall({
       url: 'https://form-configurator-api.azurewebsites.net/api/v1/mail/send',
       params: {
         recipient: recipient,
@@ -55,18 +50,11 @@ function Contact({ data }) {
 
     if (error) {
       console.log('Error while sending email: ', error);
-      // enqueueSnackbar('Error', {
-      //   error: true,
-      // });
       return;
     }
 
     console.log('email sent successfully');
     setEmail({ ...email, success: true });
-
-    // enqueueSnackbar('Success', {
-    //   variant: 'success',
-    // });
   };
 
   return (

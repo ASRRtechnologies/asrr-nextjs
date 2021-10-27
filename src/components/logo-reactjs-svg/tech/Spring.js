@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Spring(props) {
+function Spring() {
   return (
     <>
       <svg

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Workspace(props) {
+function Workspace() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

@@ -10,7 +10,7 @@ import { Fade } from 'react-awesome-reveal';
 const Wrapper = styled(Section)``;
 
 function ServicePreview({ content, allServices }) {
-  const basePath = `content/service_page/nl`;
+  // const basePath = `content/service_page/nl`;
   const filteredServices = allServices.filter(
     (service) => service.info.preview
   );
@@ -27,7 +27,7 @@ function ServicePreview({ content, allServices }) {
       <Title title={content.title} text={content.text} />
       <Grid breakpoints={breakPoints} fade={true} maxWidth="1400px">
         {filteredServices.map((service, i) => {
-          return <ServiceCards content={service} basePath={basePath} key={i} />;
+          return <ServiceCards content={service} key={i} />;
         })}
       </Grid>
       <Fade triggerOnce={true}>

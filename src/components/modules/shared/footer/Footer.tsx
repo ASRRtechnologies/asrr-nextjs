@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import logo from '#/logo/asrr-logo-spacing-white.svg';
 import Section from '@/modules/shared/section/Section';
 import footerStyles from './footer.module.scss';
@@ -76,7 +76,8 @@ function Footer() {
               className="logo"
               alt="asrr-logo"
               src={logo}
-              layout="fill"
+              width={2 * 50}
+              height={2 * 16.33}
             />
             <p className="h6">Innovative Software</p>
           </div>
