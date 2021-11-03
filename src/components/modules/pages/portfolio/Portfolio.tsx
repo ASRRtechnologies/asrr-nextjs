@@ -18,7 +18,7 @@ function Portfolio(props) {
           const animationSettings = animationsSettings({}, i);
 
           return (
-            <Fade style={{ width: '100%' }} {...animationSettings}>
+            <Fade key={i} style={{ width: '100%' }} {...animationSettings}>
               <PortfolioCard
                 {...project}
                 basePath={basePath(project.title)}

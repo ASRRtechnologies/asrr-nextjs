@@ -1,4 +1,3 @@
-// noinspection DuplicatedCode
 import React from 'react';
 import PageLayout from '@/modules/shared/layout/PageLayout';
 import { getAllArticles } from '../../../lib/api';
@@ -25,7 +24,7 @@ export async function getStaticProps({ params }) {
   const slug = params.article.toLowerCase();
   // let data = await import(`${BasePaths.ARTICLE}/nl/${slug}/${slug}.md`);
   const data = await import(
-    `public/content/blog/posts/artikel//nl/${slug}/${slug}.md`
+    `public/content/blog/posts/artikel/nl/${slug}/${slug}.md`
   );
   const content = matter(data.default).data;
   const basePath = `/content/written/artikel/nl/${slug}`;

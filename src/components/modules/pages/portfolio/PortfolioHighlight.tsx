@@ -1,6 +1,5 @@
 import React from 'react';
 import cardStyles from '@/modules/pages/portfolio/card.module.scss';
-import img from '#/landing/placeholder.jpg';
 import Section from '@/modules/shared/section/Section';
 import {
   PortfolioHighlightProps,
@@ -27,7 +26,6 @@ const StyledPortfolioHighlight = styled(`div`)<StyledPortfolioHighlightProps>`
 function PortfolioHighlight(props: PortfolioHighlightProps) {
   const projectName = props.title;
   const { image, alt, title, text } = props.card;
-  const { client, date, author, tags } = props.info;
   return (
     <StyledPortfolioHighlight className="global-margin-vertical">
       <Section

@@ -4,6 +4,7 @@ import { ImageLandingProps } from '@/library/landing/types';
 import React from 'react';
 import SubSection from '@/library/section/sub-components/SubSection';
 import Square from '@/library/shapes/Square';
+import Image from 'next/image';
 
 const StyledLandingWithSideImage = styled(SubSection)`
   width: 100%;
@@ -36,10 +37,6 @@ const StyledLandingWithSideImage = styled(SubSection)`
       max-width: 500px;
       word-spacing: 100vw;
     }
-
-    img {
-      //margin-bottom: ;
-    }
   }
 `;
 
@@ -55,7 +52,7 @@ const ImageLanding = (props: ImageLandingProps) => {
       </span>
 
       <Square maxWidth={400} style={{ borderRadius: styles.imageBorderRadius }}>
-        <img src={image} alt="Mountains" />
+        <Image src={image} alt="Mountains" />
       </Square>
     </StyledLandingWithSideImage>
   );

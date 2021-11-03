@@ -1,7 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-const Arrow = styled('svg')<{ rotated: boolean }>`
+type ArrowProps = {
+  rotated: boolean;
+};
+
+const Arrow = styled('svg')<ArrowProps>`
   width: 20px;
   height: 20px;
   transition: 200ms ease-in transform;
@@ -35,8 +39,6 @@ function ChevronRotatable(props: ChevronProps) {
         width="451.847px"
         height="451.847px"
         viewBox="0 0 451.847 451.847"
-        // @ts-ignore
-        style={{ enableBackground: 'new 0 0 451.847 451.847' }}
       >
         <g>
           <path

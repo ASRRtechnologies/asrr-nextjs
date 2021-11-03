@@ -11,13 +11,8 @@ const StyledHeader = styled(SubSection)`
 `;
 
 function Header(props: HeaderProps) {
-
   const renderHeaderComponents = (test: HeaderComponent): ReactElement => {
-    return (
-      <div>
-        {test !== null && test !== undefined && test}
-      </div>
-    );
+    return <div>{test !== null && test !== undefined && test}</div>;
   };
 
   return (

@@ -8,7 +8,7 @@ function Section(props: SectionProps) {
   /**
    * Consume only padding and children props, pass on the rest
    */
-  const { padding, children, ...other } = props;
+  const { children, ...other } = props;
 
   const paddingSmall = '25px';
 

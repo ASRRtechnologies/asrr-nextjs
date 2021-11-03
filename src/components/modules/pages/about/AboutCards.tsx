@@ -1,9 +1,7 @@
 import React from 'react';
-import LinkText from '@/modules/shared/text/LinkText';
 
-function AboutCards({ kernwaarde, basePath }) {
+function AboutCards({ kernwaarde }) {
   const { title, text } = kernwaarde;
-  const url = kernwaarde.title;
 
   return (
     <div>
@@ -14,12 +12,6 @@ function AboutCards({ kernwaarde, basePath }) {
       >
         {text}
       </p>
-      {/*<LinkText*/}
-      {/*  classes="bold lees-meer"*/}
-      {/*  customlink={false}*/}
-      {/*  href={`/diensten/${url}`}*/}
-      {/*  title={null}*/}
-      {/*/>*/}
     </div>
   );
 }

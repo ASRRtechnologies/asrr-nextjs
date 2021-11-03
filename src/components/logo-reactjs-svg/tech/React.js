@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ReactLogo(props) {
+function ReactLogo() {
   return (
     <>
       <svg

@@ -1,7 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import gridStyles from './grid.module.scss';
-// @ts-ignore
-import logo from '#/logo/asrr-logo-spacing-white.svg';
 import styled from '@emotion/styled';
 import { maxWidth } from '../../../../data/style_variables';
 import _ from 'lodash';
@@ -38,7 +36,7 @@ const getCurrentColumn = (breakpoints: Breakpoint): number => {
   }
 
   let filteredBreakpoints = [];
-  filteredBreakpoints = parsedBreakpoints.filter((breakpoint, i) => {
+  filteredBreakpoints = parsedBreakpoints.filter((breakpoint) => {
     return window.innerWidth >= breakpoint.media;
   });
 
@@ -70,7 +68,7 @@ function Grid(props: GridProps) {
       'resize',
       _.throttle(renderColumns, 1000)
     );
-  }, []);
+  });
 
   return (
     <>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function VolkerWessels(props) {
+function VolkerWessels() {
   return (
     <>
       <svg

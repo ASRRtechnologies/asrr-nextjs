@@ -23,11 +23,11 @@ class Cursor extends Component {
       }, 10);
     });
 
-    document.addEventListener('mousedown', (e) => {
+    document.addEventListener('mousedown', () => {
       this.setState({ cursorFollow: 'cursor-follow active' });
     });
 
-    document.addEventListener('mouseup', (e) => {
+    document.addEventListener('mouseup', () => {
       this.setState({ cursorFollow: 'cursor-follow' });
     });
   };
@@ -38,11 +38,11 @@ class Cursor extends Component {
       this.mouseRef.current.style.top = `${e.clientY}px`;
     });
 
-    document.addEventListener('mousedown', (e) => {
+    document.addEventListener('mousedown', () => {
       this.setState({ cursor: 'cursor active' });
     });
 
-    document.addEventListener('mouseup', (e) => {
+    document.addEventListener('mouseup', () => {
       this.setState({ cursor: 'cursor' });
     });
   };

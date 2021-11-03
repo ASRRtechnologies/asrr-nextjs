@@ -7,6 +7,7 @@ import ServiceCards from './ServiceCards';
 import serviceStyles from './serviceStyles.module.scss';
 import AspectRatio from '@/library/aspect-ratio/AspectRatio';
 import { Fade } from 'react-awesome-reveal';
+import Image from 'next/image';
 
 const Wrapper = styled(Section)``;
 
@@ -29,13 +30,7 @@ function Services({ content, allServices }) {
         <div className={serviceStyles.gridWrapper}>
           <Grid breakpoints={breakPoints} fade={true} maxWidth="1400px">
             {allServices.map((service) => {
-              return (
-                <ServiceCards
-                  key={service}
-                  content={service}
-                  basePath={basePath}
-                />
-              );
+              return <ServiceCards key={service} content={service} />;
             })}
           </Grid>
         </div>
@@ -43,7 +38,7 @@ function Services({ content, allServices }) {
         <Fade className={serviceStyles.image}>
           <div>
             <AspectRatio x={3} y={4}>
-              <img src={`${basePath}/${image}`} alt={alt} />
+              <Image layout="fill" src={`${basePath}/${image}`} alt={alt} />
             </AspectRatio>
           </div>
         </Fade>

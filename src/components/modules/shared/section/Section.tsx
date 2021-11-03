@@ -4,8 +4,6 @@ import sectionStyles from './section.module.scss';
 interface SectionProps {
   className?: string;
   children: React.ReactElement | React.ReactElement[];
-
-  [x: string]: any;
 }
 
 function Section(props: SectionProps) {

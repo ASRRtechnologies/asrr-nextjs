@@ -58,7 +58,7 @@ const injectStylesInChildComponent = (
 };
 
 function AspectRatio(props: AspectRatioProps) {
-  const { maxWidth, minWidth, x, y, children, ...other } = props;
+  const { maxWidth, minWidth, x, y, ...other } = props;
 
   return (
     <StyledAspectRatioWrapper maxWidth={maxWidth} minWidth={minWidth}>

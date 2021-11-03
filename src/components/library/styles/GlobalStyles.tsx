@@ -3,7 +3,7 @@ import { css, Global } from '@emotion/react';
 
 const GlobalStyle = css``;
 
-function GlobalStyles(props) {
+function GlobalStyles() {
   return <Global styles={GlobalStyle} />;
 }
 

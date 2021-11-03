@@ -9,11 +9,12 @@ const MoonButton = ({ toggleDarkmode, visible }) => {
       title={undefined}
       onClick={toggleDarkmode}
       mode={visible ? 'darkmode' : 'light'}
-      children={<Moon />}
       buttonType={{
         buttonType: 'icon',
       }}
-    />
+    >
+      <Moon />
+    </Button>
   );
 };
 
@@ -23,11 +24,12 @@ const SunButton = ({ toggleDarkmode, visible }) => {
       title={undefined}
       onClick={toggleDarkmode}
       mode={visible ? 'darkmode' : 'light'}
-      children={<Sun />}
       buttonType={{
         buttonType: 'icon',
       }}
-    />
+    >
+      <Sun />
+    </Button>
   );
 };
 

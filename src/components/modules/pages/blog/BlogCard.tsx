@@ -9,15 +9,15 @@ import Image from 'next/image';
 function BlogCard(props: BlogCardProps) {
   const projectName = props.title;
   const { image, alt, title, text } = props.card;
-  const { client, date, author, tags } = props.info;
+  const { date } = props.info;
   const router = useRouter();
 
-  const convertedDate = new Date(date);
-  const noTime = new Date(
-    convertedDate.getFullYear(),
-    convertedDate.getMonth(),
-    convertedDate.getDate()
-  );
+  // const convertedDate = new Date(date);
+  // // const noTime = new Date(
+  // //   convertedDate.getFullYear(),
+  // //   convertedDate.getMonth(),
+  // //   convertedDate.getDate()
+  // // );
 
   const goToBlog = () => router.push(`/blog/${props.type}/${projectName}`);
 
