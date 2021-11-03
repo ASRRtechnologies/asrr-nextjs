@@ -13,13 +13,13 @@ info:
     - tag: Design
   author: Re-Angelo Jarvis
 card:
-  title: Heijmans/FORM 3D Woningconfigurator
+  title: Heijmans/FORM 3D Woonconfigurator
   text: Een VR Ready, 3D omgeving om uw toekomstige huis te configureren vanuit
     een internetbrowser.
   url: /blog/news/heijmans-configurator
   image_webp: ezgif.com-gif-maker-4-2.jpg
   image: ezgif.com-gif-maker-4-2.jpg
-  alt: Een screenshot van de webapplicatie Woningconfigurator Heijmans
+  alt: Een screenshot van de webapplicatie Woonconfigurator Heijmans
 landing:
   title: Een huis configureren in virtual reality vanuit je luie stoel.
   image_webp: ezgif.com-gif-maker-4-2.jpg
@@ -28,7 +28,7 @@ landing:
   text_color: true
 section:
   - content: >-
-      # Heijmans/FORM 3D Woningconfigurator
+      # Heijmans/FORM 3D Woonconfigurator
 
 
       *Een VR Ready, 3D omgeving om online uw toekomstige huis te configureren.*

@@ -32,7 +32,7 @@ section:
       # Heijmans/FORM 3D Woonconfigurator
 
 
-      Architecten besteden uren aan het verwerken van alle optielijsten van klanten; uittekenen hoe de woningen eruit komen te zien. [Heijmans](https://www.heijmans.nl/nl/) en [FORM](https://formhet.nl/) vonden dat dit proces veel korter kon en moest. Zij kwamen daarom met het idee van een 3D-woningconfigurator waarin de klant zelf kan ontwerpen hoe zijn droomhuis eruit komt te zien. Er komt geen architect meer aan te pas, alleen de fantasie en creativiteit van de klant. 
+      Architecten besteden uren aan het verwerken van alle optielijsten van klanten; uittekenen hoe de woningen eruit komen te zien. [Heijmans](https://www.heijmans.nl/nl/) en [FORM](https://formhet.nl/) vonden dat dit proces veel korter kon en moest. Zij kwamen daarom met het idee van een 3D-Woonconfigurator waarin de klant zelf kan ontwerpen hoe zijn droomhuis eruit komt te zien. Er komt geen architect meer aan te pas, alleen de fantasie en creativiteit van de klant. 
 
 
       ## Probleem
