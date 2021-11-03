@@ -15,21 +15,21 @@ info:
   tags:
     - left
 card:
-  title: Heijmans/FORM 3D Woningconfigurator
+  title: Heijmans/FORM 3D Woonconfigurator
   text: "Voorheen was de architect uren bezig met het verwerken van optielijsten
     van klanten; uittekenen hoe alle woningen eruit komen te zien. Die tijden
     zijn voorbij sinds wij een online 3D-omgeving hebben gemaakt waarin de klant
     zelf zijn droomhuis kan ontwerpen. Er komt geen architect meer aan te pas,
     alleen de fantasie en creativiteit van de klant. "
   image: ezgif.com-gif-maker-4-2.jpg
-  alt: Een screenshot van de webapplicatie Woningconfigurator Heijmans
+  alt: Een screenshot van de webapplicatie Woonconfigurator Heijmans
 landing:
   title: Een huis configureren in virtual reality vanuit je luie stoel.
   image: ezgif.com-gif-maker-4-2.jpg
   alt: Webapplicatie Huis Configurator
 section:
   - content: >-
-      # Heijmans/FORM 3D Woningconfigurator
+      # Heijmans/FORM 3D Woonconfigurator
 
 
       Architecten besteden uren aan het verwerken van alle optielijsten van klanten; uittekenen hoe de woningen eruit komen te zien. [Heijmans](https://www.heijmans.nl/nl/) en [FORM](https://formhet.nl/) vonden dat dit proces veel korter kon en moest. Zij kwamen daarom met het idee van een 3D-woningconfigurator waarin de klant zelf kan ontwerpen hoe zijn droomhuis eruit komt te zien. Er komt geen architect meer aan te pas, alleen de fantasie en creativiteit van de klant. 
