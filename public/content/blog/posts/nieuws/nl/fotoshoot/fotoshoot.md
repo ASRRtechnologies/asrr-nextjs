@@ -24,7 +24,7 @@ card:
   alt: Azat en Elise
 landing:
   title: Welkom terug allemaal!
-  image: dsc09408.jpg
+  image: dsc09408-min-1-.jpg
   alt: Amar en Amit samen aan het werk
 section:
   - content: >-
@@ -37,7 +37,7 @@ section:
       Alle werknemers mochten langskomen voor het laten maken van een professionele foto. Naast de professionele portretfoto’s hebben we nog wat 'casual' foto’s geschoten voor op de website. Daarna zijn wij gezellig met zijn allen bij de lunchtafel aangeschoven. Het was een leuke ervaring om (bijna) het hele ASRR Team bij elkaar te zien en samen van een lekkere lunch te genieten. Zelfs ASRR is zo nu en dan toch nog een beetje traditioneel.
     media:
       images:
-        - image: dsc09408.jpg
+        - image: dsc09408-min-1-.jpg
           alt: Amite en Amar aan het werk
         - image: img_9991-min.jpg
           alt: Jay maakt foto amit
