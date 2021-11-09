@@ -28,7 +28,6 @@ function Blog({ content, allBlogs }) {
 
 export async function getStaticProps() {
   const data = await import(`public/content/blog/nl/blog.md`);
-  // let data = await import(`${BasePaths.BLOG}/nl/blog.md`);
   const content = matter(data.default).data;
 
   const allArticles = getAllArticles(['title', 'slug', 'card', 'info', 'type']);

@@ -371,33 +371,6 @@ collections:
                   - { label: "Video", name: "video", widget: "file", required: false }
                   - { label: "Video Description", name: "video_description", widget: "string", required: false }
                   - { label: "Video Reference", name: "video_reference", widget: "string", required: false }
-  - label: "About page"
-    name: "about"
-    identifier_field: slug
-    summary: '{{title}} - {{language}}'
-    folder: "public/content/about"
-    path: '{{language}}/{{slug}}'
-    slug: '{{title}}'
-    create: true
-    media_folder: ''
-    public_folder: ''
-    fields:
-      - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Filename", name: "title", widget: "string", default: "over"}
-      - label: "Meta tags"
-        name: "meta_tags"
-        widget: "object"
-        fields:
-          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
-          - { label: "Text (search engine text)", name: "text", widget: "string", required: true }
-      - label: "Landing"
-        name: "landing"
-        widget: "object"
-        fields:
-          - {label: "Title", name: "title", widget: "string"}
-          - {label: "Text", name: "text", widget: "string", required: false}
-          - {label: "Image", name: "image", widget: "image", required: false}
-          - {label: "Image Alt", name: "alt", widget: "string", required: false}
   - label: "Team Page"
     name: "team"
     identifier_field: slug
@@ -588,3 +561,46 @@ collections:
           - {label: "Text", name: "text", widget: "string", required: false}
           - {label: "Image", name: "image", widget: "image", required: false}
           - {label: "Image Alt", name: "alt", widget: "string", required: false}
+  - label: "About page"
+    name: "over"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/over"
+    path: '{{language}}/{{title}}/{{slug}}'
+    slug: '{{title}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
+      - { label: "Filename", name: "title", widget: "string", default: "over"}
+      - label: "Meta tags"
+        name: "meta_tags"
+        widget: "object"
+        fields:
+          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
+          - { label: "Text (search engine text)", name: "text", widget: "text", required: true }
+      - label: "Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Text", name: "text", widget: "string", required: false}
+          - {label: "Image", name: "image", widget: "image", required: false}
+          - {label: "Image Alt", name: "alt", widget: "string", required: false}
+      - label: "Over Ons Section"
+        name: "section"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text", name: "text", widget: "text" }
+          - { label: "Image", name: "image", widget: "image",}
+          - { label: "Image Alt", name: "alt", widget: "string",}
+          - { label: "Content", name: "content", widget: "markdown" }
+          - label: "Kernwaarden"
+            name: "kernwaarden"
+            widget: "list"
+            fields:
+              - { label: "Kernwaarde Title", name: "title", widget: "string" }
+              - { label: "Kernwaarde Text", name: "text", widget: "text" }
+              - { label: "Url (Filename of Kernwaarde article)", name: "url", widget: "string" }

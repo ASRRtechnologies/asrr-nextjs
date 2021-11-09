@@ -8,11 +8,7 @@ export const StyledHeaderTab = styled.div`
 `;
 
 function HeaderTab(props) {
-  return (
-    <StyledHeaderTab>
-      {props.children}
-    </StyledHeaderTab>
-  );
+  return <StyledHeaderTab>{props.children}</StyledHeaderTab>;
 }
 
 export default HeaderTab;

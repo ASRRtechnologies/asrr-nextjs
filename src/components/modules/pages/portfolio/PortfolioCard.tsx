@@ -4,24 +4,26 @@ import AspectRatio from '@/library/aspect-ratio/AspectRatio';
 import { PortfolioCardProps } from '@/modules/pages/portfolio/types';
 import { useRouter } from 'next/router';
 import LinkText from '../../shared/text/LinkText';
+import Image from 'next/image';
 
 function PortfolioCard(props: PortfolioCardProps) {
   const projectName = props.title;
   const { image, alt, title, text } = props.card;
-  const { client, date, author, tags } = props.info;
+  const { client } = props.info;
   const router = useRouter();
   const goToCase = () => router.push(`/portfolio/${projectName}`);
 
   return (
     <div className={cardStyles.card} onClick={goToCase}>
       <AspectRatio x={4} y={3}>
-        <img
+        <Image
           src={
             image
               ? `${props.basePath}/${image}`
               : '/images/team/placeholder.png'
           }
           alt={alt}
+          layout="fill"
         />
       </AspectRatio>
       <div className={cardStyles.border} />

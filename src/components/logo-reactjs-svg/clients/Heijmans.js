@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Heijmans(props) {
+function Heijmans() {
   return (
     <>
       <svg

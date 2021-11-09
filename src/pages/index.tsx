@@ -58,12 +58,6 @@ export async function getStaticProps() {
   const parsedContent = matter(content.default);
   const homepage = parsedContent.data;
 
-  const servicesContent = await import(
-    `public/content/services/nl/services.md`
-  );
-  const servicesParsedContent = matter(servicesContent.default);
-  const servicepage = servicesParsedContent.data;
-
   const allServices = getAllServices(['title', 'slug', 'card', 'info']);
 
   const allCases = getAllCases(['title', 'slug', 'card', 'info']);

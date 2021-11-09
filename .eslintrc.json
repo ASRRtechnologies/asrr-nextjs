@@ -3,7 +3,8 @@
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "next/core-web-vitals"
   ],
   "plugins": [
     "@typescript-eslint",
@@ -12,7 +13,10 @@
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "@next/next/no-document-import-in-page": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-explicit-any": "off"
   },
   "globals": {
     "React": "writable"

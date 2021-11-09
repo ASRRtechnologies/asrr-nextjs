@@ -60,7 +60,7 @@ const GlobalStyle = styled('div')<GlobalStyleTypes>`
   background: ${(props) => props.theme.layout};
 `;
 
-function MyApp({ Component, pageProps, router }) {
+function MyApp({ Component, pageProps }) {
   const firstUpdate = useRef(true); //Ref used to persist value for overlay animation
 
   return (

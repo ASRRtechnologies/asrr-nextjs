@@ -45,4 +45,8 @@ function Error() {
   );
 }
 
-export default () => <Error />;
+export default ErrorPage;
+
+function ErrorPage() {
+  return <Error />;
+}

@@ -3,14 +3,12 @@ import { motion } from 'framer-motion';
 import logo from '../../../public/assets/images/logo/asrr-logo-spacing.svg';
 import logoWhite from '../../../public/assets/images/logo/asrr-logo-spacing-white.svg';
 import { AnimationContext } from '../../context/animations/AnimationContext';
-import { useRouter } from 'next/router';
 import { useTheme } from '../../context/theme/ThemeContext';
 
 function Overlay({ loadAnimation }) {
   const darkTheme = useTheme();
   const animate = useContext(AnimationContext);
   const animation = animate.animation.overlay;
-  const router = useRouter();
   const overlay = useRef();
 
   const setOverlayHeight = () => {
@@ -23,9 +21,8 @@ function Overlay({ loadAnimation }) {
     if (loadAnimation) {
       animate.animation.firstLoad();
     }
-
     setOverlayHeight();
-  }, []);
+  });
 
   return (
     <motion.div

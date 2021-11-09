@@ -29,7 +29,7 @@ members:
   - name: Ré-Angelo Jarvis
     position: Front-End Lead Developer
     website: https://www.linkedin.com/in/reangelojarvis/
-    image: ontwerp-zonder-titel-7-.png
+    image: dsc07311-1-min-min.jpg
     alt: Reangelo
     story: Bij ASRR ben ik de eindverantwoordelijke voor de front-end werkzaamheden.
       Daaronder valt ook deze tekst die u nu leest🙂. Ik hou ervan om constant
@@ -105,7 +105,7 @@ members:
       en fixen van bugs en code waterdicht maken. Naast werken bij ASRR studeer
       ik Computer Science & Engineering aan TU Delft. Ik heb tijdens mijn studie
       veel vaardigheden opgedaan die ik met veel plezier kan toepassen bij ASRR.
-    image: silhouette-geplakt-over-foto-vrouw.jpg
+    image: anonieme-foto-vrouw-def..jpg
     alt: "Silhouette "
   - name: Neil Alwani
     position: Junior Front-End Developer

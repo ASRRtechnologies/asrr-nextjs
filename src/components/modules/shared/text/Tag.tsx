@@ -7,7 +7,7 @@ interface TagProps {
   title: string;
   classes?: string;
 
-  [x: string]: any;
+  [x: string]: string;
 }
 
 function Tag(props: TagProps) {

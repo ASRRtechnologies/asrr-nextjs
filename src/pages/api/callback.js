@@ -1,7 +1,7 @@
 import { AuthorizationCode } from 'simple-oauth2';
 import { config } from '../../lib/config';
 
-export default async (req, res) => {
+export default async function callback(req, res) {
   const { host } = req.headers;
   const url = new URL(`https://${host}/${req.url}`);
   const urlParams = url.searchParams;
@@ -33,7 +33,7 @@ export default async (req, res) => {
     res.statusCode = 200;
     res.end(renderBody('error', e));
   }
-};
+}
 
 // This renders a simple page with javascript that allows the pop-up page
 // to communicate with its opener

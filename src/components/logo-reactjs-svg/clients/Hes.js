@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Hes(props) {
+function Hes() {
   return (
     <>
       <svg

@@ -15,7 +15,7 @@ const ScrollUp = () => {
     window.scrollTo(0, 0);
   };
 
-  const [arrowVisible, useArrow] = useState(false);
+  const [arrowVisible, setArrow] = useState(false);
 
   const showArrow = () => {
     const winScroll =
@@ -26,9 +26,9 @@ const ScrollUp = () => {
     const scrolled = (winScroll / height) * 100;
 
     if (scrolled > 10 && scrolled < 85) {
-      useArrow(true);
+      setArrow(true);
     } else {
-      useArrow(false);
+      setArrow(false);
     }
   };
 
