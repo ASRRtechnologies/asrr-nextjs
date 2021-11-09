@@ -21,7 +21,7 @@ card:
     uren te registreren van uitgevoerde taken. Je doet dubbel werk, omdat je de
     taak moet uitschrijven in je planning en je documentatie. COSMOS voegt deze
     stappen samen wat leidt tot een efficiënter en minder foutgevoelig proces.
-  image: logo-s-configurator-1-.jpg
+  image: logo-s-configurator-2-.jpg
   alt: Cosmos
 landing:
   title: Cosmos
