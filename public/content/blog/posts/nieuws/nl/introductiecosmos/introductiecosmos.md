@@ -31,7 +31,10 @@ section:
       # Cutting edge planning- en urenregistratiesoftware in ontwikkeling
 
 
-      ASRR is begonnen met het ontwikkelen van een nieuw urenregistratiesysteem genaamd Cosmos! Momenteel ontbreekt in veel planning software, zoals JIRA en Asana de mogelijkheid om efficiënt uren te registreren van uitgevoerde taken. Je doet dubbel werk, omdat je de taak moet uitschrijven in je planning en je documentatie. Cosmos voegt deze stappen samen door registraties van taken te voorspellen op basis van jouw planning. Cosmos is er op ingericht om samen te kunnen werken met JIRA of Asana. Zo krijg je real-time inzichten in de status van je project. Gebruikers hebben in Cosmos één plek om te plannen, beschikbaarheid op te geven, urenregistraties te maken en meer!
+      ASRR is begonnen met het ontwikkelen van een nieuw urenregistratiesysteem genaamd Cosmos! Momenteel ontbreekt in veel planning software, zoals JIRA en Asana de mogelijkheid om efficiënt uren te registreren van uitgevoerde taken. Je doet dubbel werk, omdat je de taak moet uitschrijven in je planning en je documentatie. 
+
+
+      Cosmos voegt deze stappen samen door registraties van taken te voorspellen op basis van jouw planning. Cosmos is er op ingericht om samen te kunnen werken met JIRA of Asana. Zo krijg je real-time inzichten in de status van je project. Gebruikers hebben in Cosmos één plek om te plannen, beschikbaarheid op te geven, urenregistraties te maken en meer!
 
 
       Wij zijn binnen ASRR constant bezig met procesanalyse om onze processen efficiënter te maken. We hebben gemerkt dat het registreren van uren van werknemers binnen een bedrijf een proces is wat veel efficiënter kan en moet.
