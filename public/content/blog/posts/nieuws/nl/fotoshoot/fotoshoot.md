@@ -45,4 +45,19 @@ section:
           alt: Azat en Elise
         - image: img_9999-min.jpg
           alt: "Lunch aan tafel "
+        - image: dsc07240-min.jpg
+          alt: server
+        - image: dsc09388-min.jpg
+          alt: Amit op laptop van achteren
+        - image: dsc09395-min.jpg
+          alt: Amar die kijkt in oneindige
+        - image: dsc09400-1-min.jpg
+          alt: Lotte en Amar op het bord
+        - image: dsc09402-min.jpg
+          alt: "Amar aan programmeren "
+        - image: dsc09404-min.jpg
+          alt: Azat en Elise aan het werk
+        - image: dsc07258-min.jpg
+        - image: dsc07311-1-min.jpg
+      videos: []
 ---
