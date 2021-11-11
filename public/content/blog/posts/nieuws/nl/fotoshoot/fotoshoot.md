@@ -34,7 +34,7 @@ section:
       Terug na weggeweest! De combinatie van grotendeels remote werken en de coronapandemie heeft ertoe geleid dat de werknemers van ASRR elkaar weinig of zelfs nog nooit hebben gezien. Dat maakte de fotoshoot en lunch die wij vandaag met het ASRR Team hadden extra speciaal en gezellig.
 
 
-      Alle werknemers mochten langskomen voor het laten maken van een professionele foto. Naast de professionele portretfoto’s hebben we nog wat 'casual' foto’s geschoten voor op de website. Daarna zijn wij gezellig met zijn allen bij de lunchtafel aangeschoven. Het was een leuke ervaring om (bijna) het hele ASRR Team bij elkaar te zien en samen van een lekkere lunch te genieten. Zelfs ASRR is zo nu en dan toch nog een beetje traditioneel.
+      Alle werknemers mochten langskomen voor het laten maken van een professionele foto. Naast de professionele portretfoto’s hebben we nog wat 'casual' foto’s geschoten voor op de website. Daarna zijn wij gezellig met zijn allen aan de lunchtafel geschoven. Het was een leuke ervaring om (bijna) het hele ASRR Team bij elkaar te zien en samen van een lekkere lunch te genieten. Zelfs ASRR is zo nu en dan toch nog een beetje traditioneel.
     media:
       images:
         - image: dsc09408-min-1-.jpg
