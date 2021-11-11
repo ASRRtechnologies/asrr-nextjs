@@ -13,7 +13,7 @@ info:
   tag:
     - tag: Innovation
   technologies: []
-  preview: true
+  preview: false
   tags:
     - left
 card:
