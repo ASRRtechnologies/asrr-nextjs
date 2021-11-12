@@ -99,7 +99,7 @@ function Footer() {
                     <span key={path + i}>
                       <LinkText
                         className="h6 hover-link"
-                        href={path.toLowerCase()}
+                        href={'/' + path.toLowerCase()}
                         title={path}
                         customlink
                       />
