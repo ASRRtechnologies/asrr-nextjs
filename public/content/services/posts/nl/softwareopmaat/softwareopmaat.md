@@ -13,11 +13,11 @@ meta_tags:
     maat.
 card:
   title: Software op maat
-  text: Innovatieve software van ASRR kenmerkt zich door een nieuw, actueel
-    probleem binnen een bedrijf op te lossen met de nieuwste technologieën.
-    Problemen die wij vaak oplossen zijn het automatiseren van herhaald werk.
-    Waar ben jij nu dagelijks veel tijd aan kwijt, waar je geen tijd aan kwijt
-    wil zijn?
+  text: Innovatieve software van ASRR kenmerkt zich door een nieuw, actueel en/of
+    complex probleem binnen een bedrijf op te lossen met de nieuwste
+    technologieën. Problemen die wij vaak oplossen zijn het automatiseren van
+    herhaald werk. Waar ben jij nu dagelijks veel tijd aan kwijt, waar je geen
+    tijd aan kwijt wil zijn?
 landing:
   title: Gaan waar niemand ooit is geweest
   image: dsc09402-min.jpg
