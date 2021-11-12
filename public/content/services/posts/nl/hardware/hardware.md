@@ -3,7 +3,7 @@ language: nl
 title: hardware
 info:
   date: September 26, 2021 9:05 PM
-  preview: true
+  preview: false
 meta_tags:
   title: Diensten - Hardware
   text: "De hardware van ASRR is cutting edge technology en wordt precies
