@@ -32,7 +32,7 @@ section:
       Innovatieve software van ASRR kenmerkt zich door een nieuw, actueel en/of complex probleem binnen een bedrijf op te lossen met de nieuwste technologieën. Grote uitdagingen gaan wij niet uit de weg. Wij halen daar juist voldoening uit.
 
 
-      Problemen die wij vaak oplossen zijn het automatiseren van herhaald werk. Waar ben jij nu dagelijks veel tijd aan kwijt, waar je geen tijd aan kwijt wil zijn? Een goed voorbeeld van herhaald werk dat wij hebben geautomatiseerd is de [woonconfigurator](https://asrr.nl/portfolio/heijmans-configurator).
+      Problemen die wij vaak oplossen zijn het automatiseren van herhaald werk. Waar ben jij nu dagelijks veel tijd aan kwijt, waar je geen tijd aan kwijt wil zijn? Een goed voorbeeld van herhaald werk dat wij hebben geautomatiseerd is de [woonconfigurator](https://asrr.nl/portfolio/heijmans-configurator)
 
 
       Voordat wij de [woonconfigurator](https://asrr.nl/portfolio/heijmans-configurator) hadden ontwikkeld, was de architect uren bezig met het verwerken van optielijsten van klanten; uittekenen hoe alle woningen eruit komen te zien. Die tijden zijn voorbij sinds wij een online 3D-omgeving hebben gemaakt waarin de klant zelf zijn droomhuis kan ontwerpen. Er komt geen architect meer aan te pas, alleen de fantasie en creativiteit van de klant. Klik [hier](https://asrr.nl/portfolio/heijmans-configurator) om meer over de case te weten te komen.
