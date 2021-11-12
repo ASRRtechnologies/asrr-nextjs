@@ -46,7 +46,7 @@ section:
       ## Oplossing
 
 
-      Dit project is een uitbreiding op een van onze voorgaande projecten: de FORM configurator. Klanten kunnen nu een real-time 3D-model zien tijdens het configureren van hun huis in plaats van alleen een bouwtekening opvragen van hun huis na het configureren. Hieronder een schematische weergave van hoe de 3D-configurator werkt. Het enige verschil tussen de FORM configurator en de 3D-configurator is dat het dashboard nu ook beschikt over een applicatie die de klant real-time zijn huis laat samenstellen. Ben je geïnteresseerd in de werking van de applicatie klik dan hier.
+      Dit project is een uitbreiding op een van onze voorgaande projecten: de FORM configurator. Klanten kunnen nu een real-time 3D-model zien tijdens het configureren van hun huis in plaats van alleen een bouwtekening opvragen van hun huis na het configureren. Hieronder een schematische weergave van hoe de 3D-configurator werkt. Het enige verschil tussen de FORM configurator en de 3D-configurator is dat het dashboard nu ook beschikt over een applicatie die de klant real-time zijn huis laat samenstellen. Ben je geïnteresseerd in de werking van de applicatie[ klik](https://asrr.nl/portfolio/form) dan hier.
     media:
       images:
         - image: configurator-schema.jpg
@@ -77,7 +77,7 @@ section:
       Nadat de klant zijn droomhuis heeft ontworpen, wordt de configuratie opgeslagen. De klant krijgt dan een brochure per mail met daarin de specificaties van de gekozen woning. Verder wordt er een link toegevoegd waarmee de configuratie weer opgevraagd kan worden om te laten zien aan de kopersbegeleider of aan relaties van de koper. 
 
 
-      Een publieke demo van de configurator opgezet voor FORM is te vinden door [hier](https://configurator.heijmans.asrr.nl) te drukken.
+      Een publieke demo van de configurator opgezet voor FORM is te vinden door [hier](https://productie.heijmans.asrr.nl/projects/HeijmansAbdijhof/83) te drukken.
     media:
       images:
         - image: ezgif.com-gif-maker-4-2.jpg
