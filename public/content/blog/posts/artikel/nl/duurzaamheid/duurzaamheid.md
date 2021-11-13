@@ -3,9 +3,8 @@ language: nl
 title: duurzaamheid
 meta_tags:
   title: Blog - Duurzaamheid
-  text: Denk jij wel eens na over hoe jij jouw Information Technology (IT) bedrijf
-    kan verduurzamen? Lees dan verder hoe ASRR dat op drie manieren heeft
-    gedaan.
+  text: Denk jij wel eens na over hoe jij jouw bedrijf kan verduurzamen? Lees dan
+    verder hoe ASRR dat op drie manieren heeft gedaan.
 type: artikel
 info:
   date: September 9, 2021 12:00 AM
@@ -17,14 +16,14 @@ card:
   title: Duurzaamheid
   text: "Ben jij al bekend met de drie P's en denk jij wel eens na over wat de
     mogelijke voordelen zijn van het verduurzamen van jouw bedrijf? Lees verder
-    om erachter te komen wat de drie P's inhouden, hoe de drie P's toepassen kan
-    leiden tot een duurzamer bedrijf en wat voor voordelen ASRR heeft van
+    om erachter te komen wat de drie P's inhouden, hoe een toepassing hiervan
+    kan leiden tot een duurzamer bedrijf en wat voor voordelen ASRR heeft van
     verduurzamen. "
   image: chelsea-wvusc5m-tm8-unsplash-1-min.jpg
   alt: "solar panels "
 landing:
   title: Sustainability within ASRR
-  image: pedro-henrique-santos-jsjsgkztjge-unsplash.jpg
+  image: pedro-henrique-santos-jsjsgkztjge-unsplash-1-.jpg
   alt: Windmills
 section:
   - content: >-
@@ -46,7 +45,7 @@ section:
       Een duurzame oplossing moet dus een harmonieuze combinatie zijn van deze drie elementen en aan je huidige behoeftes voldoen zonder de behoeftes van toekomstige generaties te belemmeren.
     media:
       images:
-        - image: sustainability-circle-final-1-.png
+        - image: sustainability-circle-final.png
           alt: Sustainability
   - content: >-
       ## Drie onderdelen waarin ASRR duurzaam is
