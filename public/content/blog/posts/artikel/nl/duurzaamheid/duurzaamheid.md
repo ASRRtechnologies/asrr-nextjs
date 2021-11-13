@@ -30,13 +30,10 @@ section:
       # Duurzaamheid
 
 
-      Ben jij al bekend met de drie P's en denk jij wel eens na over wat de mogelijke voordelen zijn van het verduurzamen van jouw bedrijf? Lees verder om erachter te komen wat de drie P's inhouden, hoe de drie P's toepassen kan leiden tot een duurzamer bedrijf en wat voor voordelen ASRR heeft van verduurzamen. 
+      Duurzaamheid. Een populaire term, geen bedrijf ontkomt er meer aan. Logisch, want duurzaamheid gaat een stuk verder dan bewust omgaan met het milieu. Duurzaamheid gaat over aan je behoeftes voldoen, zonder dat je daarmee de behoeftes van toekomstige generaties belemmert (CBS, 2021).
 
 
       ## Wat is duurzaamheid?
-
-
-      Duurzaamheid. Een populaire term, geen bedrijf ontkomt er meer aan. Logisch, want duurzaamheid gaat een stuk verder dan bewust omgaan met het milieu. Duurzaamheid gaat over aan je behoeftes voldoen, zonder dat je daarmee de behoeftes van toekomstige generaties belemmert (CBS, 2021).
 
 
       Duurzaamheid bevat drie elementen: ‘people’, ‘planet’ en ‘profit’. Er kan niet worden gesproken over duurzaamheid als een of meerdere elementen buiten beschouwing worden gelaten, omdat er dan geen harmonie is tussen de elementen. Elementen kunnen er namelijk mogelijk onder lijden, als er geen harmonie is.  
