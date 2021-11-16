@@ -19,7 +19,7 @@ members:
   - position: Managing Director
     alt: Amar
     name: Amar Ramdas
-    phone: 641633358
+    phone: "0641633358"
     story: Ik ben de eigenaar en founder van ASRR. Wat begon als een hobby met een
       paar vrienden is al snel uitgegroeid tot een innovatieve business. Ik zorg
       ervoor dat businessvragen of -problemen vertaald worden naar een robuuste
@@ -32,7 +32,7 @@ members:
   - position: Front-End Lead Developer
     alt: Reangelo
     name: Ré-Angelo Jarvis
-    phone: 628845580
+    phone: "0628845580"
     story: Bij ASRR ben ik de eindverantwoordelijke voor de front-end werkzaamheden.
       Daaronder valt ook deze tekst die u nu leest 🙂. Ik hou ervan om constant
       de nieuwste trends van designs te volgen en die toe te passen met een
