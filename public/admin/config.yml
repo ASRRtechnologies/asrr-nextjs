@@ -408,6 +408,10 @@ collections:
           - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Image Alt", name: "alt", widget: "string", required: false }
           - { label: "Story", name: "story", widget: "markdown",  required: false }
+          - { label: "Phone", name: "phone", widget: "string",  required: false }
+          - { label: "E-Mail", name: "email", widget: "string",  required: false }
+          - { label: "LinkedIn", name: "linkedin", widget: "string",  required: false }
+          - { label: "Teams", name: "teams", widget: "string",  required: false }
   - label: "Blog Page"
     name: "blog"
     identifier_field: slug

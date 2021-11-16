@@ -21,6 +21,8 @@ interface BannerProps {
 }
 
 function Banner(props: BannerProps) {
+  const env = process.env.NODE_ENV;
+
   return (
     <Section
       className={`${bannerStyles.banner} ${
@@ -40,7 +42,7 @@ function Banner(props: BannerProps) {
           layout="fill"
           // height={600}
           // width={1200}
-          placeholder="blur"
+          placeholder={env == 'production' ? 'blur' : 'empty'}
           priority
           quality={50}
         />

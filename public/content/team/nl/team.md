@@ -26,17 +26,23 @@ members:
       ervoor dat businessvragen of -problemen vertaald worden naar een robuuste
       IT-oplossing. Verder haal ik energie uit het begeleiden van talent en
       teamwork bevorderen.
+    phone: 0641633358
+    email: amar.ramdas@asrr.nl
+    linkedin: https://www.linkedin.com/in/amarramdas/
   - name: Ré-Angelo Jarvis
     position: Front-End Lead Developer
     website: https://www.linkedin.com/in/reangelojarvis/
     image: dsc07311-1-min-min.jpg
     alt: Reangelo
     story: Bij ASRR ben ik de eindverantwoordelijke voor de front-end werkzaamheden.
-      Daaronder valt ook deze tekst die u nu leest🙂. Ik hou ervan om constant
+      Daaronder valt ook deze tekst die u nu leest 🙂. Ik hou ervan om constant
       de nieuwste trends van designs te volgen en die toe te passen met een
       vleugje minimalisme. Hierdoor krijgt de klant de meest moderne designs.
       Tenzij de klant natuurlijk iets anders in gedachte heeft, dan kan dat ook
       geregeld worden.
+    phone: 0628845580
+    email: reangelo.jarvis@asrr.nl
+    linkedin: https://www.linkedin.com/in/reangelojarvis/
   - name: Azat Arica
     position: Back-End Lead Developer
     website: https://www.linkedin.com/in/azat-a/
