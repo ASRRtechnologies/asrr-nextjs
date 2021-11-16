@@ -408,6 +408,8 @@ collections:
           - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Image Alt", name: "alt", widget: "string", required: false }
           - { label: "Story", name: "story", widget: "markdown",  required: false }
+          - { label: "Phone", name: "phone", widget: "string",  required: false }
+          - { label: "E-Mail", name: "email", widget: "string",  required: false }
   - label: "Blog Page"
     name: "blog"
     identifier_field: slug
@@ -489,7 +491,7 @@ collections:
             name: "tags"
             widget: "select"
             multiple: true
-            options: ["left", "center", "right"]
+            options: ["C#", "Java", "Kotlin", "JavaScript", "TypeScript", "Spring Boot", "Database", "Kubernetes", "Docker", "ReactJS", "React Native", "Linux", "PlayCanvas", "Python", "C++", "Microsoft Azure", "SQL", "NextJs", "Duurzaamheid", "Bouw", "Innovatie", "Logistiek", "Kernwaardes", "Ontwikkeling", "Remote", "Review", "Business", "Visie", "Tips", "Tutorials", "Nieuws", "Software", "Hardware", "ITTAAS", "Maatwerk", "Analytics", "Webapplicatie", "Mobiele App", "Server", "Dashboard", "Remote Desktop", "Applicatie", "Consultancy", "Front-End", "Back-End", "Full-Stack"]
       - label: "Blog post Card"
         name: "card"
         widget: "object"

@@ -16,27 +16,33 @@ landing:
     zijn, snel nieuwe dingen oppakken en gewend zijn aan een uitdaging
   image: takahiro-sakamoto-imued0tpo1s-unsplash.jpg
 members:
-  - name: Amar Ramdas
-    position: Managing Director
-    website: https://www.linkedin.com/in/amarramdas/
-    image: foto-amar-min.jpg
+  - position: Managing Director
     alt: Amar
+    name: Amar Ramdas
+    phone: "0641633358"
     story: Ik ben de eigenaar en founder van ASRR. Wat begon als een hobby met een
       paar vrienden is al snel uitgegroeid tot een innovatieve business. Ik zorg
       ervoor dat businessvragen of -problemen vertaald worden naar een robuuste
       IT-oplossing. Verder haal ik energie uit het begeleiden van talent en
       teamwork bevorderen.
-  - name: Ré-Angelo Jarvis
-    position: Front-End Lead Developer
-    website: https://www.linkedin.com/in/reangelojarvis/
-    image: dsc07311-1-min-min.jpg
+    website: https://www.linkedin.com/in/amarramdas/
+    image: foto-amar-min.jpg
+    email: amar.ramdas@asrr.nl
+    linkedin: https://www.linkedin.com/in/amarramdas/
+  - position: Front-End Lead Developer
     alt: Reangelo
+    name: Ré-Angelo Jarvis
+    phone: "0628845580"
     story: Bij ASRR ben ik de eindverantwoordelijke voor de front-end werkzaamheden.
-      Daaronder valt ook deze tekst die u nu leest🙂. Ik hou ervan om constant
+      Daaronder valt ook deze tekst die u nu leest 🙂. Ik hou ervan om constant
       de nieuwste trends van designs te volgen en die toe te passen met een
       vleugje minimalisme. Hierdoor krijgt de klant de meest moderne designs.
       Tenzij de klant natuurlijk iets anders in gedachte heeft, dan kan dat ook
       geregeld worden.
+    website: https://www.linkedin.com/in/reangelojarvis/
+    image: dsc07311-1-min-min.jpg
+    email: reangelo.jarvis@asrr.nl
+    linkedin: https://www.linkedin.com/in/reangelojarvis/
   - name: Azat Arica
     position: Back-End Lead Developer
     website: https://www.linkedin.com/in/azat-a/
@@ -49,6 +55,7 @@ members:
       uit het maken van complexe applicaties.
     image: foto-azat-min.jpg
     alt: Azat
+    email: azat.arica@asrr.nl
   - name: Lotte Boonstra
     position: Operations Manager
     website: www.linkedin.com/in/lotte-boonstra
@@ -60,6 +67,8 @@ members:
       uitdagingen zijn die ik niet uit de weg ga, ook niet bij ASRR.
     image: linkedin-professionele-foto-min.jpg
     alt: Lotte
+    email: lotte.boonstra@asrr.nl
+    phone: "0627065319"
   - name: Lisabelle Sengönül
     position: Assistant to the Director
     website: https://www.linkedin.com/in/lisabelle-seng%C3%B6n%C3%BCl-4a1708181/
@@ -72,6 +81,7 @@ members:
       doordat er geen alledaagse - doch bekwame - bedrijfsvoering word beoefent.
     image: foto-lis-min.jpg
     alt: Lis
+    email: lisabelle.sengonul@asrr.nl
   - name: Amit Ramdas
     position: Sales and Marketing Specialist
     website: https://www.linkedin.com/in/amit-nitesh-ramdas-a6a171172/
@@ -82,6 +92,7 @@ members:
       op sociale media kanalen zoals LinkedIn.
     image: foto-amit-min.jpg
     alt: Amit
+    email: amit.ramdas@asrr.nl
   - name: Elise Chandoe-Arica
     position: Chief-Editor
     website: https://www.linkedin.com/in/elise-chandoe-arica-083a61aa/
@@ -107,6 +118,7 @@ members:
       veel vaardigheden opgedaan die ik met veel plezier kan toepassen bij ASRR.
     image: anonieme-foto-vrouw-def..jpg
     alt: "Silhouette "
+    email: vanisha.varma@asrr.nl
   - name: Neil Alwani
     position: Junior Front-End Developer
     story: Mijn volledige naam is Neil Mahesh Alwani en ik ben sinds 3 maanden
@@ -118,4 +130,10 @@ members:
     website: https://www.linkedin.com/in/neil-alwani-a1b9a2182/
     image: silhoutte-manier-2-man.jpg
     alt: "Silhouette "
+    email: neil.alwani@asrr.nl
+  - name: Annabelle Machiels
+    image: anonieme-foto-vrouw-def..jpg
+    position: Designer
+    alt: Silhouette
+    email: annabelle.machiels@asrr.nl
 ---

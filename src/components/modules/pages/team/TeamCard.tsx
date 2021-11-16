@@ -9,11 +9,35 @@ import Image from 'next/image';
 interface TeamCardProps {
   name: string;
   position: string;
+  phone?: string;
+  email?: string;
   image?: string;
   basePath?: string;
   website?: string;
   story: string;
   alt?: string;
+}
+
+function formatPhoneNumber(phoneNumberString) {
+  const cleaned = ('' + phoneNumberString).replace(/\D/g, '');
+  const match = cleaned.match(/^(1|)?(\d{1})(\d{1})(\d{3})(\d{3})(\d{2})$/);
+  if (match) {
+    const intlCode = match[1] ? '+1 ' : '';
+    return [
+      intlCode,
+      '(',
+      match[2],
+      ') ',
+      match[3],
+      ' ',
+      match[4],
+      ' ',
+      match[5],
+      ' ',
+      match[6],
+    ].join('');
+  }
+  return null;
 }
 
 function TeamCard(props: TeamCardProps) {
@@ -62,6 +86,24 @@ function TeamCard(props: TeamCardProps) {
       </Accordion>
 
       <p className="h5">{props.position}</p>
+
+      {props.email && (
+        <a href={'mailto:' + props.email} style={{ marginRight: '10px' }}>
+          {props.email}
+        </a>
+      )}
+
+      {props.phone && (
+        <a href={'tel:' + props.phone} className="h6">
+          +31 {formatPhoneNumber(props.phone)}
+        </a>
+      )}
+
+      {props.email && (
+        <a href={'https://teams.microsoft.com/l/chat/0/0?users=' + props.email}>
+          MS Teams
+        </a>
+      )}
     </div>
   );
 }
