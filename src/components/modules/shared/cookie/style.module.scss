@@ -1,0 +1,73 @@
+@import "../../../../styles/globals";
+
+@include media(">=xs") {
+  .banner{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 90vw !important;
+    max-width: 500px !important;
+    height: auto;
+    max-height: 95vh; //headerHeight
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 50vh!important;
+    left:50vw!important;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    padding: 10px;
+    background: #fff !important;
+    border-radius: 5px;
+
+
+    &.dark{
+      background: #272727 !important;
+    }
+
+  }
+
+  .overlay{
+    z-index: 1000000000;
+  }
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex:auto !important;
+
+    img{
+      width: 50px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+
+    a{
+      display: inline-block;
+    }
+  }
+
+  .buttonWrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@include media(">=xs") {
+  .banner{
+    padding: 30px;
+  }
+
+  .content{
+    img{
+      width: 70px;
+      height: auto;
+      margin-bottom: 15px;
+    }
+  }
+
+}
