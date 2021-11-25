@@ -16,7 +16,8 @@
     "react/prop-types": "off",
     "@next/next/no-document-import-in-page": "off",
     "@typescript-eslint/ban-ts-comment": "off",
-    "@typescript-eslint/no-explicit-any": "off"
+    "@typescript-eslint/no-explicit-any": "off",
+    "endOfLine": "auto"
   },
   "globals": {
     "React": "writable"
