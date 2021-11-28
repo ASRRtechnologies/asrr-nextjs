@@ -5,7 +5,7 @@ import { scopes } from '../../lib/scopes';
 
 export const randomString = () => randomBytes(4).toString('hex');
 
-export default async (req, res) => {
+const auth = async (req, res) => {
   const { host } = req.headers;
   const url = new URL(`https://${host}/${req.url}`);
   const urlParams = url.searchParams;
@@ -26,3 +26,5 @@ export default async (req, res) => {
   res.writeHead(301, { Location: authorizationUri });
   res.end();
 };
+
+export default auth;
