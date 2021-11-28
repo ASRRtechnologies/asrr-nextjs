@@ -17,7 +17,7 @@
     "@next/next/no-document-import-in-page": "off",
     "@typescript-eslint/ban-ts-comment": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "endOfLine": "auto"
+    "prettier/prettier": ["error", { "endOfLine": "auto" }]
   },
   "globals": {
     "React": "writable"

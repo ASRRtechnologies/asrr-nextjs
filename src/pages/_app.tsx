@@ -1,16 +1,16 @@
-import React, { useRef } from "react";
-import "../styles/App.scss";
-import AnimationContextProvider from "../context/animations/AnimationContext";
-import { ThemeProvider } from "../context/theme/ThemeContext";
-import Overlay from "../components/animation/Overlay";
-import styled from "@emotion/styled";
-import I18n from "../context/lib/i18n";
-import Header from "@/modules/shared/header/Header";
-import ScrollUp from "@/scrollers/ScrollUp";
-import HeaderMobile from "@/modules/shared/header/HeaderMobile";
-import { SnackbarProvider } from "notistack";
-import Footer from "@/modules/shared/footer/Footer";
-import CookieBanner from "@/modules/shared/cookie/CookieBanner";
+import React, { useRef } from 'react';
+import '../styles/App.scss';
+import AnimationContextProvider from '../context/animations/AnimationContext';
+import { ThemeProvider } from '../context/theme/ThemeContext';
+import Overlay from '../components/animation/Overlay';
+import styled from '@emotion/styled';
+import I18n from '../context/lib/i18n';
+import Header from '@/modules/shared/header/Header';
+import ScrollUp from '@/scrollers/ScrollUp';
+import HeaderMobile from '@/modules/shared/header/HeaderMobile';
+import { SnackbarProvider } from 'notistack';
+import Footer from '@/modules/shared/footer/Footer';
+import CookieBanner from '@/modules/shared/cookie/CookieBanner';
 
 type GlobalStyleTypes = {
   theme: {
@@ -24,7 +24,7 @@ type GlobalStyleTypes = {
   };
 };
 
-const GlobalStyle = styled("div")<GlobalStyleTypes>`
+const GlobalStyle = styled('div')<GlobalStyleTypes>`
   .darkmodeContainer {
     h1,
     h2,

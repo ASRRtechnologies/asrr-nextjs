@@ -1,14 +1,14 @@
-import React from "react";
-import matter from "gray-matter";
-import PageLayout from "@/modules/shared/layout/PageLayout";
-import Article from "@/modules/shared/article/Article";
-import Values from "@/modules/pages/home/values/Values";
+import React from 'react';
+import matter from 'gray-matter';
+import PageLayout from '@/modules/shared/layout/PageLayout';
+import Article from '@/modules/shared/article/Article';
+import Values from '@/modules/pages/home/values/Values';
 
 function Over({ content, homepage }) {
   const basePath = `/content/over/nl/over`;
 
   const SEOProps = {
-    ...content.meta_tags
+    ...content.meta_tags,
   };
 
   return (
@@ -28,7 +28,7 @@ export async function getStaticProps() {
   const homepage = parsedContent.data;
 
   return {
-    props: { content, homepage }
+    props: { content, homepage },
   };
 }
 
