@@ -1,18 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
+import { Author, authors } from '../../../../data/Authors';
+import { tags } from '../../../../data/Tags';
+import { GeneralArticleProps } from '@/modules/shared/article/types';
 
-type SearchFilters = {
-  title: string;
-  dateAflopend: boolean; //boolean
-  author: string;
+export type SearchFilters = {
+  dateDescending: boolean; //boolean
+  authors: Author[];
   tags?: string[];
 };
 
-type SearchAble = {
-  title: string;
-  date: string; //boolean
-  author: string;
-  tags?: string[];
-};
+type SearchAble = GeneralArticleProps;
 
 //Searchbalk - input op titel naam
 // datum: oplopend | aflopend - radio button
@@ -27,12 +24,32 @@ const getPropertiesFromObject = (
   return items.map((item) => item[property]);
 };
 
-export const useSearchFilter = (items: SearchAble[]) => {
-  const [searchItems, setSearchItems] = useState([]);
-  const [filters, setFilters] = useState({});
+const useSearchFilter = (items: SearchAble[]) => {
+  const [searchItems, setSearchItems] = useState(items);
+  const [filterList] = useState<SearchFilters>({
+    dateDescending: true,
+    authors: authors,
+    tags: tags,
+  });
+
+  const [activeFilters, setActiveFilters] = useState<SearchFilters>({
+    dateDescending: true,
+    authors: [],
+    tags: [],
+  });
+
+  const toggleFilters = (property: keyof SearchFilters, value) => {
+    setActiveFilters({
+      ...activeFilters,
+      [property]: value,
+    });
+  };
 
   useEffect(() => {
     setSearchItems(items);
-  }, [items]);
+  }, [items, activeFilters]);
 
+  return { searchItems, filterList, activeFilters, toggleFilters };
 };
+
+export default useSearchFilter;

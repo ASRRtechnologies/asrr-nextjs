@@ -21,7 +21,7 @@ function Blog({ content, allBlogs }) {
         {...content.landing}
         image={`${basePath}/${content.landing.image}`}
       />
-      <BlogPage data={content} allBlogs={allBlogs} />
+      <BlogPage allBlogs={allBlogs} />
     </PageLayout>
   );
 }
