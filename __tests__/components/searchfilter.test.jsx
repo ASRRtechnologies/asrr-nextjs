@@ -7,8 +7,8 @@ describe('Home', () => {
 
     const heading = screen.getByRole('heading', {
       name: /re/i,
-    })
+    });
 
-    expect(heading).toBeInTheDocument()
-  })
-})
+    expect(heading).toBeInTheDocument();
+  });
+});
