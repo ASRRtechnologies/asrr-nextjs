@@ -23,6 +23,8 @@ function Blog(props) {
   //         setResults(fuse.search(value))
   //     }}
 
+  console.log(allBlogs);
+
   return (
     <Section>
       <MaxTwoColGrid>
