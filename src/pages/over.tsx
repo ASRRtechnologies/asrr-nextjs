@@ -1,23 +1,20 @@
-import React from 'react';
-import Banner from '@/modules/shared/landing/Banner';
-import matter from 'gray-matter';
-import PageLayout from '@/modules/shared/layout/PageLayout';
-import About from '@/modules/pages/about/About';
+import React from "react";
+import matter from "gray-matter";
+import PageLayout from "@/modules/shared/layout/PageLayout";
+import Article from "@/modules/shared/article/Article";
+import Values from "@/modules/pages/home/values/Values";
 
 function Over({ content, homepage }) {
   const basePath = `/content/over/nl/over`;
 
   const SEOProps = {
-    ...content.meta_tags,
+    ...content.meta_tags
   };
 
   return (
     <PageLayout className="darkmodeContainer" {...SEOProps}>
-      <Banner
-        {...content.landing}
-        image={`${basePath}/${content.landing.image}`}
-      />
-      <About content={content} homepage={homepage} />
+      <Article content={content} basePath={basePath} />
+      <Values content={homepage.quality} />
     </PageLayout>
   );
 }
@@ -31,7 +28,7 @@ export async function getStaticProps() {
   const homepage = parsedContent.data;
 
   return {
-    props: { content, homepage },
+    props: { content, homepage }
   };
 }
 

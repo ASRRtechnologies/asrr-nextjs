@@ -10,8 +10,4 @@ landing:
   image: 1-min.jpg
   alt: Server
   text: Over ASRR
-section:
-  title: Over ASRR
-  image: automation-square.jpg
-  alt: ASRR - Diensten
 ---
