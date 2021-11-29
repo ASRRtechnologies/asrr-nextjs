@@ -11,6 +11,7 @@ import {
   tagFilterOptions,
 } from '../../../../data/searchfilter/searchOptions';
 import searchFilterStyles from './style.module.scss';
+import { Fade } from "react-awesome-reveal";
 
 interface SearchFilterProps {
   render: (searchItems: GeneralArticleProps[]) => React.ReactElement;
@@ -35,6 +36,7 @@ function SearchFilter(props: SearchFilterProps) {
 
   return (
     <Section>
+
       <div className={searchFilterStyles.searchWrapper}>
         <span className={searchFilterStyles.filter}>
           <h5>Datum</h5>
@@ -57,6 +59,7 @@ function SearchFilter(props: SearchFilterProps) {
             )}
             isMulti={true}
             name="tags"
+            placeholder="Selecteer een tag"
             isClearable={true}
             isSearchable={true}
             options={tagFilterOptions}
@@ -66,22 +69,28 @@ function SearchFilter(props: SearchFilterProps) {
         </span>
 
         <span className={searchFilterStyles.filter}>
-          <h5>Tags</h5>
+          <h5>Auteurs</h5>
           <Select
-            defaultValue={authorFilterOptions.filter(({ value }) =>
-              activeFilters.authors.includes(value)
+            defaultValue={authorFilterOptions.filter((author) =>
+              activeFilters.authors.includes(author)
             )}
             isMulti={true}
-            name="tags"
+            placeholder="Selecteer een auteur"
+            name="authors"
             isClearable={true}
             isSearchable={true}
             options={authorFilterOptions}
             classNamePrefix="select"
-            onChange={(e) => toggleMultiFilter(e, 'tags')}
+            onChange={(e) => toggleMultiFilter(e, 'authors')}
           />
         </span>
       </div>
       {props.render(searchItems)}
+      {searchItems.length === 0 && (
+        <Fade>
+          <p>Geen zoek resultaten gevonden</p>
+        </Fade>
+      )}
     </Section>
   );
 }

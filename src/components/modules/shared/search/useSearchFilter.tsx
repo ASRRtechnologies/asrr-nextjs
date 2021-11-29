@@ -1,22 +1,13 @@
 import { useEffect, useState } from "react";
-import { Author } from "../../../../data/Authors";
 import { GeneralArticleProps } from "@/modules/shared/article/types";
 
 export type SearchFilters = {
   dateDescending: boolean; //boolean
-  authors: string[];
+  authors: { value: string; label: string }[];
   tags?: string[];
 };
 
 type SearchAble = GeneralArticleProps;
-
-//Loops over an array and returns an array of properties
-const getPropertiesFromObject = (
-  items: SearchAble[],
-  property: keyof SearchAble
-) => {
-  return items.map((item) => item[property]);
-};
 
 const sortDates = (items: SearchAble[], descending: boolean) => {
   //Important dont mutate props, use spread for new array otherwise errors
@@ -47,11 +38,15 @@ const filterTags = (items: SearchAble[], tagsSelected: string[]) => {
   return items;
 };
 
-const filterAuthors = (items: SearchAble[], tagsSelected: string[]) => {
-  if (tagsSelected.length > 0) {
-    return [...items].filter(({ info }) =>
-      info.tags.some((item) => tagsSelected.includes(item))
-    );
+const filterAuthors = (
+  items: SearchAble[],
+  authorsSelected: { value: string; label: string }[]
+) => {
+  if (authorsSelected.length > 0) {
+    const authors = authorsSelected.map(({ value }) => value); //Get selected authors in string form
+    return [...items].filter((data) => {
+      return authors.includes(data.info.author);
+    });
   }
   return items;
 };
@@ -62,20 +57,24 @@ const useSearchFilter = (items: SearchAble[]) => {
   const [activeFilters, setActiveFilters] = useState<SearchFilters>({
     dateDescending: true,
     authors: [],
-    tags: [],
+    tags: []
   });
 
   const toggleFilters = (property: keyof SearchFilters, value) => {
     setActiveFilters({
       ...activeFilters,
-      [property]: value,
+      [property]: value
     });
   };
 
+  //TODO use functional chaining for better readability
   const filterItems = () => {
-    return filterTags(
-      sortDates(items, activeFilters.dateDescending),
-      activeFilters.tags
+    return filterAuthors(
+      filterTags(
+        sortDates(items, activeFilters.dateDescending),
+        activeFilters.tags
+      ),
+      activeFilters.authors
     );
   };
 

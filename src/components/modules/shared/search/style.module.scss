@@ -4,27 +4,33 @@
   .searchWrapper{
     display: flex;
     width: 100%;
+    max-width: $max-width;
     height: auto;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   .filter{
     width: 100%;
-    max-width: 400px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    &:last-of-type{
+      margin-right: 0;
+    }
   }
+
 }
 
 @include media(">=sm") {
   .searchWrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: flex-start;
+    //flex-wrap: wrap;
   }
 
   .filter{
-    width: 100%;
+    //width: auto;
     max-width: 400px;
   }
 }
