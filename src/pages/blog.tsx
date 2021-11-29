@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 import { getAllArticles, getAllNews, getAllTutorials } from '../lib/api';
 import PageLayout from '@/modules/shared/layout/PageLayout';
 import Banner from '@/modules/shared/landing/Banner';
-import SearchFilter from '@/modules/shared/search/ComponentWithSearchFilter';
+import SearchFilter from '@/modules/shared/search/SearchFilter';
 
 const SEOProps = {
   title: 'ASRR - Blog',

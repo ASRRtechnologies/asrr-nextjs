@@ -1,0 +1,11 @@
+@import "../../../../styles/globals";
+
+@include media(">=xs") {
+  .searchWrapper{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}

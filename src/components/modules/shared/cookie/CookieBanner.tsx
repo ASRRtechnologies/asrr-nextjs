@@ -26,7 +26,7 @@ function CookieBanner() {
       buttonText="Accepteren"
     >
       <div className="darkmodeContainer">
-        <Image src={dark ? cookies : cookiesDark} alt="cookies icon" />
+        <img src={dark ? cookies : cookiesDark} alt="cookies icon" />
         <h1 className="h3">Wij gebruiken cookies</h1>
         <p>
           Deze website maakt gebruik van anonieme cookies voor statistische
