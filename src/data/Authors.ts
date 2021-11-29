@@ -1,23 +1,31 @@
 export type Author = {
   name: string;
-  image: string | boolean;
+  image: string;
 };
 
 export const authors: Author[] = [
   {
     name: 'Amar Ramdas',
-    image: '/',
+    image: '/assets/images/team/amar.jpg',
   },
+  // {
+  //   name: 'Amit Ramdas',
+  //   image: '/',
+  // },
   {
     name: 'Azat Erica',
-    image: '/',
+    image: '/assets/images/team/azat.jpg',
+  },
+  {
+    name: 'Elise Chandoe-Arica',
+    image: '/assets/images/team/elise.jpg',
   },
   {
     name: 'Lotte Boonstra',
-    image: '/',
+    image: '/assets/images/team/lotte.jpg',
   },
   {
     name: 'Re-Angelo Jarvis',
-    image: '/',
+    image: '/assets/images/team/re.jpg',
   },
 ];
