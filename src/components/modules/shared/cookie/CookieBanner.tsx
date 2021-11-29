@@ -19,6 +19,7 @@ function CookieBanner() {
       containerClasses={`${bannerStyles.banner} ${dark && bannerStyles.dark}`}
       contentClasses={bannerStyles.content}
       disableButtonStyles={true}
+      acceptOnScroll={true}
       buttonClasses={`${buttonStyles.button} ${buttonStyles.cookieButton} ${
         dark && buttonStyles.dark
       }`}

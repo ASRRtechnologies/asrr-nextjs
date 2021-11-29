@@ -36,7 +36,7 @@ function SearchFilter(props: SearchFilterProps) {
   return (
     <Section>
       <div className={searchFilterStyles.searchWrapper}>
-        <span>
+        <span className={searchFilterStyles.filter}>
           <h5>Datum</h5>
           <Select
             defaultValue={dateFilterOptions.filter(
@@ -49,7 +49,7 @@ function SearchFilter(props: SearchFilterProps) {
           />
         </span>
 
-        <span>
+        <span className={searchFilterStyles.filter}>
           <h5>Tags</h5>
           <Select
             defaultValue={tagFilterOptions.filter(({ value }) =>
@@ -65,7 +65,7 @@ function SearchFilter(props: SearchFilterProps) {
           />
         </span>
 
-        <span>
+        <span className={searchFilterStyles.filter}>
           <h5>Tags</h5>
           <Select
             defaultValue={authorFilterOptions.filter(({ value }) =>

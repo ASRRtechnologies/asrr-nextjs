@@ -8,4 +8,23 @@
     flex-direction: column;
     margin-bottom: 50px;
   }
+
+  .filter{
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@include media(">=sm") {
+  .searchWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .filter{
+    width: 100%;
+    max-width: 400px;
+  }
 }

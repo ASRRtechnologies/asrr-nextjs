@@ -7,7 +7,12 @@ function Avatar(props: Author) {
   return (
     <div className={avatarStyles.avatarWrapper}>
       <span className={avatarStyles.avatar}>
-        <Image src={props.image} alt={props.name} layout="fill" />
+        <Image
+          objectFit="cover"
+          src={props.image}
+          alt={props.name}
+          layout="fill"
+        />
       </span>
       <p>{props.name}</p>
     </div>
