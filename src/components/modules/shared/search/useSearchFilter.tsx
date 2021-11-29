@@ -1,20 +1,14 @@
-import { useEffect, useState } from 'react';
-import { Author, authors } from '../../../../data/Authors';
-import { tags } from '../../../../data/Tags';
-import { GeneralArticleProps } from '@/modules/shared/article/types';
+import { useEffect, useState } from "react";
+import { Author } from "../../../../data/Authors";
+import { GeneralArticleProps } from "@/modules/shared/article/types";
 
 export type SearchFilters = {
   dateDescending: boolean; //boolean
-  authors: Author[];
+  authors: string[];
   tags?: string[];
 };
 
 type SearchAble = GeneralArticleProps;
-
-//Searchbalk - input op titel naam
-// datum: oplopend | aflopend - radio button
-// tags: checkbox of list of tags
-// author: checkbox of list of authors
 
 //Loops over an array and returns an array of properties
 const getPropertiesFromObject = (
@@ -24,13 +18,46 @@ const getPropertiesFromObject = (
   return items.map((item) => item[property]);
 };
 
-const useSearchFilter = (items: SearchAble[]) => {
-  const [searchItems, setSearchItems] = useState(items);
-  const [filterList] = useState<SearchFilters>({
-    dateDescending: true,
-    authors: authors,
-    tags: tags,
+const sortDates = (items: SearchAble[], descending: boolean) => {
+  //Important dont mutate props, use spread for new array otherwise errors
+  return [...items].sort((a, b) => {
+    const d1 = new Date(a.info.date).getTime();
+    const d2 = new Date(b.info.date).getTime();
+
+    if (descending) {
+      if (d1 < d2) {
+        return 1;
+      }
+      return -1;
+    }
+
+    if (d1 < d2) {
+      return -1;
+    }
+    return 1;
   });
+};
+
+const filterTags = (items: SearchAble[], tagsSelected: string[]) => {
+  if (tagsSelected.length > 0) {
+    return [...items].filter(({ info }) =>
+      info.tags.some((item) => tagsSelected.includes(item))
+    );
+  }
+  return items;
+};
+
+const filterAuthors = (items: SearchAble[], tagsSelected: string[]) => {
+  if (tagsSelected.length > 0) {
+    return [...items].filter(({ info }) =>
+      info.tags.some((item) => tagsSelected.includes(item))
+    );
+  }
+  return items;
+};
+
+const useSearchFilter = (items: SearchAble[]) => {
+  const [searchItems, setSearchItems] = useState([]);
 
   const [activeFilters, setActiveFilters] = useState<SearchFilters>({
     dateDescending: true,
@@ -45,11 +72,19 @@ const useSearchFilter = (items: SearchAble[]) => {
     });
   };
 
+  const filterItems = () => {
+    return filterTags(
+      sortDates(items, activeFilters.dateDescending),
+      activeFilters.tags
+    );
+  };
+
   useEffect(() => {
-    setSearchItems(items);
+    const filteredItems = filterItems();
+    setSearchItems(filteredItems);
   }, [items, activeFilters]);
 
-  return { searchItems, filterList, activeFilters, toggleFilters };
+  return { searchItems, activeFilters, toggleFilters };
 };
 
 export default useSearchFilter;
