@@ -15,7 +15,14 @@ interface LinkTextProps {
 
 function LinkText(props: LinkTextProps) {
   const darkmode = useTheme().dark;
-  const { title = '', customlink, classes, goToSection, href } = props;
+  const {
+    title = '',
+    customlink,
+    classes,
+    goToSection,
+    href,
+    ...inputProps
+  } = props; //Causes an error because unknown props are rendered in the dom
 
   return (
     <>
@@ -24,7 +31,7 @@ function LinkText(props: LinkTextProps) {
           className={`${classes} ${
             darkmode ? styledLink.linkDark : styledLink.linkLight
           }`}
-          {...props}
+          {...inputProps}
         >
           {title || 'Lees Meer'}
         </a>
@@ -36,7 +43,7 @@ function LinkText(props: LinkTextProps) {
                         ${darkmode ? styledLink.linkDark : styledLink.linkLight}
                         ${goToSection && `h4 ${styledLink.goToSection}`}    
                     `}
-            {...props}
+            {...inputProps}
           >
             {title || 'Lees Meer'}
           </a>

@@ -4,6 +4,7 @@ import buttonStyles from '../buttons/buttonStyles.module.scss';
 import bannerStyles from './style.module.scss';
 import { useTheme } from '../../../../context/theme/ThemeContext';
 import Image from 'next/image';
+
 const cookies = '/assets/images/cookies/cookies.png';
 const cookiesDark = '/assets/images/cookies/cookies-dark.png';
 const privacy = '/assets/documents/privacy-asrr.pdf';
@@ -19,6 +20,7 @@ function CookieBanner() {
       containerClasses={`${bannerStyles.banner} ${dark && bannerStyles.dark}`}
       contentClasses={bannerStyles.content}
       disableButtonStyles={true}
+      acceptOnScroll={true}
       buttonClasses={`${buttonStyles.button} ${buttonStyles.cookieButton} ${
         dark && buttonStyles.dark
       }`}
@@ -26,7 +28,14 @@ function CookieBanner() {
       buttonText="Accepteren"
     >
       <div className="darkmodeContainer">
-        <Image src={dark ? cookies : cookiesDark} alt="cookies icon" />
+        <div className={bannerStyles.cookieImage}>
+          <Image
+            src={dark ? cookies : cookiesDark}
+            alt="cookies icon"
+            layout="fill"
+          />
+        </div>
+
         <h1 className="h3">Wij gebruiken cookies</h1>
         <p>
           Deze website maakt gebruik van anonieme cookies voor statistische

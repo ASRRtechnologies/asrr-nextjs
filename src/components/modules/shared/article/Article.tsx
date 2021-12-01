@@ -14,6 +14,8 @@ import uuid from 'react-uuid';
 import Banner from '@/modules/shared/landing/Banner';
 import articleStyles from './article.module.scss';
 import ArticleImage from '@/modules/shared/article/ArticleImage';
+import { authors } from '../../../../data/Authors';
+import Avatar from '@/modules/shared/avatar/Avatar';
 
 const HeaderOne = ({ children }) => {
   return <h1 className="h2">{children}</h1>;
@@ -37,6 +39,16 @@ const HyperLink = (props) => {
       {props.children}
     </a>
   );
+};
+
+const getAuthor = (authorName: string) => {
+  return authors
+    .filter(({ name }) => name === authorName)
+    .map((author) => {
+      return (
+        <Avatar image={author.image} name={author.name} key={author.name} />
+      );
+    });
 };
 
 const ArticleSection = ({ basePath, content, media }) => {
@@ -74,7 +86,6 @@ const ArticleSection = ({ basePath, content, media }) => {
             );
           })}
           {media.videos?.map((video, i) => {
-            console.log('Rendering video');
             return (
               <ArticleImage
                 basePath={basePath}
@@ -122,6 +133,7 @@ function Article({ content, basePath }) {
       <Section className="darkmodeContainer">
         <div className={articleStyles.body}>
           <Socials />
+          {getAuthor(content.info.author)}
 
           <div className={articleStyles.content}>
             {content.section.map(({ content, media }) => (

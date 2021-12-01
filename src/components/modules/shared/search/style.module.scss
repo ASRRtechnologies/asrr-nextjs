@@ -1,0 +1,36 @@
+@import "../../../../styles/globals";
+
+@include media(">=xs") {
+  .searchWrapper{
+    display: flex;
+    width: 100%;
+    max-width: $max-width;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .filter{
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    &:last-of-type{
+      margin-right: 0;
+    }
+  }
+
+}
+
+@include media(">=sm") {
+  .searchWrapper{
+    //display: flex;
+    //flex-direction: row;
+    //justify-content: flex-start;
+    //flex-wrap: wrap;
+  }
+
+  .filter{
+    //width: auto;
+    max-width: 400px;
+  }
+}
