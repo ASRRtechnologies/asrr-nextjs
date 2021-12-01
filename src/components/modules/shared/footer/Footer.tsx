@@ -64,7 +64,7 @@ function Footer() {
         },
         {
           title: 'ASRR One Pager',
-          href: 'https://asrr.nl/asrr-onepager.pdf',
+          href: '/asrr-onepager.pdf',
         },
       ],
     },
