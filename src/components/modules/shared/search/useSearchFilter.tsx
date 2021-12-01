@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { GeneralArticleProps } from "@/modules/shared/article/types";
+import { useEffect, useState } from 'react';
+import { GeneralArticleProps } from '@/modules/shared/article/types';
 
 export type SearchFilters = {
   dateDescending: boolean; //boolean
@@ -57,13 +57,13 @@ const useSearchFilter = (items: SearchAble[]) => {
   const [activeFilters, setActiveFilters] = useState<SearchFilters>({
     dateDescending: true,
     authors: [],
-    tags: []
+    tags: [],
   });
 
   const toggleFilters = (property: keyof SearchFilters, value) => {
     setActiveFilters({
       ...activeFilters,
-      [property]: value
+      [property]: value,
     });
   };
 

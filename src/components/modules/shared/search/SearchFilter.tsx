@@ -11,7 +11,7 @@ import {
   tagFilterOptions,
 } from '../../../../data/searchfilter/searchOptions';
 import searchFilterStyles from './style.module.scss';
-import { Fade } from "react-awesome-reveal";
+import { Fade } from 'react-awesome-reveal';
 
 interface SearchFilterProps {
   render: (searchItems: GeneralArticleProps[]) => React.ReactElement;
@@ -36,7 +36,6 @@ function SearchFilter(props: SearchFilterProps) {
 
   return (
     <Section>
-
       <div className={searchFilterStyles.searchWrapper}>
         <span className={searchFilterStyles.filter}>
           <h5>Datum</h5>

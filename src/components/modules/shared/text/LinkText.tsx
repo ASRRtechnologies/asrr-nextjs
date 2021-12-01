@@ -1,7 +1,7 @@
-import Link from "next/link";
-import React from "react";
-import styledLink from "./link.module.scss";
-import { useTheme } from "../../../../context/theme/ThemeContext";
+import Link from 'next/link';
+import React from 'react';
+import styledLink from './link.module.scss';
+import { useTheme } from '../../../../context/theme/ThemeContext';
 
 interface LinkTextProps {
   href: string;
@@ -33,7 +33,7 @@ function LinkText(props: LinkTextProps) {
           }`}
           {...inputProps}
         >
-          {title || "Lees Meer"}
+          {title || 'Lees Meer'}
         </a>
       ) : (
         <Link href={href}>
@@ -45,7 +45,7 @@ function LinkText(props: LinkTextProps) {
                     `}
             {...inputProps}
           >
-            {title || "Lees Meer"}
+            {title || 'Lees Meer'}
           </a>
         </Link>
       )}
@@ -55,7 +55,7 @@ function LinkText(props: LinkTextProps) {
 
 LinkText.defaultProps = {
   title: null,
-  goToSection: false
+  goToSection: false,
 };
 
 export default LinkText;

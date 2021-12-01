@@ -1,6 +1,6 @@
-import React from "react";
-import Markdown from "markdown-to-jsx";
-import Section from "@/modules/shared/section/Section";
+import React from 'react';
+import Markdown from 'markdown-to-jsx';
+import Section from '@/modules/shared/section/Section';
 import { Fade } from 'react-awesome-reveal';
 import {
   FacebookIcon,
@@ -8,14 +8,14 @@ import {
   LinkedinIcon,
   LinkedinShareButton,
   TwitterIcon,
-  TwitterShareButton
-} from "react-share";
-import uuid from "react-uuid";
-import Banner from "@/modules/shared/landing/Banner";
-import articleStyles from "./article.module.scss";
-import ArticleImage from "@/modules/shared/article/ArticleImage";
-import { authors } from "../../../../data/Authors";
-import Avatar from "@/modules/shared/avatar/Avatar";
+  TwitterShareButton,
+} from 'react-share';
+import uuid from 'react-uuid';
+import Banner from '@/modules/shared/landing/Banner';
+import articleStyles from './article.module.scss';
+import ArticleImage from '@/modules/shared/article/ArticleImage';
+import { authors } from '../../../../data/Authors';
+import Avatar from '@/modules/shared/avatar/Avatar';
 
 const HeaderOne = ({ children }) => {
   return <h1 className="h2">{children}</h1>;
@@ -77,9 +77,9 @@ const ArticleSection = ({ basePath, content, media }) => {
               <ArticleImage
                 basePath={basePath}
                 media={{
-                  mediaType: "image",
+                  mediaType: 'image',
                   src: imageProps.image,
-                  ...imageProps
+                  ...imageProps,
                 }}
                 key={i}
               />
@@ -89,7 +89,7 @@ const ArticleSection = ({ basePath, content, media }) => {
             return (
               <ArticleImage
                 basePath={basePath}
-                media={{ mediaType: "video", src: video.video, ...video }}
+                media={{ mediaType: 'video', src: video.video, ...video }}
                 key={i}
               />
             );

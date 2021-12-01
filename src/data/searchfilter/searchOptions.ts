@@ -10,6 +10,6 @@ export const tagFilterOptions = tags.map((tag) => {
 });
 
 export const dateFilterOptions = [
-  { value: true, label: 'Aflopend' },
-  { value: false, label: 'Oplopend' },
+  { value: true, label: 'Meest recente eerst' },
+  { value: false, label: 'Oudste eerst' },
 ];
