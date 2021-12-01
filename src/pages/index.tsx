@@ -34,6 +34,7 @@ function Index({ homepage, allServices, allCases, allBlogs }) {
           as="image"
         />
       </Head>
+      <h1>re</h1>
       <Banner
         landing={true}
         image={'/assets/images/landing/landing-asrr-min.jpg'}

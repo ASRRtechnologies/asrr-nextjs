@@ -1,8 +1,8 @@
 import React from 'react';
-import Banner from '@/modules/shared/landing/Banner';
 import matter from 'gray-matter';
 import PageLayout from '@/modules/shared/layout/PageLayout';
-import About from '@/modules/pages/about/About';
+import Article from '@/modules/shared/article/Article';
+import Values from '@/modules/pages/home/values/Values';
 
 function Over({ content, homepage }) {
   const basePath = `/content/over/nl/over`;
@@ -13,11 +13,8 @@ function Over({ content, homepage }) {
 
   return (
     <PageLayout className="darkmodeContainer" {...SEOProps}>
-      <Banner
-        {...content.landing}
-        image={`${basePath}/${content.landing.image}`}
-      />
-      <About content={content} homepage={homepage} />
+      <Article content={content} basePath={basePath} />
+      <Values content={homepage.quality} />
     </PageLayout>
   );
 }

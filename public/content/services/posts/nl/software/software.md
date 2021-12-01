@@ -45,7 +45,7 @@ section:
       oplossing die goed bij jouw bedrijf past.
 
 
-      Bent u benieuwd wat ASRR voor u kan betekenen? Plan dan nu voor een half uur vrijblijvend een consult met ons in. In dit consult zullen wij jouw proces analyseren en een korte rapportage uitbrengen met wat jij kan verbeteren en hoe veel jij op jaarbasis gaat besparen. 
+      Ben jij benieuwd naar wat ASRR voor jou kan betekenen? Plan dan nu een vrijblijvend consult met ons in. In dit consult zullen wij jouw proces analyseren en een korte rapportage uitbrengen met wat jij kan verbeteren en hoe veel jij op jaarbasis gaat besparen. 
 
 
       Klik [hier](https://asrr.nl/contact) om een vrijblijvend consult in te plannen.

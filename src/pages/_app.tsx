@@ -10,7 +10,7 @@ import ScrollUp from '@/scrollers/ScrollUp';
 import HeaderMobile from '@/modules/shared/header/HeaderMobile';
 import { SnackbarProvider } from 'notistack';
 import Footer from '@/modules/shared/footer/Footer';
-import CookieConsent from 'react-cookie-consent';
+import CookieBanner from '@/modules/shared/cookie/CookieBanner';
 
 type GlobalStyleTypes = {
   theme: {
@@ -68,6 +68,7 @@ function MyApp({ Component, pageProps }) {
       <AnimationContextProvider>
         <I18n lngDict={pageProps.lngDict} locale={pageProps.lng}>
           <GlobalStyle theme={undefined}>
+            <CookieBanner />
             <Header />
             <HeaderMobile />
             <ScrollUp />
@@ -78,23 +79,6 @@ function MyApp({ Component, pageProps }) {
             </SnackbarProvider>
           </GlobalStyle>
         </I18n>
-
-        <CookieConsent buttonText="Accepteer cookies">
-          <div className="cookie-banner">
-            <p>
-              Deze website maakt gebruik van anonieme cookies voor statistische
-              doeleinden, namelijk om meer informatie te krijgen over het
-              algemeen gebruik van de website. Meer info kunt u vinden in onze{' '}
-              <a
-                href="/assets/documents/privacy-asrr.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                privacybeleid.
-              </a>
-            </p>
-          </div>
-        </CookieConsent>
       </AnimationContextProvider>
     </ThemeProvider>
   );

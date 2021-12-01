@@ -48,8 +48,23 @@
     }
   }
 
-  //Edge case contact preview
-  .contactPreview {
+  .cookieButton {
+    padding: 0.75em 1.25em;
+    transition: 100ms color ease-in;
+    background-color: #e7e4e4;
+    color: #0a0a0a;
 
+    &:hover {
+      border-color:#444444;
+    }
+
+
+    &.dark {
+      background-color: #444444;
+      color: #fff;
+      &:hover{
+        border-color:#d4cfcf;
+      }
+    }
   }
 }

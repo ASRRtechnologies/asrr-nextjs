@@ -17,8 +17,11 @@ section:
   alt: Over ASRR
   image: dsc09392.jpg
   text: >
-    ASRR onderscheidt zich door zijn moderne werkmethode. Wij beginnen met een geheel vrijblijvende procesanalyse, waardoor er echt duidelijk wordt wat jij nodig hebt en wij een passende oplossing kunnen leveren. Vervolgens staat er een team van specialisten klaar om met die passende oplossing aan de slag te gaan. “Co-makership” heeft hierin een centrale rol.
-
+    ASRR onderscheidt zich door zijn moderne werkmethode. Wij beginnen met een
+    geheel vrijblijvende procesanalyse, waardoor er echt duidelijk wordt wat jij
+    nodig hebt en wij een passende oplossing kunnen leveren. Vervolgens staat er
+    een team van specialisten klaar om met die passende oplossing aan de slag te
+    gaan. “Co-makership” heeft hierin een centrale rol.
   kernwaarden:
     - title: Innovatie
       text: >
@@ -73,7 +76,7 @@ section:
         om hun producten te ontwikkelen.
       url: /
   content: >-
-
+    
     ## Onze werkmethode
 
 
@@ -84,4 +87,13 @@ section:
 
 
     Verder vinden wij het belangrijk om dit zo effectief mogelijk te doen. Dit doen wij door te werken met microservices. Dat zijn schaalbare, modulaire bouwsteentjes waaruit wij onze producten opbouwen. Hierdoor heeft de klant een product dat snel tot stand komt met alle voordelen maatwerk.
+paragraphs:
+  - content: |-
+      # Niggas in paris
+
+      paragrpah one
+  - content: |-
+      # Hi
+
+      paragraph 2
 ---
