@@ -62,6 +62,10 @@ function Footer() {
           title: 'Customer Support Portal',
           href: 'https://asrrtechnologies.atlassian.net/servicedesk/customer/portals',
         },
+        {
+          title: 'ASRR One Pager',
+          href: 'https://asrr.nl/asrr-onepager.pdf',
+        },
       ],
     },
   ];
