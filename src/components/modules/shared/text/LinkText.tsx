@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import React from 'react';
-import styledLink from './link.module.scss';
-import { useTheme } from '../../../../context/theme/ThemeContext';
+import Link from "next/link";
+import React from "react";
+import styledLink from "./link.module.scss";
+import { useTheme } from "../../../../context/theme/ThemeContext";
 
 interface LinkTextProps {
   href: string;
@@ -15,7 +15,14 @@ interface LinkTextProps {
 
 function LinkText(props: LinkTextProps) {
   const darkmode = useTheme().dark;
-  const { title = '', customlink, classes, goToSection, href } = props;
+  const {
+    title = '',
+    customlink,
+    classes,
+    goToSection,
+    href,
+    ...inputProps
+  } = props; //Causes an error because unknown props are rendered in the dom
 
   return (
     <>
@@ -24,9 +31,9 @@ function LinkText(props: LinkTextProps) {
           className={`${classes} ${
             darkmode ? styledLink.linkDark : styledLink.linkLight
           }`}
-          {...props}
+          {...inputProps}
         >
-          {title || 'Lees Meer'}
+          {title || "Lees Meer"}
         </a>
       ) : (
         <Link href={href}>
@@ -36,9 +43,9 @@ function LinkText(props: LinkTextProps) {
                         ${darkmode ? styledLink.linkDark : styledLink.linkLight}
                         ${goToSection && `h4 ${styledLink.goToSection}`}    
                     `}
-            {...props}
+            {...inputProps}
           >
-            {title || 'Lees Meer'}
+            {title || "Lees Meer"}
           </a>
         </Link>
       )}
@@ -48,7 +55,7 @@ function LinkText(props: LinkTextProps) {
 
 LinkText.defaultProps = {
   title: null,
-  goToSection: false,
+  goToSection: false
 };
 
 export default LinkText;

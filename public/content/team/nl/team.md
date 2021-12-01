@@ -26,7 +26,7 @@ members:
       IT-oplossing. Verder haal ik energie uit het begeleiden van talent en
       teamwork bevorderen.
     website: https://www.linkedin.com/in/amarramdas/
-    image: foto-amar-min.jpg
+    image: amar.jpg
     email: amar.ramdas@asrr.nl
     linkedin: https://www.linkedin.com/in/amarramdas/
   - position: Front-End Lead Developer
@@ -40,7 +40,7 @@ members:
       Tenzij de klant natuurlijk iets anders in gedachte heeft, dan kan dat ook
       geregeld worden.
     website: https://www.linkedin.com/in/reangelojarvis/
-    image: dsc07311-1-min-min.jpg
+    image: re.jpg
     email: reangelo.jarvis@asrr.nl
     linkedin: https://www.linkedin.com/in/reangelojarvis/
   - name: Azat Arica
@@ -53,7 +53,7 @@ members:
       energiek team. Het was voor mij vanzelfsprekend dat ik daar onderdeel van
       uit wilde maken. Ik ben graag in contact met klanten en ik haal energie
       uit het maken van complexe applicaties.
-    image: foto-azat-min.jpg
+    image: azat.jpg
     alt: Azat
     email: azat.arica@asrr.nl
   - name: Lotte Boonstra
@@ -65,7 +65,7 @@ members:
       van het werk. Verder heb ik een achtergrond in Technische Natuurkunde,
       waardoor gestructureerd complexe problemen analyseren en oplossen
       uitdagingen zijn die ik niet uit de weg ga, ook niet bij ASRR.
-    image: linkedin-professionele-foto-min.jpg
+    image: lotte.jpg
     alt: Lotte
     email: lotte.boonstra@asrr.nl
     phone: "0627065319"
@@ -79,7 +79,7 @@ members:
       om ASRR samen administratief sterk te maken en een stevige fundering te
       leggen voor het snel groeiende bedrijf. ASRR is 'resilient' te noemen mede
       doordat er geen alledaagse - doch bekwame - bedrijfsvoering word beoefent.
-    image: foto-lis-min.jpg
+    image: lis.jpg
     alt: Lis
     email: lisabelle.sengonul@asrr.nl
   - name: Amit Ramdas
@@ -90,13 +90,13 @@ members:
       van kleding- en logodesign tot contactgegevens van potentiële klanten te
       vergaren en ze te contacteren. Daarnaast help ik met het promoten van ASRR
       op sociale media kanalen zoals LinkedIn.
-    image: foto-amit-min.jpg
+    image: amit.jpg
     alt: Amit
     email: amit.ramdas@asrr.nl
   - name: Elise Chandoe-Arica
     position: Chief-Editor
     website: https://www.linkedin.com/in/elise-chandoe-arica-083a61aa/
-    image: foto-elise-min.jpg
+    image: elise.jpg
     alt: Elise
   - name: Rayel Hardwarsing
     position: Back-End Developer / Senior Data Analyst
@@ -108,7 +108,7 @@ members:
       nature analytisch ingesteld en geïnteresseerd in het oplossen van complexe
       problemen. Dit komt zeker te pas bij ASRR, waar we altijd flexibele en
       robuuste oplossingen bieden aan de klant!
-    image: silhoutte-manier-2-man.jpg
+    image: man.jpg
     alt: "Silhouette "
   - name: Vanisha Oedayrajsingh Varma
     position: Medior Back-End Developer
@@ -116,8 +116,8 @@ members:
       en fixen van bugs en code waterdicht maken. Naast werken bij ASRR studeer
       ik Computer Science & Engineering aan TU Delft. Ik heb tijdens mijn studie
       veel vaardigheden opgedaan die ik met veel plezier kan toepassen bij ASRR.
-    image: anonieme-foto-vrouw-def..jpg
-    alt: "Silhouette "
+    image: vrouw.jpg
+    alt: "Silhouette"
     email: vanisha.varma@asrr.nl
   - name: Neil Alwani
     position: Junior Front-End Developer
@@ -128,11 +128,11 @@ members:
       Daarbij vind ik het ook leuk dat ik de kennis die ik heb opgedaan tijdens
       mijn bachelor kan toepassen in de praktijk.
     website: https://www.linkedin.com/in/neil-alwani-a1b9a2182/
-    image: silhoutte-manier-2-man.jpg
-    alt: "Silhouette "
+    image: man.jpg
+    alt: "Silhouette"
     email: neil.alwani@asrr.nl
   - name: Annabelle Machiels
-    image: anonieme-foto-vrouw-def..jpg
+    image: vrouw.jpg
     position: Designer
     alt: Silhouette
     email: annabelle.machiels@asrr.nl

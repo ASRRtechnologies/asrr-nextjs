@@ -4,6 +4,7 @@ import matter from 'gray-matter';
 import { getAllArticles, getAllNews, getAllTutorials } from '../lib/api';
 import PageLayout from '@/modules/shared/layout/PageLayout';
 import Banner from '@/modules/shared/landing/Banner';
+import SearchFilter from '@/modules/shared/search/SearchFilter';
 
 const SEOProps = {
   title: 'ASRR - Blog',
@@ -21,7 +22,10 @@ function Blog({ content, allBlogs }) {
         {...content.landing}
         image={`${basePath}/${content.landing.image}`}
       />
-      <BlogPage data={content} allBlogs={allBlogs} />
+      <SearchFilter
+        searchItems={allBlogs}
+        render={(searchItems) => <BlogPage searchItems={searchItems} />}
+      />
     </PageLayout>
   );
 }
