@@ -12,7 +12,7 @@ info:
   client: ASRR
   author: Lotte Boonstra
   tags:
-    - center
+    - left
 card:
   title: "Waarom hybride werken iets positiefs is "
   text: "Door de coronapandemie hebben veel bedrijven zich in een korte tijd
@@ -23,7 +23,7 @@ card:
   alt: Working from home
 landing:
   title: Working remote
-  image: nick-morrison-fhnnjk1yj7y-unsplash.jpg
+  image: dsc09388-1-min.jpg
   alt: Working from home
 section:
   - content: >-
