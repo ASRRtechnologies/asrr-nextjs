@@ -9,8 +9,6 @@ type: artikel
 info:
   date: January 13, 2021 4:30 PM
   author: Amar Ramdas
-  tags:
-    - left
 card:
   title: Kunnen microservices tijd en moeite besparen?
   image: microservices-min.jpg

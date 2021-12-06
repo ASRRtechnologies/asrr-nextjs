@@ -12,8 +12,6 @@ info:
   client: HES International
   author: Amar Ramdas
   preview: true
-  tags:
-    - left
 card:
   title: Van Excel sheet naar Enterprise Applicatie
   image: case-image.png

@@ -197,7 +197,7 @@ collections:
             name: "tags"
             widget: "select"
             multiple: true
-            options: ["left", "center", "right"]
+            options: ["C#", "Java", "Kotlin", "JavaScript", "TypeScript", "Spring Boot", "Database", "Kubernetes", "Docker", "ReactJS", "React Native", "Linux", "PlayCanvas", "Python", "C++", "Microsoft Azure", "SQL", "NextJs", "Duurzaamheid", "Bouw", "Innovatie", "Logistiek", "Kernwaardes", "Ontwikkeling", "Remote", "Review", "Business", "Visie", "Tips", "Tutorials", "Nieuws", "Software", "Hardware", "ITTAAS", "Maatwerk", "Analytics", "Webapplicatie", "Mobiele App", "Server", "Dashboard", "Remote Desktop", "Applicatie", "Consultancy", "Front-End", "Back-End", "Full-Stack"]
       - label: "Case Card"
         name: "card"
         widget: "object"

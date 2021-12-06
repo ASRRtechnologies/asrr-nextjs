@@ -12,8 +12,6 @@ info:
   client: Heijmans
   author: Re-Angelo Jarvis
   preview: true
-  tags:
-    - left
 card:
   title: Heijmans/FORM 3D Woonconfigurator
   text: "Voorheen was de architect uren bezig met het verwerken van optielijsten

@@ -12,8 +12,6 @@ info:
   date: November 8, 2021 5:52 PM
   client: ASRR
   author: Lotte Boonstra
-  tags:
-    - left
 card:
   title: Cosmos
   text: ASRR is begonnen met het ontwikkelen van Cosmos! Momenteel ontbreekt in
