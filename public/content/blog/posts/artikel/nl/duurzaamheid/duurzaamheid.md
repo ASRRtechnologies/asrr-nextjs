@@ -10,8 +10,6 @@ info:
   date: September 9, 2021 12:00 AM
   author: Lotte Boonstra
   client: ASRR
-  tags:
-    - center
 card:
   title: Duurzaamheid
   text: "Ben jij al bekend met de drie P's en denk jij wel eens na over wat de

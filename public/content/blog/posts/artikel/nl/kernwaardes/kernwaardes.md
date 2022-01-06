@@ -14,8 +14,6 @@ info:
     - tag: Innovation
   technologies: []
   preview: false
-  tags:
-    - left
 card:
   title: Kernwaardes van ASRR
   text: De kernwaardes van ASRR zijn innovatie, constant improvement, co-makership

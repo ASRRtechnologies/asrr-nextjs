@@ -12,8 +12,6 @@ info:
   date: October 18, 2021 3:17 PM
   client: ASRR
   author: Lotte Boonstra
-  tags:
-    - left
 card:
   title: Fotoshoot en lunch bij ASRR
   text: Terug na weggeweest! De combinatie van grotendeels remote werken en de

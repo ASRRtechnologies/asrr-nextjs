@@ -11,8 +11,6 @@ info:
   date: September 28, 2021 12:29 PM
   client: ASRR
   author: Lotte Boonstra
-  tags:
-    - left
 card:
   title: "Waarom hybride werken iets positiefs is "
   text: "Door de coronapandemie hebben veel bedrijven zich in een korte tijd

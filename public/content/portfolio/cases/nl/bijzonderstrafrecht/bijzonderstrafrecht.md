@@ -11,8 +11,6 @@ info:
   date: October 4, 2021 5:43 PM
   client: BijzonderStrafrecht
   author: Lotte Boonstra
-  tags:
-    - left
 card:
   title: Dedicated podcast app
   text: "Podcasts worden steeds populairder en gewilder. Het is een goede manier

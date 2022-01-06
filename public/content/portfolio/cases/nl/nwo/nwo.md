@@ -10,8 +10,6 @@ info:
   date: January 9, 2021 9:58 PM
   client: Nord-West Oelleitung
   author: Re-Angelo Jarvis
-  tags:
-    - center
 card:
   title: De bouw van een veilige, krachtige Remote Desktop Server
   image: computer-desktop-windows-square.jpg

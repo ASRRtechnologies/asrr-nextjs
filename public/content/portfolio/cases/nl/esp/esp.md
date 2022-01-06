@@ -12,8 +12,6 @@ info:
   date: May 6, 2020 12:00 AM
   client: ESP Consultancy
   author: Amar Ramdas
-  tags:
-    - left
 card:
   title: Een professionele, nieuwe website
   image: esp-cover.jpg
