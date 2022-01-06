@@ -93,11 +93,6 @@ members:
     image: amit.jpg
     alt: Amit
     email: amit.ramdas@asrr.nl
-  - name: Elise Chandoe-Arica
-    position: Chief-Editor
-    website: https://www.linkedin.com/in/elise-chandoe-arica-083a61aa/
-    image: elise.jpg
-    alt: Elise
   - name: Rayel Hardwarsing
     position: Back-End Developer / Senior Data Analyst
     website: https://www.linkedin.com/in/rayelhardwarsing/
@@ -117,7 +112,7 @@ members:
       ik Computer Science & Engineering aan TU Delft. Ik heb tijdens mijn studie
       veel vaardigheden opgedaan die ik met veel plezier kan toepassen bij ASRR.
     image: vrouw.jpg
-    alt: "Silhouette"
+    alt: Silhouette
     email: vanisha.varma@asrr.nl
   - name: Neil Alwani
     position: Junior Front-End Developer
@@ -129,11 +124,17 @@ members:
       mijn bachelor kan toepassen in de praktijk.
     website: https://www.linkedin.com/in/neil-alwani-a1b9a2182/
     image: man.jpg
-    alt: "Silhouette"
+    alt: Silhouette
     email: neil.alwani@asrr.nl
   - name: Annabelle Machiels
     image: vrouw.jpg
     position: Designer
     alt: Silhouette
     email: annabelle.machiels@asrr.nl
+    story: Ik ben Annabelle Machiels en ik ben werkzaam bij ASRR als grafisch
+      ontwerper. Mijn doel is om alles zo helder en strak mogelijk te
+      visualiseren, terwijl het pakkend en opvallend blijft. In de tijd dat ik
+      hier werk is het mij opgevallen hoe hecht en vooruitstrevend het team is.
+      Ik kijk uit naar alle nieuwe en uitdagende projecten die onze weg op
+      zullen komen.
 ---
