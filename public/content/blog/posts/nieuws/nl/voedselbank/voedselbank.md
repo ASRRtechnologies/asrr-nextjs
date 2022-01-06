@@ -18,7 +18,7 @@ info:
 card:
   title: Help de voedselbank!
   text: "Transformeer jouw oude elektronica tot een warme maaltijd en help de
-    voedselbank. Bijna 10% van Nederland is afhankelijk van de voedselbank. Om
+    voedselbank. Bijna 1% van Nederland is afhankelijk van de voedselbank. Om
     die reden is ASRR een inzamelactie gestart, waarbij bedrijven en
     particulieren hun oude elektronica kunnen doneren. "
   image: microsoftteams-image-17-min.png
