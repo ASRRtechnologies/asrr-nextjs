@@ -38,7 +38,7 @@ section:
        Daarom starten wij een inzamelactie van oude elektronica. De opbrengst van de inzamelactie wordt gedoneerd aan de voedselbank. 
 
 
-      In Nederland zijn er ruim 160.500 mensen afhankelijk van de voedselbank. Dat is bijna 10% van de Nederlandse bevolking. Om die reden is het van groot belang om de voedselbank te steunen. 
+      In Nederland zijn er ruim 160.500 mensen afhankelijk van de voedselbank. Dat is bijna 1% van de Nederlandse bevolking. Om die reden is het van groot belang om de voedselbank te steunen. 
 
 
       Door te doneren steun je niet alleen een goed doel, maar draag je ook bij aan een circulaire economie. 
