@@ -72,5 +72,6 @@ section:
     media:
       images:
         - image: microsoftteams-image-17-min.png
-          description: Poster
+          description: Informatie inzamelactie voedselbank. Gemaakt door Annabelle Machiels.
+          alt: Poster
 ---
