@@ -93,11 +93,6 @@ members:
     image: amit.jpg
     alt: Amit
     email: amit.ramdas@asrr.nl
-  - name: Elise Chandoe-Arica
-    position: Chief-Editor
-    website: https://www.linkedin.com/in/elise-chandoe-arica-083a61aa/
-    image: elise.jpg
-    alt: Elise
   - name: Rayel Hardwarsing
     position: Back-End Developer / Senior Data Analyst
     website: https://www.linkedin.com/in/rayelhardwarsing/
