@@ -163,9 +163,6 @@ paragraphs:
       *''Get it done.''* 
 
 
-      Kort stuk
-
-
       Efficiëntie is binnen elk vakgebied belangrijk, maar vooral binnen de IT wil je niet elke keer het wiel opnieuw uitvinden. ASRR werkt om die reden niet met “klassieke software”, maar met microservices. Microservices zijn standaard bouwstenen waar wij applicaties mee opbouwen. Dit maakt onze oplossingen robuust en schaalbaar.
   - content: >-
       # Wie is ASRR?
