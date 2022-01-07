@@ -119,6 +119,9 @@ paragraphs:
       ASRR onderscheidt zich door zijn moderne werkmethode. Wij beginnen met een geheel vrijblijvende procesanalyse, waardoor er echt duidelijk wordt wat jij nodig hebt en wij een passende oplossing kunnen leveren. Vervolgens staat er een team van specialisten klaar om met die passende oplossing aan de slag te gaan. “Co-makership” heeft hierin een centrale rol.
 
 
+      Ons team opereert via onze ITTAAS-methode.
+
+
       Wij houden ons bezig met “innovatie” en gebruiken de nieuwste technologiën, hierdoor heeft de klant gegarandeerd een snelle, duurzame en gebruiksvriendelijke oplossing. Om jouw producten snel, duurzaam en gebruiksvriendelijk te houden is er “constant improvement” nodig. Het is belangrijk om te blijven verbeteren, hierdoor blijft jouw applicatie up-to-date en betrouwbaar op de lange termijn.
 
 
@@ -163,12 +166,12 @@ paragraphs:
       *''Get it done.''* 
 
 
-      Efficiëntie is binnen elk vakgebied belangrijk, maar vooral binnen de IT wil je niet elke keer het wiel opnieuw uitvinden. ASRR werkt om die reden niet met “klassieke software”, maar met microservices. Microservices zijn standaard bouwstenen waar wij applicaties mee opbouwen. Dit maakt onze oplossingen robuust en schaalbaar.
+      Efficiëntie is binnen elk vakgebied belangrijk, maar vooral binnen de IT wil je niet elke keer het wiel opnieuw uitvinden. ASRR werkt om die reden niet met “klassieke software”, maar met [microservices](https://asrr.nl/blog/artikel/microservices). Microservices zijn standaard bouwstenen waar wij applicaties mee opbouwen. Dit maakt onze oplossingen robuust en schaalbaar.
   - content: >-
       # Wie is ASRR?
 
 
-      Bij ASRR zijn er een aantal eigenschappen die wij belangrijk vinden om terug te zien in onze teamleden. Dat is niet zo zeer jarenlange ervaring, maar meer potentie en het vermogen om complexe problemen op te lossen. Wij hebben gemerkt dat mensen met deze eigenschappen een enorme groei meemaken bij ASRR, doordat zij de vrijheid hebben om zichzelf verder te ontwikkelen. Dit is voordelig voor de klant, omdat wij mensen aanbieden die gedreven zijn, snel nieuwe dingen oppakken en gewend zijn aan een uitdaging. Klik hier om een kijkje te nemen bij ons Team.
+      Bij ASRR zijn er een aantal eigenschappen die wij belangrijk vinden om terug te zien in onze teamleden. Dat is niet zo zeer jarenlange ervaring, maar meer potentie en het vermogen om complexe problemen op te lossen. Wij hebben gemerkt dat mensen met deze eigenschappen een enorme groei meemaken bij ASRR, doordat zij de vrijheid hebben om zichzelf verder te ontwikkelen. Dit is voordelig voor de klant, omdat wij mensen aanbieden die gedreven zijn, snel nieuwe dingen oppakken en gewend zijn aan een uitdaging. Klik [hier](https://asrr.nl/team) om een kijkje te nemen bij ons Team.
   - content: |-
       # Waar is ASRR?
 
