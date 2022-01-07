@@ -13,7 +13,12 @@ info:
   title: IT Teams as a Service (ITTAAS)
   author: Amar Ramdas
   client: ASRR
-  preview: true
+  preview: false
+  tags:
+    - ITTAAS
+    - Maatwerk
+    - Consultancy
+    - Full-Stack
 card:
   title: IT Teams as a Service (ITTAAS)
   text: >
