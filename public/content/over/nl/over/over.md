@@ -5,7 +5,7 @@ meta_tags:
   title: Over ASRR
   text: "Benieuwd naar alle ins and outs van ASRR, lees dan de over ons pagina.
     Hier vind je nuttige informatie zoals: wat doet ASRR, hoe is ASRR ontstaan,
-    waarom ASRR en meer!"
+    waarom ASRR en veel meer!"
 landing:
   title: Over ASRR
   text: ASRR is een jong, dynamisch en innovatief softwarebedrijf. Wij zijn
