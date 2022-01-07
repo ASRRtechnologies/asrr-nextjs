@@ -119,10 +119,10 @@ paragraphs:
       ASRR onderscheidt zich door zijn moderne werkmethode. Wij beginnen met een geheel vrijblijvende procesanalyse, waardoor er echt duidelijk wordt wat jij nodig hebt en wij een passende oplossing kunnen leveren. Vervolgens staat er een team van specialisten klaar om met die passende oplossing aan de slag te gaan. “Co-makership” heeft hierin een centrale rol.
 
 
-      Wij houden ons bezig met “innovatie” en gebruiken alleen maar de nieuwste technologiën, hierdoor heeft de klant gegarandeerd een snel, duurzaam en gebruiksvriendelijk product. Om jouw producten snel, duurzaam en gebruiksvriendelijk te houden is er “constant improvement” nodig. Het is belangrijk om te blijven verbeteren, hierdoor blijft jouw applicatie up-to-date en betrouwbaar op de lange termijn.
+      Wij houden ons bezig met “innovatie” en gebruiken de nieuwste technologiën, hierdoor heeft de klant gegarandeerd een snelle, duurzame en gebruiksvriendelijke oplossing. Om jouw producten snel, duurzaam en gebruiksvriendelijk te houden is er “constant improvement” nodig. Het is belangrijk om te blijven verbeteren, hierdoor blijft jouw applicatie up-to-date en betrouwbaar op de lange termijn.
 
 
-      Verder vinden wij het belangrijk om dit zo effectief mogelijk te doen. Dit doen wij door te werken met microservices. Dat zijn schaalbare, modulaire bouwsteentjes waaruit wij onze producten opbouwen. Hierdoor heeft de klant een product dat snel tot stand komt met alle voordelen maatwerk.
+      Verder vinden wij het belangrijk om dit zo effectief mogelijk te doen. Dit doen wij door te werken met microservices. Dat zijn schaalbare, modulaire bouwsteentjes waaruit wij onze producten opbouwen. Hierdoor heeft de klant een product dat snel tot stand komt met alle voordelen van maatwerk.
   - content: >-
       # Waarom ASRR
 
