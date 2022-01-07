@@ -16,7 +16,7 @@ landing:
     gespecialiseerd in het ontwikkelen van Software- en Hardware op maat, het
     aanbieden van Business Analytics and Insights en het aanbieden van IT-Teams
     as a Service (ITTAAS).
-  image: dsc09408.jpg
+  image: DSC09408-min.jpg
 image: dsc00185.jpg
 section:
   - content: >-
@@ -41,6 +41,10 @@ section:
 
 
       De interesses en passies van de oprichters liepen echter uiteen, waardoor Amar Ramdas is opgetreden als eigenaar en Managing Director. Ré-Angelo Jarvis is nog steeds werkzaam bij ASRR als Front-End Lead Developer. Satyam Mohan en Rayel Hardwarsing zijn uiteindelijk een ander pad ingeslagen. Ondanks dat de vier oprichters niet allemaal meer samenwerken, zijn zij tot op de dag van vandaag nog steeds vrienden.
+    media:
+      images:
+        - image: DSC07258-min.jpg
+          alt: ASRR sign 
   - content: >-
       #Wat is onze werkmethode
 
@@ -52,11 +56,18 @@ section:
 
 
       Verder vinden wij het belangrijk om dit zo effectief mogelijk te doen. Dit doen wij door te werken met microservices. Dat zijn schaalbare, modulaire bouwsteentjes waaruit wij onze producten opbouwen. Hierdoor heeft de klant een product dat snel tot stand komt met alle voordelen maatwerk.
+    media:
+      images:
+        - image: DSC09400 (1)-min.jpg
+          alt: ASRR sign 
   - content: >-
       # Wie is ASRR
 
 
-      Bij ASRR zijn er een aantal eigenschappen die wij belangrijk vinden om terug te zien in onze teamleden. Dat is niet zo zeer jarenlange ervaring, maar meer potentie en het vermogen om complexe problemen op te lossen. Wij hebben gemerkt dat mensen met deze eigenschappen een enorme groei meemaken bij ASRR, doordat zij de vrijheid hebben om zichzelf verder te ontwikkelen. Dit is voordelig voor de klant, omdat wij mensen aanbieden die gedreven zijn, snel nieuwe dingen oppakken en gewend zijn aan een uitdaging. Klik hier om een kijkje te nemen bij ons Team.
-      
+      Bij ASRR zijn er een aantal eigenschappen die wij belangrijk vinden om terug te zien in onze teamleden. Dat is niet zo zeer jarenlange ervaring, maar meer potentie en het vermogen om complexe problemen op te lossen. Wij hebben gemerkt dat mensen met deze eigenschappen een enorme groei meemaken bij ASRR, doordat zij de vrijheid hebben om zichzelf verder te ontwikkelen. Dit is voordelig voor de klant, omdat wij mensen aanbieden die gedreven zijn, snel nieuwe dingen oppakken en gewend zijn aan een uitdaging. Klik [hier](https://asrr.nl/team) om een kijkje te nemen bij ons Team.
+    media:
+      images:
+        - image: DSC09392-min.jpg
+          alt: Co-workers     
 
 ---
