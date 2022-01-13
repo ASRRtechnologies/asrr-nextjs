@@ -28,10 +28,10 @@ section:
       #Hoe is ASRR ontstaan
 
 
-      ASRR is begonnen als een hobby van vier vrienden, maar wat begon als een uit de hand gelopen hobby eindigde al snel in een innovatief en snelgroeiend bedrijf.   
+      ASRR is begonnen als een hobby van vier vrienden, maar wat begon als een uit de hand gelopen hobby groeide al snel uit tot een innovatief en snelgroeiend bedrijf.   
       
 
-      Elk bedrijf begint onderaan. Onderaan voor ASRR was ingevulde website templates verkopen. De vrienden waren echter leergierig en vast beraden, dus de website templates ontwikkelde zich tot high-end websites. ASRR doet inmiddels zo veel meer dan websites maken.
+      Elk bedrijf begint onderaan. Onderaan was voor ASRR simpele websites maken. De vrienden waren echter leergierig en vast beraden, dus de simpele websites ontwikkelde zich al snel tot high-end websites. ASRR doet inmiddels zo veel meer dan websites maken.
       
 
       ASRR is een echte pionier in software geworden waarbij de mentaliteit van: “Ik heb het nog nooit gedaan, dus ik denk dat ik het wel kan” centraal staat en tot nu toe nog nooit heeft gefaald.
@@ -40,7 +40,7 @@ section:
       De naam ASRR is een combinatie van de voorletters van de oprichters. De A staat voor Amar Ramdas. De S staat voor Satyam Mohan. De eerste R staat voor Ré-Angelo Jarvis. De laatste R staat voor Rayel Hardwarsing.
 
 
-      De interesses en passies van de oprichters liepen echter uiteen, waardoor Amar Ramdas is opgetreden als eigenaar en Managing Director. Ré-Angelo Jarvis is nog steeds werkzaam bij ASRR als Front-End Lead Developer. Satyam Mohan en Rayel Hardwarsing zijn uiteindelijk een ander pad ingeslagen. Ondanks dat de vier oprichters niet allemaal meer samenwerken, zijn zij tot op de dag van vandaag nog steeds vrienden.
+      De interesses en passies van de oprichters liepen echter uiteen, waardoor Amar Ramdas is opgetreden als eigenaar en Managing Director. Ré-Angelo Jarvis is nog steeds werkzaam bij ASRR als Front-End Lead Developer. Satyam Mohan en Rayel Hardwarsing zijn uiteindelijk een ander pad ingeslagen. Ondanks dat de vier oprichters niet allemaal meer samenwerken, zijn zij tot op de dag van vandaag nog steeds goede vrienden.
     media:
       images:
         - image: DSC07258-min.jpg
@@ -67,7 +67,7 @@ section:
       Bij ASRR zijn er een aantal eigenschappen die wij belangrijk vinden om terug te zien in onze teamleden. Dat is niet zo zeer jarenlange ervaring, maar meer potentie en het vermogen om complexe problemen op te lossen. Wij hebben gemerkt dat mensen met deze eigenschappen een enorme groei meemaken bij ASRR, doordat zij de vrijheid hebben om zichzelf verder te ontwikkelen. Dit is voordelig voor de klant, omdat wij mensen aanbieden die gedreven zijn, snel nieuwe dingen oppakken en gewend zijn aan een uitdaging. Klik [hier](https://asrr.nl/team) om een kijkje te nemen bij ons Team.
     media:
       images:
-        - image: DSC09392-min.jpg
+        - image: DSC09389-min.jpg
           alt: Co-workers     
 
 ---
