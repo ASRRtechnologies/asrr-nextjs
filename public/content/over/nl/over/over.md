@@ -16,7 +16,7 @@ landing:
     gespecialiseerd in het ontwikkelen van Software- en Hardware op maat, het
     aanbieden van Business Analytics and Insights en het aanbieden van IT-Teams
     as a Service (ITTAAS).
-  image: DSC09408-min.jpg
+  image: dsc09408-min-1-.jpg
 image: dsc00185.jpg
 section:
   - content: >-
