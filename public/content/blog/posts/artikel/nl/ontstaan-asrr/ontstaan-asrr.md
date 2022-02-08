@@ -22,7 +22,7 @@ card:
   alt: Amar
 landing:
   title: Vision to innovation
-  image: dsc09395-1-.jpg
+  image: dsc07258.jpg
   alt: Amar
 section:
   - content: >-
