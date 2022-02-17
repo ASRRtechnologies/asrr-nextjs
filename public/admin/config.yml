@@ -594,7 +594,7 @@ collections:
         name: "paragraphs"
         widget: "list"
         fields:
-          - { label: "Content", name: "content", widget: "markdown" }\
+          - { label: "Content", name: "content", widget: "markdown" }
   - label: "Vacatures"
     name: "vacatures"
     identifier_field: slug
