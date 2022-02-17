@@ -20,8 +20,4 @@ section:
       test
       images:
         - image: DSC07258-min.jpg
-          alt: ASRR sign 
-paragraphs:
-  - content: Testtttttttttt
-  - content: wwwwwwwwwwwwwwwwwwwwwedffwqf
----
+          alt: ASRR sign
