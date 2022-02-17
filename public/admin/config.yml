@@ -607,7 +607,7 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Filename", name: "title", widget: "string", default: "over" }
+      - { label: "Filename", name: "title", widget: "string", default: "vacatures" }
       - label: "Meta tags"
         name: "meta_tags"
         widget: "object"
