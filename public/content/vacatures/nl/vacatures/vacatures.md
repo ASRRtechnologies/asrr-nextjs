@@ -14,7 +14,7 @@ landing:
   image: dsc09408-min-1-.jpg
 image: dsc00185.jpg
 section:
-  - content: |-
+  - content: 
       # Vacatures
 
       test
