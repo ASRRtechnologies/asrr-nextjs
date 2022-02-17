@@ -17,13 +17,7 @@ landing:
 image: dsc00185.jpg
 section:
   - content: >-
-      # Vacature front-end developer 
-
-
-      Wordt jij onze nieuwe collega? 
-
-
-       
+      # Vacature front-end developer  
 
 
       ## Wie zijn wij? 
@@ -69,11 +63,6 @@ section:
       Ben je geïnteresseerd? Stuur dan jouw CV en een korte motivatie naar [recruitment@asrr.nl](mailto:recruitment@asrr.nl) en wie weet ben jij onze nieuwe aanwinst.
   - content: >-
       # Vacature back-end developer 
-
-
-      Wordt jij onze nieuwe collega? 
-
-
 
 
       ## Wie zijn wij? 
