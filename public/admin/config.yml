@@ -590,11 +590,34 @@ collections:
           - {label: "Text", name: "text", widget: "string", required: false}
           - {label: "Image", name: "image", widget: "image", required: false}
           - {label: "Image Alt", name: "alt", widget: "string", required: false}
-      - label: "Paragraphs"
-        name: "paragraphs"
+      - label: "About Us"
+        name: "section"
         widget: "list"
+        required: false
         fields:
           - { label: "Content", name: "content", widget: "markdown" }
+          - label: "Media"
+            name: "media"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Image"
+                name: "images"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Image Alt", name: "alt", widget: "string", required: false }
+                  - { label: "Image Description", name: "description", widget: "text", required: false }
+                  - { label: "Image Reference", name: "reference", widget: "text", required: false }
+              - label: "Videos"
+                name: "videos"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Video", name: "video", widget: "file", required: false }
+                  - { label: "Video Description", name: "video_description", widget: "string", required: false }
+                  - { label: "Video Reference", name: "video_reference", widget: "string", required: false }
   - label: "Vacatures"
     name: "vacatures"
     identifier_field: slug
@@ -622,9 +645,32 @@ collections:
           - { label: "Text", name: "text", widget: "string", required: false }
           - { label: "Image", name: "image", widget: "image", required: false }
           - { label: "Image Alt", name: "alt", widget: "string", required: false }
-      - label: "Paragraphs"
-        name: "paragraphs"
+      - label: "Vacatures"
+        name: "section"
         widget: "list"
+        required: false
         fields:
           - { label: "Content", name: "content", widget: "markdown" }
+          - label: "Media"
+            name: "media"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Image"
+                name: "images"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Image Alt", name: "alt", widget: "string", required: false }
+                  - { label: "Image Description", name: "description", widget: "text", required: false }
+                  - { label: "Image Reference", name: "reference", widget: "text", required: false }
+              - label: "Videos"
+                name: "videos"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Video", name: "video", widget: "file", required: false }
+                  - { label: "Video Description", name: "video_description", widget: "string", required: false }
+                  - { label: "Video Reference", name: "video_reference", widget: "string", required: false }
 
