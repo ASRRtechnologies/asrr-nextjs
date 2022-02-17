@@ -73,16 +73,14 @@ section:
 
       Bij ASRR zijn wij niet zo zeer opzoek naar jarenlange ervaring, maar naar potentie en het vermogen om complexe problemen op te lossen. Bij ASRR leer je programmeren op enterprise niveau. 
 
-
-
+       
 
       ## Wie zoeken wij? 
 
 
       Wij zijn op zoek naar een enthousiaste, gedreven back-end developer om ons team te vervolledigen.  Als back- end developer zal je onder andere te maken krijgen met: Java, Kotlin, Spring boot en C#. 
 
-
-
+       
 
       ## Wat bieden wij? 
 
