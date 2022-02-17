@@ -594,4 +594,37 @@ collections:
         name: "paragraphs"
         widget: "list"
         fields:
+          - { label: "Content", name: "content", widget: "markdown" }\
+  - label: "Vacatures"
+    name: "vacatures"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/vacatures"
+    path: '{{language}}/{{title}}/{{slug}}'
+    slug: '{{title}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
+      - { label: "Filename", name: "title", widget: "string", default: "over" }
+      - label: "Meta tags"
+        name: "meta_tags"
+        widget: "object"
+        fields:
+          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
+          - { label: "Text (search engine text)", name: "text", widget: "text", required: true }
+      - label: "Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text", name: "text", widget: "string", required: false }
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Image Alt", name: "alt", widget: "string", required: false }
+      - label: "Paragraphs"
+        name: "paragraphs"
+        widget: "list"
+        fields:
           - { label: "Content", name: "content", widget: "markdown" }
+
