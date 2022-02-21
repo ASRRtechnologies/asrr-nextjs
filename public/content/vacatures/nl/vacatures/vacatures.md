@@ -10,7 +10,7 @@ info:
   author: Lotte Boonstra
   client: ASRR
 landing:
-  title: "Ready to innovate? "
+  title: Lets innovate
   text: Op deze pagina staan alle vacatures van ASRR. Wordt jij onze nieuwe collega?
   image: dsc09400-1-min.jpg
   alt: vacature ASRR front-end en back-end developers
@@ -28,14 +28,12 @@ section:
 
       Bij ASRR zijn wij niet zo zeer opzoek naar jarenlange ervaring, maar naar potentie en het vermogen om complexe problemen op te lossen. Bij ASRR leer je programmeren op enterprise niveau.  
 
-       
 
       ## Wie zoeken wij? 
 
 
       Wij zijn op zoek naar een enthousiaste, gedreven front-end developer om ons team te vervolledigen.  Als front-end developer zal je onder andere te maken krijgen met: Javascript, Typescript, React JS en Next JS.  
 
-       
 
       ## Wat bieden wij? 
 
@@ -52,13 +50,10 @@ section:
       ✓ Thuiswerken of op kantoor (keuze ligt bij jou) 
 
 
-       
-
-
       ## Hoe kom je in contact? 
 
 
-      Ben je geïnteresseerd? Stuur dan jouw CV en een korte motivatie naar [recruitment@asrr.nl](mailto:recruitment@asrr.nl) en wie weet ben jij onze nieuwe aanwinst.
+      Ben je geïnteresseerd? Stuur dan jouw CV en een korte motivatie naar [recruitment@asrr.nl](mailto:recruitment@asrr.nl) en wie weet ben jij onze nieuwe aanwinst ⭐️.
   - content: >-
       # Vacature back-end developer 
 
@@ -71,14 +66,12 @@ section:
 
       Bij ASRR zijn wij niet zo zeer opzoek naar jarenlange ervaring, maar naar potentie en het vermogen om complexe problemen op te lossen. Bij ASRR leer je programmeren op enterprise niveau. 
 
-       
 
       ## Wie zoeken wij? 
 
 
       Wij zijn op zoek naar een enthousiaste, gedreven back-end developer om ons team te vervolledigen.  Als back- end developer zal je onder andere te maken krijgen met: Java, Kotlin, Spring boot en C#. 
 
-       
 
       ## Wat bieden wij? 
 
@@ -95,11 +88,8 @@ section:
       ✓ Thuiswerken of op kantoor (keuze ligt bij jou) 
 
 
-        
-
-
       ## Hoe kom je in contact? 
 
 
-      Ben je geïnteresseerd? Stuur dan jouw CV en een korte motivatie naar [recruitment@asrr.nl](mailto:recruitment@asrr.nl) en wie weet ben jij onze nieuwe aanwinst.
+      Ben je geïnteresseerd? Stuur dan jouw CV en een korte motivatie naar [recruitment@asrr.nl](mailto:recruitment@asrr.nl) en wie weet ben jij onze nieuwe aanwinst ⭐️.
 ---
