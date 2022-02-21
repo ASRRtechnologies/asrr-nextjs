@@ -53,7 +53,7 @@ section:
       ## Hoe kom je in contact? 
 
 
-      Ben je geïnteresseerd? Stuur dan jouw CV en een korte motivatie naar [recruitment@asrr.nl](mailto:recruitment@asrr.nl) en wie weet ben jij onze nieuwe aanwinst ⭐️.
+      Ben je geïnteresseerd? Stuur dan jouw CV en een korte motivatie naar [recruitment@asrr.nl](mailto:recruitment@asrr.nl) en wie weet ben jij onze nieuwe aanwinst ✨.
   - content: >-
       # Vacature back-end developer 
 
@@ -91,5 +91,5 @@ section:
       ## Hoe kom je in contact? 
 
 
-      Ben je geïnteresseerd? Stuur dan jouw CV en een korte motivatie naar [recruitment@asrr.nl](mailto:recruitment@asrr.nl) en wie weet ben jij onze nieuwe aanwinst ⭐️.
+      Ben je geïnteresseerd? Stuur dan jouw CV en een korte motivatie naar [recruitment@asrr.nl](mailto:recruitment@asrr.nl) en wie weet ben jij onze nieuwe aanwinst ✨.
 ---
