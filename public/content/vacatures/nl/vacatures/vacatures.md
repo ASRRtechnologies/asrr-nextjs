@@ -38,16 +38,16 @@ section:
       ## Wat bieden wij? 
 
 
-      ✓ Leren programmeren met state-of-the art technieken, slimme werkwijzen op enterprise niveau 
+      ✓ Leren programmeren met state-of-the art technieken, slimme werkwijzen op enterprise niveau ⭐️
 
 
-      ✓ Innovatieve opdrachten die direct impact hebben 
+      ✓ Innovatieve opdrachten die direct impact hebben 💡
 
 
-      ✓ Flexibele werktijden   
+      ✓ Flexibele werktijden ⏰
 
 
-      ✓ Thuiswerken of op kantoor (keuze ligt bij jou) 
+      ✓ Thuiswerken of op kantoor (keuze ligt bij jou) 💻
 
 
       ## Hoe kom je in contact? 
@@ -76,16 +76,16 @@ section:
       ## Wat bieden wij? 
 
 
-      ✓ Leren programmeren met state-of-the art technieken, slimme werkwijzen op enterprise niveau 
+      ✅ Leren programmeren met state-of-the art technieken, slimme werkwijzen op enterprise niveau ⭐️
 
 
-      ✓ Innovatieve opdrachten die direct impact hebben 
+      ✅ Innovatieve opdrachten die direct impact hebben 💡
 
 
-      ✓ Flexibele werktijden  
+      ✅ Flexibele werktijden ⏰
 
 
-      ✓ Thuiswerken of op kantoor (keuze ligt bij jou) 
+      ✅ Thuiswerken of op kantoor (keuze ligt bij jou) 💻
 
 
       ## Hoe kom je in contact? 
