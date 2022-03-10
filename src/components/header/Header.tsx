@@ -3,10 +3,10 @@ import Link from './Link';
 import styled from '@emotion/styled';
 import Logo from './Logo';
 import Button from '@/modules/shared/buttons/Button';
-import { navigationPaths } from '../../../../data/paths';
-import { useTheme } from '@/../context/theme/ThemeContext';
+import { navigationPaths } from '../../data/paths';
+import { useTheme } from '../../context/theme/ThemeContext';
 import headerStyles from './header.module.scss';
-import DarkMode from '@/modules/shared/header/DarkMode';
+import DarkMode from '@/header/DarkMode';
 
 type HeaderStyle = {
   visible: boolean;

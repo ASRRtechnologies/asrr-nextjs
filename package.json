@@ -63,7 +63,14 @@
     "sass": "^1.43.2",
     "sharp": "^0.29.1",
     "simple-oauth2": "^4.2.0",
-    "type-fest": "^2.5.0"
+    "type-fest": "^2.5.0",
+    "@mantine/core": "^3.6.5",
+    "@mantine/dates": "^3.6.5",
+    "@mantine/dropzone": "^3.6.5",
+    "@mantine/hooks": "^3.6.5",
+    "@mantine/modals": "^3.6.5",
+    "@mantine/next": "^3.6.5",
+    "@mantine/notifications": "^3.6.5"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.14.1",

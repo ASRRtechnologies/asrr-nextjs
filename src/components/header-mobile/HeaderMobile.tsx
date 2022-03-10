@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Link from './Link';
+import Link from '../header/Link';
 import styled from '@emotion/styled';
-import Logo from './Logo';
-import { navigationPaths } from '../../../../data/paths';
-import { useTheme } from '@/../context/theme/ThemeContext';
+import Logo from '../header/Logo';
+import { navigationPaths } from '../../data/paths';
+import { useTheme } from '../../context/theme/ThemeContext';
 import headerStyles from './mobileHeader.module.scss';
-import DarkMode from '@/modules/shared/header/DarkMode';
-import HamburgerMenu from '@/modules/shared/header/HamburgerMenu';
+import DarkMode from '@/header/DarkMode';
+import HamburgerMenu from '@/header-mobile/HamburgerMenu';
 
 type HeaderStyle = {
   visible: boolean;
