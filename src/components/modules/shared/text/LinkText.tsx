@@ -31,6 +31,7 @@ function LinkText(props: LinkTextProps) {
           className={`${classes} ${
             darkmode ? styledLink.linkDark : styledLink.linkLight
           }`}
+          href={href}
           {...inputProps}
         >
           {title || 'Lees Meer'}
