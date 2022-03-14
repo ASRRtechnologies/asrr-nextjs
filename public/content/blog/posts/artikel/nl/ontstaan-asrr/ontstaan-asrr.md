@@ -32,7 +32,7 @@ section:
       ASRR is begonnen als een hobby van vier vrienden, maar wat begon als een uit de hand gelopen hobby groeide al snel uit tot een innovatief bedrijf.
 
 
-      Elk bedrijf begint onderaan. Onderaan was voor ASRR simpele websites maken. De vrienden waren echter leergierig en vast beraden, dus de simpele websites ontwikkelde zich al snel tot high-end websites. ASRR doet inmiddels zo veel meer dan alleen websites maken.
+      Elk bedrijf begint onderaan. Onderaan was voor ASRR simpele websites maken. De vrienden waren echter leergierig en vastberaden, dus de simpele websites ontwikkelde zich al snel tot high-end websites. ASRR doet inmiddels zo veel meer dan alleen websites maken.
 
 
       ASRR is een echte pionier in software geworden waarbij de mentaliteit van: “Ik heb het nog nooit gedaan, dus ik denk dat ik het wel kan” centraal staat en tot nu toe altijd tot succes heeft geleid.
