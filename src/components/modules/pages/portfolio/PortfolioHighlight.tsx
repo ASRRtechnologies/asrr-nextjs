@@ -12,7 +12,7 @@ import {
   textAnimations,
   zoomIn,
 } from '../../../../data/animations-settings';
-import LinkText from '../../shared/text/LinkText';
+import LinkText from '../../../text/LinkText';
 import DarkModeCard from '@/modules/shared/cards/DarkModeCard';
 import styled from '@emotion/styled';
 import Image from 'next/image';

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import styledLink from './link.module.scss';
-import { useTheme } from '../../../../context/theme/ThemeContext';
+import { useTheme } from '../../context/theme/ThemeContext';
 
 interface LinkTextProps {
   href: string;

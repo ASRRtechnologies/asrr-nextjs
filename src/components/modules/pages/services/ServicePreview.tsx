@@ -4,7 +4,7 @@ import Title from '@/utillities/titles/Title';
 import styled from '@emotion/styled';
 import Grid from '@/modules/shared/grid/Grid';
 import ServiceCards from './ServiceCards';
-import LinkText from '@/modules/shared/text/LinkText';
+import LinkText from '@/text/LinkText';
 import { Fade } from 'react-awesome-reveal';
 
 const Wrapper = styled(Section)``;

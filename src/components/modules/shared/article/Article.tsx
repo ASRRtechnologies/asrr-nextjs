@@ -22,15 +22,15 @@ const HeaderOne = ({ children }) => {
 };
 
 const HeaderTwo = ({ children }) => {
-  return <h2 className="h3 no-margin">{children}</h2>;
+  return <h2 className="h3">{children}</h2>;
 };
 
 const HeaderThree = ({ children }) => {
-  return <h3 className="h4 no-margin">{children}</h3>;
+  return <h3 className="h4">{children}</h3>;
 };
 
 const HeaderFour = ({ children }) => {
-  return <h4 className="h5 no-margin">{children}</h4>;
+  return <h4 className="h5">{children}</h4>;
 };
 
 const HyperLink = (props) => {

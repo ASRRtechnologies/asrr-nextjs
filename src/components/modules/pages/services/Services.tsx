@@ -14,7 +14,6 @@ const Wrapper = styled(Section)``;
 function Services({ content, allServices }) {
   const { title, text, image, alt } = content.section;
   const basePath = `content/services/nl`;
-  console.log(content);
 
   const breakPoints = {
     700: 2,

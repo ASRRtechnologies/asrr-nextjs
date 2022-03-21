@@ -3,7 +3,7 @@ import cardStyles from '@/modules/shared/cards/cards.module.scss';
 import AspectRatio from '@/library/aspect-ratio/AspectRatio';
 import { PortfolioCardProps } from '@/modules/pages/portfolio/types';
 import { useRouter } from 'next/router';
-import LinkText from '../../shared/text/LinkText';
+import LinkText from '../../../text/LinkText';
 import Image from 'next/image';
 
 function PortfolioCard(props: PortfolioCardProps) {

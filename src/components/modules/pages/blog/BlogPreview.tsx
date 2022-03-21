@@ -5,7 +5,7 @@ import { Fade } from 'react-awesome-reveal';
 import { animationsSettings } from '../../../../data/animations-settings';
 import Title from '../../../utillities/titles/Title';
 import MaxTwoColGrid from '@/modules/shared/layout/MaxTwoColGrid';
-import LinkText from '@/modules/shared/text/LinkText';
+import LinkText from '@/text/LinkText';
 
 function Blog(props) {
   const { allBlogs, content } = props;

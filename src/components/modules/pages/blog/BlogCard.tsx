@@ -3,7 +3,7 @@ import cardStyles from '@/modules/shared/cards/cards.module.scss';
 import AspectRatio from '@/library/aspect-ratio/AspectRatio';
 import { BlogCardProps } from '@/modules/pages/blog/types';
 import { useRouter } from 'next/router';
-import LinkText from '../../shared/text/LinkText';
+import LinkText from '../../../text/LinkText';
 import Image from 'next/image';
 
 function BlogCard(props: BlogCardProps) {

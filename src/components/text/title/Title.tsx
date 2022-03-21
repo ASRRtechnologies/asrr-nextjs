@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fade } from 'react-awesome-reveal';
-import titleStyles from './title.module.scss';
+import titleStyles from '../title.module.scss';
 
 interface TitleProps {
   title: string;

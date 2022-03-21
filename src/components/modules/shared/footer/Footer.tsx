@@ -5,7 +5,7 @@ import footerStyles from './footer.module.scss';
 import { useRouter } from 'next/router';
 import LinkedIn from '@/icons/LinkedIn';
 import Facebook from '@/icons/Facebook';
-import LinkText from '@/modules/shared/text/LinkText';
+import LinkText from '@/text/LinkText';
 import Image from 'next/image';
 
 const year = new Date().getFullYear();

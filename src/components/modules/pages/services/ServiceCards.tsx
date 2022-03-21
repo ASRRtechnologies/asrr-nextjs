@@ -1,5 +1,5 @@
 import React from 'react';
-import LinkText from '@/modules/shared/text/LinkText';
+import LinkText from '@/text/LinkText';
 
 function ServiceCards({ content }) {
   const { title, text } = content.card;
