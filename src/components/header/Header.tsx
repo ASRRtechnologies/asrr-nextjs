@@ -7,6 +7,7 @@ import { navigationPaths } from '../../data/paths';
 import { useTheme } from '../../context/theme/ThemeContext';
 import headerStyles from './header.module.scss';
 import DarkMode from '@/header/DarkMode';
+import useStyles from '@/header/styles';
 
 type HeaderStyle = {
   visible: boolean;
@@ -47,6 +48,7 @@ const Wrapper = styled('nav')<HeaderStyle>`
 
 function Header() {
   const [visible, setVisible] = useState(false);
+  const { classes } = useStyles({ visible });
   const themeState = useTheme();
   const toggle = () => themeState.toggle();
   const darkmode = themeState.dark;
