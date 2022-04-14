@@ -14,6 +14,7 @@ function Title(props: TitleProps) {
 
   return (
     <div className={titleStyles.title}>
+      {/*  @ts-ignore */}
       <Fade delay={300} triggerOnce={true}>
         <h1 className="h2 primary-color">{title}</h1>
         {text ? <h2 className="h3 not-bold">{text}</h2> : <></>}

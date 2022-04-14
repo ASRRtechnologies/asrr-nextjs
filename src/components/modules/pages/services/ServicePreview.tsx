@@ -30,6 +30,7 @@ function ServicePreview({ content, allServices }) {
           return <ServiceCards content={service} key={i} />;
         })}
       </Grid>
+      {/*@ts-ignore*/}
       <Fade triggerOnce={true}>
         <>
           <LinkText

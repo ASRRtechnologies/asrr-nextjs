@@ -21,6 +21,7 @@ function Blog(props) {
           //Set delay for each uneven card. TODO make cards on mobile just same speed
           const animationSettings = animationsSettings({}, i);
           return (
+            // @ts-ignore-file
             <Fade
               key={i}
               style={{ width: '100%' }}
@@ -32,7 +33,7 @@ function Blog(props) {
           );
         })}
       </MaxTwoColGrid>
-
+      {/* @ts-ignore*/}
       <Fade triggerOnce={true}>
         <>
           <LinkText

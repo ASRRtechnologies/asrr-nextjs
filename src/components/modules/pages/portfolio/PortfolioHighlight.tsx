@@ -35,6 +35,7 @@ function PortfolioHighlight(props: PortfolioHighlightProps) {
       >
         <Filter opacity={0.15} />
 
+        {/*@ts-ignore*/}
         <Reveal
           keyframes={zoomIn}
           {...bannerAnimations}

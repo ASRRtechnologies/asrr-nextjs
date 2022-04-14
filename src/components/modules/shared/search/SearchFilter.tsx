@@ -86,6 +86,7 @@ function SearchFilter(props: SearchFilterProps) {
       </div>
       {props.render(searchItems)}
       {searchItems.length === 0 && (
+        //  @ts-ignore
         <Fade>
           <p>Geen zoek resultaten gevonden</p>
         </Fade>

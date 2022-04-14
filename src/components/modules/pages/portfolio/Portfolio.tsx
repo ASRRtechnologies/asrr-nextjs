@@ -18,6 +18,7 @@ function Portfolio(props) {
           const animationSettings = animationsSettings({}, i);
 
           return (
+            //@ts-ignore
             <Fade key={i} style={{ width: '100%' }} {...animationSettings}>
               <PortfolioCard
                 {...project}

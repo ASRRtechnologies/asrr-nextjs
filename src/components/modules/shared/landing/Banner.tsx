@@ -31,6 +31,7 @@ function Banner(props: BannerProps) {
     >
       {props.image && <Filter opacity={0.6} />}
 
+      {/*@ts-ignore*/}
       <Reveal
         keyframes={zoomIn}
         duration={1600}

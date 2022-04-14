@@ -34,7 +34,7 @@ function Services({ content, allServices }) {
             })}
           </Grid>
         </div>
-
+        {/*@ts-ignore*/}
         <Fade className={serviceStyles.image}>
           <div>
             <AspectRatio x={3} y={4}>

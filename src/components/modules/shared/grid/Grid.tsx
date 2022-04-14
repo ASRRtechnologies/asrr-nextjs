@@ -80,6 +80,7 @@ function Grid(props: GridProps) {
         {React.Children.map(props.children, (child) => {
           if (props.fade) {
             return (
+              //  @ts-ignore
               <Fade fraction={0.4} damping={0.3} triggerOnce={true}>
                 {React.cloneElement(child, { style: { ...child.props.style } })}
               </Fade>

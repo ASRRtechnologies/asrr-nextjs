@@ -14,6 +14,7 @@ function Testimonials({ content, basePath }) {
       <div className={testimonialStyles.testimonials}>
         {content.cards.map((testimonial, i) => {
           return (
+            //@ts-ignore
             <Fade
               key={i}
               {...cardAnimation}
