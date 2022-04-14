@@ -29,7 +29,7 @@ card:
 landing:
   title: Easy planning
   image: brett-ritchie-1vktnwlmdqs-unsplash-1-min-1-.jpg
-  alt: cosmos
+  alt: image cosmos
 section:
   - content: >-
       # Update Cosmos!    
