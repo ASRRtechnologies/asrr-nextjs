@@ -13,6 +13,7 @@ function Team(props) {
         {members.map((member, i) => {
           const animationSettings = animationsSettings({}, i);
           return (
+            //  @ts-ignore
             <Fade style={{ width: '100%' }} {...animationSettings} key={i}>
               <TeamCard {...member} basePath={props.basePath} />
             </Fade>

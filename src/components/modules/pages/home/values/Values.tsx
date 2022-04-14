@@ -9,6 +9,7 @@ const Wrapper = styled(Section)``;
 
 const RenderQuality = ({ description }) => {
   return (
+    //@ts-ignore
     <Fade triggerOnce={true} delay={300}>
       <p className={`${valueStyles.text} no-margin`}>{description}</p>
     </Fade>
@@ -30,6 +31,7 @@ function Values({ content }) {
           {qualities.map((quality, i) => {
             const active = currentQuality === i;
             return (
+              //@ts-ignore
               <Fade triggerOnce={true} cascade={true} key={i}>
                 <div
                   onClick={() => changeValue(i)}

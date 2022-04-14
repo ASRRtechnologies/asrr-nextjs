@@ -29,6 +29,7 @@ function Error() {
           title="404 Error"
           text="De pagina die u zoekt kan niet gevonden worden"
         />
+        {/* @ts-ignore */}
         <Fade triggerOnce direction="up">
           <Link href="/">
             <a

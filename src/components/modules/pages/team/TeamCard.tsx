@@ -80,6 +80,7 @@ function TeamCard(props: TeamCardProps) {
       </div>
 
       <Accordion collapsed={collapsed}>
+        {/*@ts-ignore*/}
         <Fade duration={800}>
           <p>{props.story}</p>
         </Fade>

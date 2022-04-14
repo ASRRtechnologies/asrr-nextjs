@@ -54,6 +54,7 @@ const getAuthor = (authorName: string) => {
 const ArticleSection = ({ basePath, content, media }) => {
   return (
     <>
+      {/*  @ts-ignore */}
       <Fade className={articleStyles.text} triggerOnce cascade damping={0.3}>
         <Markdown
           options={{
@@ -103,6 +104,7 @@ const ArticleSection = ({ basePath, content, media }) => {
 const Socials = () => {
   return (
     <div className={articleStyles.socials}>
+      {/*  @ts-ignore */}
       <Fade cascade triggerOnce>
         <FacebookShareButton url={window.location.pathname}>
           <FacebookIcon round size={50} />

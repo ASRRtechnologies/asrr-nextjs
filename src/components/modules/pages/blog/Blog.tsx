@@ -32,6 +32,7 @@ function Blog({ searchItems }) {
           //Set delay for each uneven card. TODO make cards on mobile just same speed
           const animationSettings = animationsSettings({}, i);
           return (
+            //@ts-ignore
             <Fade style={{ width: '100%' }} {...animationSettings} key={i}>
               <BlogCard
                 key={post.title + i}

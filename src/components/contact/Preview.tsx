@@ -15,6 +15,7 @@ function Preview() {
 
   return (
     <Section className={contactStyles.contactPreview}>
+      {/*@ts-ignore*/}
       <Fade delay={400} triggerOnce={true}>
         <div className={contactStyles.contactInner}>
           <h1 className="h2">{titleObject.title}</h1>
