@@ -85,11 +85,13 @@ members:
   - name: Amit Ramdas
     position: Sales and Marketing Specialist
     website: https://www.linkedin.com/in/amit-nitesh-ramdas-a6a171172/
-    story: Ik ben Amit Ramdas, 20 jaar. Voor ASRR doe ik zowel enkele
-      marketing/sales taken als design taken. Mijn werkzaamheden variëren dus
-      van kleding- en logodesign tot contactgegevens van potentiële klanten te
-      vergaren en ze te contacteren. Daarnaast help ik met het promoten van ASRR
-      op sociale media kanalen zoals LinkedIn.
+    story: Secuur, creatief en nuchter. Mijn naam is Amit Ramdas en ik ben werkzaam
+      bij ASRR als office manager. Ik vorm de brug tussen de directie en onze
+      leveranciers. Ik houd me bezig met
+      de financiële en administratieve aspecten van het bedrijf en zorg dat op
+      dat vlak alles in goede banen verloopt. ASRR kijkt naar wat bij jou past
+      en creëert zo een rol die bij jouw aansluit. Die vrijheid maakt dat ik met
+      veel plezier werk bij ASRR.
     image: amit.jpg
     alt: Amit
     email: amit.ramdas@asrr.nl
