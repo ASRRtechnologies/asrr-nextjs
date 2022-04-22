@@ -90,7 +90,7 @@ members:
       leveranciers. Ik houd me bezig met
       de financiële en administratieve aspecten van het bedrijf en zorg dat op
       dat vlak alles in goede banen verloopt. ASRR kijkt naar wat bij jou past
-      en creëert zo een rol die bij jouw aansluit. Die vrijheid maakt dat ik met
+      en creëert zo een rol die bij jou aansluit. Die vrijheid maakt dat ik met
       veel plezier werk bij ASRR.
     image: amit.jpg
     alt: Amit
