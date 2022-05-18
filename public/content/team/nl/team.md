@@ -43,19 +43,19 @@ members:
     image: re.jpg
     email: reangelo.jarvis@asrr.nl
     linkedin: https://www.linkedin.com/in/reangelojarvis/
-  - name: Azat Arica
-    position: Back-End Lead Developer
-    website: https://www.linkedin.com/in/azat-a/
-    story: Hi, ik ben Azat, ik werk als back-end coördinator bij ASRR. Toen ASRR
-      werd opgericht, was ik een van de eerste personen die daarbij betrokken
-      was. Momenteel ben ik bijna drie jaar in dienst. Door de jaren heen heb ik
-      ASRR zien opgroeien tot een professioneel IT-bedrijf met een jong en
-      energiek team. Het was voor mij vanzelfsprekend dat ik daar onderdeel van
-      uit wilde maken. Ik ben graag in contact met klanten en ik haal energie
-      uit het maken van complexe applicaties.
-    image: azat.jpg
-    alt: Azat
-    email: azat.arica@asrr.nl
+  - name: Amit Ramdas
+    position: Sales and Marketing Specialist
+    website: https://www.linkedin.com/in/amit-nitesh-ramdas-a6a171172/
+    story: Secuur, creatief en nuchter. Mijn naam is Amit Ramdas en ik ben werkzaam
+      bij ASRR als office manager. Ik vorm de brug tussen de directie en onze
+      leveranciers. Ik houd me bezig met
+      de financiële en administratieve aspecten van het bedrijf en zorg dat op
+      dat vlak alles in goede banen verloopt. ASRR kijkt naar wat bij jou past
+      en creëert zo een rol die bij jou aansluit. Die vrijheid maakt dat ik met
+      veel plezier werk bij ASRR.
+    image: amit.jpg
+    alt: Amit
+    email: amit.ramdas@asrr.nl
   - name: Lotte Boonstra
     position: Operations Manager
     website: www.linkedin.com/in/lotte-boonstra
@@ -82,19 +82,6 @@ members:
     image: lis.jpg
     alt: Lis
     email: lisabelle.sengonul@asrr.nl
-  - name: Amit Ramdas
-    position: Sales and Marketing Specialist
-    website: https://www.linkedin.com/in/amit-nitesh-ramdas-a6a171172/
-    story: Secuur, creatief en nuchter. Mijn naam is Amit Ramdas en ik ben werkzaam
-      bij ASRR als office manager. Ik vorm de brug tussen de directie en onze
-      leveranciers. Ik houd me bezig met
-      de financiële en administratieve aspecten van het bedrijf en zorg dat op
-      dat vlak alles in goede banen verloopt. ASRR kijkt naar wat bij jou past
-      en creëert zo een rol die bij jou aansluit. Die vrijheid maakt dat ik met
-      veel plezier werk bij ASRR.
-    image: amit.jpg
-    alt: Amit
-    email: amit.ramdas@asrr.nl
   - name: Rayel Hardwarsing
     position: Back-End Developer / Senior Data Analyst
     website: https://www.linkedin.com/in/rayelhardwarsing/
@@ -139,4 +126,7 @@ members:
       hier werk is het mij opgevallen hoe hecht en vooruitstrevend het team is.
       Ik kijk uit naar alle nieuwe en uitdagende projecten die onze weg op
       zullen komen.
+  - name: Shaif Bhaggoe
+    position: Full Stack Developer
+    image: man.jpg
 ---
