@@ -1,6 +1,5 @@
 import useI18n from './use-i18n';
 
-
 export default function t(path) {
   let i18n = useI18n();
 

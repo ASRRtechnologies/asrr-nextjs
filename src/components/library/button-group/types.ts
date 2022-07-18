@@ -1,6 +1,6 @@
 import React from 'react';
-import { ActionButton, NavigationButton } from '../button/index';
-import { StandardProps } from '../index';
+import {ActionButton, NavigationButton} from '../button/index';
+import {StandardProps} from '../index';
 
 /**
  * Defines how the buttons should be placed

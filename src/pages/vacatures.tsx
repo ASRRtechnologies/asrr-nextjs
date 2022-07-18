@@ -2,7 +2,6 @@ import React from 'react';
 import matter from 'gray-matter';
 import PageLayout from '@/modules/shared/layout/PageLayout';
 import Article from '@/modules/shared/article/Article';
-import Values from '@/modules/pages/home/values/Values';
 
 function Vacatures({ content, homepage }) {
   const basePath = `/content/vacatures/nl/vacatures`;
