@@ -1,4 +1,4 @@
-import {StandardProps} from '@/library/index';
+import { StandardProps } from '@/library/index';
 
 /**
  * Div container that adheres to the global-max width

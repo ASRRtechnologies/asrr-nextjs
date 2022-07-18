@@ -1,12 +1,12 @@
-import {SerializedStyles} from '@emotion/react';
+import { SerializedStyles } from '@emotion/react';
 import {
-    ButtonStyleDefault,
-    ButtonStyleDefaultHoverDisabled,
-    ButtonStyleDisabled,
-    ButtonStyleOutlined,
-    ButtonStyleOutlinedHoverDisabled,
+  ButtonStyleDefault,
+  ButtonStyleDefaultHoverDisabled,
+  ButtonStyleDisabled,
+  ButtonStyleOutlined,
+  ButtonStyleOutlinedHoverDisabled,
 } from '@/library/button/shared-styles/ButtonStyles';
-import {ButtonStyle} from '@/library/button/types';
+import { ButtonStyle } from '@/library/button/types';
 
 /**
  * Hook that takes in a button-style a prop and returns a serialized css object

@@ -1,4 +1,4 @@
-import {StandardProps} from '../index';
+import { StandardProps } from '../index';
 import React from 'react';
 
 /**

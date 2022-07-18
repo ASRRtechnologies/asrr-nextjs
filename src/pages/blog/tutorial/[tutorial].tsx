@@ -1,7 +1,7 @@
 // noinspection DuplicatedCode
 import React from 'react';
 import PageLayout from '@/modules/shared/layout/PageLayout';
-import {getAllTutorials} from '../../../lib/api';
+import { getAllTutorials } from '../../../lib/api';
 import matter from 'gray-matter';
 import Article from '@/modules/shared/article/Article';
 
