@@ -1,50 +1,34 @@
-# ASRR NextJS Website
-<img src ="https://img.shields.io/badge/Powered%20By-ASRR-red"/>
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Getting Started
 
-Repository that houses the ASRR Website. A progressive web app built on NextJS and ReactJS.
+First, run the development server:
 
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-|   | Technology |
-| ------------- | ------------- |
-| Languages  | <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/> <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> 	<img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> |
-| Frameworks  | <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/> <img src="https://img.shields.io/badge/NextJS%20-black.svg?&style=for-the-badge&logo=NextJS&logoColor=white"/> <img src="https://img.shields.io/badge/vercel%20-%23000000.svg?&style=for-the-badge&logo=vercel&logoColor=white"/> |
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Rules:
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-- Build smart components
-- Add comments
-- Use `.webp` with `.jpg` fallback for all images
-- Create responsive CSS
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
+## Learn More
 
-## Environments
+To learn more about Next.js, take a look at the following resources:
 
-|   | Production | CMS Staging |
-| ------------- | ------------- |------------- |
-|  url | https://asrr.nl  | https://asrr-next.netlify.com |
-| hosting  | Vercel  | Netlify |
-|status| |[![Netlify Status](https://api.netlify.com/api/v1/badges/7c33d9e2-b64e-4965-a00d-63ebcce137b8/deploy-status)](https://app.netlify.com/sites/infallible-mirzakhani-918b0f/deploys) |
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### Production
-Hosted on Netlify for CMS
+## Deploy on Vercel
 
-https://asrr-next.netlify.com/admin/
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-### Steps to getting something live
-1. Make changes in netlify cms
-2. Check on production 
-3. Merge into master to deploy to asrr.nl
-
-### To run:
-1. `yarn install`
-2. `yarn dev`
-3. Open http://localhost:5000
-
-### Local CMS
-1. `yarn cms`
-2. open http://localhost:5000/admin/index.html to see cms
-
-https://github.com/Ileriayo/markdown-badges
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
