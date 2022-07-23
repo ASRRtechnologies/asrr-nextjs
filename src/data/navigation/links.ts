@@ -22,3 +22,7 @@ export const navigationLinks: NavigationLinks[] = [
     {label: "Blog", path: "/blog"},
     {label: "Contact", path: "/contact"},
 ]
+
+export const servicesNavigation = [
+    {}
+]

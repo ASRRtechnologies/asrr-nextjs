@@ -1,22 +1,27 @@
 import {createStyles} from "@mantine/core";
 
-export const HEADER_HEIGHT = 60;
+export const HEADER_HEIGHT = 70;
 
-export const useStyles = createStyles((theme) => ({
+export const useStyles = createStyles((theme, {visible}: {visible: boolean}) => ({
     header:{
         display:"block",
-        backgroundColor: theme.other.header.background,
+        backgroundColor: visible ? theme.other.header.background : 'transparent',
+        backdropFilter: visible ? "blur(12px)" : 'none',
+        boxShadow: visible ? theme.shadows.lg : 'none',
         position: "fixed",
         top:0,
         left:0,
-        boxShadow: theme.shadows.md,
+        '#logo':{
+            path:{
+                fill:"#fff"
+            }
+        }
     },
     inner: {
         height: HEADER_HEIGHT,
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: theme.other.header.background
     },
 
     links: {

@@ -1,21 +1,33 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Burger, Button, Center, Container, Group, Header, Menu,} from '@mantine/core';
 import {useBooleanToggle} from '@mantine/hooks';
 import {ChevronDown} from 'tabler-icons-react';
-import {navigationLinks} from "../../../data/header/links";
+import {navigationLinks} from "../../../data/navigation/links";
 import Logo from "../../logo/Logo";
-import {useStyles} from "./styles";
-import {HEADER_HEIGHT} from "./styles";
+import {HEADER_HEIGHT, useStyles} from "./styles";
 import Link from "next/link";
 
 export function HeaderMenu() {
-    const {classes} = useStyles();
     const [opened, toggleOpened] = useBooleanToggle(false);
+    const [visible, setVisible] = useState<boolean>(false);
+    const {classes} = useStyles({visible: visible});
+
+    const headerPosition = () => {
+        const currentScrollPos = window.scrollY;
+        if (currentScrollPos < (2 / 16) * window.innerHeight) {
+            setVisible(false);
+        } else if (currentScrollPos > (2 / 16) * window.innerHeight) {
+            setVisible(true);
+        }
+    };
 
     const items = navigationLinks.map((link) => {
         const menuItems = link.subPaths?.map((item) => (
             <Menu.Item key={item.path}>{item.label}</Menu.Item>
         ));
+
+        if(link.path?.includes("contact"))
+            return null;
 
         if (menuItems) {
             return (
@@ -46,12 +58,18 @@ export function HeaderMenu() {
 
         return (
             <Link href={link?.path ?? "/"}>
-                <a key={link.label} className={classes.link}>
+                <Button variant="subtle">
                     {link.label}
-                </a>
+                </Button>
             </Link>
         );
     });
+
+    useEffect(() => {
+        window.addEventListener('scroll', headerPosition);
+
+        return () => window.removeEventListener('scroll', headerPosition);
+    }, [])
 
     return (
         <Header className={classes.header} height={HEADER_HEIGHT} sx={{borderBottom: 0}} mb={120}>

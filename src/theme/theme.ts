@@ -21,7 +21,6 @@ export const fontStyles = (theme: MantineTheme) => ({
 })
 
 const sharedThemeStyles: MantineThemeOverride = {
-
     primaryShade: 3,
     colors: {
         asrr: [

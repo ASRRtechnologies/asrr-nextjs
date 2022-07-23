@@ -10,4 +10,14 @@ export const globalComponentStyles: ProviderStyles = {
         // Shared button styles are applied to all buttons
         root: {height: "auto", padding: '12px 16px', borderRadius: theme.radius.md},
     }),
+    TextInput:(theme) => ({
+        input:{
+            background:"yellow",
+            borderColor:"yellow",
+            '&:focus':{
+                borderColor:`${theme.colors[theme.primaryColor][3]} !important`,
+
+            }
+        }
+    })
 }
