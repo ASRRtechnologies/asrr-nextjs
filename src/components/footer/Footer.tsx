@@ -1,6 +1,6 @@
 import React from 'react';
-import { createStyles, Text, Container, ActionIcon, Group } from '@mantine/core';
-import { BrandTwitter, BrandYoutube, BrandInstagram } from 'tabler-icons-react';
+import {ActionIcon, Container, createStyles, Group, Text} from '@mantine/core';
+import {BrandInstagram, BrandTwitter, BrandYoutube} from 'tabler-icons-react';
 import Logo from '../logo/Logo';
 
 const useStyles = createStyles((theme) => ({
@@ -33,7 +33,7 @@ const useStyles = createStyles((theme) => ({
     inner: {
         display: 'flex',
         justifyContent: 'space-between',
-        padding:0,
+        padding: 0,
         [theme.fn.smallerThan('sm')]: {
             flexDirection: 'column',
             alignItems: 'flex-start',
@@ -45,7 +45,7 @@ const useStyles = createStyles((theme) => ({
         flexWrap: 'wrap',
 
         [theme.fn.smallerThan('sm')]: {
-            flexDirection:"column",
+            flexDirection: "column",
         },
     },
 
@@ -53,7 +53,7 @@ const useStyles = createStyles((theme) => ({
         width: 160,
         [theme.fn.smallerThan('sm')]: {
             marginBottom: theme.spacing.xl,
-            '&:last-of-type':{
+            '&:last-of-type': {
                 marginBottom: 0,
             }
         },
@@ -108,8 +108,8 @@ interface FooterLinksProps {
     }[];
 }
 
-export function Footer({ data }: FooterLinksProps) {
-    const { classes } = useStyles();
+export function Footer({data}: FooterLinksProps) {
+    const {classes} = useStyles();
     const groups = data.map((group) => {
         const links = group.links.map((link, index) => (
             <Text<'a'>
@@ -132,31 +132,33 @@ export function Footer({ data }: FooterLinksProps) {
     });
     return (
         <footer className={classes.footer}>
-            <Container className={classes.inner}>
-                <div className={classes.logo}>
-                    <Logo darkmode/>
-                    <Text size="xs" color="dimmed" className={classes.description}>
-                        Always Building Innovative Software
+            <Container>
+                <Container className={classes.inner}>
+                    <div className={classes.logo}>
+                        <Logo darkmode/>
+                        <Text size="xs" color="dimmed" className={classes.description}>
+                            Always Building Innovative Software
+                        </Text>
+                    </div>
+                    <div className={classes.groups}>{groups}</div>
+                </Container>
+                <Container className={classes.afterFooter}>
+                    <Text color="dimmed" size="sm">
+                        © 2022 ASRR. Alle rechten voorbehouden.
                     </Text>
-                </div>
-                <div className={classes.groups}>{groups}</div>
-            </Container>
-            <Container className={classes.afterFooter}>
-                <Text color="dimmed" size="sm">
-                    © 2022 ASRR. Alle rechten voorbehouden.
-                </Text>
 
-                <Group spacing={0} className={classes.social} position="right" noWrap>
-                    <ActionIcon size="lg">
-                        <BrandTwitter size={18} />
-                    </ActionIcon>
-                    <ActionIcon size="lg">
-                        <BrandYoutube size={18} />
-                    </ActionIcon>
-                    <ActionIcon size="lg">
-                        <BrandInstagram size={18} />
-                    </ActionIcon>
-                </Group>
+                    <Group spacing={0} className={classes.social} position="right" noWrap>
+                        <ActionIcon size="lg">
+                            <BrandTwitter size={18}/>
+                        </ActionIcon>
+                        <ActionIcon size="lg">
+                            <BrandYoutube size={18}/>
+                        </ActionIcon>
+                        <ActionIcon size="lg">
+                            <BrandInstagram size={18}/>
+                        </ActionIcon>
+                    </Group>
+                </Container>
             </Container>
         </footer>
     );
