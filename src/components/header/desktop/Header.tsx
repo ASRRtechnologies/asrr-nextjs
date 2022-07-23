@@ -58,7 +58,7 @@ export function HeaderMenu() {
         }
 
         return (
-            <Link href={link?.path ?? "/"}>
+            <Link key={link.path} href={link?.path ?? "/"}>
                 <Button variant="subtle">
                     {link.label}
                 </Button>
