@@ -2,8 +2,8 @@ import React from 'react';
 import {useStyles} from "./styles";
 import Link from "next/link";
 
-function Logo() {
-    const {classes} = useStyles();
+function Logo({darkmode}: { darkmode?: boolean }) {
+    const {classes} = useStyles({darkmode});
 
     return (
         <Link href="/">

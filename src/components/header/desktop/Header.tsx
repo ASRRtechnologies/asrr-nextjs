@@ -6,6 +6,7 @@ import {navigationLinks} from "../../../data/navigation/links";
 import Logo from "../../logo/Logo";
 import {HEADER_HEIGHT, useStyles} from "./styles";
 import Link from "next/link";
+import {DarkmodeToggle} from "../../colorscheme-toggle/DarkmodeToggle";
 
 export function HeaderMenu() {
     const [opened, toggleOpened] = useBooleanToggle(false);
@@ -87,11 +88,14 @@ export function HeaderMenu() {
                     {items}
                 </Group>
 
-                <Link href="/contact">
-                    <Button>
-                        Contact
-                    </Button>
-                </Link>
+                <Group spacing={15} className={classes.links}>
+                    <Link href="/contact">
+                        <Button>
+                            Contact
+                        </Button>
+                    </Link>
+                    <DarkmodeToggle/>
+                </Group>
             </Container>
         </Header>
     );

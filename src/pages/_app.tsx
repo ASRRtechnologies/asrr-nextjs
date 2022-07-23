@@ -7,6 +7,8 @@ import {NotificationsProvider} from '@mantine/notifications';
 import {HeaderMenu} from "../components/header/desktop/Header";
 import {darkTheme, lightTheme} from "../theme/theme";
 import {globalComponentStyles} from "../styles/global-component-styles";
+import {Footer} from "../components/footer/Footer";
+import {footerNavigation} from "../data/navigation/links";
 
 export default function App(props: AppProps & { colorScheme: ColorScheme }) {
     const {Component, pageProps} = props;
@@ -35,6 +37,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
                         <>
                             <HeaderMenu/>
                             <Component {...pageProps} />
+                            <Footer data={footerNavigation}/>
                         </>
                     </NotificationsProvider>
                 </MantineProvider>
