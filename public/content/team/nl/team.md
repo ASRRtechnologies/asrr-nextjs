@@ -85,9 +85,9 @@ members:
   - name: Vanisha Oedayrajsingh Varma
     position: Medior Back-End Developer
     story: Ik ben back-end developer bij ASRR. Mijn specialiteiten zijn het vinden
-    en fixen van bugs en code waterdicht maken. Naast werken bij ASRR studeer
-    ik Computer Science & Engineering aan TU Delft. Ik heb tijdens mijn studie
-    veel vaardigheden opgedaan die ik met veel plezier kan toepassen bij ASRR.
+      en fixen van bugs en code waterdicht maken. Naast werken bij ASRR studeer
+      ik Computer Science & Engineering aan TU Delft. Ik heb tijdens mijn studie
+      veel vaardigheden opgedaan die ik met veel plezier kan toepassen bij ASRR.
     image: vrouw.jpg
     alt: Silhouette
     email: vanisha.varma@asrr.nl
