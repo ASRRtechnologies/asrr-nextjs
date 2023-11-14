@@ -1,6 +1,6 @@
 ---
 language: nl
-title: vacatures
+title: privacy
 meta_tags:
   title: Vacatures
   text: Is ASRR jouw nieuwe uitdaging? Houd jij van innovatie? Kijk welke vacature
@@ -11,7 +11,7 @@ info:
   client: ASRR
 landing:
   title: Lets innovate
-  text: Op deze pagina staan alle vacatures van ASRR. Wordt jij onze nieuwe collega?
+  text: Op deze pagina staan alle privacy van ASRR. Wordt jij onze nieuwe collega?
   image: dsc09400-1-min.jpg
   alt: vacature ASRR front-end en back-end developers
 image: dsc00185.jpg
