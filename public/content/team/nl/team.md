@@ -16,11 +16,11 @@ landing:
     zijn, snel nieuwe dingen oppakken en gewend zijn aan een uitdaging
   image: takahiro-sakamoto-imued0tpo1s-unsplash.jpg
 members:
-  - position: Managing Director
+  - position: Managing Director | Senior Full-Stack Developer
     alt: Amar
     name: Amar Ramdas
     phone: "0641633358"
-    story: Ik ben de eigenaar en founder van ASRR. Wat begon als een hobby met een
+    story: Ik ben de eigenaar van ASRR. Wat begon als een hobby met een
       paar vrienden is al snel uitgegroeid tot een innovatieve business. Ik zorg
       ervoor dat businessvragen of -problemen vertaald worden naar een robuuste
       IT-oplossing. Verder haal ik energie uit het begeleiden van talent en
@@ -44,7 +44,7 @@ members:
     email: reangelo.jarvis@asrr.nl
     linkedin: https://www.linkedin.com/in/reangelojarvis/
   - name: Amit Ramdas
-    position: Sales and Marketing Specialist
+    position: Junior Associate | Office Manager
     website: https://www.linkedin.com/in/amit-nitesh-ramdas-a6a171172/
     story: Secuur, creatief en nuchter. Mijn naam is Amit Ramdas en ik ben werkzaam
       bij ASRR als office manager. Ik vorm de brug tussen de directie en onze
@@ -82,8 +82,17 @@ members:
     image: lis.jpg
     alt: Lis
     email: lisabelle.sengonul@asrr.nl
+  - name: Vanisha Oedayrajsingh Varma
+    position: Medior Back-End Developer
+    story: Ik ben back-end developer bij ASRR. Mijn specialiteiten zijn het vinden
+      en fixen van bugs en code waterdicht maken. Naast werken bij ASRR studeer
+      ik Computer Science & Engineering aan TU Delft. Ik heb tijdens mijn studie
+      veel vaardigheden opgedaan die ik met veel plezier kan toepassen bij ASRR.
+    image: vrouw.jpg
+    alt: Silhouette
+    email: vanisha.varma@asrr.nl
   - name: Rayel Hardwarsing
-    position: Back-End Developer / Senior Data Analyst
+    position: Senior Back-End Developer / Senior Data Analyst
     website: https://www.linkedin.com/in/rayelhardwarsing/
     story: Als back-end developer werk ik aan het verbreiden/verbeteren van
       bestaande applicaties en het opzetten van nieuwe applicaties. Verder houd
@@ -94,17 +103,8 @@ members:
       robuuste oplossingen bieden aan de klant!
     image: man.jpg
     alt: "Silhouette "
-  - name: Vanisha Oedayrajsingh Varma
-    position: Medior Back-End Developer
-    story: Ik ben back-end developer bij ASRR. Mijn specialiteiten zijn het vinden
-      en fixen van bugs en code waterdicht maken. Naast werken bij ASRR studeer
-      ik Computer Science & Engineering aan TU Delft. Ik heb tijdens mijn studie
-      veel vaardigheden opgedaan die ik met veel plezier kan toepassen bij ASRR.
-    image: vrouw.jpg
-    alt: Silhouette
-    email: vanisha.varma@asrr.nl
   - name: Neil Alwani
-    position: Junior Front-End Developer
+    position: Medior Full-Stack Developer
     story: Mijn volledige naam is Neil Mahesh Alwani en ik ben sinds 3 maanden
       front-end developer bij ASRR. Ik ben een BSc student Technische
       Informatica aan de TU Delft. Ik vind het leuk om code te bestuderen.
@@ -126,7 +126,15 @@ members:
       hier werk is het mij opgevallen hoe hecht en vooruitstrevend het team is.
       Ik kijk uit naar alle nieuwe en uitdagende projecten die onze weg op
       zullen komen.
+  - name: Rinia Kanhai
+    position: Senior IT Adviseur
+    image: vrouw.jpg
+    alt: Silhouette
+    email: rinia.kanhai@asrr.nl
+    story: Rinia Kanhai heeft jarenlange ervaring in grootschalige IT projecten en is daarbij een onmisbare adviseur voor ASRR in het managen en opzetten van grote projecten.
   - name: Shaif Bhaggoe
-    position: Full Stack Developer
-    image: man.jpg
+    position: Medior Full Stack Developer
+    image: vrouw.jpg
+    alt: Silhouette
+    email: shaif.bhaggoe@asrr.nl
 ---

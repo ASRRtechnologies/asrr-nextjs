@@ -619,10 +619,10 @@ collections:
                   - { label: "Video Description", name: "video_description", widget: "string", required: false }
                   - { label: "Video Reference", name: "video_reference", widget: "string", required: false }
   - label: "Vacatures"
-    name: "vacatures"
+    name: "privacy"
     identifier_field: slug
     summary: '{{title}} - {{language}}'
-    folder: "public/content/vacatures"
+    folder: "public/content/privacy"
     path: '{{language}}/{{title}}/{{slug}}'
     slug: '{{title}}'
     create: true
@@ -630,7 +630,7 @@ collections:
       preview: false
     fields:
       - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
-      - { label: "Filename", name: "title", widget: "string", default: "vacatures" }
+      - { label: "Filename", name: "title", widget: "string", default: "privacy" }
       - label: "Meta tags"
         name: "meta_tags"
         widget: "object"
@@ -673,4 +673,58 @@ collections:
                   - { label: "Video", name: "video", widget: "file", required: false }
                   - { label: "Video Description", name: "video_description", widget: "string", required: false }
                   - { label: "Video Reference", name: "video_reference", widget: "string", required: false }
-
+  - label: "Privacy Policy"
+    name: "privacy"
+    identifier_field: slug
+    summary: '{{title}} - {{language}}'
+    folder: "public/content/privacy"
+    path: '{{language}}/{{title}}/{{slug}}'
+    slug: '{{title}}'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: "Language", name: "language", widget: "select", options: [ "nl", "en" ], default: "nl" }
+      - { label: "Filename", name: "title", widget: "string", default: "privacy" }
+      - label: "Meta tags"
+        name: "meta_tags"
+        widget: "object"
+        fields:
+          - { label: "Title (tab title)", name: "title", widget: "string", required: true }
+          - { label: "Text (search engine text)", name: "text", widget: "text", required: true }
+      - label: "Landing"
+        name: "landing"
+        widget: "object"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text", name: "text", widget: "string", required: false }
+          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: "Image Alt", name: "alt", widget: "string", required: false }
+      - label: "Privacy Policy"
+        name: "section"
+        widget: "list"
+        required: false
+        fields:
+          - { label: "Content", name: "content", widget: "markdown" }
+          - label: "Media"
+            name: "media"
+            widget: "object"
+            required: false
+            fields:
+              - label: "Image"
+                name: "images"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Image", name: "image", widget: "image", required: false }
+                  - { label: "Image Alt", name: "alt", widget: "string", required: false }
+                  - { label: "Image Description", name: "description", widget: "text", required: false }
+                  - { label: "Image Reference", name: "reference", widget: "text", required: false }
+              - label: "Videos"
+                name: "videos"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Video", name: "video", widget: "file", required: false }
+                  - { label: "Video Description", name: "video_description", widget: "string", required: false }
+                  - { label: "Video Reference", name: "video_reference", widget: "string", required: false }

@@ -10,9 +10,12 @@ meta_tags:
 info:
   date: May 6, 2020 12:00 AM
   client: De Kleine Aapjes
-  author: Amar Ramdas
+  author: Lotte Boonstra
   tags:
-    - center
+    - ReactJS
+    - NextJs
+    - Front-End
+    - Webapplicatie
 card:
   title: Een website voor de kleintjes
   image: aapjes-card.jpg
@@ -33,31 +36,26 @@ section:
       # Een website voor de kleintjes
 
 
-      Zonder (goede) website sta je als bedrijf gelijk een stap achter. Een website is tegenwoordig een 'must have' voor alle soorten bedrijven. Ook kinderdagverblijf, De Kleine Aapjes, kon hier niet in achterblijven en wilde graag een digitaal visitekaartje dat hen als kinderdagverblijf goed representeert.
+      ## Zonder (goede) website sta je als bedrijf gelijk een stap achter. Een website is tegenwoordig een 'must have' voor alle soorten bedrijven. Ook kinderdagverblijf, De Kleine Aapjes, kon hier niet in achterblijven en wilde graag een digitaal visitekaartje dat hen als kinderdagverblijf goed representeert.
 
 
-      ## Probleem
-
-
-      De huidige website van het kinderdagverblijf was een WordPress website. Het dagverblijf vond hun huidige website niet toereikend genoeg en waren toe aan verbeteringen. 
-
-
-      ## Oplossing
+      De voorgaande website van het kinderdagverblijf was een WordPress website. Het dagverblijf vond hun huidige website niet toereikend genoeg en waren toe aan verbeteringen. 
 
 
       ASRR is er voor bedrijven op elke schaal, zo ook voor [de Kleine Aapjes in Den Haag](https://www.dekleineaapjes.nl/). De website van dit bedrijf transitioneerde van een WordPress website naar een van onze NextJS webapps. 
 
 
-      De website moest simpel en snel zijn en modern ogen, maar het moest binnen budget blijven. Om kosten te drukken hebben wij een van onze standaard templates gebruikt, waardoor er geen tijd en geld in een nieuw design gestopt hoeft te worden. Onze templates vallen onder 'Responsive Webdesign', dat houdt in dat er wordt gestreefd naar een optimale webervaring op een breed scala aan apparaten. Verder gebruiken wij Automatische HTTPS/SSL certificering, wat veiligheid van de website waarborgt. De website hosten wij op ons eigen razendsnelle hosting systeem. Dit is globally redundant hosting, wat bijdraagt aan een snelle website.
+      De website moest simpel zijn, snel zijn en modern ogen. D﻿oor van een van onze standaard websitetemplates gebruik te maken, hoeft er geen tijd en geld in een nieuw design gestopt te worden. Onze templates maken gebruik van 'Responsive Webdesign'. Binnen responsive webdesign wordt de user experience geoptimaliseerd. 
+
+
+      Verder wordt er gebruik gemaakt van Automatische HTTPS/SSL certificering, wat veiligheid van de website waarborgt. De website wordt gehost op ons eigen razendsnelle globally redundant hosting systeem. Dit draagt bij aan een snelle website.
     media:
       images:
         - image: aapjes-example-2.png
           alt: Sneak peak of aapjes website
           description: Preview van de website
           reference: https://www.dekleineaapjes.nl/
-  - content: >-
-      ## Conclusie
-
-
-      ASRR is er voor bedrijven op elke schaal en kan door gebruik te maken voor onze standaard templates en razendsnelle hosting een esthetische, snelle, moderne, simpele, scherp geprijsde website maken.
+  - content: ASRR is er voor bedrijven op elke schaal en kan door gebruik te maken
+      voor onze standaard templates en razendsnelle hosting een esthetische,
+      snelle, moderne, simpele, scherp geprijsde website maken.
 ---

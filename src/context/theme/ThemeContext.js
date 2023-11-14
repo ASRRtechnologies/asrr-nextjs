@@ -4,8 +4,7 @@ import theme from './theme.tsx';
 
 const defaultContextData = {
   dark: true,
-  toggle: () => {
-  }
+  toggle: () => {},
 };
 
 const ThemeContext = createContext(defaultContextData);

@@ -3,8 +3,8 @@ import matter from 'gray-matter';
 import PageLayout from '@/modules/shared/layout/PageLayout';
 import Article from '@/modules/shared/article/Article';
 
-function Vacatures({ content, homepage }) {
-  const basePath = `/content/vacatures/nl/vacatures`;
+function PrivacyPolicy({ content, homepage }) {
+  const basePath = `/content/privacy/nl/privacy`;
 
   const SEOProps = {
     ...content.meta_tags,
@@ -18,9 +18,7 @@ function Vacatures({ content, homepage }) {
 }
 
 export async function getStaticProps() {
-  const data = await import(
-    `public/content/vacatures/nl/vacatures/vacatures.md`
-  );
+  const data = await import(`public/content/privacy/nl/privacy/privacy.md`);
   const content = matter(data.default).data;
 
   const homeContent = await import(`public/content/home/nl/home.md`);
@@ -32,4 +30,4 @@ export async function getStaticProps() {
   };
 }
 
-export default Vacatures;
+export default PrivacyPolicy;
